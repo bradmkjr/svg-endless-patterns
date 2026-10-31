@@ -1,0 +1,85 @@
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.7rem;
+  font-size: 0.9rem;
+}
+
+.tool,
+.toolOn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.55rem;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.toolOn {
+  border-color: var(--foreground);
+  box-shadow: inset 0 0 0 1px var(--foreground);
+}
+
+.toolSwatch {
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+}
+
+/* Painting drags across the cells, so the browser mustn't scroll instead. */
+.grid {
+  display: grid;
+  width: 100%;
+  max-width: 36rem;
+  border: 1px solid var(--foreground);
+  touch-action: none;
+  user-select: none;
+}
+
+.cell {
+  aspect-ratio: 1;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  border-right: 1px solid rgba(0, 0, 0, 0.14);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+  border-radius: 0;
+  cursor: crosshair;
+}
+
+/* A heavier line every 10 cells, as on the printed chart. */
+.cellEnd {
+  border-right-color: rgba(0, 0, 0, 0.7);
+}
+
+.cellBottom {
+  border-bottom-color: rgba(0, 0, 0, 0.7);
+}
+
+.cell:focus-visible {
+  position: relative;
+  z-index: 1;
+  outline: 2px solid var(--accent);
+  outline-offset: 0;
+}
+
+.symbol {
+  font-weight: 700;
+}
+
+.colorRow {
+  grid-template-columns: 1.1rem 2.25rem minmax(0, 1fr) auto;
+}
+
+.colorCount {
+  color: var(--muted);
+  font-size: 0.875rem;
+}

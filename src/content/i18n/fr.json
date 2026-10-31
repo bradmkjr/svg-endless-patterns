@@ -1,5 +1,27 @@
 {
   "posts": {
+    "tie-dye-planner": {
+      "title": "Préparez un tie-dye avant de sortir la teinture",
+      "summary": "Prévisualisez un pliage en spirale, en cible ou en accordéon dans vos couleurs, avec les pliages, un plan des teintures, les quantités et des étapes imprimables.",
+      "blocks": [
+        "Le nouveau [planificateur de tie-dye](/tie-dye/) prévisualise un motif dans vos couleurs et indique comment le plier et combien de teinture préparer.",
+        "Exemples pour commencer",
+        [
+          "Une spirale à six parts",
+          "Une cible à huit anneaux en deux teintures",
+          "Les pliages et le plan des teintures d'un accordéon"
+        ],
+        "Ce que vous obtenez",
+        [
+          "Pliages en spirale, en cible et en accordéon, avec jusqu'à quatre teintures",
+          "Un aperçu SVG ou PNG et un schéma de pliage avec le plan des teintures",
+          "Quantités d'eau, de poudre et d'urée pour 12 t-shirts adulte au maximum",
+          "Un PDF imprimable avec les consignes de sécurité et toutes les étapes, du trempage au lavage"
+        ],
+        "Un aperçu, pas une promesse",
+        "La vraie teinture se diffuse différemment à chaque fois : prenez l'image comme un guide. Les quantités sont des estimations d'après [les instructions publiées par Dharma Trading](https://www.dharmatrading.com/blogs/t/tie-dye-instructions), et l'étiquette de votre teinture passe avant."
+      ]
+    },
     "complete-cross-stitch-and-needlepoint-projects": {
       "title": "Point de croix et canevas, désormais des projets complets",
       "summary": "Le canevas a son propre créateur, et les deux outils donnent tout pour un ouvrage carré fini : coupe exacte, ordre de broderie, fil par couleur, finitions et grilles réparties sur plusieurs feuilles.",
@@ -367,6 +389,12 @@
     }
   },
   "changelog": {
+    "Tie-dye planner": {
+      "title": "Planificateur de tie-dye",
+      "items": [
+        "Ajout d'un planificateur de tie-dye, avec aperçu, plan des teintures, quantités et PDF imprimable"
+      ]
+    },
     "Complete cross-stitch and needlepoint projects": {
       "title": "Projets complets de point de croix et de canevas",
       "items": [

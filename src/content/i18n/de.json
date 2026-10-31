@@ -1,5 +1,27 @@
 {
   "posts": {
+    "tie-dye-planner": {
+      "title": "Batik planen, bevor die Farbe ins Spiel kommt",
+      "summary": "Sehen Sie eine Spirale, Zielscheibe oder Ziehharmonika in Ihren Farben und erhalten Sie Faltung, Farbplan, Mengen und druckbare Schritte.",
+      "blocks": [
+        "Der neue [Batik-Planer](/tie-dye/) zeigt ein Muster in Ihren Farben und sagt Ihnen, wie Sie falten und wie viel Farbe Sie anmischen.",
+        "Beispiele zum Einstieg",
+        [
+          "Eine Spirale mit sechs Segmenten",
+          "Eine Zielscheibe mit acht Ringen in zwei Farben",
+          "Faltung und Farbplan einer Ziehharmonika"
+        ],
+        "Das bekommen Sie",
+        [
+          "Spirale, Zielscheibe und Ziehharmonika mit bis zu vier Farben",
+          "Eine Vorschau als SVG oder PNG und ein Faltdiagramm mit Farbplan",
+          "Mengen für Wasser, Pulver und Harnstoff für bis zu 12 Erwachsenen-T-Shirts",
+          "Ein druckbares PDF mit Sicherheitshinweisen und allen Schritten vom Einweichen bis zum Waschen"
+        ],
+        "Eine Vorschau, kein Versprechen",
+        "Echte Farbe verläuft jedes Mal anders, sehen Sie das Bild also als Anhaltspunkt. Die Mengen sind Schätzungen auf Basis [der Anleitung von Dharma Trading](https://www.dharmatrading.com/blogs/t/tie-dye-instructions), und das Etikett Ihrer Farbe hat Vorrang."
+      ]
+    },
     "complete-cross-stitch-and-needlepoint-projects": {
       "title": "Kreuzstich und Stramin, jetzt als komplette Projekte",
       "summary": "Stramin hat einen eigenen Ersteller, und beide Werkzeuge liefern alles für ein fertiges quadratisches Stück: genauen Zuschnitt, Stickreihenfolge, Garn pro Farbe, Fertigstellung und auf Blätter verteilte Vorlagen.",
@@ -367,6 +389,12 @@
     }
   },
   "changelog": {
+    "Tie-dye planner": {
+      "title": "Batik-Planer",
+      "items": [
+        "Batik-Planer hinzugefügt, mit Vorschau, Farbplan, Mengen und druckbarem PDF"
+      ]
+    },
     "Complete cross-stitch and needlepoint projects": {
       "title": "Komplette Projekte für Kreuzstich und Stramin",
       "items": [

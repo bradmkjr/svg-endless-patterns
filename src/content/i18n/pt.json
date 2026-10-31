@@ -1,5 +1,27 @@
 {
   "posts": {
+    "tie-dye-planner": {
+      "title": "Planeje um tie-dye antes de pegar a tinta",
+      "summary": "Veja uma dobra em espiral, alvo ou sanfona nas suas cores e receba as dobras, um mapa de tintas, as quantidades e os passos para imprimir.",
+      "blocks": [
+        "O novo [planejador de tie-dye](/tie-dye/) mostra um desenho nas suas cores e diz como dobrar e quanta tinta misturar.",
+        "Exemplos para começar",
+        [
+          "Uma espiral de seis fatias",
+          "Um alvo de oito anéis em duas tintas",
+          "As dobras e o mapa de tintas de uma sanfona"
+        ],
+        "O que você recebe",
+        [
+          "Dobras em espiral, alvo e sanfona com até quatro tintas",
+          "Uma prévia em SVG ou PNG e um diagrama de dobra com o mapa de tintas",
+          "Quantidades de água, pó e ureia para até 12 camisetas de adulto",
+          "Um PDF para imprimir com as notas de segurança e todos os passos, do molho à lavagem"
+        ],
+        "Uma prévia, não uma promessa",
+        "A tinta real se espalha de um jeito diferente a cada vez, então use a imagem como guia. As quantidades são estimativas a partir d[as instruções publicadas pela Dharma Trading](https://www.dharmatrading.com/blogs/t/tie-dye-instructions), e o rótulo da sua tinta vem primeiro."
+      ]
+    },
     "complete-cross-stitch-and-needlepoint-projects": {
       "title": "Ponto cruz e talagarça, agora projetos completos",
       "summary": "A talagarça tem o próprio criador, e as duas ferramentas dão tudo para uma peça quadrada pronta: corte exato, ordem de bordado, fio por cor, acabamento e gráficos divididos em folhas.",
@@ -367,6 +389,12 @@
     }
   },
   "changelog": {
+    "Tie-dye planner": {
+      "title": "Planejador de tie-dye",
+      "items": [
+        "Adicionado um planejador de tie-dye, com prévia, mapa de tintas, quantidades e PDF para imprimir"
+      ]
+    },
     "Complete cross-stitch and needlepoint projects": {
       "title": "Projetos completos de ponto cruz e talagarça",
       "items": [

@@ -32,6 +32,8 @@ export { generateMandala, mandalaMotifThumb } from "./mandala";
 export type { MandalaMotif, MandalaRequest, MandalaResult, MandalaRing, MandalaRingSpec } from "./mandala";
 export { generateGirih } from "./girih";
 export type { GirihColors, GirihPart, GirihRequest, GirihResult, GirihStar, GirihSymmetry } from "./girih";
+export { generateTieDye } from "./tieDye";
+export type { TieDyeMix, TieDyeRequest, TieDyeResult, TieDyeTechnique } from "./tieDye";
 export { generateTruchet } from "./truchet";
 export type { TruchetArrangement, TruchetColors, TruchetRequest, TruchetResult, TruchetStyle } from "./truchet";
 export { generateTartan } from "./tartan";

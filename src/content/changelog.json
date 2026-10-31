@@ -1,6 +1,14 @@
 [
   {
     "date": "2026-10-31",
+    "title": "Tie-dye planner",
+    "post": "tie-dye-planner",
+    "items": [
+      "Added a tie-dye planner, with a preview, dye map, mixing amounts and a printable PDF"
+    ]
+  },
+  {
+    "date": "2026-10-31",
     "title": "Complete cross-stitch and needlepoint projects",
     "post": "complete-cross-stitch-and-needlepoint-projects",
     "items": [

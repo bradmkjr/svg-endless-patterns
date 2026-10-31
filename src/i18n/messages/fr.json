@@ -17,7 +17,8 @@
     "note": "Tout ce que vous créez ici est gratuit à télécharger et à utiliser. Vérifiez les mesures avant de couper : les chiffres sont fournis tels quels, sans garantie.",
     "draft": "Cette traduction est un premier jet. Les mesures sont en pouces et en yards.",
     "blog": "Blog",
-    "changelog": "Nouveautés"
+    "changelog": "Nouveautés",
+    "acknowledgements": "Remerciements"
   },
   "notFound": {
     "title": "Cette page n'existe pas",
@@ -250,6 +251,12 @@
         "text": "Faites pivoter une tuile simple sur une grille pour créer un motif continu d'arcs, de lignes ou de triangles.",
         "output": "Raccord continu en SVG et PNG, et PDF à imprimer.",
         "explore": "Créer un motif"
+      },
+      "tieDye": {
+        "title": "Tie-dye",
+        "text": "Prévisualisez un pliage en spirale, en cible ou en accordéon dans vos couleurs.",
+        "output": "Schéma de pliage, plan des teintures, quantités, étapes imprimables et aperçu SVG ou PNG.",
+        "explore": "Préparer un tie-dye"
       }
     },
     "seeAllType": "Tout voir dans {name}"
@@ -273,7 +280,7 @@
     "stitch1": "Votre échantillon de mailles et de rangs décide de tout. Le nombre de départ est votre largeur multipliée par vos mailles au pouce, arrondi au motif entier le plus proche, et les rangs sont arrondis au supérieur. Les échantillons de départ sont des valeurs courantes : mesurez le vôtre.",
     "stitch2": "Le fil est une estimation approximative, fondée sur une règle empirique de la quantité utilisée par une maille de cette taille, plus 10 %. La fibre et la tension la font beaucoup varier : prévoyez-en plus.",
     "dataH": "Vos données",
-    "data": "Votre modèle est généré dans votre navigateur et n'est ni envoyé ni stocké. Vos réglages se trouvent uniquement dans l'adresse de la page, ce qui permet de partager un lien.",
+    "data": "Votre motif est généré dans votre navigateur et n'est envoyé nulle part. La plupart des réglages sont dans l'adresse de la page, ce qui permet de partager un lien. Les graines et les palettes enregistrées restent dans le stockage local de ce navigateur.",
     "designsH": "Les modèles",
     "designs": "Les blocs sont dessinés à partir de la géométrie et portent des noms traditionnels. La disposition d'un même nom peut varier selon les sources.",
     "languageH": "À propos de cette traduction",

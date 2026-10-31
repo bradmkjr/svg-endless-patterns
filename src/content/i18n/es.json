@@ -1,5 +1,27 @@
 {
   "posts": {
+    "tie-dye-planner": {
+      "title": "Planifica un tie-dye antes de tomar el tinte",
+      "summary": "Previsualiza un plegado en espiral, diana o acordeón con tus colores y obtén los pliegues, un mapa de tintes, las cantidades y los pasos imprimibles.",
+      "blocks": [
+        "El nuevo [planificador de tie-dye](/tie-dye/) muestra un diseño con tus colores y te dice cómo plegarlo y cuánto tinte mezclar.",
+        "Muestras para empezar",
+        [
+          "Una espiral de seis cuñas",
+          "Una diana de ocho anillos con dos tintes",
+          "Los pliegues y el mapa de tintes de un acordeón"
+        ],
+        "Qué obtienes",
+        [
+          "Plegados en espiral, diana y acordeón con hasta cuatro tintes",
+          "Una vista previa en SVG o PNG y un diagrama de plegado con un mapa de dónde va cada tinte",
+          "Cantidades de agua, polvo y urea para hasta 12 camisetas de adulto",
+          "Un PDF imprimible con las notas de seguridad y cada paso del remojo al lavado"
+        ],
+        "Una vista previa, no una promesa",
+        "El tinte real se extiende distinto cada vez, así que toma la imagen como guía. Las cantidades son estimaciones a escala de [las instrucciones publicadas por Dharma Trading](https://www.dharmatrading.com/blogs/t/tie-dye-instructions), y la etiqueta de tu tinte tiene prioridad."
+      ]
+    },
     "complete-cross-stitch-and-needlepoint-projects": {
       "title": "Punto de cruz y cañamazo, ahora proyectos completos",
       "summary": "El cañamazo tiene su propio creador, y ambas herramientas dan todo para una pieza cuadrada terminada: corte exacto, orden de bordado, hilo por color, acabado y gráficos repartidos en hojas.",
@@ -367,6 +389,12 @@
     }
   },
   "changelog": {
+    "Tie-dye planner": {
+      "title": "Planificador de tie-dye",
+      "items": [
+        "Se añadió un planificador de tie-dye, con vista previa, mapa de tintes, cantidades y PDF imprimible"
+      ]
+    },
     "Complete cross-stitch and needlepoint projects": {
       "title": "Proyectos completos de punto de cruz y cañamazo",
       "items": [

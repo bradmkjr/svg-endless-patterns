@@ -10,6 +10,7 @@ import { parseStainedGlassState, serializeStainedGlassState } from "./stainedGla
 import { parseTessellationState, serializeTessellationState } from "./tessellationState";
 import { allThumbs } from "./thumbnails";
 import { optionHref, optionLabel, readSeed, TOOL_OPTIONS, withOption, type ToolId } from "./toolOptions";
+import { parseTieDyeState, serializeTieDyeState } from "./tieDyeState";
 import { parseTruchetState, serializeTruchetState } from "./truchetState";
 
 const TOOLS = Object.keys(TOOL_OPTIONS) as ToolId[];
@@ -23,6 +24,7 @@ const ROUND_TRIP: Record<ToolId, (params: URLSearchParams) => string> = {
   stainedGlass: (p) => serializeStainedGlassState(parseStainedGlassState(p)),
   crossStitch: (p) => serializeCrossStitchState(parseCrossStitchState(p)),
   needlepoint: (p) => serializeNeedlepointState(parseNeedlepointState(p)),
+  tieDye: (p) => serializeTieDyeState(parseTieDyeState(p)),
   mandala: (p) => serializeMandalaState(parseMandalaState(p)),
 };
 

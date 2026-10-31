@@ -1,5 +1,68 @@
 [
   {
+    "slug": "tie-dye-planner",
+    "title": "Plan a tie-dye before you pick up the dye",
+    "date": "2026-10-31",
+    "summary": "Preview a spiral, bullseye or accordion fold in your colors, then get the folds, a dye map, mixing amounts and printable steps.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The new [tie-dye planner](/tie-dye/) previews a design in your colors, and tells you how to fold it and how much dye to mix."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "tieDye",
+            "slug": "",
+            "query": "",
+            "view": "art",
+            "caption": "A six-wedge spiral"
+          },
+          {
+            "kind": "tieDye",
+            "slug": "",
+            "query": "t=bullseye&b=8&k=6a2c9c-14a3a8",
+            "view": "art",
+            "caption": "An eight-ring bullseye in two dyes"
+          },
+          {
+            "kind": "tieDye",
+            "slug": "",
+            "query": "t=accordion&k=1b3f8b-d94f30",
+            "view": "guide",
+            "caption": "The folds and dye map for an accordion"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Spiral, bullseye and accordion folds with up to four dyes",
+          "A preview as SVG or PNG, and a fold diagram with a map of where each dye goes",
+          "Water, powder and urea amounts for up to 12 adult T-shirts",
+          "A printable PDF with the safety notes and every step from soak to wash"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "A preview, not a promise"
+      },
+      {
+        "type": "paragraph",
+        "text": "Real dye spreads differently every time, so treat the picture as a guide. The amounts are estimates scaled from [Dharma Trading's published instructions](https://www.dharmatrading.com/blogs/t/tie-dye-instructions), and your dye's label comes first."
+      }
+    ]
+  },
+  {
     "slug": "complete-cross-stitch-and-needlepoint-projects",
     "title": "Cross stitch and needlepoint, now complete projects",
     "date": "2026-10-31",

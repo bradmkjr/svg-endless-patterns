@@ -17,7 +17,8 @@
     "note": "Todo lo que crees aquí se puede descargar y usar gratis. Comprueba las medidas antes de cortar: las cifras se ofrecen tal cual, sin garantía.",
     "draft": "Esta traducción es un primer borrador. Las medidas están en pulgadas y yardas.",
     "blog": "Blog",
-    "changelog": "Novedades"
+    "changelog": "Novedades",
+    "acknowledgements": "Agradecimientos"
   },
   "notFound": {
     "title": "Esta página no existe",
@@ -250,6 +251,12 @@
         "text": "Gira un azulejo sencillo sobre una cuadrícula para crear un patrón continuo de arcos, líneas o triángulos.",
         "output": "Repetición continua en SVG y PNG, y PDF imprimible.",
         "explore": "Crear un patrón"
+      },
+      "tieDye": {
+        "title": "Tie-dye",
+        "text": "Previsualiza un plegado en espiral, diana o acordeón con tus colores.",
+        "output": "Diagrama de plegado, mapa de tintes, cantidades, pasos imprimibles y vista previa en SVG o PNG.",
+        "explore": "Planifica un tie-dye"
       }
     },
     "seeAllType": "Ver todo en {name}"
@@ -273,7 +280,7 @@
     "stitch1": "Tu muestra de puntos y vueltas lo decide todo. La cifra inicial es tu ancho por tus puntos por pulgada, redondeada a la repetición completa más cercana, y las vueltas se redondean al alza. Las muestras iniciales de cada grosor son valores habituales, así que mide tu propia muestra.",
     "stitch2": "El hilo es una estimación aproximada, basada en una regla práctica de cuánto hilo usa un punto de ese tamaño, más un 10 %. La fibra y la tensión lo cambian mucho; compra de más.",
     "dataH": "Tus datos",
-    "data": "Tu diseño se genera en tu navegador y no se envía ni se guarda en ningún sitio. Tus ajustes solo están en la dirección de la página, y por eso funcionan los enlaces.",
+    "data": "Tu diseño se genera en tu navegador y no se envía a ningún sitio. La mayoría de los ajustes están en la dirección de la página, y por eso funcionan los enlaces. Las semillas y las paletas que guardas se quedan en el almacenamiento local de este navegador.",
     "designsH": "Los diseños",
     "designs": "Los bloques se dibujan a partir de la geometría y usan nombres tradicionales. La disposición de un mismo nombre puede variar según la fuente.",
     "languageH": "Sobre esta traducción",

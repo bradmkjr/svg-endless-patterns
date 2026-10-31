@@ -17,7 +17,8 @@
     "note": "Tudo o que você cria aqui pode ser baixado e usado de graça. Confira as medidas antes de cortar: os números são fornecidos como estão, sem garantia.",
     "draft": "Esta tradução é um primeiro rascunho. As medidas estão em polegadas e jardas.",
     "blog": "Blog",
-    "changelog": "Novidades"
+    "changelog": "Novidades",
+    "acknowledgements": "Agradecimentos"
   },
   "notFound": {
     "title": "Esta página não existe",
@@ -250,6 +251,12 @@
         "text": "Gire um azulejo simples em uma grade para criar um padrão contínuo de arcos, linhas ou triângulos.",
         "output": "Repetição contínua em SVG e PNG e PDF para imprimir.",
         "explore": "Criar um padrão"
+      },
+      "tieDye": {
+        "title": "Tie-dye",
+        "text": "Veja uma dobra em espiral, alvo ou sanfona nas suas cores.",
+        "output": "Diagrama de dobra, mapa de tintas, quantidades, passos para imprimir e prévia em SVG ou PNG.",
+        "explore": "Planejar um tie-dye"
       }
     },
     "seeAllType": "Ver tudo em {name}"
@@ -273,7 +280,7 @@
     "stitch1": "Sua amostra de pontos e carreiras decide tudo. O número inicial é a sua largura vezes os pontos por polegada, arredondado para a repetição inteira mais próxima, e as carreiras são arredondadas para cima. As amostras iniciais são valores comuns, então meça a sua.",
     "stitch2": "O fio é uma estimativa aproximada, baseada em uma regra prática de quanto fio um ponto desse tamanho usa, mais 10%. A fibra e a tensão mudam muito esse valor; compre a mais.",
     "dataH": "Seus dados",
-    "data": "Seu modelo é gerado no seu navegador e não é enviado nem guardado em lugar nenhum. Suas escolhas ficam só no endereço da página, e é por isso que o link de compartilhamento funciona.",
+    "data": "Seu desenho é gerado no navegador e não é enviado a lugar nenhum. A maioria das configurações fica no endereço da página, e é por isso que os links funcionam. As sementes e as paletas salvas ficam no armazenamento local deste navegador.",
     "designsH": "Os modelos",
     "designs": "Os blocos são desenhados a partir da geometria e usam nomes tradicionais. O layout de um mesmo nome pode variar conforme a fonte.",
     "languageH": "Sobre esta tradução",

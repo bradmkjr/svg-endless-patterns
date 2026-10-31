@@ -17,7 +17,8 @@
     "note": "Alles, was du hier erstellst, kannst du kostenlos herunterladen und verwenden. Prüfe die Maße vor dem Zuschneiden: Alle Angaben ohne Gewähr.",
     "draft": "Diese Übersetzung ist ein erster Entwurf. Maße sind in Zoll und Yards angegeben.",
     "blog": "Blog",
-    "changelog": "Änderungen"
+    "changelog": "Änderungen",
+    "acknowledgements": "Danksagung"
   },
   "notFound": {
     "title": "Diese Seite gibt es nicht",
@@ -250,6 +251,12 @@
         "text": "Drehe eine einfache Kachel auf einem Raster, um ein nahtloses Muster aus Bögen, Linien oder Dreiecken zu erstellen.",
         "output": "Nahtloser Rapport als SVG und PNG sowie druckbares PDF.",
         "explore": "Muster erstellen"
+      },
+      "tieDye": {
+        "title": "Batik",
+        "text": "Sehen Sie eine Spirale, Zielscheibe oder Ziehharmonika in Ihren Farben.",
+        "output": "Faltdiagramm, Farbplan, Mischmengen, druckbare Schritte und SVG- oder PNG-Vorschau.",
+        "explore": "Batik planen"
       }
     },
     "seeAllType": "Alles in {name} ansehen"
@@ -273,7 +280,7 @@
     "stitch1": "Deine Maschenprobe entscheidet alles. Die Startzahl ist deine Breite mal Maschen pro Zoll, gerundet auf den nächsten ganzen Rapport, und Reihen werden aufgerundet. Die Startwerte je Garnstärke sind typische Werte, miss also deine eigene Probe aus.",
     "stitch2": "Der Garnbedarf ist eine grobe Schätzung nach einer Faustregel für den Verbrauch einer Masche dieser Größe, plus 10 %. Faser und Spannung verändern ihn stark, kaufe also lieber mehr.",
     "dataH": "Deine Daten",
-    "data": "Dein Muster entsteht in deinem Browser und wird nirgends gesendet oder gespeichert. Deine Einstellungen stehen nur in der Seitenadresse, deshalb funktionieren geteilte Links.",
+    "data": "Ihr Muster wird in Ihrem Browser erzeugt und nirgendwohin gesendet. Die meisten Einstellungen stehen in der Adresse der Seite, deshalb funktionieren geteilte Links. Startwerte und gespeicherte Paletten bleiben im lokalen Speicher dieses Browsers.",
     "designsH": "Die Muster",
     "designs": "Blöcke werden aus der Geometrie gezeichnet und tragen traditionelle Namen. Der Aufbau kann je nach Quelle unter demselben Namen abweichen.",
     "languageH": "Zu dieser Übersetzung",

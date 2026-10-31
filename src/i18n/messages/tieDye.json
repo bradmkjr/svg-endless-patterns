@@ -1,0 +1,297 @@
+{
+  "en": {
+    "metaTitle": "Tie-Dye Pattern Maker: Fold Guide, Dye Amounts and PDF",
+    "metaDesc": "Preview a spiral, bullseye or accordion tie-dye in your colors, then get the folds, a dye map, mixing amounts and printable steps.",
+    "h1": "Tie-dye",
+    "lede": "Preview a tie-dye in your colors, then get the folds, a map of where each dye goes, mixing amounts and printable steps.",
+    "views": {
+      "art": "Preview",
+      "guide": "Folds and dye map"
+    },
+    "viewNotes": {
+      "art": "A guide to the look of the opened cloth.",
+      "guide": "How to fold and tie, and which dye goes where."
+    },
+    "downloadPdf": "Download printable PDF",
+    "design": "Design",
+    "technique": "Fold",
+    "techniques": {
+      "spiral": "Spiral",
+      "bullseye": "Bullseye",
+      "accordion": "Accordion and boards"
+    },
+    "bands": {
+      "spiral": "Wedges",
+      "bullseye": "Rings",
+      "accordion": "Pleat detail"
+    },
+    "seed": "Seed",
+    "newSeed": "New seed",
+    "colors": "Colors",
+    "dye": "Dye {letter}",
+    "fabric": "Fabric",
+    "add": "Add dye",
+    "remove": "Remove dye",
+    "amounts": "Amounts",
+    "garments": "Adult T-shirts",
+    "strength": "Dye strength, from the label",
+    "strengths": {
+      "2": "Plain: 2 tsp per cup",
+      "4": "One asterisk: 4 tsp per cup",
+      "8": "Two asterisks: 8 tsp per cup"
+    },
+    "previewTitle": "A preview, not a promise.",
+    "previewText": "Real dye spreads differently every time, so your cloth will look like this design's cousin rather than its twin.",
+    "dyeColumn": "Dye",
+    "waterColumn": "Water",
+    "powderColumn": "Powder",
+    "ureaColumn": "Urea",
+    "ounces": "{n} oz",
+    "teaspoons": "{n} tsp",
+    "tablespoons": "{n} Tbsp",
+    "mixHeading": "Mixing amounts for {n} adult T-shirts",
+    "mixNote": "Estimate at {strength} tsp of powder per cup of water. Use the amount on your dye's label if it differs.",
+    "source": "Amounts are for fiber-reactive (Procion MX) dye on cotton, scaled from Dharma Trading's tie-dye instructions.",
+    "safetyHeading": "Safety first",
+    "foldHeading": "Fold and tie",
+    "soakHeading": "Soak",
+    "applyHeading": "Apply the dye",
+    "cureHeading": "Cure and wash"
+  },
+  "es": {
+    "metaTitle": "Generador de tie-dye: guía de plegado, cantidades de tinte y PDF",
+    "metaDesc": "Previsualiza un tie-dye en espiral, diana o acordeón con tus colores y obtén los pliegues, un mapa de tintes, las cantidades y los pasos imprimibles.",
+    "h1": "Tie-dye",
+    "lede": "Previsualiza un tie-dye con tus colores y obtén los pliegues, un mapa de dónde va cada tinte, las cantidades y los pasos imprimibles.",
+    "views": {
+      "art": "Vista previa",
+      "guide": "Pliegues y mapa de tintes"
+    },
+    "viewNotes": {
+      "art": "Una guía del aspecto de la tela abierta.",
+      "guide": "Cómo plegar y atar, y qué tinte va en cada zona."
+    },
+    "downloadPdf": "Descargar PDF imprimible",
+    "design": "Diseño",
+    "technique": "Plegado",
+    "techniques": {
+      "spiral": "Espiral",
+      "bullseye": "Diana",
+      "accordion": "Acordeón con tablas"
+    },
+    "bands": {
+      "spiral": "Cuñas",
+      "bullseye": "Anillos",
+      "accordion": "Detalle de pliegues"
+    },
+    "seed": "Semilla",
+    "newSeed": "Nueva semilla",
+    "colors": "Colores",
+    "dye": "Tinte {letter}",
+    "fabric": "Tela",
+    "add": "Añadir tinte",
+    "remove": "Quitar tinte",
+    "amounts": "Cantidades",
+    "garments": "Camisetas de adulto",
+    "strength": "Concentración, según la etiqueta",
+    "strengths": {
+      "2": "Normal: 2 cdta por taza",
+      "4": "Un asterisco: 4 cdta por taza",
+      "8": "Dos asteriscos: 8 cdta por taza"
+    },
+    "previewTitle": "Una vista previa, no una promesa.",
+    "previewText": "El tinte real se extiende distinto cada vez, así que tu tela será prima de este diseño, no su gemela.",
+    "dyeColumn": "Tinte",
+    "waterColumn": "Agua",
+    "powderColumn": "Polvo",
+    "ureaColumn": "Urea",
+    "ounces": "{n} oz",
+    "teaspoons": "{n} cdta",
+    "tablespoons": "{n} cda",
+    "mixHeading": "Cantidades para {n} camisetas de adulto",
+    "mixNote": "Estimación con {strength} cdta de polvo por taza de agua. Usa la cantidad de la etiqueta de tu tinte si es distinta.",
+    "source": "Las cantidades son para tinte reactivo (Procion MX) sobre algodón, a escala de las instrucciones de Dharma Trading.",
+    "safetyHeading": "Primero, la seguridad",
+    "foldHeading": "Pliega y ata",
+    "soakHeading": "Remoja",
+    "applyHeading": "Aplica el tinte",
+    "cureHeading": "Deja reposar y lava"
+  },
+  "fr": {
+    "metaTitle": "Créateur de tie-dye : pliages, quantités de teinture et PDF",
+    "metaDesc": "Prévisualisez un tie-dye en spirale, en cible ou en accordéon dans vos couleurs, avec pliages, plan des teintures, quantités et étapes imprimables.",
+    "h1": "Tie-dye",
+    "lede": "Prévisualisez un tie-dye dans vos couleurs, avec les pliages, le plan des teintures, les quantités et des étapes imprimables.",
+    "views": {
+      "art": "Aperçu",
+      "guide": "Pliages et plan"
+    },
+    "viewNotes": {
+      "art": "Un aperçu du tissu déplié.",
+      "guide": "Comment plier et attacher, et où va chaque teinture."
+    },
+    "downloadPdf": "Télécharger le PDF imprimable",
+    "design": "Motif",
+    "technique": "Pliage",
+    "techniques": {
+      "spiral": "Spirale",
+      "bullseye": "Cible",
+      "accordion": "Accordéon et planches"
+    },
+    "bands": {
+      "spiral": "Parts",
+      "bullseye": "Anneaux",
+      "accordion": "Finesse des plis"
+    },
+    "seed": "Graine",
+    "newSeed": "Nouvelle graine",
+    "colors": "Couleurs",
+    "dye": "Teinture {letter}",
+    "fabric": "Tissu",
+    "add": "Ajouter une teinture",
+    "remove": "Retirer une teinture",
+    "amounts": "Quantités",
+    "garments": "T-shirts adulte",
+    "strength": "Dosage, selon l'étiquette",
+    "strengths": {
+      "2": "Normal : 2 c. à café par tasse",
+      "4": "Un astérisque : 4 c. à café par tasse",
+      "8": "Deux astérisques : 8 c. à café par tasse"
+    },
+    "previewTitle": "Un aperçu, pas une promesse.",
+    "previewText": "La vraie teinture se diffuse différemment à chaque fois : votre tissu sera un cousin de ce motif, pas son jumeau.",
+    "dyeColumn": "Teinture",
+    "waterColumn": "Eau",
+    "powderColumn": "Poudre",
+    "ureaColumn": "Urée",
+    "ounces": "{n} oz",
+    "teaspoons": "{n} c. à café",
+    "tablespoons": "{n} c. à soupe",
+    "mixHeading": "Quantités pour {n} t-shirts adulte",
+    "mixNote": "Estimation à {strength} c. à café de poudre par tasse d'eau. Suivez l'étiquette de votre teinture si elle diffère.",
+    "source": "Les quantités valent pour une teinture réactive (Procion MX) sur coton, d'après les instructions de Dharma Trading.",
+    "safetyHeading": "La sécurité d'abord",
+    "foldHeading": "Pliez et attachez",
+    "soakHeading": "Faites tremper",
+    "applyHeading": "Appliquez la teinture",
+    "cureHeading": "Laissez agir et lavez"
+  },
+  "de": {
+    "metaTitle": "Batikmuster erstellen: Faltanleitung, Farbmengen und PDF",
+    "metaDesc": "Sehen Sie ein Batikmuster als Spirale, Zielscheibe oder Ziehharmonika in Ihren Farben und erhalten Sie Faltung, Farbplan, Mengen und druckbare Schritte.",
+    "h1": "Batik",
+    "lede": "Sehen Sie ein Batikmuster in Ihren Farben und erhalten Sie Faltung, Farbplan, Mischmengen und druckbare Schritte.",
+    "views": {
+      "art": "Vorschau",
+      "guide": "Faltung und Farbplan"
+    },
+    "viewNotes": {
+      "art": "Ein Anhaltspunkt für den geöffneten Stoff.",
+      "guide": "Wie Sie falten und binden und welche Farbe wohin kommt."
+    },
+    "downloadPdf": "Druckbares PDF herunterladen",
+    "design": "Muster",
+    "technique": "Faltung",
+    "techniques": {
+      "spiral": "Spirale",
+      "bullseye": "Zielscheibe",
+      "accordion": "Ziehharmonika mit Brettern"
+    },
+    "bands": {
+      "spiral": "Segmente",
+      "bullseye": "Ringe",
+      "accordion": "Faltendichte"
+    },
+    "seed": "Startwert",
+    "newSeed": "Neuer Startwert",
+    "colors": "Farben",
+    "dye": "Farbe {letter}",
+    "fabric": "Stoff",
+    "add": "Farbe hinzufügen",
+    "remove": "Farbe entfernen",
+    "amounts": "Mengen",
+    "garments": "Erwachsenen-T-Shirts",
+    "strength": "Farbstärke laut Etikett",
+    "strengths": {
+      "2": "Normal: 2 TL pro Tasse",
+      "4": "Ein Sternchen: 4 TL pro Tasse",
+      "8": "Zwei Sternchen: 8 TL pro Tasse"
+    },
+    "previewTitle": "Eine Vorschau, kein Versprechen.",
+    "previewText": "Echte Farbe verläuft jedes Mal anders, Ihr Stoff wird diesem Muster also ähneln, ihm aber nicht gleichen.",
+    "dyeColumn": "Farbe",
+    "waterColumn": "Wasser",
+    "powderColumn": "Pulver",
+    "ureaColumn": "Harnstoff",
+    "ounces": "{n} oz",
+    "teaspoons": "{n} TL",
+    "tablespoons": "{n} EL",
+    "mixHeading": "Mengen für {n} Erwachsenen-T-Shirts",
+    "mixNote": "Schätzung mit {strength} TL Pulver pro Tasse Wasser. Halten Sie sich an das Etikett Ihrer Farbe, falls es abweicht.",
+    "source": "Die Mengen gelten für Reaktivfarbe (Procion MX) auf Baumwolle, hochgerechnet aus der Anleitung von Dharma Trading.",
+    "safetyHeading": "Sicherheit zuerst",
+    "foldHeading": "Falten und binden",
+    "soakHeading": "Einweichen",
+    "applyHeading": "Farbe auftragen",
+    "cureHeading": "Einwirken lassen und waschen"
+  },
+  "pt": {
+    "metaTitle": "Gerador de tie-dye: guia de dobra, quantidades de tinta e PDF",
+    "metaDesc": "Veja um tie-dye em espiral, alvo ou sanfona nas suas cores e receba as dobras, um mapa de tintas, as quantidades e os passos para imprimir.",
+    "h1": "Tie-dye",
+    "lede": "Veja um tie-dye nas suas cores e receba as dobras, um mapa de onde vai cada tinta, as quantidades e os passos para imprimir.",
+    "views": {
+      "art": "Prévia",
+      "guide": "Dobras e mapa de tintas"
+    },
+    "viewNotes": {
+      "art": "Uma ideia do tecido aberto.",
+      "guide": "Como dobrar e amarrar, e qual tinta vai em cada área."
+    },
+    "downloadPdf": "Baixar PDF para imprimir",
+    "design": "Desenho",
+    "technique": "Dobra",
+    "techniques": {
+      "spiral": "Espiral",
+      "bullseye": "Alvo",
+      "accordion": "Sanfona com tábuas"
+    },
+    "bands": {
+      "spiral": "Fatias",
+      "bullseye": "Anéis",
+      "accordion": "Detalhe das pregas"
+    },
+    "seed": "Semente",
+    "newSeed": "Nova semente",
+    "colors": "Cores",
+    "dye": "Tinta {letter}",
+    "fabric": "Tecido",
+    "add": "Adicionar tinta",
+    "remove": "Remover tinta",
+    "amounts": "Quantidades",
+    "garments": "Camisetas de adulto",
+    "strength": "Concentração, segundo o rótulo",
+    "strengths": {
+      "2": "Normal: 2 col. de chá por xícara",
+      "4": "Um asterisco: 4 col. de chá por xícara",
+      "8": "Dois asteriscos: 8 col. de chá por xícara"
+    },
+    "previewTitle": "Uma prévia, não uma promessa.",
+    "previewText": "A tinta real se espalha de um jeito diferente a cada vez, então seu tecido será primo deste desenho, não gêmeo.",
+    "dyeColumn": "Tinta",
+    "waterColumn": "Água",
+    "powderColumn": "Pó",
+    "ureaColumn": "Ureia",
+    "ounces": "{n} oz",
+    "teaspoons": "{n} col. de chá",
+    "tablespoons": "{n} col. de sopa",
+    "mixHeading": "Quantidades para {n} camisetas de adulto",
+    "mixNote": "Estimativa com {strength} col. de chá de pó por xícara de água. Use a quantidade do rótulo da sua tinta, se for diferente.",
+    "source": "As quantidades são para tinta reativa (Procion MX) em algodão, calculadas a partir das instruções da Dharma Trading.",
+    "safetyHeading": "Segurança em primeiro lugar",
+    "foldHeading": "Dobre e amarre",
+    "soakHeading": "Deixe de molho",
+    "applyHeading": "Aplique a tinta",
+    "cureHeading": "Deixe curar e lave"
+  }
+}

@@ -5,6 +5,7 @@ import glass from "@/i18n/messages/stainedGlass.json";
 import mandala from "@/i18n/messages/mandala.json";
 import needlepoint from "@/i18n/messages/needlepoint.json";
 import sashiko from "@/i18n/messages/sashiko.json";
+import tieDye from "@/i18n/messages/tieDye.json";
 import truchet from "@/i18n/messages/truchet.json";
 import { PATTERN_OPTIONS } from "./celticKnotState";
 import { MOTIFS as STITCH_MOTIFS } from "./crossStitchState";
@@ -17,6 +18,7 @@ import { GLASS_LAYOUTS } from "./stainedGlassState";
 import { publicPath } from "./site";
 import { MOTIFS as NEEDLEPOINT_DESIGNS } from "./needlepointState";
 import { GROUPS } from "./tessellationState";
+import { TECHNIQUE_OPTIONS } from "./tieDyeState";
 import { STYLE_OPTIONS } from "./truchetState";
 
 /**
@@ -24,7 +26,7 @@ import { STYLE_OPTIONS } from "./truchetState";
  * the choice comes from the path, and every other setting stays in the query string.
  */
 
-export type ToolId = "truchet" | "tessellation" | "girih" | "sashiko" | "celticKnot" | "stainedGlass" | "crossStitch" | "needlepoint" | "mandala";
+export type ToolId = "truchet" | "tessellation" | "girih" | "sashiko" | "celticKnot" | "stainedGlass" | "crossStitch" | "needlepoint" | "mandala" | "tieDye";
 type ToolOption = { slug: string; value: string };
 type Tool = { path: string; param: string; options: ToolOption[] };
 
@@ -40,6 +42,7 @@ export const TOOL_OPTIONS: Record<ToolId, Tool> = {
   stainedGlass: { path: "/stained-glass/", param: "l", options: named(GLASS_LAYOUTS) },
   crossStitch: { path: "/cross-stitch/", param: "m", options: named(STITCH_MOTIFS.map((m) => m.id)) },
   needlepoint: { path: "/needlepoint/", param: "m", options: named(NEEDLEPOINT_DESIGNS.map((m) => m.id)) },
+  tieDye: { path: "/tie-dye/", param: "t", options: named(TECHNIQUE_OPTIONS) },
   mandala: { path: "/mandalas/", param: "n", options: folds(MANDALA_SYMMETRY) },
 };
 
@@ -135,6 +138,8 @@ export function optionLabel(tool: ToolId, slug: string, locale: Locale, tessella
       return crossStitch[locale].motifs[value as keyof (typeof crossStitch)["en"]["motifs"]];
     case "needlepoint":
       return needlepoint[locale].motifs[value as keyof (typeof needlepoint)["en"]["motifs"]];
+    case "tieDye":
+      return tieDye[locale].techniques[value as keyof (typeof tieDye)["en"]["techniques"]];
     case "mandala":
       return fill(mandala[locale].fold, { n: value });
   }

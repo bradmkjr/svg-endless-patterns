@@ -17,7 +17,8 @@
     "note": "Everything you make here is free to download and use. Check measurements before you cut: figures are provided as-is, with no warranty.",
     "draft": "",
     "blog": "Blog",
-    "changelog": "Changelog"
+    "changelog": "Changelog",
+    "acknowledgements": "Acknowledgements"
   },
   "notFound": {
     "title": "That page isn't here",
@@ -250,6 +251,12 @@
         "text": "Turn one simple tile on a grid to make a seamless pattern of arcs, lines or triangles.",
         "output": "Seamless SVG and PNG repeat, and a printable PDF.",
         "explore": "Make a pattern"
+      },
+      "tieDye": {
+        "title": "Tie-dye",
+        "text": "Preview a spiral, bullseye or accordion fold in your colors.",
+        "output": "Fold diagram, dye map, mixing amounts, printable steps, and an SVG or PNG preview.",
+        "explore": "Plan a tie-dye"
       }
     },
     "seeAllType": "See everything in {name}"
@@ -273,7 +280,7 @@
     "stitch1": "Your stitch and row gauge decide everything. The starting count is your width times your stitches per inch, rounded to the nearest whole pattern repeat, and rows round up the same way. Starting gauges for each yarn weight are typical values, so measure your own swatch.",
     "stitch2": "Yarn is a rough estimate, based on a rule of thumb for how much yarn a stitch of that size uses, plus 10%. Fiber and tension change it a lot, so buy extra. Crochet terms are US.",
     "dataH": "Your data",
-    "data": "Your design is generated in your browser and is not sent or stored anywhere. Your settings live only in the page's address, which is what makes a share link work.",
+    "data": "Your design is generated in your browser and is not sent anywhere. Most settings live in the page's address, which is what makes a share link work. Seeds and the palettes you save stay in this browser's local storage.",
     "designsH": "The designs",
     "designs": "Blocks are drawn from geometry using traditional names. Layouts for the same name can vary between quilters and sources, so yours may differ from one you know.",
     "languageH": "",

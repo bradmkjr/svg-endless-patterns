@@ -191,6 +191,7 @@ export function traceStrands(cols: number, rows: number, breaks: KnotBreak[]): K
     return walls.get(`${x},${y}`) ?? null;
   };
   const used = new Set<number>();
+  // An arc's midpoint, which is the same number whichever way it is walked.
   const arc = (x: number, y: number, dx: number, dy: number) => 2 * x + dx + (2 * y + dy) * (2 * X + 3);
   const loops: KnotStop[][] = [];
 
@@ -209,9 +210,7 @@ export function traceStrands(cols: number, rows: number, breaks: KnotBreak[]): K
           y += dy;
           const wall = wallAt(x, y);
           // The checkerboard: which diagonal is on top flips from one crossing to the next.
-          stops.push({ x, y, dx, dy, wall, over: wall === null && x % 2 === 1 === dx * dy > 0 });
-          // The reverse of this arc must never start another strand.
-          used.add(arc(x, y, -dx, -dy));
+          stops.push({ x, y, dx, dy, wall, over: wall === null && (x % 2 === 1) === (dx * dy > 0) });
           if (wall === "h") dy = -dy;
           if (wall === "v") dx = -dx;
         } while (!(x === x0 && y === y0 && dx === dx0 && dy === dy0));

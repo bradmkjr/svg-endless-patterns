@@ -5,7 +5,12 @@
     "h1": "Celtic knots",
     "lede": "Build an interlaced knot on a grid. Breaks turn a plain plait into a knot, and every strand closes on itself, going over and under in turn.",
     "artAlt": "Generated interlaced knot",
-    "views": { "art": "Color", "cut": "Laser or Cricut", "stencil": "Tattoo stencil", "coloring": "Coloring page" },
+    "views": {
+      "art": "Color",
+      "cut": "Laser or Cricut",
+      "stencil": "Tattoo stencil",
+      "coloring": "Coloring page"
+    },
     "viewNotes": {
       "art": "Your colors, with a ribbon outline.",
       "cut": "Closed, filled shapes with no strokes. There is no background.",
@@ -36,7 +41,11 @@
     "ribbon": "Ribbon width",
     "ribbonNote": "As a percent of half a grid cell.",
     "interlace": "Interlace",
-    "interlaces": { "open": "Woven, open gaps", "tight": "Woven, tight gaps", "off": "Off (merged ribbons)" },
+    "interlaces": {
+      "open": "Woven, open gaps",
+      "tight": "Woven, tight gaps",
+      "off": "Off (merged ribbons)"
+    },
     "colors": "Colors",
     "perStrand": "A different color for each strand, in turn",
     "strandColor": "Color {n}",
@@ -52,9 +61,8 @@
     "guide": "Using these files",
     "strands": "Strands",
     "strand": "Strand",
-    "strandName": "{n}",
     "strandCrossings": "Crossing passes",
-    "strandsNote": "A strand that meets no crossing is a plain ring. Add fewer breaks to link it in."
+    "strandsNote": "A strand that meets no crossing is a plain ring."
   },
   "es": {
     "metaTitle": "Creador de nudos celtas: SVG, plantilla, página para colorear y PDF",
@@ -62,7 +70,12 @@
     "h1": "Nudos celtas",
     "lede": "Construye un nudo entrelazado sobre una cuadrícula. Los cortes convierten una trenza simple en un nudo, y cada hebra se cierra sobre sí misma, pasando por encima y por debajo por turnos.",
     "artAlt": "Nudo entrelazado generado",
-    "views": { "art": "Color", "cut": "Láser o Cricut", "stencil": "Plantilla de tatuaje", "coloring": "Página para colorear" },
+    "views": {
+      "art": "Color",
+      "cut": "Láser o Cricut",
+      "stencil": "Plantilla de tatuaje",
+      "coloring": "Página para colorear"
+    },
     "viewNotes": {
       "art": "Tus colores, con un contorno en la cinta.",
       "cut": "Formas cerradas y rellenas, sin trazos. No hay fondo.",
@@ -93,7 +106,11 @@
     "ribbon": "Ancho de la cinta",
     "ribbonNote": "En porcentaje de media celda de la cuadrícula.",
     "interlace": "Entrelazado",
-    "interlaces": { "open": "Tejido, huecos amplios", "tight": "Tejido, huecos estrechos", "off": "Desactivado (cintas unidas)" },
+    "interlaces": {
+      "open": "Tejido, huecos amplios",
+      "tight": "Tejido, huecos estrechos",
+      "off": "Desactivado (cintas unidas)"
+    },
     "colors": "Colores",
     "perStrand": "Un color distinto para cada hebra, por turnos",
     "strandColor": "Color {n}",
@@ -109,9 +126,8 @@
     "guide": "Cómo usar estos archivos",
     "strands": "Hebras",
     "strand": "Hebra",
-    "strandName": "{n}",
     "strandCrossings": "Pasos por cruces",
-    "strandsNote": "Una hebra sin cruces es un simple anillo. Añade menos cortes para enlazarla."
+    "strandsNote": "Una hebra sin cruces es un simple anillo."
   },
   "fr": {
     "metaTitle": "Créateur de nœuds celtiques : SVG, pochoir, coloriage et PDF",
@@ -119,7 +135,12 @@
     "h1": "Nœuds celtiques",
     "lede": "Construisez un nœud entrelacé sur une grille. Les coupures transforment une simple tresse en nœud, et chaque brin se referme sur lui-même en passant tour à tour dessus et dessous.",
     "artAlt": "Nœud entrelacé généré",
-    "views": { "art": "Couleur", "cut": "Laser ou Cricut", "stencil": "Pochoir de tatouage", "coloring": "Page à colorier" },
+    "views": {
+      "art": "Couleur",
+      "cut": "Laser ou Cricut",
+      "stencil": "Pochoir de tatouage",
+      "coloring": "Page à colorier"
+    },
     "viewNotes": {
       "art": "Vos couleurs, avec un contour sur le ruban.",
       "cut": "Formes fermées et remplies, sans traits. Il n'y a pas de fond.",
@@ -150,7 +171,11 @@
     "ribbon": "Largeur du ruban",
     "ribbonNote": "En pourcentage d'une demi-case de la grille.",
     "interlace": "Entrelacs",
-    "interlaces": { "open": "Tissé, espaces larges", "tight": "Tissé, espaces fins", "off": "Désactivé (rubans fusionnés)" },
+    "interlaces": {
+      "open": "Tissé, espaces larges",
+      "tight": "Tissé, espaces fins",
+      "off": "Désactivé (rubans fusionnés)"
+    },
     "colors": "Couleurs",
     "perStrand": "Une couleur différente pour chaque brin, à tour de rôle",
     "strandColor": "Couleur {n}",
@@ -166,9 +191,8 @@
     "guide": "Utiliser ces fichiers",
     "strands": "Brins",
     "strand": "Brin",
-    "strandName": "{n}",
     "strandCrossings": "Passages aux croisements",
-    "strandsNote": "Un brin sans croisement est un simple anneau. Ajoutez moins de coupures pour le relier."
+    "strandsNote": "Un brin sans croisement est un simple anneau."
   },
   "de": {
     "metaTitle": "Keltische Knoten erstellen: SVG, Schablone, Ausmalbild und PDF",
@@ -176,7 +200,12 @@
     "h1": "Keltische Knoten",
     "lede": "Baue einen Flechtknoten auf einem Raster. Unterbrechungen machen aus einem einfachen Geflecht einen Knoten, und jeder Strang schließt sich und läuft abwechselnd oben und unten.",
     "artAlt": "Erzeugter Flechtknoten",
-    "views": { "art": "Farbe", "cut": "Laser oder Cricut", "stencil": "Tattoo-Schablone", "coloring": "Ausmalbild" },
+    "views": {
+      "art": "Farbe",
+      "cut": "Laser oder Cricut",
+      "stencil": "Tattoo-Schablone",
+      "coloring": "Ausmalbild"
+    },
     "viewNotes": {
       "art": "Deine Farben, mit einem Umriss am Band.",
       "cut": "Geschlossene, gefüllte Formen ohne Linien. Es gibt keinen Hintergrund.",
@@ -207,7 +236,11 @@
     "ribbon": "Bandbreite",
     "ribbonNote": "In Prozent einer halben Rasterzelle.",
     "interlace": "Verflechtung",
-    "interlaces": { "open": "Geflochten, weite Lücken", "tight": "Geflochten, enge Lücken", "off": "Aus (verschmolzene Bänder)" },
+    "interlaces": {
+      "open": "Geflochten, weite Lücken",
+      "tight": "Geflochten, enge Lücken",
+      "off": "Aus (verschmolzene Bänder)"
+    },
     "colors": "Farben",
     "perStrand": "Reihum eine andere Farbe für jeden Strang",
     "strandColor": "Farbe {n}",
@@ -223,9 +256,8 @@
     "guide": "So nutzt du diese Dateien",
     "strands": "Stränge",
     "strand": "Strang",
-    "strandName": "{n}",
     "strandCrossings": "Durchgänge an Kreuzungen",
-    "strandsNote": "Ein Strang ohne Kreuzung ist ein einfacher Ring. Mit weniger Unterbrechungen wird er eingebunden."
+    "strandsNote": "Ein Strang ohne Kreuzung ist ein einfacher Ring."
   },
   "pt": {
     "metaTitle": "Criador de nós celtas: SVG, estêncil, página para colorir e PDF",
@@ -233,7 +265,12 @@
     "h1": "Nós celtas",
     "lede": "Monte um nó entrelaçado em uma grade. As quebras transformam uma trança simples em um nó, e cada fio se fecha em si mesmo, passando por cima e por baixo alternadamente.",
     "artAlt": "Nó entrelaçado gerado",
-    "views": { "art": "Cor", "cut": "Laser ou Cricut", "stencil": "Estêncil de tatuagem", "coloring": "Página para colorir" },
+    "views": {
+      "art": "Cor",
+      "cut": "Laser ou Cricut",
+      "stencil": "Estêncil de tatuagem",
+      "coloring": "Página para colorir"
+    },
     "viewNotes": {
       "art": "Suas cores, com um contorno na fita.",
       "cut": "Formas fechadas e preenchidas, sem traços. Não há fundo.",
@@ -264,7 +301,11 @@
     "ribbon": "Largura da fita",
     "ribbonNote": "Em porcentagem de meia célula da grade.",
     "interlace": "Entrelaçado",
-    "interlaces": { "open": "Trançado, vãos largos", "tight": "Trançado, vãos estreitos", "off": "Desligado (fitas unidas)" },
+    "interlaces": {
+      "open": "Trançado, vãos largos",
+      "tight": "Trançado, vãos estreitos",
+      "off": "Desligado (fitas unidas)"
+    },
     "colors": "Cores",
     "perStrand": "Uma cor diferente para cada fio, alternadamente",
     "strandColor": "Cor {n}",
@@ -280,8 +321,7 @@
     "guide": "Como usar estes arquivos",
     "strands": "Fios",
     "strand": "Fio",
-    "strandName": "{n}",
     "strandCrossings": "Passagens por cruzamentos",
-    "strandsNote": "Um fio sem cruzamentos é um anel simples. Adicione menos quebras para ligá-lo."
+    "strandsNote": "Um fio sem cruzamentos é um anel simples."
   }
 }

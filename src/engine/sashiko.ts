@@ -41,7 +41,7 @@ export type Stroke = { kind: "line"; x1: number; y1: number; x2: number; y2: num
 /** One line from node to node, and the stitches on it. */
 export type SashikoRun = { stroke: Stroke; length: number; dashes: Stroke[] };
 
-/** A stitch for every three parts of gap to two: a common proportion to start from, not a rule. */
+/** Gaps two-thirds of a stitch: three parts stitch to two parts gap, a proportion to start from, not a rule. */
 const GAP_RATIO = 2 / 3;
 /** Extra thread for starts, stops and turns. A rough allowance. */
 const THREAD_ALLOWANCE = 1.2;

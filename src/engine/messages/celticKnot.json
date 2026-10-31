@@ -41,7 +41,7 @@
     "stepStencil": "Pochoir : seuls les bords des rubans sont tracés, et ils s'arrêtent avant chaque brin qui passe dessus. C'est un point de départ : demandez à votre tatoueur de vérifier la taille et l'espacement des lignes avant de l'utiliser.",
     "stepColoring": "Page à colorier : contours noirs sur fond blanc, avec une zone fermée pour chaque morceau de ruban.",
     "stepSize": "Les fichiers SVG mesurent {size} pouces sur le plus grand côté. Faites d'abord un essai d'impression ou de découpe, car les rubans fins et les petits espaces peuvent mal passer en petit format.",
-    "pdfTitle": "Noeud celtique",
+    "pdfTitle": "Nœud celtique",
     "pdfInfo": "Grille : {cols} x {rows}. Brins : {strands}. Croisements : {crossings}. Coupures : {breaks}.",
     "pdfColoring": "Page à colorier",
     "pdfStencil": "Pochoir",

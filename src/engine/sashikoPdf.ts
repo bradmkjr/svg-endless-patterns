@@ -1,6 +1,6 @@
 import { appendBezierCurve, clip, closePath, endPath, lineTo, moveTo, PDFDocument, popGraphicsState, pushGraphicsState, rectangle, rgb, setLineWidth, setStrokingColor, StandardFonts, stroke, type PDFOperator, type PDFPage } from "pdf-lib";
 import { Writer } from "./pdf";
-import { generateSashiko, pointAt, sashikoRuns, sashikoSheets, sashikoText, SHEET_HEIGHT, SHEET_WIDTH, type SashikoRequest, type SashikoSheet, type Stroke } from "./sashiko";
+import { generateSashiko, pointAt, sashikoRuns, sashikoSheets, sashikoText, SHEET_HEIGHT, SHEET_OVERLAP, SHEET_WIDTH, type SashikoRequest, type SashikoSheet, type Stroke } from "./sashiko";
 
 const PT = 72;
 const MARGIN = 0.5 * PT;
@@ -130,11 +130,11 @@ export async function generateSashikoPdf(request: SashikoRequest): Promise<Uint8
 
     // Thin lines where the next sheet's area starts, to line it up against.
     if (sheet.x + sheet.width < request.width) {
-      const [x] = sheetPoint(sheet, sheet.x + SHEET_WIDTH - 0.5, 0);
+      const [x] = sheetPoint(sheet, sheet.x + SHEET_WIDTH - SHEET_OVERLAP, 0);
       ops.push(moveTo(x, SHEET_TOP), lineTo(x, SHEET_TOP - sheet.height * PT), stroke());
     }
     if (sheet.y + sheet.height < request.height) {
-      const [, y] = sheetPoint(sheet, 0, sheet.y + SHEET_HEIGHT - 0.5);
+      const [, y] = sheetPoint(sheet, 0, sheet.y + SHEET_HEIGHT - SHEET_OVERLAP);
       ops.push(moveTo(MARGIN, y), lineTo(MARGIN + sheet.width * PT, y), stroke());
     }
 

@@ -6,7 +6,7 @@ import type { Locale } from "./i18n";
 import engineText from "./messages/tessellation.json";
 import { fitMotif, generateTessellation, listTessellationOptions, MOTIF_IDS, MOTIFS, SVG_UNITS, tessellationPlacements, type TessellationMotif, type TessellationRequest } from "./tessellation";
 import { generateTessellationPdf } from "./tessellationPdf";
-import { applyAffine, compose, GROUP_IDS, isLatticeVector, translation, wallpaperGroup, type Affine, type GroupId, type Vec } from "./wallpaper";
+import { applyAffine, compose, copiesPerCell, GROUP_IDS, isLatticeVector, translation, wallpaperGroup, type Affine, type GroupId, type Vec } from "./wallpaper";
 
 const LOCALE_CODES: Locale[] = ["en", "es", "fr", "de", "pt"];
 const colors = { background: "#ffffff", primary: "#112233", accent: "#cc3300" };
@@ -126,7 +126,7 @@ describe.each(GROUP_IDS)("%s", (id) => {
     const result = generateTessellation(request(id));
     expect(result.group.id).toBe(id);
     expect(result.symmetry.length).toBeGreaterThanOrEqual(4);
-    expect(result.copies * 1).toBeGreaterThanOrEqual(1);
+    expect(result.copies).toBe(copiesPerCell(group));
     expect(result.svg.repeat).toContain(`width="4in"`);
     const box = /viewBox="0 0 ([\d.]+) ([\d.]+)"/.exec(result.svg.repeat)!;
     expect(Number(box[2]) / Number(box[1])).toBeCloseTo(height / width, 4);

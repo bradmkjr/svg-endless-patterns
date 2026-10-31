@@ -67,9 +67,8 @@ export async function generateTessellationPdf(request: TessellationRequest): Pro
   const fullW = group.cell.width * request.across;
   const fullH = group.cell.height * request.down;
   const layoutScale = Math.min(PRINTABLE_W / fullW, (5 * PT) / fullH);
+  w.ensure(fullH * layoutScale);
   const area: Area = { x: MARGIN, top: w.y, width: fullW * layoutScale, height: fullH * layoutScale };
-  w.ensure(area.height);
-  area.top = w.y;
   drawRepeats(w.page, request, placements, area, request.across, request.down, layoutScale);
   for (let i = 0; i <= request.across; i++) {
     const x = MARGIN + i * group.cell.width * layoutScale;

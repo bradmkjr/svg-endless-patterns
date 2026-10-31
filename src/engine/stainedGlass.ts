@@ -239,6 +239,11 @@ function cells(x: number, y: number, w: number, h: number, target: number, color
 
 /** Concentric rings of petals around a center, in a centered square; any extra length becomes side cells. */
 function rose(W: number, H: number, detail: number): Raw[] {
+  // A strip this narrow couldn't be cut, so a nearly square panel stretches the rose instead. Stretching keeps pieces convex.
+  if (W !== H && Math.abs(W - H) / 2 < 2.5) {
+    const side = Math.min(W, H);
+    return rose(side, side, detail).map(({ points, color }) => ({ points: points.map(([x, y]): Point => [(x * W) / side, (y * H) / side]), color }));
+  }
   const s = Math.min(W, H) / 2;
   const cx = W / 2;
   const cy = H / 2;
@@ -300,8 +305,8 @@ function quarries(W: number, H: number, detail: number): Raw[] {
   const ny = Math.max(1, Math.round(H / ((W / nx) * 1.4)));
   // The half diamonds on the edges take their sharpest corner from this ratio: keep it inside 30 to 60 degrees.
   const ratio = () => H / ny / (W / nx);
-  while (ratio() < 0.6) nx--;
-  while (ratio() > 1.7) nx++;
+  while (ratio() < 0.6) nx++;
+  while (ratio() > 1.7 && nx > 1) nx--;
   const hx = W / nx / 2;
   const hy = H / ny / 2;
   const out: Raw[] = [];
@@ -323,7 +328,7 @@ function quarries(W: number, H: number, detail: number): Raw[] {
 /** A border with corner blocks around an octagon medallion, in mitred rings at higher detail. */
 function medallion(W: number, H: number, detail: number): Raw[] {
   const short = Math.min(W, H);
-  const b = Math.min(2.5, Math.max(1, short * 0.14));
+  const b = Math.min(2.5, Math.max(1.25, short * 0.14));
   const out: Raw[] = [];
   for (const [x, y] of [[0, 0], [W - b, 0], [0, H - b], [W - b, H - b]]) out.push({ points: rect(x, y, b, b), color: 0 });
   const run = (x: number, y: number, w: number, h: number) => {

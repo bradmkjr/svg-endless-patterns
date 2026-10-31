@@ -324,10 +324,12 @@ describe.each(OPTIONS)("%i-fold %s", (symmetry, star) => {
         for (const segment of tileSegments(tile)) {
           const c = clipSegment(segment, 0, 0, width, height);
           if (!c || dist(c[0], c[1]) < 1e-9) continue;
+          const coord = (p: Vec) => (edge[0] === "x" ? p[0] : p[1]);
+          const target = edge[1] === "0" ? 0 : edge[0] === "x" ? width : height;
+          // A line that only ends on the edge has nothing to continue into, so only real crossings count.
+          if ((coord(segment[0]) - target) * (coord(segment[1]) - target) >= -1e-9) continue;
           for (const p of c) {
-            const coord = edge[0] === "x" ? p[0] : p[1];
-            const target = edge[1] === "0" ? 0 : edge[0] === "x" ? width : height;
-            if (Math.abs(coord - target) > 1e-9) continue;
+            if (Math.abs(coord(p) - target) > 1e-9) continue;
             const other = edge[0] === "x" ? p[1] : p[0];
             const dir = Math.round(((Math.atan2(segment[1][1] - segment[0][1], segment[1][0] - segment[0][0]) * 180) / Math.PI + 360) % 180);
             found.add(`${other.toFixed(4)}@${dir % 180}`);
@@ -535,7 +537,7 @@ describe("files", () => {
   it("counts all five tiles, and the true sizes", () => {
     const result = generateGirih(base(10, "star"));
     expect(result.parts.map((p) => [p.id, p.count]).sort()).toEqual([["bowtie", 1], ["decagon", 2], ["hexagon", 1], ["pentagon", 2], ["rhombus", 2]]);
-    expect(result.width).toBe('6"');
+    expect(result.width).toBe("6");
     const hex = generateGirih(base(6, "star"));
     expect(hex.parts).toEqual([{ id: "star6", name: "6-point star", count: 2 }]);
     expect(generateGirih(base(12, "star")).parts.find((p) => p.id === "star3")?.count).toBe(4);

@@ -626,7 +626,7 @@ function panelSvg(req: GirihRequest, scene: GirihScene, title: string): string {
   const h = ch * req.down;
   const c = req.colors;
   // Same id means same content: it's built from everything that goes into the repeat.
-  const id = `girih-${req.symmetry}-${usableStar(req.symmetry, req.star)}-${req.lineWeight}${req.showTiles ? "-t" : ""}-${[c.primary, c.accent, c.line].map((v) => v.slice(1)).join("")}`;
+  const id = `stars-${req.symmetry}-${usableStar(req.symmetry, req.star)}-${req.lineWeight}${req.showTiles ? "-t" : ""}-${[c.primary, c.accent, c.line].map((v) => v.slice(1)).join("")}`;
   const uses: string[] = [];
   for (let y = 0; y < req.down; y++) for (let x = 0; x < req.across; x++) uses.push(`<use href="#${id}" x="${round3(x * cw)}" y="${round3(y * ch)}"/>`);
   const border = Math.max(strokeOf(req, scene) * 2, 4);

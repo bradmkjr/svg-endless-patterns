@@ -55,7 +55,7 @@
     "partHeader": "Shape",
     "countHeader": "Count",
     "guide": "Using this pattern",
-    "panelSize": "{across} x {down} repeats make a panel of {w} x {h}."
+    "panelSize": "{across} x {down} repeats make a panel of {w}\" x {h}\"."
   },
   "es": {
     "metaTitle": "Creador de estrellas geométricas y girih: SVG, PNG y PDF",
@@ -113,7 +113,7 @@
     "partHeader": "Forma",
     "countHeader": "Cantidad",
     "guide": "Cómo usar este patrón",
-    "panelSize": "{across} x {down} repeticiones forman un panel de {w} x {h}."
+    "panelSize": "{across} x {down} repeticiones forman un panel de {w}\" x {h}\"."
   },
   "fr": {
     "metaTitle": "Créateur d'étoiles géométriques et de girih : SVG, PNG et PDF",
@@ -171,7 +171,7 @@
     "partHeader": "Forme",
     "countHeader": "Nombre",
     "guide": "Utiliser ce motif",
-    "panelSize": "{across} x {down} raccords forment un panneau de {w} x {h}."
+    "panelSize": "{across} x {down} raccords forment un panneau de {w}\" x {h}\"."
   },
   "de": {
     "metaTitle": "Geometrische Sterne und Girih erstellen: SVG, PNG und PDF",
@@ -229,7 +229,7 @@
     "partHeader": "Form",
     "countHeader": "Anzahl",
     "guide": "So verwendest du dieses Muster",
-    "panelSize": "{across} x {down} Rapporte ergeben eine Tafel von {w} x {h}."
+    "panelSize": "{across} x {down} Rapporte ergeben eine Tafel von {w}\" x {h}\"."
   },
   "pt": {
     "metaTitle": "Criador de estrelas geométricas e girih: SVG, PNG e PDF",
@@ -287,6 +287,6 @@
     "partHeader": "Forma",
     "countHeader": "Quantidade",
     "guide": "Como usar este padrão",
-    "panelSize": "{across} x {down} repetições formam um painel de {w} x {h}."
+    "panelSize": "{across} x {down} repetições formam um painel de {w}\" x {h}\"."
   }
 }

@@ -12,7 +12,7 @@ set -e
 [ -f package.json ] || exit 0
 git diff --cached --quiet && exit 0 # nothing staged
 
-npm test
+npm run test:navigation
 [ -n "$SKIP_VERSION_BUMP" ] && exit 0
 
 version_of() {

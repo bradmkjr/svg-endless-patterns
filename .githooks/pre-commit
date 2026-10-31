@@ -1,0 +1,37 @@
+#!/bin/sh
+# Bumps the patch version in package.json on every commit, so the version
+# each site shows in its footer always moves with the code. The same file is
+# in every Build-Signs.work repo — change it in one, copy it to all. Enabled by
+# `npm install` (the `prepare` script points core.hooksPath at .githooks).
+#
+# A commit that already changes the version (a hand-made minor / major bump)
+# is left alone. Skip once with `SKIP_VERSION_BUMP=1 git commit …` (or
+# `--no-verify`). A package.json `version` script runs too — the static hub
+# uses it to write the version into its HTML footers.
+set -e
+[ -n "$SKIP_VERSION_BUMP" ] && exit 0
+[ -f package.json ] || exit 0
+git diff --cached --quiet && exit 0 # nothing staged
+
+version_of() {
+  git show "$1" 2>/dev/null | node -e '
+    let s = "";
+    process.stdin.on("data", (d) => { s += d; }).on("end", () => {
+      try { process.stdout.write(JSON.parse(s).version || ""); } catch {}
+    });'
+}
+
+staged=$(version_of :package.json)
+head=$(version_of HEAD:package.json)
+[ -n "$head" ] && [ "$staged" != "$head" ] && exit 0 # bumped by hand
+
+if ! git diff --quiet -- package.json package-lock.json; then
+  echo "pre-commit: package.json / package-lock.json have unstaged changes —" >&2
+  echo "stage or stash them so the version bump doesn't sweep them in." >&2
+  exit 1
+fi
+
+npm version patch --no-git-tag-version >/dev/null
+git add package.json
+[ -f package-lock.json ] && git add package-lock.json
+echo "pre-commit: version $(version_of :package.json)"

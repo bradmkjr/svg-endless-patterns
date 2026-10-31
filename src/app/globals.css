@@ -1,0 +1,98 @@
+:root {
+  --background: #faf6ee;
+  --surface: #fffdf8;
+  --foreground: #25221c;
+  --muted: #6a6459;
+  --line: #ddd5c4;
+  --accent: #23395d;
+  --accent-contrast: #ffffff;
+  --warn-bg: #fbf0d9;
+  --warn-line: #dcc088;
+  --font-display: var(--font-fraunces), Georgia, serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #16140f;
+    --surface: #211e18;
+    --foreground: #efe9dc;
+    --muted: #a89f8f;
+    --line: #3b362b;
+    --accent: #a9c1e4;
+    --accent-contrast: #14181f;
+    --warn-bg: #33291a;
+    --warn-line: #6b5529;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--background);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+a {
+  color: inherit;
+}
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.prose {
+  max-width: 44rem;
+}
+
+.prose h2 {
+  margin-top: 2.25rem;
+}
+
+.lede {
+  font-size: 1.15rem;
+  color: var(--muted);
+  max-width: 44rem;
+}
+
+/* Generated SVGs carry real-inch sizes for download; on screen, their box decides. */
+.art svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}

@@ -7,3 +7,8 @@ const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://bradmkjr.github.i
 export function absoluteUrl(path = "/"): string {
   return `${SITE_URL}${path}`;
 }
+
+/** A file in `public/`, for plain `<img>` tags: Next only adds the base path to its own links. */
+export function publicPath(path: string): string {
+  return `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${path}`;
+}

@@ -1,6 +1,13 @@
 [
   {
     "date": "2026-10-30",
+    "title": "Pattern library samples",
+    "items": [
+      "Added a sample to every entry in the pattern library, with static examples for the planned tools"
+    ]
+  },
+  {
+    "date": "2026-10-30",
     "title": "Blog and changelog",
     "post": "blog-and-changelog",
     "items": [

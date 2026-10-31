@@ -26,7 +26,19 @@ export async function PostSamples({ items }: { items: PostSample[] }) {
         svg ? (
           <li key={sampleHref(sample)}>
             <Link href={sampleHref(sample)} className={styles.sample}>
-              <span className={`art ${styles.sampleArt}`} dangerouslySetInnerHTML={{ __html: svg }} />
+              {sample.view === "swatch" ? (
+                // A swatch is a small repeating tile: show 4" of it, as the stitch pages do.
+                <span
+                  className={styles.sampleArt}
+                  style={{
+                    aspectRatio: "1",
+                    backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(svg)}")`,
+                    backgroundSize: `${(Number(/viewBox="0 0 ([\d.]+) /.exec(svg)?.[1] ?? 4) / 4) * 100}% auto`,
+                  }}
+                />
+              ) : (
+                <span className={`art ${styles.sampleArt}`} dangerouslySetInnerHTML={{ __html: svg }} />
+              )}
               <span className={styles.caption}>{sample.caption}</span>
               <span className={styles.open}>Open with these settings</span>
             </Link>

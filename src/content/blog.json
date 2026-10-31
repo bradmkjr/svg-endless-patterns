@@ -1,5 +1,77 @@
 [
   {
+    "slug": "knit-colorwork-patterns",
+    "title": "Charted knit colorwork, written out as complete squares",
+    "date": "2026-10-31",
+    "summary": "Thirteen original stranded, mosaic and intarsia charts, fitted to your gauge, with every row written color by color.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "[Knit colorwork](/knitting/colorwork/) is a new tool in the [pattern library](/patterns/). Each chart was drawn for this site and is written out as a complete square, from cast on to blocking, at your size and gauge."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "knitColorwork",
+            "slug": "",
+            "query": "",
+            "view": "square",
+            "caption": "Little Pines, stranded in two yarns"
+          },
+          {
+            "kind": "knitColorwork",
+            "slug": "",
+            "query": "d=ribbon-chevron",
+            "view": "chart",
+            "caption": "Ribbon Chevron, a stranded chart in three yarns"
+          },
+          {
+            "kind": "knitColorwork",
+            "slug": "",
+            "query": "d=mosaic-diamonds",
+            "view": "square",
+            "caption": "Mosaic Diamonds, with one yarn in each row"
+          },
+          {
+            "kind": "knitColorwork",
+            "slug": "",
+            "query": "d=diamond-block",
+            "view": "square",
+            "caption": "Diamond Block, an intarsia motif"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "A chart with a color key and row numbers on the side each row starts from",
+          "Written rows, color by color, in working order",
+          "Repeats fitted to your stitch count, with matching edges and a garter border",
+          "A float check that flags any row carrying a yarn more than about an inch at your gauge",
+          "Yarn estimated per color, adding up to the total",
+          "A printable PDF, plus SVG and PNG of the square and chart"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Swatch in the pattern"
+      },
+      {
+        "type": "paragraph",
+        "text": "Colorwork rarely matches the gauge of plain knitting, so each pattern asks for a swatch of its own chart. Enter what you measure, and the square, rows, floats and yarn all change to match. If you want one color instead, the [knitting stitches](/knitting/) are still there."
+      }
+    ]
+  },
+  {
     "slug": "fractal-maker",
     "title": "Draw fractals from one simple rule",
     "date": "2026-10-31",

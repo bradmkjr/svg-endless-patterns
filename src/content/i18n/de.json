@@ -1,5 +1,30 @@
 {
   "posts": {
+    "knit-colorwork-patterns": {
+      "title": "Farbmuster nach Diagramm, als vollständige Quadrate ausgeschrieben",
+      "summary": "Dreizehn eigene Diagramme mit Spannfäden, Mosaik und Intarsien, passend zu deiner Maschenprobe, mit jeder Reihe Farbe für Farbe.",
+      "blocks": [
+        "[Farbmuster stricken](/knitting/colorwork/) ist ein neues Werkzeug in der [Musterbibliothek](/patterns/). Jedes Diagramm wurde für diese Website gezeichnet und als vollständiges Quadrat ausgeschrieben, vom Anschlag bis zum Spannen, in deiner Größe und Maschenprobe.",
+        "Beispiele zum Einstieg",
+        [
+          "Kleine Kiefern, mit Spannfäden in zwei Garnen",
+          "Band-Zickzack, ein Spannfaden-Diagramm in drei Garnen",
+          "Mosaik-Rauten, mit einem Garn pro Reihe",
+          "Rauten-Block, ein Intarsien-Motiv"
+        ],
+        "Was du bekommst",
+        [
+          "Ein Diagramm mit Farblegende und Reihennummern auf der Seite, an der jede Reihe beginnt",
+          "Geschriebene Reihen, Farbe für Farbe, in Arbeitsrichtung",
+          "Mustersätze passend zu deiner Maschenzahl, mit gleichen Kanten und einem kraus rechten Rand",
+          "Eine Kontrolle, die jede Reihe markiert, die ein Garn bei deiner Maschenprobe weiter als etwa einen Zoll führt",
+          "Geschätztes Garn pro Farbe, das zusammen die Gesamtmenge ergibt",
+          "Ein druckbares PDF sowie SVG und PNG von Quadrat und Diagramm"
+        ],
+        "Maschenprobe im Muster",
+        "Farbmuster treffen selten die Maschenprobe von einfarbigem Stricken, daher verlangt jede Anleitung eine Probe des eigenen Diagramms. Gib ein, was du misst, dann passen sich Quadrat, Reihen, Spannfäden und Garn an. Wenn du lieber eine Farbe möchtest, gibt es weiter die [Strickmuster](/knitting/)."
+      ]
+    },
     "fractal-maker": {
       "title": "Fraktale aus einer einfachen Regel zeichnen",
       "summary": "Neun klassische Fraktale in gewählter Tiefe, in Ihren Farben oder als schwarze Linien, als SVG, PNG und PDF.",
@@ -452,6 +477,12 @@
     }
   },
   "changelog": {
+    "Knit colorwork patterns": {
+      "title": "Farbmuster zum Stricken",
+      "items": [
+        "Farbmuster hinzugefügt: dreizehn eigene Diagramme mit Spannfäden, Mosaik und Intarsien, als vollständige Quadrate ausgeschrieben, mit Spannfaden-Kontrolle, Garn pro Farbe und PDF"
+      ]
+    },
     "Fractal maker": {
       "title": "Fraktal-Werkzeug",
       "items": [

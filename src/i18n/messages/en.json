@@ -269,6 +269,12 @@
         "text": "Repeat one simple rule at the depth you choose, from Koch snowflakes to dragon curves.",
         "output": "SVG and PNG, a black-line version, and a printable PDF.",
         "explore": "Draw a fractal"
+      },
+      "knitColorwork": {
+        "title": "Knit colorwork",
+        "text": "Original stranded, mosaic and intarsia charts, each written as a complete square at your gauge.",
+        "output": "Chart with color key, color-by-color rows, float check, yarn per color and a printable PDF.",
+        "explore": "Explore knit colorwork"
       }
     },
     "seeAllType": "See everything in {name}"

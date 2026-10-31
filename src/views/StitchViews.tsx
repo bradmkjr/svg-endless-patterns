@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { StitchBuilderRoute } from "@/components/StitchBuilderRoute";
 import { StitchGrid } from "@/components/StitchGrid";
+import colorwork from "@/i18n/messages/knitColorwork.json";
 import { generateStitchPattern, getStitchPattern, getStitchPatterns, type Craft, type Locale } from "@/lib/generator";
 import { fill, localePath, messages, pageAlternates } from "@/lib/i18n";
 import { CRAFT_PATHS, defaultStitchState } from "@/lib/stitchState";
@@ -23,6 +24,11 @@ export async function StitchesView({ locale, craft }: { locale: Locale; craft: C
     <div className="page">
       <h1>{craft === "knit" ? t.knitH1 : t.crochetH1}</h1>
       <p className="lede">{t.lede}</p>
+      {craft === "knit" && (
+        <p>
+          <Link href={localePath(locale, "/knitting/colorwork/")}>{colorwork[locale].indexLink}</Link>
+        </p>
+      )}
       <StitchGrid stitches={stitches} locale={locale} />
     </div>
   );

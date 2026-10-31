@@ -269,6 +269,12 @@
         "text": "Repite una regla sencilla al nivel que elijas, del copo de Koch a la curva del dragón.",
         "output": "SVG y PNG, una versión en líneas negras y un PDF imprimible.",
         "explore": "Dibuja un fractal"
+      },
+      "knitColorwork": {
+        "title": "Tejido en colores",
+        "text": "Gráficos originales con hebras llevadas, mosaico e intarsia, cada uno escrito como un cuadrado completo con tu muestra.",
+        "output": "Gráfico con clave de colores, vueltas color por color, control de hebras flotantes, lana por color y un PDF para imprimir.",
+        "explore": "Explorar el tejido en colores"
       }
     },
     "seeAllType": "Ver todo en {name}"

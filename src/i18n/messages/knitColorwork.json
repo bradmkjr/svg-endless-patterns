@@ -1,0 +1,272 @@
+{
+  "en": {
+    "metaTitle": "Knit Colorwork Patterns: Stranded, Mosaic and Intarsia Squares",
+    "metaDesc": "Original multi-color knitting charts fitted to your gauge, with written color-by-color rows, a float check, yarn per color and a printable PDF.",
+    "h1": "Knit colorwork",
+    "lede": "Original charts in stranded, mosaic and intarsia knitting, each written out as a complete square at your gauge.",
+    "indexLink": "Looking for more than one color? Try knit colorwork.",
+    "designs": {
+      "little-pines": "Little Pines",
+      "small-diamonds": "Small Diamonds",
+      "two-way-diamonds": "Two-Way Diamonds",
+      "ribbon-chevron": "Ribbon Chevron",
+      "little-bands": "Little Bands",
+      "block-check": "Block Check",
+      "mosaic-chevron": "Mosaic Chevron",
+      "mosaic-diamonds": "Mosaic Diamonds",
+      "mosaic-bricks": "Mosaic Bricks",
+      "mosaic-crosses": "Mosaic Crosses",
+      "heart-block": "Heart Block",
+      "diamond-block": "Diamond Block",
+      "window-block": "Window Block"
+    },
+    "techniques": {
+      "stranded": "Stranded: two yarns in a row, with the unused one carried across the back. Often called Fair Isle style.",
+      "mosaic": "Mosaic: one yarn per row, with the other color's stitches slipped.",
+      "intarsia": "Intarsia: blocks of color, each from its own bobbin, with nothing carried across the back."
+    },
+    "views": {
+      "square": "Square",
+      "chart": "Chart"
+    },
+    "viewNotes": {
+      "square": "The whole square, border included, in the proportions your gauge gives it.",
+      "chart": "One repeat, seen from the right side. Row 1 is at the bottom. Read odd rows from right to left and even rows from left to right, starting from each row's number. A row marked ! has a float over the limit."
+    },
+    "downloadPdf": "Download PDF pattern",
+    "design": "Design",
+    "pattern": "Pattern",
+    "size": "Square size (inches)",
+    "gauge": "Gauge",
+    "stitchGauge": "Stitches per 4\"",
+    "rowGauge": "Rows per 4\"",
+    "gaugeNote": "Colorwork gauge differs from plain knitting, so measure a swatch of this chart.",
+    "colors": "Yarns",
+    "yarn": "Yarn {letter}",
+    "flagTitle": "Long floats.",
+    "flagText": "At this gauge, chart rows {rows} carry a yarn further than the {limit}-stitch limit. The float check below says what to do.",
+    "yarnHeading": "Yarn per color",
+    "yarnColumn": "Yarn",
+    "yardsColumn": "Yards",
+    "bobbinsColumn": "Bobbins",
+    "total": "Total",
+    "patternLede": "Every row of a finished square at your gauge, from cast on to blocking. Change the size or gauge and the numbers change with it.",
+    "loading": "Drawing the square…"
+  },
+  "es": {
+    "metaTitle": "Patrones de colores en dos agujas: cuadrados con hebras, mosaico e intarsia",
+    "metaDesc": "Gráficos originales en varios colores ajustados a tu muestra, con vueltas escritas color por color, control de hebras flotantes, lana por color y un PDF para imprimir.",
+    "h1": "Tejido en colores",
+    "lede": "Gráficos originales con hebras llevadas, mosaico e intarsia, cada uno escrito como un cuadrado completo con tu muestra.",
+    "indexLink": "¿Buscas más de un color? Prueba el tejido en colores.",
+    "designs": {
+      "little-pines": "Pinos pequeños",
+      "small-diamonds": "Rombos pequeños",
+      "two-way-diamonds": "Rombos alternos",
+      "ribbon-chevron": "Zigzag de cintas",
+      "little-bands": "Bandas pequeñas",
+      "block-check": "Cuadros en bloque",
+      "mosaic-chevron": "Zigzag en mosaico",
+      "mosaic-diamonds": "Rombos en mosaico",
+      "mosaic-bricks": "Ladrillos en mosaico",
+      "mosaic-crosses": "Cruces en mosaico",
+      "heart-block": "Bloque de corazón",
+      "diamond-block": "Bloque de rombo",
+      "window-block": "Bloque de ventana"
+    },
+    "techniques": {
+      "stranded": "Hebras llevadas: dos lanas en una vuelta, con la que no se usa pasando por el revés. A menudo se llama estilo Fair Isle.",
+      "mosaic": "Mosaico: una lana en cada vuelta, deslizando los puntos del otro color.",
+      "intarsia": "Intarsia: bloques de color, cada uno con su bobina, sin llevar nada por el revés."
+    },
+    "views": {
+      "square": "Cuadrado",
+      "chart": "Gráfico"
+    },
+    "viewNotes": {
+      "square": "El cuadrado entero, con el borde, en las proporciones que da tu muestra.",
+      "chart": "Una repetición, vista por el lado derecho. La vuelta 1 está abajo. Lee las vueltas impares de derecha a izquierda y las pares de izquierda a derecha, desde el número de cada una. Una vuelta marcada con ! tiene una hebra flotante por encima del límite."
+    },
+    "downloadPdf": "Descargar patrón en PDF",
+    "design": "Diseño",
+    "pattern": "Patrón",
+    "size": "Tamaño del cuadrado (pulgadas)",
+    "gauge": "Muestra",
+    "stitchGauge": "Puntos por 4\"",
+    "rowGauge": "Vueltas por 4\"",
+    "gaugeNote": "La muestra en colores difiere de la del tejido liso, así que mide una muestra de este gráfico.",
+    "colors": "Lanas",
+    "yarn": "Lana {letter}",
+    "flagTitle": "Hebras largas.",
+    "flagText": "Con esta muestra, las vueltas {rows} del gráfico llevan una lana más allá del límite de {limit} puntos. El control de hebras flotantes, más abajo, indica qué hacer.",
+    "yarnHeading": "Lana por color",
+    "yarnColumn": "Lana",
+    "yardsColumn": "Yardas",
+    "bobbinsColumn": "Bobinas",
+    "total": "Total",
+    "patternLede": "Todas las vueltas de un cuadrado terminado con tu muestra, del montaje al bloqueo. Cambia el tamaño o la muestra y los números cambiarán con ellos.",
+    "loading": "Dibujando el cuadrado…"
+  },
+  "fr": {
+    "metaTitle": "Modèles de tricot en couleurs : carrés jacquard, mosaïque et intarsia",
+    "metaDesc": "Des grilles originales en plusieurs couleurs adaptées à votre échantillon, avec les rangs écrits couleur par couleur, un contrôle des fils flottants, le fil par couleur et un PDF à imprimer.",
+    "h1": "Tricot en couleurs",
+    "lede": "Des grilles originales en jacquard, en mosaïque et en intarsia, chacune écrite comme un carré complet à votre échantillon.",
+    "indexLink": "Envie de plus d'une couleur ? Essayez le tricot en couleurs.",
+    "designs": {
+      "little-pines": "Petits pins",
+      "small-diamonds": "Petits losanges",
+      "two-way-diamonds": "Losanges alternés",
+      "ribbon-chevron": "Chevrons en ruban",
+      "little-bands": "Petites bandes",
+      "block-check": "Damier en blocs",
+      "mosaic-chevron": "Chevrons en mosaïque",
+      "mosaic-diamonds": "Losanges en mosaïque",
+      "mosaic-bricks": "Briques en mosaïque",
+      "mosaic-crosses": "Croix en mosaïque",
+      "heart-block": "Bloc cœur",
+      "diamond-block": "Bloc losange",
+      "window-block": "Bloc fenêtre"
+    },
+    "techniques": {
+      "stranded": "Jacquard : deux fils par rang, celui qui ne sert pas étant porté sur l'envers. Souvent appelé style Fair Isle.",
+      "mosaic": "Mosaïque : un fil par rang, en glissant les mailles de l'autre couleur.",
+      "intarsia": "Intarsia : des blocs de couleur, chacun avec sa bobine, sans rien porter sur l'envers."
+    },
+    "views": {
+      "square": "Carré",
+      "chart": "Grille"
+    },
+    "viewNotes": {
+      "square": "Le carré entier, bordure comprise, dans les proportions que donne votre échantillon.",
+      "chart": "Un motif, vu sur l'endroit. Le rang 1 est en bas. Lisez les rangs impairs de droite à gauche et les rangs pairs de gauche à droite, à partir du numéro de chacun. Un rang marqué ! a un fil flottant au-dessus de la limite."
+    },
+    "downloadPdf": "Télécharger le modèle en PDF",
+    "design": "Modèle",
+    "pattern": "Motif",
+    "size": "Taille du carré (pouces)",
+    "gauge": "Échantillon",
+    "stitchGauge": "Mailles pour 4\"",
+    "rowGauge": "Rangs pour 4\"",
+    "gaugeNote": "L'échantillon en couleurs diffère de celui du tricot uni : mesurez donc un échantillon de cette grille.",
+    "colors": "Fils",
+    "yarn": "Fil {letter}",
+    "flagTitle": "Fils flottants longs.",
+    "flagText": "À cet échantillon, les rangs {rows} de la grille portent un fil au-delà de la limite de {limit} mailles. Le contrôle des fils flottants, plus bas, indique que faire.",
+    "yarnHeading": "Fil par couleur",
+    "yarnColumn": "Fil",
+    "yardsColumn": "Yards",
+    "bobbinsColumn": "Bobines",
+    "total": "Total",
+    "patternLede": "Tous les rangs d'un carré fini à votre échantillon, du montage au blocage. Changez la taille ou l'échantillon et les nombres changeront avec eux.",
+    "loading": "Dessin du carré…"
+  },
+  "de": {
+    "metaTitle": "Farbmuster zum Stricken: Quadrate mit Spannfäden, Mosaik und Intarsien",
+    "metaDesc": "Eigene mehrfarbige Strickdiagramme passend zu deiner Maschenprobe, mit geschriebenen Reihen Farbe für Farbe, Spannfaden-Kontrolle, Garn pro Farbe und einem druckbaren PDF.",
+    "h1": "Farbmuster stricken",
+    "lede": "Eigene Diagramme mit Spannfäden, Mosaik und Intarsien, jedes als vollständiges Quadrat bei deiner Maschenprobe ausgeschrieben.",
+    "indexLink": "Mehr als eine Farbe gesucht? Probiere Farbmuster.",
+    "designs": {
+      "little-pines": "Kleine Kiefern",
+      "small-diamonds": "Kleine Rauten",
+      "two-way-diamonds": "Wechselrauten",
+      "ribbon-chevron": "Band-Zickzack",
+      "little-bands": "Kleine Bänder",
+      "block-check": "Blockkaro",
+      "mosaic-chevron": "Mosaik-Zickzack",
+      "mosaic-diamonds": "Mosaik-Rauten",
+      "mosaic-bricks": "Mosaik-Ziegel",
+      "mosaic-crosses": "Mosaik-Kreuze",
+      "heart-block": "Herz-Block",
+      "diamond-block": "Rauten-Block",
+      "window-block": "Fenster-Block"
+    },
+    "techniques": {
+      "stranded": "Spannfäden: zwei Garne pro Reihe, das unbenutzte läuft über die Rückseite. Oft Fair-Isle-Stil genannt.",
+      "mosaic": "Mosaik: ein Garn pro Reihe, die Maschen der anderen Farbe werden abgehoben.",
+      "intarsia": "Intarsien: Farbflächen, jede mit eigener Spule, ohne Fäden über die Rückseite."
+    },
+    "views": {
+      "square": "Quadrat",
+      "chart": "Diagramm"
+    },
+    "viewNotes": {
+      "square": "Das ganze Quadrat mit Rand, in den Proportionen deiner Maschenprobe.",
+      "chart": "Ein Mustersatz, von der Vorderseite gesehen. Reihe 1 ist unten. Lies ungerade Reihen von rechts nach links und gerade von links nach rechts, jeweils ab der Reihennummer. Eine mit ! markierte Reihe hat einen Spannfaden über der Grenze."
+    },
+    "downloadPdf": "PDF-Anleitung herunterladen",
+    "design": "Design",
+    "pattern": "Muster",
+    "size": "Größe des Quadrats (Zoll)",
+    "gauge": "Maschenprobe",
+    "stitchGauge": "Maschen pro 4\"",
+    "rowGauge": "Reihen pro 4\"",
+    "gaugeNote": "Die Maschenprobe im Farbmuster weicht von einfarbigem Stricken ab, miss also eine Probe dieses Diagramms.",
+    "colors": "Garne",
+    "yarn": "Garn {letter}",
+    "flagTitle": "Lange Spannfäden.",
+    "flagText": "Bei dieser Maschenprobe führen die Diagrammreihen {rows} ein Garn über die Grenze von {limit} Maschen hinaus. Die Spannfaden-Kontrolle unten sagt, was zu tun ist.",
+    "yarnHeading": "Garn pro Farbe",
+    "yarnColumn": "Garn",
+    "yardsColumn": "Yards",
+    "bobbinsColumn": "Spulen",
+    "total": "Gesamt",
+    "patternLede": "Jede Reihe eines fertigen Quadrats bei deiner Maschenprobe, vom Anschlag bis zum Spannen. Ändere Größe oder Maschenprobe, dann ändern sich die Zahlen mit.",
+    "loading": "Quadrat wird gezeichnet …"
+  },
+  "pt": {
+    "metaTitle": "Padrões de tricô em cores: quadrados em jacquard, mosaico e intarsia",
+    "metaDesc": "Gráficos originais em várias cores ajustados à sua amostra, com carreiras escritas cor por cor, conferência de fios flutuantes, fio por cor e um PDF para imprimir.",
+    "h1": "Tricô em cores",
+    "lede": "Gráficos originais em jacquard, mosaico e intarsia, cada um escrito como um quadrado completo na sua amostra.",
+    "indexLink": "Procurando mais de uma cor? Experimente o tricô em cores.",
+    "designs": {
+      "little-pines": "Pinheirinhos",
+      "small-diamonds": "Losangos pequenos",
+      "two-way-diamonds": "Losangos alternados",
+      "ribbon-chevron": "Zigue-zague de fitas",
+      "little-bands": "Faixas pequenas",
+      "block-check": "Xadrez em blocos",
+      "mosaic-chevron": "Zigue-zague em mosaico",
+      "mosaic-diamonds": "Losangos em mosaico",
+      "mosaic-bricks": "Tijolos em mosaico",
+      "mosaic-crosses": "Cruzes em mosaico",
+      "heart-block": "Bloco de coração",
+      "diamond-block": "Bloco de losango",
+      "window-block": "Bloco de janela"
+    },
+    "techniques": {
+      "stranded": "Jacquard: dois fios por carreira, com o que não está em uso carregado pelo avesso. Muitas vezes chamado de estilo Fair Isle.",
+      "mosaic": "Mosaico: um fio por carreira, deslizando os pontos da outra cor.",
+      "intarsia": "Intarsia: blocos de cor, cada um com sua bobina, sem carregar nada pelo avesso."
+    },
+    "views": {
+      "square": "Quadrado",
+      "chart": "Gráfico"
+    },
+    "viewNotes": {
+      "square": "O quadrado inteiro, com a barra, nas proporções que a sua amostra dá.",
+      "chart": "Uma repetição, vista pelo lado direito. A carreira 1 fica embaixo. Leia as carreiras ímpares da direita para a esquerda e as pares da esquerda para a direita, a partir do número de cada uma. Uma carreira marcada com ! tem um fio flutuante acima do limite."
+    },
+    "downloadPdf": "Baixar padrão em PDF",
+    "design": "Modelo",
+    "pattern": "Padrão",
+    "size": "Tamanho do quadrado (polegadas)",
+    "gauge": "Amostra",
+    "stitchGauge": "Pontos por 4\"",
+    "rowGauge": "Carreiras por 4\"",
+    "gaugeNote": "A amostra em cores é diferente da do tricô liso, então meça uma amostra deste gráfico.",
+    "colors": "Fios",
+    "yarn": "Fio {letter}",
+    "flagTitle": "Fios flutuantes longos.",
+    "flagText": "Nesta amostra, as carreiras {rows} do gráfico carregam um fio além do limite de {limit} pontos. A conferência de fios flutuantes, abaixo, diz o que fazer.",
+    "yarnHeading": "Fio por cor",
+    "yarnColumn": "Fio",
+    "yardsColumn": "Jardas",
+    "bobbinsColumn": "Bobinas",
+    "total": "Total",
+    "patternLede": "Todas as carreiras de um quadrado pronto na sua amostra, da montagem ao blocking. Mude o tamanho ou a amostra e os números mudam junto.",
+    "loading": "Desenhando o quadrado…"
+  }
+}

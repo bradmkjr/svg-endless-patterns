@@ -1,5 +1,30 @@
 {
   "posts": {
+    "knit-colorwork-patterns": {
+      "title": "Tricot en couleurs sur grille, écrit en carrés complets",
+      "summary": "Treize grilles originales en jacquard, mosaïque et intarsia, adaptées à votre échantillon, avec chaque rang écrit couleur par couleur.",
+      "blocks": [
+        "Le [tricot en couleurs](/knitting/colorwork/) est un nouvel outil de la [bibliothèque de motifs](/patterns/). Chaque grille a été dessinée pour ce site et s'écrit comme un carré complet, du montage au blocage, à votre taille et à votre échantillon.",
+        "Exemples pour commencer",
+        [
+          "Petits pins, en jacquard à deux fils",
+          "Chevrons en ruban, une grille jacquard à trois fils",
+          "Losanges en mosaïque, avec un seul fil par rang",
+          "Bloc losange, un motif en intarsia"
+        ],
+        "Ce que vous obtenez",
+        [
+          "Une grille avec légende des couleurs et numéros de rang du côté où chaque rang commence",
+          "Des rangs écrits, couleur par couleur, dans l'ordre du travail",
+          "Des motifs adaptés à votre nombre de mailles, avec des bords assortis et une bordure au point mousse",
+          "Un contrôle qui signale tout rang portant un fil sur plus d'un pouce environ à votre échantillon",
+          "Le fil estimé par couleur, dont la somme donne le total",
+          "Un PDF à imprimer, ainsi que le SVG et le PNG du carré et de la grille"
+        ],
+        "Faites l'échantillon dans le motif",
+        "Le tricot en couleurs correspond rarement à l'échantillon du tricot uni : chaque modèle demande donc un échantillon de sa propre grille. Saisissez ce que vous mesurez, et le carré, les rangs, les fils flottants et le fil s'ajustent. Si vous préférez une seule couleur, les [points de tricot](/knitting/) sont toujours là."
+      ]
+    },
     "fractal-maker": {
       "title": "Dessinez des fractales à partir d'une règle simple",
       "summary": "Neuf fractales classiques au niveau choisi, dans vos couleurs ou en traits noirs, à télécharger en SVG, PNG et PDF.",
@@ -452,6 +477,12 @@
     }
   },
   "changelog": {
+    "Knit colorwork patterns": {
+      "title": "Modèles de tricot en couleurs",
+      "items": [
+        "Ajout du tricot en couleurs : treize grilles originales en jacquard, mosaïque et intarsia, écrites en carrés complets avec contrôle des fils flottants, fil par couleur et PDF"
+      ]
+    },
     "Fractal maker": {
       "title": "Créateur de fractales",
       "items": [

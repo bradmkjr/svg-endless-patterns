@@ -269,6 +269,12 @@
         "text": "Wiederholen Sie eine einfache Regel in gewählter Tiefe, von der Koch-Schneeflocke bis zur Drachenkurve.",
         "output": "SVG und PNG, eine Schwarzlinien-Version und ein druckbares PDF.",
         "explore": "Fraktal zeichnen"
+      },
+      "knitColorwork": {
+        "title": "Farbmuster stricken",
+        "text": "Eigene Diagramme mit Spannfäden, Mosaik und Intarsien, jedes als vollständiges Quadrat bei deiner Maschenprobe ausgeschrieben.",
+        "output": "Diagramm mit Farblegende, Reihen Farbe für Farbe, Spannfaden-Kontrolle, Garn pro Farbe und ein druckbares PDF.",
+        "explore": "Farbmuster entdecken"
       }
     },
     "seeAllType": "Alles in {name} ansehen"

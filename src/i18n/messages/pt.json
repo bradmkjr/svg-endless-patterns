@@ -269,6 +269,12 @@
         "text": "Repita uma regra simples no nível escolhido, do floco de Koch à curva do dragão.",
         "output": "SVG e PNG, uma versão em linhas pretas e um PDF para imprimir.",
         "explore": "Desenhar um fractal"
+      },
+      "knitColorwork": {
+        "title": "Tricô em cores",
+        "text": "Gráficos originais em jacquard, mosaico e intarsia, cada um escrito como um quadrado completo na sua amostra.",
+        "output": "Gráfico com legenda de cores, carreiras cor por cor, conferência de fios flutuantes, fio por cor e um PDF para imprimir.",
+        "explore": "Explorar o tricô em cores"
       }
     },
     "seeAllType": "Ver tudo em {name}"

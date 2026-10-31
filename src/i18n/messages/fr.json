@@ -269,6 +269,12 @@
         "text": "Répétez une règle simple au niveau choisi, du flocon de Koch à la courbe du dragon.",
         "output": "SVG et PNG, une version en traits noirs et un PDF imprimable.",
         "explore": "Dessiner une fractale"
+      },
+      "knitColorwork": {
+        "title": "Tricot en couleurs",
+        "text": "Des grilles originales en jacquard, en mosaïque et en intarsia, chacune écrite comme un carré complet à votre échantillon.",
+        "output": "Grille avec légende des couleurs, rangs couleur par couleur, contrôle des fils flottants, fil par couleur et un PDF à imprimer.",
+        "explore": "Explorer le tricot en couleurs"
       }
     },
     "seeAllType": "Tout voir dans {name}"

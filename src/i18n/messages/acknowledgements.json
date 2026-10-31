@@ -18,7 +18,8 @@
       "koch": "The Koch snowflake in the fractal maker is named for this paper.",
       "sierpinski": "The Sierpiński triangle in the fractal maker is named for this paper.",
       "hilbert": "The Hilbert curve in the fractal maker is named for this paper.",
-      "levy": "The Lévy C curve in the fractal maker is named for this paper."
+      "levy": "The Lévy C curve in the fractal maker is named for this paper.",
+      "walkerMosaic": "The name and the two-row rules of the mosaic patterns in knit colorwork. The charts themselves were drawn for this site."
     }
   },
   "es": {
@@ -40,7 +41,8 @@
       "koch": "El copo de Koch del generador de fractales toma su nombre de este artículo.",
       "sierpinski": "El triángulo de Sierpiński del generador de fractales toma su nombre de este artículo.",
       "hilbert": "La curva de Hilbert del generador de fractales toma su nombre de este artículo.",
-      "levy": "La curva C de Lévy del generador de fractales toma su nombre de este artículo."
+      "levy": "La curva C de Lévy del generador de fractales toma su nombre de este artículo.",
+      "walkerMosaic": "El nombre y las reglas de dos vueltas de los patrones en mosaico del tejido en colores. Los gráficos se dibujaron para este sitio."
     }
   },
   "fr": {
@@ -62,7 +64,8 @@
       "koch": "Le flocon de Koch de l'outil doit son nom à cet article.",
       "sierpinski": "Le triangle de Sierpiński de l'outil doit son nom à cet article.",
       "hilbert": "La courbe de Hilbert de l'outil doit son nom à cet article.",
-      "levy": "La courbe C de Lévy de l'outil doit son nom à cet article."
+      "levy": "La courbe C de Lévy de l'outil doit son nom à cet article.",
+      "walkerMosaic": "Le nom et les règles à deux rangs des motifs en mosaïque du tricot en couleurs. Les grilles ont été dessinées pour ce site."
     }
   },
   "de": {
@@ -84,7 +87,8 @@
       "koch": "Die Koch-Schneeflocke im Fraktal-Werkzeug ist nach dieser Arbeit benannt.",
       "sierpinski": "Das Sierpiński-Dreieck im Fraktal-Werkzeug ist nach dieser Arbeit benannt.",
       "hilbert": "Die Hilbert-Kurve im Fraktal-Werkzeug ist nach dieser Arbeit benannt.",
-      "levy": "Die Lévy-C-Kurve im Fraktal-Werkzeug ist nach dieser Arbeit benannt."
+      "levy": "Die Lévy-C-Kurve im Fraktal-Werkzeug ist nach dieser Arbeit benannt.",
+      "walkerMosaic": "Der Name und die Zwei-Reihen-Regeln der Mosaikmuster bei den Farbmustern. Die Diagramme wurden für diese Website gezeichnet."
     }
   },
   "pt": {
@@ -106,7 +110,8 @@
       "koch": "O floco de Koch do gerador leva o nome deste artigo.",
       "sierpinski": "O triângulo de Sierpiński do gerador leva o nome deste artigo.",
       "hilbert": "A curva de Hilbert do gerador leva o nome deste artigo.",
-      "levy": "A curva C de Lévy do gerador leva o nome deste artigo."
+      "levy": "A curva C de Lévy do gerador leva o nome deste artigo.",
+      "walkerMosaic": "O nome e as regras de duas carreiras dos padrões em mosaico do tricô em cores. Os gráficos foram desenhados para este site."
     }
   }
 }

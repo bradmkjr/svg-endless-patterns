@@ -7,8 +7,10 @@ import type { TessellationOptions, TessellationRequest, TessellationResult, Sash
 import type { MazePaperId, MazeRequest, MazeResult } from "./mazeTypes";
 import { mazeApiPost } from "./mazeApi";
 import type { FractalRequest, FractalResult } from "./fractalTypes";
+import type { KnitColorworkRequest, KnitColorworkResult } from "./knitColorworkTypes";
 
 export type { TessellationColors, TessellationMotif, TessellationOptions, TessellationRequest, TessellationResult, GroupId, SashikoMotif, SashikoRequest, SashikoResult, CelticBreakPattern, CelticInterlace, CelticKnotRequest, CelticKnotResult, CelticStrand, StainedGlassColor, StainedGlassLayout, StainedGlassPiece, StainedGlassRequest, StainedGlassResult, MandalaMotif, MandalaRequest, MandalaResult, MandalaRing, MandalaRingSpec, GirihColors, GirihPart, GirihRequest, GirihResult, GirihStar, GirihSymmetry, TruchetArrangement, TruchetColors, TruchetRequest, TruchetResult, TruchetStyle, TieDyeMix, TieDyeRequest, TieDyeResult, TieDyeTechnique, BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, Setting, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult, TartanStripe, CountedFinish, CrossStitchColor, CrossStitchRequest, CrossStitchResult, NeedlepointColor, NeedlepointRequest, NeedlepointResult, NeedlepointStitch, NeedlepointYarn } from "@/engine";
+export type { KnitColorworkPlan, KnitColorworkRequest, KnitColorworkResult, KnitColorworkTechnique } from "./knitColorworkTypes";
 export type { FractalColors, FractalRequest, FractalResult, FractalType } from "./fractalTypes";
 export type { MazeAlgorithm, MazeColors, MazeDifficulty, MazePaperId, MazeRequest, MazeResult, MazeShape, MazeSize } from "./mazeTypes";
 
@@ -139,13 +141,23 @@ export async function generateGirihPdf(request: GirihRequest): Promise<Uint8Arra
   return run(request);
 }
 
+export async function generateKnitColorwork(request: KnitColorworkRequest): Promise<KnitColorworkResult> {
+  const response = await mazeApiPost("/knit-colorwork", request);
+  return response.json() as Promise<KnitColorworkResult>;
+}
+
+export async function generateKnitColorworkPdf(request: KnitColorworkRequest): Promise<Uint8Array> {
+  const response = await mazeApiPost("/knit-colorwork/pdf", request, "application/pdf");
+  return new Uint8Array(await response.arrayBuffer());
+}
+
 export async function generateFractal(request: FractalRequest): Promise<FractalResult> {
-  const response = await mazeApiPost("/api/fractal", request);
+  const response = await mazeApiPost("/fractal", request);
   return response.json() as Promise<FractalResult>;
 }
 
 export async function generateFractalPdf(request: FractalRequest): Promise<Uint8Array> {
-  const response = await mazeApiPost("/api/fractal/pdf", request, "application/pdf");
+  const response = await mazeApiPost("/fractal/pdf", request, "application/pdf");
   return new Uint8Array(await response.arrayBuffer());
 }
 
@@ -159,23 +171,23 @@ export async function generateTieDyePdf(request: TieDyeRequest): Promise<Uint8Ar
 }
 
 export async function generateMaze(request: MazeRequest): Promise<MazeResult> {
-  const response = await mazeApiPost("/api/maze", request);
+  const response = await mazeApiPost("/maze", request);
   return response.json() as Promise<MazeResult>;
 }
 
 export async function generateMazePosterPdf(request: MazeRequest, paper: MazePaperId): Promise<Uint8Array> {
-  const response = await mazeApiPost(`/api/maze/poster-pdf?paper=${encodeURIComponent(paper)}`, request, "application/pdf");
+  const response = await mazeApiPost(`/maze/poster-pdf?paper=${encodeURIComponent(paper)}`, request, "application/pdf");
   return new Uint8Array(await response.arrayBuffer());
 }
 
 export async function generateMazePdf(request: MazeRequest): Promise<Uint8Array> {
-  const response = await mazeApiPost("/api/maze/pdf", request, "application/pdf");
+  const response = await mazeApiPost("/maze/pdf", request, "application/pdf");
   return new Uint8Array(await response.arrayBuffer());
 }
 
 export async function generateMazePng(request: MazeRequest, view: "maze" | "solution", size: number): Promise<Uint8Array> {
   const query = new URLSearchParams({ view, size: String(size) });
-  const response = await mazeApiPost(`/api/maze/png?${query}`, request, "image/png");
+  const response = await mazeApiPost(`/maze/png?${query}`, request, "image/png");
   return new Uint8Array(await response.arrayBuffer());
 }
 

@@ -1,5 +1,30 @@
 {
   "posts": {
+    "knit-colorwork-patterns": {
+      "title": "Tejido en colores con gráfico, escrito como cuadrados completos",
+      "summary": "Trece gráficos originales con hebras llevadas, mosaico e intarsia, ajustados a tu muestra, con cada vuelta escrita color por color.",
+      "blocks": [
+        "El [tejido en colores](/knitting/colorwork/) es una herramienta nueva de la [biblioteca de patrones](/patterns/). Cada gráfico se dibujó para este sitio y se escribe como un cuadrado completo, del montaje al bloqueo, con tu tamaño y tu muestra.",
+        "Muestras para empezar",
+        [
+          "Pinos pequeños, con hebras llevadas en dos lanas",
+          "Zigzag de cintas, un gráfico con hebras llevadas en tres lanas",
+          "Rombos en mosaico, con una lana en cada vuelta",
+          "Bloque de rombo, un motivo en intarsia"
+        ],
+        "Qué obtienes",
+        [
+          "Un gráfico con clave de colores y números de vuelta en el lado donde empieza cada una",
+          "Vueltas escritas, color por color, en orden de trabajo",
+          "Repeticiones ajustadas a tu número de puntos, con bordes iguales y un borde de punto bobo",
+          "Un control que señala cualquier vuelta que lleve una lana más de una pulgada aproximadamente con tu muestra",
+          "Lana estimada por color, que suma el total",
+          "Un PDF para imprimir, además de SVG y PNG del cuadrado y del gráfico"
+        ],
+        "Haz la muestra con el dibujo",
+        "El tejido en colores rara vez coincide con la muestra del tejido liso, así que cada patrón pide una muestra de su propio gráfico. Indica lo que mides y el cuadrado, las vueltas, las hebras flotantes y la lana cambiarán en consecuencia. Si prefieres un solo color, siguen ahí los [puntos de dos agujas](/knitting/)."
+      ]
+    },
     "fractal-maker": {
       "title": "Dibuja fractales con una regla sencilla",
       "summary": "Nueve fractales clásicos al nivel que elijas, con tus colores o en líneas negras, con descargas en SVG, PNG y PDF.",
@@ -452,6 +477,12 @@
     }
   },
   "changelog": {
+    "Knit colorwork patterns": {
+      "title": "Patrones de tejido en colores",
+      "items": [
+        "Se añadió el tejido en colores: trece gráficos originales con hebras llevadas, mosaico e intarsia, escritos como cuadrados completos con control de hebras flotantes, lana por color y un PDF"
+      ]
+    },
     "Fractal maker": {
       "title": "Generador de fractales",
       "items": [

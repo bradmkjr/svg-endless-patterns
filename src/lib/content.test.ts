@@ -14,6 +14,7 @@ import { parseCelticKnotState, serializeCelticKnotState } from "./celticKnotStat
 import { parseStainedGlassState, serializeStainedGlassState } from "./stainedGlassState";
 import { parseMandalaState, serializeMandalaState } from "./mandalaState";
 import { parseGirihState, serializeGirihState } from "./girihState";
+import { parseKnitColorworkState, serializeKnitColorworkState } from "./knitColorworkState";
 import { parseFractalState, serializeFractalState } from "./fractalState";
 import { parseTieDyeState, serializeTieDyeState } from "./tieDyeState";
 import { parseTruchetState, serializeTruchetState } from "./truchetState";
@@ -25,7 +26,7 @@ const sorted = (query: string) => [...new URLSearchParams(query).entries()].map(
 async function knownPaths() {
   const posts = await getPosts();
   return new Set([
-    "/", ...PREFIXED_LOCALES.map((l) => `/${l}/`), "/tartans/", "/truchet/", "/tie-dye/", "/fractals/", "/mazes/", "/girih/", "/mandalas/", "/stained-glass/", "/celtic-knots/", "/sashiko/", "/tessellations/", "/cross-stitch/", "/needlepoint/", "/blocks/", "/knitting/", "/crochet/", "/patterns/", "/palettes/", "/about/", "/acknowledgements/", "/blog/", "/changelog/",
+    "/", ...PREFIXED_LOCALES.map((l) => `/${l}/`), "/tartans/", "/truchet/", "/tie-dye/", "/fractals/", "/knitting/colorwork/", "/mazes/", "/girih/", "/mandalas/", "/stained-glass/", "/celtic-knots/", "/sashiko/", "/tessellations/", "/cross-stitch/", "/needlepoint/", "/blocks/", "/knitting/", "/crochet/", "/patterns/", "/palettes/", "/about/", "/acknowledgements/", "/blog/", "/changelog/",
     ...(await getBlocks()).map((b) => `/blocks/${b.slug}/`),
     ...(await getStitchPatterns("knit")).map((s) => `/knitting/${s.slug}/`),
     ...(await getStitchPatterns("crochet")).map((s) => `/crochet/${s.slug}/`),
@@ -83,6 +84,8 @@ describe("blog posts", () => {
       expect(sorted(serializeMandalaState(parseMandalaState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
     } else if (sample.kind === "girih") {
       expect(sorted(serializeGirihState(parseGirihState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
+    } else if (sample.kind === "knitColorwork") {
+      expect(sorted(serializeKnitColorworkState(parseKnitColorworkState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
     } else if (sample.kind === "fractal") {
       expect(sorted(serializeFractalState(parseFractalState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
     } else if (sample.kind === "tieDye") {

@@ -1,5 +1,30 @@
 {
   "posts": {
+    "knit-colorwork-patterns": {
+      "title": "Tricô em cores com gráfico, escrito como quadrados completos",
+      "summary": "Treze gráficos originais em jacquard, mosaico e intarsia, ajustados à sua amostra, com cada carreira escrita cor por cor.",
+      "blocks": [
+        "O [tricô em cores](/knitting/colorwork/) é uma nova ferramenta da [biblioteca de padrões](/patterns/). Cada gráfico foi desenhado para este site e é escrito como um quadrado completo, da montagem ao blocking, no seu tamanho e na sua amostra.",
+        "Exemplos para começar",
+        [
+          "Pinheirinhos, em jacquard com dois fios",
+          "Zigue-zague de fitas, um gráfico em jacquard com três fios",
+          "Losangos em mosaico, com um fio em cada carreira",
+          "Bloco de losango, um motivo em intarsia"
+        ],
+        "O que você recebe",
+        [
+          "Um gráfico com legenda de cores e números de carreira no lado onde cada uma começa",
+          "Carreiras escritas, cor por cor, na ordem do trabalho",
+          "Repetições ajustadas ao seu número de pontos, com bordas iguais e uma barra em ponto tricô",
+          "Uma conferência que aponta qualquer carreira que carregue um fio por mais de cerca de uma polegada na sua amostra",
+          "Fio estimado por cor, somando o total",
+          "Um PDF para imprimir, além de SVG e PNG do quadrado e do gráfico"
+        ],
+        "Faça a amostra no desenho",
+        "O tricô em cores raramente coincide com a amostra do tricô liso, então cada padrão pede uma amostra do próprio gráfico. Informe o que você mediu, e o quadrado, as carreiras, os fios flutuantes e o fio se ajustam. Se preferir uma só cor, os [pontos de tricô](/knitting/) continuam lá."
+      ]
+    },
     "fractal-maker": {
       "title": "Desenhe fractais a partir de uma regra simples",
       "summary": "Nove fractais clássicos no nível escolhido, nas suas cores ou em linhas pretas, com downloads em SVG, PNG e PDF.",
@@ -452,6 +477,12 @@
     }
   },
   "changelog": {
+    "Knit colorwork patterns": {
+      "title": "Padrões de tricô em cores",
+      "items": [
+        "Adicionado o tricô em cores: treze gráficos originais em jacquard, mosaico e intarsia, escritos como quadrados completos com conferência de fios flutuantes, fio por cor e PDF"
+      ]
+    },
     "Fractal maker": {
       "title": "Gerador de fractais",
       "items": [

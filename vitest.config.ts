@@ -10,6 +10,7 @@ export default defineConfig({
   test: {
     environment: "node",
     include: ["src/**/*.test.ts"],
+    maxWorkers: "100%",
     // The geometry tests are thorough, and CI runners are much slower than a laptop.
     testTimeout: 60_000,
   },

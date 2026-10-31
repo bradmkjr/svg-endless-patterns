@@ -22,21 +22,21 @@ export function MazeBuilder({ locale, option, labels, initialState }: { locale: 
   const [state, setState] = useState(initialState);
   const [paper, setPaper] = useState<MazePaperId>("a1");
   const [pngSize, setPngSize] = useState(PNG_OPTIONS[1]);
-  const [result, setResult] = useState<MazeResult>();
+  const [generated, setGenerated] = useState<{ key: string; result: MazeResult } | null>(null);
   const [view, setView] = useState<(typeof VIEWS)[number]>("maze");
-  const [status, setStatus] = useState("");
+  const [status, setStatus] = useState(t.loading);
   const [busy, setBusy] = useState(false);
+  const requestKey = JSON.stringify(state);
+  const result = generated?.key === requestKey ? generated.result : undefined;
 
   const update = (patch: Partial<MazeRequest>) => setState((s) => ({ ...s, ...patch }));
 
   useEffect(() => {
     let stale = false;
-    setResult(undefined);
-    setStatus(t.loading);
     generateMaze(state).then(
       (next) => {
         if (!stale) {
-          setResult(next);
+          setGenerated({ key: requestKey, result: next });
           setStatus("");
         }
       },
@@ -47,7 +47,7 @@ export function MazeBuilder({ locale, option, labels, initialState }: { locale: 
     return () => {
       stale = true;
     };
-  }, [state, b.updateError, t.loading]);
+  }, [requestKey, state, b.updateError]);
 
   useEffect(() => {
     const query = serializeMazeState(state);

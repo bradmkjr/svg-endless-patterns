@@ -10,27 +10,28 @@ import copy from "@/i18n/messages/maze.json";
 import styles from "./Blog.module.css";
 
 export function MazeSample({ sample, locale }: { sample: Extract<PostSample, { kind: "maze" }>; locale: Locale }) {
-  const [svg, setSvg] = useState("");
-  const [failed, setFailed] = useState(false);
+  const [generated, setGenerated] = useState<{ key: string; svg: string } | null>(null);
+  const [failedKey, setFailedKey] = useState("");
   const t = copy[locale];
   const builder = messages(locale).builder;
+  const key = `${sample.query}:${sample.locale ?? locale}:${sample.view}`;
+  const svg = generated?.key === key ? generated.svg : "";
+  const failed = failedKey === key;
 
   useEffect(() => {
     let stale = false;
-    setSvg("");
-    setFailed(false);
     generateMaze(parseMazeState(new URLSearchParams(sample.query), sample.locale ?? locale)).then(
       (result) => {
-        if (!stale) setSvg(result.svg[sample.view]);
+        if (!stale) setGenerated({ key, svg: result.svg[sample.view] });
       },
       () => {
-        if (!stale) setFailed(true);
+        if (!stale) setFailedKey(key);
       },
     );
     return () => {
       stale = true;
     };
-  }, [locale, sample]);
+  }, [key, locale, sample]);
 
   return (
     <li>

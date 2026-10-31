@@ -2,7 +2,7 @@
 
 Next.js (App Router, Next 16 / React 19) + TypeScript site for customizing
 traditional quilt blocks and knit and crochet stitch patterns. Exported as static files and hosted on GitHub Pages;
-there is no backend yet.
+maze generation is served by a separate API.
 
 ## Run
 - `npm run dev` — http://localhost:3000
@@ -19,12 +19,18 @@ Generation stays behind one boundary while moving to a backend API:
   and yardage, SVG, templates, steps, PDF. No React, Next, DOM or `@/` imports.
 - `src/engine/types.ts` — the contract: JSON-only requests and results.
 - `src/lib/generator.ts` — async client and the only file that imports the
-  engine. To move to an API, replace its function bodies with `fetch` calls.
+  engine. Maze requests go to `api-endless-patterns`; other generators still
+  run in-process until they are moved.
 - `src/lib/state.ts` — site concerns: options, palettes, defaults, share links.
 - `src/lib/download.ts` — browser-only saving and SVG-to-PNG.
 
 `src/engine/boundary.test.ts` fails if these rules break. Add new output
 formats to the engine and expose them through `generator.ts`.
+
+All maze generation and generated SVG, PNG, PDF and thumbnail images live in
+the separate `api-endless-patterns` repository. The frontend sends maze
+requests through `src/lib/generator.ts`; `src/lib/mazeTypes.ts` defines the
+JSON contract. The static site needs `NEXT_PUBLIC_API_BASE_URL` at build time.
 
 ## Adding a block
 Add it to `BLOCKS` in `src/engine/blocks.ts`, and its text to `src/engine/messages/`. Tests check that it fills its grid

@@ -2,7 +2,7 @@ import { inflateSync } from "node:zlib";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { PDFDocument, PDFArray, PDFName, PDFRawStream, StandardFonts } from "pdf-lib";
 import uiCopy from "../i18n/messages/maze.json";
-import { ALGORITHM_OPTIONS, defaultMazeState, DIFFICULTY_OPTIONS, parseMazeState, rememberMazeSeed, serializeMazeState, SHAPE_OPTIONS, storedMazeSeed, WEIGHT_OPTIONS } from "../lib/mazeState";
+import { ALGORITHM_OPTIONS, defaultMazeState, DIFFICULTY_OPTIONS, parseMazeState, serializeMazeState, SHAPE_OPTIONS, WEIGHT_OPTIONS } from "../lib/mazeState";
 import engineCopy from "./messages/maze.json";
 import { buildMaze, carve, CELL, generateMaze, MAZE_ALGORITHMS, MAZE_DIFFICULTIES, MAZE_SHAPES, mazeAcross, mazeGraph, ringCounts, routeWidth, seededRandom, wallMiddle, type Maze, type MazePoint, type MazeRequest, type MazeWall } from "./maze";
 import { generateMazePdf } from "./mazePdf";
@@ -374,42 +374,6 @@ describe("share links", () => {
   });
 });
 
-describe("remembered seed", () => {
-  afterEach(() => vi.unstubAllGlobals());
-
-  const storage = () => {
-    const items = new Map<string, string>();
-    return { items, getItem: (k: string) => items.get(k) ?? null, setItem: (k: string, v: string) => void items.set(k, v) };
-  };
-
-  it("keeps the seed per tool, under its own key", () => {
-    const localStorage = storage();
-    vi.stubGlobal("window", { localStorage });
-    expect(storedMazeSeed()).toBeUndefined();
-    rememberMazeSeed(4321);
-    expect(localStorage.items.get("endless-patterns:seed:maze")).toBe("4321");
-    expect(storedMazeSeed()).toEqual({ seed: 4321 });
-  });
-
-  it("ignores a bad stored value", () => {
-    const localStorage = storage();
-    localStorage.items.set("endless-patterns:seed:maze", "banana");
-    vi.stubGlobal("window", { localStorage });
-    expect(storedMazeSeed()).toBeUndefined();
-  });
-
-  it("carries on without storage", () => {
-    const thrower = () => {
-      throw new Error("blocked");
-    };
-    vi.stubGlobal("window", { localStorage: { getItem: thrower, setItem: thrower } });
-    expect(() => rememberMazeSeed(1)).not.toThrow();
-    expect(storedMazeSeed()).toBeUndefined();
-    vi.unstubAllGlobals();
-    expect(() => rememberMazeSeed(1)).not.toThrow();
-    expect(storedMazeSeed()).toBeUndefined();
-  });
-});
 
 describe("translations", () => {
   const leaves = (value: unknown, path = ""): [string, string][] =>

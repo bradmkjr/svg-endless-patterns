@@ -17,14 +17,16 @@ export type PostSample =
   | { kind: "block"; slug: string; query: string; view: "block" | "quilt" | "tile"; caption: string; locale?: Locale }
   | { kind: "knit" | "crochet"; slug: string; query: string; view: "swatch" | "chart"; caption: string; locale?: Locale }
   | { kind: "crossStitch"; slug: ""; query: string; view: "stitched" | "chart"; caption: string; locale?: Locale }
+  | { kind: "needlepoint"; slug: ""; query: string; view: "stitched" | "chart"; caption: string; locale?: Locale }
   | { kind: "tessellation"; slug: ""; query: string; view: "repeat" | "layout"; caption: string; locale?: Locale }
   | { kind: "sashiko"; slug: ""; query: string; view: "panel"; caption: string; locale?: Locale }
   | { kind: "celtic"; slug: ""; query: string; view: "art"; caption: string; locale?: Locale }
   | { kind: "stainedGlass"; slug: ""; query: string; view: "panel" | "numbered"; caption: string; locale?: Locale }
   | { kind: "mandala"; slug: ""; query: string; view: "art" | "coloring"; caption: string; locale?: Locale }
   | { kind: "girih"; slug: ""; query: string; view: "repeat"; caption: string; locale?: Locale }
-  | { kind: "truchet"; slug: ""; query: string; view: "repeat"; caption: string; locale?: Locale }
   | { kind: "maze"; slug: ""; query: string; view: "maze" | "solution"; caption: string; locale?: Locale }
+  | { kind: "tieDye"; slug: ""; query: string; view: "art" | "guide"; caption: string; locale?: Locale }
+  | { kind: "truchet"; slug: ""; query: string; view: "repeat"; caption: string; locale?: Locale }
   | { kind: "tartan"; slug: ""; query: string; view: "swatch"; caption: string; locale?: Locale };
 
 export type PostBlock =
@@ -95,14 +97,16 @@ export function formatDate(date: string, locale: Locale = "en"): string {
 export function sampleHref(sample: PostSample, locale: Locale = "en"): string {
   const query = sample.query ? `?${sample.query}` : "";
   if (sample.kind === "crossStitch") return localePath(sample.locale ?? locale, `/cross-stitch/${query}`);
+  if (sample.kind === "needlepoint") return localePath(sample.locale ?? locale, `/needlepoint/${query}`);
   if (sample.kind === "tessellation") return localePath(sample.locale ?? locale, `/tessellations/${query}`);
   if (sample.kind === "sashiko") return localePath(sample.locale ?? locale, `/sashiko/${query}`);
   if (sample.kind === "celtic") return localePath(sample.locale ?? locale, `/celtic-knots/${query}`);
   if (sample.kind === "stainedGlass") return localePath(sample.locale ?? locale, `/stained-glass/${query}`);
   if (sample.kind === "mandala") return localePath(sample.locale ?? locale, `/mandalas/${query}`);
   if (sample.kind === "girih") return localePath(sample.locale ?? locale, `/girih/${query}`);
-  if (sample.kind === "truchet") return localePath(sample.locale ?? locale, `/truchet/${query}`);
   if (sample.kind === "maze") return localePath(sample.locale ?? locale, `/mazes/${query}`);
+  if (sample.kind === "tieDye") return localePath(sample.locale ?? locale, `/tie-dye/${query}`);
+  if (sample.kind === "truchet") return localePath(sample.locale ?? locale, `/truchet/${query}`);
   if (sample.kind === "tartan") return localePath(sample.locale ?? locale, `/tartans/${query}`);
   const section = sample.kind === "block" ? "blocks" : sample.kind === "knit" ? "knitting" : "crochet";
   return localePath(sample.locale ?? locale, `/${section}/${sample.slug}/${query}`);

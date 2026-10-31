@@ -26,7 +26,7 @@ const drawPaths = (page: PDFPage, shapes: GirihShape[], x: number, y: number, sc
   }
 };
 
-/** Draws repeats from the top left. Lines reach a little past their repeat, so the seams join; a white band trims the outside. */
+/** Draws repeats from the top left. Shapes reach a little past their repeat, so the seams join; a white band trims the outside. */
 function drawRepeats(page: PDFPage, request: GirihRequest, scene: GirihScene, top: number, scale: number, across: number, down: number) {
   const cw = scene.group.cell.width * GIRIH_UNITS * scale;
   const ch = scene.group.cell.height * GIRIH_UNITS * scale;

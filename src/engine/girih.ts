@@ -522,7 +522,7 @@ export function girihStencil(req: Pick<GirihRequest, "symmetry" | "star" | "line
 }
 
 /** The balance point of a polygon, which unlike the average of its corners doesn't depend on how they're spaced. */
-function areaCenter(points: readonly Vec[]): Vec {
+export function areaCenter(points: readonly Vec[]): Vec {
   const area = polygonArea(points);
   let cx = 0;
   let cy = 0;
@@ -579,12 +579,13 @@ const linePath = ([a, b]: [Vec, Vec]) => `M${fmt(a[0])} ${fmt(a[1])}L${fmt(b[0])
 /** Plain JSON for one drawn path, shared by the SVG and the PDF. Lengths are in SVG units. */
 export type GirihShape = { d: string; fill?: string; stroke?: string; strokeWidth?: number };
 
-/** One repeat, ready to draw. With `clip`, it stays inside the repeat, for formats that can't clip. */
+/** One repeat, ready to draw. With `clip`, it stays close to the repeat, for formats that can't clip; the caller trims the rest. */
 export function girihShapes(req: GirihRequest, scene: GirihScene, clip = false): GirihShape[] {
   const { width, height } = scene.group.cell;
   const stroke = strokeOf(req, scene);
   const pad = (stroke * 1.5) / GIRIH_UNITS;
-  const fillOf = (points: Vec[]) => (clip ? clipPolygon(points, 0, 0, width, height) : points);
+  // Fills overlap the next repeat a little too, so no hairline shows at a seam.
+  const fillOf = (points: Vec[]) => (clip ? clipPolygon(points, -pad, -pad, width + pad, height + pad) : points);
   const lineOf = (segment: [Vec, Vec]) => (clip ? clipSegment(segment, -pad, -pad, width + pad, height + pad) : segment);
   const paths = (polygons: Vec[][]) => polygons.map(fillOf).filter((p) => p.length > 2).map(closedPath).join("");
 
@@ -631,7 +632,7 @@ function panelSvg(req: GirihRequest, scene: GirihScene, title: string): string {
   for (let y = 0; y < req.down; y++) for (let x = 0; x < req.across; x++) uses.push(`<use href="#${id}" x="${round3(x * cw)}" y="${round3(y * ch)}"/>`);
   const border = Math.max(strokeOf(req, scene) * 2, 4);
   const heightIn = (req.repeatWidth * ch * req.down) / cw;
-  return `${svgOpen(w, h, req.repeatWidth * req.across, heightIn, title)}<defs><clipPath id="${id}-cell"><rect width="${round3(cw)}" height="${round3(ch)}"/></clipPath><g id="${id}" clip-path="url(#${id}-cell)">${shapeMarkup(girihShapes(req, scene))}</g></defs><rect x="-1" y="-1" width="${round3(w + 2)}" height="${round3(h + 2)}" fill="${c.background}"/>${uses.join("")}<rect x="${border / 2}" y="${border / 2}" width="${round3(w - border)}" height="${round3(h - border)}" fill="none" stroke="${c.line}" stroke-width="${round3(border)}"/></svg>`;
+  return `${svgOpen(w, h, req.repeatWidth * req.across, heightIn, title)}<defs><g id="${id}">${shapeMarkup(girihShapes(req, scene))}</g></defs><rect x="-1" y="-1" width="${round3(w + 2)}" height="${round3(h + 2)}" fill="${c.background}"/>${uses.join("")}<rect x="${border / 2}" y="${border / 2}" width="${round3(w - border)}" height="${round3(h - border)}" fill="none" stroke="${c.line}" stroke-width="${round3(border)}"/></svg>`;
 }
 
 function stencilSvg(req: GirihRequest, stencil: GirihStencil, title: string): string {

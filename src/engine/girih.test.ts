@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { PDFDocument } from "pdf-lib";
 import {
+  areaCenter,
   clipPolygon,
   clipSegment,
   generateGirih,
@@ -489,11 +490,27 @@ describe.each(OPTIONS)("%i-fold %s", (symmetry, star) => {
       }
     });
 
-    it("covers nearly all regions of the repeat, losing only tiny ones", () => {
+    it("divides the repeat into regions that fill it, and only loses tiny ones to the bands", () => {
       const scene2 = girihScene(symmetry, star);
-      const faces = strapFaces(scene2.tilesPerRepeat.flatMap((t) => [t]));
-      expect(faces.length).toBeGreaterThan(0);
-      expect(stencil.openings.length).toBeGreaterThanOrEqual(scene2.tilesPerRepeat.length);
+      const around = [-1, 0, 1].flatMap((i) =>
+        [-1, 0, 1].flatMap((j) =>
+          scene2.tilesPerRepeat.map((t) => ({
+            ...t,
+            loops: t.loops.map((loop) => loop.map(([x, y]): Vec => [x + i * width, y + j * height])),
+            inner: t.inner?.map(([x, y]): Vec => [x + i * width, y + j * height]) ?? null,
+            spokes: t.spokes.map(([a, b]): [Vec, Vec] => [[a[0] + i * width, a[1] + j * height], [b[0] + i * width, b[1] + j * height]]),
+          })),
+        ),
+      );
+      const faces = strapFaces(around).filter((face) => {
+        const [x, y] = areaCenter(face);
+        return x >= -1e-7 && y >= -1e-7 && x < width - 1e-7 && y < height - 1e-7;
+      });
+      expect(faces.reduce((sum, face) => sum + polygonArea(face), 0)).toBeCloseTo(width * height, 6);
+      const kept = faces.filter((face) => insetPolygon(face, stencil.bridge / 2));
+      expect(stencil.openings).toHaveLength(kept.length);
+      const lost = faces.filter((face) => !kept.includes(face)).reduce((sum, face) => sum + polygonArea(face), 0);
+      expect(lost / (width * height)).toBeLessThan(0.05);
     });
   });
 });

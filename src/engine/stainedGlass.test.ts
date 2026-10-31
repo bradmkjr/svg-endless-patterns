@@ -98,11 +98,11 @@ describe.each(LAYOUT_IDS)("%s layout", (layout) => {
       for (const a of sheet) {
         seen.add(a.number);
         expect(a.x).toBeGreaterThanOrEqual(36);
-        expect(a.x + a.window.w).toBeLessThanOrEqual(576 + 1e-6);
-        expect(a.y + a.window.h).toBeLessThanOrEqual(756 + 1e-6);
+        expect(a.x + a.sheetArea.w).toBeLessThanOrEqual(576 + 1e-6);
+        expect(a.y + a.sheetArea.h).toBeLessThanOrEqual(756 + 1e-6);
         for (const b of sheet) {
           if (a === b) continue;
-          const apart = a.x + a.window.w <= b.x || b.x + b.window.w <= a.x || a.y + a.window.h <= b.y || b.y + b.window.h <= a.y;
+          const apart = a.x + a.sheetArea.w <= b.x || b.x + b.sheetArea.w <= a.x || a.y + a.sheetArea.h <= b.y || b.y + b.sheetArea.h <= a.y;
           expect(apart).toBe(true);
         }
       }
@@ -112,7 +112,7 @@ describe.each(LAYOUT_IDS)("%s layout", (layout) => {
       // Unscaled: the window is the piece's bounding box at 72 points to the inch.
       const piece = pieces[place.number - 1];
       const xs = piece.cut.map(([x]) => x);
-      expect(place.window.w).toBeCloseTo((Math.max(...xs) - Math.min(...xs)) * 72, 6);
+      expect(place.sheetArea.w).toBeCloseTo((Math.max(...xs) - Math.min(...xs)) * 72, 6);
     }
     for (const number of tiled) {
       const piece = pieces[number - 1];
@@ -125,7 +125,7 @@ describe.each(LAYOUT_IDS)("%s layout", (layout) => {
         const a = piece.cut[i];
         const b = piece.cut[(i + 1) % piece.cut.length];
         const [x, y] = [(a[0] + ((b[0] - a[0]) * t) / 40 - minX) * 72, (a[1] + ((b[1] - a[1]) * t) / 40 - minY) * 72];
-        expect(windows.some((s) => x >= s.window.x - 1e-6 && x <= s.window.x + s.window.w + 1e-6 && y >= s.window.y - 1e-6 && y <= s.window.y + s.window.h + 1e-6), `no. ${number}`).toBe(true);
+        expect(windows.some((s) => x >= s.sheetArea.x - 1e-6 && x <= s.sheetArea.x + s.sheetArea.w + 1e-6 && y >= s.sheetArea.y - 1e-6 && y <= s.sheetArea.y + s.sheetArea.h + 1e-6), `no. ${number}`).toBe(true);
       }
     }
     expect(OVERLAP).toBe(36);

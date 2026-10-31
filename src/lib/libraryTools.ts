@@ -29,8 +29,8 @@ export async function libraryTools(locale: Locale): Promise<LibraryTool[]> {
     { id: "celticKnot", href: "/celtic-knots/", svg: celtic.svg.art },
     { id: "stainedGlass", href: "/stained-glass/", svg: glass.svg.panel },
     { id: "mandala", href: "/mandalas/", svg: mandala.svg.art },
-    // The girih repeat is wider than tall, so it's sized by height.
-    { id: "girih", href: "/girih/", tile: girih.svg.repeat, tileSize: "auto 100%" },
+    // The girih repeat is wider than tall, so it's sized by height, two rows to a card.
+    { id: "girih", href: "/girih/", tile: girih.svg.repeat, tileSize: "auto 50%" },
     { id: "truchet", href: "/truchet/", tile: truchet.svg.repeat, tileSize: "100% auto" },
   ];
 }

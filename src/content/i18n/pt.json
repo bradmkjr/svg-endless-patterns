@@ -1,5 +1,29 @@
 {
   "posts": {
+    "maze-generator": {
+      "title": "Gere um labirinto para imprimir com um único caminho",
+      "summary": "Escolha uma forma, um algoritmo e uma dificuldade e imprima o labirinto com a solução em outra página.",
+      "blocks": [
+        "O [gerador de labirintos](/mazes/) é uma nova ferramenta da [biblioteca de padrões](/patterns/). Cada labirinto tem exatamente um caminho entre duas células quaisquer, sem voltas nem áreas fechadas.",
+        "Exemplos para começar",
+        [
+          "Um labirinto circular com o algoritmo de Wilson",
+          "Um labirinto hexagonal fácil com o algoritmo de Prim",
+          "Um labirinto quadrado com o algoritmo de Kruskal e a solução",
+          "Um labirinto retangular de árvore binária, com sua tendência diagonal"
+        ],
+        "O que você recebe",
+        [
+          "Quatro formas: quadrado, retângulo, círculo e hexágono",
+          "Cinco algoritmos com texturas diferentes: retrocesso recursivo, Prim, Kruskal, Wilson e árvore binária",
+          "Quatro dificuldades, de fácil a especialista, que definem quantas células o labirinto tem",
+          "Um PDF para imprimir com a solução em sua própria página",
+          "SVG e PNG do labirinto e da solução, com a sua espessura de paredes e as suas cores"
+        ],
+        "Sementes e links de compartilhamento",
+        "A semente escolhe o labirinto: a mesma semente e as mesmas configurações sempre desenham o mesmo. Seu navegador lembra da sua semente e o PDF a imprime. Os links de compartilhamento guardam suas configurações, mas não a semente: para desenhar o mesmo labirinto em outro lugar, digite a semente."
+      ]
+    },
     "tie-dye-planner": {
       "title": "Planeje um tie-dye antes de pegar a tinta",
       "summary": "Veja uma dobra em espiral, alvo ou sanfona nas suas cores e receba as dobras, um mapa de tintas, as quantidades e os passos para imprimir.",
@@ -389,6 +413,12 @@
     }
   },
   "changelog": {
+    "Maze generator": {
+      "title": "Gerador de labirintos",
+      "items": [
+        "Adicionado um gerador de labirintos quadrados, retangulares, circulares e hexagonais, com cinco algoritmos, um PDF com a solução em outra página, e SVG e PNG do labirinto e da solução"
+      ]
+    },
     "Tie-dye planner": {
       "title": "Planejador de tie-dye",
       "items": [

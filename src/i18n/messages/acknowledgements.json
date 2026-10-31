@@ -10,7 +10,10 @@
     "usedFor": {
       "dharmaTieDye": "The dye, urea and soda ash amounts, cure times and washing steps in the tie-dye planner, and its safety advice on masks and gloves.",
       "truchet": "The tiles in the Truchet maker carry his name, from his study of how a split square combines.",
-      "girih": "Background on the five girih tiles behind the 10-fold option of the star maker. The layout itself was found by computer search and doesn't come from this paper."
+      "girih": "Background on the five girih tiles behind the 10-fold option of the star maker. The layout itself was found by computer search and doesn't come from this paper.",
+      "prim": "Prim's algorithm in the maze maker is named for this paper.",
+      "kruskal": "Kruskal's algorithm in the maze maker is named for this paper.",
+      "wilson": "Wilson's algorithm in the maze maker is named for this paper."
     }
   },
   "es": {
@@ -24,7 +27,10 @@
     "usedFor": {
       "dharmaTieDye": "Las cantidades de tinte, urea y carbonato de sodio, los tiempos de reposo y los pasos de lavado del planificador de tie-dye, y su consejo de seguridad sobre mascarillas y guantes.",
       "truchet": "Los azulejos del generador de Truchet llevan su nombre, por su estudio de cómo se combina un cuadrado dividido.",
-      "girih": "Información sobre las cinco piezas de girih de la opción de orden 10. La disposición se halló por búsqueda informática y no procede de este artículo."
+      "girih": "Información sobre las cinco piezas de girih de la opción de orden 10. La disposición se halló por búsqueda informática y no procede de este artículo.",
+      "prim": "El algoritmo de Prim del generador de laberintos toma su nombre de este artículo.",
+      "kruskal": "El algoritmo de Kruskal del generador de laberintos toma su nombre de este artículo.",
+      "wilson": "El algoritmo de Wilson del generador de laberintos toma su nombre de este artículo."
     }
   },
   "fr": {
@@ -38,7 +44,10 @@
     "usedFor": {
       "dharmaTieDye": "Les quantités de teinture, d'urée et de carbonate de soude, les temps d'action et les étapes de lavage du planificateur de tie-dye, et son conseil de sécurité sur les masques et les gants.",
       "truchet": "Les tuiles de l'outil Truchet portent son nom, d'après son étude des combinaisons d'un carré partagé.",
-      "girih": "Contexte sur les cinq tuiles girih de l'option d'ordre 10. La disposition a été trouvée par recherche informatique et ne vient pas de cet article."
+      "girih": "Contexte sur les cinq tuiles girih de l'option d'ordre 10. La disposition a été trouvée par recherche informatique et ne vient pas de cet article.",
+      "prim": "L'algorithme de Prim de l'outil de labyrinthes doit son nom à cet article.",
+      "kruskal": "L'algorithme de Kruskal de l'outil de labyrinthes doit son nom à cet article.",
+      "wilson": "L'algorithme de Wilson de l'outil de labyrinthes doit son nom à cet article."
     }
   },
   "de": {
@@ -52,7 +61,10 @@
     "usedFor": {
       "dharmaTieDye": "Die Mengen für Farbe, Harnstoff und Soda, die Einwirkzeiten und Waschschritte im Batik-Planer sowie der Sicherheitshinweis zu Maske und Handschuhen.",
       "truchet": "Die Fliesen im Truchet-Werkzeug tragen seinen Namen, nach seiner Studie darüber, wie sich ein geteiltes Quadrat kombinieren lässt.",
-      "girih": "Hintergrund zu den fünf Girih-Fliesen der 10-zähligen Option. Die Anordnung wurde per Computersuche gefunden und stammt nicht aus diesem Artikel."
+      "girih": "Hintergrund zu den fünf Girih-Fliesen der 10-zähligen Option. Die Anordnung wurde per Computersuche gefunden und stammt nicht aus diesem Artikel.",
+      "prim": "Der Prim-Algorithmus im Labyrinth-Werkzeug ist nach dieser Arbeit benannt.",
+      "kruskal": "Der Kruskal-Algorithmus im Labyrinth-Werkzeug ist nach dieser Arbeit benannt.",
+      "wilson": "Der Wilson-Algorithmus im Labyrinth-Werkzeug ist nach dieser Arbeit benannt."
     }
   },
   "pt": {
@@ -66,7 +78,10 @@
     "usedFor": {
       "dharmaTieDye": "As quantidades de tinta, ureia e barrilha, os tempos de cura e os passos de lavagem do planejador de tie-dye, e o conselho de segurança sobre máscaras e luvas.",
       "truchet": "Os ladrilhos do gerador Truchet levam seu nome, por seu estudo de como um quadrado dividido se combina.",
-      "girih": "Contexto sobre as cinco peças de girih da opção de ordem 10. O arranjo foi encontrado por busca em computador e não vem deste artigo."
+      "girih": "Contexto sobre as cinco peças de girih da opção de ordem 10. O arranjo foi encontrado por busca em computador e não vem deste artigo.",
+      "prim": "O algoritmo de Prim do gerador de labirintos leva o nome deste artigo.",
+      "kruskal": "O algoritmo de Kruskal do gerador de labirintos leva o nome deste artigo.",
+      "wilson": "O algoritmo de Wilson do gerador de labirintos leva o nome deste artigo."
     }
   }
 }

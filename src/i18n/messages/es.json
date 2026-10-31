@@ -257,6 +257,12 @@
         "text": "Previsualiza un plegado en espiral, diana o acordeón con tus colores.",
         "output": "Diagrama de plegado, mapa de tintes, cantidades, pasos imprimibles y vista previa en SVG o PNG.",
         "explore": "Planifica un tie-dye"
+      },
+      "maze": {
+        "title": "Laberintos",
+        "text": "Genera un laberinto con una sola ruta posible, en forma de cuadrado, rectángulo, círculo o hexágono, con cinco algoritmos distintos.",
+        "output": "PDF para imprimir con la solución en otra página, además de SVG y PNG del laberinto y de su solución.",
+        "explore": "Crear un laberinto"
       }
     },
     "seeAllType": "Ver todo en {name}"

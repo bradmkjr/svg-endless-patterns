@@ -1,5 +1,29 @@
 {
   "posts": {
+    "maze-generator": {
+      "title": "Genera un laberinto para imprimir con un solo camino",
+      "summary": "Elige una forma, un algoritmo y una dificultad, e imprime el laberinto con la solución en otra página.",
+      "blocks": [
+        "El [generador de laberintos](/mazes/) es una nueva herramienta de la [biblioteca de patrones](/patterns/). Cada laberinto tiene exactamente una ruta entre dos celdas cualesquiera, sin bucles ni zonas cerradas.",
+        "Ejemplos para empezar",
+        [
+          "Un laberinto circular con el algoritmo de Wilson",
+          "Un laberinto hexagonal fácil con el algoritmo de Prim",
+          "Un laberinto cuadrado con el algoritmo de Kruskal y su solución",
+          "Un laberinto rectangular de árbol binario, con su inclinación diagonal"
+        ],
+        "Qué obtienes",
+        [
+          "Cuatro formas: cuadrado, rectángulo, círculo y hexágono",
+          "Cinco algoritmos con texturas distintas: retroceso recursivo, Prim, Kruskal, Wilson y árbol binario",
+          "Cuatro dificultades, de fácil a experta, que fijan cuántas celdas tiene el laberinto",
+          "Un PDF para imprimir con la solución en su propia página",
+          "SVG y PNG del laberinto y de su solución, con tu grosor de paredes y tus colores"
+        ],
+        "Semillas y enlaces para compartir",
+        "La semilla elige el laberinto: la misma semilla y los mismos ajustes siempre dibujan el mismo. Tu navegador recuerda tu semilla y el PDF la imprime. Los enlaces para compartir guardan tus ajustes pero no la semilla: para dibujar el mismo laberinto en otro lugar, escribe la semilla."
+      ]
+    },
     "tie-dye-planner": {
       "title": "Planifica un tie-dye antes de tomar el tinte",
       "summary": "Previsualiza un plegado en espiral, diana o acordeón con tus colores y obtén los pliegues, un mapa de tintes, las cantidades y los pasos imprimibles.",
@@ -389,6 +413,12 @@
     }
   },
   "changelog": {
+    "Maze generator": {
+      "title": "Generador de laberintos",
+      "items": [
+        "Añadido un generador de laberintos cuadrados, rectangulares, circulares y hexagonales, con cinco algoritmos, un PDF con la solución en otra página, y SVG y PNG del laberinto y de su solución"
+      ]
+    },
     "Tie-dye planner": {
       "title": "Planificador de tie-dye",
       "items": [

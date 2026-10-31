@@ -1,5 +1,29 @@
 {
   "posts": {
+    "maze-generator": {
+      "title": "Erstelle ein druckbares Labyrinth mit einem einzigen Weg",
+      "summary": "Wähle Form, Algorithmus und Schwierigkeit und drucke das Labyrinth mit der Lösung auf einer eigenen Seite.",
+      "blocks": [
+        "Der [Labyrinth-Generator](/mazes/) ist ein neues Werkzeug aus der [Musterbibliothek](/patterns/). Jedes Labyrinth hat genau einen Weg zwischen zwei beliebigen Zellen, ohne Schleifen und ohne abgeschlossene Bereiche.",
+        "Beispiele für den Anfang",
+        [
+          "Ein rundes Labyrinth mit dem Algorithmus von Wilson",
+          "Ein leichtes sechseckiges Labyrinth mit dem Algorithmus von Prim",
+          "Ein quadratisches Labyrinth mit dem Algorithmus von Kruskal und seiner Lösung",
+          "Ein rechteckiges Binärbaum-Labyrinth mit seiner diagonalen Neigung"
+        ],
+        "Was du bekommst",
+        [
+          "Vier Formen: Quadrat, Rechteck, Kreis und Sechseck",
+          "Fünf Algorithmen mit unterschiedlicher Struktur: rekursives Backtracking, Prim, Kruskal, Wilson und Binärbaum",
+          "Vier Schwierigkeitsgrade von leicht bis Experte, die festlegen, wie viele Zellen das Labyrinth hat",
+          "Ein druckbares PDF mit der Lösung auf einer eigenen Seite",
+          "SVG und PNG des Labyrinths und seiner Lösung, mit deiner Wandstärke und deinen Farben"
+        ],
+        "Startwerte und Links zum Teilen",
+        "Der Startwert wählt das Labyrinth: Derselbe Startwert und dieselben Einstellungen zeichnen immer dasselbe. Dein Browser merkt sich deinen Startwert, und das PDF druckt ihn. Links zum Teilen enthalten deine Einstellungen, aber nicht den Startwert: Gib ihn ein, um anderswo dasselbe Labyrinth zu zeichnen."
+      ]
+    },
     "tie-dye-planner": {
       "title": "Batik planen, bevor die Farbe ins Spiel kommt",
       "summary": "Sehen Sie eine Spirale, Zielscheibe oder Ziehharmonika in Ihren Farben und erhalten Sie Faltung, Farbplan, Mengen und druckbare Schritte.",
@@ -389,6 +413,12 @@
     }
   },
   "changelog": {
+    "Maze generator": {
+      "title": "Labyrinth-Generator",
+      "items": [
+        "Labyrinth-Generator hinzugefügt, mit quadratischen, rechteckigen, runden und sechseckigen Labyrinthen, fünf Algorithmen, einem PDF mit separater Lösungsseite sowie SVG und PNG des Labyrinths und seiner Lösung"
+      ]
+    },
     "Tie-dye planner": {
       "title": "Batik-Planer",
       "items": [

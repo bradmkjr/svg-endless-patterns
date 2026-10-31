@@ -257,6 +257,12 @@
         "text": "Sehen Sie eine Spirale, Zielscheibe oder Ziehharmonika in Ihren Farben.",
         "output": "Faltdiagramm, Farbplan, Mischmengen, druckbare Schritte und SVG- oder PNG-Vorschau.",
         "explore": "Batik planen"
+      },
+      "maze": {
+        "title": "Labyrinthe",
+        "text": "Erstelle ein Labyrinth mit genau einem Weg hindurch, als Quadrat, Rechteck, Kreis oder Sechseck, mit fünf verschiedenen Algorithmen.",
+        "output": "Druckbares PDF mit separater Lösungsseite sowie SVG und PNG des Labyrinths und seiner Lösung.",
+        "explore": "Labyrinth erstellen"
       }
     },
     "seeAllType": "Alles in {name} ansehen"

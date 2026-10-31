@@ -257,6 +257,12 @@
         "text": "Preview a spiral, bullseye or accordion fold in your colors.",
         "output": "Fold diagram, dye map, mixing amounts, printable steps, and an SVG or PNG preview.",
         "explore": "Plan a tie-dye"
+      },
+      "maze": {
+        "title": "Mazes",
+        "text": "Generate a maze with exactly one route through it, as a square, rectangle, circle or hexagon, from five different algorithms.",
+        "output": "Printable PDF with a separate solution page, plus SVG and PNG of the maze and its solution.",
+        "explore": "Make a maze"
       }
     },
     "seeAllType": "See everything in {name}"

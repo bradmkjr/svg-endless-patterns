@@ -1,5 +1,76 @@
 [
   {
+    "slug": "maze-generator",
+    "title": "Generate a printable maze with one true path",
+    "date": "2026-10-31",
+    "summary": "Pick a shape, an algorithm and a difficulty, then print the maze with its solution on a separate page.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The [maze generator](/mazes/) is a new tool from the [pattern library](/patterns/). Every maze it draws has exactly one route between any two cells, with no loops and no walled-off areas."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "maze",
+            "slug": "",
+            "query": "shape=circle&a=wilson",
+            "view": "maze",
+            "caption": "A circular maze from Wilson's algorithm"
+          },
+          {
+            "kind": "maze",
+            "slug": "",
+            "query": "shape=hexagon&a=prim&d=easy",
+            "view": "maze",
+            "caption": "An easy hexagonal maze from Prim's algorithm"
+          },
+          {
+            "kind": "maze",
+            "slug": "",
+            "query": "a=kruskal&d=easy",
+            "view": "solution",
+            "caption": "A square maze from Kruskal's algorithm, with its solution"
+          },
+          {
+            "kind": "maze",
+            "slug": "",
+            "query": "shape=rectangle&a=binaryTree&d=easy",
+            "view": "maze",
+            "caption": "A rectangular binary tree maze, with its diagonal lean"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Four shapes: square, rectangle, circle and hexagon",
+          "Five algorithms with different textures: recursive backtracker, Prim, Kruskal, Wilson and binary tree",
+          "Four difficulties, from easy to expert, which set how many cells the maze has",
+          "A printable PDF with the solution on its own page",
+          "SVG and PNG of the maze and of its solution, with your wall weight and colors"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Seeds and share links"
+      },
+      {
+        "type": "paragraph",
+        "text": "A seed picks the maze: the same seed and settings always draw the same one. Your browser remembers your seed and the PDF prints it. Share links keep your settings but not the seed, so to draw the same maze elsewhere, type the seed in."
+      }
+    ]
+  },
+  {
     "slug": "tie-dye-planner",
     "title": "Plan a tie-dye before you pick up the dye",
     "date": "2026-10-31",

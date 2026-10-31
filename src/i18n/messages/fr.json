@@ -257,6 +257,12 @@
         "text": "Prévisualisez un pliage en spirale, en cible ou en accordéon dans vos couleurs.",
         "output": "Schéma de pliage, plan des teintures, quantités, étapes imprimables et aperçu SVG ou PNG.",
         "explore": "Préparer un tie-dye"
+      },
+      "maze": {
+        "title": "Labyrinthes",
+        "text": "Générez un labyrinthe avec un seul chemin possible, en carré, rectangle, cercle ou hexagone, à partir de cinq algorithmes différents.",
+        "output": "PDF à imprimer avec la solution sur une page à part, ainsi que SVG et PNG du labyrinthe et de sa solution.",
+        "explore": "Créer un labyrinthe"
       }
     },
     "seeAllType": "Tout voir dans {name}"

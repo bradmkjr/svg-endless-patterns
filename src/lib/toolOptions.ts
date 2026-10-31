@@ -3,6 +3,7 @@ import crossStitch from "@/i18n/messages/crossStitch.json";
 import girih from "@/i18n/messages/girih.json";
 import glass from "@/i18n/messages/stainedGlass.json";
 import mandala from "@/i18n/messages/mandala.json";
+import maze from "@/i18n/messages/maze.json";
 import needlepoint from "@/i18n/messages/needlepoint.json";
 import sashiko from "@/i18n/messages/sashiko.json";
 import tieDye from "@/i18n/messages/tieDye.json";
@@ -17,6 +18,7 @@ import { MOTIF_OPTIONS as SASHIKO_MOTIFS } from "./sashikoState";
 import { GLASS_LAYOUTS } from "./stainedGlassState";
 import { publicPath } from "./site";
 import { MOTIFS as NEEDLEPOINT_DESIGNS } from "./needlepointState";
+import { SHAPE_OPTIONS as MAZE_SHAPES } from "./mazeState";
 import { GROUPS } from "./tessellationState";
 import { TECHNIQUE_OPTIONS } from "./tieDyeState";
 import { STYLE_OPTIONS } from "./truchetState";
@@ -26,7 +28,7 @@ import { STYLE_OPTIONS } from "./truchetState";
  * the choice comes from the path, and every other setting stays in the query string.
  */
 
-export type ToolId = "truchet" | "tessellation" | "girih" | "sashiko" | "celticKnot" | "stainedGlass" | "crossStitch" | "needlepoint" | "mandala" | "tieDye";
+export type ToolId = "truchet" | "tessellation" | "girih" | "sashiko" | "celticKnot" | "stainedGlass" | "crossStitch" | "needlepoint" | "mandala" | "tieDye" | "maze";
 type ToolOption = { slug: string; value: string };
 type Tool = { path: string; param: string; options: ToolOption[] };
 
@@ -43,6 +45,7 @@ export const TOOL_OPTIONS: Record<ToolId, Tool> = {
   crossStitch: { path: "/cross-stitch/", param: "m", options: named(STITCH_MOTIFS.map((m) => m.id)) },
   needlepoint: { path: "/needlepoint/", param: "m", options: named(NEEDLEPOINT_DESIGNS.map((m) => m.id)) },
   tieDye: { path: "/tie-dye/", param: "t", options: named(TECHNIQUE_OPTIONS) },
+  maze: { path: "/mazes/", param: "shape", options: named(MAZE_SHAPES) },
   mandala: { path: "/mandalas/", param: "n", options: folds(MANDALA_SYMMETRY) },
 };
 
@@ -140,6 +143,8 @@ export function optionLabel(tool: ToolId, slug: string, locale: Locale, tessella
       return needlepoint[locale].motifs[value as keyof (typeof needlepoint)["en"]["motifs"]];
     case "tieDye":
       return tieDye[locale].techniques[value as keyof (typeof tieDye)["en"]["techniques"]];
+    case "maze":
+      return maze[locale].shapes[value as keyof (typeof maze)["en"]["shapes"]];
     case "mandala":
       return fill(mandala[locale].fold, { n: value });
   }

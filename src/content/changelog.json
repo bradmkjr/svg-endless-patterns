@@ -1,6 +1,14 @@
 [
   {
     "date": "2026-10-31",
+    "title": "Maze generator",
+    "post": "maze-generator",
+    "items": [
+      "Added a maze generator with square, rectangular, circular and hexagonal mazes, five algorithms, a PDF with a separate solution page, and SVG and PNG of the maze and its solution"
+    ]
+  },
+  {
+    "date": "2026-10-31",
     "title": "Tie-dye planner",
     "post": "tie-dye-planner",
     "items": [

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { sampleHref, type PostSample } from "@/lib/content";
-import { generatePattern, generateStitchPattern, generateCrossStitch, generateNeedlepoint, generateTessellation, generateSashiko, generateCelticKnot, generateStainedGlass, generateMandala, generateGirih, generateTruchet, generateTieDye, generateTartan, getBlock, getStitchPattern, type Locale } from "@/lib/generator";
+import { generatePattern, generateStitchPattern, generateCrossStitch, generateNeedlepoint, generateTessellation, generateSashiko, generateCelticKnot, generateStainedGlass, generateMandala, generateGirih, generateTruchet, generateTieDye, generateMaze, generateTartan, getBlock, getStitchPattern, type Locale } from "@/lib/generator";
 import { messages } from "@/lib/i18n";
 import { parseState } from "@/lib/state";
 import { parseStitchState } from "@/lib/stitchState";
@@ -14,6 +14,7 @@ import { parseMandalaState } from "@/lib/mandalaState";
 import { parseGirihState } from "@/lib/girihState";
 import { parseTruchetState } from "@/lib/truchetState";
 import { parseTieDyeState } from "@/lib/tieDyeState";
+import { parseMazeState } from "@/lib/mazeState";
 import { parseTartanState } from "@/lib/tartanState";
 import styles from "./Blog.module.css";
 
@@ -30,6 +31,7 @@ async function sampleSvg(sample: PostSample, locale: Locale): Promise<string | n
   if (sample.kind === "girih") return (await generateGirih(parseGirihState(params, locale))).svg[sample.view];
   if (sample.kind === "tieDye") return (await generateTieDye(parseTieDyeState(params, locale))).svg[sample.view];
   if (sample.kind === "truchet") return (await generateTruchet(parseTruchetState(params, locale))).svg[sample.view];
+  if (sample.kind === "maze") return (await generateMaze(parseMazeState(params, locale))).svg[sample.view];
   if (sample.kind === "tartan") return (await generateTartan(parseTartanState(params, locale))).svg.swatch;
   if (sample.kind === "block") {
     const block = await getBlock(sample.slug, locale);

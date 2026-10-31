@@ -1,5 +1,29 @@
 {
   "posts": {
+    "maze-generator": {
+      "title": "Générez un labyrinthe à imprimer avec un seul vrai chemin",
+      "summary": "Choisissez une forme, un algorithme et une difficulté, puis imprimez le labyrinthe avec sa solution sur une page à part.",
+      "blocks": [
+        "Le [générateur de labyrinthes](/mazes/) est un nouvel outil de la [bibliothèque de motifs](/patterns/). Chaque labyrinthe a exactement un chemin entre deux cases quelconques, sans boucle ni zone fermée.",
+        "Exemples pour commencer",
+        [
+          "Un labyrinthe circulaire avec l'algorithme de Wilson",
+          "Un labyrinthe hexagonal facile avec l'algorithme de Prim",
+          "Un labyrinthe carré avec l'algorithme de Kruskal et sa solution",
+          "Un labyrinthe rectangulaire en arbre binaire, avec sa tendance diagonale"
+        ],
+        "Ce que vous obtenez",
+        [
+          "Quatre formes : carré, rectangle, cercle et hexagone",
+          "Cinq algorithmes aux textures différentes : retour sur trace récursif, Prim, Kruskal, Wilson et arbre binaire",
+          "Quatre difficultés, de facile à expert, qui fixent le nombre de cases du labyrinthe",
+          "Un PDF à imprimer avec la solution sur sa propre page",
+          "SVG et PNG du labyrinthe et de sa solution, avec votre épaisseur de murs et vos couleurs"
+        ],
+        "Graines et liens de partage",
+        "La graine choisit le labyrinthe : la même graine et les mêmes réglages dessinent toujours le même. Votre navigateur retient votre graine et le PDF l'imprime. Les liens de partage conservent vos réglages mais pas la graine : pour dessiner le même labyrinthe ailleurs, saisissez la graine."
+      ]
+    },
     "tie-dye-planner": {
       "title": "Préparez un tie-dye avant de sortir la teinture",
       "summary": "Prévisualisez un pliage en spirale, en cible ou en accordéon dans vos couleurs, avec les pliages, un plan des teintures, les quantités et des étapes imprimables.",
@@ -389,6 +413,12 @@
     }
   },
   "changelog": {
+    "Maze generator": {
+      "title": "Générateur de labyrinthes",
+      "items": [
+        "Ajout d'un générateur de labyrinthes carrés, rectangulaires, circulaires et hexagonaux, avec cinq algorithmes, un PDF avec la solution sur une page à part, et des SVG et PNG du labyrinthe et de sa solution"
+      ]
+    },
     "Tie-dye planner": {
       "title": "Planificateur de tie-dye",
       "items": [

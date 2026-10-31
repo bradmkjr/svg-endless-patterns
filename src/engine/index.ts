@@ -15,10 +15,7 @@ import type { BlockInfo, CutLine, PatternRequest, PatternResult } from "./types"
 export type * from "./types";
 export { LOCALES } from "./i18n";
 export { generateCrossStitch } from "./crossStitch";
-export type { CrossStitchColor, CrossStitchRequest, CrossStitchResult } from "./crossStitch";
-export type { CountedFinish } from "./countedChart";
-export { generateNeedlepoint } from "./needlepoint";
-export type { NeedlepointColor, NeedlepointRequest, NeedlepointResult, NeedlepointStitch, NeedlepointYarn } from "./needlepoint";
+export type { CrossStitchColor, CrossStitchCraft, CrossStitchRequest, CrossStitchResult } from "./crossStitch";
 export { generateTessellation, listTessellationOptions } from "./tessellation";
 export type { TessellationColors, TessellationMotif, TessellationOptions, TessellationRequest, TessellationResult } from "./tessellation";
 export type { GroupId } from "./wallpaper";
@@ -28,18 +25,17 @@ export { generateCelticKnot } from "./celticKnot";
 export type { CelticBreakPattern, CelticInterlace, CelticKnotRequest, CelticKnotResult, CelticStrand } from "./celticKnot";
 export { generateStainedGlass } from "./stainedGlass";
 export type { StainedGlassColor, StainedGlassLayout, StainedGlassPiece, StainedGlassRequest, StainedGlassResult } from "./stainedGlass";
-export { generateMandala, mandalaMotifThumb } from "./mandala";
-export type { MandalaMotif, MandalaRequest, MandalaResult, MandalaRing, MandalaRingSpec } from "./mandala";
+export { generateMandala } from "./mandala";
+export type { MandalaMotif, MandalaRequest, MandalaResult, MandalaRing } from "./mandala";
 export { generateGirih } from "./girih";
 export type { GirihColors, GirihPart, GirihRequest, GirihResult, GirihStar, GirihSymmetry } from "./girih";
-export { generateTieDye } from "./tieDye";
-export type { TieDyeMix, TieDyeRequest, TieDyeResult, TieDyeTechnique } from "./tieDye";
 export { generateTruchet } from "./truchet";
 export type { TruchetArrangement, TruchetColors, TruchetRequest, TruchetResult, TruchetStyle } from "./truchet";
+export { generateMaze } from "./maze";
+export type { MazeAlgorithm, MazeColors, MazeDifficulty, MazeRequest, MazeResult, MazeShape } from "./maze";
 export { generateTartan } from "./tartan";
 export type { TartanRequest, TartanResult, TartanStripe } from "./tartan";
 export { generateStitchPattern, listStitchPatterns } from "./stitchPattern";
-export { DEFAULT_KNIT_SQUARE, KNIT_SQUARE_SIZES } from "./knitSquare";
 
 // Block names stay in English in every language: they're traditional names people search by.
 function toInfo({ slug, name, family, level, grid, fabrics, summary }: Block, locale: Locale): BlockInfo {

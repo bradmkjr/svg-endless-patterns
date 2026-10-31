@@ -257,6 +257,12 @@
         "text": "Veja uma dobra em espiral, alvo ou sanfona nas suas cores.",
         "output": "Diagrama de dobra, mapa de tintas, quantidades, passos para imprimir e prévia em SVG ou PNG.",
         "explore": "Planejar um tie-dye"
+      },
+      "maze": {
+        "title": "Labirintos",
+        "text": "Gere um labirinto com um único caminho possível, em quadrado, retângulo, círculo ou hexágono, com cinco algoritmos diferentes.",
+        "output": "PDF para imprimir com a solução em outra página, além de SVG e PNG do labirinto e da solução.",
+        "explore": "Criar um labirinto"
       }
     },
     "seeAllType": "Ver tudo em {name}"

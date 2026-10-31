@@ -1,7 +1,7 @@
 import { parseCelticKnotState } from "./celticKnotState";
 import { parseCrossStitchState } from "./crossStitchState";
 import { parseNeedlepointState } from "./needlepointState";
-import { generateCelticKnot, generateCrossStitch, generateGirih, generateMandala, generateNeedlepoint, generatePattern, generateSashiko, generateStainedGlass, generateStitchPattern, generateTartan, generateTessellation, generateTieDye, generateTruchet, getBlocks, getStitchPatterns } from "./generator";
+import { generateCelticKnot, generateCrossStitch, generateGirih, generateMandala, generateNeedlepoint, generatePattern, generateSashiko, generateStainedGlass, generateStitchPattern, generateTartan, generateTessellation, generateMaze, generateTieDye, generateTruchet, getBlocks, getStitchPatterns } from "./generator";
 import { parseGirihState } from "./girihState";
 import { parseMandalaState } from "./mandalaState";
 import { parseSashikoState } from "./sashikoState";
@@ -11,6 +11,7 @@ import { defaultStitchState } from "./stitchState";
 import { defaultTartanState, TARTAN_PRESETS } from "./tartanState";
 import { parseTessellationState } from "./tessellationState";
 import { TOOL_OPTIONS, withOption, type ThumbGroup, type ToolId } from "./toolOptions";
+import { parseMazeState } from "./mazeState";
 import { parseTieDyeState } from "./tieDyeState";
 import { parseTruchetState } from "./truchetState";
 
@@ -49,6 +50,7 @@ const TOOL_DRAW: Record<ToolId, (params: URLSearchParams) => Promise<string>> = 
   crossStitch: async (p) => (await generateCrossStitch(parseCrossStitchState(p))).svg.stitched,
   needlepoint: async (p) => (await generateNeedlepoint(parseNeedlepointState(p))).svg.stitched,
   tieDye: async (p) => (await generateTieDye(parseTieDyeState(p))).svg.art,
+  maze: async (p) => (await generateMaze(parseMazeState(p))).svg.maze,
   mandala: async (p) => (await generateMandala(parseMandalaState(p))).svg.art,
 };
 

@@ -160,7 +160,7 @@ describe("share links", () => {
     expect(parse(serializeMandalaState({ ...state, locale: "de" }), "de")).toEqual({ ...state, locale: "de" });
   });
 
-  it.each(["n=8&seed=7&m=petals.dots", "n=16&r=7&seed=314", "n=24&r=4&m=scallops.diamonds&seed=2718"])("%s survives a round trip", (query) => {
+  it.each(["n=8&m=petals.dots&seed=7", "n=16&r=7&seed=314", "n=24&r=4&m=scallops.diamonds&seed=2718"])("%s survives a round trip", (query) => {
     expect(serializeMandalaState(parse(query))).toBe(query);
   });
 

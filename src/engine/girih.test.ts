@@ -28,7 +28,7 @@ import { generateGirihPdf } from "./girihPdf";
 import engineText from "./messages/girih.json";
 import siteText from "../i18n/messages/girih.json";
 import { parseGirihState, serializeGirihState, defaultGirihState, STARS_FOR } from "../lib/girihState";
-import { symmetryElements, type Vec } from "./wallpaper";
+import { isLatticeVector, reduceToLattice, symmetryElements, type Vec } from "./wallpaper";
 
 const LOCALES = ["en", "es", "fr", "de", "pt"] as const;
 const OPTIONS: [GirihSymmetry, GirihStar][] = GIRIH_SYMMETRIES.flatMap((n) => GIRIH_STARS.filter((s) => usableStar(n, s) === s).map((s): [GirihSymmetry, GirihStar] => [n, s]));
@@ -62,23 +62,22 @@ function interiorAngles(polygon: readonly Vec[]): number[] {
   });
 }
 
-/** A line piece's identity modulo the repeat: its middle, wrapped into the cell, and its direction. */
+/**
+ * A line piece's identity modulo the pattern's translations: its middle, reduced to the
+ * lattice, and its direction. A hexagonal lattice's rectangle isn't turned onto itself by a
+ * rotation, so the lattice is what has to be used here, not the rectangle.
+ */
 function segmentKeys(scene: GirihScene, transform: (p: Vec) => Vec = (p) => p): Set<string> {
-  const { width, height } = scene.group.cell;
-  const wrap = (v: number, m: number) => {
-    const r = ((v % m) + m) % m;
-    return m - r < 1e-4 ? 0 : r;
-  };
   const keys = new Set<string>();
   for (const tile of scene.tilesPerRepeat) {
     for (const [a0, b0] of tileSegments(tile)) {
       const a = transform(a0);
       const b = transform(b0);
-      const [mx, my] = mid(a, b);
+      const [mx, my] = reduceToLattice(scene.group, mid(a, b));
       let angle = (Math.atan2(b[1] - a[1], b[0] - a[0]) * 180) / Math.PI;
       if (angle < -1e-6) angle += 180;
       if (angle >= 180 - 1e-6) angle -= 180;
-      keys.add(`${Math.round(wrap(mx, width) * 1e3) || 0},${Math.round(wrap(my, height) * 1e3) || 0},${Math.round(angle * 10) || 0},${Math.round(dist(a, b) * 1e3)}`);
+      keys.add(`${Math.round(mx * 1e3) || 0},${Math.round(my * 1e3) || 0},${Math.round(angle * 10) || 0},${Math.round(dist(a, b) * 1e3)}`);
     }
   }
   return keys;
@@ -302,10 +301,11 @@ describe.each(OPTIONS)("%i-fold %s", (symmetry, star) => {
     }
   });
 
-  it("repeats: moving by a side of the rectangle changes nothing", () => {
-    const base0 = segmentKeys(scene);
-    expect(segmentKeys(scene, ([x, y]) => [x + width, y])).toEqual(base0);
-    expect(segmentKeys(scene, ([x, y]) => [x, y + height])).toEqual(base0);
+  it("repeats: the rectangle's sides are translations, and its tiles fill it exactly once", () => {
+    expect(isLatticeVector(scene.group, [width, 0])).toBe(true);
+    expect(isLatticeVector(scene.group, [0, height])).toBe(true);
+    const area = scene.tilesPerRepeat.reduce((sum, t) => sum + Math.abs(polygonArea(t.polygon)), 0);
+    expect(area).toBeCloseTo(width * height, 9);
   });
 
   it("doesn't overclaim: the pattern has the order it reports and not the star's, when those differ", () => {
@@ -317,31 +317,28 @@ describe.each(OPTIONS)("%i-fold %s", (symmetry, star) => {
     }
   });
 
-  it("is seamless: lines leaving one edge of the repeat come back at the same place on the opposite edge", () => {
-    const hits = (edge: "x0" | "x1" | "y0" | "y1") => {
+  it("is seamless: every line touching one edge of the repeat touches the opposite edge at the same place", () => {
+    const hits = (axis: 0 | 1, target: number) => {
       const found = new Set<string>();
       for (const tile of scene.tiles) {
-        for (const segment of tileSegments(tile)) {
-          const c = clipSegment(segment, 0, 0, width, height);
-          if (!c || dist(c[0], c[1]) < 1e-9) continue;
-          const coord = (p: Vec) => (edge[0] === "x" ? p[0] : p[1]);
-          const target = edge[1] === "0" ? 0 : edge[0] === "x" ? width : height;
-          // A line that only ends on the edge has nothing to continue into, so only real crossings count.
-          if ((coord(segment[0]) - target) * (coord(segment[1]) - target) >= -1e-9) continue;
-          for (const p of c) {
-            if (Math.abs(coord(p) - target) > 1e-9) continue;
-            const other = edge[0] === "x" ? p[1] : p[0];
-            const dir = Math.round(((Math.atan2(segment[1][1] - segment[0][1], segment[1][0] - segment[0][0]) * 180) / Math.PI + 360) % 180);
-            found.add(`${other.toFixed(4)}@${dir % 180}`);
-          }
+        for (const [a, b] of tileSegments(tile)) {
+          const da = a[axis] - target;
+          const db = b[axis] - target;
+          // Lines along the edge itself don't cross it.
+          if (da * db > 1e-12 || Math.abs(a[axis] - b[axis]) < 1e-9) continue;
+          const t = da / (da - db);
+          const along = a[1 - axis] + (b[1 - axis] - a[1 - axis]) * t;
+          const limit = axis === 0 ? height : width;
+          if (along < -1e-9 || along > limit + 1e-9) continue;
+          const dir = Math.round((((Math.atan2(b[1] - a[1], b[0] - a[0]) * 180) / Math.PI + 360) % 180) * 10) % 1800;
+          found.add(`${along.toFixed(4)}@${dir}`);
         }
       }
       return [...found].sort();
     };
-    const horizontal = hits("x0");
-    expect(hits("x1")).toEqual(horizontal);
-    expect(hits("y1")).toEqual(hits("y0"));
-    expect(horizontal.length + hits("y0").length).toBeGreaterThan(0);
+    expect(hits(0, width)).toEqual(hits(0, 0));
+    expect(hits(1, height)).toEqual(hits(1, 0));
+    expect(hits(0, 0).length + hits(1, 0).length).toBeGreaterThan(0);
   });
 
   it("draws every tile that reaches the repeat", () => {
@@ -529,7 +526,7 @@ describe("files", () => {
       for (const [symmetry, star] of OPTIONS) {
         const result = generateGirih({ ...base(symmetry, star), locale });
         expect(result.isGirih).toBe(symmetry === 10);
-        if (symmetry !== 10) expect(JSON.stringify(result)).not.toMatch(/girih/i);
+        if (symmetry !== 10) expect(JSON.stringify(result), `${locale} ${symmetry} ${star}`).not.toMatch(/girih/i);
       }
     }
   });

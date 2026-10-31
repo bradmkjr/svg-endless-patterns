@@ -12,6 +12,7 @@ import { blockSvg, quiltSvg, tileSvg } from "./svg";
 import type { BlockInfo, CutLine, PatternRequest, PatternResult } from "./types";
 
 export type * from "./types";
+export { generateStitchPattern, listStitchPatterns } from "./stitchPattern";
 
 function toInfo({ slug, name, family, level, grid, fabrics, summary }: Block): BlockInfo {
   return { slug, name, family, level, grid, fabrics, summary };

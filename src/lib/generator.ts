@@ -4,10 +4,10 @@
  * fetch calls. Requests and results are already plain JSON and every function
  * is already async, so no caller has to change.
  */
-import { generatePattern as runGenerate, listBlocks } from "@/engine";
-import type { BlockInfo, PatternRequest, PatternResult } from "@/engine";
+import { generatePattern as runGenerate, generateStitchPattern as runStitch, listBlocks, listStitchPatterns } from "@/engine";
+import type { BlockInfo, Craft, PatternRequest, PatternResult, StitchInfo, StitchRequest, StitchResult } from "@/engine";
 
-export type { BlockInfo, CutLine, FabricInfo, PatternRequest, PatternResult, Setting } from "@/engine";
+export type { BlockInfo, Craft, CutLine, FabricInfo, PatternRequest, PatternResult, Setting, StitchInfo, StitchRequest, StitchResult } from "@/engine";
 
 export async function getBlocks(): Promise<BlockInfo[]> {
   return listBlocks();
@@ -25,4 +25,21 @@ export async function generatePattern(slug: string, request: PatternRequest): Pr
 export async function generatePdf(slug: string, request: PatternRequest): Promise<Uint8Array> {
   const { generatePatternPdf } = await import("@/engine/pdf");
   return generatePatternPdf(slug, request);
+}
+
+export async function getStitchPatterns(craft: Craft): Promise<StitchInfo[]> {
+  return listStitchPatterns().filter((s) => s.craft === craft);
+}
+
+export async function getStitchPattern(craft: Craft, slug: string): Promise<StitchInfo | undefined> {
+  return listStitchPatterns().find((s) => s.craft === craft && s.slug === slug);
+}
+
+export async function generateStitchPattern(slug: string, request: StitchRequest): Promise<StitchResult> {
+  return runStitch(slug, request);
+}
+
+export async function generateStitchPdf(slug: string, request: StitchRequest): Promise<Uint8Array> {
+  const { generateStitchPdf: run } = await import("@/engine/stitchPdf");
+  return run(slug, request);
 }

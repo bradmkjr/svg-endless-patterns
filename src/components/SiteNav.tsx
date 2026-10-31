@@ -10,7 +10,9 @@ export function SiteNav() {
           {SITE_NAME}
         </Link>
         <nav className={styles.links} aria-label="Main">
-          <Link href="/blocks/">Quilt blocks</Link>
+          <Link href="/blocks/">Quilting</Link>
+          <Link href="/knitting/">Knitting</Link>
+          <Link href="/crochet/">Crochet</Link>
           <Link href="/about/">How it works</Link>
         </nav>
       </div>

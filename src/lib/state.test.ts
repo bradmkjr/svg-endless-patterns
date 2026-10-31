@@ -30,3 +30,19 @@ describe("share links", async () => {
     expect(parsed).toEqual(defaultState(ohio));
   });
 });
+
+describe("stitch share links", async () => {
+  const { getStitchPattern } = await import("./generator");
+  const { defaultStitchState, parseStitchState, serializeStitchState } = await import("./stitchState");
+  const seed = (await getStitchPattern("knit", "seed-stitch"))!;
+
+  it("omits defaults and round-trips changes", () => {
+    expect(serializeStitchState(seed, defaultStitchState(seed))).toBe("");
+    const state = { width: 50, length: 60, stitchGauge: 22, rowGauge: 30, color: "#b5533c" };
+    expect(parseStitchState(seed, new URLSearchParams(serializeStitchState(seed, state)))).toEqual(state);
+  });
+
+  it("falls back on bad input", () => {
+    expect(parseStitchState(seed, new URLSearchParams("w=9999&l=x&sts=-1&color=red"))).toEqual(defaultStitchState(seed));
+  });
+});

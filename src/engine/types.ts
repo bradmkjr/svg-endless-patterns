@@ -21,6 +21,49 @@ export type PatternRequest = {
   colors: Record<string, string>;
 };
 
+export type Craft = "knit" | "crochet";
+
+/** A knit or crochet project: a rectangle of one stitch pattern at the maker's gauge. */
+export type StitchRequest = {
+  /** Wanted finished size, in inches. */
+  width: number;
+  length: number;
+  /** Stitches and rows per 4 inches. */
+  stitchGauge: number;
+  rowGauge: number;
+  color: string;
+};
+
+export type StitchInfo = {
+  slug: string;
+  name: string;
+  craft: Craft;
+  level: string;
+  summary: string;
+  /** Rows per 4" relative to plain fabric in the same yarn: a starting point before swatching. */
+  rowFactor: number;
+};
+
+export type StitchResult = {
+  svg: { chart: string; swatch: string };
+  /** The number to start with: stitches to cast on, or chains to make. */
+  startCount: number;
+  startLabel: string;
+  stitchesPerRow: number;
+  rows: number;
+  /** Finished size after rounding to whole pattern repeats. */
+  width: string;
+  length: string;
+  /** A rough guide, from stitch count and gauge. */
+  yards: number;
+  /** Row-by-row instructions, for the rows that repeat. */
+  setup: string[];
+  pattern: { label: string; text: string }[];
+  repeatNote: string;
+  finish: string[];
+  abbreviations: string[];
+};
+
 export type FabricInfo = { id: string; label: string };
 
 /** A catalog entry: everything about a block except its geometry. */

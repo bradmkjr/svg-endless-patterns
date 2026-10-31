@@ -1,7 +1,7 @@
 # svg-endless-patterns
 
 Next.js (App Router, Next 16 / React 19) + TypeScript site for customizing
-traditional quilt blocks. Exported as static files and hosted on GitHub Pages;
+traditional quilt blocks and knit and crochet stitch patterns. Exported as static files and hosted on GitHub Pages;
 there is no backend yet.
 
 ## Run
@@ -31,6 +31,13 @@ Add it to `BLOCKS` in `src/engine/blocks.ts`. Tests check that it fills its grid
 exactly once and uses the fabrics it declares; its page and sitemap entry follow
 automatically. Use traditional names only, never catalog numbers, and add history
 only with a documented source.
+
+## Adding a knit or crochet stitch
+Add it to `src/engine/stitchCatalog.ts`. Knit: give the chart, seen from the right
+side, with an even row count; written rows are derived from it. Crochet: write the
+row text with what each part consumes and makes. `stitch.test.ts` checks both at
+every width, but it counts crochet stitches rather than reading the text, so
+proofread that text. Crochet terms are US.
 
 ## Static export limits
 No route handlers that read the request, redirects, headers, proxy or server

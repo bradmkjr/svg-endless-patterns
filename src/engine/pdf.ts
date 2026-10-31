@@ -21,11 +21,11 @@ function pathOf(points: Point[], scale: number) {
 }
 
 /** A top-down text cursor that starts a new page when it runs out of room. */
-class Writer {
+export class Writer {
   page!: PDFPage;
   y = 0;
 
-  constructor(private doc: PDFDocument, private font: PDFFont, private bold: PDFFont, private footer: string) {
+  constructor(private doc: PDFDocument, readonly font: PDFFont, private bold: PDFFont, private footer: string) {
     this.newPage();
   }
 

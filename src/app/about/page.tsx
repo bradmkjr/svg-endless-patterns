@@ -3,7 +3,7 @@ import { absoluteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "How the Calculations Work",
-  description: "The rotary-cutting formulas, rounding and yardage assumptions behind the quilt block builder.",
+  description: "The formulas, rounding and estimates behind the quilt block, knitting and crochet calculators.",
   alternates: { canonical: absoluteUrl("/about/") },
 };
 
@@ -35,6 +35,16 @@ export default function AboutPage() {
         strip directions and uses the shorter one, adds 10% for straightening and mistakes, then rounds up to the next
         1/8 yard. Backing extends 4&quot; past the quilt on every side. Binding is 2 1/2&quot; strips with 20&quot; extra for
         joins and corners. These figures are a guide, so check them before you buy or cut.
+      </p>
+
+      <h2>Knitting and crochet</h2>
+      <p>
+        Your stitch and row gauge decide everything. The starting count is your width times your stitches per inch, rounded to the nearest
+        whole pattern repeat, and rows round up the same way. Starting gauges for each yarn weight are typical values, so measure your own swatch.
+      </p>
+      <p>
+        Yarn is a rough estimate, based on a rule of thumb for how much yarn a stitch of that size uses, plus 10%. Fiber and tension
+        change it a lot, so buy extra. Crochet terms are US.
       </p>
 
       <h2>Your data</h2>

@@ -1,7 +1,8 @@
 # svg-endless-patterns
 
 Customize traditional quilt blocks, then get a cutting list, yardage, seamless
-SVG/PNG repeats and a printable PDF with true-size templates. It's a static
+SVG/PNG repeats and a printable PDF with true-size templates. Knit and crochet
+stitch patterns get a starting count, written rows and a chart for your gauge. It's a static
 Next.js site for GitHub Pages, and everything is generated in the browser.
 
 ```bash

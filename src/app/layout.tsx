@@ -11,11 +11,11 @@ const fraunces = Fraunces({ variable: "--font-fraunces", subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL(absoluteUrl("/")),
   title: {
-    default: `${SITE_NAME}: Quilt Block Builder & Cutting Calculator`,
+    default: `${SITE_NAME}: Quilt, Knitting & Crochet Pattern Calculators`,
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Customize traditional quilt blocks in your own colors and sizes. Get a cutting list, yardage, seamless SVG and PNG repeats, and printable PDF templates, free.",
+    "Customize traditional quilt blocks and knit and crochet stitch patterns for your size and gauge. Get cutting lists, written instructions, charts and printable PDFs, free.",
   openGraph: { type: "website", siteName: SITE_NAME, locale: "en_US" },
   twitter: { card: "summary_large_image" },
 };

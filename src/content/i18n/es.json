@@ -1,5 +1,24 @@
 {
   "posts": {
+    "fractal-maker": {
+      "title": "Dibuja fractales con una regla sencilla",
+      "summary": "Nueve fractales clásicos al nivel que elijas, con tus colores o en líneas negras, con descargas en SVG, PNG y PDF.",
+      "blocks": [
+        "El nuevo [generador de fractales](/fractals/) repite una regla sencilla tantas veces como pidas, y cada tipo tiene [su propia página](/fractals/hilbert-curve/).",
+        "Muestras para empezar",
+        [
+          "Una curva del dragón de nivel 11",
+          "Un árbol de Pitágoras inclinado a 40 grados",
+          "Un copo de Koch en líneas negras"
+        ],
+        "Qué obtienes",
+        [
+          "Copo de Koch, triángulo y alfombra de Sierpiński, curvas del dragón, de Hilbert, C de Lévy y de Gosper, y dos árboles",
+          "Nivel, grosor de línea y colores a tu elección, y ángulo de ramas para los árboles",
+          "Descargas en SVG y PNG, y un PDF imprimible con una página en líneas negras"
+        ]
+      ]
+    },
     "poster-size-mazes": {
       "title": "Laberintos tan grandes como tu pared",
       "summary": "Elige columnas y filas exactas, hasta 400 por 400, y descarga un PDF de póster de hasta 4A0 o un PNG de hasta 16384 píxeles.",
@@ -433,6 +452,12 @@
     }
   },
   "changelog": {
+    "Fractal maker": {
+      "title": "Generador de fractales",
+      "items": [
+        "Se añadió un generador de fractales, con nueve tipos, descargas SVG y PNG y PDF imprimible"
+      ]
+    },
     "Poster-size mazes": {
       "title": "Laberintos de tamaño póster",
       "items": [

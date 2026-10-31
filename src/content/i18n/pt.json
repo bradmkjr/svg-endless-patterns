@@ -1,5 +1,24 @@
 {
   "posts": {
+    "fractal-maker": {
+      "title": "Desenhe fractais a partir de uma regra simples",
+      "summary": "Nove fractais clássicos no nível escolhido, nas suas cores ou em linhas pretas, com downloads em SVG, PNG e PDF.",
+      "blocks": [
+        "O novo [gerador de fractais](/fractals/) repete uma regra simples quantas vezes você pedir, e cada tipo tem [sua própria página](/fractals/hilbert-curve/).",
+        "Exemplos para começar",
+        [
+          "Uma curva do dragão de nível 11",
+          "Uma árvore de Pitágoras inclinada a 40 graus",
+          "Um floco de Koch em linhas pretas"
+        ],
+        "O que você recebe",
+        [
+          "Floco de Koch, triângulo e tapete de Sierpiński, curvas do dragão, de Hilbert, C de Lévy e de Gosper, e duas árvores",
+          "Nível, espessura da linha e cores à sua escolha, e ângulo dos galhos para as árvores",
+          "Downloads em SVG e PNG, e um PDF para imprimir com uma página em linhas pretas"
+        ]
+      ]
+    },
     "poster-size-mazes": {
       "title": "Labirintos do tamanho da sua parede",
       "summary": "Escolha colunas e linhas exatas, até 400 por 400, e baixe um PDF de pôster até 4A0 ou um PNG de até 16384 pixels.",
@@ -433,6 +452,12 @@
     }
   },
   "changelog": {
+    "Fractal maker": {
+      "title": "Gerador de fractais",
+      "items": [
+        "Adicionado um gerador de fractais, com nove tipos, SVG e PNG e PDF para imprimir"
+      ]
+    },
     "Poster-size mazes": {
       "title": "Labirintos em tamanho pôster",
       "items": [

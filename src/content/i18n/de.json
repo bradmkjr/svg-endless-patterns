@@ -1,5 +1,24 @@
 {
   "posts": {
+    "fractal-maker": {
+      "title": "Fraktale aus einer einfachen Regel zeichnen",
+      "summary": "Neun klassische Fraktale in gewählter Tiefe, in Ihren Farben oder als schwarze Linien, als SVG, PNG und PDF.",
+      "blocks": [
+        "Das neue [Fraktal-Werkzeug](/fractals/) wiederholt eine einfache Regel so oft Sie möchten, und jede Art hat [eine eigene Seite](/fractals/hilbert-curve/).",
+        "Beispiele zum Einstieg",
+        [
+          "Eine Drachenkurve in Tiefe 11",
+          "Ein um 40 Grad geneigter Pythagoras-Baum",
+          "Eine Koch-Schneeflocke in schwarzen Linien"
+        ],
+        "Das bekommen Sie",
+        [
+          "Koch-Schneeflocke, Sierpiński-Dreieck und -Teppich, Drachen-, Hilbert-, Lévy-C- und Gosper-Kurve sowie zwei Bäume",
+          "Tiefe, Linienstärke und Farben nach Wahl und ein Astwinkel für die Bäume",
+          "SVG- und PNG-Downloads und ein druckbares PDF mit einer Schwarzlinien-Seite"
+        ]
+      ]
+    },
     "poster-size-mazes": {
       "title": "Labyrinthe so groß wie Ihre Wand",
       "summary": "Wählen Sie Spalten und Reihen bis 400 mal 400 und laden Sie ein Poster-PDF bis 4A0 oder ein PNG bis 16384 Pixel herunter.",
@@ -433,6 +452,12 @@
     }
   },
   "changelog": {
+    "Fractal maker": {
+      "title": "Fraktal-Werkzeug",
+      "items": [
+        "Fraktal-Werkzeug hinzugefügt, mit neun Arten, SVG und PNG und druckbarem PDF"
+      ]
+    },
     "Poster-size mazes": {
       "title": "Labyrinthe im Posterformat",
       "items": [

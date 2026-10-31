@@ -13,7 +13,12 @@
       "girih": "Background on the five girih tiles behind the 10-fold option of the star maker. The layout itself was found by computer search and doesn't come from this paper.",
       "prim": "Prim's algorithm in the maze maker is named for this paper.",
       "kruskal": "Kruskal's algorithm in the maze maker is named for this paper.",
-      "wilson": "Wilson's algorithm in the maze maker is named for this paper."
+      "wilson": "Wilson's algorithm in the maze maker is named for this paper.",
+      "mandelbrot": "The book that named and popularized fractals, background for the fractal maker.",
+      "koch": "The Koch snowflake in the fractal maker is named for this paper.",
+      "sierpinski": "The Sierpiński triangle in the fractal maker is named for this paper.",
+      "hilbert": "The Hilbert curve in the fractal maker is named for this paper.",
+      "levy": "The Lévy C curve in the fractal maker is named for this paper."
     }
   },
   "es": {
@@ -30,7 +35,12 @@
       "girih": "Información sobre las cinco piezas de girih de la opción de orden 10. La disposición se halló por búsqueda informática y no procede de este artículo.",
       "prim": "El algoritmo de Prim del generador de laberintos toma su nombre de este artículo.",
       "kruskal": "El algoritmo de Kruskal del generador de laberintos toma su nombre de este artículo.",
-      "wilson": "El algoritmo de Wilson del generador de laberintos toma su nombre de este artículo."
+      "wilson": "El algoritmo de Wilson del generador de laberintos toma su nombre de este artículo.",
+      "mandelbrot": "El libro que dio nombre a los fractales y los popularizó, base del generador de fractales.",
+      "koch": "El copo de Koch del generador de fractales toma su nombre de este artículo.",
+      "sierpinski": "El triángulo de Sierpiński del generador de fractales toma su nombre de este artículo.",
+      "hilbert": "La curva de Hilbert del generador de fractales toma su nombre de este artículo.",
+      "levy": "La curva C de Lévy del generador de fractales toma su nombre de este artículo."
     }
   },
   "fr": {
@@ -47,7 +57,12 @@
       "girih": "Contexte sur les cinq tuiles girih de l'option d'ordre 10. La disposition a été trouvée par recherche informatique et ne vient pas de cet article.",
       "prim": "L'algorithme de Prim de l'outil de labyrinthes doit son nom à cet article.",
       "kruskal": "L'algorithme de Kruskal de l'outil de labyrinthes doit son nom à cet article.",
-      "wilson": "L'algorithme de Wilson de l'outil de labyrinthes doit son nom à cet article."
+      "wilson": "L'algorithme de Wilson de l'outil de labyrinthes doit son nom à cet article.",
+      "mandelbrot": "Le livre qui a nommé et popularisé les fractales, à l'origine de cet outil.",
+      "koch": "Le flocon de Koch de l'outil doit son nom à cet article.",
+      "sierpinski": "Le triangle de Sierpiński de l'outil doit son nom à cet article.",
+      "hilbert": "La courbe de Hilbert de l'outil doit son nom à cet article.",
+      "levy": "La courbe C de Lévy de l'outil doit son nom à cet article."
     }
   },
   "de": {
@@ -64,7 +79,12 @@
       "girih": "Hintergrund zu den fünf Girih-Fliesen der 10-zähligen Option. Die Anordnung wurde per Computersuche gefunden und stammt nicht aus diesem Artikel.",
       "prim": "Der Prim-Algorithmus im Labyrinth-Werkzeug ist nach dieser Arbeit benannt.",
       "kruskal": "Der Kruskal-Algorithmus im Labyrinth-Werkzeug ist nach dieser Arbeit benannt.",
-      "wilson": "Der Wilson-Algorithmus im Labyrinth-Werkzeug ist nach dieser Arbeit benannt."
+      "wilson": "Der Wilson-Algorithmus im Labyrinth-Werkzeug ist nach dieser Arbeit benannt.",
+      "mandelbrot": "Das Buch, das Fraktale benannte und bekannt machte, Hintergrund des Fraktal-Werkzeugs.",
+      "koch": "Die Koch-Schneeflocke im Fraktal-Werkzeug ist nach dieser Arbeit benannt.",
+      "sierpinski": "Das Sierpiński-Dreieck im Fraktal-Werkzeug ist nach dieser Arbeit benannt.",
+      "hilbert": "Die Hilbert-Kurve im Fraktal-Werkzeug ist nach dieser Arbeit benannt.",
+      "levy": "Die Lévy-C-Kurve im Fraktal-Werkzeug ist nach dieser Arbeit benannt."
     }
   },
   "pt": {
@@ -81,7 +101,12 @@
       "girih": "Contexto sobre as cinco peças de girih da opção de ordem 10. O arranjo foi encontrado por busca em computador e não vem deste artigo.",
       "prim": "O algoritmo de Prim do gerador de labirintos leva o nome deste artigo.",
       "kruskal": "O algoritmo de Kruskal do gerador de labirintos leva o nome deste artigo.",
-      "wilson": "O algoritmo de Wilson do gerador de labirintos leva o nome deste artigo."
+      "wilson": "O algoritmo de Wilson do gerador de labirintos leva o nome deste artigo.",
+      "mandelbrot": "O livro que deu nome aos fractais e os popularizou, base do gerador de fractais.",
+      "koch": "O floco de Koch do gerador leva o nome deste artigo.",
+      "sierpinski": "O triângulo de Sierpiński do gerador leva o nome deste artigo.",
+      "hilbert": "A curva de Hilbert do gerador leva o nome deste artigo.",
+      "levy": "A curva C de Lévy do gerador leva o nome deste artigo."
     }
   }
 }

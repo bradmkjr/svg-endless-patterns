@@ -263,6 +263,12 @@
         "text": "Gere um labirinto com um único caminho possível, em quadrado, retângulo, círculo ou hexágono, com cinco algoritmos diferentes.",
         "output": "PDF para imprimir com a solução em outra página, além de SVG e PNG do labirinto e da solução.",
         "explore": "Criar um labirinto"
+      },
+      "fractal": {
+        "title": "Fractais",
+        "text": "Repita uma regra simples no nível escolhido, do floco de Koch à curva do dragão.",
+        "output": "SVG e PNG, uma versão em linhas pretas e um PDF para imprimir.",
+        "explore": "Desenhar um fractal"
       }
     },
     "seeAllType": "Ver tudo em {name}"

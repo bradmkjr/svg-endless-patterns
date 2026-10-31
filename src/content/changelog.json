@@ -1,6 +1,14 @@
 [
   {
     "date": "2026-10-31",
+    "title": "Fractal maker",
+    "post": "fractal-maker",
+    "items": [
+      "Added a fractal maker, with nine types, SVG and PNG downloads and a printable PDF"
+    ]
+  },
+  {
+    "date": "2026-10-31",
     "title": "Poster-size mazes",
     "post": "poster-size-mazes",
     "items": [

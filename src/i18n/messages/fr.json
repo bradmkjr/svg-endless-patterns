@@ -263,6 +263,12 @@
         "text": "Générez un labyrinthe avec un seul chemin possible, en carré, rectangle, cercle ou hexagone, à partir de cinq algorithmes différents.",
         "output": "PDF à imprimer avec la solution sur une page à part, ainsi que SVG et PNG du labyrinthe et de sa solution.",
         "explore": "Créer un labyrinthe"
+      },
+      "fractal": {
+        "title": "Fractales",
+        "text": "Répétez une règle simple au niveau choisi, du flocon de Koch à la courbe du dragon.",
+        "output": "SVG et PNG, une version en traits noirs et un PDF imprimable.",
+        "explore": "Dessiner une fractale"
       }
     },
     "seeAllType": "Tout voir dans {name}"

@@ -1,5 +1,24 @@
 {
   "posts": {
+    "fractal-maker": {
+      "title": "Dessinez des fractales à partir d'une règle simple",
+      "summary": "Neuf fractales classiques au niveau choisi, dans vos couleurs ou en traits noirs, à télécharger en SVG, PNG et PDF.",
+      "blocks": [
+        "Le nouveau [créateur de fractales](/fractals/) répète une règle simple autant de fois que vous le souhaitez, et chaque type a [sa propre page](/fractals/hilbert-curve/).",
+        "Exemples pour commencer",
+        [
+          "Une courbe du dragon de niveau 11",
+          "Un arbre de Pythagore penché à 40 degrés",
+          "Un flocon de Koch en traits noirs"
+        ],
+        "Ce que vous obtenez",
+        [
+          "Flocon de Koch, triangle et tapis de Sierpiński, courbes du dragon, de Hilbert, C de Lévy et de Gosper, et deux arbres",
+          "Niveau, épaisseur du trait et couleurs au choix, et angle des branches pour les arbres",
+          "Téléchargements SVG et PNG, et un PDF imprimable avec une page en traits noirs"
+        ]
+      ]
+    },
     "poster-size-mazes": {
       "title": "Des labyrinthes grands comme votre mur",
       "summary": "Choisissez les colonnes et les rangées, jusqu'à 400 sur 400, puis téléchargez une affiche PDF jusqu'au 4A0 ou un PNG jusqu'à 16384 pixels.",
@@ -433,6 +452,12 @@
     }
   },
   "changelog": {
+    "Fractal maker": {
+      "title": "Créateur de fractales",
+      "items": [
+        "Ajout d'un créateur de fractales, avec neuf types, des SVG et PNG et un PDF imprimable"
+      ]
+    },
     "Poster-size mazes": {
       "title": "Labyrinthes format affiche",
       "items": [

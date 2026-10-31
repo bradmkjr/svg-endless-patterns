@@ -263,6 +263,12 @@
         "text": "Erstelle ein Labyrinth mit genau einem Weg hindurch, als Quadrat, Rechteck, Kreis oder Sechseck, mit fünf verschiedenen Algorithmen.",
         "output": "Druckbares PDF mit separater Lösungsseite sowie SVG und PNG des Labyrinths und seiner Lösung.",
         "explore": "Labyrinth erstellen"
+      },
+      "fractal": {
+        "title": "Fraktale",
+        "text": "Wiederholen Sie eine einfache Regel in gewählter Tiefe, von der Koch-Schneeflocke bis zur Drachenkurve.",
+        "output": "SVG und PNG, eine Schwarzlinien-Version und ein druckbares PDF.",
+        "explore": "Fraktal zeichnen"
       }
     },
     "seeAllType": "Alles in {name} ansehen"

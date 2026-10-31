@@ -263,6 +263,12 @@
         "text": "Genera un laberinto con una sola ruta posible, en forma de cuadrado, rectángulo, círculo o hexágono, con cinco algoritmos distintos.",
         "output": "PDF para imprimir con la solución en otra página, además de SVG y PNG del laberinto y de su solución.",
         "explore": "Crear un laberinto"
+      },
+      "fractal": {
+        "title": "Fractales",
+        "text": "Repite una regla sencilla al nivel que elijas, del copo de Koch a la curva del dragón.",
+        "output": "SVG y PNG, una versión en líneas negras y un PDF imprimible.",
+        "explore": "Dibuja un fractal"
       }
     },
     "seeAllType": "Ver todo en {name}"

@@ -8,7 +8,7 @@ export const SHAPE_OPTIONS: MazeShape[] = ["square", "rectangle", "circle", "hex
 export const ALGORITHM_OPTIONS: MazeAlgorithm[] = ["backtracker", "prim", "kruskal", "wilson", "binaryTree"];
 export const DIFFICULTY_OPTIONS: MazeDifficulty[] = ["easy", "medium", "hard", "expert", "master", "extreme"];
 export const WEIGHT_OPTIONS = [6, 10, 15, 20, 30, 40];
-/** Columns and rows on offer. 400 still gives a quarter-inch cell on the largest sheet. */
+/** Columns and rows on offer. At 400 by 400, a cell prints about 0.15 in wide on the largest sheet. */
 export const SIZE_OPTIONS = [5, 8, 10, 12, 16, 20, 24, 30, 36, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400];
 /** Longest side of a PNG, in pixels. Browsers can't reliably draw past 16384. */
 export const PNG_OPTIONS = [2400, 4800, 8192, 12288, 16384];

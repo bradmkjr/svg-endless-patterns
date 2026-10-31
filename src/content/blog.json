@@ -1,5 +1,59 @@
 [
   {
+    "slug": "fractal-maker",
+    "title": "Draw fractals from one simple rule",
+    "date": "2026-10-31",
+    "summary": "Nine classic fractals at the depth you choose, in your colors or as black lines, with SVG, PNG and PDF downloads.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The new [fractal maker](/fractals/) repeats a simple rule as many times as you ask, and each kind of fractal has [its own page](/fractals/hilbert-curve/)."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "fractal",
+            "slug": "",
+            "query": "",
+            "view": "art",
+            "caption": "A dragon curve at depth 11"
+          },
+          {
+            "kind": "fractal",
+            "slug": "",
+            "query": "t=pythagoras-tree&a=40",
+            "view": "art",
+            "caption": "A Pythagoras tree leaning at 40 degrees"
+          },
+          {
+            "kind": "fractal",
+            "slug": "",
+            "query": "t=koch-snowflake&d=5",
+            "view": "outline",
+            "caption": "A Koch snowflake in black lines"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Koch snowflake, Sierpiński triangle and carpet, dragon, Hilbert, Lévy C and Gosper curves, and two trees",
+          "Your choice of depth, line weight and colors, and a branch angle for the trees",
+          "SVG and PNG downloads, and a printable PDF with a black-line page"
+        ]
+      }
+    ]
+  },
+  {
     "slug": "poster-size-mazes",
     "title": "Mazes as big as your wall",
     "date": "2026-10-31",

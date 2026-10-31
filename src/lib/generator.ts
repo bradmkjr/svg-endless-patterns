@@ -6,8 +6,10 @@ import { generatePattern as runGenerate, generateStitchPattern as runStitch, gen
 import type { TessellationOptions, TessellationRequest, TessellationResult, SashikoRequest, SashikoResult, CelticKnotRequest, CelticKnotResult, StainedGlassRequest, StainedGlassResult, MandalaRequest, MandalaResult, GirihRequest, GirihResult, TruchetRequest, TruchetResult, TieDyeRequest, TieDyeResult, BlockInfo, Craft, Locale, PatternRequest, PatternResult, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult, CrossStitchRequest, CrossStitchResult, NeedlepointRequest, NeedlepointResult } from "@/engine";
 import type { MazePaperId, MazeRequest, MazeResult } from "./mazeTypes";
 import { mazeApiPost } from "./mazeApi";
+import type { FractalRequest, FractalResult } from "./fractalTypes";
 
 export type { TessellationColors, TessellationMotif, TessellationOptions, TessellationRequest, TessellationResult, GroupId, SashikoMotif, SashikoRequest, SashikoResult, CelticBreakPattern, CelticInterlace, CelticKnotRequest, CelticKnotResult, CelticStrand, StainedGlassColor, StainedGlassLayout, StainedGlassPiece, StainedGlassRequest, StainedGlassResult, MandalaMotif, MandalaRequest, MandalaResult, MandalaRing, MandalaRingSpec, GirihColors, GirihPart, GirihRequest, GirihResult, GirihStar, GirihSymmetry, TruchetArrangement, TruchetColors, TruchetRequest, TruchetResult, TruchetStyle, TieDyeMix, TieDyeRequest, TieDyeResult, TieDyeTechnique, BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, Setting, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult, TartanStripe, CountedFinish, CrossStitchColor, CrossStitchRequest, CrossStitchResult, NeedlepointColor, NeedlepointRequest, NeedlepointResult, NeedlepointStitch, NeedlepointYarn } from "@/engine";
+export type { FractalColors, FractalRequest, FractalResult, FractalType } from "./fractalTypes";
 export type { MazeAlgorithm, MazeColors, MazeDifficulty, MazePaperId, MazeRequest, MazeResult, MazeShape, MazeSize } from "./mazeTypes";
 
 export { DEFAULT_KNIT_SQUARE, KNIT_SQUARE_SIZES } from "@/engine";
@@ -135,6 +137,16 @@ export async function generateGirih(request: GirihRequest): Promise<GirihResult>
 export async function generateGirihPdf(request: GirihRequest): Promise<Uint8Array> {
   const { generateGirihPdf: run } = await import("@/engine/girihPdf");
   return run(request);
+}
+
+export async function generateFractal(request: FractalRequest): Promise<FractalResult> {
+  const response = await mazeApiPost("/api/fractal", request);
+  return response.json() as Promise<FractalResult>;
+}
+
+export async function generateFractalPdf(request: FractalRequest): Promise<Uint8Array> {
+  const response = await mazeApiPost("/api/fractal/pdf", request, "application/pdf");
+  return new Uint8Array(await response.arrayBuffer());
 }
 
 export async function generateTieDye(request: TieDyeRequest): Promise<TieDyeResult> {

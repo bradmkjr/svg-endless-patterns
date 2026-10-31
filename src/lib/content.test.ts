@@ -3,6 +3,7 @@ import blog from "@/content/blog.json";
 import { getBlock, getBlocks, getStitchPattern, getStitchPatterns } from "./generator";
 import { getChangelog, getPosts, sampleHref, type PostSample } from "./content";
 import { PREFIXED_LOCALES } from "./i18n";
+import { optionPath, TOOL_OPTIONS, type ToolId } from "./toolOptions";
 import { parseState, serializeState } from "./state";
 import { parseStitchState, serializeStitchState } from "./stitchState";
 import { parseCrossStitchState, serializeCrossStitchState } from "./crossStitchState";
@@ -13,6 +14,7 @@ import { parseCelticKnotState, serializeCelticKnotState } from "./celticKnotStat
 import { parseStainedGlassState, serializeStainedGlassState } from "./stainedGlassState";
 import { parseMandalaState, serializeMandalaState } from "./mandalaState";
 import { parseGirihState, serializeGirihState } from "./girihState";
+import { parseFractalState, serializeFractalState } from "./fractalState";
 import { parseTieDyeState, serializeTieDyeState } from "./tieDyeState";
 import { parseTruchetState, serializeTruchetState } from "./truchetState";
 import { parseMazeState, serializeMazeState } from "./mazeState";
@@ -23,11 +25,12 @@ const sorted = (query: string) => [...new URLSearchParams(query).entries()].map(
 async function knownPaths() {
   const posts = await getPosts();
   return new Set([
-    "/", ...PREFIXED_LOCALES.map((l) => `/${l}/`), "/tartans/", "/truchet/", "/tie-dye/", "/mazes/", "/girih/", "/mandalas/", "/stained-glass/", "/celtic-knots/", "/sashiko/", "/tessellations/", "/cross-stitch/", "/needlepoint/", "/blocks/", "/knitting/", "/crochet/", "/patterns/", "/palettes/", "/about/", "/acknowledgements/", "/blog/", "/changelog/",
+    "/", ...PREFIXED_LOCALES.map((l) => `/${l}/`), "/tartans/", "/truchet/", "/tie-dye/", "/fractals/", "/mazes/", "/girih/", "/mandalas/", "/stained-glass/", "/celtic-knots/", "/sashiko/", "/tessellations/", "/cross-stitch/", "/needlepoint/", "/blocks/", "/knitting/", "/crochet/", "/patterns/", "/palettes/", "/about/", "/acknowledgements/", "/blog/", "/changelog/",
     ...(await getBlocks()).map((b) => `/blocks/${b.slug}/`),
     ...(await getStitchPatterns("knit")).map((s) => `/knitting/${s.slug}/`),
     ...(await getStitchPatterns("crochet")).map((s) => `/crochet/${s.slug}/`),
     ...posts.map((p) => `/blog/${p.slug}/`),
+    ...(Object.keys(TOOL_OPTIONS) as ToolId[]).flatMap((tool) => TOOL_OPTIONS[tool].options.map((o) => optionPath(tool, o.slug))),
   ]);
 }
 
@@ -80,6 +83,8 @@ describe("blog posts", () => {
       expect(sorted(serializeMandalaState(parseMandalaState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
     } else if (sample.kind === "girih") {
       expect(sorted(serializeGirihState(parseGirihState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
+    } else if (sample.kind === "fractal") {
+      expect(sorted(serializeFractalState(parseFractalState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
     } else if (sample.kind === "tieDye") {
       expect(sorted(serializeTieDyeState(parseTieDyeState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
     } else if (sample.kind === "truchet") {

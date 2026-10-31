@@ -27,7 +27,7 @@ Generation stays behind one boundary while moving to a backend API:
 `src/engine/boundary.test.ts` fails if these rules break. Add new output
 formats to the engine and expose them through `generator.ts`.
 
-All maze generation and generated SVG, PNG, PDF and thumbnail images live in
+Mazes and fractals both run this way. All maze generation and generated SVG, PNG, PDF and thumbnail images live in
 the separate `api-endless-patterns` repository. The frontend sends maze
 requests through `src/lib/generator.ts`; `src/lib/mazeTypes.ts` defines the
 JSON contract. The static site needs `NEXT_PUBLIC_API_BASE_URL` at build time.

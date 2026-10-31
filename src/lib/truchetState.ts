@@ -1,4 +1,5 @@
 import type { Locale, TruchetArrangement, TruchetColors, TruchetRequest, TruchetStyle } from "./generator";
+import { localeAccent } from "./localeAccent";
 
 /** The Truchet builder's options, default colors and share links. */
 
@@ -9,13 +10,7 @@ export const WEIGHT_OPTIONS = [4, 6, 8, 10, 12, 16, 20, 24, 30];
 export const REPEAT_OPTIONS = [2, 3, 4, 5, 6, 7.5];
 export const MAX_SEED = 999999;
 
-const COLORS: Record<Locale, TruchetColors> = {
-  en: { background: "#f7f3ea", line: "#1f3a5f", accent: "#c8553d" },
-  es: { background: "#fbf4e4", line: "#aa151b", accent: "#d99a00" },
-  fr: { background: "#f6f5f1", line: "#0055a4", accent: "#ef4135" },
-  de: { background: "#f6d55c", line: "#1f1f1f", accent: "#d00000" },
-  pt: { background: "#fff3b0", line: "#009b3a", accent: "#002776" },
-};
+const COLORS: TruchetColors = { background: "#f7f3ea", line: "#1f3a5f", accent: "#c8553d" };
 
 export function defaultTruchetState(locale: Locale = "en"): TruchetRequest {
   return {
@@ -25,7 +20,7 @@ export function defaultTruchetState(locale: Locale = "en"): TruchetRequest {
     grid: 8,
     weight: 12,
     seed: 7,
-    colors: COLORS[locale],
+    colors: { ...COLORS, accent: localeAccent(locale, COLORS.accent) },
     repeatWidth: 4,
   };
 }

@@ -1,4 +1,5 @@
 import type { GirihColors, GirihRequest, GirihStar, GirihSymmetry, Locale } from "./generator";
+import { localeAccent } from "./localeAccent";
 
 /** The geometric star and girih builder's options, palettes and share links. */
 
@@ -25,20 +26,13 @@ export const GIRIH_PALETTES: { id: PaletteId; colors: GirihColors }[] = [
   { id: "ink", colors: { background: "#ffffff", primary: "#ffffff", accent: "#e8e8e8", line: "#111111" } },
 ];
 
-const FLAG_COLORS: Partial<Record<Locale, GirihColors>> = {
-  es: { background: "#fbf3df", primary: "#aa151b", accent: "#f1bf00", line: "#3a1a10" },
-  fr: { background: "#fbfaf6", primary: "#0055a4", accent: "#ef4135", line: "#14213d" },
-  de: { background: "#f6f2e8", primary: "#1f1f1f", accent: "#d00000", line: "#ffce00" },
-  pt: { background: "#fbfbf2", primary: "#009b3a", accent: "#ffdf00", line: "#002776" },
-};
-
 export function defaultGirihState(locale: Locale = "en"): GirihRequest {
   return {
     ...(locale === "en" ? {} : { locale }),
     symmetry: 10,
     star: "star",
     lineWeight: 4,
-    colors: FLAG_COLORS[locale] ?? GIRIH_PALETTES[0].colors,
+    colors: { ...GIRIH_PALETTES[0].colors, accent: localeAccent(locale, GIRIH_PALETTES[0].colors.accent) },
     showTiles: false,
     repeatWidth: 6,
     across: 3,

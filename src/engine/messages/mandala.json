@@ -3,35 +3,35 @@
     "svgArt": "Geometric radial design",
     "svgColoring": "Geometric radial design, coloring page",
     "pdfTitle": "Geometric radial design",
-    "pdfInfo": "Symmetry: {n}-fold. Rings: {rings}. Seed: {seed}.",
+    "pdfInfo": "Symmetry: {n}-fold. Rings: {rings}.",
     "pdfColoring": "Coloring page"
   },
   "es": {
     "svgArt": "Diseño radial geométrico",
     "svgColoring": "Diseño radial geométrico, página para colorear",
     "pdfTitle": "Diseño radial geométrico",
-    "pdfInfo": "Simetría: de orden {n}. Anillos: {rings}. Semilla: {seed}.",
+    "pdfInfo": "Simetría: de orden {n}. Anillos: {rings}.",
     "pdfColoring": "Página para colorear"
   },
   "fr": {
     "svgArt": "Motif radial géométrique",
     "svgColoring": "Motif radial géométrique, page à colorier",
     "pdfTitle": "Motif radial géométrique",
-    "pdfInfo": "Symétrie : d'ordre {n}. Anneaux : {rings}. Graine : {seed}.",
+    "pdfInfo": "Symétrie : d'ordre {n}. Anneaux : {rings}.",
     "pdfColoring": "Page à colorier"
   },
   "de": {
     "svgArt": "Geometrisches Radialmuster",
     "svgColoring": "Geometrisches Radialmuster, Ausmalbild",
     "pdfTitle": "Geometrisches Radialmuster",
-    "pdfInfo": "Symmetrie: {n}-zählig. Ringe: {rings}. Startwert: {seed}.",
+    "pdfInfo": "Symmetrie: {n}-zählig. Ringe: {rings}.",
     "pdfColoring": "Ausmalbild"
   },
   "pt": {
     "svgArt": "Desenho radial geométrico",
     "svgColoring": "Desenho radial geométrico, página para colorir",
     "pdfTitle": "Desenho radial geométrico",
-    "pdfInfo": "Simetria: de ordem {n}. Anéis: {rings}. Semente: {seed}.",
+    "pdfInfo": "Simetria: de ordem {n}. Anéis: {rings}.",
     "pdfColoring": "Página para colorir"
   }
 }

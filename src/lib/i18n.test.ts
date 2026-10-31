@@ -77,7 +77,11 @@ describe.each(PREFIXED_LOCALES)("%s site text", (locale) => {
     expect(serializeState(block, state)).toBe("");
     const changed = { ...state, size: 9 };
     expect(parseState(block, new URLSearchParams(serializeState(block, changed)), locale)).toEqual(changed);
-    expect(defaultStitchState({ slug: "x", name: "x", craft: "knit", level: "", summary: "", rowFactor: 1 }, locale).color).not.toBe("#23395d");
+    // Only one secondary color differs from English.
+    const english = Object.values(defaultState(block).colors);
+    expect(Object.values(state.colors).filter((color) => !english.includes(color))).toHaveLength(new Set(Object.values(state.colors).filter((color) => !english.includes(color))).size);
+    expect(new Set(Object.values(state.colors).filter((color) => !english.includes(color))).size).toBe(1);
+    expect(defaultStitchState({ slug: "x", name: "x", craft: "knit", level: "", summary: "", rowFactor: 1 }, locale).color).toBe("#23395d");
   });
 
   it("builds paths under its prefix", () => {

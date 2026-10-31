@@ -1,4 +1,5 @@
 import type { BlockInfo, Locale, PatternRequest, Setting } from "./generator";
+import { localeAccent } from "./localeAccent";
 
 /**
  * The builder's settings as the site offers them: option lists, palettes,
@@ -16,18 +17,15 @@ export const PALETTES: Palette[] = [
   { id: "neutral", colors: ["#fafafa", "#2b2b2b", "#e4572e", "#a9a9a9"], sashing: "#fafafa", border: "#2b2b2b" },
 ];
 
-/** Each language's default: colors loosely drawn from a flag commonly associated with it. */
-const FLAG_PALETTES: Partial<Record<Locale, Palette>> = {
-  es: { id: "flag", colors: ["#fbf3dc", "#aa151b", "#f1bf00", "#8c4a1c"], sashing: "#fbf3dc", border: "#aa151b" },
-  fr: { id: "flag", colors: ["#f6f5f1", "#0055a4", "#ef4135", "#9fb6d9"], sashing: "#f6f5f1", border: "#0055a4" },
-  de: { id: "flag", colors: ["#f7efd8", "#1f1f1f", "#d00000", "#ffce00"], sashing: "#f7efd8", border: "#1f1f1f" },
-  pt: { id: "flag", colors: ["#f4f1dc", "#009b3a", "#ffdf00", "#002776"], sashing: "#f4f1dc", border: "#009b3a" },
-};
+/** Each language's default: the first palette, with its secondary color swapped for the language's. */
+function flagPalette(locale: Locale): Palette {
+  const { colors, sashing, border } = PALETTES[0];
+  return { id: "flag", colors: colors.map((color, i) => (i === 2 ? localeAccent(locale, color) : color)), sashing, border };
+}
 
 /** The palette choices in `locale`, its default first. */
 export function palettesFor(locale: Locale): Palette[] {
-  const flag = FLAG_PALETTES[locale];
-  return flag ? [flag, ...PALETTES] : PALETTES;
+  return locale === "en" ? PALETTES : [flagPalette(locale), ...PALETTES];
 }
 
 export const SIZE_OPTIONS = Array.from({ length: 43 }, (_, i) => 3 + i / 2);

@@ -1,4 +1,5 @@
 import type { Locale, StainedGlassLayout, StainedGlassRequest } from "./generator";
+import { localeAccent } from "./localeAccent";
 
 /** The stained glass builder's options, palettes and share links. */
 
@@ -20,13 +21,6 @@ export const GLASS_PALETTES: { id: GlassPaletteId; colors: string[] }[] = [
   { id: "garden", colors: ["#d9486b", "#2f7a46", "#8cb84f", "#f0efd8"] },
 ];
 
-const LOCALE_COLORS: Partial<Record<Locale, string[]>> = {
-  es: ["#f1bf00", "#aa151b", "#d9791a", "#f5ecd0"],
-  fr: ["#ef4135", "#0055a4", "#7fa8d9", "#f6f5f1"],
-  de: ["#ffce00", "#d00000", "#45423c", "#f2e6c4"],
-  pt: ["#ffdf00", "#009b3a", "#002776", "#e8f2e4"],
-};
-
 export function defaultStainedGlassState(locale: Locale = "en"): StainedGlassRequest {
   return {
     ...(locale === "en" ? {} : { locale }),
@@ -36,7 +30,7 @@ export function defaultStainedGlassState(locale: Locale = "en"): StainedGlassReq
     detail: 2,
     cameWidth: 0.25,
     heartWidth: 0.0625,
-    colors: LOCALE_COLORS[locale] ?? GLASS_PALETTES[0].colors,
+    colors: GLASS_PALETTES[0].colors.map((color, i) => (i === 2 ? localeAccent(locale, color) : color)),
   };
 }
 

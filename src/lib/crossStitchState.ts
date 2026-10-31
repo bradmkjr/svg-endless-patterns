@@ -1,4 +1,5 @@
 import type catalog from "@/i18n/messages/crossStitch.json";
+import { localeAccent } from "./localeAccent";
 import type { CrossStitchCraft, CrossStitchRequest, Locale } from "./generator";
 
 /** The cross-stitch builder's options, motifs and share links. */
@@ -155,19 +156,12 @@ export const MOTIFS: Motif[] = [
 
 const DEFAULT_MOTIF = MOTIFS[0];
 
-const FLAG_COLORS: Partial<Record<Locale, string[]>> = {
-  es: ["#aa151b", "#1a1a1a", "#f1bf00"],
-  fr: ["#0055a4", "#ef4135", "#8a8f99"],
-  de: ["#1f1f1f", "#d00000", "#ffce00"],
-  pt: ["#009b3a", "#002776", "#ffdf00"],
-};
-
 /** What a color takes when a hand-edited grid needs one that wasn't chosen. */
 const SPARE_COLORS = ["#b3262e", "#1f5c3d", "#23395d", "#e0a526", "#6b4226", "#7a4b9a", "#2f8f9d", "#1a1a1a"];
 
 /** A motif's colors. Only the opening design varies by language. */
 export function motifColors(motif: Motif, locale: Locale = "en"): string[] {
-  return motif.id === DEFAULT_MOTIF.id ? (FLAG_COLORS[locale] ?? motif.colors) : motif.colors;
+  return motif.id === DEFAULT_MOTIF.id ? motif.colors.map((color, i) => (i === motif.colors.length - 1 ? localeAccent(locale, color) : color)) : motif.colors;
 }
 
 const sameGrid = (a: string[], b: string[]) => a.length === b.length && a.every((row, i) => row === b[i]);

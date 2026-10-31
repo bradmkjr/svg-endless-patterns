@@ -8,6 +8,7 @@
   --accent-contrast: #ffffff;
   --warn-bg: #fbf0d9;
   --warn-line: #dcc088;
+  --locale-swatch: var(--accent);
   --font-display: var(--font-fraunces), Georgia, serif;
 }
 
@@ -26,73 +27,27 @@
 }
 
 /*
- * Each language shifts the site's colors a little, loosely drawn from a flag
- * commonly associated with it. Quilt and yarn defaults follow in `lib/state.ts`.
+ * The site's primary colors are the same in every language. A language only changes
+ * its secondary swatch, loosely drawn from a flag commonly associated with it.
  */
 html[data-locale="es"] {
-  --background: #fbf6ea;
-  --surface: #fffcf2;
-  --accent: #aa151b;
-  --line: #e7d9b6;
+  --locale-swatch: #aa151b;
   --flag: linear-gradient(90deg, #aa151b 25%, #f1bf00 25% 75%, #aa151b 75%);
 }
 
 html[data-locale="fr"] {
-  --background: #f5f6fa;
-  --surface: #ffffff;
-  --accent: #0055a4;
-  --line: #d5dbe8;
+  --locale-swatch: #2f6fc4;
   --flag: linear-gradient(90deg, #0055a4 33.33%, #ffffff 33.33% 66.66%, #ef4135 66.66%);
 }
 
 html[data-locale="de"] {
-  --background: #f9f6ee;
-  --surface: #fffdf6;
-  --accent: #b30000;
-  --line: #e4dcc6;
+  --locale-swatch: #e0a800;
   --flag: linear-gradient(90deg, #111111 33.33%, #d00000 33.33% 66.66%, #ffce00 66.66%);
 }
 
 html[data-locale="pt"] {
-  --background: #f5f8f0;
-  --surface: #fdfff8;
-  --accent: #00702a;
-  --line: #d8e2cc;
+  --locale-swatch: #009b3a;
   --flag: linear-gradient(90deg, #009b3a 40%, #ffdf00 40% 70%, #002776 70%);
-}
-
-@media (prefers-color-scheme: dark) {
-  html[data-locale="es"] {
-    --background: #1a130d;
-    --surface: #251a12;
-    --accent: #f1bf00;
-    --accent-contrast: #1c1406;
-    --line: #443222;
-  }
-
-  html[data-locale="fr"] {
-    --background: #12141b;
-    --surface: #1c1f29;
-    --accent: #9db9e8;
-    --accent-contrast: #0f1726;
-    --line: #323848;
-  }
-
-  html[data-locale="de"] {
-    --background: #141310;
-    --surface: #211f19;
-    --accent: #ffce00;
-    --accent-contrast: #1a1500;
-    --line: #3a3628;
-  }
-
-  html[data-locale="pt"] {
-    --background: #0f1611;
-    --surface: #18221b;
-    --accent: #5fcf85;
-    --accent-contrast: #06210f;
-    --line: #2c3c30;
-  }
 }
 
 .flag-stripe {

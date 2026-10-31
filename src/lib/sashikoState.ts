@@ -18,15 +18,9 @@ export const COLOR_PRESETS: { id: "indigo" | "natural" | "charcoal"; cloth: stri
   { id: "charcoal", cloth: "#2b2b2b", thread: "#efe6d0" },
 ];
 
-const FLAG_COLORS: Partial<Record<Locale, { cloth: string; thread: string }>> = {
-  es: { cloth: "#aa151b", thread: "#f1bf00" },
-  fr: { cloth: "#0055a4", thread: "#f6f5f1" },
-  de: { cloth: "#1f1f1f", thread: "#ffce00" },
-  pt: { cloth: "#009b3a", thread: "#ffdf00" },
-};
-
 export function defaultSashikoState(locale: Locale = "en"): SashikoRequest {
-  const { cloth, thread } = FLAG_COLORS[locale] ?? COLOR_PRESETS[0];
+  // Cloth and thread are both primary colors, so they're the same in every language.
+  const { cloth, thread } = COLOR_PRESETS[0];
   return {
     ...(locale === "en" ? {} : { locale }),
     motif: "asanoha",

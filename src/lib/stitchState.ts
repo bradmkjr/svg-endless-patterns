@@ -44,11 +44,11 @@ export function startingGauge(stitch: StitchInfo, weight: YarnWeight): { stitchG
 }
 
 const DEFAULT_WEIGHT = YARN_WEIGHTS[2];
-/** Default yarn color: drawn from each language's flag palette, as quilts are. */
-const DEFAULT_COLORS: Record<Locale, string> = { en: "#23395d", es: "#aa151b", fr: "#0055a4", de: "#b30000", pt: "#009b3a" };
+/** One yarn is the primary color, so it's the same in every language. */
+const DEFAULT_COLOR = "#23395d";
 
 export function defaultStitchState(stitch: StitchInfo, locale: Locale = "en"): StitchRequest {
-  return { ...(locale === "en" ? {} : { locale }), width: 8, length: 8, color: DEFAULT_COLORS[locale], ...startingGauge(stitch, DEFAULT_WEIGHT) };
+  return { ...(locale === "en" ? {} : { locale }), width: 8, length: 8, color: DEFAULT_COLOR, ...startingGauge(stitch, DEFAULT_WEIGHT) };
 }
 
 const HEX = /^[0-9a-f]{6}$/i;

@@ -1,4 +1,5 @@
 import type { GroupId, Locale, TessellationColors, TessellationMotif, TessellationRequest } from "./generator";
+import { localeAccent } from "./localeAccent";
 
 /** The tessellation builder's options, palettes and share links. */
 
@@ -16,19 +17,12 @@ export const TESSELLATION_PALETTES: { id: PaletteId; colors: TessellationColors 
   { id: "tide", colors: { background: "#123c52", primary: "#f2e9d0", accent: "#45b5aa" } },
 ];
 
-const FLAG_COLORS: Partial<Record<Locale, TessellationColors>> = {
-  es: { background: "#fbf3d6", primary: "#aa151b", accent: "#f1bf00" },
-  fr: { background: "#f6f5f1", primary: "#0055a4", accent: "#ef4135" },
-  de: { background: "#ffce00", primary: "#1f1f1f", accent: "#d00000" },
-  pt: { background: "#fdf6c9", primary: "#009b3a", accent: "#002776" },
-};
-
 export function defaultTessellationState(locale: Locale = "en"): TessellationRequest {
   return {
     ...(locale === "en" ? {} : { locale }),
     motif: "leaf",
     group: "p4",
-    colors: FLAG_COLORS[locale] ?? TESSELLATION_PALETTES[0].colors,
+    colors: { ...TESSELLATION_PALETTES[0].colors, accent: localeAccent(locale, TESSELLATION_PALETTES[0].colors.accent) },
     repeatWidth: 4,
     across: 4,
     down: 3,

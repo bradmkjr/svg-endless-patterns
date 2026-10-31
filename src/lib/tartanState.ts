@@ -1,4 +1,5 @@
 import type { Locale, TartanRequest, TartanStripe } from "./generator";
+import { localeAccent } from "./localeAccent";
 import type { Messages } from "./i18n";
 
 /** The tartan builder's options, presets and share links. */
@@ -17,17 +18,11 @@ export const TARTAN_PRESETS: { id: keyof Messages["tartan"]["presets"]; stripes:
   { id: "check", stripes: [{ color: "#a31621", count: 24 }, { color: "#111111", count: 24 }] },
 ];
 
-const FLAG_STRIPES: Partial<Record<Locale, TartanStripe[]>> = {
-  es: [{ color: "#aa151b", count: 16 }, { color: "#f1bf00", count: 8 }, { color: "#aa151b", count: 3 }, { color: "#1a1a1a", count: 2 }],
-  fr: [{ color: "#0055a4", count: 16 }, { color: "#f6f5f1", count: 6 }, { color: "#0055a4", count: 3 }, { color: "#ef4135", count: 2 }],
-  de: [{ color: "#1f1f1f", count: 16 }, { color: "#d00000", count: 8 }, { color: "#1f1f1f", count: 3 }, { color: "#ffce00", count: 2 }],
-  pt: [{ color: "#009b3a", count: 16 }, { color: "#ffdf00", count: 6 }, { color: "#009b3a", count: 3 }, { color: "#002776", count: 2 }],
-};
-
 export function defaultTartanState(locale: Locale = "en"): TartanRequest {
   return {
     ...(locale === "en" ? {} : { locale }),
-    stripes: FLAG_STRIPES[locale] ?? TARTAN_PRESETS[0].stripes,
+    // The thin overcheck is the secondary color.
+    stripes: TARTAN_PRESETS[0].stripes.map((stripe, i) => (i === 3 ? { ...stripe, color: localeAccent(locale, stripe.color) } : stripe)),
     mirrored: true,
     threadsPerInch: 24,
     width: 12,

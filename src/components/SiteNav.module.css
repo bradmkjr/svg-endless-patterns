@@ -71,6 +71,7 @@
 .languages .languageOn {
   color: var(--accent);
   font-weight: 600;
+  box-shadow: 0 2px 0 var(--locale-swatch);
 }
 
 @media (max-width: 860px) {

@@ -1,4 +1,5 @@
 import type { CelticBreakPattern, CelticInterlace, CelticKnotRequest, Locale } from "./generator";
+import { localeAccent } from "./localeAccent";
 
 /** The Celtic knot builder's options, defaults and share links. */
 
@@ -15,13 +16,7 @@ export const MAX_SEED = 999999;
 
 const INK = "#1d2b3a";
 
-const LOOKS: Record<Locale, { colors: string[]; background: string; outline: string }> = {
-  en: { colors: ["#1f5c3d", "#b8862b", "#23395d"], background: "#f4ecdc", outline: INK },
-  es: { colors: ["#aa151b", "#f1bf00", "#7a1016"], background: "#fbf3df", outline: "#3a1a10" },
-  fr: { colors: ["#0055a4", "#ef4135", "#6d8fc0"], background: "#fbfaf6", outline: "#14213d" },
-  de: { colors: ["#1f1f1f", "#d00000", "#ffce00"], background: "#f6f2e8", outline: "#111111" },
-  pt: { colors: ["#009b3a", "#ffdf00", "#002776"], background: "#fbfbf2", outline: "#0d2b1a" },
-};
+const LOOK = { colors: ["#1f5c3d", "#b8862b", "#23395d"], background: "#f4ecdc", outline: INK };
 
 export function defaultCelticKnotState(locale: Locale = "en"): CelticKnotRequest {
   return {
@@ -35,7 +30,8 @@ export function defaultCelticKnotState(locale: Locale = "en"): CelticKnotRequest
     interlace: "open",
     perStrand: true,
     size: 8,
-    ...LOOKS[locale],
+    ...LOOK,
+    colors: LOOK.colors.map((color, i) => (i === 1 ? localeAccent(locale, color) : color)),
   };
 }
 

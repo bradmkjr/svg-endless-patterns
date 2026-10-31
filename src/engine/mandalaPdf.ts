@@ -35,7 +35,7 @@ export async function generateMandalaPdf(request: MandalaRequest): Promise<Uint8
   const w = new Writer(doc, font, bold, title);
 
   w.text(title, { size: 22, bold: true });
-  w.text(mandalaSay(locale, "pdfInfo", { n: request.symmetry, rings: request.rings, seed: request.seed }), { muted: true });
+  w.text(mandalaSay(locale, "pdfInfo", { n: request.symmetry, rings: drawing.rings.length }), { muted: true });
   w.gap(10);
   drawShapes(w.page, w.y, drawing.art);
 

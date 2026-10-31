@@ -1,6 +1,13 @@
 [
   {
     "date": "2026-10-31",
+    "title": "Blog images",
+    "items": [
+      "Added a featured image for each post on the blog page"
+    ]
+  },
+  {
+    "date": "2026-10-31",
     "title": "Crochet colorwork squares",
     "post": "crochet-colorwork-squares",
     "items": [

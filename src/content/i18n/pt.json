@@ -500,6 +500,12 @@
     }
   },
   "changelog": {
+    "Blog images": {
+      "title": "Imagens do blog",
+      "items": [
+        "Adicionada uma imagem de destaque para cada post na página do blog"
+      ]
+    },
     "Crochet colorwork squares": {
       "title": "Quadrados de crochê multicolorido",
       "items": [

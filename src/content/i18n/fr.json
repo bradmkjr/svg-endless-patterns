@@ -500,6 +500,12 @@
     }
   },
   "changelog": {
+    "Blog images": {
+      "title": "Images du blog",
+      "items": [
+        "Ajout d'une image à la une pour chaque article sur la page du blog"
+      ]
+    },
     "Crochet colorwork squares": {
       "title": "Carrés au crochet multicolores",
       "items": [

@@ -7,6 +7,36 @@
   list-style: none;
 }
 
+.post {
+  display: grid;
+  grid-template-columns: 10rem minmax(0, 1fr);
+  align-items: start;
+  gap: 1.25rem;
+}
+
+.featured {
+  display: block;
+  overflow: hidden;
+  border-radius: 4px;
+  background: var(--surface);
+  box-shadow: 0 0 0 1px var(--line);
+}
+
+.featured img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+@media (max-width: 560px) {
+  .post {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+}
+
 .posts h2 {
   margin: 0.15rem 0 0.4rem;
   font-size: 1.5rem;

@@ -500,6 +500,12 @@
     }
   },
   "changelog": {
+    "Blog images": {
+      "title": "Blog-Bilder",
+      "items": [
+        "Beitragsbild für jeden Artikel auf der Blog-Seite hinzugefügt"
+      ]
+    },
     "Crochet colorwork squares": {
       "title": "Mehrfarbige Häkelquadrate",
       "items": [

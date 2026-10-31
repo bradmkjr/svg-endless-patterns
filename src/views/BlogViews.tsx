@@ -7,6 +7,7 @@ import { RichText } from "@/components/RichText";
 import { formatDate, getChangelog, getPost, getPosts } from "@/lib/content";
 import type { Locale } from "@/lib/generator";
 import { localePath, messages, pageAlternates } from "@/lib/i18n";
+import { postImage } from "@/lib/postImages";
 import { absoluteUrl, SITE_NAME } from "@/lib/site";
 
 export function blogMetadata(locale: Locale): Metadata {
@@ -27,14 +28,21 @@ export async function BlogView({ locale }: { locale: Locale }) {
       </p>
       <ul className={styles.posts}>
         {posts.map((post) => (
-          <li key={post.slug}>
-            <time className={styles.date} dateTime={post.date}>
-              {formatDate(post.date, locale)}
-            </time>
-            <h2>
-              <Link href={localePath(locale, `/blog/${post.slug}/`)}>{post.title}</Link>
-            </h2>
-            <p>{post.summary}</p>
+          <li key={post.slug} className={styles.post}>
+            {/* The title beside it is the link's name, so screen readers skip this one. */}
+            <Link href={localePath(locale, `/blog/${post.slug}/`)} className={styles.featured} tabIndex={-1} aria-hidden="true">
+              {/* eslint-disable-next-line @next/next/no-img-element -- a small static file or API thumbnail, loaded as it nears the screen */}
+              <img src={postImage(post)} alt="" loading="lazy" width={200} height={200} />
+            </Link>
+            <div>
+              <time className={styles.date} dateTime={post.date}>
+                {formatDate(post.date, locale)}
+              </time>
+              <h2>
+                <Link href={localePath(locale, `/blog/${post.slug}/`)}>{post.title}</Link>
+              </h2>
+              <p>{post.summary}</p>
+            </div>
           </li>
         ))}
       </ul>

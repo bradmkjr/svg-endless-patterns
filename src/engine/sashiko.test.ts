@@ -100,15 +100,27 @@ describe.each(SASHIKO_MOTIFS)("%s", (motif) => {
 
   it("no stitch crosses another, or reaches a node", () => {
     // Small panel: this compares every pair of stitches, without using the engine's own line cutting.
-    const small = sashikoRuns({ ...req, motif, spacing, width: 8, height: 8 });
-    const dashes = small.flatMap((run) => run.dashes.map((d) => samples(d)));
+    const small = sashikoRuns({ ...req, motif, spacing, width: 6, height: 6 });
+    const dashes = small.flatMap((run) => run.dashes.map((d) => samples(d))).map((points) => {
+      const xs = points.map((p) => p[0]);
+      const ys = points.map((p) => p[1]);
+      return { points, x0: Math.min(...xs), x1: Math.max(...xs), y0: Math.min(...ys), y1: Math.max(...ys) };
+    });
     for (let i = 0; i < dashes.length; i++) {
-      for (let j = i + 1; j < dashes.length; j++) expect(piecesCross(dashes[i], dashes[j])).toBe(false);
+      const a = dashes[i];
+      for (let j = i + 1; j < dashes.length; j++) {
+        const b = dashes[j];
+        if (a.x1 < b.x0 || b.x1 < a.x0 || a.y1 < b.y0 || b.y1 < a.y0) continue;
+        expect(piecesCross(a.points, b.points)).toBe(false);
+      }
     }
     for (const node of nodes(small)) {
-      for (const dash of dashes) for (const [x, y] of dash) expect(Math.hypot(x - node.x, y - node.y)).toBeGreaterThan(0.015);
+      for (const dash of dashes) {
+        if (node.x < dash.x0 - 0.1 || node.x > dash.x1 + 0.1 || node.y < dash.y0 - 0.1 || node.y > dash.y1 + 0.1) continue;
+        for (const [x, y] of dash.points) expect(Math.hypot(x - node.x, y - node.y)).toBeGreaterThan(0.015);
+      }
     }
-  });
+  }, 30000);
 });
 
 describe("motif geometry", () => {

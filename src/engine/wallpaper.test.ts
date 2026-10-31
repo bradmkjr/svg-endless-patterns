@@ -84,7 +84,7 @@ describe("the catalog", () => {
     const signatures = new Map<string, GroupId[]>();
     for (const id of GROUP_IDS) signatures.set(signature(id), [...(signatures.get(signature(id)) ?? []), id]);
     const shared = [...signatures.values()].filter((ids) => ids.length > 1).map((ids) => ids.sort().join());
-    expect(shared.sort()).toEqual(["p31m,p3m1", "p4g,p4m", "pmg,cmm".split(",").sort().join()].filter((s) => s !== "cmm,pmg").sort());
+    expect(shared.sort()).toEqual(["p31m,p3m1", "p4g,p4m"]);
   });
 });
 
@@ -140,7 +140,7 @@ describe.each(GROUP_IDS)("%s", (id) => {
   it("has mirrors and glides exactly where it should", () => {
     expect(elements.mirrors.length > 0).toBe(expected.mirrors);
     expect(elements.glides.length > 0).toBe(expected.glides);
-    // A mirror really fixes its line, and a glide's shift is half a translation along its axis.
+    // A glide's shift is half a translation along its axis: done twice, it must land on the lattice.
     for (const glide of elements.glides) {
       const along: Vec = [2 * glide.shift * Math.cos(glide.angle), 2 * glide.shift * Math.sin(glide.angle)];
       expect(isLatticeVector(group, along), `${id} glide`).toBe(true);

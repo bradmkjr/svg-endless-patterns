@@ -23,7 +23,7 @@ import styles from "./BlockBuilder.module.css";
 import css from "./CrossStitchBuilder.module.css";
 import { CrossStitchBuilderGrid } from "./CrossStitchBuilderGrid";
 
-/** Chart symbols, in color order. The engine's list, repeated here only to label the controls. */
+/** A color's chart symbol. Blank for a color just added, until the next result arrives. */
 const symbolOf = (result: CrossStitchResult, i: number) => result.colors[i]?.symbol ?? "";
 
 type View = "stitched" | "chart" | "edit";
@@ -199,7 +199,7 @@ export function CrossStitchBuilder({ locale, initialState, initialResult }: { lo
             {state.colors.map((color, i) => {
               const symbol = symbolOf(result, i);
               return (
-                <div key={i} className={`${styles.stripe} ${css.colorRow}`}>
+                <div key={i} className={styles.stripe}>
                   <strong>{symbol}</strong>
                   <input type="color" aria-label={fill(t.colorLabel, { symbol })} value={color} onChange={(e) => setColor(i, e.target.value)} />
                   <span className={css.colorCount}>{result.colors[i]?.stitches ?? 0}</span>

@@ -75,10 +75,6 @@
   font-weight: 700;
 }
 
-.colorRow {
-  grid-template-columns: 1.1rem 2.25rem minmax(0, 1fr) auto;
-}
-
 .colorCount {
   color: var(--muted);
   font-size: 0.875rem;

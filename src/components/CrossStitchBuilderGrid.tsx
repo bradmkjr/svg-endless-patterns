@@ -61,8 +61,9 @@ export function CrossStitchBuilderGrid({
   // Looked up by position: a touch stays targeted at the cell it started on.
   const onPointerMove = (e: PointerEvent) => {
     if (!painting.current) return;
-    const at = cellAt(document.elementFromPoint(e.clientX, e.clientY));
-    if (at && box.current?.contains(document.elementFromPoint(e.clientX, e.clientY))) onPaint(at[0], at[1]);
+    const under = document.elementFromPoint(e.clientX, e.clientY);
+    const at = box.current?.contains(under) ? cellAt(under) : null;
+    if (at) onPaint(at[0], at[1]);
   };
 
   // Pointers paint on the way down, so a click only counts when the keyboard made it.

@@ -203,7 +203,7 @@
           "Des images PNG et un PDF à imprimer"
         ],
         "Graines et couleurs",
-        "Les motifs aléatoires viennent d'une graine : un lien partagé ouvre donc toujours le même nœud. Les motifs en miroir, en rotation et fixes sont symétriques. Vous pouvez donner à chaque brin sa propre couleur, et la page indique combien de brins compte votre motif."
+        "Les motifs aléatoires viennent d'une graine : la même graine donne toujours le même nœud. Votre navigateur mémorise votre dernière graine, mais les liens ne la contiennent pas. Les motifs en miroir, en rotation et fixes sont symétriques. Vous pouvez donner à chaque brin sa propre couleur, et la page indique combien de brins compte votre motif."
       ]
     },
     "stained-glass-patterns": {
@@ -289,8 +289,8 @@
           "Un raccord continu, en SVG ou PNG",
           "Un PDF à imprimer avec un raccord en taille réelle et une feuille complète de raccords"
         ],
-        "Graines et liens de partage",
-        "Les dispositions aléatoires partent d'une graine : un lien de partage ouvre donc toujours le même motif."
+        "Graines",
+        "Les dispositions aléatoires viennent d'une graine : la même graine donne toujours le même motif. Votre navigateur mémorise votre dernière graine, mais les liens ne la contiennent pas."
       ]
     }
   },
@@ -302,7 +302,8 @@
         "Bibliothèque de palettes par thème et harmonie, avec vos palettes enregistrées dans le navigateur",
         "Pages et vignettes pour les options principales de huit outils",
         "Accueil et bibliothèque avec plus de motifs de chaque type, par ordre alphabétique",
-        "La langue ne change plus qu'une couleur secondaire"
+        "La langue ne change plus qu'une couleur secondaire",
+        "Les graines sont mémorisées dans votre navigateur plutôt que dans les liens"
       ]
     },
     "Five languages": {

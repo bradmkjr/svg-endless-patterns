@@ -68,22 +68,41 @@ export function optionHref(tool: ToolId, locale: Locale, slug: string, search = 
   return `${localePath(locale, optionPath(tool, slug))}${query ? `?${query}` : ""}`;
 }
 
-/**
- * Puts the settings in the address bar, leaving out the one the page's path already says.
- * A seed goes after the `#`: search engines see the same page, so seeds can't make endless URLs.
- */
-export function syncShareLink(query: string, tool: ToolId, slug: string | undefined, seed?: { value: number; base: number }) {
+/** Puts the settings in the address bar, leaving out the one the page's path already says. */
+export function syncShareLink(query: string, tool: ToolId, slug: string | undefined) {
   const params = new URLSearchParams(query);
   if (slug) params.delete(TOOL_OPTIONS[tool].param);
   const next = params.toString();
-  const hash = seed && seed.value !== seed.base ? `#seed=${seed.value}` : "";
-  window.history.replaceState(window.history.state, "", `${next ? `?${next}` : window.location.pathname}${hash}`);
+  window.history.replaceState(window.history.state, "", next ? `?${next}` : window.location.pathname);
 }
 
-/** The seed a link carries after its `#`. Only ever called in the browser, so a link can't change the static HTML. */
-export function seedFromHash(hash: string): { seed: number } | undefined {
-  const match = /^#seed=(\d{1,6})$/.exec(hash);
-  return match ? { seed: Number(match[1]) } : undefined;
+/**
+ * Seeds stay out of URLs, where they'd make endless pages for search engines to
+ * crawl. Each tool remembers its last seed in this browser instead.
+ */
+const seedKey = (tool: ToolId) => `endless-patterns:seed:${tool}`;
+
+export function readSeed(raw: string | null): number | null {
+  return raw && /^\d{1,6}$/.test(raw) ? Number(raw) : null;
+}
+
+export function rememberSeed(tool: ToolId, seed: number) {
+  try {
+    window.localStorage.setItem(seedKey(tool), String(seed));
+  } catch {
+    // Without storage the seed just isn't remembered.
+  }
+}
+
+/** The remembered seed, unless the link names its own. Only called in the browser, after the static HTML. */
+export function storedSeed(tool: ToolId, params: { get(name: string): string | null }): { seed: number } | undefined {
+  if (params.get("seed") !== null) return undefined;
+  try {
+    const seed = readSeed(window.localStorage.getItem(seedKey(tool)));
+    return seed === null ? undefined : { seed };
+  } catch {
+    return undefined;
+  }
 }
 
 export type ThumbGroup = ToolId | "blocks" | "knit" | "crochet" | "tartan";

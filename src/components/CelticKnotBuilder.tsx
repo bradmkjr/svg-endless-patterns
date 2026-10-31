@@ -5,10 +5,10 @@ import { generateCelticKnot, generateCelticKnotPdf, type CelticKnotRequest, type
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { fill, messages } from "@/lib/i18n";
 import celticText from "@/i18n/messages/celticKnot.json";
-import { defaultCelticKnotState, DENSITY_OPTIONS, INCH_OPTIONS, INTERLACE_OPTIONS, MAX_COLORS, MAX_SEED, PATTERN_OPTIONS, RIBBON_OPTIONS, SEEDED_PATTERNS, serializeCelticKnotState, SIZE_OPTIONS } from "@/lib/celticKnotState";
+import { DENSITY_OPTIONS, INCH_OPTIONS, INTERLACE_OPTIONS, MAX_COLORS, MAX_SEED, PATTERN_OPTIONS, RIBBON_OPTIONS, SEEDED_PATTERNS, serializeCelticKnotState, SIZE_OPTIONS } from "@/lib/celticKnotState";
 import { OptionNav, useOptionNavigation } from "./OptionNav";
 import { PalettePicker } from "./PalettePicker";
-import { syncShareLink } from "@/lib/toolOptions";
+import { rememberSeed, syncShareLink } from "@/lib/toolOptions";
 import { paletteAccents } from "@/lib/palettes";
 import styles from "./BlockBuilder.module.css";
 
@@ -58,7 +58,8 @@ export function CelticKnotBuilder({ locale, option, labels, initialState, initia
 
   useEffect(() => {
     const query = serializeCelticKnotState(state);
-    syncShareLink(query, "celticKnot", option, { value: state.seed, base: defaultCelticKnotState(state.locale).seed });
+    syncShareLink(query, "celticKnot", option);
+    rememberSeed("celticKnot", state.seed);
   }, [state, option]);
 
   const run = async (working: string, done: string, action: () => Promise<void> | void) => {

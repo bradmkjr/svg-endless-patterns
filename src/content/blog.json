@@ -118,11 +118,11 @@
       },
       {
         "type": "heading",
-        "text": "Seeds and share links"
+        "text": "Seeds"
       },
       {
         "type": "paragraph",
-        "text": "Random layouts come from a seed, so a share link always opens the same pattern."
+        "text": "Random layouts come from a seed, so the same seed always gives the same pattern. Your browser remembers your last seed, but links don't carry it."
       }
     ]
   },
@@ -370,7 +370,7 @@
       },
       {
         "type": "paragraph",
-        "text": "Random patterns come from a seed, so a share link always opens the same knot. Mirrored, rotated and fixed patterns are symmetric. You can give each strand its own color, and the page tells you how many strands your design has."
+        "text": "Random patterns come from a seed, so the same seed always gives the same knot. Your browser remembers your last seed, but links don't carry it. Mirrored, rotated and fixed patterns are symmetric. You can give each strand its own color, and the page tells you how many strands your design has."
       }
     ]
   },

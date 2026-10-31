@@ -8,7 +8,7 @@ import { parseSashikoState, serializeSashikoState } from "./sashikoState";
 import { parseStainedGlassState, serializeStainedGlassState } from "./stainedGlassState";
 import { parseTessellationState, serializeTessellationState } from "./tessellationState";
 import { allThumbs } from "./thumbnails";
-import { optionHref, optionLabel, TOOL_OPTIONS, withOption, type ToolId } from "./toolOptions";
+import { optionHref, optionLabel, readSeed, TOOL_OPTIONS, withOption, type ToolId } from "./toolOptions";
 import { parseTruchetState, serializeTruchetState } from "./truchetState";
 
 const TOOLS = Object.keys(TOOL_OPTIONS) as ToolId[];
@@ -65,4 +65,14 @@ describe("thumbnails", () => {
       expect(svg).toContain('xmlns="http://www.w3.org/2000/svg"');
     }
   }, 120000);
+});
+
+describe("remembered seeds", () => {
+  it.each([["42", 42], ["0", 0], ["999999", 999999]])("reads %s", (raw, seed) => {
+    expect(readSeed(raw)).toBe(seed);
+  });
+
+  it.each([null, "", "-1", "1234567", "abc", "1.5"])("ignores %s", (raw) => {
+    expect(readSeed(raw)).toBeNull();
+  });
 });

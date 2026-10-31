@@ -2,14 +2,14 @@
 
 import { useEffect, useState } from "react";
 import { generateMandala, generateMandalaPdf, type Locale, type MandalaMotif, type MandalaRequest, type MandalaResult } from "@/lib/generator";
-import { syncShareLink, slugFor } from "@/lib/toolOptions";
+import { rememberSeed, syncShareLink, slugFor } from "@/lib/toolOptions";
 import { MandalaRings } from "./MandalaRings";
 import { OptionNav, useOptionNavigation } from "./OptionNav";
 import { PalettePicker } from "./PalettePicker";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { fill, messages } from "@/lib/i18n";
 import mandalaText from "@/i18n/messages/mandala.json";
-import { defaultMandalaState, LINE_OPTIONS, MAX_COLORS, MAX_SEED, MOTIF_OPTIONS, RING_OPTIONS, serializeMandalaState, SYMMETRY_OPTIONS } from "@/lib/mandalaState";
+import { LINE_OPTIONS, MAX_COLORS, MAX_SEED, MOTIF_OPTIONS, RING_OPTIONS, serializeMandalaState, SYMMETRY_OPTIONS } from "@/lib/mandalaState";
 import styles from "./BlockBuilder.module.css";
 
 type View = keyof MandalaResult["svg"];
@@ -62,7 +62,8 @@ export function MandalaBuilder({ locale, option, labels, initialState, initialRe
 
   useEffect(() => {
     const query = serializeMandalaState(state);
-    syncShareLink(query, "mandala", option, { value: state.seed, base: defaultMandalaState(state.locale).seed });
+    syncShareLink(query, "mandala", option);
+    rememberSeed("mandala", state.seed);
   }, [state, option]);
 
   const run = async (working: string, done: string, action: () => Promise<void> | void) => {

@@ -265,7 +265,7 @@ describe("share links", () => {
   });
 
   it("round trips changed settings", () => {
-    const state: CelticKnotRequest = { ...defaultCelticKnotState("de"), cols: 9, rows: 3, pattern: "random", seed: 987654, density: 40, ribbon: 80, interlace: "off", perStrand: false, size: 12, colors: ["#abcdef"], background: "#010203", outline: "#040506" };
+    const state: CelticKnotRequest = { ...defaultCelticKnotState("de"), cols: 9, rows: 3, pattern: "random", seed: 12, density: 40, ribbon: 80, interlace: "off", perStrand: false, size: 12, colors: ["#abcdef"], background: "#010203", outline: "#040506" };
     const query = serializeCelticKnotState(state);
     expect(parseCelticKnotState(params(query), "de")).toEqual(state);
     expect(generateCelticKnot(parseCelticKnotState(params(query), "de"))).toEqual(generateCelticKnot(state));

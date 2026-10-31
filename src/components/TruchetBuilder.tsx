@@ -5,10 +5,10 @@ import { generateTruchet, generateTruchetPdf, type Locale, type TruchetColors, t
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { fill, messages } from "@/lib/i18n";
 import copy from "@/i18n/messages/truchet.json";
-import { defaultTruchetState, ARRANGEMENT_OPTIONS, GRID_OPTIONS, MAX_SEED, REPEAT_OPTIONS, serializeTruchetState, STYLE_OPTIONS, WEIGHT_OPTIONS } from "@/lib/truchetState";
+import { ARRANGEMENT_OPTIONS, GRID_OPTIONS, MAX_SEED, REPEAT_OPTIONS, serializeTruchetState, STYLE_OPTIONS, WEIGHT_OPTIONS } from "@/lib/truchetState";
 import { OptionNav, useOptionNavigation } from "./OptionNav";
 import { PalettePicker } from "./PalettePicker";
-import { syncShareLink } from "@/lib/toolOptions";
+import { rememberSeed, syncShareLink } from "@/lib/toolOptions";
 import styles from "./BlockBuilder.module.css";
 
 function NumberSelect({ label, value, options, format, onChange }: { label: string; value: number; options: number[]; format: (value: number) => string; onChange: (value: number) => void }) {
@@ -56,7 +56,8 @@ export function TruchetBuilder({ locale, option, labels, initialState, initialRe
 
   useEffect(() => {
     const query = serializeTruchetState(state);
-    syncShareLink(query, "truchet", option, { value: state.seed, base: defaultTruchetState(state.locale).seed });
+    syncShareLink(query, "truchet", option);
+    rememberSeed("truchet", state.seed);
   }, [state, option]);
 
   const run = async (working: string, done: string, action: () => Promise<void> | void) => {

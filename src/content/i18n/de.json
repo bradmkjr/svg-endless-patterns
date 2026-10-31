@@ -203,7 +203,7 @@
           "PNG-Bilder und ein druckbares PDF"
         ],
         "Startwerte und Farben",
-        "Zufällige Muster entstehen aus einem Startwert, daher öffnet ein geteilter Link immer denselben Knoten. Gespiegelte, gedrehte und feste Muster sind symmetrisch. Du kannst jedem Strang eine eigene Farbe geben, und die Seite zeigt dir, wie viele Stränge dein Entwurf hat."
+        "Zufällige Muster entstehen aus einem Startwert, derselbe Startwert ergibt also immer denselben Knoten. Ihr Browser merkt sich Ihren letzten Startwert, Links enthalten ihn aber nicht. Gespiegelte, gedrehte und feste Muster sind symmetrisch. Du kannst jedem Strang eine eigene Farbe geben, und die Seite zeigt dir, wie viele Stränge dein Entwurf hat."
       ]
     },
     "stained-glass-patterns": {
@@ -289,8 +289,8 @@
           "Einen nahtlosen Rapport als SVG oder PNG",
           "Ein druckbares PDF mit einem Rapport in Originalgröße und einem ganzen Bogen voller Rapporte"
         ],
-        "Startwerte und Links zum Teilen",
-        "Zufällige Anordnungen entstehen aus einem Startwert, daher öffnet ein geteilter Link immer dasselbe Muster."
+        "Startwerte",
+        "Zufällige Anordnungen entstehen aus einem Startwert, derselbe Startwert ergibt also immer dasselbe Muster. Ihr Browser merkt sich Ihren letzten Startwert, Links enthalten ihn aber nicht."
       ]
     }
   },
@@ -302,7 +302,8 @@
         "Palettenbibliothek nach Thema und Farbharmonie, mit eigenen Paletten im Browser",
         "Seiten und Vorschaubilder für die Hauptoptionen von acht Werkzeugen",
         "Startseite und Bibliothek mit mehr Mustern jeder Art, alphabetisch sortiert",
-        "Die Sprache ändert jetzt nur noch eine Sekundärfarbe"
+        "Die Sprache ändert jetzt nur noch eine Sekundärfarbe",
+        "Startwerte werden im Browser gespeichert statt in Links"
       ]
     },
     "Five languages": {

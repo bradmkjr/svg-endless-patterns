@@ -238,7 +238,7 @@ describe("output", () => {
 });
 
 describe("share links", () => {
-  const full: TruchetRequest = { style: "triangles", arrangement: "waves", grid: 16, weight: 6, seed: 12345, colors: { background: "#010203", line: "#a0b0c0", accent: "#ffeedd" }, repeatWidth: 7.5 };
+  const full: TruchetRequest = { style: "triangles", arrangement: "waves", grid: 16, weight: 6, seed: 7, colors: { background: "#010203", line: "#a0b0c0", accent: "#ffeedd" }, repeatWidth: 7.5 };
 
   it("keeps the options in step with the engine", () => {
     expect(STYLE_OPTIONS).toEqual([...TRUCHET_STYLES]);

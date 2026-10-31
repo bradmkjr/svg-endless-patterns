@@ -203,7 +203,7 @@
           "Imagens PNG e um PDF para imprimir"
         ],
         "Sementes e cores",
-        "Os padrões aleatórios vêm de uma semente, então um link compartilhado sempre abre o mesmo nó. Os padrões espelhados, girados e fixos são simétricos. Você pode dar uma cor própria a cada fio, e a página mostra quantos fios o seu desenho tem."
+        "Os padrões aleatórios vêm de uma semente, então a mesma semente sempre dá o mesmo nó. Seu navegador lembra sua última semente, mas os links não a incluem. Os padrões espelhados, girados e fixos são simétricos. Você pode dar uma cor própria a cada fio, e a página mostra quantos fios o seu desenho tem."
       ]
     },
     "stained-glass-patterns": {
@@ -289,8 +289,8 @@
           "Uma repetição contínua, em SVG ou PNG",
           "Um PDF para imprimir com uma repetição em tamanho real e uma folha inteira de repetições"
         ],
-        "Sementes e links para compartilhar",
-        "As disposições aleatórias partem de uma semente, então um link compartilhado sempre abre o mesmo padrão."
+        "Sementes",
+        "Os arranjos aleatórios vêm de uma semente, então a mesma semente sempre dá o mesmo padrão. Seu navegador lembra sua última semente, mas os links não a incluem."
       ]
     }
   },
@@ -302,7 +302,8 @@
         "Biblioteca de paletas por tema e harmonia de cores, com paletas próprias salvas no navegador",
         "Páginas e miniaturas para as opções principais de oito geradores",
         "Início e biblioteca com mais padrões de cada tipo, em ordem alfabética",
-        "O idioma agora muda só uma cor secundária"
+        "O idioma agora muda só uma cor secundária",
+        "As sementes ficam salvas no navegador em vez de nos links"
       ]
     },
     "Five languages": {

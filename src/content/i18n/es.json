@@ -203,7 +203,7 @@
           "Imágenes PNG y un PDF imprimible"
         ],
         "Semillas y colores",
-        "Los patrones aleatorios salen de una semilla, así que un enlace compartido siempre abre el mismo nudo. Los patrones en espejo, girados y fijos son simétricos. Puedes dar a cada hebra su propio color, y la página te indica cuántas hebras tiene tu diseño."
+        "Los patrones aleatorios salen de una semilla, así que la misma semilla siempre da el mismo nudo. Tu navegador recuerda tu última semilla, pero los enlaces no la incluyen. Los patrones en espejo, girados y fijos son simétricos. Puedes dar a cada hebra su propio color, y la página te indica cuántas hebras tiene tu diseño."
       ]
     },
     "stained-glass-patterns": {
@@ -289,8 +289,8 @@
           "Una repetición continua, en SVG o PNG",
           "Un PDF imprimible con una repetición a tamaño real y una hoja completa de repeticiones"
         ],
-        "Semillas y enlaces para compartir",
-        "Las disposiciones aleatorias parten de una semilla, así que un enlace compartido siempre abre el mismo patrón."
+        "Semillas",
+        "Las disposiciones aleatorias salen de una semilla, así que la misma semilla siempre da el mismo patrón. Tu navegador recuerda tu última semilla, pero los enlaces no la incluyen."
       ]
     }
   },
@@ -302,7 +302,8 @@
         "Biblioteca de paletas por tema y armonía de color, con paletas propias guardadas en el navegador",
         "Páginas y miniaturas para las opciones principales de ocho generadores",
         "Portada y biblioteca con más patrones de cada tipo, en orden alfabético",
-        "El idioma ahora solo cambia un color secundario"
+        "El idioma ahora solo cambia un color secundario",
+        "Las semillas se recuerdan en tu navegador en lugar de en los enlaces"
       ]
     },
     "Five languages": {

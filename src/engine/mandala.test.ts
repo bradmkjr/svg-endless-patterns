@@ -216,6 +216,11 @@ describe("share links", () => {
     expect(parse(query).ringPlan).toEqual(defaultMandalaState().ringPlan);
   });
 
+  it("keeps seeds out of links, but still reads them in older ones", () => {
+    expect(serializeMandalaState({ ...defaultMandalaState(), seed: 999, ringPlan: undefined })).not.toContain("999");
+    expect(parse("seed=999").seed).toBe(999);
+  });
+
   it("tells seeded links from ring plans", () => {
     expect(parse("seed=5").ringPlan).toBeUndefined();
     expect(parse("r=4").ringPlan).toBeUndefined();
@@ -229,12 +234,12 @@ describe("share links", () => {
   });
 
   it("round trips every setting", () => {
-    const state: MandalaRequest = { symmetry: 17, rings: 3, motifs: ["arcs", "diamonds"], seed: 4321, lineWeight: 6, colors: ["#123456", "#abcdef"], background: "#101010", outline: "#fedcba" };
+    const state: MandalaRequest = { symmetry: 17, rings: 3, motifs: ["arcs", "diamonds"], seed: 12, lineWeight: 6, colors: ["#123456", "#abcdef"], background: "#101010", outline: "#fedcba" };
     expect(parse(serializeMandalaState(state))).toEqual(state);
     expect(parse(serializeMandalaState({ ...state, locale: "de" }), "de")).toEqual({ ...state, locale: "de" });
   });
 
-  it.each(["n=8&m=petals.dots&seed=7", "n=16&r=7&seed=314", "n=24&r=4&m=scallops.diamonds&seed=2718"])("%s survives a round trip", (query) => {
+  it.each(["n=8&m=petals.dots", "n=16&r=7", "n=24&r=4&m=scallops.diamonds", "n=8&seeded=1"])("%s survives a round trip", (query) => {
     expect(serializeMandalaState(parse(query))).toBe(query);
   });
 

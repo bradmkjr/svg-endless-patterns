@@ -4,12 +4,12 @@ import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import type { Locale, MandalaResult } from "@/lib/generator";
 import { parseMandalaState } from "@/lib/mandalaState";
-import { seedFromHash, withOption } from "@/lib/toolOptions";
+import { storedSeed, withOption } from "@/lib/toolOptions";
 import { MandalaBuilder } from "./MandalaBuilder";
 
 function FromShareLink({ initial, locale, option, labels }: { initial: MandalaResult; locale: Locale; option?: string; labels: Record<string, string> }) {
   const params = useSearchParams();
-  return <MandalaBuilder locale={locale} option={option} labels={labels} initialState={{ ...parseMandalaState(withOption("mandala", option, params), locale), ...seedFromHash(window.location.hash) }} initialResult={initial} />;
+  return <MandalaBuilder locale={locale} option={option} labels={labels} initialState={{ ...parseMandalaState(withOption("mandala", option, params), locale), ...storedSeed("mandala", params) }} initialResult={initial} />;
 }
 
 /** Same arrangement as `BlockBuilderRoute`: default design in the HTML, share link settings on load. */

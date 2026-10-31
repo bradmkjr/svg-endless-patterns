@@ -134,7 +134,7 @@ export function serializeMandalaState(state: MandalaRequest): string {
   if (state.symmetry !== base.symmetry) params.set("n", String(state.symmetry));
   if (state.rings !== base.rings) params.set("r", String(state.rings));
   if (state.motifs.join(".") !== base.motifs.join(".")) params.set("m", state.motifs.join("."));
-  // The seed itself stays out of the query: see `syncShareLink`.
+  // The seed itself stays out of the query: see `rememberSeed`.
   if (!state.ringPlan && state.rings === base.rings && state.motifs.join(".") === base.motifs.join(".")) params.set("seeded", "1");
   if (state.ringPlan && encodePlan(state.ringPlan) !== encodePlan(base.ringPlan!)) params.set("rs", encodePlan(state.ringPlan));
   if (state.lineWeight !== base.lineWeight) params.set("w", String(state.lineWeight));

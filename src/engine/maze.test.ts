@@ -1,5 +1,5 @@
 import { inflateSync } from "node:zlib";
-import { afterEach, describe, expect, it, vi } from "vitest";
+import { describe, expect, it } from "vitest";
 import { PDFDocument, PDFArray, PDFName, PDFRawStream, StandardFonts } from "pdf-lib";
 import uiCopy from "../i18n/messages/maze.json";
 import { ALGORITHM_OPTIONS, defaultMazeState, DIFFICULTY_OPTIONS, parseMazeState, serializeMazeState, SHAPE_OPTIONS, WEIGHT_OPTIONS } from "../lib/mazeState";

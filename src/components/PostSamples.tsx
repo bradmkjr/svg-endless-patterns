@@ -20,6 +20,7 @@ import styles from "./Blog.module.css";
 
 /** Draws a sample from the same settings its link opens with, so the two can't disagree. */
 async function sampleSvg(sample: PostSample, locale: Locale): Promise<string | null> {
+  if (sample.kind === "maze") return null;
   const params = new URLSearchParams(sample.query);
   if (sample.kind === "crossStitch") return (await generateCrossStitch(parseCrossStitchState(params, locale))).svg[sample.view];
   if (sample.kind === "needlepoint") return (await generateNeedlepoint(parseNeedlepointState(params, locale))).svg[sample.view];

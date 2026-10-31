@@ -9,7 +9,7 @@ import { parseSashikoState, serializeSashikoState } from "./sashikoState";
 import { parseStainedGlassState, serializeStainedGlassState } from "./stainedGlassState";
 import { parseTessellationState, serializeTessellationState } from "./tessellationState";
 import { allThumbs } from "./thumbnails";
-import { optionHref, optionLabel, readSeed, TOOL_OPTIONS, withOption, type ToolId } from "./toolOptions";
+import { optionHref, optionLabel, readSeed, thumbSrc, TOOL_OPTIONS, withOption, type ToolId } from "./toolOptions";
 import { parseMazeState, serializeMazeState } from "./mazeState";
 import { parseTieDyeState, serializeTieDyeState } from "./tieDyeState";
 import { parseTruchetState, serializeTruchetState } from "./truchetState";
@@ -62,6 +62,10 @@ describe.each(TOOLS)("%s option pages", (tool) => {
 });
 
 describe("thumbnails", () => {
+  it("uses the API for maze thumbnails", () => {
+    expect(thumbSrc("maze", "square")).toMatch(/\/api\/maze\/thumbnail\/square$/);
+  });
+
   it("draws every one as a small, unique, standalone SVG", async () => {
     const thumbs = await allThumbs();
     expect(new Set(thumbs.map((t) => `${t.group}/${t.slug}`)).size).toBe(thumbs.length);

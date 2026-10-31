@@ -29,7 +29,10 @@ export function MazeBuilder({ locale, option, labels, initialState }: { locale: 
   const requestKey = JSON.stringify(state);
   const result = generated?.key === requestKey ? generated.result : undefined;
 
-  const update = (patch: Partial<MazeRequest>) => setState((s) => ({ ...s, ...patch }));
+  const update = (patch: Partial<MazeRequest>) => {
+    setStatus(t.loading);
+    setState((s) => ({ ...s, ...patch }));
+  };
 
   useEffect(() => {
     let stale = false;
@@ -225,9 +228,9 @@ export function MazeBuilder({ locale, option, labels, initialState }: { locale: 
                 ))}
               </select>
             </label>
-            <p className={styles.note}>{fill(t.cellSize, { size: result.posterCell[paper] })}</p>
+            <p className={styles.note}>{result ? fill(t.cellSize, { size: result.posterCell[paper] }) : t.loading}</p>
             <div className={styles.actions}>
-              <button type="button" disabled={busy} className={styles.tab} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateMazePosterPdf(state, paper), `maze-${paper}.pdf`, "application/pdf"))}>
+              <button type="button" disabled={busy || !result} className={styles.tab} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateMazePosterPdf(state, paper), `maze-${paper}.pdf`, "application/pdf"))}>
                 {t.downloadPoster}
               </button>
             </div>

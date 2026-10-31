@@ -107,8 +107,6 @@ export function BlockBuilder({ block, initialState, initialResult }: { block: Bl
     }
   };
 
-  const hasFrame = state.sashing > 0 || state.border > 0;
-
   return (
     <div className={styles.builder}>
       <div className={styles.workspace}>
@@ -251,7 +249,6 @@ export function BlockBuilder({ block, initialState, initialResult }: { block: Bl
           <h2>Fabric to buy</h2>
           <p className={styles.quiltSize}>
             Quilt top: <strong>{result.quilt.widthLabel}&quot; x {result.quilt.heightLabel}&quot;</strong>, {result.quilt.blocks} block{result.quilt.blocks === 1 ? "" : "s"}
-            {hasFrame ? " with sashing and border as set" : ""}
           </p>
           <table className={styles.yardage}>
             <tbody>

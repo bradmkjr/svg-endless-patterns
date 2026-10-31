@@ -170,15 +170,18 @@ export function rulerFriendlySizes(block: Block, size: number): number[] {
 }
 
 export function describeCut(cut: Cut): string {
-  const dims = cut.w === cut.h ? `${inches(cut.w)}" square` : `${inches(cut.w)}" x ${inches(cut.h)}"`;
+  const plural = cut.qty === 1 ? "" : "s";
+  const square = `${cut.qty} square${plural}, ${inches(cut.w)}"`;
   switch (cut.method) {
     case "half":
-      return `${cut.qty} x ${dims}, cut once diagonally (${cut.pieces} triangles)`;
+      return `${square}, cut once diagonally (${cut.pieces} triangles)`;
     case "quarter":
-      return `${cut.qty} x ${dims}, cut twice diagonally (${cut.pieces} triangles)`;
+      return `${square}, cut twice diagonally (${cut.pieces} triangles)`;
+    case "square":
+      return square;
     case "strip":
-      return `${cut.qty} x ${dims} strip${cut.qty === 1 ? "" : "s"}, joined if needed`;
+      return `${cut.qty} strip${plural}, ${inches(cut.w)}" x ${inches(cut.h)}", joined if needed`;
     default:
-      return `${cut.qty} x ${dims}`;
+      return `${cut.qty} piece${plural}, ${inches(cut.w)}" x ${inches(cut.h)}"`;
   }
 }

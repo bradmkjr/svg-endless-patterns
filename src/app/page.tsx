@@ -14,6 +14,7 @@ export default async function HomePage() {
     rows: 4,
     border: 0,
     setting: "quadrants",
+    seams: true,
   });
 
   return (

@@ -5,7 +5,7 @@ import styles from "./BlockGrid.module.css";
 
 export async function BlockGrid({ blocks }: { blocks: BlockInfo[] }) {
   const cards = await Promise.all(
-    blocks.map(async (block) => ({ block, svg: (await generatePattern(block.slug, { ...defaultState(block), cols: 1, rows: 1, border: 0 })).svg.block })),
+    blocks.map(async (block) => ({ block, svg: (await generatePattern(block.slug, { ...defaultState(block), cols: 1, rows: 1, border: 0, seams: true })).svg.block })),
   );
   return (
     <ul className={styles.grid}>

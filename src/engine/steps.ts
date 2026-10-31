@@ -5,7 +5,7 @@ import { unitCount } from "./pieces";
 /** Piecing steps for a block at a size: written from what the block contains. */
 export function pieceSteps(block: Block, size: number): string[] {
   const unit = size / block.grid;
-  const steps: string[] = ['Cut every piece from the cutting list. All seams are a scant 1/4".'];
+  const steps: string[] = ['Cut every piece from the cutting list. All seams are 1/4".'];
 
   const hst = block.units.filter((u) => u.kind === "hst");
   if (hst.length) {

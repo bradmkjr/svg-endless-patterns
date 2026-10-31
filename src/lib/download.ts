@@ -34,7 +34,9 @@ export async function downloadPng(svg: string, filename: string, longest = 2400)
     const image = new Image();
     image.src = url;
     await image.decode();
-    canvas.getContext("2d")!.drawImage(image, 0, 0, canvas.width, canvas.height);
+    const context = canvas.getContext("2d");
+    if (!context) throw new Error("This browser can't draw a PNG this large");
+    context.drawImage(image, 0, 0, canvas.width, canvas.height);
   } finally {
     URL.revokeObjectURL(url);
   }

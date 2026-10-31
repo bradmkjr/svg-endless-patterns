@@ -20,7 +20,10 @@
     "pdfSeed": "Seed: {seed}",
     "pdfHow": "Start at the solid dot and find your way to the ring.",
     "pdfSolution": "Solution",
-    "pdfStats": "The path runs through {length} cells. The maze has {deadEnds} dead ends."
+    "pdfStats": "The path runs through {length} cells. The maze has {deadEnds} dead ends.",
+    "difficulty_master": "Master",
+    "difficulty_extreme": "Extreme",
+    "difficulty_custom": "Custom size"
   },
   "es": {
     "shape_square": "Cuadrado",
@@ -43,7 +46,10 @@
     "pdfSeed": "Semilla: {seed}",
     "pdfHow": "Empieza en el punto relleno y encuentra el camino hasta el anillo.",
     "pdfSolution": "Solución",
-    "pdfStats": "El camino pasa por {length} celdas. El laberinto tiene {deadEnds} callejones sin salida."
+    "pdfStats": "El camino pasa por {length} celdas. El laberinto tiene {deadEnds} callejones sin salida.",
+    "difficulty_master": "Maestro",
+    "difficulty_extreme": "Extremo",
+    "difficulty_custom": "Tamaño propio"
   },
   "fr": {
     "shape_square": "Carré",
@@ -66,7 +72,10 @@
     "pdfSeed": "Graine : {seed}",
     "pdfHow": "Partez du point plein et trouvez votre chemin jusqu'à l'anneau.",
     "pdfSolution": "Solution",
-    "pdfStats": "Le chemin traverse {length} cases. Le labyrinthe compte {deadEnds} culs-de-sac."
+    "pdfStats": "Le chemin traverse {length} cases. Le labyrinthe compte {deadEnds} culs-de-sac.",
+    "difficulty_master": "Maître",
+    "difficulty_extreme": "Extrême",
+    "difficulty_custom": "Taille personnalisée"
   },
   "de": {
     "shape_square": "Quadrat",
@@ -89,7 +98,10 @@
     "pdfSeed": "Startwert: {seed}",
     "pdfHow": "Beginne am gefüllten Punkt und finde den Weg zum Ring.",
     "pdfSolution": "Lösung",
-    "pdfStats": "Der Weg führt durch {length} Zellen. Das Labyrinth hat {deadEnds} Sackgassen."
+    "pdfStats": "Der Weg führt durch {length} Zellen. Das Labyrinth hat {deadEnds} Sackgassen.",
+    "difficulty_master": "Meister",
+    "difficulty_extreme": "Extrem",
+    "difficulty_custom": "Eigene Größe"
   },
   "pt": {
     "shape_square": "Quadrado",
@@ -112,6 +124,9 @@
     "pdfSeed": "Semente: {seed}",
     "pdfHow": "Comece no ponto cheio e encontre o caminho até o anel.",
     "pdfSolution": "Solução",
-    "pdfStats": "O caminho passa por {length} células. O labirinto tem {deadEnds} becos sem saída."
+    "pdfStats": "O caminho passa por {length} células. O labirinto tem {deadEnds} becos sem saída.",
+    "difficulty_master": "Mestre",
+    "difficulty_extreme": "Extremo",
+    "difficulty_custom": "Tamanho próprio"
   }
 }

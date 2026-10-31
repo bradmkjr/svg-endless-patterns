@@ -1,5 +1,25 @@
 {
   "posts": {
+    "poster-size-mazes": {
+      "title": "Labyrinthe so groß wie Ihre Wand",
+      "summary": "Wählen Sie Spalten und Reihen bis 400 mal 400 und laden Sie ein Poster-PDF bis 4A0 oder ein PNG bis 16384 Pixel herunter.",
+      "blocks": [
+        "Der [Labyrinth-Generator](/mazes/) übernimmt jetzt die von Ihnen gewählten Spalten und Reihen und druckt so groß, wie Ihr Drucker es erlaubt.",
+        "Beispiele zum Einstieg",
+        [
+          "Meister: 60 Spalten und Reihen",
+          "80 Spalten mal 120 Reihen",
+          "Ein extremes rundes Labyrinth"
+        ],
+        "Das ist neu",
+        [
+          "Schwierigkeitsgrade Meister und Extrem",
+          "Eigene Spalten und Reihen, jeweils bis 400",
+          "Poster-PDFs in ANSI C, D und E sowie A3 bis 4A0, mit der Lösung auf einem gleichen Bogen",
+          "PNG-Dateien bis 16384 Pixel an der längsten Seite"
+        ]
+      ]
+    },
     "maze-generator": {
       "title": "Erstelle ein druckbares Labyrinth mit einem einzigen Weg",
       "summary": "Wähle Form, Algorithmus und Schwierigkeit und drucke das Labyrinth mit der Lösung auf einer eigenen Seite.",
@@ -133,7 +153,7 @@
         [
           "Neun neue Mandala-Motive und die Wahl von Motiv, Wiederholung, Tiefe, Farben, Akzentpunkten und halber Drehung für jeden Ring",
           "Ringe zum Sortieren ziehen und Motive auf Ringe ziehen, mit Schaltflächen, die dasselbe per Tastatur oder Touchscreen tun",
-          "48 thematische Paletten in acht Gruppen und 72 Paletten nach Farbharmonie, auf einer eigenen Seite und in jedem Werkzeug",
+          "60 thematische Paletten in zehn Gruppen und 72 Paletten nach Farbharmonie, auf einer eigenen Seite und in jedem Werkzeug",
           "Eigene benannte Paletten, im Browser gespeichert",
           "Eine Seite und ein Vorschaubild für jede Hauptoption in acht Werkzeugen, etwa für jede Truchet-Fliese und jede Ornamentgruppe"
         ],
@@ -413,6 +433,12 @@
     }
   },
   "changelog": {
+    "Poster-size mazes": {
+      "title": "Labyrinthe im Posterformat",
+      "items": [
+        "Labyrinthe mit eigenen Spalten und Reihen, Stufen Meister und Extrem, Poster-PDFs und sehr große PNGs"
+      ]
+    },
     "Maze generator": {
       "title": "Labyrinth-Generator",
       "items": [

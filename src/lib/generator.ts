@@ -5,11 +5,11 @@
  * is already async, so no caller has to change.
  */
 import { generatePattern as runGenerate, generateStitchPattern as runStitch, generateCrossStitch as runCrossStitch, generateNeedlepoint as runNeedlepoint, generateTessellation as runTessellation, listTessellationOptions, generateSashiko as runSashiko, generateCelticKnot as runCelticKnot, generateStainedGlass as runStainedGlass, generateMandala as runMandala, mandalaMotifThumb as runMotifThumb, generateGirih as runGirih, generateTruchet as runTruchet, generateTieDye as runTieDye, generateMaze as runMaze, generateTartan as runTartan, listBlocks, listStitchPatterns } from "@/engine";
-import type { TessellationOptions, TessellationRequest, TessellationResult, SashikoRequest, SashikoResult, CelticKnotRequest, CelticKnotResult, StainedGlassRequest, StainedGlassResult, MandalaRequest, MandalaResult, GirihRequest, GirihResult, TruchetRequest, TruchetResult, TieDyeRequest, TieDyeResult, MazeRequest, MazeResult, BlockInfo, Craft, Locale, PatternRequest, PatternResult, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult, CrossStitchRequest, CrossStitchResult, NeedlepointRequest, NeedlepointResult } from "@/engine";
+import type { MazePaperId, TessellationOptions, TessellationRequest, TessellationResult, SashikoRequest, SashikoResult, CelticKnotRequest, CelticKnotResult, StainedGlassRequest, StainedGlassResult, MandalaRequest, MandalaResult, GirihRequest, GirihResult, TruchetRequest, TruchetResult, TieDyeRequest, TieDyeResult, MazeRequest, MazeResult, BlockInfo, Craft, Locale, PatternRequest, PatternResult, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult, CrossStitchRequest, CrossStitchResult, NeedlepointRequest, NeedlepointResult } from "@/engine";
 
-export type { TessellationColors, TessellationMotif, TessellationOptions, TessellationRequest, TessellationResult, GroupId, SashikoMotif, SashikoRequest, SashikoResult, CelticBreakPattern, CelticInterlace, CelticKnotRequest, CelticKnotResult, CelticStrand, StainedGlassColor, StainedGlassLayout, StainedGlassPiece, StainedGlassRequest, StainedGlassResult, MandalaMotif, MandalaRequest, MandalaResult, MandalaRing, MandalaRingSpec, GirihColors, GirihPart, GirihRequest, GirihResult, GirihStar, GirihSymmetry, TruchetArrangement, TruchetColors, TruchetRequest, TruchetResult, TruchetStyle, TieDyeMix, TieDyeRequest, TieDyeResult, TieDyeTechnique, MazeAlgorithm, MazeColors, MazeDifficulty, MazeRequest, MazeResult, MazeShape, BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, Setting, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult, TartanStripe, CountedFinish, CrossStitchColor, CrossStitchRequest, CrossStitchResult, NeedlepointColor, NeedlepointRequest, NeedlepointResult, NeedlepointStitch, NeedlepointYarn } from "@/engine";
+export type { TessellationColors, TessellationMotif, TessellationOptions, TessellationRequest, TessellationResult, GroupId, SashikoMotif, SashikoRequest, SashikoResult, CelticBreakPattern, CelticInterlace, CelticKnotRequest, CelticKnotResult, CelticStrand, StainedGlassColor, StainedGlassLayout, StainedGlassPiece, StainedGlassRequest, StainedGlassResult, MandalaMotif, MandalaRequest, MandalaResult, MandalaRing, MandalaRingSpec, GirihColors, GirihPart, GirihRequest, GirihResult, GirihStar, GirihSymmetry, TruchetArrangement, TruchetColors, TruchetRequest, TruchetResult, TruchetStyle, TieDyeMix, TieDyeRequest, TieDyeResult, TieDyeTechnique, MazeAlgorithm, MazeColors, MazeDifficulty, MazePaperId, MazeRequest, MazeResult, MazeShape, MazeSize, BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, Setting, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult, TartanStripe, CountedFinish, CrossStitchColor, CrossStitchRequest, CrossStitchResult, NeedlepointColor, NeedlepointRequest, NeedlepointResult, NeedlepointStitch, NeedlepointYarn } from "@/engine";
 
-export { DEFAULT_KNIT_SQUARE, KNIT_SQUARE_SIZES } from "@/engine";
+export { DEFAULT_KNIT_SQUARE, KNIT_SQUARE_SIZES, MAZE_PAPERS, mazeAcross, mazeTallRows } from "@/engine";
 
 export async function getBlocks(locale: Locale = "en"): Promise<BlockInfo[]> {
   return listBlocks(locale);
@@ -146,6 +146,11 @@ export async function generateTieDyePdf(request: TieDyeRequest): Promise<Uint8Ar
 
 export async function generateMaze(request: MazeRequest): Promise<MazeResult> {
   return runMaze(request);
+}
+
+export async function generateMazePosterPdf(request: MazeRequest, paper: MazePaperId): Promise<Uint8Array> {
+  const { generateMazePosterPdf: run } = await import("@/engine/mazePdf");
+  return run(request, paper);
 }
 
 export async function generateMazePdf(request: MazeRequest): Promise<Uint8Array> {

@@ -1,5 +1,25 @@
 {
   "posts": {
+    "poster-size-mazes": {
+      "title": "Laberintos tan grandes como tu pared",
+      "summary": "Elige columnas y filas exactas, hasta 400 por 400, y descarga un PDF de póster de hasta 4A0 o un PNG de hasta 16384 píxeles.",
+      "blocks": [
+        "El [generador de laberintos](/mazes/) ahora usa las columnas y filas que elijas, y se imprime tan grande como permita tu impresora.",
+        "Muestras para empezar",
+        [
+          "Maestro: 60 columnas y filas",
+          "80 columnas por 120 filas",
+          "Un laberinto circular extremo"
+        ],
+        "Novedades",
+        [
+          "Niveles de dificultad Maestro y Extremo",
+          "Tus propias columnas y filas, hasta 400 de cada una",
+          "PDF de póster en ANSI C, D y E y de A3 a 4A0, con la solución en una hoja igual",
+          "PNG de hasta 16384 píxeles en el lado mayor"
+        ]
+      ]
+    },
     "maze-generator": {
       "title": "Genera un laberinto para imprimir con un solo camino",
       "summary": "Elige una forma, un algoritmo y una dificultad, e imprime el laberinto con la solución en otra página.",
@@ -133,7 +153,7 @@
         [
           "Nueve motivos nuevos de mandala y control del motivo, la repetición, la profundidad, los colores, los puntos de acento y el medio giro de cada anillo",
           "Arrastra anillos para ordenarlos y motivos sobre los anillos, con botones que hacen lo mismo con el teclado o en una pantalla táctil",
-          "48 paletas temáticas en ocho grupos y 72 de armonías de color, en su propia página y en todos los generadores",
+          "60 paletas temáticas en diez grupos y 72 de armonías de color, en su propia página y en todos los generadores",
           "Paletas propias con nombre, guardadas en tu navegador",
           "Una página y una miniatura para cada opción principal de ocho generadores, como cada baldosa Truchet y cada grupo de papel tapiz"
         ],
@@ -413,6 +433,12 @@
     }
   },
   "changelog": {
+    "Poster-size mazes": {
+      "title": "Laberintos de tamaño póster",
+      "items": [
+        "Laberintos con columnas y filas propias, niveles Maestro y Extremo, PDF de póster y PNG muy grandes"
+      ]
+    },
     "Maze generator": {
       "title": "Generador de laberintos",
       "items": [

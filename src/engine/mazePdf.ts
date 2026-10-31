@@ -19,9 +19,10 @@ import {
   StandardFonts,
   stroke,
   type PDFOperator,
+  type PDFPage,
 } from "pdf-lib";
 import { Writer } from "./pdf";
-import { buildMaze, CELL, generateMaze, MARKER_RADIUS, mazeText, routeWidth, type Maze, type MazePoint, type MazeRequest, type MazeWall } from "./maze";
+import { buildMaze, CELL, generateMaze, MARKER_RADIUS, mazeText, posterLayout, routeWidth, type Maze, type MazePaperId, type MazePoint, type MazeRequest, type MazeWall } from "./maze";
 
 const MARGIN = 36;
 const CONTENT_W = 540;
@@ -86,6 +87,11 @@ export function mazeOps(maze: Maze, req: MazeRequest, x: number, top: number, sc
   ];
 }
 
+/** A big maze is more operators than one call can take as arguments. */
+function pushAll(page: PDFPage, ops: PDFOperator[]) {
+  for (let i = 0; i < ops.length; i += 20000) page.pushOperators(...ops.slice(i, i + 20000));
+}
+
 /** Letter pages: the maze to solve, then a separate page with its solution. */
 export async function generateMazePdf(request: MazeRequest): Promise<Uint8Array> {
   const locale = request.locale ?? "en";
@@ -102,7 +108,7 @@ export async function generateMazePdf(request: MazeRequest): Promise<Uint8Array>
     w.gap(8);
     const { width, height } = maze.graph;
     const scale = Math.min(CONTENT_W / width, (w.y - FOOT) / height);
-    w.page.pushOperators(...mazeOps(maze, request, MARGIN + (CONTENT_W - width * scale) / 2, w.y, scale, showSolution));
+    pushAll(w.page, mazeOps(maze, request, MARGIN + (CONTENT_W - width * scale) / 2, w.y, scale, showSolution));
   };
 
   w.text(title, { size: 22, bold: true });
@@ -115,5 +121,29 @@ export async function generateMazePdf(request: MazeRequest): Promise<Uint8Array>
   w.text(mazeText(locale, "pdfSolution"), { size: 16, bold: true });
   w.text(mazeText(locale, "pdfStats", { length: result.solutionLength, deadEnds: result.deadEnds }), { muted: true });
   draw(true);
+  return doc.save();
+}
+
+/** A poster: one sheet with the maze as large as it fits, then a matching sheet with its solution. */
+export async function generateMazePosterPdf(request: MazeRequest, paperId: MazePaperId): Promise<Uint8Array> {
+  const locale = request.locale ?? "en";
+  const result = generateMaze(request);
+  const maze = buildMaze(request);
+  const doc = await PDFDocument.create();
+  const title = mazeText(locale, "pdfTitle");
+  doc.setTitle(title);
+  const font = await doc.embedFont(StandardFonts.Helvetica);
+  const bold = await doc.embedFont(StandardFonts.HelveticaBold);
+  const layout = posterLayout(maze.graph.width, maze.graph.height, paperId);
+  const sheet = (heading: string, line: string, showSolution: boolean) => {
+    const page = doc.addPage([layout.pageWidth, layout.pageHeight]);
+    const y = layout.pageHeight - layout.margin - layout.fontSize;
+    page.drawText(heading, { x: layout.margin, y, size: layout.fontSize, font: bold });
+    page.drawText(line, { x: layout.margin, y: y - layout.fontSize * 1.4, size: layout.fontSize * 0.7, font });
+    pushAll(page, mazeOps(maze, request, layout.x, layout.top, layout.scale, showSolution));
+  };
+  const about = `${mazeText(locale, "pdfSub", { shape: result.shape, algorithm: result.algorithm, difficulty: result.difficulty, cells: result.cells })} ${mazeText(locale, "pdfSeed", { seed: request.seed })}`;
+  sheet(title, `${about} ${mazeText(locale, "pdfHow")}`, false);
+  sheet(mazeText(locale, "pdfSolution"), mazeText(locale, "pdfStats", { length: result.solutionLength, deadEnds: result.deadEnds }), true);
   return doc.save();
 }

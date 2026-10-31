@@ -2,10 +2,10 @@ import { inflateSync } from "node:zlib";
 import { describe, expect, it } from "vitest";
 import { PDFDocument, PDFArray, PDFName, PDFRawStream, StandardFonts } from "pdf-lib";
 import uiCopy from "../i18n/messages/maze.json";
-import { ALGORITHM_OPTIONS, defaultMazeState, DIFFICULTY_OPTIONS, parseMazeState, serializeMazeState, SHAPE_OPTIONS, WEIGHT_OPTIONS } from "../lib/mazeState";
+import { ALGORITHM_OPTIONS, defaultMazeState, DIFFICULTY_OPTIONS, parseMazeState, serializeMazeState, SHAPE_OPTIONS, SIZE_OPTIONS, WEIGHT_OPTIONS } from "../lib/mazeState";
 import engineCopy from "./messages/maze.json";
-import { buildMaze, carve, CELL, generateMaze, MAZE_ALGORITHMS, MAZE_DIFFICULTIES, MAZE_SHAPES, mazeAcross, mazeGraph, ringCounts, routeWidth, seededRandom, wallMiddle, type Maze, type MazePoint, type MazeRequest, type MazeWall } from "./maze";
-import { generateMazePdf } from "./mazePdf";
+import { buildMaze, carve, CELL, generateMaze, MAZE_ALGORITHMS, MAZE_DIFFICULTIES, MAZE_PAPERS, MAZE_SHAPES, mazeAcross, mazeGraph, mazeTallRows, posterLayout, type MazePaperId, ringCounts, routeWidth, seededRandom, wallMiddle, type Maze, type MazePoint, type MazeRequest, type MazeWall } from "./maze";
+import { generateMazePosterPdf, generateMazePdf } from "./mazePdf";
 
 const LOCALES = ["en", "es", "fr", "de", "pt"] as const;
 const COMBOS = MAZE_SHAPES.flatMap((shape) => MAZE_ALGORITHMS.map((algorithm) => [shape, algorithm] as const));
@@ -75,7 +75,7 @@ const blocked = (a: MazePoint, b: MazePoint, walls: [MazePoint, MazePoint][]) =>
 describe("perfect mazes", () => {
   it.each(COMBOS)("%s, %s: spanning tree with a valid solution, over many seeds and every difficulty", (shape, algorithm) => {
     for (const difficulty of MAZE_DIFFICULTIES) {
-      for (let seed = 0; seed < (difficulty === "expert" ? 8 : 40); seed++) {
+      for (let seed = 0; seed < (difficulty === "extreme" || difficulty === "master" ? 2 : difficulty === "expert" ? 8 : 40); seed++) {
         const maze = buildMaze({ shape, algorithm, difficulty, seed });
         expectPerfect(maze);
         expectSolved(maze);
@@ -398,5 +398,77 @@ describe("translations", () => {
       for (const id of ALGORITHM_OPTIONS) expect(uiCopy[locale].algorithms[id]).toBe(engineCopy[locale][`algorithm_${id}`]);
       for (const id of DIFFICULTY_OPTIONS) expect(uiCopy[locale].difficulties[id]).toBe(engineCopy[locale][`difficulty_${id}`]);
     }
+  });
+});
+
+describe("sizes you choose", () => {
+  it.each(MAZE_ALGORITHMS)("%s: every choice is still a perfect maze", (algorithm) => {
+    for (const [cols, rows] of [[5, 5], [5, 400], [400, 5], [37, 91]]) {
+      const maze = buildMaze({ ...req, shape: "rectangle", algorithm, cols, rows });
+      expect(maze.graph.cells).toHaveLength(cols * rows);
+      expect(maze.passages).toHaveLength(cols * rows - 1);
+    }
+  });
+
+  it("uses rows only on a rectangle, and the difficulty's size without a choice", () => {
+    expect(buildMaze({ ...req, shape: "square", cols: 30, rows: 90 }).graph.cells).toHaveLength(900);
+    expect(buildMaze({ ...req, shape: "rectangle", cols: 30 }).graph.cells).toHaveLength(30 * mazeTallRows(30));
+    expect(buildMaze({ ...req, difficulty: "extreme" }).graph.cells).toHaveLength(100 * 100);
+    expect(generateMaze({ ...req, cols: 30 }).difficulty).toBe(engineCopy.en.difficulty_custom);
+  });
+
+  it("round trips in a link, and ignores anything not on the list", () => {
+    const base = defaultMazeState();
+    for (const patch of [{ cols: 400 }, { cols: 50, rows: 300 }, { rows: 8 }]) expect(parseMazeState(new URLSearchParams(serializeMazeState({ ...base, ...patch })))).toEqual({ ...base, ...patch });
+    for (const query of ["cols=7", "cols=401", "rows=-1", "cols=abc", "rows=1e9"]) expect(parseMazeState(new URLSearchParams(query))).toEqual(base);
+    for (const n of SIZE_OPTIONS) expect(n).toBeLessThanOrEqual(400);
+  });
+});
+
+describe("posters", () => {
+  const POINTS = (mm: number) => (mm / 25.4) * 72;
+  const SHEETS: [MazePaperId, number, number][] = [["ansiC", 17 * 72, 22 * 72], ["ansiD", 22 * 72, 34 * 72], ["ansiE", 34 * 72, 44 * 72], ["a3", POINTS(297), POINTS(420)], ["a2", POINTS(420), POINTS(594)], ["a1", POINTS(594), POINTS(841)], ["a0", POINTS(841), POINTS(1189)], ["2a0", POINTS(1189), POINTS(1682)], ["4a0", POINTS(1682), POINTS(2378)]];
+
+  it("offers every sheet, at its true size", () => {
+    expect(MAZE_PAPERS.map((p) => p.id)).toEqual(SHEETS.map(([id]) => id));
+  });
+
+  it.each(SHEETS)("%s prints a maze and a solution sheet, at size and inside the margins", async (paper, width, height) => {
+    const doc = await PDFDocument.load(await generateMazePosterPdf({ ...req, difficulty: "medium" }, paper));
+    expect(doc.getPageCount()).toBe(2);
+    for (const page of doc.getPages()) {
+      expect(page.getWidth()).toBeCloseTo(width, 1);
+      expect(page.getHeight()).toBeCloseTo(height, 1);
+    }
+    const graph = buildMaze({ ...req, difficulty: "medium" }).graph;
+    const layout = posterLayout(graph.width, graph.height, paper);
+    expect(layout.x).toBeGreaterThanOrEqual(layout.margin - 0.01);
+    expect(layout.top - graph.height * layout.scale).toBeGreaterThanOrEqual(layout.margin - 0.01);
+  });
+
+  it("turns a wide maze sideways, so it prints larger", () => {
+    const wide = posterLayout(300, 100, "a1");
+    expect(wide.pageWidth).toBeGreaterThan(wide.pageHeight);
+    expect(posterLayout(100, 300, "a1").pageWidth).toBeLessThan(posterLayout(100, 300, "a1").pageHeight);
+  });
+
+  it("reports how wide a cell prints, larger on a larger sheet", () => {
+    const { posterCell } = generateMaze({ ...req, cols: 100 });
+    expect(posterCell["4a0"]).toBeGreaterThan(posterCell.a0);
+    expect(posterCell.a0).toBeGreaterThan(posterCell.a3);
+    expect(generateMaze({ ...req, shape: "rectangle", cols: 264, rows: 374 }).posterCell["4a0"]).toBeGreaterThanOrEqual(0.2);
+  });
+
+  it("builds the largest maze on the largest sheet", async () => {
+    const started = Date.now();
+    const bytes = await generateMazePosterPdf({ ...req, shape: "rectangle", cols: 400, rows: 400 }, "4a0");
+    const doc = await PDFDocument.load(bytes);
+    expect(doc.getPageCount()).toBe(2);
+    console.log("400x400 poster", Math.round(bytes.length / 1024), "KB", Date.now() - started, "ms");
+  }, 120000);
+
+  it.each(LOCALES)("has a heading in %s", async (locale) => {
+    const doc = await PDFDocument.load(await generateMazePosterPdf({ ...defaultMazeState(locale) }, "a3"));
+    expect(doc.getTitle()).toBe(engineCopy[locale].pdfTitle);
   });
 });

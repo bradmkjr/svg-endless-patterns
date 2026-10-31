@@ -1,6 +1,14 @@
 [
   {
     "date": "2026-10-31",
+    "title": "Poster-size mazes",
+    "post": "poster-size-mazes",
+    "items": [
+      "Mazes with your own columns and rows, Master and Extreme levels, poster PDFs and very large PNGs"
+    ]
+  },
+  {
+    "date": "2026-10-31",
     "title": "Maze generator",
     "post": "maze-generator",
     "items": [

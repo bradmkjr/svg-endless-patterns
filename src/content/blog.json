@@ -1,5 +1,60 @@
 [
   {
+    "slug": "poster-size-mazes",
+    "title": "Mazes as big as your wall",
+    "date": "2026-10-31",
+    "summary": "Choose exact columns and rows, up to 400 by 400, then download a poster PDF up to 4A0 or a PNG up to 16384 pixels.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The [maze generator](/mazes/) now takes the columns and rows you choose, and it prints as large as your printer can go."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "maze",
+            "slug": "",
+            "query": "d=master",
+            "view": "maze",
+            "caption": "Master: 60 columns and rows"
+          },
+          {
+            "kind": "maze",
+            "slug": "",
+            "query": "shape=rectangle&cols=80&rows=120",
+            "view": "maze",
+            "caption": "80 columns by 120 rows"
+          },
+          {
+            "kind": "maze",
+            "slug": "",
+            "query": "shape=circle&d=extreme",
+            "view": "maze",
+            "caption": "An extreme circular maze"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What's new"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Master and Extreme difficulty levels",
+          "Your own columns and rows, up to 400 of each",
+          "Poster PDFs on ANSI C, D and E and A3 through 4A0, with the solution on a matching sheet",
+          "PNG downloads up to 16384 pixels on the longest side"
+        ]
+      }
+    ]
+  },
+  {
     "slug": "maze-generator",
     "title": "Generate a printable maze with one true path",
     "date": "2026-10-31",
@@ -389,7 +444,7 @@
         "items": [
           "Nine new mandala motifs, and control over each ring's motif, repeat, depth, colors, accent dots and half turn",
           "Drag rings to reorder them and drag motifs onto rings, with buttons that do the same from the keyboard or a touch screen",
-          "48 themed palettes in eight groups and 72 color harmony palettes, on their own page and in every maker",
+          "60 themed palettes in ten groups and 72 color harmony palettes, on their own page and in every maker",
           "Named palettes of your own, saved in your browser",
           "A page and a thumbnail for each main option in eight makers, such as each Truchet tile and wallpaper group"
         ]

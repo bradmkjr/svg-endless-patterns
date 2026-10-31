@@ -12,6 +12,28 @@ export type HueId = keyof typeof text.en.hues;
 
 export const THEME_GROUPS: { id: GroupId; palettes: { id: NamedId; colors: string[] }[] }[] = [
   {
+    id: "vibrant",
+    palettes: [
+      { id: "neon", colors: ["#fbfbf6", "#14121f", "#ff2e93", "#00e5ff", "#c6ff00"] },
+      { id: "electric", colors: ["#f7f7ff", "#150a3d", "#5b2eff", "#ff3d71", "#00d4b4"] },
+      { id: "tropical", colors: ["#fffdf2", "#063b3a", "#ff5a36", "#ffc21a", "#00b8a0"] },
+      { id: "carnival", colors: ["#fff9ef", "#26103f", "#e6007e", "#ff8a00", "#00a6d6"] },
+      { id: "popArt", colors: ["#ffffff", "#111111", "#ff1f3d", "#ffe100", "#0057ff"] },
+      { id: "citrus", colors: ["#fdfff2", "#20330c", "#ff7a00", "#ffd400", "#7ed321"] },
+    ],
+  },
+  {
+    id: "rainbow",
+    palettes: [
+      { id: "classicRainbow", colors: ["#ffffff", "#e40303", "#ff8c00", "#ffed00", "#008026", "#004dff", "#4b0082", "#750787"] },
+      { id: "brightRainbow", colors: ["#fffffa", "#ff0054", "#ff7a00", "#ffd600", "#00c853", "#00b0ff", "#3d5afe", "#d500f9"] },
+      { id: "pastelRainbow", colors: ["#fffdf9", "#f7a8b8", "#fbc99a", "#fbe89a", "#b5e6b0", "#a8d8f0", "#b9c0f2", "#dcb6ee"] },
+      { id: "darkRainbow", colors: ["#14121f", "#ff4d6d", "#ff9e2c", "#ffe14d", "#4de28a", "#4dc3ff", "#7d7bff", "#e07bff"] },
+      { id: "earthRainbow", colors: ["#f8f1e3", "#a63a2a", "#c9742b", "#d9ac3a", "#5f7d3a", "#2f6f7d", "#3f4f8a", "#6d3f78"] },
+      { id: "sunsetRainbow", colors: ["#fff6ec", "#3a0f4f", "#c2185b", "#f4511e", "#ffa000", "#ffd54f", "#26a69a", "#3949ab"] },
+    ],
+  },
+  {
     id: "earth",
     palettes: [
       { id: "terracotta", colors: ["#f5e9da", "#3a2418", "#b5533c", "#d98e4a", "#7d8c6a"] },

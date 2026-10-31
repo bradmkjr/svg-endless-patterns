@@ -1,5 +1,25 @@
 {
   "posts": {
+    "poster-size-mazes": {
+      "title": "Labirintos do tamanho da sua parede",
+      "summary": "Escolha colunas e linhas exatas, até 400 por 400, e baixe um PDF de pôster até 4A0 ou um PNG de até 16384 pixels.",
+      "blocks": [
+        "O [gerador de labirintos](/mazes/) agora usa as colunas e linhas que você escolher, e imprime tão grande quanto sua impressora permitir.",
+        "Exemplos para começar",
+        [
+          "Mestre: 60 colunas e linhas",
+          "80 colunas por 120 linhas",
+          "Um labirinto circular extremo"
+        ],
+        "Novidades",
+        [
+          "Níveis de dificuldade Mestre e Extremo",
+          "Suas próprias colunas e linhas, até 400 de cada",
+          "PDFs de pôster em ANSI C, D e E e de A3 a 4A0, com a solução em uma folha igual",
+          "PNG de até 16384 pixels no lado maior"
+        ]
+      ]
+    },
     "maze-generator": {
       "title": "Gere um labirinto para imprimir com um único caminho",
       "summary": "Escolha uma forma, um algoritmo e uma dificuldade e imprima o labirinto com a solução em outra página.",
@@ -133,7 +153,7 @@
         [
           "Nove novos motivos de mandala e controle do motivo, da repetição, da profundidade, das cores, dos pontos de destaque e da meia volta de cada anel",
           "Arraste anéis para ordená-los e motivos sobre os anéis, com botões que fazem o mesmo pelo teclado ou em tela de toque",
-          "48 paletas temáticas em oito grupos e 72 de harmonias de cores, em uma página própria e em todos os geradores",
+          "60 paletas temáticas em dez grupos e 72 de harmonias de cores, em uma página própria e em todos os geradores",
           "Paletas próprias com nome, salvas no seu navegador",
           "Uma página e uma miniatura para cada opção principal de oito geradores, como cada ladrilho Truchet e cada grupo de papel de parede"
         ],
@@ -413,6 +433,12 @@
     }
   },
   "changelog": {
+    "Poster-size mazes": {
+      "title": "Labirintos em tamanho pôster",
+      "items": [
+        "Labirintos com colunas e linhas próprias, níveis Mestre e Extremo, PDFs de pôster e PNGs muito grandes"
+      ]
+    },
     "Maze generator": {
       "title": "Gerador de labirintos",
       "items": [

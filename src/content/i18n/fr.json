@@ -1,5 +1,25 @@
 {
   "posts": {
+    "poster-size-mazes": {
+      "title": "Des labyrinthes grands comme votre mur",
+      "summary": "Choisissez les colonnes et les rangées, jusqu'à 400 sur 400, puis téléchargez une affiche PDF jusqu'au 4A0 ou un PNG jusqu'à 16384 pixels.",
+      "blocks": [
+        "Le [générateur de labyrinthes](/mazes/) utilise désormais les colonnes et rangées de votre choix, et s'imprime aussi grand que votre imprimante le permet.",
+        "Exemples pour commencer",
+        [
+          "Maître : 60 colonnes et rangées",
+          "80 colonnes sur 120 rangées",
+          "Un labyrinthe circulaire extrême"
+        ],
+        "Nouveautés",
+        [
+          "Niveaux de difficulté Maître et Extrême",
+          "Vos colonnes et rangées, jusqu'à 400 de chaque",
+          "Affiches PDF en ANSI C, D et E et de A3 à 4A0, avec la solution sur une feuille identique",
+          "PNG jusqu'à 16384 pixels sur le plus grand côté"
+        ]
+      ]
+    },
     "maze-generator": {
       "title": "Générez un labyrinthe à imprimer avec un seul vrai chemin",
       "summary": "Choisissez une forme, un algorithme et une difficulté, puis imprimez le labyrinthe avec sa solution sur une page à part.",
@@ -133,7 +153,7 @@
         [
           "Neuf nouveaux motifs de mandala, et le choix du motif, de la répétition, de la profondeur, des couleurs, des points d'accent et du demi-tour de chaque anneau",
           "Faites glisser les anneaux pour les ordonner et les motifs sur les anneaux, avec des boutons qui font de même au clavier ou sur écran tactile",
-          "48 palettes thématiques en huit groupes et 72 palettes d'harmonies de couleurs, sur leur propre page et dans tous les outils",
+          "60 palettes thématiques en dix groupes et 72 palettes d'harmonies de couleurs, sur leur propre page et dans tous les outils",
           "Vos propres palettes nommées, enregistrées dans votre navigateur",
           "Une page et une vignette pour chaque option principale de huit outils, comme chaque tuile de Truchet et chaque groupe de papier peint"
         ],
@@ -413,6 +433,12 @@
     }
   },
   "changelog": {
+    "Poster-size mazes": {
+      "title": "Labyrinthes format affiche",
+      "items": [
+        "Labyrinthes avec colonnes et rangées au choix, niveaux Maître et Extrême, affiches PDF et très grands PNG"
+      ]
+    },
     "Maze generator": {
       "title": "Générateur de labyrinthes",
       "items": [

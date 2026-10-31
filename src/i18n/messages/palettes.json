@@ -35,7 +35,9 @@
       "jewel": "Jewel tones",
       "vintage": "Vintage & folk",
       "pastel": "Soft pastels",
-      "neutral": "Neutrals & ink"
+      "neutral": "Neutrals & ink",
+      "vibrant": "Vibrant",
+      "rainbow": "Rainbow"
     },
     "names": {
       "terracotta": "Terracotta",
@@ -85,7 +87,19 @@
       "slate": "Slate",
       "charcoal": "Charcoal",
       "oat": "Oatmeal",
-      "concrete": "Concrete"
+      "concrete": "Concrete",
+      "neon": "Neon",
+      "electric": "Electric",
+      "tropical": "Tropical",
+      "carnival": "Carnival",
+      "popArt": "Pop art",
+      "citrus": "Citrus burst",
+      "classicRainbow": "Classic rainbow",
+      "brightRainbow": "Bright rainbow",
+      "pastelRainbow": "Pastel rainbow",
+      "darkRainbow": "Night rainbow",
+      "earthRainbow": "Earthy rainbow",
+      "sunsetRainbow": "Sunset rainbow"
     },
     "harmonyNames": {
       "complementary": "Complementary",
@@ -154,7 +168,9 @@
       "jewel": "Tonos joya",
       "vintage": "Vintage y popular",
       "pastel": "Pasteles suaves",
-      "neutral": "Neutros y tinta"
+      "neutral": "Neutros y tinta",
+      "vibrant": "Vibrantes",
+      "rainbow": "Arcoíris"
     },
     "names": {
       "terracotta": "Terracota",
@@ -204,7 +220,19 @@
       "slate": "Pizarra",
       "charcoal": "Carbón",
       "oat": "Avena",
-      "concrete": "Hormigón"
+      "concrete": "Hormigón",
+      "neon": "Neón",
+      "electric": "Eléctrico",
+      "tropical": "Tropical",
+      "carnival": "Carnaval",
+      "popArt": "Arte pop",
+      "citrus": "Cítricos intensos",
+      "classicRainbow": "Arcoíris clásico",
+      "brightRainbow": "Arcoíris brillante",
+      "pastelRainbow": "Arcoíris pastel",
+      "darkRainbow": "Arcoíris nocturno",
+      "earthRainbow": "Arcoíris terroso",
+      "sunsetRainbow": "Arcoíris de atardecer"
     },
     "harmonyNames": {
       "complementary": "Complementaria",
@@ -273,7 +301,9 @@
       "jewel": "Tons de pierres précieuses",
       "vintage": "Vintage et folklore",
       "pastel": "Pastels doux",
-      "neutral": "Neutres et encre"
+      "neutral": "Neutres et encre",
+      "vibrant": "Vives",
+      "rainbow": "Arc-en-ciel"
     },
     "names": {
       "terracotta": "Terre cuite",
@@ -323,7 +353,19 @@
       "slate": "Ardoise",
       "charcoal": "Fusain",
       "oat": "Flocons d'avoine",
-      "concrete": "Béton"
+      "concrete": "Béton",
+      "neon": "Néon",
+      "electric": "Électrique",
+      "tropical": "Tropical",
+      "carnival": "Carnaval",
+      "popArt": "Pop art",
+      "citrus": "Éclat d'agrumes",
+      "classicRainbow": "Arc-en-ciel classique",
+      "brightRainbow": "Arc-en-ciel vif",
+      "pastelRainbow": "Arc-en-ciel pastel",
+      "darkRainbow": "Arc-en-ciel de nuit",
+      "earthRainbow": "Arc-en-ciel terreux",
+      "sunsetRainbow": "Arc-en-ciel couchant"
     },
     "harmonyNames": {
       "complementary": "Complémentaire",
@@ -392,7 +434,9 @@
       "jewel": "Edelsteintöne",
       "vintage": "Vintage & Volkskunst",
       "pastel": "Sanfte Pastelltöne",
-      "neutral": "Neutraltöne & Tinte"
+      "neutral": "Neutraltöne & Tinte",
+      "vibrant": "Leuchtend",
+      "rainbow": "Regenbogen"
     },
     "names": {
       "terracotta": "Terrakotta",
@@ -442,7 +486,19 @@
       "slate": "Schiefer",
       "charcoal": "Kohle",
       "oat": "Haferflocken",
-      "concrete": "Beton"
+      "concrete": "Beton",
+      "neon": "Neon",
+      "electric": "Elektrisch",
+      "tropical": "Tropisch",
+      "carnival": "Karneval",
+      "popArt": "Pop-Art",
+      "citrus": "Zitrusfrisch",
+      "classicRainbow": "Klassischer Regenbogen",
+      "brightRainbow": "Leuchtender Regenbogen",
+      "pastelRainbow": "Pastell-Regenbogen",
+      "darkRainbow": "Nacht-Regenbogen",
+      "earthRainbow": "Erdiger Regenbogen",
+      "sunsetRainbow": "Abend-Regenbogen"
     },
     "harmonyNames": {
       "complementary": "Komplementär",
@@ -511,7 +567,9 @@
       "jewel": "Tons de joias",
       "vintage": "Vintage e folclore",
       "pastel": "Pastéis suaves",
-      "neutral": "Neutros e tinta"
+      "neutral": "Neutros e tinta",
+      "vibrant": "Vibrantes",
+      "rainbow": "Arco-íris"
     },
     "names": {
       "terracotta": "Terracota",
@@ -561,7 +619,19 @@
       "slate": "Ardósia",
       "charcoal": "Carvão",
       "oat": "Aveia",
-      "concrete": "Concreto"
+      "concrete": "Concreto",
+      "neon": "Neon",
+      "electric": "Elétrico",
+      "tropical": "Tropical",
+      "carnival": "Carnaval",
+      "popArt": "Arte pop",
+      "citrus": "Explosão cítrica",
+      "classicRainbow": "Arco-íris clássico",
+      "brightRainbow": "Arco-íris brilhante",
+      "pastelRainbow": "Arco-íris pastel",
+      "darkRainbow": "Arco-íris noturno",
+      "earthRainbow": "Arco-íris terroso",
+      "sunsetRainbow": "Arco-íris do pôr do sol"
     },
     "harmonyNames": {
       "complementary": "Complementar",

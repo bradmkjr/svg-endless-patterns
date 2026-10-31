@@ -7,12 +7,15 @@ export type MazeShape = (typeof MAZE_SHAPES)[number];
 export const MAZE_ALGORITHMS = ["backtracker", "prim", "kruskal", "wilson", "binaryTree"] as const;
 export type MazeAlgorithm = (typeof MAZE_ALGORITHMS)[number];
 
-export const MAZE_DIFFICULTIES = ["easy", "medium", "hard", "expert"] as const;
+export const MAZE_DIFFICULTIES = ["easy", "medium", "hard", "expert", "master", "extreme"] as const;
 export type MazeDifficulty = (typeof MAZE_DIFFICULTIES)[number];
 
 export type MazeColors = { background: string; wall: string; accent: string };
 
-export type MazeRequest = {
+/** A maze's size. Cells across for any shape; `rows` is only for a rectangle. Without `cols`, the difficulty sets it. */
+export type MazeSize = { cols?: number; rows?: number };
+
+export type MazeRequest = MazeSize & {
   shape: MazeShape;
   algorithm: MazeAlgorithm;
   difficulty: MazeDifficulty;
@@ -33,6 +36,8 @@ export type MazeResult = {
   /** Cells on the path from start to exit, both included. */
   solutionLength: number;
   deadEnds: number;
+  /** How wide a cell prints on each poster sheet, in inches. */
+  posterCell: Record<MazePaperId, number>;
 };
 
 export type MazePoint = readonly [number, number];
@@ -65,13 +70,49 @@ export const MARGIN = 3;
 /** Printed width of the SVG, in inches. */
 const WIDTH_IN = 7.5;
 const TALL = 1.3;
-const ACROSS: Record<MazeDifficulty, number> = { easy: 10, medium: 16, hard: 24, expert: 36 };
+const ACROSS: Record<MazeDifficulty, number> = { easy: 10, medium: 16, hard: 24, expert: 36, master: 60, extreme: 100 };
 
 export function mazeText(locale: Locale, key: keyof (typeof messages)["en"], values: Record<string, string | number> = {}): string {
   return messages[locale][key].replace(/\{(\w+)\}/g, (_, name) => String(values[name] ?? `{${name}}`));
 }
 
 export const mazeAcross = (difficulty: MazeDifficulty) => ACROSS[difficulty];
+/** A rectangle's rows when none are chosen. */
+export const mazeTallRows = (cols: number) => Math.round(cols * TALL);
+
+const POINTS_PER_INCH = 72;
+const inches = (w: number, h: number) => ({ width: w * POINTS_PER_INCH, height: h * POINTS_PER_INCH });
+const millimeters = (w: number, h: number) => inches(w / 25.4, h / 25.4);
+
+/** Poster sheets, narrow side first, in points. */
+export const MAZE_PAPERS = [
+  { id: "ansiC", label: "ANSI C (17 × 22 in)", ...inches(17, 22) },
+  { id: "ansiD", label: "ANSI D (22 × 34 in)", ...inches(22, 34) },
+  { id: "ansiE", label: "ANSI E (34 × 44 in)", ...inches(34, 44) },
+  { id: "a3", label: "A3 (297 × 420 mm)", ...millimeters(297, 420) },
+  { id: "a2", label: "A2 (420 × 594 mm)", ...millimeters(420, 594) },
+  { id: "a1", label: "A1 (594 × 841 mm)", ...millimeters(594, 841) },
+  { id: "a0", label: "A0 (841 × 1189 mm)", ...millimeters(841, 1189) },
+  { id: "2a0", label: "2A0 (1189 × 1682 mm)", ...millimeters(1189, 1682) },
+  { id: "4a0", label: "4A0 (1682 × 2378 mm)", ...millimeters(1682, 2378) },
+] as const;
+export type MazePaperId = (typeof MAZE_PAPERS)[number]["id"];
+
+/** Where a maze goes on a sheet, turned whichever way lets it print largest, under a short heading. */
+export function posterLayout(width: number, height: number, paperId: MazePaperId) {
+  const paper = MAZE_PAPERS.find((p) => p.id === paperId)!;
+  const margin = paper.width * 0.04;
+  const fontSize = paper.width / 45;
+  const heading = fontSize * 3.2;
+  const fit = (pageWidth: number, pageHeight: number) => Math.min((pageWidth - margin * 2) / width, (pageHeight - margin * 2 - heading) / height);
+  const upright = fit(paper.width, paper.height);
+  const turned = fit(paper.height, paper.width);
+  const landscape = turned > upright;
+  const scale = landscape ? turned : upright;
+  const pageWidth = landscape ? paper.height : paper.width;
+  const pageHeight = landscape ? paper.width : paper.height;
+  return { pageWidth, pageHeight, margin, fontSize, scale, x: (pageWidth - width * scale) / 2, top: pageHeight - margin - heading };
+}
 
 /** A small seeded generator (mulberry32), so a seed means the same maze on every machine. */
 export function seededRandom(seed: number): () => number {
@@ -196,9 +237,9 @@ function hexGraph(radius: number): MazeGraph {
 }
 
 /** The empty grid of a shape, `across` cells wide. */
-export function mazeGraph(shape: MazeShape, across: number): MazeGraph {
+export function mazeGraph(shape: MazeShape, across: number, down?: number): MazeGraph {
   if (shape === "square") return gridGraph(across, across);
-  if (shape === "rectangle") return gridGraph(across, Math.round(across * TALL));
+  if (shape === "rectangle") return gridGraph(across, down ?? Math.round(across * TALL));
   if (shape === "circle") return circleGraph(Math.round(across / 2));
   return hexGraph(Math.floor(across / 2));
 }
@@ -370,8 +411,8 @@ function walk(links: Link[][], from: number) {
 const farthest = (distance: number[], among: number[]) => among.reduce((best, cell) => (distance[cell] > distance[best] ? cell : best), among[0]);
 
 /** The whole maze: its grid, passages, ends and solution. */
-export function buildMaze(req: Pick<MazeRequest, "shape" | "algorithm" | "difficulty" | "seed">): Maze {
-  const graph = mazeGraph(req.shape, ACROSS[req.difficulty]);
+export function buildMaze(req: Pick<MazeRequest, "shape" | "algorithm" | "difficulty" | "seed" | "cols" | "rows">): Maze {
+  const graph = mazeGraph(req.shape, req.cols ?? ACROSS[req.difficulty], req.rows);
   const passages = carve(graph, req.algorithm, seededRandom(req.seed));
   const links: Link[][] = graph.cells.map(() => []);
   for (const edge of passages) {
@@ -444,9 +485,10 @@ export function generateMaze(req: MazeRequest): MazeResult {
     svg: { maze: mazeSvg(maze, req, mazeText(locale, "svgMaze"), false), solution: mazeSvg(maze, req, mazeText(locale, "svgSolution"), true) },
     shape: mazeText(locale, `shape_${req.shape}`),
     algorithm: mazeText(locale, `algorithm_${req.algorithm}`),
-    difficulty: mazeText(locale, `difficulty_${req.difficulty}`),
+    difficulty: mazeText(locale, req.cols === undefined ? `difficulty_${req.difficulty}` : "difficulty_custom"),
     cells: maze.graph.cells.length,
     solutionLength: maze.solution.length,
     deadEnds: degree.filter((d) => d === 1).length,
+    posterCell: Object.fromEntries(MAZE_PAPERS.map((paper) => [paper.id, Number(((posterLayout(maze.graph.width, maze.graph.height, paper.id).scale * CELL) / POINTS_PER_INCH).toFixed(3))])) as Record<MazePaperId, number>,
   };
 }

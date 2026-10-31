@@ -8,13 +8,14 @@ const LOCALES = ["en", "es", "fr", "de", "pt"] as const;
 const flat = (value: object, prefix = ""): Record<string, string> => Object.fromEntries(Object.entries(value).flatMap(([k, v]) => (typeof v === "string" ? [[`${prefix}${k}`, v]] : Object.entries(flat(v, `${prefix}${k}.`)))));
 
 describe("palette library", () => {
-  it("has themed palettes with five valid, different colors and a name", () => {
+  it("has themed palettes with at least five valid, different colors and a name", () => {
     const palettes = THEME_GROUPS.flatMap((group) => group.palettes);
-    expect(palettes.length).toBe(48);
+    expect(palettes.length).toBe(60);
     expect(new Set(palettes.map((p) => p.id)).size).toBe(palettes.length);
     for (const palette of palettes) {
-      expect(palette.colors, palette.id).toHaveLength(5);
-      expect(new Set(palette.colors).size, palette.id).toBe(5);
+      expect(palette.colors.length, palette.id).toBeGreaterThanOrEqual(5);
+      expect(palette.colors.length, palette.id).toBeLessThanOrEqual(8);
+      expect(new Set(palette.colors).size, palette.id).toBe(palette.colors.length);
       for (const color of palette.colors) expect(color).toMatch(HEX);
       for (const locale of LOCALES) expect(text[locale].names[palette.id]).toBeTruthy();
     }

@@ -79,6 +79,6 @@ export async function allThumbs(): Promise<{ group: ThumbGroup; slug: string; dr
     ...(await stitchThumbs("knit")),
     ...(await stitchThumbs("crochet")),
     ...TARTAN_PRESETS.map((preset) => ({ group: "tartan" as ThumbGroup, slug: preset.id, draw: async () => (await generateTartan({ ...defaultTartanState(), stripes: preset.stripes })).svg.swatch })),
-    ...(Object.keys(TOOL_OPTIONS) as ToolId[]).filter((tool) => tool !== "maze" && tool !== "fractal" && tool !== "knitColorwork").flatMap((tool) => TOOL_OPTIONS[tool].options.map((option) => ({ group: tool as ThumbGroup, slug: option.slug, draw: () => drawToolThumb(tool, option.slug) }))),
+    ...(Object.keys(TOOL_OPTIONS) as ToolId[]).filter((tool) => tool !== "maze" && tool !== "fractal" && tool !== "knitColorwork" && tool !== "crochetColorwork").flatMap((tool) => TOOL_OPTIONS[tool].options.map((option) => ({ group: tool as ThumbGroup, slug: option.slug, draw: () => drawToolThumb(tool, option.slug) }))),
   ];
 }

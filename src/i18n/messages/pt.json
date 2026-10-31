@@ -275,6 +275,12 @@
         "text": "Gráficos originais em jacquard, mosaico e intarsia, cada um escrito como um quadrado completo na sua amostra.",
         "output": "Gráfico com legenda de cores, carreiras cor por cor, conferência de fios flutuantes, fio por cor e um PDF para imprimir.",
         "explore": "Explorar o tricô em cores"
+      },
+      "crochetColorwork": {
+        "title": "Crochê multicolorido",
+        "text": "Quadrados de crochê multicolorido: gráficos de tapeçaria, gráficos canto a canto e squares granny em voltas, nas suas cores.",
+        "output": "Gráfico com legenda de cores, cada carreira, diagonal ou volta por escrito, fio por cor, PDF para imprimir, e SVG e PNG.",
+        "explore": "Criar um quadrado multicolorido"
       }
     },
     "seeAllType": "Ver tudo em {name}"

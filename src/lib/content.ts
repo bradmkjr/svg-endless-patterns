@@ -26,6 +26,7 @@ export type PostSample =
   | { kind: "girih"; slug: ""; query: string; view: "repeat"; caption: string; locale?: Locale }
   | { kind: "maze"; slug: ""; query: string; view: "maze" | "solution"; caption: string; locale?: Locale }
   | { kind: "knitColorwork"; slug: ""; query: string; view: "square" | "chart"; caption: string; locale?: Locale }
+  | { kind: "crochetColorwork"; slug: ""; query: string; view: "square" | "chart"; caption: string; locale?: Locale }
   | { kind: "fractal"; slug: ""; query: string; view: "art" | "outline"; caption: string; locale?: Locale }
   | { kind: "tieDye"; slug: ""; query: string; view: "art" | "guide"; caption: string; locale?: Locale }
   | { kind: "truchet"; slug: ""; query: string; view: "repeat"; caption: string; locale?: Locale }
@@ -108,6 +109,7 @@ export function sampleHref(sample: PostSample, locale: Locale = "en"): string {
   if (sample.kind === "girih") return localePath(sample.locale ?? locale, `/girih/${query}`);
   if (sample.kind === "maze") return localePath(sample.locale ?? locale, `/mazes/${query}`);
   if (sample.kind === "knitColorwork") return localePath(sample.locale ?? locale, `/knitting/colorwork/${query}`);
+  if (sample.kind === "crochetColorwork") return localePath(sample.locale ?? locale, `/crochet/colorwork/${query}`);
   if (sample.kind === "fractal") return localePath(sample.locale ?? locale, `/fractals/${query}`);
   if (sample.kind === "tieDye") return localePath(sample.locale ?? locale, `/tie-dye/${query}`);
   if (sample.kind === "truchet") return localePath(sample.locale ?? locale, `/truchet/${query}`);

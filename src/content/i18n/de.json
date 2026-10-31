@@ -1,5 +1,28 @@
 {
   "posts": {
+    "crochet-colorwork-squares": {
+      "title": "Mehrfarbige Häkelquadrate, vollständig ausgeschrieben",
+      "summary": "Tapestry-Zählmuster, Ecke-zu-Ecke-Zählmuster und Granny Squares in deinen Farben, mit jeder Reihe, Diagonale und Runde ausgeschrieben.",
+      "blocks": [
+        "[Mehrfarbiges Häkeln](/crochet/colorwork/) ist ein neues Werkzeug in der [Musterbibliothek](/patterns/), mit neun eigenen Motiven in drei Techniken. Wähle eines, stelle deine Farben ein und erhalte ein ganzes Quadrat, vom Anschlag bis zum Spannen.",
+        "Beispiele zum Anfangen",
+        [
+          "Ein Stufenkreuz im Tapestry-Häkeln",
+          "Das Zählmuster für ein Herz von Ecke zu Ecke",
+          "Ein Granny Square mit sechs Runden",
+          "Ein vierfarbiges Granny Square aus DK-Garn"
+        ],
+        "Das bekommst du",
+        [
+          "Tapestry-Häkeln: ein Zählmuster mit Reihennummern und Farbschlüssel, die Leserichtung jeder Reihe, das Mitführen des unbenutzten Garns und Farbwechsel beim letzten Umschlag",
+          "Ecke zu Ecke: zunehmende und dann abnehmende Diagonalen, Anzahl und Farben der Blöcke jeder Diagonale und wie viele Garnspulen du brauchst",
+          "Granny Squares: die Maschenzahl jeder Runde, die Ecken und das Anschlingen einer neuen Farbe",
+          "Jedes Quadrat: ein Rand, Faden sichern, Fäden vernähen, Spannen, Hinweise zur Maschenprobe, Garn je Farbe, das die Gesamtmenge ergibt, und ein druckbares PDF"
+        ],
+        "Deine Farben und Links zum Teilen",
+        "Farbe A ist die Hauptfarbe und der Rand, die anderen sind Kontraste. Nutze eine beliebige Palette: Der Link zum Teilen behält deine Farben, die Garnstärke und die Größe. Die Yards sind eine grobe Schätzung, also prüfe sie an deiner eigenen Maschenprobe."
+      ]
+    },
     "knit-colorwork-patterns": {
       "title": "Farbmuster nach Diagramm, als vollständige Quadrate ausgeschrieben",
       "summary": "Dreizehn eigene Diagramme mit Spannfäden, Mosaik und Intarsien, passend zu deiner Maschenprobe, mit jeder Reihe Farbe für Farbe.",
@@ -477,6 +500,12 @@
     }
   },
   "changelog": {
+    "Crochet colorwork squares": {
+      "title": "Mehrfarbige Häkelquadrate",
+      "items": [
+        "Mehrfarbiges Häkeln hinzugefügt: Tapestry-Zählmuster, Ecke-zu-Ecke-Zählmuster und Granny Squares, jeweils als ganzes mehrfarbiges Quadrat ausgeschrieben, mit druckbarem PDF"
+      ]
+    },
     "Knit colorwork patterns": {
       "title": "Farbmuster zum Stricken",
       "items": [

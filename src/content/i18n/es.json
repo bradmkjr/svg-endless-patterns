@@ -1,5 +1,28 @@
 {
   "posts": {
+    "crochet-colorwork-squares": {
+      "title": "Cuadrados de ganchillo multicolor, escritos por completo",
+      "summary": "Gráficos de ganchillo tapestry, gráficos de esquina a esquina y cuadrados granny en tus colores, con cada vuelta y diagonal por escrito.",
+      "blocks": [
+        "El [ganchillo multicolor](/crochet/colorwork/) es una herramienta nueva de la [biblioteca de patrones](/patterns/), con nueve diseños originales en tres técnicas. Elige uno, ajusta tus colores y obtén un cuadrado completo, desde la cadeneta inicial hasta el bloqueo.",
+        "Ejemplos para empezar",
+        [
+          "Una cruz escalonada en ganchillo tapestry",
+          "El gráfico de un corazón de esquina a esquina",
+          "Un cuadrado granny de seis vueltas",
+          "Un cuadrado granny de cuatro colores en hilo DK"
+        ],
+        "Lo que obtienes",
+        [
+          "Ganchillo tapestry: un gráfico con números de vuelta y clave de colores, el sentido de lectura de cada vuelta, cómo llevar el hilo que no se usa y los cambios de color en la última lazada",
+          "De esquina a esquina: diagonales que aumentan y luego disminuyen, la cantidad y los colores de los bloques de cada diagonal, y cuántas bobinas enrollar",
+          "Cuadrados granny: la cuenta de puntos de cada vuelta, las esquinas y cómo unir un color nuevo",
+          "Cada cuadrado: un borde, remate, hebras escondidas, bloqueo, notas de muestra, hilo por color que suma el total y un PDF para imprimir"
+        ],
+        "Tus colores y los enlaces para compartir",
+        "El color A es el principal y el del borde, y los demás son contrastes. Usa cualquier paleta: el enlace para compartir conserva tus colores, el grosor del hilo y el tamaño. Las yardas son una estimación aproximada, así que compruébalas con tu propia muestra."
+      ]
+    },
     "knit-colorwork-patterns": {
       "title": "Tejido en colores con gráfico, escrito como cuadrados completos",
       "summary": "Trece gráficos originales con hebras llevadas, mosaico e intarsia, ajustados a tu muestra, con cada vuelta escrita color por color.",
@@ -477,6 +500,12 @@
     }
   },
   "changelog": {
+    "Crochet colorwork squares": {
+      "title": "Cuadrados de ganchillo multicolor",
+      "items": [
+        "Se añadió el ganchillo multicolor: gráficos tapestry, gráficos de esquina a esquina y cuadrados granny, cada uno escrito como un cuadrado multicolor completo con un PDF para imprimir"
+      ]
+    },
     "Knit colorwork patterns": {
       "title": "Patrones de tejido en colores",
       "items": [

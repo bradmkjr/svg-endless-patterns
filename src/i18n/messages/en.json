@@ -275,6 +275,12 @@
         "text": "Original stranded, mosaic and intarsia charts, each written as a complete square at your gauge.",
         "output": "Chart with color key, color-by-color rows, float check, yarn per color and a printable PDF.",
         "explore": "Explore knit colorwork"
+      },
+      "crochetColorwork": {
+        "title": "Crochet colorwork",
+        "text": "Multi-color crochet squares: tapestry charts, corner-to-corner graphs and granny squares in rounds, in your colors.",
+        "output": "Chart with color key, every row, diagonal or round written out, yarn per color, a printable PDF, and SVG and PNG.",
+        "explore": "Make a colorwork square"
       }
     },
     "seeAllType": "See everything in {name}"

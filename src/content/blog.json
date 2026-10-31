@@ -1,5 +1,75 @@
 [
   {
+    "slug": "crochet-colorwork-squares",
+    "title": "Crochet colorwork squares, written out in full",
+    "date": "2026-10-31",
+    "summary": "Tapestry crochet charts, corner-to-corner graphs and granny squares in your colors, with every row, diagonal and round written out in US terms.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "[Crochet colorwork](/crochet/colorwork/) is a new tool from the [pattern library](/patterns/), with nine original designs across three techniques. Pick one, set your colors, and get a complete square from the starting chain to blocking."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "crochetColorwork",
+            "slug": "",
+            "query": "d=stepped-cross",
+            "view": "square",
+            "caption": "A stepped cross in tapestry crochet"
+          },
+          {
+            "kind": "crochetColorwork",
+            "slug": "",
+            "query": "d=heart",
+            "view": "chart",
+            "caption": "The chart for a corner-to-corner heart"
+          },
+          {
+            "kind": "crochetColorwork",
+            "slug": "",
+            "query": "d=ember",
+            "view": "square",
+            "caption": "A granny square in six rounds"
+          },
+          {
+            "kind": "crochetColorwork",
+            "slug": "",
+            "query": "d=meadow&cc=7a3e8e-2f6f73-d9a441&w=dk",
+            "view": "square",
+            "caption": "A four-color granny square in DK yarn"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Tapestry crochet: a chart with row numbers and a color key, which way each row reads, how to carry the unused yarn, and color changes on the last yarn-over",
+          "Corner-to-corner: increasing then decreasing diagonals, the block count and block colors for each diagonal, and how many yarn bobbins to wind",
+          "Granny squares: stitch counts for every round, corners, and joining a new color",
+          "Every square: an edging, fastening off, weaving in, blocking, gauge notes, yarn per color that adds up to the total, and a printable PDF"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Your colors and share links"
+      },
+      {
+        "type": "paragraph",
+        "text": "Color A is the main color and the edging, and the others are contrasts. Use any palette, and a share link keeps your colors, yarn weight and size. Yardage is a rough estimate, so check it against your own swatch."
+      }
+    ]
+  },
+  {
     "slug": "knit-colorwork-patterns",
     "title": "Charted knit colorwork, written out as complete squares",
     "date": "2026-10-31",

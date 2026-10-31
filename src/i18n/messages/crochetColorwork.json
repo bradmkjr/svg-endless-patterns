@@ -1,0 +1,242 @@
+{
+  "en": {
+    "metaTitle": "Crochet Colorwork Squares: Tapestry, C2C and Granny Patterns",
+    "metaDesc": "Multi-color crochet squares in your colors, written out in full in US terms: tapestry crochet charts, corner-to-corner graphs and granny squares, with a printable PDF.",
+    "h1": "Crochet colorwork",
+    "lede": "Choose a tapestry, corner-to-corner or granny design and set your colors, then get the chart and every row, diagonal or round of a complete square.",
+    "views": {
+      "square": "Square",
+      "chart": "Chart and key"
+    },
+    "squareNote": "A guide to the look of the finished square, with its edging.",
+    "downloadPdf": "Download PDF pattern",
+    "design": "Design",
+    "weight": "Yarn weight",
+    "repeatsChart": "Chart repeats each way",
+    "repeatsGranny": "Times through the color sequence",
+    "colors": "Colors",
+    "mainColor": "{letter}: main and edging",
+    "contrastColor": "{letter}: contrast",
+    "yarnHeading": "Yarn per color",
+    "colorColumn": "Color",
+    "yardsColumn": "Yards",
+    "bobbinsColumn": "Bobbins",
+    "totalRow": "Total",
+    "techniques": {
+      "tapestry": "Tapestry",
+      "c2c": "C2C",
+      "granny": "Granny"
+    },
+    "weights": {
+      "sport": "Sport",
+      "dk": "DK",
+      "worsted": "Worsted",
+      "bulky": "Bulky"
+    },
+    "designs": {
+      "diamond-lattice": "Diamond lattice",
+      "stepped-cross": "Stepped cross",
+      "nested-chevrons": "Nested chevrons",
+      "heart": "Heart",
+      "sunburst": "Sunburst",
+      "ripple-diamond": "Ripple diamond",
+      "frost": "Frost",
+      "meadow": "Meadow",
+      "ember": "Ember"
+    },
+    "loading": "Drawing the square…",
+    "indexLink": "Multi-color squares: tapestry, corner-to-corner and granny"
+  },
+  "es": {
+    "metaTitle": "Cuadrados de ganchillo multicolor: tapestry, C2C y granny",
+    "metaDesc": "Cuadrados de ganchillo multicolor en tus colores, escritos por completo: gráficos de ganchillo tapestry, gráficos de esquina a esquina y cuadrados granny, con un PDF para imprimir.",
+    "h1": "Ganchillo multicolor",
+    "lede": "Elige un diseño tapestry, de esquina a esquina o granny y ajusta tus colores. Obtendrás el gráfico y cada vuelta o diagonal de un cuadrado completo.",
+    "views": {
+      "square": "Cuadrado",
+      "chart": "Gráfico y clave"
+    },
+    "squareNote": "Una guía del aspecto del cuadrado terminado, con su borde.",
+    "downloadPdf": "Descargar patrón en PDF",
+    "design": "Diseño",
+    "weight": "Grosor del hilo",
+    "repeatsChart": "Repeticiones del gráfico en cada sentido",
+    "repeatsGranny": "Veces por la secuencia de colores",
+    "colors": "Colores",
+    "mainColor": "{letter}: principal y borde",
+    "contrastColor": "{letter}: contraste",
+    "yarnHeading": "Hilo por color",
+    "colorColumn": "Color",
+    "yardsColumn": "Yardas",
+    "bobbinsColumn": "Bobinas",
+    "totalRow": "Total",
+    "techniques": {
+      "tapestry": "Tapestry",
+      "c2c": "C2C",
+      "granny": "Granny"
+    },
+    "weights": {
+      "sport": "Sport",
+      "dk": "DK",
+      "worsted": "Worsted",
+      "bulky": "Grueso"
+    },
+    "designs": {
+      "diamond-lattice": "Celosía de rombos",
+      "stepped-cross": "Cruz escalonada",
+      "nested-chevrons": "Zigzags anidados",
+      "heart": "Corazón",
+      "sunburst": "Rayos de sol",
+      "ripple-diamond": "Rombos en onda",
+      "frost": "Escarcha",
+      "meadow": "Pradera",
+      "ember": "Brasa"
+    },
+    "loading": "Dibujando el cuadrado…",
+    "indexLink": "Cuadrados multicolor: tapestry, esquina a esquina y granny"
+  },
+  "fr": {
+    "metaTitle": "Carrés au crochet multicolores : tapisserie, C2C et granny",
+    "metaDesc": "Des carrés au crochet multicolores dans vos couleurs, entièrement rédigés : grilles de crochet tapisserie, grilles coin à coin et carrés granny, avec un PDF à imprimer.",
+    "h1": "Crochet multicolore",
+    "lede": "Choisissez un motif tapisserie, coin à coin ou granny et réglez vos couleurs. Vous obtenez la grille et chaque rang, diagonale ou tour d'un carré complet.",
+    "views": {
+      "square": "Carré",
+      "chart": "Grille et légende"
+    },
+    "squareNote": "Un aperçu du carré fini, avec sa bordure.",
+    "downloadPdf": "Télécharger le modèle PDF",
+    "design": "Motif",
+    "weight": "Grosseur du fil",
+    "repeatsChart": "Répétitions de la grille dans chaque sens",
+    "repeatsGranny": "Passages dans la suite de couleurs",
+    "colors": "Couleurs",
+    "mainColor": "{letter} : principale et bordure",
+    "contrastColor": "{letter} : contraste",
+    "yarnHeading": "Fil par couleur",
+    "colorColumn": "Couleur",
+    "yardsColumn": "Yards",
+    "bobbinsColumn": "Bobines",
+    "totalRow": "Total",
+    "techniques": {
+      "tapestry": "Tapisserie",
+      "c2c": "C2C",
+      "granny": "Granny"
+    },
+    "weights": {
+      "sport": "Sport",
+      "dk": "DK",
+      "worsted": "Worsted",
+      "bulky": "Épais"
+    },
+    "designs": {
+      "diamond-lattice": "Treillis de losanges",
+      "stepped-cross": "Croix à degrés",
+      "nested-chevrons": "Chevrons imbriqués",
+      "heart": "Cœur",
+      "sunburst": "Soleil rayonnant",
+      "ripple-diamond": "Losanges en ondes",
+      "frost": "Givre",
+      "meadow": "Prairie",
+      "ember": "Braise"
+    },
+    "loading": "Dessin du carré…",
+    "indexLink": "Carrés multicolores : tapestry, coin à coin et granny"
+  },
+  "de": {
+    "metaTitle": "Mehrfarbige Häkelquadrate: Tapestry, C2C und Granny",
+    "metaDesc": "Mehrfarbige Häkelquadrate in deinen Farben, vollständig ausgeschrieben: Tapestry-Zählmuster, Ecke-zu-Ecke-Zählmuster und Granny Squares, mit druckbarem PDF.",
+    "h1": "Mehrfarbiges Häkeln",
+    "lede": "Wähle ein Tapestry-, Ecke-zu-Ecke- oder Granny-Motiv und deine Farben. Du bekommst das Zählmuster und jede Reihe, Diagonale oder Runde eines ganzen Quadrats.",
+    "views": {
+      "square": "Quadrat",
+      "chart": "Zählmuster und Schlüssel"
+    },
+    "squareNote": "Ein Eindruck vom fertigen Quadrat mit seinem Rand.",
+    "downloadPdf": "PDF-Anleitung herunterladen",
+    "design": "Motiv",
+    "weight": "Garnstärke",
+    "repeatsChart": "Wiederholungen des Zählmusters je Richtung",
+    "repeatsGranny": "Durchgänge der Farbfolge",
+    "colors": "Farben",
+    "mainColor": "{letter}: Hauptfarbe und Rand",
+    "contrastColor": "{letter}: Kontrast",
+    "yarnHeading": "Garn je Farbe",
+    "colorColumn": "Farbe",
+    "yardsColumn": "Yards",
+    "bobbinsColumn": "Spulen",
+    "totalRow": "Gesamt",
+    "techniques": {
+      "tapestry": "Tapestry",
+      "c2c": "C2C",
+      "granny": "Granny"
+    },
+    "weights": {
+      "sport": "Sport",
+      "dk": "DK",
+      "worsted": "Worsted",
+      "bulky": "Dick"
+    },
+    "designs": {
+      "diamond-lattice": "Rautengitter",
+      "stepped-cross": "Stufenkreuz",
+      "nested-chevrons": "Verschachtelte Zacken",
+      "heart": "Herz",
+      "sunburst": "Sonnenstrahlen",
+      "ripple-diamond": "Rautenwellen",
+      "frost": "Raureif",
+      "meadow": "Wiese",
+      "ember": "Glut"
+    },
+    "loading": "Quadrat wird gezeichnet …",
+    "indexLink": "Mehrfarbige Quadrate: Tapestry, Corner-to-Corner und Granny"
+  },
+  "pt": {
+    "metaTitle": "Quadrados de crochê multicolorido: tapeçaria, C2C e granny",
+    "metaDesc": "Quadrados de crochê multicolorido nas suas cores, escritos por completo: gráficos de crochê tapeçaria, gráficos canto a canto e squares granny, com um PDF para imprimir.",
+    "h1": "Crochê multicolorido",
+    "lede": "Escolha um desenho de tapeçaria, canto a canto ou granny e ajuste as cores. Você recebe o gráfico e cada carreira, diagonal ou volta de um quadrado completo.",
+    "views": {
+      "square": "Quadrado",
+      "chart": "Gráfico e legenda"
+    },
+    "squareNote": "Uma ideia da aparência do quadrado pronto, com a borda.",
+    "downloadPdf": "Baixar receita em PDF",
+    "design": "Desenho",
+    "weight": "Espessura do fio",
+    "repeatsChart": "Repetições do gráfico em cada sentido",
+    "repeatsGranny": "Vezes pela sequência de cores",
+    "colors": "Cores",
+    "mainColor": "{letter}: principal e borda",
+    "contrastColor": "{letter}: contraste",
+    "yarnHeading": "Fio por cor",
+    "colorColumn": "Cor",
+    "yardsColumn": "Jardas",
+    "bobbinsColumn": "Bobinas",
+    "totalRow": "Total",
+    "techniques": {
+      "tapestry": "Tapeçaria",
+      "c2c": "C2C",
+      "granny": "Granny"
+    },
+    "weights": {
+      "sport": "Sport",
+      "dk": "DK",
+      "worsted": "Worsted",
+      "bulky": "Grosso"
+    },
+    "designs": {
+      "diamond-lattice": "Treliça de losangos",
+      "stepped-cross": "Cruz em degraus",
+      "nested-chevrons": "Chevrons encaixados",
+      "heart": "Coração",
+      "sunburst": "Raios de sol",
+      "ripple-diamond": "Losangos em onda",
+      "frost": "Geada",
+      "meadow": "Campina",
+      "ember": "Brasa"
+    },
+    "loading": "Desenhando o quadrado…",
+    "indexLink": "Quadrados multicoloridos: tapestry, canto a canto e granny"
+  }
+}

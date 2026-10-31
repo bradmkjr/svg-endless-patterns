@@ -12,6 +12,7 @@ import { allThumbs } from "./thumbnails";
 import { optionHref, optionLabel, readSeed, thumbSrc, TOOL_OPTIONS, withOption, type ToolId } from "./toolOptions";
 import { parseMazeState, serializeMazeState } from "./mazeState";
 import { parseKnitColorworkState, serializeKnitColorworkState } from "./knitColorworkState";
+import { parseCrochetColorworkState, serializeCrochetColorworkState } from "./crochetColorworkState";
 import { parseFractalState, serializeFractalState } from "./fractalState";
 import { parseTieDyeState, serializeTieDyeState } from "./tieDyeState";
 import { parseTruchetState, serializeTruchetState } from "./truchetState";
@@ -28,6 +29,7 @@ const ROUND_TRIP: Record<ToolId, (params: URLSearchParams) => string> = {
   crossStitch: (p) => serializeCrossStitchState(parseCrossStitchState(p)),
   needlepoint: (p) => serializeNeedlepointState(parseNeedlepointState(p)),
   knitColorwork: (p) => serializeKnitColorworkState(parseKnitColorworkState(p)),
+  crochetColorwork: (p) => serializeCrochetColorworkState(parseCrochetColorworkState(p)),
   fractal: (p) => serializeFractalState(parseFractalState(p)),
   tieDye: (p) => serializeTieDyeState(parseTieDyeState(p)),
   maze: (p) => serializeMazeState(parseMazeState(p)),
@@ -67,7 +69,7 @@ describe.each(TOOLS)("%s option pages", (tool) => {
 
 describe("thumbnails", () => {
   it("uses the API for maze thumbnails", () => {
-    expect(thumbSrc("maze", "square")).toMatch(/\/api\/maze\/thumbnail\/square$/);
+    expect(thumbSrc("maze", "square")).toMatch(/\/api\/v1\.0\.1\/maze\/thumbnail\/square$/);
   });
 
   it("draws every one as a small, unique, standalone SVG", async () => {

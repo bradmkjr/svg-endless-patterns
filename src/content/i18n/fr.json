@@ -1,5 +1,28 @@
 {
   "posts": {
+    "crochet-colorwork-squares": {
+      "title": "Des carrés au crochet multicolores, entièrement rédigés",
+      "summary": "Grilles de crochet tapisserie, grilles coin à coin et carrés granny dans vos couleurs, avec chaque rang, diagonale et tour rédigé.",
+      "blocks": [
+        "Le [crochet multicolore](/crochet/colorwork/) est un nouvel outil de la [bibliothèque de motifs](/patterns/), avec neuf motifs originaux en trois techniques. Choisissez-en un, réglez vos couleurs et obtenez un carré complet, de la chaînette de base au blocage.",
+        "Exemples pour commencer",
+        [
+          "Une croix à degrés en crochet tapisserie",
+          "La grille d'un cœur en coin à coin",
+          "Un carré granny en six tours",
+          "Un carré granny en quatre couleurs et fil DK"
+        ],
+        "Ce que vous obtenez",
+        [
+          "Crochet tapisserie : une grille avec les numéros de rang et une légende des couleurs, le sens de lecture de chaque rang, comment porter le fil inutilisé, et les changements de couleur au dernier jeté",
+          "Coin à coin : des diagonales en augmentation puis en diminution, le nombre et les couleurs des blocs de chaque diagonale, et le nombre de bobines à préparer",
+          "Carrés granny : le compte des mailles de chaque tour, les coins et comment joindre une nouvelle couleur",
+          "Chaque carré : une bordure, l'arrêt, les fils rentrés, le blocage, des notes d'échantillon, le fil par couleur qui donne le total, et un PDF à imprimer"
+        ],
+        "Vos couleurs et les liens de partage",
+        "La couleur A est la principale et celle de la bordure, et les autres sont des contrastes. Utilisez n'importe quelle palette : le lien de partage conserve vos couleurs, la grosseur du fil et la taille. Le métrage est une estimation approximative, alors vérifiez-le avec votre échantillon."
+      ]
+    },
     "knit-colorwork-patterns": {
       "title": "Tricot en couleurs sur grille, écrit en carrés complets",
       "summary": "Treize grilles originales en jacquard, mosaïque et intarsia, adaptées à votre échantillon, avec chaque rang écrit couleur par couleur.",
@@ -477,6 +500,12 @@
     }
   },
   "changelog": {
+    "Crochet colorwork squares": {
+      "title": "Carrés au crochet multicolores",
+      "items": [
+        "Ajout du crochet multicolore : grilles tapisserie, grilles coin à coin et carrés granny, chacun rédigé comme un carré multicolore complet avec un PDF à imprimer"
+      ]
+    },
     "Knit colorwork patterns": {
       "title": "Modèles de tricot en couleurs",
       "items": [

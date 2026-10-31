@@ -1,5 +1,28 @@
 {
   "posts": {
+    "crochet-colorwork-squares": {
+      "title": "Quadrados de crochê multicolorido, escritos por completo",
+      "summary": "Gráficos de crochê tapeçaria, gráficos canto a canto e squares granny nas suas cores, com cada carreira, diagonal e volta por escrito.",
+      "blocks": [
+        "O [crochê multicolorido](/crochet/colorwork/) é uma ferramenta nova da [biblioteca de padrões](/patterns/), com nove desenhos originais em três técnicas. Escolha um, ajuste as cores e receba um quadrado completo, da corrente inicial à blocagem.",
+        "Exemplos para começar",
+        [
+          "Uma cruz em degraus em crochê tapeçaria",
+          "O gráfico de um coração canto a canto",
+          "Um square granny de seis voltas",
+          "Um square granny de quatro cores em fio DK"
+        ],
+        "O que você recebe",
+        [
+          "Crochê tapeçaria: um gráfico com números de carreira e legenda de cores, o sentido de leitura de cada carreira, como carregar o fio que não está em uso e as trocas de cor na última laçada",
+          "Canto a canto: diagonais que aumentam e depois diminuem, a quantidade e as cores dos blocos de cada diagonal e quantas bobinas enrolar",
+          "Squares granny: a contagem de pontos de cada volta, os cantos e como unir uma cor nova",
+          "Cada quadrado: uma borda, arremate, pontas escondidas, blocagem, notas de amostra, fio por cor que soma o total e um PDF para imprimir"
+        ],
+        "Suas cores e os links de compartilhamento",
+        "A cor A é a principal e a da borda, e as outras são contrastes. Use qualquer paleta: o link de compartilhamento mantém as cores, a espessura do fio e o tamanho. As jardas são uma estimativa aproximada, então confira com a sua própria amostra."
+      ]
+    },
     "knit-colorwork-patterns": {
       "title": "Tricô em cores com gráfico, escrito como quadrados completos",
       "summary": "Treze gráficos originais em jacquard, mosaico e intarsia, ajustados à sua amostra, com cada carreira escrita cor por cor.",
@@ -477,6 +500,12 @@
     }
   },
   "changelog": {
+    "Crochet colorwork squares": {
+      "title": "Quadrados de crochê multicolorido",
+      "items": [
+        "Adicionado o crochê multicolorido: gráficos de tapeçaria, gráficos canto a canto e squares granny, cada um escrito como um quadrado multicolorido completo com um PDF para imprimir"
+      ]
+    },
     "Knit colorwork patterns": {
       "title": "Padrões de tricô em cores",
       "items": [

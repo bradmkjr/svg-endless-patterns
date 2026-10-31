@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { StitchBuilderRoute } from "@/components/StitchBuilderRoute";
 import { StitchGrid } from "@/components/StitchGrid";
+import crochetColorwork from "@/i18n/messages/crochetColorwork.json";
 import colorwork from "@/i18n/messages/knitColorwork.json";
 import { generateStitchPattern, getStitchPattern, getStitchPatterns, type Craft, type Locale } from "@/lib/generator";
 import { fill, localePath, messages, pageAlternates } from "@/lib/i18n";
@@ -27,6 +28,11 @@ export async function StitchesView({ locale, craft }: { locale: Locale; craft: C
       {craft === "knit" && (
         <p>
           <Link href={localePath(locale, "/knitting/colorwork/")}>{colorwork[locale].indexLink}</Link>
+        </p>
+      )}
+      {craft === "crochet" && (
+        <p>
+          <Link href={localePath(locale, "/crochet/colorwork/")}>{crochetColorwork[locale].indexLink}</Link>
         </p>
       )}
       <StitchGrid stitches={stitches} locale={locale} />

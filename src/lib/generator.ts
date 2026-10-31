@@ -6,11 +6,13 @@ import { generatePattern as runGenerate, generateStitchPattern as runStitch, gen
 import type { TessellationOptions, TessellationRequest, TessellationResult, SashikoRequest, SashikoResult, CelticKnotRequest, CelticKnotResult, StainedGlassRequest, StainedGlassResult, MandalaRequest, MandalaResult, GirihRequest, GirihResult, TruchetRequest, TruchetResult, TieDyeRequest, TieDyeResult, BlockInfo, Craft, Locale, PatternRequest, PatternResult, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult, CrossStitchRequest, CrossStitchResult, NeedlepointRequest, NeedlepointResult } from "@/engine";
 import type { MazePaperId, MazeRequest, MazeResult } from "./mazeTypes";
 import { mazeApiPost } from "./mazeApi";
+import type { CrochetColorworkRequest, CrochetColorworkResult } from "./crochetColorworkTypes";
 import type { FractalRequest, FractalResult } from "./fractalTypes";
 import type { KnitColorworkRequest, KnitColorworkResult } from "./knitColorworkTypes";
 
 export type { TessellationColors, TessellationMotif, TessellationOptions, TessellationRequest, TessellationResult, GroupId, SashikoMotif, SashikoRequest, SashikoResult, CelticBreakPattern, CelticInterlace, CelticKnotRequest, CelticKnotResult, CelticStrand, StainedGlassColor, StainedGlassLayout, StainedGlassPiece, StainedGlassRequest, StainedGlassResult, MandalaMotif, MandalaRequest, MandalaResult, MandalaRing, MandalaRingSpec, GirihColors, GirihPart, GirihRequest, GirihResult, GirihStar, GirihSymmetry, TruchetArrangement, TruchetColors, TruchetRequest, TruchetResult, TruchetStyle, TieDyeMix, TieDyeRequest, TieDyeResult, TieDyeTechnique, BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, Setting, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult, TartanStripe, CountedFinish, CrossStitchColor, CrossStitchRequest, CrossStitchResult, NeedlepointColor, NeedlepointRequest, NeedlepointResult, NeedlepointStitch, NeedlepointYarn } from "@/engine";
 export type { KnitColorworkPlan, KnitColorworkRequest, KnitColorworkResult, KnitColorworkTechnique } from "./knitColorworkTypes";
+export type { ColorworkTechnique, ColorworkWeight, CrochetColorworkRequest, CrochetColorworkResult } from "./crochetColorworkTypes";
 export type { FractalColors, FractalRequest, FractalResult, FractalType } from "./fractalTypes";
 export type { MazeAlgorithm, MazeColors, MazeDifficulty, MazePaperId, MazeRequest, MazeResult, MazeShape, MazeSize } from "./mazeTypes";
 
@@ -148,6 +150,16 @@ export async function generateKnitColorwork(request: KnitColorworkRequest): Prom
 
 export async function generateKnitColorworkPdf(request: KnitColorworkRequest): Promise<Uint8Array> {
   const response = await mazeApiPost("/knit-colorwork/pdf", request, "application/pdf");
+  return new Uint8Array(await response.arrayBuffer());
+}
+
+export async function generateCrochetColorwork(request: CrochetColorworkRequest): Promise<CrochetColorworkResult> {
+  const response = await mazeApiPost("/crochet-colorwork", request);
+  return response.json() as Promise<CrochetColorworkResult>;
+}
+
+export async function generateCrochetColorworkPdf(request: CrochetColorworkRequest): Promise<Uint8Array> {
+  const response = await mazeApiPost("/crochet-colorwork/pdf", request, "application/pdf");
   return new Uint8Array(await response.arrayBuffer());
 }
 

@@ -275,6 +275,12 @@
         "text": "Gráficos originales con hebras llevadas, mosaico e intarsia, cada uno escrito como un cuadrado completo con tu muestra.",
         "output": "Gráfico con clave de colores, vueltas color por color, control de hebras flotantes, lana por color y un PDF para imprimir.",
         "explore": "Explorar el tejido en colores"
+      },
+      "crochetColorwork": {
+        "title": "Ganchillo multicolor",
+        "text": "Cuadrados de ganchillo multicolor: gráficos tapestry, gráficos de esquina a esquina y cuadrados granny por vueltas, en tus colores.",
+        "output": "Gráfico con clave de colores, cada vuelta o diagonal por escrito, hilo por color, PDF para imprimir, y SVG y PNG.",
+        "explore": "Crear un cuadrado multicolor"
       }
     },
     "seeAllType": "Ver todo en {name}"

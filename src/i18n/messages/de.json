@@ -275,6 +275,12 @@
         "text": "Eigene Diagramme mit Spannfäden, Mosaik und Intarsien, jedes als vollständiges Quadrat bei deiner Maschenprobe ausgeschrieben.",
         "output": "Diagramm mit Farblegende, Reihen Farbe für Farbe, Spannfaden-Kontrolle, Garn pro Farbe und ein druckbares PDF.",
         "explore": "Farbmuster entdecken"
+      },
+      "crochetColorwork": {
+        "title": "Mehrfarbiges Häkeln",
+        "text": "Mehrfarbige Häkelquadrate: Tapestry-Zählmuster, Ecke-zu-Ecke-Zählmuster und Granny Squares in Runden, in deinen Farben.",
+        "output": "Zählmuster mit Farbschlüssel, jede Reihe, Diagonale oder Runde ausgeschrieben, Garn je Farbe, druckbares PDF sowie SVG und PNG.",
+        "explore": "Mehrfarbiges Quadrat erstellen"
       }
     },
     "seeAllType": "Alles in {name} ansehen"

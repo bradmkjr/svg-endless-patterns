@@ -13,10 +13,10 @@ there is no backend yet.
 Never commit or push. Leave changes in the working tree.
 
 ## Architecture: generation is isolated
-Generation will move to a backend API, so it stays behind one boundary:
+Generation stays behind one boundary while moving to a backend API:
 
-- `src/engine/` — all generation: block catalog, geometry, cutting and yardage,
-  SVG, templates, steps, PDF. No React, Next, DOM or `@/` imports.
+- `src/engine/` — frontend-side generation: block catalog, geometry, cutting
+  and yardage, SVG, templates, steps, PDF. No React, Next, DOM or `@/` imports.
 - `src/engine/types.ts` — the contract: JSON-only requests and results.
 - `src/lib/generator.ts` — async client and the only file that imports the
   engine. To move to an API, replace its function bodies with `fetch` calls.

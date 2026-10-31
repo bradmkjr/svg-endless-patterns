@@ -27,10 +27,15 @@ jobs:
         uses: actions/configure-pages@v6
       - run: npm ci
       - run: npm run lint
+      - name: Check maze API URL
+        env:
+          NEXT_PUBLIC_API_BASE_URL: ${{ vars.ENDLESS_PATTERNS_API_URL }}
+        run: test -n "$NEXT_PUBLIC_API_BASE_URL" || (echo "Set the ENDLESS_PATTERNS_API_URL repository variable to the deployed maze API origin." && exit 1)
       - run: npm run build
         env:
           NEXT_PUBLIC_BASE_PATH: ""
           NEXT_PUBLIC_SITE_URL: https://endless-patterns.com
+          NEXT_PUBLIC_API_BASE_URL: ${{ vars.ENDLESS_PATTERNS_API_URL }}
       - uses: actions/upload-pages-artifact@v5
         with:
           path: out

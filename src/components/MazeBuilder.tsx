@@ -31,9 +31,14 @@ export function MazeBuilder({ locale, option, labels, initialState }: { locale: 
 
   useEffect(() => {
     let stale = false;
+    setResult(undefined);
+    setStatus(t.loading);
     generateMaze(state).then(
       (next) => {
-        if (!stale) setResult(next);
+        if (!stale) {
+          setResult(next);
+          setStatus("");
+        }
       },
       () => {
         if (!stale) setStatus(b.updateError);
@@ -42,7 +47,7 @@ export function MazeBuilder({ locale, option, labels, initialState }: { locale: 
     return () => {
       stale = true;
     };
-  }, [state, b.updateError]);
+  }, [state, b.updateError, t.loading]);
 
   useEffect(() => {
     const query = serializeMazeState(state);
@@ -94,13 +99,13 @@ export function MazeBuilder({ locale, option, labels, initialState }: { locale: 
           <p className={styles.note}>{t.howNote}</p>
           {result && <p className={styles.note}>{fill(t.stats, { cells: result.cells, length: result.solutionLength, deadEnds: result.deadEnds })}</p>}
           <div className={`${styles.actions} no-print`}>
-            <button type="button" disabled={busy} className={styles.primary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateMazePdf(state), "maze.pdf", "application/pdf"))}>
+            <button type="button" disabled={busy || !result} className={styles.primary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateMazePdf(state), "maze.pdf", "application/pdf"))}>
               {t.downloadPdf}
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(svg, `maze-${view}.svg`))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(svg, `maze-${view}.svg`))}>
               SVG
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, async () => downloadBytes(await generateMazePng(state, view, pngSize), `maze-${view}-${pngSize}.png`, "image/png"), t.pngTooLarge)}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, async () => downloadBytes(await generateMazePng(state, view, pngSize), `maze-${view}-${pngSize}.png`, "image/png"), t.pngTooLarge)}>
               PNG
             </button>
             <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.copying, b.copied, () => navigator.clipboard.writeText(window.location.href))}>

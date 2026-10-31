@@ -49,6 +49,7 @@
       "solution": "Solution"
     },
     "downloadPdf": "Download printable PDF",
+    "loading": "Generating maze…",
     "mazeAlt": "Preview of the maze",
     "solutionAlt": "Preview of the maze with its solution drawn in",
     "howNote": "Start at the solid dot and find your way to the ring.",
@@ -118,6 +119,7 @@
       "solution": "Solución"
     },
     "downloadPdf": "Descargar PDF para imprimir",
+    "loading": "Generando laberinto…",
     "mazeAlt": "Vista previa del laberinto",
     "solutionAlt": "Vista previa del laberinto con la solución dibujada",
     "howNote": "Empieza en el punto relleno y encuentra el camino hasta el anillo.",
@@ -187,6 +189,7 @@
       "solution": "Solution"
     },
     "downloadPdf": "Télécharger le PDF à imprimer",
+    "loading": "Génération du labyrinthe…",
     "mazeAlt": "Aperçu du labyrinthe",
     "solutionAlt": "Aperçu du labyrinthe avec sa solution tracée",
     "howNote": "Partez du point plein et trouvez votre chemin jusqu'à l'anneau.",
@@ -256,6 +259,7 @@
       "solution": "Lösung"
     },
     "downloadPdf": "Druckbares PDF herunterladen",
+    "loading": "Labyrinth wird erstellt …",
     "mazeAlt": "Vorschau des Labyrinths",
     "solutionAlt": "Vorschau des Labyrinths mit eingezeichneter Lösung",
     "howNote": "Beginne am gefüllten Punkt und finde den Weg zum Ring.",
@@ -325,6 +329,7 @@
       "solution": "Solução"
     },
     "downloadPdf": "Baixar PDF para imprimir",
+    "loading": "Gerando labirinto…",
     "mazeAlt": "Prévia do labirinto",
     "solutionAlt": "Prévia do labirinto com a solução desenhada",
     "howNote": "Comece no ponto cheio e encontre o caminho até o anel.",

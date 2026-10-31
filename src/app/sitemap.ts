@@ -13,6 +13,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/blocks/",
     "/knitting/",
     "/crochet/",
+    "/patterns/",
     "/about/",
     ...blocks.map((b) => `/blocks/${b.slug}/`),
     ...knitting.map((s) => `/knitting/${s.slug}/`),

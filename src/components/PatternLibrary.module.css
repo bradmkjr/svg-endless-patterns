@@ -1,0 +1,74 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+}
+
+.card h2 {
+  margin: 0.6rem 0 0.5rem;
+  font-size: 1.4rem;
+}
+
+.card p {
+  margin: 0.4rem 0;
+  color: var(--muted);
+}
+
+.card a {
+  margin-top: auto;
+  padding-top: 1rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.status {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.breadcrumb {
+  margin: 0 0 1.25rem;
+  color: var(--muted);
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 1.5rem;
+  max-width: 56rem;
+  margin-top: 2.5rem;
+}
+
+.details h2 {
+  margin-bottom: 0.4rem;
+  font-size: 1.4rem;
+}
+
+.details p,
+.note {
+  color: var(--muted);
+}
+
+.note {
+  max-width: 44rem;
+  margin-top: 2.5rem;
+  padding: 1rem 1.25rem;
+  border-left: 3px solid var(--line);
+  background: var(--surface);
+}

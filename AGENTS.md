@@ -39,6 +39,11 @@ row text with what each part consumes and makes. `stitch.test.ts` checks both at
 every width, but it counts crochet stitches rather than reading the text, so
 proofread that text. Crochet terms are US.
 
+## Planned pattern makers
+`src/lib/patternPages.ts` lists tools that don't exist yet. Their pages are
+`noindex` and stay out of the sitemap. When one ships, put its generation in
+`src/engine/` behind `generator.ts`, give it a real route, and remove its entry.
+
 ## Static export limits
 No route handlers that read the request, redirects, headers, proxy or server
 actions. Link with `next/link` so the base path is applied, and with trailing

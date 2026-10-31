@@ -1,27 +1,28 @@
 "use client";
 
 import { useEffect, useState, type CSSProperties } from "react";
-import { generatePattern, generatePdf, type BlockInfo, type CutLine, type PatternRequest, type PatternResult } from "@/lib/generator";
+import { generatePattern, generatePdf, type BlockInfo, type CutLine, type Locale, type PatternRequest, type PatternResult } from "@/lib/generator";
+import { fill, messages } from "@/lib/i18n";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
-import { BORDER_OPTIONS, COUNT_OPTIONS, paletteColors, PALETTES, SASHING_OPTIONS, serializeState, SETTINGS, SIZE_OPTIONS, WOF_OPTIONS } from "@/lib/state";
+import { BORDER_OPTIONS, COUNT_OPTIONS, paletteColors, palettesFor, SASHING_OPTIONS, serializeState, SETTINGS, SIZE_OPTIONS, WOF_OPTIONS } from "@/lib/state";
 import styles from "./BlockBuilder.module.css";
 
 type View = "block" | "quilt" | "tile";
 
-const VIEWS: { id: View; label: string }[] = [
-  { id: "block", label: "Block" },
-  { id: "quilt", label: "Quilt" },
-  { id: "tile", label: "Seamless repeat" },
+const VIEWS: { id: View; label: "viewBlock" | "viewQuilt" | "viewTile" }[] = [
+  { id: "block", label: "viewBlock" },
+  { id: "quilt", label: "viewQuilt" },
+  { id: "tile", label: "viewTile" },
 ];
 
-function NumberSelect({ label, value, options, unit = "", onChange }: { label: string; value: number; options: number[]; unit?: string; onChange: (value: number) => void }) {
+function NumberSelect({ label, value, options, unit = "", none, onChange }: { label: string; value: number; options: number[]; unit?: string; none: string; onChange: (value: number) => void }) {
   return (
     <label className={styles.field}>
       <span>{label}</span>
       <select value={value} onChange={(e) => onChange(Number(e.target.value))}>
         {options.map((option) => (
           <option key={option} value={option}>
-            {option === 0 ? "None" : `${option}${unit}`}
+            {option === 0 ? none : `${option}${unit}`}
           </option>
         ))}
       </select>
@@ -29,7 +30,7 @@ function NumberSelect({ label, value, options, unit = "", onChange }: { label: s
   );
 }
 
-function CutTable({ cuts, labelOf, colors }: { cuts: CutLine[]; labelOf: (id: string) => string; colors: Record<string, string> }) {
+function CutTable({ cuts, labelOf, colors, roundedUp }: { cuts: CutLine[]; labelOf: (id: string) => string; colors: Record<string, string>; roundedUp: string }) {
   const fabrics = [...new Set(cuts.map((c) => c.fabric))];
   return (
     <div className={styles.cutGroups}>
@@ -45,7 +46,7 @@ function CutTable({ cuts, labelOf, colors }: { cuts: CutLine[]; labelOf: (id: st
               .map((c) => (
                 <li key={c.description}>
                   {c.description}
-                  {c.rounded && <span className={styles.rounded}> rounded up</span>}
+                  {c.rounded && <span className={styles.rounded}> {roundedUp}</span>}
                 </li>
               ))}
           </ul>
@@ -55,7 +56,9 @@ function CutTable({ cuts, labelOf, colors }: { cuts: CutLine[]; labelOf: (id: st
   );
 }
 
-export function BlockBuilder({ block, initialState, initialResult }: { block: BlockInfo; initialState: PatternRequest; initialResult: PatternResult }) {
+export function BlockBuilder({ block, locale, initialState, initialResult }: { block: BlockInfo; locale: Locale; initialState: PatternRequest; initialResult: PatternResult }) {
+  const all = messages(locale);
+  const t = all.builder;
   const [state, setState] = useState(initialState);
   const [result, setResult] = useState(initialResult);
   const [view, setView] = useState<View>("block");
@@ -74,13 +77,13 @@ export function BlockBuilder({ block, initialState, initialResult }: { block: Bl
         if (!stale) setResult(next);
       },
       () => {
-        if (!stale) setStatus("Couldn't update the design. Please try again.");
+        if (!stale) setStatus(t.updateError);
       },
     );
     return () => {
       stale = true;
     };
-  }, [block.slug, state]);
+  }, [block.slug, state, t.updateError]);
 
   // Keep the address a share link for the current design.
   useEffect(() => {
@@ -88,7 +91,7 @@ export function BlockBuilder({ block, initialState, initialResult }: { block: Bl
     window.history.replaceState(window.history.state, "", query ? `?${query}` : window.location.pathname);
   }, [block, state]);
 
-  const labelOf = (id: string) => (id === "sashing" ? "Sashing" : id === "border" ? "Border" : (block.fabrics.find((f) => f.id === id)?.label ?? id));
+  const labelOf = (id: string) => (id === "sashing" ? t.sashing : id === "border" ? t.border : (block.fabrics.find((f) => f.id === id)?.label ?? id));
   const currentSvg = result.svg[view];
   const fileBase = `${block.slug}-${state.size}in-${view}`;
   const tileUrl = `data:image/svg+xml,${encodeURIComponent(result.svg.tile)}`;
@@ -101,7 +104,7 @@ export function BlockBuilder({ block, initialState, initialResult }: { block: Bl
       await action();
       setStatus(done);
     } catch {
-      setStatus("That didn't work. Please try again.");
+      setStatus(t.actionError);
     } finally {
       setBusy(false);
     }
@@ -110,31 +113,31 @@ export function BlockBuilder({ block, initialState, initialResult }: { block: Bl
   return (
     <div className={styles.builder}>
       <div className={styles.workspace}>
-        <section className={styles.preview} aria-label="Preview">
-          <div className={`${styles.tabs} no-print`} role="group" aria-label="Preview type">
+        <section className={styles.preview} aria-label={t.preview}>
+          <div className={`${styles.tabs} no-print`} role="group" aria-label={t.previewType}>
             {VIEWS.map(({ id, label }) => (
               <button key={id} type="button" aria-pressed={view === id} className={view === id ? styles.tabOn : styles.tab} onClick={() => setView(id)}>
-                {label}
+                {t[label]}
               </button>
             ))}
           </div>
           {view === "tile" ? (
-            <div className={styles.tile} style={tileStyle} role="img" aria-label={`${block.name} seamless repeat`} />
+            <div className={styles.tile} style={tileStyle} role="img" aria-label={fill(t.tileAlt, { name: block.name })} />
           ) : (
             <div className={`${styles.art} ${view === "quilt" ? styles.quiltArt : ""}`} dangerouslySetInnerHTML={{ __html: currentSvg }} />
           )}
           <div className={`${styles.actions} no-print`}>
-            <button type="button" disabled={busy} className={styles.primary} onClick={() => run("Making your PDF…", "PDF downloaded.", async () => downloadBytes(await generatePdf(block.slug, state), `${block.slug}-${state.size}in-pattern.pdf`, "application/pdf"))}>
-              Download PDF pattern
+            <button type="button" disabled={busy} className={styles.primary} onClick={() => run(t.pdfMaking, t.pdfDone, async () => downloadBytes(await generatePdf(block.slug, state), `${block.slug}-${state.size}in-pattern.pdf`, "application/pdf"))}>
+              {t.downloadPdf}
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run("Saving…", "SVG downloaded.", () => downloadSvg(currentSvg, `${fileBase}.svg`))}>
+            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(t.saving, t.svgDone, () => downloadSvg(currentSvg, `${fileBase}.svg`))}>
               SVG
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run("Making your PNG…", "PNG downloaded.", () => downloadPng(currentSvg, `${fileBase}.png`))}>
+            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(t.pngMaking, t.pngDone, () => downloadPng(currentSvg, `${fileBase}.png`))}>
               PNG
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run("Copying…", "Link copied.", () => navigator.clipboard.writeText(window.location.href))}>
-              Copy share link
+            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(t.copying, t.copied, () => navigator.clipboard.writeText(window.location.href))}>
+              {t.copyLink}
             </button>
           </div>
           <p className={styles.status} role="status">
@@ -144,10 +147,10 @@ export function BlockBuilder({ block, initialState, initialResult }: { block: Bl
 
         <form className={`${styles.controls} no-print`} onSubmit={(e) => e.preventDefault()}>
           <fieldset>
-            <legend>Fabrics</legend>
+            <legend>{t.fabrics}</legend>
             <div className={styles.palettes}>
-              {PALETTES.map((palette) => (
-                <button key={palette.name} type="button" title={palette.name} aria-label={`Use the ${palette.name} palette`} className={styles.palette} onClick={() => update({ colors: paletteColors(block, palette) })}>
+              {palettesFor(locale).map((palette) => (
+                <button key={palette.id} type="button" title={all.palettes[palette.id]} aria-label={fill(t.usePalette, { name: all.palettes[palette.id] })} className={styles.palette} onClick={() => update({ colors: paletteColors(block, palette) })}>
                   {palette.colors.map((color) => (
                     <span key={color} style={{ background: color }} />
                   ))}
@@ -164,60 +167,60 @@ export function BlockBuilder({ block, initialState, initialResult }: { block: Bl
               {state.sashing > 0 && (
                 <label className={styles.color}>
                   <input type="color" value={state.colors.sashing} onChange={(e) => setColor("sashing", e.target.value)} />
-                  Sashing
+                  {t.sashing}
                 </label>
               )}
               {state.border > 0 && (
                 <label className={styles.color}>
                   <input type="color" value={state.colors.border} onChange={(e) => setColor("border", e.target.value)} />
-                  Border
+                  {t.border}
                 </label>
               )}
             </div>
             <label className={styles.check}>
               <input type="checkbox" checked={state.seams} onChange={(e) => update({ seams: e.target.checked })} />
-              Show seam lines
+              {t.showSeams}
             </label>
           </fieldset>
 
           <fieldset>
-            <legend>Block</legend>
-            <NumberSelect label="Finished size" value={state.size} options={SIZE_OPTIONS} unit={'"'} onChange={(size) => update({ size })} />
+            <legend>{t.block}</legend>
+            <NumberSelect none={t.none} label={t.finishedSize} value={state.size} options={SIZE_OPTIONS} unit={'"'} onChange={(size) => update({ size })} />
           </fieldset>
 
           <fieldset>
-            <legend>Quilt layout</legend>
+            <legend>{t.layout}</legend>
             <div className={styles.fieldRow}>
-              <NumberSelect label="Across" value={state.cols} options={COUNT_OPTIONS} onChange={(cols) => update({ cols })} />
-              <NumberSelect label="Down" value={state.rows} options={COUNT_OPTIONS} onChange={(rows) => update({ rows })} />
-              <NumberSelect label="Sashing" value={state.sashing} options={SASHING_OPTIONS} unit={'"'} onChange={(sashing) => update({ sashing })} />
-              <NumberSelect label="Border" value={state.border} options={BORDER_OPTIONS} unit={'"'} onChange={(border) => update({ border })} />
+              <NumberSelect none={t.none} label={t.across} value={state.cols} options={COUNT_OPTIONS} onChange={(cols) => update({ cols })} />
+              <NumberSelect none={t.none} label={t.down} value={state.rows} options={COUNT_OPTIONS} onChange={(rows) => update({ rows })} />
+              <NumberSelect none={t.none} label={t.sashing} value={state.sashing} options={SASHING_OPTIONS} unit={'"'} onChange={(sashing) => update({ sashing })} />
+              <NumberSelect none={t.none} label={t.border} value={state.border} options={BORDER_OPTIONS} unit={'"'} onChange={(border) => update({ border })} />
             </div>
             <label className={styles.field}>
-              <span>Block direction</span>
+              <span>{t.direction}</span>
               <select value={state.setting} onChange={(e) => update({ setting: e.target.value as PatternRequest["setting"] })}>
-                {SETTINGS.map(({ id, label }) => (
+                {SETTINGS.map((id) => (
                   <option key={id} value={id}>
-                    {label}
+                    {all.settings[id]}
                   </option>
                 ))}
               </select>
             </label>
-            <NumberSelect label="Usable fabric width" value={state.wof} options={WOF_OPTIONS} unit={'"'} onChange={(wof) => update({ wof })} />
+            <NumberSelect none={t.none} label={t.wof} value={state.wof} options={WOF_OPTIONS} unit={'"'} onChange={(wof) => update({ wof })} />
           </fieldset>
         </form>
       </div>
 
       {result.hasRoundedCuts && (
         <p className={styles.notice}>
-          <strong>Some cuts are rounded up.</strong> At {state.size}&quot;, this block&apos;s pieces fall between ruler marks, so cut as listed and trim each unit, or use the PDF templates.
+          <strong>{t.roundedTitle}</strong> {fill(t.roundedText, { size: state.size })}
           {result.suggestedSizes.length > 0 && (
             <>
               {" "}
-              Sizes that divide evenly:{" "}
+              {t.evenSizes}{" "}
               {result.suggestedSizes.map((size, i) => (
                 <span key={size}>
-                  {i > 0 && " or "}
+                  {i > 0 && ` ${t.or} `}
                   <button type="button" className={styles.linkButton} onClick={() => update({ size })}>
                     {size}&quot;
                   </button>
@@ -232,23 +235,23 @@ export function BlockBuilder({ block, initialState, initialResult }: { block: Bl
       <div className={styles.results}>
         <section>
           <div className={styles.resultHead}>
-            <h2>Cutting list</h2>
-            <div className={`${styles.tabs} no-print`} role="group" aria-label="Cutting list scope">
+            <h2>{t.cuttingList}</h2>
+            <div className={`${styles.tabs} no-print`} role="group" aria-label={t.cuttingScope}>
               <button type="button" aria-pressed={scope === "quilt"} className={scope === "quilt" ? styles.tabOn : styles.tab} onClick={() => setScope("quilt")}>
-                Whole quilt
+                {t.wholeQuilt}
               </button>
               <button type="button" aria-pressed={scope === "block"} className={scope === "block" ? styles.tabOn : styles.tab} onClick={() => setScope("block")}>
-                One block
+                {t.oneBlock}
               </button>
             </div>
           </div>
-          <CutTable cuts={scope === "quilt" ? result.quiltCuts : result.blockCuts} labelOf={labelOf} colors={state.colors} />
+          <CutTable cuts={scope === "quilt" ? result.quiltCuts : result.blockCuts} labelOf={labelOf} colors={state.colors} roundedUp={t.roundedUp} />
         </section>
 
         <section>
-          <h2>Fabric to buy</h2>
+          <h2>{t.fabricBuy}</h2>
           <p className={styles.quiltSize}>
-            Quilt top: <strong>{result.quilt.widthLabel}&quot; x {result.quilt.heightLabel}&quot;</strong>, {result.quilt.blocks} block{result.quilt.blocks === 1 ? "" : "s"}
+            {t.quiltTop} <strong>{result.quilt.widthLabel}&quot; x {result.quilt.heightLabel}&quot;</strong>, {fill(result.quilt.blocks === 1 ? t.blocksOne : t.blocksMany, { n: result.quilt.blocks })}
           </p>
           <table className={styles.yardage}>
             <tbody>
@@ -262,24 +265,24 @@ export function BlockBuilder({ block, initialState, initialResult }: { block: Bl
                 </tr>
               ))}
               <tr>
-                <th scope="row">Backing ({result.backing.panels} panel{result.backing.panels === 1 ? "" : "s"})</th>
+                <th scope="row">{fill(result.backing.panels === 1 ? t.backingOne : t.backingMany, { n: result.backing.panels })}</th>
                 <td>{result.backing.yards} yd</td>
               </tr>
               <tr>
-                <th scope="row">Binding ({result.binding.strips} strips at {result.binding.stripWidth}&quot;)</th>
+                <th scope="row">{fill(t.binding, { n: result.binding.strips, w: result.binding.stripWidth })}</th>
                 <td>{result.binding.yards} yd</td>
               </tr>
               <tr>
-                <th scope="row">Batting</th>
+                <th scope="row">{t.batting}</th>
                 <td>{result.backing.width}&quot; x {result.backing.height}&quot;</td>
               </tr>
             </tbody>
           </table>
-          <p className={styles.note}>Includes a 10% allowance. Check the figures before you buy.</p>
+          <p className={styles.note}>{t.allowance}</p>
         </section>
 
         <section className={styles.steps}>
-          <h2>How to piece it</h2>
+          <h2>{t.howTo}</h2>
           <ol>
             {result.steps.map((step) => (
               <li key={step}>{step}</li>

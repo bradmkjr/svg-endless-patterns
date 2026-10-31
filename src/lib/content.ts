@@ -5,11 +5,17 @@
  */
 import blog from "@/content/blog.json";
 import changelog from "@/content/changelog.json";
+import de from "@/content/i18n/de.json";
+import es from "@/content/i18n/es.json";
+import fr from "@/content/i18n/fr.json";
+import pt from "@/content/i18n/pt.json";
+import type { Locale } from "./generator";
+import { localePath } from "./i18n";
 
 /** A sample in a post: a live pattern, and the deep link that opens it with these settings. */
 export type PostSample =
-  | { kind: "block"; slug: string; query: string; view: "block" | "quilt" | "tile"; caption: string }
-  | { kind: "knit" | "crochet"; slug: string; query: string; view: "swatch" | "chart"; caption: string };
+  | { kind: "block"; slug: string; query: string; view: "block" | "quilt" | "tile"; caption: string; locale?: Locale }
+  | { kind: "knit" | "crochet"; slug: string; query: string; view: "swatch" | "chart"; caption: string; locale?: Locale };
 
 export type PostBlock =
   | { type: "paragraph"; text: string }
@@ -21,28 +27,62 @@ export type Post = { slug: string; title: string; date: string; summary: string;
 
 export type ChangelogEntry = { date: string; title: string; items: string[]; post?: string };
 
+/** One entry per body block, in order: its text, its list items, or its sample captions. */
+type PostTranslation = { title: string; summary: string; blocks: (string | string[])[] };
+type ContentTranslation = {
+  posts: Record<string, PostTranslation>;
+  changelog: Record<string, { title: string; items: string[] }>;
+};
+
+export const CONTENT_TRANSLATIONS: Record<Exclude<Locale, "en">, ContentTranslation> = { es, fr, de, pt };
+
+function translatePost(post: Post, locale: Locale): Post {
+  const translated = locale === "en" ? undefined : CONTENT_TRANSLATIONS[locale].posts[post.slug];
+  if (!translated) return post;
+  return {
+    ...post,
+    title: translated.title,
+    summary: translated.summary,
+    body: post.body.map((block, i) => {
+      const text = translated.blocks[i];
+      switch (block.type) {
+        case "list":
+          return { ...block, items: text as string[] };
+        case "samples":
+          return { ...block, items: block.items.map((sample, n) => ({ ...sample, caption: (text as string[])[n] })) };
+        default:
+          return { ...block, text: text as string };
+      }
+    }),
+  };
+}
+
 // Newest first. Sorting is stable, so same-day entries keep their order in the file.
 const byDate = <T extends { date: string }>(items: T[]) => [...items].sort((a, b) => b.date.localeCompare(a.date));
 
-export async function getPosts(): Promise<Post[]> {
-  return byDate(blog as Post[]);
+export async function getPosts(locale: Locale = "en"): Promise<Post[]> {
+  return byDate(blog as Post[]).map((post) => translatePost(post, locale));
 }
 
-export async function getPost(slug: string): Promise<Post | undefined> {
-  return (blog as Post[]).find((post) => post.slug === slug);
+export async function getPost(slug: string, locale: Locale = "en"): Promise<Post | undefined> {
+  const post = (blog as Post[]).find((p) => p.slug === slug);
+  return post && translatePost(post, locale);
 }
 
-export async function getChangelog(): Promise<ChangelogEntry[]> {
-  return byDate(changelog as ChangelogEntry[]);
+export async function getChangelog(locale: Locale = "en"): Promise<ChangelogEntry[]> {
+  return byDate(changelog as ChangelogEntry[]).map((entry) => {
+    const translated = locale === "en" ? undefined : CONTENT_TRANSLATIONS[locale].changelog[entry.title];
+    return translated ? { ...entry, ...translated } : entry;
+  });
 }
 
-/** "October 30, 2026", fixed to UTC so the build machine's time zone can't change the day. */
-export function formatDate(date: string): string {
-  return new Date(`${date}T00:00:00Z`).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
+/** A date in the reader's language, fixed to UTC so the build machine's time zone can't change the day. */
+export function formatDate(date: string, locale: Locale = "en"): string {
+  return new Date(`${date}T00:00:00Z`).toLocaleDateString(locale === "en" ? "en-US" : locale === "pt" ? "pt-BR" : locale, { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
 }
 
-/** Where a sample's link goes, before the base path. */
-export function sampleHref(sample: PostSample): string {
+/** Where a sample's link goes, before the base path. A sample can name its own language. */
+export function sampleHref(sample: PostSample, locale: Locale = "en"): string {
   const section = sample.kind === "block" ? "blocks" : sample.kind === "knit" ? "knitting" : "crochet";
-  return `/${section}/${sample.slug}/${sample.query ? `?${sample.query}` : ""}`;
+  return localePath(sample.locale ?? locale, `/${section}/${sample.slug}/${sample.query ? `?${sample.query}` : ""}`);
 }

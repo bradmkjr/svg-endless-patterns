@@ -1,0 +1,131 @@
+{
+  "posts": {
+    "now-in-five-languages": {
+      "title": "Endless Patterns ya habla cinco idiomas",
+      "summary": "El sitio ya está en inglés, español, francés, alemán y portugués de Brasil, con colores que cambian un poco en cada uno.",
+      "blocks": [
+        "Todas las páginas, listas de corte, instrucciones y PDF ya están disponibles en [Español](/es/), [Français](/fr/), [Deutsch](/de/) y [Português](/pt/). Usa los enlaces de idioma de la parte superior para cambiar.",
+        "Colores que siguen al idioma",
+        "Cada idioma tiene un sutil cambio en los colores del sitio y en la paleta predeterminada, inspirado libremente en una bandera asociada a él. Cada ejemplo se abre en ese idioma.",
+        [
+          "Ohio Star en colores españoles",
+          "Sawtooth Star en colores franceses",
+          "Pinwheel en colores alemanes",
+          "Variable Star en colores brasileños"
+        ],
+        "Un primer borrador",
+        "Estas traducciones son un primer borrador y aún no las han revisado artesanos. Los nombres de bloques y puntos siguen en inglés, las medidas en pulgadas y yardas, y las agujas y ganchillos en numeración de EE. UU. El ganchillo usa abreviaturas locales, con el término de EE. UU. entre paréntesis."
+      ]
+    },
+    "blog-and-changelog": {
+      "title": "Un blog y unas novedades para lo último",
+      "summary": "Las funciones nuevas tienen ahora una entrada con ejemplos que puedes abrir y cambiar, y cada actualización aparece en las novedades.",
+      "blocks": [
+        "Endless Patterns ya tiene este blog y una página de [novedades](/changelog/). Las novedades son la lista breve de qué cambió y cuándo. Las entradas del blog son para añadidos mayores, con ejemplos que puedes probar.",
+        "Ejemplos que puedes abrir y cambiar",
+        "Cada ejemplo es un enlace a la herramienta correspondiente, con los mismos ajustes ya puestos. Ábrelo y cambia el tamaño, los colores o la muestra para hacerlo tuyo.",
+        [
+          "Bear's Paw, nueve bloques de 14\" con sashing",
+          "Seed Stitch en salvia",
+          "Mesh Stitch en rojo granero"
+        ]
+      ]
+    },
+    "knitting-and-crochet": {
+      "title": "Puntos de tejido y ganchillo, a la medida de tu muestra",
+      "summary": "Elige un punto, indica tu tamaño y tu muestra, y obtén la cifra inicial, las instrucciones, un gráfico y una estimación de hilo.",
+      "blocks": [
+        "Ya hay 9 [puntos de tejido](/knitting/) y 7 [puntos de ganchillo](/crochet/). Cada página calcula tu proyecto a partir de tu propia muestra, para que las cifras se ajusten a tu hilo y tus herramientas.",
+        "Qué obtienes",
+        [
+          "Puntos que montar o cadenetas iniciales, redondeados a repeticiones completas",
+          "Instrucciones vuelta a vuelta",
+          "Un gráfico y un PDF imprimible",
+          "Una estimación aproximada de hilo"
+        ],
+        "Prueba uno",
+        [
+          "2x2 Rib, preparado como bufanda de 8\" x 60\"",
+          "Gráfico de Basketweave",
+          "V-Stitch, preparado como manta de bebé"
+        ],
+        "Primero, la muestra",
+        "La muestra inicial de cada grosor es solo un valor habitual, y la cifra de hilo es aproximada. Teje una muestra de 4\", introduce lo que mides y compra algo de hilo de más. [Cómo funcionan los cálculos](/about/) explica las suposiciones."
+      ]
+    },
+    "quilt-block-builder": {
+      "title": "Crea una colcha con 36 bloques tradicionales",
+      "summary": "Ajusta el tamaño, los colores y el diseño de un bloque, y obtén lista de corte, metraje, repeticiones continuas y plantillas imprimibles.",
+      "blocks": [
+        "La [herramienta de bloques](/blocks/) reúne 36 bloques tradicionales, desde un sencillo [Nine Patch](/blocks/nine-patch/) hasta diseños curvos y aplicados. Elige cualquier tamaño de 3\" a 24\", ajusta tus colores y diseña una colcha entera.",
+        "Ejemplos para empezar",
+        [
+          "Log Cabin, girado por cuadrantes",
+          "Ohio Star en rojo granero, con sashing",
+          "Dresden Plate, aplicado sobre un fondo"
+        ],
+        "Qué obtienes",
+        [
+          "Una lista de corte para un bloque o toda la colcha",
+          "Metraje de cada tela, más trasera, ribete y guata",
+          "Descargas SVG y PNG, incluida una repetición continua",
+          "Un PDF con pasos de montaje y plantillas a tamaño real"
+        ],
+        "Cuando un tamaño cae entre las marcas de la regla, la herramienta redondea el corte al alza, lo indica y sugiere los tamaños más cercanos que se dividen exactamente. Comprueba las cifras antes de comprar o cortar."
+      ]
+    }
+  },
+  "changelog": {
+    "Five languages": {
+      "title": "Cinco idiomas",
+      "items": [
+        "Se añadieron español, francés, alemán y portugués de Brasil, incluidas las instrucciones generadas y los PDF",
+        "Se añadieron enlaces de idioma en todas las páginas",
+        "Se añadió un sutil cambio de color y una paleta predeterminada para cada idioma"
+      ]
+    },
+    "Pattern library samples": {
+      "title": "Ejemplos en la biblioteca de patrones",
+      "items": [
+        "Se añadió un ejemplo a cada entrada de la biblioteca, con ejemplos estáticos para las herramientas previstas"
+      ]
+    },
+    "Blog and changelog": {
+      "title": "Blog y novedades",
+      "items": [
+        "Se añadió un blog, con ejemplos que se abren en la herramienta correspondiente",
+        "Se añadió esta página de novedades"
+      ]
+    },
+    "Pattern library preview": {
+      "title": "Adelanto de la biblioteca de patrones",
+      "items": [
+        "Se añadió una biblioteca con las herramientas disponibles y las previstas",
+        "Se corrigió el menú, que se salía de la pantalla en los teléfonos"
+      ]
+    },
+    "Knitting and crochet": {
+      "title": "Punto y ganchillo",
+      "items": [
+        "Se añadieron 9 puntos de tejido y 7 de ganchillo",
+        "Se añadieron cifras iniciales, instrucciones, gráficos y estimaciones de hilo según tu tamaño y tu muestra",
+        "Se añadieron patrones PDF imprimibles para cada punto"
+      ]
+    },
+    "More quilt blocks": {
+      "title": "Más bloques de colcha",
+      "items": [
+        "Se añadieron 14 bloques, 36 en total",
+        "Se añadieron bloques con esquinas dobladas, curvas y aplicación, cortados con plantillas PDF",
+        "Se corrigió la disposición del bloque Anvil"
+      ]
+    },
+    "Quilt block builder": {
+      "title": "Herramienta de bloques de colcha",
+      "items": [
+        "Primera versión, con 22 bloques tradicionales",
+        "Se añadieron listas de corte, metraje, repeticiones continuas, enlaces para compartir y plantillas PDF"
+      ]
+    }
+  }
+}

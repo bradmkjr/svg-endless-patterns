@@ -2,7 +2,9 @@ import { existsSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import sitemap from "@/app/sitemap";
-import { PATTERN_PAGES } from "./patternPages";
+import { patternPages } from "./patternPages";
+
+const PATTERN_PAGES = patternPages();
 
 describe("planned pattern pages", () => {
   it("have unique slugs", () => {

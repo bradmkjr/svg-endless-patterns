@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
   output: "export",
   basePath: process.env.NEXT_PUBLIC_BASE_PATH || undefined,
   trailingSlash: true,
+  // Each language has its own root layout, for a correct <html lang>, so the
+  // 404 page can't borrow one.
+  experimental: { globalNotFound: true },
 };
 
 export default nextConfig;

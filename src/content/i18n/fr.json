@@ -1,0 +1,131 @@
+{
+  "posts": {
+    "now-in-five-languages": {
+      "title": "Endless Patterns parle désormais cinq langues",
+      "summary": "Le site est maintenant en anglais, espagnol, français, allemand et portugais du Brésil, avec des couleurs qui changent un peu pour chacune.",
+      "blocks": [
+        "Toutes les pages, listes de coupe, instructions et PDF sont désormais disponibles en [Español](/es/), [Français](/fr/), [Deutsch](/de/) et [Português](/pt/). Utilisez les liens de langue en haut de page pour changer.",
+        "Des couleurs qui suivent la langue",
+        "Chaque langue apporte une légère variation aux couleurs du site et à la palette par défaut, librement inspirée d'un drapeau qui lui est associé. Chaque exemple s'ouvre dans sa langue.",
+        [
+          "Ohio Star aux couleurs de l'Espagne",
+          "Sawtooth Star aux couleurs de la France",
+          "Pinwheel aux couleurs de l'Allemagne",
+          "Variable Star aux couleurs du Brésil"
+        ],
+        "Un premier jet",
+        "Ces traductions sont un premier jet, que des artisans n'ont pas encore relu. Les noms de blocs et de points restent en anglais, les mesures en pouces et en yards, et les aiguilles et crochets en numérotation américaine. Le crochet utilise les abréviations locales, avec le terme américain entre parenthèses."
+      ]
+    },
+    "blog-and-changelog": {
+      "title": "Un blog et une page de nouveautés",
+      "summary": "Les nouvelles fonctions ont maintenant un article avec des exemples à ouvrir et à modifier, et chaque mise à jour figure dans les nouveautés.",
+      "blocks": [
+        "Endless Patterns a désormais ce blog et une page de [nouveautés](/changelog/). Les nouveautés sont la liste courte de ce qui a changé et quand. Le blog est réservé aux ajouts plus importants, avec des exemples à essayer.",
+        "Des exemples à ouvrir et à modifier",
+        "Chaque exemple est un lien vers l'outil correspondant, avec les mêmes réglages déjà en place. Ouvrez-le, puis changez la taille, les couleurs ou l'échantillon pour vous l'approprier.",
+        [
+          "Bear's Paw, neuf blocs de 14\" avec sashing",
+          "Seed Stitch en sauge",
+          "Mesh Stitch en rouge grange"
+        ]
+      ]
+    },
+    "knitting-and-crochet": {
+      "title": "Points de tricot et de crochet, adaptés à votre échantillon",
+      "summary": "Choisissez un point, indiquez votre taille et votre échantillon, et obtenez le nombre de départ, les instructions, une grille et une estimation de fil.",
+      "blocks": [
+        "Il y a désormais 9 [points de tricot](/knitting/) et 7 [points de crochet](/crochet/). Chaque page calcule votre projet à partir de votre échantillon, pour que les chiffres correspondent à votre fil et à vos outils.",
+        "Ce que vous obtenez",
+        [
+          "Mailles à monter ou chaînette de départ, arrondies à des motifs entiers",
+          "Instructions rang par rang",
+          "Une grille et un PDF à imprimer",
+          "Une estimation approximative de fil"
+        ],
+        "Essayez",
+        [
+          "2x2 Rib, prévu pour une écharpe de 8\" x 60\"",
+          "Grille de Basketweave",
+          "V-Stitch, prévu pour une couverture de bébé"
+        ],
+        "D'abord, l'échantillon",
+        "L'échantillon de départ de chaque grosseur n'est qu'une valeur courante, et la quantité de fil est approximative. Réalisez un échantillon de 4\", saisissez vos mesures et prévoyez un peu plus de fil. [Comment fonctionnent les calculs](/about/) détaille les hypothèses."
+      ]
+    },
+    "quilt-block-builder": {
+      "title": "Créez un quilt avec 36 blocs traditionnels",
+      "summary": "Réglez la taille, les couleurs et la disposition d'un bloc, et obtenez liste de coupe, métrage, raccords continus et gabarits à imprimer.",
+      "blocks": [
+        "L'[outil de blocs](/blocks/) réunit 36 blocs traditionnels, du simple [Nine Patch](/blocks/nine-patch/) aux modèles courbes et appliqués. Choisissez une taille de 3\" à 24\", réglez vos couleurs et disposez un quilt entier.",
+        "Des exemples pour commencer",
+        [
+          "Log Cabin, tourné par quadrant",
+          "Ohio Star en rouge grange, avec sashing",
+          "Dresden Plate, appliqué sur un fond"
+        ],
+        "Ce que vous obtenez",
+        [
+          "Une liste de coupe pour un bloc ou tout le quilt",
+          "Le métrage de chaque tissu, plus dos, biais et molleton",
+          "Téléchargements SVG et PNG, dont un raccord continu",
+          "Un PDF avec les étapes d'assemblage et des gabarits en taille réelle"
+        ],
+        "Quand une taille tombe entre les repères de la règle, l'outil arrondit la coupe au supérieur, le signale et suggère les tailles les plus proches qui se divisent exactement. Vérifiez les chiffres avant d'acheter ou de couper."
+      ]
+    }
+  },
+  "changelog": {
+    "Five languages": {
+      "title": "Cinq langues",
+      "items": [
+        "Ajout de l'espagnol, du français, de l'allemand et du portugais du Brésil, y compris les instructions générées et les PDF",
+        "Ajout de liens de langue sur toutes les pages",
+        "Ajout d'une légère variation de couleurs et d'une palette par défaut pour chaque langue"
+      ]
+    },
+    "Pattern library samples": {
+      "title": "Exemples dans la bibliothèque de motifs",
+      "items": [
+        "Ajout d'un exemple à chaque entrée de la bibliothèque, avec des exemples statiques pour les outils prévus"
+      ]
+    },
+    "Blog and changelog": {
+      "title": "Blog et nouveautés",
+      "items": [
+        "Ajout d'un blog, avec des exemples qui s'ouvrent dans l'outil correspondant",
+        "Ajout de cette page de nouveautés"
+      ]
+    },
+    "Pattern library preview": {
+      "title": "Aperçu de la bibliothèque de motifs",
+      "items": [
+        "Ajout d'une bibliothèque listant les outils disponibles et prévus",
+        "Correction du menu qui dépassait de l'écran sur téléphone"
+      ]
+    },
+    "Knitting and crochet": {
+      "title": "Tricot et crochet",
+      "items": [
+        "Ajout de 9 points de tricot et 7 points de crochet",
+        "Ajout des nombres de départ, instructions, grilles et estimations de fil selon votre taille et votre échantillon",
+        "Ajout de patrons PDF à imprimer pour chaque point"
+      ]
+    },
+    "More quilt blocks": {
+      "title": "Plus de blocs de quilt",
+      "items": [
+        "Ajout de 14 blocs, soit 36 au total",
+        "Ajout de blocs à coins rabattus, courbes et appliqués, coupés avec des gabarits PDF",
+        "Correction de la disposition du bloc Anvil"
+      ]
+    },
+    "Quilt block builder": {
+      "title": "Outil de blocs de quilt",
+      "items": [
+        "Première version, avec 22 blocs traditionnels",
+        "Ajout des listes de coupe, du métrage, des raccords continus, des liens de partage et des gabarits PDF"
+      ]
+    }
+  }
+}

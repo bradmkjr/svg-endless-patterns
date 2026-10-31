@@ -5,16 +5,16 @@
  * is already async, so no caller has to change.
  */
 import { generatePattern as runGenerate, generateStitchPattern as runStitch, listBlocks, listStitchPatterns } from "@/engine";
-import type { BlockInfo, Craft, PatternRequest, PatternResult, StitchInfo, StitchRequest, StitchResult } from "@/engine";
+import type { BlockInfo, Craft, Locale, PatternRequest, PatternResult, StitchInfo, StitchRequest, StitchResult } from "@/engine";
 
-export type { BlockInfo, Craft, CutLine, FabricInfo, PatternRequest, PatternResult, Setting, StitchInfo, StitchRequest, StitchResult } from "@/engine";
+export type { BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, Setting, StitchInfo, StitchRequest, StitchResult } from "@/engine";
 
-export async function getBlocks(): Promise<BlockInfo[]> {
-  return listBlocks();
+export async function getBlocks(locale: Locale = "en"): Promise<BlockInfo[]> {
+  return listBlocks(locale);
 }
 
-export async function getBlock(slug: string): Promise<BlockInfo | undefined> {
-  return listBlocks().find((b) => b.slug === slug);
+export async function getBlock(slug: string, locale: Locale = "en"): Promise<BlockInfo | undefined> {
+  return listBlocks(locale).find((b) => b.slug === slug);
 }
 
 export async function generatePattern(slug: string, request: PatternRequest): Promise<PatternResult> {
@@ -27,12 +27,12 @@ export async function generatePdf(slug: string, request: PatternRequest): Promis
   return generatePatternPdf(slug, request);
 }
 
-export async function getStitchPatterns(craft: Craft): Promise<StitchInfo[]> {
-  return listStitchPatterns().filter((s) => s.craft === craft);
+export async function getStitchPatterns(craft: Craft, locale: Locale = "en"): Promise<StitchInfo[]> {
+  return listStitchPatterns(locale).filter((s) => s.craft === craft);
 }
 
-export async function getStitchPattern(craft: Craft, slug: string): Promise<StitchInfo | undefined> {
-  return listStitchPatterns().find((s) => s.craft === craft && s.slug === slug);
+export async function getStitchPattern(craft: Craft, slug: string, locale: Locale = "en"): Promise<StitchInfo | undefined> {
+  return listStitchPatterns(locale).find((s) => s.craft === craft && s.slug === slug);
 }
 
 export async function generateStitchPattern(slug: string, request: StitchRequest): Promise<StitchResult> {

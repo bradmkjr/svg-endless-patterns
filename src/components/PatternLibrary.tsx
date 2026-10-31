@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { generatePattern, generateStitchPattern, getBlock, getStitchPattern } from "@/lib/generator";
-import { PATTERN_PAGES, type PatternPage as PatternPageData } from "@/lib/patternPages";
+import { generatePattern, generateStitchPattern, getBlock, getStitchPattern, type Locale } from "@/lib/generator";
+import { fill, localePath, messages } from "@/lib/i18n";
+import { patternPages, type PatternPage as PatternPageData } from "@/lib/patternPages";
 import { publicPath } from "@/lib/site";
 import { defaultState } from "@/lib/state";
 import { defaultStitchState } from "@/lib/stitchState";
@@ -13,76 +14,75 @@ function StaticSample({ page, className }: { page: PatternPageData; className: s
   );
 }
 
-async function stitchArtUrl(craft: "knit" | "crochet", slug: string) {
-  const stitch = (await getStitchPattern(craft, slug))!;
-  const { swatch } = (await generateStitchPattern(slug, defaultStitchState(stitch))).svg;
+async function stitchArtUrl(craft: "knit" | "crochet", slug: string, locale: Locale) {
+  const stitch = (await getStitchPattern(craft, slug, locale))!;
+  const { swatch } = (await generateStitchPattern(slug, defaultStitchState(stitch, locale))).svg;
   return { url: `data:image/svg+xml,${encodeURIComponent(swatch)}`, tileWidth: Number(/viewBox="0 0 ([\d.]+) /.exec(swatch)![1]), name: stitch.name };
 }
 
-export async function PatternLibrary() {
-  const ohio = (await getBlock("ohio-star"))!;
-  const quilt = (await generatePattern(ohio.slug, defaultState(ohio))).svg.block;
-  const knit = await stitchArtUrl("knit", "seed-stitch");
-  const crochet = await stitchArtUrl("crochet", "mesh-stitch");
+export async function PatternLibrary({ locale }: { locale: Locale }) {
+  const t = messages(locale).library;
+  const href = (path: string) => localePath(locale, path);
+  const ohio = (await getBlock("ohio-star", locale))!;
+  const quilt = (await generatePattern(ohio.slug, defaultState(ohio, locale))).svg.block;
+  const knit = await stitchArtUrl("knit", "seed-stitch", locale);
+  const crochet = await stitchArtUrl("crochet", "mesh-stitch", locale);
   const swatch = (art: typeof knit) => (
     <div
       className={styles.art}
       role="img"
-      aria-label={`Illustration of ${art.name}`}
+      aria-label={fill(t.swatchAlt, { name: art.name })}
       style={{ backgroundImage: `url("${art.url}")`, backgroundSize: `${(art.tileWidth / 4) * 100}% auto` }}
     />
   );
   return (
     <div className="page">
-      <h1>Pattern library</h1>
-      <p className="lede">
-        Explore traditional and geometric patterns across crafts. Quilt blocks, knitting, and crochet have working
-        pattern tools; the other pattern makers are planned.
-      </p>
+      <h1>{t.h1}</h1>
+      <p className="lede">{t.lede}</p>
       <div className={styles.grid}>
         <article className={styles.card}>
           <div className={`art ${styles.art}`} dangerouslySetInnerHTML={{ __html: quilt }} />
-          <span className={styles.status}>Available</span>
-          <h2>Quilt blocks</h2>
-          <p>Choose a traditional block and customize its size, colors, layout, and sashing.</p>
+          <span className={styles.status}>{t.available}</span>
+          <h2>{t.quiltTitle}</h2>
+          <p>{t.quiltText}</p>
           <p>
-            <strong>Useful output:</strong> Cutting list, yardage, and printable templates.
+            <strong>{t.usefulOutput}</strong> {t.quiltOutput}
           </p>
-          <Link href="/blocks/">Explore quilt blocks</Link>
+          <Link href={href("/blocks/")}>{t.exploreQuilt}</Link>
         </article>
         <article className={styles.card}>
           {swatch(knit)}
-          <span className={styles.status}>Available</span>
-          <h2>Knitting stitches</h2>
-          <p>Choose a stitch and set your project size and gauge.</p>
+          <span className={styles.status}>{t.available}</span>
+          <h2>{t.knitTitle}</h2>
+          <p>{t.knitText}</p>
           <p>
-            <strong>Useful output:</strong> Starting count, written rows, chart, and yarn estimate.
+            <strong>{t.usefulOutput}</strong> {t.knitOutput}
           </p>
-          <Link href="/knitting/">Explore knitting stitches</Link>
+          <Link href={href("/knitting/")}>{t.exploreKnit}</Link>
         </article>
         <article className={styles.card}>
           {swatch(crochet)}
-          <span className={styles.status}>Available</span>
-          <h2>Crochet stitches</h2>
-          <p>Choose a stitch and set your project size and gauge.</p>
+          <span className={styles.status}>{t.available}</span>
+          <h2>{t.crochetTitle}</h2>
+          <p>{t.crochetText}</p>
           <p>
-            <strong>Useful output:</strong> Starting chain, US-term instructions, symbol chart, and yarn estimate.
+            <strong>{t.usefulOutput}</strong> {t.crochetOutput}
           </p>
-          <Link href="/crochet/">Explore crochet stitches</Link>
+          <Link href={href("/crochet/")}>{t.exploreCrochet}</Link>
         </article>
-        {PATTERN_PAGES.map((page) => (
+        {patternPages(locale).map((page) => (
           <article className={styles.card} key={page.slug}>
             <StaticSample page={page} className={styles.art} />
-            <span className={styles.status}>Coming soon</span>
+            <span className={styles.status}>{t.comingSoon}</span>
             <h2>{page.title}</h2>
             <p>{page.summary}</p>
             <p>
-              <strong>Customize:</strong> {page.customize}
+              <strong>{t.customize}</strong> {page.customize}
             </p>
             <p>
-              <strong>Useful output:</strong> {page.output}
+              <strong>{t.usefulOutput}</strong> {page.output}
             </p>
-            <Link href={`/patterns/${page.slug}/`}>What&apos;s planned for {page.title}</Link>
+            <Link href={href(`/patterns/${page.slug}/`)}>{fill(t.whatsPlanned, { title: page.title })}</Link>
           </article>
         ))}
       </div>
@@ -90,32 +90,31 @@ export async function PatternLibrary() {
   );
 }
 
-export function PatternDetail({ page }: { page: PatternPageData }) {
+export function PatternDetail({ page, locale }: { page: PatternPageData; locale: Locale }) {
+  const t = messages(locale).library;
   return (
     <div className="page">
       <p className={styles.breadcrumb}>
-        <Link href="/patterns/">Pattern library</Link>
+        <Link href={localePath(locale, "/patterns/")}>{t.h1}</Link>
       </p>
-      <span className={styles.status}>Coming soon</span>
+      <span className={styles.status}>{t.comingSoon}</span>
       <h1>{page.title}</h1>
       <p className="lede">{page.summary}</p>
       <figure className={styles.figure}>
         <StaticSample page={page} className={styles.figureArt} />
-        <figcaption>A static example of the style. You can&apos;t customize it yet.</figcaption>
+        <figcaption>{t.staticCaption}</figcaption>
       </figure>
       <section className={styles.details}>
         <div>
-          <h2>What you&apos;ll customize</h2>
+          <h2>{t.customizeHeading}</h2>
           <p>{page.customize}</p>
         </div>
         <div>
-          <h2>Useful output</h2>
+          <h2>{t.outputHeading}</h2>
           <p>{page.output}</p>
         </div>
       </section>
-      <p className={styles.note}>
-        This is a preview of a planned pattern maker. Its customization and export tools are not available yet.
-      </p>
+      <p className={styles.note}>{t.previewNote}</p>
     </div>
   );
 }

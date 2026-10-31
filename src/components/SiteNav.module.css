@@ -48,3 +48,33 @@
     font-size: 0.875rem;
   }
 }
+
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  justify-content: flex-end;
+  gap: 0.15rem 0.85rem;
+  font-size: 0.8rem;
+}
+
+.languages a {
+  color: var(--muted);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.languages a:hover {
+  text-decoration: underline;
+}
+
+.languages .languageOn {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+@media (max-width: 860px) {
+  .languages {
+    justify-content: flex-start;
+  }
+}

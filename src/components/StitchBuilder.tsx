@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { generateStitchPattern, generateStitchPdf, type StitchInfo, type StitchRequest, type StitchResult } from "@/lib/generator";
+import { generateStitchPattern, generateStitchPdf, type Locale, type StitchInfo, type StitchRequest, type StitchResult } from "@/lib/generator";
+import { fill, messages } from "@/lib/i18n";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { LENGTH_OPTIONS, PROJECTS, ROW_GAUGE_OPTIONS, serializeStitchState, startingGauge, STITCH_GAUGE_OPTIONS, WIDTH_OPTIONS, YARN_WEIGHTS } from "@/lib/stitchState";
 import styles from "./BlockBuilder.module.css";
@@ -21,7 +22,10 @@ function NumberSelect({ label, value, options, unit = "", onChange }: { label: s
   );
 }
 
-export function StitchBuilder({ stitch, initialState, initialResult }: { stitch: StitchInfo; initialState: StitchRequest; initialResult: StitchResult }) {
+export function StitchBuilder({ stitch, locale, initialState, initialResult }: { stitch: StitchInfo; locale: Locale; initialState: StitchRequest; initialResult: StitchResult }) {
+  const all = messages(locale);
+  const t = all.stitchBuilder;
+  const b = all.builder;
   const [state, setState] = useState(initialState);
   const [result, setResult] = useState(initialResult);
   const [view, setView] = useState<View>("swatch");
@@ -39,13 +43,13 @@ export function StitchBuilder({ stitch, initialState, initialResult }: { stitch:
         if (!stale) setResult(next);
       },
       () => {
-        if (!stale) setStatus("Couldn't update the pattern. Please try again.");
+        if (!stale) setStatus(t.updateError);
       },
     );
     return () => {
       stale = true;
     };
-  }, [stitch.slug, state]);
+  }, [stitch.slug, state, t.updateError]);
 
   useEffect(() => {
     const query = serializeStitchState(stitch, state);
@@ -59,7 +63,7 @@ export function StitchBuilder({ stitch, initialState, initialResult }: { stitch:
       await action();
       setStatus(done);
     } catch {
-      setStatus("That didn't work. Please try again.");
+      setStatus(b.actionError);
     } finally {
       setBusy(false);
     }
@@ -69,18 +73,18 @@ export function StitchBuilder({ stitch, initialState, initialResult }: { stitch:
   const fileBase = `${stitch.slug}-${view}`;
   const swatchUrl = `data:image/svg+xml,${encodeURIComponent(result.svg.swatch)}`;
   const swatchWidth = Number(/viewBox="0 0 ([\d.]+) /.exec(result.svg.swatch)?.[1] ?? 4);
-  const tool = stitch.craft === "knit" ? `Needles: ${weight.needle}` : `Hook: ${weight.hook}`;
+  const tool = stitch.craft === "knit" ? fill(t.needles, { tool: weight.needle }) : fill(t.hook, { tool: weight.hook });
 
   return (
     <div className={styles.builder}>
       <div className={styles.workspace}>
-        <section className={styles.preview} aria-label="Preview">
-          <div className={`${styles.tabs} no-print`} role="group" aria-label="Preview type">
+        <section className={styles.preview} aria-label={b.preview}>
+          <div className={`${styles.tabs} no-print`} role="group" aria-label={b.previewType}>
             <button type="button" aria-pressed={view === "swatch"} className={view === "swatch" ? styles.tabOn : styles.tab} onClick={() => setView("swatch")}>
-              Swatch
+              {t.swatch}
             </button>
             <button type="button" aria-pressed={view === "chart"} className={view === "chart" ? styles.tabOn : styles.tab} onClick={() => setView("chart")}>
-              Chart
+              {t.chart}
             </button>
           </div>
           {view === "swatch" ? (
@@ -88,26 +92,26 @@ export function StitchBuilder({ stitch, initialState, initialResult }: { stitch:
               className={styles.tile}
               style={{ backgroundImage: `url("${swatchUrl}")`, backgroundSize: `${(swatchWidth / 4) * 100}% auto` }}
               role="img"
-              aria-label={`Illustration of 4 inches of ${stitch.name}`}
+              aria-label={fill(t.swatchAlt, { name: stitch.name })}
             />
           ) : (
             <div className={styles.chart} dangerouslySetInnerHTML={{ __html: currentSvg }} />
           )}
           <p className={styles.note}>
-            {view === "swatch" ? 'An illustration of the texture, showing 4" of fabric at your gauge. It isn\'t a photo of real yarn.' : stitch.craft === "knit" ? "Each square is one stitch, seen from the right side. Blank = knit, dash = purl. Start at row 1, at the bottom." : "Symbols show the first rows at a small width, in US terms. Start at row 1, at the bottom. X = sc, T = hdc, crossed T = dc, oval = ch."}
+            {view === "swatch" ? t.swatchNote : stitch.craft === "knit" ? t.chartKnit : t.chartCrochet}
           </p>
           <div className={`${styles.actions} no-print`}>
-            <button type="button" disabled={busy} className={styles.primary} onClick={() => run("Making your PDF…", "PDF downloaded.", async () => downloadBytes(await generateStitchPdf(stitch.slug, state), `${stitch.slug}-pattern.pdf`, "application/pdf"))}>
-              Download PDF pattern
+            <button type="button" disabled={busy} className={styles.primary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateStitchPdf(stitch.slug, state), `${stitch.slug}-pattern.pdf`, "application/pdf"))}>
+              {b.downloadPdf}
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run("Saving…", "SVG downloaded.", () => downloadSvg(currentSvg, `${fileBase}.svg`))}>
+            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(currentSvg, `${fileBase}.svg`))}>
               SVG
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run("Making your PNG…", "PNG downloaded.", () => downloadPng(currentSvg, `${fileBase}.png`))}>
+            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, () => downloadPng(currentSvg, `${fileBase}.png`))}>
               PNG
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run("Copying…", "Link copied.", () => navigator.clipboard.writeText(window.location.href))}>
-              Copy share link
+            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.copying, b.copied, () => navigator.clipboard.writeText(window.location.href))}>
+              {b.copyLink}
             </button>
           </div>
           <p className={styles.status} role="status">
@@ -117,24 +121,24 @@ export function StitchBuilder({ stitch, initialState, initialResult }: { stitch:
 
         <form className={`${styles.controls} no-print`} onSubmit={(e) => e.preventDefault()}>
           <fieldset>
-            <legend>Project size</legend>
+            <legend>{t.projectSize}</legend>
             <div className={styles.presets}>
               {PROJECTS.map((project) => (
                 <button key={project.label} type="button" className={styles.tab} onClick={() => update({ width: project.width, length: project.length })}>
-                  {project.label}
+                  {all.projects[project.label]}
                 </button>
               ))}
             </div>
             <div className={styles.fieldRow}>
-              <NumberSelect label="Width" value={state.width} options={WIDTH_OPTIONS} unit={'"'} onChange={(width) => update({ width })} />
-              <NumberSelect label="Length" value={state.length} options={LENGTH_OPTIONS} unit={'"'} onChange={(length) => update({ length })} />
+              <NumberSelect label={t.width} value={state.width} options={WIDTH_OPTIONS} unit={'"'} onChange={(width) => update({ width })} />
+              <NumberSelect label={t.length} value={state.length} options={LENGTH_OPTIONS} unit={'"'} onChange={(length) => update({ length })} />
             </div>
           </fieldset>
 
           <fieldset>
-            <legend>Yarn and gauge</legend>
+            <legend>{t.yarnGauge}</legend>
             <label className={styles.field}>
-              <span>Yarn weight (sets a starting gauge)</span>
+              <span>{t.yarnWeight}</span>
               <select
                 value={weightId}
                 onChange={(e) => {
@@ -145,31 +149,31 @@ export function StitchBuilder({ stitch, initialState, initialResult }: { stitch:
               >
                 {YARN_WEIGHTS.map((w) => (
                   <option key={w.id} value={w.id}>
-                    {w.label}
+                    {all.weights[w.label]}
                   </option>
                 ))}
               </select>
             </label>
-            <p className={styles.note}>{tool}. These are typical sizes, so use whichever gets you your gauge.</p>
+            <p className={styles.note}>{tool}. {t.toolNote}</p>
             <div className={styles.fieldRow}>
-              <NumberSelect label={'Stitches per 4"'} value={state.stitchGauge} options={STITCH_GAUGE_OPTIONS} onChange={(stitchGauge) => update({ stitchGauge })} />
-              <NumberSelect label={'Rows per 4"'} value={state.rowGauge} options={ROW_GAUGE_OPTIONS} onChange={(rowGauge) => update({ rowGauge })} />
+              <NumberSelect label={t.stitchesPer} value={state.stitchGauge} options={STITCH_GAUGE_OPTIONS} onChange={(stitchGauge) => update({ stitchGauge })} />
+              <NumberSelect label={t.rowsPer} value={state.rowGauge} options={ROW_GAUGE_OPTIONS} onChange={(rowGauge) => update({ rowGauge })} />
             </div>
             <label className={styles.color} style={{ marginTop: "0.8rem" }}>
               <input type="color" value={state.color} onChange={(e) => update({ color: e.target.value })} />
-              Yarn color
+              {t.yarnColor}
             </label>
           </fieldset>
         </form>
       </div>
 
       <p className={styles.notice}>
-        <strong>Swatch first.</strong> These numbers are only right at your gauge, and the starting values above are typical figures rather than yours. Work a 4&quot; swatch, measure it, and enter what you get.
+        <strong>{t.swatchFirstTitle}</strong> {t.swatchFirstText}
       </p>
 
       <div className={styles.results}>
         <section>
-          <h2>Instructions</h2>
+          <h2>{t.instructions}</h2>
           <ul className={styles.written}>
             {result.setup.map((line) => (
               <li key={line}>{line}</li>
@@ -188,7 +192,7 @@ export function StitchBuilder({ stitch, initialState, initialResult }: { stitch:
         </section>
 
         <section>
-          <h2>Your project</h2>
+          <h2>{t.yourProject}</h2>
           <table className={styles.yardage}>
             <tbody>
               <tr>
@@ -196,26 +200,26 @@ export function StitchBuilder({ stitch, initialState, initialResult }: { stitch:
                 <td>{result.startCount}</td>
               </tr>
               <tr>
-                <th scope="row">Stitches per row</th>
+                <th scope="row">{t.stitchesPerRow}</th>
                 <td>{result.stitchesPerRow}</td>
               </tr>
               <tr>
-                <th scope="row">Rows</th>
+                <th scope="row">{t.rows}</th>
                 <td>{result.rows}</td>
               </tr>
               <tr>
-                <th scope="row">Finished size</th>
+                <th scope="row">{t.finishedSize}</th>
                 <td>
                   {result.width}&quot; x {result.length}&quot;
                 </td>
               </tr>
               <tr>
-                <th scope="row">Yarn (rough estimate)</th>
-                <td>about {result.yards} yd</td>
+                <th scope="row">{t.yarnEstimate}</th>
+                <td>{fill(t.about, { y: result.yards })}</td>
               </tr>
             </tbody>
           </table>
-          <p className={styles.note}>Size is rounded to whole pattern repeats. Real yarn use varies a lot with fiber and tension, so buy extra.</p>
+          <p className={styles.note}>{t.roundNote}</p>
         </section>
       </div>
     </div>

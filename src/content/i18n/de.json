@@ -1,0 +1,131 @@
+{
+  "posts": {
+    "now-in-five-languages": {
+      "title": "Endless Patterns spricht jetzt fünf Sprachen",
+      "summary": "Die Website gibt es jetzt auf Englisch, Spanisch, Französisch, Deutsch und brasilianischem Portugiesisch, mit leicht wechselnden Farben.",
+      "blocks": [
+        "Alle Seiten, Zuschnittlisten, Anleitungen und PDFs gibt es jetzt auf [Español](/es/), [Français](/fr/), [Deutsch](/de/) und [Português](/pt/). Wechsle mit den Sprachlinks oben auf jeder Seite.",
+        "Farben, die der Sprache folgen",
+        "Jede Sprache verändert die Farben der Website und die Standardpalette dezent, frei inspiriert von einer mit ihr verbundenen Flagge. Jedes Beispiel öffnet sich in seiner Sprache.",
+        [
+          "Ohio Star in spanischen Farben",
+          "Sawtooth Star in französischen Farben",
+          "Pinwheel in deutschen Farben",
+          "Variable Star in brasilianischen Farben"
+        ],
+        "Ein erster Entwurf",
+        "Diese Übersetzungen sind ein erster Entwurf und noch nicht von Handwerkern geprüft. Block- und Musternamen bleiben auf Englisch, Maße in Zoll und Yards, Nadeln und Häkelnadeln in US-Nummerierung. Beim Häkeln stehen lokale Abkürzungen mit dem US-Begriff in Klammern."
+      ]
+    },
+    "blog-and-changelog": {
+      "title": "Ein Blog und eine Änderungsseite",
+      "summary": "Neue Funktionen erhalten jetzt einen Beitrag mit Beispielen zum Öffnen und Ändern, und jede Aktualisierung steht auf der Änderungsseite.",
+      "blocks": [
+        "Endless Patterns hat jetzt diesen Blog und eine Seite mit [Änderungen](/changelog/). Die Änderungen sind die kurze Liste, was sich wann geändert hat. Blogbeiträge gibt es für größere Neuerungen, mit Beispielen zum Ausprobieren.",
+        "Beispiele zum Öffnen und Ändern",
+        "Jedes Beispiel führt ins passende Werkzeug, mit denselben Einstellungen. Öffne es und ändere Größe, Farben oder Maschenprobe nach deinen Wünschen.",
+        [
+          "Bear's Paw, neun 14\"-Blöcke mit Sashing",
+          "Seed Stitch in Salbei",
+          "Mesh Stitch in Scheunenrot"
+        ]
+      ]
+    },
+    "knitting-and-crochet": {
+      "title": "Strick- und Häkelmuster, passend zu deiner Maschenprobe",
+      "summary": "Wähle ein Muster, gib Größe und Maschenprobe an und erhalte Startzahl, Anleitung, Diagramm und Garnschätzung.",
+      "blocks": [
+        "Es gibt jetzt 9 [Strickmuster](/knitting/) und 7 [Häkelmuster](/crochet/). Jede Seite berechnet dein Projekt aus deiner eigenen Maschenprobe, sodass die Zahlen zu deinem Garn und Werkzeug passen.",
+        "Das bekommst du",
+        [
+          "Maschenanschlag oder Luftmaschenanschlag, gerundet auf ganze Rapporte",
+          "Anleitung Reihe für Reihe",
+          "Ein Diagramm und ein druckbares PDF",
+          "Eine grobe Garnschätzung"
+        ],
+        "Probier eines aus",
+        [
+          "2x2 Rib als Schal mit 8\" x 60\"",
+          "Diagramm von Basketweave",
+          "V-Stitch als Babydecke"
+        ],
+        "Erst die Maschenprobe",
+        "Die Start-Maschenprobe je Garnstärke ist nur ein typischer Wert, und die Garnmenge ist grob geschätzt. Arbeite eine Probe von 4\", trage deine Messung ein und kaufe etwas mehr Garn. [So funktionieren die Berechnungen](/about/) erklärt die Annahmen."
+      ]
+    },
+    "quilt-block-builder": {
+      "title": "Ein Quilt aus 36 traditionellen Blöcken",
+      "summary": "Stelle Größe, Farben und Aufbau eines Blocks ein und erhalte Zuschnittliste, Stoffbedarf, nahtlose Rapporte und druckbare Schablonen.",
+      "blocks": [
+        "Das [Block-Werkzeug](/blocks/) umfasst 36 traditionelle Blöcke, vom einfachen [Nine Patch](/blocks/nine-patch/) bis zu Kurven und Applikationen. Wähle eine Größe von 3\" bis 24\", stelle deine Farben ein und plane einen ganzen Quilt.",
+        "Beispiele zum Einstieg",
+        [
+          "Log Cabin, nach Quadranten gedreht",
+          "Ohio Star in Scheunenrot, mit Sashing",
+          "Dresden Plate, auf einen Hintergrund appliziert"
+        ],
+        "Das bekommst du",
+        [
+          "Eine Zuschnittliste für einen Block oder den ganzen Quilt",
+          "Stoffbedarf je Stoff, dazu Rückseite, Einfassung und Vlies",
+          "SVG- und PNG-Downloads, auch als nahtloser Rapport",
+          "Ein PDF mit Nähschritten und Schablonen in Originalgröße"
+        ],
+        "Liegt eine Größe zwischen den Linealmarkierungen, rundet das Werkzeug den Zuschnitt auf, weist darauf hin und schlägt die nächsten Größen vor, die genau aufgehen. Prüfe die Zahlen vor dem Kauf oder Zuschnitt."
+      ]
+    }
+  },
+  "changelog": {
+    "Five languages": {
+      "title": "Fünf Sprachen",
+      "items": [
+        "Spanisch, Französisch, Deutsch und brasilianisches Portugiesisch ergänzt, einschließlich generierter Anleitungen und PDFs",
+        "Sprachlinks auf allen Seiten ergänzt",
+        "Dezente Farbänderung und Standardpalette für jede Sprache ergänzt"
+      ]
+    },
+    "Pattern library samples": {
+      "title": "Beispiele in der Musterbibliothek",
+      "items": [
+        "Jeder Eintrag der Bibliothek hat jetzt ein Beispiel, mit statischen Beispielen für geplante Werkzeuge"
+      ]
+    },
+    "Blog and changelog": {
+      "title": "Blog und Änderungen",
+      "items": [
+        "Blog ergänzt, mit Beispielen, die sich im passenden Werkzeug öffnen",
+        "Diese Änderungsseite ergänzt"
+      ]
+    },
+    "Pattern library preview": {
+      "title": "Vorschau der Musterbibliothek",
+      "items": [
+        "Musterbibliothek mit verfügbaren und geplanten Werkzeugen ergänzt",
+        "Navigation korrigiert, die auf Telefonen über den Bildschirm hinausragte"
+      ]
+    },
+    "Knitting and crochet": {
+      "title": "Stricken und Häkeln",
+      "items": [
+        "9 Strickmuster und 7 Häkelmuster ergänzt",
+        "Startzahlen, Anleitungen, Diagramme und Garnschätzungen nach Größe und Maschenprobe ergänzt",
+        "Druckbare PDF-Anleitungen für jedes Muster ergänzt"
+      ]
+    },
+    "More quilt blocks": {
+      "title": "Mehr Quiltblöcke",
+      "items": [
+        "14 Blöcke ergänzt, jetzt insgesamt 36",
+        "Blöcke mit umgeklappten Ecken, Kurven und Applikationen ergänzt, geschnitten mit PDF-Schablonen",
+        "Aufbau des Blocks Anvil korrigiert"
+      ]
+    },
+    "Quilt block builder": {
+      "title": "Quiltblock-Werkzeug",
+      "items": [
+        "Erste Version mit 22 traditionellen Blöcken",
+        "Zuschnittlisten, Stoffbedarf, nahtlose Rapporte, Teilen-Links und PDF-Schablonen ergänzt"
+      ]
+    }
+  }
+}

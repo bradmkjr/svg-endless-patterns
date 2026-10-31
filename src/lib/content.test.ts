@@ -2,7 +2,10 @@ import { describe, expect, it } from "vitest";
 import blog from "@/content/blog.json";
 import { getBlock, getBlocks, getStitchPattern, getStitchPatterns } from "./generator";
 import { getChangelog, getPosts, sampleHref, type PostSample } from "./content";
-import { PATTERN_PAGES } from "./patternPages";
+import { PREFIXED_LOCALES } from "./i18n";
+import { patternPages } from "./patternPages";
+
+const PATTERN_PAGES = patternPages();
 import { parseState, serializeState } from "./state";
 import { parseStitchState, serializeStitchState } from "./stitchState";
 
@@ -11,7 +14,7 @@ const sorted = (query: string) => [...new URLSearchParams(query).entries()].map(
 async function knownPaths() {
   const posts = await getPosts();
   return new Set([
-    "/", "/blocks/", "/knitting/", "/crochet/", "/patterns/", "/about/", "/blog/", "/changelog/",
+    "/", ...PREFIXED_LOCALES.map((l) => `/${l}/`), "/blocks/", "/knitting/", "/crochet/", "/patterns/", "/about/", "/blog/", "/changelog/",
     ...(await getBlocks()).map((b) => `/blocks/${b.slug}/`),
     ...(await getStitchPatterns("knit")).map((s) => `/knitting/${s.slug}/`),
     ...(await getStitchPatterns("crochet")).map((s) => `/crochet/${s.slug}/`),
@@ -54,13 +57,13 @@ describe("blog posts", () => {
     if (sample.kind === "block") {
       const info = (await getBlock(slug))!;
       expect(info, slug).toBeDefined();
-      expect(sorted(serializeState(info, parseState(info, new URLSearchParams(sample.query))))).toEqual(sorted(sample.query));
+      expect(sorted(serializeState(info, parseState(info, new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
     } else {
       const info = (await getStitchPattern(sample.kind, slug))!;
       expect(info, slug).toBeDefined();
-      expect(sorted(serializeStitchState(info, parseStitchState(info, new URLSearchParams(sample.query))))).toEqual(sorted(sample.query));
+      expect(sorted(serializeStitchState(info, parseStitchState(info, new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
     }
-    expect((await knownPaths()).has(sampleHref(sample).split("?")[0])).toBe(true);
+    expect((await knownPaths()).has(sampleHref({ ...sample, locale: undefined }).split("?")[0])).toBe(true);
   });
 });
 

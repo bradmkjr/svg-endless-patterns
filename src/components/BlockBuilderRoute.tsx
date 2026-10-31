@@ -2,13 +2,13 @@
 
 import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
-import type { BlockInfo, PatternResult } from "@/lib/generator";
+import type { BlockInfo, Locale, PatternResult } from "@/lib/generator";
 import { defaultState, parseState } from "@/lib/state";
 import { BlockBuilder } from "./BlockBuilder";
 
-function FromShareLink({ block, initial }: { block: BlockInfo; initial: PatternResult }) {
+function FromShareLink({ block, initial, locale }: { block: BlockInfo; initial: PatternResult; locale: Locale }) {
   const params = useSearchParams();
-  return <BlockBuilder block={block} initialState={parseState(block, params)} initialResult={initial} />;
+  return <BlockBuilder block={block} locale={locale} initialState={parseState(block, params, locale)} initialResult={initial} />;
 }
 
 /**
@@ -16,10 +16,10 @@ function FromShareLink({ block, initial }: { block: BlockInfo; initial: PatternR
  * the default design (real cuts and steps, for readers and search engines) and
  * the browser then picks up any settings from a share link.
  */
-export function BlockBuilderRoute({ block, initial }: { block: BlockInfo; initial: PatternResult }) {
+export function BlockBuilderRoute({ block, initial, locale }: { block: BlockInfo; initial: PatternResult; locale: Locale }) {
   return (
-    <Suspense fallback={<BlockBuilder block={block} initialState={defaultState(block)} initialResult={initial} />}>
-      <FromShareLink block={block} initial={initial} />
+    <Suspense fallback={<BlockBuilder block={block} locale={locale} initialState={defaultState(block, locale)} initialResult={initial} />}>
+      <FromShareLink block={block} initial={initial} locale={locale} />
     </Suspense>
   );
 }

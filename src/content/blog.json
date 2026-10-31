@@ -1,19 +1,111 @@
 [
   {
+    "slug": "now-in-five-languages",
+    "title": "Endless Patterns now speaks five languages",
+    "date": "2026-10-30",
+    "summary": "The site is now in English, Spanish, French, German and Brazilian Portuguese, with colors that shift a little for each.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Every page, cutting list, row instruction and PDF is now available in [Español](/es/), [Français](/fr/), [Deutsch](/de/) and [Português](/pt/). Use the language links at the top of any page to switch."
+      },
+      {
+        "type": "heading",
+        "text": "Colors that follow the language"
+      },
+      {
+        "type": "paragraph",
+        "text": "Each language gets a subtle shift in the site's colors and default palette, loosely inspired by a flag commonly associated with it. Each sample below opens in that language."
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "block",
+            "slug": "ohio-star",
+            "query": "",
+            "view": "block",
+            "locale": "es",
+            "caption": "Ohio Star in Spanish colors"
+          },
+          {
+            "kind": "block",
+            "slug": "sawtooth-star",
+            "query": "",
+            "view": "block",
+            "locale": "fr",
+            "caption": "Sawtooth Star in French colors"
+          },
+          {
+            "kind": "block",
+            "slug": "pinwheel",
+            "query": "",
+            "view": "block",
+            "locale": "de",
+            "caption": "Pinwheel in German colors"
+          },
+          {
+            "kind": "block",
+            "slug": "variable-star",
+            "query": "",
+            "view": "block",
+            "locale": "pt",
+            "caption": "Variable Star in Brazilian colors"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "A first draft"
+      },
+      {
+        "type": "paragraph",
+        "text": "These translations are a first draft and haven't been reviewed by crafters yet. Block and stitch names stay in English, measurements stay in inches and yards, and needle and hook sizes use US numbering. Crochet uses local abbreviations, with the US term in parentheses."
+      }
+    ]
+  },
+  {
     "slug": "blog-and-changelog",
     "title": "A blog and changelog for what's new",
     "date": "2026-10-30",
     "summary": "New features now get a post with samples you can open and change, and every update goes in the changelog.",
     "body": [
-      { "type": "paragraph", "text": "Endless Patterns now has this blog and a [changelog](/changelog/). The changelog is the short list of what changed and when. Blog posts are for bigger additions, with examples you can try." },
-      { "type": "heading", "text": "Samples you can open and change" },
-      { "type": "paragraph", "text": "Each sample in a post is a link into the matching tool, with the same settings already filled in. Open one, then change the size, colors or gauge to make it your own." },
+      {
+        "type": "paragraph",
+        "text": "Endless Patterns now has this blog and a [changelog](/changelog/). The changelog is the short list of what changed and when. Blog posts are for bigger additions, with examples you can try."
+      },
+      {
+        "type": "heading",
+        "text": "Samples you can open and change"
+      },
+      {
+        "type": "paragraph",
+        "text": "Each sample in a post is a link into the matching tool, with the same settings already filled in. Open one, then change the size, colors or gauge to make it your own."
+      },
       {
         "type": "samples",
         "items": [
-          { "kind": "block", "slug": "bears-paw", "query": "size=14&cols=3&rows=3&sash=2&border=2", "view": "quilt", "caption": "Bear's Paw, nine 14\" blocks with sashing" },
-          { "kind": "knit", "slug": "seed-stitch", "query": "color=6f8467", "view": "swatch", "caption": "Seed Stitch in sage" },
-          { "kind": "crochet", "slug": "mesh-stitch", "query": "color=9c2b23", "view": "swatch", "caption": "Mesh Stitch in barn red" }
+          {
+            "kind": "block",
+            "slug": "bears-paw",
+            "query": "size=14&cols=3&rows=3&sash=2&border=2",
+            "view": "quilt",
+            "caption": "Bear's Paw, nine 14\" blocks with sashing"
+          },
+          {
+            "kind": "knit",
+            "slug": "seed-stitch",
+            "query": "color=6f8467",
+            "view": "swatch",
+            "caption": "Seed Stitch in sage"
+          },
+          {
+            "kind": "crochet",
+            "slug": "mesh-stitch",
+            "query": "color=9c2b23",
+            "view": "swatch",
+            "caption": "Mesh Stitch in barn red"
+          }
         ]
       }
     ]
@@ -24,8 +116,14 @@
     "date": "2026-10-30",
     "summary": "Pick a stitch, enter your size and gauge, and get a starting count, written rows, a chart and a yarn estimate.",
     "body": [
-      { "type": "paragraph", "text": "There are now 9 [knitting stitches](/knitting/) and 7 [crochet stitches](/crochet/). Each page works out your project from your own gauge, so the numbers fit the yarn and tools you're using." },
-      { "type": "heading", "text": "What you get" },
+      {
+        "type": "paragraph",
+        "text": "There are now 9 [knitting stitches](/knitting/) and 7 [crochet stitches](/crochet/). Each page works out your project from your own gauge, so the numbers fit the yarn and tools you're using."
+      },
+      {
+        "type": "heading",
+        "text": "What you get"
+      },
       {
         "type": "list",
         "items": [
@@ -35,17 +133,44 @@
           "A rough yarn estimate"
         ]
       },
-      { "type": "heading", "text": "Try one" },
+      {
+        "type": "heading",
+        "text": "Try one"
+      },
       {
         "type": "samples",
         "items": [
-          { "kind": "knit", "slug": "two-by-two-rib", "query": "l=60", "view": "swatch", "caption": "2x2 Rib, set up as an 8\" x 60\" scarf" },
-          { "kind": "knit", "slug": "basketweave", "query": "color=b5533c", "view": "chart", "caption": "Basketweave chart" },
-          { "kind": "crochet", "slug": "v-stitch", "query": "w=30&l=36&color=2c8c99", "view": "swatch", "caption": "V-Stitch, set up as a baby blanket" }
+          {
+            "kind": "knit",
+            "slug": "two-by-two-rib",
+            "query": "l=60",
+            "view": "swatch",
+            "caption": "2x2 Rib, set up as an 8\" x 60\" scarf"
+          },
+          {
+            "kind": "knit",
+            "slug": "basketweave",
+            "query": "color=b5533c",
+            "view": "chart",
+            "caption": "Basketweave chart"
+          },
+          {
+            "kind": "crochet",
+            "slug": "v-stitch",
+            "query": "w=30&l=36&color=2c8c99",
+            "view": "swatch",
+            "caption": "V-Stitch, set up as a baby blanket"
+          }
         ]
       },
-      { "type": "heading", "text": "Swatch first" },
-      { "type": "paragraph", "text": "The starting gauge for each yarn weight is only a typical value, and the yarn figure is a rough estimate. Work a 4\" swatch, enter what you measure, and buy some extra yarn. [How the calculations work](/about/) explains the assumptions." }
+      {
+        "type": "heading",
+        "text": "Swatch first"
+      },
+      {
+        "type": "paragraph",
+        "text": "The starting gauge for each yarn weight is only a typical value, and the yarn figure is a rough estimate. Work a 4\" swatch, enter what you measure, and buy some extra yarn. [How the calculations work](/about/) explains the assumptions."
+      }
     ]
   },
   {
@@ -54,17 +179,44 @@
     "date": "2026-10-30",
     "summary": "Set a block's size, colors and layout, then get a cutting list, yardage, seamless repeats and printable templates.",
     "body": [
-      { "type": "paragraph", "text": "The [quilt block builder](/blocks/) covers 36 traditional blocks, from a simple [Nine Patch](/blocks/nine-patch/) to curved and appliquéd designs. Choose any finished size from 3\" to 24\", set your colors and lay out a whole quilt." },
-      { "type": "heading", "text": "Samples to start from" },
+      {
+        "type": "paragraph",
+        "text": "The [quilt block builder](/blocks/) covers 36 traditional blocks, from a simple [Nine Patch](/blocks/nine-patch/) to curved and appliquéd designs. Choose any finished size from 3\" to 24\", set your colors and lay out a whole quilt."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
       {
         "type": "samples",
         "items": [
-          { "kind": "block", "slug": "log-cabin", "query": "size=10.5&rows=4&border=0&set=quadrants&seams=1", "view": "quilt", "caption": "Log Cabin, turned by quadrant" },
-          { "kind": "block", "slug": "ohio-star", "query": "cols=3&rows=4&sash=2&border=4&f_ground=f7f1e3&f_star=9c2b23&f_center=2f3e46&f_sashing=f7f1e3&f_border=9c2b23", "view": "quilt", "caption": "Ohio Star in barn red, with sashing" },
-          { "kind": "block", "slug": "dresden-plate", "query": "", "view": "block", "caption": "Dresden Plate, appliquéd to a background" }
+          {
+            "kind": "block",
+            "slug": "log-cabin",
+            "query": "size=10.5&rows=4&border=0&set=quadrants&seams=1",
+            "view": "quilt",
+            "caption": "Log Cabin, turned by quadrant"
+          },
+          {
+            "kind": "block",
+            "slug": "ohio-star",
+            "query": "cols=3&rows=4&sash=2&border=4&f_ground=f7f1e3&f_star=9c2b23&f_center=2f3e46&f_sashing=f7f1e3&f_border=9c2b23",
+            "view": "quilt",
+            "caption": "Ohio Star in barn red, with sashing"
+          },
+          {
+            "kind": "block",
+            "slug": "dresden-plate",
+            "query": "",
+            "view": "block",
+            "caption": "Dresden Plate, appliquéd to a background"
+          }
         ]
       },
-      { "type": "heading", "text": "What you get" },
+      {
+        "type": "heading",
+        "text": "What you get"
+      },
       {
         "type": "list",
         "items": [
@@ -74,7 +226,10 @@
           "A PDF with piecing steps and true-size templates"
         ]
       },
-      { "type": "paragraph", "text": "When a size falls between ruler marks, the builder rounds the cut up, says so, and suggests the nearest sizes that divide evenly. Check the figures before you buy or cut." }
+      {
+        "type": "paragraph",
+        "text": "When a size falls between ruler marks, the builder rounds the cut up, says so, and suggests the nearest sizes that divide evenly. Check the figures before you buy or cut."
+      }
     ]
   }
 ]

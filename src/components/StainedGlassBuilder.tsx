@@ -6,6 +6,10 @@ import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { fill, messages } from "@/lib/i18n";
 import text from "@/i18n/messages/stainedGlass.json";
 import { CAME_WIDTHS, GLASS_DETAILS, GLASS_LAYOUTS, GLASS_PALETTES, GLASS_SIDES, HEART_WIDTHS, serializeStainedGlassState } from "@/lib/stainedGlassState";
+import { OptionNav, useOptionNavigation } from "./OptionNav";
+import { PalettePicker } from "./PalettePicker";
+import { syncShareLink } from "@/lib/toolOptions";
+import { paletteAccents } from "@/lib/palettes";
 import styles from "./BlockBuilder.module.css";
 
 /** Came is measured in fractions, so 0.046875 shows as 3/64". */
@@ -34,9 +38,10 @@ function Select({ label, value, options, format, onChange }: { label: string; va
   );
 }
 
-export function StainedGlassBuilder({ locale, initialState, initialResult }: { locale: Locale; initialState: StainedGlassRequest; initialResult: StainedGlassResult }) {
+export function StainedGlassBuilder({ locale, option, labels, initialState, initialResult }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: StainedGlassRequest; initialResult: StainedGlassResult }) {
   const t = text[locale];
   const b = messages(locale).builder;
+  const goToOption = useOptionNavigation("stainedGlass", locale);
   const [state, setState] = useState(initialState);
   const [result, setResult] = useState(initialResult);
   const [view, setView] = useState<"panel" | "numbered">("panel");
@@ -62,8 +67,8 @@ export function StainedGlassBuilder({ locale, initialState, initialResult }: { l
 
   useEffect(() => {
     const query = serializeStainedGlassState(state);
-    window.history.replaceState(window.history.state, "", query ? `?${query}` : window.location.pathname);
-  }, [state]);
+    syncShareLink(query, "stainedGlass", option);
+  }, [state, option]);
 
   const run = async (working: string, done: string, action: () => Promise<void> | void) => {
     setBusy(true);
@@ -83,6 +88,7 @@ export function StainedGlassBuilder({ locale, initialState, initialResult }: { l
 
   return (
     <div className={styles.builder}>
+      <OptionNav tool="stainedGlass" locale={locale} current={option} labels={labels} />
       <div className={styles.workspace}>
         <section className={styles.preview} aria-label={b.preview}>
           <div className={styles.tabs}>
@@ -118,7 +124,7 @@ export function StainedGlassBuilder({ locale, initialState, initialResult }: { l
             <legend>{t.layout}</legend>
             <div className={styles.presets}>
               {GLASS_LAYOUTS.map((layout) => (
-                <button key={layout} type="button" aria-pressed={state.layout === layout} className={state.layout === layout ? styles.tabOn : styles.tab} onClick={() => update({ layout })}>
+                <button key={layout} type="button" aria-pressed={state.layout === layout} className={state.layout === layout ? styles.tabOn : styles.tab} onClick={() => goToOption(layout)}>
                   {t.layouts[layout]}
                 </button>
               ))}
@@ -166,6 +172,7 @@ export function StainedGlassBuilder({ locale, initialState, initialResult }: { l
                 );
               })}
             </div>
+            <PalettePicker locale={locale} current={[state.colors[3], state.colors[1], state.colors[0], state.colors[2]]} onApply={(c) => { const [main, center, second] = paletteAccents(c, 3); update({ colors: [center, main, second, c[0]] }); }} />
           </fieldset>
         </form>
       </div>

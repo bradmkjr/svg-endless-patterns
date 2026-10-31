@@ -1,0 +1,76 @@
+import { parseCelticKnotState } from "./celticKnotState";
+import { parseCrossStitchState } from "./crossStitchState";
+import { generateCelticKnot, generateCrossStitch, generateGirih, generateMandala, generatePattern, generateSashiko, generateStainedGlass, generateStitchPattern, generateTartan, generateTessellation, generateTruchet, getBlocks, getStitchPatterns } from "./generator";
+import { parseGirihState } from "./girihState";
+import { parseMandalaState } from "./mandalaState";
+import { parseSashikoState } from "./sashikoState";
+import { parseStainedGlassState } from "./stainedGlassState";
+import { defaultState } from "./state";
+import { defaultStitchState } from "./stitchState";
+import { defaultTartanState, TARTAN_PRESETS } from "./tartanState";
+import { parseTessellationState } from "./tessellationState";
+import { TOOL_OPTIONS, withOption, type ThumbGroup, type ToolId } from "./toolOptions";
+import { parseTruchetState } from "./truchetState";
+
+/**
+ * Small pictures, built as static files so a page full of them stays light. They're
+ * in the default English colors, because a picture is only a way to find a pattern.
+ */
+
+/** A seamless tile repeated to fill a square `view` units wide, in the tile's own units. */
+function fillWith(tile: string, view: number): string {
+  const [, w, h] = /viewBox="0 0 ([\d.]+) ([\d.]+)"/.exec(tile)!;
+  const inner = tile.replace(/<title>.*?<\/title>/, "").replace(/<svg[^>]*>/, (open) => open.replace(/ (width|height)="[^"]*"/g, "").replace("<svg", `<svg width="${w}" height="${h}"`));
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${view} ${view}"><defs><pattern id="tile" width="${w}" height="${h}" patternUnits="userSpaceOnUse">${inner}</pattern></defs><rect width="${view}" height="${view}" fill="url(#tile)"/></svg>`;
+}
+
+const tileWidth = (tile: string) => Number(/viewBox="0 0 ([\d.]+) /.exec(tile)![1]);
+const tileHeight = (tile: string) => Number(/viewBox="0 0 [\d.]+ ([\d.]+)"/.exec(tile)![1]);
+
+const TOOL_DRAW: Record<ToolId, (params: URLSearchParams) => Promise<string>> = {
+  truchet: async (p) => {
+    const { repeat } = (await generateTruchet(parseTruchetState(p))).svg;
+    return fillWith(repeat, tileWidth(repeat) * 2);
+  },
+  tessellation: async (p) => {
+    const { repeat } = (await generateTessellation(parseTessellationState(p))).svg;
+    return fillWith(repeat, tileWidth(repeat) * 2);
+  },
+  // The girih repeat is wider than tall, so it's sized by height, two rows to a card.
+  girih: async (p) => {
+    const { repeat } = (await generateGirih(parseGirihState(p))).svg;
+    return fillWith(repeat, tileHeight(repeat) * 2);
+  },
+  sashiko: async (p) => (await generateSashiko({ ...parseSashikoState(p), width: 6, height: 6 })).svg.panel,
+  celticKnot: async (p) => (await generateCelticKnot(parseCelticKnotState(p))).svg.art,
+  stainedGlass: async (p) => (await generateStainedGlass(parseStainedGlassState(p))).svg.panel,
+  crossStitch: async (p) => (await generateCrossStitch(parseCrossStitchState(p))).svg.stitched,
+  mandala: async (p) => (await generateMandala(parseMandalaState(p))).svg.art,
+};
+
+export const drawToolThumb = (tool: ToolId, slug?: string) => TOOL_DRAW[tool](withOption(tool, slug));
+
+async function stitchThumbs(craft: "knit" | "crochet") {
+  const stitches = await getStitchPatterns(craft);
+  return stitches.map((stitch) => ({
+    group: craft as ThumbGroup,
+    slug: stitch.slug,
+    draw: async () => {
+      const { swatch } = (await generateStitchPattern(stitch.slug, defaultStitchState(stitch))).svg;
+      // Every picture shows 4" of fabric, so scales compare directly.
+      return fillWith(swatch, 4);
+    },
+  }));
+}
+
+/** Every thumbnail the site offers. */
+export async function allThumbs(): Promise<{ group: ThumbGroup; slug: string; draw: () => Promise<string> }[]> {
+  const blocks = await getBlocks();
+  return [
+    ...blocks.map((block) => ({ group: "blocks" as ThumbGroup, slug: block.slug, draw: async () => (await generatePattern(block.slug, defaultState(block))).svg.block })),
+    ...(await stitchThumbs("knit")),
+    ...(await stitchThumbs("crochet")),
+    ...TARTAN_PRESETS.map((preset) => ({ group: "tartan" as ThumbGroup, slug: preset.id, draw: async () => (await generateTartan({ ...defaultTartanState(), stripes: preset.stripes })).svg.swatch })),
+    ...(Object.keys(TOOL_OPTIONS) as ToolId[]).flatMap((tool) => TOOL_OPTIONS[tool].options.map((option) => ({ group: tool as ThumbGroup, slug: option.slug, draw: () => drawToolThumb(tool, option.slug) }))),
+  ];
+}

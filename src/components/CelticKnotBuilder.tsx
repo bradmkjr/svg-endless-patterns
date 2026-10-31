@@ -6,6 +6,10 @@ import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { fill, messages } from "@/lib/i18n";
 import celticText from "@/i18n/messages/celticKnot.json";
 import { DENSITY_OPTIONS, INCH_OPTIONS, INTERLACE_OPTIONS, MAX_COLORS, MAX_SEED, PATTERN_OPTIONS, RIBBON_OPTIONS, SEEDED_PATTERNS, serializeCelticKnotState, SIZE_OPTIONS } from "@/lib/celticKnotState";
+import { OptionNav, useOptionNavigation } from "./OptionNav";
+import { PalettePicker } from "./PalettePicker";
+import { syncShareLink } from "@/lib/toolOptions";
+import { paletteAccents } from "@/lib/palettes";
 import styles from "./BlockBuilder.module.css";
 
 type View = keyof CelticKnotResult["svg"];
@@ -24,9 +28,10 @@ function NumberSelect({ label, value, options, unit = "", onChange }: { label: s
   );
 }
 
-export function CelticKnotBuilder({ locale, initialState, initialResult }: { locale: Locale; initialState: CelticKnotRequest; initialResult: CelticKnotResult }) {
+export function CelticKnotBuilder({ locale, option, labels, initialState, initialResult }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: CelticKnotRequest; initialResult: CelticKnotResult }) {
   const b = messages(locale).builder;
   const t = celticText[locale];
+  const goToOption = useOptionNavigation("celticKnot", locale);
   const [state, setState] = useState(initialState);
   const [result, setResult] = useState(initialResult);
   const [view, setView] = useState<View>("art");
@@ -53,8 +58,8 @@ export function CelticKnotBuilder({ locale, initialState, initialResult }: { loc
 
   useEffect(() => {
     const query = serializeCelticKnotState(state);
-    window.history.replaceState(window.history.state, "", query ? `?${query}` : window.location.pathname);
-  }, [state]);
+    syncShareLink(query, "celticKnot", option);
+  }, [state, option]);
 
   const run = async (working: string, done: string, action: () => Promise<void> | void) => {
     setBusy(true);
@@ -74,6 +79,7 @@ export function CelticKnotBuilder({ locale, initialState, initialResult }: { loc
 
   return (
     <div className={styles.builder}>
+      <OptionNav tool="celticKnot" locale={locale} current={option} labels={labels} />
       <div className={styles.workspace}>
         <section className={styles.preview} aria-label={b.preview}>
           <div className={`${styles.tabs} no-print`}>
@@ -119,7 +125,7 @@ export function CelticKnotBuilder({ locale, initialState, initialResult }: { loc
             <legend>{t.breaks}</legend>
             <label className={styles.field}>
               <span>{t.pattern}</span>
-              <select value={state.pattern} onChange={(e) => update({ pattern: PATTERN_OPTIONS.find((p) => p === e.target.value) ?? state.pattern })}>
+              <select value={state.pattern} onChange={(e) => goToOption(e.target.value)}>
                 {PATTERN_OPTIONS.map((pattern) => (
                   <option key={pattern} value={pattern}>
                     {t.patterns[pattern]}
@@ -198,6 +204,7 @@ export function CelticKnotBuilder({ locale, initialState, initialResult }: { loc
               <input type="checkbox" checked={state.perStrand} onChange={(e) => update({ perStrand: e.target.checked })} />
               {t.perStrand}
             </label>
+            <PalettePicker locale={locale} current={[state.background, ...state.colors]} onApply={(c) => update({ background: c[0], outline: c[1], colors: paletteAccents(c, state.colors.length) })} />
           </fieldset>
 
           <fieldset>

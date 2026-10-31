@@ -6,6 +6,9 @@ import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { fill, messages } from "@/lib/i18n";
 import { COUNT_OPTIONS, GIRIH_PALETTES, REPEAT_OPTIONS, serializeGirihState, STARS_FOR, SYMMETRY_OPTIONS, WEIGHT_OPTIONS } from "@/lib/girihState";
 import text from "@/i18n/messages/girih.json";
+import { OptionNav, useOptionNavigation } from "./OptionNav";
+import { PalettePicker } from "./PalettePicker";
+import { slugFor, syncShareLink } from "@/lib/toolOptions";
 import styles from "./BlockBuilder.module.css";
 
 type View = "pattern" | "repeat" | "panel" | "stencil";
@@ -27,9 +30,10 @@ function NumberSelect({ label, value, options, unit = "", onChange }: { label: s
 const PREVIEW_UNITS = 900;
 const COLOR_ROLES = ["background", "primary", "accent", "line"] as const;
 
-export function GirihBuilder({ locale, initialState, initialResult }: { locale: Locale; initialState: GirihRequest; initialResult: GirihResult }) {
+export function GirihBuilder({ locale, option, labels, initialState, initialResult }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: GirihRequest; initialResult: GirihResult }) {
   const t = text[locale];
   const b = messages(locale).builder;
+  const goToOption = useOptionNavigation("girih", locale);
   const [state, setState] = useState(initialState);
   const [result, setResult] = useState(initialResult);
   const [view, setView] = useState<View>("pattern");
@@ -38,8 +42,6 @@ export function GirihBuilder({ locale, initialState, initialResult }: { locale: 
 
   const update = (patch: Partial<GirihRequest>) => setState((s) => ({ ...s, ...patch }));
   const setColor = (role: keyof GirihColors, color: string) => setState((s) => ({ ...s, colors: { ...s.colors, [role]: color } }));
-  // A star type this symmetry can't draw goes back to the plain star.
-  const setSymmetry = (symmetry: GirihSymmetry) => setState((s) => ({ ...s, symmetry, star: STARS_FOR[symmetry].includes(s.star) ? s.star : "star" }));
 
   useEffect(() => {
     let stale = false;
@@ -58,8 +60,8 @@ export function GirihBuilder({ locale, initialState, initialResult }: { locale: 
 
   useEffect(() => {
     const query = serializeGirihState(state);
-    window.history.replaceState(window.history.state, "", query ? `?${query}` : window.location.pathname);
-  }, [state]);
+    syncShareLink(query, "girih", option);
+  }, [state, option]);
 
   const run = async (working: string, done: string, action: () => Promise<void> | void) => {
     setBusy(true);
@@ -89,6 +91,7 @@ export function GirihBuilder({ locale, initialState, initialResult }: { locale: 
 
   return (
     <div className={styles.builder}>
+      <OptionNav tool="girih" locale={locale} current={option} labels={labels} />
       <div className={styles.workspace}>
         <section className={styles.preview} aria-label={b.preview}>
           <div className={`${styles.tabs} no-print`} role="group" aria-label={b.previewType}>
@@ -135,7 +138,7 @@ export function GirihBuilder({ locale, initialState, initialResult }: { locale: 
             <legend>{t.design}</legend>
             <label className={styles.field}>
               <span>{t.symmetry}</span>
-              <select value={state.symmetry} onChange={(e) => setSymmetry(Number(e.target.value) as GirihSymmetry)}>
+              <select value={state.symmetry} onChange={(e) => goToOption(slugFor("girih", e.target.value)!)}>
                 {SYMMETRY_OPTIONS.map((n) => (
                   <option key={n} value={n}>
                     {n === 10 ? t.symmetryGirih : fill(t.symmetryStar, { n })}
@@ -179,6 +182,7 @@ export function GirihBuilder({ locale, initialState, initialResult }: { locale: 
                 </label>
               ))}
             </div>
+            <PalettePicker locale={locale} current={[state.colors.background, state.colors.primary, state.colors.accent, state.colors.line]} onApply={(c) => update({ colors: { background: c[0], primary: c[1], accent: c[2] ?? c[1], line: c[3] ?? c[1] } })} />
           </fieldset>
 
           <fieldset>

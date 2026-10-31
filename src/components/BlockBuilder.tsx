@@ -5,6 +5,7 @@ import { generatePattern, generatePdf, type BlockInfo, type CutLine, type Locale
 import { fill, messages } from "@/lib/i18n";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { BORDER_OPTIONS, COUNT_OPTIONS, paletteColors, palettesFor, SASHING_OPTIONS, serializeState, SETTINGS, SIZE_OPTIONS, WOF_OPTIONS } from "@/lib/state";
+import { PalettePicker } from "./PalettePicker";
 import styles from "./BlockBuilder.module.css";
 
 type View = "block" | "quilt" | "tile";
@@ -181,6 +182,7 @@ export function BlockBuilder({ block, locale, initialState, initialResult }: { b
               <input type="checkbox" checked={state.seams} onChange={(e) => update({ seams: e.target.checked })} />
               {t.showSeams}
             </label>
+            <PalettePicker locale={locale} current={block.fabrics.map((f) => state.colors[f.id])} onApply={(c) => update({ colors: paletteColors(block, { id: "flag", colors: c, sashing: c[0], border: c[1] }) })} />
           </fieldset>
 
           <fieldset>

@@ -1,0 +1,69 @@
+.picker {
+  margin-top: 0.8rem;
+}
+
+.picker summary {
+  color: var(--accent);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.body {
+  max-height: 26rem;
+  margin-top: 0.5rem;
+  padding-right: 0.25rem;
+  overflow-y: auto;
+}
+
+.body h3 {
+  margin: 0.8rem 0 0.4rem;
+  font-size: 1rem;
+}
+
+.body h4 {
+  margin: 0 0 0.3rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.group {
+  margin-bottom: 0.3rem;
+}
+
+.mine {
+  margin: 0 0 0.6rem;
+  padding: 0;
+  list-style: none;
+}
+
+.mine li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.mine li > span {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.save {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.save input {
+  flex: 1 1 8rem;
+  min-width: 0;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: var(--surface);
+  color: var(--foreground);
+  font: inherit;
+  font-size: 1rem;
+}

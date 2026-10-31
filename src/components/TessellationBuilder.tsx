@@ -6,6 +6,9 @@ import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { fill, messages } from "@/lib/i18n";
 import { COUNT_OPTIONS, REPEAT_OPTIONS, serializeTessellationState, TESSELLATION_PALETTES } from "@/lib/tessellationState";
 import text from "@/i18n/messages/tessellation.json";
+import { OptionNav, useOptionNavigation } from "./OptionNav";
+import { PalettePicker } from "./PalettePicker";
+import { syncShareLink } from "@/lib/toolOptions";
 import styles from "./BlockBuilder.module.css";
 
 type View = "pattern" | "repeat" | "layout";
@@ -26,9 +29,10 @@ function NumberSelect({ label, value, options, unit = "", onChange }: { label: s
 /** Lattice units shown across the square preview, so a motif looks about the same size in any group. */
 const PREVIEW_UNITS = 600;
 
-export function TessellationBuilder({ locale, options, initialState, initialResult }: { locale: Locale; options: TessellationOptions; initialState: TessellationRequest; initialResult: TessellationResult }) {
+export function TessellationBuilder({ locale, options, option, labels, initialState, initialResult }: { locale: Locale; options: TessellationOptions; option?: string; labels: Record<string, string>; initialState: TessellationRequest; initialResult: TessellationResult }) {
   const t = text[locale];
   const b = messages(locale).builder;
+  const goToOption = useOptionNavigation("tessellation", locale);
   const [state, setState] = useState(initialState);
   const [result, setResult] = useState(initialResult);
   const [view, setView] = useState<View>("pattern");
@@ -55,8 +59,8 @@ export function TessellationBuilder({ locale, options, initialState, initialResu
 
   useEffect(() => {
     const query = serializeTessellationState(state);
-    window.history.replaceState(window.history.state, "", query ? `?${query}` : window.location.pathname);
-  }, [state]);
+    syncShareLink(query, "tessellation", option);
+  }, [state, option]);
 
   const run = async (working: string, done: string, action: () => Promise<void> | void) => {
     setBusy(true);
@@ -78,6 +82,7 @@ export function TessellationBuilder({ locale, options, initialState, initialResu
 
   return (
     <div className={styles.builder}>
+      <OptionNav tool="tessellation" locale={locale} current={option} labels={labels} />
       <div className={styles.workspace}>
         <section className={styles.preview} aria-label={b.preview}>
           <div className={`${styles.tabs} no-print`} role="group" aria-label={b.previewType}>
@@ -128,7 +133,7 @@ export function TessellationBuilder({ locale, options, initialState, initialResu
             <legend>{t.design}</legend>
             <label className={styles.field}>
               <span>{t.group}</span>
-              <select value={state.group} onChange={(e) => update({ group: e.target.value as GroupId })}>
+              <select value={state.group} onChange={(e) => goToOption(e.target.value)}>
                 {families.map((family) => (
                   <optgroup key={family} label={family}>
                     {options.groups
@@ -175,6 +180,7 @@ export function TessellationBuilder({ locale, options, initialState, initialResu
                 </label>
               ))}
             </div>
+            <PalettePicker locale={locale} current={[state.colors.background, state.colors.primary, state.colors.accent]} onApply={(c) => update({ colors: { background: c[0], primary: c[1], accent: c[2] ?? c[1] } })} />
           </fieldset>
 
           <fieldset>

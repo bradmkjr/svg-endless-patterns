@@ -6,6 +6,9 @@ import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { fill, messages } from "@/lib/i18n";
 import copy from "@/i18n/messages/sashiko.json";
 import { COLOR_PRESETS, MOTIF_OPTIONS, PANEL_OPTIONS, serializeSashikoState, SPACING_OPTIONS, STITCH_OPTIONS } from "@/lib/sashikoState";
+import { OptionNav, useOptionNavigation } from "./OptionNav";
+import { PalettePicker } from "./PalettePicker";
+import { syncShareLink } from "@/lib/toolOptions";
 import styles from "./BlockBuilder.module.css";
 
 function NumberSelect({ label, value, options, onChange }: { label: string; value: number; options: { value: number; label: string }[]; onChange: (value: number) => void }) {
@@ -25,9 +28,10 @@ function NumberSelect({ label, value, options, onChange }: { label: string; valu
 
 const inchOptions = (values: number[]) => values.map((value) => ({ value, label: `${value}"` }));
 
-export function SashikoBuilder({ locale, initialState, initialResult }: { locale: Locale; initialState: SashikoRequest; initialResult: SashikoResult }) {
+export function SashikoBuilder({ locale, option, labels, initialState, initialResult }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: SashikoRequest; initialResult: SashikoResult }) {
   const t = copy[locale];
   const b = messages(locale).builder;
+  const goToOption = useOptionNavigation("sashiko", locale);
   const [state, setState] = useState(initialState);
   const [result, setResult] = useState(initialResult);
   const [status, setStatus] = useState("");
@@ -52,8 +56,8 @@ export function SashikoBuilder({ locale, initialState, initialResult }: { locale
 
   useEffect(() => {
     const query = serializeSashikoState(state);
-    window.history.replaceState(window.history.state, "", query ? `?${query}` : window.location.pathname);
-  }, [state]);
+    syncShareLink(query, "sashiko", option);
+  }, [state, option]);
 
   const run = async (working: string, done: string, action: () => Promise<void> | void) => {
     setBusy(true);
@@ -73,6 +77,7 @@ export function SashikoBuilder({ locale, initialState, initialResult }: { locale
 
   return (
     <div className={styles.builder}>
+      <OptionNav tool="sashiko" locale={locale} current={option} labels={labels} />
       <div className={styles.workspace}>
         <section className={styles.preview} aria-label={b.preview}>
           <div className={`${styles.art} ${styles.quiltArt}`} role="img" aria-label={t.panelAlt} dangerouslySetInnerHTML={{ __html: panel }} />
@@ -101,7 +106,7 @@ export function SashikoBuilder({ locale, initialState, initialResult }: { locale
             <legend>{t.motif}</legend>
             <div className={styles.presets}>
               {MOTIF_OPTIONS.map((motif) => (
-                <button key={motif} type="button" className={state.motif === motif ? styles.tabOn : styles.tab} aria-pressed={state.motif === motif} onClick={() => update({ motif })}>
+                <button key={motif} type="button" className={state.motif === motif ? styles.tabOn : styles.tab} aria-pressed={state.motif === motif} onClick={() => goToOption(motif)}>
                   {t.motifs[motif]}
                 </button>
               ))}
@@ -138,6 +143,7 @@ export function SashikoBuilder({ locale, initialState, initialResult }: { locale
                 {t.thread}
               </label>
             </div>
+            <PalettePicker locale={locale} current={[state.thread, state.cloth]} onApply={(c) => update({ cloth: c[1], thread: c[0] })} />
           </fieldset>
         </form>
       </div>

@@ -10,7 +10,8 @@
     "library": "Biblioteca de patrones",
     "blog": "Blog",
     "how": "Cómo funciona",
-    "language": "Idioma"
+    "language": "Idioma",
+    "palettes": "Colores"
   },
   "footer": {
     "note": "Todo lo que crees aquí se puede descargar y usar gratis. Comprueba las medidas antes de cortar: las cifras se ofrecen tal cual, sin garantía.",
@@ -36,7 +37,9 @@
     "crochetText": "Cadenetas iniciales, instrucciones vuelta a vuelta y gráficos de símbolos.",
     "quiltHeading": "Bloques de colcha",
     "knitHeading": "Puntos de tejido",
-    "crochetHeading": "Puntos de ganchillo"
+    "crochetHeading": "Puntos de ganchillo",
+    "typesHeading": "Tipos de patrón",
+    "seeAll": "Ver los {n}"
   },
   "blocks": {
     "metaTitle": "Bloques tradicionales de colcha para personalizar",
@@ -109,7 +112,8 @@
     "batting": "Guata",
     "allowance": "Incluye un margen del 10 %. Comprueba las cifras antes de comprar.",
     "howTo": "Cómo montarlo",
-    "tileAlt": "Repetición continua de {name}"
+    "tileAlt": "Repetición continua de {name}",
+    "browseOptions": "Explorar las opciones"
   },
   "settings": {
     "straight": "Todos en la misma dirección",
@@ -171,7 +175,7 @@
     "metaTitle": "Biblioteca de patrones",
     "metaDesc": "Descubre creadores de patrones para colchas, nudos celtas, estrellas geométricas, teselados, tartanes, sashiko, punto de cruz y vidrieras.",
     "h1": "Biblioteca de patrones",
-    "lede": "Patrones tradicionales y geométricos de distintas artesanías. Cada uno tiene su propia herramienta.",
+    "lede": "Todos los tipos de patrón del sitio, con ejemplos ordenados por nombre. Cada tipo tiene su propio generador.",
     "available": "Disponible",
     "quiltTitle": "Bloques de colcha",
     "quiltText": "Elige un bloque tradicional y personaliza su tamaño, colores, diseño y sashing.",
@@ -240,7 +244,8 @@
         "output": "Repetición continua en SVG y PNG, y PDF imprimible.",
         "explore": "Crear un patrón"
       }
-    }
+    },
+    "seeAllType": "Ver todo en {name}"
   },
   "about": {
     "metaTitle": "Cómo funcionan los cálculos",

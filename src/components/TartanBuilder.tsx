@@ -5,6 +5,8 @@ import { generateTartan, generateTartanPdf, type Locale, type TartanRequest, typ
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { fill, messages } from "@/lib/i18n";
 import { COUNT_OPTIONS, LENGTH_OPTIONS, MAX_STRIPES, serializeTartanState, TARTAN_PRESETS, TPI_OPTIONS, WIDTH_OPTIONS } from "@/lib/tartanState";
+import { PalettePicker } from "./PalettePicker";
+import { paletteAccents } from "@/lib/palettes";
 import styles from "./BlockBuilder.module.css";
 
 function NumberSelect({ label, value, options, unit = "", onChange }: { label: string; value: number; options: number[]; unit?: string; onChange: (value: number) => void }) {
@@ -129,6 +131,7 @@ export function TartanBuilder({ locale, initialState, initialResult }: { locale:
               <input type="checkbox" checked={state.mirrored} onChange={(e) => update({ mirrored: e.target.checked })} />
               {t.mirrored}
             </label>
+            <PalettePicker locale={locale} current={state.stripes.map((stripe) => stripe.color)} onApply={(c) => { const distinct = [...new Set(state.stripes.map((stripe) => stripe.color))]; const next = paletteAccents(c, distinct.length); update({ stripes: state.stripes.map((stripe) => ({ ...stripe, color: next[distinct.indexOf(stripe.color)] })) }); }} />
           </fieldset>
 
           <fieldset>

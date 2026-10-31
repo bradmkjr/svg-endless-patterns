@@ -19,6 +19,10 @@ import {
   setCell,
   STRAND_OPTIONS,
 } from "@/lib/crossStitchState";
+import { OptionNav, useOptionNavigation } from "./OptionNav";
+import { PalettePicker } from "./PalettePicker";
+import { syncShareLink } from "@/lib/toolOptions";
+import { paletteAccents } from "@/lib/palettes";
 import styles from "./BlockBuilder.module.css";
 import css from "./CrossStitchBuilder.module.css";
 import { CrossStitchBuilderGrid } from "./CrossStitchBuilderGrid";
@@ -43,9 +47,10 @@ function NumberSelect({ label, value, options, unit = "", onChange }: { label: s
   );
 }
 
-export function CrossStitchBuilder({ locale, initialState, initialResult }: { locale: Locale; initialState: CrossStitchRequest; initialResult: CrossStitchResult }) {
+export function CrossStitchBuilder({ locale, option, labels, initialState, initialResult }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: CrossStitchRequest; initialResult: CrossStitchResult }) {
   const t = catalog[locale];
   const b = messages(locale).builder;
+  const goToOption = useOptionNavigation("crossStitch", locale);
   const [state, setState] = useState(initialState);
   const [result, setResult] = useState(initialResult);
   const [view, setView] = useState<View>("stitched");
@@ -79,8 +84,8 @@ export function CrossStitchBuilder({ locale, initialState, initialResult }: { lo
 
   useEffect(() => {
     const query = serializeCrossStitchState(state);
-    window.history.replaceState(window.history.state, "", query ? `?${query}` : window.location.pathname);
-  }, [state]);
+    syncShareLink(query, "crossStitch", option);
+  }, [state, option]);
 
   const run = async (working: string, done: string, action: () => Promise<void> | void) => {
     setBusy(true);
@@ -107,6 +112,7 @@ export function CrossStitchBuilder({ locale, initialState, initialResult }: { lo
 
   return (
     <div className={styles.builder}>
+      <OptionNav tool="crossStitch" locale={locale} current={option} labels={labels} />
       <div className={styles.workspace}>
         <section className={styles.preview} aria-label={b.preview}>
           <div className={`${styles.tabs} no-print`}>
@@ -179,10 +185,7 @@ export function CrossStitchBuilder({ locale, initialState, initialResult }: { lo
                   key={motif.id}
                   type="button"
                   className={styles.tab}
-                  onClick={() => {
-                    update({ grid: motif.grid, colors: motifColors(motif, locale) });
-                    setTool(0);
-                  }}
+                  onClick={() => goToOption(motif.id)}
                 >
                   {t.motifs[motif.id]}
                 </button>
@@ -225,6 +228,7 @@ export function CrossStitchBuilder({ locale, initialState, initialResult }: { lo
               <input type="color" value={state.fabric} onChange={(e) => update({ fabric: e.target.value })} />
               {t.fabricColor}
             </label>
+            <PalettePicker locale={locale} current={[state.fabric, ...state.colors]} onApply={(c) => update({ fabric: c[0], colors: paletteAccents(c, state.colors.length) })} />
           </fieldset>
 
           <fieldset>

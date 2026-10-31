@@ -5,6 +5,7 @@ import { generateStitchPattern, generateStitchPdf, type Locale, type StitchInfo,
 import { fill, messages } from "@/lib/i18n";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { LENGTH_OPTIONS, PROJECTS, ROW_GAUGE_OPTIONS, serializeStitchState, startingGauge, STITCH_GAUGE_OPTIONS, WIDTH_OPTIONS, YARN_WEIGHTS } from "@/lib/stitchState";
+import { PalettePicker } from "./PalettePicker";
 import styles from "./BlockBuilder.module.css";
 
 type View = "swatch" | "chart";
@@ -163,6 +164,7 @@ export function StitchBuilder({ stitch, locale, initialState, initialResult }: {
               <input type="color" value={state.color} onChange={(e) => update({ color: e.target.value })} />
               {t.yarnColor}
             </label>
+            <PalettePicker locale={locale} current={[state.color]} onApply={(c) => update({ color: c[1] })} />
           </fieldset>
         </form>
       </div>

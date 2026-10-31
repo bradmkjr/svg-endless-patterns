@@ -10,7 +10,8 @@
     "library": "Pattern library",
     "blog": "Blog",
     "how": "How it works",
-    "language": "Language"
+    "language": "Language",
+    "palettes": "Colors"
   },
   "footer": {
     "note": "Everything you make here is free to download and use. Check measurements before you cut: figures are provided as-is, with no warranty.",
@@ -36,7 +37,9 @@
     "crochetText": "Starting chains, row-by-row instructions in US terms, and symbol charts.",
     "quiltHeading": "Quilt blocks",
     "knitHeading": "Knitting stitches",
-    "crochetHeading": "Crochet stitches"
+    "crochetHeading": "Crochet stitches",
+    "typesHeading": "Pattern types",
+    "seeAll": "See all {n}"
   },
   "blocks": {
     "metaTitle": "Traditional Quilt Blocks to Customize",
@@ -109,7 +112,8 @@
     "batting": "Batting",
     "allowance": "Includes a 10% allowance. Check the figures before you buy.",
     "howTo": "How to piece it",
-    "tileAlt": "{name} seamless repeat"
+    "tileAlt": "{name} seamless repeat",
+    "browseOptions": "Browse the options"
   },
   "settings": {
     "straight": "All the same way",
@@ -171,7 +175,7 @@
     "metaTitle": "Pattern Library",
     "metaDesc": "Explore pattern makers for quilting, Celtic knots, geometric stars, tessellations, tartans, sashiko, counted-thread crafts, and stained glass.",
     "h1": "Pattern library",
-    "lede": "Explore traditional and geometric patterns across crafts. Each one has its own maker.",
+    "lede": "Every pattern type on the site, with examples listed by name. Each type has its own maker.",
     "available": "Available",
     "quiltTitle": "Quilt blocks",
     "quiltText": "Choose a traditional block and customize its size, colors, layout, and sashing.",
@@ -240,7 +244,8 @@
         "output": "Seamless SVG and PNG repeat, and a printable PDF.",
         "explore": "Make a pattern"
       }
-    }
+    },
+    "seeAllType": "See everything in {name}"
   },
   "about": {
     "metaTitle": "How the Calculations Work",

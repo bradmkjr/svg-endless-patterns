@@ -10,7 +10,8 @@
     "library": "Musterbibliothek",
     "blog": "Blog",
     "how": "So funktioniert's",
-    "language": "Sprache"
+    "language": "Sprache",
+    "palettes": "Farben"
   },
   "footer": {
     "note": "Alles, was du hier erstellst, kannst du kostenlos herunterladen und verwenden. Prüfe die Maße vor dem Zuschneiden: Alle Angaben ohne Gewähr.",
@@ -36,7 +37,9 @@
     "crochetText": "Luftmaschenanschlag, Anleitung Reihe für Reihe und Häkelschriften.",
     "quiltHeading": "Quiltblöcke",
     "knitHeading": "Strickmuster",
-    "crochetHeading": "Häkelmuster"
+    "crochetHeading": "Häkelmuster",
+    "typesHeading": "Musterarten",
+    "seeAll": "Alle {n} ansehen"
   },
   "blocks": {
     "metaTitle": "Traditionelle Quiltblöcke zum Anpassen",
@@ -109,7 +112,8 @@
     "batting": "Vlies",
     "allowance": "Enthält 10 % Zugabe. Prüfe die Angaben vor dem Kauf.",
     "howTo": "So nähst du ihn",
-    "tileAlt": "Nahtloser Rapport von {name}"
+    "tileAlt": "Nahtloser Rapport von {name}",
+    "browseOptions": "Optionen durchsuchen"
   },
   "settings": {
     "straight": "Alle gleich ausgerichtet",
@@ -171,7 +175,7 @@
     "metaTitle": "Musterbibliothek",
     "metaDesc": "Entdecke Mustergeneratoren für Quilts, keltische Knoten, geometrische Sterne, Parkettierungen, Tartans, Sashiko, Kreuzstich und Buntglas.",
     "h1": "Musterbibliothek",
-    "lede": "Traditionelle und geometrische Muster aus vielen Handwerken. Jedes hat ein eigenes Werkzeug.",
+    "lede": "Alle Musterarten der Website, mit Beispielen nach Namen sortiert. Jede Art hat ihr eigenes Werkzeug.",
     "available": "Verfügbar",
     "quiltTitle": "Quiltblöcke",
     "quiltText": "Wähle einen traditionellen Block und passe Größe, Farben, Aufbau und Sashing an.",
@@ -240,7 +244,8 @@
         "output": "Nahtloser Rapport als SVG und PNG sowie druckbares PDF.",
         "explore": "Muster erstellen"
       }
-    }
+    },
+    "seeAllType": "Alles in {name} ansehen"
   },
   "about": {
     "metaTitle": "So funktionieren die Berechnungen",

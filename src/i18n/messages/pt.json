@@ -10,7 +10,8 @@
     "library": "Biblioteca de padrões",
     "blog": "Blog",
     "how": "Como funciona",
-    "language": "Idioma"
+    "language": "Idioma",
+    "palettes": "Cores"
   },
   "footer": {
     "note": "Tudo o que você cria aqui pode ser baixado e usado de graça. Confira as medidas antes de cortar: os números são fornecidos como estão, sem garantia.",
@@ -36,7 +37,9 @@
     "crochetText": "Correntes iniciais, instruções carreira por carreira e gráficos de símbolos.",
     "quiltHeading": "Blocos de colcha",
     "knitHeading": "Pontos de tricô",
-    "crochetHeading": "Pontos de crochê"
+    "crochetHeading": "Pontos de crochê",
+    "typesHeading": "Tipos de padrão",
+    "seeAll": "Ver todos os {n}"
   },
   "blocks": {
     "metaTitle": "Blocos tradicionais de colcha para personalizar",
@@ -109,7 +112,8 @@
     "batting": "Manta",
     "allowance": "Inclui uma margem de 10%. Confira os números antes de comprar.",
     "howTo": "Como montar",
-    "tileAlt": "Repetição contínua de {name}"
+    "tileAlt": "Repetição contínua de {name}",
+    "browseOptions": "Explorar as opções"
   },
   "settings": {
     "straight": "Todos na mesma direção",
@@ -171,7 +175,7 @@
     "metaTitle": "Biblioteca de padrões",
     "metaDesc": "Conheça criadores de padrões para colchas, nós celtas, estrelas geométricas, tesselações, tartãs, sashiko, ponto cruz e vitrais.",
     "h1": "Biblioteca de padrões",
-    "lede": "Padrões tradicionais e geométricos de vários ofícios. Cada um tem sua própria ferramenta.",
+    "lede": "Todos os tipos de padrão do site, com exemplos em ordem de nome. Cada tipo tem seu próprio gerador.",
     "available": "Disponível",
     "quiltTitle": "Blocos de colcha",
     "quiltText": "Escolha um bloco tradicional e personalize tamanho, cores, layout e sashing.",
@@ -240,7 +244,8 @@
         "output": "Repetição contínua em SVG e PNG e PDF para imprimir.",
         "explore": "Criar um padrão"
       }
-    }
+    },
+    "seeAllType": "Ver tudo em {name}"
   },
   "about": {
     "metaTitle": "Como funcionam os cálculos",

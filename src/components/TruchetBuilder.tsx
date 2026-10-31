@@ -6,6 +6,9 @@ import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { fill, messages } from "@/lib/i18n";
 import copy from "@/i18n/messages/truchet.json";
 import { ARRANGEMENT_OPTIONS, GRID_OPTIONS, MAX_SEED, REPEAT_OPTIONS, serializeTruchetState, STYLE_OPTIONS, WEIGHT_OPTIONS } from "@/lib/truchetState";
+import { OptionNav, useOptionNavigation } from "./OptionNav";
+import { PalettePicker } from "./PalettePicker";
+import { syncShareLink } from "@/lib/toolOptions";
 import styles from "./BlockBuilder.module.css";
 
 function NumberSelect({ label, value, options, format, onChange }: { label: string; value: number; options: number[]; format: (value: number) => string; onChange: (value: number) => void }) {
@@ -25,9 +28,10 @@ function NumberSelect({ label, value, options, format, onChange }: { label: stri
 
 const COLOR_KEYS: (keyof TruchetColors)[] = ["background", "line", "accent"];
 
-export function TruchetBuilder({ locale, initialState, initialResult }: { locale: Locale; initialState: TruchetRequest; initialResult: TruchetResult }) {
+export function TruchetBuilder({ locale, option, labels, initialState, initialResult }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: TruchetRequest; initialResult: TruchetResult }) {
   const t = copy[locale];
   const b = messages(locale).builder;
+  const goToOption = useOptionNavigation("truchet", locale);
   const [state, setState] = useState(initialState);
   const [result, setResult] = useState(initialResult);
   const [status, setStatus] = useState("");
@@ -52,8 +56,8 @@ export function TruchetBuilder({ locale, initialState, initialResult }: { locale
 
   useEffect(() => {
     const query = serializeTruchetState(state);
-    window.history.replaceState(window.history.state, "", query ? `?${query}` : window.location.pathname);
-  }, [state]);
+    syncShareLink(query, "truchet", option);
+  }, [state, option]);
 
   const run = async (working: string, done: string, action: () => Promise<void> | void) => {
     setBusy(true);
@@ -73,6 +77,7 @@ export function TruchetBuilder({ locale, initialState, initialResult }: { locale
 
   return (
     <div className={styles.builder}>
+      <OptionNav tool="truchet" locale={locale} current={option} labels={labels} />
       <div className={styles.workspace}>
         <section className={styles.preview} aria-label={b.preview}>
           {/* Two repeats across, so the join is on show. */}
@@ -102,7 +107,7 @@ export function TruchetBuilder({ locale, initialState, initialResult }: { locale
             <legend>{t.tiles}</legend>
             <label className={styles.field}>
               <span>{t.style}</span>
-              <select value={state.style} onChange={(e) => update({ style: e.target.value as TruchetRequest["style"] })}>
+              <select value={state.style} onChange={(e) => goToOption(e.target.value)}>
                 {STYLE_OPTIONS.map((id) => (
                   <option key={id} value={id}>
                     {t.styles[id]}
@@ -158,6 +163,7 @@ export function TruchetBuilder({ locale, initialState, initialResult }: { locale
               ))}
             </div>
             <p className={styles.note}>{t.accentNote}</p>
+            <PalettePicker locale={locale} current={[state.colors.background, state.colors.line, state.colors.accent]} onApply={(c) => update({ colors: { background: c[0], line: c[1], accent: c[2] ?? c[1] } })} />
           </fieldset>
 
           <fieldset>

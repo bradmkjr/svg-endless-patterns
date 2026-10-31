@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { StainedGlassBuilderRoute } from "@/components/StainedGlassBuilderRoute";
 import { generateStainedGlass, type Locale } from "@/lib/generator";
+import { optionLabels } from "@/lib/toolPages";
+import { withOption } from "@/lib/toolOptions";
 import { pageAlternates } from "@/lib/i18n";
-import { defaultStainedGlassState } from "@/lib/stainedGlassState";
+import { parseStainedGlassState } from "@/lib/stainedGlassState";
 import text from "@/i18n/messages/stainedGlass.json";
 
 export function stainedGlassMetadata(locale: Locale): Metadata {
@@ -10,16 +12,18 @@ export function stainedGlassMetadata(locale: Locale): Metadata {
   return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/stained-glass/") };
 }
 
-export async function StainedGlassView({ locale }: { locale: Locale }) {
+export async function StainedGlassView({ locale, option }: { locale: Locale; option?: string }) {
+  const labels = await optionLabels("stainedGlass", locale);
+  const start = parseStainedGlassState(withOption("stainedGlass", option), locale);
   const t = text[locale];
-  const initial = await generateStainedGlass(defaultStainedGlassState(locale));
+  const initial = await generateStainedGlass(start);
   return (
     <div className="page">
-      <h1 style={{ margin: "0 0 0.5rem", fontSize: "clamp(2rem, 4vw, 3rem)" }}>{t.h1}</h1>
+      <h1 style={{ margin: "0 0 0.5rem", fontSize: "clamp(2rem, 4vw, 3rem)" }}>{option ? `${t.h1}: ${labels[option]}` : t.h1}</h1>
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
-      <StainedGlassBuilderRoute initial={initial} locale={locale} />
+      <StainedGlassBuilderRoute option={option} labels={labels} initial={initial} locale={locale} />
     </div>
   );
 }

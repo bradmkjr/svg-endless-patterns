@@ -7,9 +7,11 @@ import type { TessellationOptions, TessellationRequest, TessellationResult, Sash
 import type { MazePaperId, MazeRequest, MazeResult } from "./mazeTypes";
 import { mazeApiPost } from "./mazeApi";
 
-export type { TessellationColors, TessellationMotif, TessellationOptions, TessellationRequest, TessellationResult, GroupId, SashikoMotif, SashikoRequest, SashikoResult, CelticBreakPattern, CelticInterlace, CelticKnotRequest, CelticKnotResult, CelticStrand, StainedGlassColor, StainedGlassLayout, StainedGlassPiece, StainedGlassRequest, StainedGlassResult, MandalaMotif, MandalaRequest, MandalaResult, MandalaRing, MandalaRingSpec, GirihColors, GirihPart, GirihRequest, GirihResult, GirihStar, GirihSymmetry, TruchetArrangement, TruchetColors, TruchetRequest, TruchetResult, TruchetStyle, TieDyeMix, TieDyeRequest, TieDyeResult, TieDyeTechnique, MazeAlgorithm, MazeColors, MazeDifficulty, MazePaperId, MazeRequest, MazeResult, MazeShape, MazeSize, BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, Setting, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult, TartanStripe, CountedFinish, CrossStitchColor, CrossStitchRequest, CrossStitchResult, NeedlepointColor, NeedlepointRequest, NeedlepointResult, NeedlepointStitch, NeedlepointYarn } from "@/engine";
+export type { TessellationColors, TessellationMotif, TessellationOptions, TessellationRequest, TessellationResult, GroupId, SashikoMotif, SashikoRequest, SashikoResult, CelticBreakPattern, CelticInterlace, CelticKnotRequest, CelticKnotResult, CelticStrand, StainedGlassColor, StainedGlassLayout, StainedGlassPiece, StainedGlassRequest, StainedGlassResult, MandalaMotif, MandalaRequest, MandalaResult, MandalaRing, MandalaRingSpec, GirihColors, GirihPart, GirihRequest, GirihResult, GirihStar, GirihSymmetry, TruchetArrangement, TruchetColors, TruchetRequest, TruchetResult, TruchetStyle, TieDyeMix, TieDyeRequest, TieDyeResult, TieDyeTechnique, BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, Setting, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult, TartanStripe, CountedFinish, CrossStitchColor, CrossStitchRequest, CrossStitchResult, NeedlepointColor, NeedlepointRequest, NeedlepointResult, NeedlepointStitch, NeedlepointYarn } from "@/engine";
+export type { MazeAlgorithm, MazeColors, MazeDifficulty, MazePaperId, MazeRequest, MazeResult, MazeShape } from "./mazeTypes";
 
-export { DEFAULT_KNIT_SQUARE, KNIT_SQUARE_SIZES, MAZE_PAPERS, mazeAcross, mazeTallRows } from "@/engine";
+export { DEFAULT_KNIT_SQUARE, KNIT_SQUARE_SIZES } from "@/engine";
+export { MAZE_PAPERS, mazeAcross, mazeTallRows } from "./mazeOptions";
 
 export async function getBlocks(locale: Locale = "en"): Promise<BlockInfo[]> {
   return listBlocks(locale);
@@ -145,17 +147,24 @@ export async function generateTieDyePdf(request: TieDyeRequest): Promise<Uint8Ar
 }
 
 export async function generateMaze(request: MazeRequest): Promise<MazeResult> {
-  return runMaze(request);
+  const response = await mazeApiPost("/api/maze", request);
+  return response.json() as Promise<MazeResult>;
 }
 
 export async function generateMazePosterPdf(request: MazeRequest, paper: MazePaperId): Promise<Uint8Array> {
-  const { generateMazePosterPdf: run } = await import("@/engine/mazePdf");
-  return run(request, paper);
+  const response = await mazeApiPost(`/api/maze/poster-pdf?paper=${encodeURIComponent(paper)}`, request, "application/pdf");
+  return new Uint8Array(await response.arrayBuffer());
 }
 
 export async function generateMazePdf(request: MazeRequest): Promise<Uint8Array> {
-  const { generateMazePdf: run } = await import("@/engine/mazePdf");
-  return run(request);
+  const response = await mazeApiPost("/api/maze/pdf", request, "application/pdf");
+  return new Uint8Array(await response.arrayBuffer());
+}
+
+export async function generateMazePng(request: MazeRequest, view: "maze" | "solution", size: number): Promise<Uint8Array> {
+  const query = new URLSearchParams({ view, size: String(size) });
+  const response = await mazeApiPost(`/api/maze/png?${query}`, request, "image/png");
+  return new Uint8Array(await response.arrayBuffer());
 }
 
 export async function generateTruchet(request: TruchetRequest): Promise<TruchetResult> {

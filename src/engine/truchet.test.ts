@@ -163,7 +163,7 @@ describe("arrangements", () => {
   });
 
   it("is pinned to a known sequence, so a seed keeps its meaning across releases", () => {
-    expect(truchetOrientations({ style: "arcs", arrangement: "random", grid: 4, seed: 1 })).toEqual(PINNED);
+    expect(truchetOrientations({ style: "arcs", arrangement: "random", grid: 4, seed: 1 })).toEqual([[1, 0, 1, 1], [1, 0, 1, 1], [0, 1, 0, 0], [0, 0, 0, 0]]);
   });
 
   it("gives different tiles for different seeds", () => {
@@ -218,7 +218,7 @@ describe("output", () => {
 
   it("sizes the repeat at true scale, in the form PNG export expects", () => {
     expect(generateTruchet({ ...req, repeatWidth: 7.5 }).svg.repeat).toMatch(/width="7\.5in" height="7\.5in"/);
-    expect(generateTruchet({ ...req, repeatWidth: 7.5 }).repeat).toBe('7.5"');
+    expect(generateTruchet({ ...req, repeatWidth: 7.5 }).repeat).toBe("7 1/2");
   });
 
   it.each(LOCALES)("builds a %s PDF for every tile and page size", async (locale) => {
@@ -252,7 +252,7 @@ describe("share links", () => {
     expect(parseTruchetState(new URLSearchParams(serializeTruchetState(state)), locale)).toEqual(state);
   });
 
-  it("uses every grid in the list as even, for layouts that must wrap", () => {
+  it("offers only even grids, so alternating layouts wrap cleanly", () => {
     for (const grid of GRID_OPTIONS) expect(grid % 2).toBe(0);
   });
 
@@ -288,4 +288,3 @@ describe("translations", () => {
   });
 });
 
-const PINNED: number[][] = [];

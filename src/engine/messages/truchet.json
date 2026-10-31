@@ -6,7 +6,7 @@
     "pdfTitle": "Truchet tiles",
     "pdfSub": "{style}, {arrangement}. {grid} x {grid} grid, {tiles} tiles.",
     "pdfSeed": "Seed: {seed}",
-    "pdfRepeat": "One repeat, {repeat} wide",
+    "pdfRepeat": "One repeat, {repeat}\" wide",
     "pdfPrint": "Print at 100% or \"actual size\", with no fit-to-page scaling, to keep this size.",
     "pdfJoin": "To cover a larger area, trim repeats along their edges and butt them together; the edges match.",
     "pdfSheet": "A sheet of repeats"
@@ -18,7 +18,7 @@
     "pdfTitle": "Azulejos de Truchet",
     "pdfSub": "{style}, {arrangement}. Cuadrícula de {grid} x {grid}, {tiles} azulejos.",
     "pdfSeed": "Semilla: {seed}",
-    "pdfRepeat": "Una repetición, de {repeat} de ancho",
+    "pdfRepeat": "Una repetición, de {repeat}\" de ancho",
     "pdfPrint": "Imprime al 100% o a \"tamaño real\", sin ajustar a la página, para conservar este tamaño.",
     "pdfJoin": "Para cubrir un área mayor, recorta las repeticiones por sus bordes y únelas a tope; los bordes coinciden.",
     "pdfSheet": "Una hoja de repeticiones"
@@ -30,7 +30,7 @@
     "pdfTitle": "Tuiles de Truchet",
     "pdfSub": "{style}, {arrangement}. Grille de {grid} x {grid}, {tiles} tuiles.",
     "pdfSeed": "Graine : {seed}",
-    "pdfRepeat": "Un raccord, {repeat} de large",
+    "pdfRepeat": "Un raccord, {repeat}\" de large",
     "pdfPrint": "Imprimez à 100 % ou en « taille réelle », sans ajustement à la page, pour conserver cette taille.",
     "pdfJoin": "Pour couvrir une plus grande surface, coupez les raccords le long de leurs bords et mettez-les bord à bord : les bords correspondent.",
     "pdfSheet": "Une feuille de raccords"
@@ -42,7 +42,7 @@
     "pdfTitle": "Truchet-Kacheln",
     "pdfSub": "{style}, {arrangement}. Raster {grid} x {grid}, {tiles} Kacheln.",
     "pdfSeed": "Startwert: {seed}",
-    "pdfRepeat": "Ein Rapport, {repeat} breit",
+    "pdfRepeat": "Ein Rapport, {repeat}\" breit",
     "pdfPrint": "Drucke mit 100 % oder in \"tatsächlicher Größe\", ohne Anpassung an die Seite, damit diese Größe erhalten bleibt.",
     "pdfJoin": "Für eine größere Fläche schneide die Rapporte an den Kanten zu und lege sie stumpf aneinander; die Kanten passen zusammen.",
     "pdfSheet": "Ein Bogen voller Rapporte"
@@ -54,7 +54,7 @@
     "pdfTitle": "Azulejos de Truchet",
     "pdfSub": "{style}, {arrangement}. Grade de {grid} x {grid}, {tiles} azulejos.",
     "pdfSeed": "Semente: {seed}",
-    "pdfRepeat": "Uma repetição, com {repeat} de largura",
+    "pdfRepeat": "Uma repetição, com {repeat}\" de largura",
     "pdfPrint": "Imprima em 100% ou em \"tamanho real\", sem ajustar à página, para manter este tamanho.",
     "pdfJoin": "Para cobrir uma área maior, apare as repetições nas bordas e encoste umas nas outras; as bordas coincidem.",
     "pdfSheet": "Uma folha de repetições"

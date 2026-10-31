@@ -524,8 +524,8 @@ describe("files", () => {
   it("says girih only for the five-tile patch", () => {
     for (const locale of LOCALES) {
       for (const [symmetry, star] of OPTIONS) {
-        const result = generateGirih({ ...base(symmetry, star), locale });
-        expect(result.isGirih).toBe(symmetry === 10);
+        const { isGirih, ...result } = generateGirih({ ...base(symmetry, star), locale });
+        expect(isGirih).toBe(symmetry === 10);
         if (symmetry !== 10) expect(JSON.stringify(result), `${locale} ${symmetry} ${star}`).not.toMatch(/girih/i);
       }
     }

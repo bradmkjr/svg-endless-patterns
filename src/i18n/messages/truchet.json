@@ -14,7 +14,7 @@
     "print": "Printing", "repeatWidth": "Repeat width",
     "downloadPdf": "Download printable PDF",
     "previewAlt": "Preview of the Truchet tile repeat",
-    "previewNote": "Two repeats across, to show the join. Each repeat is {grid} x {grid}: {tiles} tiles, {repeat} wide."
+    "previewNote": "Two repeats across, to show the join. Each repeat is {grid} x {grid}: {tiles} tiles, {repeat}\" wide."
   },
   "es": {
     "metaTitle": "Creador de azulejos de Truchet: SVG, PNG y PDF continuos",
@@ -31,7 +31,7 @@
     "print": "Impresión", "repeatWidth": "Ancho de la repetición",
     "downloadPdf": "Descargar PDF imprimible",
     "previewAlt": "Vista previa de la repetición de azulejos de Truchet",
-    "previewNote": "Dos repeticiones a lo ancho, para mostrar la unión. Cada repetición es de {grid} x {grid}: {tiles} azulejos, {repeat} de ancho."
+    "previewNote": "Dos repeticiones a lo ancho, para mostrar la unión. Cada repetición es de {grid} x {grid}: {tiles} azulejos, {repeat}\" de ancho."
   },
   "fr": {
     "metaTitle": "Créateur de tuiles de Truchet : SVG, PNG et PDF sans raccord visible",
@@ -48,7 +48,7 @@
     "print": "Impression", "repeatWidth": "Largeur du raccord",
     "downloadPdf": "Télécharger le PDF à imprimer",
     "previewAlt": "Aperçu du raccord de tuiles de Truchet",
-    "previewNote": "Deux raccords en largeur, pour montrer la jonction. Chaque raccord fait {grid} x {grid} : {tiles} tuiles, {repeat} de large."
+    "previewNote": "Deux raccords en largeur, pour montrer la jonction. Chaque raccord fait {grid} x {grid} : {tiles} tuiles, {repeat}\" de large."
   },
   "de": {
     "metaTitle": "Truchet-Kacheln erstellen: nahtlos als SVG, PNG und PDF",
@@ -65,7 +65,7 @@
     "print": "Druck", "repeatWidth": "Breite des Rapports",
     "downloadPdf": "Druckbares PDF herunterladen",
     "previewAlt": "Vorschau des Rapports aus Truchet-Kacheln",
-    "previewNote": "Zwei Rapporte nebeneinander, damit die Verbindung sichtbar ist. Jeder Rapport hat {grid} x {grid}: {tiles} Kacheln, {repeat} breit."
+    "previewNote": "Zwei Rapporte nebeneinander, damit die Verbindung sichtbar ist. Jeder Rapport hat {grid} x {grid}: {tiles} Kacheln, {repeat}\" breit."
   },
   "pt": {
     "metaTitle": "Criador de azulejos de Truchet: SVG, PNG e PDF contínuos",
@@ -82,6 +82,6 @@
     "print": "Impressão", "repeatWidth": "Largura da repetição",
     "downloadPdf": "Baixar PDF para imprimir",
     "previewAlt": "Prévia da repetição de azulejos de Truchet",
-    "previewNote": "Duas repetições na largura, para mostrar a junção. Cada repetição tem {grid} x {grid}: {tiles} azulejos, {repeat} de largura."
+    "previewNote": "Duas repetições na largura, para mostrar a junção. Cada repetição tem {grid} x {grid}: {tiles} azulejos, {repeat}\" de largura."
   }
 }

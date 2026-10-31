@@ -58,7 +58,7 @@ export function truchetText(locale: Locale, key: keyof (typeof messages)["en"], 
 export const orientations = (style: TruchetStyle) => (style === "triangles" ? 4 : 2);
 
 /** The same tile flipped. Triangles are numbered clockwise from the top-left corner. */
-const flipAcross = (style: TruchetStyle, orient: number) => orient ^ 1;
+const flipAcross = (orient: number) => orient ^ 1;
 const flipDown = (style: TruchetStyle, orient: number) => (style === "triangles" ? 3 - orient : orient ^ 1);
 
 /** One tile, in units from its top-left corner. Arcs and chamfers meet at edge midpoints, so any two tiles join. */
@@ -111,7 +111,7 @@ export function truchetOrientations(req: Pick<TruchetRequest, "style" | "arrange
     // Only the top-left quarter is random; the rest is its reflection.
     for (let row = 0; row < grid; row++) {
       for (let col = 0; col < grid; col++) {
-        if (col >= half) rows[row][col] = flipAcross(style, rows[row][grid - 1 - col]);
+        if (col >= half) rows[row][col] = flipAcross(rows[row][grid - 1 - col]);
       }
     }
     for (let row = half; row < grid; row++) {

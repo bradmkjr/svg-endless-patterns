@@ -49,6 +49,8 @@ const CENTER = CANVAS / 2;
 const OUTER = 480;
 /** Copies must be at least this wide to double up in a ring, so inner rings stay legible. */
 const MIN_DOUBLED_WIDTH = 28;
+/** A motif's width may reach this many times the ring's depth before the ring adds copies. */
+const WIDEST_MOTIF = 1.6;
 const SIZE_INCHES = 8;
 const WHITE = "#ffffff";
 const BLACK = "#000000";
@@ -108,9 +110,12 @@ function planRings(req: MandalaRequest, hub: number) {
     const motifColor = random();
     const bandColor = random();
     const tintedBand = random() < 0.35;
+    // Few folds would stretch outer motifs into slivers, so wide rings repeat more per fold.
+    const fit = Math.max(1, Math.floor((2 * Math.PI * (r0 + width / 2)) / (req.symmetry * width * WIDEST_MOTIF)));
+    const doubled = wantsDouble && (2 * Math.PI * r0) / (req.symmetry * fit * 2) >= MIN_DOUBLED_WIDTH;
     // The innermost ring always has exactly one copy per fold, which fixes the design's symmetry at that order.
-    const doubled = index > 0 && wantsDouble && (2 * Math.PI * r0) / (req.symmetry * 2) >= MIN_DOUBLED_WIDTH;
-    return { index, r0, r1, motif, copies: req.symmetry * (doubled ? 2 : 1), wantsAccent, motifColor, bandColor, tintedBand };
+    const copies = index === 0 ? req.symmetry : req.symmetry * fit * (doubled ? 2 : 1);
+    return { index, r0, r1, motif, copies, wantsAccent, motifColor, bandColor, tintedBand };
   });
 }
 

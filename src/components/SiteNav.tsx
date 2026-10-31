@@ -14,6 +14,7 @@ export function SiteNav() {
           <Link href="/knitting/">Knitting</Link>
           <Link href="/crochet/">Crochet</Link>
           <Link href="/patterns/">Pattern library</Link>
+          <Link href="/blog/">Blog</Link>
           <Link href="/about/">How it works</Link>
         </nav>
       </div>

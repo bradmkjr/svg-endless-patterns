@@ -44,6 +44,21 @@ proofread that text. Crochet terms are US.
 `noindex` and stay out of the sitemap. When one ships, put its generation in
 `src/engine/` behind `generator.ts`, give it a real route, and remove its entry.
 
+## Announcing major features
+Every major feature ships with all of these, in the same change:
+1. A new post at the top of `src/content/blog.json`, with a `samples` block and links.
+2. An entry at the top of `src/content/changelog.json`, with `post` set to its slug.
+
+Smaller changes and fixes get a changelog entry only. A sample stores a tool, its
+query string and a view; the preview is drawn from those same settings, and the link
+opens with them. Leave out default values: `content.test.ts` fails on a setting that
+doesn't survive the round trip, a broken internal link, or a post missing from the
+changelog. Describe only what has shipped, and date entries with the day they ship.
+
+## Blog and changelog storage
+Both are JSON in `src/content/`, for a database later. Read them only through
+`src/lib/content.ts`, which can become queries without changing its callers.
+
 ## Static export limits
 No route handlers that read the request, redirects, headers, proxy or server
 actions. Link with `next/link` so the base path is applied, and with trailing

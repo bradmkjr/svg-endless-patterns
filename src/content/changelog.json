@@ -1,0 +1,48 @@
+[
+  {
+    "date": "2026-10-30",
+    "title": "Blog and changelog",
+    "post": "blog-and-changelog",
+    "items": [
+      "Added a blog, with samples that open in the matching tool",
+      "Added this changelog"
+    ]
+  },
+  {
+    "date": "2026-10-30",
+    "title": "Pattern library preview",
+    "items": [
+      "Added a pattern library that lists working tools and planned ones",
+      "Fixed the site navigation running off the screen on phones"
+    ]
+  },
+  {
+    "date": "2026-10-30",
+    "title": "Knitting and crochet",
+    "post": "knitting-and-crochet",
+    "items": [
+      "Added 9 knitting stitches and 7 crochet stitches",
+      "Added starting counts, written rows, charts and yarn estimates based on your size and gauge",
+      "Added printable PDF patterns for every stitch"
+    ]
+  },
+  {
+    "date": "2026-10-30",
+    "title": "More quilt blocks",
+    "post": "quilt-block-builder",
+    "items": [
+      "Added 14 blocks, for 36 in total",
+      "Added blocks with folded corners, curves and appliqué, cut from PDF templates",
+      "Corrected the Anvil block's layout"
+    ]
+  },
+  {
+    "date": "2026-10-30",
+    "title": "Quilt block builder",
+    "post": "quilt-block-builder",
+    "items": [
+      "First release, with 22 traditional quilt blocks",
+      "Added cutting lists, yardage, seamless repeats, share links and PDF templates"
+    ]
+  }
+]

@@ -1,0 +1,92 @@
+.posts {
+  display: grid;
+  gap: 2rem;
+  max-width: 44rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.posts h2 {
+  margin: 0.15rem 0 0.4rem;
+  font-size: 1.5rem;
+}
+
+.posts h2 a {
+  text-decoration: none;
+}
+
+.posts h2 a:hover {
+  text-decoration: underline;
+}
+
+.posts p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.date {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.samples {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+  gap: 1.25rem;
+  margin: 1.25rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sample {
+  display: block;
+  text-decoration: none;
+}
+
+.sampleArt {
+  display: block;
+  overflow: hidden;
+  border-radius: 3px;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(50, 40, 20, 0.28);
+}
+
+.caption {
+  display: block;
+  margin-top: 0.55rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.open {
+  display: block;
+  margin-top: 0.15rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+  text-decoration: underline;
+}
+
+.entries {
+  display: grid;
+  gap: 1.75rem;
+  max-width: 44rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.entries h2 {
+  margin: 0.15rem 0 0.35rem;
+  font-size: 1.3rem;
+}
+
+.entries ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.entries p {
+  margin: 0.4rem 0 0;
+  font-size: 0.925rem;
+}

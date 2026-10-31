@@ -1,5 +1,68 @@
 [
   {
+    "slug": "tartan-maker",
+    "title": "Design a plaid and get a weaving guide",
+    "date": "2026-10-30",
+    "summary": "Set your thread colors and counts to make a balanced plaid, then download a seamless swatch and a printable weaving guide.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The [tartan and plaid maker](/tartans/) is the first new tool from the [pattern library](/patterns/). Choose thread colors and counts, mirror them if you like, and see the cloth woven in 2/2 twill."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "tartan",
+            "slug": "",
+            "query": "s=8c1c13.20-1a1a1a.12-8c1c13.3-e8b92f.2",
+            "view": "swatch",
+            "caption": "Ember"
+          },
+          {
+            "kind": "tartan",
+            "slug": "",
+            "query": "s=6b7a8f.18-f0ece2.4-23395d.10-f0ece2.2",
+            "view": "swatch",
+            "caption": "Harbor"
+          },
+          {
+            "kind": "tartan",
+            "slug": "",
+            "query": "s=a31621.24-111111.24",
+            "view": "swatch",
+            "caption": "A two-color check"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "A seamless repeat, as SVG or PNG",
+          "The thread order to wind and weave",
+          "Warp ends and weft picks for your cloth size",
+          "A rough yarn estimate for each color, and a printable PDF guide"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Original plaids only, for now"
+      },
+      {
+        "type": "paragraph",
+        "text": "The presets are invented for this site. Some tartans are restricted or belong to a family or organization, so named historic tartans will be added only with documented sources."
+      }
+    ]
+  },
+  {
     "slug": "now-in-five-languages",
     "title": "Endless Patterns now speaks five languages",
     "date": "2026-10-30",

@@ -4,10 +4,10 @@
  * fetch calls. Requests and results are already plain JSON and every function
  * is already async, so no caller has to change.
  */
-import { generatePattern as runGenerate, generateStitchPattern as runStitch, listBlocks, listStitchPatterns } from "@/engine";
-import type { BlockInfo, Craft, Locale, PatternRequest, PatternResult, StitchInfo, StitchRequest, StitchResult } from "@/engine";
+import { generatePattern as runGenerate, generateStitchPattern as runStitch, generateTartan as runTartan, listBlocks, listStitchPatterns } from "@/engine";
+import type { BlockInfo, Craft, Locale, PatternRequest, PatternResult, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult } from "@/engine";
 
-export type { BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, Setting, StitchInfo, StitchRequest, StitchResult } from "@/engine";
+export type { BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, Setting, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult, TartanStripe } from "@/engine";
 
 export async function getBlocks(locale: Locale = "en"): Promise<BlockInfo[]> {
   return listBlocks(locale);
@@ -42,4 +42,13 @@ export async function generateStitchPattern(slug: string, request: StitchRequest
 export async function generateStitchPdf(slug: string, request: StitchRequest): Promise<Uint8Array> {
   const { generateStitchPdf: run } = await import("@/engine/stitchPdf");
   return run(slug, request);
+}
+
+export async function generateTartan(request: TartanRequest): Promise<TartanResult> {
+  return runTartan(request);
+}
+
+export async function generateTartanPdf(request: TartanRequest): Promise<Uint8Array> {
+  const { generateTartanPdf: run } = await import("@/engine/tartanPdf");
+  return run(request);
 }

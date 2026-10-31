@@ -46,3 +46,17 @@ describe("stitch share links", async () => {
     expect(parseStitchState(seed, new URLSearchParams("w=9999&l=x&sts=-1&color=red"))).toEqual(defaultStitchState(seed));
   });
 });
+
+describe("tartan share links", async () => {
+  const { defaultTartanState, parseTartanState, serializeTartanState } = await import("./tartanState");
+
+  it("omits defaults and round-trips changes", () => {
+    expect(serializeTartanState(defaultTartanState())).toBe("");
+    const state = { stripes: [{ color: "#112233", count: 8 }, { color: "#445566", count: 2 }], mirrored: false, threadsPerInch: 32, width: 20, length: 40 };
+    expect(parseTartanState(new URLSearchParams(serializeTartanState(state)))).toEqual(state);
+  });
+
+  it("falls back on bad input", () => {
+    expect(parseTartanState(new URLSearchParams("s=zzz.9&tpi=9999&w=x"))).toEqual(defaultTartanState());
+  });
+});

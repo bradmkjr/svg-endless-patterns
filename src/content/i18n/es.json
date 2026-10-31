@@ -73,6 +73,28 @@
         ],
         "Cuando un tamaño cae entre las marcas de la regla, la herramienta redondea el corte al alza, lo indica y sugiere los tamaños más cercanos que se dividen exactamente. Comprueba las cifras antes de comprar o cortar."
       ]
+    },
+    "tartan-maker": {
+      "title": "Diseña un cuadro y obtén una guía de tejido",
+      "summary": "Ajusta los colores y la cantidad de hilos para crear un cuadro equilibrado, y descarga una muestra continua y una guía imprimible.",
+      "blocks": [
+        "El [creador de tartanes y cuadros](/tartans/) es la primera herramienta nueva de la [biblioteca de patrones](/patterns/). Elige colores y cantidad de hilos, refléjalos si quieres y mira la tela tejida en sarga 2/2.",
+        "Ejemplos para empezar",
+        [
+          "Brasa",
+          "Puerto",
+          "Un cuadro de dos colores"
+        ],
+        "Qué obtienes",
+        [
+          "Una repetición continua, en SVG o PNG",
+          "El orden de hilos para urdir y tejer",
+          "Hilos de urdimbre y pasadas de trama para tu tela",
+          "Una estimación aproximada de hilo por color y una guía en PDF"
+        ],
+        "Solo cuadros originales, por ahora",
+        "Los ajustes predefinidos se han inventado para este sitio. Algunos tartanes están restringidos o pertenecen a una familia u organización, así que los tartanes históricos con nombre solo se añadirán con fuentes documentadas."
+      ]
     }
   },
   "changelog": {
@@ -125,6 +147,12 @@
       "items": [
         "Primera versión, con 22 bloques tradicionales",
         "Se añadieron listas de corte, metraje, repeticiones continuas, enlaces para compartir y plantillas PDF"
+      ]
+    },
+    "Tartan and plaid maker": {
+      "title": "Creador de tartanes y cuadros",
+      "items": [
+        "Se añadió un creador de tartanes y cuadros, con muestras continuas, guías de tejido y estimaciones de hilo"
       ]
     }
   }

@@ -74,73 +74,307 @@
     "spChartCrochet": "Les premiers rangs sur une petite largeur. Commencez au rang 1, en bas. X = ms, T = db, T barré = b, ovale = ml.",
     "spAbbr": "Abréviations",
     "labelSashing": "Sashing",
-    "labelBorder": "Bordure"
+    "labelBorder": "Bordure",
+    "taStepWarp": "Ourdissez une chaîne de {ends} fils de {len}\" de long chacun (dont {waste}\" de perte au métier).",
+    "taStepOrder": "Enfilez la chaîne dans cet ordre, en reprenant au début jusqu'à utiliser tous les fils : {order}.",
+    "taStepWeave": "Tissez {picks} duites en sergé 2/2, à {ppi} duites au pouce, avec le même ordre de couleurs en trame qu'en chaîne.",
+    "taStepFinish": "Lavez et repassez le tissu pour le finir. Prévoyez un peu de rétrécissement, qui varie selon le fil.",
+    "taPdfTitle": "Guide de tissage de tartan",
+    "taPdfSize": "Tissu de {w}\" x {h}\" à {tpi} fils au pouce. Un raccord fait {threads} fils, soit {repeat}\".",
+    "taPdfSteps": "Étapes de tissage",
+    "taPdfYarn": "Fil par couleur",
+    "taPdfColor": "{letter} ({hex}) : {ends} fils de chaîne, {picks} duites, environ {y} yd",
+    "taPdfTotal": "Environ {y} yards au total. Estimation approximative incluant une marge de 10 %."
   },
   "fabrics": {
-    "Light": "Clair", "Dark": "Foncé", "Plain squares": "Carrés unis", "Outer rail": "Bande extérieure", "Middle rail": "Bande du milieu", "Inner rail": "Bande intérieure",
-    "Brick A": "Brique A", "Brick B": "Brique B", "Brick C": "Brique C", "Center ring": "Anneau central", "Second ring": "Deuxième anneau", "Third ring": "Troisième anneau", "Fourth ring": "Quatrième anneau",
-    "Background": "Fond", "Blades": "Ailes", "Center": "Centre", "Corners": "Coins", "Fly": "Mouche", "Dash": "Barres", "Ladder squares": "Carrés de l'échelle", "Large triangles": "Grands triangles",
-    "Star": "Étoile", "Star points": "Pointes de l'étoile", "Sky": "Ciel", "Geese": "Oies", "Light logs": "Rondins clairs", "Dark logs": "Rondins foncés", "Light steps": "Marches claires", "Dark steps": "Marches foncées",
-    "Paws": "Pattes", "Sides": "Côtés", "Outer chain": "Chaîne extérieure", "Inner chain": "Chaîne intérieure", "Small squares": "Petits carrés", "Main road": "Route principale", "Cross road": "Route transversale",
-    "Tie": "Nœud", "Accent": "Accent", "Alternate points": "Pointes alternées", "Plate": "Assiette", "Alternate wedges": "Pétales alternés", "Flower center": "Cœur de la fleur", "Petals": "Pétales", "Path": "Allée"
+    "Light": "Clair",
+    "Dark": "Foncé",
+    "Plain squares": "Carrés unis",
+    "Outer rail": "Bande extérieure",
+    "Middle rail": "Bande du milieu",
+    "Inner rail": "Bande intérieure",
+    "Brick A": "Brique A",
+    "Brick B": "Brique B",
+    "Brick C": "Brique C",
+    "Center ring": "Anneau central",
+    "Second ring": "Deuxième anneau",
+    "Third ring": "Troisième anneau",
+    "Fourth ring": "Quatrième anneau",
+    "Background": "Fond",
+    "Blades": "Ailes",
+    "Center": "Centre",
+    "Corners": "Coins",
+    "Fly": "Mouche",
+    "Dash": "Barres",
+    "Ladder squares": "Carrés de l'échelle",
+    "Large triangles": "Grands triangles",
+    "Star": "Étoile",
+    "Star points": "Pointes de l'étoile",
+    "Sky": "Ciel",
+    "Geese": "Oies",
+    "Light logs": "Rondins clairs",
+    "Dark logs": "Rondins foncés",
+    "Light steps": "Marches claires",
+    "Dark steps": "Marches foncées",
+    "Paws": "Pattes",
+    "Sides": "Côtés",
+    "Outer chain": "Chaîne extérieure",
+    "Inner chain": "Chaîne intérieure",
+    "Small squares": "Petits carrés",
+    "Main road": "Route principale",
+    "Cross road": "Route transversale",
+    "Tie": "Nœud",
+    "Accent": "Accent",
+    "Alternate points": "Pointes alternées",
+    "Plate": "Assiette",
+    "Alternate wedges": "Pétales alternés",
+    "Flower center": "Cœur de la fleur",
+    "Petals": "Pétales",
+    "Path": "Allée"
   },
-  "families": { "Squares & strips": "Carrés et bandes", "Triangles": "Triangles", "Stars": "Étoiles", "Curves & appliqué": "Courbes et appliqué" },
-  "levels": { "Beginner": "Débutant", "Confident beginner": "Débutant confirmé", "Intermediate": "Intermédiaire" },
-  "templates": { "Quarter circle": "Quart de cercle", "Curved corner": "Coin courbe", "Diamond": "Losange", "Corner square": "Carré de coin", "Side triangle": "Triangle de côté", "Plate wedge": "Pétale de l'assiette", "Center circle": "Cercle central", "Hexagon": "Hexagone" },
+  "families": {
+    "Squares & strips": "Carrés et bandes",
+    "Triangles": "Triangles",
+    "Stars": "Étoiles",
+    "Curves & appliqué": "Courbes et appliqué"
+  },
+  "levels": {
+    "Beginner": "Débutant",
+    "Confident beginner": "Débutant confirmé",
+    "Intermediate": "Intermédiaire"
+  },
+  "templates": {
+    "Quarter circle": "Quart de cercle",
+    "Curved corner": "Coin courbe",
+    "Diamond": "Losange",
+    "Corner square": "Carré de coin",
+    "Side triangle": "Triangle de côté",
+    "Plate wedge": "Pétale de l'assiette",
+    "Center circle": "Cercle central",
+    "Hexagon": "Hexagone"
+  },
   "blocks": {
-    "four-patch": { "summary": "Deux rangées de deux carrés en tissus alternés : le plus petit bloc pièce et un bon premier projet.", "assembly": "Cousez les carrés en deux rangées, repassez vers le tissu foncé, puis assemblez les rangées en emboîtant la couture centrale." },
-    "nine-patch": { "summary": "Trois rangées de trois carrés en damier, avec le tissu foncé aux coins et au centre.", "assembly": "Cousez les carrés en trois rangées, repassez vers le tissu foncé, puis assemblez les rangées en emboîtant les coutures." },
-    "checkerboard": { "summary": "Quatre rangées de quatre carrés, pour une texture très animée quand les blocs sont côte à côte.", "assembly": "Cousez les carrés en quatre rangées, en repassant chaque rangée à l'opposé de la précédente, puis assemblez-les." },
-    "double-four-patch": { "summary": "Deux petits blocs à quatre carrés alternent avec deux carrés unis de même taille et forment une diagonale marquée.", "assembly": "Réalisez deux unités à quatre carrés, cousez chacune à un carré uni pour former deux rangées, puis assemblez-les, les unités sur la diagonale." },
-    "double-nine-patch": { "summary": "Un bloc à neuf fait de blocs à neuf : cinq petites unités alternent avec quatre carrés unis.", "assembly": "Réalisez cinq petites unités à neuf carrés, disposez-les avec les carrés unis en trois rangées, cousez-les puis assemblez-les." },
-    "rail-fence": { "summary": "Quatre groupes de trois bandes, chacun tourné d'un quart par rapport à son voisin, pour un effet de zigzag.", "assembly": "Cousez les bandes en quatre carrés de trois bandes, tournez-les comme indiqué, cousez-les en deux rangées et assemblez celles-ci." },
-    "brick-wall": { "summary": "Des rangées décalées de rectangles, avec des demi-briques aux extrémités. Aucune couture à faire coïncider.", "assembly": "Cousez les pièces en quatre rangées, puis assemblez-les en gardant les bords extérieurs alignés." },
-    "trip-around-the-world": { "summary": "Des carrés en anneaux losanges qui s'étendent depuis le centre, en alternant quatre tissus.", "assembly": "Disposez les sept rangées avant de coudre, car l'ordre des couleurs change à chaque rangée, puis cousez et assemblez-les." },
-    "hourglass": { "summary": "Quatre triangles qui se rejoignent au centre, avec le même tissu sur les côtés opposés.", "assembly": "L'unité quart de carré constitue le bloc fini." },
-    "pinwheel": { "summary": "Quatre unités demi-carré, chacune tournée d'un quart, pour que les ailes semblent tourner autour du centre.", "assembly": "Disposez les quatre unités pour que les ailes se suivent, cousez-les en deux rangées et assemblez celles-ci en faisant coïncider les pointes centrales." },
-    "square-in-a-square": { "summary": "Un carré central sur la pointe, avec un triangle sur chaque côté pour former le carré.", "assembly": "L'unité carré dans le carré constitue le bloc fini." },
-    "shoo-fly": { "summary": "Une disposition à neuf avec des triangles demi-carré aux coins, qui forment un X à travers le carré central.", "assembly": "Disposez les unités avec les triangles dirigés vers le centre, cousez-les en trois rangées et assemblez celles-ci." },
-    "churn-dash": { "summary": "Des triangles aux coins et des unités latérales à deux bandes encadrent un carré central uni.", "assembly": "Cousez chaque paire de bandes en carré, disposez les unités avec les barres près du centre, cousez trois rangées et assemblez-les." },
-    "jacobs-ladder": { "summary": "Cinq unités à quatre carrés et quatre grands triangles demi-carré alternent et créent des chaînes diagonales croisées.", "assembly": "Réalisez cinq unités à quatre carrés, disposez-les avec les unités triangles en trois rangées, cousez-les et assemblez-les." },
-    "friendship-star": { "summary": "Quatre triangles demi-carré tournent autour d'un carré central pour former une simple étoile à quatre pointes.", "assembly": "Disposez les unités, chaque pointe tournée d'un quart par rapport à la précédente, cousez-les en trois rangées et assemblez celles-ci." },
-    "ohio-star": { "summary": "Une étoile à huit pointes faite de quatre unités quart de carré autour d'un carré central.", "assembly": "Disposez les unités, les pointes touchant le carré central, cousez-les en trois rangées et assemblez celles-ci." },
-    "sawtooth-star": { "summary": "Un grand carré central entouré de quatre unités oies sauvages dont les petits triangles forment les pointes.", "assembly": "Cousez une unité oies à gauche et à droite du centre, ajoutez un carré de coin à chaque bout des deux autres unités, puis assemblez les trois rangées." },
-    "flying-geese": { "summary": "Deux colonnes de quatre unités 2:1, chacune un grand triangle encadré de deux plus petits.", "assembly": "Empilez les unités en deux colonnes, pointes dans le même sens, cousez chaque colonne puis assemblez-les." },
-    "dutchmans-puzzle": { "summary": "Huit oies sauvages en quatre paires, chacune tournée d'un quart par rapport à la précédente, pour un bloc qui semble pivoter.", "assembly": "Cousez les oies en quatre paires, tournez chaque paire d'un quart par rapport à la précédente, cousez-les en deux rangées et assemblez celles-ci." },
-    "log-cabin": { "summary": "Des bandes s'enroulent en spirale depuis un carré central, avec des tissus clairs sur deux côtés et foncés sur les deux autres.", "assembly": "Commencez au centre et ajoutez une bande à la fois, dans le sens horaire : deux claires, deux foncées, en repassant vers l'extérieur après chacune." },
-    "courthouse-steps": { "summary": "Les bandes s'ajoutent de part et d'autre d'un carré central : claires en haut et en bas, foncées à gauche et à droite.", "assembly": "Partez du centre vers l'extérieur : ajoutez des bandes claires en haut et en bas, puis foncées sur les côtés, et recommencez." },
-    "bears-paw": { "summary": "Quatre pattes, chacune un grand carré bordé de petites griffes triangulaires, séparées par une croix de bandes.", "assembly": "Pour chaque patte, cousez deux griffes sur un côté du grand carré, puis deux griffes et un carré de coin sur le côté suivant. Assemblez pattes et bandes en trois rangées." },
-    "puss-in-the-corner": { "summary": "Un bloc à neuf inégal : petits carrés aux coins, longues bandes sur les côtés et grand carré central.", "assembly": "Cousez les pièces en trois rangées, repassez vers les bandes, puis assemblez les rangées en faisant coïncider les coutures des coins." },
-    "single-irish-chain": { "summary": "Cinq rangées de cinq carrés avec des diagonales foncées, qui forment des chaînes quand les blocs se touchent.", "assembly": "Cousez les carrés en cinq rangées, en repassant chaque rangée à l'opposé de la précédente, puis assemblez-les." },
-    "double-irish-chain": { "summary": "Deux unités en damier à cinq alternent avec deux unités presque unies et forment de larges chaînes diagonales.", "assembly": "Cousez chaque unité en damier en cinq rangées et chaque unité unie en trois. Assemblez les quatre unités en deux rangées, damiers sur la diagonale." },
-    "broken-dishes": { "summary": "Quatre unités demi-carré, tournées les unes contre les autres pour un effet irrégulier et changeant.", "assembly": "Disposez les quatre unités comme indiqué, cousez-les en deux rangées et assemblez celles-ci en faisant coïncider les pointes centrales." },
-    "yankee-puzzle": { "summary": "Quatre unités quart de carré, chacune tournée d'un quart par rapport à ses voisines.", "assembly": "Alternez le sens des unités, cousez-les en deux rangées et assemblez celles-ci en faisant coïncider les pointes centrales." },
-    "road-to-oklahoma": { "summary": "Des carrés et des triangles demi-carré forment deux routes qui se croisent en diagonale dans le bloc.", "assembly": "Disposez les unités avec les carrés sur les diagonales, cousez-les en quatre rangées et assemblez celles-ci." },
-    "anvil": { "summary": "Deux grands triangles demi-carré alternent avec deux unités de petits carrés et triangles, formant une diagonale en escalier.", "assembly": "Cousez chaque petite unité avec deux unités triangles et deux carrés, disposez-les avec les grands triangles, cousez deux rangées et assemblez-les." },
-    "bow-tie": { "summary": "Deux carrés se rejoignent sur un petit nœud central, obtenu en rabattant des coins sur deux carrés de fond.", "assembly": "Cousez les quatre unités en deux rangées, les coins rabattus se rejoignant au centre, puis assemblez les rangées." },
-    "variable-star": { "summary": "Des paires de triangles demi-carré forment quatre larges pointes autour d'un centre de quatre carrés.", "assembly": "Assemblez les carrés centraux en une unité. Cousez deux unités triangles par côté, ajoutez des carrés de coin aux groupes du haut et du bas, puis assemblez les trois rangées." },
-    "sisters-choice": { "summary": "Un bloc de cinq sur cinq, en carrés et triangles demi-carré, qui forme une étoile autour d'un carré central.", "assembly": "Disposez les cinq rangées, cousez les unités en rangées, puis assemblez-les en emboîtant les coutures." },
-    "lemoyne-star": { "summary": "Huit losanges à 45 degrés se rejoignent au centre, avec des carrés de coin et des triangles de côté insérés autour.", "assembly": "Cousez les losanges en quatre paires puis en deux moitiés, en vous arrêtant à 1/4\" de chaque bord où une pièce sera insérée. Assemblez les moitiés, puis insérez les carrés de coin et les triangles." },
-    "drunkards-path": { "summary": "Seize unités à couture courbe, tournées et recolorées pour qu'une allée serpente à travers le bloc.", "assembly": "Pour chaque unité, épinglez un quart de cercle sur un coin courbe au centre et aux extrémités, puis cousez lentement la courbe. Disposez quatre rangées, cousez-les et assemblez-les." },
-    "dresden-plate": { "summary": "Seize pétales pointus forment un anneau appliqué sur un carré de fond, avec un cercle central par-dessus.", "assembly": "Cousez les pétales en anneau par leurs grands côtés. Rentrez le bord extérieur, appliquez l'anneau sur le fond, puis le cercle central sur l'ouverture." },
-    "grandmothers-flower-garden": { "summary": "Un hexagone central entouré de deux anneaux, présenté ici en une seule rosace appliquée sur un carré de fond.", "assembly": "Cousez les pétales autour du centre, puis l'anneau d'allée, en insérant chaque hexagone dans l'angle entre ses voisins. Rentrez le bord extérieur et appliquez la rosace sur le fond." }
+    "four-patch": {
+      "summary": "Deux rangées de deux carrés en tissus alternés : le plus petit bloc pièce et un bon premier projet.",
+      "assembly": "Cousez les carrés en deux rangées, repassez vers le tissu foncé, puis assemblez les rangées en emboîtant la couture centrale."
+    },
+    "nine-patch": {
+      "summary": "Trois rangées de trois carrés en damier, avec le tissu foncé aux coins et au centre.",
+      "assembly": "Cousez les carrés en trois rangées, repassez vers le tissu foncé, puis assemblez les rangées en emboîtant les coutures."
+    },
+    "checkerboard": {
+      "summary": "Quatre rangées de quatre carrés, pour une texture très animée quand les blocs sont côte à côte.",
+      "assembly": "Cousez les carrés en quatre rangées, en repassant chaque rangée à l'opposé de la précédente, puis assemblez-les."
+    },
+    "double-four-patch": {
+      "summary": "Deux petits blocs à quatre carrés alternent avec deux carrés unis de même taille et forment une diagonale marquée.",
+      "assembly": "Réalisez deux unités à quatre carrés, cousez chacune à un carré uni pour former deux rangées, puis assemblez-les, les unités sur la diagonale."
+    },
+    "double-nine-patch": {
+      "summary": "Un bloc à neuf fait de blocs à neuf : cinq petites unités alternent avec quatre carrés unis.",
+      "assembly": "Réalisez cinq petites unités à neuf carrés, disposez-les avec les carrés unis en trois rangées, cousez-les puis assemblez-les."
+    },
+    "rail-fence": {
+      "summary": "Quatre groupes de trois bandes, chacun tourné d'un quart par rapport à son voisin, pour un effet de zigzag.",
+      "assembly": "Cousez les bandes en quatre carrés de trois bandes, tournez-les comme indiqué, cousez-les en deux rangées et assemblez celles-ci."
+    },
+    "brick-wall": {
+      "summary": "Des rangées décalées de rectangles, avec des demi-briques aux extrémités. Aucune couture à faire coïncider.",
+      "assembly": "Cousez les pièces en quatre rangées, puis assemblez-les en gardant les bords extérieurs alignés."
+    },
+    "trip-around-the-world": {
+      "summary": "Des carrés en anneaux losanges qui s'étendent depuis le centre, en alternant quatre tissus.",
+      "assembly": "Disposez les sept rangées avant de coudre, car l'ordre des couleurs change à chaque rangée, puis cousez et assemblez-les."
+    },
+    "hourglass": {
+      "summary": "Quatre triangles qui se rejoignent au centre, avec le même tissu sur les côtés opposés.",
+      "assembly": "L'unité quart de carré constitue le bloc fini."
+    },
+    "pinwheel": {
+      "summary": "Quatre unités demi-carré, chacune tournée d'un quart, pour que les ailes semblent tourner autour du centre.",
+      "assembly": "Disposez les quatre unités pour que les ailes se suivent, cousez-les en deux rangées et assemblez celles-ci en faisant coïncider les pointes centrales."
+    },
+    "square-in-a-square": {
+      "summary": "Un carré central sur la pointe, avec un triangle sur chaque côté pour former le carré.",
+      "assembly": "L'unité carré dans le carré constitue le bloc fini."
+    },
+    "shoo-fly": {
+      "summary": "Une disposition à neuf avec des triangles demi-carré aux coins, qui forment un X à travers le carré central.",
+      "assembly": "Disposez les unités avec les triangles dirigés vers le centre, cousez-les en trois rangées et assemblez celles-ci."
+    },
+    "churn-dash": {
+      "summary": "Des triangles aux coins et des unités latérales à deux bandes encadrent un carré central uni.",
+      "assembly": "Cousez chaque paire de bandes en carré, disposez les unités avec les barres près du centre, cousez trois rangées et assemblez-les."
+    },
+    "jacobs-ladder": {
+      "summary": "Cinq unités à quatre carrés et quatre grands triangles demi-carré alternent et créent des chaînes diagonales croisées.",
+      "assembly": "Réalisez cinq unités à quatre carrés, disposez-les avec les unités triangles en trois rangées, cousez-les et assemblez-les."
+    },
+    "friendship-star": {
+      "summary": "Quatre triangles demi-carré tournent autour d'un carré central pour former une simple étoile à quatre pointes.",
+      "assembly": "Disposez les unités, chaque pointe tournée d'un quart par rapport à la précédente, cousez-les en trois rangées et assemblez celles-ci."
+    },
+    "ohio-star": {
+      "summary": "Une étoile à huit pointes faite de quatre unités quart de carré autour d'un carré central.",
+      "assembly": "Disposez les unités, les pointes touchant le carré central, cousez-les en trois rangées et assemblez celles-ci."
+    },
+    "sawtooth-star": {
+      "summary": "Un grand carré central entouré de quatre unités oies sauvages dont les petits triangles forment les pointes.",
+      "assembly": "Cousez une unité oies à gauche et à droite du centre, ajoutez un carré de coin à chaque bout des deux autres unités, puis assemblez les trois rangées."
+    },
+    "flying-geese": {
+      "summary": "Deux colonnes de quatre unités 2:1, chacune un grand triangle encadré de deux plus petits.",
+      "assembly": "Empilez les unités en deux colonnes, pointes dans le même sens, cousez chaque colonne puis assemblez-les."
+    },
+    "dutchmans-puzzle": {
+      "summary": "Huit oies sauvages en quatre paires, chacune tournée d'un quart par rapport à la précédente, pour un bloc qui semble pivoter.",
+      "assembly": "Cousez les oies en quatre paires, tournez chaque paire d'un quart par rapport à la précédente, cousez-les en deux rangées et assemblez celles-ci."
+    },
+    "log-cabin": {
+      "summary": "Des bandes s'enroulent en spirale depuis un carré central, avec des tissus clairs sur deux côtés et foncés sur les deux autres.",
+      "assembly": "Commencez au centre et ajoutez une bande à la fois, dans le sens horaire : deux claires, deux foncées, en repassant vers l'extérieur après chacune."
+    },
+    "courthouse-steps": {
+      "summary": "Les bandes s'ajoutent de part et d'autre d'un carré central : claires en haut et en bas, foncées à gauche et à droite.",
+      "assembly": "Partez du centre vers l'extérieur : ajoutez des bandes claires en haut et en bas, puis foncées sur les côtés, et recommencez."
+    },
+    "bears-paw": {
+      "summary": "Quatre pattes, chacune un grand carré bordé de petites griffes triangulaires, séparées par une croix de bandes.",
+      "assembly": "Pour chaque patte, cousez deux griffes sur un côté du grand carré, puis deux griffes et un carré de coin sur le côté suivant. Assemblez pattes et bandes en trois rangées."
+    },
+    "puss-in-the-corner": {
+      "summary": "Un bloc à neuf inégal : petits carrés aux coins, longues bandes sur les côtés et grand carré central.",
+      "assembly": "Cousez les pièces en trois rangées, repassez vers les bandes, puis assemblez les rangées en faisant coïncider les coutures des coins."
+    },
+    "single-irish-chain": {
+      "summary": "Cinq rangées de cinq carrés avec des diagonales foncées, qui forment des chaînes quand les blocs se touchent.",
+      "assembly": "Cousez les carrés en cinq rangées, en repassant chaque rangée à l'opposé de la précédente, puis assemblez-les."
+    },
+    "double-irish-chain": {
+      "summary": "Deux unités en damier à cinq alternent avec deux unités presque unies et forment de larges chaînes diagonales.",
+      "assembly": "Cousez chaque unité en damier en cinq rangées et chaque unité unie en trois. Assemblez les quatre unités en deux rangées, damiers sur la diagonale."
+    },
+    "broken-dishes": {
+      "summary": "Quatre unités demi-carré, tournées les unes contre les autres pour un effet irrégulier et changeant.",
+      "assembly": "Disposez les quatre unités comme indiqué, cousez-les en deux rangées et assemblez celles-ci en faisant coïncider les pointes centrales."
+    },
+    "yankee-puzzle": {
+      "summary": "Quatre unités quart de carré, chacune tournée d'un quart par rapport à ses voisines.",
+      "assembly": "Alternez le sens des unités, cousez-les en deux rangées et assemblez celles-ci en faisant coïncider les pointes centrales."
+    },
+    "road-to-oklahoma": {
+      "summary": "Des carrés et des triangles demi-carré forment deux routes qui se croisent en diagonale dans le bloc.",
+      "assembly": "Disposez les unités avec les carrés sur les diagonales, cousez-les en quatre rangées et assemblez celles-ci."
+    },
+    "anvil": {
+      "summary": "Deux grands triangles demi-carré alternent avec deux unités de petits carrés et triangles, formant une diagonale en escalier.",
+      "assembly": "Cousez chaque petite unité avec deux unités triangles et deux carrés, disposez-les avec les grands triangles, cousez deux rangées et assemblez-les."
+    },
+    "bow-tie": {
+      "summary": "Deux carrés se rejoignent sur un petit nœud central, obtenu en rabattant des coins sur deux carrés de fond.",
+      "assembly": "Cousez les quatre unités en deux rangées, les coins rabattus se rejoignant au centre, puis assemblez les rangées."
+    },
+    "variable-star": {
+      "summary": "Des paires de triangles demi-carré forment quatre larges pointes autour d'un centre de quatre carrés.",
+      "assembly": "Assemblez les carrés centraux en une unité. Cousez deux unités triangles par côté, ajoutez des carrés de coin aux groupes du haut et du bas, puis assemblez les trois rangées."
+    },
+    "sisters-choice": {
+      "summary": "Un bloc de cinq sur cinq, en carrés et triangles demi-carré, qui forme une étoile autour d'un carré central.",
+      "assembly": "Disposez les cinq rangées, cousez les unités en rangées, puis assemblez-les en emboîtant les coutures."
+    },
+    "lemoyne-star": {
+      "summary": "Huit losanges à 45 degrés se rejoignent au centre, avec des carrés de coin et des triangles de côté insérés autour.",
+      "assembly": "Cousez les losanges en quatre paires puis en deux moitiés, en vous arrêtant à 1/4\" de chaque bord où une pièce sera insérée. Assemblez les moitiés, puis insérez les carrés de coin et les triangles."
+    },
+    "drunkards-path": {
+      "summary": "Seize unités à couture courbe, tournées et recolorées pour qu'une allée serpente à travers le bloc.",
+      "assembly": "Pour chaque unité, épinglez un quart de cercle sur un coin courbe au centre et aux extrémités, puis cousez lentement la courbe. Disposez quatre rangées, cousez-les et assemblez-les."
+    },
+    "dresden-plate": {
+      "summary": "Seize pétales pointus forment un anneau appliqué sur un carré de fond, avec un cercle central par-dessus.",
+      "assembly": "Cousez les pétales en anneau par leurs grands côtés. Rentrez le bord extérieur, appliquez l'anneau sur le fond, puis le cercle central sur l'ouverture."
+    },
+    "grandmothers-flower-garden": {
+      "summary": "Un hexagone central entouré de deux anneaux, présenté ici en une seule rosace appliquée sur un carré de fond.",
+      "assembly": "Cousez les pétales autour du centre, puis l'anneau d'allée, en insérant chaque hexagone dans l'angle entre ses voisins. Rentrez le bord extérieur et appliquez la rosace sur le fond."
+    }
   },
   "stitches": {
-    "garter-stitch": { "summary": "Tricotez tous les rangs à l'endroit. Le tricot reste plat, identique des deux côtés, avec de douces côtes horizontales." },
-    "stockinette-stitch": { "summary": "Un rang endroit, un rang envers. Lisse devant, bosselé derrière, avec des bords qui ont tendance à rouler." },
-    "seed-stitch": { "summary": "Mailles endroit et envers alternent et s'opposent d'un rang à l'autre, pour un tricot ferme, grainé et bien plat." },
-    "double-seed-stitch": { "summary": "Comme le point de riz, mais chaque rang est tricoté deux fois avant d'inverser endroit et envers, pour un grain plus gros." },
-    "one-by-one-rib": { "summary": "Des colonnes simples d'endroit et d'envers forment un tricot extensible, souvent utilisé pour les poignets et les bas." },
-    "two-by-two-rib": { "summary": "Des paires de colonnes d'endroit et d'envers donnent des côtes plus marquées et très extensibles." },
-    "broken-rib": { "summary": "Un rang d'une maille endroit, une maille envers alterne avec un rang tout envers, pour des côtes discrètes et de petits reliefs." },
-    "basketweave": { "summary": "Des blocs d'endroit et d'envers s'inversent tous les quatre rangs : le tricot semble tressé. Il reste plat." },
-    "diagonal-rib": { "summary": "Des côtes 2x2 décalées d'une maille à chaque rang, qui avancent en diagonale." },
-    "single-crochet": { "summary": "Le point de base le plus bas, pour un ouvrage ferme et dense, idéal pour les lavettes et les sacs.", "first": "1 ms dans la 2e ml à partir du crochet et 1 ms dans chaque ml jusqu'à la fin. Tournez.", "rows": ["1 ml (ne compte pas comme une maille), 1 ms dans chaque maille jusqu'à la fin. Tournez."] },
-    "half-double-crochet": { "summary": "Une hauteur entre la maille serrée et la bride : rapide à faire, doux et chaud.", "first": "1 db dans la 3e ml à partir du crochet et 1 db dans chaque ml jusqu'à la fin. Tournez.", "rows": ["2 ml (ne comptent pas comme une maille), 1 db dans chaque maille jusqu'à la fin. Tournez."] },
-    "double-crochet": { "summary": "Un point haut qui avance vite et tombe bien, adapté aux couvertures et aux écharpes.", "first": "1 b dans la 4e ml à partir du crochet (les 3 premières ml comptent pour 1 b) et 1 b dans chaque ml jusqu'à la fin. Tournez.", "rows": ["3 ml (comptent pour 1 b), sautez la première maille, 1 b dans chaque maille jusqu'à la fin, en terminant par 1 b dans le haut des ml de retournement. Tournez."] },
-    "back-loop-rib": { "summary": "Des mailles serrées piquées dans le brin arrière seulement, qui forment des côtes extensibles rappelant celles du tricot.", "first": "1 ms dans la 2e ml à partir du crochet et 1 ms dans chaque ml jusqu'à la fin. Tournez.", "rows": ["1 ml (ne compte pas comme une maille), 1 ms dans le brin arrière seulement de chaque maille jusqu'à la fin. Tournez."] },
-    "moss-stitch": { "summary": "Des mailles serrées séparées par une maille en l'air, piquées dans les espaces du rang précédent. Aussi appelé point de lin ou de granit.", "first": "1 ms dans la 4e ml à partir du crochet, *1 ml, sautez 1 ml, 1 ms dans la ml suivante ; répétez depuis * jusqu'à la fin. Tournez.", "rows": ["2 ml (comptent comme un espace de 1 ml), 1 ms dans le premier espace de 1 ml, *1 ml, sautez la ms suivante, 1 ms dans l'espace de 1 ml suivant ; répétez depuis * jusqu'à la fin, la dernière ms dans l'espace des ml de retournement. Tournez."] },
-    "mesh-stitch": { "summary": "Des brides séparées par une maille en l'air, qui forment un filet ouvert, léger et aéré.", "first": "1 b dans la 6e ml à partir du crochet (les 5 premières ml comptent pour 1 b et un espace de 1 ml), *1 ml, sautez 1 ml, 1 b dans la ml suivante ; répétez depuis * jusqu'à la fin. Tournez.", "rows": ["4 ml (comptent pour 1 b et un espace de 1 ml), sautez le premier espace de 1 ml, 1 b dans la b suivante, *1 ml, sautez l'espace de 1 ml suivant, 1 b dans la b suivante ; répétez depuis * jusqu'à la fin, la dernière b dans la 3e ml de retournement. Tournez."] },
-    "v-stitch": { "summary": "Des paires de brides partagent une même maille, et chaque rang s'empile dans les V du précédent, pour un ouvrage ajouré et texturé.", "first": "Sautez les 3 premières ml (comptent pour 1 b), *sautez 1 ml, (1 b, 1 ml, 1 b) dans la ml suivante, sautez 1 ml ; répétez depuis * jusqu'à la dernière ml, 1 b dans la dernière ml. Tournez.", "rows": ["3 ml (comptent pour 1 b), sautez la première maille, *sautez la b suivante, (1 b, 1 ml, 1 b) dans l'espace de 1 ml suivant, sautez la b suivante ; répétez depuis * jusqu'à la dernière maille, 1 b dans le haut des ml de retournement. Tournez."] }
+    "garter-stitch": {
+      "summary": "Tricotez tous les rangs à l'endroit. Le tricot reste plat, identique des deux côtés, avec de douces côtes horizontales."
+    },
+    "stockinette-stitch": {
+      "summary": "Un rang endroit, un rang envers. Lisse devant, bosselé derrière, avec des bords qui ont tendance à rouler."
+    },
+    "seed-stitch": {
+      "summary": "Mailles endroit et envers alternent et s'opposent d'un rang à l'autre, pour un tricot ferme, grainé et bien plat."
+    },
+    "double-seed-stitch": {
+      "summary": "Comme le point de riz, mais chaque rang est tricoté deux fois avant d'inverser endroit et envers, pour un grain plus gros."
+    },
+    "one-by-one-rib": {
+      "summary": "Des colonnes simples d'endroit et d'envers forment un tricot extensible, souvent utilisé pour les poignets et les bas."
+    },
+    "two-by-two-rib": {
+      "summary": "Des paires de colonnes d'endroit et d'envers donnent des côtes plus marquées et très extensibles."
+    },
+    "broken-rib": {
+      "summary": "Un rang d'une maille endroit, une maille envers alterne avec un rang tout envers, pour des côtes discrètes et de petits reliefs."
+    },
+    "basketweave": {
+      "summary": "Des blocs d'endroit et d'envers s'inversent tous les quatre rangs : le tricot semble tressé. Il reste plat."
+    },
+    "diagonal-rib": {
+      "summary": "Des côtes 2x2 décalées d'une maille à chaque rang, qui avancent en diagonale."
+    },
+    "single-crochet": {
+      "summary": "Le point de base le plus bas, pour un ouvrage ferme et dense, idéal pour les lavettes et les sacs.",
+      "first": "1 ms dans la 2e ml à partir du crochet et 1 ms dans chaque ml jusqu'à la fin. Tournez.",
+      "rows": [
+        "1 ml (ne compte pas comme une maille), 1 ms dans chaque maille jusqu'à la fin. Tournez."
+      ]
+    },
+    "half-double-crochet": {
+      "summary": "Une hauteur entre la maille serrée et la bride : rapide à faire, doux et chaud.",
+      "first": "1 db dans la 3e ml à partir du crochet et 1 db dans chaque ml jusqu'à la fin. Tournez.",
+      "rows": [
+        "2 ml (ne comptent pas comme une maille), 1 db dans chaque maille jusqu'à la fin. Tournez."
+      ]
+    },
+    "double-crochet": {
+      "summary": "Un point haut qui avance vite et tombe bien, adapté aux couvertures et aux écharpes.",
+      "first": "1 b dans la 4e ml à partir du crochet (les 3 premières ml comptent pour 1 b) et 1 b dans chaque ml jusqu'à la fin. Tournez.",
+      "rows": [
+        "3 ml (comptent pour 1 b), sautez la première maille, 1 b dans chaque maille jusqu'à la fin, en terminant par 1 b dans le haut des ml de retournement. Tournez."
+      ]
+    },
+    "back-loop-rib": {
+      "summary": "Des mailles serrées piquées dans le brin arrière seulement, qui forment des côtes extensibles rappelant celles du tricot.",
+      "first": "1 ms dans la 2e ml à partir du crochet et 1 ms dans chaque ml jusqu'à la fin. Tournez.",
+      "rows": [
+        "1 ml (ne compte pas comme une maille), 1 ms dans le brin arrière seulement de chaque maille jusqu'à la fin. Tournez."
+      ]
+    },
+    "moss-stitch": {
+      "summary": "Des mailles serrées séparées par une maille en l'air, piquées dans les espaces du rang précédent. Aussi appelé point de lin ou de granit.",
+      "first": "1 ms dans la 4e ml à partir du crochet, *1 ml, sautez 1 ml, 1 ms dans la ml suivante ; répétez depuis * jusqu'à la fin. Tournez.",
+      "rows": [
+        "2 ml (comptent comme un espace de 1 ml), 1 ms dans le premier espace de 1 ml, *1 ml, sautez la ms suivante, 1 ms dans l'espace de 1 ml suivant ; répétez depuis * jusqu'à la fin, la dernière ms dans l'espace des ml de retournement. Tournez."
+      ]
+    },
+    "mesh-stitch": {
+      "summary": "Des brides séparées par une maille en l'air, qui forment un filet ouvert, léger et aéré.",
+      "first": "1 b dans la 6e ml à partir du crochet (les 5 premières ml comptent pour 1 b et un espace de 1 ml), *1 ml, sautez 1 ml, 1 b dans la ml suivante ; répétez depuis * jusqu'à la fin. Tournez.",
+      "rows": [
+        "4 ml (comptent pour 1 b et un espace de 1 ml), sautez le premier espace de 1 ml, 1 b dans la b suivante, *1 ml, sautez l'espace de 1 ml suivant, 1 b dans la b suivante ; répétez depuis * jusqu'à la fin, la dernière b dans la 3e ml de retournement. Tournez."
+      ]
+    },
+    "v-stitch": {
+      "summary": "Des paires de brides partagent une même maille, et chaque rang s'empile dans les V du précédent, pour un ouvrage ajouré et texturé.",
+      "first": "Sautez les 3 premières ml (comptent pour 1 b), *sautez 1 ml, (1 b, 1 ml, 1 b) dans la ml suivante, sautez 1 ml ; répétez depuis * jusqu'à la dernière ml, 1 b dans la dernière ml. Tournez.",
+      "rows": [
+        "3 ml (comptent pour 1 b), sautez la première maille, *sautez la b suivante, (1 b, 1 ml, 1 b) dans l'espace de 1 ml suivant, sautez la b suivante ; répétez depuis * jusqu'à la dernière maille, 1 b dans le haut des ml de retournement. Tournez."
+      ]
+    }
   }
 }

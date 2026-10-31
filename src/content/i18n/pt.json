@@ -73,6 +73,28 @@
         ],
         "Quando um tamanho fica entre as marcas da régua, a ferramenta arredonda o corte para cima, avisa e sugere os tamanhos mais próximos que dividem exatamente. Confira os números antes de comprar ou cortar."
       ]
+    },
+    "tartan-maker": {
+      "title": "Crie um xadrez e receba um guia de tecelagem",
+      "summary": "Ajuste cores e contagem de fios para criar um xadrez equilibrado, e baixe uma amostra contínua e um guia para imprimir.",
+      "blocks": [
+        "O [criador de tartãs e xadrezes](/tartans/) é a primeira ferramenta nova da [biblioteca de padrões](/patterns/). Escolha cores e contagem de fios, espelhe se quiser e veja o tecido em sarja 2/2.",
+        "Exemplos para começar",
+        [
+          "Brasa",
+          "Porto",
+          "Um xadrez de duas cores"
+        ],
+        "O que você recebe",
+        [
+          "Uma repetição contínua, em SVG ou PNG",
+          "A ordem dos fios para urdir e tecer",
+          "Fios de urdume e passadas de trama para o seu tecido",
+          "Uma estimativa aproximada de fio por cor e um guia em PDF"
+        ],
+        "Só xadrezes originais, por enquanto",
+        "As opções prontas foram inventadas para este site. Alguns tartãs são restritos ou pertencem a uma família ou organização, então tartãs históricos com nome só serão adicionados com fontes documentadas."
+      ]
     }
   },
   "changelog": {
@@ -125,6 +147,12 @@
       "items": [
         "Primeira versão, com 22 blocos tradicionais",
         "Adicionadas listas de corte, metragem, repetições contínuas, links de compartilhamento e moldes em PDF"
+      ]
+    },
+    "Tartan and plaid maker": {
+      "title": "Criador de tartãs e xadrezes",
+      "items": [
+        "Adicionado um criador de tartãs e xadrezes, com amostras contínuas, guias de tecelagem e estimativas de fio"
       ]
     }
   }

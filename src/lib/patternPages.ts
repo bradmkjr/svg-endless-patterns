@@ -1,7 +1,7 @@
 import type { Locale } from "./generator";
 import { messages, type Messages } from "./i18n";
 
-export const PATTERN_SLUGS = ["celtic-knots", "girih", "tessellations", "tartans", "sashiko", "cross-stitch", "stained-glass"] as const;
+export const PATTERN_SLUGS = ["celtic-knots", "girih", "tessellations", "sashiko", "cross-stitch", "stained-glass"] as const;
 
 type Slug = (typeof PATTERN_SLUGS)[number];
 

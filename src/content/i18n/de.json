@@ -73,6 +73,28 @@
         ],
         "Liegt eine Größe zwischen den Linealmarkierungen, rundet das Werkzeug den Zuschnitt auf, weist darauf hin und schlägt die nächsten Größen vor, die genau aufgehen. Prüfe die Zahlen vor dem Kauf oder Zuschnitt."
       ]
+    },
+    "tartan-maker": {
+      "title": "Gestalte ein Karo und erhalte eine Webanleitung",
+      "summary": "Stelle Fadenfarben und -zahlen für ein ausgewogenes Karo ein und lade ein nahtloses Muster und eine druckbare Anleitung herunter.",
+      "blocks": [
+        "Der [Tartan- und Karo-Generator](/tartans/) ist das erste neue Werkzeug aus der [Musterbibliothek](/patterns/). Wähle Fadenfarben und -zahlen, spiegele sie nach Wunsch und sieh den Stoff in 2/2-Köper gewebt.",
+        "Beispiele zum Einstieg",
+        [
+          "Glut",
+          "Hafen",
+          "Ein zweifarbiges Karo"
+        ],
+        "Das bekommst du",
+        [
+          "Einen nahtlosen Rapport als SVG oder PNG",
+          "Die Fadenfolge zum Schären und Weben",
+          "Kettfäden und Schüsse für deine Stoffgröße",
+          "Eine grobe Garnschätzung je Farbe und eine PDF-Anleitung"
+        ],
+        "Vorerst nur eigene Karos",
+        "Die Vorlagen wurden für diese Website erfunden. Manche Tartans sind geschützt oder gehören einer Familie oder Organisation, daher kommen benannte historische Tartans nur mit belegten Quellen hinzu."
+      ]
     }
   },
   "changelog": {
@@ -125,6 +147,12 @@
       "items": [
         "Erste Version mit 22 traditionellen Blöcken",
         "Zuschnittlisten, Stoffbedarf, nahtlose Rapporte, Teilen-Links und PDF-Schablonen ergänzt"
+      ]
+    },
+    "Tartan and plaid maker": {
+      "title": "Tartan- und Karo-Generator",
+      "items": [
+        "Tartan- und Karo-Generator mit nahtlosen Mustern, Webanleitungen und Garnschätzungen ergänzt"
       ]
     }
   }

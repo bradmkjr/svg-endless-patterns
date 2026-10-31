@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { generatePattern, generateStitchPattern, getBlock, getStitchPattern, type Locale } from "@/lib/generator";
+import { generatePattern, generateStitchPattern, generateTartan, getBlock, getStitchPattern, type Locale } from "@/lib/generator";
+import { defaultTartanState } from "@/lib/tartanState";
 import { fill, localePath, messages } from "@/lib/i18n";
 import { patternPages, type PatternPage as PatternPageData } from "@/lib/patternPages";
 import { publicPath } from "@/lib/site";
@@ -27,6 +28,7 @@ export async function PatternLibrary({ locale }: { locale: Locale }) {
   const quilt = (await generatePattern(ohio.slug, defaultState(ohio, locale))).svg.block;
   const knit = await stitchArtUrl("knit", "seed-stitch", locale);
   const crochet = await stitchArtUrl("crochet", "mesh-stitch", locale);
+  const tartan = (await generateTartan(defaultTartanState(locale))).svg.swatch;
   const swatch = (art: typeof knit) => (
     <div
       className={styles.art}
@@ -69,6 +71,21 @@ export async function PatternLibrary({ locale }: { locale: Locale }) {
             <strong>{t.usefulOutput}</strong> {t.crochetOutput}
           </p>
           <Link href={href("/crochet/")}>{t.exploreCrochet}</Link>
+        </article>
+        <article className={styles.card}>
+          <div
+            className={styles.art}
+            role="img"
+            aria-label={t.tartanTitle}
+            style={{ backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(tartan)}")`, backgroundSize: "100% auto", imageRendering: "pixelated" }}
+          />
+          <span className={styles.status}>{t.available}</span>
+          <h2>{t.tartanTitle}</h2>
+          <p>{t.tartanText}</p>
+          <p>
+            <strong>{t.usefulOutput}</strong> {t.tartanOutput}
+          </p>
+          <Link href={href("/tartans/")}>{t.exploreTartan}</Link>
         </article>
         {patternPages(locale).map((page) => (
           <article className={styles.card} key={page.slug}>

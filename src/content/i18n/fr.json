@@ -73,6 +73,28 @@
         ],
         "Quand une taille tombe entre les repères de la règle, l'outil arrondit la coupe au supérieur, le signale et suggère les tailles les plus proches qui se divisent exactement. Vérifiez les chiffres avant d'acheter ou de couper."
       ]
+    },
+    "tartan-maker": {
+      "title": "Créez un carreau et obtenez un guide de tissage",
+      "summary": "Réglez les couleurs et le nombre de fils pour créer un carreau équilibré, puis téléchargez un échantillon continu et un guide à imprimer.",
+      "blocks": [
+        "Le [créateur de tartans et de carreaux](/tartans/) est le premier nouvel outil de la [bibliothèque de motifs](/patterns/). Choisissez les couleurs et le nombre de fils, reflétez-les si vous le souhaitez et voyez le tissu tissé en sergé 2/2.",
+        "Des exemples pour commencer",
+        [
+          "Braise",
+          "Port",
+          "Un carreau bicolore"
+        ],
+        "Ce que vous obtenez",
+        [
+          "Un raccord continu, en SVG ou PNG",
+          "L'ordre des fils pour ourdir et tisser",
+          "Les fils de chaîne et les duites pour votre tissu",
+          "Une estimation approximative de fil par couleur et un guide PDF"
+        ],
+        "Des carreaux originaux seulement, pour l'instant",
+        "Les modèles proposés sont inventés pour ce site. Certains tartans sont réservés ou appartiennent à une famille ou une organisation : les tartans historiques nommés ne seront ajoutés qu'avec des sources documentées."
+      ]
     }
   },
   "changelog": {
@@ -125,6 +147,12 @@
       "items": [
         "Première version, avec 22 blocs traditionnels",
         "Ajout des listes de coupe, du métrage, des raccords continus, des liens de partage et des gabarits PDF"
+      ]
+    },
+    "Tartan and plaid maker": {
+      "title": "Créateur de tartans et de carreaux",
+      "items": [
+        "Ajout d'un créateur de tartans et de carreaux, avec échantillons continus, guides de tissage et estimations de fil"
       ]
     }
   }

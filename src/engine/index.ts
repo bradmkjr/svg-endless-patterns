@@ -14,6 +14,8 @@ import type { BlockInfo, CutLine, PatternRequest, PatternResult } from "./types"
 
 export type * from "./types";
 export { LOCALES } from "./i18n";
+export { generateTartan } from "./tartan";
+export type { TartanRequest, TartanResult, TartanStripe } from "./tartan";
 export { generateStitchPattern, listStitchPatterns } from "./stitchPattern";
 
 // Block names stay in English in every language: they're traditional names people search by.

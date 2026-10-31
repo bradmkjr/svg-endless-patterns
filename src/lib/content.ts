@@ -15,7 +15,8 @@ import { localePath } from "./i18n";
 /** A sample in a post: a live pattern, and the deep link that opens it with these settings. */
 export type PostSample =
   | { kind: "block"; slug: string; query: string; view: "block" | "quilt" | "tile"; caption: string; locale?: Locale }
-  | { kind: "knit" | "crochet"; slug: string; query: string; view: "swatch" | "chart"; caption: string; locale?: Locale };
+  | { kind: "knit" | "crochet"; slug: string; query: string; view: "swatch" | "chart"; caption: string; locale?: Locale }
+  | { kind: "tartan"; slug: ""; query: string; view: "swatch"; caption: string; locale?: Locale };
 
 export type PostBlock =
   | { type: "paragraph"; text: string }
@@ -83,6 +84,8 @@ export function formatDate(date: string, locale: Locale = "en"): string {
 
 /** Where a sample's link goes, before the base path. A sample can name its own language. */
 export function sampleHref(sample: PostSample, locale: Locale = "en"): string {
+  const query = sample.query ? `?${sample.query}` : "";
+  if (sample.kind === "tartan") return localePath(sample.locale ?? locale, `/tartans/${query}`);
   const section = sample.kind === "block" ? "blocks" : sample.kind === "knit" ? "knitting" : "crochet";
-  return localePath(sample.locale ?? locale, `/${section}/${sample.slug}/${sample.query ? `?${sample.query}` : ""}`);
+  return localePath(sample.locale ?? locale, `/${section}/${sample.slug}/${query}`);
 }

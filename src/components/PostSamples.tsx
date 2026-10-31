@@ -1,14 +1,16 @@
 import Link from "next/link";
 import { sampleHref, type PostSample } from "@/lib/content";
-import { generatePattern, generateStitchPattern, getBlock, getStitchPattern, type Locale } from "@/lib/generator";
+import { generatePattern, generateStitchPattern, generateTartan, getBlock, getStitchPattern, type Locale } from "@/lib/generator";
 import { messages } from "@/lib/i18n";
 import { parseState } from "@/lib/state";
 import { parseStitchState } from "@/lib/stitchState";
+import { parseTartanState } from "@/lib/tartanState";
 import styles from "./Blog.module.css";
 
 /** Draws a sample from the same settings its link opens with, so the two can't disagree. */
 async function sampleSvg(sample: PostSample, locale: Locale): Promise<string | null> {
   const params = new URLSearchParams(sample.query);
+  if (sample.kind === "tartan") return (await generateTartan(parseTartanState(params, locale))).svg.swatch;
   if (sample.kind === "block") {
     const block = await getBlock(sample.slug, locale);
     if (!block) return null;

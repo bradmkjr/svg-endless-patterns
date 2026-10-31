@@ -3,6 +3,10 @@
  * can become the request and response bodies of a backend API.
  */
 
+import type { Locale } from "./i18n";
+
+export type { Locale };
+
 export type Setting = "straight" | "alternate" | "quadrants";
 
 export type PatternRequest = {
@@ -19,6 +23,8 @@ export type PatternRequest = {
   seams: boolean;
   /** Color per block fabric id, plus "sashing" and "border". */
   colors: Record<string, string>;
+  /** Language for generated text. English when left out. */
+  locale?: Locale;
 };
 
 export type Craft = "knit" | "crochet";
@@ -32,6 +38,8 @@ export type StitchRequest = {
   stitchGauge: number;
   rowGauge: number;
   color: string;
+  /** Language for generated text. English when left out. */
+  locale?: Locale;
 };
 
 export type StitchInfo = {

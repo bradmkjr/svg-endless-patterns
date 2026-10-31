@@ -1,5 +1,6 @@
 import type { Block } from "./blocks";
 import { approxInches } from "./format";
+import { say, term, type Locale } from "./i18n";
 import { blockPieces, type Point } from "./pieces";
 
 export const SEAM_ALLOWANCE = 0.25;
@@ -43,10 +44,8 @@ function outline(shape: Exclude<Template["shape"], "template">, a: number, b: nu
   return [[0, 0], [a, 0], [a / 2, a / 2]];
 }
 
-const SHAPE_NAMES = { rect: "Rectangle", half: "Half-square triangle", quarter: "Quarter-square triangle" };
-
 /** One true-size template per distinct shape, with how many to cut of each fabric. */
-export function blockTemplates(block: Block, size: number, blocks = 1): Template[] {
+export function blockTemplates(block: Block, size: number, blocks = 1, locale: Locale = "en"): Template[] {
   const unit = size / block.grid;
   const groups = new Map<string, { shape: Template["shape"]; a: number; b: number; title?: string; points: Point[]; counts: Map<string, number> }>();
   for (const p of blockPieces(block)) {
@@ -68,12 +67,12 @@ export function blockTemplates(block: Block, size: number, blocks = 1): Template
         finished,
         cutting: offsetOutline(finished, SEAM_ALLOWANCE),
         counts: [...g.counts].map(([fabric, count]) => ({ fabric, count })),
-        name: g.title ?? "Template",
+        name: term(locale, "templates", g.title ?? "Template"),
       };
     }
     const finished = outline(g.shape, g.a, g.b);
     const isSquare = g.shape === "rect" && g.a === g.b;
-    const name = g.shape === "rect" ? (isSquare ? "Square" : "Rectangle") : SHAPE_NAMES[g.shape];
+    const name = say(locale, g.shape === "half" ? "tmplHalf" : g.shape === "quarter" ? "tmplQuarter" : isSquare ? "tmplSquare" : "tmplRect");
     const dims = g.shape === "rect" ? (isSquare ? `${approxInches(g.a)}"` : `${approxInches(g.a)}" x ${approxInches(g.b)}"`) : `${approxInches(g.a)}"`;
     return {
       label: String.fromCharCode(65 + i),
@@ -81,7 +80,7 @@ export function blockTemplates(block: Block, size: number, blocks = 1): Template
       finished,
       cutting: offsetOutline(finished, SEAM_ALLOWANCE),
       counts: [...g.counts].map(([fabric, count]) => ({ fabric, count })),
-      name: `${name}, ${dims} finished`,
+      name: say(locale, "tmplFinished", { name, dims }),
     };
   });
 }

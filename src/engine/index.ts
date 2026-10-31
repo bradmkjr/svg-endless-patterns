@@ -7,25 +7,37 @@
 import { BLOCKS, type Block } from "./blocks";
 import { blockCuts, describeCut, planQuilt, rulerFriendlySizes, type Cut } from "./cutting";
 import { approxInches, inches } from "./format";
+import { blockText, say, term, type Locale } from "./i18n";
 import { pieceSteps } from "./steps";
 import { blockSvg, quiltSvg, tileSvg } from "./svg";
 import type { BlockInfo, CutLine, PatternRequest, PatternResult } from "./types";
 
 export type * from "./types";
+export { LOCALES } from "./i18n";
 export { generateStitchPattern, listStitchPatterns } from "./stitchPattern";
 
-function toInfo({ slug, name, family, level, grid, fabrics, summary }: Block): BlockInfo {
-  return { slug, name, family, level, grid, fabrics, summary };
+// Block names stay in English in every language: they're traditional names people search by.
+function toInfo({ slug, name, family, level, grid, fabrics, summary }: Block, locale: Locale): BlockInfo {
+  return {
+    slug,
+    name,
+    family: term(locale, "families", family),
+    level: term(locale, "levels", level),
+    grid,
+    fabrics: fabrics.map((f) => ({ id: f.id, label: term(locale, "fabrics", f.label) })),
+    summary: blockText(locale, slug)?.summary ?? summary,
+  };
 }
 
-export function listBlocks(): BlockInfo[] {
-  return BLOCKS.map(toInfo);
+export function listBlocks(locale: Locale = "en"): BlockInfo[] {
+  return BLOCKS.map((block) => toInfo(block, locale));
 }
 
-export function fabricLabel(block: Block, id: string): string {
-  if (id === "sashing") return "Sashing";
-  if (id === "border") return "Border";
-  return block.fabrics.find((f) => f.id === id)?.label ?? id;
+export function fabricLabel(block: Block, id: string, locale: Locale = "en"): string {
+  if (id === "sashing") return say(locale, "labelSashing");
+  if (id === "border") return say(locale, "labelBorder");
+  const label = block.fabrics.find((f) => f.id === id)?.label;
+  return label ? term(locale, "fabrics", label) : id;
 }
 
 export function requireBlock(slug: string): Block {
@@ -34,10 +46,11 @@ export function requireBlock(slug: string): Block {
   return block;
 }
 
-const toLine = (cut: Cut): CutLine => ({ fabric: cut.fabric, description: describeCut(cut), rounded: cut.rounded });
 
 export function generatePattern(slug: string, request: PatternRequest): PatternResult {
   const block = requireBlock(slug);
+  const locale = request.locale ?? "en";
+  const toLine = (cut: Cut): CutLine => ({ fabric: cut.fabric, description: describeCut(cut, locale), rounded: cut.rounded });
   const plan = planQuilt(block, request);
   const perBlock = blockCuts(block, request.size);
   const hasRoundedCuts = perBlock.some((c) => c.rounded);
@@ -55,7 +68,7 @@ export function generatePattern(slug: string, request: PatternRequest): PatternR
       widthLabel: approxInches(plan.size.width),
       heightLabel: approxInches(plan.size.height),
     },
-    yardage: plan.yardage.map(({ fabric, yards }) => ({ fabric, label: fabricLabel(block, fabric), yards: inches(yards) })),
+    yardage: plan.yardage.map(({ fabric, yards }) => ({ fabric, label: fabricLabel(block, fabric, locale), yards: inches(yards) })),
     backing: {
       yards: inches(plan.backing.yards),
       panels: plan.backing.panels,
@@ -63,7 +76,7 @@ export function generatePattern(slug: string, request: PatternRequest): PatternR
       height: approxInches(plan.backing.height),
     },
     binding: { yards: inches(plan.binding.yards), strips: plan.binding.strips, stripWidth: inches(2.5) },
-    steps: pieceSteps(block, request.size),
+    steps: pieceSteps(block, request.size, locale),
     hasRoundedCuts,
     suggestedSizes: hasRoundedCuts ? rulerFriendlySizes(block, request.size) : [],
   };

@@ -1,5 +1,6 @@
 import type { Block } from "./blocks";
 import { ceilToEighth, inches, isOnRuler } from "./format";
+import { say, term, type Locale } from "./i18n";
 import { blockPieces } from "./pieces";
 import type { PatternRequest } from "./types";
 
@@ -180,21 +181,23 @@ export function rulerFriendlySizes(block: Block, size: number): number[] {
   return found;
 }
 
-export function describeCut(cut: Cut): string {
-  const plural = cut.qty === 1 ? "" : "s";
-  const square = `${cut.qty} square${plural}, ${inches(cut.w)}"`;
+export function describeCut(cut: Cut, locale: Locale = "en"): string {
+  const one = cut.qty === 1;
+  const size = inches(cut.w);
+  const square = say(locale, one ? "cutSquareOne" : "cutSquareMany", { n: cut.qty, size });
+  const dims = { n: cut.qty, w: size, h: inches(cut.h) };
   switch (cut.method) {
     case "half":
-      return `${square}, cut once diagonally (${cut.pieces} triangles)`;
+      return square + say(locale, "cutOnce", { t: cut.pieces });
     case "quarter":
-      return `${square}, cut twice diagonally (${cut.pieces} triangles)`;
+      return square + say(locale, "cutTwice", { t: cut.pieces });
     case "template":
-      return `${cut.qty} ${cut.template?.toLowerCase()}${plural}, cut from the PDF template`;
+      return say(locale, "cutTemplate", { n: cut.qty, name: term(locale, "templates", cut.template ?? "") });
     case "square":
       return square;
     case "strip":
-      return `${cut.qty} strip${plural}, ${inches(cut.w)}" x ${inches(cut.h)}", joined if needed`;
+      return say(locale, one ? "stripOne" : "stripMany", dims);
     default:
-      return `${cut.qty} piece${plural}, ${inches(cut.w)}" x ${inches(cut.h)}"`;
+      return say(locale, one ? "pieceOne" : "pieceMany", dims);
   }
 }

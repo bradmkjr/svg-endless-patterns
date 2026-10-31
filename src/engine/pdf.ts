@@ -1,5 +1,6 @@
 import { PDFDocument, rgb, StandardFonts, type PDFFont, type PDFPage } from "pdf-lib";
 import { generatePattern, fabricLabel, requireBlock } from "./index";
+import { say } from "./i18n";
 import { blockPieces, type Point } from "./pieces";
 import { blockTemplates } from "./templates";
 import type { PatternRequest } from "./types";
@@ -70,16 +71,17 @@ export class Writer {
 export async function generatePatternPdf(slug: string, request: PatternRequest): Promise<Uint8Array> {
   const block = requireBlock(slug);
   const result = generatePattern(slug, request);
-  const label = (id: string) => fabricLabel(block, id);
+  const locale = request.locale ?? "en";
+  const label = (id: string) => fabricLabel(block, id, locale);
 
   const doc = await PDFDocument.create();
-  doc.setTitle(`${block.name} quilt pattern`);
+  doc.setTitle(say(locale, "pdfTitle", { name: block.name }));
   const font = await doc.embedFont(StandardFonts.Helvetica);
   const bold = await doc.embedFont(StandardFonts.HelveticaBold);
-  const w = new Writer(doc, font, bold, `${block.name}, ${request.size}" block`);
+  const w = new Writer(doc, font, bold, say(locale, "pdfFooter", { name: block.name, size: request.size }));
 
   w.text(block.name, { size: 22, bold: true });
-  w.text(`${request.size}" finished block. Quilt top ${result.quilt.widthLabel}" x ${result.quilt.heightLabel}", ${result.quilt.blocks} blocks.`, { muted: true });
+  w.text(say(locale, "pdfSub", { size: request.size, w: result.quilt.widthLabel, h: result.quilt.heightLabel, n: result.quilt.blocks }), { muted: true });
   w.gap(10);
 
   const drawSize = 3 * PT;
@@ -91,42 +93,42 @@ export async function generatePatternPdf(slug: string, request: PatternRequest):
   }
   w.y -= drawSize + 14;
 
-  w.text("Fabric to buy", { size: 13, bold: true });
+  w.text(say(locale, "pdfBuy"), { size: 13, bold: true });
   for (const { label: name, yards } of result.yardage) w.text(`${name}: ${yards} yd`);
-  w.text(`Backing: ${result.backing.yards} yd (${result.backing.panels} panel${result.backing.panels === 1 ? "" : "s"}, finished piece ${result.backing.width}" x ${result.backing.height}")`);
-  w.text(`Binding: ${result.binding.yards} yd (${result.binding.strips} strips, ${result.binding.stripWidth}" wide)`);
-  w.text(`Batting: at least ${result.backing.width}" x ${result.backing.height}"`);
-  w.text(`Based on ${request.wof}" usable fabric width. Includes a 10% allowance.`, { muted: true, size: 9 });
+  w.text(say(locale, result.backing.panels === 1 ? "pdfBackingOne" : "pdfBackingMany", { y: result.backing.yards, n: result.backing.panels, w: result.backing.width, h: result.backing.height }));
+  w.text(say(locale, "pdfBinding", { y: result.binding.yards, n: result.binding.strips, w: result.binding.stripWidth }));
+  w.text(say(locale, "pdfBatting", { w: result.backing.width, h: result.backing.height }));
+  w.text(say(locale, "pdfWidth", { w: request.wof }), { muted: true, size: 9 });
   w.gap(10);
 
-  w.text("Cutting list, whole quilt top", { size: 13, bold: true });
+  w.text(say(locale, "pdfCuts"), { size: 13, bold: true });
   const fabrics = [...new Set(result.quiltCuts.map((c) => c.fabric))];
   for (const fabric of fabrics) {
     w.text(label(fabric), { bold: true });
     for (const cut of result.quiltCuts.filter((c) => c.fabric === fabric)) {
-      w.text(`${cut.description}${cut.rounded ? " (rounded up: trim to size)" : ""}`, { x: MARGIN + 10 });
+      w.text(`${cut.description}${cut.rounded ? say(locale, "pdfRounded") : ""}`, { x: MARGIN + 10 });
     }
   }
   w.gap(10);
 
-  w.text("Piecing", { size: 13, bold: true });
+  w.text(say(locale, "pdfPiecing"), { size: 13, bold: true });
   result.steps.forEach((step, i) => w.text(`${i + 1}. ${step}`));
 
   // Templates: true size, packed left to right on as many pages as they need.
   w.newPage();
-  w.text("Templates", { size: 13, bold: true });
-  w.text("Print at 100% (\"actual size\"), then check the 1 inch square. Solid line: cut. Dashed line: sew. Counts cover the whole quilt top.", { muted: true, size: 9 });
+  w.text(say(locale, "pdfTemplates"), { size: 13, bold: true });
+  w.text(say(locale, "pdfTemplateHelp"), { muted: true, size: 9 });
   w.gap(6);
   w.ensure(PT + 14);
   w.page.drawRectangle({ x: MARGIN, y: w.y - PT, width: PT, height: PT, borderColor: INK, borderWidth: 0.75 });
-  w.page.drawText("1 inch", { x: MARGIN + 18, y: w.y - PT / 2 - 3, size: 9, font, color: INK });
+  w.page.drawText(say(locale, "pdfInch"), { x: MARGIN + 8, y: w.y - PT / 2 - 3, size: 9, font, color: INK });
   w.y -= PT + 14;
 
   const LINE = 11;
   const tooLarge: string[] = [];
   let x = MARGIN;
   let rowHeight = 0;
-  for (const template of blockTemplates(block, request.size, result.quilt.blocks)) {
+  for (const template of blockTemplates(block, request.size, result.quilt.blocks, locale)) {
     const xs = template.cutting.map(([px]) => px);
     const ys = template.cutting.map(([, py]) => py);
     const minX = Math.min(...xs);
@@ -163,7 +165,7 @@ export async function generatePatternPdf(slug: string, request: PatternRequest):
   if (tooLarge.length) {
     w.y -= rowHeight;
     w.gap(6);
-    w.text(`Too large for one sheet, so cut these from the cutting list: ${tooLarge.join("; ")}.`, { muted: true, size: 9 });
+    w.text(say(locale, "pdfTooLarge", { list: tooLarge.join("; ") }), { muted: true, size: 9 });
   }
 
   return doc.save();

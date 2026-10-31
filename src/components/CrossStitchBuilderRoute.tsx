@@ -5,18 +5,10 @@ import { Suspense, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import catalog from "@/i18n/messages/crossStitch.json";
 import type { CrossStitchResult, Locale } from "@/lib/generator";
-<<<<<<< ours
-import { parseCrossStitchState } from "@/lib/crossStitchState";
-import { withOption } from "@/lib/toolOptions";
-import { CrossStitchBuilder } from "./CrossStitchBuilder";
-
-function FromShareLink({ initial, locale, option, labels }: { initial: CrossStitchResult; locale: Locale; option?: string; labels: Record<string, string> }) {
-  const params = useSearchParams();
-  return <CrossStitchBuilder locale={locale} option={option} labels={labels} initialState={parseCrossStitchState(withOption("crossStitch", option, params), locale)} initialResult={initial} />;
-=======
 import { localePath } from "@/lib/i18n";
-import { defaultCrossStitchState, parseCrossStitchState } from "@/lib/crossStitchState";
+import { parseCrossStitchState } from "@/lib/crossStitchState";
 import { legacyNeedlepointQuery } from "@/lib/needlepointState";
+import { withOption } from "@/lib/toolOptions";
 import { CrossStitchBuilder } from "./CrossStitchBuilder";
 
 /** An old needlepoint share link: goes on to the needlepoint page, with a link in case it can't. */
@@ -31,12 +23,11 @@ function OpenInNeedlepoint({ href, locale }: { href: string; locale: Locale }) {
   );
 }
 
-function FromShareLink({ initial, locale }: { initial: CrossStitchResult; locale: Locale }) {
+function FromShareLink({ initial, locale, option, labels }: { initial: CrossStitchResult; locale: Locale; option?: string; labels: Record<string, string> }) {
   const params = useSearchParams();
   const needlepoint = legacyNeedlepointQuery(params, locale);
   if (needlepoint !== null) return <OpenInNeedlepoint href={localePath(locale, needlepoint ? `/needlepoint/?${needlepoint}` : "/needlepoint/")} locale={locale} />;
-  return <CrossStitchBuilder locale={locale} initialState={parseCrossStitchState(params, locale)} initialResult={initial} />;
->>>>>>> theirs
+  return <CrossStitchBuilder locale={locale} option={option} labels={labels} initialState={parseCrossStitchState(withOption("crossStitch", option, params), locale)} initialResult={initial} />;
 }
 
 /** Same arrangement as `BlockBuilderRoute`: default design in the HTML, share link settings on load. */

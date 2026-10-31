@@ -6,7 +6,6 @@ import { generateNeedlepoint, generateNeedlepointPdf, type Locale, type Needlepo
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { fill, messages } from "@/lib/i18n";
 import {
-  designColors,
   FINISH_OPTIONS,
   GRID_OPTIONS,
   MARGIN_OPTIONS,
@@ -20,6 +19,10 @@ import {
   STITCH_OPTIONS,
   YARN_OPTIONS,
 } from "@/lib/needlepointState";
+import { syncShareLink } from "@/lib/toolOptions";
+import { paletteAccents } from "@/lib/palettes";
+import { OptionNav, useOptionNavigation } from "./OptionNav";
+import { PalettePicker } from "./PalettePicker";
 import styles from "./BlockBuilder.module.css";
 import { CountedProjectGuide, NumberSelect } from "./CountedProjectGuide";
 import css from "./CrossStitchBuilder.module.css";
@@ -30,9 +33,10 @@ const symbolOf = (result: NeedlepointResult, i: number) => result.colors[i]?.sym
 
 type View = "stitched" | "chart" | "edit";
 
-export function NeedlepointBuilder({ locale, initialState, initialResult }: { locale: Locale; initialState: NeedlepointRequest; initialResult: NeedlepointResult }) {
+export function NeedlepointBuilder({ locale, option, labels, initialState, initialResult }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: NeedlepointRequest; initialResult: NeedlepointResult }) {
   const t = catalog[locale];
   const b = messages(locale).builder;
+  const goToOption = useOptionNavigation("needlepoint", locale);
   const [state, setState] = useState(initialState);
   const [result, setResult] = useState(initialResult);
   const [view, setView] = useState<View>("stitched");
@@ -67,8 +71,8 @@ export function NeedlepointBuilder({ locale, initialState, initialResult }: { lo
 
   useEffect(() => {
     const query = serializeNeedlepointState(state);
-    window.history.replaceState(window.history.state, "", query ? `?${query}` : window.location.pathname);
-  }, [state]);
+    syncShareLink(query, "needlepoint", option);
+  }, [state, option]);
 
   const run = async (working: string, done: string, action: () => Promise<void> | void) => {
     setBusy(true);
@@ -95,6 +99,7 @@ export function NeedlepointBuilder({ locale, initialState, initialResult }: { lo
 
   return (
     <div className={styles.builder}>
+      <OptionNav tool="needlepoint" locale={locale} current={option} labels={labels} />
       <div className={styles.workspace}>
         <section className={styles.preview} aria-label={b.preview}>
           <div className={`${styles.tabs} no-print`}>
@@ -167,10 +172,7 @@ export function NeedlepointBuilder({ locale, initialState, initialResult }: { lo
                   key={design.id}
                   type="button"
                   className={styles.tab}
-                  onClick={() => {
-                    update({ grid: design.grid, colors: designColors(design, locale) });
-                    setTool(0);
-                  }}
+                  onClick={() => goToOption(design.id)}
                 >
                   {t.motifs[design.id]}
                 </button>
@@ -213,6 +215,7 @@ export function NeedlepointBuilder({ locale, initialState, initialResult }: { lo
               <input type="color" value={state.canvas} onChange={(e) => update({ canvas: e.target.value })} />
               {t.canvasColor}
             </label>
+            <PalettePicker locale={locale} current={[state.canvas, ...state.colors]} onApply={(c) => update({ canvas: c[0], colors: paletteAccents(c, state.colors.length) })} />
           </fieldset>
 
           <fieldset>

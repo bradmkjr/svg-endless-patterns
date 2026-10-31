@@ -1,14 +1,10 @@
 import type catalog from "@/i18n/messages/crossStitch.json";
-<<<<<<< ours
 import { localeAccent } from "./localeAccent";
-import type { CrossStitchCraft, CrossStitchRequest, Locale } from "./generator";
-=======
 import { colorsUsed, decodeColors, decodeGrid, encodeGrid, hex, pick, pickFinish, sameGrid } from "./countedGrid";
 import { DESIGNS } from "./crossStitchDesigns";
 import type { CrossStitchRequest, Locale } from "./generator";
 
 export { colorsUsed, GRID_OPTIONS, MAX_COLORS, MAX_GRID, MIN_GRID, removeColor, resizeGrid, setCell } from "./countedGrid";
->>>>>>> theirs
 
 /** The cross-stitch builder's options, motifs and share links. */
 

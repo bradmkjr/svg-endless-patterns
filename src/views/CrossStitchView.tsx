@@ -4,13 +4,9 @@ import { CrossStitchBuilderRoute } from "@/components/CrossStitchBuilderRoute";
 import catalog from "@/i18n/messages/crossStitch.json";
 import { parseCrossStitchState } from "@/lib/crossStitchState";
 import { generateCrossStitch, type Locale } from "@/lib/generator";
-<<<<<<< ours
 import { optionLabels } from "@/lib/toolPages";
 import { withOption } from "@/lib/toolOptions";
-import { pageAlternates } from "@/lib/i18n";
-=======
 import { localePath, pageAlternates } from "@/lib/i18n";
->>>>>>> theirs
 
 export function crossStitchMetadata(locale: Locale): Metadata {
   const t = catalog[locale];

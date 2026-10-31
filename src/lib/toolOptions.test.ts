@@ -3,6 +3,7 @@ import { describe, expect, it } from "vitest";
 import { parseCelticKnotState, serializeCelticKnotState } from "./celticKnotState";
 import { parseCrossStitchState, serializeCrossStitchState } from "./crossStitchState";
 import { parseGirihState, serializeGirihState } from "./girihState";
+import { parseNeedlepointState, serializeNeedlepointState } from "./needlepointState";
 import { parseMandalaState, serializeMandalaState } from "./mandalaState";
 import { parseSashikoState, serializeSashikoState } from "./sashikoState";
 import { parseStainedGlassState, serializeStainedGlassState } from "./stainedGlassState";
@@ -21,6 +22,7 @@ const ROUND_TRIP: Record<ToolId, (params: URLSearchParams) => string> = {
   celticKnot: (p) => serializeCelticKnotState(parseCelticKnotState(p)),
   stainedGlass: (p) => serializeStainedGlassState(parseStainedGlassState(p)),
   crossStitch: (p) => serializeCrossStitchState(parseCrossStitchState(p)),
+  needlepoint: (p) => serializeNeedlepointState(parseNeedlepointState(p)),
   mandala: (p) => serializeMandalaState(parseMandalaState(p)),
 };
 

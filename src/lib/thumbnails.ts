@@ -1,6 +1,7 @@
 import { parseCelticKnotState } from "./celticKnotState";
 import { parseCrossStitchState } from "./crossStitchState";
-import { generateCelticKnot, generateCrossStitch, generateGirih, generateMandala, generatePattern, generateSashiko, generateStainedGlass, generateStitchPattern, generateTartan, generateTessellation, generateTruchet, getBlocks, getStitchPatterns } from "./generator";
+import { parseNeedlepointState } from "./needlepointState";
+import { generateCelticKnot, generateCrossStitch, generateGirih, generateMandala, generateNeedlepoint, generatePattern, generateSashiko, generateStainedGlass, generateStitchPattern, generateTartan, generateTessellation, generateTruchet, getBlocks, getStitchPatterns } from "./generator";
 import { parseGirihState } from "./girihState";
 import { parseMandalaState } from "./mandalaState";
 import { parseSashikoState } from "./sashikoState";
@@ -45,6 +46,7 @@ const TOOL_DRAW: Record<ToolId, (params: URLSearchParams) => Promise<string>> = 
   celticKnot: async (p) => (await generateCelticKnot(parseCelticKnotState(p))).svg.art,
   stainedGlass: async (p) => (await generateStainedGlass(parseStainedGlassState(p))).svg.panel,
   crossStitch: async (p) => (await generateCrossStitch(parseCrossStitchState(p))).svg.stitched,
+  needlepoint: async (p) => (await generateNeedlepoint(parseNeedlepointState(p))).svg.stitched,
   mandala: async (p) => (await generateMandala(parseMandalaState(p))).svg.art,
 };
 

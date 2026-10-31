@@ -2,6 +2,7 @@ import type catalog from "@/i18n/messages/needlepoint.json";
 import { colorsUsed, decodeColors, decodeGrid, encodeGrid, hex, pick, pickFinish, pickHex, sameGrid } from "./countedGrid";
 import { defaultCrossStitchState, parseCrossStitchState } from "./crossStitchState";
 import type { Locale, NeedlepointRequest, NeedlepointStitch, NeedlepointYarn } from "./generator";
+import { localeAccent } from "./localeAccent";
 import { DESIGNS } from "./needlepointDesigns";
 
 export { colorsUsed, FINISH_OPTIONS, GRID_OPTIONS, MAX_COLORS, MAX_GRID, MIN_GRID, removeColor, resizeGrid, setCell } from "./countedGrid";
@@ -24,7 +25,6 @@ export const MOTIFS: NeedlepointDesign[] = DESIGNS;
 const DEFAULT_DESIGN = MOTIFS[0];
 
 /** One swatch of the opening design changes with the language; the rest stay as drawn. */
-const LANGUAGE_SWATCH: Partial<Record<Locale, string>> = { es: "#aa151b", fr: "#0055a4", de: "#d00000", pt: "#009b3a" };
 const SWATCH_INDEX = 2;
 
 /** What a color takes when a hand-edited grid needs one that wasn't chosen. */
@@ -32,9 +32,8 @@ const SPARE_COLORS = ["#7a1f1f", "#3f6b5a", "#23395d", "#b8862b", "#6b4226", "#7
 
 /** A design's colors. Only the opening design varies by language. */
 export function designColors(design: NeedlepointDesign, locale: Locale = "en"): string[] {
-  const swatch = LANGUAGE_SWATCH[locale];
-  if (design.id !== DEFAULT_DESIGN.id || !swatch) return design.colors;
-  return design.colors.map((color, i) => (i === SWATCH_INDEX ? swatch : color));
+  if (design.id !== DEFAULT_DESIGN.id) return design.colors;
+  return design.colors.map((color, i) => (i === SWATCH_INDEX ? localeAccent(locale, color) : color));
 }
 
 const findDesign = (grid: string[]) => MOTIFS.find((design) => sameGrid(design.grid, grid));

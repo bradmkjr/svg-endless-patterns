@@ -3,6 +3,7 @@ import crossStitch from "@/i18n/messages/crossStitch.json";
 import girih from "@/i18n/messages/girih.json";
 import glass from "@/i18n/messages/stainedGlass.json";
 import mandala from "@/i18n/messages/mandala.json";
+import needlepoint from "@/i18n/messages/needlepoint.json";
 import sashiko from "@/i18n/messages/sashiko.json";
 import truchet from "@/i18n/messages/truchet.json";
 import { PATTERN_OPTIONS } from "./celticKnotState";
@@ -14,6 +15,7 @@ import { SYMMETRY_OPTIONS as MANDALA_SYMMETRY } from "./mandalaState";
 import { MOTIF_OPTIONS as SASHIKO_MOTIFS } from "./sashikoState";
 import { GLASS_LAYOUTS } from "./stainedGlassState";
 import { publicPath } from "./site";
+import { MOTIFS as NEEDLEPOINT_DESIGNS } from "./needlepointState";
 import { GROUPS } from "./tessellationState";
 import { STYLE_OPTIONS } from "./truchetState";
 
@@ -22,7 +24,7 @@ import { STYLE_OPTIONS } from "./truchetState";
  * the choice comes from the path, and every other setting stays in the query string.
  */
 
-export type ToolId = "truchet" | "tessellation" | "girih" | "sashiko" | "celticKnot" | "stainedGlass" | "crossStitch" | "mandala";
+export type ToolId = "truchet" | "tessellation" | "girih" | "sashiko" | "celticKnot" | "stainedGlass" | "crossStitch" | "needlepoint" | "mandala";
 type ToolOption = { slug: string; value: string };
 type Tool = { path: string; param: string; options: ToolOption[] };
 
@@ -37,6 +39,7 @@ export const TOOL_OPTIONS: Record<ToolId, Tool> = {
   celticKnot: { path: "/celtic-knots/", param: "p", options: named(PATTERN_OPTIONS) },
   stainedGlass: { path: "/stained-glass/", param: "l", options: named(GLASS_LAYOUTS) },
   crossStitch: { path: "/cross-stitch/", param: "m", options: named(STITCH_MOTIFS.map((m) => m.id)) },
+  needlepoint: { path: "/needlepoint/", param: "m", options: named(NEEDLEPOINT_DESIGNS.map((m) => m.id)) },
   mandala: { path: "/mandalas/", param: "n", options: folds(MANDALA_SYMMETRY) },
 };
 
@@ -130,6 +133,8 @@ export function optionLabel(tool: ToolId, slug: string, locale: Locale, tessella
       return glass[locale].layouts[value as keyof (typeof glass)["en"]["layouts"]];
     case "crossStitch":
       return crossStitch[locale].motifs[value as keyof (typeof crossStitch)["en"]["motifs"]];
+    case "needlepoint":
+      return needlepoint[locale].motifs[value as keyof (typeof needlepoint)["en"]["motifs"]];
     case "mandala":
       return fill(mandala[locale].fold, { n: value });
   }

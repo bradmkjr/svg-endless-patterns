@@ -33,24 +33,7 @@ type View = "stitched" | "chart" | "edit";
 /** The color being painted, or -1 for bare fabric. */
 type Tool = number;
 
-<<<<<<< ours
-function NumberSelect({ label, value, options, unit = "", onChange }: { label: string; value: number; options: number[]; unit?: string; onChange: (value: number) => void }) {
-  return (
-    <label className={styles.field}>
-      <span>{label}</span>
-      <select value={value} onChange={(e) => onChange(Number(e.target.value))}>
-        {options.map((option) => (
-          <option key={option} value={option}>{`${option}${unit}`}</option>
-        ))}
-      </select>
-    </label>
-  );
-}
-
 export function CrossStitchBuilder({ locale, option, labels, initialState, initialResult }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: CrossStitchRequest; initialResult: CrossStitchResult }) {
-=======
-export function CrossStitchBuilder({ locale, initialState, initialResult }: { locale: Locale; initialState: CrossStitchRequest; initialResult: CrossStitchResult }) {
->>>>>>> theirs
   const t = catalog[locale];
   const b = messages(locale).builder;
   const goToOption = useOptionNavigation("crossStitch", locale);

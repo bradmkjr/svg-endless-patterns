@@ -28,12 +28,132 @@
     "repeatWidth": "Repeat width",
     "across": "Repeats across",
     "down": "Repeats down",
-    "palettes": { "ink": "Ink", "clay": "Clay", "garden": "Garden", "tide": "Tide" },
+    "palettes": {
+      "ink": "Ink",
+      "clay": "Clay",
+      "garden": "Garden",
+      "tide": "Tide"
+    },
     "originalTitle": "Original motifs.",
     "originalText": "The motifs are drawn for this site. Each is deliberately lopsided, so the pattern shows the group's symmetry and no more.",
     "groupHeading": "Group {group}",
     "guide": "Using this pattern",
-    "layoutSize": "This layout of {across} x {down} repeats is {w}\" x {h}\"."
+    "layoutSize": "This layout of {across} x {down} repeats is {w}\" x {h}\".",
+    "options": {
+      "groups": [
+        {
+          "id": "p1",
+          "family": "oblique",
+          "description": "translations only"
+        },
+        {
+          "id": "p2",
+          "family": "oblique",
+          "description": "half turns, no mirrors"
+        },
+        {
+          "id": "pm",
+          "family": "rectangular",
+          "description": "parallel mirrors"
+        },
+        {
+          "id": "pg",
+          "family": "rectangular",
+          "description": "parallel glide reflections"
+        },
+        {
+          "id": "cm",
+          "family": "rhombic (centered rectangular)",
+          "description": "parallel mirrors with glides between them"
+        },
+        {
+          "id": "pmm",
+          "family": "rectangular",
+          "description": "mirrors in two directions, with half turns on them"
+        },
+        {
+          "id": "pmg",
+          "family": "rectangular",
+          "description": "mirrors in one direction, with glides and half turns"
+        },
+        {
+          "id": "pgg",
+          "family": "rectangular",
+          "description": "glides in two directions, with half turns"
+        },
+        {
+          "id": "cmm",
+          "family": "rhombic (centered rectangular)",
+          "description": "mirrors in two directions, with half turns on and off them"
+        },
+        {
+          "id": "p4",
+          "family": "square",
+          "description": "quarter turns, no mirrors"
+        },
+        {
+          "id": "p4m",
+          "family": "square",
+          "description": "quarter turns on mirrors"
+        },
+        {
+          "id": "p4g",
+          "family": "square",
+          "description": "quarter turns off the mirrors"
+        },
+        {
+          "id": "p3",
+          "family": "hexagonal",
+          "description": "third turns, no mirrors"
+        },
+        {
+          "id": "p3m1",
+          "family": "hexagonal",
+          "description": "third turns, all on mirrors"
+        },
+        {
+          "id": "p31m",
+          "family": "hexagonal",
+          "description": "third turns, some off the mirrors"
+        },
+        {
+          "id": "p6",
+          "family": "hexagonal",
+          "description": "sixth turns, no mirrors"
+        },
+        {
+          "id": "p6m",
+          "family": "hexagonal",
+          "description": "sixth turns and mirrors"
+        }
+      ],
+      "motifs": [
+        {
+          "id": "leaf",
+          "name": "Leaf"
+        },
+        {
+          "id": "fish",
+          "name": "Fish"
+        },
+        {
+          "id": "bird",
+          "name": "Bird"
+        },
+        {
+          "id": "paisley",
+          "name": "Teardrop"
+        },
+        {
+          "id": "flag",
+          "name": "Flag"
+        },
+        {
+          "id": "sailboat",
+          "name": "Sailboat"
+        }
+      ]
+    }
   },
   "es": {
     "metaTitle": "Creador de teselaciones: los 17 grupos de papel tapiz, SVG, PNG y PDF",
@@ -64,12 +184,132 @@
     "repeatWidth": "Ancho de la repetición",
     "across": "Repeticiones a lo ancho",
     "down": "Repeticiones a lo alto",
-    "palettes": { "ink": "Tinta", "clay": "Arcilla", "garden": "Jardín", "tide": "Marea" },
+    "palettes": {
+      "ink": "Tinta",
+      "clay": "Arcilla",
+      "garden": "Jardín",
+      "tide": "Marea"
+    },
     "originalTitle": "Motivos originales.",
     "originalText": "Los motivos se dibujaron para este sitio. Cada uno es asimétrico a propósito, para que el patrón muestre la simetría del grupo y nada más.",
     "groupHeading": "Grupo {group}",
     "guide": "Cómo usar este patrón",
-    "layoutSize": "Esta disposición de {across} x {down} repeticiones mide {w}\" x {h}\"."
+    "layoutSize": "Esta disposición de {across} x {down} repeticiones mide {w}\" x {h}\".",
+    "options": {
+      "groups": [
+        {
+          "id": "p1",
+          "family": "oblicua",
+          "description": "solo traslaciones"
+        },
+        {
+          "id": "p2",
+          "family": "oblicua",
+          "description": "medias vueltas, sin espejos"
+        },
+        {
+          "id": "pm",
+          "family": "rectangular",
+          "description": "espejos paralelos"
+        },
+        {
+          "id": "pg",
+          "family": "rectangular",
+          "description": "reflexiones con deslizamiento paralelas"
+        },
+        {
+          "id": "cm",
+          "family": "rómbica (rectangular centrada)",
+          "description": "espejos paralelos con deslizamientos entre ellos"
+        },
+        {
+          "id": "pmm",
+          "family": "rectangular",
+          "description": "espejos en dos direcciones, con medias vueltas sobre ellos"
+        },
+        {
+          "id": "pmg",
+          "family": "rectangular",
+          "description": "espejos en una dirección, con deslizamientos y medias vueltas"
+        },
+        {
+          "id": "pgg",
+          "family": "rectangular",
+          "description": "deslizamientos en dos direcciones, con medias vueltas"
+        },
+        {
+          "id": "cmm",
+          "family": "rómbica (rectangular centrada)",
+          "description": "espejos en dos direcciones, con medias vueltas dentro y fuera de ellos"
+        },
+        {
+          "id": "p4",
+          "family": "cuadrada",
+          "description": "cuartos de vuelta, sin espejos"
+        },
+        {
+          "id": "p4m",
+          "family": "cuadrada",
+          "description": "cuartos de vuelta sobre espejos"
+        },
+        {
+          "id": "p4g",
+          "family": "cuadrada",
+          "description": "cuartos de vuelta fuera de los espejos"
+        },
+        {
+          "id": "p3",
+          "family": "hexagonal",
+          "description": "tercios de vuelta, sin espejos"
+        },
+        {
+          "id": "p3m1",
+          "family": "hexagonal",
+          "description": "tercios de vuelta, todos sobre espejos"
+        },
+        {
+          "id": "p31m",
+          "family": "hexagonal",
+          "description": "tercios de vuelta, algunos fuera de los espejos"
+        },
+        {
+          "id": "p6",
+          "family": "hexagonal",
+          "description": "sextos de vuelta, sin espejos"
+        },
+        {
+          "id": "p6m",
+          "family": "hexagonal",
+          "description": "sextos de vuelta y espejos"
+        }
+      ],
+      "motifs": [
+        {
+          "id": "leaf",
+          "name": "Hoja"
+        },
+        {
+          "id": "fish",
+          "name": "Pez"
+        },
+        {
+          "id": "bird",
+          "name": "Pájaro"
+        },
+        {
+          "id": "paisley",
+          "name": "Gota"
+        },
+        {
+          "id": "flag",
+          "name": "Bandera"
+        },
+        {
+          "id": "sailboat",
+          "name": "Velero"
+        }
+      ]
+    }
   },
   "fr": {
     "metaTitle": "Créateur de pavages : les 17 groupes de papier peint, SVG, PNG et PDF",
@@ -100,12 +340,132 @@
     "repeatWidth": "Largeur du raccord",
     "across": "Raccords en largeur",
     "down": "Raccords en hauteur",
-    "palettes": { "ink": "Encre", "clay": "Argile", "garden": "Jardin", "tide": "Marée" },
+    "palettes": {
+      "ink": "Encre",
+      "clay": "Argile",
+      "garden": "Jardin",
+      "tide": "Marée"
+    },
     "originalTitle": "Motifs originaux.",
     "originalText": "Les motifs ont été dessinés pour ce site. Chacun est volontairement asymétrique, pour que le résultat montre la symétrie du groupe, et rien de plus.",
     "groupHeading": "Groupe {group}",
     "guide": "Utiliser ce motif",
-    "layoutSize": "Cette disposition de {across} x {down} raccords mesure {w}\" x {h}\"."
+    "layoutSize": "Cette disposition de {across} x {down} raccords mesure {w}\" x {h}\".",
+    "options": {
+      "groups": [
+        {
+          "id": "p1",
+          "family": "oblique",
+          "description": "translations seules"
+        },
+        {
+          "id": "p2",
+          "family": "oblique",
+          "description": "demi-tours, sans miroir"
+        },
+        {
+          "id": "pm",
+          "family": "rectangulaire",
+          "description": "miroirs parallèles"
+        },
+        {
+          "id": "pg",
+          "family": "rectangulaire",
+          "description": "réflexions glissées parallèles"
+        },
+        {
+          "id": "cm",
+          "family": "rhombique (rectangulaire centré)",
+          "description": "miroirs parallèles, avec des glissements entre eux"
+        },
+        {
+          "id": "pmm",
+          "family": "rectangulaire",
+          "description": "miroirs dans deux directions, avec des demi-tours sur eux"
+        },
+        {
+          "id": "pmg",
+          "family": "rectangulaire",
+          "description": "miroirs dans une direction, avec glissements et demi-tours"
+        },
+        {
+          "id": "pgg",
+          "family": "rectangulaire",
+          "description": "glissements dans deux directions, avec des demi-tours"
+        },
+        {
+          "id": "cmm",
+          "family": "rhombique (rectangulaire centré)",
+          "description": "miroirs dans deux directions, avec des demi-tours sur eux et hors d'eux"
+        },
+        {
+          "id": "p4",
+          "family": "carré",
+          "description": "quarts de tour, sans miroir"
+        },
+        {
+          "id": "p4m",
+          "family": "carré",
+          "description": "quarts de tour sur des miroirs"
+        },
+        {
+          "id": "p4g",
+          "family": "carré",
+          "description": "quarts de tour hors des miroirs"
+        },
+        {
+          "id": "p3",
+          "family": "hexagonal",
+          "description": "tiers de tour, sans miroir"
+        },
+        {
+          "id": "p3m1",
+          "family": "hexagonal",
+          "description": "tiers de tour, tous sur des miroirs"
+        },
+        {
+          "id": "p31m",
+          "family": "hexagonal",
+          "description": "tiers de tour, certains hors des miroirs"
+        },
+        {
+          "id": "p6",
+          "family": "hexagonal",
+          "description": "sixièmes de tour, sans miroir"
+        },
+        {
+          "id": "p6m",
+          "family": "hexagonal",
+          "description": "sixièmes de tour et miroirs"
+        }
+      ],
+      "motifs": [
+        {
+          "id": "leaf",
+          "name": "Feuille"
+        },
+        {
+          "id": "fish",
+          "name": "Poisson"
+        },
+        {
+          "id": "bird",
+          "name": "Oiseau"
+        },
+        {
+          "id": "paisley",
+          "name": "Goutte"
+        },
+        {
+          "id": "flag",
+          "name": "Drapeau"
+        },
+        {
+          "id": "sailboat",
+          "name": "Voilier"
+        }
+      ]
+    }
   },
   "de": {
     "metaTitle": "Parkettierungs-Generator: alle 17 Ornamentgruppen, SVG, PNG und PDF",
@@ -136,12 +496,132 @@
     "repeatWidth": "Breite des Rapports",
     "across": "Rapporte nebeneinander",
     "down": "Rapporte untereinander",
-    "palettes": { "ink": "Tinte", "clay": "Ton", "garden": "Garten", "tide": "Gezeiten" },
+    "palettes": {
+      "ink": "Tinte",
+      "clay": "Ton",
+      "garden": "Garten",
+      "tide": "Gezeiten"
+    },
     "originalTitle": "Eigene Motive.",
     "originalText": "Die Motive wurden für diese Seite gezeichnet. Jedes ist absichtlich asymmetrisch, damit das Muster genau die Symmetrie der Gruppe zeigt und nicht mehr.",
     "groupHeading": "Gruppe {group}",
     "guide": "So nutzt du dieses Muster",
-    "layoutSize": "Diese Anordnung aus {across} x {down} Rapporten misst {w}\" x {h}\"."
+    "layoutSize": "Diese Anordnung aus {across} x {down} Rapporten misst {w}\" x {h}\".",
+    "options": {
+      "groups": [
+        {
+          "id": "p1",
+          "family": "schiefwinklig",
+          "description": "nur Verschiebungen"
+        },
+        {
+          "id": "p2",
+          "family": "schiefwinklig",
+          "description": "halbe Drehungen, keine Spiegel"
+        },
+        {
+          "id": "pm",
+          "family": "rechteckig",
+          "description": "parallele Spiegel"
+        },
+        {
+          "id": "pg",
+          "family": "rechteckig",
+          "description": "parallele Gleitspiegelungen"
+        },
+        {
+          "id": "cm",
+          "family": "rhombisch (zentriert rechteckig)",
+          "description": "parallele Spiegel mit Gleitspiegelungen dazwischen"
+        },
+        {
+          "id": "pmm",
+          "family": "rechteckig",
+          "description": "Spiegel in zwei Richtungen, mit halben Drehungen darauf"
+        },
+        {
+          "id": "pmg",
+          "family": "rechteckig",
+          "description": "Spiegel in einer Richtung, mit Gleitspiegelungen und halben Drehungen"
+        },
+        {
+          "id": "pgg",
+          "family": "rechteckig",
+          "description": "Gleitspiegelungen in zwei Richtungen, mit halben Drehungen"
+        },
+        {
+          "id": "cmm",
+          "family": "rhombisch (zentriert rechteckig)",
+          "description": "Spiegel in zwei Richtungen, mit halben Drehungen auf und neben ihnen"
+        },
+        {
+          "id": "p4",
+          "family": "quadratisch",
+          "description": "Vierteldrehungen, keine Spiegel"
+        },
+        {
+          "id": "p4m",
+          "family": "quadratisch",
+          "description": "Vierteldrehungen auf Spiegeln"
+        },
+        {
+          "id": "p4g",
+          "family": "quadratisch",
+          "description": "Vierteldrehungen neben den Spiegeln"
+        },
+        {
+          "id": "p3",
+          "family": "hexagonal",
+          "description": "Dritteldrehungen, keine Spiegel"
+        },
+        {
+          "id": "p3m1",
+          "family": "hexagonal",
+          "description": "Dritteldrehungen, alle auf Spiegeln"
+        },
+        {
+          "id": "p31m",
+          "family": "hexagonal",
+          "description": "Dritteldrehungen, einige neben den Spiegeln"
+        },
+        {
+          "id": "p6",
+          "family": "hexagonal",
+          "description": "Sechsteldrehungen, keine Spiegel"
+        },
+        {
+          "id": "p6m",
+          "family": "hexagonal",
+          "description": "Sechsteldrehungen und Spiegel"
+        }
+      ],
+      "motifs": [
+        {
+          "id": "leaf",
+          "name": "Blatt"
+        },
+        {
+          "id": "fish",
+          "name": "Fisch"
+        },
+        {
+          "id": "bird",
+          "name": "Vogel"
+        },
+        {
+          "id": "paisley",
+          "name": "Tropfen"
+        },
+        {
+          "id": "flag",
+          "name": "Fahne"
+        },
+        {
+          "id": "sailboat",
+          "name": "Segelboot"
+        }
+      ]
+    }
   },
   "pt": {
     "metaTitle": "Criador de tesselações: os 17 grupos de papel de parede, SVG, PNG e PDF",
@@ -172,11 +652,131 @@
     "repeatWidth": "Largura da repetição",
     "across": "Repetições na largura",
     "down": "Repetições na altura",
-    "palettes": { "ink": "Tinta", "clay": "Argila", "garden": "Jardim", "tide": "Maré" },
+    "palettes": {
+      "ink": "Tinta",
+      "clay": "Argila",
+      "garden": "Jardim",
+      "tide": "Maré"
+    },
     "originalTitle": "Motivos originais.",
     "originalText": "Os motivos foram desenhados para este site. Cada um é assimétrico de propósito, para que o padrão mostre a simetria do grupo e nada mais.",
     "groupHeading": "Grupo {group}",
     "guide": "Como usar este padrão",
-    "layoutSize": "Esta disposição de {across} x {down} repetições mede {w}\" x {h}\"."
+    "layoutSize": "Esta disposição de {across} x {down} repetições mede {w}\" x {h}\".",
+    "options": {
+      "groups": [
+        {
+          "id": "p1",
+          "family": "oblíquo",
+          "description": "apenas translações"
+        },
+        {
+          "id": "p2",
+          "family": "oblíquo",
+          "description": "meias-voltas, sem espelhos"
+        },
+        {
+          "id": "pm",
+          "family": "retangular",
+          "description": "espelhos paralelos"
+        },
+        {
+          "id": "pg",
+          "family": "retangular",
+          "description": "reflexões com deslizamento paralelas"
+        },
+        {
+          "id": "cm",
+          "family": "rômbico (retangular centrado)",
+          "description": "espelhos paralelos com deslizamentos entre eles"
+        },
+        {
+          "id": "pmm",
+          "family": "retangular",
+          "description": "espelhos em duas direções, com meias-voltas sobre eles"
+        },
+        {
+          "id": "pmg",
+          "family": "retangular",
+          "description": "espelhos em uma direção, com deslizamentos e meias-voltas"
+        },
+        {
+          "id": "pgg",
+          "family": "retangular",
+          "description": "deslizamentos em duas direções, com meias-voltas"
+        },
+        {
+          "id": "cmm",
+          "family": "rômbico (retangular centrado)",
+          "description": "espelhos em duas direções, com meias-voltas sobre eles e fora deles"
+        },
+        {
+          "id": "p4",
+          "family": "quadrado",
+          "description": "quartos de volta, sem espelhos"
+        },
+        {
+          "id": "p4m",
+          "family": "quadrado",
+          "description": "quartos de volta sobre espelhos"
+        },
+        {
+          "id": "p4g",
+          "family": "quadrado",
+          "description": "quartos de volta fora dos espelhos"
+        },
+        {
+          "id": "p3",
+          "family": "hexagonal",
+          "description": "terços de volta, sem espelhos"
+        },
+        {
+          "id": "p3m1",
+          "family": "hexagonal",
+          "description": "terços de volta, todos sobre espelhos"
+        },
+        {
+          "id": "p31m",
+          "family": "hexagonal",
+          "description": "terços de volta, alguns fora dos espelhos"
+        },
+        {
+          "id": "p6",
+          "family": "hexagonal",
+          "description": "sextos de volta, sem espelhos"
+        },
+        {
+          "id": "p6m",
+          "family": "hexagonal",
+          "description": "sextos de volta e espelhos"
+        }
+      ],
+      "motifs": [
+        {
+          "id": "leaf",
+          "name": "Folha"
+        },
+        {
+          "id": "fish",
+          "name": "Peixe"
+        },
+        {
+          "id": "bird",
+          "name": "Pássaro"
+        },
+        {
+          "id": "paisley",
+          "name": "Gota"
+        },
+        {
+          "id": "flag",
+          "name": "Bandeira"
+        },
+        {
+          "id": "sailboat",
+          "name": "Veleiro"
+        }
+      ]
+    }
   }
 }

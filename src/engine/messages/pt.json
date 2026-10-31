@@ -74,17 +74,7 @@
     "spChartCrochet": "As primeiras carreiras em largura pequena. Comece pela carreira 1, embaixo. X = pb, T = mpa, T cruzado = pa, oval = corr.",
     "spAbbr": "Abreviações",
     "labelSashing": "Sashing",
-    "labelBorder": "Borda",
-    "taStepWarp": "Prepare um urdume de {ends} fios, cada um com {len}\" (inclui {waste}\" de perda do tear).",
-    "taStepOrder": "Passe o urdume nesta ordem, repetindo do início até usar todos os fios: {order}.",
-    "taStepWeave": "Teça {picks} passadas em sarja 2/2, com {ppi} passadas por polegada, usando na trama a mesma ordem de cores do urdume.",
-    "taStepFinish": "Lave e passe o tecido para finalizar. Conte com algum encolhimento, que varia conforme o fio.",
-    "taPdfTitle": "Guia de tecelagem de tartã",
-    "taPdfSize": "Tecido de {w}\" x {h}\" com {tpi} fios por polegada. Uma repetição tem {threads} fios, ou {repeat}\".",
-    "taPdfSteps": "Passos de tecelagem",
-    "taPdfYarn": "Fio por cor",
-    "taPdfColor": "{letter} ({hex}): {ends} fios de urdume, {picks} passadas de trama, cerca de {y} yd",
-    "taPdfTotal": "Cerca de {y} jardas no total. Uma estimativa aproximada que inclui uma margem de 10%."
+    "labelBorder": "Borda"
   },
   "fabrics": {
     "Light": "Claro",

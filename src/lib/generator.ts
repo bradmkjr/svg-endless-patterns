@@ -1,21 +1,45 @@
 /**
- * The site's only door to pattern generation. Maze generation runs through its
- * backend API; the other generators still run in-process until they are moved.
+ * The site's only door to pattern generation. Everything but quilt blocks and knit and
+ * crochet stitches runs through the backend API; those two still run in-process.
  */
-import { generatePattern as runGenerate, generateStitchPattern as runStitch, generateCrossStitch as runCrossStitch, generateNeedlepoint as runNeedlepoint, generateTessellation as runTessellation, listTessellationOptions, generateSashiko as runSashiko, generateCelticKnot as runCelticKnot, generateStainedGlass as runStainedGlass, generateMandala as runMandala, mandalaMotifThumb as runMotifThumb, generateGirih as runGirih, generateTruchet as runTruchet, generateTieDye as runTieDye, generateTartan as runTartan, listBlocks, listStitchPatterns } from "@/engine";
-import type { TessellationOptions, TessellationRequest, TessellationResult, SashikoRequest, SashikoResult, CelticKnotRequest, CelticKnotResult, StainedGlassRequest, StainedGlassResult, MandalaRequest, MandalaResult, GirihRequest, GirihResult, TruchetRequest, TruchetResult, TieDyeRequest, TieDyeResult, BlockInfo, Craft, Locale, PatternRequest, PatternResult, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult, CrossStitchRequest, CrossStitchResult, NeedlepointRequest, NeedlepointResult } from "@/engine";
+import { generatePattern as runGenerate, generateStitchPattern as runStitch, listBlocks, listStitchPatterns } from "@/engine";
+import type { BlockInfo, Craft, Locale, PatternRequest, PatternResult, StitchInfo, StitchRequest, StitchResult } from "@/engine";
 import type { MazePaperId, MazeRequest, MazeResult } from "./mazeTypes";
+import tessellationText from "@/i18n/messages/tessellation.json";
+import { apiGetJson, apiJson, apiPdf } from "./api";
+import type { CrossStitchRequest, CrossStitchResult } from "./crossStitchTypes";
+import type { NeedlepointRequest, NeedlepointResult } from "./needlepointTypes";
+import type { MandalaMotif, MandalaRequest, MandalaResult } from "./mandalaTypes";
+import type { StainedGlassRequest, StainedGlassResult } from "./stainedGlassTypes";
+import type { GirihRequest, GirihResult } from "./girihTypes";
+import type { TessellationOptions, TessellationRequest, TessellationResult } from "./tessellationTypes";
+import type { CelticKnotRequest, CelticKnotResult } from "./celticKnotTypes";
+import type { SashikoRequest, SashikoResult } from "./sashikoTypes";
+import type { TieDyeRequest, TieDyeResult } from "./tieDyeTypes";
+import type { TartanRequest, TartanResult } from "./tartanTypes";
+import type { TruchetRequest, TruchetResult } from "./truchetTypes";
 import { mazeApiPost } from "./mazeApi";
 import type { CheckerboardRequest, CheckerboardResult } from "./checkerboardTypes";
 import type { CrochetColorworkRequest, CrochetColorworkResult } from "./crochetColorworkTypes";
 import type { FractalRequest, FractalResult } from "./fractalTypes";
 import type { KnitColorworkRequest, KnitColorworkResult } from "./knitColorworkTypes";
 
-export type { TessellationColors, TessellationMotif, TessellationOptions, TessellationRequest, TessellationResult, GroupId, SashikoMotif, SashikoRequest, SashikoResult, CelticBreakPattern, CelticInterlace, CelticKnotRequest, CelticKnotResult, CelticStrand, StainedGlassColor, StainedGlassLayout, StainedGlassPiece, StainedGlassRequest, StainedGlassResult, MandalaMotif, MandalaRequest, MandalaResult, MandalaRing, MandalaRingSpec, GirihColors, GirihPart, GirihRequest, GirihResult, GirihStar, GirihSymmetry, TruchetArrangement, TruchetColors, TruchetRequest, TruchetResult, TruchetStyle, TieDyeMix, TieDyeRequest, TieDyeResult, TieDyeTechnique, BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, Setting, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult, TartanStripe, CountedFinish, CrossStitchColor, CrossStitchRequest, CrossStitchResult, NeedlepointColor, NeedlepointRequest, NeedlepointResult, NeedlepointStitch, NeedlepointYarn } from "@/engine";
+export type { BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, Setting, StitchInfo, StitchRequest, StitchResult } from "@/engine";
 export type { KnitColorworkPlan, KnitColorworkRequest, KnitColorworkResult, KnitColorworkTechnique } from "./knitColorworkTypes";
 export type { CheckerboardRequest, CheckerboardResult, CheckerPattern } from "./checkerboardTypes";
 export type { ColorworkTechnique, ColorworkWeight, CrochetColorworkRequest, CrochetColorworkResult } from "./crochetColorworkTypes";
 export type { FractalColors, FractalRequest, FractalResult, FractalType } from "./fractalTypes";
+export type { TruchetArrangement, TruchetColors, TruchetRequest, TruchetResult, TruchetStyle } from "./truchetTypes";
+export type { TartanColor, TartanRequest, TartanResult, TartanStripe } from "./tartanTypes";
+export type { TieDyeGuide, TieDyeGuideLabel, TieDyeGuideShape, TieDyeLayer, TieDyeMix, TieDyeRequest, TieDyeResult, TieDyeTechnique } from "./tieDyeTypes";
+export type { SashikoMotif, SashikoRequest, SashikoResult } from "./sashikoTypes";
+export type { CelticBreakPattern, CelticInterlace, CelticKnotRequest, CelticKnotResult, CelticStrand } from "./celticKnotTypes";
+export type { TessellationColors, TessellationMotif, TessellationOptions, TessellationRequest, TessellationResult, GroupId } from "./tessellationTypes";
+export type { GirihColors, GirihPart, GirihRequest, GirihResult, GirihStar, GirihSymmetry } from "./girihTypes";
+export type { StainedGlassColor, StainedGlassLayout, StainedGlassPiece, StainedGlassRequest, StainedGlassResult } from "./stainedGlassTypes";
+export type { MandalaMotif, MandalaRequest, MandalaResult, MandalaRing, MandalaRingSpec } from "./mandalaTypes";
+export type { CountedFinish, CrossStitchColor, CrossStitchRequest, CrossStitchResult } from "./crossStitchTypes";
+export type { NeedlepointColor, NeedlepointRequest, NeedlepointResult, NeedlepointStitch, NeedlepointYarn } from "./needlepointTypes";
 export type { MazeAlgorithm, MazeColors, MazeDifficulty, MazePaperId, MazeRequest, MazeResult, MazeShape, MazeSize } from "./mazeTypes";
 
 export { DEFAULT_KNIT_SQUARE, KNIT_SQUARE_SIZES } from "@/engine";
@@ -57,92 +81,85 @@ export async function generateStitchPdf(slug: string, request: StitchRequest): P
 }
 
 export async function generateTartan(request: TartanRequest): Promise<TartanResult> {
-  return runTartan(request);
+  return apiJson("/tartan", request);
 }
 
 export async function generateTartanPdf(request: TartanRequest): Promise<Uint8Array> {
-  const { generateTartanPdf: run } = await import("@/engine/tartanPdf");
-  return run(request);
+  return apiPdf("/tartan/pdf", request);
 }
 
 export async function generateCrossStitch(request: CrossStitchRequest): Promise<CrossStitchResult> {
-  return runCrossStitch(request);
+  return apiJson("/cross-stitch", request);
 }
 
 export async function generateCrossStitchPdf(request: CrossStitchRequest): Promise<Uint8Array> {
-  const { generateCrossStitchPdf: run } = await import("@/engine/crossStitchPdf");
-  return run(request);
+  return apiPdf("/cross-stitch/pdf", request);
 }
 
 export async function generateNeedlepoint(request: NeedlepointRequest): Promise<NeedlepointResult> {
-  return runNeedlepoint(request);
+  return apiJson("/needlepoint", request);
 }
 
 export async function generateNeedlepointPdf(request: NeedlepointRequest): Promise<Uint8Array> {
-  const { generateNeedlepointPdf: run } = await import("@/engine/needlepointPdf");
-  return run(request);
+  return apiPdf("/needlepoint/pdf", request);
 }
 
+/** Names only, so pages can list every group without asking the API. */
 export async function getTessellationOptions(locale: Locale = "en"): Promise<TessellationOptions> {
-  return listTessellationOptions(locale);
+  return tessellationText[locale].options as TessellationOptions;
 }
 
 export async function generateTessellation(request: TessellationRequest): Promise<TessellationResult> {
-  return runTessellation(request);
+  return apiJson("/tessellation", request);
 }
 
 export async function generateTessellationPdf(request: TessellationRequest): Promise<Uint8Array> {
-  const { generateTessellationPdf: run } = await import("@/engine/tessellationPdf");
-  return run(request);
+  return apiPdf("/tessellation/pdf", request);
 }
 
 export async function generateSashiko(request: SashikoRequest): Promise<SashikoResult> {
-  return runSashiko(request);
+  return apiJson("/sashiko", request);
 }
 
 export async function generateSashikoPdf(request: SashikoRequest): Promise<Uint8Array> {
-  const { generateSashikoPdf: run } = await import("@/engine/sashikoPdf");
-  return run(request);
+  return apiPdf("/sashiko/pdf", request);
 }
 
 export async function generateCelticKnot(request: CelticKnotRequest): Promise<CelticKnotResult> {
-  return runCelticKnot(request);
+  return apiJson("/celtic-knot", request);
 }
 
 export async function generateCelticKnotPdf(request: CelticKnotRequest): Promise<Uint8Array> {
-  const { generateCelticKnotPdf: run } = await import("@/engine/celticKnotPdf");
-  return run(request);
+  return apiPdf("/celtic-knot/pdf", request);
 }
 
 export async function generateStainedGlass(request: StainedGlassRequest): Promise<StainedGlassResult> {
-  return runStainedGlass(request);
+  return apiJson("/stained-glass", request);
 }
 
 export async function generateStainedGlassPdf(request: StainedGlassRequest): Promise<Uint8Array> {
-  const { generateStainedGlassPdf: run } = await import("@/engine/stainedGlassPdf");
-  return run(request);
+  return apiPdf("/stained-glass/pdf", request);
 }
 
 export async function generateMandala(request: MandalaRequest): Promise<MandalaResult> {
-  return runMandala(request);
+  return apiJson("/mandala", request);
 }
 
-export async function getMandalaMotifThumb(motif: Parameters<typeof runMotifThumb>[0]): Promise<string> {
-  return runMotifThumb(motif);
+/** Pictures of every motif, for choosing one, in a single request. */
+export async function getMandalaMotifThumbs(): Promise<Record<MandalaMotif, string>> {
+  return apiGetJson("/mandala/motifs");
 }
 
 export async function generateMandalaPdf(request: MandalaRequest): Promise<Uint8Array> {
-  const { generateMandalaPdf: run } = await import("@/engine/mandalaPdf");
-  return run(request);
+  return apiPdf("/mandala/pdf", request);
 }
 
 export async function generateGirih(request: GirihRequest): Promise<GirihResult> {
-  return runGirih(request);
+  return apiJson("/girih", request);
 }
 
 export async function generateGirihPdf(request: GirihRequest): Promise<Uint8Array> {
-  const { generateGirihPdf: run } = await import("@/engine/girihPdf");
-  return run(request);
+  return apiPdf("/girih/pdf", request);
 }
 
 export async function generateKnitColorwork(request: KnitColorworkRequest): Promise<KnitColorworkResult> {
@@ -186,12 +203,11 @@ export async function generateFractalPdf(request: FractalRequest): Promise<Uint8
 }
 
 export async function generateTieDye(request: TieDyeRequest): Promise<TieDyeResult> {
-  return runTieDye(request);
+  return apiJson("/tie-dye", request);
 }
 
 export async function generateTieDyePdf(request: TieDyeRequest): Promise<Uint8Array> {
-  const { generateTieDyePdf: run } = await import("@/engine/tieDyePdf");
-  return run(request);
+  return apiPdf("/tie-dye/pdf", request);
 }
 
 export async function generateMaze(request: MazeRequest): Promise<MazeResult> {
@@ -216,10 +232,9 @@ export async function generateMazePng(request: MazeRequest, view: "maze" | "solu
 }
 
 export async function generateTruchet(request: TruchetRequest): Promise<TruchetResult> {
-  return runTruchet(request);
+  return apiJson("/truchet", request);
 }
 
 export async function generateTruchetPdf(request: TruchetRequest): Promise<Uint8Array> {
-  const { generateTruchetPdf: run } = await import("@/engine/truchetPdf");
-  return run(request);
+  return apiPdf("/truchet/pdf", request);
 }

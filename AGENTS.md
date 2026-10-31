@@ -78,6 +78,14 @@ English is at the root; `es`, `fr`, `de` and `pt` (Brazilian) sit under a prefix
 - A language changes one secondary color only, never the primary colors: the
   `--locale-swatch` token in `globals.css` and `lib/localeAccent.ts` for designs.
 
+## Generators in the API
+Everything except quilt blocks and knit and crochet stitches generates in the private API
+(routes under `/api/<version>/`). Here live only JSON types (`lib/<tool>Types.ts`), option
+lists and state, builders, UI text and calls through `lib/generator.ts`. Builders read with
+`lib/useLiveResult.ts`, blog samples with `ToolSample`, thumbnails with `thumbSrc`. Nothing
+calls the API at build time, so these pages' static HTML holds no preview; a new option or
+default must also be added to the API's route schema and `engine/thumbs/<tool>.json`.
+
 ## Tools
 Tartans onward each own their files: `engine/<tool>.ts`, `<tool>Pdf.ts` and tests;
 `engine/messages/<tool>.json` and `i18n/messages/<tool>.json` (all five languages in

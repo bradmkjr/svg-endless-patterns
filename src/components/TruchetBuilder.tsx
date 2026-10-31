@@ -1,11 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { generateTruchet, generateTruchetPdf, type Locale, type TruchetColors, type TruchetRequest, type TruchetResult } from "@/lib/generator";
+import { generateTruchet, generateTruchetPdf, type Locale, type TruchetColors, type TruchetRequest } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { fill, messages } from "@/lib/i18n";
 import copy from "@/i18n/messages/truchet.json";
 import { ARRANGEMENT_OPTIONS, GRID_OPTIONS, MAX_SEED, REPEAT_OPTIONS, serializeTruchetState, STYLE_OPTIONS, WEIGHT_OPTIONS } from "@/lib/truchetState";
+import { ToolLoading } from "./ToolLoading";
+import { useLiveResult } from "@/lib/useLiveResult";
 import { OptionNav, useOptionNavigation } from "./OptionNav";
 import { PalettePicker } from "./PalettePicker";
 import { rememberSeed, syncShareLink } from "@/lib/toolOptions";
@@ -28,31 +30,17 @@ function NumberSelect({ label, value, options, format, onChange }: { label: stri
 
 const COLOR_KEYS: (keyof TruchetColors)[] = ["background", "line", "accent"];
 
-export function TruchetBuilder({ locale, option, labels, initialState, initialResult }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: TruchetRequest; initialResult: TruchetResult }) {
+export function TruchetBuilder({ locale, option, labels, initialState }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: TruchetRequest }) {
   const t = copy[locale];
   const b = messages(locale).builder;
   const goToOption = useOptionNavigation("truchet", locale);
   const [state, setState] = useState(initialState);
-  const [result, setResult] = useState(initialResult);
   const [status, setStatus] = useState("");
   const [busy, setBusy] = useState(false);
 
   const update = (patch: Partial<TruchetRequest>) => setState((s) => ({ ...s, ...patch }));
 
-  useEffect(() => {
-    let stale = false;
-    generateTruchet(state).then(
-      (next) => {
-        if (!stale) setResult(next);
-      },
-      () => {
-        if (!stale) setStatus(b.updateError);
-      },
-    );
-    return () => {
-      stale = true;
-    };
-  }, [state, b.updateError]);
+  const result = useLiveResult(generateTruchet, state, setStatus, b.updateError);
 
   useEffect(() => {
     const query = serializeTruchetState(state);
@@ -73,7 +61,7 @@ export function TruchetBuilder({ locale, option, labels, initialState, initialRe
     }
   };
 
-  const repeat = result.svg.repeat;
+  const repeat = result?.svg.repeat ?? "";
   const seeded = state.arrangement === "random" || state.arrangement === "mirror";
 
   return (
@@ -82,16 +70,22 @@ export function TruchetBuilder({ locale, option, labels, initialState, initialRe
       <div className={styles.workspace}>
         <section className={styles.preview} aria-label={b.preview}>
           {/* Two repeats across, so the join is on show. */}
-          <div className={styles.tile} style={{ backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(repeat)}")`, backgroundSize: "50% auto" }} role="img" aria-label={t.previewAlt} />
-          <p className={styles.note}>{fill(t.previewNote, { grid: state.grid, tiles: result.tiles, repeat: result.repeat })}</p>
+          {result ? (
+            <>
+              <div className={styles.tile} style={{ backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(repeat)}")`, backgroundSize: "50% auto" }} role="img" aria-label={t.previewAlt} />
+              <p className={styles.note}>{fill(t.previewNote, { grid: state.grid, tiles: result.tiles, repeat: result.repeat })}</p>
+            </>
+          ) : (
+            <ToolLoading locale={locale} />
+          )}
           <div className={`${styles.actions} no-print`}>
             <button type="button" disabled={busy} className={styles.primary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateTruchetPdf(state), "truchet-tiles.pdf", "application/pdf"))}>
               {t.downloadPdf}
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(repeat, "truchet-repeat.svg"))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(repeat, "truchet-repeat.svg"))}>
               SVG
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, () => downloadPng(repeat, "truchet-repeat.png"))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, () => downloadPng(repeat, "truchet-repeat.png"))}>
               PNG
             </button>
             <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.copying, b.copied, () => navigator.clipboard.writeText(window.location.href))}>

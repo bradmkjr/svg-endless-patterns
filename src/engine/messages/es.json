@@ -74,17 +74,7 @@
     "spChartCrochet": "Las primeras vueltas con un ancho pequeño. Empieza por la vuelta 1, abajo. X = pb, T = mpa, T cruzada = pa, óvalo = cad.",
     "spAbbr": "Abreviaturas",
     "labelSashing": "Sashing",
-    "labelBorder": "Borde",
-    "taStepWarp": "Prepara una urdimbre de {ends} hilos, cada uno de {len}\" de largo (incluye {waste}\" de desperdicio del telar).",
-    "taStepOrder": "Enhebra la urdimbre en este orden, repitiendo desde el principio hasta usar todos los hilos: {order}.",
-    "taStepWeave": "Teje {picks} pasadas en sarga 2/2, a {ppi} pasadas por pulgada, con el mismo orden de colores en la trama que en la urdimbre.",
-    "taStepFinish": "Lava y plancha la tela para terminarla. Cuenta con algo de encogimiento, que varía según el hilo.",
-    "taPdfTitle": "Guía de tejido de tartán",
-    "taPdfSize": "Tela de {w}\" x {h}\" a {tpi} hilos por pulgada. Una repetición son {threads} hilos, o {repeat}\".",
-    "taPdfSteps": "Pasos de tejido",
-    "taPdfYarn": "Hilo por color",
-    "taPdfColor": "{letter} ({hex}): {ends} hilos de urdimbre, {picks} pasadas de trama, unas {y} yd",
-    "taPdfTotal": "Unas {y} yardas en total. Una estimación aproximada que incluye un margen del 10 %."
+    "labelBorder": "Borde"
   },
   "fabrics": {
     "Light": "Claro",

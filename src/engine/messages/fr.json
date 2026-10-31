@@ -74,17 +74,7 @@
     "spChartCrochet": "Les premiers rangs sur une petite largeur. Commencez au rang 1, en bas. X = ms, T = db, T barré = b, ovale = ml.",
     "spAbbr": "Abréviations",
     "labelSashing": "Sashing",
-    "labelBorder": "Bordure",
-    "taStepWarp": "Ourdissez une chaîne de {ends} fils de {len}\" de long chacun (dont {waste}\" de perte au métier).",
-    "taStepOrder": "Enfilez la chaîne dans cet ordre, en reprenant au début jusqu'à utiliser tous les fils : {order}.",
-    "taStepWeave": "Tissez {picks} duites en sergé 2/2, à {ppi} duites au pouce, avec le même ordre de couleurs en trame qu'en chaîne.",
-    "taStepFinish": "Lavez et repassez le tissu pour le finir. Prévoyez un peu de rétrécissement, qui varie selon le fil.",
-    "taPdfTitle": "Guide de tissage de tartan",
-    "taPdfSize": "Tissu de {w}\" x {h}\" à {tpi} fils au pouce. Un raccord fait {threads} fils, soit {repeat}\".",
-    "taPdfSteps": "Étapes de tissage",
-    "taPdfYarn": "Fil par couleur",
-    "taPdfColor": "{letter} ({hex}) : {ends} fils de chaîne, {picks} duites, environ {y} yd",
-    "taPdfTotal": "Environ {y} yards au total. Estimation approximative incluant une marge de 10 %."
+    "labelBorder": "Bordure"
   },
   "fabrics": {
     "Light": "Clair",

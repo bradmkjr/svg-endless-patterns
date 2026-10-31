@@ -1,11 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { generateTessellation, generateTessellationPdf, type Locale, type TessellationColors, type TessellationMotif, type TessellationOptions, type TessellationRequest, type TessellationResult } from "@/lib/generator";
+import { generateTessellation, generateTessellationPdf, type Locale, type TessellationColors, type TessellationMotif, type TessellationOptions, type TessellationRequest } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { fill, messages } from "@/lib/i18n";
 import { COUNT_OPTIONS, REPEAT_OPTIONS, serializeTessellationState, TESSELLATION_PALETTES } from "@/lib/tessellationState";
 import text from "@/i18n/messages/tessellation.json";
+import { ToolLoading } from "./ToolLoading";
+import { useLiveResult } from "@/lib/useLiveResult";
 import { OptionNav, useOptionNavigation } from "./OptionNav";
 import { PalettePicker } from "./PalettePicker";
 import { syncShareLink } from "@/lib/toolOptions";
@@ -29,12 +31,11 @@ function NumberSelect({ label, value, options, unit = "", onChange }: { label: s
 /** Lattice units shown across the square preview, so a motif looks about the same size in any group. */
 const PREVIEW_UNITS = 600;
 
-export function TessellationBuilder({ locale, options, option, labels, initialState, initialResult }: { locale: Locale; options: TessellationOptions; option?: string; labels: Record<string, string>; initialState: TessellationRequest; initialResult: TessellationResult }) {
+export function TessellationBuilder({ locale, options, option, labels, initialState }: { locale: Locale; options: TessellationOptions; option?: string; labels: Record<string, string>; initialState: TessellationRequest }) {
   const t = text[locale];
   const b = messages(locale).builder;
   const goToOption = useOptionNavigation("tessellation", locale);
   const [state, setState] = useState(initialState);
-  const [result, setResult] = useState(initialResult);
   const [view, setView] = useState<View>("pattern");
   const [status, setStatus] = useState("");
   const [busy, setBusy] = useState(false);
@@ -42,20 +43,7 @@ export function TessellationBuilder({ locale, options, option, labels, initialSt
   const update = (patch: Partial<TessellationRequest>) => setState((s) => ({ ...s, ...patch }));
   const setColor = (role: keyof TessellationColors, color: string) => setState((s) => ({ ...s, colors: { ...s.colors, [role]: color } }));
 
-  useEffect(() => {
-    let stale = false;
-    generateTessellation(state).then(
-      (next) => {
-        if (!stale) setResult(next);
-      },
-      () => {
-        if (!stale) setStatus(b.updateError);
-      },
-    );
-    return () => {
-      stale = true;
-    };
-  }, [state, b.updateError]);
+  const result = useLiveResult(generateTessellation, state, setStatus, b.updateError);
 
   useEffect(() => {
     const query = serializeTessellationState(state);
@@ -75,7 +63,7 @@ export function TessellationBuilder({ locale, options, option, labels, initialSt
     }
   };
 
-  const repeat = result.svg.repeat;
+  const repeat = result?.svg.repeat ?? "";
   const repeatUnits = Number(/viewBox="0 0 ([\d.]+) /.exec(repeat)?.[1] ?? PREVIEW_UNITS);
   const views: [View, string][] = [["pattern", t.viewPattern], ["repeat", t.viewRepeat], ["layout", t.viewLayout]];
   const families = [...new Set(options.groups.map((g) => g.family))];
@@ -92,7 +80,7 @@ export function TessellationBuilder({ locale, options, option, labels, initialSt
               </button>
             ))}
           </div>
-          {view === "pattern" ? (
+          {!result ? <ToolLoading locale={locale} /> : view === "pattern" ? (
             <div
               className={styles.tile}
               style={{ backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(repeat)}")`, backgroundSize: `${(repeatUnits / PREVIEW_UNITS) * 100}% auto` }}
@@ -107,16 +95,16 @@ export function TessellationBuilder({ locale, options, option, labels, initialSt
             <button type="button" disabled={busy} className={styles.primary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateTessellationPdf(state), `tessellation-${state.group}.pdf`, "application/pdf"))}>
               {t.downloadPdf}
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(repeat, `tessellation-${state.group}-repeat.svg`))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(repeat, `tessellation-${state.group}-repeat.svg`))}>
               {t.svgRepeat}
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, () => downloadPng(repeat, `tessellation-${state.group}-repeat.png`))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, () => downloadPng(repeat, `tessellation-${state.group}-repeat.png`))}>
               {t.pngRepeat}
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(result.svg.layout, `tessellation-${state.group}-layout.svg`))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(result!.svg.layout, `tessellation-${state.group}-layout.svg`))}>
               {t.svgLayout}
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, () => downloadPng(result.svg.layout, `tessellation-${state.group}-layout.png`))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, () => downloadPng(result!.svg.layout, `tessellation-${state.group}-layout.png`))}>
               {t.pngLayout}
             </button>
             <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.copying, b.copied, () => navigator.clipboard.writeText(window.location.href))}>
@@ -198,6 +186,7 @@ export function TessellationBuilder({ locale, options, option, labels, initialSt
         <strong>{t.originalTitle}</strong> {t.originalText}
       </p>
 
+      {result ? (
       <div className={styles.results}>
         <section>
           <h2>{fill(t.groupHeading, { group: result.group.id })}</h2>
@@ -219,6 +208,7 @@ export function TessellationBuilder({ locale, options, option, labels, initialSt
           <p className={styles.note}>{fill(t.layoutSize, { across: state.across, down: state.down, w: result.layoutWidth, h: result.layoutHeight })}</p>
         </section>
       </div>
+      ) : null}
     </div>
   );
 }

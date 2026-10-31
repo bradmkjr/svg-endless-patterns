@@ -1,11 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { generateGirih, generateGirihPdf, type GirihColors, type GirihRequest, type GirihResult, type GirihStar, type Locale } from "@/lib/generator";
+import { generateGirih, generateGirihPdf, type GirihColors, type GirihRequest, type GirihStar, type Locale } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { fill, messages } from "@/lib/i18n";
 import { COUNT_OPTIONS, GIRIH_PALETTES, REPEAT_OPTIONS, serializeGirihState, STARS_FOR, SYMMETRY_OPTIONS, WEIGHT_OPTIONS } from "@/lib/girihState";
 import text from "@/i18n/messages/girih.json";
+import { ToolLoading } from "./ToolLoading";
+import { useLiveResult } from "@/lib/useLiveResult";
 import { OptionNav, useOptionNavigation } from "./OptionNav";
 import { PalettePicker } from "./PalettePicker";
 import { slugFor, syncShareLink } from "@/lib/toolOptions";
@@ -30,12 +32,11 @@ function NumberSelect({ label, value, options, unit = "", onChange }: { label: s
 const PREVIEW_UNITS = 900;
 const COLOR_ROLES = ["background", "primary", "accent", "line"] as const;
 
-export function GirihBuilder({ locale, option, labels, initialState, initialResult }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: GirihRequest; initialResult: GirihResult }) {
+export function GirihBuilder({ locale, option, labels, initialState }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: GirihRequest }) {
   const t = text[locale];
   const b = messages(locale).builder;
   const goToOption = useOptionNavigation("girih", locale);
   const [state, setState] = useState(initialState);
-  const [result, setResult] = useState(initialResult);
   const [view, setView] = useState<View>("pattern");
   const [status, setStatus] = useState("");
   const [busy, setBusy] = useState(false);
@@ -43,20 +44,7 @@ export function GirihBuilder({ locale, option, labels, initialState, initialResu
   const update = (patch: Partial<GirihRequest>) => setState((s) => ({ ...s, ...patch }));
   const setColor = (role: keyof GirihColors, color: string) => setState((s) => ({ ...s, colors: { ...s.colors, [role]: color } }));
 
-  useEffect(() => {
-    let stale = false;
-    generateGirih(state).then(
-      (next) => {
-        if (!stale) setResult(next);
-      },
-      () => {
-        if (!stale) setStatus(b.updateError);
-      },
-    );
-    return () => {
-      stale = true;
-    };
-  }, [state, b.updateError]);
+  const result = useLiveResult(generateGirih, state, setStatus, b.updateError);
 
   useEffect(() => {
     const query = serializeGirihState(state);
@@ -76,12 +64,12 @@ export function GirihBuilder({ locale, option, labels, initialState, initialResu
     }
   };
 
-  const { repeat, panel, stencil } = result.svg;
+  const { repeat, panel, stencil } = result?.svg ?? { repeat: "", panel: "", stencil: "" };
   const repeatUnits = Number(/viewBox="0 0 ([\d.]+) /.exec(repeat)?.[1] ?? PREVIEW_UNITS);
   const views: [View, string][] = [["pattern", t.viewPattern], ["repeat", t.viewRepeat], ["panel", t.viewPanel], ["stencil", t.viewStencil]];
   const notes: Record<View, string> = { pattern: t.patternNote, repeat: t.repeatNote, panel: t.panelNote, stencil: t.stencilNote };
   const shown = view === "repeat" ? repeat : view === "panel" ? panel : stencil;
-  const file = `${result.isGirih ? "girih" : `star-pattern-${state.symmetry}`}-${state.star}`;
+  const file = `${state.symmetry === 10 ? "girih" : `star-pattern-${state.symmetry}`}-${state.star}`;
   const downloads: [string, string, string][] = [
     [t.svgRepeat, t.pngRepeat, repeat],
     [t.svgPanel, t.pngPanel, panel],
@@ -101,7 +89,7 @@ export function GirihBuilder({ locale, option, labels, initialState, initialResu
               </button>
             ))}
           </div>
-          {view === "pattern" ? (
+          {!result ? <ToolLoading locale={locale} /> : view === "pattern" ? (
             <div
               className={styles.tile}
               style={{ backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(repeat)}")`, backgroundSize: `${(repeatUnits / PREVIEW_UNITS) * 100}% auto` }}
@@ -117,14 +105,14 @@ export function GirihBuilder({ locale, option, labels, initialState, initialResu
               {t.downloadPdf}
             </button>
             {downloads.flatMap(([svgLabel, pngLabel, svg], i) => [
-              <button key={svgLabel} type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(svg, `${file}-${suffixes[i]}.svg`))}>
+              <button key={svgLabel} type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(svg, `${file}-${suffixes[i]}.svg`))}>
                 {svgLabel}
               </button>,
-              <button key={pngLabel} type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, () => downloadPng(svg, `${file}-${suffixes[i]}.png`))}>
+              <button key={pngLabel} type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, () => downloadPng(svg, `${file}-${suffixes[i]}.png`))}>
                 {pngLabel}
               </button>,
             ])}
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.copying, b.copied, () => navigator.clipboard.writeText(window.location.href))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.copying, b.copied, () => navigator.clipboard.writeText(window.location.href))}>
               {b.copyLink}
             </button>
           </div>
@@ -197,9 +185,10 @@ export function GirihBuilder({ locale, option, labels, initialState, initialResu
       </div>
 
       <p className={styles.notice}>
-        <strong>{t.aboutTitle}</strong> {result.isGirih ? t.aboutGirih : t.aboutStar}
+        <strong>{t.aboutTitle}</strong> {state.symmetry === 10 ? t.aboutGirih : t.aboutStar}
       </p>
 
+      {result ? (
       <div className={styles.results}>
         <section>
           <h2>{t.details}</h2>
@@ -240,6 +229,7 @@ export function GirihBuilder({ locale, option, labels, initialState, initialResu
           <p className={styles.note}>{fill(t.panelSize, { across: state.across, down: state.down, w: result.panelWidth, h: result.panelHeight })}</p>
         </section>
       </div>
+      ) : null}
     </div>
   );
 }

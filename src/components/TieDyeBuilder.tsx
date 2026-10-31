@@ -1,13 +1,15 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { generateTieDye, generateTieDyePdf, type Locale, type TieDyeRequest, type TieDyeResult } from "@/lib/generator";
+import { generateTieDye, generateTieDyePdf, type TieDyeResult, type Locale, type TieDyeRequest } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { fill, messages } from "@/lib/i18n";
 import copy from "@/i18n/messages/tieDye.json";
 import { paletteAccents } from "@/lib/palettes";
 import { BAND_OPTIONS, GARMENT_OPTIONS, MAX_DYES, MAX_SEED, MIN_DYES, serializeTieDyeState, STRENGTH_OPTIONS, TECHNIQUE_OPTIONS } from "@/lib/tieDyeState";
 import { rememberSeed, syncShareLink } from "@/lib/toolOptions";
+import { ToolLoading } from "./ToolLoading";
+import { useLiveResult } from "@/lib/useLiveResult";
 import { OptionNav, useOptionNavigation } from "./OptionNav";
 import { PalettePicker } from "./PalettePicker";
 import styles from "./BlockBuilder.module.css";
@@ -43,32 +45,18 @@ function StepList({ heading, steps }: { heading: string; steps: string[] }) {
   );
 }
 
-export function TieDyeBuilder({ locale, option, labels, initialState, initialResult }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: TieDyeRequest; initialResult: TieDyeResult }) {
+export function TieDyeBuilder({ locale, option, labels, initialState }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: TieDyeRequest }) {
   const t = copy[locale];
   const b = messages(locale).builder;
   const goToOption = useOptionNavigation("tieDye", locale);
   const [state, setState] = useState(initialState);
-  const [result, setResult] = useState(initialResult);
   const [view, setView] = useState<View>("art");
   const [status, setStatus] = useState("");
   const [busy, setBusy] = useState(false);
 
   const update = (patch: Partial<TieDyeRequest>) => setState((s) => ({ ...s, ...patch }));
 
-  useEffect(() => {
-    let stale = false;
-    generateTieDye(state).then(
-      (next) => {
-        if (!stale) setResult(next);
-      },
-      () => {
-        if (!stale) setStatus(b.updateError);
-      },
-    );
-    return () => {
-      stale = true;
-    };
-  }, [state, b.updateError]);
+  const result = useLiveResult(generateTieDye, state, setStatus, b.updateError);
 
   useEffect(() => {
     syncShareLink(serializeTieDyeState(state), "tieDye", option);
@@ -88,7 +76,7 @@ export function TieDyeBuilder({ locale, option, labels, initialState, initialRes
     }
   };
 
-  const svg = result.svg[view];
+  const svg = result?.svg[view] ?? "";
 
   return (
     <div className={styles.builder}>
@@ -102,16 +90,16 @@ export function TieDyeBuilder({ locale, option, labels, initialState, initialRes
               </button>
             ))}
           </div>
-          <div className={`art ${styles.art}`} role="img" aria-label={t.views[view]} dangerouslySetInnerHTML={{ __html: svg }} />
+          {result ? <div className={`art ${styles.art}`} role="img" aria-label={t.views[view]} dangerouslySetInnerHTML={{ __html: svg }} /> : <ToolLoading locale={locale} />}
           <p className={styles.note}>{t.viewNotes[view]}</p>
           <div className={`${styles.actions} no-print`}>
             <button type="button" disabled={busy} className={styles.primary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateTieDyePdf(state), "tie-dye.pdf", "application/pdf"))}>
               {t.downloadPdf}
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(svg, `tie-dye-${view}.svg`))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(svg, `tie-dye-${view}.svg`))}>
               SVG
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, () => downloadPng(svg, `tie-dye-${view}.png`))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, () => downloadPng(svg, `tie-dye-${view}.png`))}>
               PNG
             </button>
             <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.copying, b.copied, () => navigator.clipboard.writeText(window.location.href))}>
@@ -185,6 +173,7 @@ export function TieDyeBuilder({ locale, option, labels, initialState, initialRes
         <strong>{t.previewTitle}</strong> {t.previewText}
       </p>
 
+      {result ? (
       <div className={styles.results}>
         <section>
           <h2>{fill(t.mixHeading, { n: state.garments })}</h2>
@@ -219,6 +208,7 @@ export function TieDyeBuilder({ locale, option, labels, initialState, initialRes
         <StepList heading={t.applyHeading} steps={result.steps.apply} />
         <StepList heading={t.cureHeading} steps={result.steps.cure} />
       </div>
+      ) : null}
     </div>
   );
 }

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { getMandalaMotifThumb, type Locale, type MandalaMotif, type MandalaRingSpec } from "@/lib/generator";
+import { getMandalaMotifThumbs, type Locale, type MandalaMotif, type MandalaRingSpec } from "@/lib/generator";
 import { fill } from "@/lib/i18n";
 import { MAX_PLAN_RINGS, MIN_PLAN_RINGS, MOTIF_OPTIONS, moveRing, newRing, REPEAT_OPTIONS, SIZE_OPTIONS } from "@/lib/mandalaState";
 import mandalaText from "@/i18n/messages/mandala.json";
@@ -32,9 +32,14 @@ export function MandalaRings({ locale, plan, colors, background, onChange }: { l
 
   useEffect(() => {
     let stale = false;
-    Promise.all(MOTIF_OPTIONS.map(async (motif) => [motif, `data:image/svg+xml,${encodeURIComponent(await getMandalaMotifThumb(motif))}`] as const)).then((pairs) => {
-      if (!stale) setThumbs(Object.fromEntries(pairs));
-    });
+    getMandalaMotifThumbs().then(
+      (svgs) => {
+        if (!stale) setThumbs(Object.fromEntries(MOTIF_OPTIONS.map((motif) => [motif, `data:image/svg+xml,${encodeURIComponent(svgs[motif])}`])));
+      },
+      () => {
+        // The choices still work by name without their pictures.
+      },
+    );
     return () => {
       stale = true;
     };

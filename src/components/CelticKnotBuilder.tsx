@@ -6,6 +6,8 @@ import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { fill, messages } from "@/lib/i18n";
 import celticText from "@/i18n/messages/celticKnot.json";
 import { DENSITY_OPTIONS, INCH_OPTIONS, INTERLACE_OPTIONS, MAX_COLORS, MAX_SEED, PATTERN_OPTIONS, RIBBON_OPTIONS, SEEDED_PATTERNS, serializeCelticKnotState, SIZE_OPTIONS } from "@/lib/celticKnotState";
+import { ToolLoading } from "./ToolLoading";
+import { useLiveResult } from "@/lib/useLiveResult";
 import { OptionNav, useOptionNavigation } from "./OptionNav";
 import { PalettePicker } from "./PalettePicker";
 import { rememberSeed, syncShareLink } from "@/lib/toolOptions";
@@ -28,12 +30,11 @@ function NumberSelect({ label, value, options, unit = "", onChange }: { label: s
   );
 }
 
-export function CelticKnotBuilder({ locale, option, labels, initialState, initialResult }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: CelticKnotRequest; initialResult: CelticKnotResult }) {
+export function CelticKnotBuilder({ locale, option, labels, initialState }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: CelticKnotRequest }) {
   const b = messages(locale).builder;
   const t = celticText[locale];
   const goToOption = useOptionNavigation("celticKnot", locale);
   const [state, setState] = useState(initialState);
-  const [result, setResult] = useState(initialResult);
   const [view, setView] = useState<View>("art");
   const [status, setStatus] = useState("");
   const [busy, setBusy] = useState(false);
@@ -41,20 +42,7 @@ export function CelticKnotBuilder({ locale, option, labels, initialState, initia
   const update = (patch: Partial<CelticKnotRequest>) => setState((s) => ({ ...s, ...patch }));
   const setColor = (i: number, color: string) => setState((s) => ({ ...s, colors: s.colors.map((c, n) => (n === i ? color : c)) }));
 
-  useEffect(() => {
-    let stale = false;
-    generateCelticKnot(state).then(
-      (next) => {
-        if (!stale) setResult(next);
-      },
-      () => {
-        if (!stale) setStatus(b.updateError);
-      },
-    );
-    return () => {
-      stale = true;
-    };
-  }, [state, b.updateError]);
+  const result = useLiveResult(generateCelticKnot, state, setStatus, b.updateError);
 
   useEffect(() => {
     const query = serializeCelticKnotState(state);
@@ -75,7 +63,7 @@ export function CelticKnotBuilder({ locale, option, labels, initialState, initia
     }
   };
 
-  const svg = result.svg[view];
+  const svg = result?.svg[view] ?? "";
   const seeded = SEEDED_PATTERNS.includes(state.pattern);
 
   return (
@@ -91,17 +79,17 @@ export function CelticKnotBuilder({ locale, option, labels, initialState, initia
             ))}
           </div>
           {/* The cut and stencil files have no background of their own, so show them on white. */}
-          <div className={`art ${styles.art}`} style={{ background: "#ffffff" }} role="img" aria-label={t.artAlt} dangerouslySetInnerHTML={{ __html: svg }} />
+          {result ? <div className={`art ${styles.art}`} style={{ background: "#ffffff" }} role="img" aria-label={t.artAlt} dangerouslySetInnerHTML={{ __html: svg }} /> : <ToolLoading locale={locale} />}
           <p className={styles.note}>{t.viewNotes[view]}</p>
-          <p className={styles.note}>{fill(t.stats, { strands: result.strands, crossings: result.crossings, breaks: result.breaks, pieces: result.pieces })}</p>
+          {result ? <p className={styles.note}>{fill(t.stats, { strands: result.strands, crossings: result.crossings, breaks: result.breaks, pieces: result.pieces })}</p> : null}
           <div className={`${styles.actions} no-print`}>
             <button type="button" disabled={busy} className={styles.primary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateCelticKnotPdf(state), "celtic-knot.pdf", "application/pdf"))}>
               {t.downloadPdf}
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(svg, `celtic-knot-${view}.svg`))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(svg, `celtic-knot-${view}.svg`))}>
               SVG
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, () => downloadPng(svg, `celtic-knot-${view}.png`))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, () => downloadPng(svg, `celtic-knot-${view}.png`))}>
               PNG
             </button>
             <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.copying, b.copied, () => navigator.clipboard.writeText(window.location.href))}>
@@ -219,6 +207,7 @@ export function CelticKnotBuilder({ locale, option, labels, initialState, initia
         <strong>{t.originalTitle}</strong> {t.originalText}
       </p>
 
+      {result ? (
       <div className={styles.results}>
         <section>
           <h2>{t.guide}</h2>
@@ -255,6 +244,7 @@ export function CelticKnotBuilder({ locale, option, labels, initialState, initia
           <p className={styles.note}>{t.strandsNote}</p>
         </section>
       </div>
+      ) : null}
     </div>
   );
 }

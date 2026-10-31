@@ -1,18 +1,7 @@
-import { parseCelticKnotState } from "./celticKnotState";
-import { parseCrossStitchState } from "./crossStitchState";
-import { parseNeedlepointState } from "./needlepointState";
-import { generateCelticKnot, generateCrossStitch, generateGirih, generateMandala, generateNeedlepoint, generatePattern, generateSashiko, generateStainedGlass, generateStitchPattern, generateTartan, generateTessellation, generateTieDye, generateTruchet, getBlocks, getStitchPatterns } from "./generator";
-import { parseGirihState } from "./girihState";
-import { parseMandalaState } from "./mandalaState";
-import { parseSashikoState } from "./sashikoState";
-import { parseStainedGlassState } from "./stainedGlassState";
+import { generatePattern, generateStitchPattern, getBlocks, getStitchPatterns } from "./generator";
 import { defaultState } from "./state";
 import { defaultStitchState } from "./stitchState";
-import { defaultTartanState, TARTAN_PRESETS } from "./tartanState";
-import { parseTessellationState } from "./tessellationState";
 import { TOOL_OPTIONS, withOption, type ThumbGroup, type ToolId } from "./toolOptions";
-import { parseTieDyeState } from "./tieDyeState";
-import { parseTruchetState } from "./truchetState";
 
 /**
  * Small pictures, built as static files so a page full of them stays light. They're
@@ -26,30 +15,8 @@ function fillWith(tile: string, view: number): string {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${view} ${view}"><defs><pattern id="tile" width="${w}" height="${h}" patternUnits="userSpaceOnUse">${inner}</pattern></defs><rect width="${view}" height="${view}" fill="url(#tile)"/></svg>`;
 }
 
-const tileWidth = (tile: string) => Number(/viewBox="0 0 ([\d.]+) /.exec(tile)![1]);
-const tileHeight = (tile: string) => Number(/viewBox="0 0 [\d.]+ ([\d.]+)"/.exec(tile)![1]);
 
 const TOOL_DRAW: Partial<Record<ToolId, (params: URLSearchParams) => Promise<string>>> = {
-  truchet: async (p) => {
-    const { repeat } = (await generateTruchet(parseTruchetState(p))).svg;
-    return fillWith(repeat, tileWidth(repeat) * 2);
-  },
-  tessellation: async (p) => {
-    const { repeat } = (await generateTessellation(parseTessellationState(p))).svg;
-    return fillWith(repeat, tileWidth(repeat) * 2);
-  },
-  // The girih repeat is wider than tall, so it's sized by height, two rows to a card.
-  girih: async (p) => {
-    const { repeat } = (await generateGirih(parseGirihState(p))).svg;
-    return fillWith(repeat, tileHeight(repeat) * 2);
-  },
-  sashiko: async (p) => (await generateSashiko({ ...parseSashikoState(p), width: 6, height: 6 })).svg.panel,
-  celticKnot: async (p) => (await generateCelticKnot(parseCelticKnotState(p))).svg.art,
-  stainedGlass: async (p) => (await generateStainedGlass(parseStainedGlassState(p))).svg.panel,
-  crossStitch: async (p) => (await generateCrossStitch(parseCrossStitchState(p))).svg.stitched,
-  needlepoint: async (p) => (await generateNeedlepoint(parseNeedlepointState(p))).svg.stitched,
-  tieDye: async (p) => (await generateTieDye(parseTieDyeState(p))).svg.art,
-  mandala: async (p) => (await generateMandala(parseMandalaState(p))).svg.art,
 };
 
 export const drawToolThumb = (tool: ToolId, slug?: string) => {
@@ -78,7 +45,6 @@ export async function allThumbs(): Promise<{ group: ThumbGroup; slug: string; dr
     ...blocks.map((block) => ({ group: "blocks" as ThumbGroup, slug: block.slug, draw: async () => (await generatePattern(block.slug, defaultState(block))).svg.block })),
     ...(await stitchThumbs("knit")),
     ...(await stitchThumbs("crochet")),
-    ...TARTAN_PRESETS.map((preset) => ({ group: "tartan" as ThumbGroup, slug: preset.id, draw: async () => (await generateTartan({ ...defaultTartanState(), stripes: preset.stripes })).svg.swatch })),
-    ...(Object.keys(TOOL_OPTIONS) as ToolId[]).filter((tool) => tool !== "maze" && tool !== "fractal" && tool !== "knitColorwork" && tool !== "crochetColorwork" && tool !== "checkerboard").flatMap((tool) => TOOL_OPTIONS[tool].options.map((option) => ({ group: tool as ThumbGroup, slug: option.slug, draw: () => drawToolThumb(tool, option.slug) }))),
+    ...(Object.keys(TOOL_DRAW) as ToolId[]).flatMap((tool) => TOOL_OPTIONS[tool].options.map((option) => ({ group: tool as ThumbGroup, slug: option.slug, draw: () => drawToolThumb(tool, option.slug) }))),
   ];
 }

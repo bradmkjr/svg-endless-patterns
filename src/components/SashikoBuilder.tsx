@@ -1,11 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { generateSashiko, generateSashikoPdf, type Locale, type SashikoRequest, type SashikoResult } from "@/lib/generator";
+import { generateSashiko, generateSashikoPdf, type Locale, type SashikoRequest } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { fill, messages } from "@/lib/i18n";
 import copy from "@/i18n/messages/sashiko.json";
 import { COLOR_PRESETS, MOTIF_OPTIONS, PANEL_OPTIONS, serializeSashikoState, SPACING_OPTIONS, STITCH_OPTIONS } from "@/lib/sashikoState";
+import { ToolLoading } from "./ToolLoading";
+import { useLiveResult } from "@/lib/useLiveResult";
 import { OptionNav, useOptionNavigation } from "./OptionNav";
 import { PalettePicker } from "./PalettePicker";
 import { syncShareLink } from "@/lib/toolOptions";
@@ -28,31 +30,17 @@ function NumberSelect({ label, value, options, onChange }: { label: string; valu
 
 const inchOptions = (values: number[]) => values.map((value) => ({ value, label: `${value}"` }));
 
-export function SashikoBuilder({ locale, option, labels, initialState, initialResult }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: SashikoRequest; initialResult: SashikoResult }) {
+export function SashikoBuilder({ locale, option, labels, initialState }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: SashikoRequest }) {
   const t = copy[locale];
   const b = messages(locale).builder;
   const goToOption = useOptionNavigation("sashiko", locale);
   const [state, setState] = useState(initialState);
-  const [result, setResult] = useState(initialResult);
   const [status, setStatus] = useState("");
   const [busy, setBusy] = useState(false);
 
   const update = (patch: Partial<SashikoRequest>) => setState((s) => ({ ...s, ...patch }));
 
-  useEffect(() => {
-    let stale = false;
-    generateSashiko(state).then(
-      (next) => {
-        if (!stale) setResult(next);
-      },
-      () => {
-        if (!stale) setStatus(b.updateError);
-      },
-    );
-    return () => {
-      stale = true;
-    };
-  }, [state, b.updateError]);
+  const result = useLiveResult(generateSashiko, state, setStatus, b.updateError);
 
   useEffect(() => {
     const query = serializeSashikoState(state);
@@ -72,7 +60,7 @@ export function SashikoBuilder({ locale, option, labels, initialState, initialRe
     }
   };
 
-  const panel = result.svg.panel;
+  const panel = result?.svg.panel ?? "";
   const fileName = `sashiko-${state.motif}`;
 
   return (
@@ -80,16 +68,16 @@ export function SashikoBuilder({ locale, option, labels, initialState, initialRe
       <OptionNav tool="sashiko" locale={locale} current={option} labels={labels} />
       <div className={styles.workspace}>
         <section className={styles.preview} aria-label={b.preview}>
-          <div className={`${styles.art} ${styles.quiltArt}`} role="img" aria-label={t.panelAlt} dangerouslySetInnerHTML={{ __html: panel }} />
-          <p className={styles.note}>{fill(t.previewNote, { w: result.width, h: result.height })}</p>
+          {result ? <div className={`${styles.art} ${styles.quiltArt}`} role="img" aria-label={t.panelAlt} dangerouslySetInnerHTML={{ __html: panel }} /> : <ToolLoading locale={locale} />}
+          {result ? <p className={styles.note}>{fill(t.previewNote, { w: result.width, h: result.height })}</p> : null}
           <div className={`${styles.actions} no-print`}>
             <button type="button" disabled={busy} className={styles.primary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateSashikoPdf(state), `${fileName}-guide.pdf`, "application/pdf"))}>
               {t.downloadGuide}
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(panel, `${fileName}.svg`))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(panel, `${fileName}.svg`))}>
               SVG
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, () => downloadPng(panel, `${fileName}.png`))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, () => downloadPng(panel, `${fileName}.png`))}>
               PNG
             </button>
             <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.copying, b.copied, () => navigator.clipboard.writeText(window.location.href))}>
@@ -148,12 +136,13 @@ export function SashikoBuilder({ locale, option, labels, initialState, initialRe
         </form>
       </div>
 
-      {result.tight ? <p className={styles.notice}>{t.tight}</p> : null}
+      {result?.tight ? <p className={styles.notice}>{t.tight}</p> : null}
 
       <p className={styles.notice}>
         <strong>{t.craftTitle}</strong> {t.craftText}
       </p>
 
+      {result ? (
       <div className={styles.results}>
         <section>
           <h2>{t.guide}</h2>
@@ -174,6 +163,7 @@ export function SashikoBuilder({ locale, option, labels, initialState, initialRe
           </ul>
         </section>
       </div>
+      ) : null}
     </div>
   );
 }

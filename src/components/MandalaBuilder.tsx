@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { generateMandala, generateMandalaPdf, type Locale, type MandalaMotif, type MandalaRequest, type MandalaResult } from "@/lib/generator";
 import { rememberSeed, syncShareLink, slugFor } from "@/lib/toolOptions";
 import { MandalaRings } from "./MandalaRings";
+import { ToolLoading } from "./ToolLoading";
+import { useLiveResult } from "@/lib/useLiveResult";
 import { OptionNav, useOptionNavigation } from "./OptionNav";
 import { PalettePicker } from "./PalettePicker";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
@@ -30,12 +32,11 @@ function NumberSelect({ label, value, options, onChange }: { label: string; valu
   );
 }
 
-export function MandalaBuilder({ locale, option, labels, initialState, initialResult }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: MandalaRequest; initialResult: MandalaResult }) {
+export function MandalaBuilder({ locale, option, labels, initialState }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: MandalaRequest }) {
   const b = messages(locale).builder;
   const t = mandalaText[locale];
   const goToOption = useOptionNavigation("mandala", locale);
   const [state, setState] = useState(initialState);
-  const [result, setResult] = useState(initialResult);
   const [view, setView] = useState<View>("art");
   const [status, setStatus] = useState("");
   const [busy, setBusy] = useState(false);
@@ -45,20 +46,7 @@ export function MandalaBuilder({ locale, option, labels, initialState, initialRe
   // Kept in catalog order, so a share link has one spelling of each set.
   const toggleMotif = (motif: MandalaMotif, on: boolean) => update({ motifs: MOTIF_OPTIONS.filter((m) => (m === motif ? on : state.motifs.includes(m))) });
 
-  useEffect(() => {
-    let stale = false;
-    generateMandala(state).then(
-      (next) => {
-        if (!stale) setResult(next);
-      },
-      () => {
-        if (!stale) setStatus(b.updateError);
-      },
-    );
-    return () => {
-      stale = true;
-    };
-  }, [state, b.updateError]);
+  const result = useLiveResult(generateMandala, state, setStatus, b.updateError);
 
   useEffect(() => {
     const query = serializeMandalaState(state);
@@ -79,7 +67,7 @@ export function MandalaBuilder({ locale, option, labels, initialState, initialRe
     }
   };
 
-  const svg = result.svg[view];
+  const svg = result?.svg[view] ?? "";
 
   return (
     <div className={styles.builder}>
@@ -93,17 +81,17 @@ export function MandalaBuilder({ locale, option, labels, initialState, initialRe
               </button>
             ))}
           </div>
-          <div className={`art ${styles.art}`} role="img" aria-label={t.artAlt} dangerouslySetInnerHTML={{ __html: svg }} />
+          {result ? <div className={`art ${styles.art}`} role="img" aria-label={t.artAlt} dangerouslySetInnerHTML={{ __html: svg }} /> : <ToolLoading locale={locale} />}
           <p className={styles.note}>{t.viewNotes[view]}</p>
-          <p className={styles.note}>{fill(t.stats, { n: result.symmetry, rings: result.rings.length, shapes: result.shapes })}</p>
+          {result ? <p className={styles.note}>{fill(t.stats, { n: result.symmetry, rings: result.rings.length, shapes: result.shapes })}</p> : null}
           <div className={`${styles.actions} no-print`}>
             <button type="button" disabled={busy} className={styles.primary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateMandalaPdf(state), "mandala.pdf", "application/pdf"))}>
               {t.downloadPdf}
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(svg, `mandala-${view}.svg`))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(svg, `mandala-${view}.svg`))}>
               SVG
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, () => downloadPng(svg, `mandala-${view}.png`))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, () => downloadPng(svg, `mandala-${view}.png`))}>
               PNG
             </button>
             <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.copying, b.copied, () => navigator.clipboard.writeText(window.location.href))}>
@@ -120,7 +108,7 @@ export function MandalaBuilder({ locale, option, labels, initialState, initialRe
             <legend>{t.design}</legend>
             <NumberSelect label={t.symmetry} value={state.symmetry} options={SYMMETRY_OPTIONS} onChange={(n) => goToOption(slugFor("mandala", n)!)} />
             <div className={styles.tabs}>
-              <button type="button" className={state.ringPlan ? styles.tabOn : styles.tab} aria-pressed={!!state.ringPlan} onClick={() => update({ ringPlan: result.rings.map((ring) => ring.spec) })}>
+              <button type="button" className={state.ringPlan ? styles.tabOn : styles.tab} aria-pressed={!!state.ringPlan} disabled={!result} onClick={() => result && update({ ringPlan: result.rings.map((ring) => ring.spec) })}>
                 {t.modeRings}
               </button>
               <button type="button" className={state.ringPlan ? styles.tab : styles.tabOn} aria-pressed={!state.ringPlan} onClick={() => update({ ringPlan: undefined })}>
@@ -152,7 +140,7 @@ export function MandalaBuilder({ locale, option, labels, initialState, initialRe
                   <button type="button" className={styles.tab} onClick={() => update({ seed: Math.floor(Math.random() * (MAX_SEED + 1)) })}>
                     {t.newSeed}
                   </button>
-                  <button type="button" className={styles.tab} onClick={() => update({ ringPlan: result.rings.map((ring) => ring.spec) })}>
+                  <button type="button" disabled={!result} className={styles.tab} onClick={() => result && update({ ringPlan: result.rings.map((ring) => ring.spec) })}>
                     {t.editSeedRings}
                   </button>
                 </div>
@@ -215,6 +203,7 @@ export function MandalaBuilder({ locale, option, labels, initialState, initialRe
         <strong>{t.originalTitle}</strong> {t.originalText}
       </p>
 
+      {result ? (
       <div className={styles.results}>
         <section>
           <h2>{t.ringList}</h2>
@@ -243,6 +232,7 @@ export function MandalaBuilder({ locale, option, labels, initialState, initialRe
           </table>
         </section>
       </div>
+      ) : null}
     </div>
   );
 }

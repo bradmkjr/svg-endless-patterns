@@ -1,12 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { generateTartan, generateTartanPdf, type Locale, type TartanRequest, type TartanResult, type TartanStripe } from "@/lib/generator";
+import { generateTartan, generateTartanPdf, type Locale, type TartanRequest, type TartanStripe } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { fill, messages } from "@/lib/i18n";
 import { COUNT_OPTIONS, LENGTH_OPTIONS, MAX_STRIPES, serializeTartanState, TARTAN_PRESETS, TPI_OPTIONS, WIDTH_OPTIONS } from "@/lib/tartanState";
 import { PalettePicker } from "./PalettePicker";
 import { paletteAccents } from "@/lib/palettes";
+import { ToolLoading } from "./ToolLoading";
+import { useLiveResult } from "@/lib/useLiveResult";
 import styles from "./BlockBuilder.module.css";
 
 function NumberSelect({ label, value, options, unit = "", onChange }: { label: string; value: number; options: number[]; unit?: string; onChange: (value: number) => void }) {
@@ -22,32 +24,18 @@ function NumberSelect({ label, value, options, unit = "", onChange }: { label: s
   );
 }
 
-export function TartanBuilder({ locale, initialState, initialResult }: { locale: Locale; initialState: TartanRequest; initialResult: TartanResult }) {
+export function TartanBuilder({ locale, initialState }: { locale: Locale; initialState: TartanRequest }) {
   const all = messages(locale);
   const t = all.tartan;
   const b = all.builder;
   const [state, setState] = useState(initialState);
-  const [result, setResult] = useState(initialResult);
   const [status, setStatus] = useState("");
   const [busy, setBusy] = useState(false);
 
   const update = (patch: Partial<TartanRequest>) => setState((s) => ({ ...s, ...patch }));
   const setStripe = (i: number, patch: Partial<TartanStripe>) => setState((s) => ({ ...s, stripes: s.stripes.map((stripe, n) => (n === i ? { ...stripe, ...patch } : stripe)) }));
 
-  useEffect(() => {
-    let stale = false;
-    generateTartan(state).then(
-      (next) => {
-        if (!stale) setResult(next);
-      },
-      () => {
-        if (!stale) setStatus(b.updateError);
-      },
-    );
-    return () => {
-      stale = true;
-    };
-  }, [state, b.updateError]);
+  const result = useLiveResult(generateTartan, state, setStatus, b.updateError);
 
   useEffect(() => {
     const query = serializeTartanState(state);
@@ -67,7 +55,7 @@ export function TartanBuilder({ locale, initialState, initialResult }: { locale:
     }
   };
 
-  const swatch = result.svg.swatch;
+  const swatch = result?.svg.swatch ?? "";
   const swatchUrl = `data:image/svg+xml,${encodeURIComponent(swatch)}`;
   const tileThreads = Number(/viewBox="0 0 (\d+) /.exec(swatch)?.[1] ?? 1);
   // Show about 8" of cloth, however large the repeat.
@@ -77,16 +65,16 @@ export function TartanBuilder({ locale, initialState, initialResult }: { locale:
     <div className={styles.builder}>
       <div className={styles.workspace}>
         <section className={styles.preview} aria-label={b.preview}>
-          <div className={styles.tile} style={{ backgroundImage: `url("${swatchUrl}")`, backgroundSize: `${(tileInches / 8) * 100}% auto`, imageRendering: "pixelated" }} role="img" aria-label={t.swatchAlt} />
+          {result ? <div className={styles.tile} style={{ backgroundImage: `url("${swatchUrl}")`, backgroundSize: `${(tileInches / 8) * 100}% auto`, imageRendering: "pixelated" }} role="img" aria-label={t.swatchAlt} /> : <ToolLoading locale={locale} />}
           <p className={styles.note}>{t.swatchNote}</p>
           <div className={`${styles.actions} no-print`}>
             <button type="button" disabled={busy} className={styles.primary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateTartanPdf(state), "tartan-guide.pdf", "application/pdf"))}>
               {t.downloadGuide}
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(swatch, "tartan-repeat.svg"))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(swatch, "tartan-repeat.svg"))}>
               SVG
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, () => downloadPng(swatch, "tartan-repeat.png"))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, () => downloadPng(swatch, "tartan-repeat.png"))}>
               PNG
             </button>
             <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.copying, b.copied, () => navigator.clipboard.writeText(window.location.href))}>
@@ -149,6 +137,7 @@ export function TartanBuilder({ locale, initialState, initialResult }: { locale:
         <strong>{t.originalTitle}</strong> {t.originalText}
       </p>
 
+      {result ? (
       <div className={styles.results}>
         <section>
           <h2>{t.guide}</h2>
@@ -190,6 +179,7 @@ export function TartanBuilder({ locale, initialState, initialResult }: { locale:
           <p className={styles.note}>{fill(t.yarnNote, { y: result.totalYards })}</p>
         </section>
       </div>
+      ) : null}
     </div>
   );
 }

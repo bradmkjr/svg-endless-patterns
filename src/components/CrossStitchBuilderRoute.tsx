@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Suspense, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import catalog from "@/i18n/messages/crossStitch.json";
-import type { CrossStitchResult, Locale } from "@/lib/generator";
+import type { Locale } from "@/lib/generator";
 import { localePath } from "@/lib/i18n";
 import { parseCrossStitchState } from "@/lib/crossStitchState";
 import { legacyNeedlepointQuery } from "@/lib/needlepointState";
@@ -23,18 +23,18 @@ function OpenInNeedlepoint({ href, locale }: { href: string; locale: Locale }) {
   );
 }
 
-function FromShareLink({ initial, locale, option, labels }: { initial: CrossStitchResult; locale: Locale; option?: string; labels: Record<string, string> }) {
+function FromShareLink({ locale, option, labels }: { locale: Locale; option?: string; labels: Record<string, string> }) {
   const params = useSearchParams();
   const needlepoint = legacyNeedlepointQuery(params, locale);
   if (needlepoint !== null) return <OpenInNeedlepoint href={localePath(locale, needlepoint ? `/needlepoint/?${needlepoint}` : "/needlepoint/")} locale={locale} />;
-  return <CrossStitchBuilder locale={locale} option={option} labels={labels} initialState={parseCrossStitchState(withOption("crossStitch", option, params), locale)} initialResult={initial} />;
+  return <CrossStitchBuilder locale={locale} option={option} labels={labels} initialState={parseCrossStitchState(withOption("crossStitch", option, params), locale)} />;
 }
 
 /** Same arrangement as `BlockBuilderRoute`: default design in the HTML, share link settings on load. */
-export function CrossStitchBuilderRoute({ initial, locale, option, labels }: { initial: CrossStitchResult; locale: Locale; option?: string; labels: Record<string, string> }) {
+export function CrossStitchBuilderRoute({ locale, option, labels }: { locale: Locale; option?: string; labels: Record<string, string> }) {
   return (
-    <Suspense key={option} fallback={<CrossStitchBuilder locale={locale} option={option} labels={labels} initialState={parseCrossStitchState(withOption("crossStitch", option), locale)} initialResult={initial} />}>
-      <FromShareLink initial={initial} locale={locale} option={option} labels={labels} />
+    <Suspense key={option} fallback={<CrossStitchBuilder locale={locale} option={option} labels={labels} initialState={parseCrossStitchState(withOption("crossStitch", option), locale)} />}>
+      <FromShareLink locale={locale} option={option} labels={labels} />
     </Suspense>
   );
 }

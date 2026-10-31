@@ -74,17 +74,7 @@
     "spChartCrochet": "Die ersten Reihen in kleiner Breite. Beginne unten mit Reihe 1. X = fM, T = hStb, gekreuztes T = Stb, Oval = Lm.",
     "spAbbr": "Abkürzungen",
     "labelSashing": "Sashing",
-    "labelBorder": "Rand",
-    "taStepWarp": "Schäre eine Kette aus {ends} Fäden, je {len}\" lang (einschließlich {waste}\" Webstuhlverlust).",
-    "taStepOrder": "Ziehe die Kette in dieser Reihenfolge ein und beginne von vorn, bis alle Fäden verwendet sind: {order}.",
-    "taStepWeave": "Webe {picks} Schüsse in 2/2-Köper mit {ppi} Schuss pro Zoll, im Schuss mit derselben Farbfolge wie in der Kette.",
-    "taStepFinish": "Wasche und bügle den Stoff zum Abschluss. Rechne mit etwas Einlaufen, das je nach Garn unterschiedlich ist.",
-    "taPdfTitle": "Webanleitung für Tartan",
-    "taPdfSize": "Stoff {w}\" x {h}\" mit {tpi} Fäden pro Zoll. Ein Rapport hat {threads} Fäden, also {repeat}\".",
-    "taPdfSteps": "Webschritte",
-    "taPdfYarn": "Garn nach Farbe",
-    "taPdfColor": "{letter} ({hex}): {ends} Kettfäden, {picks} Schüsse, etwa {y} yd",
-    "taPdfTotal": "Insgesamt etwa {y} Yards. Eine grobe Schätzung mit 10 % Zugabe."
+    "labelBorder": "Rand"
   },
   "fabrics": {
     "Light": "Hell",

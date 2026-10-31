@@ -21,6 +21,8 @@ import {
 } from "@/lib/needlepointState";
 import { syncShareLink } from "@/lib/toolOptions";
 import { paletteAccents } from "@/lib/palettes";
+import { ToolLoading } from "./ToolLoading";
+import { useLiveResult } from "@/lib/useLiveResult";
 import { OptionNav, useOptionNavigation } from "./OptionNav";
 import { PalettePicker } from "./PalettePicker";
 import styles from "./BlockBuilder.module.css";
@@ -29,16 +31,15 @@ import css from "./CrossStitchBuilder.module.css";
 import { CrossStitchBuilderGrid } from "./CrossStitchBuilderGrid";
 
 /** A color's chart symbol. Blank for a color just added, until the next result arrives. */
-const symbolOf = (result: NeedlepointResult, i: number) => result.colors[i]?.symbol ?? "";
+const symbolOf = (result: NeedlepointResult | null, i: number) => result?.colors[i]?.symbol ?? "";
 
 type View = "stitched" | "chart" | "edit";
 
-export function NeedlepointBuilder({ locale, option, labels, initialState, initialResult }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: NeedlepointRequest; initialResult: NeedlepointResult }) {
+export function NeedlepointBuilder({ locale, option, labels, initialState }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: NeedlepointRequest }) {
   const t = catalog[locale];
   const b = messages(locale).builder;
   const goToOption = useOptionNavigation("needlepoint", locale);
   const [state, setState] = useState(initialState);
-  const [result, setResult] = useState(initialResult);
   const [view, setView] = useState<View>("stitched");
   /** The color being painted, or -1 for bare canvas. */
   const [tool, setTool] = useState(0);
@@ -54,20 +55,7 @@ export function NeedlepointBuilder({ locale, option, labels, initialState, initi
     setState((s) => (s.grid[row][column] === cell ? s : { ...s, grid: setCell(s.grid, row, column, cell) }));
   };
 
-  useEffect(() => {
-    let stale = false;
-    generateNeedlepoint(state).then(
-      (next) => {
-        if (!stale) setResult(next);
-      },
-      () => {
-        if (!stale) setStatus(b.updateError);
-      },
-    );
-    return () => {
-      stale = true;
-    };
-  }, [state, b.updateError]);
+  const result = useLiveResult(generateNeedlepoint, state, setStatus, b.updateError);
 
   useEffect(() => {
     const query = serializeNeedlepointState(state);
@@ -112,13 +100,13 @@ export function NeedlepointBuilder({ locale, option, labels, initialState, initi
 
           {view === "stitched" && (
             <>
-              <div className={styles.art} dangerouslySetInnerHTML={{ __html: result.svg.stitched }} />
+              {result ? <div className={styles.art} dangerouslySetInnerHTML={{ __html: result.svg.stitched }} /> : <ToolLoading locale={locale} />}
               <p className={styles.note}>{t.stitchedNote}</p>
             </>
           )}
           {view === "chart" && (
             <>
-              <div className={styles.chart} dangerouslySetInnerHTML={{ __html: result.svg.chart }} />
+              {result ? <div className={styles.chart} dangerouslySetInnerHTML={{ __html: result.svg.chart }} /> : <ToolLoading locale={locale} />}
               <p className={styles.note}>{t.chartNote}</p>
             </>
           )}
@@ -148,10 +136,10 @@ export function NeedlepointBuilder({ locale, option, labels, initialState, initi
             <button type="button" disabled={busy} className={styles.primary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateNeedlepointPdf(state), "needlepoint-project.pdf", "application/pdf"))}>
               {t.downloadChart}
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(view === "chart" ? result.svg.chart : result.svg.stitched, view === "chart" ? "needlepoint-chart.svg" : "needlepoint-design.svg"))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(view === "chart" ? result!.svg.chart : result!.svg.stitched, view === "chart" ? "needlepoint-chart.svg" : "needlepoint-design.svg"))}>
               SVG
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, () => downloadPng(result.svg.stitched, "needlepoint-design.png"))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, () => downloadPng(result!.svg.stitched, "needlepoint-design.png"))}>
               PNG
             </button>
             <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.copying, b.copied, () => navigator.clipboard.writeText(window.location.href))}>
@@ -192,7 +180,7 @@ export function NeedlepointBuilder({ locale, option, labels, initialState, initi
                 <div key={i} className={styles.stripe}>
                   <strong>{symbol}</strong>
                   <input type="color" aria-label={fill(t.colorLabel, { symbol })} value={color} onChange={(e) => setColor(i, e.target.value)} />
-                  <span className={css.colorCount}>{result.colors[i]?.stitches ?? 0}</span>
+                  <span className={css.colorCount}>{result?.colors[i]?.stitches ?? 0}</span>
                   <button
                     type="button"
                     className={styles.tab}
@@ -260,12 +248,12 @@ export function NeedlepointBuilder({ locale, option, labels, initialState, initi
         <strong>{t.originalTitle}</strong> {t.originalText}
       </p>
 
-      <CountedProjectGuide
+      {result ? <CountedProjectGuide
         t={t}
         result={result}
         sizeLines={[fill(t.sizeLine, { w: result.width, h: result.height, mesh: state.mesh, columns: result.columns, rows: result.rows }), fill(t.canvasLine, { w: result.canvasWidth, h: result.canvasHeight })]}
         note={fill(t.yarnNote, { n: result.stitches, y: result.totalYards })}
-      />
+      /> : null}
     </div>
   );
 }

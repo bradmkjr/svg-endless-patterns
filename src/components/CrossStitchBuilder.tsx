@@ -17,6 +17,8 @@ import {
   setCell,
   STRAND_OPTIONS,
 } from "@/lib/crossStitchState";
+import { ToolLoading } from "./ToolLoading";
+import { useLiveResult } from "@/lib/useLiveResult";
 import { OptionNav, useOptionNavigation } from "./OptionNav";
 import { PalettePicker } from "./PalettePicker";
 import { syncShareLink } from "@/lib/toolOptions";
@@ -27,18 +29,17 @@ import css from "./CrossStitchBuilder.module.css";
 import { CrossStitchBuilderGrid } from "./CrossStitchBuilderGrid";
 
 /** A color's chart symbol. Blank for a color just added, until the next result arrives. */
-const symbolOf = (result: CrossStitchResult, i: number) => result.colors[i]?.symbol ?? "";
+const symbolOf = (result: CrossStitchResult | null, i: number) => result?.colors[i]?.symbol ?? "";
 
 type View = "stitched" | "chart" | "edit";
 /** The color being painted, or -1 for bare fabric. */
 type Tool = number;
 
-export function CrossStitchBuilder({ locale, option, labels, initialState, initialResult }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: CrossStitchRequest; initialResult: CrossStitchResult }) {
+export function CrossStitchBuilder({ locale, option, labels, initialState }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: CrossStitchRequest }) {
   const t = catalog[locale];
   const b = messages(locale).builder;
   const goToOption = useOptionNavigation("crossStitch", locale);
   const [state, setState] = useState(initialState);
-  const [result, setResult] = useState(initialResult);
   const [view, setView] = useState<View>("stitched");
   const [tool, setTool] = useState<Tool>(0);
   const [status, setStatus] = useState("");
@@ -53,20 +54,7 @@ export function CrossStitchBuilder({ locale, option, labels, initialState, initi
     setState((s) => (s.grid[row][column] === cell ? s : { ...s, grid: setCell(s.grid, row, column, cell) }));
   };
 
-  useEffect(() => {
-    let stale = false;
-    generateCrossStitch(state).then(
-      (next) => {
-        if (!stale) setResult(next);
-      },
-      () => {
-        if (!stale) setStatus(b.updateError);
-      },
-    );
-    return () => {
-      stale = true;
-    };
-  }, [state, b.updateError]);
+  const result = useLiveResult(generateCrossStitch, state, setStatus, b.updateError);
 
   useEffect(() => {
     const query = serializeCrossStitchState(state);
@@ -109,13 +97,13 @@ export function CrossStitchBuilder({ locale, option, labels, initialState, initi
 
           {view === "stitched" && (
             <>
-              <div className={styles.art} dangerouslySetInnerHTML={{ __html: result.svg.stitched }} />
+              {result ? <div className={styles.art} dangerouslySetInnerHTML={{ __html: result.svg.stitched }} /> : <ToolLoading locale={locale} />}
               <p className={styles.note}>{t.stitchedNote}</p>
             </>
           )}
           {view === "chart" && (
             <>
-              <div className={styles.chart} dangerouslySetInnerHTML={{ __html: result.svg.chart }} />
+              {result ? <div className={styles.chart} dangerouslySetInnerHTML={{ __html: result.svg.chart }} /> : <ToolLoading locale={locale} />}
               <p className={styles.note}>{t.chartNote}</p>
             </>
           )}
@@ -145,10 +133,10 @@ export function CrossStitchBuilder({ locale, option, labels, initialState, initi
             <button type="button" disabled={busy} className={styles.primary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateCrossStitchPdf(state), "cross-stitch-project.pdf", "application/pdf"))}>
               {t.downloadChart}
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(view === "chart" ? result.svg.chart : result.svg.stitched, view === "chart" ? "cross-stitch-chart.svg" : "cross-stitch-design.svg"))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(view === "chart" ? result!.svg.chart : result!.svg.stitched, view === "chart" ? "cross-stitch-chart.svg" : "cross-stitch-design.svg"))}>
               SVG
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, () => downloadPng(result.svg.stitched, "cross-stitch-design.png"))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, () => downloadPng(result!.svg.stitched, "cross-stitch-design.png"))}>
               PNG
             </button>
             <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.copying, b.copied, () => navigator.clipboard.writeText(window.location.href))}>
@@ -189,7 +177,7 @@ export function CrossStitchBuilder({ locale, option, labels, initialState, initi
                 <div key={i} className={styles.stripe}>
                   <strong>{symbol}</strong>
                   <input type="color" aria-label={fill(t.colorLabel, { symbol })} value={color} onChange={(e) => setColor(i, e.target.value)} />
-                  <span className={css.colorCount}>{result.colors[i]?.stitches ?? 0}</span>
+                  <span className={css.colorCount}>{result?.colors[i]?.stitches ?? 0}</span>
                   <button
                     type="button"
                     className={styles.tab}
@@ -235,12 +223,12 @@ export function CrossStitchBuilder({ locale, option, labels, initialState, initi
         <strong>{t.originalTitle}</strong> {t.originalText}
       </p>
 
-      <CountedProjectGuide
+      {result ? <CountedProjectGuide
         t={t}
         result={result}
         sizeLines={[fill(t.sizeLine, { w: result.width, h: result.height, count: state.count, columns: result.columns, rows: result.rows }), fill(t.fabricLine, { w: result.fabricWidth, h: result.fabricHeight })]}
         note={fill(t.flossNote, { n: result.stitches, y: result.totalYards })}
-      />
+      /> : null}
     </div>
   );
 }

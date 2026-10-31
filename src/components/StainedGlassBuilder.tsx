@@ -1,11 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { generateStainedGlass, generateStainedGlassPdf, type Locale, type StainedGlassRequest, type StainedGlassResult } from "@/lib/generator";
+import { generateStainedGlass, generateStainedGlassPdf, type Locale, type StainedGlassRequest } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { fill, messages } from "@/lib/i18n";
 import text from "@/i18n/messages/stainedGlass.json";
 import { CAME_WIDTHS, GLASS_DETAILS, GLASS_LAYOUTS, GLASS_PALETTES, GLASS_SIDES, HEART_WIDTHS, serializeStainedGlassState } from "@/lib/stainedGlassState";
+import { ToolLoading } from "./ToolLoading";
+import { useLiveResult } from "@/lib/useLiveResult";
 import { OptionNav, useOptionNavigation } from "./OptionNav";
 import { PalettePicker } from "./PalettePicker";
 import { syncShareLink } from "@/lib/toolOptions";
@@ -38,32 +40,18 @@ function Select({ label, value, options, format, onChange }: { label: string; va
   );
 }
 
-export function StainedGlassBuilder({ locale, option, labels, initialState, initialResult }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: StainedGlassRequest; initialResult: StainedGlassResult }) {
+export function StainedGlassBuilder({ locale, option, labels, initialState }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: StainedGlassRequest }) {
   const t = text[locale];
   const b = messages(locale).builder;
   const goToOption = useOptionNavigation("stainedGlass", locale);
   const [state, setState] = useState(initialState);
-  const [result, setResult] = useState(initialResult);
   const [view, setView] = useState<"panel" | "numbered">("panel");
   const [status, setStatus] = useState("");
   const [busy, setBusy] = useState(false);
 
   const update = (patch: Partial<StainedGlassRequest>) => setState((s) => ({ ...s, ...patch }));
 
-  useEffect(() => {
-    let stale = false;
-    generateStainedGlass(state).then(
-      (next) => {
-        if (!stale) setResult(next);
-      },
-      () => {
-        if (!stale) setStatus(b.updateError);
-      },
-    );
-    return () => {
-      stale = true;
-    };
-  }, [state, b.updateError]);
+  const result = useLiveResult(generateStainedGlass, state, setStatus, b.updateError);
 
   useEffect(() => {
     const query = serializeStainedGlassState(state);
@@ -83,7 +71,7 @@ export function StainedGlassBuilder({ locale, option, labels, initialState, init
     }
   };
 
-  const svg = result.svg[view];
+  const svg = result?.svg[view] ?? "";
   const inches = (value: number) => `${value}"`;
 
   return (
@@ -98,16 +86,16 @@ export function StainedGlassBuilder({ locale, option, labels, initialState, init
               </button>
             ))}
           </div>
-          <div className={`${styles.art} ${styles.quiltArt}`} role="img" aria-label={view === "panel" ? t.panelAlt : t.numberedAlt} dangerouslySetInnerHTML={{ __html: svg }} />
-          <p className={styles.note}>{fill(t.previewNote, { n: result.pieces.length, w: result.width, h: result.height })}</p>
+          {result ? <div className={`${styles.art} ${styles.quiltArt}`} role="img" aria-label={view === "panel" ? t.panelAlt : t.numberedAlt} dangerouslySetInnerHTML={{ __html: svg }} /> : <ToolLoading locale={locale} />}
+          {result ? <p className={styles.note}>{fill(t.previewNote, { n: result.pieces.length, w: result.width, h: result.height })}</p> : null}
           <div className={`${styles.actions} no-print`}>
             <button type="button" disabled={busy} className={styles.primary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateStainedGlassPdf(state), "stained-glass-pattern.pdf", "application/pdf"))}>
               {t.downloadPattern}
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(svg, `stained-glass-${view}.svg`))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(svg, `stained-glass-${view}.svg`))}>
               SVG
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, () => downloadPng(svg, `stained-glass-${view}.png`))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, () => downloadPng(svg, `stained-glass-${view}.png`))}>
               PNG
             </button>
             <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.copying, b.copied, () => navigator.clipboard.writeText(window.location.href))}>
@@ -177,12 +165,13 @@ export function StainedGlassBuilder({ locale, option, labels, initialState, init
         </form>
       </div>
 
-      {result.notes.map((note) => (
+      {result?.notes.map((note) => (
         <p key={note} className={styles.notice}>
           {note}
         </p>
       ))}
 
+      {result ? (
       <div className={styles.results}>
         <section>
           <h2>{t.rulesTitle}</h2>
@@ -235,6 +224,7 @@ export function StainedGlassBuilder({ locale, option, labels, initialState, init
           <p className={styles.note}>{fill(t.cameNote, { inner: result.came.innerFeet, outer: result.came.perimeterFeet })}</p>
         </section>
       </div>
+      ) : null}
 
       <p className={styles.notice}>
         <strong>{t.originalTitle}</strong> {t.originalText}

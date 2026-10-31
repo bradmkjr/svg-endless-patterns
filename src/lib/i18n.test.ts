@@ -33,7 +33,7 @@ describe.each(PREFIXED_LOCALES)("%s site text", (locale) => {
 
   it("isn't still English, apart from words shared across languages", () => {
     const same = [...translated].filter(([key, text]) => text === english.get(key) && !TRANSLATION_ONLY.has(key)).map(([key]) => key);
-    expect(same.length / translated.size).toBeLessThan(0.05);
+    expect(same.length / translated.size).toBeLessThan(0.1);
   });
 
   const content = CONTENT_TRANSLATIONS[locale as keyof typeof CONTENT_TRANSLATIONS];

@@ -27,13 +27,13 @@ Generation will move to a backend API, so it stays behind one boundary:
 formats to the engine and expose them through `generator.ts`.
 
 ## Adding a block
-Add it to `BLOCKS` in `src/engine/blocks.ts`. Tests check that it fills its grid
+Add it to `BLOCKS` in `src/engine/blocks.ts`, and its text to `src/engine/messages/`. Tests check that it fills its grid
 exactly once and uses the fabrics it declares; its page and sitemap entry follow
 automatically. Use traditional names only, never catalog numbers, and add history
 only with a documented source.
 
 ## Adding a knit or crochet stitch
-Add it to `src/engine/stitchCatalog.ts`. Knit: give the chart, seen from the right
+Add it to `src/engine/stitchCatalog.ts`, and its text to `src/engine/messages/`. Knit: give the chart, seen from the right
 side, with an even row count; written rows are derived from it. Crochet: write the
 row text with what each part consumes and makes. `stitch.test.ts` checks both at
 every width, but it counts crochet stitches rather than reading the text, so
@@ -49,6 +49,7 @@ proofread that text. Crochet terms are US.
 Every major feature ships with all of these, in the same change:
 1. A new post at the top of `src/content/blog.json`, with a `samples` block and links.
 2. An entry at the top of `src/content/changelog.json`, with `post` set to its slug.
+3. Translations of both in `src/content/i18n/`.
 
 Smaller changes and fixes get a changelog entry only. A sample stores a tool, its
 query string and a view; the preview is drawn from those same settings, and the link
@@ -59,6 +60,20 @@ changelog. Describe only what has shipped, and date entries with the day they sh
 ## Blog and changelog storage
 Both are JSON in `src/content/`, for a database later. Read them only through
 `src/lib/content.ts`, which can become queries without changing its callers.
+
+## Translations
+English is at the root; `es`, `fr`, `de` and `pt` (Brazilian) sit under a prefix.
+- `src/app/(en)` and `src/app/[locale]` are two root layouts, for a correct
+  `<html lang>`. Their routes are thin: page bodies live in `src/views/` and take
+  a `locale`. A new page needs a route in both trees, plus an entry in the sitemap.
+- Site text: `src/i18n/messages/`. Post and changelog text: `src/content/i18n/`.
+  Generated text (cuts, steps, rows, PDFs): `src/engine/messages/`, with English in
+  `src/engine/i18n.ts`, so it moves with the engine.
+- New text goes in all five languages. `i18n.test.ts` in `lib/` and `engine/` fail on
+  missing keys or mismatched placeholders and links.
+- Link with `localePath`. Translations only change words, never numbers or geometry.
+- Each language's colors are `html[data-locale]` tokens in `globals.css`, with
+  default palettes and yarn colors in `lib/state.ts` and `lib/stitchState.ts`.
 
 ## Static export limits
 No route handlers that read the request, redirects, headers, proxy or server

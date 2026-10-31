@@ -44,12 +44,11 @@ describe.each(locales)("%s catalog", (locale, catalog) => {
   it("leaves no placeholder unfilled in generated text", () => {
     for (const block of BLOCKS) {
       const result = generatePattern(block.slug, { ...defaultRequest(block), locale: locale as never, sashing: 1 });
-      const { svg: _svg, ...text } = result;
-      expect(JSON.stringify(text), block.slug).not.toMatch(/\{\w+\}/);
+      expect(JSON.stringify({ ...result, svg: null }), block.slug).not.toMatch(/\{\w+\}/);
     }
     for (const stitch of STITCHES) {
-      const { svg: _svg, ...text } = generateStitchPattern(stitch.slug, { width: 8, length: 8, stitchGauge: 18, rowGauge: 24, color: "#23395d", locale: locale as never });
-      expect(JSON.stringify(text), stitch.slug).not.toMatch(/\{\w+\}/);
+      const result = generateStitchPattern(stitch.slug, { width: 8, length: 8, stitchGauge: 18, rowGauge: 24, color: "#23395d", locale: locale as never });
+      expect(JSON.stringify({ ...result, svg: null }), stitch.slug).not.toMatch(/\{\w+\}/);
     }
   });
 

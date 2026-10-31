@@ -21,12 +21,12 @@ const color = (hex: string) => {
   return rgb(((n >> 16) & 255) / 255, ((n >> 8) & 255) / 255, (n & 255) / 255);
 };
 
-/** A window onto a piece, in points from its bounding box's top left, drawn with that corner at (x, y) on the page. */
+/** A sheetArea onto a piece, in points from its bounding box's top left, drawn with that corner at (x, y) on the page. */
 export type Placement = {
   number: number;
   x: number;
   y: number;
-  window: { x: number; y: number; w: number; h: number };
+  sheetArea: { x: number; y: number; w: number; h: number };
   /** Which sheet of a tiled piece this is; `of` is 1 when the piece fits a page. */
   sheet: number;
   of: number;
@@ -39,8 +39,8 @@ const boxOf = (points: Point[]) => {
   return { minX, minY, w: (Math.max(...xs) - minX) * PT, h: (Math.max(...ys) - minY) * PT };
 };
 
-/** A segment's part inside a window (Liang-Barsky), or null. */
-function clipSegment(a: Point, b: Point, win: Placement["window"]): [Point, Point] | null {
+/** A segment's part inside a sheetArea (Liang-Barsky), or null. */
+function clipSegment(a: Point, b: Point, win: Placement["sheetArea"]): [Point, Point] | null {
   const [dx, dy] = [b[0] - a[0], b[1] - a[1]];
   let [t0, t1] = [0, 1];
   const checks: [number, number][] = [[-dx, a[0] - win.x], [dx, win.x + win.w - a[0]], [-dy, a[1] - win.y], [dy, win.y + win.h - a[1]]];
@@ -94,7 +94,7 @@ export function planTemplates(pieces: StainedGlassPiece[]): { sheets: Placement[
         rowH = 0;
       }
       if (y + h + LABEL > PAGE_H - MARGIN) nextSheet();
-      current.push({ number: piece.number, x, y, window: { x: 0, y: 0, w, h }, sheet: 1, of: 1 });
+      current.push({ number: piece.number, x, y, sheetArea: { x: 0, y: 0, w, h }, sheet: 1, of: 1 });
       x += itemW + 14;
       rowH = Math.max(rowH, h + LABEL + 8);
       continue;
@@ -104,17 +104,17 @@ export function planTemplates(pieces: StainedGlassPiece[]): { sheets: Placement[
     const stepX = contentW - OVERLAP;
     const stepY = contentH - OVERLAP;
     const local = piece.cut.map(([px, py]): Point => [(px - minX) * PT, (py - minY) * PT]);
-    const windows: Placement["window"][] = [];
+    const windows: Placement["sheetArea"][] = [];
     for (let row = 0; row * stepY < h; row++) {
       for (let col = 0; col * stepX < w; col++) {
-        const window = { x: col * stepX, y: row * stepY, w: contentW, h: contentH };
-        const reached = local.some((p, i) => clipSegment(p, local[(i + 1) % local.length], window));
+        const sheetArea = { x: col * stepX, y: row * stepY, w: contentW, h: contentH };
+        const reached = local.some((p, i) => clipSegment(p, local[(i + 1) % local.length], sheetArea));
         // A sheet wholly inside the piece has no outline but still carries the crosses that join its neighbors.
-        if (reached || inside(local, [window.x + window.w / 2, window.y + window.h / 2])) windows.push(window);
+        if (reached || inside(local, [sheetArea.x + sheetArea.w / 2, sheetArea.y + sheetArea.h / 2])) windows.push(sheetArea);
       }
     }
-    windows.forEach((window, i) => {
-      sheets.push([{ number: piece.number, x: MARGIN, y: top + LABEL, window, sheet: i + 1, of: windows.length }]);
+    windows.forEach((sheetArea, i) => {
+      sheets.push([{ number: piece.number, x: MARGIN, y: top + LABEL, sheetArea, sheet: i + 1, of: windows.length }]);
     });
   }
   if (current.length) sheets.push(current);
@@ -123,9 +123,9 @@ export function planTemplates(pieces: StainedGlassPiece[]): { sheets: Placement[
 
 function drawOutline(page: PDFPage, points: Point[], place: Placement, thickness: number, ink: ReturnType<typeof rgb>, dashed = false) {
   points.forEach((p, i) => {
-    const part = clipSegment(p, points[(i + 1) % points.length], place.window);
+    const part = clipSegment(p, points[(i + 1) % points.length], place.sheetArea);
     if (!part) return;
-    const flip = ([px, py]: Point) => ({ x: place.x + px - place.window.x, y: PAGE_H - (place.y + py - place.window.y) });
+    const flip = ([px, py]: Point) => ({ x: place.x + px - place.sheetArea.x, y: PAGE_H - (place.y + py - place.sheetArea.y) });
     page.drawLine({ start: flip(part[0]), end: flip(part[1]), thickness, color: ink, ...(dashed ? { dashArray: [4, 3] } : {}) });
   });
 }
@@ -225,7 +225,7 @@ export async function generateStainedGlassPdf(request: StainedGlassRequest): Pro
         w.page.drawText(label, { x: place.x + lx - bold.widthOfTextAtSize(label, size) / 2, y: PAGE_H - place.y - ly - size * 0.35, size, font: bold, color: INK });
         w.page.drawText(glassSay(locale, "pdfPiece", { n: piece.number, letter: piece.letter }), { x: place.x, y: PAGE_H - place.y - h - 10, size: 8, font, color: MUTED });
       } else {
-        const win = place.window;
+        const win = place.sheetArea;
         w.page.drawText(glassSay(locale, "pdfSheet", { n: piece.number, letter: piece.letter, sheet: place.sheet, of: place.of }), { x: MARGIN, y: PAGE_H - place.y + 4, size: 9, font: bold, color: INK });
         // Overlap bands, and crosses at fixed spots in the piece's own coordinates, so sheets line up.
         const band = (x: number, y: number, width: number, height: number) =>

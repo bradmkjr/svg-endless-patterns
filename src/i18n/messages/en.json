@@ -233,6 +233,12 @@
         "text": "Build true girih from its five tiles, or star patterns on regular polygons, with your own symmetry, star type, line weight and colors.",
         "output": "Seamless SVG and PNG repeats, a bridged stencil, a wall panel, and a printable PDF.",
         "explore": "Explore geometric stars and girih"
+      },
+      "truchet": {
+        "title": "Truchet tiles",
+        "text": "Turn one simple tile on a grid to make a seamless pattern of arcs, lines or triangles.",
+        "output": "Seamless SVG and PNG repeat, and a printable PDF.",
+        "explore": "Make a pattern"
       }
     }
   },

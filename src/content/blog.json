@@ -1,5 +1,68 @@
 [
   {
+    "slug": "truchet-tile-maker",
+    "title": "Make seamless patterns from one turning tile",
+    "date": "2026-10-30",
+    "summary": "Pick a tile, a grid and a layout, then download a seamless SVG or PNG repeat or a printable PDF.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The [Truchet tile maker](/truchet/) is a new tool from the [pattern library](/patterns/). It fills a grid with one simple tile, turned a different way from place to place, and the turns make the pattern."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "truchet",
+            "slug": "",
+            "query": "a=checker&g=12&w=16",
+            "view": "repeat",
+            "caption": "Quarter arcs in a checkerboard"
+          },
+          {
+            "kind": "truchet",
+            "slug": "",
+            "query": "style=triangles&a=mirror&seed=2024",
+            "view": "repeat",
+            "caption": "Mirrored triangles from a seed"
+          },
+          {
+            "kind": "truchet",
+            "slug": "",
+            "query": "style=chamfers&a=stripes&w=8",
+            "view": "repeat",
+            "caption": "Straight chamfers in stripes"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Four tiles: quarter arcs, straight chamfers, diagonal lines and diagonal triangles",
+          "Random, mirrored, checkerboard, stripe and diagonal wave layouts",
+          "A seamless repeat, as SVG or PNG",
+          "A printable PDF with one repeat at true size and a full sheet of repeats"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Seeds and share links"
+      },
+      {
+        "type": "paragraph",
+        "text": "Random layouts come from a seed, so a share link always opens the same pattern."
+      }
+    ]
+  },
+  {
     "slug": "geometric-stars-and-girih",
     "title": "Draw true girih and geometric star patterns",
     "date": "2026-10-30",

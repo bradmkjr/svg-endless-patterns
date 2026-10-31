@@ -247,6 +247,28 @@
         "Was jede Option ist",
         "Nur die 10-zählige Option heißt Girih. Die 4-, 6-, 8- und 12-zähligen Optionen sind geometrische Sternmuster auf regelmäßigen Vielecken. Ein 8-, 10- oder 12-zähliger Stern kann einem ganzen sich wiederholenden Muster diese Symmetrie nicht geben, deshalb nennt das Werkzeug die Drehung des Sterns und die des Musters getrennt. Der Girih-Ausschnitt stammt aus einer Computersuche und ist von keinem Bauwerk kopiert."
       ]
+    },
+    "truchet-tile-maker": {
+      "title": "Nahtlose Muster aus einer einzigen drehenden Kachel",
+      "summary": "Wähle Kachel, Raster und Anordnung und lade einen nahtlosen Rapport als SVG oder PNG oder ein druckbares PDF herunter.",
+      "blocks": [
+        "Der [Truchet-Kachel-Generator](/truchet/) ist ein neues Werkzeug aus der [Musterbibliothek](/patterns/). Er füllt ein Raster mit einer einfachen Kachel, die von Stelle zu Stelle anders gedreht ist, und aus den Drehungen entsteht das Muster.",
+        "Beispiele zum Einstieg",
+        [
+          "Viertelkreise im Schachbrett",
+          "Gespiegelte Dreiecke aus einem Startwert",
+          "Gerade Fasen in Streifen"
+        ],
+        "Das bekommst du",
+        [
+          "Vier Kacheln: Viertelkreise, gerade Fasen, diagonale Linien und diagonale Dreiecke",
+          "Anordnungen: zufällig, gespiegelt, Schachbrett, Streifen und diagonale Wellen",
+          "Einen nahtlosen Rapport als SVG oder PNG",
+          "Ein druckbares PDF mit einem Rapport in Originalgröße und einem ganzen Bogen voller Rapporte"
+        ],
+        "Startwerte und Links zum Teilen",
+        "Zufällige Anordnungen entstehen aus einem Startwert, daher öffnet ein geteilter Link immer dasselbe Muster."
+      ]
     }
   },
   "changelog": {
@@ -347,6 +369,12 @@
       "title": "Werkzeug für geometrische Sterne und Girih",
       "items": [
         "Ein Werkzeug für geometrische Sterne und Girih hinzugefügt, mit echtem Girih aus fünf Fliesen, 4-, 6-, 8- und 12-zähligen Sternmustern, nahtlosen Rapporten, Schablonen, Wandtafeln und PDFs"
+      ]
+    },
+    "Truchet tile maker": {
+      "title": "Truchet-Kachel-Generator",
+      "items": [
+        "Truchet-Kachel-Generator hinzugefügt, mit nahtlosen Rapporten als SVG und PNG und druckbarem PDF"
       ]
     }
   }

@@ -247,6 +247,28 @@
         "O que é cada opção",
         "Só a opção de ordem 10 se chama girih. As de ordem 4, 6, 8 e 12 são padrões geométricos de estrelas sobre polígonos regulares. Uma estrela de ordem 8, 10 ou 12 não pode dar essa simetria a um padrão repetido inteiro, então a ferramenta mostra separadamente a rotação da estrela e a do padrão. O conjunto de girih veio de uma busca por computador e não foi copiado de nenhum edifício."
       ]
+    },
+    "truchet-tile-maker": {
+      "title": "Crie padrões contínuos com um único azulejo que gira",
+      "summary": "Escolha um azulejo, uma grade e uma disposição e baixe uma repetição contínua em SVG ou PNG ou um PDF para imprimir.",
+      "blocks": [
+        "O [criador de azulejos de Truchet](/truchet/) é uma nova ferramenta da [biblioteca de padrões](/patterns/). Ele preenche uma grade com um azulejo simples, girado de um jeito diferente em cada lugar, e esses giros formam o padrão.",
+        "Exemplos para começar",
+        [
+          "Arcos de quarto de círculo em xadrez",
+          "Triângulos espelhados a partir de uma semente",
+          "Chanfros retos em listras"
+        ],
+        "O que você recebe",
+        [
+          "Quatro azulejos: arcos de quarto de círculo, chanfros retos, linhas diagonais e triângulos diagonais",
+          "Disposições aleatória, espelhada, em xadrez, em listras e em ondas diagonais",
+          "Uma repetição contínua, em SVG ou PNG",
+          "Um PDF para imprimir com uma repetição em tamanho real e uma folha inteira de repetições"
+        ],
+        "Sementes e links para compartilhar",
+        "As disposições aleatórias partem de uma semente, então um link compartilhado sempre abre o mesmo padrão."
+      ]
     }
   },
   "changelog": {
@@ -347,6 +369,12 @@
       "title": "Criador de estrelas geométricas e girih",
       "items": [
         "Adicionado um criador de estrelas geométricas e girih, com girih verdadeiro de cinco peças, padrões de estrelas de ordem 4, 6, 8 e 12, repetições contínuas, estênceis, painéis de parede e PDFs"
+      ]
+    },
+    "Truchet tile maker": {
+      "title": "Criador de azulejos de Truchet",
+      "items": [
+        "Adicionado um criador de azulejos de Truchet, com repetições contínuas em SVG e PNG e PDF para imprimir"
       ]
     }
   }

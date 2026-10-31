@@ -233,6 +233,12 @@
         "text": "Erstelle echtes Girih aus seinen fünf Fliesen oder Sternmuster auf regelmäßigen Vielecken, mit eigener Symmetrie, Sternart, Linienstärke und eigenen Farben.",
         "output": "Nahtlose Rapporte als SVG und PNG, eine Schablone mit Stegen, eine Wandtafel und ein druckbares PDF.",
         "explore": "Geometrische Sterne und Girih entdecken"
+      },
+      "truchet": {
+        "title": "Truchet-Kacheln",
+        "text": "Drehe eine einfache Kachel auf einem Raster, um ein nahtloses Muster aus Bögen, Linien oder Dreiecken zu erstellen.",
+        "output": "Nahtloser Rapport als SVG und PNG sowie druckbares PDF.",
+        "explore": "Muster erstellen"
       }
     }
   },

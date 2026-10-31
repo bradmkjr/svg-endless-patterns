@@ -233,6 +233,12 @@
         "text": "Crie girih verdadeiro com suas cinco peças, ou padrões de estrelas sobre polígonos regulares, com sua simetria, tipo de estrela, espessura de linha e cores.",
         "output": "Repetições contínuas em SVG e PNG, um estêncil com pontes, um painel de parede e um PDF para imprimir.",
         "explore": "Explorar estrelas geométricas e girih"
+      },
+      "truchet": {
+        "title": "Azulejos de Truchet",
+        "text": "Gire um azulejo simples em uma grade para criar um padrão contínuo de arcos, linhas ou triângulos.",
+        "output": "Repetição contínua em SVG e PNG e PDF para imprimir.",
+        "explore": "Criar um padrão"
       }
     }
   },

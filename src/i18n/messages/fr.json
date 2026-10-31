@@ -233,6 +233,12 @@
         "text": "Créez un véritable girih à partir de ses cinq tuiles, ou des motifs d'étoiles sur des polygones réguliers, avec votre symétrie, votre type d'étoile, votre épaisseur de ligne et vos couleurs.",
         "output": "Raccords continus en SVG et PNG, pochoir à ponts, panneau mural et PDF à imprimer.",
         "explore": "Explorer les étoiles géométriques et le girih"
+      },
+      "truchet": {
+        "title": "Tuiles de Truchet",
+        "text": "Faites pivoter une tuile simple sur une grille pour créer un motif continu d'arcs, de lignes ou de triangles.",
+        "output": "Raccord continu en SVG et PNG, et PDF à imprimer.",
+        "explore": "Créer un motif"
       }
     }
   },

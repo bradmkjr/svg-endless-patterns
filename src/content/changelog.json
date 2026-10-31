@@ -1,6 +1,14 @@
 [
   {
     "date": "2026-10-30",
+    "title": "Truchet tile maker",
+    "post": "truchet-tile-maker",
+    "items": [
+      "Added a Truchet tile maker, with seamless SVG and PNG repeats and a printable PDF"
+    ]
+  },
+  {
+    "date": "2026-10-30",
     "title": "Geometric stars and girih maker",
     "post": "geometric-stars-and-girih",
     "items": [

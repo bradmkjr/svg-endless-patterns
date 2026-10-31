@@ -247,6 +247,28 @@
         "Ce qu'est chaque option",
         "Seule l'option d'ordre 10 porte le nom de girih. Les options d'ordre 4, 6, 8 et 12 sont des motifs géométriques d'étoiles sur des polygones réguliers. Une étoile d'ordre 8, 10 ou 12 ne peut pas donner cette symétrie à un motif répété entier : l'outil indique donc séparément la rotation de l'étoile et celle du motif. L'ensemble de girih provient d'une recherche informatique et n'est copié d'aucun édifice."
       ]
+    },
+    "truchet-tile-maker": {
+      "title": "Créez des motifs continus avec une seule tuile qui pivote",
+      "summary": "Choisissez une tuile, une grille et une disposition, puis téléchargez un raccord continu en SVG ou PNG, ou un PDF à imprimer.",
+      "blocks": [
+        "Le [créateur de tuiles de Truchet](/truchet/) est un nouvel outil de la [bibliothèque de motifs](/patterns/). Il remplit une grille avec une tuile simple, tournée différemment d'un endroit à l'autre, et ces rotations forment le motif.",
+        "Exemples pour commencer",
+        [
+          "Quarts de cercle en damier",
+          "Triangles en miroir à partir d'une graine",
+          "Chanfreins droits en rayures"
+        ],
+        "Ce que vous obtenez",
+        [
+          "Quatre tuiles : quarts de cercle, chanfreins droits, lignes diagonales et triangles diagonaux",
+          "Dispositions aléatoire, en miroir, en damier, en rayures et en vagues diagonales",
+          "Un raccord continu, en SVG ou PNG",
+          "Un PDF à imprimer avec un raccord en taille réelle et une feuille complète de raccords"
+        ],
+        "Graines et liens de partage",
+        "Les dispositions aléatoires partent d'une graine : un lien de partage ouvre donc toujours le même motif."
+      ]
     }
   },
   "changelog": {
@@ -347,6 +369,12 @@
       "title": "Créateur d'étoiles géométriques et de girih",
       "items": [
         "Ajout d'un créateur d'étoiles géométriques et de girih, avec un véritable girih à cinq tuiles, des motifs d'étoiles d'ordre 4, 6, 8 et 12, des raccords continus, des pochoirs, des panneaux muraux et des PDF"
+      ]
+    },
+    "Truchet tile maker": {
+      "title": "Créateur de tuiles de Truchet",
+      "items": [
+        "Ajout d'un créateur de tuiles de Truchet, avec raccords continus en SVG et PNG et PDF à imprimer"
       ]
     }
   }

@@ -3,18 +3,9 @@ import { generatePattern, generateStitchPattern, generateTartan, getBlock, getSt
 import { defaultTartanState } from "@/lib/tartanState";
 import { fill, localePath, messages } from "@/lib/i18n";
 import { libraryTools } from "@/lib/libraryTools";
-import { patternPages, type PatternPage as PatternPageData } from "@/lib/patternPages";
-import { publicPath } from "@/lib/site";
 import { defaultState } from "@/lib/state";
 import { defaultStitchState } from "@/lib/stitchState";
 import styles from "./PatternLibrary.module.css";
-
-function StaticSample({ page, className }: { page: PatternPageData; className: string }) {
-  return (
-    // eslint-disable-next-line @next/next/no-img-element -- a plain SVG file in public/
-    <img src={publicPath(`/samples/${page.slug}.svg`)} alt={page.sampleAlt} className={className} loading="lazy" />
-  );
-}
 
 async function stitchArtUrl(craft: "knit" | "crochet", slug: string, locale: Locale) {
   const stitch = (await getStitchPattern(craft, slug, locale))!;
@@ -90,13 +81,14 @@ export async function PatternLibrary({ locale }: { locale: Locale }) {
           <Link href={href("/tartans/")}>{t.exploreTartan}</Link>
         </article>
         {tools.map((tool) => {
-          const text = t.tools[tool.id as keyof typeof t.tools];
+          const text = (t.tools as Record<string, { title: string; text: string; output: string; explore: string } | undefined>)[tool.id];
+          if (!text) return null;
           return (
             <article className={styles.card} key={tool.id}>
               {tool.svg ? (
                 <div className={`art ${styles.art}`} role="img" aria-label={text.title} dangerouslySetInnerHTML={{ __html: tool.svg }} />
               ) : (
-                <div className={styles.art} role="img" aria-label={text.title} style={{ backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(tool.tile!)}")`, backgroundSize: "50% auto" }} />
+                <div className={styles.art} role="img" aria-label={text.title} style={{ backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(tool.tile!)}")`, backgroundSize: tool.tileSize ?? "50% auto" }} />
               )}
               <span className={styles.status}>{t.available}</span>
               <h2>{text.title}</h2>
@@ -108,51 +100,7 @@ export async function PatternLibrary({ locale }: { locale: Locale }) {
             </article>
           );
         })}
-        {patternPages(locale).map((page) => (
-          <article className={styles.card} key={page.slug}>
-            <StaticSample page={page} className={styles.art} />
-            <span className={styles.status}>{t.comingSoon}</span>
-            <h2>{page.title}</h2>
-            <p>{page.summary}</p>
-            <p>
-              <strong>{t.customize}</strong> {page.customize}
-            </p>
-            <p>
-              <strong>{t.usefulOutput}</strong> {page.output}
-            </p>
-            <Link href={href(`/patterns/${page.slug}/`)}>{fill(t.whatsPlanned, { title: page.title })}</Link>
-          </article>
-        ))}
       </div>
-    </div>
-  );
-}
-
-export function PatternDetail({ page, locale }: { page: PatternPageData; locale: Locale }) {
-  const t = messages(locale).library;
-  return (
-    <div className="page">
-      <p className={styles.breadcrumb}>
-        <Link href={localePath(locale, "/patterns/")}>{t.h1}</Link>
-      </p>
-      <span className={styles.status}>{t.comingSoon}</span>
-      <h1>{page.title}</h1>
-      <p className="lede">{page.summary}</p>
-      <figure className={styles.figure}>
-        <StaticSample page={page} className={styles.figureArt} />
-        <figcaption>{t.staticCaption}</figcaption>
-      </figure>
-      <section className={styles.details}>
-        <div>
-          <h2>{t.customizeHeading}</h2>
-          <p>{page.customize}</p>
-        </div>
-        <div>
-          <h2>{t.outputHeading}</h2>
-          <p>{page.output}</p>
-        </div>
-      </section>
-      <p className={styles.note}>{t.previewNote}</p>
     </div>
   );
 }

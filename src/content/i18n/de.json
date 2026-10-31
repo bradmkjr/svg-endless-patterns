@@ -184,30 +184,26 @@
       ]
     },
     "stained-glass-patterns": {
-      "posts": {
-        "stained-glass-patterns": {
-          "title": "Entwerfen Sie ein Bleiglasfenster und drucken Sie die Schnittschablonen",
-          "summary": "Wählen Sie Entwurf, Größe, Profil und Farben und drucken Sie nummerierte Schablonen in Originalgröße, mit bereits eingerechneter Profilzugabe.",
-          "blocks": [
-            "Der [Bleiglas-Mustergenerator](/stained-glass/) ist ein neues Werkzeug aus der [Musterbibliothek](/patterns/). Wählen Sie einen von vier eigenen Entwürfen, stellen Sie Fenstergröße und Profil ein und wählen Sie vier Glasfarben.",
-            "Beispiele zum Einstieg",
-            [
-              "Ein Oberlicht mit Sonnenstrahlen",
-              "Rautenfelder",
-              "Der nummerierte Plan für Bordüre und Mitte"
-            ],
-            "Was Sie bekommen",
-            [
-              "Ein PDF mit nummeriertem Plan und Schablonen in Originalgröße, mit eingerechneter Profilzugabe und einem 1-Zoll-Kontrollquadrat auf jedem Schablonenblatt",
-              "Teile, die größer als eine Seite sind, auf Blätter zum Zusammenkleben verteilt und als solche aufgeführt",
-              "Eine grobe Glasschätzung je Farbe, mit einer ausgewiesenen Zugabe von 30 % für Verschnitt",
-              "Eine Fenstervorschau als SVG oder PNG"
-            ],
-            "Streng bei dem, was sich schneiden lässt",
-            "Ein Ritz läuft nur gerade von Kante zu Kante, daher hat jedes Teil gerade Seiten und keine Innenecken. Keine Ecke liegt unter 30 Grad, geschnittenes Glas ist mindestens 3/4\" breit, und lange Teile werden geteilt. Verstößt ein Entwurf bei Ihrer Größe gegen eine Regel, senkt das Werkzeug das Detail und sagt es Ihnen. Diese Grenzen sind vorsichtige Hinweise, keine Garantie, und die Schätzungen sind grob; prüfen Sie sie mit Ihrem Profil und Ihrem Händler."
-          ]
-        }
-      }
+      "title": "Entwerfen Sie ein Bleiglasfenster und drucken Sie die Schnittschablonen",
+      "summary": "Wählen Sie Entwurf, Größe, Profil und Farben und drucken Sie nummerierte Schablonen in Originalgröße, mit bereits eingerechneter Profilzugabe.",
+      "blocks": [
+        "Der [Bleiglas-Mustergenerator](/stained-glass/) ist ein neues Werkzeug aus der [Musterbibliothek](/patterns/). Wählen Sie einen von vier eigenen Entwürfen, stellen Sie Fenstergröße und Profil ein und wählen Sie vier Glasfarben.",
+        "Beispiele zum Einstieg",
+        [
+          "Ein Oberlicht mit Sonnenstrahlen",
+          "Rautenfelder",
+          "Der nummerierte Plan für Bordüre und Mitte"
+        ],
+        "Was Sie bekommen",
+        [
+          "Ein PDF mit nummeriertem Plan und Schablonen in Originalgröße, mit eingerechneter Profilzugabe und einem 1-Zoll-Kontrollquadrat auf jedem Schablonenblatt",
+          "Teile, die größer als eine Seite sind, auf Blätter zum Zusammenkleben verteilt und als solche aufgeführt",
+          "Eine grobe Glasschätzung je Farbe, mit einer ausgewiesenen Zugabe von 30 % für Verschnitt",
+          "Eine Fenstervorschau als SVG oder PNG"
+        ],
+        "Streng bei dem, was sich schneiden lässt",
+        "Ein Ritz läuft nur gerade von Kante zu Kante, daher hat jedes Teil gerade Seiten und keine Innenecken. Keine Ecke liegt unter 30 Grad, geschnittenes Glas ist mindestens 3/4\" breit, und lange Teile werden geteilt. Verstößt ein Entwurf bei Ihrer Größe gegen eine Regel, senkt das Werkzeug das Detail und sagt es Ihnen. Diese Grenzen sind vorsichtige Hinweise, keine Garantie, und die Schätzungen sind grob; prüfen Sie sie mit Ihrem Profil und Ihrem Händler."
+      ]
     },
     "mandala-maker": {
       "title": "Geometrische Radialmuster und Ausmalbilder erzeugen",
@@ -228,6 +224,28 @@
           "Einen Link, der dasselbe Muster wieder öffnet"
         ],
         "Derselbe Startwert mit denselben Einstellungen ergibt immer dasselbe Muster. Es sind erzeugte Formen: Sie kopieren kein traditionelles Muster und haben keine beabsichtigte Bedeutung."
+      ]
+    },
+    "geometric-stars-and-girih": {
+      "title": "Echtes Girih und geometrische Sternmuster zeichnen",
+      "summary": "Erstelle einen wiederholten Ausschnitt aus den fünf Girih-Fliesen oder ein Sternmuster auf regelmäßigen Vielecken und lade einen nahtlosen Rapport, eine Schablone, eine Wandtafel und ein druckbares PDF herunter.",
+      "blocks": [
+        "Das [Werkzeug für geometrische Sterne und Girih](/girih/) stammt aus der [Musterbibliothek](/patterns/). Seine 10-zählige Option verwendet die fünf Girih-Fliesen: Zehneck, Fünfeck, Fliege, Raute und langes Sechseck. Alle Kanten sind gleich lang, und die Linien kreuzen sich in jeder Kantenmitte unter 72 und 108 Grad.",
+        "Beispiele für den Anfang",
+        [
+          "Girih mit Rosetten in den Zehnecken",
+          "8-zähliges Sternmuster in Terrakotta",
+          "12-zähliges Sternmuster in Grün"
+        ],
+        "Das bekommst du",
+        [
+          "Einen nahtlosen Rapport als SVG oder PNG",
+          "Eine Wandtafel aus Rapporten in einem schlichten Rand",
+          "Eine Schablone, deren Stege das Blatt zusammenhalten, mit Löchern zum Ausrichten",
+          "Ein druckbares PDF mit Tafel, einem Rapport, Schablone und Hinweisen"
+        ],
+        "Was jede Option ist",
+        "Nur die 10-zählige Option heißt Girih. Die 4-, 6-, 8- und 12-zähligen Optionen sind geometrische Sternmuster auf regelmäßigen Vielecken. Ein 8-, 10- oder 12-zähliger Stern kann einem ganzen sich wiederholenden Muster diese Symmetrie nicht geben, deshalb nennt das Werkzeug die Drehung des Sterns und die des Musters getrennt. Der Girih-Ausschnitt stammt aus einer Computersuche und ist von keinem Bauwerk kopiert."
       ]
     }
   },
@@ -314,19 +332,21 @@
       ]
     },
     "Stained glass pattern maker": {
-      "changelog": {
-        "Stained glass pattern maker": {
-          "title": "Bleiglas-Mustergenerator",
-          "items": [
-            "Bleiglas-Mustergenerator hinzugefügt, mit nummerierten Schablonen in Originalgröße, strengen Schneideregeln und einer groben Glasschätzung"
-          ]
-        }
-      }
+      "title": "Bleiglas-Mustergenerator",
+      "items": [
+        "Bleiglas-Mustergenerator hinzugefügt, mit nummerierten Schablonen in Originalgröße, strengen Schneideregeln und einer groben Glasschätzung"
+      ]
     },
     "Mandala maker": {
       "title": "Mandala-Generator",
       "items": [
         "Mandala-Generator für geometrische Radialmuster hinzugefügt, mit farbigem SVG und PNG, Ausmalbildern und druckbaren PDFs"
+      ]
+    },
+    "Geometric stars and girih maker": {
+      "title": "Werkzeug für geometrische Sterne und Girih",
+      "items": [
+        "Ein Werkzeug für geometrische Sterne und Girih hinzugefügt, mit echtem Girih aus fünf Fliesen, 4-, 6-, 8- und 12-zähligen Sternmustern, nahtlosen Rapporten, Schablonen, Wandtafeln und PDFs"
       ]
     }
   }

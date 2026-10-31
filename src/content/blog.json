@@ -1,5 +1,68 @@
 [
   {
+    "slug": "geometric-stars-and-girih",
+    "title": "Draw true girih and geometric star patterns",
+    "date": "2026-10-30",
+    "summary": "Build a repeating patch from the five girih tiles, or a star pattern on regular polygons, then download a seamless repeat, a stencil, a wall panel and a printable PDF.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The [geometric stars and girih maker](/girih/) comes from the [pattern library](/patterns/). Its 10-fold option uses the five girih tiles: decagon, pentagon, bowtie, rhombus and elongated hexagon. Every edge is the same length, and lines cross each edge's midpoint at 72 and 108 degrees."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "girih",
+            "slug": "",
+            "query": "star=rosette",
+            "view": "repeat",
+            "caption": "Girih with decagon rosettes"
+          },
+          {
+            "kind": "girih",
+            "slug": "",
+            "query": "n=8&star=rosette&c=f6e7d3-b5533c-e0a458-3a2418",
+            "view": "repeat",
+            "caption": "An 8-fold star pattern in terracotta"
+          },
+          {
+            "kind": "girih",
+            "slug": "",
+            "query": "n=12&c=eef2e2-1f5c3d-9dbf6b-14301f",
+            "view": "repeat",
+            "caption": "A 12-fold star pattern in green"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "A seamless repeat, as SVG or PNG",
+          "A wall panel of repeats inside a plain border",
+          "A stencil whose bands hold the sheet in one piece, with holes for lining it up",
+          "A printable PDF with the panel, one repeat, the stencil and notes"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What each option is"
+      },
+      {
+        "type": "paragraph",
+        "text": "Only the 10-fold option is called girih. The 4, 6, 8 and 12-fold options are geometric star patterns on regular polygons. An 8, 10 or 12-fold star can't give a whole repeating pattern that symmetry, so the tool lists the star's rotation and the pattern's separately. The girih patch came from a computer search and isn't copied from any building."
+      }
+    ]
+  },
+  {
     "slug": "mandala-maker",
     "title": "Generate geometric radial designs and coloring pages",
     "date": "2026-10-30",

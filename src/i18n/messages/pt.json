@@ -171,9 +171,8 @@
     "metaTitle": "Biblioteca de padrões",
     "metaDesc": "Conheça criadores de padrões para colchas, nós celtas, estrelas geométricas, tesselações, tartãs, sashiko, ponto cruz e vitrais.",
     "h1": "Biblioteca de padrões",
-    "lede": "Padrões tradicionais e geométricos de vários ofícios. Cada um tem sua própria ferramenta, exceto os marcados como em breve.",
+    "lede": "Padrões tradicionais e geométricos de vários ofícios. Cada um tem sua própria ferramenta.",
     "available": "Disponível",
-    "comingSoon": "Em breve",
     "quiltTitle": "Blocos de colcha",
     "quiltText": "Escolha um bloco tradicional e personalize tamanho, cores, layout e sashing.",
     "quiltOutput": "Lista de corte, metragem e moldes para imprimir.",
@@ -184,26 +183,10 @@
     "crochetText": "Escolha um ponto e informe o tamanho do projeto e a amostra.",
     "crochetOutput": "Correntes iniciais, instruções, gráfico de símbolos e estimativa de fio.",
     "usefulOutput": "Resultado útil:",
-    "customize": "Personalize:",
     "exploreQuilt": "Ver blocos de colcha",
     "exploreKnit": "Ver pontos de tricô",
     "exploreCrochet": "Ver pontos de crochê",
-    "whatsPlanned": "O que está planejado: {title}",
-    "staticCaption": "Um exemplo estático do estilo. Ainda não pode ser personalizado.",
-    "customizeHeading": "O que você poderá personalizar",
-    "outputHeading": "Resultado útil",
-    "previewNote": "Esta é uma prévia de uma ferramenta planejada. As opções de personalização e exportação ainda não estão disponíveis.",
-    "detailDesc": "{summary} Personalize: {customize} Resultado planejado: {output}",
     "swatchAlt": "Ilustração de {name}",
-    "pages": {
-      "girih": {
-        "title": "Estrelas geométricas e girih",
-        "summary": "Explore padrões de estrelas geométricas e composições inspiradas no girih.",
-        "customize": "Simetria, tipo de estrela e espessura da linha.",
-        "output": "Arquivos de azulejo, estêncil ou painel de parede.",
-        "sampleAlt": "Fileiras de estrelas de oito pontas em azul-marinho e dourado, com cruzes cor de ferrugem entre elas."
-      }
-    },
     "tartanTitle": "Tartãs e xadrezes",
     "tartanText": "Organize fios coloridos em um xadrez equilibrado e repetido.",
     "tartanOutput": "Amostra contínua, guia de tecelagem e estimativa de fio.",
@@ -244,6 +227,12 @@
         "text": "Gere desenhos radiais geométricos originais a partir de anéis de formas simples.",
         "output": "SVG ou PNG colorido, página para colorir e PDF para imprimir.",
         "explore": "Criar um desenho radial"
+      },
+      "girih": {
+        "title": "Estrelas geométricas e girih",
+        "text": "Crie girih verdadeiro com suas cinco peças, ou padrões de estrelas sobre polígonos regulares, com sua simetria, tipo de estrela, espessura de linha e cores.",
+        "output": "Repetições contínuas em SVG e PNG, um estêncil com pontes, um painel de parede e um PDF para imprimir.",
+        "explore": "Explorar estrelas geométricas e girih"
       }
     }
   },

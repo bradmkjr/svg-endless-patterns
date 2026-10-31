@@ -171,9 +171,8 @@
     "metaTitle": "Musterbibliothek",
     "metaDesc": "Entdecke Mustergeneratoren für Quilts, keltische Knoten, geometrische Sterne, Parkettierungen, Tartans, Sashiko, Kreuzstich und Buntglas.",
     "h1": "Musterbibliothek",
-    "lede": "Traditionelle und geometrische Muster aus vielen Handwerken. Jedes hat ein eigenes Werkzeug, außer es ist als „demnächst“ markiert.",
+    "lede": "Traditionelle und geometrische Muster aus vielen Handwerken. Jedes hat ein eigenes Werkzeug.",
     "available": "Verfügbar",
-    "comingSoon": "Demnächst",
     "quiltTitle": "Quiltblöcke",
     "quiltText": "Wähle einen traditionellen Block und passe Größe, Farben, Aufbau und Sashing an.",
     "quiltOutput": "Zuschnittliste, Stoffbedarf und druckbare Schablonen.",
@@ -184,26 +183,10 @@
     "crochetText": "Wähle ein Muster und gib Projektgröße und Maschenprobe an.",
     "crochetOutput": "Luftmaschenanschlag, Anleitung, Häkelschrift und Garnschätzung.",
     "usefulOutput": "Ergebnis:",
-    "customize": "Anpassen:",
     "exploreQuilt": "Quiltblöcke ansehen",
     "exploreKnit": "Strickmuster ansehen",
     "exploreCrochet": "Häkelmuster ansehen",
-    "whatsPlanned": "Geplant für {title}",
-    "staticCaption": "Ein statisches Beispiel für den Stil. Es lässt sich noch nicht anpassen.",
-    "customizeHeading": "Was du anpassen kannst",
-    "outputHeading": "Ergebnis",
-    "previewNote": "Dies ist eine Vorschau auf ein geplantes Werkzeug. Anpassung und Export sind noch nicht verfügbar.",
-    "detailDesc": "{summary} Anpassen: {customize} Geplantes Ergebnis: {output}",
     "swatchAlt": "Illustration von {name}",
-    "pages": {
-      "girih": {
-        "title": "Geometrische Sterne und Girih",
-        "summary": "Entdecke geometrische Sternmuster und vom Girih inspirierte Anordnungen.",
-        "customize": "Symmetrie, Sternart und Linienstärke.",
-        "output": "Dateien für Fliesen, Schablonen oder Wandpaneele.",
-        "sampleAlt": "Reihen achtzackiger Sterne in Marineblau und Gold, mit rostfarbenen Kreuzen dazwischen."
-      }
-    },
     "tartanTitle": "Tartans und Karos",
     "tartanText": "Ordne farbige Fäden zu einem ausgewogenen, wiederholten Karo an.",
     "tartanOutput": "Nahtloses Muster, Webanleitung und Garnschätzung.",
@@ -244,6 +227,12 @@
         "text": "Erzeuge eigene geometrische Radialmuster aus Ringen einfacher Formen.",
         "output": "Farbiges SVG oder PNG, Ausmalbild und druckbares PDF.",
         "explore": "Radialmuster erstellen"
+      },
+      "girih": {
+        "title": "Geometrische Sterne und Girih",
+        "text": "Erstelle echtes Girih aus seinen fünf Fliesen oder Sternmuster auf regelmäßigen Vielecken, mit eigener Symmetrie, Sternart, Linienstärke und eigenen Farben.",
+        "output": "Nahtlose Rapporte als SVG und PNG, eine Schablone mit Stegen, eine Wandtafel und ein druckbares PDF.",
+        "explore": "Geometrische Sterne und Girih entdecken"
       }
     }
   },

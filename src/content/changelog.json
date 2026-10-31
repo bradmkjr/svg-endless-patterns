@@ -1,6 +1,14 @@
 [
   {
     "date": "2026-10-30",
+    "title": "Geometric stars and girih maker",
+    "post": "geometric-stars-and-girih",
+    "items": [
+      "Added a geometric stars and girih maker, with true five-tile girih, 4, 6, 8 and 12-fold star patterns, seamless repeats, stencils, wall panels and PDFs"
+    ]
+  },
+  {
+    "date": "2026-10-30",
     "title": "Mandala maker",
     "post": "mandala-maker",
     "items": [

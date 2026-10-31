@@ -184,30 +184,26 @@
       ]
     },
     "stained-glass-patterns": {
-      "posts": {
-        "stained-glass-patterns": {
-          "title": "Crie um painel de vitral e imprima os moldes de corte",
-          "summary": "Escolha desenho, tamanho, perfil e cores, e imprima moldes numerados em tamanho real com a margem do perfil já aplicada.",
-          "blocks": [
-            "O [criador de moldes de vitral](/stained-glass/) é uma nova ferramenta da [biblioteca de padrões](/patterns/). Escolha um dos quatro desenhos originais, ajuste o tamanho do painel e o seu perfil, e selecione quatro cores de vidro.",
-            "Exemplos para começar",
-            [
-              "Uma bandeira com sol radiante",
-              "Losangos",
-              "O mapa numerado de uma borda e centro"
-            ],
-            "O que você recebe",
-            [
-              "Um PDF com mapa numerado e moldes em tamanho real, com a margem do perfil aplicada e um quadrado de conferência de 1 polegada em cada folha de moldes",
-              "Peças maiores que uma página, divididas em folhas para unir com fita e indicadas como tal",
-              "Uma estimativa aproximada de vidro por cor, com margem declarada de 30% para sobras",
-              "Uma prévia do painel em SVG ou PNG"
-            ],
-            "Rigoroso com o que pode ser cortado",
-            "O risco só corre reto de borda a borda, por isso cada peça tem lados retos e nenhum canto para dentro. Nenhum canto fica abaixo de 30 graus, o vidro cortado tem pelo menos 3/4\" de largura e as peças longas são divididas. Se um desenho quebra uma regra no seu tamanho, a ferramenta reduz o detalhe e avisa. Estes limites são orientações cautelosas, não uma garantia, e as estimativas são aproximadas, então confira com seu perfil e seu fornecedor."
-          ]
-        }
-      }
+      "title": "Crie um painel de vitral e imprima os moldes de corte",
+      "summary": "Escolha desenho, tamanho, perfil e cores, e imprima moldes numerados em tamanho real com a margem do perfil já aplicada.",
+      "blocks": [
+        "O [criador de moldes de vitral](/stained-glass/) é uma nova ferramenta da [biblioteca de padrões](/patterns/). Escolha um dos quatro desenhos originais, ajuste o tamanho do painel e o seu perfil, e selecione quatro cores de vidro.",
+        "Exemplos para começar",
+        [
+          "Uma bandeira com sol radiante",
+          "Losangos",
+          "O mapa numerado de uma borda e centro"
+        ],
+        "O que você recebe",
+        [
+          "Um PDF com mapa numerado e moldes em tamanho real, com a margem do perfil aplicada e um quadrado de conferência de 1 polegada em cada folha de moldes",
+          "Peças maiores que uma página, divididas em folhas para unir com fita e indicadas como tal",
+          "Uma estimativa aproximada de vidro por cor, com margem declarada de 30% para sobras",
+          "Uma prévia do painel em SVG ou PNG"
+        ],
+        "Rigoroso com o que pode ser cortado",
+        "O risco só corre reto de borda a borda, por isso cada peça tem lados retos e nenhum canto para dentro. Nenhum canto fica abaixo de 30 graus, o vidro cortado tem pelo menos 3/4\" de largura e as peças longas são divididas. Se um desenho quebra uma regra no seu tamanho, a ferramenta reduz o detalhe e avisa. Estes limites são orientações cautelosas, não uma garantia, e as estimativas são aproximadas, então confira com seu perfil e seu fornecedor."
+      ]
     },
     "mandala-maker": {
       "title": "Gere desenhos radiais geométricos e páginas para colorir",
@@ -228,6 +224,28 @@
           "Um link de compartilhamento que reabre o mesmo desenho"
         ],
         "A mesma semente com os mesmos ajustes sempre gera o mesmo desenho. São formas geradas: não copiam nenhum desenho tradicional nem têm um significado pretendido."
+      ]
+    },
+    "geometric-stars-and-girih": {
+      "title": "Desenhe girih verdadeiro e padrões geométricos de estrelas",
+      "summary": "Crie um conjunto repetido com as cinco peças do girih, ou um padrão de estrelas sobre polígonos regulares, e baixe uma repetição contínua, um estêncil, um painel de parede e um PDF para imprimir.",
+      "blocks": [
+        "O [criador de estrelas geométricas e girih](/girih/) vem da [biblioteca de padrões](/patterns/). Sua opção de ordem 10 usa as cinco peças do girih: decágono, pentágono, gravata-borboleta, losango e hexágono alongado. Todos os lados têm o mesmo comprimento, e as linhas se cruzam no ponto médio de cada lado a 72 e 108 graus.",
+        "Exemplos para começar",
+        [
+          "Girih com rosetas nos decágonos",
+          "Padrão de estrelas de ordem 8 em terracota",
+          "Padrão de estrelas de ordem 12 em verde"
+        ],
+        "O que você recebe",
+        [
+          "Uma repetição contínua, em SVG ou PNG",
+          "Um painel de parede com repetições dentro de uma borda simples",
+          "Um estêncil cujas faixas mantêm a folha inteira, com furos para alinhá-la",
+          "Um PDF para imprimir com o painel, uma repetição, o estêncil e notas"
+        ],
+        "O que é cada opção",
+        "Só a opção de ordem 10 se chama girih. As de ordem 4, 6, 8 e 12 são padrões geométricos de estrelas sobre polígonos regulares. Uma estrela de ordem 8, 10 ou 12 não pode dar essa simetria a um padrão repetido inteiro, então a ferramenta mostra separadamente a rotação da estrela e a do padrão. O conjunto de girih veio de uma busca por computador e não foi copiado de nenhum edifício."
       ]
     }
   },
@@ -314,19 +332,21 @@
       ]
     },
     "Stained glass pattern maker": {
-      "changelog": {
-        "Stained glass pattern maker": {
-          "title": "Criador de moldes de vitral",
-          "items": [
-            "Adicionado um criador de moldes de vitral, com moldes numerados em tamanho real, regras rígidas de corte e uma estimativa aproximada de vidro"
-          ]
-        }
-      }
+      "title": "Criador de moldes de vitral",
+      "items": [
+        "Adicionado um criador de moldes de vitral, com moldes numerados em tamanho real, regras rígidas de corte e uma estimativa aproximada de vidro"
+      ]
     },
     "Mandala maker": {
       "title": "Criador de mandalas",
       "items": [
         "Adicionado um criador de mandalas para desenhos radiais geométricos, com SVG e PNG coloridos, páginas para colorir e PDFs para imprimir"
+      ]
+    },
+    "Geometric stars and girih maker": {
+      "title": "Criador de estrelas geométricas e girih",
+      "items": [
+        "Adicionado um criador de estrelas geométricas e girih, com girih verdadeiro de cinco peças, padrões de estrelas de ordem 4, 6, 8 e 12, repetições contínuas, estênceis, painéis de parede e PDFs"
       ]
     }
   }

@@ -208,9 +208,9 @@ function rosette(center: Vec, loop: readonly Vec[], angle: number): { inner: Vec
 type PatchEntry = { tile: GirihTileId; steps: readonly [number, number, number, number, number]; turn: number };
 
 /**
- * One repeat of true girih, found by an exhaustive computer search for periodic edge-to-edge
- * tilings with all five tiles, keeping the most symmetric small one. Invented that way, it
- * isn't taken from any building. `girih.test.ts` checks that it fills the plane.
+ * One repeat of true girih, found by a computer search for periodic edge-to-edge tilings with
+ * all five tiles, chosen for its mirrors and half turns. It isn't taken from any building.
+ * `girih.test.ts` checks that it fills the plane.
  */
 const GIRIH_PATCH: readonly PatchEntry[] = [
   { tile: "decagon", steps: [0, 0, 0, 0, 0], turn: 0 },

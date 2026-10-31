@@ -4,10 +4,10 @@
  * fetch calls. Requests and results are already plain JSON and every function
  * is already async, so no caller has to change.
  */
-import { generatePattern as runGenerate, generateStitchPattern as runStitch, generateCrossStitch as runCrossStitch, generateTessellation as runTessellation, generateSashiko as runSashiko, generateCelticKnot as runCelticKnot, generateStainedGlass as runStainedGlass, generateMandala as runMandala, generateTartan as runTartan, listBlocks, listStitchPatterns } from "@/engine";
-import type { BlockInfo, Craft, Locale, PatternRequest, PatternResult, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult, CrossStitchRequest, CrossStitchResult } from "@/engine";
+import { generatePattern as runGenerate, generateStitchPattern as runStitch, generateCrossStitch as runCrossStitch, generateTessellation as runTessellation, listTessellationOptions, generateSashiko as runSashiko, generateCelticKnot as runCelticKnot, generateStainedGlass as runStainedGlass, generateMandala as runMandala, generateGirih as runGirih, generateTruchet as runTruchet, generateTartan as runTartan, listBlocks, listStitchPatterns } from "@/engine";
+import type { TessellationOptions, TessellationRequest, TessellationResult, SashikoRequest, SashikoResult, CelticKnotRequest, CelticKnotResult, StainedGlassRequest, StainedGlassResult, MandalaRequest, MandalaResult, GirihRequest, GirihResult, TruchetRequest, TruchetResult, BlockInfo, Craft, Locale, PatternRequest, PatternResult, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult, CrossStitchRequest, CrossStitchResult } from "@/engine";
 
-export type { BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, Setting, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult, TartanStripe, CrossStitchColor, CrossStitchCraft, CrossStitchRequest, CrossStitchResult } from "@/engine";
+export type { TessellationColors, TessellationMotif, TessellationOptions, TessellationRequest, TessellationResult, GroupId, SashikoMotif, SashikoRequest, SashikoResult, CelticBreakPattern, CelticInterlace, CelticKnotRequest, CelticKnotResult, CelticStrand, StainedGlassColor, StainedGlassLayout, StainedGlassPiece, StainedGlassRequest, StainedGlassResult, MandalaMotif, MandalaRequest, MandalaResult, MandalaRing, GirihColors, GirihPart, GirihRequest, GirihResult, GirihStar, GirihSymmetry, TruchetArrangement, TruchetColors, TruchetRequest, TruchetResult, TruchetStyle, BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, Setting, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult, TartanStripe, CrossStitchColor, CrossStitchCraft, CrossStitchRequest, CrossStitchResult } from "@/engine";
 
 export async function getBlocks(locale: Locale = "en"): Promise<BlockInfo[]> {
   return listBlocks(locale);
@@ -62,6 +62,10 @@ export async function generateCrossStitchPdf(request: CrossStitchRequest): Promi
   return run(request);
 }
 
+export async function getTessellationOptions(locale: Locale = "en"): Promise<TessellationOptions> {
+  return listTessellationOptions(locale);
+}
+
 export async function generateTessellation(request: TessellationRequest): Promise<TessellationResult> {
   return runTessellation(request);
 }
@@ -104,5 +108,23 @@ export async function generateMandala(request: MandalaRequest): Promise<MandalaR
 
 export async function generateMandalaPdf(request: MandalaRequest): Promise<Uint8Array> {
   const { generateMandalaPdf: run } = await import("@/engine/mandalaPdf");
+  return run(request);
+}
+
+export async function generateGirih(request: GirihRequest): Promise<GirihResult> {
+  return runGirih(request);
+}
+
+export async function generateGirihPdf(request: GirihRequest): Promise<Uint8Array> {
+  const { generateGirihPdf: run } = await import("@/engine/girihPdf");
+  return run(request);
+}
+
+export async function generateTruchet(request: TruchetRequest): Promise<TruchetResult> {
+  return runTruchet(request);
+}
+
+export async function generateTruchetPdf(request: TruchetRequest): Promise<Uint8Array> {
+  const { generateTruchetPdf: run } = await import("@/engine/truchetPdf");
   return run(request);
 }

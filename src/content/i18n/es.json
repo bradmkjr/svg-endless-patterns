@@ -184,30 +184,26 @@
       ]
     },
     "stained-glass-patterns": {
-      "posts": {
-        "stained-glass-patterns": {
-          "title": "Diseña un panel de vidriera e imprime sus plantillas de corte",
-          "summary": "Elige diseño, tamaño, perfil y colores, e imprime plantillas numeradas a tamaño real con el margen del perfil ya aplicado.",
-          "blocks": [
-            "El [creador de patrones de vidriera](/stained-glass/) es una nueva herramienta de la [biblioteca de patrones](/patterns/). Elige uno de los cuatro diseños originales, ajusta el tamaño del panel y tu perfil, y escoge cuatro colores de vidrio.",
-            "Ejemplos para empezar",
-            [
-              "Un montante con sol radiante",
-              "Rombos",
-              "El plano numerado de una cenefa y centro"
-            ],
-            "Qué obtienes",
-            [
-              "Un PDF con un plano numerado y plantillas a tamaño real, con el margen del perfil aplicado y un cuadrado de control de 1 pulgada en cada hoja de plantillas",
-              "Las piezas que no caben en una página, repartidas en hojas para unir con cinta, e indicadas como tales",
-              "Una estimación aproximada de vidrio por color, con un margen de desperdicio declarado del 30 %",
-              "Una vista previa del panel en SVG o PNG"
-            ],
-            "Estricto con lo que se puede cortar",
-            "El rayado solo va recto de borde a borde, así que cada pieza tiene lados rectos y ninguna esquina hacia dentro. Ninguna esquina baja de 30 grados, el vidrio cortado mide al menos 3/4\" de ancho y las piezas largas se dividen. Si un diseño incumple una regla con tu tamaño, la herramienta baja el detalle y te lo dice. Estos límites son una orientación prudente, no una garantía, y las estimaciones son aproximadas, así que compruébalas con tu perfil y tu proveedor."
-          ]
-        }
-      }
+      "title": "Diseña un panel de vidriera e imprime sus plantillas de corte",
+      "summary": "Elige diseño, tamaño, perfil y colores, e imprime plantillas numeradas a tamaño real con el margen del perfil ya aplicado.",
+      "blocks": [
+        "El [creador de patrones de vidriera](/stained-glass/) es una nueva herramienta de la [biblioteca de patrones](/patterns/). Elige uno de los cuatro diseños originales, ajusta el tamaño del panel y tu perfil, y escoge cuatro colores de vidrio.",
+        "Ejemplos para empezar",
+        [
+          "Un montante con sol radiante",
+          "Rombos",
+          "El plano numerado de una cenefa y centro"
+        ],
+        "Qué obtienes",
+        [
+          "Un PDF con un plano numerado y plantillas a tamaño real, con el margen del perfil aplicado y un cuadrado de control de 1 pulgada en cada hoja de plantillas",
+          "Las piezas que no caben en una página, repartidas en hojas para unir con cinta, e indicadas como tales",
+          "Una estimación aproximada de vidrio por color, con un margen de desperdicio declarado del 30 %",
+          "Una vista previa del panel en SVG o PNG"
+        ],
+        "Estricto con lo que se puede cortar",
+        "El rayado solo va recto de borde a borde, así que cada pieza tiene lados rectos y ninguna esquina hacia dentro. Ninguna esquina baja de 30 grados, el vidrio cortado mide al menos 3/4\" de ancho y las piezas largas se dividen. Si un diseño incumple una regla con tu tamaño, la herramienta baja el detalle y te lo dice. Estos límites son una orientación prudente, no una garantía, y las estimaciones son aproximadas, así que compruébalas con tu perfil y tu proveedor."
+      ]
     },
     "mandala-maker": {
       "title": "Genera diseños radiales geométricos y páginas para colorear",
@@ -228,6 +224,28 @@
           "Un enlace para compartir que vuelve a abrir el mismo diseño"
         ],
         "La misma semilla con los mismos ajustes siempre da el mismo diseño. Son formas generadas: no copian ningún diseño tradicional ni pretenden tener ningún significado."
+      ]
+    },
+    "geometric-stars-and-girih": {
+      "title": "Dibuja girih auténtico y patrones geométricos de estrellas",
+      "summary": "Crea un conjunto repetido con las cinco piezas del girih, o un patrón de estrellas sobre polígonos regulares, y descarga una repetición continua, una plantilla, un panel de pared y un PDF para imprimir.",
+      "blocks": [
+        "El [creador de estrellas geométricas y girih](/girih/) viene de la [biblioteca de patrones](/patterns/). Su opción de orden 10 usa las cinco piezas del girih: decágono, pentágono, pajarita, rombo y hexágono alargado. Todos los lados miden lo mismo y las líneas se cruzan en el punto medio de cada lado a 72 y 108 grados.",
+        "Ejemplos para empezar",
+        [
+          "Girih con rosetas en los decágonos",
+          "Patrón de estrellas de orden 8 en terracota",
+          "Patrón de estrellas de orden 12 en verde"
+        ],
+        "Qué obtienes",
+        [
+          "Una repetición continua, en SVG o PNG",
+          "Un panel de pared con repeticiones dentro de un borde sencillo",
+          "Una plantilla cuyas bandas mantienen unida la hoja, con agujeros para alinearla",
+          "Un PDF para imprimir con el panel, una repetición, la plantilla y notas"
+        ],
+        "Qué es cada opción",
+        "Solo la opción de orden 10 se llama girih. Las de orden 4, 6, 8 y 12 son patrones geométricos de estrellas sobre polígonos regulares. Una estrella de orden 8, 10 o 12 no puede dar esa simetría a un patrón repetido completo, así que la herramienta indica por separado la rotación de la estrella y la del patrón. El conjunto de girih salió de una búsqueda por ordenador y no está copiado de ningún edificio."
       ]
     }
   },
@@ -314,19 +332,21 @@
       ]
     },
     "Stained glass pattern maker": {
-      "changelog": {
-        "Stained glass pattern maker": {
-          "title": "Creador de patrones de vidriera",
-          "items": [
-            "Se añadió un creador de patrones de vidriera, con plantillas numeradas a tamaño real, reglas estrictas de corte y una estimación aproximada de vidrio"
-          ]
-        }
-      }
+      "title": "Creador de patrones de vidriera",
+      "items": [
+        "Se añadió un creador de patrones de vidriera, con plantillas numeradas a tamaño real, reglas estrictas de corte y una estimación aproximada de vidrio"
+      ]
     },
     "Mandala maker": {
       "title": "Creador de mandalas",
       "items": [
         "Se añadió un creador de mandalas para diseños radiales geométricos, con SVG y PNG en color, páginas para colorear y PDF imprimibles"
+      ]
+    },
+    "Geometric stars and girih maker": {
+      "title": "Creador de estrellas geométricas y girih",
+      "items": [
+        "Se añadió un creador de estrellas geométricas y girih, con girih auténtico de cinco piezas, patrones de estrellas de orden 4, 6, 8 y 12, repeticiones continuas, plantillas, paneles de pared y PDF"
       ]
     }
   }

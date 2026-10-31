@@ -171,9 +171,8 @@
     "metaTitle": "Bibliothèque de motifs",
     "metaDesc": "Découvrez des créateurs de motifs pour le quilt, les nœuds celtiques, les étoiles géométriques, les pavages, les tartans, le sashiko, le point de croix et le vitrail.",
     "h1": "Bibliothèque de motifs",
-    "lede": "Des motifs traditionnels et géométriques pour de nombreux savoir-faire. Chacun a son propre outil, sauf ceux marqués « bientôt ».",
+    "lede": "Des motifs traditionnels et géométriques pour de nombreux savoir-faire. Chacun a son propre outil.",
     "available": "Disponible",
-    "comingSoon": "Bientôt",
     "quiltTitle": "Blocs de quilt",
     "quiltText": "Choisissez un bloc traditionnel et personnalisez sa taille, ses couleurs, sa disposition et son sashing.",
     "quiltOutput": "Liste de coupe, métrage et gabarits à imprimer.",
@@ -184,26 +183,10 @@
     "crochetText": "Choisissez un point et indiquez la taille et votre échantillon.",
     "crochetOutput": "Chaînette de départ, instructions, grille de symboles et estimation de fil.",
     "usefulOutput": "Résultat utile :",
-    "customize": "Personnalisez :",
     "exploreQuilt": "Voir les blocs de quilt",
     "exploreKnit": "Voir les points de tricot",
     "exploreCrochet": "Voir les points de crochet",
-    "whatsPlanned": "Ce qui est prévu : {title}",
-    "staticCaption": "Un exemple statique du style. Il n'est pas encore personnalisable.",
-    "customizeHeading": "Ce que vous pourrez personnaliser",
-    "outputHeading": "Résultat utile",
-    "previewNote": "Ceci est un aperçu d'un outil prévu. Ses options de personnalisation et d'export ne sont pas encore disponibles.",
-    "detailDesc": "{summary} Personnalisez : {customize} Résultat prévu : {output}",
     "swatchAlt": "Illustration de {name}",
-    "pages": {
-      "girih": {
-        "title": "Étoiles géométriques et girih",
-        "summary": "Explorez des motifs d'étoiles géométriques et des compositions inspirées du girih.",
-        "customize": "Symétrie, type d'étoile et épaisseur de ligne.",
-        "output": "Fichiers de carreau, de pochoir ou de panneau mural.",
-        "sampleAlt": "Des rangées d'étoiles à huit pointes bleu marine et or, avec des croix couleur rouille entre elles."
-      }
-    },
     "tartanTitle": "Tartans et carreaux",
     "tartanText": "Agencez des fils de couleur en un carreau équilibré et répété.",
     "tartanOutput": "Échantillon continu, guide de tissage et estimation de fil.",
@@ -244,6 +227,12 @@
         "text": "Générez des motifs radiaux géométriques originaux à partir d'anneaux de formes simples.",
         "output": "SVG ou PNG en couleur, page à colorier et PDF à imprimer.",
         "explore": "Créer un motif radial"
+      },
+      "girih": {
+        "title": "Étoiles géométriques et girih",
+        "text": "Créez un véritable girih à partir de ses cinq tuiles, ou des motifs d'étoiles sur des polygones réguliers, avec votre symétrie, votre type d'étoile, votre épaisseur de ligne et vos couleurs.",
+        "output": "Raccords continus en SVG et PNG, pochoir à ponts, panneau mural et PDF à imprimer.",
+        "explore": "Explorer les étoiles géométriques et le girih"
       }
     }
   },

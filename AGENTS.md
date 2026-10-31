@@ -39,12 +39,6 @@ row text with what each part consumes and makes. `stitch.test.ts` checks both at
 every width, but it counts crochet stitches rather than reading the text, so
 proofread that text. Crochet terms are US.
 
-## Planned pattern makers
-`src/lib/patternPages.ts` lists tools that don't exist yet. Their pages are
-`noindex` and stay out of the sitemap. Each shows a static, hand-made example from
-`public/samples/<slug>.svg`. When one ships, put its generation in
-`src/engine/` behind `generator.ts`, give it a real route, and remove its entry and sample.
-
 ## Announcing major features
 Every major feature ships with all of these, in the same change:
 1. A new post at the top of `src/content/blog.json`, with a `samples` block and links.

@@ -171,9 +171,8 @@
     "metaTitle": "Pattern Library",
     "metaDesc": "Explore pattern makers for quilting, Celtic knots, geometric stars, tessellations, tartans, sashiko, counted-thread crafts, and stained glass.",
     "h1": "Pattern library",
-    "lede": "Explore traditional and geometric patterns across crafts. Each one has its own maker, unless it's marked as coming soon.",
+    "lede": "Explore traditional and geometric patterns across crafts. Each one has its own maker.",
     "available": "Available",
-    "comingSoon": "Coming soon",
     "quiltTitle": "Quilt blocks",
     "quiltText": "Choose a traditional block and customize its size, colors, layout, and sashing.",
     "quiltOutput": "Cutting list, yardage, and printable templates.",
@@ -184,26 +183,10 @@
     "crochetText": "Choose a stitch and set your project size and gauge.",
     "crochetOutput": "Starting chain, US-term instructions, symbol chart, and yarn estimate.",
     "usefulOutput": "Useful output:",
-    "customize": "Customize:",
     "exploreQuilt": "Explore quilt blocks",
     "exploreKnit": "Explore knitting stitches",
     "exploreCrochet": "Explore crochet stitches",
-    "whatsPlanned": "What's planned for {title}",
-    "staticCaption": "A static example of the style. You can't customize it yet.",
-    "customizeHeading": "What you'll customize",
-    "outputHeading": "Useful output",
-    "previewNote": "This is a preview of a planned pattern maker. Its customization and export tools are not available yet.",
-    "detailDesc": "{summary} Customize: {customize} Planned output: {output}",
     "swatchAlt": "Illustration of {name}",
-    "pages": {
-      "girih": {
-        "title": "Geometric star patterns and girih",
-        "summary": "Explore geometric star patterns and girih-inspired arrangements.",
-        "customize": "Symmetry, star type, and line weight.",
-        "output": "Tile, stencil, or wall-panel files.",
-        "sampleAlt": "Rows of eight-point stars in navy and gold, with rust crosses between them."
-      }
-    },
     "tartanTitle": "Tartans and plaids",
     "tartanText": "Arrange colored threads into a balanced, repeating plaid.",
     "tartanOutput": "Seamless swatch, weaving guide and yarn estimate.",
@@ -244,6 +227,12 @@
         "text": "Generate original geometric radial designs from rings of simple shapes.",
         "output": "Colored SVG or PNG, coloring page and printable PDF.",
         "explore": "Make a radial design"
+      },
+      "girih": {
+        "title": "Geometric stars and girih",
+        "text": "Build true girih from its five tiles, or star patterns on regular polygons, with your own symmetry, star type, line weight and colors.",
+        "output": "Seamless SVG and PNG repeats, a bridged stencil, a wall panel, and a printable PDF.",
+        "explore": "Explore geometric stars and girih"
       }
     }
   },

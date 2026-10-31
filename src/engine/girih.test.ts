@@ -373,6 +373,15 @@ describe.each(OPTIONS)("%i-fold %s", (symmetry, star) => {
     expect(scene.tilesPerRepeat.some((t) => t.main && t.star === symmetry)).toBe(true);
   });
 
+  it("gives its main star the tip angle its type promises", () => {
+    const main = scene.tilesPerRepeat.find((t) => t.main)!;
+    const [before, tip, after] = main.loops[0];
+    const a = Math.atan2(before[1] - tip[1], before[0] - tip[0]);
+    const b = Math.atan2(after[1] - tip[1], after[0] - tip[0]);
+    const angle = (Math.abs(a - b) * 180) / Math.PI;
+    expect(Math.min(angle, 360 - angle)).toBeCloseTo(star === "sharp" ? 36 : 72, 6);
+  });
+
   it("draws lines that only ever touch at their ends", () => {
     const segments = scene.tilesPerRepeat.flatMap(tileSegments);
     const side = (p: Vec, q: Vec, r: Vec) => (q[0] - p[0]) * (r[1] - p[1]) - (q[1] - p[1]) * (r[0] - p[0]);

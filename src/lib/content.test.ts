@@ -3,9 +3,6 @@ import blog from "@/content/blog.json";
 import { getBlock, getBlocks, getStitchPattern, getStitchPatterns } from "./generator";
 import { getChangelog, getPosts, sampleHref, type PostSample } from "./content";
 import { PREFIXED_LOCALES } from "./i18n";
-import { patternPages } from "./patternPages";
-
-const PATTERN_PAGES = patternPages();
 import { parseState, serializeState } from "./state";
 import { parseStitchState, serializeStitchState } from "./stitchState";
 import { parseCrossStitchState, serializeCrossStitchState } from "./crossStitchState";
@@ -14,6 +11,7 @@ import { parseSashikoState, serializeSashikoState } from "./sashikoState";
 import { parseCelticKnotState, serializeCelticKnotState } from "./celticKnotState";
 import { parseStainedGlassState, serializeStainedGlassState } from "./stainedGlassState";
 import { parseMandalaState, serializeMandalaState } from "./mandalaState";
+import { parseGirihState, serializeGirihState } from "./girihState";
 import { parseTartanState, serializeTartanState } from "./tartanState";
 
 const sorted = (query: string) => [...new URLSearchParams(query).entries()].map(([k, v]) => `${k}=${v}`).sort();
@@ -21,11 +19,10 @@ const sorted = (query: string) => [...new URLSearchParams(query).entries()].map(
 async function knownPaths() {
   const posts = await getPosts();
   return new Set([
-    "/", ...PREFIXED_LOCALES.map((l) => `/${l}/`), "/tartans/", "/cross-stitch/", "/blocks/", "/knitting/", "/crochet/", "/patterns/", "/about/", "/blog/", "/changelog/",
+    "/", ...PREFIXED_LOCALES.map((l) => `/${l}/`), "/tartans/", "/girih/", "/mandalas/", "/stained-glass/", "/celtic-knots/", "/sashiko/", "/tessellations/", "/cross-stitch/", "/blocks/", "/knitting/", "/crochet/", "/patterns/", "/about/", "/blog/", "/changelog/",
     ...(await getBlocks()).map((b) => `/blocks/${b.slug}/`),
     ...(await getStitchPatterns("knit")).map((s) => `/knitting/${s.slug}/`),
     ...(await getStitchPatterns("crochet")).map((s) => `/crochet/${s.slug}/`),
-    ...PATTERN_PAGES.map((p) => `/patterns/${p.slug}/`),
     ...posts.map((p) => `/blog/${p.slug}/`),
   ]);
 }
@@ -65,6 +62,18 @@ describe("blog posts", () => {
       expect(sorted(serializeCrossStitchState(parseCrossStitchState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
     } else if (sample.kind === "tartan") {
       expect(sorted(serializeTartanState(parseTartanState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
+    } else if (sample.kind === "tessellation") {
+      expect(sorted(serializeTessellationState(parseTessellationState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
+    } else if (sample.kind === "sashiko") {
+      expect(sorted(serializeSashikoState(parseSashikoState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
+    } else if (sample.kind === "celtic") {
+      expect(sorted(serializeCelticKnotState(parseCelticKnotState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
+    } else if (sample.kind === "stainedGlass") {
+      expect(sorted(serializeStainedGlassState(parseStainedGlassState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
+    } else if (sample.kind === "mandala") {
+      expect(sorted(serializeMandalaState(parseMandalaState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
+    } else if (sample.kind === "girih") {
+      expect(sorted(serializeGirihState(parseGirihState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
     } else if (sample.kind === "block") {
       const info = (await getBlock(slug))!;
       expect(info, slug).toBeDefined();

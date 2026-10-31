@@ -184,30 +184,26 @@
       ]
     },
     "stained-glass-patterns": {
-      "posts": {
-        "stained-glass-patterns": {
-          "title": "Dessinez un panneau de vitrail et imprimez ses gabarits de coupe",
-          "summary": "Choisissez le dessin, la taille, le plomb et les couleurs, puis imprimez des gabarits numérotés grandeur nature, marge du plomb déjà appliquée.",
-          "blocks": [
-            "Le [créateur de patrons de vitrail](/stained-glass/) est un nouvel outil de la [bibliothèque de motifs](/patterns/). Choisissez l'un des quatre dessins originaux, réglez la taille du panneau et votre plomb, et prenez quatre couleurs de verre.",
-            "Exemples pour commencer",
-            [
-              "Une imposte à soleil rayonnant",
-              "Losanges",
-              "Le plan numéroté d'une bordure et centre"
-            ],
-            "Ce que vous obtenez",
-            [
-              "Un PDF avec un plan numéroté et des gabarits grandeur nature, marge du plomb appliquée et carré de contrôle de 1 pouce sur chaque feuille de gabarits",
-              "Les pièces trop grandes pour une page, réparties sur des feuilles à assembler, et signalées comme telles",
-              "Une estimation approximative du verre par couleur, avec une marge de chutes annoncée de 30 %",
-              "Un aperçu du panneau en SVG ou PNG"
-            ],
-            "Strict sur ce qui peut se couper",
-            "Une rayure ne va que droit, de bord à bord : chaque pièce a donc des côtés droits et aucun angle rentrant. Aucun angle n'est inférieur à 30 degrés, le verre coupé fait au moins 3/4\" de large et les pièces longues sont divisées. Si un dessin enfreint une règle à votre taille, l'outil réduit le détail et vous le dit. Ces limites sont des conseils prudents, pas une garantie, et les estimations sont approximatives : vérifiez avec votre plomb et votre fournisseur."
-          ]
-        }
-      }
+      "title": "Dessinez un panneau de vitrail et imprimez ses gabarits de coupe",
+      "summary": "Choisissez le dessin, la taille, le plomb et les couleurs, puis imprimez des gabarits numérotés grandeur nature, marge du plomb déjà appliquée.",
+      "blocks": [
+        "Le [créateur de patrons de vitrail](/stained-glass/) est un nouvel outil de la [bibliothèque de motifs](/patterns/). Choisissez l'un des quatre dessins originaux, réglez la taille du panneau et votre plomb, et prenez quatre couleurs de verre.",
+        "Exemples pour commencer",
+        [
+          "Une imposte à soleil rayonnant",
+          "Losanges",
+          "Le plan numéroté d'une bordure et centre"
+        ],
+        "Ce que vous obtenez",
+        [
+          "Un PDF avec un plan numéroté et des gabarits grandeur nature, marge du plomb appliquée et carré de contrôle de 1 pouce sur chaque feuille de gabarits",
+          "Les pièces trop grandes pour une page, réparties sur des feuilles à assembler, et signalées comme telles",
+          "Une estimation approximative du verre par couleur, avec une marge de chutes annoncée de 30 %",
+          "Un aperçu du panneau en SVG ou PNG"
+        ],
+        "Strict sur ce qui peut se couper",
+        "Une rayure ne va que droit, de bord à bord : chaque pièce a donc des côtés droits et aucun angle rentrant. Aucun angle n'est inférieur à 30 degrés, le verre coupé fait au moins 3/4\" de large et les pièces longues sont divisées. Si un dessin enfreint une règle à votre taille, l'outil réduit le détail et vous le dit. Ces limites sont des conseils prudents, pas une garantie, et les estimations sont approximatives : vérifiez avec votre plomb et votre fournisseur."
+      ]
     },
     "mandala-maker": {
       "title": "Générez des motifs radiaux géométriques et des pages à colorier",
@@ -228,6 +224,28 @@
           "Un lien de partage qui rouvre le même motif"
         ],
         "La même graine et les mêmes réglages donnent toujours le même motif. Ce sont des formes générées : elles ne copient aucun motif traditionnel et ne portent aucune signification voulue."
+      ]
+    },
+    "geometric-stars-and-girih": {
+      "title": "Dessinez un véritable girih et des motifs géométriques d'étoiles",
+      "summary": "Créez un ensemble répété à partir des cinq tuiles du girih, ou un motif d'étoiles sur des polygones réguliers, puis téléchargez un raccord continu, un pochoir, un panneau mural et un PDF à imprimer.",
+      "blocks": [
+        "Le [créateur d'étoiles géométriques et de girih](/girih/) vient de la [bibliothèque de motifs](/patterns/). Son option d'ordre 10 utilise les cinq tuiles du girih : décagone, pentagone, nœud papillon, losange et hexagone allongé. Tous les côtés ont la même longueur, et les lignes se croisent au milieu de chaque côté à 72 et 108 degrés.",
+        "Exemples pour commencer",
+        [
+          "Girih avec rosaces dans les décagones",
+          "Motif d'étoiles d'ordre 8 en terre cuite",
+          "Motif d'étoiles d'ordre 12 en vert"
+        ],
+        "Ce que vous obtenez",
+        [
+          "Un raccord continu, en SVG ou PNG",
+          "Un panneau mural de raccords dans une bordure simple",
+          "Un pochoir dont les bandes maintiennent la feuille d'un seul tenant, avec des trous pour l'aligner",
+          "Un PDF à imprimer avec le panneau, un raccord, le pochoir et des notes"
+        ],
+        "Ce qu'est chaque option",
+        "Seule l'option d'ordre 10 porte le nom de girih. Les options d'ordre 4, 6, 8 et 12 sont des motifs géométriques d'étoiles sur des polygones réguliers. Une étoile d'ordre 8, 10 ou 12 ne peut pas donner cette symétrie à un motif répété entier : l'outil indique donc séparément la rotation de l'étoile et celle du motif. L'ensemble de girih provient d'une recherche informatique et n'est copié d'aucun édifice."
       ]
     }
   },
@@ -314,19 +332,21 @@
       ]
     },
     "Stained glass pattern maker": {
-      "changelog": {
-        "Stained glass pattern maker": {
-          "title": "Créateur de patrons de vitrail",
-          "items": [
-            "Ajout d'un créateur de patrons de vitrail, avec gabarits numérotés grandeur nature, règles de coupe strictes et estimation approximative du verre"
-          ]
-        }
-      }
+      "title": "Créateur de patrons de vitrail",
+      "items": [
+        "Ajout d'un créateur de patrons de vitrail, avec gabarits numérotés grandeur nature, règles de coupe strictes et estimation approximative du verre"
+      ]
     },
     "Mandala maker": {
       "title": "Créateur de mandalas",
       "items": [
         "Ajout d'un créateur de mandalas pour des motifs radiaux géométriques, avec SVG et PNG en couleur, pages à colorier et PDF à imprimer"
+      ]
+    },
+    "Geometric stars and girih maker": {
+      "title": "Créateur d'étoiles géométriques et de girih",
+      "items": [
+        "Ajout d'un créateur d'étoiles géométriques et de girih, avec un véritable girih à cinq tuiles, des motifs d'étoiles d'ordre 4, 6, 8 et 12, des raccords continus, des pochoirs, des panneaux muraux et des PDF"
       ]
     }
   }

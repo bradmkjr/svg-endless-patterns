@@ -14,7 +14,7 @@ export function SiteFooter({ locale }: { locale: Locale }) {
           {t.draft && ` ${t.draft}`}
         </p>
         <p className={styles.version}>
-          <Link href={localePath(locale, "/blog/")}>{t.blog}</Link> · <Link href={localePath(locale, "/changelog/")}>{t.changelog}</Link> · v{APP_VERSION}
+          <Link href={localePath(locale, "/blog/")}>{t.blog}</Link> · <Link href={localePath(locale, "/acknowledgements/")}>{t.acknowledgements}</Link> · <Link href={localePath(locale, "/changelog/")}>{t.changelog}</Link> · v{APP_VERSION}
         </p>
       </div>
     </footer>

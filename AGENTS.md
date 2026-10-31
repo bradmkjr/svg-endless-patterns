@@ -90,6 +90,11 @@ static files from `app/thumbs/`, drawn in `lib/thumbnails.ts`.
 The library is `lib/palettes.ts`, saved palettes `lib/customPalettes.ts` (this browser's
 local storage). Builders use `PalettePicker`: the first color is a ground, the second main.
 
+## Crediting sources
+Any figure, method or text taken from outside goes in `lib/references.ts` with its link and
+what it's used for, shows on the tool with `References`, and appears on `/acknowledgements/`.
+A PDF that relies on a source prints its link.
+
 ## Static export limits
 No route handlers that read the request, redirects, headers, proxy or server
 actions. Link with `next/link` so the base path is applied, and with trailing

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { References } from "@/components/References";
 import { TruchetBuilderRoute } from "@/components/TruchetBuilderRoute";
 import { generateTruchet, type Locale } from "@/lib/generator";
 import { optionLabels } from "@/lib/toolPages";
@@ -24,6 +25,7 @@ export async function TruchetView({ locale, option }: { locale: Locale; option?:
         {t.lede}
       </p>
       <TruchetBuilderRoute option={option} labels={labels} initial={initial} locale={locale} />
+      <References ids={["truchet"]} locale={locale} />
     </div>
   );
 }

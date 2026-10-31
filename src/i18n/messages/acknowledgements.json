@@ -1,0 +1,72 @@
+{
+  "en": {
+    "metaTitle": "Acknowledgements and Sources",
+    "metaDesc": "The outside sources Endless Patterns draws on, with credit and links.",
+    "h1": "Acknowledgements",
+    "lede": "This site stands on other people's work. Here's who to thank, and what we took from each.",
+    "sourcesH": "Sources",
+    "traditionsH": "Traditions",
+    "traditions": "Quilting, knitting, crochet, sashiko, tartan, Celtic knotwork, stained glass and tie-dye belong to generations of makers, most of them unnamed. The designs here are generated or drawn for this site, and they don't copy any one maker's pattern.",
+    "usedFor": {
+      "dharmaTieDye": "The dye, urea and soda ash amounts, cure times and washing steps in the tie-dye planner, and its safety advice on masks and gloves.",
+      "truchet": "The tiles in the Truchet maker carry his name, from his study of how a split square combines.",
+      "girih": "Background on the five girih tiles behind the 10-fold option of the star maker. The layout itself was found by computer search and doesn't come from this paper."
+    }
+  },
+  "es": {
+    "metaTitle": "Agradecimientos y fuentes",
+    "metaDesc": "Las fuentes externas de Endless Patterns, con créditos y enlaces.",
+    "h1": "Agradecimientos",
+    "lede": "Este sitio se apoya en el trabajo de otras personas. Aquí está a quién agradecer y qué tomamos de cada una.",
+    "sourcesH": "Fuentes",
+    "traditionsH": "Tradiciones",
+    "traditions": "El acolchado, el punto, el ganchillo, el sashiko, el tartán, los nudos celtas, las vidrieras y el tie-dye pertenecen a generaciones de artesanos, en su mayoría anónimos. Los diseños de este sitio se generan o se dibujan para él y no copian el patrón de nadie en particular.",
+    "usedFor": {
+      "dharmaTieDye": "Las cantidades de tinte, urea y carbonato de sodio, los tiempos de reposo y los pasos de lavado del planificador de tie-dye, y su consejo de seguridad sobre mascarillas y guantes.",
+      "truchet": "Los azulejos del generador de Truchet llevan su nombre, por su estudio de cómo se combina un cuadrado dividido.",
+      "girih": "Información sobre las cinco piezas de girih de la opción de orden 10. La disposición se halló por búsqueda informática y no procede de este artículo."
+    }
+  },
+  "fr": {
+    "metaTitle": "Remerciements et sources",
+    "metaDesc": "Les sources extérieures d'Endless Patterns, avec crédits et liens.",
+    "h1": "Remerciements",
+    "lede": "Ce site s'appuie sur le travail d'autres personnes. Voici qui remercier, et ce que nous devons à chacune.",
+    "sourcesH": "Sources",
+    "traditionsH": "Traditions",
+    "traditions": "Le quilting, le tricot, le crochet, le sashiko, le tartan, les entrelacs celtiques, le vitrail et le tie-dye appartiennent à des générations d'artisans, la plupart anonymes. Les motifs d'ici sont générés ou dessinés pour ce site et ne copient le modèle de personne en particulier.",
+    "usedFor": {
+      "dharmaTieDye": "Les quantités de teinture, d'urée et de carbonate de soude, les temps d'action et les étapes de lavage du planificateur de tie-dye, et son conseil de sécurité sur les masques et les gants.",
+      "truchet": "Les tuiles de l'outil Truchet portent son nom, d'après son étude des combinaisons d'un carré partagé.",
+      "girih": "Contexte sur les cinq tuiles girih de l'option d'ordre 10. La disposition a été trouvée par recherche informatique et ne vient pas de cet article."
+    }
+  },
+  "de": {
+    "metaTitle": "Danksagung und Quellen",
+    "metaDesc": "Die externen Quellen von Endless Patterns, mit Nennung und Links.",
+    "h1": "Danksagung",
+    "lede": "Diese Website baut auf der Arbeit anderer auf. Hier steht, wem wir danken und was wir von wem übernommen haben.",
+    "sourcesH": "Quellen",
+    "traditionsH": "Traditionen",
+    "traditions": "Quilten, Stricken, Häkeln, Sashiko, Tartan, keltische Knoten, Glasmalerei und Batik gehören Generationen von Handwerkern, die meisten namenlos. Die Muster hier werden für diese Website erzeugt oder gezeichnet und kopieren keine Vorlage einer bestimmten Person.",
+    "usedFor": {
+      "dharmaTieDye": "Die Mengen für Farbe, Harnstoff und Soda, die Einwirkzeiten und Waschschritte im Batik-Planer sowie der Sicherheitshinweis zu Maske und Handschuhen.",
+      "truchet": "Die Fliesen im Truchet-Werkzeug tragen seinen Namen, nach seiner Studie darüber, wie sich ein geteiltes Quadrat kombinieren lässt.",
+      "girih": "Hintergrund zu den fünf Girih-Fliesen der 10-zähligen Option. Die Anordnung wurde per Computersuche gefunden und stammt nicht aus diesem Artikel."
+    }
+  },
+  "pt": {
+    "metaTitle": "Agradecimentos e fontes",
+    "metaDesc": "As fontes externas do Endless Patterns, com créditos e links.",
+    "h1": "Agradecimentos",
+    "lede": "Este site se apoia no trabalho de outras pessoas. Aqui está a quem agradecer e o que usamos de cada uma.",
+    "sourcesH": "Fontes",
+    "traditionsH": "Tradições",
+    "traditions": "O quilting, o tricô, o crochê, o sashiko, o tartan, os nós celtas, os vitrais e o tie-dye pertencem a gerações de artesãos, em sua maioria anônimos. Os desenhos daqui são gerados ou desenhados para este site e não copiam o padrão de ninguém em particular.",
+    "usedFor": {
+      "dharmaTieDye": "As quantidades de tinta, ureia e barrilha, os tempos de cura e os passos de lavagem do planejador de tie-dye, e o conselho de segurança sobre máscaras e luvas.",
+      "truchet": "Os ladrilhos do gerador Truchet levam seu nome, por seu estudo de como um quadrado dividido se combina.",
+      "girih": "Contexto sobre as cinco peças de girih da opção de ordem 10. O arranjo foi encontrado por busca em computador e não vem deste artigo."
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { References } from "@/components/References";
 import { GirihBuilderRoute } from "@/components/GirihBuilderRoute";
 import { generateGirih, type Locale } from "@/lib/generator";
 import { optionLabels } from "@/lib/toolPages";
@@ -24,6 +25,7 @@ export async function GirihView({ locale, option }: { locale: Locale; option?: s
         {t.lede}
       </p>
       <GirihBuilderRoute option={option} labels={labels} initial={initial} locale={locale} />
+      <References ids={["girih"]} locale={locale} />
     </div>
   );
 }

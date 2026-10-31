@@ -107,3 +107,46 @@ describe("quilt plan", () => {
     expect(plan.yardage.find((y) => y.fabric === "border")?.yards).toBe(1.125);
   });
 });
+
+describe("new unit types", () => {
+  it('cuts a 12" Bow Tie as squares, with half-size folded corners', () => {
+    expect(summary("bow-tie", 12)).toEqual([
+      "ground square 2@6 1/2x6 1/2",
+      "tie square 2@3 1/2x3 1/2",
+      "tie square 2@6 1/2x6 1/2",
+    ]);
+  });
+
+  it("counts template pieces rather than rotary squares", () => {
+    const cuts = blockCuts(block("lemoyne-star"), 12);
+    expect(cuts.filter((c) => c.method === "template").map((c) => c.qty).sort()).toEqual([4, 4, 4, 4]);
+  });
+
+  it("makes fabric from a template's bounds, and never reports it as rounded", () => {
+    const [hexagon] = blockCuts(block("grandmothers-flower-garden"), 10).filter((c) => c.template === "Hexagon");
+    expect(hexagon.w).toBeGreaterThan(2);
+    expect(hexagon.rounded).toBe(false);
+  });
+
+  it("ignores template shapes when suggesting ruler sizes", () => {
+    expect(rulerFriendlySizes(block("drunkards-path"), 12)).toEqual([11.5, 12.5]);
+  });
+});
+
+describe("anvil", () => {
+  it('cuts a 12" block from two triangle sizes and two sets of squares', () => {
+    expect(summary("anvil", 12)).toEqual([
+      "accent square 2@3 1/2x3 1/2",
+      "dark half 1@6 7/8x6 7/8",
+      "dark half 2@3 7/8x3 7/8",
+      "light half 1@6 7/8x6 7/8",
+      "light half 2@3 7/8x3 7/8",
+      "light square 2@3 1/2x3 1/2",
+    ]);
+  });
+
+  it("turns the outer small triangles back toward the large ones", () => {
+    const corners = block("anvil").units.flatMap((u) => (u.kind === "hst" ? [`${u.x},${u.y},${u.corner}`] : []));
+    expect(corners).toEqual(["0,0,se", "2,0,se", "3,1,nw", "0,2,se", "1,3,nw", "2,2,nw"]);
+  });
+});

@@ -25,7 +25,7 @@ describe("block catalog", () => {
   });
 
   it.each(BLOCKS.map((b) => [b.slug, b] as const))("%s fills its grid exactly once", (_, block) => {
-    const pieces = blockPieces(block);
+    const pieces = blockPieces(block).filter((p) => !p.applique);
     expect(pieces.reduce((sum, p) => sum + area(p.points), 0)).toBeCloseTo(block.grid ** 2, 6);
     // Irregular sample points, so none land on a seam.
     for (let i = 0; i < 400; i++) {
@@ -44,5 +44,16 @@ describe("block catalog", () => {
   it("finds blocks by slug", () => {
     expect(getBlock("ohio-star")?.name).toBe("Ohio Star");
     expect(getBlock("nope")).toBeUndefined();
+  });
+});
+
+describe("appliqué", () => {
+  it.each(BLOCKS.flatMap((b) => blockPieces(b).filter((p) => p.applique).map((p) => [b.slug, p] as const)).slice(0, 60))("%s stays on its background", (_, piece) => {
+    for (const [x, y] of piece.points) {
+      expect(x).toBeGreaterThanOrEqual(0);
+      expect(y).toBeGreaterThanOrEqual(0);
+      expect(x).toBeLessThanOrEqual(1);
+      expect(y).toBeLessThanOrEqual(1);
+    }
   });
 });

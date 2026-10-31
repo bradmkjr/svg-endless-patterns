@@ -18,6 +18,7 @@ export default function AboutPage() {
         <li>Squares and rectangles: finished size plus 1/2&quot;.</li>
         <li>Half-square triangles: a square of the finished leg plus 7/8&quot;, cut once diagonally.</li>
         <li>Quarter-square triangles: a square of the finished long side plus 1 1/4&quot;, cut twice diagonally.</li>
+        <li>Curves, diamonds, hexagons and wedges: no rotary formula, so these are cut from the true-size templates in the PDF.</li>
         <li>All seams are 1/4&quot;.</li>
       </ul>
 

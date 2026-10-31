@@ -9,12 +9,16 @@ export type Point = [number, number];
  */
 export type Piece = {
   fabric: string;
-  shape: "rect" | "half" | "quarter";
+  shape: "rect" | "half" | "quarter" | "template";
   a: number;
   b: number;
   points: Point[];
   /** A square set on point: irrational at every block size. */
   onPoint?: boolean;
+  /** Template pieces: what the template is called, and the width and height it spans. */
+  name?: string;
+  /** Sits on top of another piece, rather than being part of the pieced surface. */
+  applique?: boolean;
 };
 
 const half = (fabric: string, a: number, points: Point[]): Piece => ({ fabric, shape: "half", a, b: a, points });
@@ -96,6 +100,38 @@ function unitPieces(u: Unit): Piece[] {
         half(u.corners, u.size / 2, [n, ne, e]),
         half(u.corners, u.size / 2, [e, se, s]),
         half(u.corners, u.size / 2, [s, sw, w]),
+      ];
+    }
+    case "flip": {
+      const half = u.size / 2;
+      const nw: Point = [u.x, u.y];
+      const ne: Point = [u.x + u.size, u.y];
+      const se: Point = [u.x + u.size, u.y + u.size];
+      const sw: Point = [u.x, u.y + u.size];
+      const walk = { nw: [nw, ne, se, sw], ne: [ne, se, sw, nw], se: [se, sw, nw, ne], sw: [sw, nw, ne, se] }[u.corner];
+      const [c, next, opposite, prev] = walk;
+      const towards = ([x, y]: Point, [tx, ty]: Point): Point => [x + ((tx - x) * half) / u.size, y + ((ty - y) * half) / u.size];
+      const a = towards(c, next);
+      const b = towards(c, prev);
+      return [
+        // Both are cut as squares; the drawn shape is what shows after folding.
+        { fabric: u.base, shape: "rect", a: u.size, b: u.size, points: [a, next, opposite, prev, b] },
+        { fabric: u.tip, shape: "rect", a: half, b: half, points: [c, a, b] },
+      ];
+    }
+    case "shape": {
+      const xs = u.points.map(([x]) => x);
+      const ys = u.points.map(([, y]) => y);
+      return [
+        {
+          fabric: u.fabric,
+          shape: "template",
+          a: Math.max(...xs) - Math.min(...xs),
+          b: Math.max(...ys) - Math.min(...ys),
+          points: u.points,
+          name: u.name,
+          applique: u.applique,
+        },
       ];
     }
   }

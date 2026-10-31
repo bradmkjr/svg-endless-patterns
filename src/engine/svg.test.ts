@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { BLOCKS, getBlock } from "./blocks";
 import { blockSvg, blockTurn, quiltSvg, tileSvg } from "./svg";
-import { blockTemplates, offsetConvex } from "./templates";
+import { blockTemplates, offsetOutline } from "./templates";
 import { defaultRequest as defaultState } from "./testRequest";
 import { pieceSteps } from "./steps";
 
@@ -39,7 +39,7 @@ describe("svg output", () => {
 
 describe("templates", () => {
   it("adds a quarter inch around a square", () => {
-    const out = offsetConvex([[0, 0], [2, 0], [2, 2], [0, 2]], 0.25);
+    const out = offsetOutline([[0, 0], [2, 0], [2, 2], [0, 2]], 0.25);
     expect(out[0][0]).toBeCloseTo(-0.25);
     expect(out[0][1]).toBeCloseTo(-0.25);
     expect(out[2][0]).toBeCloseTo(2.25);
@@ -72,5 +72,21 @@ describe("piecing steps", () => {
 
   it("writes steps for every block at an off-ruler size", () => {
     for (const block of BLOCKS) expect(pieceSteps(block, 11).length).toBeGreaterThanOrEqual(3);
+  });
+});
+
+describe("template shapes", () => {
+  it("offsets a concave curved piece outward everywhere", () => {
+    const [template] = blockTemplates(getBlock("drunkards-path")!, 12).filter((t) => t.name === "Curved corner");
+    expect(template.cutting).toHaveLength(template.finished.length);
+    const xs = template.finished.map(([x]) => x);
+    const cutXs = template.cutting.map(([x]) => x);
+    expect(Math.max(...cutXs)).toBeCloseTo(Math.max(...xs) + 0.25, 1);
+    expect(template.cutting.every(([x, y]) => Number.isFinite(x) && Number.isFinite(y))).toBe(true);
+  });
+
+  it("keeps one template per named shape", () => {
+    const names = blockTemplates(getBlock("lemoyne-star")!, 12).map((t) => t.name);
+    expect(names.sort()).toEqual(["Corner square", "Diamond", "Side triangle"]);
   });
 });

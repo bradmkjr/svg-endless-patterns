@@ -6,7 +6,7 @@ export const SEAM_ALLOWANCE = 0.25;
 
 export type Template = {
   label: string;
-  shape: "rect" | "half" | "quarter";
+  shape: "rect" | "half" | "quarter" | "template";
   /** Finished outline and cutting outline, both in inches with the same origin. */
   finished: Point[];
   cutting: Point[];
@@ -14,8 +14,8 @@ export type Template = {
   name: string;
 };
 
-/** A convex outline pushed out by `distance` on every side. */
-export function offsetConvex(points: Point[], distance: number): Point[] {
+/** A simple outline pushed out by `distance` on every side, curves included. */
+export function offsetOutline(points: Point[], distance: number): Point[] {
   const n = points.length;
   const area = points.reduce((sum, [x, y], i) => {
     const [nx, ny] = points[(i + 1) % n];
@@ -37,7 +37,7 @@ export function offsetConvex(points: Point[], distance: number): Point[] {
   });
 }
 
-function outline(shape: Template["shape"], a: number, b: number): Point[] {
+function outline(shape: Exclude<Template["shape"], "template">, a: number, b: number): Point[] {
   if (shape === "rect") return [[0, 0], [a, 0], [a, b], [0, b]];
   if (shape === "half") return [[0, 0], [a, 0], [0, a]];
   return [[0, 0], [a, 0], [a / 2, a / 2]];
@@ -48,15 +48,29 @@ const SHAPE_NAMES = { rect: "Rectangle", half: "Half-square triangle", quarter: 
 /** One true-size template per distinct shape, with how many to cut of each fabric. */
 export function blockTemplates(block: Block, size: number, blocks = 1): Template[] {
   const unit = size / block.grid;
-  const groups = new Map<string, { shape: Template["shape"]; a: number; b: number; counts: Map<string, number> }>();
+  const groups = new Map<string, { shape: Template["shape"]; a: number; b: number; title?: string; points: Point[]; counts: Map<string, number> }>();
   for (const p of blockPieces(block)) {
-    const key = `${p.shape}|${p.a.toFixed(6)}|${p.b.toFixed(6)}`;
-    const group = groups.get(key) ?? { shape: p.shape, a: p.a * unit, b: p.b * unit, counts: new Map() };
+    // A named template is one shape, however it's turned in the block.
+    const key = p.name ?? `${p.shape}|${p.a.toFixed(6)}|${p.b.toFixed(6)}`;
+    const group = groups.get(key) ?? { shape: p.shape, a: p.a * unit, b: p.b * unit, title: p.name, points: p.points, counts: new Map() };
     group.counts.set(p.fabric, (group.counts.get(p.fabric) ?? 0) + blocks);
     groups.set(key, group);
   }
   const sorted = [...groups.values()].sort((x, y) => y.a * y.b - x.a * x.b);
   return sorted.map((g, i) => {
+    if (g.shape === "template") {
+      const minX = Math.min(...g.points.map(([x]) => x));
+      const minY = Math.min(...g.points.map(([, y]) => y));
+      const finished = g.points.map(([x, y]): Point => [(x - minX) * unit, (y - minY) * unit]);
+      return {
+        label: String.fromCharCode(65 + i),
+        shape: g.shape,
+        finished,
+        cutting: offsetOutline(finished, SEAM_ALLOWANCE),
+        counts: [...g.counts].map(([fabric, count]) => ({ fabric, count })),
+        name: g.title ?? "Template",
+      };
+    }
     const finished = outline(g.shape, g.a, g.b);
     const isSquare = g.shape === "rect" && g.a === g.b;
     const name = g.shape === "rect" ? (isSquare ? "Square" : "Rectangle") : SHAPE_NAMES[g.shape];
@@ -65,7 +79,7 @@ export function blockTemplates(block: Block, size: number, blocks = 1): Template
       label: String.fromCharCode(65 + i),
       shape: g.shape,
       finished,
-      cutting: offsetConvex(finished, SEAM_ALLOWANCE),
+      cutting: offsetOutline(finished, SEAM_ALLOWANCE),
       counts: [...g.counts].map(([fabric, count]) => ({ fabric, count })),
       name: `${name}, ${dims} finished`,
     };

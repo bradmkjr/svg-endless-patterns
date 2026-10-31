@@ -35,6 +35,16 @@ export function pieceSteps(block: Block, size: number): string[] {
     );
   }
 
+  const flips = block.units.filter((u) => u.kind === "flip");
+  if (flips.length) {
+    steps.push(
+      `Make ${flips.length} folded-corner unit${flips.length === 1 ? "" : "s"}: place a small square on a corner of a large one, right sides together, sew across its diagonal, trim 1/4" past the seam, and press outward.`,
+    );
+  }
+  if (unitCount(block, "shape")) {
+    steps.push("Print the PDF templates at 100%. Trace them onto your fabric: the solid line is the cut, and the dashed line is the seam.");
+  }
+
   steps.push(block.assembly);
   steps.push(`Press the block. It should measure ${inches(size + 0.5)}" square before it's sewn into a quilt, and ${inches(size)}" once it is.`);
   return steps;

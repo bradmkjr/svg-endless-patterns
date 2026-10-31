@@ -19,10 +19,14 @@ export type Unit =
   /** Flying geese: the large triangle's tip points `point`; `w`:`h` is 2:1 or 1:2. */
   | { kind: "goose"; x: number; y: number; w: number; h: number; point: Direction; goose: string; sky: string }
   /** Square in a square: a center on point, with a triangle on each side. */
-  | { kind: "sis"; x: number; y: number; size: number; center: string; corners: string };
+  | { kind: "sis"; x: number; y: number; size: number; center: string; corners: string }
+  /** A square with a small square sewn across `corner` and folded back: half the side. */
+  | { kind: "flip"; x: number; y: number; size: number; corner: Corner; base: string; tip: string }
+  /** A shape with no rotary formula, cut from a printed template. Appliqué sits on the pieces below it. */
+  | { kind: "shape"; fabric: string; name: string; points: [number, number][]; applique?: boolean };
 
 export type Fabric = { id: string; label: string };
-export type Family = "Squares & strips" | "Triangles" | "Stars";
+export type Family = "Squares & strips" | "Triangles" | "Stars" | "Curves & appliqué";
 
 export type Block = {
   slug: string;
@@ -68,6 +72,114 @@ const checker = (x: number, y: number, n: number, a: string, b: string): Unit[] 
   for (let j = 0; j < n; j++) for (let i = 0; i < n; i++) out.push(sq(x + i, y + j, (i + j) % 2 === 0 ? a : b));
   return out;
 };
+
+const flip = (x: number, y: number, corner: Corner, base: string, tip: string): Unit => ({ kind: "flip", x, y, size: 1, corner, base, tip });
+const shape = (fabric: string, name: string, points: [number, number][], applique = false): Unit => ({ kind: "shape", fabric, name, points, applique });
+
+const polar = (cx: number, cy: number, radius: number, angle: number): [number, number] => [cx + radius * Math.cos(angle), cy + radius * Math.sin(angle)];
+
+/** One unit of a curved block: a quarter circle in `corner`, and the rest of the square. */
+function curve(x: number, y: number, corner: Corner, pie: string, rest: string): Unit[] {
+  const RADIUS = 0.75;
+  const cx = corner === "nw" || corner === "sw" ? x : x + 1;
+  const cy = corner === "nw" || corner === "ne" ? y : y + 1;
+  const start = { nw: 0, sw: -Math.PI / 2, se: Math.PI, ne: Math.PI / 2 }[corner];
+  const arc = Array.from({ length: 13 }, (_, i) => polar(cx, cy, RADIUS, start + (i * Math.PI) / 24));
+  // The square's three far corners, walked from the arc's end back to its start.
+  const walk: Record<Corner, [number, number][]> = {
+    nw: [[x, y + 1], [x + 1, y + 1], [x + 1, y]],
+    sw: [[x + 1, y + 1], [x + 1, y], [x, y]],
+    se: [[x + 1, y], [x, y], [x, y + 1]],
+    ne: [[x, y], [x, y + 1], [x + 1, y + 1]],
+  };
+  return [shape(pie, "Quarter circle", [[cx, cy], ...arc]), shape(rest, "Curved corner", [...arc, ...walk[corner]])];
+}
+
+/** A traditional eight-pointed star of 45-degree diamonds, on a block one unit wide. */
+function leMoyneStar(): Unit[] {
+  const c = 0.5;
+  const t = 1 - Math.SQRT1_2; // Where the star's points meet the block's edge.
+  const start = -Math.PI / 2 - Math.PI / 8;
+  const units: Unit[] = [];
+  for (let i = 0; i < 8; i++) {
+    const angle = start + (i * Math.PI) / 4;
+    const tipRadius = 0.5 / Math.cos(Math.PI / 8);
+    units.push(
+      shape(i % 2 === 0 ? "star" : "alternate", "Diamond", [
+        [c, c],
+        polar(c, c, t, angle - Math.PI / 8),
+        polar(c, c, tipRadius, angle),
+        polar(c, c, t, angle + Math.PI / 8),
+      ]),
+    );
+  }
+  for (const [x, y] of [[0, 0], [1 - t, 0], [1 - t, 1 - t], [0, 1 - t]]) {
+    units.push(shape("ground", "Corner square", [[x, y], [x + t, y], [x + t, y + t], [x, y + t]]));
+  }
+  const inset = c - t;
+  units.push(
+    shape("ground", "Side triangle", [[t, 0], [1 - t, 0], [c, inset]]),
+    shape("ground", "Side triangle", [[1, t], [1, 1 - t], [1 - inset, c]]),
+    shape("ground", "Side triangle", [[1 - t, 1], [t, 1], [c, 1 - inset]]),
+    shape("ground", "Side triangle", [[0, 1 - t], [0, t], [inset, c]]),
+  );
+  return units;
+}
+
+function dresdenPlate(): Unit[] {
+  const PETALS = 16;
+  const step = (2 * Math.PI) / PETALS;
+  const units: Unit[] = [rect(0, 0, 1, 1, "ground")];
+  for (let i = 0; i < PETALS; i++) {
+    const a = i * step;
+    units.push(
+      shape(i % 2 === 0 ? "petal" : "alternate", "Plate wedge", [
+        polar(0.5, 0.5, 0.12, a),
+        polar(0.5, 0.5, 0.38, a),
+        polar(0.5, 0.5, 0.45, a + step / 2),
+        polar(0.5, 0.5, 0.38, a + step),
+        polar(0.5, 0.5, 0.12, a + step),
+      ], true),
+    );
+  }
+  units.push(shape("center", "Center circle", Array.from({ length: 32 }, (_, i) => polar(0.5, 0.5, 0.14, (i * Math.PI) / 16)), true));
+  return units;
+}
+
+/** A center hexagon and two rings around it, appliquéd to a background square. */
+function flowerGarden(): Unit[] {
+  const R = 0.1;
+  const units: Unit[] = [rect(0, 0, 1, 1, "ground")];
+  for (let q = -2; q <= 2; q++) {
+    for (let r = -2; r <= 2; r++) {
+      const ring = Math.max(Math.abs(q), Math.abs(r), Math.abs(q + r));
+      if (ring > 2) continue;
+      const cx = 0.5 + R * 1.5 * q;
+      const cy = 0.5 + R * Math.sqrt(3) * (r + q / 2);
+      const hexagon = Array.from({ length: 6 }, (_, i) => polar(cx, cy, R, (i * Math.PI) / 3));
+      units.push(shape(["center", "petal", "path"][ring], "Hexagon", hexagon, true));
+    }
+  }
+  return units;
+}
+
+const irishFive = ["DMLMD", "MDMDM", "LMDML", "MDMDM", "DMLMD"];
+
+function doubleIrishChain(): Unit[] {
+  const fabrics: Record<string, string> = { D: "dark", M: "middle", L: "light" };
+  const units: Unit[] = [];
+  for (const [x, y] of [[0, 0], [5, 5]]) {
+    irishFive.forEach((row, j) => [...row].forEach((c, i) => units.push(sq(x + i, y + j, fabrics[c]))));
+  }
+  for (const [x, y] of [[5, 0], [0, 5]]) {
+    units.push(
+      sq(x, y, "middle"), rect(x + 1, y, 3, 1, "light"), sq(x + 4, y, "middle"),
+      rect(x, y + 1, 5, 3, "light"),
+      sq(x, y + 4, "middle"), rect(x + 1, y + 4, 3, 1, "light"), sq(x + 4, y + 4, "middle"),
+    );
+  }
+  return units;
+}
 
 const LIGHT_DARK: Fabric[] = [
   { id: "light", label: "Light" },
@@ -454,6 +566,231 @@ export const BLOCKS: Block[] = [
     summary: "Four paws, each a large square edged with small triangle claws, separated by a cross of strips.",
     assembly: "Build each paw: sew two claws to one side of the large square, then add two claws and a corner square to the next side. Join the paws and strips in three rows.",
   },
+  {
+    slug: "puss-in-the-corner",
+    name: "Puss in the Corner",
+    family: "Squares & strips",
+    level: "Beginner",
+    grid: 5,
+    fabrics: [
+      { id: "light", label: "Sides" },
+      { id: "dark", label: "Corners" },
+      { id: "center", label: "Center" },
+    ],
+    units: [
+      sq(0, 0, "dark"), rect(1, 0, 3, 1, "light"), sq(4, 0, "dark"),
+      rect(0, 1, 1, 3, "light"), sq(1, 1, "center", 3), rect(4, 1, 1, 3, "light"),
+      sq(0, 4, "dark"), rect(1, 4, 3, 1, "light"), sq(4, 4, "dark"),
+    ],
+    summary: "An uneven nine patch: small corner squares, long side strips and a large center square.",
+    assembly: "Sew the pieces into three rows, press toward the strips, then join the rows, matching the corner seams.",
+  },
+  {
+    slug: "single-irish-chain",
+    name: "Single Irish Chain",
+    family: "Squares & strips",
+    level: "Beginner",
+    grid: 5,
+    fabrics: LIGHT_DARK,
+    units: Array.from({ length: 25 }, (_, n) => {
+      const x = n % 5;
+      const y = Math.floor(n / 5);
+      return sq(x, y, x === y || x + y === 4 ? "dark" : "light");
+    }),
+    summary: "Five rows of five squares with dark diagonals, which link into chains when blocks are set together.",
+    assembly: "Sew the squares into five rows, pressing each row the opposite way from the last, then join the rows.",
+  },
+  {
+    slug: "double-irish-chain",
+    name: "Double Irish Chain",
+    family: "Squares & strips",
+    level: "Confident beginner",
+    grid: 10,
+    fabrics: [
+      { id: "light", label: "Background" },
+      { id: "middle", label: "Outer chain" },
+      { id: "dark", label: "Inner chain" },
+    ],
+    units: doubleIrishChain(),
+    summary: "Two checkered five-patch units alternate with two mostly plain units, forming wide diagonal chains.",
+    assembly: "Sew each checkered unit in five rows, and each plain unit in three rows. Then join the four units in two rows, checkered units on the diagonal.",
+  },
+  {
+    slug: "broken-dishes",
+    name: "Broken Dishes",
+    family: "Triangles",
+    level: "Beginner",
+    grid: 2,
+    fabrics: LIGHT_DARK,
+    units: [hst(0, 0, "nw", "dark", "light"), hst(1, 0, "sw", "dark", "light"), hst(0, 1, "ne", "dark", "light"), hst(1, 1, "se", "dark", "light")],
+    summary: "Four half-square triangle units, turned against each other to give a shifting, jagged look.",
+    assembly: "Arrange the four units as shown, sew them into two rows, then join the rows, matching the center points.",
+  },
+  {
+    slug: "yankee-puzzle",
+    name: "Yankee Puzzle",
+    family: "Triangles",
+    level: "Confident beginner",
+    grid: 2,
+    fabrics: LIGHT_DARK,
+    units: [
+      qst(0, 0, "dark", "light", "dark", "light"), qst(1, 0, "light", "dark", "light", "dark"),
+      qst(0, 1, "light", "dark", "light", "dark"), qst(1, 1, "dark", "light", "dark", "light"),
+    ],
+    summary: "Four quarter-square triangle units, each turned a quarter from its neighbors.",
+    assembly: "Alternate the direction of the units, sew them into two rows, then join the rows, matching the center points.",
+  },
+  {
+    slug: "road-to-oklahoma",
+    name: "Road to Oklahoma",
+    family: "Triangles",
+    level: "Confident beginner",
+    grid: 4,
+    fabrics: [
+      { id: "ground", label: "Background" },
+      { id: "road", label: "Main road" },
+      { id: "cross", label: "Cross road" },
+    ],
+    units: [
+      sq(0, 0, "road"), hst(1, 0, "sw", "road", "ground"), hst(2, 0, "se", "cross", "ground"), sq(3, 0, "cross"),
+      hst(0, 1, "ne", "road", "ground"), sq(1, 1, "road"), sq(2, 1, "cross"), hst(3, 1, "nw", "cross", "ground"),
+      hst(0, 2, "se", "cross", "ground"), sq(1, 2, "cross"), sq(2, 2, "road"), hst(3, 2, "sw", "road", "ground"),
+      sq(0, 3, "cross"), hst(1, 3, "nw", "cross", "ground"), hst(2, 3, "ne", "road", "ground"), sq(3, 3, "road"),
+    ],
+    summary: "Squares and half-square triangles form two roads that cross diagonally through the block.",
+    assembly: "Lay out the units with the squares on the diagonals, sew them into four rows, then join the rows.",
+  },
+  {
+    slug: "anvil",
+    name: "Anvil",
+    family: "Triangles",
+    level: "Confident beginner",
+    grid: 4,
+    fabrics: [...LIGHT_DARK, { id: "accent", label: "Small squares" }],
+    units: [
+      hst(0, 0, "se", "dark", "light", 2),
+      hst(2, 0, "se", "dark", "light"), sq(3, 0, "light"), sq(2, 1, "accent"), hst(3, 1, "nw", "dark", "light"),
+      hst(0, 2, "se", "dark", "light"), sq(1, 2, "accent"), sq(0, 3, "light"), hst(1, 3, "nw", "dark", "light"),
+      hst(2, 2, "nw", "dark", "light", 2),
+    ],
+    summary: "Two large half-square triangles alternate with two units of small squares and triangles, giving a stepped diagonal.",
+    assembly: "Sew each small unit from two triangle units and two squares, lay them out with the large triangle units, sew two rows, then join the rows.",
+  },
+  {
+    slug: "bow-tie",
+    name: "Bow Tie",
+    family: "Triangles",
+    level: "Beginner",
+    grid: 2,
+    fabrics: [
+      { id: "ground", label: "Background" },
+      { id: "tie", label: "Tie" },
+    ],
+    units: [
+      sq(0, 0, "tie"), flip(1, 0, "sw", "ground", "tie"),
+      flip(0, 1, "ne", "ground", "tie"), sq(1, 1, "tie"),
+    ],
+    summary: "Two squares meet at a small knot in the center, made by folding corners onto two background squares.",
+    assembly: "Sew the four units into two rows with the folded corners meeting at the center, then join the rows.",
+  },
+  {
+    slug: "variable-star",
+    name: "Variable Star",
+    family: "Stars",
+    level: "Confident beginner",
+    grid: 4,
+    fabrics: [
+      { id: "ground", label: "Background" },
+      { id: "star", label: "Star points" },
+      { id: "center", label: "Center" },
+    ],
+    units: fourWay([sq(0, 0, "ground"), hst(1, 0, "se", "star", "ground"), hst(2, 0, "sw", "star", "ground"), sq(1, 1, "center")], 4),
+    summary: "Pairs of half-square triangles make four broad points around a center of four squares.",
+    assembly: "Join the center squares into one unit. Sew two triangle units for each side, add corner squares to the top and bottom sets, and join the three rows.",
+  },
+  {
+    slug: "sisters-choice",
+    name: "Sister's Choice",
+    family: "Stars",
+    level: "Confident beginner",
+    grid: 5,
+    fabrics: [
+      { id: "ground", label: "Background" },
+      { id: "star", label: "Star" },
+      { id: "accent", label: "Accent" },
+    ],
+    units: [
+      sq(0, 0, "ground"), sq(1, 0, "star"), sq(2, 0, "ground"), sq(3, 0, "star"), sq(4, 0, "ground"),
+      sq(0, 1, "star"), hst(1, 1, "nw", "star", "accent"), sq(2, 1, "accent"), hst(3, 1, "ne", "star", "accent"), sq(4, 1, "star"),
+      sq(0, 2, "ground"), sq(1, 2, "accent"), sq(2, 2, "star"), sq(3, 2, "accent"), sq(4, 2, "ground"),
+      sq(0, 3, "star"), hst(1, 3, "sw", "star", "accent"), sq(2, 3, "accent"), hst(3, 3, "se", "star", "accent"), sq(4, 3, "star"),
+      sq(0, 4, "ground"), sq(1, 4, "star"), sq(2, 4, "ground"), sq(3, 4, "star"), sq(4, 4, "ground"),
+    ],
+    summary: "A five-by-five block of squares and half-square triangles that form a star around a center square.",
+    assembly: "Lay out all five rows, sew the units into rows, then join the rows, nesting the seams.",
+  },
+  {
+    slug: "lemoyne-star",
+    name: "LeMoyne Star",
+    family: "Stars",
+    level: "Intermediate",
+    grid: 1,
+    fabrics: [
+      { id: "ground", label: "Background" },
+      { id: "star", label: "Star" },
+      { id: "alternate", label: "Alternate points" },
+    ],
+    units: leMoyneStar(),
+    summary: "Eight 45-degree diamonds meet at the center, with corner squares and side triangles set in around them.",
+    assembly: "Sew the diamonds into four pairs, then two halves, stopping 1/4\" from each edge you'll set a piece into. Join the halves, then set in the corner squares and side triangles.",
+  },
+  {
+    slug: "drunkards-path",
+    name: "Drunkard's Path",
+    family: "Curves & appliqué",
+    level: "Intermediate",
+    grid: 4,
+    fabrics: LIGHT_DARK,
+    units: (["se", "nw", "se", "nw", "ne", "sw", "ne", "sw", "se", "nw", "se", "nw", "ne", "sw", "ne", "sw"] as Corner[]).flatMap((corner, n) => {
+      const x = n % 4;
+      const y = Math.floor(n / 4);
+      return (x + y) % 2 === 0 ? curve(x, y, corner, "dark", "light") : curve(x, y, corner, "light", "dark");
+    }),
+    summary: "Sixteen units with a curved seam, turned and recolored so that a path wanders across the block.",
+    assembly: "For each unit, pin a quarter circle to a curved corner at the center and ends, then sew the curve slowly. Lay out four rows, sew them, then join the rows.",
+  },
+  {
+    slug: "dresden-plate",
+    name: "Dresden Plate",
+    family: "Curves & appliqué",
+    level: "Intermediate",
+    grid: 1,
+    fabrics: [
+      { id: "ground", label: "Background" },
+      { id: "petal", label: "Plate" },
+      { id: "alternate", label: "Alternate wedges" },
+      { id: "center", label: "Center" },
+    ],
+    units: dresdenPlate(),
+    summary: "Sixteen pointed wedges form a ring that's appliquéd to a background square, with a center circle on top.",
+    assembly: "Sew the wedges into a ring along their long sides. Turn under the outer edge, appliqué the ring to the background, then appliqué the center circle over the opening.",
+  },
+  {
+    slug: "grandmothers-flower-garden",
+    name: "Grandmother's Flower Garden",
+    family: "Curves & appliqué",
+    level: "Intermediate",
+    grid: 1,
+    fabrics: [
+      { id: "ground", label: "Background" },
+      { id: "center", label: "Flower center" },
+      { id: "petal", label: "Petals" },
+      { id: "path", label: "Path" },
+    ],
+    units: flowerGarden(),
+    summary: "A center hexagon with two rings around it, shown here as a single rosette appliquéd to a background square.",
+    assembly: "Sew the petals around the center, then add the path ring, setting each hexagon into the angle between its neighbors. Turn under the outer edge and appliqué the rosette to the background.",
+  },
 ];
 
 export const BLOCK_SLUGS = BLOCKS.map((b) => b.slug);
@@ -462,4 +799,4 @@ export function getBlock(slug: string): Block | undefined {
   return BLOCKS.find((b) => b.slug === slug);
 }
 
-export const FAMILIES: Family[] = ["Squares & strips", "Triangles", "Stars"];
+export const FAMILIES: Family[] = ["Squares & strips", "Triangles", "Stars", "Curves & appliqué"];

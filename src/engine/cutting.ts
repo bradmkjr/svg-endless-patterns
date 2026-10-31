@@ -12,7 +12,7 @@ const QUARTER_ADD = 5 / 4;
 
 export type Cut = {
   fabric: string;
-  method: "square" | "rect" | "strip" | "half" | "quarter";
+  method: "square" | "rect" | "strip" | "half" | "quarter" | "template";
   /** Cut size, on ruler eighths: w is the longer side. */
   w: number;
   h: number;
@@ -22,7 +22,12 @@ export type Cut = {
   pieces: number;
   /** The finished size falls between ruler marks, so the cut was rounded up. */
   rounded: boolean;
+  /** The template to cut from, for shapes with no rotary formula. */
+  template?: string;
 };
+
+/** Generous room around a template shape when working out fabric: its points reach past a plain 1/4". */
+const TEMPLATE_ADD = 1;
 
 function keyOf(fabric: string, shape: string, a: number, b: number) {
   return `${fabric}|${shape}|${a.toFixed(6)}|${b.toFixed(6)}`;
@@ -31,14 +36,20 @@ function keyOf(fabric: string, shape: string, a: number, b: number) {
 /** Cuts for `count` copies of a block finishing at `size` inches. */
 export function blockCuts(block: Block, size: number, count = 1): Cut[] {
   const unit = size / block.grid;
-  const tally = new Map<string, { fabric: string; shape: string; a: number; b: number; n: number }>();
+  const tally = new Map<string, { fabric: string; shape: string; a: number; b: number; n: number; name?: string }>();
   for (const p of blockPieces(block)) {
-    const key = keyOf(p.fabric, p.shape, p.a, p.b);
-    const entry = tally.get(key) ?? { fabric: p.fabric, shape: p.shape, a: p.a * unit, b: p.b * unit, n: 0 };
+    // A named template is one shape, however it's turned in the block.
+    const key = p.name ? `${p.fabric}|${p.name}` : keyOf(p.fabric, p.shape, p.a, p.b);
+    const entry = tally.get(key) ?? { fabric: p.fabric, shape: p.shape, a: p.a * unit, b: p.b * unit, n: 0, name: p.name };
     entry.n += count;
     tally.set(key, entry);
   }
-  const cuts = [...tally.values()].map(({ fabric, shape, a, b, n }): Cut => {
+  const cuts = [...tally.values()].map(({ fabric, shape, a, b, n, name }): Cut => {
+    if (shape === "template") {
+      const w = ceilToEighth(Math.max(a, b) + TEMPLATE_ADD);
+      const h = ceilToEighth(Math.min(a, b) + TEMPLATE_ADD);
+      return { fabric, method: "template", w, h, qty: n, pieces: n, rounded: false, template: name };
+    }
     if (shape === "half" || shape === "quarter") {
       const add = shape === "half" ? HALF_ADD : QUARTER_ADD;
       const side = ceilToEighth(a + add);
@@ -152,7 +163,7 @@ export function planQuilt(block: Block, state: PatternRequest): QuiltPlan {
 export function rulerFriendlySizes(block: Block, size: number): number[] {
   const works = (s: number) =>
     // A square on point is irrational at every size, so it can't count against one.
-    blockPieces(block).every((p) => p.onPoint || (isOnRuler((p.a * s) / block.grid) && isOnRuler((p.b * s) / block.grid)));
+    blockPieces(block).every((p) => p.onPoint || p.shape === "template" || (isOnRuler((p.a * s) / block.grid) && isOnRuler((p.b * s) / block.grid)));
   const found: number[] = [];
   for (let s = size - 0.5; s >= 3; s -= 0.5) {
     if (works(s)) {
@@ -177,6 +188,8 @@ export function describeCut(cut: Cut): string {
       return `${square}, cut once diagonally (${cut.pieces} triangles)`;
     case "quarter":
       return `${square}, cut twice diagonally (${cut.pieces} triangles)`;
+    case "template":
+      return `${cut.qty} ${cut.template?.toLowerCase()}${plural}, cut from the PDF template`;
     case "square":
       return square;
     case "strip":

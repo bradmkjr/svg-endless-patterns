@@ -9,9 +9,11 @@
 # `--no-verify`). A package.json `version` script runs too — the static hub
 # uses it to write the version into its HTML footers.
 set -e
-[ -n "$SKIP_VERSION_BUMP" ] && exit 0
 [ -f package.json ] || exit 0
 git diff --cached --quiet && exit 0 # nothing staged
+
+npm test
+[ -n "$SKIP_VERSION_BUMP" ] && exit 0
 
 version_of() {
   git show "$1" 2>/dev/null | node -e '

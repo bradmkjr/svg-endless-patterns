@@ -5,7 +5,7 @@ import type { Locale, MazeSize, MazeAlgorithm, MazeColors, MazeDifficulty, MazeR
 
 export const SHAPE_OPTIONS: MazeShape[] = ["square", "rectangle", "circle", "hexagon"];
 export const ALGORITHM_OPTIONS: MazeAlgorithm[] = ["backtracker", "prim", "kruskal", "wilson", "binaryTree"];
-export const DIFFICULTY_OPTIONS: MazeDifficulty[] = ["easy", "medium", "hard", "expert"];
+export const DIFFICULTY_OPTIONS: MazeDifficulty[] = ["easy", "medium", "hard", "expert", "master", "extreme"];
 export const WEIGHT_OPTIONS = [6, 10, 15, 20, 30, 40];
 /** Columns and rows on offer. 400 still gives a quarter-inch cell on the largest sheet. */
 export const SIZE_OPTIONS = [5, 8, 10, 12, 16, 20, 24, 30, 36, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400];

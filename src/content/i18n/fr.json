@@ -36,7 +36,7 @@
         [
           "Quatre formes : carré, rectangle, cercle et hexagone",
           "Cinq algorithmes aux textures différentes : retour sur trace récursif, Prim, Kruskal, Wilson et arbre binaire",
-          "Quatre difficultés, de facile à expert, qui fixent le nombre de cases du labyrinthe",
+          "Six difficultés, de facile à extrême, qui fixent le nombre de cases du labyrinthe",
           "Un PDF à imprimer avec la solution sur sa propre page",
           "SVG et PNG du labyrinthe et de sa solution, avec votre épaisseur de murs et vos couleurs"
         ],

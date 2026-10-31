@@ -36,7 +36,7 @@
         [
           "Quatro formas: quadrado, retângulo, círculo e hexágono",
           "Cinco algoritmos com texturas diferentes: retrocesso recursivo, Prim, Kruskal, Wilson e árvore binária",
-          "Quatro dificuldades, de fácil a especialista, que definem quantas células o labirinto tem",
+          "Seis dificuldades, de fácil a extremo, que definem quantas células o labirinto tem",
           "Um PDF para imprimir com a solução em sua própria página",
           "SVG e PNG do labirinto e da solução, com a sua espessura de paredes e as suas cores"
         ],

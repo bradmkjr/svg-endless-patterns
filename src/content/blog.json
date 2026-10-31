@@ -110,7 +110,7 @@
         "items": [
           "Four shapes: square, rectangle, circle and hexagon",
           "Five algorithms with different textures: recursive backtracker, Prim, Kruskal, Wilson and binary tree",
-          "Four difficulties, from easy to expert, which set how many cells the maze has",
+          "Six difficulties, from easy to extreme, which set how many cells the maze has",
           "A printable PDF with the solution on its own page",
           "SVG and PNG of the maze and of its solution, with your wall weight and colors"
         ]

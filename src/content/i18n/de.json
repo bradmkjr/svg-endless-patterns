@@ -36,7 +36,7 @@
         [
           "Vier Formen: Quadrat, Rechteck, Kreis und Sechseck",
           "Fünf Algorithmen mit unterschiedlicher Struktur: rekursives Backtracking, Prim, Kruskal, Wilson und Binärbaum",
-          "Vier Schwierigkeitsgrade von leicht bis Experte, die festlegen, wie viele Zellen das Labyrinth hat",
+          "Sechs Schwierigkeitsgrade von leicht bis extrem, die festlegen, wie viele Zellen das Labyrinth hat",
           "Ein druckbares PDF mit der Lösung auf einer eigenen Seite",
           "SVG und PNG des Labyrinths und seiner Lösung, mit deiner Wandstärke und deinen Farben"
         ],

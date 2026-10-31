@@ -36,7 +36,7 @@
         [
           "Cuatro formas: cuadrado, rectángulo, círculo y hexágono",
           "Cinco algoritmos con texturas distintas: retroceso recursivo, Prim, Kruskal, Wilson y árbol binario",
-          "Cuatro dificultades, de fácil a experta, que fijan cuántas celdas tiene el laberinto",
+          "Seis dificultades, de fácil a extrema, que fijan cuántas celdas tiene el laberinto",
           "Un PDF para imprimir con la solución en su propia página",
           "SVG y PNG del laberinto y de su solución, con tu grosor de paredes y tus colores"
         ],

@@ -13,6 +13,7 @@ import { optionHref, optionLabel, readSeed, thumbSrc, TOOL_OPTIONS, withOption, 
 import { parseMazeState, serializeMazeState } from "./mazeState";
 import { parseKnitColorworkState, serializeKnitColorworkState } from "./knitColorworkState";
 import { parseCrochetColorworkState, serializeCrochetColorworkState } from "./crochetColorworkState";
+import { parseCheckerboardState, serializeCheckerboardState } from "./checkerboardState";
 import { parseFractalState, serializeFractalState } from "./fractalState";
 import { parseTieDyeState, serializeTieDyeState } from "./tieDyeState";
 import { parseTruchetState, serializeTruchetState } from "./truchetState";
@@ -30,6 +31,7 @@ const ROUND_TRIP: Record<ToolId, (params: URLSearchParams) => string> = {
   needlepoint: (p) => serializeNeedlepointState(parseNeedlepointState(p)),
   knitColorwork: (p) => serializeKnitColorworkState(parseKnitColorworkState(p)),
   crochetColorwork: (p) => serializeCrochetColorworkState(parseCrochetColorworkState(p)),
+  checkerboard: (p) => serializeCheckerboardState(parseCheckerboardState(p)),
   fractal: (p) => serializeFractalState(parseFractalState(p)),
   tieDye: (p) => serializeTieDyeState(parseTieDyeState(p)),
   maze: (p) => serializeMazeState(parseMazeState(p)),

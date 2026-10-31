@@ -281,6 +281,12 @@
         "text": "Mehrfarbige Häkelquadrate: Tapestry-Zählmuster, Ecke-zu-Ecke-Zählmuster und Granny Squares in Runden, in deinen Farben.",
         "output": "Zählmuster mit Farbschlüssel, jede Reihe, Diagonale oder Runde ausgeschrieben, Garn je Farbe, druckbares PDF sowie SVG und PNG.",
         "explore": "Mehrfarbiges Quadrat erstellen"
+      },
+      "checkerboard": {
+        "title": "Schachbrettmuster",
+        "text": "Legen Sie Reihen, Spalten, Farben und Feldform fest, vom Standardbrett bis zu 3:1-Ziegeln.",
+        "output": "SVG und PNG, nahtloser Rapport, fertige Größen, Teileanzahl und druckbares PDF.",
+        "explore": "Muster erstellen"
       }
     },
     "seeAllType": "Alles in {name} ansehen"

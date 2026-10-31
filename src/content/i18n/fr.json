@@ -1,5 +1,26 @@
 {
   "posts": {
+    "checkerboard-maker": {
+      "title": "Des damiers dans toutes les proportions",
+      "summary": "Partez d'un damier standard, puis réglez les rangées, les colonnes, les couleurs et la forme des cases, comme 3:1 ou 2:3.",
+      "blocks": [
+        "Le nouveau [créateur de damiers](/checkerboards/) s'ouvre sur un damier standard de 8 sur 8. Vous pouvez ensuite étirer les cases et décaler les rangées.",
+        "Exemples pour commencer",
+        [
+          "Un damier standard",
+          "Des cases trois fois plus larges que hautes",
+          "Un motif de briques 2:3 en trois couleurs",
+          "Vichy rouge"
+        ],
+        "Ce que vous obtenez",
+        [
+          "Motifs standard, briques, demi-saut et vichy",
+          "Jusqu'à 100 colonnes et rangées, et toute proportion jusqu'à 8:8",
+          "De deux à quatre couleurs, avec toutes les palettes du site",
+          "Raccord continu, tailles finales, nombre d'éléments, SVG, PNG et PDF imprimable"
+        ]
+      ]
+    },
     "crochet-colorwork-squares": {
       "title": "Des carrés au crochet multicolores, entièrement rédigés",
       "summary": "Grilles de crochet tapisserie, grilles coin à coin et carrés granny dans vos couleurs, avec chaque rang, diagonale et tour rédigé.",
@@ -500,6 +521,12 @@
     }
   },
   "changelog": {
+    "Checkerboard maker": {
+      "title": "Créateur de damiers",
+      "items": [
+        "Ajout d'un créateur de damiers avec rangées, colonnes, proportions et couleurs sur mesure"
+      ]
+    },
     "Blog images": {
       "title": "Images du blog",
       "items": [

@@ -281,6 +281,12 @@
         "text": "Multi-color crochet squares: tapestry charts, corner-to-corner graphs and granny squares in rounds, in your colors.",
         "output": "Chart with color key, every row, diagonal or round written out, yarn per color, a printable PDF, and SVG and PNG.",
         "explore": "Make a colorwork square"
+      },
+      "checkerboard": {
+        "title": "Checkerboards",
+        "text": "Set the rows, columns, colors and box shape, from a standard board to 3:1 bricks.",
+        "output": "SVG and PNG, a seamless repeat, finished sizes, piece counts and a printable PDF.",
+        "explore": "Make a checkerboard"
       }
     },
     "seeAllType": "See everything in {name}"

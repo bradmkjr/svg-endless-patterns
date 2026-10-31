@@ -1,5 +1,26 @@
 {
   "posts": {
+    "checkerboard-maker": {
+      "title": "Xadrez em qualquer proporção",
+      "summary": "Comece com um xadrez padrão e defina linhas, colunas, cores e a forma das casas, como 3:1 ou 2:3.",
+      "blocks": [
+        "O novo [gerador de xadrez](/checkerboards/) abre com um tabuleiro padrão de 8 por 8. A partir daí, você pode esticar as casas e deslocar as linhas.",
+        "Exemplos para começar",
+        [
+          "Um xadrez padrão",
+          "Casas três vezes mais largas que altas",
+          "Um padrão de tijolos 2:3 em três cores",
+          "Vichy vermelho"
+        ],
+        "O que você recebe",
+        [
+          "Padrões padrão, tijolo, meio salto e vichy",
+          "Até 100 colunas e linhas, e qualquer proporção até 8:8",
+          "De duas a quatro cores, com todas as paletas do site",
+          "Repetição contínua, tamanhos finais, contagem de peças, SVG, PNG e PDF para imprimir"
+        ]
+      ]
+    },
     "crochet-colorwork-squares": {
       "title": "Quadrados de crochê multicolorido, escritos por completo",
       "summary": "Gráficos de crochê tapeçaria, gráficos canto a canto e squares granny nas suas cores, com cada carreira, diagonal e volta por escrito.",
@@ -500,6 +521,12 @@
     }
   },
   "changelog": {
+    "Checkerboard maker": {
+      "title": "Gerador de xadrez",
+      "items": [
+        "Adicionado um gerador de xadrez com linhas, colunas, proporções e cores personalizadas"
+      ]
+    },
     "Blog images": {
       "title": "Imagens do blog",
       "items": [

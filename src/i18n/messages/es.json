@@ -281,6 +281,12 @@
         "text": "Cuadrados de ganchillo multicolor: gráficos tapestry, gráficos de esquina a esquina y cuadrados granny por vueltas, en tus colores.",
         "output": "Gráfico con clave de colores, cada vuelta o diagonal por escrito, hilo por color, PDF para imprimir, y SVG y PNG.",
         "explore": "Crear un cuadrado multicolor"
+      },
+      "checkerboard": {
+        "title": "Tableros",
+        "text": "Elige filas, columnas, colores y forma de las casillas, del tablero estándar a ladrillos 3:1.",
+        "output": "SVG y PNG, repetición continua, tamaños finales, recuento de piezas y PDF imprimible.",
+        "explore": "Crea un tablero"
       }
     },
     "seeAllType": "Ver todo en {name}"

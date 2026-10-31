@@ -1,0 +1,222 @@
+{
+  "en": {
+    "metaTitle": "Checkerboard Pattern Maker: Custom Ratios and Colors",
+    "metaDesc": "Make a checkerboard with your own rows, columns, box ratio and colors, from a standard board to 3:1 bricks, then download SVG, PNG or PDF.",
+    "h1": "Checkerboards",
+    "lede": "Start with a standard board, then change the rows, columns, colors and box shape, such as 3:1 or 2:3.",
+    "loading": "Drawing the board…",
+    "views": {
+      "art": "Board",
+      "repeat": "Seamless repeat"
+    },
+    "viewNotes": {
+      "art": "The whole board, at your columns and rows.",
+      "repeat": "A tile that joins up on every side, for fabric or wallpaper."
+    },
+    "stats": "Finished size {w}\" × {h}\". Each box {bw}\" × {bh}\".",
+    "count": "Color {n}: {boxes} pieces",
+    "downloadPdf": "Download printable PDF",
+    "design": "Board",
+    "pattern": "Pattern",
+    "cols": "Columns",
+    "rows": "Rows",
+    "boxShape": "Box shape",
+    "ratioWidth": "Width parts",
+    "ratioHeight": "Height parts",
+    "unit": "One part is",
+    "unitNote": "Sets the finished size, not the look.",
+    "colors": "Colors",
+    "color": "Color {n}",
+    "add": "Add color",
+    "remove": "Remove color",
+    "ginghamNote": "Gingham uses two colors, and mixes them for its mid tone.",
+    "patterns": {
+      "checker": "Standard checkerboard",
+      "brick": "Brick",
+      "half-drop": "Half drop",
+      "gingham": "Gingham"
+    },
+    "patternNotes": {
+      "checker": "Boxes alternate in both directions.",
+      "brick": "Every other row shifts by half a box, like a brick wall.",
+      "half-drop": "Every other column shifts by half a box.",
+      "gingham": "Stripes cross like woven cloth, with a mid tone where they meet the ground."
+    }
+  },
+  "es": {
+    "metaTitle": "Generador de tableros: proporciones y colores a medida",
+    "metaDesc": "Crea un tablero con tus filas, columnas, proporción y colores, del tablero estándar a ladrillos 3:1, y descarga SVG, PNG o PDF.",
+    "h1": "Tableros",
+    "lede": "Empieza con un tablero estándar y cambia filas, columnas, colores y la forma de las casillas, como 3:1 o 2:3.",
+    "loading": "Dibujando el tablero…",
+    "views": {
+      "art": "Tablero",
+      "repeat": "Repetición continua"
+    },
+    "viewNotes": {
+      "art": "El tablero completo, con tus columnas y filas.",
+      "repeat": "Una pieza que encaja por todos los lados, para tela o papel pintado."
+    },
+    "stats": "Tamaño final {w}\" × {h}\". Cada casilla {bw}\" × {bh}\".",
+    "count": "Color {n}: {boxes} piezas",
+    "downloadPdf": "Descargar PDF imprimible",
+    "design": "Tablero",
+    "pattern": "Patrón",
+    "cols": "Columnas",
+    "rows": "Filas",
+    "boxShape": "Forma de las casillas",
+    "ratioWidth": "Partes de ancho",
+    "ratioHeight": "Partes de alto",
+    "unit": "Una parte mide",
+    "unitNote": "Define el tamaño final, no el aspecto.",
+    "colors": "Colores",
+    "color": "Color {n}",
+    "add": "Añadir color",
+    "remove": "Quitar color",
+    "ginghamNote": "El vichy usa dos colores y los mezcla para su tono medio.",
+    "patterns": {
+      "checker": "Tablero estándar",
+      "brick": "Ladrillo",
+      "half-drop": "Medio salto",
+      "gingham": "Vichy"
+    },
+    "patternNotes": {
+      "checker": "Las casillas se alternan en ambas direcciones.",
+      "brick": "Una de cada dos filas se desplaza media casilla, como un muro de ladrillos.",
+      "half-drop": "Una de cada dos columnas se desplaza media casilla.",
+      "gingham": "Las rayas se cruzan como una tela tejida, con un tono medio donde se encuentran con el fondo."
+    }
+  },
+  "fr": {
+    "metaTitle": "Créateur de damiers : proportions et couleurs sur mesure",
+    "metaDesc": "Créez un damier avec vos rangées, colonnes, proportions et couleurs, du damier standard aux briques 3:1, puis téléchargez un SVG, un PNG ou un PDF.",
+    "h1": "Damiers",
+    "lede": "Partez d'un damier standard, puis changez les rangées, les colonnes, les couleurs et la forme des cases, comme 3:1 ou 2:3.",
+    "loading": "Dessin du damier…",
+    "views": {
+      "art": "Damier",
+      "repeat": "Raccord continu"
+    },
+    "viewNotes": {
+      "art": "Le damier entier, selon vos colonnes et rangées.",
+      "repeat": "Un motif qui se raccorde sur tous les côtés, pour le tissu ou le papier peint."
+    },
+    "stats": "Taille finale {w}\" × {h}\". Chaque case {bw}\" × {bh}\".",
+    "count": "Couleur {n} : {boxes} éléments",
+    "downloadPdf": "Télécharger le PDF imprimable",
+    "design": "Damier",
+    "pattern": "Motif",
+    "cols": "Colonnes",
+    "rows": "Rangées",
+    "boxShape": "Forme des cases",
+    "ratioWidth": "Parts de largeur",
+    "ratioHeight": "Parts de hauteur",
+    "unit": "Une part mesure",
+    "unitNote": "Définit la taille finale, pas l'apparence.",
+    "colors": "Couleurs",
+    "color": "Couleur {n}",
+    "add": "Ajouter une couleur",
+    "remove": "Retirer une couleur",
+    "ginghamNote": "Le vichy utilise deux couleurs et les mélange pour son ton moyen.",
+    "patterns": {
+      "checker": "Damier standard",
+      "brick": "Briques",
+      "half-drop": "Demi-saut",
+      "gingham": "Vichy"
+    },
+    "patternNotes": {
+      "checker": "Les cases alternent dans les deux sens.",
+      "brick": "Une rangée sur deux est décalée d'une demi-case, comme un mur de briques.",
+      "half-drop": "Une colonne sur deux est décalée d'une demi-case.",
+      "gingham": "Les rayures se croisent comme un tissu, avec un ton moyen là où elles rencontrent le fond."
+    }
+  },
+  "de": {
+    "metaTitle": "Schachbrettmuster erstellen: eigene Proportionen und Farben",
+    "metaDesc": "Erstellen Sie ein Schachbrettmuster mit eigenen Reihen, Spalten, Proportionen und Farben, vom Standardbrett bis zu 3:1-Ziegeln, als SVG, PNG oder PDF.",
+    "h1": "Schachbrettmuster",
+    "lede": "Beginnen Sie mit einem Standardbrett und ändern Sie Reihen, Spalten, Farben und Feldform, etwa 3:1 oder 2:3.",
+    "loading": "Muster wird gezeichnet …",
+    "views": {
+      "art": "Muster",
+      "repeat": "Nahtloser Rapport"
+    },
+    "viewNotes": {
+      "art": "Das ganze Muster mit Ihren Spalten und Reihen.",
+      "repeat": "Eine Kachel, die an allen Seiten anschließt, für Stoff oder Tapete."
+    },
+    "stats": "Fertige Größe {w}\" × {h}\". Jedes Feld {bw}\" × {bh}\".",
+    "count": "Farbe {n}: {boxes} Teile",
+    "downloadPdf": "Druckbares PDF herunterladen",
+    "design": "Muster",
+    "pattern": "Muster",
+    "cols": "Spalten",
+    "rows": "Reihen",
+    "boxShape": "Feldform",
+    "ratioWidth": "Breite-Anteile",
+    "ratioHeight": "Höhe-Anteile",
+    "unit": "Ein Anteil misst",
+    "unitNote": "Legt die fertige Größe fest, nicht das Aussehen.",
+    "colors": "Farben",
+    "color": "Farbe {n}",
+    "add": "Farbe hinzufügen",
+    "remove": "Farbe entfernen",
+    "ginghamNote": "Vichy verwendet zwei Farben und mischt sie für den Mittelton.",
+    "patterns": {
+      "checker": "Standard-Schachbrett",
+      "brick": "Ziegel",
+      "half-drop": "Halber Versatz",
+      "gingham": "Vichy"
+    },
+    "patternNotes": {
+      "checker": "Die Felder wechseln sich in beiden Richtungen ab.",
+      "brick": "Jede zweite Reihe ist um ein halbes Feld versetzt, wie eine Ziegelmauer.",
+      "half-drop": "Jede zweite Spalte ist um ein halbes Feld versetzt.",
+      "gingham": "Streifen kreuzen sich wie gewebter Stoff, mit einem Mittelton, wo sie auf den Grund treffen."
+    }
+  },
+  "pt": {
+    "metaTitle": "Gerador de xadrez: proporções e cores personalizadas",
+    "metaDesc": "Crie um xadrez com suas linhas, colunas, proporção e cores, do padrão a tijolos 3:1, e baixe SVG, PNG ou PDF.",
+    "h1": "Xadrez",
+    "lede": "Comece com um xadrez padrão e mude linhas, colunas, cores e a forma das casas, como 3:1 ou 2:3.",
+    "loading": "Desenhando o xadrez…",
+    "views": {
+      "art": "Xadrez",
+      "repeat": "Repetição contínua"
+    },
+    "viewNotes": {
+      "art": "O xadrez inteiro, com suas colunas e linhas.",
+      "repeat": "Uma peça que se encaixa em todos os lados, para tecido ou papel de parede."
+    },
+    "stats": "Tamanho final {w}\" × {h}\". Cada casa {bw}\" × {bh}\".",
+    "count": "Cor {n}: {boxes} peças",
+    "downloadPdf": "Baixar PDF para imprimir",
+    "design": "Xadrez",
+    "pattern": "Padrão",
+    "cols": "Colunas",
+    "rows": "Linhas",
+    "boxShape": "Forma das casas",
+    "ratioWidth": "Partes de largura",
+    "ratioHeight": "Partes de altura",
+    "unit": "Uma parte mede",
+    "unitNote": "Define o tamanho final, não a aparência.",
+    "colors": "Cores",
+    "color": "Cor {n}",
+    "add": "Adicionar cor",
+    "remove": "Remover cor",
+    "ginghamNote": "O vichy usa duas cores e as mistura para o tom médio.",
+    "patterns": {
+      "checker": "Xadrez padrão",
+      "brick": "Tijolo",
+      "half-drop": "Meio salto",
+      "gingham": "Xadrez vichy"
+    },
+    "patternNotes": {
+      "checker": "As casas se alternam nas duas direções.",
+      "brick": "Uma linha a cada duas se desloca meia casa, como uma parede de tijolos.",
+      "half-drop": "Uma coluna a cada duas se desloca meia casa.",
+      "gingham": "As listras se cruzam como um tecido, com um tom médio onde encontram o fundo."
+    }
+  }
+}

@@ -11,7 +11,7 @@ import { thumbSrc, TOOL_OPTIONS, type ToolId } from "./toolOptions";
 /** Which thumbnails a sample kind uses, when its name differs from the tool's. */
 const TOOLS: Record<string, ToolId> = { celtic: "celticKnot" };
 /** The choice a tool opens with, for a sample whose link leaves it out. */
-const OPENING: Record<ToolId, string> = { truchet: "arcs", tessellation: "p4", girih: "10-fold", sashiko: "asanoha", celticKnot: "mirror", stainedGlass: "rose", crossStitch: "rosette", needlepoint: "kilim", tieDye: "spiral", maze: "square", fractal: "dragon-curve", knitColorwork: "little-pines", crochetColorwork: "diamond-lattice", mandala: "12-fold" };
+const OPENING: Record<ToolId, string> = { truchet: "arcs", tessellation: "p4", girih: "10-fold", sashiko: "asanoha", celticKnot: "mirror", stainedGlass: "rose", crossStitch: "rosette", needlepoint: "kilim", tieDye: "spiral", maze: "square", fractal: "dragon-curve", knitColorwork: "little-pines", crochetColorwork: "diamond-lattice", checkerboard: "checker", mandala: "12-fold" };
 const FALLBACK = thumbSrc("blocks", "log-cabin");
 
 type Sample = Extract<Post["body"][number], { type: "samples" }>["items"][number];

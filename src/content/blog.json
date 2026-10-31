@@ -1,5 +1,67 @@
 [
   {
+    "slug": "checkerboard-maker",
+    "title": "Checkerboards in any proportion",
+    "date": "2026-10-31",
+    "summary": "Start with a standard board, then set the rows, columns, colors and box shape, such as 3:1 or 2:3.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The new [checkerboard maker](/checkerboards/) opens on a standard 8 by 8 board. From there, you can stretch the boxes and shift the rows."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "checkerboard",
+            "slug": "",
+            "query": "",
+            "view": "art",
+            "caption": "A standard board"
+          },
+          {
+            "kind": "checkerboard",
+            "slug": "",
+            "query": "c=6&r=16&ratio=3-1",
+            "view": "art",
+            "caption": "Boxes three times as wide as tall"
+          },
+          {
+            "kind": "checkerboard",
+            "slug": "",
+            "query": "p=brick&c=10&r=12&ratio=2-3&k=23395d-f4ecdc-b3403a",
+            "view": "art",
+            "caption": "A 2:3 brick pattern in three colors"
+          },
+          {
+            "kind": "checkerboard",
+            "slug": "",
+            "query": "p=gingham&c=16&r=16&k=b3403a-ffffff",
+            "view": "art",
+            "caption": "Red gingham"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Standard, brick, half-drop and gingham patterns",
+          "Up to 100 columns and rows, and any box ratio up to 8:8",
+          "Two to four colors, with every palette on the site",
+          "A seamless repeat, finished sizes, piece counts, SVG, PNG and a printable PDF"
+        ]
+      }
+    ]
+  },
+  {
     "slug": "crochet-colorwork-squares",
     "title": "Crochet colorwork squares, written out in full",
     "date": "2026-10-31",

@@ -1,5 +1,26 @@
 {
   "posts": {
+    "checkerboard-maker": {
+      "title": "Tableros en cualquier proporción",
+      "summary": "Empieza con un tablero estándar y elige filas, columnas, colores y forma de las casillas, como 3:1 o 2:3.",
+      "blocks": [
+        "El nuevo [generador de tableros](/checkerboards/) se abre con un tablero estándar de 8 por 8. A partir de ahí, puedes estirar las casillas y desplazar las filas.",
+        "Muestras para empezar",
+        [
+          "Un tablero estándar",
+          "Casillas tres veces más anchas que altas",
+          "Un patrón de ladrillos 2:3 en tres colores",
+          "Vichy rojo"
+        ],
+        "Qué obtienes",
+        [
+          "Patrones estándar, de ladrillo, de medio salto y vichy",
+          "Hasta 100 columnas y filas, y cualquier proporción hasta 8:8",
+          "De dos a cuatro colores, con todas las paletas del sitio",
+          "Repetición continua, tamaños finales, recuento de piezas, SVG, PNG y PDF imprimible"
+        ]
+      ]
+    },
     "crochet-colorwork-squares": {
       "title": "Cuadrados de ganchillo multicolor, escritos por completo",
       "summary": "Gráficos de ganchillo tapestry, gráficos de esquina a esquina y cuadrados granny en tus colores, con cada vuelta y diagonal por escrito.",
@@ -500,6 +521,12 @@
     }
   },
   "changelog": {
+    "Checkerboard maker": {
+      "title": "Generador de tableros",
+      "items": [
+        "Se añadió un generador de tableros con filas, columnas, proporciones y colores a medida"
+      ]
+    },
     "Blog images": {
       "title": "Imágenes del blog",
       "items": [

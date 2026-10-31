@@ -2,6 +2,7 @@ import Link from "next/link";
 import { sampleHref, type PostSample } from "@/lib/content";
 import { generatePattern, generateStitchPattern, generateCrossStitch, generateNeedlepoint, generateTessellation, generateSashiko, generateCelticKnot, generateStainedGlass, generateMandala, generateGirih, generateTruchet, generateTieDye, generateTartan, getBlock, getStitchPattern, type Locale } from "@/lib/generator";
 import { CrochetColorworkSample } from "./CrochetColorworkSample";
+import { CheckerboardSample } from "./CheckerboardSample";
 import { FractalSample } from "./FractalSample";
 import { KnitColorworkSample } from "./KnitColorworkSample";
 import { MazeSample } from "./MazeSample";
@@ -33,7 +34,7 @@ async function sampleSvg(sample: PostSample, locale: Locale): Promise<string | n
   if (sample.kind === "stainedGlass") return (await generateStainedGlass(parseStainedGlassState(params, locale))).svg[sample.view];
   if (sample.kind === "mandala") return (await generateMandala(parseMandalaState(params, locale))).svg[sample.view];
   if (sample.kind === "girih") return (await generateGirih(parseGirihState(params, locale))).svg[sample.view];
-  if (sample.kind === "fractal" || sample.kind === "knitColorwork" || sample.kind === "crochetColorwork") return null;
+  if (sample.kind === "fractal" || sample.kind === "knitColorwork" || sample.kind === "crochetColorwork" || sample.kind === "checkerboard") return null;
   if (sample.kind === "tieDye") return (await generateTieDye(parseTieDyeState(params, locale))).svg[sample.view];
   if (sample.kind === "truchet") return (await generateTruchet(parseTruchetState(params, locale))).svg[sample.view];
   if (sample.kind === "tartan") return (await generateTartan(parseTartanState(params, locale))).svg.swatch;
@@ -51,13 +52,15 @@ export async function PostSamples({ items, locale }: { items: PostSample[]; loca
   const t = messages(locale).blog;
   const samples = await Promise.all(items.map(async (sample) => ({
     sample,
-    svg: sample.kind === "maze" || sample.kind === "fractal" || sample.kind === "knitColorwork" || sample.kind === "crochetColorwork" ? null : await sampleSvg(sample, sample.locale ?? locale),
+    svg: sample.kind === "maze" || sample.kind === "fractal" || sample.kind === "knitColorwork" || sample.kind === "crochetColorwork" || sample.kind === "checkerboard" ? null : await sampleSvg(sample, sample.locale ?? locale),
   })));
   return (
     <ul className={styles.samples}>
       {samples.map(({ sample, svg }) =>
         sample.kind === "maze" ? (
           <MazeSample key={sampleHref(sample, locale)} sample={sample} locale={locale} />
+        ) : sample.kind === "checkerboard" ? (
+          <CheckerboardSample key={sampleHref(sample, locale)} sample={sample} locale={locale} />
         ) : sample.kind === "crochetColorwork" ? (
           <CrochetColorworkSample key={sampleHref(sample, locale)} sample={sample} locale={locale} />
         ) : sample.kind === "knitColorwork" ? (

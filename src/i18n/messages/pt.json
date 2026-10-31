@@ -281,6 +281,12 @@
         "text": "Quadrados de crochê multicolorido: gráficos de tapeçaria, gráficos canto a canto e squares granny em voltas, nas suas cores.",
         "output": "Gráfico com legenda de cores, cada carreira, diagonal ou volta por escrito, fio por cor, PDF para imprimir, e SVG e PNG.",
         "explore": "Criar um quadrado multicolorido"
+      },
+      "checkerboard": {
+        "title": "Xadrez",
+        "text": "Defina linhas, colunas, cores e a forma das casas, do padrão a tijolos 3:1.",
+        "output": "SVG e PNG, repetição contínua, tamanhos finais, contagem de peças e PDF para imprimir.",
+        "explore": "Criar um xadrez"
       }
     },
     "seeAllType": "Ver tudo em {name}"

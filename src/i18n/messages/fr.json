@@ -281,6 +281,12 @@
         "text": "Des carrés au crochet multicolores : grilles tapisserie, grilles coin à coin et carrés granny en tours, dans vos couleurs.",
         "output": "Grille avec légende des couleurs, chaque rang, diagonale ou tour rédigé, fil par couleur, PDF à imprimer, et SVG et PNG.",
         "explore": "Créer un carré multicolore"
+      },
+      "checkerboard": {
+        "title": "Damiers",
+        "text": "Réglez les rangées, les colonnes, les couleurs et la forme des cases, du damier standard aux briques 3:1.",
+        "output": "SVG et PNG, raccord continu, tailles finales, nombre d'éléments et PDF imprimable.",
+        "explore": "Créer un damier"
       }
     },
     "seeAllType": "Tout voir dans {name}"

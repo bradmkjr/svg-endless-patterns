@@ -1,6 +1,14 @@
 [
   {
     "date": "2026-10-31",
+    "title": "Checkerboard maker",
+    "post": "checkerboard-maker",
+    "items": [
+      "Added a checkerboard maker with your own rows, columns, box ratios and colors"
+    ]
+  },
+  {
+    "date": "2026-10-31",
     "title": "Blog images",
     "items": [
       "Added a featured image for each post on the blog page"

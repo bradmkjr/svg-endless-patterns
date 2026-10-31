@@ -1,5 +1,26 @@
 {
   "posts": {
+    "checkerboard-maker": {
+      "title": "Schachbrettmuster in jeder Proportion",
+      "summary": "Beginnen Sie mit einem Standardbrett und legen Sie Reihen, Spalten, Farben und Feldform fest, etwa 3:1 oder 2:3.",
+      "blocks": [
+        "Das neue [Schachbrett-Werkzeug](/checkerboards/) beginnt mit einem Standardbrett von 8 mal 8. Von dort aus können Sie die Felder strecken und die Reihen versetzen.",
+        "Beispiele zum Einstieg",
+        [
+          "Ein Standardbrett",
+          "Felder, dreimal so breit wie hoch",
+          "Ein 2:3-Ziegelmuster in drei Farben",
+          "Rotes Vichy"
+        ],
+        "Das bekommen Sie",
+        [
+          "Standard-, Ziegel-, Halbversatz- und Vichy-Muster",
+          "Bis zu 100 Spalten und Reihen und jede Proportion bis 8:8",
+          "Zwei bis vier Farben, mit allen Paletten der Website",
+          "Nahtloser Rapport, fertige Größen, Teileanzahl, SVG, PNG und druckbares PDF"
+        ]
+      ]
+    },
     "crochet-colorwork-squares": {
       "title": "Mehrfarbige Häkelquadrate, vollständig ausgeschrieben",
       "summary": "Tapestry-Zählmuster, Ecke-zu-Ecke-Zählmuster und Granny Squares in deinen Farben, mit jeder Reihe, Diagonale und Runde ausgeschrieben.",
@@ -500,6 +521,12 @@
     }
   },
   "changelog": {
+    "Checkerboard maker": {
+      "title": "Schachbrett-Werkzeug",
+      "items": [
+        "Schachbrett-Werkzeug mit eigenen Reihen, Spalten, Proportionen und Farben hinzugefügt"
+      ]
+    },
     "Blog images": {
       "title": "Blog-Bilder",
       "items": [

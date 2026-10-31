@@ -75,6 +75,15 @@ English is at the root; `es`, `fr`, `de` and `pt` (Brazilian) sit under a prefix
 - Each language's colors are `html[data-locale]` tokens in `globals.css`, with
   default palettes and yarn colors in `lib/state.ts` and `lib/stitchState.ts`.
 
+## Tools
+Tartans onward each own their files: `engine/<tool>.ts`, `<tool>Pdf.ts` and tests;
+`engine/messages/<tool>.json` and `i18n/messages/<tool>.json` (all five languages in
+one file, checked by the tool's test); `lib/<tool>State.ts`; a builder and a view; and
+routes in both trees. They connect through `generator.ts`, `engine/index.ts`, the
+sitemap, `lib/libraryTools.ts`, sample kinds in `content.ts` and `PostSamples.tsx`, and
+library text under `library.tools` in the shared catalogs. `engine/wallpaper.ts` is the
+reusable symmetry engine.
+
 ## Static export limits
 No route handlers that read the request, redirects, headers, proxy or server
 actions. Link with `next/link` so the base path is applied, and with trailing

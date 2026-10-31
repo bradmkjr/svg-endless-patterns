@@ -8,6 +8,12 @@ import { patternPages } from "./patternPages";
 const PATTERN_PAGES = patternPages();
 import { parseState, serializeState } from "./state";
 import { parseStitchState, serializeStitchState } from "./stitchState";
+import { parseCrossStitchState, serializeCrossStitchState } from "./crossStitchState";
+import { parseTessellationState, serializeTessellationState } from "./tessellationState";
+import { parseSashikoState, serializeSashikoState } from "./sashikoState";
+import { parseCelticKnotState, serializeCelticKnotState } from "./celticKnotState";
+import { parseStainedGlassState, serializeStainedGlassState } from "./stainedGlassState";
+import { parseMandalaState, serializeMandalaState } from "./mandalaState";
 import { parseTartanState, serializeTartanState } from "./tartanState";
 
 const sorted = (query: string) => [...new URLSearchParams(query).entries()].map(([k, v]) => `${k}=${v}`).sort();
@@ -15,7 +21,7 @@ const sorted = (query: string) => [...new URLSearchParams(query).entries()].map(
 async function knownPaths() {
   const posts = await getPosts();
   return new Set([
-    "/", ...PREFIXED_LOCALES.map((l) => `/${l}/`), "/tartans/", "/blocks/", "/knitting/", "/crochet/", "/patterns/", "/about/", "/blog/", "/changelog/",
+    "/", ...PREFIXED_LOCALES.map((l) => `/${l}/`), "/tartans/", "/cross-stitch/", "/blocks/", "/knitting/", "/crochet/", "/patterns/", "/about/", "/blog/", "/changelog/",
     ...(await getBlocks()).map((b) => `/blocks/${b.slug}/`),
     ...(await getStitchPatterns("knit")).map((s) => `/knitting/${s.slug}/`),
     ...(await getStitchPatterns("crochet")).map((s) => `/crochet/${s.slug}/`),
@@ -55,7 +61,9 @@ describe("blog posts", () => {
 
   it.each(samples)("%s: %s deep link keeps every setting", async (_, slug, sample) => {
     // A setting the tool rejects or ignores would drop out of this round trip.
-    if (sample.kind === "tartan") {
+    if (sample.kind === "crossStitch") {
+      expect(sorted(serializeCrossStitchState(parseCrossStitchState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
+    } else if (sample.kind === "tartan") {
       expect(sorted(serializeTartanState(parseTartanState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
     } else if (sample.kind === "block") {
       const info = (await getBlock(slug))!;

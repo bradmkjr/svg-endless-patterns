@@ -95,6 +95,140 @@
         "Des carreaux originaux seulement, pour l'instant",
         "Les modèles proposés sont inventés pour ce site. Certains tartans sont réservés ou appartiennent à une famille ou une organisation : les tartans historiques nommés ne seront ajoutés qu'avec des sources documentées."
       ]
+    },
+    "cross-stitch-charts": {
+      "title": "Créez une grille imprimable de point de croix ou de canevas",
+      "summary": "Choisissez ou dessinez un motif, réglez le compte de la toile et les couleurs, et obtenez une grille de symboles, le nombre de points, une estimation approximative du fil et la taille finie.",
+      "blocks": [
+        "Le [créateur de point de croix et de canevas](/cross-stitch/) est une nouveauté de la [bibliothèque de motifs](/patterns/). Partez d'un motif ou dessinez le vôtre sur la grille, puis choisissez les couleurs et le compte de la toile.",
+        "Exemples pour commencer",
+        [
+          "Cœur",
+          "Sapin, sur toile de 18 points au pouce",
+          "Grille du voilier, pour canevas"
+        ],
+        "Ce que vous obtenez",
+        [
+          "Une grille PDF imprimable, avec un symbole par couleur et une ligne épaisse tous les 10 points",
+          "Une liste des couleurs avec le nombre de points de chacune",
+          "Une estimation approximative du fil par couleur",
+          "La taille finie selon le compte de votre toile, et la quantité de toile à couper"
+        ],
+        "Vos couleurs, nos motifs",
+        "Les couleurs sont celles que vous choisissez, sans lien avec une marque de fil : prenez le fil le plus proche dont vous disposez. Les motifs ont été dessinés pour ce site."
+      ]
+    },
+    "tessellation-maker": {
+      "title": "Créez un pavage dans l'un des 17 groupes de papier peint",
+      "summary": "Choisissez un motif, un groupe de papier peint et vos couleurs, puis téléchargez un raccord continu, une disposition de tuiles et un PDF à imprimer.",
+      "blocks": [
+        "Le [créateur de pavages](/tessellations/) est un nouvel outil de la [bibliothèque de motifs](/patterns/). Choisissez un motif, l'un des 17 groupes de papier peint et trois couleurs.",
+        "Des exemples pour commencer",
+        [
+          "Voiliers en p4g",
+          "Drapeaux en p6m",
+          "Poissons en pgg"
+        ],
+        "Ce que vous obtenez",
+        [
+          "Un raccord continu, en SVG ou PNG",
+          "Une disposition de tuiles, en SVG ou PNG, qui marque chaque raccord et une tuile",
+          "Un PDF à imprimer avec la disposition, la symétrie du groupe et un raccord"
+        ],
+        "Les groupes hexagonaux se répètent en rectangles",
+        "Les cinq groupes hexagonaux n'ont pas de raccord carré. Leur plus petit rectangle droit est environ 1,73 fois plus haut que large : c'est la forme du fichier téléchargé. Des tests vérifient les rotations, les miroirs et les glissements de chaque groupe, et que chaque raccord se rejoint à ses bords."
+      ]
+    },
+    "sashiko-stitch-guides": {
+      "title": "Imprimez un guide de sashiko en taille réelle",
+      "summary": "Choisissez un motif géométrique, une taille de grille et une taille de panneau, puis imprimez un guide en taille réelle avec des espaces aux croisements.",
+      "blocks": [
+        "Le [créateur de guides de sashiko](/sashiko/) dessine des motifs géométriques en lignes de points, prêts à imprimer et à reporter sur le tissu. Choisissez asanoha, seigaiha, shippo, kikko, kagome ou une grille simple, puis réglez la taille de la grille, la longueur du point, la taille du panneau et les couleurs.",
+        "Des exemples pour commencer",
+        [
+          "Seigaiha, écailles de 3\"",
+          "Shippo, indigo sur écru",
+          "Kikko sur anthracite"
+        ],
+        "Ce que vous obtenez",
+        [
+          "Un PDF en taille réelle, réparti sur plusieurs feuilles Letter si le panneau dépasse une feuille, avec un carré de contrôle de 1 pouce sur chaque feuille",
+          "Des points centrés sur chaque ligne, pour que les espaces tombent aux croisements et que les points ne s'y croisent pas",
+          "Un SVG et un PNG du panneau dans vos couleurs de tissu et de fil",
+          "Un nombre approximatif de points et une estimation de fil"
+        ],
+        "Ce que cet outil ne fait pas",
+        "Le sashiko est une tradition japonaise de couture, avec ses enseignants et de nombreuses façons de travailler. Cet outil ne dessine que des guides de lignes et n'affirme rien sur l'origine d'un motif. La longueur du point et l'espace sont un point de départ : adaptez-les à votre fil, votre tissu et votre main."
+      ]
+    },
+    "celtic-knot-maker": {
+      "title": "Créez un nœud celtique pour laser, pochoir ou coloriage",
+      "summary": "Construisez un nœud entrelacé sur une grille, ajoutez des coupures et téléchargez un fichier de découpe, un pochoir de tatouage, une page à colorier, un PNG ou un PDF à imprimer.",
+      "blocks": [
+        "Le [créateur de nœuds celtiques](/celtic-knots/) est un nouvel outil de la [bibliothèque de motifs](/patterns/). Choisissez une taille de grille et un motif de coupures : il trace les brins en boucles fermées qui passent tour à tour dessus et dessous.",
+        "Exemples pour commencer",
+        [
+          "Un losange de coupures",
+          "Des coupures aléatoires à partir d'une graine",
+          "Un cadre sans entrelacs, en page à colorier"
+        ],
+        "Ce que vous obtenez",
+        [
+          "Des fichiers SVG de découpe en formes fermées et remplies pour laser ou Cricut",
+          "Un pochoir de tatouage avec les bords du ruban et des espaces à chaque passage dessous",
+          "Une page à colorier avec des contours noirs sur fond blanc",
+          "Des images PNG et un PDF à imprimer"
+        ],
+        "Graines et couleurs",
+        "Les motifs aléatoires viennent d'une graine : un lien partagé ouvre donc toujours le même nœud. Les motifs en miroir, en rotation et fixes sont symétriques. Vous pouvez donner à chaque brin sa propre couleur, et la page indique combien de brins compte votre motif."
+      ]
+    },
+    "stained-glass-patterns": {
+      "posts": {
+        "stained-glass-patterns": {
+          "title": "Dessinez un panneau de vitrail et imprimez ses gabarits de coupe",
+          "summary": "Choisissez le dessin, la taille, le plomb et les couleurs, puis imprimez des gabarits numérotés grandeur nature, marge du plomb déjà appliquée.",
+          "blocks": [
+            "Le [créateur de patrons de vitrail](/stained-glass/) est un nouvel outil de la [bibliothèque de motifs](/patterns/). Choisissez l'un des quatre dessins originaux, réglez la taille du panneau et votre plomb, et prenez quatre couleurs de verre.",
+            "Exemples pour commencer",
+            [
+              "Une imposte à soleil rayonnant",
+              "Losanges",
+              "Le plan numéroté d'une bordure et centre"
+            ],
+            "Ce que vous obtenez",
+            [
+              "Un PDF avec un plan numéroté et des gabarits grandeur nature, marge du plomb appliquée et carré de contrôle de 1 pouce sur chaque feuille de gabarits",
+              "Les pièces trop grandes pour une page, réparties sur des feuilles à assembler, et signalées comme telles",
+              "Une estimation approximative du verre par couleur, avec une marge de chutes annoncée de 30 %",
+              "Un aperçu du panneau en SVG ou PNG"
+            ],
+            "Strict sur ce qui peut se couper",
+            "Une rayure ne va que droit, de bord à bord : chaque pièce a donc des côtés droits et aucun angle rentrant. Aucun angle n'est inférieur à 30 degrés, le verre coupé fait au moins 3/4\" de large et les pièces longues sont divisées. Si un dessin enfreint une règle à votre taille, l'outil réduit le détail et vous le dit. Ces limites sont des conseils prudents, pas une garantie, et les estimations sont approximatives : vérifiez avec votre plomb et votre fournisseur."
+          ]
+        }
+      }
+    },
+    "mandala-maker": {
+      "title": "Générez des motifs radiaux géométriques et des pages à colorier",
+      "summary": "Choisissez la symétrie, les anneaux, les formes et les couleurs pour générer un motif radial original, puis téléchargez-le en couleur ou en page à colorier.",
+      "blocks": [
+        "Le [créateur de mandalas](/mandalas/) génère des motifs radiaux géométriques depuis la [bibliothèque de motifs](/patterns/). Choisissez de 6 à 24 répétitions de symétrie, de 2 à 8 anneaux et les formes que chaque anneau peut utiliser : pétales, arcs, points, festons, losanges ou triangles.",
+        "Des exemples pour commencer",
+        [
+          "Huit répétitions, pétales et points",
+          "Seize répétitions, sept anneaux",
+          "Une page à colorier à 24 répétitions"
+        ],
+        "Ce que vous obtenez",
+        [
+          "Un motif en couleur, en SVG ou PNG",
+          "Une page à colorier en noir sur blanc, en SVG ou PNG",
+          "Un PDF à imprimer avec le motif en couleur et la page à colorier",
+          "Un lien de partage qui rouvre le même motif"
+        ],
+        "La même graine et les mêmes réglages donnent toujours le même motif. Ce sont des formes générées : elles ne copient aucun motif traditionnel et ne portent aucune signification voulue."
+      ]
     }
   },
   "changelog": {
@@ -153,6 +287,46 @@
       "title": "Créateur de tartans et de carreaux",
       "items": [
         "Ajout d'un créateur de tartans et de carreaux, avec échantillons continus, guides de tissage et estimations de fil"
+      ]
+    },
+    "Cross-stitch and needlepoint maker": {
+      "title": "Créateur de point de croix et de canevas",
+      "items": [
+        "Ajout d'un créateur de point de croix et de canevas, avec grille modifiable, grilles de symboles imprimables, nombre de points, estimations approximatives du fil et tailles finies"
+      ]
+    },
+    "Tessellation maker": {
+      "title": "Créateur de pavages",
+      "items": [
+        "Ajout d'un créateur de pavages avec les 17 groupes de papier peint, des raccords continus, des dispositions de tuiles et des PDF à imprimer"
+      ]
+    },
+    "Sashiko stitch guides": {
+      "title": "Guides de points de sashiko",
+      "items": [
+        "Ajout d'un créateur de guides de sashiko, avec des guides imprimables en taille réelle, des espaces aux croisements et des panneaux SVG et PNG"
+      ]
+    },
+    "Celtic knot maker": {
+      "title": "Créateur de nœuds celtiques",
+      "items": [
+        "Ajout d'un créateur de nœuds celtiques, avec fichiers de découpe, pochoirs de tatouage, pages à colorier, PNG et PDF à imprimer"
+      ]
+    },
+    "Stained glass pattern maker": {
+      "changelog": {
+        "Stained glass pattern maker": {
+          "title": "Créateur de patrons de vitrail",
+          "items": [
+            "Ajout d'un créateur de patrons de vitrail, avec gabarits numérotés grandeur nature, règles de coupe strictes et estimation approximative du verre"
+          ]
+        }
+      }
+    },
+    "Mandala maker": {
+      "title": "Créateur de mandalas",
+      "items": [
+        "Ajout d'un créateur de mandalas pour des motifs radiaux géométriques, avec SVG et PNG en couleur, pages à colorier et PDF à imprimer"
       ]
     }
   }

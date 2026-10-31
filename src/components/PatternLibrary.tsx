@@ -2,6 +2,7 @@ import Link from "next/link";
 import { generatePattern, generateStitchPattern, generateTartan, getBlock, getStitchPattern, type Locale } from "@/lib/generator";
 import { defaultTartanState } from "@/lib/tartanState";
 import { fill, localePath, messages } from "@/lib/i18n";
+import { libraryTools } from "@/lib/libraryTools";
 import { patternPages, type PatternPage as PatternPageData } from "@/lib/patternPages";
 import { publicPath } from "@/lib/site";
 import { defaultState } from "@/lib/state";
@@ -29,6 +30,7 @@ export async function PatternLibrary({ locale }: { locale: Locale }) {
   const knit = await stitchArtUrl("knit", "seed-stitch", locale);
   const crochet = await stitchArtUrl("crochet", "mesh-stitch", locale);
   const tartan = (await generateTartan(defaultTartanState(locale))).svg.swatch;
+  const tools = await libraryTools(locale);
   const swatch = (art: typeof knit) => (
     <div
       className={styles.art}
@@ -87,6 +89,25 @@ export async function PatternLibrary({ locale }: { locale: Locale }) {
           </p>
           <Link href={href("/tartans/")}>{t.exploreTartan}</Link>
         </article>
+        {tools.map((tool) => {
+          const text = t.tools[tool.id as keyof typeof t.tools];
+          return (
+            <article className={styles.card} key={tool.id}>
+              {tool.svg ? (
+                <div className={`art ${styles.art}`} role="img" aria-label={text.title} dangerouslySetInnerHTML={{ __html: tool.svg }} />
+              ) : (
+                <div className={styles.art} role="img" aria-label={text.title} style={{ backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(tool.tile!)}")`, backgroundSize: "50% auto" }} />
+              )}
+              <span className={styles.status}>{t.available}</span>
+              <h2>{text.title}</h2>
+              <p>{text.text}</p>
+              <p>
+                <strong>{t.usefulOutput}</strong> {text.output}
+              </p>
+              <Link href={href(tool.href)}>{text.explore}</Link>
+            </article>
+          );
+        })}
         {patternPages(locale).map((page) => (
           <article className={styles.card} key={page.slug}>
             <StaticSample page={page} className={styles.art} />

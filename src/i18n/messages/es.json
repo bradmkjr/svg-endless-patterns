@@ -171,7 +171,7 @@
     "metaTitle": "Biblioteca de patrones",
     "metaDesc": "Descubre creadores de patrones para colchas, nudos celtas, estrellas geométricas, teselados, tartanes, sashiko, punto de cruz y vidrieras.",
     "h1": "Biblioteca de patrones",
-    "lede": "Patrones tradicionales y geométricos de distintas artesanías. Las colchas, el punto, el ganchillo y los tartanes ya tienen herramientas; las demás están previstas.",
+    "lede": "Patrones tradicionales y geométricos de distintas artesanías. Cada uno tiene su propia herramienta, salvo los marcados como próximamente.",
     "available": "Disponible",
     "comingSoon": "Próximamente",
     "quiltTitle": "Bloques de colcha",
@@ -196,53 +196,56 @@
     "detailDesc": "{summary} Personaliza: {customize} Resultado previsto: {output}",
     "swatchAlt": "Ilustración de {name}",
     "pages": {
-      "celtic-knots": {
-        "title": "Nudos celtas",
-        "summary": "Crea entrelazados a partir de una cuadrícula, con cintas que pasan claramente por encima y por debajo.",
-        "customize": "Cuadrícula, cortes, ancho de la cinta y entrelazado.",
-        "output": "SVG para láser o Cricut, plantilla de tatuaje o página para colorear.",
-        "sampleAlt": "Un trenzado celta cuadrado de una cinta de un solo color que pasa por encima y por debajo de sí misma."
-      },
       "girih": {
         "title": "Estrellas geométricas y girih",
         "summary": "Explora patrones de estrellas geométricas y composiciones inspiradas en el girih.",
         "customize": "Simetría, tipo de estrella y grosor de línea.",
         "output": "Archivos de azulejo, plantilla o panel de pared.",
         "sampleAlt": "Filas de estrellas de ocho puntas en azul marino y dorado, con cruces color óxido entre ellas."
-      },
-      "tessellations": {
-        "title": "Teselados",
-        "summary": "Crea motivos repetidos con cualquiera de los 17 grupos cristalográficos planos.",
-        "customize": "Motivo, grupo de simetría y colores.",
-        "output": "Una repetición continua o una disposición de azulejos.",
-        "sampleAlt": "Un motivo anguloso azul marino y óxido, girado a cuartos de vuelta y repetido por toda la página."
-      },
-      "sashiko": {
-        "title": "Sashiko",
-        "summary": "Distribuye motivos de sashiko para bordar a mano.",
-        "customize": "Motivo, separación y tamaño del panel.",
-        "output": "Una guía de puntadas para imprimir y transferir.",
-        "sampleAlt": "Puntadas blancas sobre índigo que forman un patrón repetido de hojas de cáñamo."
-      },
-      "cross-stitch": {
-        "title": "Punto de cruz y tapicería",
-        "summary": "Planifica diseños de hilos contados con detalles de tela y hebras.",
-        "customize": "Motivo, cuenta de la tela y colores de hilo.",
-        "output": "Un gráfico, lista de hilos y tamaño final.",
-        "sampleAlt": "Una flor roja, dorada y verde hecha de cruces sobre una cuadrícula."
-      },
-      "stained-glass": {
-        "title": "Vidrieras",
-        "summary": "Divide un diseño en piezas numeradas, con espacio para las líneas de plomo.",
-        "customize": "Composición, ancho del plomo y colores del vidrio.",
-        "output": "Patrones de corte numerados y una estimación de vidrio.",
-        "sampleAlt": "Un panel cuadrado en rosetón de vidrio rojo, dorado y azul, con líneas de plomo oscuras y piezas numeradas."
       }
     },
     "tartanTitle": "Tartanes y cuadros",
     "tartanText": "Ordena hilos de colores en un cuadro equilibrado y repetido.",
     "tartanOutput": "Muestra continua, guía de tejido y estimación de hilo.",
-    "exploreTartan": "Crear un cuadro"
+    "exploreTartan": "Crear un cuadro",
+    "tools": {
+      "crossStitch": {
+        "title": "Punto de cruz y bordado sobre cañamazo",
+        "text": "Elige o dibuja un motivo y ajusta el conteo de la tela y los colores.",
+        "output": "Gráfico de símbolos imprimible, número de puntos, estimación aproximada de hilo y tamaño final.",
+        "explore": "Crear un gráfico"
+      },
+      "tessellation": {
+        "title": "Teselaciones",
+        "text": "Repite un motivo con cualquiera de los 17 grupos de papel tapiz, desde simples traslaciones hasta giros de seis órdenes con espejos.",
+        "output": "Una repetición continua en SVG o PNG, una disposición de piezas y un PDF para imprimir.",
+        "explore": "Crear una teselación"
+      },
+      "sashiko": {
+        "title": "Guías de puntadas de sashiko",
+        "text": "Dispón motivos geométricos de sashiko como líneas de puntada, con huecos en los cruces.",
+        "output": "Guía imprimible a tamaño real, en hojas carta, además de SVG y PNG.",
+        "explore": "Crear una guía de puntadas"
+      },
+      "celticKnot": {
+        "title": "Nudos celtas",
+        "text": "Construye un nudo entrelazado sobre una cuadrícula, con cortes que cambian cómo se enlazan las hebras.",
+        "output": "SVG para láser o Cricut, plantilla de tatuaje, página para colorear, PNG y PDF imprimible.",
+        "explore": "Crear un nudo"
+      },
+      "stainedGlass": {
+        "title": "Vidriera",
+        "text": "Diseña un panel original de vidriera a partir de cuatro composiciones paramétricas, con piezas que de verdad se pueden cortar a mano.",
+        "output": "Plantillas numeradas a tamaño real con margen para el perfil, una estimación aproximada de vidrio por color y una vista previa en SVG o PNG.",
+        "explore": "Abrir el creador de vidrieras"
+      },
+      "mandala": {
+        "title": "Mandalas",
+        "text": "Genera diseños radiales geométricos originales a partir de anillos de formas sencillas.",
+        "output": "SVG o PNG en color, página para colorear y PDF imprimible.",
+        "explore": "Crear un diseño radial"
+      }
+    }
   },
   "about": {
     "metaTitle": "Cómo funcionan los cálculos",

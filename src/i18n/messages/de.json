@@ -171,7 +171,7 @@
     "metaTitle": "Musterbibliothek",
     "metaDesc": "Entdecke Mustergeneratoren für Quilts, keltische Knoten, geometrische Sterne, Parkettierungen, Tartans, Sashiko, Kreuzstich und Buntglas.",
     "h1": "Musterbibliothek",
-    "lede": "Traditionelle und geometrische Muster aus vielen Handwerken. Für Quilts, Stricken, Häkeln und Tartans gibt es schon Werkzeuge, die anderen sind geplant.",
+    "lede": "Traditionelle und geometrische Muster aus vielen Handwerken. Jedes hat ein eigenes Werkzeug, außer es ist als „demnächst“ markiert.",
     "available": "Verfügbar",
     "comingSoon": "Demnächst",
     "quiltTitle": "Quiltblöcke",
@@ -196,53 +196,56 @@
     "detailDesc": "{summary} Anpassen: {customize} Geplantes Ergebnis: {output}",
     "swatchAlt": "Illustration von {name}",
     "pages": {
-      "celtic-knots": {
-        "title": "Keltische Knoten",
-        "summary": "Erstelle Flechtwerk aus einem Raster, mit klar über- und untereinander laufenden Bändern.",
-        "customize": "Raster, Unterbrechungen, Bandbreite und Verflechtung.",
-        "output": "SVG für Laser oder Cricut, Tattoo-Vorlage oder Ausmalbild.",
-        "sampleAlt": "Ein quadratischer keltischer Zopf aus einem einfarbigen Band, das über und unter sich selbst verläuft."
-      },
       "girih": {
         "title": "Geometrische Sterne und Girih",
         "summary": "Entdecke geometrische Sternmuster und vom Girih inspirierte Anordnungen.",
         "customize": "Symmetrie, Sternart und Linienstärke.",
         "output": "Dateien für Fliesen, Schablonen oder Wandpaneele.",
         "sampleAlt": "Reihen achtzackiger Sterne in Marineblau und Gold, mit rostfarbenen Kreuzen dazwischen."
-      },
-      "tessellations": {
-        "title": "Parkettierungen",
-        "summary": "Erstelle wiederholte Motive mit einer der 17 Wandmustergruppen.",
-        "customize": "Motiv, Symmetriegruppe und Farben.",
-        "output": "Ein nahtloser Rapport oder ein Fliesenplan.",
-        "sampleAlt": "Ein kantiges Motiv in Marineblau und Rost, in Vierteldrehungen über die ganze Seite wiederholt."
-      },
-      "sashiko": {
-        "title": "Sashiko",
-        "summary": "Ordne Sashiko-Motive für das Sticken von Hand an.",
-        "customize": "Motiv, Abstand und Größe der Fläche.",
-        "output": "Eine Stichanleitung zum Ausdrucken und Übertragen.",
-        "sampleAlt": "Weiße Vorstiche auf Indigo, die ein wiederholtes Hanfblattmuster bilden."
-      },
-      "cross-stitch": {
-        "title": "Kreuzstich und Gobelin",
-        "summary": "Plane Zählmuster mit Angaben zu Stoff und Garn.",
-        "customize": "Motiv, Stoffzählung und Garnfarben.",
-        "output": "Ein Diagramm, eine Garnliste und die fertige Größe.",
-        "sampleAlt": "Eine rot-gold-grüne Blume aus Kreuzstichen auf einem Raster."
-      },
-      "stained-glass": {
-        "title": "Buntglas",
-        "summary": "Teile ein Motiv in nummerierte Stücke, mit Platz für die Bleilinien.",
-        "customize": "Aufbau, Bleibreite und Glasfarben.",
-        "output": "Nummerierte Zuschnittvorlagen und eine Glasschätzung.",
-        "sampleAlt": "Ein quadratisches Rosettenfenster aus rotem, goldenem und blauem Glas, mit dunklen Bleilinien und nummerierten Stücken."
       }
     },
     "tartanTitle": "Tartans und Karos",
     "tartanText": "Ordne farbige Fäden zu einem ausgewogenen, wiederholten Karo an.",
     "tartanOutput": "Nahtloses Muster, Webanleitung und Garnschätzung.",
-    "exploreTartan": "Karo gestalten"
+    "exploreTartan": "Karo gestalten",
+    "tools": {
+      "crossStitch": {
+        "title": "Kreuzstich und Stramin-Stickerei",
+        "text": "Wähle oder zeichne ein Motiv und stelle dann Stoffzählung und Farben ein.",
+        "output": "Druckbare Symbolvorlage, Stichzahlen, grobe Garnschätzung und fertige Größe.",
+        "explore": "Vorlage erstellen"
+      },
+      "tessellation": {
+        "title": "Parkettierungen",
+        "text": "Wiederhole ein Motiv nach einer der 17 Ornamentgruppen, von reinen Verschiebungen bis zu sechszähligen Drehungen mit Spiegeln.",
+        "output": "Ein nahtloser Rapport als SVG oder PNG, eine Kachelanordnung und ein druckbares PDF.",
+        "explore": "Parkettierung erstellen"
+      },
+      "sashiko": {
+        "title": "Sashiko-Stichvorlagen",
+        "text": "Lege geometrische Sashiko-Motive als gestrichelte Stichlinien an, mit Lücken an den Kreuzungen.",
+        "output": "Druckvorlage in Originalgröße auf Letter-Blättern, dazu SVG und PNG.",
+        "explore": "Stichvorlage erstellen"
+      },
+      "celticKnot": {
+        "title": "Keltische Knoten",
+        "text": "Baue einen Flechtknoten auf einem Raster, mit Unterbrechungen, die verändern, wie sich die Stränge verbinden.",
+        "output": "SVG für Laser oder Cricut, Tattoo-Schablone, Ausmalbild, PNG und druckbares PDF.",
+        "explore": "Knoten erstellen"
+      },
+      "stainedGlass": {
+        "title": "Bleiglas",
+        "text": "Entwerfen Sie ein eigenes Bleiglasfenster aus vier parametrischen Entwürfen, mit Teilen, die sich wirklich von Hand schneiden lassen.",
+        "output": "Nummerierte Schablonen in Originalgröße mit Profilzugabe, eine grobe Glasschätzung je Farbe und eine Vorschau als SVG oder PNG.",
+        "explore": "Bleiglas-Generator öffnen"
+      },
+      "mandala": {
+        "title": "Mandalas",
+        "text": "Erzeuge eigene geometrische Radialmuster aus Ringen einfacher Formen.",
+        "output": "Farbiges SVG oder PNG, Ausmalbild und druckbares PDF.",
+        "explore": "Radialmuster erstellen"
+      }
+    }
   },
   "about": {
     "metaTitle": "So funktionieren die Berechnungen",

@@ -14,6 +14,19 @@ import type { BlockInfo, CutLine, PatternRequest, PatternResult } from "./types"
 
 export type * from "./types";
 export { LOCALES } from "./i18n";
+export { generateCrossStitch } from "./crossStitch";
+export type { CrossStitchColor, CrossStitchCraft, CrossStitchRequest, CrossStitchResult } from "./crossStitch";
+export { generateTessellation, listTessellationOptions } from "./tessellation";
+export type { TessellationColors, TessellationMotif, TessellationOptions, TessellationRequest, TessellationResult } from "./tessellation";
+export type { GroupId } from "./wallpaper";
+export { generateSashiko } from "./sashiko";
+export type { SashikoMotif, SashikoRequest, SashikoResult } from "./sashiko";
+export { generateCelticKnot } from "./celticKnot";
+export type { CelticBreakPattern, CelticInterlace, CelticKnotRequest, CelticKnotResult, CelticStrand } from "./celticKnot";
+export { generateStainedGlass } from "./stainedGlass";
+export type { StainedGlassColor, StainedGlassLayout, StainedGlassPiece, StainedGlassRequest, StainedGlassResult } from "./stainedGlass";
+export { generateMandala } from "./mandala";
+export type { MandalaMotif, MandalaRequest, MandalaResult, MandalaRing } from "./mandala";
 export { generateTartan } from "./tartan";
 export type { TartanRequest, TartanResult, TartanStripe } from "./tartan";
 export { generateStitchPattern, listStitchPatterns } from "./stitchPattern";

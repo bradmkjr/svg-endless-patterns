@@ -95,6 +95,140 @@
         "Vorerst nur eigene Karos",
         "Die Vorlagen wurden für diese Website erfunden. Manche Tartans sind geschützt oder gehören einer Familie oder Organisation, daher kommen benannte historische Tartans nur mit belegten Quellen hinzu."
       ]
+    },
+    "cross-stitch-charts": {
+      "title": "Erstelle eine druckbare Vorlage für Kreuzstich oder Stramin",
+      "summary": "Wähle oder zeichne ein Motiv, stelle Stoffzählung und Farben ein und erhalte eine Symbolvorlage, Stichzahlen, eine grobe Garnschätzung und die fertige Größe.",
+      "blocks": [
+        "Der [Vorlagen-Ersteller für Kreuzstich und Stramin](/cross-stitch/) ist neu in der [Musterbibliothek](/patterns/). Beginne mit einem Motiv oder zeichne dein eigenes im Raster, und wähle dann Farben und Stoffzählung.",
+        "Beispiele zum Einstieg",
+        [
+          "Herz",
+          "Kiefer, auf Stoff mit 18 Stichen pro Zoll",
+          "Vorlage des Segelboots, für Stramin"
+        ],
+        "Was du bekommst",
+        [
+          "Eine druckbare PDF-Vorlage mit einem Symbol pro Farbe und einer dicken Linie alle 10 Stiche",
+          "Eine Farbliste mit der Stichzahl jeder Farbe",
+          "Eine grobe Garnschätzung pro Farbe",
+          "Die fertige Größe bei deiner Stoffzählung und die zuzuschneidende Stoffmenge"
+        ],
+        "Deine Farben, unsere Motive",
+        "Die Farben wählst du selbst, sie sind keiner Garnmarke zugeordnet. Nimm also das ähnlichste Garn, das du hast. Die Motive wurden für diese Seite gezeichnet."
+      ]
+    },
+    "tessellation-maker": {
+      "title": "Erstelle eine Parkettierung in einer der 17 Ornamentgruppen",
+      "summary": "Wähle ein Motiv, eine Ornamentgruppe und deine Farben und lade dann einen nahtlosen Rapport, eine Kachelanordnung und ein druckbares PDF herunter.",
+      "blocks": [
+        "Der [Parkettierungs-Generator](/tessellations/) ist ein neues Werkzeug aus der [Musterbibliothek](/patterns/). Wähle ein Motiv, eine der 17 Ornamentgruppen und drei Farben.",
+        "Beispiele für den Einstieg",
+        [
+          "Segelboote in p4g",
+          "Fahnen in p6m",
+          "Fische in pgg"
+        ],
+        "Was du bekommst",
+        [
+          "Einen nahtlosen Rapport als SVG oder PNG",
+          "Eine Kachelanordnung als SVG oder PNG, die jeden Rapport und eine Kachel markiert",
+          "Ein druckbares PDF mit der Anordnung, der Symmetrie der Gruppe und einem Rapport"
+        ],
+        "Hexagonale Gruppen wiederholen sich als Rechtecke",
+        "Die fünf hexagonalen Gruppen haben keinen quadratischen Rapport. Ihr kleinstes aufrechtes Rechteck ist etwa 1,73-mal so hoch wie breit, und das ist auch die Form der heruntergeladenen Datei. Tests prüfen die Drehungen, Spiegel und Gleitspiegelungen jeder Gruppe und dass jeder Rapport an seinen Kanten zu sich selbst passt."
+      ]
+    },
+    "sashiko-stitch-guides": {
+      "title": "Eine Sashiko-Stichvorlage in Originalgröße drucken",
+      "summary": "Wähle ein geometrisches Motiv, eine Rastergröße und eine Stückgröße und drucke eine Vorlage in Originalgröße mit Lücken an den Kreuzungen.",
+      "blocks": [
+        "Der [Sashiko-Vorlagengenerator](/sashiko/) zeichnet geometrische Motive als gestrichelte Stichlinien, bereit zum Drucken und Übertragen auf den Stoff. Wähle Asanoha, Seigaiha, Shippo, Kikko, Kagome oder ein einfaches Raster und stelle Rastergröße, Stichlänge, Stückgröße und Farben ein.",
+        "Beispiele für den Anfang",
+        [
+          "Seigaiha, Schuppen von 3\"",
+          "Shippo, Indigo auf Naturweiß",
+          "Kikko auf Anthrazit"
+        ],
+        "Das bekommst du",
+        [
+          "Ein PDF in Originalgröße, auf mehrere Letter-Blätter verteilt, wenn das Stück größer als ein Blatt ist, mit einem Prüfquadrat von 1 Zoll auf jedem Blatt",
+          "Stiche, die auf jeder Linie zentriert sind, sodass Lücken auf die Kreuzungen fallen und sich die Stiche dort nicht kreuzen",
+          "Ein SVG und ein PNG des Stücks in deinen Stoff- und Garnfarben",
+          "Eine ungefähre Stichzahl und eine Garnschätzung"
+        ],
+        "Was dieses Werkzeug nicht tut",
+        "Sashiko ist eine japanische Sticktradition mit eigenen Lehrenden und vielen Arbeitsweisen. Dieses Werkzeug zeichnet nur Linienvorlagen und macht keine Aussagen darüber, woher ein Motiv stammt. Stichlänge und Lücke sind ein Ausgangspunkt, passe sie also an Garn, Stoff und deine Hand an."
+      ]
+    },
+    "celtic-knot-maker": {
+      "title": "Einen keltischen Knoten für Laser, Schablone oder Ausmalbild erstellen",
+      "summary": "Baue einen Flechtknoten auf einem Raster, füge Unterbrechungen hinzu und lade eine Schneidedatei, eine Tattoo-Schablone, ein Ausmalbild, ein PNG oder ein druckbares PDF herunter.",
+      "blocks": [
+        "Der [Generator für keltische Knoten](/celtic-knots/) ist ein neues Werkzeug aus der [Musterbibliothek](/patterns/). Wähle eine Rastergröße und ein Muster aus Unterbrechungen, und er führt die Stränge zu geschlossenen Schleifen, die abwechselnd oben und unten laufen.",
+        "Beispiele zum Einstieg",
+        [
+          "Eine Raute aus Unterbrechungen",
+          "Zufällige Unterbrechungen aus einem Startwert",
+          "Ein Rahmen ohne Verflechtung, als Ausmalbild"
+        ],
+        "Das bekommst du",
+        [
+          "SVG-Schneidedateien aus geschlossenen, gefüllten Formen für Laser oder Cricut",
+          "Eine Tattoo-Schablone aus Bandkanten, mit Lücken an jeder Unterkreuzung",
+          "Ein Ausmalbild mit schwarzen Umrissen auf Weiß",
+          "PNG-Bilder und ein druckbares PDF"
+        ],
+        "Startwerte und Farben",
+        "Zufällige Muster entstehen aus einem Startwert, daher öffnet ein geteilter Link immer denselben Knoten. Gespiegelte, gedrehte und feste Muster sind symmetrisch. Du kannst jedem Strang eine eigene Farbe geben, und die Seite zeigt dir, wie viele Stränge dein Entwurf hat."
+      ]
+    },
+    "stained-glass-patterns": {
+      "posts": {
+        "stained-glass-patterns": {
+          "title": "Entwerfen Sie ein Bleiglasfenster und drucken Sie die Schnittschablonen",
+          "summary": "Wählen Sie Entwurf, Größe, Profil und Farben und drucken Sie nummerierte Schablonen in Originalgröße, mit bereits eingerechneter Profilzugabe.",
+          "blocks": [
+            "Der [Bleiglas-Mustergenerator](/stained-glass/) ist ein neues Werkzeug aus der [Musterbibliothek](/patterns/). Wählen Sie einen von vier eigenen Entwürfen, stellen Sie Fenstergröße und Profil ein und wählen Sie vier Glasfarben.",
+            "Beispiele zum Einstieg",
+            [
+              "Ein Oberlicht mit Sonnenstrahlen",
+              "Rautenfelder",
+              "Der nummerierte Plan für Bordüre und Mitte"
+            ],
+            "Was Sie bekommen",
+            [
+              "Ein PDF mit nummeriertem Plan und Schablonen in Originalgröße, mit eingerechneter Profilzugabe und einem 1-Zoll-Kontrollquadrat auf jedem Schablonenblatt",
+              "Teile, die größer als eine Seite sind, auf Blätter zum Zusammenkleben verteilt und als solche aufgeführt",
+              "Eine grobe Glasschätzung je Farbe, mit einer ausgewiesenen Zugabe von 30 % für Verschnitt",
+              "Eine Fenstervorschau als SVG oder PNG"
+            ],
+            "Streng bei dem, was sich schneiden lässt",
+            "Ein Ritz läuft nur gerade von Kante zu Kante, daher hat jedes Teil gerade Seiten und keine Innenecken. Keine Ecke liegt unter 30 Grad, geschnittenes Glas ist mindestens 3/4\" breit, und lange Teile werden geteilt. Verstößt ein Entwurf bei Ihrer Größe gegen eine Regel, senkt das Werkzeug das Detail und sagt es Ihnen. Diese Grenzen sind vorsichtige Hinweise, keine Garantie, und die Schätzungen sind grob; prüfen Sie sie mit Ihrem Profil und Ihrem Händler."
+          ]
+        }
+      }
+    },
+    "mandala-maker": {
+      "title": "Geometrische Radialmuster und Ausmalbilder erzeugen",
+      "summary": "Wähle Symmetrie, Ringe, Motive und Farben, um ein eigenes Radialmuster zu erzeugen, und lade es farbig oder als Ausmalbild herunter.",
+      "blocks": [
+        "Der [Mandala-Generator](/mandalas/) erzeugt geometrische Radialmuster aus der [Musterbibliothek](/patterns/). Wähle 6 bis 24 Wiederholungen, 2 bis 8 Ringe und die Motive, die jeder Ring verwenden darf: Blütenblätter, Bögen, Punkte, Bogenkanten, Rauten oder Dreiecke.",
+        "Beispiele für den Anfang",
+        [
+          "Acht Wiederholungen, Blütenblätter und Punkte",
+          "Sechzehn Wiederholungen, sieben Ringe",
+          "Ein Ausmalbild mit 24 Wiederholungen"
+        ],
+        "Was du bekommst",
+        [
+          "Ein farbiges Muster als SVG oder PNG",
+          "Ein Ausmalbild in Schwarz auf Weiß als SVG oder PNG",
+          "Ein druckbares PDF mit dem farbigen Muster und dem Ausmalbild",
+          "Einen Link, der dasselbe Muster wieder öffnet"
+        ],
+        "Derselbe Startwert mit denselben Einstellungen ergibt immer dasselbe Muster. Es sind erzeugte Formen: Sie kopieren kein traditionelles Muster und haben keine beabsichtigte Bedeutung."
+      ]
     }
   },
   "changelog": {
@@ -153,6 +287,46 @@
       "title": "Tartan- und Karo-Generator",
       "items": [
         "Tartan- und Karo-Generator mit nahtlosen Mustern, Webanleitungen und Garnschätzungen ergänzt"
+      ]
+    },
+    "Cross-stitch and needlepoint maker": {
+      "title": "Vorlagen für Kreuzstich und Stramin",
+      "items": [
+        "Vorlagen-Ersteller für Kreuzstich und Stramin hinzugefügt, mit bearbeitbarem Raster, druckbaren Symbolvorlagen, Stichzahlen, groben Garnschätzungen und fertigen Größen"
+      ]
+    },
+    "Tessellation maker": {
+      "title": "Parkettierungs-Generator",
+      "items": [
+        "Parkettierungs-Generator mit allen 17 Ornamentgruppen, nahtlosen Rapporten, Kachelanordnungen und druckbaren PDFs hinzugefügt"
+      ]
+    },
+    "Sashiko stitch guides": {
+      "title": "Sashiko-Stichvorlagen",
+      "items": [
+        "Sashiko-Vorlagengenerator hinzugefügt, mit Druckvorlagen in Originalgröße, Lücken an den Kreuzungen sowie SVG- und PNG-Stücken"
+      ]
+    },
+    "Celtic knot maker": {
+      "title": "Generator für keltische Knoten",
+      "items": [
+        "Generator für keltische Knoten hinzugefügt, mit Schneidedateien, Tattoo-Schablonen, Ausmalbildern, PNG und druckbarem PDF"
+      ]
+    },
+    "Stained glass pattern maker": {
+      "changelog": {
+        "Stained glass pattern maker": {
+          "title": "Bleiglas-Mustergenerator",
+          "items": [
+            "Bleiglas-Mustergenerator hinzugefügt, mit nummerierten Schablonen in Originalgröße, strengen Schneideregeln und einer groben Glasschätzung"
+          ]
+        }
+      }
+    },
+    "Mandala maker": {
+      "title": "Mandala-Generator",
+      "items": [
+        "Mandala-Generator für geometrische Radialmuster hinzugefügt, mit farbigem SVG und PNG, Ausmalbildern und druckbaren PDFs"
       ]
     }
   }

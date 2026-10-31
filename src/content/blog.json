@@ -1,5 +1,378 @@
 [
   {
+    "slug": "mandala-maker",
+    "title": "Generate geometric radial designs and coloring pages",
+    "date": "2026-10-30",
+    "summary": "Choose a symmetry, rings, motifs and colors to generate an original radial design, then download it in color or as a coloring page.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The [mandala maker](/mandalas/) generates geometric radial designs from the [pattern library](/patterns/). Pick 6 to 24 folds of symmetry, 2 to 8 rings, and the motifs each ring may use: petals, arcs, dots, scallops, diamonds or triangles."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "mandala",
+            "slug": "",
+            "query": "n=8&m=petals.dots&seed=7",
+            "view": "art",
+            "caption": "Eight folds, petals and dots"
+          },
+          {
+            "kind": "mandala",
+            "slug": "",
+            "query": "n=16&r=7&seed=314",
+            "view": "art",
+            "caption": "Sixteen folds, seven rings"
+          },
+          {
+            "kind": "mandala",
+            "slug": "",
+            "query": "n=24&r=4&m=scallops.diamonds&seed=2718",
+            "view": "coloring",
+            "caption": "A coloring page with 24 folds"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "A colored design, as SVG or PNG",
+          "A black-on-white coloring page, as SVG or PNG",
+          "A printable PDF with the colored design and the coloring page",
+          "A share link that reopens the same design"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "The same seed and settings always give the same design. These are generated shapes: they don't copy a traditional design, and they carry no intended meaning."
+      }
+    ]
+  },
+  {
+    "slug": "stained-glass-patterns",
+    "title": "Design a stained glass panel and print its cutting templates",
+    "date": "2026-10-30",
+    "summary": "Choose a design, size, came and colors, then print numbered true-size templates with the came allowance already applied.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The [stained glass pattern maker](/stained-glass/) is a new tool from the [pattern library](/patterns/). Choose one of four original designs, set the panel size and your came, and pick four glass colors."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "stainedGlass",
+            "slug": "",
+            "query": "l=sunburst&w=24&d=3",
+            "view": "panel",
+            "caption": "A sunburst transom"
+          },
+          {
+            "kind": "stainedGlass",
+            "slug": "",
+            "query": "l=quarries&w=12&h=24",
+            "view": "panel",
+            "caption": "Diamond quarries"
+          },
+          {
+            "kind": "stainedGlass",
+            "slug": "",
+            "query": "l=medallion&w=20&h=20&d=3",
+            "view": "numbered",
+            "caption": "The numbered key for a border and center"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "A PDF with a numbered key and true-size templates, with the came allowance applied and a 1 inch check square on every template sheet",
+          "Pieces too big for a page tiled over taped sheets, and listed as such",
+          "A rough glass estimate for each color, including a stated 30% waste allowance",
+          "A panel preview as SVG or PNG"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Strict about what can be cut"
+      },
+      {
+        "type": "paragraph",
+        "text": "A score only runs straight from edge to edge, so every piece has straight sides and no inside corners. No corner is under 30 degrees, cut glass is at least 3/4\" wide, and long pieces are split. If a design breaks a rule at your size, the tool lowers the detail and tells you. These limits are cautious guidance, not a guarantee, and the estimates are rough, so verify with your came and your supplier."
+      }
+    ]
+  },
+  {
+    "slug": "celtic-knot-maker",
+    "title": "Make a Celtic knot for a laser, a stencil or a coloring page",
+    "date": "2026-10-30",
+    "summary": "Build an interlaced knot on a grid, add breaks, and download a cut file, a tattoo stencil, a coloring page, a PNG or a printable PDF.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The [Celtic knot maker](/celtic-knots/) is a new tool from the [pattern library](/patterns/). Pick a grid size and a break pattern, and it traces the strands into closed loops that go over and under in turn."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "celtic",
+            "slug": "",
+            "query": "c=8&r=8&p=diamond",
+            "view": "art",
+            "caption": "A diamond of breaks"
+          },
+          {
+            "kind": "celtic",
+            "slug": "",
+            "query": "p=random&seed=2024&d=30",
+            "view": "art",
+            "caption": "Random breaks from a seed"
+          },
+          {
+            "kind": "celtic",
+            "slug": "",
+            "query": "c=10&r=4&p=frame&i=off",
+            "view": "coloring",
+            "caption": "A frame with interlace off, as a coloring page"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "SVG cut files of closed, filled shapes for a laser or Cricut",
+          "A tattoo stencil of ribbon edges, with gaps at each under-crossing",
+          "A coloring page with black outlines on white",
+          "PNG images and a printable PDF"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Seeds and colors"
+      },
+      {
+        "type": "paragraph",
+        "text": "Random patterns come from a seed, so a share link always opens the same knot. Mirrored, rotated and fixed patterns are symmetric. You can give each strand its own color, and the page tells you how many strands your design has."
+      }
+    ]
+  },
+  {
+    "slug": "sashiko-stitch-guides",
+    "title": "Print a true-size sashiko stitch guide",
+    "date": "2026-10-30",
+    "summary": "Choose a geometric motif, a grid size and a panel size, then print a true-size guide with gaps laid out at the crossings.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The [sashiko stitch guide maker](/sashiko/) draws geometric motifs as dashed stitch lines, ready to print and transfer to your cloth. Choose asanoha, seigaiha, shippo, kikko, kagome or a simple grid, then set the grid size, stitch length, panel size and colors."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "sashiko",
+            "slug": "",
+            "query": "m=seigaiha&sp=3",
+            "view": "panel",
+            "caption": "Seigaiha, 3\" scales"
+          },
+          {
+            "kind": "sashiko",
+            "slug": "",
+            "query": "m=shippo&c=e9e1cf&t=1f2a44",
+            "view": "panel",
+            "caption": "Shippo in indigo on natural"
+          },
+          {
+            "kind": "sashiko",
+            "slug": "",
+            "query": "m=kikko&sp=1.5&c=2b2b2b&t=efe6d0",
+            "view": "panel",
+            "caption": "Kikko on charcoal"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "A true-size PDF, tiled across letter sheets when the panel is larger than one, with a 1 inch check square on each sheet",
+          "Stitches centered on each line, so gaps fall at the crossings and stitches don't cross there",
+          "An SVG and PNG of the panel in your cloth and thread colors",
+          "A rough stitch count and thread estimate"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What this tool doesn't do"
+      },
+      {
+        "type": "paragraph",
+        "text": "Sashiko is a Japanese stitching tradition with its own teachers and many ways of working. This tool only draws line guides, and it makes no claims about where a motif comes from. The stitch length and gap are a starting point, so adjust them to your thread, cloth and hand."
+      }
+    ]
+  },
+  {
+    "slug": "tessellation-maker",
+    "title": "Make a tessellation in any of the 17 wallpaper groups",
+    "date": "2026-10-30",
+    "summary": "Choose a motif, a wallpaper group and your colors, then download a seamless repeat, a tile layout and a printable PDF.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The [tessellation maker](/tessellations/) is a new tool from the [pattern library](/patterns/). Pick a motif, choose one of the 17 wallpaper groups, and set three colors."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "tessellation",
+            "slug": "",
+            "query": "g=p4g&m=sailboat",
+            "view": "layout",
+            "caption": "Sailboats in p4g"
+          },
+          {
+            "kind": "tessellation",
+            "slug": "",
+            "query": "g=p6m&m=flag",
+            "view": "layout",
+            "caption": "Flags in p6m"
+          },
+          {
+            "kind": "tessellation",
+            "slug": "",
+            "query": "g=pgg&m=fish",
+            "view": "layout",
+            "caption": "Fish in pgg"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "A seamless repeat, as SVG or PNG",
+          "A tile layout, as SVG or PNG, that marks each repeat and one tile",
+          "A printable PDF with the layout, the group's symmetry and one repeat"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Hexagonal groups repeat as rectangles"
+      },
+      {
+        "type": "paragraph",
+        "text": "The five hexagonal groups have no square repeat. Their smallest upright rectangle is about 1.73 times as tall as it is wide, so that's the shape of the file you download. Tests check each group's rotations, mirrors and glides, and that every repeat meets itself at its edges."
+      }
+    ]
+  },
+  {
+    "slug": "cross-stitch-charts",
+    "title": "Make a printable cross-stitch or needlepoint chart",
+    "date": "2026-10-30",
+    "summary": "Choose or draw a motif, set your fabric count and colors, and get a symbol chart, stitch counts, a rough thread estimate and the finished size.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The [cross-stitch and needlepoint maker](/cross-stitch/) is new in the [pattern library](/patterns/). Start from a motif or draw your own on the grid, then choose your colors and fabric count."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "crossStitch",
+            "slug": "",
+            "query": "m=heart",
+            "view": "stitched",
+            "caption": "Heart"
+          },
+          {
+            "kind": "crossStitch",
+            "slug": "",
+            "query": "m=pine&count=18",
+            "view": "stitched",
+            "caption": "Pine, on 18-count fabric"
+          },
+          {
+            "kind": "crossStitch",
+            "slug": "",
+            "query": "m=sailboat&craft=needlepoint",
+            "view": "chart",
+            "caption": "Sailboat chart, for needlepoint"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "A printable PDF chart, with a symbol for each color and a heavy line every 10 stitches",
+          "A color list with the stitch count for each color",
+          "A rough thread estimate for each color",
+          "The finished size at your fabric count, and how much fabric to cut"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Your colors, our motifs"
+      },
+      {
+        "type": "paragraph",
+        "text": "Colors are plain colors you choose, not matched to any thread brand, so pick the closest thread you have. The motifs were drawn for this site."
+      }
+    ]
+  },
+  {
     "slug": "tartan-maker",
     "title": "Design a plaid and get a weaving guide",
     "date": "2026-10-30",

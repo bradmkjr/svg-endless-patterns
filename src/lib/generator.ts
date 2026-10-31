@@ -4,10 +4,10 @@
  * fetch calls. Requests and results are already plain JSON and every function
  * is already async, so no caller has to change.
  */
-import { generatePattern as runGenerate, generateStitchPattern as runStitch, generateTartan as runTartan, listBlocks, listStitchPatterns } from "@/engine";
-import type { BlockInfo, Craft, Locale, PatternRequest, PatternResult, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult } from "@/engine";
+import { generatePattern as runGenerate, generateStitchPattern as runStitch, generateCrossStitch as runCrossStitch, generateTessellation as runTessellation, generateSashiko as runSashiko, generateCelticKnot as runCelticKnot, generateStainedGlass as runStainedGlass, generateMandala as runMandala, generateTartan as runTartan, listBlocks, listStitchPatterns } from "@/engine";
+import type { BlockInfo, Craft, Locale, PatternRequest, PatternResult, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult, CrossStitchRequest, CrossStitchResult } from "@/engine";
 
-export type { BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, Setting, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult, TartanStripe } from "@/engine";
+export type { BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, Setting, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult, TartanStripe, CrossStitchColor, CrossStitchCraft, CrossStitchRequest, CrossStitchResult } from "@/engine";
 
 export async function getBlocks(locale: Locale = "en"): Promise<BlockInfo[]> {
   return listBlocks(locale);
@@ -50,5 +50,59 @@ export async function generateTartan(request: TartanRequest): Promise<TartanResu
 
 export async function generateTartanPdf(request: TartanRequest): Promise<Uint8Array> {
   const { generateTartanPdf: run } = await import("@/engine/tartanPdf");
+  return run(request);
+}
+
+export async function generateCrossStitch(request: CrossStitchRequest): Promise<CrossStitchResult> {
+  return runCrossStitch(request);
+}
+
+export async function generateCrossStitchPdf(request: CrossStitchRequest): Promise<Uint8Array> {
+  const { generateCrossStitchPdf: run } = await import("@/engine/crossStitchPdf");
+  return run(request);
+}
+
+export async function generateTessellation(request: TessellationRequest): Promise<TessellationResult> {
+  return runTessellation(request);
+}
+
+export async function generateTessellationPdf(request: TessellationRequest): Promise<Uint8Array> {
+  const { generateTessellationPdf: run } = await import("@/engine/tessellationPdf");
+  return run(request);
+}
+
+export async function generateSashiko(request: SashikoRequest): Promise<SashikoResult> {
+  return runSashiko(request);
+}
+
+export async function generateSashikoPdf(request: SashikoRequest): Promise<Uint8Array> {
+  const { generateSashikoPdf: run } = await import("@/engine/sashikoPdf");
+  return run(request);
+}
+
+export async function generateCelticKnot(request: CelticKnotRequest): Promise<CelticKnotResult> {
+  return runCelticKnot(request);
+}
+
+export async function generateCelticKnotPdf(request: CelticKnotRequest): Promise<Uint8Array> {
+  const { generateCelticKnotPdf: run } = await import("@/engine/celticKnotPdf");
+  return run(request);
+}
+
+export async function generateStainedGlass(request: StainedGlassRequest): Promise<StainedGlassResult> {
+  return runStainedGlass(request);
+}
+
+export async function generateStainedGlassPdf(request: StainedGlassRequest): Promise<Uint8Array> {
+  const { generateStainedGlassPdf: run } = await import("@/engine/stainedGlassPdf");
+  return run(request);
+}
+
+export async function generateMandala(request: MandalaRequest): Promise<MandalaResult> {
+  return runMandala(request);
+}
+
+export async function generateMandalaPdf(request: MandalaRequest): Promise<Uint8Array> {
+  const { generateMandalaPdf: run } = await import("@/engine/mandalaPdf");
   return run(request);
 }

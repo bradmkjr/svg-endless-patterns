@@ -95,6 +95,140 @@
         "Solo cuadros originales, por ahora",
         "Los ajustes predefinidos se han inventado para este sitio. Algunos tartanes están restringidos o pertenecen a una familia u organización, así que los tartanes históricos con nombre solo se añadirán con fuentes documentadas."
       ]
+    },
+    "cross-stitch-charts": {
+      "title": "Crea un gráfico imprimible de punto de cruz o cañamazo",
+      "summary": "Elige o dibuja un motivo, ajusta el conteo de la tela y los colores, y obtén un gráfico de símbolos, el número de puntos, una estimación aproximada de hilo y el tamaño final.",
+      "blocks": [
+        "El [creador de punto de cruz y cañamazo](/cross-stitch/) es una novedad de la [biblioteca de patrones](/patterns/). Empieza con un motivo o dibuja el tuyo en la cuadrícula, y elige los colores y el conteo de la tela.",
+        "Ejemplos para empezar",
+        [
+          "Corazón",
+          "Pino, en tela de 18 puntos por pulgada",
+          "Gráfico del velero, para cañamazo"
+        ],
+        "Qué obtienes",
+        [
+          "Un gráfico en PDF imprimible, con un símbolo por color y una línea gruesa cada 10 puntos",
+          "Una lista de colores con el número de puntos de cada uno",
+          "Una estimación aproximada de hilo por color",
+          "El tamaño final según el conteo de tu tela y cuánta tela cortar"
+        ],
+        "Tus colores, nuestros motivos",
+        "Los colores son los que eliges, sin relación con ninguna marca de hilo, así que usa el hilo más parecido que tengas. Los motivos se dibujaron para este sitio."
+      ]
+    },
+    "tessellation-maker": {
+      "title": "Crea una teselación con cualquiera de los 17 grupos de papel tapiz",
+      "summary": "Elige un motivo, un grupo de papel tapiz y tus colores, y descarga una repetición continua, una disposición de piezas y un PDF para imprimir.",
+      "blocks": [
+        "El [creador de teselaciones](/tessellations/) es una nueva herramienta de la [biblioteca de patrones](/patterns/). Elige un motivo, uno de los 17 grupos de papel tapiz y tres colores.",
+        "Ejemplos para empezar",
+        [
+          "Veleros en p4g",
+          "Banderas en p6m",
+          "Peces en pgg"
+        ],
+        "Qué obtienes",
+        [
+          "Una repetición continua, en SVG o PNG",
+          "Una disposición de piezas, en SVG o PNG, que marca cada repetición y una pieza",
+          "Un PDF para imprimir con la disposición, la simetría del grupo y una repetición"
+        ],
+        "Los grupos hexagonales se repiten en rectángulos",
+        "Los cinco grupos hexagonales no tienen una repetición cuadrada. Su rectángulo vertical más pequeño es unas 1,73 veces más alto que ancho, y esa es la forma del archivo que descargas. Las pruebas comprueban las rotaciones, los espejos y los deslizamientos de cada grupo, y que cada repetición encaje consigo misma en sus bordes."
+      ]
+    },
+    "sashiko-stitch-guides": {
+      "title": "Imprime una guía de sashiko a tamaño real",
+      "summary": "Elige un motivo geométrico, un tamaño de cuadrícula y un tamaño de panel, e imprime una guía a tamaño real con huecos en los cruces.",
+      "blocks": [
+        "El [creador de guías de sashiko](/sashiko/) dibuja motivos geométricos como líneas de puntada, listas para imprimir y pasar a la tela. Elige asanoha, seigaiha, shippo, kikko, kagome o una cuadrícula sencilla, y ajusta el tamaño de la cuadrícula, la longitud de puntada, el tamaño del panel y los colores.",
+        "Ejemplos para empezar",
+        [
+          "Seigaiha, escamas de 3\"",
+          "Shippo, índigo sobre crudo",
+          "Kikko sobre carbón"
+        ],
+        "Qué obtienes",
+        [
+          "Un PDF a tamaño real, en varias hojas carta cuando el panel no cabe en una, con un cuadrado de control de 1 pulgada en cada hoja",
+          "Puntadas centradas en cada línea, de modo que los huecos caen en los cruces y las puntadas no se cruzan allí",
+          "Un SVG y un PNG del panel en tus colores de tela e hilo",
+          "Un recuento aproximado de puntadas y una estimación de hilo"
+        ],
+        "Lo que esta herramienta no hace",
+        "El sashiko es una tradición japonesa de costura, con sus propios maestros y muchas formas de trabajar. Esta herramienta solo dibuja guías de líneas y no afirma nada sobre el origen de cada motivo. La longitud de la puntada y el hueco son un punto de partida, así que ajústalos a tu hilo, tu tela y tu mano."
+      ]
+    },
+    "celtic-knot-maker": {
+      "title": "Crea un nudo celta para láser, plantilla o página para colorear",
+      "summary": "Construye un nudo entrelazado sobre una cuadrícula, añade cortes y descarga un archivo de corte, una plantilla de tatuaje, una página para colorear, un PNG o un PDF imprimible.",
+      "blocks": [
+        "El [creador de nudos celtas](/celtic-knots/) es una nueva herramienta de la [biblioteca de patrones](/patterns/). Elige un tamaño de cuadrícula y un patrón de cortes, y traza las hebras en bucles cerrados que pasan por encima y por debajo por turnos.",
+        "Ejemplos para empezar",
+        [
+          "Un rombo de cortes",
+          "Cortes aleatorios a partir de una semilla",
+          "Un marco sin entrelazado, como página para colorear"
+        ],
+        "Qué obtienes",
+        [
+          "Archivos SVG de corte con formas cerradas y rellenas para láser o Cricut",
+          "Una plantilla de tatuaje con los bordes de la cinta y huecos en cada cruce inferior",
+          "Una página para colorear con contornos negros sobre blanco",
+          "Imágenes PNG y un PDF imprimible"
+        ],
+        "Semillas y colores",
+        "Los patrones aleatorios salen de una semilla, así que un enlace compartido siempre abre el mismo nudo. Los patrones en espejo, girados y fijos son simétricos. Puedes dar a cada hebra su propio color, y la página te indica cuántas hebras tiene tu diseño."
+      ]
+    },
+    "stained-glass-patterns": {
+      "posts": {
+        "stained-glass-patterns": {
+          "title": "Diseña un panel de vidriera e imprime sus plantillas de corte",
+          "summary": "Elige diseño, tamaño, perfil y colores, e imprime plantillas numeradas a tamaño real con el margen del perfil ya aplicado.",
+          "blocks": [
+            "El [creador de patrones de vidriera](/stained-glass/) es una nueva herramienta de la [biblioteca de patrones](/patterns/). Elige uno de los cuatro diseños originales, ajusta el tamaño del panel y tu perfil, y escoge cuatro colores de vidrio.",
+            "Ejemplos para empezar",
+            [
+              "Un montante con sol radiante",
+              "Rombos",
+              "El plano numerado de una cenefa y centro"
+            ],
+            "Qué obtienes",
+            [
+              "Un PDF con un plano numerado y plantillas a tamaño real, con el margen del perfil aplicado y un cuadrado de control de 1 pulgada en cada hoja de plantillas",
+              "Las piezas que no caben en una página, repartidas en hojas para unir con cinta, e indicadas como tales",
+              "Una estimación aproximada de vidrio por color, con un margen de desperdicio declarado del 30 %",
+              "Una vista previa del panel en SVG o PNG"
+            ],
+            "Estricto con lo que se puede cortar",
+            "El rayado solo va recto de borde a borde, así que cada pieza tiene lados rectos y ninguna esquina hacia dentro. Ninguna esquina baja de 30 grados, el vidrio cortado mide al menos 3/4\" de ancho y las piezas largas se dividen. Si un diseño incumple una regla con tu tamaño, la herramienta baja el detalle y te lo dice. Estos límites son una orientación prudente, no una garantía, y las estimaciones son aproximadas, así que compruébalas con tu perfil y tu proveedor."
+          ]
+        }
+      }
+    },
+    "mandala-maker": {
+      "title": "Genera diseños radiales geométricos y páginas para colorear",
+      "summary": "Elige la simetría, los anillos, los motivos y los colores para generar un diseño radial original, y descárgalo en color o como página para colorear.",
+      "blocks": [
+        "El [creador de mandalas](/mandalas/) genera diseños radiales geométricos desde la [biblioteca de patrones](/patterns/). Elige de 6 a 24 repeticiones de simetría, de 2 a 8 anillos y los motivos que puede usar cada anillo: pétalos, arcos, puntos, ondas, rombos o triángulos.",
+        "Ejemplos para empezar",
+        [
+          "Ocho repeticiones, pétalos y puntos",
+          "Dieciséis repeticiones, siete anillos",
+          "Una página para colorear con 24 repeticiones"
+        ],
+        "Lo que obtienes",
+        [
+          "Un diseño en color, en SVG o PNG",
+          "Una página para colorear en negro sobre blanco, en SVG o PNG",
+          "Un PDF imprimible con el diseño en color y la página para colorear",
+          "Un enlace para compartir que vuelve a abrir el mismo diseño"
+        ],
+        "La misma semilla con los mismos ajustes siempre da el mismo diseño. Son formas generadas: no copian ningún diseño tradicional ni pretenden tener ningún significado."
+      ]
     }
   },
   "changelog": {
@@ -153,6 +287,46 @@
       "title": "Creador de tartanes y cuadros",
       "items": [
         "Se añadió un creador de tartanes y cuadros, con muestras continuas, guías de tejido y estimaciones de hilo"
+      ]
+    },
+    "Cross-stitch and needlepoint maker": {
+      "title": "Creador de punto de cruz y cañamazo",
+      "items": [
+        "Se añadió un creador de punto de cruz y cañamazo, con cuadrícula editable, gráficos de símbolos imprimibles, número de puntos, estimaciones aproximadas de hilo y tamaños finales"
+      ]
+    },
+    "Tessellation maker": {
+      "title": "Creador de teselaciones",
+      "items": [
+        "Se añadió un creador de teselaciones con los 17 grupos de papel tapiz, repeticiones continuas, disposiciones de piezas y PDF para imprimir"
+      ]
+    },
+    "Sashiko stitch guides": {
+      "title": "Guías de puntadas de sashiko",
+      "items": [
+        "Se añadió un creador de guías de sashiko, con guías imprimibles a tamaño real, huecos en los cruces y paneles en SVG y PNG"
+      ]
+    },
+    "Celtic knot maker": {
+      "title": "Creador de nudos celtas",
+      "items": [
+        "Se añadió un creador de nudos celtas, con archivos de corte, plantillas de tatuaje, páginas para colorear, PNG y PDF imprimible"
+      ]
+    },
+    "Stained glass pattern maker": {
+      "changelog": {
+        "Stained glass pattern maker": {
+          "title": "Creador de patrones de vidriera",
+          "items": [
+            "Se añadió un creador de patrones de vidriera, con plantillas numeradas a tamaño real, reglas estrictas de corte y una estimación aproximada de vidrio"
+          ]
+        }
+      }
+    },
+    "Mandala maker": {
+      "title": "Creador de mandalas",
+      "items": [
+        "Se añadió un creador de mandalas para diseños radiales geométricos, con SVG y PNG en color, páginas para colorear y PDF imprimibles"
       ]
     }
   }

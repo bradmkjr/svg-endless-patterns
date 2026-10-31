@@ -171,7 +171,7 @@
     "metaTitle": "Bibliothèque de motifs",
     "metaDesc": "Découvrez des créateurs de motifs pour le quilt, les nœuds celtiques, les étoiles géométriques, les pavages, les tartans, le sashiko, le point de croix et le vitrail.",
     "h1": "Bibliothèque de motifs",
-    "lede": "Des motifs traditionnels et géométriques pour de nombreux savoir-faire. Le quilt, le tricot, le crochet et les tartans ont déjà leurs outils ; les autres sont prévus.",
+    "lede": "Des motifs traditionnels et géométriques pour de nombreux savoir-faire. Chacun a son propre outil, sauf ceux marqués « bientôt ».",
     "available": "Disponible",
     "comingSoon": "Bientôt",
     "quiltTitle": "Blocs de quilt",
@@ -196,53 +196,56 @@
     "detailDesc": "{summary} Personnalisez : {customize} Résultat prévu : {output}",
     "swatchAlt": "Illustration de {name}",
     "pages": {
-      "celtic-knots": {
-        "title": "Nœuds celtiques",
-        "summary": "Créez des entrelacs à partir d'une grille, avec des rubans qui passent nettement dessus et dessous.",
-        "customize": "Grille, coupures, largeur du ruban et entrelacement.",
-        "output": "SVG pour laser ou Cricut, pochoir de tatouage ou coloriage.",
-        "sampleAlt": "Une tresse celtique carrée, faite d'un ruban d'une seule couleur qui passe au-dessus et au-dessous de lui-même."
-      },
       "girih": {
         "title": "Étoiles géométriques et girih",
         "summary": "Explorez des motifs d'étoiles géométriques et des compositions inspirées du girih.",
         "customize": "Symétrie, type d'étoile et épaisseur de ligne.",
         "output": "Fichiers de carreau, de pochoir ou de panneau mural.",
         "sampleAlt": "Des rangées d'étoiles à huit pointes bleu marine et or, avec des croix couleur rouille entre elles."
-      },
-      "tessellations": {
-        "title": "Pavages",
-        "summary": "Créez des motifs répétés avec l'un des 17 groupes de papier peint.",
-        "customize": "Motif, groupe de symétrie et couleurs.",
-        "output": "Un raccord continu ou une disposition de carreaux.",
-        "sampleAlt": "Un motif anguleux bleu marine et rouille, tourné par quarts de tour et répété sur toute la page."
-      },
-      "sashiko": {
-        "title": "Sashiko",
-        "summary": "Disposez des motifs de sashiko pour la broderie à la main.",
-        "customize": "Motif, espacement et taille du panneau.",
-        "output": "Un guide de points à imprimer et à transférer.",
-        "sampleAlt": "Des points blancs sur indigo formant un motif répété de feuilles de chanvre."
-      },
-      "cross-stitch": {
-        "title": "Point de croix et tapisserie",
-        "summary": "Préparez des modèles à fils comptés avec les détails de toile et de fils.",
-        "customize": "Motif, compte de la toile et couleurs de fils.",
-        "output": "Une grille, une liste de fils et la taille finie.",
-        "sampleAlt": "Une fleur rouge, or et verte faite de croix sur une grille."
-      },
-      "stained-glass": {
-        "title": "Vitrail",
-        "summary": "Découpez un modèle en pièces numérotées, avec la place pour les plombs.",
-        "customize": "Composition, largeur du plomb et couleurs du verre.",
-        "output": "Patrons de coupe numérotés et estimation de verre.",
-        "sampleAlt": "Un panneau carré en rosace de verre rouge, or et bleu, avec des plombs sombres et des pièces numérotées."
       }
     },
     "tartanTitle": "Tartans et carreaux",
     "tartanText": "Agencez des fils de couleur en un carreau équilibré et répété.",
     "tartanOutput": "Échantillon continu, guide de tissage et estimation de fil.",
-    "exploreTartan": "Créer un carreau"
+    "exploreTartan": "Créer un carreau",
+    "tools": {
+      "crossStitch": {
+        "title": "Point de croix et broderie sur canevas",
+        "text": "Choisissez ou dessinez un motif, puis réglez le compte de la toile et les couleurs.",
+        "output": "Grille de symboles imprimable, nombre de points, estimation approximative du fil et taille finie.",
+        "explore": "Créer une grille"
+      },
+      "tessellation": {
+        "title": "Pavages",
+        "text": "Répétez un motif selon l'un des 17 groupes de papier peint, des simples translations aux rotations d'ordre six avec miroirs.",
+        "output": "Un raccord continu en SVG ou PNG, une disposition de tuiles et un PDF à imprimer.",
+        "explore": "Créer un pavage"
+      },
+      "sashiko": {
+        "title": "Guides de points de sashiko",
+        "text": "Disposez des motifs géométriques de sashiko en lignes de points, avec des espaces aux croisements.",
+        "output": "Guide imprimable en taille réelle, sur feuilles Letter, plus SVG et PNG.",
+        "explore": "Créer un guide de points"
+      },
+      "celticKnot": {
+        "title": "Nœuds celtiques",
+        "text": "Construisez un nœud entrelacé sur une grille, avec des coupures qui changent la façon dont les brins se lient.",
+        "output": "SVG pour laser ou Cricut, pochoir de tatouage, page à colorier, PNG et PDF à imprimer.",
+        "explore": "Créer un nœud"
+      },
+      "stainedGlass": {
+        "title": "Vitrail",
+        "text": "Dessinez un panneau de vitrail original à partir de quatre compositions paramétriques, en pièces réellement coupables à la main.",
+        "output": "Gabarits numérotés grandeur nature avec marge pour le plomb, estimation approximative du verre par couleur et aperçu SVG ou PNG.",
+        "explore": "Ouvrir le créateur de vitrail"
+      },
+      "mandala": {
+        "title": "Mandalas",
+        "text": "Générez des motifs radiaux géométriques originaux à partir d'anneaux de formes simples.",
+        "output": "SVG ou PNG en couleur, page à colorier et PDF à imprimer.",
+        "explore": "Créer un motif radial"
+      }
+    }
   },
   "about": {
     "metaTitle": "Comment fonctionnent les calculs",

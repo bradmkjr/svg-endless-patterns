@@ -1,6 +1,54 @@
 [
   {
     "date": "2026-10-30",
+    "title": "Mandala maker",
+    "post": "mandala-maker",
+    "items": [
+      "Added a mandala maker for geometric radial designs, with colored SVG and PNG, coloring pages and printable PDFs"
+    ]
+  },
+  {
+    "date": "2026-10-30",
+    "title": "Stained glass pattern maker",
+    "post": "stained-glass-patterns",
+    "items": [
+      "Added a stained glass pattern maker, with numbered true-size templates, strict cutting rules and a rough glass estimate"
+    ]
+  },
+  {
+    "date": "2026-10-30",
+    "title": "Celtic knot maker",
+    "post": "celtic-knot-maker",
+    "items": [
+      "Added a Celtic knot maker, with cut files, tattoo stencils, coloring pages, PNG and printable PDF"
+    ]
+  },
+  {
+    "date": "2026-10-30",
+    "title": "Sashiko stitch guides",
+    "post": "sashiko-stitch-guides",
+    "items": [
+      "Added a sashiko stitch guide maker, with true-size printable guides, gaps at the crossings, and SVG and PNG panels"
+    ]
+  },
+  {
+    "date": "2026-10-30",
+    "title": "Tessellation maker",
+    "post": "tessellation-maker",
+    "items": [
+      "Added a tessellation maker with all 17 wallpaper groups, seamless repeats, tile layouts and printable PDFs"
+    ]
+  },
+  {
+    "date": "2026-10-30",
+    "title": "Cross-stitch and needlepoint maker",
+    "post": "cross-stitch-charts",
+    "items": [
+      "Added a cross-stitch and needlepoint maker, with an editable grid, printable symbol charts, stitch counts, rough thread estimates and finished sizes"
+    ]
+  },
+  {
+    "date": "2026-10-30",
     "title": "Tartan and plaid maker",
     "post": "tartan-maker",
     "items": [

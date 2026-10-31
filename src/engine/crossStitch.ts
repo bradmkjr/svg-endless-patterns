@@ -1,30 +1,31 @@
+import { cellColor, chartCenter, chartSheets, chartSvg, countStitches, cropGrid, makingUp, skeinsFor, SHEET_OVERLAP, stitchedSvg, stitchingOrder, SYMBOLS, type CountedFinish, type StitchTurn } from "./countedChart";
 import { approxInches, ceilToEighth, inches } from "./format";
 import type { Locale } from "./i18n";
 import catalog from "./messages/crossStitch.json";
 
-export type CrossStitchCraft = "cross" | "needlepoint";
+export { cellColor, countStitches, cropGrid, SYMBOLS } from "./countedChart";
 
 /**
- * A counted-thread design. Each string in `grid` is a row, read left to right:
+ * A cross-stitch design. Each string in `grid` is a row, read left to right:
  * "." is bare fabric, and "a" to "h" are `colors[0]` to `colors[7]`.
  */
 export type CrossStitchRequest = {
   grid: string[];
   /** Plain colors the stitcher chooses, not matched to any thread brand. */
   colors: string[];
-  /** The fabric or canvas, for the preview only. */
+  /** The fabric, for the preview only. */
   fabric: string;
-  craft: CrossStitchCraft;
-  /** Stitches per inch: Aida count, or needlepoint canvas mesh. */
+  /** Stitches per inch: the Aida count. */
   count: number;
-  /** Strands of six-strand floss in the needle. Cross stitch only. */
+  /** Strands of six-strand floss in the needle. */
   strands: number;
   /** Bare fabric to leave on every side, in inches. */
   margin: number;
+  finish: CountedFinish;
   locale?: Locale;
 };
 
-export type CrossStitchColor = { symbol: string; color: string; stitches: number; yards: number };
+export type CrossStitchColor = { symbol: string; color: string; stitches: number; yards: number; strands: number; skeins: number };
 
 export type CrossStitchResult = {
   svg: { stitched: string; chart: string };
@@ -40,19 +41,30 @@ export type CrossStitchResult = {
   fabricHeight: string;
   colors: CrossStitchColor[];
   totalYards: number;
+  totalSkeins: number;
+  /** Everything to gather first. */
+  materials: string[];
+  /** Cutting, marking and stitching. */
   steps: string[];
+  /** Colors in the order to stitch them, as lines and as data. */
+  order: string[];
+  turns: StitchTurn[];
+  /** Washing and making up. */
+  finishing: string[];
+  /** Sheets the PDF chart takes. */
+  sheets: number;
 };
 
-/** Chart symbols, one per color. All of them print in Helvetica and differ without color. */
-export const SYMBOLS = ["X", "O", "+", "#", "V", "/", "=", "S"];
 /** Extra for starting, ending and traveling between stitches. */
 const ALLOWANCE = 1.25;
+/** A usual skein of six-strand floss holds a little over this; a round figure keeps the estimate safe. */
+export const YARDS_PER_SKEIN = 8;
 
-const DIAGONAL = Math.SQRT2;
 /** A full cross, in fabric squares: two diagonals on the front, two straight legs on the back. */
-const CROSS_PATH = 2 * DIAGONAL + 2;
-/** A continental tent stitch: one diagonal on the front, one longer slant on the back. */
-const TENT_PATH = DIAGONAL + Math.sqrt(5);
+const CROSS_PATH = 2 * Math.SQRT2 + 2;
+
+/** The usual tapestry needle for each count. */
+const NEEDLES: Record<number, number> = { 11: 22, 14: 24, 16: 26, 18: 26, 22: 28 };
 
 type EngineText = keyof typeof catalog.en;
 
@@ -61,105 +73,30 @@ export function crossStitchText(locale: Locale, key: EngineText, values: Record<
   return catalog[locale][key].replace(/\{(\w+)\}/g, (_, name) => String(values[name] ?? `{${name}}`));
 }
 
-/** A cell's color index, or -1 for bare fabric. */
-export const cellColor = (cell: string) => (cell === "." ? -1 : cell.charCodeAt(0) - 97);
-
-/** The grid cut down to its stitches. An empty grid stays as it is, so there's still a chart to show. */
-export function cropGrid(grid: string[]): string[] {
-  const filled = grid.flatMap((row, y) => [...row].flatMap((cell, x) => (cell === "." ? [] : [[x, y]])));
-  if (!filled.length) return grid;
-  const xs = filled.map(([x]) => x);
-  const ys = filled.map(([, y]) => y);
-  const left = Math.min(...xs);
-  const right = Math.max(...xs);
-  return grid.slice(Math.min(...ys), Math.max(...ys) + 1).map((row) => row.slice(left, right + 1));
-}
-
-/** Stitches per color. */
-export function countStitches(grid: string[], colors: number): number[] {
-  const counts = Array<number>(colors).fill(0);
-  for (const row of grid) {
-    for (const cell of row) {
-      const color = cellColor(cell);
-      if (color >= 0) {
-        if (color >= colors) throw new Error(`Grid uses a color that wasn't given: ${cell}`);
-        counts[color]++;
-      }
-    }
-  }
-  return counts;
-}
-
-/**
- * Length of thread for one color, from the path a stitch takes through the fabric.
- * Cross stitch gives yards of six-strand floss, which is split to the strands in
- * use; needlepoint gives yards of thread as it goes through the needle.
- */
-export function threadYards(stitches: number, req: Pick<CrossStitchRequest, "craft" | "count" | "strands">): number {
-  const perStitch = (req.craft === "cross" ? CROSS_PATH * (req.strands / 6) : TENT_PATH) / req.count;
+/** Length of six-strand floss for one color, from the path a stitch takes through the fabric, split to the strands in use. */
+export function threadYards(stitches: number, req: Pick<CrossStitchRequest, "count" | "strands">): number {
+  const perStitch = (CROSS_PATH * (req.strands / 6)) / req.count;
   return Math.ceil(((stitches * perStitch * ALLOWANCE) / 36) * 10) / 10;
 }
 
-const size = (value: number) => Number(value.toFixed(3));
-
-function stitchedSvg(req: CrossStitchRequest, grid: string[], title: string): string {
-  const columns = grid[0]?.length ?? 0;
+function stitchMarks(req: CrossStitchRequest, grid: string[]): string {
   // One path per color: each cell is its two crossing legs.
-  const paths = req.colors.map((color, c) => {
-    let d = "";
-    grid.forEach((row, y) => {
-      [...row].forEach((cell, x) => {
-        if (cellColor(cell) === c) d += `M${x} ${y}l1 1M${x + 1} ${y}l-1 1`;
+  return req.colors
+    .map((color, c) => {
+      let d = "";
+      grid.forEach((row, y) => {
+        [...row].forEach((cell, x) => {
+          if (cellColor(cell) === c) d += `M${x} ${y}l1 1M${x + 1} ${y}l-1 1`;
+        });
       });
-    });
-    return d ? `<path d="${d}" stroke="${color}"/>` : "";
-  });
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${columns} ${grid.length}" width="${size(columns / req.count)}in" height="${size(grid.length / req.count)}in" role="img"><title>${title}</title><rect width="${columns}" height="${grid.length}" fill="${req.fabric}"/><g fill="none" stroke-width="0.34" stroke-linecap="square">${paths.join("")}</g></svg>`;
-}
-
-/** Room around the chart for numbers and center arrows, in chart units. */
-const CHART_CELL = 10;
-const CHART_BAND = 22;
-
-function chartSvg(grid: string[], title: string): string {
-  const columns = grid[0]?.length ?? 0;
-  const rows = grid.length;
-  const w = columns * CHART_CELL;
-  const h = rows * CHART_CELL;
-  const parts: string[] = [];
-
-  grid.forEach((row, y) => {
-    [...row].forEach((cell, x) => {
-      const color = cellColor(cell);
-      if (color >= 0) parts.push(`<text x="${x * CHART_CELL + 5}" y="${y * CHART_CELL + 5}">${SYMBOLS[color]}</text>`);
-    });
-  });
-  const lines = (count: number, line: (at: number) => string, every: number) =>
-    Array.from({ length: count + 1 }, (_, i) => i)
-      .filter((i) => (every === 10 ? i % 10 === 0 : i % 10 !== 0))
-      .map((i) => line(i * CHART_CELL))
-      .join("");
-  const vertical = (x: number) => `M${x} 0V${h}`;
-  const horizontal = (y: number) => `M0 ${y}H${w}`;
-  const numbers = [
-    ...Array.from({ length: Math.floor(columns / 10) }, (_, i) => `<text x="${(i + 1) * 10 * CHART_CELL}" y="-15">${(i + 1) * 10}</text>`),
-    ...Array.from({ length: Math.floor(rows / 10) }, (_, i) => `<text x="-15" y="${(i + 1) * 10 * CHART_CELL}">${(i + 1) * 10}</text>`),
-  ];
-  const arrows = `<path d="M${w / 2 - 4} -9h8l-4 7zM-9 ${h / 2 - 4}v8l7 -4z" fill="#1a1a1a"/>`;
-
-  return (
-    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${-CHART_BAND} ${-CHART_BAND} ${w + CHART_BAND + 2} ${h + CHART_BAND + 2}" width="${size((w + CHART_BAND + 2) / 50)}in" height="${size((h + CHART_BAND + 2) / 50)}in" role="img"><title>${title}</title>` +
-    `<rect x="${-CHART_BAND}" y="${-CHART_BAND}" width="${w + CHART_BAND + 2}" height="${h + CHART_BAND + 2}" fill="#ffffff"/>` +
-    `<path d="${lines(columns, vertical, 1)}${lines(rows, horizontal, 1)}" fill="none" stroke="#b5b0a6" stroke-width="0.5"/>` +
-    `<path d="${lines(columns, vertical, 10)}${lines(rows, horizontal, 10)}" fill="none" stroke="#1a1a1a" stroke-width="1"/>` +
-    `<g font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#1a1a1a" text-anchor="middle" dominant-baseline="central">${parts.join("")}${numbers.join("")}</g>` +
-    arrows +
-    `</svg>`
-  );
+      return d ? `<path d="${d}" stroke="${color}"/>` : "";
+    })
+    .join("");
 }
 
 export function generateCrossStitch(req: CrossStitchRequest): CrossStitchResult {
   const locale = req.locale ?? "en";
+  const say = (key: EngineText, values: Record<string, string | number> = {}) => crossStitchText(locale, key, values);
   const counts = countStitches(req.grid, req.colors.length);
   const stitches = counts.reduce((sum, n) => sum + n, 0);
   const cropped = cropGrid(req.grid);
@@ -167,17 +104,30 @@ export function generateCrossStitch(req: CrossStitchRequest): CrossStitchResult 
   const rows = stitches ? cropped.length : 0;
   const widthInches = columns / req.count;
   const heightInches = rows / req.count;
-  const colors = req.colors.map((color, i) => ({ symbol: SYMBOLS[i], color, stitches: counts[i], yards: threadYards(counts[i], req) }));
+  const colors = req.colors.map((color, i) => {
+    const yards = threadYards(counts[i], req);
+    return { symbol: SYMBOLS[i], color, stitches: counts[i], yards, strands: req.strands, skeins: skeinsFor(yards, YARDS_PER_SKEIN) };
+  });
   const width = approxInches(widthInches);
   const height = approxInches(heightInches);
   const fabricWidth = inches(ceilToEighth(widthInches + 2 * req.margin));
   const fabricHeight = inches(ceilToEighth(heightInches + 2 * req.margin));
-  const cross = req.craft === "cross";
+  const center = chartCenter(columns, rows);
+  const turns = stitchingOrder(cropped, req.colors);
+  const sheets = stitches ? chartSheets(columns, rows).length : 1;
+  // Added up to one decimal, since floats would otherwise show 0.30000000000000004.
+  const totalYards = Math.round(colors.reduce((sum, c) => sum + c.yards, 0) * 10) / 10;
+  const totalSkeins = colors.reduce((sum, c) => sum + c.skeins, 0);
+  const used = colors.filter((c) => c.stitches > 0).length;
+  // An inch of bare fabric frames the design, unless the margin needs it all for folding over the board.
+  const frameSpace = req.margin >= 2 ? 1 : 0.5;
+  const made = makingUp(widthInches, heightInches, req.margin, frameSpace, 0.5);
+  const framed = req.finish === "frame";
 
   return {
     svg: {
-      stitched: stitchedSvg(req, cropped, crossStitchText(locale, "svgStitched")),
-      chart: chartSvg(cropped, crossStitchText(locale, "svgChart")),
+      stitched: stitchedSvg(cropped[0]?.length ?? 0, cropped.length, req.count, req.fabric, say("svgStitched"), 0.34, stitchMarks(req, cropped)),
+      chart: chartSvg(cropped, say("svgChart")),
     },
     columns,
     rows,
@@ -189,15 +139,35 @@ export function generateCrossStitch(req: CrossStitchRequest): CrossStitchResult 
     fabricWidth,
     fabricHeight,
     colors,
-    // Added up to one decimal, since floats would otherwise show 0.30000000000000004.
-    totalYards: Math.round(colors.reduce((sum, c) => sum + c.yards, 0) * 10) / 10,
-    steps: [
-      crossStitchText(locale, cross ? "stepCutCross" : "stepCutCanvas", { fw: fabricWidth, fh: fabricHeight, w: width, h: height, m: req.margin }),
-      crossStitchText(locale, "stepCenter"),
-      cross
-        ? crossStitchText(locale, req.strands === 1 ? "stepCrossOne" : "stepCrossMany", { count: req.count, strands: req.strands })
-        : crossStitchText(locale, "stepTent", { count: req.count }),
-      crossStitchText(locale, cross ? "stepFinishCross" : "stepFinishCanvas"),
+    totalYards,
+    totalSkeins,
+    materials: [
+      say("materialFabric", { count: req.count, fw: fabricWidth, fh: fabricHeight }),
+      say("materialFloss", { y: totalYards, n: used, s: totalSkeins, per: YARDS_PER_SKEIN }),
+      say("materialNeedle", { size: NEEDLES[req.count] ?? 24 }),
+      framed ? say("materialFrame", { bw: made.boardWidth, bh: made.boardHeight }) : say("materialPillow", { bw: made.backWidth, bh: made.backHeight, sw: made.strip, fw: made.formWidth, fh: made.formHeight }),
     ],
+    steps: [
+      say("stepCut", { fw: fabricWidth, fh: fabricHeight, w: width, h: height, m: req.margin }),
+      say("stepCenter", { cx: center.column, cy: center.row }),
+      say(req.strands === 1 ? "stepCrossOne" : "stepCrossMany", { count: req.count, strands: req.strands }),
+      say("stepOrder"),
+      say("stepTension"),
+      ...(sheets > 1 ? [say("stepSheets", { n: sheets, o: SHEET_OVERLAP })] : []),
+    ],
+    order: turns.map((turn) => say("orderLine", { symbol: turn.symbol, hex: turn.color, n: turn.stitches, c: turn.column, r: turn.row })),
+    turns,
+    finishing: [
+      say("stepWash"),
+      ...(framed
+        ? [say("stepFrameBoard", { bw: made.boardWidth, bh: made.boardHeight, space: frameSpace }), say("stepFrameLace", { wrap: made.wrap }), say("stepFrameFit", { bw: made.boardWidth, bh: made.boardHeight })]
+        : [
+            say("stepPillowTrim", { tw: made.trimWidth, th: made.trimHeight }),
+            say("stepPillowBorder", { sw: made.strip, side: made.sideStrip, top: made.topStrip }),
+            say("stepPillowBack", { bw: made.backWidth, bh: made.backHeight }),
+            say("stepPillowForm", { pw: made.pillowWidth, ph: made.pillowHeight, fw: made.formWidth, fh: made.formHeight }),
+          ]),
+    ],
+    sheets,
   };
 }

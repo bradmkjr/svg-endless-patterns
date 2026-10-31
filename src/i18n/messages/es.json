@@ -198,10 +198,16 @@
     "exploreTartan": "Crear un cuadro",
     "tools": {
       "crossStitch": {
-        "title": "Punto de cruz y bordado sobre cañamazo",
-        "text": "Elige o dibuja un motivo y ajusta el conteo de la tela y los colores.",
-        "output": "Gráfico de símbolos imprimible, número de puntos, estimación aproximada de hilo y tamaño final.",
-        "explore": "Crear un gráfico"
+        "title": "Punto de cruz",
+        "text": "Elige un diseño cuadrado completo o dibuja el tuyo y ajusta el conteo de la tela y los colores.",
+        "output": "Gráfico imprimible, hilo y madejas por color, orden de bordado y pasos para enmarcar o hacer un cojín.",
+        "explore": "Crear un proyecto"
+      },
+      "needlepoint": {
+        "title": "Bordado en cañamazo",
+        "text": "Elige un cañamazo cuadrado completo, con tu malla, punto y lana.",
+        "output": "Gráfico imprimible, lana por color, tamaño de cañamazo, orden de trabajo, estirado y acabado.",
+        "explore": "Crear un cañamazo"
       },
       "tessellation": {
         "title": "Teselaciones",

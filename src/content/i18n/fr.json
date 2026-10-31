@@ -1,5 +1,29 @@
 {
   "posts": {
+    "complete-cross-stitch-and-needlepoint-projects": {
+      "title": "Point de croix et canevas, désormais des projets complets",
+      "summary": "Le canevas a son propre créateur, et les deux outils donnent tout pour un ouvrage carré fini : coupe exacte, ordre de broderie, fil par couleur, finitions et grilles réparties sur plusieurs feuilles.",
+      "blocks": [
+        "Le canevas a maintenant [son propre créateur](/needlepoint/), distinct du [créateur de point de croix](/cross-stitch/). Les deux donnent des instructions complètes pour un ouvrage carré fini, pas seulement une grille, et chacun propose six nouveaux dessins complets avec bordure, créés pour ce site.",
+        "Exemples pour commencer",
+        [
+          "Médaillon étoilé, au point de croix",
+          "Arbre de vie sur toile de 18 points, en coussin",
+          "Soleil marin sur canevas, au point continental",
+          "Carré de flammes en laine persane sur canevas de 18 fils"
+        ],
+        "Ce que comprend chaque projet",
+        [
+          "La taille exacte de toile ou de canevas à couper, et comment trouver et marquer le centre",
+          "Un ordre de broderie par couleur, avec la case où commencer chacune",
+          "Brins, yards et une estimation d'écheveaux par couleur",
+          "Les étapes pour encadrer ou faire un coussin, avec toutes les mesures calculées",
+          "Des grilles PDF réparties sur plusieurs feuilles quand elles sont grandes, avec des rangs qui se chevauchent et des flèches de centre"
+        ],
+        "Le canevas est un art à part",
+        "Choisissez une maille de 10 à 18 fils, puis le point de vannerie, le point continental ou le demi-point, et la laine à tapisserie ou la laine persane. Les estimations de laine suivent le point et la laine. Le canevas reçoit une marge pour le blocage et les finitions, l'ordre de travail laisse le fond pour la fin, et le blocage précède le montage. Les anciens liens de canevas de la page de point de croix s'ouvrent sur la nouvelle page."
+      ]
+    },
     "complete-crochet-squares": {
       "title": "Chaque point de crochet écrit désormais un carré complet",
       "summary": "Choisissez un point de crochet et une taille de carré pour obtenir le patron entier : matériel, chaînette de base, tous les rangs, une bordure et les finitions.",
@@ -343,6 +367,14 @@
     }
   },
   "changelog": {
+    "Complete cross-stitch and needlepoint projects": {
+      "title": "Projets complets de point de croix et de canevas",
+      "items": [
+        "Le canevas a maintenant son propre créateur, avec maille, point et laine au choix, et une marge de blocage et de finition",
+        "Les deux créateurs donnent maintenant le matériel, l'ordre de broderie, l'estimation d'écheveaux et les étapes pour encadrer ou faire un coussin",
+        "Ajout de six dessins carrés complets à chaque créateur et de grilles PDF réparties sur plusieurs feuilles avec chevauchement"
+      ]
+    },
     "Complete crochet squares": {
       "title": "Carrés au crochet complets",
       "items": [

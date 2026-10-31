@@ -1,5 +1,29 @@
 {
   "posts": {
+    "complete-cross-stitch-and-needlepoint-projects": {
+      "title": "Ponto cruz e talagarça, agora projetos completos",
+      "summary": "A talagarça tem o próprio criador, e as duas ferramentas dão tudo para uma peça quadrada pronta: corte exato, ordem de bordado, fio por cor, acabamento e gráficos divididos em folhas.",
+      "blocks": [
+        "A talagarça agora tem [o próprio criador](/needlepoint/), separado do [criador de ponto cruz](/cross-stitch/). Os dois dão instruções completas para uma peça quadrada pronta, não só um gráfico, e os dois têm seis novos desenhos completos com borda, feitos para este site.",
+        "Exemplos para começar",
+        [
+          "Medalhão de estrela, em ponto cruz",
+          "Árvore da vida em tecido de 18 pontos, como almofada",
+          "Sol à beira-mar na talagarça, em ponto continental",
+          "Quadro de chamas em lã persa sobre talagarça de 18 fios"
+        ],
+        "O que cada projeto inclui",
+        [
+          "O tamanho exato de tecido ou talagarça para cortar, e como achar e marcar o centro",
+          "Uma ordem de bordado por cor, com o quadrado onde começar cada uma",
+          "Fios, jardas e uma estimativa de meadas por cor",
+          "Etapas para emoldurar ou fazer uma almofada, com todas as medidas calculadas",
+          "Gráficos em PDF divididos em folhas quando são grandes, com linhas sobrepostas e setas de centro"
+        ],
+        "A talagarça é um ofício próprio",
+        "Escolha a malha de 10 a 18 fios, depois ponto cesta, continental ou meio ponto, e lã de tapeçaria ou lã persa. As estimativas de lã seguem o ponto e a lã. A talagarça recebe uma margem para esticar e dar acabamento, a ordem de trabalho deixa o fundo para o fim, e a esticagem vem antes da montagem. Links antigos de talagarça da página de ponto cruz abrem na nova página."
+      ]
+    },
     "complete-crochet-squares": {
       "title": "Cada ponto de crochê agora escreve um quadrado completo",
       "summary": "Escolha um ponto de crochê e um tamanho de quadrado para receber a receita inteira: materiais, corrente base, todas as carreiras, uma borda e o acabamento.",
@@ -343,6 +367,14 @@
     }
   },
   "changelog": {
+    "Complete cross-stitch and needlepoint projects": {
+      "title": "Projetos completos de ponto cruz e talagarça",
+      "items": [
+        "A talagarça passa a ter o próprio criador, com malha, ponto e lã à escolha, e uma margem para esticar e dar acabamento",
+        "Os dois criadores agora dão materiais, ordem de bordado, estimativa de meadas e etapas para emoldurar ou fazer uma almofada",
+        "Adicionados seis desenhos quadrados completos a cada criador e gráficos em PDF divididos em folhas com sobreposição"
+      ]
+    },
     "Complete crochet squares": {
       "title": "Quadrados de crochê completos",
       "items": [

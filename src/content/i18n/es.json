@@ -1,5 +1,29 @@
 {
   "posts": {
+    "complete-cross-stitch-and-needlepoint-projects": {
+      "title": "Punto de cruz y cañamazo, ahora proyectos completos",
+      "summary": "El cañamazo tiene su propio creador, y ambas herramientas dan todo para una pieza cuadrada terminada: corte exacto, orden de bordado, hilo por color, acabado y gráficos repartidos en hojas.",
+      "blocks": [
+        "El cañamazo ya tiene [su propio creador](/needlepoint/), aparte del [creador de punto de cruz](/cross-stitch/). Ambos dan instrucciones completas para una pieza cuadrada terminada, no solo un gráfico, y ambos tienen seis diseños completos nuevos con borde, dibujados para este sitio.",
+        "Ejemplos para empezar",
+        [
+          "Medallón de estrella, en punto de cruz",
+          "Árbol de la vida en tela de 18 hilos, como cojín",
+          "Sol marino en cañamazo, en punto continental",
+          "Cuadro de llamas en lana persa sobre cañamazo de 18 hilos"
+        ],
+        "Qué incluye cada proyecto",
+        [
+          "El tamaño exacto de tela o cañamazo que cortar, y cómo hallar y marcar el centro",
+          "Un orden de bordado por color, con el cuadro donde empezar cada uno",
+          "Hebras, yardas y una estimación de madejas por color",
+          "Pasos para enmarcar o hacer un cojín, con todas las medidas calculadas",
+          "Gráficos en PDF repartidos en hojas cuando son grandes, con filas superpuestas y flechas de centro"
+        ],
+        "El cañamazo es un oficio propio",
+        "Elige la malla de 10 a 18 hilos, luego punto de cesta, continental o medio punto, y lana de tapiz o lana persa. Las estimaciones de lana siguen al punto y a la lana. El cañamazo lleva un margen para estirar y rematar, el orden de trabajo deja el fondo para el final, y el estirado va antes del acabado. Los enlaces antiguos de cañamazo de la página de punto de cruz se abren en la nueva página."
+      ]
+    },
     "complete-crochet-squares": {
       "title": "Cada punto de ganchillo ya escribe un cuadrado completo",
       "summary": "Elige un punto de ganchillo y un tamaño de cuadrado y obtendrás el patrón entero: materiales, cadeneta base, todas las vueltas, un borde y el acabado.",
@@ -343,6 +367,14 @@
     }
   },
   "changelog": {
+    "Complete cross-stitch and needlepoint projects": {
+      "title": "Proyectos completos de punto de cruz y cañamazo",
+      "items": [
+        "El cañamazo pasa a tener su propio creador, con malla, punto y lana a elegir, y un margen para estirar y rematar",
+        "Ambos creadores dan ahora materiales, orden de bordado, estimación de madejas y pasos para enmarcar o hacer un cojín",
+        "Se añadieron seis diseños cuadrados completos a cada creador y gráficos en PDF repartidos en hojas con solapamiento"
+      ]
+    },
     "Complete crochet squares": {
       "title": "Cuadrados de ganchillo completos",
       "items": [

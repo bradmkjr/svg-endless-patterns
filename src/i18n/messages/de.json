@@ -198,10 +198,16 @@
     "exploreTartan": "Karo gestalten",
     "tools": {
       "crossStitch": {
-        "title": "Kreuzstich und Stramin-Stickerei",
-        "text": "Wähle oder zeichne ein Motiv und stelle dann Stoffzählung und Farben ein.",
-        "output": "Druckbare Symbolvorlage, Stichzahlen, grobe Garnschätzung und fertige Größe.",
-        "explore": "Vorlage erstellen"
+        "title": "Kreuzstich",
+        "text": "Wähle ein komplettes quadratisches Motiv oder zeichne dein eigenes und stelle dann Stoffzählung und Farben ein.",
+        "output": "Druckbare Vorlage, Garn und Docken pro Farbe, Stickreihenfolge und Schritte zum Rahmen oder für ein Kissen.",
+        "explore": "Projekt erstellen"
+      },
+      "needlepoint": {
+        "title": "Stramin-Stickerei",
+        "text": "Wähle ein komplettes quadratisches Motiv mit deiner Straminstärke, deinem Stich und deiner Wolle.",
+        "output": "Druckbare Vorlage, Wolle pro Farbe, Straminmaß, Arbeitsreihenfolge, Spannen und Fertigstellen.",
+        "explore": "Stramin erstellen"
       },
       "tessellation": {
         "title": "Parkettierungen",

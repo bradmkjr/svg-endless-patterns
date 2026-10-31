@@ -198,10 +198,16 @@
     "exploreTartan": "Make a plaid",
     "tools": {
       "crossStitch": {
-        "title": "Cross stitch and needlepoint",
-        "text": "Choose or draw a motif, then set your fabric count and colors.",
-        "output": "Printable symbol chart, stitch counts, rough thread estimate, and finished size.",
-        "explore": "Make a chart"
+        "title": "Cross stitch",
+        "text": "Choose a complete square design or draw your own, then set your fabric count and colors.",
+        "output": "Printable chart, floss and skeins per color, stitching order, and framing or pillow steps.",
+        "explore": "Make a project"
+      },
+      "needlepoint": {
+        "title": "Needlepoint",
+        "text": "Choose a complete square canvas, with your mesh, stitch and yarn.",
+        "output": "Printable chart, yarn per color, canvas size, work order, blocking and finishing steps.",
+        "explore": "Make a canvas"
       },
       "tessellation": {
         "title": "Tessellations",

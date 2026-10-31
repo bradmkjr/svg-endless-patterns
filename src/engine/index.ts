@@ -15,7 +15,10 @@ import type { BlockInfo, CutLine, PatternRequest, PatternResult } from "./types"
 export type * from "./types";
 export { LOCALES } from "./i18n";
 export { generateCrossStitch } from "./crossStitch";
-export type { CrossStitchColor, CrossStitchCraft, CrossStitchRequest, CrossStitchResult } from "./crossStitch";
+export type { CrossStitchColor, CrossStitchRequest, CrossStitchResult } from "./crossStitch";
+export type { CountedFinish } from "./countedChart";
+export { generateNeedlepoint } from "./needlepoint";
+export type { NeedlepointColor, NeedlepointRequest, NeedlepointResult, NeedlepointStitch, NeedlepointYarn } from "./needlepoint";
 export { generateTessellation, listTessellationOptions } from "./tessellation";
 export type { TessellationColors, TessellationMotif, TessellationOptions, TessellationRequest, TessellationResult } from "./tessellation";
 export type { GroupId } from "./wallpaper";

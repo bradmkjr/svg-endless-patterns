@@ -1,5 +1,76 @@
 [
   {
+    "slug": "complete-cross-stitch-and-needlepoint-projects",
+    "title": "Cross stitch and needlepoint, now complete projects",
+    "date": "2026-10-31",
+    "summary": "Needlepoint has its own maker, and both tools now give everything for a finished square piece: exact cut, stitching order, thread per color, finishing, and charts split over sheets.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Needlepoint now has [its own maker](/needlepoint/), apart from the [cross-stitch maker](/cross-stitch/). Both give full instructions for a finished square piece, not just a chart, and both have six new complete designs with borders, drawn for this site."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "crossStitch",
+            "slug": "",
+            "query": "m=starMedallion",
+            "view": "stitched",
+            "caption": "Star medallion, in cross stitch"
+          },
+          {
+            "kind": "crossStitch",
+            "slug": "",
+            "query": "m=treeOfLife&count=18&finish=pillow",
+            "view": "stitched",
+            "caption": "Tree of life on 18-count fabric, as a pillow"
+          },
+          {
+            "kind": "needlepoint",
+            "slug": "",
+            "query": "m=seasideSun&stitch=continental",
+            "view": "stitched",
+            "caption": "Seaside sun on canvas, in continental stitch"
+          },
+          {
+            "kind": "needlepoint",
+            "slug": "",
+            "query": "m=flameSquare&yarn=persian&mesh=18",
+            "view": "stitched",
+            "caption": "Flame square in Persian yarn on 18-mesh canvas"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What each project includes"
+      },
+      {
+        "type": "list",
+        "items": [
+          "The exact size of fabric or canvas to cut, and how to find and mark the center",
+          "A stitching order by color, with the square to start each color on",
+          "Strands, yards and a skein estimate per color",
+          "Framing or pillow steps, with every size worked out",
+          "PDF charts split over sheets when they're large, with overlapping rows and center arrows"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Needlepoint is its own craft"
+      },
+      {
+        "type": "paragraph",
+        "text": "Choose canvas mesh from 10 to 18, then basketweave, continental or half-cross tent stitch, and tapestry wool or Persian yarn. Yarn estimates follow the stitch and the yarn. The canvas gets a margin for blocking and finishing, the work order leaves the background until last, and blocking comes before making up. Old needlepoint links from the cross-stitch page open on the new page."
+      }
+    ]
+  },
+  {
     "slug": "complete-crochet-squares",
     "title": "Every crochet stitch now writes a complete square",
     "date": "2026-10-31",
@@ -667,9 +738,9 @@
             "caption": "Pine, on 18-count fabric"
           },
           {
-            "kind": "crossStitch",
+            "kind": "needlepoint",
             "slug": "",
-            "query": "m=sailboat&craft=needlepoint",
+            "query": "g=19.-19.-9.d9.-9.d2a7.-9.d3a6.-9.d4a5.-8.bd5a4.-7.2bd6a3.-6.3bd7a2.-5.4bd8a.-4.5bd8a.-9.d9.-2.15d2.-3.13d3.-4.11d4.-c2.2c3.2c3.2c3.c-.2c2.2c3.2c3.2c2.-19.-19.&c=c8452f-e8b92f-2f6f9f-3a2a20",
             "view": "chart",
             "caption": "Sailboat chart, for needlepoint"
           }

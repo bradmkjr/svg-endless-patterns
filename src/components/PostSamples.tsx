@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { sampleHref, type PostSample } from "@/lib/content";
-import { generatePattern, generateStitchPattern, generateCrossStitch, generateTessellation, generateSashiko, generateCelticKnot, generateStainedGlass, generateMandala, generateGirih, generateTruchet, generateTartan, getBlock, getStitchPattern, type Locale } from "@/lib/generator";
+import { generatePattern, generateStitchPattern, generateCrossStitch, generateNeedlepoint, generateTessellation, generateSashiko, generateCelticKnot, generateStainedGlass, generateMandala, generateGirih, generateTruchet, generateTartan, getBlock, getStitchPattern, type Locale } from "@/lib/generator";
 import { messages } from "@/lib/i18n";
 import { parseState } from "@/lib/state";
 import { parseStitchState } from "@/lib/stitchState";
 import { parseCrossStitchState } from "@/lib/crossStitchState";
+import { parseNeedlepointState } from "@/lib/needlepointState";
 import { parseTessellationState } from "@/lib/tessellationState";
 import { parseSashikoState } from "@/lib/sashikoState";
 import { parseCelticKnotState } from "@/lib/celticKnotState";
@@ -19,6 +20,7 @@ import styles from "./Blog.module.css";
 async function sampleSvg(sample: PostSample, locale: Locale): Promise<string | null> {
   const params = new URLSearchParams(sample.query);
   if (sample.kind === "crossStitch") return (await generateCrossStitch(parseCrossStitchState(params, locale))).svg[sample.view];
+  if (sample.kind === "needlepoint") return (await generateNeedlepoint(parseNeedlepointState(params, locale))).svg[sample.view];
   if (sample.kind === "tessellation") return (await generateTessellation(parseTessellationState(params, locale))).svg[sample.view];
   if (sample.kind === "sashiko") return (await generateSashiko(parseSashikoState(params, locale))).svg[sample.view];
   if (sample.kind === "celtic") return (await generateCelticKnot(parseCelticKnotState(params, locale))).svg[sample.view];

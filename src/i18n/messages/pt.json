@@ -198,10 +198,16 @@
     "exploreTartan": "Criar um xadrez",
     "tools": {
       "crossStitch": {
-        "title": "Ponto cruz e bordado em talagarça",
-        "text": "Escolha ou desenhe um motivo e ajuste a contagem do tecido e as cores.",
-        "output": "Gráfico de símbolos para imprimir, contagem de pontos, estimativa aproximada de fio e tamanho final.",
-        "explore": "Criar um gráfico"
+        "title": "Ponto cruz",
+        "text": "Escolha um desenho quadrado completo ou desenhe o seu e ajuste a contagem do tecido e as cores.",
+        "output": "Gráfico para imprimir, fio e meadas por cor, ordem de bordado e etapas para emoldurar ou fazer uma almofada.",
+        "explore": "Criar um projeto"
+      },
+      "needlepoint": {
+        "title": "Bordado em talagarça",
+        "text": "Escolha uma talagarça quadrada completa, com sua malha, ponto e lã.",
+        "output": "Gráfico para imprimir, lã por cor, tamanho da talagarça, ordem de trabalho, esticagem e acabamento.",
+        "explore": "Criar uma talagarça"
       },
       "tessellation": {
         "title": "Tesselações",

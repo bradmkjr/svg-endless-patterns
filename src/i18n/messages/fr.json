@@ -198,10 +198,16 @@
     "exploreTartan": "Créer un carreau",
     "tools": {
       "crossStitch": {
-        "title": "Point de croix et broderie sur canevas",
-        "text": "Choisissez ou dessinez un motif, puis réglez le compte de la toile et les couleurs.",
-        "output": "Grille de symboles imprimable, nombre de points, estimation approximative du fil et taille finie.",
-        "explore": "Créer une grille"
+        "title": "Point de croix",
+        "text": "Choisissez un dessin carré complet ou dessinez le vôtre, puis réglez le compte de la toile et les couleurs.",
+        "output": "Grille imprimable, fil et écheveaux par couleur, ordre de broderie et étapes pour l'encadrer ou en faire un coussin.",
+        "explore": "Créer un projet"
+      },
+      "needlepoint": {
+        "title": "Broderie sur canevas",
+        "text": "Choisissez un canevas carré complet, avec votre maille, votre point et votre laine.",
+        "output": "Grille imprimable, laine par couleur, taille du canevas, ordre de travail, blocage et finitions.",
+        "explore": "Créer un canevas"
       },
       "tessellation": {
         "title": "Pavages",

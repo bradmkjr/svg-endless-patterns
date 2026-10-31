@@ -14,19 +14,19 @@ import {
   serializeCrossStitchState,
   setCell,
 } from "../lib/crossStitchState";
-import { countStitches, cropGrid, generateCrossStitch, SYMBOLS, threadYards, type CrossStitchRequest } from "./crossStitch";
+import { countStitches, cropGrid, generateCrossStitch, SYMBOLS, threadYards, YARDS_PER_SKEIN, type CrossStitchRequest } from "./crossStitch";
 import { generateCrossStitchPdf } from "./crossStitchPdf";
 import engineText from "./messages/crossStitch.json";
 
 const LOCALES = ["en", "es", "fr", "de", "pt"] as const;
 
 const grid = ["........", "..aab...", "..abb...", "...c....", "........", "........", "........", "........"];
-const req: CrossStitchRequest = { grid, colors: ["#111111", "#222222", "#333333"], fabric: "#ffffff", craft: "cross", count: 14, strands: 2, margin: 3 };
+const req: CrossStitchRequest = { grid, colors: ["#111111", "#222222", "#333333"], fabric: "#ffffff", count: 14, strands: 2, margin: 3, finish: "frame" };
 const params = (query: string) => new URLSearchParams(query);
 
 describe("finished size", () => {
   it("is the stitched area divided by the fabric count", () => {
-    for (const count of COUNT_OPTIONS.cross) {
+    for (const count of COUNT_OPTIONS) {
       const result = generateCrossStitch({ ...req, count });
       expect(result.columns).toBe(3);
       expect(result.rows).toBe(3);
@@ -83,6 +83,17 @@ describe("colors", () => {
     expect(() => countStitches(["ad"], 2)).toThrow();
   });
 
+  it("gives each color its strands and enough whole skeins", () => {
+    for (const motif of MOTIFS) {
+      for (const c of generateCrossStitch({ ...req, grid: motif.grid, colors: motif.colors, strands: 3 }).colors) {
+        expect(c.strands).toBe(3);
+        expect(c.yards).toBeGreaterThan(0);
+        expect(c.skeins).toBeGreaterThanOrEqual(1);
+        expect(c.skeins * YARDS_PER_SKEIN).toBeGreaterThanOrEqual(c.yards);
+      }
+    }
+  });
+
   it("names no thread maker", () => {
     expect(JSON.stringify([engineText, siteText, MOTIFS])).not.toMatch(/\b(DMC|Anchor|Madeira|Cosmo|Appleton|Paternayan)\b/i);
   });
@@ -91,20 +102,16 @@ describe("colors", () => {
 describe("thread estimate", () => {
   it("follows the stitch path, per stitch and strand, with the allowance", () => {
     // 1000 crosses on 14 count: 4.828" of path / 14, x 2/6 of a six-strand length, x 1.25, in yards.
-    expect(threadYards(1000, { craft: "cross", count: 14, strands: 2 })).toBeCloseTo(4, 0);
+    expect(threadYards(1000, { count: 14, strands: 2 })).toBeCloseTo(4, 0);
     const expected = (1000 * ((2 * Math.SQRT2 + 2) / 14) * (2 / 6) * 1.25) / 36;
-    expect(threadYards(1000, { craft: "cross", count: 14, strands: 2 })).toBeGreaterThanOrEqual(expected);
-    expect(threadYards(1000, { craft: "cross", count: 14, strands: 2 })).toBeLessThan(expected + 0.1);
+    expect(threadYards(1000, { count: 14, strands: 2 })).toBeGreaterThanOrEqual(expected);
+    expect(threadYards(1000, { count: 14, strands: 2 })).toBeLessThan(expected + 0.1);
   });
 
   it("uses more with more strands and a lower count", () => {
-    const at = (count: number, strands: number) => threadYards(5000, { craft: "cross", count, strands });
+    const at = (count: number, strands: number) => threadYards(5000, { count, strands });
     expect(at(14, 3)).toBeGreaterThan(at(14, 2));
     expect(at(11, 2)).toBeGreaterThan(at(18, 2));
-  });
-
-  it("ignores strands for needlepoint, which is given as thread in the needle", () => {
-    expect(threadYards(1000, { craft: "needlepoint", count: 13, strands: 1 })).toBe(threadYards(1000, { craft: "needlepoint", count: 13, strands: 6 }));
   });
 
   it("needs nothing for no stitches", () => {
@@ -112,10 +119,68 @@ describe("thread estimate", () => {
   });
 });
 
+describe("complete designs", () => {
+  const designs = MOTIFS.slice(6);
+
+  it("offers at least six", () => {
+    expect(designs.length).toBeGreaterThanOrEqual(6);
+  });
+
+  it.each(designs.map((m) => [m.id, m] as const))("%s fills its whole square, border included", (_, motif) => {
+    expect(motif.grid.length).toBeGreaterThanOrEqual(30);
+    expect(cropGrid(motif.grid)).toEqual(motif.grid);
+    const result = generateCrossStitch({ ...req, grid: motif.grid, colors: motif.colors });
+    expect(result.columns).toBe(result.rows);
+    expect(result.width).toBe(result.height);
+    expect(result.fabricWidth).toBe(result.fabricHeight);
+  });
+
+  it.each(designs.map((m) => [m.id, m] as const))("%s gives a stitching order that covers every stitch", (_, motif) => {
+    const result = generateCrossStitch({ ...req, grid: motif.grid, colors: motif.colors });
+    expect(result.turns.reduce((sum, turn) => sum + turn.stitches, 0)).toBe(result.stitches);
+    expect(result.order).toHaveLength(motif.colors.length);
+    for (const turn of result.turns) expect(motif.grid[turn.row - 1][turn.column - 1]).toBe(String.fromCharCode(97 + turn.index));
+  });
+});
+
+describe("the finished piece", () => {
+  const design = MOTIFS[6];
+  const base = { ...req, grid: design.grid, colors: design.colors };
+
+  it("gives a frame the design plus the bare fabric shown, and folds the rest over the board", () => {
+    // 39 stitches on 13... here 14 count: about 2 3/4", plus 1" a side.
+    const result = generateCrossStitch({ ...base, count: 11, margin: 3, finish: "frame" });
+    const text = result.finishing.join(" ");
+    expect(text).toContain('5 5/8" x 5 5/8"');
+    expect(text).toContain('2"');
+  });
+
+  it("works out a pillow's strips, back and form from the trimmed piece", () => {
+    const result = generateCrossStitch({ ...base, count: 11, finish: "pillow" });
+    const text = result.finishing.join(" ");
+    // 39/11 = 3.545, plus 1" each side, up to 5 5/8. Strips add 4" as cut; the seam takes 1".
+    expect(text).toContain('5 5/8" x 5 5/8"');
+    expect(text).toContain('3" x 5 5/8"');
+    expect(text).toContain('3" x 9 5/8"');
+    expect(text).toContain('8 5/8" x 8 5/8"');
+    expect(text).toContain('9" x 9"');
+  });
+
+  it("only mentions sheets when the chart needs more than one", () => {
+    const large = generateCrossStitch(base);
+    expect(large.sheets).toBeGreaterThan(1);
+    expect(large.steps.join(" ")).toContain(`${large.sheets} sheets`);
+    const small = generateCrossStitch(req);
+    expect(small.sheets).toBe(1);
+    expect(small.steps.join(" ")).not.toContain("sheets");
+  });
+});
+
 describe("motifs", () => {
-  it.each(MOTIFS.map((m) => [m.id, m] as const))("%s is rectangular, in range, uses all its colors, and has a name", (id, motif) => {
+  it.each(MOTIFS.map((m) => [m.id, m] as const))("%s is square, in range, uses all its colors, and has a name", (id, motif) => {
     const width = motif.grid[0].length;
     expect(motif.grid.every((row) => row.length === width), "rows differ").toBe(true);
+    expect(motif.grid.length).toBe(width);
     expect(width).toBeGreaterThanOrEqual(MIN_GRID);
     expect(width).toBeLessThanOrEqual(MAX_GRID);
     expect(motif.grid.length).toBeGreaterThanOrEqual(MIN_GRID);
@@ -139,8 +204,8 @@ describe("share links", () => {
     const base = defaultCrossStitchState(locale);
     const states: CrossStitchRequest[] = [
       { ...base, count: 18, strands: 3, margin: 5, fabric: "#222222" },
-      { ...base, craft: "needlepoint", count: 18 },
-      { ...base, craft: "needlepoint", count: DEFAULT_COUNT.needlepoint },
+      { ...base, count: DEFAULT_COUNT, finish: "pillow" },
+      { ...base, grid: MOTIFS[MOTIFS.length - 1].grid, colors: MOTIFS[MOTIFS.length - 1].colors, finish: "pillow", margin: 1 },
       { ...base, colors: ["#101010", "#202020", "#303030", "#404040"] },
       { ...base, grid: MOTIFS[3].grid, colors: MOTIFS[3].colors },
       { ...base, grid: setCell(base.grid, 0, 0, "c") },
@@ -156,11 +221,11 @@ describe("share links", () => {
     expect(serializeCrossStitchState({ ...defaultCrossStitchState(), grid: MOTIFS[1].grid, colors: MOTIFS[1].colors })).toBe("m=heart");
   });
 
-  it.each(["m=heart", "m=pine&count=18", "m=sailboat&craft=needlepoint", "m=diamonds&c=7a4b9a-2f8f9d-1a1a1a"])("keep the deep link %s", (query) => {
+  it.each(["m=heart", "m=pine&count=18", "m=compassRose&finish=pillow", "m=diamonds&c=7a4b9a-2f8f9d-1a1a1a"])("keep the deep link %s", (query) => {
     expect(serializeCrossStitchState(parseCrossStitchState(params(query)))).toBe(query);
   });
 
-  it.each(["count=15", "count=abc", "strands=5", "margin=99", "f=zzz", "m=nope", "c=notcolor", "c=", "g=xyz", "g=99999999a", "g=8a-8a", "g=8a-7a-8a-8a-8a-8a-8a-8a", "g=0a", "craft=knit", "count=10"])(
+  it.each(["count=15", "count=abc", "strands=5", "margin=99", "f=zzz", "m=nope", "c=notcolor", "c=", "g=xyz", "g=99999999a", "g=8a-8a", "g=8a-7a-8a-8a-8a-8a-8a-8a", "g=0a", "craft=knit", "count=10", "finish=shelf"])(
     "fall back to the default on the bad value %s",
     (query) => {
       expect(parseCrossStitchState(params(query))).toEqual(defaultCrossStitchState());
@@ -170,11 +235,6 @@ describe("share links", () => {
   it("keep the good settings when another is bad", () => {
     const state = parseCrossStitchState(params("count=18&strands=5&m=nope"));
     expect(state).toEqual({ ...defaultCrossStitchState(), count: 18 });
-  });
-
-  it("use a count only with the craft that offers it", () => {
-    expect(parseCrossStitchState(params("craft=needlepoint&count=11")).count).toBe(DEFAULT_COUNT.needlepoint);
-    expect(parseCrossStitchState(params("craft=needlepoint&count=10")).count).toBe(10);
   });
 
   it("ignore colors too few for the grid, rather than give a chart it can't draw", () => {
@@ -239,14 +299,15 @@ describe("output", () => {
     }
   });
 
-  it.each(LOCALES)("builds a %s chart, for both crafts and any color count", async (locale) => {
+  it.each(LOCALES)("builds a %s project, for both finishes and any color count", async (locale) => {
     const base = defaultCrossStitchState(locale);
     const eight = { ...base, grid: ["a", "b", "c", "d", "e", "f", "g", "h"].map((c) => c.repeat(MAX_GRID)), colors: Array<string>(8).fill("#123456") };
-    for (const state of [base, { ...base, craft: "needlepoint" as const, count: 13 }, { ...base, strands: 1 }, eight, { ...base, grid: resizeGrid([], 8, 8) }]) {
+    for (const state of [base, { ...base, finish: "pillow" as const }, { ...base, strands: 1 }, eight, { ...base, grid: resizeGrid([], 8, 8) }]) {
       const doc = await PDFDocument.load(await generateCrossStitchPdf(state));
       // Details and the chart, which always starts a page of its own.
       expect(doc.getPageCount()).toBeGreaterThanOrEqual(2);
-      expect(JSON.stringify(generateCrossStitch(state).steps)).not.toMatch(/\{\w+\}/);
+      const result = generateCrossStitch(state);
+      expect(JSON.stringify([result.steps, result.materials, result.order, result.finishing])).not.toMatch(/\{\w+\}/);
     }
   });
 });
@@ -270,6 +331,11 @@ describe.each([
       expect(text, key).not.toBe("");
       expect(placeholders(text), key).toEqual(placeholders(english.get(key)!));
     }
+  });
+
+  it.each(LOCALES)("%s engine text fits Helvetica's character set", (locale) => {
+    if (catalog !== (engineText as unknown)) return;
+    for (const [key, text] of leaves(catalog[locale])) expect(text, key).toMatch(/^[\x20-\x7e\u00a0-\u00ff]*$/);
   });
 
   it.each(LOCALES.slice(1))("%s isn't still English", (locale) => {

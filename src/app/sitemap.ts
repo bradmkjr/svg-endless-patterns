@@ -28,6 +28,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/sashiko/",
     "/tessellations/",
     "/cross-stitch/",
+    "/needlepoint/",
     "/about/",
     "/blog/",
     "/changelog/",

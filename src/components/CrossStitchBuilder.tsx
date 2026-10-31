@@ -2,12 +2,11 @@
 
 import { useEffect, useState } from "react";
 import catalog from "@/i18n/messages/crossStitch.json";
-import { generateCrossStitch, generateCrossStitchPdf, type CrossStitchCraft, type CrossStitchRequest, type CrossStitchResult, type Locale } from "@/lib/generator";
+import { generateCrossStitch, generateCrossStitchPdf, type CrossStitchRequest, type CrossStitchResult, type Locale } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { fill, messages } from "@/lib/i18n";
 import {
   COUNT_OPTIONS,
-  DEFAULT_COUNT,
   GRID_OPTIONS,
   MARGIN_OPTIONS,
   MAX_COLORS,
@@ -23,6 +22,7 @@ import { PalettePicker } from "./PalettePicker";
 import { syncShareLink } from "@/lib/toolOptions";
 import { paletteAccents } from "@/lib/palettes";
 import styles from "./BlockBuilder.module.css";
+import { CountedProjectGuide, NumberSelect } from "./CountedProjectGuide";
 import css from "./CrossStitchBuilder.module.css";
 import { CrossStitchBuilderGrid } from "./CrossStitchBuilderGrid";
 
@@ -33,6 +33,7 @@ type View = "stitched" | "chart" | "edit";
 /** The color being painted, or -1 for bare fabric. */
 type Tool = number;
 
+<<<<<<< ours
 function NumberSelect({ label, value, options, unit = "", onChange }: { label: string; value: number; options: number[]; unit?: string; onChange: (value: number) => void }) {
   return (
     <label className={styles.field}>
@@ -47,6 +48,9 @@ function NumberSelect({ label, value, options, unit = "", onChange }: { label: s
 }
 
 export function CrossStitchBuilder({ locale, option, labels, initialState, initialResult }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: CrossStitchRequest; initialResult: CrossStitchResult }) {
+=======
+export function CrossStitchBuilder({ locale, initialState, initialResult }: { locale: Locale; initialState: CrossStitchRequest; initialResult: CrossStitchResult }) {
+>>>>>>> theirs
   const t = catalog[locale];
   const b = messages(locale).builder;
   const goToOption = useOptionNavigation("crossStitch", locale);
@@ -99,8 +103,6 @@ export function CrossStitchBuilder({ locale, option, labels, initialState, initi
     }
   };
 
-  const setCraft = (craft: CrossStitchCraft) => update({ craft, count: DEFAULT_COUNT[craft] });
-  const cross = state.craft === "cross";
   const cellLabel = (row: number, column: number, cell: string) =>
     cell === "." ? fill(t.cellEmpty, { row: row + 1, column: column + 1 }) : fill(t.cellColor, { row: row + 1, column: column + 1, symbol: symbolOf(result, cell.charCodeAt(0) - 97) });
   const tabs: [View, string][] = [
@@ -157,7 +159,7 @@ export function CrossStitchBuilder({ locale, option, labels, initialState, initi
           )}
 
           <div className={`${styles.actions} no-print`}>
-            <button type="button" disabled={busy} className={styles.primary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateCrossStitchPdf(state), "cross-stitch-chart.pdf", "application/pdf"))}>
+            <button type="button" disabled={busy} className={styles.primary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateCrossStitchPdf(state), "cross-stitch-project.pdf", "application/pdf"))}>
               {t.downloadChart}
             </button>
             <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(view === "chart" ? result.svg.chart : result.svg.stitched, view === "chart" ? "cross-stitch-chart.svg" : "cross-stitch-design.svg"))}>
@@ -232,17 +234,16 @@ export function CrossStitchBuilder({ locale, option, labels, initialState, initi
 
           <fieldset>
             <legend>{t.fabric}</legend>
-            <div className={styles.presets} role="group" aria-label={t.craft}>
-              <button type="button" className={cross ? styles.tabOn : styles.tab} aria-pressed={cross} onClick={() => setCraft("cross")}>
-                {t.craftCross}
-              </button>
-              <button type="button" className={cross ? styles.tab : styles.tabOn} aria-pressed={!cross} onClick={() => setCraft("needlepoint")}>
-                {t.craftNeedlepoint}
-              </button>
-            </div>
-            <NumberSelect label={cross ? t.countCross : t.countNeedlepoint} value={state.count} options={COUNT_OPTIONS[state.craft]} onChange={(count) => update({ count })} />
-            {cross && <NumberSelect label={t.strands} value={state.strands} options={STRAND_OPTIONS} onChange={(strands) => update({ strands })} />}
+            <NumberSelect label={t.countCross} value={state.count} options={COUNT_OPTIONS} onChange={(count) => update({ count })} />
+            <NumberSelect label={t.strands} value={state.strands} options={STRAND_OPTIONS} onChange={(strands) => update({ strands })} />
             <NumberSelect label={t.margin} value={state.margin} options={MARGIN_OPTIONS} unit={'"'} onChange={(margin) => update({ margin })} />
+            <label className={styles.field}>
+              <span>{t.finish}</span>
+              <select value={state.finish} onChange={(e) => update({ finish: e.target.value as CrossStitchRequest["finish"] })}>
+                <option value="frame">{t.finishFrame}</option>
+                <option value="pillow">{t.finishPillow}</option>
+              </select>
+            </label>
           </fieldset>
         </form>
       </div>
@@ -251,52 +252,12 @@ export function CrossStitchBuilder({ locale, option, labels, initialState, initi
         <strong>{t.originalTitle}</strong> {t.originalText}
       </p>
 
-      <div className={styles.results}>
-        <section>
-          <h2>{t.guide}</h2>
-          <p className={styles.quiltSize}>{fill(t.sizeLine, { w: result.width, h: result.height, count: state.count, columns: result.columns, rows: result.rows })}</p>
-          <p className={styles.quiltSize}>{fill(t.fabricLine, { w: result.fabricWidth, h: result.fabricHeight })}</p>
-          <ol className={styles.steps}>
-            {result.steps.map((step) => (
-              <li key={step}>{step}</li>
-            ))}
-          </ol>
-        </section>
-
-        <section>
-          <h2>{t.colorList}</h2>
-          <table className={styles.yardage}>
-            <thead>
-              <tr>
-                <th scope="col">{t.symbol}</th>
-                <th scope="col">{t.color}</th>
-                <th scope="col" style={{ textAlign: "right" }}>
-                  {t.stitches}
-                </th>
-                <th scope="col" style={{ textAlign: "right" }}>
-                  {t.yards}
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {result.colors.map((c) => (
-                <tr key={c.symbol}>
-                  <th scope="row" className={css.symbol}>
-                    {c.symbol}
-                  </th>
-                  <td style={{ textAlign: "left", fontWeight: 400 }}>
-                    <span className={styles.swatch} style={{ background: c.color }} aria-hidden />
-                    {c.color}
-                  </td>
-                  <td>{c.stitches}</td>
-                  <td>{c.yards}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-          <p className={styles.note}>{fill(cross ? t.flossNote : t.threadNote, { n: result.stitches, y: result.totalYards })}</p>
-        </section>
-      </div>
+      <CountedProjectGuide
+        t={t}
+        result={result}
+        sizeLines={[fill(t.sizeLine, { w: result.width, h: result.height, count: state.count, columns: result.columns, rows: result.rows }), fill(t.fabricLine, { w: result.fabricWidth, h: result.fabricHeight })]}
+        note={fill(t.flossNote, { n: result.stitches, y: result.totalYards })}
+      />
     </div>
   );
 }

@@ -1,5 +1,29 @@
 {
   "posts": {
+    "complete-cross-stitch-and-needlepoint-projects": {
+      "title": "Kreuzstich und Stramin, jetzt als komplette Projekte",
+      "summary": "Stramin hat einen eigenen Ersteller, und beide Werkzeuge liefern alles für ein fertiges quadratisches Stück: genauen Zuschnitt, Stickreihenfolge, Garn pro Farbe, Fertigstellung und auf Blätter verteilte Vorlagen.",
+      "blocks": [
+        "Stramin hat jetzt [einen eigenen Ersteller](/needlepoint/), getrennt vom [Kreuzstich-Ersteller](/cross-stitch/). Beide liefern vollständige Anleitungen für ein fertiges quadratisches Stück, nicht nur eine Vorlage, und beide haben sechs neue komplette Motive mit Rand, gezeichnet für diese Seite.",
+        "Beispiele zum Einstieg",
+        [
+          "Sternmedaillon, in Kreuzstich",
+          "Lebensbaum auf Stoff mit 18 Stichen, als Kissen",
+          "Sonne am Meer auf Stramin, im Kontinentalstich",
+          "Flammenquadrat in Perserwolle auf Stramin mit 18 Fäden"
+        ],
+        "Was jedes Projekt enthält",
+        [
+          "Das genaue Zuschnittmaß für Stoff oder Stramin, und wie du die Mitte findest und markierst",
+          "Eine Stickreihenfolge nach Farben, mit dem Startfeld jeder Farbe",
+          "Fäden, Yards und eine Dockenschätzung pro Farbe",
+          "Schritte zum Rahmen oder für ein Kissen, mit allen berechneten Maßen",
+          "PDF-Vorlagen, die sich bei großen Motiven auf Blätter verteilen, mit überlappenden Reihen und Mittelpfeilen"
+        ],
+        "Stramin ist ein eigenes Handwerk",
+        "Wähle eine Straminstärke von 10 bis 18 Fäden, dann Korbstich, Kontinentalstich oder Halbkreuzstich und Gobelinwolle oder Perserwolle. Die Wollschätzung folgt Stich und Wolle. Der Stramin erhält einen Rand zum Spannen und Fertigstellen, die Arbeitsreihenfolge lässt den Hintergrund bis zuletzt, und das Spannen kommt vor dem Fertigstellen. Alte Stramin-Links von der Kreuzstich-Seite öffnen sich auf der neuen Seite."
+      ]
+    },
     "complete-crochet-squares": {
       "title": "Jedes Häkelmuster schreibt jetzt ein ganzes Quadrat",
       "summary": "Wähle ein Häkelmuster und eine Quadratgröße und du bekommst die ganze Anleitung: Material, Anschlagkette, alle Reihen, einen Rand und das Fertigstellen.",
@@ -343,6 +367,14 @@
     }
   },
   "changelog": {
+    "Complete cross-stitch and needlepoint projects": {
+      "title": "Komplette Projekte für Kreuzstich und Stramin",
+      "items": [
+        "Stramin hat jetzt einen eigenen Ersteller, mit Wahl von Straminstärke, Stich und Wolle sowie einem Rand zum Spannen und Fertigstellen",
+        "Beide Ersteller liefern jetzt Material, Stickreihenfolge, Dockenschätzung und Schritte zum Rahmen oder für ein Kissen",
+        "Sechs komplette quadratische Motive für jeden Ersteller hinzugefügt, und PDF-Vorlagen, die sich überlappend auf Blätter verteilen"
+      ]
+    },
     "Complete crochet squares": {
       "title": "Ganze Häkelquadrate",
       "items": [

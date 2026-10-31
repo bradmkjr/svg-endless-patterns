@@ -6,6 +6,7 @@ import { PREFIXED_LOCALES } from "./i18n";
 import { parseState, serializeState } from "./state";
 import { parseStitchState, serializeStitchState } from "./stitchState";
 import { parseCrossStitchState, serializeCrossStitchState } from "./crossStitchState";
+import { parseNeedlepointState, serializeNeedlepointState } from "./needlepointState";
 import { parseTessellationState, serializeTessellationState } from "./tessellationState";
 import { parseSashikoState, serializeSashikoState } from "./sashikoState";
 import { parseCelticKnotState, serializeCelticKnotState } from "./celticKnotState";
@@ -20,7 +21,11 @@ const sorted = (query: string) => [...new URLSearchParams(query).entries()].map(
 async function knownPaths() {
   const posts = await getPosts();
   return new Set([
+<<<<<<< ours
     "/", ...PREFIXED_LOCALES.map((l) => `/${l}/`), "/tartans/", "/truchet/", "/girih/", "/mandalas/", "/stained-glass/", "/celtic-knots/", "/sashiko/", "/tessellations/", "/cross-stitch/", "/blocks/", "/knitting/", "/crochet/", "/patterns/", "/palettes/", "/about/", "/blog/", "/changelog/",
+=======
+    "/", ...PREFIXED_LOCALES.map((l) => `/${l}/`), "/tartans/", "/truchet/", "/girih/", "/mandalas/", "/stained-glass/", "/celtic-knots/", "/sashiko/", "/tessellations/", "/cross-stitch/", "/needlepoint/", "/blocks/", "/knitting/", "/crochet/", "/patterns/", "/about/", "/blog/", "/changelog/",
+>>>>>>> theirs
     ...(await getBlocks()).map((b) => `/blocks/${b.slug}/`),
     ...(await getStitchPatterns("knit")).map((s) => `/knitting/${s.slug}/`),
     ...(await getStitchPatterns("crochet")).map((s) => `/crochet/${s.slug}/`),
@@ -61,6 +66,8 @@ describe("blog posts", () => {
     // A setting the tool rejects or ignores would drop out of this round trip.
     if (sample.kind === "crossStitch") {
       expect(sorted(serializeCrossStitchState(parseCrossStitchState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
+    } else if (sample.kind === "needlepoint") {
+      expect(sorted(serializeNeedlepointState(parseNeedlepointState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
     } else if (sample.kind === "tartan") {
       expect(sorted(serializeTartanState(parseTartanState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
     } else if (sample.kind === "tessellation") {

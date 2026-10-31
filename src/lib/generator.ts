@@ -4,12 +4,19 @@
  * fetch calls. Requests and results are already plain JSON and every function
  * is already async, so no caller has to change.
  */
+<<<<<<< ours
 import { generatePattern as runGenerate, generateStitchPattern as runStitch, generateCrossStitch as runCrossStitch, generateTessellation as runTessellation, listTessellationOptions, generateSashiko as runSashiko, generateCelticKnot as runCelticKnot, generateStainedGlass as runStainedGlass, generateMandala as runMandala, mandalaMotifThumb as runMotifThumb, generateGirih as runGirih, generateTruchet as runTruchet, generateTartan as runTartan, listBlocks, listStitchPatterns } from "@/engine";
 import type { TessellationOptions, TessellationRequest, TessellationResult, SashikoRequest, SashikoResult, CelticKnotRequest, CelticKnotResult, StainedGlassRequest, StainedGlassResult, MandalaRequest, MandalaResult, GirihRequest, GirihResult, TruchetRequest, TruchetResult, BlockInfo, Craft, Locale, PatternRequest, PatternResult, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult, CrossStitchRequest, CrossStitchResult } from "@/engine";
 
 export type { TessellationColors, TessellationMotif, TessellationOptions, TessellationRequest, TessellationResult, GroupId, SashikoMotif, SashikoRequest, SashikoResult, CelticBreakPattern, CelticInterlace, CelticKnotRequest, CelticKnotResult, CelticStrand, StainedGlassColor, StainedGlassLayout, StainedGlassPiece, StainedGlassRequest, StainedGlassResult, MandalaMotif, MandalaRequest, MandalaResult, MandalaRing, MandalaRingSpec, GirihColors, GirihPart, GirihRequest, GirihResult, GirihStar, GirihSymmetry, TruchetArrangement, TruchetColors, TruchetRequest, TruchetResult, TruchetStyle, BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, Setting, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult, TartanStripe, CrossStitchColor, CrossStitchCraft, CrossStitchRequest, CrossStitchResult } from "@/engine";
 
 export { DEFAULT_KNIT_SQUARE, KNIT_SQUARE_SIZES } from "@/engine";
+=======
+import { generatePattern as runGenerate, generateStitchPattern as runStitch, generateCrossStitch as runCrossStitch, generateNeedlepoint as runNeedlepoint, generateTessellation as runTessellation, listTessellationOptions, generateSashiko as runSashiko, generateCelticKnot as runCelticKnot, generateStainedGlass as runStainedGlass, generateMandala as runMandala, generateGirih as runGirih, generateTruchet as runTruchet, generateTartan as runTartan, listBlocks, listStitchPatterns } from "@/engine";
+import type { TessellationOptions, TessellationRequest, TessellationResult, SashikoRequest, SashikoResult, CelticKnotRequest, CelticKnotResult, StainedGlassRequest, StainedGlassResult, MandalaRequest, MandalaResult, GirihRequest, GirihResult, TruchetRequest, TruchetResult, BlockInfo, Craft, Locale, PatternRequest, PatternResult, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult, CrossStitchRequest, CrossStitchResult, NeedlepointRequest, NeedlepointResult } from "@/engine";
+
+export type { TessellationColors, TessellationMotif, TessellationOptions, TessellationRequest, TessellationResult, GroupId, SashikoMotif, SashikoRequest, SashikoResult, CelticBreakPattern, CelticInterlace, CelticKnotRequest, CelticKnotResult, CelticStrand, StainedGlassColor, StainedGlassLayout, StainedGlassPiece, StainedGlassRequest, StainedGlassResult, MandalaMotif, MandalaRequest, MandalaResult, MandalaRing, GirihColors, GirihPart, GirihRequest, GirihResult, GirihStar, GirihSymmetry, TruchetArrangement, TruchetColors, TruchetRequest, TruchetResult, TruchetStyle, BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, Setting, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult, TartanStripe, CountedFinish, CrossStitchColor, CrossStitchRequest, CrossStitchResult, NeedlepointColor, NeedlepointRequest, NeedlepointResult, NeedlepointStitch, NeedlepointYarn } from "@/engine";
+>>>>>>> theirs
 
 export async function getBlocks(locale: Locale = "en"): Promise<BlockInfo[]> {
   return listBlocks(locale);
@@ -61,6 +68,15 @@ export async function generateCrossStitch(request: CrossStitchRequest): Promise<
 
 export async function generateCrossStitchPdf(request: CrossStitchRequest): Promise<Uint8Array> {
   const { generateCrossStitchPdf: run } = await import("@/engine/crossStitchPdf");
+  return run(request);
+}
+
+export async function generateNeedlepoint(request: NeedlepointRequest): Promise<NeedlepointResult> {
+  return runNeedlepoint(request);
+}
+
+export async function generateNeedlepointPdf(request: NeedlepointRequest): Promise<Uint8Array> {
+  const { generateNeedlepointPdf: run } = await import("@/engine/needlepointPdf");
   return run(request);
 }
 

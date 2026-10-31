@@ -17,6 +17,7 @@ import { SYMMETRY_OPTIONS as MANDALA_SYMMETRY } from "./mandalaState";
 import { MOTIF_OPTIONS as SASHIKO_MOTIFS } from "./sashikoState";
 import { GLASS_LAYOUTS } from "./stainedGlassState";
 import { publicPath } from "./site";
+import { mazeApiUrl } from "./mazeApi";
 import { MOTIFS as NEEDLEPOINT_DESIGNS } from "./needlepointState";
 import { SHAPE_OPTIONS as MAZE_SHAPES } from "./mazeState";
 import { GROUPS } from "./tessellationState";
@@ -116,8 +117,9 @@ export function storedSeed(tool: ToolId, params: { get(name: string): string | n
 
 export type ThumbGroup = ToolId | "blocks" | "knit" | "crochet" | "tartan";
 
-/** Where a thumbnail's static file is. */
-export const thumbSrc = (group: ThumbGroup, slug: string) => publicPath(`/thumbs/${group}/${slug}.svg`);
+/** Maze thumbnails are generated dynamically by the API; all others are static files. */
+export const thumbSrc = (group: ThumbGroup, slug: string) =>
+  group === "maze" ? mazeApiUrl(`/api/maze/thumbnail/${slug}`) : publicPath(`/thumbs/${group}/${slug}.svg`);
 
 type Tessellation = Pick<TessellationOptions, "groups">;
 

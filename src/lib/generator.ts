@@ -8,7 +8,7 @@ import type { MazePaperId, MazeRequest, MazeResult } from "./mazeTypes";
 import { mazeApiPost } from "./mazeApi";
 
 export type { TessellationColors, TessellationMotif, TessellationOptions, TessellationRequest, TessellationResult, GroupId, SashikoMotif, SashikoRequest, SashikoResult, CelticBreakPattern, CelticInterlace, CelticKnotRequest, CelticKnotResult, CelticStrand, StainedGlassColor, StainedGlassLayout, StainedGlassPiece, StainedGlassRequest, StainedGlassResult, MandalaMotif, MandalaRequest, MandalaResult, MandalaRing, MandalaRingSpec, GirihColors, GirihPart, GirihRequest, GirihResult, GirihStar, GirihSymmetry, TruchetArrangement, TruchetColors, TruchetRequest, TruchetResult, TruchetStyle, TieDyeMix, TieDyeRequest, TieDyeResult, TieDyeTechnique, BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, Setting, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult, TartanStripe, CountedFinish, CrossStitchColor, CrossStitchRequest, CrossStitchResult, NeedlepointColor, NeedlepointRequest, NeedlepointResult, NeedlepointStitch, NeedlepointYarn } from "@/engine";
-export type { MazeAlgorithm, MazeColors, MazeDifficulty, MazePaperId, MazeRequest, MazeResult, MazeShape } from "./mazeTypes";
+export type { MazeAlgorithm, MazeColors, MazeDifficulty, MazePaperId, MazeRequest, MazeResult, MazeShape, MazeSize } from "./mazeTypes";
 
 export { DEFAULT_KNIT_SQUARE, KNIT_SQUARE_SIZES } from "@/engine";
 export { MAZE_PAPERS, mazeAcross, mazeTallRows } from "./mazeOptions";

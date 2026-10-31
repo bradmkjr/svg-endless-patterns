@@ -4,6 +4,7 @@ export type MazeDifficulty = "easy" | "medium" | "hard" | "expert" | "master" | 
 export type MazePaperId = "ansiC" | "ansiD" | "ansiE" | "a3" | "a2" | "a1" | "a0" | "2a0" | "4a0";
 export type MazeLocale = "en" | "es" | "fr" | "de" | "pt";
 export type MazeColors = { background: string; wall: string; accent: string };
+export type MazeSize = { cols?: number; rows?: number };
 
 export type MazeRequest = {
   shape: MazeShape;

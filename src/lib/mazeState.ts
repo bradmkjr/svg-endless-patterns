@@ -1,6 +1,6 @@
 import { localeAccent } from "./localeAccent";
 import type { Locale } from "./generator";
-import type { MazeAlgorithm, MazeColors, MazeDifficulty, MazeRequest, MazeShape } from "./mazeTypes";
+import type { MazeAlgorithm, MazeColors, MazeDifficulty, MazeRequest, MazeShape, MazeSize } from "./mazeTypes";
 
 /** The maze builder's options, default colors and share links. */
 

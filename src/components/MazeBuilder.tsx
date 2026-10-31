@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { generateMaze, generateMazePdf, generateMazePosterPdf, MAZE_PAPERS, mazeAcross, mazeTallRows, type MazePaperId, type Locale, type MazeColors, type MazeRequest, type MazeResult } from "@/lib/generator";
-import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
+import { generateMaze, generateMazePdf, generateMazePng, generateMazePosterPdf, MAZE_PAPERS, mazeAcross, mazeTallRows, type MazePaperId, type Locale, type MazeColors, type MazeRequest, type MazeResult } from "@/lib/generator";
+import { downloadBytes, downloadSvg } from "@/lib/download";
 import { fill, messages } from "@/lib/i18n";
 import copy from "@/i18n/messages/maze.json";
 import { ALGORITHM_OPTIONS, DIFFICULTY_OPTIONS, MAX_SEED, PNG_OPTIONS, SIZE_OPTIONS, serializeMazeState, SHAPE_OPTIONS, WEIGHT_OPTIONS } from "@/lib/mazeState";
@@ -15,14 +15,14 @@ import styles from "./BlockBuilder.module.css";
 const COLOR_KEYS: (keyof MazeColors)[] = ["background", "wall", "accent"];
 const VIEWS = ["maze", "solution"] as const;
 
-export function MazeBuilder({ locale, option, labels, initialState, initialResult }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: MazeRequest; initialResult: MazeResult }) {
+export function MazeBuilder({ locale, option, labels, initialState }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: MazeRequest }) {
   const t = copy[locale];
   const b = messages(locale).builder;
   const goToOption = useOptionNavigation("maze", locale);
   const [state, setState] = useState(initialState);
   const [paper, setPaper] = useState<MazePaperId>("a1");
   const [pngSize, setPngSize] = useState(PNG_OPTIONS[1]);
-  const [result, setResult] = useState(initialResult);
+  const [result, setResult] = useState<MazeResult>();
   const [view, setView] = useState<(typeof VIEWS)[number]>("maze");
   const [status, setStatus] = useState("");
   const [busy, setBusy] = useState(false);
@@ -72,7 +72,7 @@ export function MazeBuilder({ locale, option, labels, initialState, initialResul
     }
   };
 
-  const svg = result.svg[view];
+  const svg = result?.svg[view] ?? "";
 
   return (
     <div className={styles.builder}>
@@ -86,9 +86,13 @@ export function MazeBuilder({ locale, option, labels, initialState, initialResul
               </button>
             ))}
           </div>
-          <div className={`art ${styles.art}`} role="img" aria-label={view === "maze" ? t.mazeAlt : t.solutionAlt} dangerouslySetInnerHTML={{ __html: svg }} />
+          {result ? (
+            <div className={`art ${styles.art}`} role="img" aria-label={view === "maze" ? t.mazeAlt : t.solutionAlt} dangerouslySetInnerHTML={{ __html: svg }} />
+          ) : (
+            <p className={styles.note} role="status">{status || t.loading}</p>
+          )}
           <p className={styles.note}>{t.howNote}</p>
-          <p className={styles.note}>{fill(t.stats, { cells: result.cells, length: result.solutionLength, deadEnds: result.deadEnds })}</p>
+          {result && <p className={styles.note}>{fill(t.stats, { cells: result.cells, length: result.solutionLength, deadEnds: result.deadEnds })}</p>}
           <div className={`${styles.actions} no-print`}>
             <button type="button" disabled={busy} className={styles.primary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateMazePdf(state), "maze.pdf", "application/pdf"))}>
               {t.downloadPdf}
@@ -96,7 +100,7 @@ export function MazeBuilder({ locale, option, labels, initialState, initialResul
             <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(svg, `maze-${view}.svg`))}>
               SVG
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, () => downloadPng(svg, `maze-${view}-${pngSize}.png`, pngSize), t.pngTooLarge)}>
+            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, async () => downloadBytes(await generateMazePng(state, view, pngSize), `maze-${view}-${pngSize}.png`, "image/png"), t.pngTooLarge)}>
               PNG
             </button>
             <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.copying, b.copied, () => navigator.clipboard.writeText(window.location.href))}>

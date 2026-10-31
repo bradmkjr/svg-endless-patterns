@@ -4,12 +4,12 @@ import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import type { Locale, TruchetResult } from "@/lib/generator";
 import { parseTruchetState } from "@/lib/truchetState";
-import { withOption } from "@/lib/toolOptions";
+import { seedFromHash, withOption } from "@/lib/toolOptions";
 import { TruchetBuilder } from "./TruchetBuilder";
 
 function FromShareLink({ initial, locale, option, labels }: { initial: TruchetResult; locale: Locale; option?: string; labels: Record<string, string> }) {
   const params = useSearchParams();
-  return <TruchetBuilder locale={locale} option={option} labels={labels} initialState={parseTruchetState(withOption("truchet", option, params), locale)} initialResult={initial} />;
+  return <TruchetBuilder locale={locale} option={option} labels={labels} initialState={{ ...parseTruchetState(withOption("truchet", option, params), locale), ...seedFromHash(window.location.hash) }} initialResult={initial} />;
 }
 
 /** Same arrangement as `BlockBuilderRoute`: default design in the HTML, share link settings on load. */

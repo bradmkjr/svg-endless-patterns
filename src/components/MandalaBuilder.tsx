@@ -2,10 +2,14 @@
 
 import { useEffect, useState } from "react";
 import { generateMandala, generateMandalaPdf, type Locale, type MandalaMotif, type MandalaRequest, type MandalaResult } from "@/lib/generator";
+import { syncShareLink, slugFor } from "@/lib/toolOptions";
+import { MandalaRings } from "./MandalaRings";
+import { OptionNav, useOptionNavigation } from "./OptionNav";
+import { PalettePicker } from "./PalettePicker";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { fill, messages } from "@/lib/i18n";
 import mandalaText from "@/i18n/messages/mandala.json";
-import { LINE_OPTIONS, MAX_COLORS, MAX_SEED, MOTIF_OPTIONS, RING_OPTIONS, serializeMandalaState, SYMMETRY_OPTIONS } from "@/lib/mandalaState";
+import { defaultMandalaState, LINE_OPTIONS, MAX_COLORS, MAX_SEED, MOTIF_OPTIONS, RING_OPTIONS, serializeMandalaState, SYMMETRY_OPTIONS } from "@/lib/mandalaState";
 import styles from "./BlockBuilder.module.css";
 
 type View = keyof MandalaResult["svg"];
@@ -26,9 +30,10 @@ function NumberSelect({ label, value, options, onChange }: { label: string; valu
   );
 }
 
-export function MandalaBuilder({ locale, initialState, initialResult }: { locale: Locale; initialState: MandalaRequest; initialResult: MandalaResult }) {
+export function MandalaBuilder({ locale, option, labels, initialState, initialResult }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: MandalaRequest; initialResult: MandalaResult }) {
   const b = messages(locale).builder;
   const t = mandalaText[locale];
+  const goToOption = useOptionNavigation("mandala", locale);
   const [state, setState] = useState(initialState);
   const [result, setResult] = useState(initialResult);
   const [view, setView] = useState<View>("art");
@@ -57,8 +62,8 @@ export function MandalaBuilder({ locale, initialState, initialResult }: { locale
 
   useEffect(() => {
     const query = serializeMandalaState(state);
-    window.history.replaceState(window.history.state, "", query ? `?${query}` : window.location.pathname);
-  }, [state]);
+    syncShareLink(query, "mandala", option, { value: state.seed, base: defaultMandalaState(state.locale).seed });
+  }, [state, option]);
 
   const run = async (working: string, done: string, action: () => Promise<void> | void) => {
     setBusy(true);
@@ -77,6 +82,7 @@ export function MandalaBuilder({ locale, initialState, initialResult }: { locale
 
   return (
     <div className={styles.builder}>
+      <OptionNav tool="mandala" locale={locale} current={option} labels={labels} />
       <div className={styles.workspace}>
         <section className={styles.preview} aria-label={b.preview}>
           <div className={`${styles.tabs} no-print`}>
@@ -111,43 +117,62 @@ export function MandalaBuilder({ locale, initialState, initialResult }: { locale
         <form className={`${styles.controls} no-print`} onSubmit={(e) => e.preventDefault()}>
           <fieldset>
             <legend>{t.design}</legend>
-            <div className={styles.fieldRow}>
-              <NumberSelect label={t.symmetry} value={state.symmetry} options={SYMMETRY_OPTIONS} onChange={(symmetry) => update({ symmetry })} />
-              <NumberSelect label={t.rings} value={state.rings} options={RING_OPTIONS} onChange={(rings) => update({ rings })} />
-            </div>
-            <label className={styles.field}>
-              <span>{t.seed}</span>
-              <input
-                type="number"
-                min={0}
-                max={MAX_SEED}
-                step={1}
-                value={state.seed}
-                style={{ padding: "0.45rem 0.5rem", border: "1px solid var(--line)", borderRadius: 5, background: "var(--surface)", color: "var(--foreground)", font: "inherit", fontSize: "1rem" }}
-                onChange={(e) => update({ seed: Math.min(MAX_SEED, Math.max(0, Math.floor(Number(e.target.value)) || 0)) })}
-              />
-            </label>
-            <div className={styles.actions}>
-              <button type="button" className={styles.tab} onClick={() => update({ seed: Math.floor(Math.random() * (MAX_SEED + 1)) })}>
-                {t.newSeed}
+            <NumberSelect label={t.symmetry} value={state.symmetry} options={SYMMETRY_OPTIONS} onChange={(n) => goToOption(slugFor("mandala", n)!)} />
+            <div className={styles.tabs}>
+              <button type="button" className={state.ringPlan ? styles.tabOn : styles.tab} aria-pressed={!!state.ringPlan} onClick={() => update({ ringPlan: result.rings.map((ring) => ring.spec) })}>
+                {t.modeRings}
+              </button>
+              <button type="button" className={state.ringPlan ? styles.tab : styles.tabOn} aria-pressed={!state.ringPlan} onClick={() => update({ ringPlan: undefined })}>
+                {t.modeSeed}
               </button>
             </div>
-            <p className={styles.note}>{t.seedNote}</p>
           </fieldset>
 
-          <fieldset>
-            <legend>{t.motifs}</legend>
-            {MOTIF_OPTIONS.map((motif) => {
-              const on = state.motifs.includes(motif);
-              return (
-                <label key={motif} className={styles.check}>
-                  <input type="checkbox" checked={on} disabled={on && state.motifs.length === 1} onChange={(e) => toggleMotif(motif, e.target.checked)} />
-                  {t.motifNames[motif]}
+          {state.ringPlan ? (
+            <MandalaRings locale={locale} plan={state.ringPlan} colors={state.colors} background={state.background} onChange={(ringPlan) => update({ ringPlan })} />
+          ) : (
+            <>
+              <fieldset>
+                <legend>{t.modeSeed}</legend>
+                <NumberSelect label={t.rings} value={state.rings} options={RING_OPTIONS} onChange={(rings) => update({ rings })} />
+                <label className={styles.field}>
+                  <span>{t.seed}</span>
+                  <input
+                    type="number"
+                    min={0}
+                    max={MAX_SEED}
+                    step={1}
+                    value={state.seed}
+                    style={{ padding: "0.45rem 0.5rem", border: "1px solid var(--line)", borderRadius: 5, background: "var(--surface)", color: "var(--foreground)", font: "inherit", fontSize: "1rem" }}
+                    onChange={(e) => update({ seed: Math.min(MAX_SEED, Math.max(0, Math.floor(Number(e.target.value)) || 0)) })}
+                  />
                 </label>
-              );
-            })}
-            <p className={styles.note}>{t.motifNote}</p>
-          </fieldset>
+                <div className={styles.actions}>
+                  <button type="button" className={styles.tab} onClick={() => update({ seed: Math.floor(Math.random() * (MAX_SEED + 1)) })}>
+                    {t.newSeed}
+                  </button>
+                  <button type="button" className={styles.tab} onClick={() => update({ ringPlan: result.rings.map((ring) => ring.spec) })}>
+                    {t.editSeedRings}
+                  </button>
+                </div>
+                <p className={styles.note}>{t.seedNote}</p>
+              </fieldset>
+
+              <fieldset>
+                <legend>{t.motifs}</legend>
+                {MOTIF_OPTIONS.map((motif) => {
+                  const on = state.motifs.includes(motif);
+                  return (
+                    <label key={motif} className={styles.check}>
+                      <input type="checkbox" checked={on} disabled={on && state.motifs.length === 1} onChange={(e) => toggleMotif(motif, e.target.checked)} />
+                      {t.motifNames[motif]}
+                    </label>
+                  );
+                })}
+                <p className={styles.note}>{t.motifNote}</p>
+              </fieldset>
+            </>
+          )}
 
           <fieldset>
             <legend>{t.lines}</legend>
@@ -180,6 +205,7 @@ export function MandalaBuilder({ locale, initialState, initialResult }: { locale
                 {t.remove}
               </button>
             </div>
+            <PalettePicker locale={locale} current={[state.background, ...state.colors]} onApply={(c) => update({ background: c[0], outline: c[1], colors: c.slice(1, 1 + MAX_COLORS) })} />
           </fieldset>
         </form>
       </div>

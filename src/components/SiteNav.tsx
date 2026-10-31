@@ -20,6 +20,7 @@ export function SiteNav({ locale }: { locale: Locale }) {
           <Link href={href("/knitting/")}>{t.knitting}</Link>
           <Link href={href("/crochet/")}>{t.crochet}</Link>
           <Link href={href("/patterns/")}>{t.library}</Link>
+          <Link href={href("/palettes/")}>{t.palettes}</Link>
           <Link href={href("/blog/")}>{t.blog}</Link>
           <Link href={href("/about/")}>{t.how}</Link>
         </nav>

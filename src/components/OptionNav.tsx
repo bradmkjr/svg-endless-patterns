@@ -10,7 +10,7 @@ import css from "./OptionNav.module.css";
 /** Goes to a choice's own page, keeping the other settings from the address bar. */
 export function useOptionNavigation(tool: ToolId, locale: Locale) {
   const router = useRouter();
-  return (slug: string) => router.push(optionHref(tool, locale, slug, window.location.search));
+  return (slug: string) => router.push(optionHref(tool, locale, slug, window.location.search) + window.location.hash);
 }
 
 /** Thumbnails of a generator's main choice. Plain links in the HTML, so each page can be found. */

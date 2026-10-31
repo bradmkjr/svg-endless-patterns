@@ -20,7 +20,7 @@ const sorted = (query: string) => [...new URLSearchParams(query).entries()].map(
 async function knownPaths() {
   const posts = await getPosts();
   return new Set([
-    "/", ...PREFIXED_LOCALES.map((l) => `/${l}/`), "/tartans/", "/truchet/", "/girih/", "/mandalas/", "/stained-glass/", "/celtic-knots/", "/sashiko/", "/tessellations/", "/cross-stitch/", "/blocks/", "/knitting/", "/crochet/", "/patterns/", "/about/", "/blog/", "/changelog/",
+    "/", ...PREFIXED_LOCALES.map((l) => `/${l}/`), "/tartans/", "/truchet/", "/girih/", "/mandalas/", "/stained-glass/", "/celtic-knots/", "/sashiko/", "/tessellations/", "/cross-stitch/", "/blocks/", "/knitting/", "/crochet/", "/patterns/", "/palettes/", "/about/", "/blog/", "/changelog/",
     ...(await getBlocks()).map((b) => `/blocks/${b.slug}/`),
     ...(await getStitchPatterns("knit")).map((s) => `/knitting/${s.slug}/`),
     ...(await getStitchPatterns("crochet")).map((s) => `/crochet/${s.slug}/`),

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { generateGirih, generateGirihPdf, type GirihColors, type GirihRequest, type GirihResult, type GirihStar, type GirihSymmetry, type Locale } from "@/lib/generator";
+import { generateGirih, generateGirihPdf, type GirihColors, type GirihRequest, type GirihResult, type GirihStar, type Locale } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { fill, messages } from "@/lib/i18n";
 import { COUNT_OPTIONS, GIRIH_PALETTES, REPEAT_OPTIONS, serializeGirihState, STARS_FOR, SYMMETRY_OPTIONS, WEIGHT_OPTIONS } from "@/lib/girihState";

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { generateTessellation, generateTessellationPdf, type GroupId, type Locale, type TessellationColors, type TessellationMotif, type TessellationOptions, type TessellationRequest, type TessellationResult } from "@/lib/generator";
+import { generateTessellation, generateTessellationPdf, type Locale, type TessellationColors, type TessellationMotif, type TessellationOptions, type TessellationRequest, type TessellationResult } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { fill, messages } from "@/lib/i18n";
 import { COUNT_OPTIONS, REPEAT_OPTIONS, serializeTessellationState, TESSELLATION_PALETTES } from "@/lib/tessellationState";

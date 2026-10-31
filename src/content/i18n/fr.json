@@ -1,5 +1,28 @@
 {
   "posts": {
+    "mandala-rings-palettes-and-pattern-pages": {
+      "title": "Créez des mandalas anneau par anneau et gardez vos palettes",
+      "summary": "Choisissez le motif exact de chaque anneau, parcourez les palettes par thème ou harmonie, enregistrez les vôtres et passez d'une option à l'autre avec des vignettes.",
+      "blocks": [
+        "L'[outil de mandalas](/mandalas/) construit désormais le motif anneau par anneau, la [page des palettes](/palettes/) groupe les couleurs par thème et harmonie, et la [bibliothèque de motifs](/patterns/) montre plusieurs motifs de chaque type.",
+        "Exemples pour commencer",
+        [
+          "Le nouveau motif d'ouverture à onze anneaux",
+          "Six anneaux choisis à la main, avec une symétrie d'ordre 16",
+          "Une page à colorier issue d'une graine, avec quatre des nouveaux motifs"
+        ],
+        "Nouveautés",
+        [
+          "Neuf nouveaux motifs de mandala, et le choix du motif, de la répétition, de la profondeur, des couleurs, des points d'accent et du demi-tour de chaque anneau",
+          "Faites glisser les anneaux pour les ordonner et les motifs sur les anneaux, avec des boutons qui font de même au clavier ou sur écran tactile",
+          "48 palettes thématiques en huit groupes et 72 palettes d'harmonies de couleurs, sur leur propre page et dans tous les outils",
+          "Vos propres palettes nommées, enregistrées dans votre navigateur",
+          "Une page et une vignette pour chaque option principale de huit outils, comme chaque tuile de Truchet et chaque groupe de papier peint"
+        ],
+        "Langues et couleur",
+        "Changer de langue modifie désormais une couleur secondaire au lieu de tout l'aspect. Les couleurs principales du site et les couleurs primaires de chaque motif restent les mêmes."
+      ]
+    },
     "now-in-five-languages": {
       "title": "Endless Patterns parle désormais cinq langues",
       "summary": "Le site est maintenant en anglais, espagnol, français, allemand et portugais du Brésil, avec des couleurs qui changent un peu pour chacune.",
@@ -272,6 +295,16 @@
     }
   },
   "changelog": {
+    "Mandala rings, palettes and pattern pages": {
+      "title": "Anneaux de mandala, palettes et pages de motifs",
+      "items": [
+        "Outil de mandalas anneau par anneau avec glisser-déposer et neuf nouveaux motifs",
+        "Bibliothèque de palettes par thème et harmonie, avec vos palettes enregistrées dans le navigateur",
+        "Pages et vignettes pour les options principales de huit outils",
+        "Accueil et bibliothèque avec plus de motifs de chaque type, par ordre alphabétique",
+        "La langue ne change plus qu'une couleur secondaire"
+      ]
+    },
     "Five languages": {
       "title": "Cinq langues",
       "items": [

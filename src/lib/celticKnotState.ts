@@ -83,7 +83,6 @@ export function serializeCelticKnotState(state: CelticKnotRequest): string {
   if (state.cols !== base.cols) params.set("c", String(state.cols));
   if (state.rows !== base.rows) params.set("r", String(state.rows));
   if (state.pattern !== base.pattern) params.set("p", state.pattern);
-  if (state.seed !== base.seed) params.set("seed", String(state.seed));
   if (state.density !== base.density) params.set("d", String(state.density));
   if (state.ribbon !== base.ribbon) params.set("w", String(state.ribbon));
   if (state.interlace !== base.interlace) params.set("i", state.interlace);

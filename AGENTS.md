@@ -66,8 +66,8 @@ English is at the root; `es`, `fr`, `de` and `pt` (Brazilian) sit under a prefix
 - New text goes in all five languages. `i18n.test.ts` in `lib/` and `engine/` fail on
   missing keys or mismatched placeholders and links.
 - Link with `localePath`. Translations only change words, never numbers or geometry.
-- Each language's colors are `html[data-locale]` tokens in `globals.css`, with
-  default palettes and yarn colors in `lib/state.ts` and `lib/stitchState.ts`.
+- A language changes one secondary color only, never the primary colors: the
+  `--locale-swatch` token in `globals.css` and `lib/localeAccent.ts` for designs.
 
 ## Tools
 Tartans onward each own their files: `engine/<tool>.ts`, `<tool>Pdf.ts` and tests;
@@ -77,6 +77,15 @@ routes in both trees. They connect through `generator.ts`, `engine/index.ts`, th
 sitemap, `lib/libraryTools.ts`, sample kinds in `content.ts` and `PostSamples.tsx`, and
 library text under `library.tools` in the shared catalogs. `engine/wallpaper.ts` is the
 reusable symmetry engine.
+
+## Option pages and thumbnails
+A generator's main choice has its own page: list it in `lib/toolOptions.ts`, and add
+`[option]` routes in both trees. Other settings stay in the query string. Thumbnails are
+static files from `app/thumbs/`, drawn in `lib/thumbnails.ts`.
+
+## Palettes
+The library is `lib/palettes.ts`, saved palettes `lib/customPalettes.ts` (this browser's
+local storage). Builders use `PalettePicker`: the first color is a ground, the second main.
 
 ## Static export limits
 No route handlers that read the request, redirects, headers, proxy or server

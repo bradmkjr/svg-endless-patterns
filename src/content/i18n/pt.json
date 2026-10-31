@@ -1,5 +1,28 @@
 {
   "posts": {
+    "mandala-rings-palettes-and-pattern-pages": {
+      "title": "Crie mandalas anel por anel e guarde suas paletas",
+      "summary": "Escolha o motivo exato de cada anel, explore paletas por tema ou harmonia de cores, salve as suas e navegue entre opções com miniaturas.",
+      "blocks": [
+        "O [gerador de mandalas](/mandalas/) agora cria o desenho anel por anel, a [página de paletas](/palettes/) agrupa as cores por tema e harmonia, e a [biblioteca de padrões](/patterns/) mostra vários padrões de cada tipo.",
+        "Exemplos para começar",
+        [
+          "O novo desenho inicial de onze anéis",
+          "Seis anéis escolhidos à mão, com simetria de ordem 16",
+          "Uma página para colorir a partir de uma semente, com quatro dos novos motivos"
+        ],
+        "Novidades",
+        [
+          "Nove novos motivos de mandala e controle do motivo, da repetição, da profundidade, das cores, dos pontos de destaque e da meia volta de cada anel",
+          "Arraste anéis para ordená-los e motivos sobre os anéis, com botões que fazem o mesmo pelo teclado ou em tela de toque",
+          "48 paletas temáticas em oito grupos e 72 de harmonias de cores, em uma página própria e em todos os geradores",
+          "Paletas próprias com nome, salvas no seu navegador",
+          "Uma página e uma miniatura para cada opção principal de oito geradores, como cada ladrilho Truchet e cada grupo de papel de parede"
+        ],
+        "Idiomas e cor",
+        "Trocar de idioma agora muda uma cor secundária em vez de todo o visual. As cores principais do site e as cores primárias de cada desenho continuam iguais."
+      ]
+    },
     "now-in-five-languages": {
       "title": "O Endless Patterns agora fala cinco idiomas",
       "summary": "O site agora está em inglês, espanhol, francês, alemão e português do Brasil, com cores que mudam um pouco em cada um.",
@@ -272,6 +295,16 @@
     }
   },
   "changelog": {
+    "Mandala rings, palettes and pattern pages": {
+      "title": "Anéis de mandala, paletas e páginas de padrões",
+      "items": [
+        "Gerador de mandalas anel por anel com arrastar e soltar e nove novos motivos",
+        "Biblioteca de paletas por tema e harmonia de cores, com paletas próprias salvas no navegador",
+        "Páginas e miniaturas para as opções principais de oito geradores",
+        "Início e biblioteca com mais padrões de cada tipo, em ordem alfabética",
+        "O idioma agora muda só uma cor secundária"
+      ]
+    },
     "Five languages": {
       "title": "Cinco idiomas",
       "items": [

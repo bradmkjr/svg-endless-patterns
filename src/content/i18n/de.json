@@ -1,5 +1,28 @@
 {
   "posts": {
+    "mandala-rings-palettes-and-pattern-pages": {
+      "title": "Mandalas Ring für Ring bauen und eigene Paletten behalten",
+      "summary": "Wählen Sie das genaue Motiv jedes Rings, stöbern Sie in Paletten nach Thema oder Farbharmonie, speichern Sie eigene und wechseln Sie Optionen per Vorschaubild.",
+      "blocks": [
+        "Das [Mandala-Werkzeug](/mandalas/) baut ein Muster jetzt Ring für Ring, die [Palettenseite](/palettes/) ordnet Farben nach Thema und Harmonie, und die [Musterbibliothek](/patterns/) zeigt mehrere Muster jeder Art.",
+        "Beispiele zum Einstieg",
+        [
+          "Das neue Startmuster mit elf Ringen",
+          "Sechs von Hand gewählte Ringe, in 16-zähliger Symmetrie",
+          "Eine Ausmalseite aus einem Startwert, mit vier der neuen Motive"
+        ],
+        "Das ist neu",
+        [
+          "Neun neue Mandala-Motive und die Wahl von Motiv, Wiederholung, Tiefe, Farben, Akzentpunkten und halber Drehung für jeden Ring",
+          "Ringe zum Sortieren ziehen und Motive auf Ringe ziehen, mit Schaltflächen, die dasselbe per Tastatur oder Touchscreen tun",
+          "48 thematische Paletten in acht Gruppen und 72 Paletten nach Farbharmonie, auf einer eigenen Seite und in jedem Werkzeug",
+          "Eigene benannte Paletten, im Browser gespeichert",
+          "Eine Seite und ein Vorschaubild für jede Hauptoption in acht Werkzeugen, etwa für jede Truchet-Fliese und jede Ornamentgruppe"
+        ],
+        "Sprachen und Farbe",
+        "Ein Sprachwechsel ändert jetzt eine Sekundärfarbe statt des gesamten Aussehens. Die Hauptfarben der Website und die Primärfarben jedes Musters bleiben gleich."
+      ]
+    },
     "now-in-five-languages": {
       "title": "Endless Patterns spricht jetzt fünf Sprachen",
       "summary": "Die Website gibt es jetzt auf Englisch, Spanisch, Französisch, Deutsch und brasilianischem Portugiesisch, mit leicht wechselnden Farben.",
@@ -272,6 +295,16 @@
     }
   },
   "changelog": {
+    "Mandala rings, palettes and pattern pages": {
+      "title": "Mandala-Ringe, Paletten und Musterseiten",
+      "items": [
+        "Mandala-Werkzeug Ring für Ring mit Ziehen und Ablegen und neun neuen Motiven",
+        "Palettenbibliothek nach Thema und Farbharmonie, mit eigenen Paletten im Browser",
+        "Seiten und Vorschaubilder für die Hauptoptionen von acht Werkzeugen",
+        "Startseite und Bibliothek mit mehr Mustern jeder Art, alphabetisch sortiert",
+        "Die Sprache ändert jetzt nur noch eine Sekundärfarbe"
+      ]
+    },
     "Five languages": {
       "title": "Fünf Sprachen",
       "items": [

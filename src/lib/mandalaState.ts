@@ -11,6 +11,7 @@ const SEED_MOTIFS = MOTIF_OPTIONS.slice(0, 6);
 export const MIN_PLAN_RINGS = 1;
 export const MAX_PLAN_RINGS = 16;
 export const REPEAT_OPTIONS = Array.from({ length: 16 }, (_, i) => i + 1);
+export const SIZE_OPTIONS = [40, 50, 60, 70, 80, 90, 100, 110, 120, 140, 160, 180, 200];
 export const MIN_RING_SIZE = 30;
 export const MAX_RING_SIZE = 200;
 export const LINE_OPTIONS = [1, 2, 3, 4, 6, 8];
@@ -39,6 +40,14 @@ export const DEFAULT_RING_PLAN: MandalaRingSpec[] = [
 /** A new ring for the builder: the color after the one inside it. */
 export function newRing(plan: MandalaRingSpec[]): MandalaRingSpec {
   return ring("petals", 2, 100, plan.length);
+}
+
+/** The plan with one ring moved. */
+export function moveRing(plan: MandalaRingSpec[], from: number, to: number): MandalaRingSpec[] {
+  const next = [...plan];
+  const [ring] = next.splice(from, 1);
+  next.splice(to, 0, ring);
+  return next;
 }
 
 export function defaultMandalaState(locale: Locale = "en"): MandalaRequest {
@@ -100,8 +109,8 @@ function decodePlan(raw: string | null): MandalaRingSpec[] | null {
 export function parseMandalaState(params: { get(name: string): string | null }, locale: Locale = "en"): MandalaRequest {
   const { ringPlan: basePlan, ...base } = defaultMandalaState(locale);
   const seed = params.get("seed");
-  // A link naming a seed, ring count or motif list is a seeded design, and has no plan.
-  const seeded = seed !== null || params.get("r") !== null || params.get("m") !== null;
+  // A link marked as seeded, or naming a ring count or motif list, has no plan. Older links name the seed itself.
+  const seeded = params.get("seeded") === "1" || seed !== null || params.get("r") !== null || params.get("m") !== null;
   const ringPlan = decodePlan(params.get("rs")) ?? (seeded ? null : basePlan);
   return {
     ...(locale === "en" ? {} : { locale }),
@@ -125,8 +134,8 @@ export function serializeMandalaState(state: MandalaRequest): string {
   if (state.symmetry !== base.symmetry) params.set("n", String(state.symmetry));
   if (state.rings !== base.rings) params.set("r", String(state.rings));
   if (state.motifs.join(".") !== base.motifs.join(".")) params.set("m", state.motifs.join("."));
-  // A seeded design always names its seed, which is what marks it as seeded.
-  if (!state.ringPlan || state.seed !== base.seed) params.set("seed", String(state.seed));
+  // The seed itself stays out of the query: see `syncShareLink`.
+  if (!state.ringPlan && state.rings === base.rings && state.motifs.join(".") === base.motifs.join(".")) params.set("seeded", "1");
   if (state.ringPlan && encodePlan(state.ringPlan) !== encodePlan(base.ringPlan!)) params.set("rs", encodePlan(state.ringPlan));
   if (state.lineWeight !== base.lineWeight) params.set("w", String(state.lineWeight));
   if (encodeColors(state.colors) !== encodeColors(base.colors)) params.set("k", encodeColors(state.colors));

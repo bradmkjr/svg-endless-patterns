@@ -1,5 +1,28 @@
 {
   "posts": {
+    "mandala-rings-palettes-and-pattern-pages": {
+      "title": "Crea mandalas anillo por anillo y guarda tus paletas",
+      "summary": "Elige el motivo exacto de cada anillo, explora paletas por tema o armonía de color, guarda las tuyas y salta entre opciones con miniaturas.",
+      "blocks": [
+        "El [generador de mandalas](/mandalas/) ahora crea el diseño anillo por anillo, la [página de paletas](/palettes/) agrupa los colores por tema y armonía, y la [biblioteca de patrones](/patterns/) muestra varios patrones de cada tipo.",
+        "Muestras para empezar",
+        [
+          "El nuevo diseño inicial de once anillos",
+          "Seis anillos elegidos a mano, con simetría de orden 16",
+          "Una página para colorear con semilla y cuatro de los motivos nuevos"
+        ],
+        "Novedades",
+        [
+          "Nueve motivos nuevos de mandala y control del motivo, la repetición, la profundidad, los colores, los puntos de acento y el medio giro de cada anillo",
+          "Arrastra anillos para ordenarlos y motivos sobre los anillos, con botones que hacen lo mismo con el teclado o en una pantalla táctil",
+          "48 paletas temáticas en ocho grupos y 72 de armonías de color, en su propia página y en todos los generadores",
+          "Paletas propias con nombre, guardadas en tu navegador",
+          "Una página y una miniatura para cada opción principal de ocho generadores, como cada baldosa Truchet y cada grupo de papel tapiz"
+        ],
+        "Idiomas y color",
+        "Cambiar de idioma ahora cambia un color secundario en lugar de todo el aspecto. Los colores principales del sitio y los colores primarios de cada diseño no cambian."
+      ]
+    },
     "now-in-five-languages": {
       "title": "Endless Patterns ya habla cinco idiomas",
       "summary": "El sitio ya está en inglés, español, francés, alemán y portugués de Brasil, con colores que cambian un poco en cada uno.",
@@ -272,6 +295,16 @@
     }
   },
   "changelog": {
+    "Mandala rings, palettes and pattern pages": {
+      "title": "Anillos de mandala, paletas y páginas de patrones",
+      "items": [
+        "Generador de mandalas anillo por anillo con arrastrar y soltar y nueve motivos nuevos",
+        "Biblioteca de paletas por tema y armonía de color, con paletas propias guardadas en el navegador",
+        "Páginas y miniaturas para las opciones principales de ocho generadores",
+        "Portada y biblioteca con más patrones de cada tipo, en orden alfabético",
+        "El idioma ahora solo cambia un color secundario"
+      ]
+    },
     "Five languages": {
       "title": "Cinco idiomas",
       "items": [

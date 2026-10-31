@@ -11,7 +11,6 @@ import {
   GRID_OPTIONS,
   MARGIN_OPTIONS,
   MAX_COLORS,
-  motifColors,
   MOTIFS,
   removeColor,
   resizeGrid,

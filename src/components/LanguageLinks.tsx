@@ -13,7 +13,7 @@ function Links({ locale, query }: { locale: Locale; query: string }) {
     <nav className={styles.languages} aria-label={messages(locale).nav.language}>
       {SITE_LOCALES.map(({ code, label, htmlLang }) => (
         // A plain link: each language has its own root layout, so this is a full page load anyway.
-        <a key={code} href={publicPath(`${localePath(code, page)}${query}`)} lang={htmlLang} hrefLang={htmlLang} aria-current={code === locale ? "true" : undefined} className={code === locale ? styles.languageOn : undefined}>
+        <a key={code} href={publicPath(`${localePath(code, page)}${query}`)} lang={htmlLang} hrefLang={htmlLang} onClick={(e) => { e.currentTarget.hash = window.location.hash; }} aria-current={code === locale ? "true" : undefined} className={code === locale ? styles.languageOn : undefined}>
           {label}
         </a>
       ))}

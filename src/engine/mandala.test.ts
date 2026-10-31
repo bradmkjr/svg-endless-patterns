@@ -1,9 +1,9 @@
 import { describe, expect, it } from "vitest";
 import { PDFDocument } from "pdf-lib";
 import uiText from "../i18n/messages/mandala.json";
-import { defaultMandalaState, LINE_OPTIONS, MOTIF_OPTIONS, parseMandalaState, RING_OPTIONS, serializeMandalaState, SYMMETRY_OPTIONS } from "../lib/mandalaState";
+import { defaultMandalaState, LINE_OPTIONS, moveRing, MOTIF_OPTIONS, parseMandalaState, RING_OPTIONS, serializeMandalaState, SIZE_OPTIONS, SYMMETRY_OPTIONS } from "../lib/mandalaState";
 import { LOCALES } from "./i18n";
-import { CANVAS, generateMandala, MOTIFS, type MandalaRequest } from "./mandala";
+import { CANVAS, generateMandala, mandalaMotifThumb, MOTIFS, type MandalaRequest, type MandalaRingSpec } from "./mandala";
 import { generateMandalaPdf } from "./mandalaPdf";
 import engineText from "./messages/mandala.json";
 
@@ -114,6 +114,55 @@ describe("canvas", () => {
   });
 });
 
+describe("rings chosen by hand", () => {
+  const plan: MandalaRingSpec[] = MOTIFS.map((motif, i) => ({ motif, repeat: 1 + (i % 4), size: 60 + i * 5, color: i, band: i % 3 ? null : i + 1, accent: i % 2 === 0, offset: i % 2 === 1 }));
+
+  it("draws exactly the rings asked for, in order", () => {
+    const { rings } = generateMandala({ ...req, ringPlan: plan });
+    expect(rings.map((r) => r.motif)).toEqual([...MOTIFS]);
+    expect(rings.map((r) => r.copies)).toEqual(plan.map((r, i) => req.symmetry * (i === 0 ? 1 : r.repeat)));
+  });
+
+  it("wraps color choices to fit the palette", () => {
+    const { rings } = generateMandala({ ...req, ringPlan: plan });
+    rings.forEach((ring, i) => expect(ring.color).toBe(req.colors[i % req.colors.length]));
+  });
+
+  it("ignores the seed", () => {
+    expect(generateMandala({ ...req, ringPlan: plan, seed: 1 }).svg.art).toBe(generateMandala({ ...req, ringPlan: plan, seed: 2 }).svg.art);
+  });
+
+  it.each([6, 11, 24])("keeps %i-fold symmetry and stays on the canvas", (symmetry) => {
+    const shapes = readShapes(generateMandala({ ...req, symmetry, ringPlan: plan, lineWeight: 8 }).svg.art);
+    expect(mapsToItself(shapes, 360 / symmetry)).toBe(true);
+    for (const shape of shapes) for (const [x, y] of shape.points) expect(Math.min(x, y) - shape.r).toBeGreaterThanOrEqual(0);
+    for (const shape of shapes) for (const [x, y] of shape.points) expect(Math.max(x, y) + shape.r).toBeLessThanOrEqual(CANVAS);
+  });
+
+  it("turns a ring half a copy", () => {
+    const flat = plan.map((ring) => ({ ...ring, offset: false }));
+    expect(generateMandala({ ...req, ringPlan: flat }).svg.art).not.toBe(generateMandala({ ...req, ringPlan: plan }).svg.art);
+  });
+
+  it("gives a seeded design's own rings back, so it can be edited from there", () => {
+    const seeded = generateMandala({ ...req, rings: 8, seed: 42 });
+    const pinned = generateMandala({ ...req, ringPlan: seeded.rings.map((ring) => ring.spec) });
+    expect(pinned.rings.map(({ motif, copies, color }) => ({ motif, copies, color }))).toEqual(seeded.rings.map(({ motif, copies, color }) => ({ motif, copies, color })));
+  });
+
+  it("builds a PDF", async () => {
+    const doc = await PDFDocument.load(await generateMandalaPdf({ ...req, ringPlan: plan }));
+    expect(doc.getPageCount()).toBe(2);
+  });
+});
+
+describe("older links", () => {
+  it("keeps a seed's design, unchanged by the new motifs", () => {
+    const { motifs } = parseMandalaState(new URLSearchParams("seed=7"));
+    expect(motifs).toEqual(["petals", "arcs", "dots", "scallops", "diamonds", "triangles"]);
+  });
+});
+
 describe("seed", () => {
   it("gives identical output for the same seed", () => {
     expect(generateMandala(req)).toEqual(generateMandala({ ...req }));
@@ -154,6 +203,31 @@ describe("share links", () => {
     expect(parse("", locale)).toEqual(defaultMandalaState(locale));
   });
 
+  it("round trips a ring plan", () => {
+    const ringPlan: MandalaRingSpec[] = [
+      { motif: "lotus", repeat: 1, size: 96, color: 2, band: null, accent: true, offset: false },
+      { motif: "hearts", repeat: 16, size: 200, color: 0, band: 3, accent: false, offset: true },
+    ];
+    const state: MandalaRequest = { ...defaultMandalaState(), ringPlan };
+    expect(parse(serializeMandalaState(state))).toEqual(state);
+  });
+
+  it.each(["rs=lotus", "rs=stars9.1.100.0.x.0.0", "rs=lotus.99.100.0.x.0.0", "rs=lotus.1.10.0.x.0.0", "rs=lotus.1.100.9.x.0.0", "rs=lotus.1.100.0.9.0.0", "rs=lotus.1.100.0.x.2.0", "rs=lotus.1.100.0.x.0.0.0", "rs=%3Cscript%3E"])("uses the default rings for the bad plan %s", (query) => {
+    expect(parse(query).ringPlan).toEqual(defaultMandalaState().ringPlan);
+  });
+
+  it("tells seeded links from ring plans", () => {
+    expect(parse("seed=5").ringPlan).toBeUndefined();
+    expect(parse("r=4").ringPlan).toBeUndefined();
+    expect(parse("n=8").ringPlan).toEqual(defaultMandalaState().ringPlan);
+    const seeded = { ...defaultMandalaState(), ringPlan: undefined };
+    expect({ ringPlan: undefined, ...parse(serializeMandalaState(seeded)) }).toEqual(seeded);
+  });
+
+  it("offers only rings the plan encoding accepts", () => {
+    for (const size of SIZE_OPTIONS) expect(parse(`rs=lotus.1.${size}.0.x.0.0`).ringPlan![0].size).toBe(size);
+  });
+
   it("round trips every setting", () => {
     const state: MandalaRequest = { symmetry: 17, rings: 3, motifs: ["arcs", "diamonds"], seed: 4321, lineWeight: 6, colors: ["#123456", "#abcdef"], background: "#101010", outline: "#fedcba" };
     expect(parse(serializeMandalaState(state))).toEqual(state);
@@ -171,7 +245,7 @@ describe("share links", () => {
     ["n=8.5", "symmetry"],
     ["r=1", "rings"],
     ["r=99", "rings"],
-    ["m=petals.stars", "motifs"],
+    ["m=petals.comets", "motifs"],
     ["m=", "motifs"],
     ["seed=-1", "seed"],
     ["seed=1234567", "seed"],
@@ -218,6 +292,17 @@ describe("translation", () => {
 
   it.each(LOCALES)("PDF text in %s fits Helvetica's character set", (locale) => {
     for (const value of Object.values(engineText[locale])) expect(value).toMatch(/^[\x20-\x7e -ÿ]*$/);
+  });
+
+  it("moves a ring", () => {
+    const plan = defaultMandalaState().ringPlan!;
+    const moved = moveRing(plan, 0, 2);
+    expect(moved[2]).toBe(plan[0]);
+    expect(moved).toHaveLength(plan.length);
+  });
+
+  it("has a picture of every motif", () => {
+    for (const motif of MOTIFS) expect(mandalaMotifThumb(motif)).toContain("<svg");
   });
 
   it("names every motif", () => {

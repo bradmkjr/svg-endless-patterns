@@ -1,5 +1,69 @@
 [
   {
+    "slug": "mandala-rings-palettes-and-pattern-pages",
+    "title": "Build mandalas ring by ring, and keep your own palettes",
+    "date": "2026-10-31",
+    "summary": "Choose the exact motif for every mandala ring, browse palettes by theme or color harmony, save your own, and jump between pattern options with thumbnails.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The [mandala maker](/mandalas/) now builds a design ring by ring, the [palette page](/palettes/) groups colors by theme and harmony, and the [pattern library](/patterns/) shows several patterns of every type."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "mandala",
+            "slug": "",
+            "query": "",
+            "view": "art",
+            "caption": "The new eleven-ring opening design"
+          },
+          {
+            "kind": "mandala",
+            "slug": "",
+            "query": "n=16&rs=lotus.1.110.2.x.1.0_stars.2.60.0.2.0.1_fans.2.120.1.x.0.0_dots.4.40.3.x.0.0_hearts.2.110.3.x.1.1_rays.4.70.0.2.0.0",
+            "view": "art",
+            "caption": "Six rings chosen by hand, in 16-fold symmetry"
+          },
+          {
+            "kind": "mandala",
+            "slug": "",
+            "query": "n=8&m=lotus.leaves.stars.fans&r=8",
+            "view": "coloring",
+            "caption": "A seeded coloring page using four of the new motifs"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What's new"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Nine new mandala motifs, and control over each ring's motif, repeat, depth, colors, accent dots and half turn",
+          "Drag rings to reorder them and drag motifs onto rings, with buttons that do the same from the keyboard or a touch screen",
+          "48 themed palettes in eight groups and 72 color harmony palettes, on their own page and in every maker",
+          "Named palettes of your own, saved in your browser",
+          "A page and a thumbnail for each main option in eight makers, such as each Truchet tile and wallpaper group"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Languages and color"
+      },
+      {
+        "type": "paragraph",
+        "text": "Switching language now changes one secondary color instead of the whole look. The site's main colors and each design's primary colors stay the same."
+      }
+    ]
+  },
+  {
     "slug": "truchet-tile-maker",
     "title": "Make seamless patterns from one turning tile",
     "date": "2026-10-30",
@@ -26,7 +90,7 @@
           {
             "kind": "truchet",
             "slug": "",
-            "query": "style=triangles&a=mirror&seed=2024",
+            "query": "style=triangles&a=mirror",
             "view": "repeat",
             "caption": "Mirrored triangles from a seed"
           },
@@ -145,21 +209,21 @@
           {
             "kind": "mandala",
             "slug": "",
-            "query": "n=8&m=petals.dots&seed=7",
+            "query": "n=8&m=petals.dots",
             "view": "art",
             "caption": "Eight folds, petals and dots"
           },
           {
             "kind": "mandala",
             "slug": "",
-            "query": "n=16&r=7&seed=314",
+            "query": "n=16&r=7",
             "view": "art",
             "caption": "Sixteen folds, seven rings"
           },
           {
             "kind": "mandala",
             "slug": "",
-            "query": "n=24&r=4&m=scallops.diamonds&seed=2718",
+            "query": "n=24&r=4&m=scallops.diamonds",
             "view": "coloring",
             "caption": "A coloring page with 24 folds"
           }
@@ -274,7 +338,7 @@
           {
             "kind": "celtic",
             "slug": "",
-            "query": "p=random&seed=2024&d=30",
+            "query": "p=random&d=30",
             "view": "art",
             "caption": "Random breaks from a seed"
           },

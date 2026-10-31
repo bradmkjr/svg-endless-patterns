@@ -68,12 +68,22 @@ export function optionHref(tool: ToolId, locale: Locale, slug: string, search = 
   return `${localePath(locale, optionPath(tool, slug))}${query ? `?${query}` : ""}`;
 }
 
-/** Puts the settings in the address bar, leaving out the one the page's path already says. */
-export function syncShareLink(query: string, tool: ToolId, slug: string | undefined) {
+/**
+ * Puts the settings in the address bar, leaving out the one the page's path already says.
+ * A seed goes after the `#`: search engines see the same page, so seeds can't make endless URLs.
+ */
+export function syncShareLink(query: string, tool: ToolId, slug: string | undefined, seed?: { value: number; base: number }) {
   const params = new URLSearchParams(query);
   if (slug) params.delete(TOOL_OPTIONS[tool].param);
   const next = params.toString();
-  window.history.replaceState(window.history.state, "", next ? `?${next}` : window.location.pathname);
+  const hash = seed && seed.value !== seed.base ? `#seed=${seed.value}` : "";
+  window.history.replaceState(window.history.state, "", `${next ? `?${next}` : window.location.pathname}${hash}`);
+}
+
+/** The seed a link carries after its `#`. Only ever called in the browser, so a link can't change the static HTML. */
+export function seedFromHash(hash: string): { seed: number } | undefined {
+  const match = /^#seed=(\d{1,6})$/.exec(hash);
+  return match ? { seed: Number(match[1]) } : undefined;
 }
 
 export type ThumbGroup = ToolId | "blocks" | "knit" | "crochet" | "tartan";

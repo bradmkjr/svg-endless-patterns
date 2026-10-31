@@ -59,7 +59,6 @@ export function serializeTruchetState(state: TruchetRequest): string {
   if (state.arrangement !== base.arrangement) params.set("a", state.arrangement);
   if (state.grid !== base.grid) params.set("g", String(state.grid));
   if (state.weight !== base.weight) params.set("w", String(state.weight));
-  if (state.seed !== base.seed) params.set("seed", String(state.seed));
   if (state.colors.background !== base.colors.background) params.set("bg", state.colors.background.slice(1));
   if (state.colors.line !== base.colors.line) params.set("ln", state.colors.line.slice(1));
   if (state.colors.accent !== base.colors.accent) params.set("ac", state.colors.accent.slice(1));

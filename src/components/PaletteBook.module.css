@@ -1,0 +1,82 @@
+.section {
+  margin-top: 2.5rem;
+}
+
+.section h2 {
+  margin: 0 0 1rem;
+  font-size: 1.7rem;
+}
+
+.group {
+  margin-bottom: 1.75rem;
+}
+
+.group h3,
+.maker h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1.15rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 11.5rem), 1fr));
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  padding: 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  overflow-wrap: anywhere;
+}
+
+.strip {
+  display: flex;
+  height: 3rem;
+  margin-bottom: 0.45rem;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.strip span {
+  flex: 1;
+}
+
+.cardActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.45rem;
+}
+
+.maker {
+  max-width: 34rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+}
+
+.maker input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.45rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: var(--background);
+  color: var(--foreground);
+  font: inherit;
+  font-size: 1rem;
+}
+
+.inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.6rem;
+}

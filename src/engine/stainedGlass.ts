@@ -91,6 +91,8 @@ export const MAX_SIDE = 36;
 export const MAX_RATIO = 2.5;
 /** Rule of thumb: past this a panel generally needs reinforcing. */
 const REINFORCE_ABOVE = 24;
+/** Many sheets are sold around this size, so a bigger piece is worth a warning before buying. */
+const COMMON_SHEET = 12;
 /** Pieces are split across their length before they get near `maxAspect`. */
 const SPLIT_ASPECT = 4;
 const EPS = 1e-7;
@@ -356,7 +358,8 @@ function medallion(W: number, H: number, detail: number): Raw[] {
     const e = c - d * (2 - Math.SQRT2);
     return [[l + e, t], [r - e, t], [r, t + e], [r, u - e], [r - e, u], [l + e, u], [l, u - e], [l, t + e]];
   };
-  const rings = detail - 1;
+  // Large panels get rings at any detail, or the center alone would outgrow most sheets of glass.
+  const rings = Math.min(3, Math.max(detail - 1, Math.floor(inner / 10)));
   const thickness = inner * 0.12;
   for (let ring = 0; ring < rings; ring++) {
     const [a, z] = [octagon(ring * thickness), octagon((ring + 1) * thickness)];
@@ -528,6 +531,13 @@ export function generateStainedGlass(req: StainedGlassRequest): StainedGlassResu
   if (fit.changed) notes.push(glassSay(locale, "notePanel", { w: fit.width, h: fit.height, ratio: MAX_RATIO, min: MIN_SIDE, max: MAX_SIDE }));
   if (detail !== asked) notes.push(glassSay(locale, "noteDetail", { asked, detail }));
   if (Math.max(fit.width, fit.height) > REINFORCE_ABOVE) notes.push(glassSay(locale, "noteReinforce", { size: REINFORCE_ABOVE }));
+
+  const across = Math.max(...pieces.map((p) => {
+    const xs = p.cut.map(([x]) => x);
+    const ys = p.cut.map(([, y]) => y);
+    return Math.max(Math.max(...xs) - Math.min(...xs), Math.max(...ys) - Math.min(...ys));
+  }));
+  if (across > COMMON_SHEET) notes.push(glassSay(locale, "noteBigPiece", { size: approxInches(across), sheet: COMMON_SHEET }));
 
   const colors = req.colors.map((color, i) => {
     const own = pieces.filter((p) => p.color === i);

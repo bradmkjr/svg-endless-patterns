@@ -38,7 +38,8 @@
     "pdfTiledHelp": "This piece is larger than a page. Tape its sheets together with the crosses matching and the gray overlap bands on top of each other, then cut as usual.",
     "pdfTiled": "Larger than one page, so tiled over several sheets: {list}.",
     "pdfNoTiled": "Every piece fits on one sheet.",
-    "pdfFooter": "Stained glass cutting pattern. Print at 100% and check the 1 inch square."
+    "pdfFooter": "Stained glass cutting pattern. Print at 100% and check the 1 inch square.",
+    "noteBigPiece": "The largest piece is about {size}\" across. Many glass sheets are sold around {sheet}\", so check that yours are big enough before buying."
   },
   "es": {
     "title": "Panel de vidriera",
@@ -79,7 +80,8 @@
     "pdfTiledHelp": "Esta pieza es mayor que una página. Une sus hojas con cinta, haciendo coincidir las cruces y superponiendo las bandas grises, y corta como siempre.",
     "pdfTiled": "Mayores que una página, repartidas en varias hojas: {list}.",
     "pdfNoTiled": "Todas las piezas caben en una hoja.",
-    "pdfFooter": "Patrón de corte de vidriera. Imprime al 100 % y comprueba el cuadrado de 1 pulgada."
+    "pdfFooter": "Patrón de corte de vidriera. Imprime al 100 % y comprueba el cuadrado de 1 pulgada.",
+    "noteBigPiece": "La pieza mayor mide unas {size}\" de lado a lado. Muchas hojas de vidrio se venden de unas {sheet}\", así que comprueba que las tuyas sean bastante grandes antes de comprar."
   },
   "fr": {
     "title": "Panneau de vitrail",
@@ -120,7 +122,8 @@
     "pdfTiledHelp": "Cette pièce est plus grande qu'une page. Assemblez ses feuilles au ruban adhésif, croix alignées et bandes grises superposées, puis coupez comme d'habitude.",
     "pdfTiled": "Plus grandes qu'une page, donc réparties sur plusieurs feuilles : {list}.",
     "pdfNoTiled": "Toutes les pièces tiennent sur une feuille.",
-    "pdfFooter": "Patron de coupe de vitrail. Imprimez à 100 % et vérifiez le carré de 1 pouce."
+    "pdfFooter": "Patron de coupe de vitrail. Imprimez à 100 % et vérifiez le carré de 1 pouce.",
+    "noteBigPiece": "La plus grande pièce mesure environ {size}\" d'un bord à l'autre. Beaucoup de feuilles de verre se vendent autour de {sheet}\" : vérifiez que les vôtres sont assez grandes avant d'acheter."
   },
   "de": {
     "title": "Bleiglasfenster",
@@ -161,7 +164,8 @@
     "pdfTiledHelp": "Dieses Teil ist größer als eine Seite. Kleben Sie seine Blätter zusammen, sodass die Kreuze passen und die grauen Überlappungsstreifen aufeinanderliegen, und schneiden Sie dann wie gewohnt.",
     "pdfTiled": "Größer als eine Seite, daher auf mehrere Blätter verteilt: {list}.",
     "pdfNoTiled": "Alle Teile passen auf ein Blatt.",
-    "pdfFooter": "Schnittmuster für Bleiglas. Mit 100 % drucken und das 1-Zoll-Quadrat prüfen."
+    "pdfFooter": "Schnittmuster für Bleiglas. Mit 100 % drucken und das 1-Zoll-Quadrat prüfen.",
+    "noteBigPiece": "Das größte Teil misst etwa {size}\" von Kante zu Kante. Viele Glastafeln werden um {sheet}\" verkauft; prüfen Sie vor dem Kauf, ob Ihre groß genug sind."
   },
   "pt": {
     "title": "Painel de vitral",
@@ -202,6 +206,7 @@
     "pdfTiledHelp": "Esta peça é maior que uma página. Una as folhas com fita, alinhando as cruzes e sobrepondo as faixas cinzas, e corte normalmente.",
     "pdfTiled": "Maiores que uma página, divididas em várias folhas: {list}.",
     "pdfNoTiled": "Todas as peças cabem em uma folha.",
-    "pdfFooter": "Molde de corte para vitral. Imprima em 100% e confira o quadrado de 1 polegada."
+    "pdfFooter": "Molde de corte para vitral. Imprima em 100% e confira o quadrado de 1 polegada.",
+    "noteBigPiece": "A maior peça mede cerca de {size}\" de ponta a ponta. Muitas chapas de vidro são vendidas com cerca de {sheet}\", então confira se as suas são grandes o bastante antes de comprar."
   }
 }

@@ -146,6 +146,7 @@
     "stitchesPer": "Maschen auf 4\"",
     "rowsPer": "Reihen auf 4\"",
     "yarnColor": "Garnfarbe",
+    "squarePreset": "Quadrat {n}\"",
     "swatchFirstTitle": "Erst die Maschenprobe.",
     "swatchFirstText": "Diese Zahlen stimmen nur bei deiner Maschenprobe, und die Startwerte sind typische Werte, nicht deine. Arbeite eine Probe von 4\", miss sie aus und trage das Ergebnis ein.",
     "instructions": "Anleitung",

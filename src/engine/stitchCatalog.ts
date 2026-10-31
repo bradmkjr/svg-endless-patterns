@@ -31,6 +31,8 @@ export type CrochetRow = {
   /** How many fewer than the pattern's repeat count this row's repeat runs. */
   fewer: number;
   end?: CrochetPart;
+  /** Worked through this loop of each stitch, when not both. */
+  loop?: "back";
 };
 
 export type CrochetStitch = {
@@ -186,7 +188,7 @@ export const CROCHET_STITCHES: CrochetStitch[] = [
     rowFactor: 0.9,
     chains: (n) => n + 1,
     first: { text: "Sc in 2nd ch from hook and in each ch across. Turn.", start: part(2, "sc"), repeat: part(1, "sc"), fewer: 1 },
-    rows: [{ text: "Ch 1 (does not count as a st), sc in the back loop only of each st across. Turn.", start: part(1, "sc"), repeat: part(1, "sc"), fewer: 1 }],
+    rows: [{ text: "Ch 1 (does not count as a st), sc in the back loop only of each st across. Turn.", start: part(1, "sc"), repeat: part(1, "sc"), fewer: 1, loop: "back" }],
   },
   {
     craft: "crochet",

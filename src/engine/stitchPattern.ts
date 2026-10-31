@@ -2,8 +2,10 @@ import type { CrochetMark, CrochetRow, CrochetStitch, KnitStitch, Stitch } from 
 import { STITCHES } from "./stitchCatalog";
 import { approxInches } from "./format";
 import { say, stitchText, term, type Locale } from "./i18n";
+import { buildKnitSquare } from "./knitSquare";
 import { chartSvg, type Chart, type Mark } from "./stitchMarks";
-import type { StitchInfo, StitchRequest, StitchResult } from "./types";
+import { buildCrochetSquare, crochetSquareCopy } from "./crochetSquare";
+import type { CrochetPlanLine, StitchInfo, StitchRequest, StitchResult } from "./types";
 
 // Stitch names stay in English for now: local names vary by region and need a craft reviewer.
 function toInfo({ slug, name, craft, level, summary, rowFactor }: Stitch, locale: Locale): StitchInfo {
@@ -22,7 +24,7 @@ export function requireStitch(slug: string): Stitch {
 
 /* ---------------------------------------------------------------- knitting */
 
-const repeatWidth = (s: KnitStitch) => Math.max(...s.rows.map((r) => r.length));
+export const repeatWidth = (s: KnitStitch) => Math.max(...s.rows.map((r) => r.length));
 
 /** Whether chart row `r` shows a knit at column `c`, from the right side. */
 function chartAt(s: KnitStitch, r: number, c: number): "k" | "p" {
@@ -42,7 +44,7 @@ export function workedRow(s: KnitStitch, r: number, total: number): ("k" | "p")[
   return out;
 }
 
-const runs = (stitches: string[], locale: Locale) => {
+export const runs = (stitches: string[], locale: Locale) => {
   const out: string[] = [];
   let i = 0;
   while (i < stitches.length) {
@@ -203,7 +205,7 @@ function swatchSvg(s: Stitch, req: StitchRequest): string {
 /** Yarn in a stitch, as a multiple of its width plus height. A rule of thumb, not a measurement. */
 const YARN_FACTOR = { knit: 2.6, crochet: 4 };
 
-function yardsFor(craft: Stitch["craft"], stitches: number, req: StitchRequest): number {
+export function yardsFor(craft: Stitch["craft"], stitches: number, req: StitchRequest): number {
   const perStitch = YARN_FACTOR[craft] * (4 / req.stitchGauge + 4 / req.rowGauge);
   const yards = (stitches * perStitch * 1.1) / 36;
   return Math.ceil(yards / 5) * 5;
@@ -217,7 +219,6 @@ export function stitchChart(s: Stitch): Chart {
 export function generateStitchPattern(slug: string, req: StitchRequest): StitchResult {
   const s = requireStitch(slug);
   const locale = req.locale ?? "en";
-  const text = stitchText(locale, slug);
   const wantedStitches = (req.width * req.stitchGauge) / 4;
   const wantedRows = (req.length * req.rowGauge) / 4;
   const swatch = swatchSvg(s, req);
@@ -245,31 +246,28 @@ export function generateStitchPattern(slug: string, req: StitchRequest): StitchR
       repeatNote: say(locale, "stRepeat", { n: s.rows.length, rows }),
       finish: [say(locale, "stFinishKnit")],
       abbreviations: say(locale, "abbrKnit").split("|"),
+      square: buildKnitSquare(s, req),
     };
   }
 
-  // Crochet: repeats come from what a row spans at the wanted stitch count.
-  const widthAt = (n: number) => crochetRowParts(s.first, n).makes.length;
-  let n = 1;
-  while (widthAt(n + 1) <= wantedStitches + (widthAt(n + 1) - widthAt(n)) / 2) n++;
-  const stitches = widthAt(n);
-  const rowSet = s.rows.length;
-  const after = Math.max(0, Math.ceil((wantedRows - 1) / rowSet)) * rowSet;
-  const rows = 1 + after;
-    return {
+  // Crochet: a complete square, written from the row data.
+  const plan = buildCrochetSquare(s, req);
+  const [foundation, body, edging, finishing] = plan.sections;
+  const plain = (line: CrochetPlanLine) => (line.label ? `${line.label}: ${line.text}` : line.text);
+  return {
     svg: { chart: chartSvg(crochetChart(s), `${s.name} chart`), swatch },
-    startCount: s.chains(n),
+    startCount: plan.data.chains,
     startLabel: say(locale, "stStartCrochet"),
-    stitchesPerRow: stitches,
-    rows,
-    width: approxInches((stitches * 4) / req.stitchGauge),
-    length: approxInches((rows * 4) / req.rowGauge),
-    yards: yardsFor("crochet", stitches * rows, req),
-    setup: [say(locale, "stChain", { n: s.chains(n) }), say(locale, "stRow1", { t: text?.first ?? s.first.text })],
-    // Every crochet stitch here repeats one row; `rows` allows for more later.
-    pattern: s.rows.map((row, i) => ({ label: say(locale, "stRowAll"), text: text?.rows?.[i] ?? row.text })),
-    repeatNote: say(locale, "stKeep", { rows }),
-    finish: [say(locale, "stFinishCrochet")],
-    abbreviations: say(locale, "abbrCrochet").split("|"),
+    stitchesPerRow: plan.data.stitches,
+    rows: plan.data.rowCount,
+    width: approxInches(plan.data.finishedWidth),
+    length: approxInches(plan.data.finishedLength),
+    yards: plan.data.yards,
+    setup: [...foundation.lines.map(plain), plain(body.lines[0])],
+    pattern: [{ label: body.lines[1].label ?? "", text: body.lines[1].text }],
+    repeatNote: plain(body.lines[2]),
+    finish: [...edging.lines, ...finishing.lines].map(plain),
+    crochet: plan,
+    abbreviations: [...say(locale, "abbrCrochet").split("|"), ...crochetSquareCopy[locale].abbrExtra.split("|")],
   };
 }

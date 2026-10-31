@@ -9,6 +9,8 @@ import type { TessellationOptions, TessellationRequest, TessellationResult, Sash
 
 export type { TessellationColors, TessellationMotif, TessellationOptions, TessellationRequest, TessellationResult, GroupId, SashikoMotif, SashikoRequest, SashikoResult, CelticBreakPattern, CelticInterlace, CelticKnotRequest, CelticKnotResult, CelticStrand, StainedGlassColor, StainedGlassLayout, StainedGlassPiece, StainedGlassRequest, StainedGlassResult, MandalaMotif, MandalaRequest, MandalaResult, MandalaRing, MandalaRingSpec, GirihColors, GirihPart, GirihRequest, GirihResult, GirihStar, GirihSymmetry, TruchetArrangement, TruchetColors, TruchetRequest, TruchetResult, TruchetStyle, BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, Setting, StitchInfo, StitchRequest, StitchResult, TartanRequest, TartanResult, TartanStripe, CrossStitchColor, CrossStitchCraft, CrossStitchRequest, CrossStitchResult } from "@/engine";
 
+export { DEFAULT_KNIT_SQUARE, KNIT_SQUARE_SIZES } from "@/engine";
+
 export async function getBlocks(locale: Locale = "en"): Promise<BlockInfo[]> {
   return listBlocks(locale);
 }

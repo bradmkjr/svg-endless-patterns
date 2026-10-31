@@ -1,5 +1,53 @@
 {
   "posts": {
+    "complete-crochet-squares": {
+      "title": "Jedes Häkelmuster schreibt jetzt ein ganzes Quadrat",
+      "summary": "Wähle ein Häkelmuster und eine Quadratgröße und du bekommst die ganze Anleitung: Material, Anschlagkette, alle Reihen, einen Rand und das Fertigstellen.",
+      "blocks": [
+        "Die [Seiten zu den Häkelmustern](/crochet/) gaben bisher nur ein paar Reihen zum Wiederholen an. Jetzt schreibt jede ein ganzes Quadrat, etwa einen Waschlappen oder ein Deckenquadrat, auf der Seite und im PDF, mit dem US-Begriff in Klammern bei den Abkürzungen.",
+        "Beispiele für den Anfang",
+        [
+          "Ein Quadrat von 6\" in Moss Stitch",
+          "Ein Quadrat von 8\" in Double Crochet",
+          "Ein Quadrat von 10\" in V-Stitch",
+          "Ein Quadrat von 12\" in Back Loop Rib"
+        ],
+        "Was du bekommst",
+        [
+          "Material: Garnstärke, Nadelstärke, geschätzte Garnmenge, Zubehör, Maschenprobe, fertige Größe und eine Liste der Abkürzungen",
+          "Eine genaue Anschlagkette und wie die Wende-Luftmaschen jedes Musters zählen",
+          "Reihe 1 und 2 ausgeschrieben mit Maschenzahl, dann eine genaue Zahl von Wiederholungen, die mit einer Rückreihe endet",
+          "Eine Randrunde aus festen Maschen, mit 3 Maschen in jeder Ecke und einer Zählung für jede Seite",
+          "Wie du abschließt, die Fäden vernähst und spannst"
+        ],
+        "Größen und Maschenprobe",
+        "Wähle ein Quadrat von 6, 8, 10 oder 12 Zoll oder gib deine eigene Breite und Länge an. Der Rand zählt zur fertigen Größe, und die Reihenzahl wird aus deiner Maschenprobe berechnet, damit das Stück quadratisch wird. Wie immer gilt: Erst eine Maschenprobe häkeln, denn diese Zahlen stimmen nur bei deiner Maschenprobe."
+      ]
+    },
+    "complete-knitted-squares": {
+      "title": "Stricke ein vollständiges Quadrat in jedem Muster",
+      "summary": "Jede Seite zu einem Strickmuster schreibt jetzt ein ganzes Quadrat bei deiner Maschenprobe aus: Material, Anschlag, Rand, alle Reihen, Abketten und Spannen.",
+      "blocks": [
+        "Jedes Muster in der [Strickbibliothek](/knitting/) liefert jetzt eine vollständige Anleitung für ein Quadrat, etwa einen Spüllappen oder ein Deckenquadrat, und nicht mehr nur die Reihen, die sich wiederholen. Wähle 6, 8, 10 oder 12 Zoll, gib deine Maschenprobe ein, und die Anleitung wird mit diesen Zahlen geschrieben.",
+        "Beispiele zum Einstieg",
+        [
+          "Ein 12-Zoll-Quadrat im Perlmuster",
+          "Ein 10-Zoll-Quadrat im Korbmuster",
+          "Ein 6-Zoll-Quadrat glatt rechts, dank Rand flach"
+        ],
+        "Was jede Anleitung enthält",
+        [
+          "Garnstärke, Nadelstärke, geschätzte Lauflänge, Zubehör und Abkürzungen",
+          "Maschenprobe und Fertiggröße, mit einer Anschlagzahl, die zum Mustersatz passt",
+          "Ein kraus rechter Rand an allen vier Seiten, damit sich nichts einrollt",
+          "Nummerierte Reihen, eine genaue Wiederholungszahl, die auf einer Rückreihe endet, und Maschenkontrollen unterwegs",
+          "Abketten, Fäden vernähen und Spannen",
+          "Alles auch im druckbaren PDF und im Link zum Teilen"
+        ],
+        "Warum die Zahlen stimmen",
+        "Die geschriebenen Reihen stammen aus derselben Strickschrift wie die Vorschau des Musters. Unsere Tests gehen jede Anleitung Reihe für Reihe in vielen Größen und Maschenproben durch, zählen jede Masche und prüfen, dass das fertige Stück bis auf einen Mustersatz quadratisch ist. Die echte Größe bestimmt weiterhin deine eigene Maschenprobe, also miss sie zuerst."
+      ]
+    },
     "mandala-rings-palettes-and-pattern-pages": {
       "title": "Mandalas Ring für Ring bauen und eigene Paletten behalten",
       "summary": "Wählen Sie das genaue Motiv jedes Rings, stöbern Sie in Paletten nach Thema oder Farbharmonie, speichern Sie eigene und wechseln Sie Optionen per Vorschaubild.",
@@ -295,6 +343,19 @@
     }
   },
   "changelog": {
+    "Complete crochet squares": {
+      "title": "Ganze Häkelquadrate",
+      "items": [
+        "Die Seiten und PDFs zu den Häkelmustern schreiben jetzt ein ganzes Quadrat: Material, Anschlagkette, alle Reihen mit Maschenzahl, einen Rand mit Ecken und das Fertigstellen",
+        "Quadrate von 6, 8, 10 und 12 Zoll zum Häkel-Editor hinzugefügt"
+      ]
+    },
+    "Complete knitted squares": {
+      "title": "Vollständige gestrickte Quadrate",
+      "items": [
+        "Die Seiten zu Strickmustern schreiben jetzt eine vollständige Quadrat-Anleitung in 6, 8, 10 oder 12 Zoll aus, auf der Seite und im PDF"
+      ]
+    },
     "Mandala rings, palettes and pattern pages": {
       "title": "Mandala-Ringe, Paletten und Musterseiten",
       "items": [

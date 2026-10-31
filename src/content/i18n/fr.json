@@ -1,5 +1,53 @@
 {
   "posts": {
+    "complete-crochet-squares": {
+      "title": "Chaque point de crochet écrit désormais un carré complet",
+      "summary": "Choisissez un point de crochet et une taille de carré pour obtenir le patron entier : matériel, chaînette de base, tous les rangs, une bordure et les finitions.",
+      "blocks": [
+        "Les [pages de points de crochet](/crochet/) donnaient jusqu'ici quelques rangs à répéter. Chacune écrit maintenant un carré entier, comme une lavette ou un carré de couverture, sur la page et dans le PDF, avec le terme américain entre parenthèses dans les abréviations.",
+        "Des exemples pour commencer",
+        [
+          "Un carré de 6\" en moss stitch",
+          "Un carré de 8\" en double crochet",
+          "Un carré de 10\" en V-stitch",
+          "Un carré de 12\" en back loop rib"
+        ],
+        "Ce que vous obtenez",
+        [
+          "Matériel : grosseur du fil, taille du crochet, métrage estimé, accessoires, échantillon, taille finie et clé des abréviations",
+          "Une chaînette de base exacte, et la façon dont comptent les mailles en l'air de retournement de chaque point",
+          "Les rangs 1 et 2 écrits avec leur compte de mailles, puis un nombre exact de répétitions qui se termine sur un rang envers",
+          "Un tour de bordure en mailles serrées, avec 3 mailles à chaque coin et un compte pour chaque côté",
+          "Comment arrêter, rentrer les fils et bloquer"
+        ],
+        "Tailles et échantillon",
+        "Choisissez un carré de 6, 8, 10 ou 12 pouces, ou indiquez votre propre largeur et longueur. La bordure compte dans la taille finie, et le nombre de rangs est calculé d'après votre échantillon pour que l'ouvrage soit carré. Comme toujours, faites d'abord un échantillon : ces chiffres ne sont justes qu'avec votre tension."
+      ]
+    },
+    "complete-knitted-squares": {
+      "title": "Tricotez un carré complet dans n'importe quel point",
+      "summary": "Chaque page de point de tricot écrit désormais un carré entier à votre échantillon : matériel, montage, bordure, tous les rangs, rabattage et blocage.",
+      "blocks": [
+        "Chaque point de la [bibliothèque de tricot](/knitting/) vous donne désormais un modèle complet de carré, comme une lavette ou un carré de couverture, et plus seulement les rangs qui se répètent. Choisissez 6, 8, 10 ou 12 pouces, saisissez votre échantillon, et le modèle s'écrit avec ces nombres.",
+        "Des exemples pour commencer",
+        [
+          "Un carré de 12 pouces au point de riz",
+          "Un carré de 10 pouces au point de vannerie",
+          "Un carré de 6 pouces en jersey, gardé à plat par sa bordure"
+        ],
+        "Ce que contient chaque modèle",
+        [
+          "Grosseur du fil, taille des aiguilles, métrage estimé, accessoires et abréviations",
+          "Échantillon et taille finie, avec un nombre de mailles à monter adapté au motif du point",
+          "Une bordure au point mousse sur les quatre côtés, pour éviter que l'ouvrage roule",
+          "Des rangs numérotés, un nombre exact de répétitions qui finit sur un rang sur l'envers, et des vérifications du nombre de mailles en chemin",
+          "Le rabattage, la rentrée des fils et le blocage",
+          "Le tout dans le PDF imprimable et dans le lien de partage"
+        ],
+        "Pourquoi les nombres sont fiables",
+        "Les rangs écrits viennent du même diagramme que l'aperçu du point. Nos tests suivent chaque modèle rang par rang à de nombreuses tailles et échantillons, comptent chaque maille et vérifient que la pièce finie est carrée à un motif près. Votre propre échantillon décide toujours de la taille réelle : mesurez-le d'abord."
+      ]
+    },
     "mandala-rings-palettes-and-pattern-pages": {
       "title": "Créez des mandalas anneau par anneau et gardez vos palettes",
       "summary": "Choisissez le motif exact de chaque anneau, parcourez les palettes par thème ou harmonie, enregistrez les vôtres et passez d'une option à l'autre avec des vignettes.",
@@ -295,6 +343,19 @@
     }
   },
   "changelog": {
+    "Complete crochet squares": {
+      "title": "Carrés au crochet complets",
+      "items": [
+        "Les pages et les PDF de points de crochet écrivent désormais un carré complet : matériel, chaînette de base, tous les rangs avec leur compte de mailles, une bordure avec ses coins et les finitions",
+        "Ajout de carrés de 6, 8, 10 et 12 pouces au créateur de crochet"
+      ]
+    },
+    "Complete knitted squares": {
+      "title": "Carrés tricotés complets",
+      "items": [
+        "Les pages de points de tricot écrivent désormais un modèle complet de carré, en 6, 8, 10 ou 12 pouces, sur la page et dans le PDF"
+      ]
+    },
     "Mandala rings, palettes and pattern pages": {
       "title": "Anneaux de mandala, palettes et pages de motifs",
       "items": [

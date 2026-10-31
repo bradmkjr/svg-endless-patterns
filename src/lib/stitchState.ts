@@ -1,4 +1,4 @@
-import type { Craft, Locale, StitchInfo, StitchRequest } from "./generator";
+import { DEFAULT_KNIT_SQUARE, KNIT_SQUARE_SIZES, type Craft, type Locale, type StitchInfo, type StitchRequest } from "./generator";
 import type { Messages } from "./i18n";
 
 /** The stitch builder's options, starting gauges and share links. */
@@ -30,6 +30,9 @@ export const PROJECTS: { label: keyof Messages["projects"]; width: number; lengt
   { label: "throw", width: 50, length: 60 },
 ];
 
+/** Crochet square presets, in inches: a width and length equal, so a share link needs nothing new. */
+export const SQUARE_SIZES = [6, 8, 10, 12];
+
 export const WIDTH_OPTIONS = Array.from({ length: 77 }, (_, i) => i + 4);
 export const LENGTH_OPTIONS = Array.from({ length: 97 }, (_, i) => i + 4);
 export const STITCH_GAUGE_OPTIONS = Array.from({ length: 39 }, (_, i) => i + 6);
@@ -58,6 +61,12 @@ function pick(raw: string | null, options: number[], fallback: number): number {
   return raw !== null && options.includes(value) ? value : fallback;
 }
 
+/** Knit only, and left out at the default, which is what the engine uses when it's missing. */
+function squareSizeFrom(stitch: StitchInfo, raw: string | null): { squareSize?: number } {
+  const squareSize = pick(raw, KNIT_SQUARE_SIZES, DEFAULT_KNIT_SQUARE);
+  return stitch.craft === "knit" && squareSize !== DEFAULT_KNIT_SQUARE ? { squareSize } : {};
+}
+
 export function parseStitchState(stitch: StitchInfo, params: { get(name: string): string | null }, locale: Locale = "en"): StitchRequest {
   const base = defaultStitchState(stitch, locale);
   const color = params.get("color");
@@ -68,6 +77,7 @@ export function parseStitchState(stitch: StitchInfo, params: { get(name: string)
     stitchGauge: pick(params.get("sts"), STITCH_GAUGE_OPTIONS, base.stitchGauge),
     rowGauge: pick(params.get("rows"), ROW_GAUGE_OPTIONS, base.rowGauge),
     color: color && HEX.test(color) ? `#${color.toLowerCase()}` : base.color,
+    ...squareSizeFrom(stitch, params.get("sq")),
   };
 }
 
@@ -79,6 +89,7 @@ export function serializeStitchState(stitch: StitchInfo, state: StitchRequest): 
   if (state.stitchGauge !== base.stitchGauge) params.set("sts", String(state.stitchGauge));
   if (state.rowGauge !== base.rowGauge) params.set("rows", String(state.rowGauge));
   if (state.color !== base.color) params.set("color", state.color.slice(1));
+  if (state.squareSize !== undefined && state.squareSize !== DEFAULT_KNIT_SQUARE) params.set("sq", String(state.squareSize));
   return params.toString();
 }
 

@@ -34,6 +34,7 @@ export type { TruchetArrangement, TruchetColors, TruchetRequest, TruchetResult, 
 export { generateTartan } from "./tartan";
 export type { TartanRequest, TartanResult, TartanStripe } from "./tartan";
 export { generateStitchPattern, listStitchPatterns } from "./stitchPattern";
+export { DEFAULT_KNIT_SQUARE, KNIT_SQUARE_SIZES } from "./knitSquare";
 
 // Block names stay in English in every language: they're traditional names people search by.
 function toInfo({ slug, name, family, level, grid, fabrics, summary }: Block, locale: Locale): BlockInfo {

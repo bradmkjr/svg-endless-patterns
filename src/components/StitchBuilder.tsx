@@ -4,8 +4,10 @@ import { useEffect, useState } from "react";
 import { generateStitchPattern, generateStitchPdf, type Locale, type StitchInfo, type StitchRequest, type StitchResult } from "@/lib/generator";
 import { fill, messages } from "@/lib/i18n";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
-import { LENGTH_OPTIONS, PROJECTS, ROW_GAUGE_OPTIONS, serializeStitchState, startingGauge, STITCH_GAUGE_OPTIONS, WIDTH_OPTIONS, YARN_WEIGHTS } from "@/lib/stitchState";
+import { LENGTH_OPTIONS, PROJECTS, ROW_GAUGE_OPTIONS, serializeStitchState, SQUARE_SIZES, startingGauge, STITCH_GAUGE_OPTIONS, WIDTH_OPTIONS, YARN_WEIGHTS } from "@/lib/stitchState";
 import { PalettePicker } from "./PalettePicker";
+import { DEFAULT_KNIT_SQUARE, KNIT_SQUARE_SIZES } from "@/lib/generator";
+import { KnitSquarePattern, squareCopy } from "./KnitSquarePattern";
 import styles from "./BlockBuilder.module.css";
 
 type View = "swatch" | "chart";
@@ -121,6 +123,13 @@ export function StitchBuilder({ stitch, locale, initialState, initialResult }: {
         </section>
 
         <form className={`${styles.controls} no-print`} onSubmit={(e) => e.preventDefault()}>
+          {stitch.craft === "knit" && (
+            <fieldset>
+              <legend>{squareCopy(locale).size}</legend>
+              <NumberSelect label={squareCopy(locale).sizeLabel} value={state.squareSize ?? DEFAULT_KNIT_SQUARE} options={KNIT_SQUARE_SIZES} unit={'"'} onChange={(squareSize) => update({ squareSize })} />
+            </fieldset>
+          )}
+
           <fieldset>
             <legend>{t.projectSize}</legend>
             <div className={styles.presets}>
@@ -130,6 +139,15 @@ export function StitchBuilder({ stitch, locale, initialState, initialResult }: {
                 </button>
               ))}
             </div>
+            {stitch.craft === "crochet" && (
+              <div className={styles.presets}>
+                {SQUARE_SIZES.map((size) => (
+                  <button key={size} type="button" className={styles.tab} aria-pressed={state.width === size && state.length === size} onClick={() => update({ width: size, length: size })}>
+                    {fill(t.squarePreset, { n: size })}
+                  </button>
+                ))}
+              </div>
+            )}
             <div className={styles.fieldRow}>
               <NumberSelect label={t.width} value={state.width} options={WIDTH_OPTIONS} unit={'"'} onChange={(width) => update({ width })} />
               <NumberSelect label={t.length} value={state.length} options={LENGTH_OPTIONS} unit={'"'} onChange={(length) => update({ length })} />
@@ -173,9 +191,38 @@ export function StitchBuilder({ stitch, locale, initialState, initialResult }: {
         <strong>{t.swatchFirstTitle}</strong> {t.swatchFirstText}
       </p>
 
+      {result.square && <KnitSquarePattern square={result.square} locale={locale} />}
+
       <div className={styles.results}>
         <section>
+          {result.crochet ? (
+            <>
+              <h2>{result.crochet.materialsHeading}</h2>
+              <ul className={styles.written}>
+                {result.crochet.materials.map((item) => (
+                  <li key={item.label}>
+                    <strong>{item.label}:</strong> {item.text}
+                  </li>
+                ))}
+              </ul>
+              {result.crochet.sections.map((section) => (
+                <div key={section.heading}>
+                  <h2>{section.heading}</h2>
+                  <ul className={styles.written}>
+                    {section.lines.map((line, i) => (
+                      <li key={i}>
+                        {line.label && <strong>{line.label}: </strong>}
+                        {line.text}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </>
+          ) : (
+            <>
           <h2>{t.instructions}</h2>
+          {result.square && <p className={styles.note}>{squareCopy(locale).rectangleNote}</p>}
           <ul className={styles.written}>
             {result.setup.map((line) => (
               <li key={line}>{line}</li>
@@ -191,6 +238,8 @@ export function StitchBuilder({ stitch, locale, initialState, initialResult }: {
             ))}
           </ul>
           <p className={styles.note}>{result.abbreviations.join(" · ")}</p>
+            </>
+          )}
         </section>
 
         <section>

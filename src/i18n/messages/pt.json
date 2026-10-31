@@ -146,6 +146,7 @@
     "stitchesPer": "Pontos em 4\"",
     "rowsPer": "Carreiras em 4\"",
     "yarnColor": "Cor do fio",
+    "squarePreset": "Quadrado de {n}\"",
     "swatchFirstTitle": "Primeiro, a amostra.",
     "swatchFirstText": "Estes números só valem para a sua amostra, e os valores iniciais são comuns, não os seus. Faça uma amostra de 4\", meça e informe o resultado.",
     "instructions": "Instruções",

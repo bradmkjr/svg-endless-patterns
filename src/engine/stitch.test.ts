@@ -79,9 +79,10 @@ describe("project numbers", () => {
 
   it("uses plain counts for a plain stitch", () => {
     const result = generateStitchPattern("single-crochet", { ...req, stitchGauge: 14, rowGauge: 16 });
-    expect(result.stitchesPerRow).toBe(28);
-    expect(result.startCount).toBe(29);
-    expect(result.rows).toBe(32);
+    // 8" less the edging on each side, at this gauge.
+    expect(result.stitchesPerRow).toBe(26);
+    expect(result.startCount).toBe(27);
+    expect(result.rows).toBe(30);
   });
 
   it("stays near the rule of thumb for familiar projects", () => {

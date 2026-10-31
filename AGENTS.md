@@ -37,7 +37,10 @@ Add it to `src/engine/stitchCatalog.ts`, and its text to `src/engine/messages/`.
 side, with an even row count; written rows are derived from it. Crochet: write the
 row text with what each part consumes and makes. `stitch.test.ts` checks both at
 every width, but it counts crochet stitches rather than reading the text, so
-proofread that text. Crochet terms are US.
+proofread that text. Crochet terms are US. The page and PDF write a complete square
+from the row's consumes and makes in `engine/crochetSquare.ts` (text in
+`engine/messages/crochetSquare.json`, read back by its test); a row shape it doesn't
+know throws, so add its wording there.
 
 ## Announcing major features
 Every major feature ships with all of these, in the same change:

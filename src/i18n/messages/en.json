@@ -146,6 +146,7 @@
     "stitchesPer": "Stitches per 4\"",
     "rowsPer": "Rows per 4\"",
     "yarnColor": "Yarn color",
+    "squarePreset": "{n}\" square",
     "swatchFirstTitle": "Swatch first.",
     "swatchFirstText": "These numbers are only right at your gauge, and the starting values above are typical figures rather than yours. Work a 4\" swatch, measure it, and enter what you get.",
     "instructions": "Instructions",

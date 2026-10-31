@@ -332,9 +332,9 @@ describe("share links", () => {
     expect(parseSashikoState(params, "es")).toEqual(defaultSashikoState("es"));
   });
 
-  it("gives each language its own default colors", () => {
+  it("keeps its two primary colors in every language", () => {
     const colors = LOCALES.map((l) => defaultSashikoState(l).cloth);
-    expect(new Set(colors).size).toBe(LOCALES.length);
+    expect(new Set(colors).size).toBe(1);
   });
 
   it("offers exactly the engine's motifs", () => {

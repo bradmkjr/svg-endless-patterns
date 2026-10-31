@@ -38,6 +38,8 @@ export type StitchRequest = {
   stitchGauge: number;
   rowGauge: number;
   color: string;
+  /** Knit only: the complete square's size in inches, one of KNIT_SQUARE_SIZES. */
+  squareSize?: number;
   /** Language for generated text. English when left out. */
   locale?: Locale;
 };
@@ -70,6 +72,66 @@ export type StitchResult = {
   repeatNote: string;
   finish: string[];
   abbreviations: string[];
+  /** Knit only: the complete square pattern. */
+  square?: KnitSquare;
+  /** Crochet only: the complete written pattern, with materials, edging and finishing. */
+  crochet?: CrochetPlan;
+};
+
+export type KnitSquareSection = { heading: string; items: { label?: string; text: string }[] };
+
+/** A complete knitted square, in the order it's worked. */
+export type KnitSquare = {
+  title: string;
+  size: number;
+  castOn: number;
+  rows: number;
+  sideStitches: number;
+  borderRows: number;
+  bodyRows: number;
+  /** Finished size after rounding to whole repeats. */
+  width: string;
+  length: string;
+  yards: number;
+  weightId: string;
+  needle: string;
+  sections: KnitSquareSection[];
+};
+
+export type CrochetPlanLine = { label?: string; text: string };
+
+export type CrochetPlanRow = {
+  /** The rows this covers, inclusive. */
+  from: number;
+  to: number;
+  /** Chains or row-below stitches and spaces used. */
+  consumes: number;
+  /** Stitches and spaces made, and those split into worked stitches and chain spaces. */
+  makes: number;
+  worked: number;
+  spaces: number;
+};
+
+export type CrochetPlan = {
+  materialsHeading: string;
+  materials: { label: string; text: string }[];
+  sections: { heading: string; lines: CrochetPlanLine[] }[];
+  /** The numbers behind the text, so tests can follow the pattern. */
+  data: {
+    chains: number;
+    extraChains: number;
+    stitches: number;
+    rowCount: number;
+    turningChains: number;
+    rows: CrochetPlanRow[];
+    /** Sc between corners on each side, and sc worked into each of the four corners. */
+    edging: { top: number; bottom: number; left: number; right: number; cornerStitches: number; total: number };
+    bodyWidth: number;
+    bodyLength: number;
+    finishedWidth: number;
+    finishedLength: number;
+    yards: number;
+  };
 };
 
 export type FabricInfo = { id: string; label: string };

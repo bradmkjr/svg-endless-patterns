@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { getBlock } from "./generator";
+import { getBlock, getStitchPattern } from "./generator";
+import { parseStitchState, serializeStitchState, SQUARE_SIZES } from "./stitchState";
 import { defaultState, paletteColors, PALETTES, parseState, serializeState } from "./state";
 
 describe("share links", async () => {
@@ -58,5 +59,26 @@ describe("tartan share links", async () => {
 
   it("falls back on bad input", () => {
     expect(parseTartanState(new URLSearchParams("s=zzz.9&tpi=9999&w=x"))).toEqual(defaultTartanState());
+  });
+});
+
+describe("crochet square links", async () => {
+  const moss = (await getStitchPattern("crochet", "moss-stitch"))!;
+  const query = (size: number) => `w=${size}&l=${size}`;
+
+  it("round-trips every square size, and the default stays out of the link", () => {
+    for (const size of SQUARE_SIZES) {
+      const state = parseStitchState(moss, new URLSearchParams(query(size)));
+      expect(state.width).toBe(size);
+      expect(state.length).toBe(size);
+      expect(serializeStitchState(moss, state)).toBe(size === 8 ? "" : query(size));
+    }
+  });
+
+  it("falls back to the default square on a bad size", () => {
+    for (const bad of ["abc", "-6", "7.5", "9999", ""]) {
+      const state = parseStitchState(moss, new URLSearchParams(`w=${bad}&l=${bad}`));
+      expect([state.width, state.length], bad).toEqual([8, 8]);
+    }
   });
 });

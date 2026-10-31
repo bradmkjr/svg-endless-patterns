@@ -1,5 +1,141 @@
 [
   {
+    "slug": "complete-crochet-squares",
+    "title": "Every crochet stitch now writes a complete square",
+    "date": "2026-10-31",
+    "summary": "Pick a crochet stitch and a square size to get the whole pattern: materials, foundation chain, every row, an edging, and finishing.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The [crochet stitch pages](/crochet/) used to give you a few rows to repeat. Each one now writes a whole square, such as a washcloth or an afghan square, in US terms, on the page and in the PDF."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "crochet",
+            "slug": "moss-stitch",
+            "query": "w=6&l=6",
+            "view": "swatch",
+            "caption": "A 6\" square in moss stitch"
+          },
+          {
+            "kind": "crochet",
+            "slug": "double-crochet",
+            "query": "",
+            "view": "swatch",
+            "caption": "An 8\" square in double crochet"
+          },
+          {
+            "kind": "crochet",
+            "slug": "v-stitch",
+            "query": "w=10&l=10",
+            "view": "chart",
+            "caption": "A 10\" square in V-stitch"
+          },
+          {
+            "kind": "crochet",
+            "slug": "back-loop-rib",
+            "query": "w=12&l=12",
+            "view": "swatch",
+            "caption": "A 12\" square in back loop rib"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Materials: yarn weight, hook size, estimated yardage, notions, gauge, finished size, and an abbreviations key",
+          "An exact foundation chain, with how each stitch's turning chain counts",
+          "Row 1 and Row 2 written out with their stitch counts, then an exact number of repeats that ends on a wrong-side row",
+          "One round of single crochet edging, with 3 stitches in each corner and a count for every side",
+          "How to fasten off, weave in the ends, and block"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Sizes and gauge"
+      },
+      {
+        "type": "paragraph",
+        "text": "Choose a 6, 8, 10 or 12 inch square, or set your own width and length. The edging counts toward the finished size, and the row count is worked out from your gauge so the piece comes out square. As always, swatch first: these numbers are only right at your gauge."
+      }
+    ]
+  },
+  {
+    "slug": "complete-knitted-squares",
+    "title": "Knit a complete square in any stitch",
+    "date": "2026-10-31",
+    "summary": "Every knitting stitch page now writes out a whole square at your gauge: materials, cast on, border, every row, bind off and blocking.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Each stitch in the [knitting library](/knitting/) now gives you a complete pattern for a square, such as a dishcloth or an afghan square, instead of only the rows that repeat. Pick 6, 8, 10 or 12 inches, enter your gauge, and the pattern is written for those numbers."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "knit",
+            "slug": "seed-stitch",
+            "query": "sq=12",
+            "view": "swatch",
+            "caption": "A 12 inch square in seed stitch"
+          },
+          {
+            "kind": "knit",
+            "slug": "basketweave",
+            "query": "sq=10",
+            "view": "chart",
+            "caption": "A 10 inch square in basketweave"
+          },
+          {
+            "kind": "knit",
+            "slug": "stockinette-stitch",
+            "query": "sq=6",
+            "view": "swatch",
+            "caption": "A 6 inch square in stockinette, kept flat by its border"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What each pattern includes"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Yarn weight, needle size, estimated yardage, notions and abbreviations",
+          "Gauge and finished size, with a cast-on count that fits the stitch's repeat",
+          "A garter stitch border on all four sides, to stop curling",
+          "Numbered rows, an exact repeat count that ends on a wrong-side row, and stitch count checks along the way",
+          "Binding off, weaving in the ends and blocking",
+          "All of it in the printable PDF, and in the share link"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Why the numbers hold up"
+      },
+      {
+        "type": "paragraph",
+        "text": "The written rows come from the same chart as the stitch's preview. Our tests follow each pattern row by row at many sizes and gauges, counting every stitch and checking that the finished piece is within one repeat of square. Your own swatch still decides the real size, so measure it first."
+      }
+    ]
+  },
+  {
     "slug": "mandala-rings-palettes-and-pattern-pages",
     "title": "Build mandalas ring by ring, and keep your own palettes",
     "date": "2026-10-31",

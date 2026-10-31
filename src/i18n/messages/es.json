@@ -146,6 +146,7 @@
     "stitchesPer": "Puntos en 4\"",
     "rowsPer": "Vueltas en 4\"",
     "yarnColor": "Color del hilo",
+    "squarePreset": "Cuadrado de {n}\"",
     "swatchFirstTitle": "Primero, la muestra.",
     "swatchFirstText": "Estas cifras solo son correctas para tu muestra, y los valores iniciales son habituales, no los tuyos. Teje una muestra de 4\", mídela e introduce el resultado.",
     "instructions": "Instrucciones",

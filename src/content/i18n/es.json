@@ -1,5 +1,53 @@
 {
   "posts": {
+    "complete-crochet-squares": {
+      "title": "Cada punto de ganchillo ya escribe un cuadrado completo",
+      "summary": "Elige un punto de ganchillo y un tamaño de cuadrado y obtendrás el patrón entero: materiales, cadeneta base, todas las vueltas, un borde y el acabado.",
+      "blocks": [
+        "Las [páginas de puntos de ganchillo](/crochet/) antes daban unas pocas vueltas que repetir. Ahora cada una escribe un cuadrado entero, como un paño o un cuadrado para manta, en la página y en el PDF, con el término de EE. UU. entre paréntesis en las abreviaturas.",
+        "Ejemplos para empezar",
+        [
+          "Un cuadrado de 6\" en moss stitch",
+          "Un cuadrado de 8\" en double crochet",
+          "Un cuadrado de 10\" en V-stitch",
+          "Un cuadrado de 12\" en back loop rib"
+        ],
+        "Qué obtienes",
+        [
+          "Materiales: grosor del hilo, tamaño de ganchillo, yardas estimadas, accesorios, muestra, tamaño final y una clave de abreviaturas",
+          "Una cadeneta base exacta, y cómo cuentan las cadenetas de giro de cada punto",
+          "Las vueltas 1 y 2 escritas con su cuenta de puntos, y un número exacto de repeticiones que termina en una vuelta del revés",
+          "Una vuelta de borde en punto bajo, con 3 puntos en cada esquina y una cuenta para cada lado",
+          "Cómo rematar, esconder las hebras y bloquear"
+        ],
+        "Tamaños y muestra",
+        "Elige un cuadrado de 6, 8, 10 o 12 pulgadas, o indica tu propio ancho y largo. El borde cuenta para el tamaño final, y el número de vueltas se calcula a partir de tu muestra para que la pieza salga cuadrada. Como siempre, teje primero una muestra: estos números solo son correctos con tu tensión."
+      ]
+    },
+    "complete-knitted-squares": {
+      "title": "Teje un cuadrado completo en cualquier punto",
+      "summary": "Cada página de puntos de tejido escribe ahora un cuadrado entero con tu muestra: materiales, montaje, borde, todas las vueltas, cierre y bloqueo.",
+      "blocks": [
+        "Cada punto de la [biblioteca de tejido](/knitting/) te da ahora un patrón completo para un cuadrado, como un paño de cocina o un cuadro de manta, y no solo las vueltas que se repiten. Elige 6, 8, 10 o 12 pulgadas, introduce tu muestra y el patrón se escribe con esos números.",
+        "Ejemplos para empezar",
+        [
+          "Un cuadrado de 12 pulgadas en punto de arroz",
+          "Un cuadrado de 10 pulgadas en punto de cesta",
+          "Un cuadrado de 6 pulgadas en punto jersey, plano gracias a su borde"
+        ],
+        "Qué incluye cada patrón",
+        [
+          "Grosor de la lana, tamaño de las agujas, yardas estimadas, accesorios y abreviaturas",
+          "Muestra y tamaño final, con un número de puntos de montaje que encaja con la repetición del punto",
+          "Un borde de punto bobo en los cuatro lados, para que no se enrolle",
+          "Vueltas numeradas, un número exacto de repeticiones que termina en una vuelta del revés y comprobaciones del número de puntos por el camino",
+          "Cierre, remate de hebras y bloqueo",
+          "Todo ello en el PDF imprimible y en el enlace para compartir"
+        ],
+        "Por qué los números son fiables",
+        "Las vueltas escritas salen del mismo gráfico que la vista previa del punto. Nuestras pruebas siguen cada patrón vuelta a vuelta en muchos tamaños y muestras, cuentan cada punto y comprueban que la pieza terminada queda a menos de una repetición de ser cuadrada. Tu propia muestra sigue decidiendo el tamaño real, así que mídela primero."
+      ]
+    },
     "mandala-rings-palettes-and-pattern-pages": {
       "title": "Crea mandalas anillo por anillo y guarda tus paletas",
       "summary": "Elige el motivo exacto de cada anillo, explora paletas por tema o armonía de color, guarda las tuyas y salta entre opciones con miniaturas.",
@@ -295,6 +343,19 @@
     }
   },
   "changelog": {
+    "Complete crochet squares": {
+      "title": "Cuadrados de ganchillo completos",
+      "items": [
+        "Las páginas y los PDF de puntos de ganchillo ya escriben un cuadrado completo: materiales, cadeneta base, todas las vueltas con su cuenta de puntos, un borde con esquinas y el acabado",
+        "Se añadieron cuadrados de 6, 8, 10 y 12 pulgadas al creador de ganchillo"
+      ]
+    },
+    "Complete knitted squares": {
+      "title": "Cuadrados de punto completos",
+      "items": [
+        "Las páginas de puntos de tejido escriben ahora un patrón completo de cuadrado, en tamaños de 6, 8, 10 o 12 pulgadas, en la página y en el PDF"
+      ]
+    },
     "Mandala rings, palettes and pattern pages": {
       "title": "Anillos de mandala, paletas y páginas de patrones",
       "items": [

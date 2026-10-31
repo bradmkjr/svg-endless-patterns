@@ -146,6 +146,7 @@
     "stitchesPer": "Mailles pour 4\"",
     "rowsPer": "Rangs pour 4\"",
     "yarnColor": "Couleur du fil",
+    "squarePreset": "Carré de {n}\"",
     "swatchFirstTitle": "D'abord, l'échantillon.",
     "swatchFirstText": "Ces chiffres ne sont justes qu'à votre échantillon, et les valeurs de départ sont courantes, pas les vôtres. Réalisez un échantillon de 4\", mesurez-le et saisissez le résultat.",
     "instructions": "Instructions",

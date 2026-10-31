@@ -1,5 +1,53 @@
 {
   "posts": {
+    "complete-crochet-squares": {
+      "title": "Cada ponto de crochê agora escreve um quadrado completo",
+      "summary": "Escolha um ponto de crochê e um tamanho de quadrado para receber a receita inteira: materiais, corrente base, todas as carreiras, uma borda e o acabamento.",
+      "blocks": [
+        "As [páginas de pontos de crochê](/crochet/) antes davam algumas carreiras para repetir. Agora cada uma escreve um quadrado inteiro, como um paninho ou um quadrado para manta, na página e no PDF, com o termo dos EUA entre parênteses nas abreviações.",
+        "Exemplos para começar",
+        [
+          "Um quadrado de 6\" em moss stitch",
+          "Um quadrado de 8\" em double crochet",
+          "Um quadrado de 10\" em V-stitch",
+          "Um quadrado de 12\" em back loop rib"
+        ],
+        "O que você recebe",
+        [
+          "Materiais: espessura do fio, tamanho da agulha, jardas estimadas, acessórios, amostra, tamanho final e uma lista de abreviações",
+          "Uma corrente base exata, e como contam as correntes de virada de cada ponto",
+          "As carreiras 1 e 2 escritas com a contagem de pontos, e um número exato de repetições que termina em uma carreira do avesso",
+          "Uma volta de borda em ponto baixo, com 3 pontos em cada canto e uma contagem para cada lado",
+          "Como arrematar, esconder as pontas e bloquear"
+        ],
+        "Tamanhos e amostra",
+        "Escolha um quadrado de 6, 8, 10 ou 12 polegadas, ou informe sua própria largura e comprimento. A borda conta no tamanho final, e o número de carreiras é calculado pela sua amostra para a peça sair quadrada. Como sempre, faça a amostra primeiro: estes números só valem na sua tensão."
+      ]
+    },
+    "complete-knitted-squares": {
+      "title": "Tricote um quadrado completo em qualquer ponto",
+      "summary": "Cada página de ponto de tricô agora escreve um quadrado inteiro na sua amostra: materiais, montagem, barra, todas as carreiras, arremate e blocking.",
+      "blocks": [
+        "Cada ponto da [biblioteca de tricô](/knitting/) agora traz uma receita completa de quadrado, como um paninho ou um quadrado de manta, e não só as carreiras que se repetem. Escolha 6, 8, 10 ou 12 polegadas, informe a sua amostra e a receita é escrita com esses números.",
+        "Exemplos para começar",
+        [
+          "Um quadrado de 12 polegadas em ponto arroz",
+          "Um quadrado de 10 polegadas em ponto cesta",
+          "Um quadrado de 6 polegadas em ponto meia, mantido plano pela barra"
+        ],
+        "O que cada receita inclui",
+        [
+          "Espessura do fio, tamanho das agulhas, metragem estimada, acessórios e abreviações",
+          "Amostra e tamanho final, com um número de pontos de montagem que combina com a repetição do ponto",
+          "Uma barra em ponto liga nos quatro lados, para não enrolar",
+          "Carreiras numeradas, um número exato de repetições que termina em uma carreira do avesso e conferências do número de pontos pelo caminho",
+          "Arremate, acabamento das pontas e blocking",
+          "Tudo isso no PDF para impressão e no link de compartilhamento"
+        ],
+        "Por que os números são confiáveis",
+        "As carreiras escritas vêm do mesmo gráfico da prévia do ponto. Nossos testes seguem cada receita carreira por carreira em muitos tamanhos e amostras, contam cada ponto e conferem que a peça pronta fica quadrada com diferença de no máximo uma repetição. A sua amostra continua decidindo o tamanho real, então meça-a primeiro."
+      ]
+    },
     "mandala-rings-palettes-and-pattern-pages": {
       "title": "Crie mandalas anel por anel e guarde suas paletas",
       "summary": "Escolha o motivo exato de cada anel, explore paletas por tema ou harmonia de cores, salve as suas e navegue entre opções com miniaturas.",
@@ -295,6 +343,19 @@
     }
   },
   "changelog": {
+    "Complete crochet squares": {
+      "title": "Quadrados de crochê completos",
+      "items": [
+        "As páginas e os PDFs de pontos de crochê agora escrevem um quadrado completo: materiais, corrente base, todas as carreiras com a contagem de pontos, uma borda com cantos e o acabamento",
+        "Foram adicionados quadrados de 6, 8, 10 e 12 polegadas ao criador de crochê"
+      ]
+    },
+    "Complete knitted squares": {
+      "title": "Quadrados de tricô completos",
+      "items": [
+        "As páginas de pontos de tricô agora escrevem uma receita completa de quadrado, em 6, 8, 10 ou 12 polegadas, na página e no PDF"
+      ]
+    },
     "Mandala rings, palettes and pattern pages": {
       "title": "Anéis de mandala, paletas e páginas de padrões",
       "items": [

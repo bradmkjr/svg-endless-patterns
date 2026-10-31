@@ -1,0 +1,32 @@
+{
+  "en": {
+    "size": "Complete square",
+    "sizeLabel": "Square size",
+    "lede": "Every row of a finished square at your gauge, from cast on to blocking. Change the size or gauge and the numbers follow.",
+    "rectangleNote": "The stitch rows alone, for a plain rectangle at the project size above. They have no border and aren't the square's row numbers."
+  },
+  "es": {
+    "size": "Cuadrado completo",
+    "sizeLabel": "Tamaño del cuadrado",
+    "lede": "Todas las vueltas de un cuadrado terminado con tu muestra, del montaje al bloqueo. Cambia el tamaño o la muestra y los números se ajustan.",
+    "rectangleNote": "Solo las vueltas del punto, para un rectángulo sencillo del tamaño de proyecto indicado arriba. No llevan borde ni usan la numeración del cuadrado."
+  },
+  "fr": {
+    "size": "Carré complet",
+    "sizeLabel": "Taille du carré",
+    "lede": "Tous les rangs d'un carré fini à votre échantillon, du montage au blocage. Changez la taille ou l'échantillon, et les nombres suivent.",
+    "rectangleNote": "Les rangs du point seuls, pour un simple rectangle à la taille de projet indiquée plus haut. Ils n'ont pas de bordure et ne suivent pas la numérotation du carré."
+  },
+  "de": {
+    "size": "Vollständiges Quadrat",
+    "sizeLabel": "Größe des Quadrats",
+    "lede": "Jede Reihe eines fertigen Quadrats bei deiner Maschenprobe, vom Anschlag bis zum Spannen. Ändere Größe oder Maschenprobe, und die Zahlen passen sich an.",
+    "rectangleNote": "Nur die Musterreihen, für ein einfaches Rechteck in der oben gewählten Projektgröße. Sie haben keinen Rand und nicht die Reihennummern des Quadrats."
+  },
+  "pt": {
+    "size": "Quadrado completo",
+    "sizeLabel": "Tamanho do quadrado",
+    "lede": "Todas as carreiras de um quadrado pronto na sua amostra, da montagem ao blocking. Mude o tamanho ou a amostra e os números acompanham.",
+    "rectangleNote": "Só as carreiras do ponto, para um retângulo simples no tamanho de projeto acima. Elas não têm barra nem usam a numeração do quadrado."
+  }
+}

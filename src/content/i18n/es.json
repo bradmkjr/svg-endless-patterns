@@ -543,6 +543,12 @@
     }
   },
   "changelog": {
+    "Better link previews": {
+      "title": "Mejores vistas previas de enlaces",
+      "items": [
+        "Cada página, en cada idioma, tiene ahora su propia tarjeta para compartir, con su patrón y su nombre, además de su propio título, descripción y datos de enlace para redes sociales y aplicaciones de mensajería"
+      ]
+    },
     "More patterns in five tools": {
       "title": "Más patrones en cinco herramientas",
       "items": [

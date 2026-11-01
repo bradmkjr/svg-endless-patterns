@@ -543,6 +543,12 @@
     }
   },
   "changelog": {
+    "Better link previews": {
+      "title": "Bessere Linkvorschauen",
+      "items": [
+        "Jede Seite hat jetzt in jeder Sprache ihre eigene Vorschaukarte mit Muster und Namen sowie eigenen Titel, eigene Beschreibung und Linkangaben für soziale Netzwerke und Messenger"
+      ]
+    },
     "More patterns in five tools": {
       "title": "Mehr Muster in fünf Werkzeugen",
       "items": [

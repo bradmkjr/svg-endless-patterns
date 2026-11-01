@@ -1,6 +1,13 @@
 [
   {
     "date": "2026-10-31",
+    "title": "Better link previews",
+    "items": [
+      "Every page in every language now has its own share card, showing its pattern and name, and its own title, description and link details for social sites and messaging apps"
+    ]
+  },
+  {
+    "date": "2026-10-31",
     "title": "More patterns in five tools",
     "items": [
       "Added new options so every library entry shows six: double arc and woven Truchet tiles, Orchard and Tide pool plaids, honeycomb and pinwheel stained glass, 16-fold stars, and sunburst, chevron and double spiral tie-dye"

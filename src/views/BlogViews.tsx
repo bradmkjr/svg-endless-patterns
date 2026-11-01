@@ -8,7 +8,7 @@ import { RichText } from "@/components/RichText";
 import { formatDate, getChangelog, getPost, getPosts } from "@/lib/content";
 import type { Locale } from "@/lib/generator";
 import { localePath, messages } from "@/lib/i18n";
-import { postImage } from "@/lib/postImages";
+import { postImage, samplePicture } from "@/lib/postImages";
 import { absoluteUrl, SITE_NAME } from "@/lib/site";
 
 export function blogMetadata(locale: Locale): Metadata {
@@ -59,7 +59,7 @@ export async function postMetadata(locale: Locale, slug: string): Promise<Metada
   const post = await getPost(slug, locale);
   if (!post) return {};
   const path = `/blog/${post.slug}/`;
-  return pageMetadata(locale, path, post.title, post.summary, { type: "article", publishedTime: post.date });
+  return pageMetadata(locale, path, post.title, post.summary, { openGraph: { type: "article", publishedTime: post.date }, picture: samplePicture(post) });
 }
 
 export async function PostView({ locale, slug }: { locale: Locale; slug: string }) {

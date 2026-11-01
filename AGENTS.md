@@ -108,10 +108,9 @@ static files from `app/thumbs/`, drawn in `lib/thumbnails.ts`.
 
 ## Page tags and share cards
 Views build their title, description, canonical, Open Graph and Twitter tags with `pageMetadata`
-(`lib/pageMetadata.ts`). Every path in `lib/sitePaths.ts` gets a 1200x630 PNG per language at
-`/og/<locale>/<path>.png`, drawn at build time by `app/og/`. `lib/socialCards.ts` says what each
-card shows, using text that's already translated. A new page needs its path and a card there; its
-test fails on a missing one. Card pictures use SVGs from the build's usual sources, never API PNGs.
+(`lib/pageMetadata.ts`). `og:image` is always an API URL, drawn when asked for, never a file in the
+build: `/card/<group>/<slug>.png` for a page with an API pattern, `/card/default.png` otherwise
+(quilt blocks and stitches, until they move to the API). Pictures for a page's path come from `pathPicture`.
 
 ## Palettes
 The library is `lib/palettes.ts`, saved palettes `lib/customPalettes.ts` (this browser's

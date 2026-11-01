@@ -2,10 +2,10 @@
 
 import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
-import copy from "@/i18n/messages/crochetColorwork.json";
 import type { Locale } from "@/lib/generator";
 import { parseCrochetColorworkState } from "@/lib/crochetColorworkState";
 import { withOption } from "@/lib/toolOptions";
+import { ToolLoading } from "./ToolLoading";
 import { CrochetColorworkBuilder } from "./CrochetColorworkBuilder";
 
 type Props = { locale: Locale; option?: string; labels: Record<string, string> };
@@ -18,7 +18,7 @@ function FromShareLink({ locale, option, labels }: Props) {
 /** Share-link settings are read after hydration; the API draws the first square in the browser. */
 export function CrochetColorworkBuilderRoute({ locale, option, labels }: Props) {
   return (
-    <Suspense key={option} fallback={<p role="status">{copy[locale].loading}</p>}>
+    <Suspense key={option} fallback={<ToolLoading locale={locale} />}>
       <FromShareLink locale={locale} option={option} labels={labels} />
     </Suspense>
   );

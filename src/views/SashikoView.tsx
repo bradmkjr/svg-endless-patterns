@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { SashikoBuilderRoute } from "@/components/SashikoBuilderRoute";
-import { StaticPreview } from "@/components/StaticPreview";
+import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
 import type { Locale } from "@/lib/generator";
 import { optionLabels } from "@/lib/toolPages";
@@ -22,8 +22,9 @@ export async function SashikoView({ locale, option }: { locale: Locale; option?:
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
-      <SashikoBuilderRoute option={option} labels={labels} locale={locale} />
-      <StaticPreview group="sashiko" slug={option ?? OPENING_OPTION.sashiko} name={labels[option ?? OPENING_OPTION.sashiko]} locale={locale} />
+      <PrimaryImageProvider group="sashiko" slug={option ?? OPENING_OPTION.sashiko} name={labels[option ?? OPENING_OPTION.sashiko]}>
+        <SashikoBuilderRoute option={option} labels={labels} locale={locale} />
+      </PrimaryImageProvider>
     </div>
   );
 }

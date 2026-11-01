@@ -9,6 +9,7 @@ import { boardAspect, COUNT_OPTIONS, isShapePattern, maxColors, MIN_COLORS, PATT
 import { syncShareLink } from "@/lib/toolOptions";
 import { OptionNav, useOptionNavigation } from "./OptionNav";
 import { PalettePicker } from "./PalettePicker";
+import { ToolLoading } from "./ToolLoading";
 import styles from "./BlockBuilder.module.css";
 
 function NumberSelect({ label, value, options, unit = "", onChange }: { label: string; value: number; options: number[]; unit?: string; onChange: (value: number) => void }) {
@@ -96,7 +97,7 @@ export function CheckerboardBuilder({ locale, option, labels, initialState }: { 
               </button>
             ))}
           </div>
-          {result ? <div className={`art ${styles.art}`} role="img" aria-label={t.views[view]} dangerouslySetInnerHTML={{ __html: svg }} /> : <div className={`art ${styles.art}`} style={{ aspectRatio: boardAspect(state) }} aria-busy="true" />}
+          {result ? <div className={`art ${styles.art}`} role="img" aria-label={t.views[view]} dangerouslySetInnerHTML={{ __html: svg }} /> : <ToolLoading locale={locale} />}
           <p className={styles.note}>{t.viewNotes[view]}</p>
           {result && <p className={styles.note}>{fill(t.stats, { w: result.finished.width, h: result.finished.height, bw: result.box.width, bh: result.box.height })}</p>}
           {result && <p className={styles.note}>{result.counts.map((count, i) => fill(t.count, { n: i + 1, boxes: count.boxes })).join(" · ")}</p>}

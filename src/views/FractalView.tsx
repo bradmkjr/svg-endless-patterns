@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { FractalBuilderRoute } from "@/components/FractalBuilderRoute";
-import { StaticPreview } from "@/components/StaticPreview";
+import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
 import { References } from "@/components/References";
 import copy from "@/i18n/messages/fractal.json";
@@ -23,8 +23,9 @@ export async function FractalView({ locale, option }: { locale: Locale; option?:
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
-      <FractalBuilderRoute option={option} labels={labels} locale={locale} />
-      <StaticPreview group="fractal" slug={option ?? OPENING_OPTION.fractal} name={labels[option ?? OPENING_OPTION.fractal]} locale={locale} />
+      <PrimaryImageProvider group="fractal" slug={option ?? OPENING_OPTION.fractal} name={labels[option ?? OPENING_OPTION.fractal]}>
+        <FractalBuilderRoute option={option} labels={labels} locale={locale} />
+      </PrimaryImageProvider>
       <References ids={["mandelbrot", "koch", "sierpinski", "hilbert", "levy"]} locale={locale} />
     </div>
   );

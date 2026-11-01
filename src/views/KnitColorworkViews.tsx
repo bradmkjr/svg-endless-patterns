@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { StaticPreview } from "@/components/StaticPreview";
+import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
 import { KnitColorworkBuilderRoute } from "@/components/KnitColorworkBuilderRoute";
 import { References } from "@/components/References";
@@ -27,8 +27,9 @@ export async function KnitColorworkView({ locale, option }: { locale: Locale; op
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
-      <KnitColorworkBuilderRoute option={option} labels={labels} locale={locale} />
-      <StaticPreview group="knitColorwork" slug={option ?? OPENING_OPTION.knitColorwork} name={labels[option ?? OPENING_OPTION.knitColorwork]} locale={locale} />
+      <PrimaryImageProvider group="knitColorwork" slug={option ?? OPENING_OPTION.knitColorwork} name={labels[option ?? OPENING_OPTION.knitColorwork]}>
+        <KnitColorworkBuilderRoute option={option} labels={labels} locale={locale} />
+      </PrimaryImageProvider>
       <References ids={["walkerMosaic"]} locale={locale} />
     </div>
   );

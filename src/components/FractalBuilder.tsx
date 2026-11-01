@@ -9,6 +9,7 @@ import { ANGLE_OPTIONS, ANGLED_TYPES, depthOptions, serializeFractalState, TYPE_
 import { syncShareLink } from "@/lib/toolOptions";
 import { OptionNav, useOptionNavigation } from "./OptionNav";
 import { PalettePicker } from "./PalettePicker";
+import { ToolLoading } from "./ToolLoading";
 import styles from "./BlockBuilder.module.css";
 
 function NumberSelect({ label, value, options, unit = "", onChange }: { label: string; value: number; options: number[]; unit?: string; onChange: (value: number) => void }) {
@@ -95,7 +96,7 @@ export function FractalBuilder({ locale, option, labels, initialState }: { local
               </button>
             ))}
           </div>
-          {result ? <div className={`art ${styles.art}`} role="img" aria-label={t.views[view]} dangerouslySetInnerHTML={{ __html: svg }} /> : <div className={`art ${styles.art}`} style={{ aspectRatio: "1" }} aria-busy="true" />}
+          {result ? <div className={`art ${styles.art}`} role="img" aria-label={t.views[view]} dangerouslySetInnerHTML={{ __html: svg }} /> : <ToolLoading locale={locale} />}
           <p className={styles.note}>{t.notes[state.type]}</p>
           {result && <p className={styles.note}>{fill(t.stats, { depth: state.depth, pieces: result.pieces })}</p>}
           <div className={`${styles.actions} no-print`}>

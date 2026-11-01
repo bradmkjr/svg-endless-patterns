@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { StainedGlassBuilderRoute } from "@/components/StainedGlassBuilderRoute";
-import { StaticPreview } from "@/components/StaticPreview";
+import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
 import type { Locale } from "@/lib/generator";
 import { optionLabels } from "@/lib/toolPages";
@@ -22,8 +22,9 @@ export async function StainedGlassView({ locale, option }: { locale: Locale; opt
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
-      <StainedGlassBuilderRoute option={option} labels={labels} locale={locale} />
-      <StaticPreview group="stainedGlass" slug={option ?? OPENING_OPTION.stainedGlass} name={labels[option ?? OPENING_OPTION.stainedGlass]} locale={locale} />
+      <PrimaryImageProvider group="stainedGlass" slug={option ?? OPENING_OPTION.stainedGlass} name={labels[option ?? OPENING_OPTION.stainedGlass]}>
+        <StainedGlassBuilderRoute option={option} labels={labels} locale={locale} />
+      </PrimaryImageProvider>
     </div>
   );
 }

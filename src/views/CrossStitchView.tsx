@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { StaticPreview } from "@/components/StaticPreview";
+import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
 import { CrossStitchBuilderRoute } from "@/components/CrossStitchBuilderRoute";
 import catalog from "@/i18n/messages/crossStitch.json";
@@ -23,8 +23,9 @@ export async function CrossStitchView({ locale, option }: { locale: Locale; opti
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede} {t.otherText} <Link href={localePath(locale, "/needlepoint/")}>{t.otherLink}</Link>
       </p>
-      <CrossStitchBuilderRoute option={option} labels={labels} locale={locale} />
-      <StaticPreview group="crossStitch" slug={option ?? OPENING_OPTION.crossStitch} name={labels[option ?? OPENING_OPTION.crossStitch]} locale={locale} />
+      <PrimaryImageProvider group="crossStitch" slug={option ?? OPENING_OPTION.crossStitch} name={labels[option ?? OPENING_OPTION.crossStitch]}>
+        <CrossStitchBuilderRoute option={option} labels={labels} locale={locale} />
+      </PrimaryImageProvider>
     </div>
   );
 }

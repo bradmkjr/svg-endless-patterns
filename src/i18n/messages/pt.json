@@ -114,8 +114,7 @@
     "allowance": "Inclui uma margem de 10%. Confira os números antes de comprar.",
     "howTo": "Como montar",
     "tileAlt": "Repetição contínua de {name}",
-    "browseOptions": "Explorar as opções",
-    "exampleCaption": "{name}, nas configurações padrão."
+    "browseOptions": "Explorar as opções"
   },
   "settings": {
     "straight": "Todos na mesma direção",

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { StaticPreview } from "@/components/StaticPreview";
+import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { previewOpenGraph } from "@/lib/toolOptions";
 import { TartanBuilderRoute } from "@/components/TartanBuilderRoute";
 import type { Locale } from "@/lib/generator";
@@ -19,8 +19,9 @@ export async function TartanView({ locale }: { locale: Locale }) {
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
-      <TartanBuilderRoute locale={locale} />
-      <StaticPreview group="tartan" slug="forest" name={t.presets.forest} locale={locale} />
+      <PrimaryImageProvider group="tartan" slug="forest" name={t.presets.forest}>
+        <TartanBuilderRoute locale={locale} />
+      </PrimaryImageProvider>
     </div>
   );
 }

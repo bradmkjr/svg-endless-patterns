@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { References } from "@/components/References";
-import { StaticPreview } from "@/components/StaticPreview";
+import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
 import { GirihBuilderRoute } from "@/components/GirihBuilderRoute";
 import type { Locale } from "@/lib/generator";
@@ -23,8 +23,9 @@ export async function GirihView({ locale, option }: { locale: Locale; option?: s
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
-      <GirihBuilderRoute option={option} labels={labels} locale={locale} />
-      <StaticPreview group="girih" slug={option ?? OPENING_OPTION.girih} name={labels[option ?? OPENING_OPTION.girih]} locale={locale} />
+      <PrimaryImageProvider group="girih" slug={option ?? OPENING_OPTION.girih} name={labels[option ?? OPENING_OPTION.girih]}>
+        <GirihBuilderRoute option={option} labels={labels} locale={locale} />
+      </PrimaryImageProvider>
       <References ids={["girih"]} locale={locale} />
     </div>
   );

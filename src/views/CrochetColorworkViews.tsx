@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { CrochetColorworkBuilderRoute } from "@/components/CrochetColorworkBuilderRoute";
-import { StaticPreview } from "@/components/StaticPreview";
+import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
 import copy from "@/i18n/messages/crochetColorwork.json";
 import type { Locale } from "@/lib/generator";
@@ -22,8 +22,9 @@ export async function CrochetColorworkView({ locale, option }: { locale: Locale;
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
-      <CrochetColorworkBuilderRoute option={option} labels={labels} locale={locale} />
-      <StaticPreview group="crochetColorwork" slug={option ?? OPENING_OPTION.crochetColorwork} name={labels[option ?? OPENING_OPTION.crochetColorwork]} locale={locale} />
+      <PrimaryImageProvider group="crochetColorwork" slug={option ?? OPENING_OPTION.crochetColorwork} name={labels[option ?? OPENING_OPTION.crochetColorwork]}>
+        <CrochetColorworkBuilderRoute option={option} labels={labels} locale={locale} />
+      </PrimaryImageProvider>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { MazeBuilderRoute } from "@/components/MazeBuilderRoute";
-import { StaticPreview } from "@/components/StaticPreview";
+import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
 import type { Locale } from "@/lib/generator";
 import { pageAlternates } from "@/lib/i18n";
@@ -23,8 +23,9 @@ export async function MazeView({ locale, option }: { locale: Locale; option?: st
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
-      <MazeBuilderRoute option={option} labels={labels} locale={locale} />
-      <StaticPreview group="maze" slug={option ?? OPENING_OPTION.maze} name={labels[option ?? OPENING_OPTION.maze]} locale={locale} />
+      <PrimaryImageProvider group="maze" slug={option ?? OPENING_OPTION.maze} name={labels[option ?? OPENING_OPTION.maze]}>
+        <MazeBuilderRoute option={option} labels={labels} locale={locale} />
+      </PrimaryImageProvider>
       <References ids={["prim", "kruskal", "wilson"]} locale={locale} />
     </div>
   );

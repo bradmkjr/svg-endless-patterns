@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { References } from "@/components/References";
-import { StaticPreview } from "@/components/StaticPreview";
+import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
 import { TruchetBuilderRoute } from "@/components/TruchetBuilderRoute";
 import type { Locale } from "@/lib/generator";
@@ -23,8 +23,9 @@ export async function TruchetView({ locale, option }: { locale: Locale; option?:
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
-      <TruchetBuilderRoute option={option} labels={labels} locale={locale} />
-      <StaticPreview group="truchet" slug={option ?? OPENING_OPTION.truchet} name={labels[option ?? OPENING_OPTION.truchet]} locale={locale} />
+      <PrimaryImageProvider group="truchet" slug={option ?? OPENING_OPTION.truchet} name={labels[option ?? OPENING_OPTION.truchet]}>
+        <TruchetBuilderRoute option={option} labels={labels} locale={locale} />
+      </PrimaryImageProvider>
       <References ids={["truchet"]} locale={locale} />
     </div>
   );

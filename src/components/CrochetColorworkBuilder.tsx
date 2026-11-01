@@ -10,6 +10,7 @@ import { paletteAccents } from "@/lib/palettes";
 import { syncShareLink } from "@/lib/toolOptions";
 import { OptionNav, useOptionNavigation } from "./OptionNav";
 import { PalettePicker } from "./PalettePicker";
+import { ToolLoading } from "./ToolLoading";
 import styles from "./BlockBuilder.module.css";
 
 type View = keyof CrochetColorworkResult["svg"];
@@ -82,7 +83,7 @@ export function CrochetColorworkBuilder({ locale, option, labels, initialState }
               </button>
             ))}
           </div>
-          {result ? <div className={`art ${styles.art}`} role="img" aria-label={t.views[view]} dangerouslySetInnerHTML={{ __html: svg }} /> : <div className={`art ${styles.art}`} style={{ aspectRatio: "1" }} aria-busy="true" />}
+          {result ? <div className={`art ${styles.art}`} role="img" aria-label={t.views[view]} dangerouslySetInnerHTML={{ __html: svg }} /> : <ToolLoading locale={locale} />}
           <p className={styles.note}>{view === "chart" ? (result?.chartHelp ?? "") : t.squareNote}</p>
           <div className={`${styles.actions} no-print`}>
             <button type="button" disabled={busy || !result} className={styles.primary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateCrochetColorworkPdf(state), `${file}.pdf`, "application/pdf"))}>

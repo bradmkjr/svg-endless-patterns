@@ -114,8 +114,7 @@
     "allowance": "Enthält 10 % Zugabe. Prüfe die Angaben vor dem Kauf.",
     "howTo": "So nähst du ihn",
     "tileAlt": "Nahtloser Rapport von {name}",
-    "browseOptions": "Optionen durchsuchen",
-    "exampleCaption": "{name}, in den Standardeinstellungen."
+    "browseOptions": "Optionen durchsuchen"
   },
   "settings": {
     "straight": "Alle gleich ausgerichtet",

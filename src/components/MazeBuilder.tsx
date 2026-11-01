@@ -10,6 +10,7 @@ import { paletteAccents } from "@/lib/palettes";
 import { rememberSeed, syncShareLink } from "@/lib/toolOptions";
 import { OptionNav, useOptionNavigation } from "./OptionNav";
 import { PalettePicker } from "./PalettePicker";
+import { ToolLoading } from "./ToolLoading";
 import styles from "./BlockBuilder.module.css";
 
 const COLOR_KEYS: (keyof MazeColors)[] = ["background", "wall", "accent"];
@@ -97,7 +98,7 @@ export function MazeBuilder({ locale, option, labels, initialState }: { locale: 
           {result ? (
             <div className={`art ${styles.art}`} role="img" aria-label={view === "maze" ? t.mazeAlt : t.solutionAlt} dangerouslySetInnerHTML={{ __html: svg }} />
           ) : (
-            <p className={styles.note} role="status">{status || t.loading}</p>
+            <ToolLoading locale={locale} />
           )}
           <p className={styles.note}>{t.howNote}</p>
           {result && <p className={styles.note}>{fill(t.stats, { cells: result.cells, length: result.solutionLength, deadEnds: result.deadEnds })}</p>}

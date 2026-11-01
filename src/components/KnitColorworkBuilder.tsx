@@ -10,6 +10,7 @@ import { paletteAccents } from "@/lib/palettes";
 import { syncShareLink } from "@/lib/toolOptions";
 import { OptionNav, useOptionNavigation } from "./OptionNav";
 import { PalettePicker } from "./PalettePicker";
+import { ToolLoading } from "./ToolLoading";
 import styles from "./BlockBuilder.module.css";
 
 function NumberSelect({ label, value, options, onChange }: { label: string; value: number; options: number[]; onChange: (value: number) => void }) {
@@ -96,7 +97,7 @@ export function KnitColorworkBuilder({ locale, option, labels, initialState }: {
               </button>
             ))}
           </div>
-          {result ? <div className={`art ${styles.art}`} role="img" aria-label={t.views[view]} dangerouslySetInnerHTML={{ __html: svg }} /> : <div className={`art ${styles.art}`} style={{ aspectRatio: "1" }} aria-busy="true" />}
+          {result ? <div className={`art ${styles.art}`} role="img" aria-label={t.views[view]} dangerouslySetInnerHTML={{ __html: svg }} /> : <ToolLoading locale={locale} />}
           <p className={styles.note}>{t.viewNotes[view]}</p>
           <div className={`${styles.actions} no-print`}>
             <button type="button" disabled={busy || !result} className={styles.primary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateKnitColorworkPdf(state), `${fileName}.pdf`, "application/pdf"))}>

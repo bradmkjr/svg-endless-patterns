@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { References } from "@/components/References";
-import { StaticPreview } from "@/components/StaticPreview";
+import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
 import { TieDyeBuilderRoute } from "@/components/TieDyeBuilderRoute";
 import type { Locale } from "@/lib/generator";
@@ -23,8 +23,9 @@ export async function TieDyeView({ locale, option }: { locale: Locale; option?: 
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
-      <TieDyeBuilderRoute option={option} labels={labels} locale={locale} />
-      <StaticPreview group="tieDye" slug={option ?? OPENING_OPTION.tieDye} name={labels[option ?? OPENING_OPTION.tieDye]} locale={locale} />
+      <PrimaryImageProvider group="tieDye" slug={option ?? OPENING_OPTION.tieDye} name={labels[option ?? OPENING_OPTION.tieDye]}>
+        <TieDyeBuilderRoute option={option} labels={labels} locale={locale} />
+      </PrimaryImageProvider>
       <References ids={["dharmaTieDye"]} locale={locale} />
     </div>
   );

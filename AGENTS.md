@@ -85,12 +85,12 @@ lists and state, builders, UI text and calls through `lib/generator.ts`. Builder
 `lib/useLiveResult.ts`, blog samples with `ToolSample`, thumbnails with `thumbSrc`. A new option or default must also be added to the API's route schema and `engine/thumbs/<tool>.json`.
 
 
-With `API_INTERNAL_URL` set, the build saves static pictures from that URL (`app/previews/`):
-an SVG of each pattern for every thumbnail, library image and related pattern (`thumbSrc`), and a
-PNG for its builder page's main image and share card (`StaticPreview`). Bots can index them all.
-A failed request stops the build, so deploy the API first when adding a pattern. Unset, the build
-calls no API: small pictures load from the public API and pages have no main image. Live drawing
-always uses `NEXT_PUBLIC_API_BASE_URL`.
+Pictures: the build asks the API for SVGs only. With `API_INTERNAL_URL` set, it saves one per
+pattern from that URL (`app/previews/`) for every thumbnail, library image and related pattern
+(`thumbSrc`); a failed request stops the build. Unset, those load from the public API instead.
+A builder's main image is a plain `<img>` of a PNG on `NEXT_PUBLIC_API_BASE_URL`, in the static HTML
+for bots (`ToolLoading`, `primaryImageSrc`), drawn only when requested. Live drawing replaces it
+with SVG from the same public API.
 
 ## Tools
 Tartans onward each own their files: `engine/<tool>.ts`, `<tool>Pdf.ts` and tests;

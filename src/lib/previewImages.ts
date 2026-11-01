@@ -3,9 +3,8 @@ import { TARTAN_PRESETS } from "./tartanState";
 import { API_IMAGE_GROUPS, apiThumbPath, TOOL_OPTIONS, type ThumbGroup, type ToolId } from "./toolOptions";
 
 /**
- * Pictures saved as static files at build time, from the internal API: an SVG of each pattern
- * for thumbnails, and a PNG for its builder page's main image. Bots can index them all, and
- * none of them needs the public API.
+ * SVG pictures saved as static files at build time, from the internal API, for every thumbnail.
+ * This is the only thing the build asks the API for: PNGs load in the browser.
  */
 
 /** Every pattern the API draws. */
@@ -21,9 +20,4 @@ const internalBase = () => `${(process.env.API_INTERNAL_URL ?? "").replace(/\/+$
 
 export function internalPreviewUrl(group: string, slug: string): string {
   return `${internalBase()}${apiThumbPath(group as ThumbGroup, slug.replace(/\.svg$/, ""))}`;
-}
-
-/** The size the API offers for a builder page's main image. */
-export function internalPngUrl(group: string, slug: string): string {
-  return `${internalBase()}/preview/${group}/${slug}?size=1200`;
 }

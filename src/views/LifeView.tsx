@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { StaticPreview } from "@/components/StaticPreview";
+import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
 import { LifeBuilderRoute } from "@/components/LifeBuilderRoute";
 import { References } from "@/components/References";
@@ -23,8 +23,9 @@ export async function LifeView({ locale, option }: { locale: Locale; option?: st
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
-      <LifeBuilderRoute option={option} labels={labels} locale={locale} />
-      <StaticPreview group="life" slug={option ?? OPENING_OPTION.life} name={labels[option ?? OPENING_OPTION.life]} locale={locale} />
+      <PrimaryImageProvider group="life" slug={option ?? OPENING_OPTION.life} name={labels[option ?? OPENING_OPTION.life]}>
+        <LifeBuilderRoute option={option} labels={labels} locale={locale} />
+      </PrimaryImageProvider>
       <References ids={["gardnerLife"]} locale={locale} />
     </div>
   );

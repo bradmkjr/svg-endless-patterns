@@ -21,7 +21,7 @@ import { fill, localePath } from "./i18n";
 import { SYMMETRY_OPTIONS as MANDALA_SYMMETRY } from "./mandalaState";
 import { MOTIF_OPTIONS as SASHIKO_MOTIFS } from "./sashikoState";
 import { GLASS_LAYOUTS } from "./stainedGlassState";
-import { absoluteUrl, publicPath } from "./site";
+import { publicPath } from "./site";
 import { mazeApiUrl } from "./mazeApi";
 import { MOTIFS as NEEDLEPOINT_DESIGNS } from "./needlepointState";
 import { SHAPE_OPTIONS as MAZE_SHAPES } from "./mazeState";
@@ -150,14 +150,13 @@ export const thumbSrc = (group: ThumbGroup, slug: string) => {
   return API_IMAGE_GROUPS.includes(group) ? mazeApiUrl(apiThumbPath(group, slug)) : publicPath(`/thumbs/${group}/${slug}.svg`);
 };
 
-/** A builder page's main image: a static PNG, or null if this build had no internal API. */
-export const primaryImageSrc = (group: ThumbGroup, slug: string) => (hasStatic(group) ? publicPath(`/previews/${group}/${slug}.png`) : null);
+/** A builder page's main image: a PNG the API draws when a browser or bot asks for it, never at build time. */
+export const primaryImageSrc = (group: ThumbGroup, slug: string) => (API_IMAGE_GROUPS.includes(group) ? mazeApiUrl(`/preview/${group}/${slug}.png?size=1200`) : null);
 
 /** Share-card details for a page with a main image. */
 export function previewOpenGraph(group: ThumbGroup, slug: string, title: string, description: string) {
   const src = primaryImageSrc(group, slug);
-  if (!src) return undefined;
-  return { title, description, images: [{ url: absoluteUrl(src.slice((process.env.NEXT_PUBLIC_BASE_PATH ?? "").length)), width: 1200, height: 1200 }] };
+  return src ? { title, description, images: [{ url: src, width: 1200, height: 1200 }] } : undefined;
 }
 
 /** The choice a tool opens with, for a page or sample that doesn't name one. */

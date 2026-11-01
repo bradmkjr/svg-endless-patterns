@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { CelticKnotBuilderRoute } from "@/components/CelticKnotBuilderRoute";
-import { StaticPreview } from "@/components/StaticPreview";
+import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
 import celticText from "@/i18n/messages/celticKnot.json";
 import type { Locale } from "@/lib/generator";
@@ -22,8 +22,9 @@ export async function CelticKnotView({ locale, option }: { locale: Locale; optio
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
-      <CelticKnotBuilderRoute option={option} labels={labels} locale={locale} />
-      <StaticPreview group="celticKnot" slug={option ?? OPENING_OPTION.celticKnot} name={labels[option ?? OPENING_OPTION.celticKnot]} locale={locale} />
+      <PrimaryImageProvider group="celticKnot" slug={option ?? OPENING_OPTION.celticKnot} name={labels[option ?? OPENING_OPTION.celticKnot]}>
+        <CelticKnotBuilderRoute option={option} labels={labels} locale={locale} />
+      </PrimaryImageProvider>
     </div>
   );
 }

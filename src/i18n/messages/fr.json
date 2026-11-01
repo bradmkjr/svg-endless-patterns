@@ -114,8 +114,7 @@
     "allowance": "Inclut une marge de 10 %. Vérifiez les chiffres avant d'acheter.",
     "howTo": "Comment l'assembler",
     "tileAlt": "Raccord continu de {name}",
-    "browseOptions": "Parcourir les options",
-    "exampleCaption": "{name}, avec les réglages par défaut."
+    "browseOptions": "Parcourir les options"
   },
   "settings": {
     "straight": "Tous dans le même sens",

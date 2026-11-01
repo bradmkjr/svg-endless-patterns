@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { TessellationBuilderRoute } from "@/components/TessellationBuilderRoute";
-import { StaticPreview } from "@/components/StaticPreview";
+import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
 import { getTessellationOptions, type Locale } from "@/lib/generator";
 import { optionLabels } from "@/lib/toolPages";
@@ -23,8 +23,9 @@ export async function TessellationView({ locale, option }: { locale: Locale; opt
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
-      <TessellationBuilderRoute option={option} labels={labels} options={options} locale={locale} />
-      <StaticPreview group="tessellation" slug={option ?? OPENING_OPTION.tessellation} name={labels[option ?? OPENING_OPTION.tessellation]} locale={locale} />
+      <PrimaryImageProvider group="tessellation" slug={option ?? OPENING_OPTION.tessellation} name={labels[option ?? OPENING_OPTION.tessellation]}>
+        <TessellationBuilderRoute option={option} labels={labels} options={options} locale={locale} />
+      </PrimaryImageProvider>
     </div>
   );
 }

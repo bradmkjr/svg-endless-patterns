@@ -1,31 +1,30 @@
+import { readFileSync } from "node:fs";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { imageList, internalPngUrl, internalPreviewUrl } from "./previewImages";
+import { imageList, internalPreviewUrl } from "./previewImages";
 import { previewOpenGraph, primaryImageSrc, thumbSrc, TOOL_OPTIONS } from "./toolOptions";
 
 afterEach(() => vi.unstubAllEnvs());
 
-describe("without an internal API", () => {
-  it("loads small pictures from the public API, and has no main image", () => {
-    vi.stubEnv("NEXT_PUBLIC_PRERENDERED_IMAGES", "");
-    expect(thumbSrc("truchet", "arcs")).toContain("/api/v1.0.1/thumbnail/truchet/arcs");
-    expect(primaryImageSrc("truchet", "arcs")).toBeNull();
-    expect(previewOpenGraph("truchet", "arcs", "T", "D")).toBeUndefined();
+describe.each(["", "1"])("the main image (internal API flag=%s)", (flag) => {
+  it("is a PNG on the public API, loaded when requested", () => {
+    vi.stubEnv("NEXT_PUBLIC_PRERENDERED_IMAGES", flag);
+    expect(primaryImageSrc("truchet", "arcs")).toMatch(/\/api\/v1\.0\.1\/preview\/truchet\/arcs\.png\?size=1200$/);
+    expect(previewOpenGraph("truchet", "arcs", "T", "D")?.images[0].url).toBe(primaryImageSrc("truchet", "arcs"));
+    expect(primaryImageSrc("blocks", "log-cabin")).toBeNull();
   });
 });
 
-describe("with an internal API", () => {
-  it("makes small pictures static SVGs and main images static PNGs", () => {
+describe("small pictures", () => {
+  it("are static SVGs in a build with an internal API", () => {
     vi.stubEnv("NEXT_PUBLIC_PRERENDERED_IMAGES", "1");
     expect(thumbSrc("truchet", "arcs")).toBe("/previews/truchet/arcs.svg");
     expect(thumbSrc("maze", "circle")).toBe("/previews/maze/circle.svg");
-    expect(primaryImageSrc("truchet", "arcs")).toBe("/previews/truchet/arcs.png");
-    expect(previewOpenGraph("truchet", "arcs", "T", "D")?.images[0].url).toContain("/previews/truchet/arcs.png");
+    expect(thumbSrc("blocks", "log-cabin")).toContain("/thumbs/blocks/log-cabin.svg");
   });
 
-  it("leaves pictures the site draws itself alone", () => {
-    vi.stubEnv("NEXT_PUBLIC_PRERENDERED_IMAGES", "1");
-    expect(thumbSrc("blocks", "log-cabin")).toContain("/thumbs/blocks/log-cabin.svg");
-    expect(primaryImageSrc("blocks", "log-cabin")).toBeNull();
+  it("are SVGs from the public API without one", () => {
+    vi.stubEnv("NEXT_PUBLIC_PRERENDERED_IMAGES", "");
+    expect(thumbSrc("truchet", "arcs")).toContain("/api/v1.0.1/thumbnail/truchet/arcs");
   });
 });
 
@@ -41,7 +40,13 @@ describe("the build's list", () => {
     vi.stubEnv("API_INTERNAL_URL", "http://127.0.0.1:4000/");
     vi.stubEnv("NEXT_PUBLIC_API_BASE_URL", "https://public.example");
     expect(internalPreviewUrl("truchet", "arcs.svg")).toBe("http://127.0.0.1:4000/api/v1.0.1/thumbnail/truchet/arcs");
-    expect(internalPngUrl("truchet", "arcs.png")).toBe("http://127.0.0.1:4000/api/v1.0.1/preview/truchet/arcs.png?size=1200");
     expect(internalPreviewUrl("knitColorwork", "heart-block.svg")).toBe("http://127.0.0.1:4000/api/v1.0.1/knit-colorwork/thumbnail/heart-block");
+  });
+});
+
+describe("the build", () => {
+  it("never asks the API for a PNG", () => {
+    const route = readFileSync("src/app/previews/[group]/[slug]/route.ts", "utf8") + readFileSync("src/lib/previewImages.ts", "utf8");
+    expect(route).not.toMatch(/\.png|\/preview\//);
   });
 });

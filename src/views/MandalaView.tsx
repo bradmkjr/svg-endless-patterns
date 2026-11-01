@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { MandalaBuilderRoute } from "@/components/MandalaBuilderRoute";
-import { StaticPreview } from "@/components/StaticPreview";
+import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
 import mandalaText from "@/i18n/messages/mandala.json";
 import type { Locale } from "@/lib/generator";
@@ -22,8 +22,9 @@ export async function MandalaView({ locale, option }: { locale: Locale; option?:
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
-      <MandalaBuilderRoute option={option} labels={labels} locale={locale} />
-      <StaticPreview group="mandala" slug={option ?? OPENING_OPTION.mandala} name={labels[option ?? OPENING_OPTION.mandala]} locale={locale} />
+      <PrimaryImageProvider group="mandala" slug={option ?? OPENING_OPTION.mandala} name={labels[option ?? OPENING_OPTION.mandala]}>
+        <MandalaBuilderRoute option={option} labels={labels} locale={locale} />
+      </PrimaryImageProvider>
     </div>
   );
 }

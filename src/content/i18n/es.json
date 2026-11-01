@@ -543,6 +543,12 @@
     }
   },
   "changelog": {
+    "Quilts and stitches now run on the API": {
+      "title": "Patchwork y puntos ahora funcionan con la API",
+      "items": [
+        "Los creadores de bloques de patchwork, tejido y ganchillo, sus PDF y sus imágenes ahora los genera la API, como las demás herramientas, y esas páginas se comparten con una imagen de su propio patrón"
+      ]
+    },
     "Better link previews": {
       "title": "Mejores vistas previas de enlaces",
       "items": [

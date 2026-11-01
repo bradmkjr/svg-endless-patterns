@@ -2,7 +2,7 @@
 
 Next.js (App Router, Next 16 / React 19) + TypeScript site for customizing
 traditional quilt blocks and knit and crochet stitch patterns. Exported as static files and hosted on GitHub Pages;
-maze generation is served by a separate API.
+all generation is served by a separate API.
 
 ## Run
 - `npm run dev` — http://localhost:3000
@@ -12,41 +12,26 @@ maze generation is served by a separate API.
 ## Git
 Never commit or push. Leave changes in the working tree.
 
-## Architecture: generation is isolated
-Generation stays behind one boundary while moving to a backend API:
+## Architecture: generation is in the API
+All generation lives in the separate `api-endless-patterns` repository, behind one client:
 
-- `src/engine/` — frontend-side generation: block catalog, geometry, cutting
-  and yardage, SVG, templates, steps, PDF. No React, Next, DOM or `@/` imports.
-- `src/engine/types.ts` — the contract: JSON-only requests and results.
-- `src/lib/generator.ts` — async client and the only file that imports the
-  engine. Maze requests go to `api-endless-patterns`; other generators still
-  run in-process until they are moved.
-- `src/lib/state.ts` — site concerns: options, palettes, defaults, share links.
+- `src/lib/generator.ts` — the async client, and the only door to generation.
+- `src/lib/<tool>Types.ts`, `src/lib/patternTypes.ts` — the JSON contract for each tool.
+- `src/lib/state.ts`, `<tool>State.ts` — site concerns: options, palettes, defaults, share links.
 - `src/lib/download.ts` — browser-only saving and SVG-to-PNG.
 
-`src/engine/boundary.test.ts` fails if these rules break. Add new output
-formats to the engine and expose them through `generator.ts`.
+Requests use a versioned path (`/api/v1.0.1/maze`, version in `lib/mazeApi.ts`). The static site
+needs `NEXT_PUBLIC_API_BASE_URL` at build time.
 
-Mazes, fractals, Life patterns, checkerboards and knit and crochet colorwork all run this way. All maze generation and generated SVG, PNG, PDF and thumbnail images live in
-the separate `api-endless-patterns` repository. The frontend sends maze
-requests through `src/lib/generator.ts`, under a versioned path (`/api/v1.0.1/maze`, version in `lib/mazeApi.ts`); `src/lib/mazeTypes.ts` defines the
-JSON contract. The static site needs `NEXT_PUBLIC_API_BASE_URL` at build time.
+## Adding a block or stitch
+Add it in the API repository: `src/engine/patterns/blocks.ts` or `stitchCatalog.ts`, with its text in
+`src/engine/patterns/messages/`. Its tests check a block fills its grid exactly once and a stitch at every
+width, but crochet stitches are counted rather than read, so proofread that text. Crochet terms are US.
+Use traditional block names only, never catalog numbers, and add history only with a documented source.
 
-## Adding a block
-Add it to `BLOCKS` in `src/engine/blocks.ts`, and its text to `src/engine/messages/`. Tests check that it fills its grid
-exactly once and uses the fabrics it declares; its page and sitemap entry follow
-automatically. Use traditional names only, never catalog numbers, and add history
-only with a documented source.
-
-## Adding a knit or crochet stitch
-Add it to `src/engine/stitchCatalog.ts`, and its text to `src/engine/messages/`. Knit: give the chart, seen from the right
-side, with an even row count; written rows are derived from it. Crochet: write the
-row text with what each part consumes and makes. `stitch.test.ts` checks both at
-every width, but it counts crochet stitches rather than reading the text, so
-proofread that text. Crochet terms are US. The page and PDF write a complete square
-from the row's consumes and makes in `engine/crochetSquare.ts` (text in
-`engine/messages/crochetSquare.json`, read back by its test); a row shape it doesn't
-know throws, so add its wording there.
+Then regenerate `src/lib/patternCatalog.json` here and copy it to the API's
+`test/fixtures/patternCatalog.json`, where a test fails if it's out of step. Each entry has one
+`listBlocks` or `listStitchPatterns` result per language. The page and sitemap entry follow.
 
 ## Announcing major features
 Every major feature ships with all of these, in the same change:
@@ -70,16 +55,15 @@ English is at the root; `es`, `fr`, `de` and `pt` (Brazilian) sit under a prefix
   `<html lang>`. Their routes are thin: page bodies live in `src/views/` and take
   a `locale`. A new page needs a route in both trees, plus an entry in the sitemap.
 - Site text: `src/i18n/messages/`. Post and changelog text: `src/content/i18n/`.
-  Generated text (cuts, steps, rows, PDFs): `src/engine/messages/`, with English in
-  `src/engine/i18n.ts`, so it moves with the engine.
-- New text goes in all five languages. `i18n.test.ts` in `lib/` and `engine/` fail on
+  Generated text (cuts, steps, rows, PDFs) lives with the engine, in the API repository.
+- New text goes in all five languages. `lib/i18n.test.ts` fails on
   missing keys or mismatched placeholders and links.
 - Link with `localePath`. Translations only change words, never numbers or geometry.
 - A language changes one secondary color only, never the primary colors: the
   `--locale-swatch` token in `globals.css` and `lib/localeAccent.ts` for designs.
 
 ## Generators in the API
-Everything except quilt blocks and knit and crochet stitches generates in the private API
+Everything generates in the private API
 (routes under `/api/<version>/`). Here live only JSON types (`lib/<tool>Types.ts`), option
 lists and state, builders, UI text and calls through `lib/generator.ts`. Builders read with
 `lib/useLiveResult.ts`, blog samples with `ToolSample`, thumbnails with `thumbSrc`. A new option or default must also be added to the API's route schema and `engine/thumbs/<tool>.json`.
@@ -93,24 +77,19 @@ for bots (`ToolLoading`, `primaryImageSrc`), drawn only when requested. Live dra
 with SVG from the same public API.
 
 ## Tools
-Tartans onward each own their files: `engine/<tool>.ts`, `<tool>Pdf.ts` and tests;
-`engine/messages/<tool>.json` and `i18n/messages/<tool>.json` (all five languages in
-one file, checked by the tool's test); `lib/<tool>State.ts`; a builder and a view; and
-routes in both trees. They connect through `generator.ts`, `engine/index.ts`, the
-sitemap, `lib/libraryTools.ts`, sample kinds in `content.ts` and `PostSamples.tsx`, and
-library text under `library.tools` in the shared catalogs. `engine/wallpaper.ts` is the
-reusable symmetry engine.
+Each tool's files here: `lib/<tool>Types.ts` and `lib/<tool>State.ts`; `i18n/messages/<tool>.json` (all five
+languages in one file, checked by the tool's test); a builder and a view; and routes in both trees. They connect
+through `generator.ts`, the sitemap, `lib/libraryTools.ts`, sample kinds in `content.ts` and `PostSamples.tsx`, and
+library text under `library.tools` in the shared catalogs.
 
 ## Option pages and thumbnails
 A generator's main choice has its own page: list it in `lib/toolOptions.ts`, and add
-`[option]` routes in both trees. Other settings stay in the query string. Thumbnails are
-static files from `app/thumbs/`, drawn in `lib/thumbnails.ts`.
+`[option]` routes in both trees. Other settings stay in the query string. Thumbnails come from the API (see Pictures above).
 
 ## Page tags and share cards
 Views build their title, description, canonical, Open Graph and Twitter tags with `pageMetadata`
 (`lib/pageMetadata.ts`). `og:image` is always an API URL, drawn when asked for, never a file in the
-build: `/card/<group>/<slug>.png` for a page with an API pattern, `/card/default.png` otherwise
-(quilt blocks and stitches, until they move to the API). Pictures for a page's path come from `pathPicture`.
+build: `/card/<group>/<slug>.png` for a page with a pattern, `/card/default.png` otherwise. Pictures for a page's path come from `pathPicture`.
 
 ## Palettes
 The library is `lib/palettes.ts`, saved palettes `lib/customPalettes.ts` (this browser's

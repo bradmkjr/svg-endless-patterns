@@ -33,7 +33,7 @@ describe("share links", async () => {
 });
 
 describe("stitch share links", async () => {
-  const { getStitchPattern } = await import("./generator");
+  const { getStitchPattern } = await import("./patternCatalog");
   const { defaultStitchState, parseStitchState, serializeStitchState } = await import("./stitchState");
   const seed = (await getStitchPattern("knit", "seed-stitch"))!;
 

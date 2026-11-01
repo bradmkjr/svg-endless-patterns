@@ -115,7 +115,8 @@ a {
 }
 
 /* Generated SVGs carry real-inch sizes for download; on screen, their box decides. */
-.art svg {
+.art svg,
+.art img {
   display: block;
   width: 100%;
   height: auto;

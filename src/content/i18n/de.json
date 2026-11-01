@@ -543,6 +543,12 @@
     }
   },
   "changelog": {
+    "Quilts and stitches now run on the API": {
+      "title": "Quilts und Maschen laufen jetzt über die API",
+      "items": [
+        "Die Generatoren für Quiltblöcke, Stricken und Häkeln, ihre PDFs und Bilder werden jetzt wie alle anderen Werkzeuge von der API erzeugt, und diese Seiten werden mit einem Bild ihres eigenen Musters geteilt"
+      ]
+    },
     "Better link previews": {
       "title": "Bessere Linkvorschauen",
       "items": [

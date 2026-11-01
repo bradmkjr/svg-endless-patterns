@@ -543,6 +543,12 @@
     }
   },
   "changelog": {
+    "Quilts and stitches now run on the API": {
+      "title": "Quilts e pontos agora usam a API",
+      "items": [
+        "Os criadores de blocos de quilt, tricô e crochê, seus PDFs e imagens agora são gerados pela API, como as demais ferramentas, e essas páginas são compartilhadas com uma imagem do seu próprio padrão"
+      ]
+    },
     "Better link previews": {
       "title": "Melhores prévias de links",
       "items": [

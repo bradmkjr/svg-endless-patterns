@@ -543,6 +543,12 @@
     }
   },
   "changelog": {
+    "Quilts and stitches now run on the API": {
+      "title": "Patchwork et points passent à l'API",
+      "items": [
+        "Les créateurs de blocs de patchwork, de tricot et de crochet, leurs PDF et leurs images sont désormais générés par l'API, comme tous les autres outils, et ces pages se partagent avec une image de leur propre motif"
+      ]
+    },
     "Better link previews": {
       "title": "De meilleurs aperçus de liens",
       "items": [

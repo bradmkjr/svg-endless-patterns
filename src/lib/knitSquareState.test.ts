@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import uiText from "@/i18n/messages/knitSquare.json";
 import { DEFAULT_KNIT_SQUARE, KNIT_SQUARE_SIZES } from "./generator";
 import { getStitchPattern } from "./patternCatalog";
-import { defaultStitchState, parseStitchState, serializeStitchState, YARN_WEIGHTS } from "./stitchState";
+import { defaultStitchState, parseStitchState, serializeStitchState } from "./stitchState";
 
 const knit = (await getStitchPattern("knit", "seed-stitch"))!;
 const crochet = (await getStitchPattern("crochet", "single-crochet"))!;

@@ -82,9 +82,13 @@ English is at the root; `es`, `fr`, `de` and `pt` (Brazilian) sit under a prefix
 Everything except quilt blocks and knit and crochet stitches generates in the private API
 (routes under `/api/<version>/`). Here live only JSON types (`lib/<tool>Types.ts`), option
 lists and state, builders, UI text and calls through `lib/generator.ts`. Builders read with
-`lib/useLiveResult.ts`, blog samples with `ToolSample`, thumbnails with `thumbSrc`. Nothing
-calls the API at build time, so these pages' static HTML holds no preview; a new option or
-default must also be added to the API's route schema and `engine/thumbs/<tool>.json`.
+`lib/useLiveResult.ts`, blog samples with `ToolSample`, thumbnails with `thumbSrc`. A new option or default must also be added to the API's route schema and `engine/thumbs/<tool>.json`.
+
+With `API_INTERNAL_URL` set, the build saves each option's picture as static PNGs from that
+URL (`app/previews/`), and pages use those for thumbnails, `StaticPreview` and share cards, so
+bots never need the public API behind Cloudflare. A failed request stops the build. Unset, the
+build calls no API, pages use the public API for thumbnails and have no preview image.
+Browsers always use `NEXT_PUBLIC_API_BASE_URL` for live drawing.
 
 ## Tools
 Tartans onward each own their files: `engine/<tool>.ts`, `<tool>Pdf.ts` and tests;

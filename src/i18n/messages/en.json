@@ -114,7 +114,8 @@
     "allowance": "Includes a 10% allowance. Check the figures before you buy.",
     "howTo": "How to piece it",
     "tileAlt": "{name} seamless repeat",
-    "browseOptions": "Browse the options"
+    "browseOptions": "Browse the options",
+    "exampleCaption": "{name}, in the default settings."
   },
   "settings": {
     "straight": "All the same way",

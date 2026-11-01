@@ -11,8 +11,8 @@ export const PREVIEW_SIZES = [320, 1200];
 
 /** Every picture the API can draw for the site. */
 export function imageList(): { group: ThumbGroup; slug: string }[] {
-  return API_IMAGE_GROUPS.flatMap((group) => {
-    if (group === "tartan") return TARTAN_PRESETS.map((preset) => ({ group, slug: preset.id as string }));
+  return API_IMAGE_GROUPS.flatMap((group): { group: ThumbGroup; slug: string }[] => {
+    if (group === "tartan") return TARTAN_PRESETS.map((preset) => ({ group, slug: preset.id }));
     return TOOL_OPTIONS[group as ToolId].options.map(({ slug }) => ({ group, slug }));
   });
 }

@@ -521,6 +521,12 @@
     }
   },
   "changelog": {
+    "Preview images": {
+      "title": "Imágenes de vista previa",
+      "items": [
+        "Las páginas de patrones ya pueden incluir una imagen de vista previa en su HTML, para buscadores y tarjetas al compartir"
+      ]
+    },
     "More checkerboards and mazes": {
       "title": "Más tableros y laberintos",
       "items": [

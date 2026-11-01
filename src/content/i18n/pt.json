@@ -521,6 +521,12 @@
     }
   },
   "changelog": {
+    "Preview images": {
+      "title": "Imagens de prévia",
+      "items": [
+        "As páginas de padrões agora podem incluir uma imagem de prévia no HTML, para buscadores e compartilhamentos"
+      ]
+    },
     "More checkerboards and mazes": {
       "title": "Mais xadrezes e labirintos",
       "items": [

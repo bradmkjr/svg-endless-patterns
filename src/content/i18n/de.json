@@ -521,6 +521,12 @@
     }
   },
   "changelog": {
+    "Preview images": {
+      "title": "Vorschaubilder",
+      "items": [
+        "Musterseiten können jetzt ein Vorschaubild im HTML enthalten, für Suchmaschinen und geteilte Links"
+      ]
+    },
     "More checkerboards and mazes": {
       "title": "Mehr Schachbretter und Labyrinthe",
       "items": [

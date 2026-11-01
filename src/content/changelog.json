@@ -1,6 +1,13 @@
 [
   {
     "date": "2026-10-31",
+    "title": "Preview images",
+    "items": [
+      "Pattern pages can now include a preview image in their HTML, for search engines and share cards"
+    ]
+  },
+  {
+    "date": "2026-10-31",
     "title": "More checkerboards and mazes",
     "items": [
       "Added honeycomb and triangle checkerboards, with true hexagons and triangles in the board, repeat tile and PDF",

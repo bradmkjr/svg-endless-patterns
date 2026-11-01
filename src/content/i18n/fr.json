@@ -521,6 +521,12 @@
     }
   },
   "changelog": {
+    "Preview images": {
+      "title": "Images d'aperçu",
+      "items": [
+        "Les pages de motifs peuvent désormais inclure une image d'aperçu dans leur HTML, pour les moteurs de recherche et les partages"
+      ]
+    },
     "More checkerboards and mazes": {
       "title": "Plus de damiers et de labyrinthes",
       "items": [

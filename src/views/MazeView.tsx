@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/pageMetadata";
 import { MazeBuilderRoute } from "@/components/MazeBuilderRoute";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
-import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
+import { OPENING_OPTION } from "@/lib/toolOptions";
 import type { Locale } from "@/lib/generator";
-import { pageAlternates } from "@/lib/i18n";
 import copy from "@/i18n/messages/maze.json";
 import { optionLabels } from "@/lib/toolPages";
 import { References } from "@/components/References";
 
 export function mazeMetadata(locale: Locale): Metadata {
   const t = copy[locale];
-  const openGraph = previewOpenGraph("maze", OPENING_OPTION.maze, t.metaTitle, t.metaDesc);
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/mazes/"), ...(openGraph ? { openGraph } : {}) };
+  return pageMetadata(locale, "/mazes/", t.metaTitle, t.metaDesc);
 }
 
 export async function MazeView({ locale, option }: { locale: Locale; option?: string }) {

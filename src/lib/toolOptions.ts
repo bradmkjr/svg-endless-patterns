@@ -153,12 +153,6 @@ export const thumbSrc = (group: ThumbGroup, slug: string) => {
 /** A builder page's main image: a PNG the API draws when a browser or bot asks for it, never at build time. */
 export const primaryImageSrc = (group: ThumbGroup, slug: string) => (API_IMAGE_GROUPS.includes(group) ? mazeApiUrl(`/preview/${group}/${slug}.png?size=1200`) : null);
 
-/** Share-card details for a page with a main image. */
-export function previewOpenGraph(group: ThumbGroup, slug: string, title: string, description: string) {
-  const src = primaryImageSrc(group, slug);
-  return src ? { title, description, images: [{ url: src, width: 1200, height: 1200 }] } : undefined;
-}
-
 /** The choice a tool opens with, for a page or sample that doesn't name one. */
 export const OPENING_OPTION: Record<ToolId, string> = { truchet: "arcs", tessellation: "p4", girih: "10-fold", sashiko: "asanoha", celticKnot: "mirror", stainedGlass: "rose", crossStitch: "rosette", needlepoint: "kilim", tieDye: "spiral", maze: "square", fractal: "dragon-curve", knitColorwork: "little-pines", crochetColorwork: "diamond-lattice", checkerboard: "checker", mandala: "12-fold", life: "block" };
 

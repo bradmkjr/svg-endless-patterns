@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { imageList, internalPreviewUrl } from "./previewImages";
-import { previewOpenGraph, primaryImageSrc, thumbSrc, TOOL_OPTIONS } from "./toolOptions";
+import { primaryImageSrc, thumbSrc, TOOL_OPTIONS } from "./toolOptions";
 
 afterEach(() => vi.unstubAllEnvs());
 
@@ -9,7 +9,6 @@ describe.each(["", "1"])("the main image (internal API flag=%s)", (flag) => {
   it("is a PNG on the public API, loaded when requested", () => {
     vi.stubEnv("NEXT_PUBLIC_PRERENDERED_IMAGES", flag);
     expect(primaryImageSrc("truchet", "arcs")).toMatch(/\/api\/v1\.0\.1\/preview\/truchet\/arcs\.png\?size=1200$/);
-    expect(previewOpenGraph("truchet", "arcs", "T", "D")?.images[0].url).toBe(primaryImageSrc("truchet", "arcs"));
     expect(primaryImageSrc("blocks", "log-cabin")).toBeNull();
   });
 });

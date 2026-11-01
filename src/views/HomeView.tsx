@@ -3,8 +3,10 @@ import Link from "next/link";
 import { BlockGrid } from "@/components/BlockGrid";
 import { StitchGrid } from "@/components/StitchGrid";
 import { generatePattern, getBlock, getBlocks, getStitchPatterns, type Locale } from "@/lib/generator";
-import { fill, localePath, messages, pageAlternates } from "@/lib/i18n";
+import { fill, localePath, messages } from "@/lib/i18n";
 import { libraryTypes } from "@/lib/libraryTools";
+import { pageMetadata } from "@/lib/pageMetadata";
+import { SITE_NAME } from "@/lib/site";
 import { defaultState } from "@/lib/state";
 import styles from "./HomeView.module.css";
 
@@ -12,7 +14,9 @@ import styles from "./HomeView.module.css";
 const ROW = 8;
 
 export function homeMetadata(locale: Locale): Metadata {
-  return { alternates: pageAlternates(locale, "/") };
+  const t = messages(locale).meta;
+  const title = `${SITE_NAME}: ${t.defaultTitle}`;
+  return { ...pageMetadata(locale, "/", title, t.description), title: { absolute: title } };
 }
 
 export async function HomeView({ locale }: { locale: Locale }) {

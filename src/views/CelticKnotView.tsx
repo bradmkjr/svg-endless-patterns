@@ -1,16 +1,15 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/pageMetadata";
 import { CelticKnotBuilderRoute } from "@/components/CelticKnotBuilderRoute";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
-import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
+import { OPENING_OPTION } from "@/lib/toolOptions";
 import celticText from "@/i18n/messages/celticKnot.json";
 import type { Locale } from "@/lib/generator";
 import { optionLabels } from "@/lib/toolPages";
-import { pageAlternates } from "@/lib/i18n";
 
 export function celticKnotMetadata(locale: Locale): Metadata {
   const t = celticText[locale];
-  const openGraph = previewOpenGraph("celticKnot", OPENING_OPTION.celticKnot, t.metaTitle, t.metaDesc);
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/celtic-knots/"), ...(openGraph ? { openGraph } : {}) };
+  return pageMetadata(locale, "/celtic-knots/", t.metaTitle, t.metaDesc);
 }
 
 export async function CelticKnotView({ locale, option }: { locale: Locale; option?: string }) {

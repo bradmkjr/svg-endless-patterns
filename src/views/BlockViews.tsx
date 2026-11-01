@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/pageMetadata";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BlockBuilderRoute } from "@/components/BlockBuilderRoute";
 import { BlockGrid } from "@/components/BlockGrid";
 import { generatePattern, getBlock, getBlocks, type Locale } from "@/lib/generator";
-import { fill, localePath, messages, pageAlternates } from "@/lib/i18n";
+import { fill, localePath, messages } from "@/lib/i18n";
 import { defaultState } from "@/lib/state";
 
 export function blocksMetadata(locale: Locale): Metadata {
   const t = messages(locale).blocks;
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/blocks/") };
+  return pageMetadata(locale, "/blocks/", t.metaTitle, t.metaDesc);
 }
 
 export async function BlocksView({ locale }: { locale: Locale }) {
@@ -38,11 +39,7 @@ export async function blockMetadata(locale: Locale, slug: string): Promise<Metad
   const block = await getBlock(slug, locale);
   if (!block) return {};
   const t = messages(locale).blocks;
-  return {
-    title: fill(t.pageTitle, { name: block.name }),
-    description: fill(t.pageDesc, { summary: block.summary }),
-    alternates: pageAlternates(locale, `/blocks/${block.slug}/`),
-  };
+  return pageMetadata(locale, `/blocks/${block.slug}/`, fill(t.pageTitle, { name: block.name }), fill(t.pageDesc, { summary: block.summary }));
 }
 
 export async function BlockView({ locale, slug }: { locale: Locale; slug: string }) {

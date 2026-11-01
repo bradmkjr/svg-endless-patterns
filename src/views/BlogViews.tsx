@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/pageMetadata";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import styles from "@/components/Blog.module.css";
@@ -6,13 +7,13 @@ import { PostSamples } from "@/components/PostSamples";
 import { RichText } from "@/components/RichText";
 import { formatDate, getChangelog, getPost, getPosts } from "@/lib/content";
 import type { Locale } from "@/lib/generator";
-import { localePath, messages, pageAlternates } from "@/lib/i18n";
+import { localePath, messages } from "@/lib/i18n";
 import { postImage } from "@/lib/postImages";
 import { absoluteUrl, SITE_NAME } from "@/lib/site";
 
 export function blogMetadata(locale: Locale): Metadata {
   const t = messages(locale).blog;
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/blog/") };
+  return pageMetadata(locale, "/blog/", t.metaTitle, t.metaDesc);
 }
 
 export async function BlogView({ locale }: { locale: Locale }) {
@@ -58,12 +59,7 @@ export async function postMetadata(locale: Locale, slug: string): Promise<Metada
   const post = await getPost(slug, locale);
   if (!post) return {};
   const path = `/blog/${post.slug}/`;
-  return {
-    title: post.title,
-    description: post.summary,
-    alternates: pageAlternates(locale, path),
-    openGraph: { type: "article", url: absoluteUrl(localePath(locale, path)), title: post.title, description: post.summary, publishedTime: post.date },
-  };
+  return pageMetadata(locale, path, post.title, post.summary, { type: "article", publishedTime: post.date });
 }
 
 export async function PostView({ locale, slug }: { locale: Locale; slug: string }) {
@@ -121,7 +117,7 @@ export async function PostView({ locale, slug }: { locale: Locale; slug: string 
 
 export function changelogMetadata(locale: Locale): Metadata {
   const t = messages(locale).changelog;
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/changelog/") };
+  return pageMetadata(locale, "/changelog/", t.metaTitle, t.metaDesc);
 }
 
 export async function ChangelogView({ locale }: { locale: Locale }) {

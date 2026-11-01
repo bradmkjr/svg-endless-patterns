@@ -3,7 +3,7 @@ import Link from "next/link";
 import "./globals.css";
 import { MESSAGES, SITE_LOCALES, localePath } from "@/lib/i18n";
 
-export const metadata: Metadata = { title: "Not found" };
+export const metadata: Metadata = { title: "Not found", description: MESSAGES.en.notFound.title, robots: { index: false } };
 
 /** Unmatched URLs carry no language, so this offers the way back in each one. */
 export default function GlobalNotFound() {

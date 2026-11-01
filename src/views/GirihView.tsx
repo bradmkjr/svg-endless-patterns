@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/pageMetadata";
 import { References } from "@/components/References";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
-import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
+import { OPENING_OPTION } from "@/lib/toolOptions";
 import { GirihBuilderRoute } from "@/components/GirihBuilderRoute";
 import type { Locale } from "@/lib/generator";
 import { optionLabels } from "@/lib/toolPages";
-import { pageAlternates } from "@/lib/i18n";
 import text from "@/i18n/messages/girih.json";
 
 export function girihMetadata(locale: Locale): Metadata {
   const t = text[locale];
-  const openGraph = previewOpenGraph("girih", OPENING_OPTION.girih, t.metaTitle, t.metaDesc);
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/girih/"), ...(openGraph ? { openGraph } : {}) };
+  return pageMetadata(locale, "/girih/", t.metaTitle, t.metaDesc);
 }
 
 export async function GirihView({ locale, option }: { locale: Locale; option?: string }) {

@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/pageMetadata";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
-import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
+import { OPENING_OPTION } from "@/lib/toolOptions";
 import { LifeBuilderRoute } from "@/components/LifeBuilderRoute";
 import { References } from "@/components/References";
 import copy from "@/i18n/messages/life.json";
 import type { Locale } from "@/lib/generator";
-import { pageAlternates } from "@/lib/i18n";
 import { optionLabels } from "@/lib/toolPages";
 
 export function lifeMetadata(locale: Locale): Metadata {
   const t = copy[locale];
-  const openGraph = previewOpenGraph("life", OPENING_OPTION.life, t.metaTitle, t.metaDesc);
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/life-patterns/"), ...(openGraph ? { openGraph } : {}) };
+  return pageMetadata(locale, "/life-patterns/", t.metaTitle, t.metaDesc);
 }
 
 export async function LifeView({ locale, option }: { locale: Locale; option?: string }) {

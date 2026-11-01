@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/pageMetadata";
 import { References } from "@/components/References";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
-import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
+import { OPENING_OPTION } from "@/lib/toolOptions";
 import { TruchetBuilderRoute } from "@/components/TruchetBuilderRoute";
 import type { Locale } from "@/lib/generator";
 import { optionLabels } from "@/lib/toolPages";
-import { pageAlternates } from "@/lib/i18n";
 import copy from "@/i18n/messages/truchet.json";
 
 export function truchetMetadata(locale: Locale): Metadata {
   const t = copy[locale];
-  const openGraph = previewOpenGraph("truchet", OPENING_OPTION.truchet, t.metaTitle, t.metaDesc);
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/truchet/"), ...(openGraph ? { openGraph } : {}) };
+  return pageMetadata(locale, "/truchet/", t.metaTitle, t.metaDesc);
 }
 
 export async function TruchetView({ locale, option }: { locale: Locale; option?: string }) {

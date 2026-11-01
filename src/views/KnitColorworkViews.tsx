@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/pageMetadata";
 import Link from "next/link";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
-import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
+import { OPENING_OPTION } from "@/lib/toolOptions";
 import { KnitColorworkBuilderRoute } from "@/components/KnitColorworkBuilderRoute";
 import { References } from "@/components/References";
 import copy from "@/i18n/messages/knitColorwork.json";
 import type { Locale } from "@/lib/generator";
-import { localePath, messages, pageAlternates } from "@/lib/i18n";
+import { localePath, messages } from "@/lib/i18n";
 import { optionLabels } from "@/lib/toolPages";
 
 export function knitColorworkMetadata(locale: Locale): Metadata {
   const t = copy[locale];
-  const openGraph = previewOpenGraph("knitColorwork", OPENING_OPTION.knitColorwork, t.metaTitle, t.metaDesc);
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/knitting/colorwork/"), ...(openGraph ? { openGraph } : {}) };
+  return pageMetadata(locale, "/knitting/colorwork/", t.metaTitle, t.metaDesc);
 }
 
 export async function KnitColorworkView({ locale, option }: { locale: Locale; option?: string }) {

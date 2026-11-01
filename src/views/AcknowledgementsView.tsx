@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/pageMetadata";
 import { ReferenceItem } from "@/components/References";
 import type { Locale } from "@/lib/generator";
-import { pageAlternates } from "@/lib/i18n";
 import { REFERENCES, referenceText } from "@/lib/references";
 
 export function acknowledgementsMetadata(locale: Locale): Metadata {
   const t = referenceText(locale);
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/acknowledgements/") };
+  return pageMetadata(locale, "/acknowledgements/", t.metaTitle, t.metaDesc);
 }
 
 export function AcknowledgementsView({ locale }: { locale: Locale }) {

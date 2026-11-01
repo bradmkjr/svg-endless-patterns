@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/pageMetadata";
 import { PaletteBook } from "@/components/PaletteBook";
 import type { Locale } from "@/lib/generator";
-import { pageAlternates } from "@/lib/i18n";
 import text from "@/i18n/messages/palettes.json";
 
 export function paletteMetadata(locale: Locale): Metadata {
   const t = text[locale];
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/palettes/") };
+  return pageMetadata(locale, "/palettes/", t.metaTitle, t.metaDesc);
 }
 
 export function PaletteView({ locale }: { locale: Locale }) {

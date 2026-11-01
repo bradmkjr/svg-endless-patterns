@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/pageMetadata";
 import Link from "next/link";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
-import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
+import { OPENING_OPTION } from "@/lib/toolOptions";
 import { CrossStitchBuilderRoute } from "@/components/CrossStitchBuilderRoute";
 import catalog from "@/i18n/messages/crossStitch.json";
 import type { Locale } from "@/lib/generator";
 import { optionLabels } from "@/lib/toolPages";
-import { localePath, pageAlternates } from "@/lib/i18n";
+import { localePath } from "@/lib/i18n";
 
 export function crossStitchMetadata(locale: Locale): Metadata {
   const t = catalog[locale];
-  const openGraph = previewOpenGraph("crossStitch", OPENING_OPTION.crossStitch, t.metaTitle, t.metaDesc);
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/cross-stitch/"), ...(openGraph ? { openGraph } : {}) };
+  return pageMetadata(locale, "/cross-stitch/", t.metaTitle, t.metaDesc);
 }
 
 export async function CrossStitchView({ locale, option }: { locale: Locale; option?: string }) {

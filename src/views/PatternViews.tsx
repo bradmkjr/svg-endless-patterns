@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/pageMetadata";
 import { PatternLibrary } from "@/components/PatternLibrary";
 import type { Locale } from "@/lib/generator";
-import { messages, pageAlternates } from "@/lib/i18n";
+import { messages } from "@/lib/i18n";
 
 export function patternsMetadata(locale: Locale): Metadata {
   const t = messages(locale).library;
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/patterns/") };
+  return pageMetadata(locale, "/patterns/", t.metaTitle, t.metaDesc);
 }
 
 export function PatternsView({ locale }: { locale: Locale }) {

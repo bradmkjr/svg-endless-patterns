@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/pageMetadata";
 import { References } from "@/components/References";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
-import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
+import { OPENING_OPTION } from "@/lib/toolOptions";
 import { TieDyeBuilderRoute } from "@/components/TieDyeBuilderRoute";
 import type { Locale } from "@/lib/generator";
 import { optionLabels } from "@/lib/toolPages";
-import { pageAlternates } from "@/lib/i18n";
 import copy from "@/i18n/messages/tieDye.json";
 
 export function tieDyeMetadata(locale: Locale): Metadata {
   const t = copy[locale];
-  const openGraph = previewOpenGraph("tieDye", OPENING_OPTION.tieDye, t.metaTitle, t.metaDesc);
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/tie-dye/"), ...(openGraph ? { openGraph } : {}) };
+  return pageMetadata(locale, "/tie-dye/", t.metaTitle, t.metaDesc);
 }
 
 export async function TieDyeView({ locale, option }: { locale: Locale; option?: string }) {

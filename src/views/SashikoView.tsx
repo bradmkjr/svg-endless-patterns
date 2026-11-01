@@ -1,16 +1,15 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/pageMetadata";
 import { SashikoBuilderRoute } from "@/components/SashikoBuilderRoute";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
-import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
+import { OPENING_OPTION } from "@/lib/toolOptions";
 import type { Locale } from "@/lib/generator";
 import { optionLabels } from "@/lib/toolPages";
-import { pageAlternates } from "@/lib/i18n";
 import copy from "@/i18n/messages/sashiko.json";
 
 export function sashikoMetadata(locale: Locale): Metadata {
   const t = copy[locale];
-  const openGraph = previewOpenGraph("sashiko", OPENING_OPTION.sashiko, t.metaTitle, t.metaDesc);
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/sashiko/"), ...(openGraph ? { openGraph } : {}) };
+  return pageMetadata(locale, "/sashiko/", t.metaTitle, t.metaDesc);
 }
 
 export async function SashikoView({ locale, option }: { locale: Locale; option?: string }) {

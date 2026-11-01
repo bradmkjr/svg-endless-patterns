@@ -1,16 +1,15 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/pageMetadata";
 import { TessellationBuilderRoute } from "@/components/TessellationBuilderRoute";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
-import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
+import { OPENING_OPTION } from "@/lib/toolOptions";
 import { getTessellationOptions, type Locale } from "@/lib/generator";
 import { optionLabels } from "@/lib/toolPages";
-import { pageAlternates } from "@/lib/i18n";
 import text from "@/i18n/messages/tessellation.json";
 
 export function tessellationMetadata(locale: Locale): Metadata {
   const t = text[locale];
-  const openGraph = previewOpenGraph("tessellation", OPENING_OPTION.tessellation, t.metaTitle, t.metaDesc);
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/tessellations/"), ...(openGraph ? { openGraph } : {}) };
+  return pageMetadata(locale, "/tessellations/", t.metaTitle, t.metaDesc);
 }
 
 export async function TessellationView({ locale, option }: { locale: Locale; option?: string }) {

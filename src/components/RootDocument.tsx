@@ -16,8 +16,6 @@ export function rootMetadata(locale: Locale): Metadata {
     metadataBase: new URL(absoluteUrl("/")),
     title: { default: `${SITE_NAME}: ${t.defaultTitle}`, template: `%s | ${SITE_NAME}` },
     description: t.description,
-    openGraph: { type: "website", siteName: SITE_NAME, locale: SITE_LOCALES.find((l) => l.code === locale)!.ogLocale },
-    twitter: { card: "summary_large_image" },
   };
 }
 

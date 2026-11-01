@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/pageMetadata";
 import type { Locale } from "@/lib/generator";
-import { messages, pageAlternates } from "@/lib/i18n";
+import { messages } from "@/lib/i18n";
 
 export function aboutMetadata(locale: Locale): Metadata {
   const t = messages(locale).about;
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/about/") };
+  return pageMetadata(locale, "/about/", t.metaTitle, t.metaDesc);
 }
 
 export function AboutView({ locale }: { locale: Locale }) {

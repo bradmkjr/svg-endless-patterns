@@ -1,16 +1,15 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/pageMetadata";
 import { CrochetColorworkBuilderRoute } from "@/components/CrochetColorworkBuilderRoute";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
-import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
+import { OPENING_OPTION } from "@/lib/toolOptions";
 import copy from "@/i18n/messages/crochetColorwork.json";
 import type { Locale } from "@/lib/generator";
-import { pageAlternates } from "@/lib/i18n";
 import { optionLabels } from "@/lib/toolPages";
 
 export function crochetColorworkMetadata(locale: Locale): Metadata {
   const t = copy[locale];
-  const openGraph = previewOpenGraph("crochetColorwork", OPENING_OPTION.crochetColorwork, t.metaTitle, t.metaDesc);
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/crochet/colorwork/"), ...(openGraph ? { openGraph } : {}) };
+  return pageMetadata(locale, "/crochet/colorwork/", t.metaTitle, t.metaDesc);
 }
 
 export async function CrochetColorworkView({ locale, option }: { locale: Locale; option?: string }) {

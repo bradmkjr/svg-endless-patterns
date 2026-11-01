@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/pageMetadata";
 import Link from "next/link";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
-import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
+import { OPENING_OPTION } from "@/lib/toolOptions";
 import { NeedlepointBuilderRoute } from "@/components/NeedlepointBuilderRoute";
 import catalog from "@/i18n/messages/needlepoint.json";
 import type { Locale } from "@/lib/generator";
-import { localePath, pageAlternates } from "@/lib/i18n";
+import { localePath } from "@/lib/i18n";
 import { optionLabels } from "@/lib/toolPages";
 
 export function needlepointMetadata(locale: Locale): Metadata {
   const t = catalog[locale];
-  const openGraph = previewOpenGraph("needlepoint", OPENING_OPTION.needlepoint, t.metaTitle, t.metaDesc);
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/needlepoint/"), ...(openGraph ? { openGraph } : {}) };
+  return pageMetadata(locale, "/needlepoint/", t.metaTitle, t.metaDesc);
 }
 
 export async function NeedlepointView({ locale, option }: { locale: Locale; option?: string }) {

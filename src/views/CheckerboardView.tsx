@@ -1,16 +1,15 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/pageMetadata";
 import { CheckerboardBuilderRoute } from "@/components/CheckerboardBuilderRoute";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
-import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
+import { OPENING_OPTION } from "@/lib/toolOptions";
 import copy from "@/i18n/messages/checkerboard.json";
 import type { Locale } from "@/lib/generator";
-import { pageAlternates } from "@/lib/i18n";
 import { optionLabels } from "@/lib/toolPages";
 
 export function checkerboardMetadata(locale: Locale): Metadata {
   const t = copy[locale];
-  const openGraph = previewOpenGraph("checkerboard", OPENING_OPTION.checkerboard, t.metaTitle, t.metaDesc);
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/checkerboards/"), ...(openGraph ? { openGraph } : {}) };
+  return pageMetadata(locale, "/checkerboards/", t.metaTitle, t.metaDesc);
 }
 
 export async function CheckerboardView({ locale, option }: { locale: Locale; option?: string }) {

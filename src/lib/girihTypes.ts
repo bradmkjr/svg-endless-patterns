@@ -41,4 +41,4 @@ export type GirihResult = {
 
 export type GirihStar = "star" | "sharp" | "rosette";
 
-export type GirihSymmetry = 4 | 6 | 8 | 10 | 12;
+export type GirihSymmetry = 4 | 6 | 8 | 10 | 12 | 16;

@@ -35,4 +35,4 @@ export type TieDyeResult = {
   steps: { fold: string[]; apply: string[]; soak: string[]; cure: string[]; safety: string[] };
 };
 
-export type TieDyeTechnique = "spiral" | "bullseye" | "accordion";
+export type TieDyeTechnique = "spiral" | "bullseye" | "accordion" | "sunburst" | "chevron" | "double-spiral";

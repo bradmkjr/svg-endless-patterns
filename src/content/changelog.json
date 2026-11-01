@@ -1,6 +1,21 @@
 [
   {
     "date": "2026-10-31",
+    "title": "More patterns in five tools",
+    "items": [
+      "Added new options so every library entry shows six: double arc and woven Truchet tiles, Orchard and Tide pool plaids, honeycomb and pinwheel stained glass, 16-fold stars, and sunburst, chevron and double spiral tie-dye"
+    ]
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Game of Life patterns",
+    "post": "life-patterns",
+    "items": [
+      "Added Game of Life patterns as printable repeating designs, with phase strips and the rule explained on any cell"
+    ]
+  },
+  {
+    "date": "2026-10-31",
     "title": "Preview images",
     "items": [
       "Pattern pages can now include a preview image in their HTML, for search engines and share cards"

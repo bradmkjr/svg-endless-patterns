@@ -231,7 +231,7 @@
       },
       "stainedGlass": {
         "title": "Vitral",
-        "text": "Crie um painel de vitral original a partir de quatro composições paramétricas, com peças que podem mesmo ser cortadas à mão.",
+        "text": "Crie um painel de vitral original a partir de seis composições paramétricas, com peças que podem mesmo ser cortadas à mão.",
         "output": "Moldes numerados em tamanho real com margem para o perfil, estimativa aproximada de vidro por cor e prévia em SVG ou PNG.",
         "explore": "Abrir o criador de vitrais"
       },
@@ -255,7 +255,7 @@
       },
       "tieDye": {
         "title": "Tie-dye",
-        "text": "Veja uma dobra em espiral, alvo ou sanfona nas suas cores.",
+        "text": "Veja uma dobra em espiral, alvo, sanfona, raios de sol, chevron ou espiral dupla nas suas cores.",
         "output": "Diagrama de dobra, mapa de tintas, quantidades, passos para imprimir e prévia em SVG ou PNG.",
         "explore": "Planejar um tie-dye"
       },
@@ -264,6 +264,12 @@
         "text": "Gere um labirinto com um único caminho possível, em quadrado, retângulo, círculo, hexágono, triângulo ou losango, com cinco algoritmos diferentes.",
         "output": "PDF para imprimir com a solução em outra página, além de SVG e PNG do labirinto e da solução.",
         "explore": "Criar um labirinto"
+      },
+      "life": {
+        "title": "Padrões do Jogo da Vida",
+        "text": "Vidas estáticas e osciladores do Jogo da Vida de Conway como desenhos repetidos, com a regra explicada em qualquer célula.",
+        "output": "SVG e PNG da folha, do módulo, das fases e do diagrama da regra, e um PDF para imprimir.",
+        "explore": "Desenhar um padrão do Life"
       },
       "fractal": {
         "title": "Fractais",
@@ -366,7 +372,9 @@
       "forest": "Floresta",
       "ember": "Brasa",
       "harbor": "Porto",
-      "check": "Xadrez de duas cores"
+      "check": "Xadrez de duas cores",
+      "orchard": "Pomar",
+      "tide-pool": "Poça de maré"
     }
   }
 }

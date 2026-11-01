@@ -1,5 +1,27 @@
 {
   "posts": {
+    "life-patterns": {
+      "title": "Padrões do Jogo da Vida para imprimir",
+      "summary": "Oito vidas estáticas e osciladores do Jogo da Vida de Conway, como desenhos contínuos, com a regra explicada em qualquer célula.",
+      "blocks": [
+        "A nova [ferramenta do Jogo da Vida](/life-patterns/) transforma oito padrões clássicos em desenhos repetidos. Cada fase vem da própria regra, e as cópias ficam longe o bastante para que uma folha inteira continue se comportando como o Life manda.",
+        "Exemplos para começar",
+        [
+          "Uma folha de pulsares",
+          "Colmeias bem próximas, com grade",
+          "As duas fases de um farol, e de volta ao início",
+          "O que contar só 4 vizinhas faz com um pisca-pisca"
+        ],
+        "O que você recebe",
+        [
+          "Bloco, colmeia, pão e banheira, as vidas estáticas",
+          "Pisca-pisca, sapo, farol e pulsar, os osciladores, com cada fase em uma tira",
+          "Uma folha e um módulo de repetição, com seu tamanho de célula, colunas, fileiras, espaçamento, cores e grade opcional",
+          "A regra aplicada à célula que você escolher, com vizinhança de Moore (8) ou de von Neumann (4)",
+          "SVG, PNG e um PDF para imprimir"
+        ]
+      ]
+    },
     "checkerboard-maker": {
       "title": "Xadrez em qualquer proporção",
       "summary": "Comece com um xadrez padrão e defina linhas, colunas, cores e a forma das casas, como 3:1 ou 2:3.",
@@ -521,6 +543,18 @@
     }
   },
   "changelog": {
+    "More patterns in five tools": {
+      "title": "Mais padrões em cinco ferramentas",
+      "items": [
+        "Novas opções para que cada entrada da biblioteca mostre seis: azulejos de Truchet com arcos duplos e cruzamentos trançados, xadrezes Pomar e Poça de maré, vitrais em favo de mel e cata-ventos, estrelas de ordem 16, e tie-dye em raios de sol, chevron e espiral dupla"
+      ]
+    },
+    "Game of Life patterns": {
+      "title": "Padrões do Jogo da Vida",
+      "items": [
+        "Adicionados padrões do Jogo da Vida como desenhos repetidos para imprimir, com tiras de fases e a regra explicada em qualquer célula"
+      ]
+    },
     "Preview images": {
       "title": "Imagens de prévia",
       "items": [

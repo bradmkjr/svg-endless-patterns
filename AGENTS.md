@@ -27,7 +27,7 @@ Generation stays behind one boundary while moving to a backend API:
 `src/engine/boundary.test.ts` fails if these rules break. Add new output
 formats to the engine and expose them through `generator.ts`.
 
-Mazes, fractals, checkerboards and knit and crochet colorwork all run this way. All maze generation and generated SVG, PNG, PDF and thumbnail images live in
+Mazes, fractals, Life patterns, checkerboards and knit and crochet colorwork all run this way. All maze generation and generated SVG, PNG, PDF and thumbnail images live in
 the separate `api-endless-patterns` repository. The frontend sends maze
 requests through `src/lib/generator.ts`, under a versioned path (`/api/v1.0.1/maze`, version in `lib/mazeApi.ts`); `src/lib/mazeTypes.ts` defines the
 JSON contract. The static site needs `NEXT_PUBLIC_API_BASE_URL` at build time.
@@ -84,11 +84,13 @@ Everything except quilt blocks and knit and crochet stitches generates in the pr
 lists and state, builders, UI text and calls through `lib/generator.ts`. Builders read with
 `lib/useLiveResult.ts`, blog samples with `ToolSample`, thumbnails with `thumbSrc`. A new option or default must also be added to the API's route schema and `engine/thumbs/<tool>.json`.
 
-With `API_INTERNAL_URL` set, the build saves each option's picture as static PNGs from that
-URL (`app/previews/`), and pages use those for thumbnails, `StaticPreview` and share cards, so
-bots never need the public API behind Cloudflare. A failed request stops the build. Unset, the
-build calls no API, pages use the public API for thumbnails and have no preview image.
-Browsers always use `NEXT_PUBLIC_API_BASE_URL` for live drawing.
+
+With `API_INTERNAL_URL` set, the build saves static pictures from that URL (`app/previews/`):
+an SVG of each pattern for every thumbnail, library image and related pattern (`thumbSrc`), and a
+PNG for its builder page's main image and share card (`StaticPreview`). Bots can index them all.
+A failed request stops the build, so deploy the API first when adding a pattern. Unset, the build
+calls no API: small pictures load from the public API and pages have no main image. Live drawing
+always uses `NEXT_PUBLIC_API_BASE_URL`.
 
 ## Tools
 Tartans onward each own their files: `engine/<tool>.ts`, `<tool>Pdf.ts` and tests;

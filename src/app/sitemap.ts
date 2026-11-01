@@ -23,6 +23,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/truchet/",
     "/tie-dye/",
     "/fractals/",
+    "/life-patterns/",
     "/checkerboards/",
     "/crochet/colorwork/",
     "/knitting/colorwork/",

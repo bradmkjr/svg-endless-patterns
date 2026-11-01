@@ -22,12 +22,14 @@ import { mazeApiPost } from "./mazeApi";
 import type { CheckerboardRequest, CheckerboardResult } from "./checkerboardTypes";
 import type { CrochetColorworkRequest, CrochetColorworkResult } from "./crochetColorworkTypes";
 import type { FractalRequest, FractalResult } from "./fractalTypes";
+import type { LifeRequest, LifeResult } from "./lifeTypes";
 import type { KnitColorworkRequest, KnitColorworkResult } from "./knitColorworkTypes";
 
 export type { BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, Setting, StitchInfo, StitchRequest, StitchResult } from "@/engine";
 export type { KnitColorworkPlan, KnitColorworkRequest, KnitColorworkResult, KnitColorworkTechnique } from "./knitColorworkTypes";
 export type { CheckerboardRequest, CheckerboardResult, CheckerPattern } from "./checkerboardTypes";
 export type { ColorworkTechnique, ColorworkWeight, CrochetColorworkRequest, CrochetColorworkResult } from "./crochetColorworkTypes";
+export type { LifeColors, LifeNeighborhood, LifePattern, LifeRequest, LifeResult } from "./lifeTypes";
 export type { FractalColors, FractalRequest, FractalResult, FractalType } from "./fractalTypes";
 export type { TruchetArrangement, TruchetColors, TruchetRequest, TruchetResult, TruchetStyle } from "./truchetTypes";
 export type { TartanColor, TartanRequest, TartanResult, TartanStripe } from "./tartanTypes";
@@ -229,6 +231,14 @@ export async function generateMazePng(request: MazeRequest, view: "maze" | "solu
   const query = new URLSearchParams({ view, size: String(size) });
   const response = await mazeApiPost(`/maze/png?${query}`, request, "image/png");
   return new Uint8Array(await response.arrayBuffer());
+}
+
+export async function generateLife(request: LifeRequest): Promise<LifeResult> {
+  return apiJson("/life", request);
+}
+
+export async function generateLifePdf(request: LifeRequest): Promise<Uint8Array> {
+  return apiPdf("/life/pdf", request);
 }
 
 export async function generateTruchet(request: TruchetRequest): Promise<TruchetResult> {

@@ -1,5 +1,27 @@
 {
   "posts": {
+    "life-patterns": {
+      "title": "Patrones del Juego de la Vida para imprimir",
+      "summary": "Ocho vidas estáticas y osciladores del Juego de la Vida de Conway, como diseños continuos, con la regla explicada en cualquier celda.",
+      "blocks": [
+        "La nueva [herramienta del Juego de la Vida](/life-patterns/) convierte ocho patrones clásicos en diseños repetidos. Cada fase sale de ejecutar la propia regla, y las copias quedan lo bastante separadas para que toda una hoja siga comportándose como dice Life.",
+        "Ejemplos para empezar",
+        [
+          "Una hoja de púlsares",
+          "Colmenas muy juntas, con cuadrícula",
+          "Las dos fases de un faro y vuelta al inicio",
+          "Qué le pasa a un parpadeador al contar solo 4 vecinas"
+        ],
+        "Qué incluye",
+        [
+          "Bloque, colmena, hogaza y bañera, las vidas estáticas",
+          "Parpadeador, sapo, faro y púlsar, los osciladores, con todas las fases en una tira",
+          "Una hoja y un módulo de repetición, con tu tamaño de celda, columnas, filas, separación, colores y cuadrícula opcional",
+          "La regla aplicada a la celda que elijas, con vecindad de Moore (8) o de Von Neumann (4)",
+          "SVG, PNG y un PDF para imprimir"
+        ]
+      ]
+    },
     "checkerboard-maker": {
       "title": "Tableros en cualquier proporción",
       "summary": "Empieza con un tablero estándar y elige filas, columnas, colores y forma de las casillas, como 3:1 o 2:3.",
@@ -521,6 +543,18 @@
     }
   },
   "changelog": {
+    "More patterns in five tools": {
+      "title": "Más patrones en cinco herramientas",
+      "items": [
+        "Se añadieron opciones para que cada entrada de la biblioteca muestre seis: azulejos de Truchet de arcos dobles y cruces tejidos, cuadros Huerto y Charca de marea, vidrieras de panal y molinetes, estrellas de orden 16, y tie-dye de rayos de sol, chevrón y espiral doble"
+      ]
+    },
+    "Game of Life patterns": {
+      "title": "Patrones del Juego de la Vida",
+      "items": [
+        "Se añadieron patrones del Juego de la Vida como diseños repetidos para imprimir, con tiras de fases y la regla explicada en cualquier celda"
+      ]
+    },
     "Preview images": {
       "title": "Imágenes de vista previa",
       "items": [

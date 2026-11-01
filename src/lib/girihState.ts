@@ -3,7 +3,7 @@ import { localeAccent } from "./localeAccent";
 
 /** The geometric star and girih builder's options, palettes and share links. */
 
-export const SYMMETRY_OPTIONS: GirihSymmetry[] = [4, 6, 8, 10, 12];
+export const SYMMETRY_OPTIONS: GirihSymmetry[] = [4, 6, 8, 10, 12, 16];
 /** Sharp points need a line angle other than 54 degrees, which the girih tiles don't allow. */
 export const STARS_FOR: Record<GirihSymmetry, GirihStar[]> = {
   4: ["star", "sharp", "rosette"],
@@ -11,6 +11,7 @@ export const STARS_FOR: Record<GirihSymmetry, GirihStar[]> = {
   8: ["star", "sharp", "rosette"],
   10: ["star", "rosette"],
   12: ["star", "sharp", "rosette"],
+  16: ["star", "sharp", "rosette"],
 };
 export const WEIGHT_OPTIONS = [2, 3, 4, 6, 8, 10];
 export const REPEAT_OPTIONS = [2, 3, 4, 5, 6, 8, 10, 12, 16, 20, 24];

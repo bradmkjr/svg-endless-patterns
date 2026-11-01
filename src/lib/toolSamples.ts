@@ -21,6 +21,8 @@ import { generateTartan } from "./generator";
 import { parseTartanState } from "./tartanState";
 import { generateTruchet } from "./generator";
 import { parseTruchetState } from "./truchetState";
+import { generateLife } from "./generator";
+import { parseLifeState } from "./lifeState";
 import type { Locale } from "./generator";
 
 type Svgs = { svg: Record<string, string> };
@@ -28,6 +30,7 @@ type Draw = (params: URLSearchParams, locale: Locale) => Promise<Svgs>;
 
 /** Blog samples whose pictures come from the API, drawn in the reader's browser. */
 const DRAW: Partial<Record<PostSample["kind"], Draw>> = {
+  life: async (p, locale) => generateLife(parseLifeState(p, locale)),
   truchet: async (p, locale) => generateTruchet(parseTruchetState(p, locale)),
   tartan: async (p, locale) => generateTartan(parseTartanState(p, locale)),
   tieDye: async (p, locale) => generateTieDye(parseTieDyeState(p, locale)),

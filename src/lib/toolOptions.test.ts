@@ -8,12 +8,15 @@ import { parseMandalaState, serializeMandalaState } from "./mandalaState";
 import { parseSashikoState, serializeSashikoState } from "./sashikoState";
 import { parseStainedGlassState, serializeStainedGlassState } from "./stainedGlassState";
 import { parseTessellationState, serializeTessellationState } from "./tessellationState";
+import { messages } from "./i18n";
+import { TARTAN_PRESETS } from "./tartanState";
 import { allThumbs } from "./thumbnails";
-import { optionHref, optionLabel, readSeed, thumbSrc, TOOL_OPTIONS, withOption, type ToolId } from "./toolOptions";
+import { optionHref, optionLabel, optionPath, readSeed, thumbSrc, TOOL_OPTIONS, withOption, type ToolId } from "./toolOptions";
 import { parseMazeState, serializeMazeState } from "./mazeState";
 import { parseKnitColorworkState, serializeKnitColorworkState } from "./knitColorworkState";
 import { parseCrochetColorworkState, serializeCrochetColorworkState } from "./crochetColorworkState";
 import { parseCheckerboardState, serializeCheckerboardState } from "./checkerboardState";
+import { parseLifeState, serializeLifeState } from "./lifeState";
 import { parseFractalState, serializeFractalState } from "./fractalState";
 import { parseTieDyeState, serializeTieDyeState } from "./tieDyeState";
 import { parseTruchetState, serializeTruchetState } from "./truchetState";
@@ -32,6 +35,7 @@ const ROUND_TRIP: Record<ToolId, (params: URLSearchParams) => string> = {
   knitColorwork: (p) => serializeKnitColorworkState(parseKnitColorworkState(p)),
   crochetColorwork: (p) => serializeCrochetColorworkState(parseCrochetColorworkState(p)),
   checkerboard: (p) => serializeCheckerboardState(parseCheckerboardState(p)),
+  life: (p) => serializeLifeState(parseLifeState(p)),
   fractal: (p) => serializeFractalState(parseFractalState(p)),
   tieDye: (p) => serializeTieDyeState(parseTieDyeState(p)),
   maze: (p) => serializeMazeState(parseMazeState(p)),
@@ -99,5 +103,24 @@ describe("API thumbnails", () => {
   it("name the API's version in the path", () => {
     expect(thumbSrc("maze", "square")).toMatch(/\/api\/v1\.0\.1\/maze\/thumbnail\/square$/);
     expect(thumbSrc("fractal", "hilbert-curve")).toMatch(/\/api\/v1\.0\.1\/fractal\/thumbnail\/hilbert-curve$/);
+  });
+});
+
+describe("the library's fill", () => {
+  it.each(["truchet", "stainedGlass", "girih", "tieDye"] as const)("%s offers at least six choices, each with a page and an API thumbnail", (tool) => {
+    expect(TOOL_OPTIONS[tool].options.length).toBeGreaterThanOrEqual(6);
+    for (const { slug } of TOOL_OPTIONS[tool].options) {
+      expect(optionPath(tool, slug)).toContain(`/${slug}/`);
+      expect(thumbSrc(tool, slug)).toContain(`/thumbnail/${tool}/${slug}`);
+    }
+  });
+
+  it("offers at least six tartan presets, each named in every language", () => {
+    expect(TARTAN_PRESETS.length).toBeGreaterThanOrEqual(6);
+    for (const locale of LOCALES) {
+      const names = TARTAN_PRESETS.map((preset) => messages(locale).tartan.presets[preset.id]);
+      expect(names.every(Boolean)).toBe(true);
+      expect(new Set(names).size).toBe(names.length);
+    }
   });
 });

@@ -1,7 +1,7 @@
 {
   "en": {
     "metaTitle": "Tie-Dye Pattern Maker: Fold Guide, Dye Amounts and PDF",
-    "metaDesc": "Preview a spiral, bullseye or accordion tie-dye in your colors, then get the folds, a dye map, mixing amounts and printable steps.",
+    "metaDesc": "Preview a spiral, bullseye, accordion, sunburst, chevron or double spiral tie-dye in your colors, then get the folds, a dye map, mixing amounts and printable steps.",
     "h1": "Tie-dye",
     "lede": "Preview a tie-dye in your colors, then get the folds, a map of where each dye goes, mixing amounts and printable steps.",
     "views": {
@@ -18,12 +18,18 @@
     "techniques": {
       "spiral": "Spiral",
       "bullseye": "Bullseye",
-      "accordion": "Accordion and boards"
+      "accordion": "Accordion and boards",
+      "sunburst": "Sunburst",
+      "chevron": "Chevron",
+      "double-spiral": "Double spiral"
     },
     "bands": {
       "spiral": "Wedges",
       "bullseye": "Rings",
-      "accordion": "Pleat detail"
+      "accordion": "Pleat detail",
+      "sunburst": "Tied spots",
+      "chevron": "Stripes down the center",
+      "double-spiral": "Wedges on each spiral"
     },
     "seed": "Seed",
     "newSeed": "New seed",
@@ -60,7 +66,7 @@
   },
   "es": {
     "metaTitle": "Generador de tie-dye: guía de plegado, cantidades de tinte y PDF",
-    "metaDesc": "Previsualiza un tie-dye en espiral, diana o acordeón con tus colores y obtén los pliegues, un mapa de tintes, las cantidades y los pasos imprimibles.",
+    "metaDesc": "Previsualiza un tie-dye en espiral, diana, acordeón, rayos de sol, chevrón o espiral doble con tus colores, y obtén los pliegues, un mapa de tintes, las cantidades de mezcla y los pasos para imprimir.",
     "h1": "Tie-dye",
     "lede": "Previsualiza un tie-dye con tus colores y obtén los pliegues, un mapa de dónde va cada tinte, las cantidades y los pasos imprimibles.",
     "views": {
@@ -77,12 +83,18 @@
     "techniques": {
       "spiral": "Espiral",
       "bullseye": "Diana",
-      "accordion": "Acordeón con tablas"
+      "accordion": "Acordeón con tablas",
+      "sunburst": "Rayos de sol",
+      "chevron": "Chevrón",
+      "double-spiral": "Espiral doble"
     },
     "bands": {
       "spiral": "Cuñas",
       "bullseye": "Anillos",
-      "accordion": "Detalle de pliegues"
+      "accordion": "Detalle de pliegues",
+      "sunburst": "Puntos atados",
+      "chevron": "Franjas por el centro",
+      "double-spiral": "Cuñas en cada espiral"
     },
     "seed": "Semilla",
     "newSeed": "Nueva semilla",
@@ -119,7 +131,7 @@
   },
   "fr": {
     "metaTitle": "Créateur de tie-dye : pliages, quantités de teinture et PDF",
-    "metaDesc": "Prévisualisez un tie-dye en spirale, en cible ou en accordéon dans vos couleurs, avec pliages, plan des teintures, quantités et étapes imprimables.",
+    "metaDesc": "Prévisualisez un tie-dye en spirale, en cible, en accordéon, en rayons de soleil, en chevron ou en double spirale dans vos couleurs, puis obtenez les pliages, une carte des teintures, les quantités et les étapes à imprimer.",
     "h1": "Tie-dye",
     "lede": "Prévisualisez un tie-dye dans vos couleurs, avec les pliages, le plan des teintures, les quantités et des étapes imprimables.",
     "views": {
@@ -136,12 +148,18 @@
     "techniques": {
       "spiral": "Spirale",
       "bullseye": "Cible",
-      "accordion": "Accordéon et planches"
+      "accordion": "Accordéon et planches",
+      "sunburst": "Rayons de soleil",
+      "chevron": "Chevron",
+      "double-spiral": "Double spirale"
     },
     "bands": {
       "spiral": "Parts",
       "bullseye": "Anneaux",
-      "accordion": "Finesse des plis"
+      "accordion": "Finesse des plis",
+      "sunburst": "Points attachés",
+      "chevron": "Bandes au centre",
+      "double-spiral": "Parts par spirale"
     },
     "seed": "Graine",
     "newSeed": "Nouvelle graine",
@@ -178,7 +196,7 @@
   },
   "de": {
     "metaTitle": "Batikmuster erstellen: Faltanleitung, Farbmengen und PDF",
-    "metaDesc": "Sehen Sie ein Batikmuster als Spirale, Zielscheibe oder Ziehharmonika in Ihren Farben und erhalten Sie Faltung, Farbplan, Mengen und druckbare Schritte.",
+    "metaDesc": "Sehen Sie ein Batikmuster als Spirale, Zielscheibe, Ziehharmonika, Sonnenstrahlen, Chevron oder Doppelspirale in Ihren Farben und erhalten Sie Faltung, Farbplan, Mengen und druckbare Schritte.",
     "h1": "Batik",
     "lede": "Sehen Sie ein Batikmuster in Ihren Farben und erhalten Sie Faltung, Farbplan, Mischmengen und druckbare Schritte.",
     "views": {
@@ -195,12 +213,18 @@
     "techniques": {
       "spiral": "Spirale",
       "bullseye": "Zielscheibe",
-      "accordion": "Ziehharmonika mit Brettern"
+      "accordion": "Ziehharmonika mit Brettern",
+      "sunburst": "Sonnenstrahlen",
+      "chevron": "Chevron",
+      "double-spiral": "Doppelspirale"
     },
     "bands": {
       "spiral": "Segmente",
       "bullseye": "Ringe",
-      "accordion": "Faltendichte"
+      "accordion": "Faltendichte",
+      "sunburst": "Abgebundene Punkte",
+      "chevron": "Streifen in der Mitte",
+      "double-spiral": "Keile je Spirale"
     },
     "seed": "Startwert",
     "newSeed": "Neuer Startwert",
@@ -237,7 +261,7 @@
   },
   "pt": {
     "metaTitle": "Gerador de tie-dye: guia de dobra, quantidades de tinta e PDF",
-    "metaDesc": "Veja um tie-dye em espiral, alvo ou sanfona nas suas cores e receba as dobras, um mapa de tintas, as quantidades e os passos para imprimir.",
+    "metaDesc": "Veja um tie-dye em espiral, alvo, sanfona, raios de sol, chevron ou espiral dupla nas suas cores, e receba as dobras, um mapa de corantes, as quantidades de mistura e os passos para imprimir.",
     "h1": "Tie-dye",
     "lede": "Veja um tie-dye nas suas cores e receba as dobras, um mapa de onde vai cada tinta, as quantidades e os passos para imprimir.",
     "views": {
@@ -254,12 +278,18 @@
     "techniques": {
       "spiral": "Espiral",
       "bullseye": "Alvo",
-      "accordion": "Sanfona com tábuas"
+      "accordion": "Sanfona com tábuas",
+      "sunburst": "Raios de sol",
+      "chevron": "Chevron",
+      "double-spiral": "Espiral dupla"
     },
     "bands": {
       "spiral": "Fatias",
       "bullseye": "Anéis",
-      "accordion": "Detalhe das pregas"
+      "accordion": "Detalhe das pregas",
+      "sunburst": "Pontos amarrados",
+      "chevron": "Listras no centro",
+      "double-spiral": "Fatias em cada espiral"
     },
     "seed": "Semente",
     "newSeed": "Nova semente",

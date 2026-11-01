@@ -14,7 +14,7 @@ export type StainedGlassColor = {
   largest: string;
 };
 
-export type StainedGlassLayout = "rose" | "quarries" | "medallion" | "sunburst";
+export type StainedGlassLayout = "rose" | "quarries" | "medallion" | "sunburst" | "honeycomb" | "pinwheels";
 
 export type StainedGlassPiece = {
   number: number;

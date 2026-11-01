@@ -1,5 +1,68 @@
 [
   {
+    "slug": "life-patterns",
+    "title": "Game of Life patterns you can print",
+    "date": "2026-10-31",
+    "summary": "Eight still lifes and oscillators from Conway's Game of Life, as seamless designs, with the rule explained on any cell.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The new [Game of Life tool](/life-patterns/) turns eight classic patterns into repeating designs. Every phase comes from running the rule itself, and copies sit far enough apart that a whole sheet would keep behaving as Life says."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "life",
+            "slug": "",
+            "query": "",
+            "view": "sheet",
+            "caption": "A sheet of pulsars"
+          },
+          {
+            "kind": "life",
+            "slug": "",
+            "query": "p=beehive&g=2&l=1",
+            "view": "sheet",
+            "caption": "Beehives, close together, with grid lines"
+          },
+          {
+            "kind": "life",
+            "slug": "",
+            "query": "p=beacon",
+            "view": "phases",
+            "caption": "A beacon's two phases, then back to the start"
+          },
+          {
+            "kind": "life",
+            "slug": "",
+            "query": "p=blinker&n=von-neumann",
+            "view": "neighborhood",
+            "caption": "What counting only 4 neighbors does to a blinker"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Block, beehive, loaf and tub, the still lifes",
+          "Blinker, toad, beacon and pulsar, the oscillators, with every phase in a strip",
+          "A sheet and a repeat tile, with your cell size, columns, rows, spacing, colors and optional grid lines",
+          "The rule worked out on any cell you choose, with Moore (8) or Von Neumann (4) neighbors",
+          "SVG, PNG and a printable PDF"
+        ]
+      }
+    ]
+  },
+  {
     "slug": "checkerboard-maker",
     "title": "Checkerboards in any proportion",
     "date": "2026-10-31",

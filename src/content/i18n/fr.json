@@ -1,5 +1,27 @@
 {
   "posts": {
+    "life-patterns": {
+      "title": "Des motifs du jeu de la vie à imprimer",
+      "summary": "Huit formes stables et oscillateurs du jeu de la vie de Conway, en dessins continus, avec la règle expliquée sur n'importe quelle cellule.",
+      "blocks": [
+        "Le nouvel [outil du jeu de la vie](/life-patterns/) transforme huit motifs classiques en dessins répétés. Chaque phase vient de la règle elle-même, et les copies sont assez éloignées pour qu'une feuille entière continue de se comporter comme le veut Life.",
+        "Des exemples pour commencer",
+        [
+          "Une feuille de pulsars",
+          "Des ruches rapprochées, avec la grille",
+          "Les deux phases d'une balise, puis le retour au départ",
+          "Ce que compter seulement 4 voisines fait à un clignotant"
+        ],
+        "Ce que vous obtenez",
+        [
+          "Bloc, ruche, pain et baignoire, les formes stables",
+          "Clignotant, crapaud, balise et pulsar, les oscillateurs, avec chaque phase sur une bande",
+          "Une feuille et un motif de répétition, avec votre taille de cellule, vos colonnes, rangées, espacement, couleurs et une grille en option",
+          "La règle appliquée à la cellule de votre choix, avec le voisinage de Moore (8) ou de von Neumann (4)",
+          "SVG, PNG et un PDF à imprimer"
+        ]
+      ]
+    },
     "checkerboard-maker": {
       "title": "Des damiers dans toutes les proportions",
       "summary": "Partez d'un damier standard, puis réglez les rangées, les colonnes, les couleurs et la forme des cases, comme 3:1 ou 2:3.",
@@ -521,6 +543,18 @@
     }
   },
   "changelog": {
+    "More patterns in five tools": {
+      "title": "Plus de motifs dans cinq outils",
+      "items": [
+        "Ajout d'options pour que chaque entrée de la bibliothèque en montre six : tuiles de Truchet en arcs doubles et croisements tissés, carreaux Verger et Mare de marée, vitraux en nid d'abeilles et en moulinets, étoiles d'ordre 16, et tie-dye en rayons de soleil, chevron et double spirale"
+      ]
+    },
+    "Game of Life patterns": {
+      "title": "Motifs du jeu de la vie",
+      "items": [
+        "Ajout de motifs du jeu de la vie en dessins répétés à imprimer, avec des bandes de phases et la règle expliquée sur n'importe quelle cellule"
+      ]
+    },
     "Preview images": {
       "title": "Images d'aperçu",
       "items": [

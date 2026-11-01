@@ -19,6 +19,7 @@
       "sierpinski": "The Sierpiński triangle in the fractal maker is named for this paper.",
       "hilbert": "The Hilbert curve in the fractal maker is named for this paper.",
       "levy": "The Lévy C curve in the fractal maker is named for this paper.",
+      "gardnerLife": "The rule of Conway's Game of Life, which the Game of Life pattern tool runs to draw every phase.",
       "walkerMosaic": "The name and the two-row rules of the mosaic patterns in knit colorwork. The charts themselves were drawn for this site."
     }
   },
@@ -42,6 +43,7 @@
       "sierpinski": "El triángulo de Sierpiński del generador de fractales toma su nombre de este artículo.",
       "hilbert": "La curva de Hilbert del generador de fractales toma su nombre de este artículo.",
       "levy": "La curva C de Lévy del generador de fractales toma su nombre de este artículo.",
+      "gardnerLife": "La regla del Juego de la Vida de Conway, que la herramienta de patrones de Life ejecuta para dibujar cada fase.",
       "walkerMosaic": "El nombre y las reglas de dos vueltas de los patrones en mosaico del tejido en colores. Los gráficos se dibujaron para este sitio."
     }
   },
@@ -65,6 +67,7 @@
       "sierpinski": "Le triangle de Sierpiński de l'outil doit son nom à cet article.",
       "hilbert": "La courbe de Hilbert de l'outil doit son nom à cet article.",
       "levy": "La courbe C de Lévy de l'outil doit son nom à cet article.",
+      "gardnerLife": "La règle du jeu de la vie de Conway, que l'outil de motifs Life applique pour dessiner chaque phase.",
       "walkerMosaic": "Le nom et les règles à deux rangs des motifs en mosaïque du tricot en couleurs. Les grilles ont été dessinées pour ce site."
     }
   },
@@ -88,6 +91,7 @@
       "sierpinski": "Das Sierpiński-Dreieck im Fraktal-Werkzeug ist nach dieser Arbeit benannt.",
       "hilbert": "Die Hilbert-Kurve im Fraktal-Werkzeug ist nach dieser Arbeit benannt.",
       "levy": "Die Lévy-C-Kurve im Fraktal-Werkzeug ist nach dieser Arbeit benannt.",
+      "gardnerLife": "Die Regel von Conways Spiel des Lebens, mit der das Life-Werkzeug jede Phase berechnet.",
       "walkerMosaic": "Der Name und die Zwei-Reihen-Regeln der Mosaikmuster bei den Farbmustern. Die Diagramme wurden für diese Website gezeichnet."
     }
   },
@@ -111,6 +115,7 @@
       "sierpinski": "O triângulo de Sierpiński do gerador leva o nome deste artigo.",
       "hilbert": "A curva de Hilbert do gerador leva o nome deste artigo.",
       "levy": "A curva C de Lévy do gerador leva o nome deste artigo.",
+      "gardnerLife": "A regra do Jogo da Vida de Conway, que a ferramenta de padrões do Life executa para desenhar cada fase.",
       "walkerMosaic": "O nome e as regras de duas carreiras dos padrões em mosaico do tricô em cores. Os gráficos foram desenhados para este site."
     }
   }

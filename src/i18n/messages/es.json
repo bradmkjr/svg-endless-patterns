@@ -231,7 +231,7 @@
       },
       "stainedGlass": {
         "title": "Vidriera",
-        "text": "Diseña un panel original de vidriera a partir de cuatro composiciones paramétricas, con piezas que de verdad se pueden cortar a mano.",
+        "text": "Diseña un panel original de vidriera a partir de seis composiciones paramétricas, con piezas que de verdad se pueden cortar a mano.",
         "output": "Plantillas numeradas a tamaño real con margen para el perfil, una estimación aproximada de vidrio por color y una vista previa en SVG o PNG.",
         "explore": "Abrir el creador de vidrieras"
       },
@@ -255,7 +255,7 @@
       },
       "tieDye": {
         "title": "Tie-dye",
-        "text": "Previsualiza un plegado en espiral, diana o acordeón con tus colores.",
+        "text": "Previsualiza un plegado en espiral, diana, acordeón, rayos de sol, chevrón o espiral doble con tus colores.",
         "output": "Diagrama de plegado, mapa de tintes, cantidades, pasos imprimibles y vista previa en SVG o PNG.",
         "explore": "Planifica un tie-dye"
       },
@@ -264,6 +264,12 @@
         "text": "Genera un laberinto con una sola ruta posible, en forma de cuadrado, rectángulo, círculo, hexágono, triángulo o rombo, con cinco algoritmos distintos.",
         "output": "PDF para imprimir con la solución en otra página, además de SVG y PNG del laberinto y de su solución.",
         "explore": "Crear un laberinto"
+      },
+      "life": {
+        "title": "Patrones del Juego de la Vida",
+        "text": "Vidas estáticas y osciladores del Juego de la Vida de Conway como diseños repetidos, con la regla explicada en cualquier celda.",
+        "output": "SVG y PNG de la hoja, el módulo, las fases y el diagrama de la regla, y un PDF para imprimir.",
+        "explore": "Dibujar un patrón de Life"
       },
       "fractal": {
         "title": "Fractales",
@@ -366,7 +372,9 @@
       "forest": "Bosque",
       "ember": "Brasa",
       "harbor": "Puerto",
-      "check": "Cuadro de dos colores"
+      "check": "Cuadro de dos colores",
+      "orchard": "Huerto",
+      "tide-pool": "Charca de marea"
     }
   }
 }

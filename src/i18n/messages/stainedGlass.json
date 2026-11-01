@@ -9,7 +9,9 @@
       "rose": "Rose",
       "quarries": "Diamond quarries",
       "medallion": "Border and center",
-      "sunburst": "Sunburst"
+      "sunburst": "Sunburst",
+      "honeycomb": "Honeycomb",
+      "pinwheels": "Pinwheels"
     },
     "panel": "Panel",
     "width": "Width",
@@ -65,7 +67,9 @@
       "rose": "Rosetón",
       "quarries": "Rombos",
       "medallion": "Cenefa y centro",
-      "sunburst": "Sol radiante"
+      "sunburst": "Sol radiante",
+      "honeycomb": "Panal",
+      "pinwheels": "Molinetes"
     },
     "panel": "Panel",
     "width": "Ancho",
@@ -121,7 +125,9 @@
       "rose": "Rosace",
       "quarries": "Losanges",
       "medallion": "Bordure et centre",
-      "sunburst": "Soleil rayonnant"
+      "sunburst": "Soleil rayonnant",
+      "honeycomb": "Nid d'abeilles",
+      "pinwheels": "Moulinets"
     },
     "panel": "Panneau",
     "width": "Largeur",
@@ -177,7 +183,9 @@
       "rose": "Rosette",
       "quarries": "Rautenfelder",
       "medallion": "Bordüre und Mitte",
-      "sunburst": "Sonnenstrahlen"
+      "sunburst": "Sonnenstrahlen",
+      "honeycomb": "Wabenmuster",
+      "pinwheels": "Windräder"
     },
     "panel": "Fenster",
     "width": "Breite",
@@ -233,7 +241,9 @@
       "rose": "Rosácea",
       "quarries": "Losangos",
       "medallion": "Borda e centro",
-      "sunburst": "Sol radiante"
+      "sunburst": "Sol radiante",
+      "honeycomb": "Favo de mel",
+      "pinwheels": "Cata-ventos"
     },
     "panel": "Painel",
     "width": "Largura",

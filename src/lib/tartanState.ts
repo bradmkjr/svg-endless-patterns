@@ -16,6 +16,8 @@ export const TARTAN_PRESETS: { id: keyof Messages["tartan"]["presets"]; stripes:
   { id: "ember", stripes: [{ color: "#8c1c13", count: 20 }, { color: "#1a1a1a", count: 12 }, { color: "#8c1c13", count: 3 }, { color: "#e8b92f", count: 2 }] },
   { id: "harbor", stripes: [{ color: "#6b7a8f", count: 18 }, { color: "#f0ece2", count: 4 }, { color: "#23395d", count: 10 }, { color: "#f0ece2", count: 2 }] },
   { id: "check", stripes: [{ color: "#a31621", count: 24 }, { color: "#111111", count: 24 }] },
+  { id: "orchard", stripes: [{ color: "#4a2545", count: 20 }, { color: "#5a6b2f", count: 12 }, { color: "#4a2545", count: 4 }, { color: "#d9a441", count: 2 }, { color: "#efe6d0", count: 2 }] },
+  { id: "tide-pool", stripes: [{ color: "#0f4c5c", count: 18 }, { color: "#e8dcc4", count: 3 }, { color: "#2a9d8f", count: 12 }, { color: "#0f4c5c", count: 3 }, { color: "#e76f51", count: 2 }] },
 ];
 
 export function defaultTartanState(locale: Locale = "en"): TartanRequest {

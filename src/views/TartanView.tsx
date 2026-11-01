@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { StaticPreview } from "@/components/StaticPreview";
-import { TartanBuilderRoute } from "@/components/TartanBuilderRoute";
 import { previewOpenGraph } from "@/lib/toolOptions";
+import { TartanBuilderRoute } from "@/components/TartanBuilderRoute";
 import type { Locale } from "@/lib/generator";
 import { messages, pageAlternates } from "@/lib/i18n";
 

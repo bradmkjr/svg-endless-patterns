@@ -3,7 +3,7 @@ import { localeAccent } from "./localeAccent";
 
 /** The tie-dye builder's options, defaults and share links. Seeds stay out of links, as in `toolOptions`. */
 
-export const TECHNIQUE_OPTIONS: TieDyeTechnique[] = ["spiral", "bullseye", "accordion"];
+export const TECHNIQUE_OPTIONS: TieDyeTechnique[] = ["spiral", "bullseye", "accordion", "sunburst", "chevron", "double-spiral"];
 export const BAND_OPTIONS = [4, 6, 8, 10, 12];
 export const GARMENT_OPTIONS = Array.from({ length: 12 }, (_, i) => i + 1);
 /** Dye powder per cup of water: plain, * and ** on the jar's label. */

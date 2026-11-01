@@ -1,5 +1,27 @@
 {
   "posts": {
+    "life-patterns": {
+      "title": "Muster aus dem Spiel des Lebens zum Drucken",
+      "summary": "Acht Stillleben und Oszillatoren aus Conways Spiel des Lebens als nahtlose Designs, mit der Regel an jeder beliebigen Zelle erklärt.",
+      "blocks": [
+        "Das neue [Werkzeug zum Spiel des Lebens](/life-patterns/) macht aus acht klassischen Mustern Rapportdesigns. Jede Phase entsteht durch die Regel selbst, und die Kopien liegen so weit auseinander, dass sich ein ganzer Bogen weiter verhält, wie Life es verlangt.",
+        "Beispiele zum Einstieg",
+        [
+          "Ein Bogen voller Pulsare",
+          "Eng gesetzte Bienenstöcke mit Rasterlinien",
+          "Die zwei Phasen eines Leuchtfeuers und zurück zum Anfang",
+          "Was das Zählen von nur 4 Nachbarn mit einem Blinker macht"
+        ],
+        "Das bekommen Sie",
+        [
+          "Block, Bienenstock, Brotlaib und Wanne, die Stillleben",
+          "Blinker, Kröte, Leuchtfeuer und Pulsar, die Oszillatoren, mit jeder Phase in einem Streifen",
+          "Ein Bogen und eine Rapportkachel, mit eigener Zellengröße, Spalten, Reihen, Abstand, Farben und optionalen Rasterlinien",
+          "Die Regel an einer Zelle Ihrer Wahl, mit Moore- (8) oder Von-Neumann-Nachbarschaft (4)",
+          "SVG, PNG und ein druckbares PDF"
+        ]
+      ]
+    },
     "checkerboard-maker": {
       "title": "Schachbrettmuster in jeder Proportion",
       "summary": "Beginnen Sie mit einem Standardbrett und legen Sie Reihen, Spalten, Farben und Feldform fest, etwa 3:1 oder 2:3.",
@@ -521,6 +543,18 @@
     }
   },
   "changelog": {
+    "More patterns in five tools": {
+      "title": "Mehr Muster in fünf Werkzeugen",
+      "items": [
+        "Neue Optionen, damit jeder Bibliothekseintrag sechs zeigt: Truchet-Kacheln mit Doppelbögen und gewebten Kreuzungen, die Karos Obstgarten und Gezeitentümpel, Bleiglas als Wabenmuster und Windräder, 16-zählige Sterne sowie Batik als Sonnenstrahlen, Chevron und Doppelspirale"
+      ]
+    },
+    "Game of Life patterns": {
+      "title": "Muster aus dem Spiel des Lebens",
+      "items": [
+        "Muster aus dem Spiel des Lebens als druckbare Rapportdesigns hinzugefügt, mit Phasenstreifen und der Regel an jeder beliebigen Zelle"
+      ]
+    },
     "Preview images": {
       "title": "Vorschaubilder",
       "items": [

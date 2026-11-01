@@ -231,7 +231,7 @@
       },
       "stainedGlass": {
         "title": "Bleiglas",
-        "text": "Entwerfen Sie ein eigenes Bleiglasfenster aus vier parametrischen Entwürfen, mit Teilen, die sich wirklich von Hand schneiden lassen.",
+        "text": "Entwerfen Sie ein eigenes Bleiglasfenster aus sechs parametrischen Entwürfen, mit Teilen, die sich wirklich von Hand schneiden lassen.",
         "output": "Nummerierte Schablonen in Originalgröße mit Profilzugabe, eine grobe Glasschätzung je Farbe und eine Vorschau als SVG oder PNG.",
         "explore": "Bleiglas-Generator öffnen"
       },
@@ -255,7 +255,7 @@
       },
       "tieDye": {
         "title": "Batik",
-        "text": "Sehen Sie eine Spirale, Zielscheibe oder Ziehharmonika in Ihren Farben.",
+        "text": "Sehen Sie eine Spirale, Zielscheibe, Ziehharmonika, Sonnenstrahlen, Chevron oder Doppelspirale in Ihren Farben.",
         "output": "Faltdiagramm, Farbplan, Mischmengen, druckbare Schritte und SVG- oder PNG-Vorschau.",
         "explore": "Batik planen"
       },
@@ -264,6 +264,12 @@
         "text": "Erstelle ein Labyrinth mit genau einem Weg hindurch, als Quadrat, Rechteck, Kreis, Sechseck, Dreieck oder Raute, mit fünf verschiedenen Algorithmen.",
         "output": "Druckbares PDF mit separater Lösungsseite sowie SVG und PNG des Labyrinths und seiner Lösung.",
         "explore": "Labyrinth erstellen"
+      },
+      "life": {
+        "title": "Muster aus dem Spiel des Lebens",
+        "text": "Stillleben und Oszillatoren aus Conways Spiel des Lebens als Rapportmuster, mit der Regel an jeder beliebigen Zelle erklärt.",
+        "output": "SVG und PNG von Bogen, Kachel, Phasen und Regeldiagramm sowie ein druckbares PDF.",
+        "explore": "Life-Muster zeichnen"
       },
       "fractal": {
         "title": "Fraktale",
@@ -366,7 +372,9 @@
       "forest": "Wald",
       "ember": "Glut",
       "harbor": "Hafen",
-      "check": "Zweifarbiges Karo"
+      "check": "Zweifarbiges Karo",
+      "orchard": "Obstgarten",
+      "tide-pool": "Gezeitentümpel"
     }
   }
 }

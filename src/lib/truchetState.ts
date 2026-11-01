@@ -3,7 +3,7 @@ import { localeAccent } from "./localeAccent";
 
 /** The Truchet builder's options, default colors and share links. */
 
-export const STYLE_OPTIONS: TruchetStyle[] = ["arcs", "chamfers", "diagonals", "triangles"];
+export const STYLE_OPTIONS: TruchetStyle[] = ["arcs", "chamfers", "diagonals", "triangles", "double-arcs", "woven"];
 export const ARRANGEMENT_OPTIONS: TruchetArrangement[] = ["random", "mirror", "checker", "stripes", "waves"];
 export const GRID_OPTIONS = [4, 6, 8, 10, 12, 16, 20, 24];
 export const WEIGHT_OPTIONS = [4, 6, 8, 10, 12, 16, 20, 24, 30];

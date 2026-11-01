@@ -185,7 +185,7 @@ export function GirihBuilder({ locale, option, labels, initialState }: { locale:
       </div>
 
       <p className={styles.notice}>
-        <strong>{t.aboutTitle}</strong> {state.symmetry === 10 ? t.aboutGirih : t.aboutStar}
+        <strong>{t.aboutTitle}</strong> {state.symmetry === 10 ? t.aboutGirih : state.symmetry === 16 ? t.aboutSixteen : t.aboutStar}
       </p>
 
       {result ? (

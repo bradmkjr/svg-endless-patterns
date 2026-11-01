@@ -231,7 +231,7 @@
       },
       "stainedGlass": {
         "title": "Stained glass",
-        "text": "Design an original leaded glass panel from four parametric layouts, in pieces that can really be cut by hand.",
+        "text": "Design an original leaded glass panel from six parametric layouts, in pieces that can really be cut by hand.",
         "output": "Numbered true-size templates with came allowance, a rough glass estimate per color, and an SVG or PNG preview.",
         "explore": "Open the stained glass maker"
       },
@@ -255,7 +255,7 @@
       },
       "tieDye": {
         "title": "Tie-dye",
-        "text": "Preview a spiral, bullseye or accordion fold in your colors.",
+        "text": "Preview a spiral, bullseye, accordion, sunburst, chevron or double spiral fold in your colors.",
         "output": "Fold diagram, dye map, mixing amounts, printable steps, and an SVG or PNG preview.",
         "explore": "Plan a tie-dye"
       },
@@ -264,6 +264,12 @@
         "text": "Generate a maze with exactly one route through it, as a square, rectangle, circle, hexagon, triangle or diamond, from five different algorithms.",
         "output": "Printable PDF with a separate solution page, plus SVG and PNG of the maze and its solution.",
         "explore": "Make a maze"
+      },
+      "life": {
+        "title": "Game of Life patterns",
+        "text": "Still lifes and oscillators from Conway's Game of Life, as repeating designs, with the rule explained on any cell.",
+        "output": "SVG and PNG of the sheet, tile, phases and rule diagram, and a printable PDF.",
+        "explore": "Draw a Life pattern"
       },
       "fractal": {
         "title": "Fractals",
@@ -366,7 +372,9 @@
       "forest": "Forest",
       "ember": "Ember",
       "harbor": "Harbor",
-      "check": "Two-color check"
+      "check": "Two-color check",
+      "orchard": "Orchard",
+      "tide-pool": "Tide pool"
     }
   }
 }

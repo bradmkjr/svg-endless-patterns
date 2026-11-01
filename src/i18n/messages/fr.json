@@ -231,7 +231,7 @@
       },
       "stainedGlass": {
         "title": "Vitrail",
-        "text": "Dessinez un panneau de vitrail original à partir de quatre compositions paramétriques, en pièces réellement coupables à la main.",
+        "text": "Dessinez un panneau de vitrail original à partir de six compositions paramétriques, en pièces réellement coupables à la main.",
         "output": "Gabarits numérotés grandeur nature avec marge pour le plomb, estimation approximative du verre par couleur et aperçu SVG ou PNG.",
         "explore": "Ouvrir le créateur de vitrail"
       },
@@ -255,7 +255,7 @@
       },
       "tieDye": {
         "title": "Tie-dye",
-        "text": "Prévisualisez un pliage en spirale, en cible ou en accordéon dans vos couleurs.",
+        "text": "Prévisualisez un pliage en spirale, en cible, en accordéon, en rayons de soleil, en chevron ou en double spirale dans vos couleurs.",
         "output": "Schéma de pliage, plan des teintures, quantités, étapes imprimables et aperçu SVG ou PNG.",
         "explore": "Préparer un tie-dye"
       },
@@ -264,6 +264,12 @@
         "text": "Générez un labyrinthe avec un seul chemin possible, en carré, rectangle, cercle, hexagone, triangle ou losange, à partir de cinq algorithmes différents.",
         "output": "PDF à imprimer avec la solution sur une page à part, ainsi que SVG et PNG du labyrinthe et de sa solution.",
         "explore": "Créer un labyrinthe"
+      },
+      "life": {
+        "title": "Motifs du jeu de la vie",
+        "text": "Formes stables et oscillateurs du jeu de la vie de Conway en motifs répétés, avec la règle expliquée sur n'importe quelle cellule.",
+        "output": "SVG et PNG de la feuille, du motif, des phases et du schéma de la règle, et un PDF à imprimer.",
+        "explore": "Dessiner un motif de Life"
       },
       "fractal": {
         "title": "Fractales",
@@ -366,7 +372,9 @@
       "forest": "Forêt",
       "ember": "Braise",
       "harbor": "Port",
-      "check": "Carreau bicolore"
+      "check": "Carreau bicolore",
+      "orchard": "Verger",
+      "tide-pool": "Mare de marée"
     }
   }
 }

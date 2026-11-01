@@ -3,7 +3,7 @@ import { localeAccent } from "./localeAccent";
 
 /** The stained glass builder's options, palettes and share links. */
 
-export const GLASS_LAYOUTS: StainedGlassLayout[] = ["rose", "quarries", "medallion", "sunburst"];
+export const GLASS_LAYOUTS: StainedGlassLayout[] = ["rose", "quarries", "medallion", "sunburst", "honeycomb", "pinwheels"];
 export const GLASS_SIDES = Array.from({ length: 15 }, (_, i) => 8 + i * 2);
 export const GLASS_DETAILS = [1, 2, 3];
 /** Came is sold in fractions: face widths from 3/16" to 1/2". */

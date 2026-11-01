@@ -15,6 +15,5 @@ export async function optionMetadata(tool: ToolId, locale: Locale, slug: string,
   if (!isToolSlug(tool, slug)) notFound();
   const label = (await optionLabels(tool, locale))[slug];
   const title = `${label} | ${base.title as string}`;
-  const openGraph = previewOpenGraph(tool, slug, title, base.description as string);
-  return { ...base, title, alternates: pageAlternates(locale, optionPath(tool, slug)), ...(openGraph ? { openGraph } : {}) };
+  return { ...base, title, alternates: pageAlternates(locale, optionPath(tool, slug)) };
 }

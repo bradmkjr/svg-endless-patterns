@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
+import { StaticPreview } from "@/components/StaticPreview";
 import { TartanBuilderRoute } from "@/components/TartanBuilderRoute";
+import { previewOpenGraph } from "@/lib/toolOptions";
 import type { Locale } from "@/lib/generator";
 import { messages, pageAlternates } from "@/lib/i18n";
 
 export function tartanMetadata(locale: Locale): Metadata {
   const t = messages(locale).tartan;
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/tartans/") };
+  const openGraph = previewOpenGraph("tartan", "forest", t.metaTitle, t.metaDesc);
+  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/tartans/"), ...(openGraph ? { openGraph } : {}) };
 }
 
 export async function TartanView({ locale }: { locale: Locale }) {
@@ -17,6 +20,7 @@ export async function TartanView({ locale }: { locale: Locale }) {
         {t.lede}
       </p>
       <TartanBuilderRoute locale={locale} />
+      <StaticPreview group="tartan" slug="forest" name={t.presets.forest} locale={locale} />
     </div>
   );
 }

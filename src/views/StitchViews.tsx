@@ -3,12 +3,14 @@ import { pageMetadata } from "@/lib/pageMetadata";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { StitchBuilderRoute } from "@/components/StitchBuilderRoute";
+import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { StitchGrid } from "@/components/StitchGrid";
 import crochetColorwork from "@/i18n/messages/crochetColorwork.json";
 import colorwork from "@/i18n/messages/knitColorwork.json";
-import { generateStitchPattern, getStitchPattern, getStitchPatterns, type Craft, type Locale } from "@/lib/generator";
+import { type Craft, type Locale } from "@/lib/generator";
+import { getStitchPattern, getStitchPatterns } from "@/lib/patternCatalog";
 import { fill, localePath, messages } from "@/lib/i18n";
-import { CRAFT_PATHS, defaultStitchState } from "@/lib/stitchState";
+import { CRAFT_PATHS } from "@/lib/stitchState";
 
 export function stitchesMetadata(locale: Locale, craft: Craft): Metadata {
   const t = messages(locale).stitches;
@@ -52,7 +54,6 @@ export async function StitchView({ locale, craft, slug }: { locale: Locale; craf
   const stitch = await getStitchPattern(craft, slug, locale);
   if (!stitch) notFound();
   const all = messages(locale);
-  const initial = await generateStitchPattern(stitch.slug, defaultStitchState(stitch, locale));
   return (
     <div className="page">
       <p className="no-print" style={{ margin: "0 0 0.5rem", color: "var(--muted)", fontSize: "0.9rem" }}>
@@ -62,7 +63,9 @@ export async function StitchView({ locale, craft, slug }: { locale: Locale; craf
       <p className="lede" style={{ marginTop: 0 }}>
         {stitch.summary}
       </p>
-      <StitchBuilderRoute stitch={stitch} initial={initial} locale={locale} />
+      <PrimaryImageProvider group={craft} slug={stitch.slug} name={stitch.name}>
+        <StitchBuilderRoute stitch={stitch} locale={locale} />
+      </PrimaryImageProvider>
     </div>
   );
 }

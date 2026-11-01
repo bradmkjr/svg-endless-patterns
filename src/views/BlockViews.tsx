@@ -3,10 +3,11 @@ import { pageMetadata } from "@/lib/pageMetadata";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BlockBuilderRoute } from "@/components/BlockBuilderRoute";
+import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { BlockGrid } from "@/components/BlockGrid";
-import { generatePattern, getBlock, getBlocks, type Locale } from "@/lib/generator";
+import type { Locale } from "@/lib/generator";
+import { getBlock, getBlocks } from "@/lib/patternCatalog";
 import { fill, localePath, messages } from "@/lib/i18n";
-import { defaultState } from "@/lib/state";
 
 export function blocksMetadata(locale: Locale): Metadata {
   const t = messages(locale).blocks;
@@ -45,7 +46,6 @@ export async function blockMetadata(locale: Locale, slug: string): Promise<Metad
 export async function BlockView({ locale, slug }: { locale: Locale; slug: string }) {
   const block = await getBlock(slug, locale);
   if (!block) notFound();
-  const initial = await generatePattern(block.slug, defaultState(block, locale));
   return (
     <div className="page">
       <p className="no-print" style={{ margin: "0 0 0.5rem", color: "var(--muted)", fontSize: "0.9rem" }}>
@@ -55,7 +55,9 @@ export async function BlockView({ locale, slug }: { locale: Locale; slug: string
       <p className="lede" style={{ marginTop: 0 }}>
         {block.summary}
       </p>
-      <BlockBuilderRoute block={block} initial={initial} locale={locale} />
+      <PrimaryImageProvider group="blocks" slug={block.slug} name={block.name}>
+        <BlockBuilderRoute block={block} locale={locale} />
+      </PrimaryImageProvider>
     </div>
   );
 }

@@ -1,11 +1,13 @@
 "use client";
 
-import { useEffect, useState, type CSSProperties } from "react";
-import { generatePattern, generatePdf, type BlockInfo, type CutLine, type Locale, type PatternRequest, type PatternResult } from "@/lib/generator";
+import { useCallback, useEffect, useState, type CSSProperties } from "react";
+import { generatePattern, generatePdf, type BlockInfo, type CutLine, type Locale, type PatternRequest } from "@/lib/generator";
 import { fill, messages } from "@/lib/i18n";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { BORDER_OPTIONS, COUNT_OPTIONS, paletteColors, palettesFor, SASHING_OPTIONS, serializeState, SETTINGS, SIZE_OPTIONS, WOF_OPTIONS } from "@/lib/state";
 import { PalettePicker } from "./PalettePicker";
+import { useLiveResult } from "@/lib/useLiveResult";
+import { ToolLoading } from "./ToolLoading";
 import styles from "./BlockBuilder.module.css";
 
 type View = "block" | "quilt" | "tile";
@@ -57,11 +59,10 @@ function CutTable({ cuts, labelOf, colors, roundedUp }: { cuts: CutLine[]; label
   );
 }
 
-export function BlockBuilder({ block, locale, initialState, initialResult }: { block: BlockInfo; locale: Locale; initialState: PatternRequest; initialResult: PatternResult }) {
+export function BlockBuilder({ block, locale, initialState }: { block: BlockInfo; locale: Locale; initialState: PatternRequest }) {
   const all = messages(locale);
   const t = all.builder;
   const [state, setState] = useState(initialState);
-  const [result, setResult] = useState(initialResult);
   const [view, setView] = useState<View>("block");
   const [scope, setScope] = useState<"block" | "quilt">("quilt");
   const [status, setStatus] = useState("");
@@ -70,21 +71,8 @@ export function BlockBuilder({ block, locale, initialState, initialResult }: { b
   const update = (patch: Partial<PatternRequest>) => setState((s) => ({ ...s, ...patch }));
   const setColor = (id: string, color: string) => setState((s) => ({ ...s, colors: { ...s.colors, [id]: color } }));
 
-  // Regenerate on every change, dropping any answer a newer change has overtaken.
-  useEffect(() => {
-    let stale = false;
-    generatePattern(block.slug, state).then(
-      (next) => {
-        if (!stale) setResult(next);
-      },
-      () => {
-        if (!stale) setStatus(t.updateError);
-      },
-    );
-    return () => {
-      stale = true;
-    };
-  }, [block.slug, state, t.updateError]);
+  const generate = useCallback((request: PatternRequest) => generatePattern(block.slug, request), [block.slug]);
+  const result = useLiveResult(generate, state, setStatus, t.updateError);
 
   // Keep the address a share link for the current design.
   useEffect(() => {
@@ -93,9 +81,9 @@ export function BlockBuilder({ block, locale, initialState, initialResult }: { b
   }, [block, state]);
 
   const labelOf = (id: string) => (id === "sashing" ? t.sashing : id === "border" ? t.border : (block.fabrics.find((f) => f.id === id)?.label ?? id));
-  const currentSvg = result.svg[view];
+  const currentSvg = result?.svg[view] ?? "";
   const fileBase = `${block.slug}-${state.size}in-${view}`;
-  const tileUrl = `data:image/svg+xml,${encodeURIComponent(result.svg.tile)}`;
+  const tileUrl = `data:image/svg+xml,${encodeURIComponent(result?.svg.tile ?? "")}`;
   const tileStyle: CSSProperties = { backgroundImage: `url("${tileUrl}")` };
 
   const run = async (working: string, done: string, action: () => Promise<void> | void) => {
@@ -122,7 +110,9 @@ export function BlockBuilder({ block, locale, initialState, initialResult }: { b
               </button>
             ))}
           </div>
-          {view === "tile" ? (
+          {!result ? (
+            <ToolLoading locale={locale} />
+          ) : view === "tile" ? (
             <div className={styles.tile} style={tileStyle} role="img" aria-label={fill(t.tileAlt, { name: block.name })} />
           ) : (
             <div className={`${styles.art} ${view === "quilt" ? styles.quiltArt : ""}`} dangerouslySetInnerHTML={{ __html: currentSvg }} />
@@ -131,10 +121,10 @@ export function BlockBuilder({ block, locale, initialState, initialResult }: { b
             <button type="button" disabled={busy} className={styles.primary} onClick={() => run(t.pdfMaking, t.pdfDone, async () => downloadBytes(await generatePdf(block.slug, state), `${block.slug}-${state.size}in-pattern.pdf`, "application/pdf"))}>
               {t.downloadPdf}
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(t.saving, t.svgDone, () => downloadSvg(currentSvg, `${fileBase}.svg`))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(t.saving, t.svgDone, () => downloadSvg(currentSvg, `${fileBase}.svg`))}>
               SVG
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(t.pngMaking, t.pngDone, () => downloadPng(currentSvg, `${fileBase}.png`))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(t.pngMaking, t.pngDone, () => downloadPng(currentSvg, `${fileBase}.png`))}>
               PNG
             </button>
             <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(t.copying, t.copied, () => navigator.clipboard.writeText(window.location.href))}>
@@ -213,7 +203,7 @@ export function BlockBuilder({ block, locale, initialState, initialResult }: { b
         </form>
       </div>
 
-      {result.hasRoundedCuts && (
+      {result?.hasRoundedCuts && (
         <p className={styles.notice}>
           <strong>{t.roundedTitle}</strong> {fill(t.roundedText, { size: state.size })}
           {result.suggestedSizes.length > 0 && (
@@ -234,6 +224,7 @@ export function BlockBuilder({ block, locale, initialState, initialResult }: { b
         </p>
       )}
 
+      {result && (
       <div className={styles.results}>
         <section>
           <div className={styles.resultHead}>
@@ -292,6 +283,7 @@ export function BlockBuilder({ block, locale, initialState, initialResult }: { b
           </ol>
         </section>
       </div>
+      )}
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getPosts } from "@/lib/content";
-import { getBlocks, getStitchPatterns } from "@/lib/generator";
+import { getBlocks, getStitchPatterns } from "@/lib/patternCatalog";
 import { localePath, SITE_LOCALES } from "@/lib/i18n";
 import { absoluteUrl } from "@/lib/site";
 import { optionPath, TOOL_OPTIONS, type ToolId } from "@/lib/toolOptions";

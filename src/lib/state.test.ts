@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { getBlock, getStitchPattern } from "./generator";
+import { getBlock, getStitchPattern } from "./patternCatalog";
 import { parseStitchState, serializeStitchState, SQUARE_SIZES } from "./stitchState";
 import { defaultState, paletteColors, PALETTES, parseState, serializeState } from "./state";
 

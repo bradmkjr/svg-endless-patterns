@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import uiText from "@/i18n/messages/crochetColorwork.json";
 import { COLORWORK_DESIGNS, defaultCrochetColorworkState, parseCrochetColorworkState, serializeCrochetColorworkState } from "./crochetColorworkState";
-import { getStitchPatterns } from "./generator";
+import { getStitchPatterns } from "./patternCatalog";
 
 const LOCALES = ["en", "es", "fr", "de", "pt"] as const;
 

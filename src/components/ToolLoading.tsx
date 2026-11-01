@@ -10,8 +10,7 @@ const PrimaryImage = createContext<{ src: string; alt: string } | null>(null);
 
 /** Names the pattern whose PNG stands in for the builder's preview. */
 export function PrimaryImageProvider({ group, slug, name, children }: { group: ThumbGroup; slug: string; name: string; children: ReactNode }) {
-  const src = primaryImageSrc(group, slug);
-  return <PrimaryImage.Provider value={src ? { src, alt: name } : null}>{children}</PrimaryImage.Provider>;
+  return <PrimaryImage.Provider value={{ src: primaryImageSrc(group, slug), alt: name }}>{children}</PrimaryImage.Provider>;
 }
 
 /**

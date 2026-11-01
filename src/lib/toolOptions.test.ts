@@ -10,7 +10,6 @@ import { parseStainedGlassState, serializeStainedGlassState } from "./stainedGla
 import { parseTessellationState, serializeTessellationState } from "./tessellationState";
 import { messages } from "./i18n";
 import { TARTAN_PRESETS } from "./tartanState";
-import { allThumbs } from "./thumbnails";
 import { optionHref, optionLabel, optionPath, readSeed, thumbSrc, TOOL_OPTIONS, withOption, type ToolId } from "./toolOptions";
 import { parseMazeState, serializeMazeState } from "./mazeState";
 import { parseKnitColorworkState, serializeKnitColorworkState } from "./knitColorworkState";
@@ -78,15 +77,6 @@ describe("thumbnails", () => {
     expect(thumbSrc("maze", "square")).toMatch(/\/api\/v1\.0\.1\/maze\/thumbnail\/square$/);
   });
 
-  it("draws every one as a small, unique, standalone SVG", async () => {
-    const thumbs = await allThumbs();
-    expect(new Set(thumbs.map((t) => `${t.group}/${t.slug}`)).size).toBe(thumbs.length);
-    for (const thumb of thumbs) {
-      const svg = await thumb.draw();
-      expect(svg.startsWith("<svg"), `${thumb.group}/${thumb.slug}`).toBe(true);
-      expect(svg).toContain('xmlns="http://www.w3.org/2000/svg"');
-    }
-  }, 120000);
 });
 
 describe("remembered seeds", () => {

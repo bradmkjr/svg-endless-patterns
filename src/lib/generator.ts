@@ -1,9 +1,5 @@
-/**
- * The site's only door to pattern generation. Everything but quilt blocks and knit and
- * crochet stitches runs through the backend API; those two still run in-process.
- */
-import { generatePattern as runGenerate, generateStitchPattern as runStitch, listBlocks, listStitchPatterns } from "@/engine";
-import type { BlockInfo, Craft, Locale, PatternRequest, PatternResult, StitchInfo, StitchRequest, StitchResult } from "@/engine";
+/** The site's only door to pattern generation, all of which runs in the backend API. */
+import type { Locale, PatternRequest, PatternResult, StitchRequest, StitchResult } from "./patternTypes";
 import type { MazePaperId, MazeRequest, MazeResult } from "./mazeTypes";
 import tessellationText from "@/i18n/messages/tessellation.json";
 import { apiGetJson, apiJson, apiPdf } from "./api";
@@ -25,7 +21,7 @@ import type { FractalRequest, FractalResult } from "./fractalTypes";
 import type { LifeRequest, LifeResult } from "./lifeTypes";
 import type { KnitColorworkRequest, KnitColorworkResult } from "./knitColorworkTypes";
 
-export type { BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, Setting, StitchInfo, StitchRequest, StitchResult } from "@/engine";
+export type { BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, Setting, StitchInfo, StitchRequest, StitchResult } from "./patternTypes";
 export type { KnitColorworkPlan, KnitColorworkRequest, KnitColorworkResult, KnitColorworkTechnique } from "./knitColorworkTypes";
 export type { CheckerboardRequest, CheckerboardResult, CheckerPattern } from "./checkerboardTypes";
 export type { ColorworkTechnique, ColorworkWeight, CrochetColorworkRequest, CrochetColorworkResult } from "./crochetColorworkTypes";
@@ -44,42 +40,25 @@ export type { CountedFinish, CrossStitchColor, CrossStitchRequest, CrossStitchRe
 export type { NeedlepointColor, NeedlepointRequest, NeedlepointResult, NeedlepointStitch, NeedlepointYarn } from "./needlepointTypes";
 export type { MazeAlgorithm, MazeColors, MazeDifficulty, MazePaperId, MazeRequest, MazeResult, MazeShape, MazeSize } from "./mazeTypes";
 
-export { DEFAULT_KNIT_SQUARE, KNIT_SQUARE_SIZES } from "@/engine";
+/** A knitted square's sizes in inches, which the API also checks. */
+export const KNIT_SQUARE_SIZES = [6, 8, 10, 12];
+export const DEFAULT_KNIT_SQUARE = 8;
 export { MAZE_PAPERS, mazeAcross, mazeTallRows } from "./mazeOptions";
 
-export async function getBlocks(locale: Locale = "en"): Promise<BlockInfo[]> {
-  return listBlocks(locale);
-}
-
-export async function getBlock(slug: string, locale: Locale = "en"): Promise<BlockInfo | undefined> {
-  return listBlocks(locale).find((b) => b.slug === slug);
-}
-
 export async function generatePattern(slug: string, request: PatternRequest): Promise<PatternResult> {
-  return runGenerate(slug, request);
+  return apiJson("/quilt-block", { slug, ...request });
 }
 
-/** The printable pattern. Loaded on demand: pdf-lib is large and most visits never need it. */
 export async function generatePdf(slug: string, request: PatternRequest): Promise<Uint8Array> {
-  const { generatePatternPdf } = await import("@/engine/pdf");
-  return generatePatternPdf(slug, request);
-}
-
-export async function getStitchPatterns(craft: Craft, locale: Locale = "en"): Promise<StitchInfo[]> {
-  return listStitchPatterns(locale).filter((s) => s.craft === craft);
-}
-
-export async function getStitchPattern(craft: Craft, slug: string, locale: Locale = "en"): Promise<StitchInfo | undefined> {
-  return listStitchPatterns(locale).find((s) => s.craft === craft && s.slug === slug);
+  return apiPdf("/quilt-block/pdf", { slug, ...request });
 }
 
 export async function generateStitchPattern(slug: string, request: StitchRequest): Promise<StitchResult> {
-  return runStitch(slug, request);
+  return apiJson("/stitch", { slug, ...request });
 }
 
 export async function generateStitchPdf(slug: string, request: StitchRequest): Promise<Uint8Array> {
-  const { generateStitchPdf: run } = await import("@/engine/stitchPdf");
-  return run(slug, request);
+  return apiPdf("/stitch/pdf", { slug, ...request });
 }
 
 export async function generateTartan(request: TartanRequest): Promise<TartanResult> {

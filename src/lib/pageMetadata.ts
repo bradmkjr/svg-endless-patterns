@@ -4,12 +4,18 @@ import { localePath, pageAlternates, SITE_LOCALES } from "./i18n";
 import { mazeApiUrl } from "./mazeApi";
 import { absoluteUrl, SITE_NAME } from "./site";
 import { TARTAN_PRESETS } from "./tartanState";
-import { API_IMAGE_GROUPS, OPENING_OPTION, optionPath, TOOL_OPTIONS, type ThumbGroup, type ToolId } from "./toolOptions";
+import { OPENING_OPTION, optionPath, TOOL_OPTIONS, type ThumbGroup, type ToolId } from "./toolOptions";
 
 export const CARD_SIZE = { width: 1200, height: 630 };
 export type CardPicture = { group: ThumbGroup; slug: string };
 
-/** The pattern a page's path is about, if it has one the API can draw. */
+const CRAFT_PAGES: [RegExp, ThumbGroup][] = [
+  [/^\/blocks\/([^/]+)\/$/, "blocks"],
+  [/^\/knitting\/([^/]+)\/$/, "knit"],
+  [/^\/crochet\/([^/]+)\/$/, "crochet"],
+];
+
+/** The pattern a page's path is about, if it has one. */
 export function pathPicture(path: string): CardPicture | undefined {
   if (path === "/tartans/") return { group: "tartan", slug: TARTAN_PRESETS[0].id };
   for (const tool of Object.keys(TOOL_OPTIONS) as ToolId[]) {
@@ -17,12 +23,16 @@ export function pathPicture(path: string): CardPicture | undefined {
     const option = TOOL_OPTIONS[tool].options.find(({ slug }) => optionPath(tool, slug) === path);
     if (option) return { group: tool, slug: option.slug };
   }
+  for (const [page, group] of CRAFT_PAGES) {
+    const slug = page.exec(path)?.[1];
+    if (slug) return { group, slug };
+  }
   return undefined;
 }
 
-/** A share card on the API, drawn when it's asked for. Patterns it can't draw get its default card. */
+/** A share card on the API, drawn when it's asked for. Pages with no pattern get its default card. */
 export function cardUrl(picture?: CardPicture): string {
-  return mazeApiUrl(picture && API_IMAGE_GROUPS.includes(picture.group) ? `/card/${picture.group}/${picture.slug}.png` : "/card/default.png");
+  return mazeApiUrl(picture ? `/card/${picture.group}/${picture.slug}.png` : "/card/default.png");
 }
 
 type Options = { openGraph?: { type: "article"; publishedTime: string }; picture?: CardPicture };

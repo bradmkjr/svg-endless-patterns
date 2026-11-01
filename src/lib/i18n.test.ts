@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import blog from "@/content/blog.json";
 import changelog from "@/content/changelog.json";
 import { CONTENT_TRANSLATIONS, formatDate, getChangelog, getPost, getPosts, sampleHref } from "./content";
-import { getBlock } from "./generator";
+import { getBlock } from "./patternCatalog";
 import { localePath, MESSAGES, pageAlternates, PREFIXED_LOCALES, stripLocale } from "./i18n";
 import { defaultState, palettesFor, parseState, serializeState } from "./state";
 import { defaultStitchState } from "./stitchState";

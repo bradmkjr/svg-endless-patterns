@@ -1,13 +1,15 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { generateStitchPattern, generateStitchPdf, type Locale, type StitchInfo, type StitchRequest, type StitchResult } from "@/lib/generator";
+import { useCallback, useEffect, useState } from "react";
+import { generateStitchPattern, generateStitchPdf, type Locale, type StitchInfo, type StitchRequest } from "@/lib/generator";
 import { fill, messages } from "@/lib/i18n";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { LENGTH_OPTIONS, PROJECTS, ROW_GAUGE_OPTIONS, serializeStitchState, SQUARE_SIZES, startingGauge, STITCH_GAUGE_OPTIONS, WIDTH_OPTIONS, YARN_WEIGHTS } from "@/lib/stitchState";
 import { PalettePicker } from "./PalettePicker";
 import { DEFAULT_KNIT_SQUARE, KNIT_SQUARE_SIZES } from "@/lib/generator";
 import { KnitSquarePattern, squareCopy } from "./KnitSquarePattern";
+import { useLiveResult } from "@/lib/useLiveResult";
+import { ToolLoading } from "./ToolLoading";
 import styles from "./BlockBuilder.module.css";
 
 type View = "swatch" | "chart";
@@ -25,12 +27,11 @@ function NumberSelect({ label, value, options, unit = "", onChange }: { label: s
   );
 }
 
-export function StitchBuilder({ stitch, locale, initialState, initialResult }: { stitch: StitchInfo; locale: Locale; initialState: StitchRequest; initialResult: StitchResult }) {
+export function StitchBuilder({ stitch, locale, initialState }: { stitch: StitchInfo; locale: Locale; initialState: StitchRequest }) {
   const all = messages(locale);
   const t = all.stitchBuilder;
   const b = all.builder;
   const [state, setState] = useState(initialState);
-  const [result, setResult] = useState(initialResult);
   const [view, setView] = useState<View>("swatch");
   const [weightId, setWeightId] = useState("worsted");
   const [status, setStatus] = useState("");
@@ -39,20 +40,8 @@ export function StitchBuilder({ stitch, locale, initialState, initialResult }: {
   const update = (patch: Partial<StitchRequest>) => setState((s) => ({ ...s, ...patch }));
   const weight = YARN_WEIGHTS.find((w) => w.id === weightId) ?? YARN_WEIGHTS[2];
 
-  useEffect(() => {
-    let stale = false;
-    generateStitchPattern(stitch.slug, state).then(
-      (next) => {
-        if (!stale) setResult(next);
-      },
-      () => {
-        if (!stale) setStatus(t.updateError);
-      },
-    );
-    return () => {
-      stale = true;
-    };
-  }, [stitch.slug, state, t.updateError]);
+  const generate = useCallback((request: StitchRequest) => generateStitchPattern(stitch.slug, request), [stitch.slug]);
+  const result = useLiveResult(generate, state, setStatus, t.updateError);
 
   useEffect(() => {
     const query = serializeStitchState(stitch, state);
@@ -72,10 +61,10 @@ export function StitchBuilder({ stitch, locale, initialState, initialResult }: {
     }
   };
 
-  const currentSvg = result.svg[view];
+  const currentSvg = result?.svg[view] ?? "";
   const fileBase = `${stitch.slug}-${view}`;
-  const swatchUrl = `data:image/svg+xml,${encodeURIComponent(result.svg.swatch)}`;
-  const swatchWidth = Number(/viewBox="0 0 ([\d.]+) /.exec(result.svg.swatch)?.[1] ?? 4);
+  const swatchUrl = `data:image/svg+xml,${encodeURIComponent(result?.svg.swatch ?? "")}`;
+  const swatchWidth = Number(/viewBox="0 0 ([\d.]+) /.exec(result?.svg.swatch ?? "")?.[1] ?? 4);
   const tool = stitch.craft === "knit" ? fill(t.needles, { tool: weight.needle }) : fill(t.hook, { tool: weight.hook });
 
   return (
@@ -90,7 +79,9 @@ export function StitchBuilder({ stitch, locale, initialState, initialResult }: {
               {t.chart}
             </button>
           </div>
-          {view === "swatch" ? (
+          {!result ? (
+            <ToolLoading locale={locale} />
+          ) : view === "swatch" ? (
             <div
               className={styles.tile}
               style={{ backgroundImage: `url("${swatchUrl}")`, backgroundSize: `${(swatchWidth / 4) * 100}% auto` }}
@@ -107,10 +98,10 @@ export function StitchBuilder({ stitch, locale, initialState, initialResult }: {
             <button type="button" disabled={busy} className={styles.primary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateStitchPdf(stitch.slug, state), `${stitch.slug}-pattern.pdf`, "application/pdf"))}>
               {b.downloadPdf}
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(currentSvg, `${fileBase}.svg`))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(currentSvg, `${fileBase}.svg`))}>
               SVG
             </button>
-            <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, () => downloadPng(currentSvg, `${fileBase}.png`))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.pngMaking, b.pngDone, () => downloadPng(currentSvg, `${fileBase}.png`))}>
               PNG
             </button>
             <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(b.copying, b.copied, () => navigator.clipboard.writeText(window.location.href))}>
@@ -191,6 +182,8 @@ export function StitchBuilder({ stitch, locale, initialState, initialResult }: {
         <strong>{t.swatchFirstTitle}</strong> {t.swatchFirstText}
       </p>
 
+      {result && (
+      <>
       {result.square && <KnitSquarePattern square={result.square} locale={locale} />}
 
       <div className={styles.results}>
@@ -273,6 +266,8 @@ export function StitchBuilder({ stitch, locale, initialState, initialResult }: {
           <p className={styles.note}>{t.roundNote}</p>
         </section>
       </div>
+      </>
+      )}
     </div>
   );
 }

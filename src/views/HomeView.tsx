@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { BlockGrid } from "@/components/BlockGrid";
 import { StitchGrid } from "@/components/StitchGrid";
-import { generatePattern, getBlock, getBlocks, getStitchPatterns, type Locale } from "@/lib/generator";
+import type { Locale } from "@/lib/generator";
+import { getBlocks, getStitchPatterns } from "@/lib/patternCatalog";
 import { fill, localePath, messages } from "@/lib/i18n";
 import { libraryTypes } from "@/lib/libraryTools";
 import { pageMetadata } from "@/lib/pageMetadata";
 import { SITE_NAME } from "@/lib/site";
-import { defaultState } from "@/lib/state";
+import { thumbSrc } from "@/lib/toolOptions";
 import styles from "./HomeView.module.css";
 
 /** Patterns shown per craft: the rest are a click away. */
@@ -25,16 +26,6 @@ export async function HomeView({ locale }: { locale: Locale }) {
   const knitting = await getStitchPatterns("knit", locale);
   const crochet = await getStitchPatterns("crochet", locale);
   const types = await libraryTypes(locale);
-  const logCabin = (await getBlock("log-cabin", locale))!;
-  const hero = await generatePattern(logCabin.slug, {
-    ...defaultState(logCabin, locale),
-    size: 10.5,
-    cols: 4,
-    rows: 4,
-    border: 0,
-    setting: "quadrants",
-    seams: true,
-  });
 
   return (
     <>
@@ -46,7 +37,10 @@ export async function HomeView({ locale }: { locale: Locale }) {
             {t.cta}
           </Link>
         </div>
-        <div className={`art ${styles.quilt}`} dangerouslySetInnerHTML={{ __html: hero.svg.quilt }} />
+        <div className={`art ${styles.quilt}`}>
+          {/* eslint-disable-next-line @next/next/no-img-element -- a standard image tag from the API */}
+          <img src={thumbSrc("blocks", "log-cabin-layout")} alt="" width={1000} height={1000} />
+        </div>
       </section>
 
       <section className={styles.band}>

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import blog from "@/content/blog.json";
-import { getBlock, getBlocks, getStitchPattern, getStitchPatterns } from "./generator";
+import { getBlock, getBlocks, getStitchPattern, getStitchPatterns } from "./patternCatalog";
 import { getChangelog, getPosts, sampleHref, type PostSample } from "./content";
 import { PREFIXED_LOCALES } from "./i18n";
 import { optionPath, TOOL_OPTIONS, type ToolId } from "./toolOptions";

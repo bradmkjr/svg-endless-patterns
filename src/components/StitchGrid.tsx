@@ -1,23 +1,20 @@
 import Link from "next/link";
-import { generateStitchPattern, type Locale, type StitchInfo } from "@/lib/generator";
+import type { Locale, StitchInfo } from "@/lib/generator";
 import { localePath } from "@/lib/i18n";
-import { CRAFT_PATHS, defaultStitchState } from "@/lib/stitchState";
+import { CRAFT_PATHS } from "@/lib/stitchState";
+import { thumbSrc } from "@/lib/toolOptions";
 import styles from "./BlockGrid.module.css";
 
-export async function StitchGrid({ stitches, locale }: { stitches: StitchInfo[]; locale: Locale }) {
-  const cards = await Promise.all(
-    stitches.map(async (stitch) => {
-      const { swatch } = (await generateStitchPattern(stitch.slug, defaultStitchState(stitch, locale))).svg;
-      return { stitch, url: `data:image/svg+xml,${encodeURIComponent(swatch)}`, size: /viewBox="0 0 ([\d.]+) /.exec(swatch)![1] };
-    }),
-  );
+export function StitchGrid({ stitches, locale }: { stitches: StitchInfo[]; locale: Locale }) {
   return (
     <ul className={styles.grid}>
-      {cards.map(({ stitch, url, size }) => (
+      {stitches.map((stitch) => (
         <li key={stitch.slug}>
           <Link href={localePath(locale, `${CRAFT_PATHS[stitch.craft]}/${stitch.slug}/`)} className={styles.card}>
-            {/* Every card shows 4" of fabric, so scales compare directly. */}
-            <span className={styles.art} style={{ aspectRatio: "1", backgroundImage: `url("${url}")`, backgroundSize: `${(Number(size) / 4) * 100}% auto` }} />
+            <span className={`art ${styles.art}`}>
+              {/* eslint-disable-next-line @next/next/no-img-element -- a small file, loaded as it nears the screen */}
+              <img src={thumbSrc(stitch.craft, stitch.slug)} alt="" loading="lazy" width={200} height={200} />
+            </span>
             <span className={styles.name}>{stitch.name}</span>
             <span className={styles.level}>{stitch.level}</span>
           </Link>

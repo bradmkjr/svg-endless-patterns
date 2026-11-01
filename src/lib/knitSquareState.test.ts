@@ -1,5 +1,7 @@
 import { describe, expect, it } from "vitest";
-import { DEFAULT_KNIT_SQUARE, generateStitchPattern, getStitchPattern, KNIT_SQUARE_SIZES } from "./generator";
+import uiText from "@/i18n/messages/knitSquare.json";
+import { DEFAULT_KNIT_SQUARE, KNIT_SQUARE_SIZES } from "./generator";
+import { getStitchPattern } from "./patternCatalog";
 import { defaultStitchState, parseStitchState, serializeStitchState, YARN_WEIGHTS } from "./stitchState";
 
 const knit = (await getStitchPattern("knit", "seed-stitch"))!;
@@ -31,13 +33,9 @@ describe("square size in the share link", () => {
   });
 });
 
-describe("the square's yarn and needles", () => {
-  it("agree with the builder's yarn weights", async () => {
-    for (const weight of YARN_WEIGHTS) {
-      const [stitchGauge, rowGauge] = weight.knit;
-      const { square } = await generateStitchPattern(knit.slug, { width: 8, length: 8, color: "#000000", stitchGauge, rowGauge });
-      expect(square?.weightId).toBe(weight.id);
-      expect(square?.needle.startsWith(weight.needle.replace("–", "-"))).toBe(true);
-    }
+describe("the square's builder text", () => {
+  it.each(["es", "fr", "de", "pt"] as const)("has every key in %s", (locale) => {
+    expect(Object.keys(uiText[locale]).sort()).toEqual(Object.keys(uiText.en).sort());
+    for (const [key, value] of Object.entries(uiText[locale])) expect(value, key).toBeTruthy();
   });
 });

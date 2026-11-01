@@ -1,5 +1,5 @@
 import type { Locale } from "./generator";
-import { getBlocks, getStitchPatterns } from "./generator";
+import { getBlocks, getStitchPatterns } from "./patternCatalog";
 import { localePath, messages } from "./i18n";
 import { serializeTartanState, defaultTartanState, TARTAN_PRESETS } from "./tartanState";
 import { optionHref, thumbSrc, TOOL_OPTIONS, type ThumbGroup, type ToolId } from "./toolOptions";

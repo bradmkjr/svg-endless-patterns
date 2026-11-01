@@ -9,7 +9,7 @@ describe.each(["", "1"])("the main image (internal API flag=%s)", (flag) => {
   it("is a PNG on the public API, loaded when requested", () => {
     vi.stubEnv("NEXT_PUBLIC_PRERENDERED_IMAGES", flag);
     expect(primaryImageSrc("truchet", "arcs")).toMatch(/\/api\/v1\.0\.1\/preview\/truchet\/arcs\.png\?size=1200$/);
-    expect(primaryImageSrc("blocks", "log-cabin")).toBeNull();
+    expect(primaryImageSrc("blocks", "log-cabin")).toMatch(/\/preview\/blocks\/log-cabin\.png\?size=1200$/);
   });
 });
 
@@ -18,7 +18,7 @@ describe("small pictures", () => {
     vi.stubEnv("NEXT_PUBLIC_PRERENDERED_IMAGES", "1");
     expect(thumbSrc("truchet", "arcs")).toBe("/previews/truchet/arcs.svg");
     expect(thumbSrc("maze", "circle")).toBe("/previews/maze/circle.svg");
-    expect(thumbSrc("blocks", "log-cabin")).toContain("/thumbs/blocks/log-cabin.svg");
+    expect(thumbSrc("blocks", "log-cabin")).toBe("/previews/blocks/log-cabin.svg");
   });
 
   it("are SVGs from the public API without one", () => {

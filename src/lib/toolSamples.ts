@@ -23,13 +23,27 @@ import { generateTruchet } from "./generator";
 import { parseTruchetState } from "./truchetState";
 import { generateLife } from "./generator";
 import { parseLifeState } from "./lifeState";
-import type { Locale } from "./generator";
+import { generatePattern, generateStitchPattern, type Craft, type Locale } from "./generator";
+import { parseState } from "./state";
+import { parseStitchState } from "./stitchState";
 
 type Svgs = { svg: Record<string, string> };
-type Draw = (params: URLSearchParams, locale: Locale) => Promise<Svgs>;
+type Draw = (params: URLSearchParams, locale: Locale, slug: string) => Promise<Svgs>;
+
+/** Loaded on demand: most pages with samples never need the catalog. */
+async function drawStitch(craft: Craft, params: URLSearchParams, locale: Locale, slug: string): Promise<Svgs> {
+  const { getStitchPattern } = await import("./patternCatalog");
+  return generateStitchPattern(slug, parseStitchState((await getStitchPattern(craft, slug, locale))!, params, locale));
+}
 
 /** Blog samples whose pictures come from the API, drawn in the reader's browser. */
 const DRAW: Partial<Record<PostSample["kind"], Draw>> = {
+  block: async (p, locale, slug) => {
+    const { getBlock } = await import("./patternCatalog");
+    return generatePattern(slug, parseState((await getBlock(slug, locale))!, p, locale));
+  },
+  knit: (p, locale, slug) => drawStitch("knit", p, locale, slug),
+  crochet: (p, locale, slug) => drawStitch("crochet", p, locale, slug),
   life: async (p, locale) => generateLife(parseLifeState(p, locale)),
   truchet: async (p, locale) => generateTruchet(parseTruchetState(p, locale)),
   tartan: async (p, locale) => generateTartan(parseTartanState(p, locale)),
@@ -47,6 +61,6 @@ const DRAW: Partial<Record<PostSample["kind"], Draw>> = {
 export const isApiSample = (sample: PostSample) => sample.kind in DRAW;
 
 export async function drawSample(sample: PostSample, locale: Locale): Promise<string> {
-  const { svg } = await DRAW[sample.kind]!(new URLSearchParams(sample.query), locale);
+  const { svg } = await DRAW[sample.kind]!(new URLSearchParams(sample.query), locale, sample.slug);
   return svg[sample.view ?? "swatch"];
 }

@@ -1,11 +1,6 @@
-/**
- * The generation contract. Everything here is plain JSON, so these same shapes
- * can become the request and response bodies of a backend API.
- */
+/** The JSON the API's `/quilt-block` and `/stitch` routes take and return. */
 
-import type { Locale } from "./i18n";
-
-export type { Locale };
+export type Locale = "en" | "es" | "fr" | "de" | "pt";
 
 export type Setting = "straight" | "alternate" | "quadrants";
 

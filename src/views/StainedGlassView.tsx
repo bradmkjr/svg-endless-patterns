@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { StainedGlassBuilderRoute } from "@/components/StainedGlassBuilderRoute";
+import { StaticPreview } from "@/components/StaticPreview";
+import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
 import type { Locale } from "@/lib/generator";
 import { optionLabels } from "@/lib/toolPages";
 import { pageAlternates } from "@/lib/i18n";
@@ -7,7 +9,8 @@ import text from "@/i18n/messages/stainedGlass.json";
 
 export function stainedGlassMetadata(locale: Locale): Metadata {
   const t = text[locale];
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/stained-glass/") };
+  const openGraph = previewOpenGraph("stainedGlass", OPENING_OPTION.stainedGlass, t.metaTitle, t.metaDesc);
+  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/stained-glass/"), ...(openGraph ? { openGraph } : {}) };
 }
 
 export async function StainedGlassView({ locale, option }: { locale: Locale; option?: string }) {
@@ -20,6 +23,7 @@ export async function StainedGlassView({ locale, option }: { locale: Locale; opt
         {t.lede}
       </p>
       <StainedGlassBuilderRoute option={option} labels={labels} locale={locale} />
+      <StaticPreview group="stainedGlass" slug={option ?? OPENING_OPTION.stainedGlass} name={labels[option ?? OPENING_OPTION.stainedGlass]} locale={locale} />
     </div>
   );
 }

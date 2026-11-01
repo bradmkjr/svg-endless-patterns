@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { StaticPreview } from "@/components/StaticPreview";
+import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
 import { KnitColorworkBuilderRoute } from "@/components/KnitColorworkBuilderRoute";
 import { References } from "@/components/References";
 import copy from "@/i18n/messages/knitColorwork.json";
@@ -9,7 +11,8 @@ import { optionLabels } from "@/lib/toolPages";
 
 export function knitColorworkMetadata(locale: Locale): Metadata {
   const t = copy[locale];
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/knitting/colorwork/") };
+  const openGraph = previewOpenGraph("knitColorwork", OPENING_OPTION.knitColorwork, t.metaTitle, t.metaDesc);
+  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/knitting/colorwork/"), ...(openGraph ? { openGraph } : {}) };
 }
 
 export async function KnitColorworkView({ locale, option }: { locale: Locale; option?: string }) {
@@ -25,6 +28,7 @@ export async function KnitColorworkView({ locale, option }: { locale: Locale; op
         {t.lede}
       </p>
       <KnitColorworkBuilderRoute option={option} labels={labels} locale={locale} />
+      <StaticPreview group="knitColorwork" slug={option ?? OPENING_OPTION.knitColorwork} name={labels[option ?? OPENING_OPTION.knitColorwork]} locale={locale} />
       <References ids={["walkerMosaic"]} locale={locale} />
     </div>
   );

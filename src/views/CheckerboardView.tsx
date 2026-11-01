@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { CheckerboardBuilderRoute } from "@/components/CheckerboardBuilderRoute";
+import { StaticPreview } from "@/components/StaticPreview";
+import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
 import copy from "@/i18n/messages/checkerboard.json";
 import type { Locale } from "@/lib/generator";
 import { pageAlternates } from "@/lib/i18n";
@@ -7,7 +9,8 @@ import { optionLabels } from "@/lib/toolPages";
 
 export function checkerboardMetadata(locale: Locale): Metadata {
   const t = copy[locale];
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/checkerboards/") };
+  const openGraph = previewOpenGraph("checkerboard", OPENING_OPTION.checkerboard, t.metaTitle, t.metaDesc);
+  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/checkerboards/"), ...(openGraph ? { openGraph } : {}) };
 }
 
 export async function CheckerboardView({ locale, option }: { locale: Locale; option?: string }) {
@@ -20,6 +23,7 @@ export async function CheckerboardView({ locale, option }: { locale: Locale; opt
         {t.lede}
       </p>
       <CheckerboardBuilderRoute option={option} labels={labels} locale={locale} />
+      <StaticPreview group="checkerboard" slug={option ?? OPENING_OPTION.checkerboard} name={labels[option ?? OPENING_OPTION.checkerboard]} locale={locale} />
     </div>
   );
 }

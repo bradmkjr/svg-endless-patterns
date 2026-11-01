@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { StaticPreview } from "@/components/StaticPreview";
+import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
 import { CrossStitchBuilderRoute } from "@/components/CrossStitchBuilderRoute";
 import catalog from "@/i18n/messages/crossStitch.json";
 import type { Locale } from "@/lib/generator";
@@ -8,7 +10,8 @@ import { localePath, pageAlternates } from "@/lib/i18n";
 
 export function crossStitchMetadata(locale: Locale): Metadata {
   const t = catalog[locale];
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/cross-stitch/") };
+  const openGraph = previewOpenGraph("crossStitch", OPENING_OPTION.crossStitch, t.metaTitle, t.metaDesc);
+  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/cross-stitch/"), ...(openGraph ? { openGraph } : {}) };
 }
 
 export async function CrossStitchView({ locale, option }: { locale: Locale; option?: string }) {
@@ -21,6 +24,7 @@ export async function CrossStitchView({ locale, option }: { locale: Locale; opti
         {t.lede} {t.otherText} <Link href={localePath(locale, "/needlepoint/")}>{t.otherLink}</Link>
       </p>
       <CrossStitchBuilderRoute option={option} labels={labels} locale={locale} />
+      <StaticPreview group="crossStitch" slug={option ?? OPENING_OPTION.crossStitch} name={labels[option ?? OPENING_OPTION.crossStitch]} locale={locale} />
     </div>
   );
 }

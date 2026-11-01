@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { References } from "@/components/References";
+import { StaticPreview } from "@/components/StaticPreview";
+import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
 import { TruchetBuilderRoute } from "@/components/TruchetBuilderRoute";
 import type { Locale } from "@/lib/generator";
 import { optionLabels } from "@/lib/toolPages";
@@ -8,7 +10,8 @@ import copy from "@/i18n/messages/truchet.json";
 
 export function truchetMetadata(locale: Locale): Metadata {
   const t = copy[locale];
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/truchet/") };
+  const openGraph = previewOpenGraph("truchet", OPENING_OPTION.truchet, t.metaTitle, t.metaDesc);
+  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/truchet/"), ...(openGraph ? { openGraph } : {}) };
 }
 
 export async function TruchetView({ locale, option }: { locale: Locale; option?: string }) {
@@ -21,6 +24,7 @@ export async function TruchetView({ locale, option }: { locale: Locale; option?:
         {t.lede}
       </p>
       <TruchetBuilderRoute option={option} labels={labels} locale={locale} />
+      <StaticPreview group="truchet" slug={option ?? OPENING_OPTION.truchet} name={labels[option ?? OPENING_OPTION.truchet]} locale={locale} />
       <References ids={["truchet"]} locale={locale} />
     </div>
   );

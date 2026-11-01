@@ -1,6 +1,6 @@
 import type { Post } from "./content";
 import { TARTAN_PRESETS } from "./tartanState";
-import { thumbSrc, TOOL_OPTIONS, type ToolId } from "./toolOptions";
+import { OPENING_OPTION, thumbSrc, TOOL_OPTIONS, type ToolId } from "./toolOptions";
 
 /**
  * A post's featured image is the thumbnail of its first sample's pattern. Thumbnails are
@@ -10,8 +10,6 @@ import { thumbSrc, TOOL_OPTIONS, type ToolId } from "./toolOptions";
 
 /** Which thumbnails a sample kind uses, when its name differs from the tool's. */
 const TOOLS: Record<string, ToolId> = { celtic: "celticKnot" };
-/** The choice a tool opens with, for a sample whose link leaves it out. */
-const OPENING: Record<ToolId, string> = { truchet: "arcs", tessellation: "p4", girih: "10-fold", sashiko: "asanoha", celticKnot: "mirror", stainedGlass: "rose", crossStitch: "rosette", needlepoint: "kilim", tieDye: "spiral", maze: "square", fractal: "dragon-curve", knitColorwork: "little-pines", crochetColorwork: "diamond-lattice", checkerboard: "checker", mandala: "12-fold" };
 const FALLBACK = thumbSrc("blocks", "log-cabin");
 
 type Sample = Extract<Post["body"][number], { type: "samples" }>["items"][number];
@@ -23,7 +21,7 @@ function sampleImage(sample: Sample): string {
   const tool = TOOLS[sample.kind] ?? (sample.kind as ToolId);
   const { param, options } = TOOL_OPTIONS[tool];
   const value = new URLSearchParams(sample.query).get(param);
-  return thumbSrc(tool, options.find((option) => option.value === value)?.slug ?? OPENING[tool]);
+  return thumbSrc(tool, options.find((option) => option.value === value)?.slug ?? OPENING_OPTION[tool]);
 }
 
 export function postImage(post: Pick<Post, "body">): string {

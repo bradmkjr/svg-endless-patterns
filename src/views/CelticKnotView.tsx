@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { CelticKnotBuilderRoute } from "@/components/CelticKnotBuilderRoute";
+import { StaticPreview } from "@/components/StaticPreview";
+import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
 import celticText from "@/i18n/messages/celticKnot.json";
 import type { Locale } from "@/lib/generator";
 import { optionLabels } from "@/lib/toolPages";
@@ -7,7 +9,8 @@ import { pageAlternates } from "@/lib/i18n";
 
 export function celticKnotMetadata(locale: Locale): Metadata {
   const t = celticText[locale];
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/celtic-knots/") };
+  const openGraph = previewOpenGraph("celticKnot", OPENING_OPTION.celticKnot, t.metaTitle, t.metaDesc);
+  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/celtic-knots/"), ...(openGraph ? { openGraph } : {}) };
 }
 
 export async function CelticKnotView({ locale, option }: { locale: Locale; option?: string }) {
@@ -20,6 +23,7 @@ export async function CelticKnotView({ locale, option }: { locale: Locale; optio
         {t.lede}
       </p>
       <CelticKnotBuilderRoute option={option} labels={labels} locale={locale} />
+      <StaticPreview group="celticKnot" slug={option ?? OPENING_OPTION.celticKnot} name={labels[option ?? OPENING_OPTION.celticKnot]} locale={locale} />
     </div>
   );
 }

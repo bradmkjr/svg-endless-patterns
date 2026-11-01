@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { MandalaBuilderRoute } from "@/components/MandalaBuilderRoute";
+import { StaticPreview } from "@/components/StaticPreview";
+import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
 import mandalaText from "@/i18n/messages/mandala.json";
 import type { Locale } from "@/lib/generator";
 import { optionLabels } from "@/lib/toolPages";
@@ -7,7 +9,8 @@ import { pageAlternates } from "@/lib/i18n";
 
 export function mandalaMetadata(locale: Locale): Metadata {
   const t = mandalaText[locale];
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/mandalas/") };
+  const openGraph = previewOpenGraph("mandala", OPENING_OPTION.mandala, t.metaTitle, t.metaDesc);
+  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/mandalas/"), ...(openGraph ? { openGraph } : {}) };
 }
 
 export async function MandalaView({ locale, option }: { locale: Locale; option?: string }) {
@@ -20,6 +23,7 @@ export async function MandalaView({ locale, option }: { locale: Locale; option?:
         {t.lede}
       </p>
       <MandalaBuilderRoute option={option} labels={labels} locale={locale} />
+      <StaticPreview group="mandala" slug={option ?? OPENING_OPTION.mandala} name={labels[option ?? OPENING_OPTION.mandala]} locale={locale} />
     </div>
   );
 }

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { References } from "@/components/References";
+import { StaticPreview } from "@/components/StaticPreview";
+import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
 import { GirihBuilderRoute } from "@/components/GirihBuilderRoute";
 import type { Locale } from "@/lib/generator";
 import { optionLabels } from "@/lib/toolPages";
@@ -8,7 +10,8 @@ import text from "@/i18n/messages/girih.json";
 
 export function girihMetadata(locale: Locale): Metadata {
   const t = text[locale];
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/girih/") };
+  const openGraph = previewOpenGraph("girih", OPENING_OPTION.girih, t.metaTitle, t.metaDesc);
+  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/girih/"), ...(openGraph ? { openGraph } : {}) };
 }
 
 export async function GirihView({ locale, option }: { locale: Locale; option?: string }) {
@@ -21,6 +24,7 @@ export async function GirihView({ locale, option }: { locale: Locale; option?: s
         {t.lede}
       </p>
       <GirihBuilderRoute option={option} labels={labels} locale={locale} />
+      <StaticPreview group="girih" slug={option ?? OPENING_OPTION.girih} name={labels[option ?? OPENING_OPTION.girih]} locale={locale} />
       <References ids={["girih"]} locale={locale} />
     </div>
   );

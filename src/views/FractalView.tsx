@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { FractalBuilderRoute } from "@/components/FractalBuilderRoute";
+import { StaticPreview } from "@/components/StaticPreview";
+import { OPENING_OPTION, previewOpenGraph } from "@/lib/toolOptions";
 import { References } from "@/components/References";
 import copy from "@/i18n/messages/fractal.json";
 import type { Locale } from "@/lib/generator";
@@ -8,7 +10,8 @@ import { optionLabels } from "@/lib/toolPages";
 
 export function fractalMetadata(locale: Locale): Metadata {
   const t = copy[locale];
-  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/fractals/") };
+  const openGraph = previewOpenGraph("fractal", OPENING_OPTION.fractal, t.metaTitle, t.metaDesc);
+  return { title: t.metaTitle, description: t.metaDesc, alternates: pageAlternates(locale, "/fractals/"), ...(openGraph ? { openGraph } : {}) };
 }
 
 export async function FractalView({ locale, option }: { locale: Locale; option?: string }) {
@@ -21,6 +24,7 @@ export async function FractalView({ locale, option }: { locale: Locale; option?:
         {t.lede}
       </p>
       <FractalBuilderRoute option={option} labels={labels} locale={locale} />
+      <StaticPreview group="fractal" slug={option ?? OPENING_OPTION.fractal} name={labels[option ?? OPENING_OPTION.fractal]} locale={locale} />
       <References ids={["mandelbrot", "koch", "sierpinski", "hilbert", "levy"]} locale={locale} />
     </div>
   );

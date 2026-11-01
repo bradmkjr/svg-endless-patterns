@@ -5,7 +5,6 @@ import { useSearchParams } from "next/navigation";
 import type { Locale } from "@/lib/generator";
 import { parseMazeState } from "@/lib/mazeState";
 import { storedSeed, withOption } from "@/lib/toolOptions";
-import { ToolLoading } from "./ToolLoading";
 import { MazeBuilder } from "./MazeBuilder";
 
 function FromShareLink({ locale, option, labels }: { locale: Locale; option?: string; labels: Record<string, string> }) {
@@ -16,7 +15,7 @@ function FromShareLink({ locale, option, labels }: { locale: Locale; option?: st
 /** Share-link settings are read after hydration; the API builds the first maze in the browser. */
 export function MazeBuilderRoute({ locale, option, labels }: { locale: Locale; option?: string; labels: Record<string, string> }) {
   return (
-    <Suspense key={option} fallback={<ToolLoading locale={locale} />}>
+    <Suspense key={option} fallback={<MazeBuilder locale={locale} option={option} labels={labels} initialState={parseMazeState(withOption("maze", option), locale)} />}>
       <FromShareLink locale={locale} option={option} labels={labels} />
     </Suspense>
   );

@@ -260,7 +260,7 @@
       },
       "maze": {
         "title": "Labyrinthes",
-        "text": "Générez un labyrinthe avec un seul chemin possible, en carré, rectangle, cercle ou hexagone, à partir de cinq algorithmes différents.",
+        "text": "Générez un labyrinthe avec un seul chemin possible, en carré, rectangle, cercle, hexagone, triangle ou losange, à partir de cinq algorithmes différents.",
         "output": "PDF à imprimer avec la solution sur une page à part, ainsi que SVG et PNG du labyrinthe et de sa solution.",
         "explore": "Créer un labyrinthe"
       },
@@ -284,7 +284,7 @@
       },
       "checkerboard": {
         "title": "Damiers",
-        "text": "Réglez les rangées, les colonnes, les couleurs et la forme des cases, du damier standard aux briques 3:1.",
+        "text": "Réglez les rangées, les colonnes, les couleurs et la forme des cases, du damier standard aux briques 3:1, nids d'abeille et triangles.",
         "output": "SVG et PNG, raccord continu, tailles finales, nombre d'éléments et PDF imprimable.",
         "explore": "Créer un damier"
       }

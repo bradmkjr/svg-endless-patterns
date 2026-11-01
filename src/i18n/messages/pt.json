@@ -260,7 +260,7 @@
       },
       "maze": {
         "title": "Labirintos",
-        "text": "Gere um labirinto com um único caminho possível, em quadrado, retângulo, círculo ou hexágono, com cinco algoritmos diferentes.",
+        "text": "Gere um labirinto com um único caminho possível, em quadrado, retângulo, círculo, hexágono, triângulo ou losango, com cinco algoritmos diferentes.",
         "output": "PDF para imprimir com a solução em outra página, além de SVG e PNG do labirinto e da solução.",
         "explore": "Criar um labirinto"
       },
@@ -284,7 +284,7 @@
       },
       "checkerboard": {
         "title": "Xadrez",
-        "text": "Defina linhas, colunas, cores e a forma das casas, do padrão a tijolos 3:1.",
+        "text": "Defina linhas, colunas, cores e a forma das casas, do padrão a tijolos 3:1, favos de mel e triângulos.",
         "output": "SVG e PNG, repetição contínua, tamanhos finais, contagem de peças e PDF para imprimir.",
         "explore": "Criar um xadrez"
       }

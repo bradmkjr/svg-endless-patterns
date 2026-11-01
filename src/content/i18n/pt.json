@@ -521,6 +521,13 @@
     }
   },
   "changelog": {
+    "More checkerboards and mazes": {
+      "title": "Mais xadrezes e labirintos",
+      "items": [
+        "Adicionados xadrezes de favo de mel e de triângulos, com hexágonos e triângulos reais no tabuleiro, na repetição e no PDF",
+        "Adicionados labirintos em triângulo e em losango, com todos os algoritmos, o PDF de pôster e o PNG"
+      ]
+    },
     "Checkerboard maker": {
       "title": "Gerador de xadrez",
       "items": [

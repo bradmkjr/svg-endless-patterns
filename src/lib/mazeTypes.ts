@@ -1,4 +1,4 @@
-export type MazeShape = "square" | "rectangle" | "circle" | "hexagon";
+export type MazeShape = "square" | "rectangle" | "circle" | "hexagon" | "triangle" | "diamond";
 export type MazeAlgorithm = "backtracker" | "prim" | "kruskal" | "wilson" | "binaryTree";
 export type MazeDifficulty = "easy" | "medium" | "hard" | "expert" | "master" | "extreme";
 export type MazePaperId = "ansiC" | "ansiD" | "ansiE" | "a3" | "a2" | "a1" | "a0" | "2a0" | "4a0";

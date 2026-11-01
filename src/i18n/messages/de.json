@@ -260,7 +260,7 @@
       },
       "maze": {
         "title": "Labyrinthe",
-        "text": "Erstelle ein Labyrinth mit genau einem Weg hindurch, als Quadrat, Rechteck, Kreis oder Sechseck, mit fünf verschiedenen Algorithmen.",
+        "text": "Erstelle ein Labyrinth mit genau einem Weg hindurch, als Quadrat, Rechteck, Kreis, Sechseck, Dreieck oder Raute, mit fünf verschiedenen Algorithmen.",
         "output": "Druckbares PDF mit separater Lösungsseite sowie SVG und PNG des Labyrinths und seiner Lösung.",
         "explore": "Labyrinth erstellen"
       },
@@ -284,7 +284,7 @@
       },
       "checkerboard": {
         "title": "Schachbrettmuster",
-        "text": "Legen Sie Reihen, Spalten, Farben und Feldform fest, vom Standardbrett bis zu 3:1-Ziegeln.",
+        "text": "Legen Sie Reihen, Spalten, Farben und Feldform fest, vom Standardbrett bis zu 3:1-Ziegeln, Waben und Dreiecken.",
         "output": "SVG und PNG, nahtloser Rapport, fertige Größen, Teileanzahl und druckbares PDF.",
         "explore": "Muster erstellen"
       }

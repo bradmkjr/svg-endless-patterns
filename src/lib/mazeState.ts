@@ -4,7 +4,7 @@ import type { MazeAlgorithm, MazeColors, MazeDifficulty, MazeRequest, MazeShape,
 
 /** The maze builder's options, default colors and share links. */
 
-export const SHAPE_OPTIONS: MazeShape[] = ["square", "rectangle", "circle", "hexagon"];
+export const SHAPE_OPTIONS: MazeShape[] = ["square", "rectangle", "circle", "hexagon", "triangle", "diamond"];
 export const ALGORITHM_OPTIONS: MazeAlgorithm[] = ["backtracker", "prim", "kruskal", "wilson", "binaryTree"];
 export const DIFFICULTY_OPTIONS: MazeDifficulty[] = ["easy", "medium", "hard", "expert", "master", "extreme"];
 export const WEIGHT_OPTIONS = [6, 10, 15, 20, 30, 40];

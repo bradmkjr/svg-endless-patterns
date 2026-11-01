@@ -5,7 +5,7 @@ import { generateCheckerboard, generateCheckerboardPdf, type CheckerboardRequest
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { fill, messages } from "@/lib/i18n";
 import copy from "@/i18n/messages/checkerboard.json";
-import { COUNT_OPTIONS, MAX_COLORS, MIN_COLORS, PATTERN_OPTIONS, RATIO_OPTIONS, RATIO_PRESETS, serializeCheckerboardState, spareColor, UNIT_OPTIONS } from "@/lib/checkerboardState";
+import { boardAspect, COUNT_OPTIONS, isShapePattern, maxColors, MIN_COLORS, PATTERN_OPTIONS, RATIO_OPTIONS, RATIO_PRESETS, serializeCheckerboardState, spareColor, UNIT_OPTIONS } from "@/lib/checkerboardState";
 import { syncShareLink } from "@/lib/toolOptions";
 import { OptionNav, useOptionNavigation } from "./OptionNav";
 import { PalettePicker } from "./PalettePicker";
@@ -81,7 +81,8 @@ export function CheckerboardBuilder({ locale, option, labels, initialState }: { 
 
   const svg = result?.svg[view] ?? "";
   const gingham = state.pattern === "gingham";
-  const shownColors = gingham ? state.colors.slice(0, 2) : state.colors;
+  const colorLimit = maxColors(state.pattern);
+  const shownColors = state.colors.slice(0, colorLimit);
 
   return (
     <div className={styles.builder}>
@@ -95,7 +96,7 @@ export function CheckerboardBuilder({ locale, option, labels, initialState }: { 
               </button>
             ))}
           </div>
-          {result ? <div className={`art ${styles.art}`} role="img" aria-label={t.views[view]} dangerouslySetInnerHTML={{ __html: svg }} /> : <div className={`art ${styles.art}`} style={{ aspectRatio: `${state.cols * state.ratioWidth} / ${state.rows * state.ratioHeight}` }} aria-busy="true" />}
+          {result ? <div className={`art ${styles.art}`} role="img" aria-label={t.views[view]} dangerouslySetInnerHTML={{ __html: svg }} /> : <div className={`art ${styles.art}`} style={{ aspectRatio: boardAspect(state) }} aria-busy="true" />}
           <p className={styles.note}>{t.viewNotes[view]}</p>
           {result && <p className={styles.note}>{fill(t.stats, { w: result.finished.width, h: result.finished.height, bw: result.box.width, bh: result.box.height })}</p>}
           {result && <p className={styles.note}>{result.counts.map((count, i) => fill(t.count, { n: i + 1, boxes: count.boxes })).join(" · ")}</p>}
@@ -139,7 +140,8 @@ export function CheckerboardBuilder({ locale, option, labels, initialState }: { 
           </fieldset>
 
           <fieldset>
-            <legend>{t.boxShape}</legend>
+            <legend>{isShapePattern(state.pattern) ? t.stretch : t.boxShape}</legend>
+            {isShapePattern(state.pattern) && <p className={styles.note}>{t.stretchNote}</p>}
             <div className={styles.presets}>
               {RATIO_PRESETS.map(([w, h]) => {
                 const on = state.ratioWidth === w && state.ratioHeight === h;
@@ -171,14 +173,17 @@ export function CheckerboardBuilder({ locale, option, labels, initialState }: { 
             {gingham ? (
               <p className={styles.note}>{t.ginghamNote}</p>
             ) : (
-              <div className={styles.actions}>
-                <button type="button" className={styles.tab} disabled={state.colors.length >= MAX_COLORS} onClick={() => update({ colors: [...state.colors, spareColor(state.colors.length)] })}>
-                  {t.add}
-                </button>
-                <button type="button" className={styles.tab} disabled={state.colors.length <= MIN_COLORS} onClick={() => update({ colors: state.colors.slice(0, -1) })}>
-                  {t.remove}
-                </button>
-              </div>
+              <>
+                {state.pattern === "hexagon" && <p className={styles.note}>{t.hexagonNote}</p>}
+                <div className={styles.actions}>
+                  <button type="button" className={styles.tab} disabled={shownColors.length >= colorLimit} onClick={() => update({ colors: [...shownColors, spareColor(shownColors.length)] })}>
+                    {t.add}
+                  </button>
+                  <button type="button" className={styles.tab} disabled={shownColors.length <= MIN_COLORS} onClick={() => update({ colors: shownColors.slice(0, -1) })}>
+                    {t.remove}
+                  </button>
+                </div>
+              </>
             )}
             <PalettePicker locale={locale} current={shownColors} onApply={(c) => update({ colors: [c[1], c[0], ...c.slice(2)].slice(0, Math.max(state.colors.length, MIN_COLORS)) })} />
           </fieldset>

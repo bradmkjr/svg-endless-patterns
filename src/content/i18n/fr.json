@@ -521,6 +521,13 @@
     }
   },
   "changelog": {
+    "More checkerboards and mazes": {
+      "title": "Plus de damiers et de labyrinthes",
+      "items": [
+        "Ajout des damiers en nid d'abeille et en triangles, avec de vrais hexagones et triangles sur le damier, le motif répété et le PDF",
+        "Ajout des labyrinthes en triangle et en losange, avec tous les algorithmes, le PDF d'affiche et le PNG"
+      ]
+    },
     "Checkerboard maker": {
       "title": "Créateur de damiers",
       "items": [

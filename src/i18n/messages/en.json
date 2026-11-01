@@ -260,7 +260,7 @@
       },
       "maze": {
         "title": "Mazes",
-        "text": "Generate a maze with exactly one route through it, as a square, rectangle, circle or hexagon, from five different algorithms.",
+        "text": "Generate a maze with exactly one route through it, as a square, rectangle, circle, hexagon, triangle or diamond, from five different algorithms.",
         "output": "Printable PDF with a separate solution page, plus SVG and PNG of the maze and its solution.",
         "explore": "Make a maze"
       },
@@ -284,7 +284,7 @@
       },
       "checkerboard": {
         "title": "Checkerboards",
-        "text": "Set the rows, columns, colors and box shape, from a standard board to 3:1 bricks.",
+        "text": "Set the rows, columns, colors and box shape, from a standard board to 3:1 bricks, honeycombs and triangles.",
         "output": "SVG and PNG, a seamless repeat, finished sizes, piece counts and a printable PDF.",
         "explore": "Make a checkerboard"
       }

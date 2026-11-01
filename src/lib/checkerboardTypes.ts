@@ -1,6 +1,6 @@
 /** The JSON contract with the API's checkerboard routes. */
 
-export type CheckerPattern = "checker" | "brick" | "half-drop" | "gingham";
+export type CheckerPattern = "checker" | "brick" | "half-drop" | "gingham" | "hexagon" | "triangle";
 
 export type CheckerboardRequest = {
   pattern: CheckerPattern;

@@ -1,6 +1,14 @@
 [
   {
     "date": "2026-10-31",
+    "title": "More checkerboards and mazes",
+    "items": [
+      "Added honeycomb and triangle checkerboards, with true hexagons and triangles in the board, repeat tile and PDF",
+      "Added triangle and diamond mazes, with every algorithm, the poster PDF and PNG"
+    ]
+  },
+  {
+    "date": "2026-10-31",
     "title": "Checkerboard maker",
     "post": "checkerboard-maker",
     "items": [

@@ -1,7 +1,7 @@
 {
   "en": {
     "metaTitle": "Printable Maze Generator: Square, Circular and Hexagonal",
-    "metaDesc": "Generate a printable maze in a square, rectangle, circle or hexagon. Choose the algorithm, difficulty and colors, then download a PDF with a separate solution page, SVG or PNG.",
+    "metaDesc": "Generate a printable maze in a square, rectangle, circle, hexagon, triangle or diamond. Choose the algorithm, difficulty and colors, then download a PDF with a separate solution page, SVG or PNG.",
     "h1": "Maze generator",
     "lede": "Make a maze with exactly one route through it. Choose a shape, an algorithm and a difficulty, then print it with its solution on a separate page.",
     "design": "Maze",
@@ -10,7 +10,9 @@
       "square": "Square",
       "rectangle": "Rectangle",
       "circle": "Circle",
-      "hexagon": "Hexagon"
+      "hexagon": "Hexagon",
+      "triangle": "Triangle",
+      "diamond": "Diamond"
     },
     "algorithm": "Algorithm",
     "algorithms": {
@@ -71,7 +73,7 @@
   },
   "es": {
     "metaTitle": "Generador de laberintos para imprimir: cuadrados, circulares y hexagonales",
-    "metaDesc": "Genera un laberinto para imprimir en forma de cuadrado, rectángulo, círculo o hexágono. Elige el algoritmo, la dificultad y los colores, y descarga un PDF con la solución en otra página, SVG o PNG.",
+    "metaDesc": "Genera un laberinto para imprimir en forma de cuadrado, rectángulo, círculo, hexágono, triángulo o rombo. Elige el algoritmo, la dificultad y los colores, y descarga un PDF con la solución en otra página, SVG o PNG.",
     "h1": "Generador de laberintos",
     "lede": "Crea un laberinto con una sola ruta posible. Elige una forma, un algoritmo y una dificultad, e imprímelo con la solución en otra página.",
     "design": "Laberinto",
@@ -80,7 +82,9 @@
       "square": "Cuadrado",
       "rectangle": "Rectángulo",
       "circle": "Círculo",
-      "hexagon": "Hexágono"
+      "hexagon": "Hexágono",
+      "triangle": "Triángulo",
+      "diamond": "Rombo"
     },
     "algorithm": "Algoritmo",
     "algorithms": {
@@ -141,7 +145,7 @@
   },
   "fr": {
     "metaTitle": "Générateur de labyrinthes à imprimer : carrés, circulaires et hexagonaux",
-    "metaDesc": "Générez un labyrinthe à imprimer en carré, rectangle, cercle ou hexagone. Choisissez l'algorithme, la difficulté et les couleurs, puis téléchargez un PDF avec la solution sur une page à part, un SVG ou un PNG.",
+    "metaDesc": "Générez un labyrinthe à imprimer en carré, rectangle, cercle, hexagone, triangle ou losange. Choisissez l'algorithme, la difficulté et les couleurs, puis téléchargez un PDF avec la solution sur une page à part, un SVG ou un PNG.",
     "h1": "Générateur de labyrinthes",
     "lede": "Créez un labyrinthe avec un seul chemin possible. Choisissez une forme, un algorithme et une difficulté, puis imprimez-le avec sa solution sur une page à part.",
     "design": "Labyrinthe",
@@ -150,7 +154,9 @@
       "square": "Carré",
       "rectangle": "Rectangle",
       "circle": "Cercle",
-      "hexagon": "Hexagone"
+      "hexagon": "Hexagone",
+      "triangle": "Triangle",
+      "diamond": "Losange"
     },
     "algorithm": "Algorithme",
     "algorithms": {
@@ -211,7 +217,7 @@
   },
   "de": {
     "metaTitle": "Labyrinth-Generator zum Ausdrucken: quadratisch, rund und sechseckig",
-    "metaDesc": "Erstelle ein druckbares Labyrinth als Quadrat, Rechteck, Kreis oder Sechseck. Wähle Algorithmus, Schwierigkeit und Farben und lade ein PDF mit separater Lösungsseite, SVG oder PNG herunter.",
+    "metaDesc": "Erstelle ein druckbares Labyrinth als Quadrat, Rechteck, Kreis, Sechseck, Dreieck oder Raute. Wähle Algorithmus, Schwierigkeit und Farben und lade ein PDF mit separater Lösungsseite, SVG oder PNG herunter.",
     "h1": "Labyrinth-Generator",
     "lede": "Erstelle ein Labyrinth mit genau einem Weg hindurch. Wähle Form, Algorithmus und Schwierigkeit und drucke es mit der Lösung auf einer eigenen Seite.",
     "design": "Labyrinth",
@@ -220,7 +226,9 @@
       "square": "Quadrat",
       "rectangle": "Rechteck",
       "circle": "Kreis",
-      "hexagon": "Sechseck"
+      "hexagon": "Sechseck",
+      "triangle": "Dreieck",
+      "diamond": "Raute"
     },
     "algorithm": "Algorithmus",
     "algorithms": {
@@ -281,7 +289,7 @@
   },
   "pt": {
     "metaTitle": "Gerador de labirintos para imprimir: quadrados, circulares e hexagonais",
-    "metaDesc": "Gere um labirinto para imprimir em quadrado, retângulo, círculo ou hexágono. Escolha o algoritmo, a dificuldade e as cores e baixe um PDF com a solução em outra página, SVG ou PNG.",
+    "metaDesc": "Gere um labirinto para imprimir em quadrado, retângulo, círculo, hexágono, triângulo ou losango. Escolha o algoritmo, a dificuldade e as cores e baixe um PDF com a solução em outra página, SVG ou PNG.",
     "h1": "Gerador de labirintos",
     "lede": "Crie um labirinto com um único caminho possível. Escolha uma forma, um algoritmo e uma dificuldade e imprima com a solução em outra página.",
     "design": "Labirinto",
@@ -290,7 +298,9 @@
       "square": "Quadrado",
       "rectangle": "Retângulo",
       "circle": "Círculo",
-      "hexagon": "Hexágono"
+      "hexagon": "Hexágono",
+      "triangle": "Triângulo",
+      "diamond": "Losango"
     },
     "algorithm": "Algoritmo",
     "algorithms": {

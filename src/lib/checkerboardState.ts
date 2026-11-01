@@ -2,7 +2,7 @@ import type { CheckerboardRequest, CheckerPattern, Locale } from "./generator";
 
 /** The checkerboard builder's options, defaults and share links. */
 
-export const PATTERN_OPTIONS: CheckerPattern[] = ["checker", "brick", "half-drop", "gingham"];
+export const PATTERN_OPTIONS: CheckerPattern[] = ["checker", "brick", "half-drop", "gingham", "hexagon", "triangle"];
 export const COUNT_OPTIONS = [2, 3, 4, 5, 6, 8, 10, 12, 16, 20, 24, 30, 36, 40, 50, 60, 80, 100];
 export const RATIO_OPTIONS = [1, 2, 3, 4, 5, 6, 7, 8];
 export const UNIT_OPTIONS = [0.25, 0.5, 1, 1.5, 2, 3, 4, 6];
@@ -16,6 +16,20 @@ const COLORS = ["#25221c", "#f4ecdc"];
 
 export function defaultCheckerboardState(locale: Locale = "en"): CheckerboardRequest {
   return { ...(locale === "en" ? {} : { locale }), pattern: "checker", cols: 8, rows: 8, ratioWidth: 1, ratioHeight: 1, unit: 1, colors: COLORS };
+}
+
+/** Patterns drawn as true shapes, where a 1:1 ratio is regular and any other stretches them. */
+export const isShapePattern = (pattern: CheckerPattern) => pattern === "hexagon" || pattern === "triangle";
+
+/** Colors a pattern can show. A gingham mixes two; a honeycomb needs just three, so no two neighbors match. */
+export function maxColors(pattern: CheckerPattern): number {
+  if (pattern === "gingham") return MIN_COLORS;
+  return pattern === "hexagon" ? 3 : MAX_COLORS;
+}
+
+/** A board's shape while it's drawn, as width over height. Hexagon and triangle rows are shorter than they are wide. */
+export function boardAspect({ pattern, cols, rows, ratioWidth, ratioHeight }: CheckerboardRequest): number {
+  return (cols * ratioWidth) / (rows * ratioHeight * (isShapePattern(pattern) ? Math.sqrt(3) / 2 : 1));
 }
 
 /** The next color for a board that gains one. */

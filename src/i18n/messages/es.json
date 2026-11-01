@@ -260,7 +260,7 @@
       },
       "maze": {
         "title": "Laberintos",
-        "text": "Genera un laberinto con una sola ruta posible, en forma de cuadrado, rectángulo, círculo o hexágono, con cinco algoritmos distintos.",
+        "text": "Genera un laberinto con una sola ruta posible, en forma de cuadrado, rectángulo, círculo, hexágono, triángulo o rombo, con cinco algoritmos distintos.",
         "output": "PDF para imprimir con la solución en otra página, además de SVG y PNG del laberinto y de su solución.",
         "explore": "Crear un laberinto"
       },
@@ -284,7 +284,7 @@
       },
       "checkerboard": {
         "title": "Tableros",
-        "text": "Elige filas, columnas, colores y forma de las casillas, del tablero estándar a ladrillos 3:1.",
+        "text": "Elige filas, columnas, colores y forma de las casillas, del tablero estándar a ladrillos 3:1, panales y triángulos.",
         "output": "SVG y PNG, repetición continua, tamaños finales, recuento de piezas y PDF imprimible.",
         "explore": "Crea un tablero"
       }

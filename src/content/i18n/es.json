@@ -521,6 +521,13 @@
     }
   },
   "changelog": {
+    "More checkerboards and mazes": {
+      "title": "Más tableros y laberintos",
+      "items": [
+        "Se añadieron tableros de panal y de triángulos, con hexágonos y triángulos reales en el tablero, la repetición y el PDF",
+        "Se añadieron laberintos en triángulo y en rombo, con todos los algoritmos, el PDF de póster y el PNG"
+      ]
+    },
     "Checkerboard maker": {
       "title": "Generador de tableros",
       "items": [

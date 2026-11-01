@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import uiText from "@/i18n/messages/checkerboard.json";
-import { COUNT_OPTIONS, defaultCheckerboardState, parseCheckerboardState, PATTERN_OPTIONS, RATIO_OPTIONS, RATIO_PRESETS, serializeCheckerboardState, UNIT_OPTIONS } from "./checkerboardState";
+import { boardAspect, COUNT_OPTIONS, defaultCheckerboardState, maxColors, parseCheckerboardState, PATTERN_OPTIONS, RATIO_OPTIONS, RATIO_PRESETS, serializeCheckerboardState, UNIT_OPTIONS } from "./checkerboardState";
 
 const LOCALES = ["en", "es", "fr", "de", "pt"] as const;
 const parse = (query: string, locale?: (typeof LOCALES)[number]) => parseCheckerboardState(new URLSearchParams(query), locale);
@@ -37,6 +37,25 @@ describe("share links", () => {
     expect(COUNT_OPTIONS.at(-1)).toBe(100);
     expect(UNIT_OPTIONS).toContain(1);
     expect(PATTERN_OPTIONS[0]).toBe("checker");
+  });
+});
+
+describe("shape patterns", () => {
+  it.each(["hexagon", "triangle"] as const)("keeps %s through a share link, with its ratio", (pattern) => {
+    const state = { ...defaultCheckerboardState(), pattern, ratioWidth: 3, ratioHeight: 2 };
+    expect(serializeCheckerboardState(state)).toContain(`p=${pattern}`);
+    expect(parse(serializeCheckerboardState(state))).toEqual(state);
+  });
+
+  it("limits a honeycomb to three colors and gingham to two", () => {
+    expect(maxColors("hexagon")).toBe(3);
+    expect(maxColors("gingham")).toBe(2);
+    expect(maxColors("triangle")).toBe(4);
+  });
+
+  it("allows for short rows while it draws", () => {
+    expect(boardAspect(defaultCheckerboardState())).toBe(1);
+    expect(boardAspect({ ...defaultCheckerboardState(), pattern: "hexagon" })).toBeCloseTo(2 / Math.sqrt(3), 6);
   });
 });
 

@@ -521,6 +521,13 @@
     }
   },
   "changelog": {
+    "More checkerboards and mazes": {
+      "title": "Mehr Schachbretter und Labyrinthe",
+      "items": [
+        "Bienenwaben- und Dreiecks-Schachbretter hinzugefügt, mit echten Sechsecken und Dreiecken auf dem Brett, im Rapport und im PDF",
+        "Labyrinthe als Dreieck und Raute hinzugefügt, mit allen Algorithmen, Poster-PDF und PNG"
+      ]
+    },
     "Checkerboard maker": {
       "title": "Schachbrett-Werkzeug",
       "items": [

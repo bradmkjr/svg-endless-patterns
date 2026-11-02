@@ -543,8 +543,8 @@
     }
   },
   "changelog": {
-    "Google Analytics": {
-      "title": "Google Analytics",
+    "Site analytics": {
+      "title": "Website-Statistiken",
       "items": [
         "Die Website verwendet jetzt Google Analytics, und der Abschnitt zu Ihren Daten erklärt, was erfasst wird und wie Sie es deaktivieren, sowie dass Einstellungen zum Zeichnen der Muster an unseren Server gesendet werden"
       ]

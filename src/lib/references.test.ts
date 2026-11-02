@@ -9,7 +9,7 @@ const files = (dir: string): string[] => readdirSync(dir).flatMap((name) => {
   const path = join(dir, name);
   return statSync(path).isDirectory() ? files(path) : [path];
 });
-const ALLOWED = /w3\.org|localhost|github\.io|schema\.org/;
+const ALLOWED = /w3\.org|localhost|github\.io|schema\.org|policies\.google\.com|tools\.google\.com/;
 
 describe("references", () => {
   it.each(LOCALES)("says what each one is used for in %s", (locale) => {

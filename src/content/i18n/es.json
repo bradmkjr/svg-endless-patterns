@@ -543,8 +543,8 @@
     }
   },
   "changelog": {
-    "Google Analytics": {
-      "title": "Google Analytics",
+    "Site analytics": {
+      "title": "Analítica del sitio",
       "items": [
         "El sitio ahora usa Google Analytics, y la sección «Tus datos» explica qué se recoge y cómo desactivarlo, además de que los ajustes se envían a nuestro servidor para dibujar los diseños"
       ]

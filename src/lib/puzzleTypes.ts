@@ -1,3 +1,5 @@
+import type { MazePaperId } from "./mazeTypes";
+
 /** The JSON contract with the API's puzzle routes. */
 
 export type PuzzleType = "sudoku" | "futoshiki" | "nonogram" | "battleships" | "dots-and-boxes" | "ultimate-tic-tac-toe" | "hex";
@@ -19,4 +21,5 @@ export type PuzzleResult = {
   title: string;
   rules: string;
   givens?: number;
+  posterBox?: Record<MazePaperId, number>;
 };

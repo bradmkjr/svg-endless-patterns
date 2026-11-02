@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { generatePuzzle, generatePuzzlePdf, type Locale, type PuzzleColors, type PuzzleDifficulty, type PuzzlePaper, type PuzzleRequest, type PuzzleType } from "@/lib/generator";
+import { generatePuzzle, generatePuzzlePdf, generatePuzzlePosterPdf, MAZE_PAPERS, type Locale, type MazePaperId, type PuzzleColors, type PuzzleDifficulty, type PuzzlePaper, type PuzzleRequest, type PuzzleType } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { useTrackCustomize } from "@/lib/analytics";
 import { fill, messages } from "@/lib/i18n";
 import copy from "@/i18n/messages/puzzle.json";
-import { DIFFICULTY_OPTIONS, hasDifficulty, isSolved, MAX_SEED, PAPER_OPTIONS, PUZZLE_OPTIONS, PUZZLE_SIZES, serializePuzzleState } from "@/lib/puzzleState";
+import { DIFFICULTY_OPTIONS, hasDifficulty, hasPoster, isSolved, MAX_SEED, PAPER_OPTIONS, PUZZLE_OPTIONS, PUZZLE_SIZES, serializePuzzleState } from "@/lib/puzzleState";
 import { rememberSeed, syncShareLink } from "@/lib/toolOptions";
 import { useLiveResult } from "@/lib/useLiveResult";
 import { OptionNav, useOptionNavigation } from "./OptionNav";
@@ -26,6 +26,7 @@ export function PuzzleBuilder({ locale, option, labels, initialState }: { locale
   const [chosenView, setView] = useState<View>("puzzle");
   const [paper, setPaper] = useState<PuzzlePaper>("letter");
   const [withSolution, setWithSolution] = useState(true);
+  const [posterPaper, setPosterPaper] = useState<MazePaperId>("a1");
   const [status, setStatus] = useState("");
   const [busy, setBusy] = useState(false);
 
@@ -172,6 +173,29 @@ export function PuzzleBuilder({ locale, option, labels, initialState }: { locale
               </label>
             )}
           </fieldset>
+
+          {hasPoster(state.puzzle) && (
+            <fieldset>
+              <legend>{t.poster}</legend>
+              <label className={styles.field}>
+                <span>{t.posterSize}</span>
+                <select value={posterPaper} onChange={(e) => setPosterPaper(e.target.value as MazePaperId)}>
+                  {MAZE_PAPERS.map((option) => (
+                    <option key={option.id} value={option.id}>
+                      {option.label}
+                    </option>
+                  ))}
+                </select>
+              </label>
+              <p className={styles.note}>{result?.posterBox ? fill(t.posterBox, { size: result.posterBox[posterPaper] }) : t.loading}</p>
+              <div className={styles.actions}>
+                <button type="button" disabled={busy || !result} className={styles.tab} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generatePuzzlePosterPdf(state, posterPaper), `${fileName}-${state.size}-${posterPaper}.pdf`, "application/pdf"))}>
+                  {t.downloadPoster}
+                </button>
+              </div>
+              <p className={styles.note}>{t.posterNote}</p>
+            </fieldset>
+          )}
 
           <fieldset>
             <legend>{t.colors}</legend>

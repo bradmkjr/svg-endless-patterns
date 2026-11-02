@@ -10,7 +10,7 @@ export const PUZZLE_SIZES: Record<PuzzleType, number[]> = {
   futoshiki: [4, 5, 6, 7],
   nonogram: [5, 10, 15],
   battleships: [8, 10, 12],
-  "dots-and-boxes": [4, 6, 8, 10, 12, 16],
+  "dots-and-boxes": [4, 6, 8, 10, 12, 16, 24, 32, 48, 64, 100, 150, 200],
   "ultimate-tic-tac-toe": [3],
   hex: [7, 9, 11, 13],
 };
@@ -22,6 +22,7 @@ export const MAX_SEED = 999999;
 const COLORS: PuzzleColors = { background: "#ffffff", ink: "#1f2933", accent: "#c8553d" };
 const DEFAULT_SEED = 7;
 
+export const hasPoster = (puzzle: PuzzleType) => puzzle === "dots-and-boxes";
 export const hasDifficulty = (puzzle: PuzzleType) => puzzle === "sudoku" || puzzle === "futoshiki";
 /** Games start blank, so only puzzles have a seed or a solution. */
 export const isSolved = (puzzle: PuzzleType) => hasDifficulty(puzzle) || puzzle === "nonogram";

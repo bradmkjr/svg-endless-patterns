@@ -6,14 +6,21 @@
     "lede": "Puzzles and pencil games to print, or to open in a drawing app on a tablet. Every puzzle has exactly one solution, and every sheet is free.",
     "allPuzzles": "All paper puzzles",
     "loading": "Drawing the sheet…",
-    "views": { "puzzle": "Sheet", "solution": "Solution" },
+    "views": {
+      "puzzle": "Sheet",
+      "solution": "Solution"
+    },
     "design": "Sheet",
     "type": "Puzzle",
     "size": "Size",
     "sizeLabel": "{n} × {n}",
     "boxesLabel": "{n} × {n} boxes",
     "difficulty": "Difficulty",
-    "difficulties": { "easy": "Easy", "medium": "Medium", "hard": "Hard" },
+    "difficulties": {
+      "easy": "Easy",
+      "medium": "Medium",
+      "hard": "Hard"
+    },
     "difficultyNote": "Harder sheets start with fewer clues.",
     "givens": "{n} clues filled in to start.",
     "seed": "Puzzle number",
@@ -26,7 +33,11 @@
     "colorNote": "Solutions and labels use the accent. For printing, a white background saves ink.",
     "download": "Download",
     "paper": "Page",
-    "papers": { "letter": "US Letter", "a4": "A4", "tablet": "Tablet (4:3)" },
+    "papers": {
+      "letter": "US Letter",
+      "a4": "A4",
+      "tablet": "Tablet (4:3)"
+    },
     "paperNote": "The tablet page fills an iPad screen, ready to mark up in a drawing app. A PNG works there too.",
     "includeSolution": "Add the solution as a second page",
     "downloadPdf": "Download PDF",
@@ -50,7 +61,12 @@
       "mazes": "Seven shapes, including hidden messages, with solutions."
     },
     "mazes": "Mazes",
-    "puzzlesHeading": "Puzzles and games"
+    "puzzlesHeading": "Puzzles and games",
+    "poster": "Poster",
+    "posterSize": "Poster size",
+    "posterBox": "Each box prints {size} in wide on this sheet.",
+    "downloadPoster": "Download poster PDF",
+    "posterNote": "Choose up to 200 boxes across for a monster board. Sizes above Legal need a large-format printer or print shop. Print at 100%."
   },
   "es": {
     "metaTitle": "Pasatiempos de papel para imprimir: sudoku, hundir la flota y más",
@@ -59,14 +75,21 @@
     "lede": "Pasatiempos y juegos de lápiz para imprimir o abrir en una app de dibujo en tableta. Cada pasatiempo tiene una sola solución, y todas las hojas son gratis.",
     "allPuzzles": "Todos los pasatiempos",
     "loading": "Dibujando la hoja…",
-    "views": { "puzzle": "Hoja", "solution": "Solución" },
+    "views": {
+      "puzzle": "Hoja",
+      "solution": "Solución"
+    },
     "design": "Hoja",
     "type": "Pasatiempo",
     "size": "Tamaño",
     "sizeLabel": "{n} × {n}",
     "boxesLabel": "{n} × {n} cajas",
     "difficulty": "Dificultad",
-    "difficulties": { "easy": "Fácil", "medium": "Media", "hard": "Difícil" },
+    "difficulties": {
+      "easy": "Fácil",
+      "medium": "Media",
+      "hard": "Difícil"
+    },
     "difficultyNote": "Las hojas más difíciles empiezan con menos pistas.",
     "givens": "{n} pistas ya escritas al empezar.",
     "seed": "Número del pasatiempo",
@@ -79,7 +102,11 @@
     "colorNote": "Las soluciones y etiquetas usan el acento. Para imprimir, un fondo blanco ahorra tinta.",
     "download": "Descargar",
     "paper": "Página",
-    "papers": { "letter": "Carta (EE. UU.)", "a4": "A4", "tablet": "Tableta (4:3)" },
+    "papers": {
+      "letter": "Carta (EE. UU.)",
+      "a4": "A4",
+      "tablet": "Tableta (4:3)"
+    },
     "paperNote": "La página de tableta llena la pantalla de un iPad, lista para marcar en una app de dibujo. Un PNG también sirve.",
     "includeSolution": "Añadir la solución como segunda página",
     "downloadPdf": "Descargar PDF",
@@ -103,7 +130,12 @@
       "mazes": "Siete formas, incluidos mensajes ocultos, con soluciones."
     },
     "mazes": "Laberintos",
-    "puzzlesHeading": "Pasatiempos y juegos"
+    "puzzlesHeading": "Pasatiempos y juegos",
+    "poster": "Póster",
+    "posterSize": "Tamaño del póster",
+    "posterBox": "Cada caja se imprime con {size} in de ancho en esta hoja.",
+    "downloadPoster": "Descargar póster en PDF",
+    "posterNote": "Elige hasta 200 cajas de ancho para un tablero gigante. Los tamaños mayores que Legal necesitan una impresora de gran formato o una imprenta. Imprime al 100 %."
   },
   "fr": {
     "metaTitle": "Jeux papier à imprimer : sudoku, bataille navale et plus",
@@ -112,14 +144,21 @@
     "lede": "Casse-tête et jeux papier-crayon à imprimer, ou à ouvrir dans une appli de dessin sur tablette. Chaque casse-tête a une seule solution, et toutes les feuilles sont gratuites.",
     "allPuzzles": "Tous les jeux papier",
     "loading": "Dessin de la feuille…",
-    "views": { "puzzle": "Feuille", "solution": "Solution" },
+    "views": {
+      "puzzle": "Feuille",
+      "solution": "Solution"
+    },
     "design": "Feuille",
     "type": "Jeu",
     "size": "Taille",
     "sizeLabel": "{n} × {n}",
     "boxesLabel": "{n} × {n} cases",
     "difficulty": "Difficulté",
-    "difficulties": { "easy": "Facile", "medium": "Moyenne", "hard": "Difficile" },
+    "difficulties": {
+      "easy": "Facile",
+      "medium": "Moyenne",
+      "hard": "Difficile"
+    },
     "difficultyNote": "Les feuilles plus difficiles commencent avec moins d'indices.",
     "givens": "{n} indices déjà remplis au départ.",
     "seed": "Numéro de la grille",
@@ -132,7 +171,11 @@
     "colorNote": "Les solutions et les étiquettes utilisent l'accent. Pour imprimer, un fond blanc économise l'encre.",
     "download": "Télécharger",
     "paper": "Page",
-    "papers": { "letter": "US Letter", "a4": "A4", "tablet": "Tablette (4:3)" },
+    "papers": {
+      "letter": "US Letter",
+      "a4": "A4",
+      "tablet": "Tablette (4:3)"
+    },
     "paperNote": "La page tablette remplit l'écran d'un iPad, prête à annoter dans une appli de dessin. Un PNG convient aussi.",
     "includeSolution": "Ajouter la solution en deuxième page",
     "downloadPdf": "Télécharger le PDF",
@@ -156,7 +199,12 @@
       "mazes": "Sept formes, dont les messages cachés, avec solutions."
     },
     "mazes": "Labyrinthes",
-    "puzzlesHeading": "Casse-tête et jeux"
+    "puzzlesHeading": "Casse-tête et jeux",
+    "poster": "Affiche",
+    "posterSize": "Format de l'affiche",
+    "posterBox": "Chaque case s'imprime sur {size} in de large sur cette feuille.",
+    "downloadPoster": "Télécharger l'affiche en PDF",
+    "posterNote": "Choisissez jusqu'à 200 cases de large pour une grille géante. Les formats au-delà de Legal demandent une imprimante grand format ou un imprimeur. Imprimez à 100 %."
   },
   "de": {
     "metaTitle": "Papierrätsel zum Ausdrucken: Sudoku, Schiffe versenken und mehr",
@@ -165,14 +213,21 @@
     "lede": "Rätsel und Stift-und-Papier-Spiele zum Ausdrucken oder zum Öffnen in einer Zeichen-App auf dem Tablet. Jedes Rätsel hat genau eine Lösung, und alle Blätter sind kostenlos.",
     "allPuzzles": "Alle Papierrätsel",
     "loading": "Blatt wird gezeichnet…",
-    "views": { "puzzle": "Blatt", "solution": "Lösung" },
+    "views": {
+      "puzzle": "Blatt",
+      "solution": "Lösung"
+    },
     "design": "Blatt",
     "type": "Rätsel",
     "size": "Größe",
     "sizeLabel": "{n} × {n}",
     "boxesLabel": "{n} × {n} Kästchen",
     "difficulty": "Schwierigkeit",
-    "difficulties": { "easy": "Leicht", "medium": "Mittel", "hard": "Schwer" },
+    "difficulties": {
+      "easy": "Leicht",
+      "medium": "Mittel",
+      "hard": "Schwer"
+    },
     "difficultyNote": "Schwerere Blätter beginnen mit weniger Hinweisen.",
     "givens": "{n} Hinweise sind zu Beginn eingetragen.",
     "seed": "Rätselnummer",
@@ -185,7 +240,11 @@
     "colorNote": "Lösungen und Beschriftungen nutzen den Akzent. Beim Drucken spart ein weißer Hintergrund Tinte.",
     "download": "Herunterladen",
     "paper": "Seite",
-    "papers": { "letter": "US Letter", "a4": "A4", "tablet": "Tablet (4:3)" },
+    "papers": {
+      "letter": "US Letter",
+      "a4": "A4",
+      "tablet": "Tablet (4:3)"
+    },
     "paperNote": "Die Tablet-Seite füllt den Bildschirm eines iPads und ist bereit für eine Zeichen-App. Ein PNG geht auch.",
     "includeSolution": "Lösung als zweite Seite hinzufügen",
     "downloadPdf": "PDF herunterladen",
@@ -209,7 +268,12 @@
       "mazes": "Sieben Formen, auch mit versteckten Botschaften, samt Lösungen."
     },
     "mazes": "Labyrinthe",
-    "puzzlesHeading": "Rätsel und Spiele"
+    "puzzlesHeading": "Rätsel und Spiele",
+    "poster": "Poster",
+    "posterSize": "Postergröße",
+    "posterBox": "Jedes Kästchen wird auf diesem Blatt {size} in breit gedruckt.",
+    "downloadPoster": "Poster als PDF herunterladen",
+    "posterNote": "Wähle bis zu 200 Kästchen Breite für ein Riesenbrett. Formate über Legal brauchen einen Großformatdrucker oder eine Druckerei. Mit 100 % drucken."
   },
   "pt": {
     "metaTitle": "Passatempos de papel para imprimir: sudoku, batalha naval e mais",
@@ -218,14 +282,21 @@
     "lede": "Passatempos e jogos de lápis para imprimir ou abrir em um app de desenho no tablet. Cada passatempo tem uma única solução, e todas as folhas são grátis.",
     "allPuzzles": "Todos os passatempos",
     "loading": "Desenhando a folha…",
-    "views": { "puzzle": "Folha", "solution": "Solução" },
+    "views": {
+      "puzzle": "Folha",
+      "solution": "Solução"
+    },
     "design": "Folha",
     "type": "Passatempo",
     "size": "Tamanho",
     "sizeLabel": "{n} × {n}",
     "boxesLabel": "{n} × {n} quadrados",
     "difficulty": "Dificuldade",
-    "difficulties": { "easy": "Fácil", "medium": "Média", "hard": "Difícil" },
+    "difficulties": {
+      "easy": "Fácil",
+      "medium": "Média",
+      "hard": "Difícil"
+    },
     "difficultyNote": "Folhas mais difíceis começam com menos pistas.",
     "givens": "{n} pistas já preenchidas no início.",
     "seed": "Número do passatempo",
@@ -238,7 +309,11 @@
     "colorNote": "Soluções e rótulos usam o destaque. Para imprimir, um fundo branco economiza tinta.",
     "download": "Baixar",
     "paper": "Página",
-    "papers": { "letter": "Carta (EUA)", "a4": "A4", "tablet": "Tablet (4:3)" },
+    "papers": {
+      "letter": "Carta (EUA)",
+      "a4": "A4",
+      "tablet": "Tablet (4:3)"
+    },
     "paperNote": "A página de tablet preenche a tela de um iPad, pronta para marcar em um app de desenho. Um PNG também serve.",
     "includeSolution": "Adicionar a solução como segunda página",
     "downloadPdf": "Baixar PDF",
@@ -262,6 +337,11 @@
       "mazes": "Sete formas, incluindo mensagens ocultas, com soluções."
     },
     "mazes": "Labirintos",
-    "puzzlesHeading": "Passatempos e jogos"
+    "puzzlesHeading": "Passatempos e jogos",
+    "poster": "Pôster",
+    "posterSize": "Tamanho do pôster",
+    "posterBox": "Cada quadrado é impresso com {size} in de largura nesta folha.",
+    "downloadPoster": "Baixar pôster em PDF",
+    "posterNote": "Escolha até 200 quadrados de largura para um tabuleiro gigante. Tamanhos acima de Legal precisam de uma impressora de grande formato ou gráfica. Imprima em 100%."
   }
 }

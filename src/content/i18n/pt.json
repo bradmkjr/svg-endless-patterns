@@ -582,7 +582,8 @@
           "Nonogramas em 5 × 5, 10 × 10 e 15 × 15",
           "Cada passatempo verificado por um solucionador para ter uma única solução, e um novo quando você quiser",
           "Folhas de batalha naval, jogo dos pontinhos, super jogo da velha e hex para jogar com outra pessoa",
-          "PDFs para carta, A4 ou uma página de tablet 4:3, com ou sem a solução, além de SVG e PNG"
+          "PDFs para carta, A4 ou uma página de tablet 4:3, com ou sem a solução, além de SVG e PNG",
+          "Jogo dos pontinhos com até 200 quadrados de largura, em todos os tamanhos de pôster, de Carta a 4A0"
         ]
       ]
     }
@@ -862,7 +863,8 @@
       "title": "Passatempos de papel",
       "items": [
         "Nova seção de passatempos de papel no menu, com sudoku, futoshiki, nonogramas, batalha naval, jogo dos pontinhos, super jogo da velha e hex, ao lado dos labirintos",
-        "Cada folha pode ser baixada como PDF para carta, A4 ou página de tablet, ou como SVG ou PNG"
+        "Cada folha pode ser baixada como PDF para carta, A4 ou página de tablet, ou como SVG ou PNG",
+        "Jogo dos pontinhos com até 200 quadrados de largura, em todos os tamanhos de pôster, de Carta a 4A0"
       ]
     }
   }

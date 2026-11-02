@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import uiText from "@/i18n/messages/puzzle.json";
-import { defaultPuzzleState, DIFFICULTY_OPTIONS, hasDifficulty, isSolved, PAPER_OPTIONS, parsePuzzleState, PUZZLE_OPTIONS, PUZZLE_SIZES, serializePuzzleState } from "./puzzleState";
+import { defaultPuzzleState, DIFFICULTY_OPTIONS, hasDifficulty, hasPoster, isSolved, PAPER_OPTIONS, parsePuzzleState, PUZZLE_OPTIONS, PUZZLE_SIZES, serializePuzzleState } from "./puzzleState";
 
 const LOCALES = ["en", "es", "fr", "de", "pt"] as const;
 const parse = (query: string, locale?: (typeof LOCALES)[number]) => parsePuzzleState(new URLSearchParams(query), locale);
@@ -42,6 +42,12 @@ describe("share links", () => {
 });
 
 describe("which puzzles have what", () => {
+  it("offers posters and monster boards for dots and boxes only", () => {
+    expect(PUZZLE_OPTIONS.filter(hasPoster)).toEqual(["dots-and-boxes"]);
+    expect(parse("t=dots-and-boxes&n=200").size).toBe(200);
+    expect(parse("t=hex&n=200").size).toBe(defaultPuzzleState("en", "hex").size);
+  });
+
   it("gives games no solution, and only number grids a difficulty", () => {
     expect(PUZZLE_OPTIONS.filter(isSolved)).toEqual(["sudoku", "futoshiki", "nonogram"]);
     expect(PUZZLE_OPTIONS.filter(hasDifficulty)).toEqual(["sudoku", "futoshiki"]);

@@ -175,6 +175,11 @@ export async function generatePuzzlePdf(request: PuzzleRequest, { paper = "lette
   return new Uint8Array(await response.arrayBuffer());
 }
 
+export async function generatePuzzlePosterPdf(request: PuzzleRequest, paper: MazePaperId): Promise<Uint8Array> {
+  const response = await mazeApiGet(`/puzzle/poster-pdf?paper=${encodeURIComponent(paper)}`, request, "application/pdf");
+  return new Uint8Array(await response.arrayBuffer());
+}
+
 export async function generateCheckerboard(request: CheckerboardRequest): Promise<CheckerboardResult> {
   const response = await mazeApiGet("/checkerboard", request);
   return response.json() as Promise<CheckerboardResult>;

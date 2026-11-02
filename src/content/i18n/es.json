@@ -582,7 +582,8 @@
           "Nonogramas de 5 × 5, 10 × 10 y 15 × 15",
           "Cada pasatiempo comprobado por un solucionador para que tenga una sola solución, y uno nuevo cuando quieras",
           "Hojas de hundir la flota, puntos y cajas, súper tres en raya y hex para jugar con otra persona",
-          "PDF para carta, A4 o una página de tableta 4:3, con o sin la solución, además de SVG y PNG"
+          "PDF para carta, A4 o una página de tableta 4:3, con o sin la solución, además de SVG y PNG",
+          "Puntos y cajas de hasta 200 cajas de ancho, en todos los tamaños de póster, de Carta a 4A0"
         ]
       ]
     }
@@ -862,7 +863,8 @@
       "title": "Pasatiempos de papel",
       "items": [
         "Nueva sección de pasatiempos de papel en el menú, con sudoku, futoshiki, nonogramas, hundir la flota, puntos y cajas, súper tres en raya y hex, junto a los laberintos",
-        "Cada hoja se descarga como PDF para carta, A4 o página de tableta, o como SVG o PNG"
+        "Cada hoja se descarga como PDF para carta, A4 o página de tableta, o como SVG o PNG",
+        "Puntos y cajas de hasta 200 cajas de ancho, en todos los tamaños de póster, de Carta a 4A0"
       ]
     }
   }

@@ -582,7 +582,8 @@
           "Nonogramme in 5 × 5, 10 × 10 und 15 × 15",
           "Jedes Rätsel von einem Löser auf genau eine Lösung geprüft, und ein neues, wann immer du willst",
           "Blätter für Schiffe versenken, Käsekästchen, Super-Tic-Tac-Toe und Hex zum gemeinsamen Spielen",
-          "PDFs für US Letter, A4 oder eine 4:3-Tablet-Seite, mit oder ohne Lösung, dazu SVG und PNG"
+          "PDFs für US Letter, A4 oder eine 4:3-Tablet-Seite, mit oder ohne Lösung, dazu SVG und PNG",
+          "Käsekästchen bis 200 Kästchen breit, in jeder Postergröße von US Letter bis 4A0"
         ]
       ]
     }
@@ -862,7 +863,8 @@
       "title": "Papierrätsel",
       "items": [
         "Neuer Bereich Papierrätsel im Menü, mit Sudoku, Futoshiki, Nonogrammen, Schiffe versenken, Käsekästchen, Super-Tic-Tac-Toe und Hex, neben den Labyrinthen",
-        "Jedes Blatt lässt sich als PDF für US Letter, A4 oder eine Tablet-Seite herunterladen, oder als SVG oder PNG"
+        "Jedes Blatt lässt sich als PDF für US Letter, A4 oder eine Tablet-Seite herunterladen, oder als SVG oder PNG",
+        "Käsekästchen bis 200 Kästchen breit, in jeder Postergröße von US Letter bis 4A0"
       ]
     }
   }

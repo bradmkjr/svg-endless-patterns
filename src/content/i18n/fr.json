@@ -582,7 +582,8 @@
           "Nonogrammes en 5 × 5, 10 × 10 et 15 × 15",
           "Chaque casse-tête vérifié par un solveur pour n'avoir qu'une seule solution, et un nouveau quand vous voulez",
           "Des feuilles de bataille navale, pipopipette, super morpion et hex pour jouer à plusieurs",
-          "Des PDF en US Letter, A4 ou page de tablette 4:3, avec ou sans la solution, plus SVG et PNG"
+          "Des PDF en US Letter, A4 ou page de tablette 4:3, avec ou sans la solution, plus SVG et PNG",
+          "Pipopipette jusqu'à 200 cases de large, dans tous les formats d'affiche, de US Letter à 4A0"
         ]
       ]
     }
@@ -862,7 +863,8 @@
       "title": "Jeux papier",
       "items": [
         "Nouvelle rubrique jeux papier dans le menu, avec sudoku, futoshiki, nonogrammes, bataille navale, pipopipette, super morpion et hex, à côté des labyrinthes",
-        "Chaque feuille se télécharge en PDF pour US Letter, A4 ou page de tablette, ou en SVG ou PNG"
+        "Chaque feuille se télécharge en PDF pour US Letter, A4 ou page de tablette, ou en SVG ou PNG",
+        "Pipopipette jusqu'à 200 cases de large, dans tous les formats d'affiche, de US Letter à 4A0"
       ]
     }
   }

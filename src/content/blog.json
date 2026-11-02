@@ -71,7 +71,8 @@
           "Nonograms at 5 × 5, 10 × 10 and 15 × 15",
           "Every puzzle checked by a solver to have exactly one solution, and a new puzzle whenever you ask",
           "Battleships, dots and boxes, ultimate tic-tac-toe and hex sheets for playing with someone else",
-          "PDFs for US Letter, A4 or a 4:3 tablet page, with or without the solution, plus SVG and PNG"
+          "PDFs for US Letter, A4 or a 4:3 tablet page, with or without the solution, plus SVG and PNG",
+          "Dots and boxes up to 200 boxes across, on every poster size from US Letter to 4A0"
         ]
       }
     ]

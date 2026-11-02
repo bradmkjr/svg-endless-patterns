@@ -15,6 +15,7 @@ import { ToolLoading } from "./ToolLoading";
 import styles from "./BlockBuilder.module.css";
 
 type View = "puzzle" | "solution";
+const isPlainPaper = (paper: PuzzlePaper | MazePaperId): paper is PuzzlePaper => (PAPER_OPTIONS as string[]).includes(paper);
 const COLOR_KEYS: (keyof PuzzleColors)[] = ["background", "ink", "accent"];
 
 export function PuzzleBuilder({ locale, option, labels, initialState }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: PuzzleRequest }) {
@@ -24,9 +25,8 @@ export function PuzzleBuilder({ locale, option, labels, initialState }: { locale
   const [state, setState] = useState(initialState);
   useTrackCustomize("puzzle", state);
   const [chosenView, setView] = useState<View>("puzzle");
-  const [paper, setPaper] = useState<PuzzlePaper>("letter");
+  const [paper, setPaper] = useState<PuzzlePaper | MazePaperId>("letter");
   const [withSolution, setWithSolution] = useState(true);
-  const [posterPaper, setPosterPaper] = useState<MazePaperId>("a1");
   const [status, setStatus] = useState("");
   const [busy, setBusy] = useState(false);
 
@@ -59,6 +59,9 @@ export function PuzzleBuilder({ locale, option, labels, initialState }: { locale
   const view: View = solved ? chosenView : "puzzle";
   const svg = result?.svg[view] ?? "";
   const sizes = PUZZLE_SIZES[state.puzzle];
+  // A poster is any page beyond the everyday ones, which keep their own layout with the rules at full size.
+  const posters = hasPoster(state.puzzle) ? MAZE_PAPERS.filter((option) => !isPlainPaper(option.id)) : [];
+  const isPoster = !isPlainPaper(paper);
   const fileName = `${state.puzzle}${solved ? `-${state.seed}` : ""}`;
 
   return (
@@ -79,7 +82,7 @@ export function PuzzleBuilder({ locale, option, labels, initialState }: { locale
           {result && <p className={styles.note}>{result.rules}</p>}
           {result?.givens !== undefined && <p className={styles.note}>{fill(t.givens, { n: result.givens })}</p>}
           <div className={`${styles.actions} no-print`}>
-            <button type="button" disabled={busy} className={styles.primary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generatePuzzlePdf(state, { paper, solution: withSolution }), `${fileName}.pdf`, "application/pdf"))}>
+            <button type="button" disabled={busy} className={styles.primary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(isPoster ? await generatePuzzlePosterPdf(state, paper as MazePaperId) : await generatePuzzlePdf(state, { paper: paper as PuzzlePaper, solution: withSolution }), `${fileName}${isPoster ? `-${state.size}-${paper}` : ""}.pdf`, "application/pdf"))}>
               {t.downloadPdf}
             </button>
             <button type="button" disabled={busy || !svg} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(svg, `${fileName}-${view}.svg`))}>
@@ -157,15 +160,21 @@ export function PuzzleBuilder({ locale, option, labels, initialState }: { locale
             <legend>{t.download}</legend>
             <label className={styles.field}>
               <span>{t.paper}</span>
-              <select value={paper} onChange={(e) => setPaper(e.target.value as PuzzlePaper)}>
+              <select value={paper} onChange={(e) => setPaper(e.target.value as PuzzlePaper | MazePaperId)}>
                 {PAPER_OPTIONS.map((id) => (
                   <option key={id} value={id}>
                     {t.papers[id]}
                   </option>
                 ))}
+                {posters.map((option) => (
+                  <option key={option.id} value={option.id}>
+                    {option.label}
+                  </option>
+                ))}
               </select>
             </label>
-            <p className={styles.note}>{t.paperNote}</p>
+            {!isPlainPaper(paper) && result?.posterBox && <p className={styles.note}>{fill(t.posterBox, { size: result.posterBox[paper] })}</p>}
+            <p className={styles.note}>{hasPoster(state.puzzle) ? `${t.paperNote} ${t.posterNote}` : t.paperNote}</p>
             {solved && (
               <label className={styles.check}>
                 <input type="checkbox" checked={withSolution} onChange={(e) => setWithSolution(e.target.checked)} />
@@ -173,29 +182,6 @@ export function PuzzleBuilder({ locale, option, labels, initialState }: { locale
               </label>
             )}
           </fieldset>
-
-          {hasPoster(state.puzzle) && (
-            <fieldset>
-              <legend>{t.poster}</legend>
-              <label className={styles.field}>
-                <span>{t.posterSize}</span>
-                <select value={posterPaper} onChange={(e) => setPosterPaper(e.target.value as MazePaperId)}>
-                  {MAZE_PAPERS.map((option) => (
-                    <option key={option.id} value={option.id}>
-                      {option.label}
-                    </option>
-                  ))}
-                </select>
-              </label>
-              <p className={styles.note}>{result?.posterBox ? fill(t.posterBox, { size: result.posterBox[posterPaper] }) : t.loading}</p>
-              <div className={styles.actions}>
-                <button type="button" disabled={busy || !result} className={styles.tab} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generatePuzzlePosterPdf(state, posterPaper), `${fileName}-${state.size}-${posterPaper}.pdf`, "application/pdf"))}>
-                  {t.downloadPoster}
-                </button>
-              </div>
-              <p className={styles.note}>{t.posterNote}</p>
-            </fieldset>
-          )}
 
           <fieldset>
             <legend>{t.colors}</legend>

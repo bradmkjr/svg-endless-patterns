@@ -543,6 +543,12 @@
     }
   },
   "changelog": {
+    "Privacy Policy and Terms of Service": {
+      "title": "Política de privacidad y condiciones de servicio",
+      "items": [
+        "Nuevas páginas de política de privacidad y condiciones de servicio, enlazadas en el pie de cada página"
+      ]
+    },
     "Site analytics": {
       "title": "Analítica del sitio",
       "items": [

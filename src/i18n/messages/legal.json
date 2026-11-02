@@ -1,0 +1,207 @@
+{
+  "en": {
+    "updated": "Last updated: {date}",
+    "privacy": {
+      "metaTitle": "Privacy Policy",
+      "metaDesc": "What Endless Patterns collects, why, who receives it and the choices you have.",
+      "h1": "Privacy Policy",
+      "sections": [
+        { "h": "Who we are", "body": ["Endless Patterns runs this website and its pattern server. You can reach us about privacy at [privacy@endless-patterns.com](mailto:privacy@endless-patterns.com)."] },
+        { "h": "What we collect", "body": ["You don't need an account, and we don't ask for your name or email address. Information is handled in these ways:"], "items": [
+          "Pattern server: to draw your design, your settings are sent to our server, which can record them in its logs with your IP address and the time of the request.",
+          "Website hosting: the companies that host the site can log technical details of each request, such as your IP address and browser.",
+          "Google Analytics: see the next section.",
+          "Your browser: seeds and the palettes you save stay in this browser's local storage. They aren't sent to us unless a setting is part of a request to draw a design."
+        ] },
+        { "h": "Google Analytics", "body": ["We use Google Analytics to see how the site is used. It sets cookies and sends Google the pages you visit, including each page's full address with your settings, the site that sent you, your device and browser, and your approximate location.", "[How Google uses this information](https://policies.google.com/technologies/partner-sites) · [Opt out of Google Analytics](https://tools.google.com/dlpage/gaoptout)"] },
+        { "h": "Why we use it", "body": ["We use this information to draw your designs, keep the site running and secure, and understand how to improve it. Where the law requires a legal basis, we rely on our legitimate interest in doing those things."] },
+        { "h": "Who receives it", "body": ["We share information only with Google and our hosting providers, as described above, or when the law requires it. These companies may process it in other countries, including the United States. We don't sell your information, and the site shows no ads."] },
+        { "h": "How long we keep it", "body": ["We keep server logs and analytics data only as long as we need them for the purposes above. Items in local storage stay until you clear them from your browser."] },
+        { "h": "Your choices and rights", "body": ["You can block cookies in your browser, use Google's opt-out above, and clear local storage at any time. Depending on where you live, you may have the right to ask for access to your information, or to have it corrected or deleted, to object to or limit its use, and to complain to your data protection authority. To make a request, email us. We don't ask for your name, so we may not be able to link logs or analytics data to you."] },
+        { "h": "Children", "body": ["This site isn't directed at children under 13, and we don't knowingly collect their personal information."] },
+        { "h": "Changes", "body": ["If this policy changes, we'll post the new version here and update the date above."] }
+      ]
+    },
+    "terms": {
+      "metaTitle": "Terms of Service",
+      "metaDesc": "The terms for using Endless Patterns and the designs you make with it.",
+      "h1": "Terms of Service",
+      "sections": [
+        { "h": "Using this site", "body": ["Endless Patterns is a free website for customizing quilt blocks, stitch patterns and other designs. By using it, you agree to these terms. If you don't agree, please don't use the site."] },
+        { "h": "Your designs", "body": ["Everything you make here is free to download and use, including in things you sell. Many of the designs are traditional and belong to no one, so we can't promise that yours is unique or give you exclusive rights to it."] },
+        { "h": "The site", "body": ["The site's own text and software belong to us or the people who license them to us, and using the site doesn't transfer them to you. Sources we draw on are credited on the [Acknowledgements](/acknowledgements/) page."] },
+        { "h": "Acceptable use", "body": ["Please don't use the site or its server in a way that breaks the law, interferes with them or overloads them, including with automated bulk requests, or that tries to get around their security."] },
+        { "h": "Check before you cut", "body": ["Measurements, yardage, yarn amounts, gauges, written instructions and dye quantities are calculated guides and can be wrong. Check them, and make a test piece, before you buy or cut materials. When you work with dyes or other chemicals, follow the manufacturer's safety instructions."] },
+        { "h": "No warranty", "body": ["The site and everything it produces are provided as-is, with no warranty of any kind, to the fullest extent the law allows. We may change, suspend or remove any part of the site at any time."] },
+        { "h": "Limit of liability", "body": ["To the fullest extent the law allows, we aren't liable for indirect or consequential losses, or for lost or wasted materials, time or money, that result from using the site. Nothing in these terms limits rights or liability that the law doesn't allow us to limit."] },
+        { "h": "Other websites", "body": ["Links to other websites are provided for convenience. We don't control those sites and aren't responsible for them."] },
+        { "h": "Privacy", "body": ["Our [Privacy Policy](/privacy/) explains how information is handled."] },
+        { "h": "Changes and questions", "body": ["If these terms change, we'll post the new version here and update the date above. Questions are welcome at [privacy@endless-patterns.com](mailto:privacy@endless-patterns.com)."] }
+      ]
+    }
+  },
+  "es": {
+    "updated": "Última actualización: {date}",
+    "privacy": {
+      "metaTitle": "Política de privacidad",
+      "metaDesc": "Qué recoge Endless Patterns, por qué, quién lo recibe y qué opciones tienes.",
+      "h1": "Política de privacidad",
+      "sections": [
+        { "h": "Quiénes somos", "body": ["Endless Patterns gestiona este sitio web y su servidor de patrones. Puedes escribirnos sobre privacidad a [privacy@endless-patterns.com](mailto:privacy@endless-patterns.com)."] },
+        { "h": "Qué recogemos", "body": ["No necesitas una cuenta, y no te pedimos tu nombre ni tu correo electrónico. La información se trata de estas formas:"], "items": [
+          "Servidor de patrones: para dibujar tu diseño, tus ajustes se envían a nuestro servidor, que puede registrarlos junto con tu dirección IP y la hora de la solicitud.",
+          "Alojamiento web: las empresas que alojan el sitio pueden registrar datos técnicos de cada solicitud, como tu dirección IP y tu navegador.",
+          "Google Analytics: consulta la sección siguiente.",
+          "Tu navegador: las semillas y las paletas que guardas se quedan en el almacenamiento local de este navegador. No nos llegan salvo que un ajuste forme parte de una solicitud para dibujar un diseño."
+        ] },
+        { "h": "Google Analytics", "body": ["Usamos Google Analytics para saber cómo se usa el sitio. Instala cookies y envía a Google las páginas que visitas, incluida la dirección completa de cada página con tus ajustes, el sitio del que vienes, tu dispositivo y navegador, y tu ubicación aproximada.", "[Cómo usa Google esta información](https://policies.google.com/technologies/partner-sites) · [Desactivar Google Analytics](https://tools.google.com/dlpage/gaoptout)"] },
+        { "h": "Para qué lo usamos", "body": ["Usamos esta información para dibujar tus diseños, mantener el sitio en funcionamiento y seguro, y saber cómo mejorarlo. Cuando la ley exige una base jurídica, nos basamos en nuestro interés legítimo en hacer esas cosas."] },
+        { "h": "Quién la recibe", "body": ["Solo compartimos información con Google y nuestros proveedores de alojamiento, como se describe arriba, o cuando la ley lo exige. Estas empresas pueden tratarla en otros países, incluidos los Estados Unidos. No vendemos tu información, y el sitio no muestra anuncios."] },
+        { "h": "Cuánto tiempo la conservamos", "body": ["Conservamos los registros del servidor y los datos de analítica solo mientras los necesitamos para los fines anteriores. Lo que está en el almacenamiento local permanece hasta que lo borres de tu navegador."] },
+        { "h": "Tus opciones y derechos", "body": ["Puedes bloquear las cookies en tu navegador, usar la desactivación de Google indicada arriba y borrar el almacenamiento local en cualquier momento. Según dónde vivas, puedes tener derecho a pedir acceso a tu información, su corrección o eliminación, a oponerte a su uso o limitarlo, y a reclamar ante tu autoridad de protección de datos. Para hacer una solicitud, escríbenos. Como no te pedimos el nombre, puede que no podamos relacionar contigo los registros o los datos de analítica."] },
+        { "h": "Menores", "body": ["Este sitio no está dirigido a menores de 13 años, y no recogemos a sabiendas su información personal."] },
+        { "h": "Cambios", "body": ["Si esta política cambia, publicaremos aquí la nueva versión y actualizaremos la fecha de arriba."] }
+      ]
+    },
+    "terms": {
+      "metaTitle": "Condiciones de servicio",
+      "metaDesc": "Las condiciones para usar Endless Patterns y los diseños que haces con él.",
+      "h1": "Condiciones de servicio",
+      "sections": [
+        { "h": "Uso de este sitio", "body": ["Endless Patterns es un sitio web gratuito para personalizar bloques de patchwork, patrones de puntos y otros diseños. Al usarlo, aceptas estas condiciones. Si no las aceptas, no uses el sitio."] },
+        { "h": "Tus diseños", "body": ["Todo lo que crees aquí se puede descargar y usar gratis, también en cosas que vendas. Muchos diseños son tradicionales y no pertenecen a nadie, así que no podemos prometer que el tuyo sea único ni darte derechos exclusivos sobre él."] },
+        { "h": "El sitio", "body": ["Los textos y el software propios del sitio nos pertenecen a nosotros o a quienes nos los licencian, y usar el sitio no te los transfiere. Las fuentes en las que nos apoyamos aparecen en la página de [Agradecimientos](/acknowledgements/)."] },
+        { "h": "Uso aceptable", "body": ["No uses el sitio ni su servidor de un modo que infrinja la ley, los perturbe o los sobrecargue, incluso con solicitudes automáticas masivas, ni intentes eludir su seguridad."] },
+        { "h": "Comprueba antes de cortar", "body": ["Las medidas, cantidades de tela e hilo, muestras, instrucciones escritas y cantidades de tinte son guías calculadas y pueden contener errores. Compruébalas y haz una pieza de prueba antes de comprar o cortar materiales. Si trabajas con tintes u otros productos químicos, sigue las instrucciones de seguridad del fabricante."] },
+        { "h": "Sin garantía", "body": ["El sitio y todo lo que produce se ofrecen tal cual, sin garantía de ningún tipo, en la mayor medida que permita la ley. Podemos cambiar, suspender o retirar cualquier parte del sitio en cualquier momento."] },
+        { "h": "Límite de responsabilidad", "body": ["En la mayor medida que permita la ley, no respondemos de pérdidas indirectas o consecuentes, ni de materiales, tiempo o dinero perdidos o malgastados, derivados del uso del sitio. Nada en estas condiciones limita derechos o responsabilidades que la ley no nos permita limitar."] },
+        { "h": "Otros sitios web", "body": ["Los enlaces a otros sitios web se ofrecen por comodidad. No controlamos esos sitios ni respondemos de ellos."] },
+        { "h": "Privacidad", "body": ["Nuestra [Política de privacidad](/privacy/) explica cómo se trata la información."] },
+        { "h": "Cambios y preguntas", "body": ["Si estas condiciones cambian, publicaremos aquí la nueva versión y actualizaremos la fecha de arriba. Puedes enviar tus preguntas a [privacy@endless-patterns.com](mailto:privacy@endless-patterns.com)."] }
+      ]
+    }
+  },
+  "fr": {
+    "updated": "Dernière mise à jour : {date}",
+    "privacy": {
+      "metaTitle": "Politique de confidentialité",
+      "metaDesc": "Ce qu'Endless Patterns collecte, pourquoi, qui le reçoit et les choix dont vous disposez.",
+      "h1": "Politique de confidentialité",
+      "sections": [
+        { "h": "Qui sommes-nous", "body": ["Endless Patterns exploite ce site web et son serveur de motifs. Pour toute question de confidentialité, écrivez à [privacy@endless-patterns.com](mailto:privacy@endless-patterns.com)."] },
+        { "h": "Ce que nous collectons", "body": ["Vous n'avez pas besoin de compte, et nous ne demandons ni votre nom ni votre adresse e-mail. Les informations sont traitées de ces façons :"], "items": [
+          "Serveur de motifs : pour dessiner votre motif, vos réglages sont envoyés à notre serveur, qui peut les enregistrer dans ses journaux avec votre adresse IP et l'heure de la requête.",
+          "Hébergement du site : les sociétés qui hébergent le site peuvent journaliser des données techniques de chaque requête, comme votre adresse IP et votre navigateur.",
+          "Google Analytics : voir la section suivante.",
+          "Votre navigateur : les graines et les palettes enregistrées restent dans le stockage local de ce navigateur. Elles ne nous parviennent que si un réglage fait partie d'une requête pour dessiner un motif."
+        ] },
+        { "h": "Google Analytics", "body": ["Nous utilisons Google Analytics pour savoir comment le site est utilisé. Il dépose des cookies et envoie à Google les pages que vous consultez, y compris l'adresse complète de chaque page avec vos réglages, le site d'où vous venez, votre appareil et votre navigateur, ainsi que votre position approximative.", "[Comment Google utilise ces informations](https://policies.google.com/technologies/partner-sites) · [Désactiver Google Analytics](https://tools.google.com/dlpage/gaoptout)"] },
+        { "h": "Pourquoi nous les utilisons", "body": ["Nous utilisons ces informations pour dessiner vos motifs, assurer le fonctionnement et la sécurité du site, et savoir comment l'améliorer. Lorsque la loi exige une base juridique, nous nous fondons sur notre intérêt légitime à faire ces choses."] },
+        { "h": "Qui les reçoit", "body": ["Nous ne partageons des informations qu'avec Google et nos hébergeurs, comme décrit ci-dessus, ou lorsque la loi l'exige. Ces sociétés peuvent les traiter dans d'autres pays, notamment aux États-Unis. Nous ne vendons pas vos informations, et le site n'affiche pas de publicité."] },
+        { "h": "Durée de conservation", "body": ["Nous conservons les journaux du serveur et les données d'analyse uniquement le temps nécessaire aux finalités ci-dessus. Ce qui se trouve dans le stockage local y reste jusqu'à ce que vous l'effaciez de votre navigateur."] },
+        { "h": "Vos choix et vos droits", "body": ["Vous pouvez bloquer les cookies dans votre navigateur, utiliser l'outil de désactivation de Google indiqué ci-dessus et effacer le stockage local à tout moment. Selon votre lieu de résidence, vous pouvez avoir le droit de demander l'accès à vos informations, leur rectification ou leur suppression, de vous opposer à leur utilisation ou de la limiter, et de saisir votre autorité de protection des données. Pour faire une demande, écrivez-nous. Comme nous ne demandons pas votre nom, nous ne pourrons peut-être pas relier les journaux ou les données d'analyse à vous."] },
+        { "h": "Enfants", "body": ["Ce site ne s'adresse pas aux enfants de moins de 13 ans, et nous ne collectons pas sciemment leurs informations personnelles."] },
+        { "h": "Modifications", "body": ["Si cette politique change, nous publierons ici la nouvelle version et mettrons à jour la date ci-dessus."] }
+      ]
+    },
+    "terms": {
+      "metaTitle": "Conditions d'utilisation",
+      "metaDesc": "Les conditions d'utilisation d'Endless Patterns et des motifs que vous y créez.",
+      "h1": "Conditions d'utilisation",
+      "sections": [
+        { "h": "Utilisation de ce site", "body": ["Endless Patterns est un site web gratuit pour personnaliser des blocs de patchwork, des points et d'autres motifs. En l'utilisant, vous acceptez ces conditions. Si vous ne les acceptez pas, merci de ne pas utiliser le site."] },
+        { "h": "Vos motifs", "body": ["Tout ce que vous créez ici peut être téléchargé et utilisé gratuitement, y compris dans ce que vous vendez. Beaucoup de motifs sont traditionnels et n'appartiennent à personne : nous ne pouvons donc pas promettre que le vôtre est unique ni vous donner de droits exclusifs."] },
+        { "h": "Le site", "body": ["Les textes et logiciels propres au site nous appartiennent ou appartiennent à ceux qui nous les concèdent, et utiliser le site ne vous les transfère pas. Les sources utilisées sont citées sur la page [Remerciements](/acknowledgements/)."] },
+        { "h": "Utilisation acceptable", "body": ["Merci de ne pas utiliser le site ou son serveur d'une manière qui enfreint la loi, les perturbe ou les surcharge, notamment par des requêtes automatisées en masse, ni de tenter de contourner leur sécurité."] },
+        { "h": "Vérifiez avant de couper", "body": ["Les mesures, métrages, quantités de fil, échantillons, instructions écrites et quantités de teinture sont des repères calculés et peuvent être erronés. Vérifiez-les et faites un essai avant d'acheter ou de couper vos matériaux. Lorsque vous utilisez des teintures ou d'autres produits chimiques, suivez les consignes de sécurité du fabricant."] },
+        { "h": "Absence de garantie", "body": ["Le site et tout ce qu'il produit sont fournis tels quels, sans aucune garantie, dans toute la mesure permise par la loi. Nous pouvons modifier, suspendre ou retirer toute partie du site à tout moment."] },
+        { "h": "Limitation de responsabilité", "body": ["Dans toute la mesure permise par la loi, nous ne sommes pas responsables des pertes indirectes ou consécutives, ni des matériaux, du temps ou de l'argent perdus ou gaspillés du fait de l'utilisation du site. Rien dans ces conditions ne limite les droits ou responsabilités que la loi ne nous permet pas de limiter."] },
+        { "h": "Autres sites web", "body": ["Les liens vers d'autres sites web sont fournis pour votre commodité. Nous ne contrôlons pas ces sites et n'en sommes pas responsables."] },
+        { "h": "Confidentialité", "body": ["Notre [Politique de confidentialité](/privacy/) explique comment les informations sont traitées."] },
+        { "h": "Modifications et questions", "body": ["Si ces conditions changent, nous publierons ici la nouvelle version et mettrons à jour la date ci-dessus. Vos questions sont les bienvenues à [privacy@endless-patterns.com](mailto:privacy@endless-patterns.com)."] }
+      ]
+    }
+  },
+  "de": {
+    "updated": "Zuletzt aktualisiert: {date}",
+    "privacy": {
+      "metaTitle": "Datenschutzerklärung",
+      "metaDesc": "Was Endless Patterns erfasst, warum, wer es erhält und welche Wahlmöglichkeiten Sie haben.",
+      "h1": "Datenschutzerklärung",
+      "sections": [
+        { "h": "Wer wir sind", "body": ["Endless Patterns betreibt diese Website und ihren Musterserver. Bei Fragen zum Datenschutz erreichen Sie uns unter [privacy@endless-patterns.com](mailto:privacy@endless-patterns.com)."] },
+        { "h": "Was wir erfassen", "body": ["Sie brauchen kein Konto, und wir fragen nicht nach Ihrem Namen oder Ihrer E-Mail-Adresse. Informationen werden auf diese Weise verarbeitet:"], "items": [
+          "Musterserver: Um Ihr Muster zu zeichnen, werden Ihre Einstellungen an unseren Server gesendet, der sie zusammen mit Ihrer IP-Adresse und dem Zeitpunkt der Anfrage protokollieren kann.",
+          "Website-Hosting: Die Unternehmen, die die Website hosten, können technische Angaben zu jeder Anfrage protokollieren, etwa Ihre IP-Adresse und Ihren Browser.",
+          "Google Analytics: siehe nächster Abschnitt.",
+          "Ihr Browser: Startwerte und gespeicherte Paletten bleiben im lokalen Speicher dieses Browsers. Sie erreichen uns nur, wenn eine Einstellung Teil einer Anfrage zum Zeichnen eines Musters ist."
+        ] },
+        { "h": "Google Analytics", "body": ["Wir verwenden Google Analytics, um zu sehen, wie die Website genutzt wird. Es setzt Cookies und sendet Google die von Ihnen besuchten Seiten, einschließlich der vollständigen Adresse jeder Seite mit Ihren Einstellungen, der Website, von der Sie kommen, Ihres Geräts und Browsers sowie Ihres ungefähren Standorts.", "[Wie Google diese Informationen verwendet](https://policies.google.com/technologies/partner-sites) · [Google Analytics deaktivieren](https://tools.google.com/dlpage/gaoptout)"] },
+        { "h": "Wozu wir sie verwenden", "body": ["Wir verwenden diese Informationen, um Ihre Muster zu zeichnen, die Website funktionsfähig und sicher zu halten und zu verstehen, wie wir sie verbessern können. Wo das Gesetz eine Rechtsgrundlage verlangt, stützen wir uns auf unser berechtigtes Interesse an diesen Zwecken."] },
+        { "h": "Wer sie erhält", "body": ["Wir geben Informationen nur an Google und unsere Hosting-Anbieter weiter, wie oben beschrieben, oder wenn das Gesetz es verlangt. Diese Unternehmen können sie in anderen Ländern verarbeiten, auch in den Vereinigten Staaten. Wir verkaufen Ihre Informationen nicht, und die Website zeigt keine Werbung."] },
+        { "h": "Wie lange wir sie aufbewahren", "body": ["Serverprotokolle und Analysedaten bewahren wir nur so lange auf, wie wir sie für die genannten Zwecke brauchen. Inhalte im lokalen Speicher bleiben, bis Sie sie in Ihrem Browser löschen."] },
+        { "h": "Ihre Wahlmöglichkeiten und Rechte", "body": ["Sie können Cookies in Ihrem Browser blockieren, die oben genannte Deaktivierung von Google nutzen und den lokalen Speicher jederzeit löschen. Je nach Wohnort haben Sie möglicherweise das Recht, Auskunft über Ihre Informationen, ihre Berichtigung oder Löschung zu verlangen, ihrer Nutzung zu widersprechen oder sie einzuschränken und sich bei Ihrer Datenschutzbehörde zu beschweren. Für eine Anfrage schreiben Sie uns eine E-Mail. Da wir nicht nach Ihrem Namen fragen, können wir Protokolle oder Analysedaten Ihnen möglicherweise nicht zuordnen."] },
+        { "h": "Kinder", "body": ["Diese Website richtet sich nicht an Kinder unter 13 Jahren, und wir erfassen nicht wissentlich ihre personenbezogenen Daten."] },
+        { "h": "Änderungen", "body": ["Wenn sich diese Erklärung ändert, veröffentlichen wir hier die neue Fassung und aktualisieren das Datum oben."] }
+      ]
+    },
+    "terms": {
+      "metaTitle": "Nutzungsbedingungen",
+      "metaDesc": "Die Bedingungen für die Nutzung von Endless Patterns und der damit erstellten Muster.",
+      "h1": "Nutzungsbedingungen",
+      "sections": [
+        { "h": "Nutzung dieser Website", "body": ["Endless Patterns ist eine kostenlose Website zum Anpassen von Quiltblöcken, Maschenmustern und anderen Designs. Mit der Nutzung stimmen Sie diesen Bedingungen zu. Wenn Sie nicht zustimmen, nutzen Sie die Website bitte nicht."] },
+        { "h": "Ihre Muster", "body": ["Alles, was Sie hier erstellen, dürfen Sie kostenlos herunterladen und verwenden, auch für Dinge, die Sie verkaufen. Viele Muster sind traditionell und gehören niemandem. Deshalb können wir nicht versprechen, dass Ihres einzigartig ist, und Ihnen keine Exklusivrechte daran geben."] },
+        { "h": "Die Website", "body": ["Die eigenen Texte und die Software der Website gehören uns oder unseren Lizenzgebern, und durch die Nutzung gehen sie nicht auf Sie über. Verwendete Quellen werden auf der Seite [Danksagungen](/acknowledgements/) genannt."] },
+        { "h": "Zulässige Nutzung", "body": ["Bitte nutzen Sie die Website und ihren Server nicht auf eine Weise, die gegen Gesetze verstößt, sie stört oder überlastet, auch nicht durch automatisierte Massenanfragen, und versuchen Sie nicht, ihre Sicherheit zu umgehen."] },
+        { "h": "Vor dem Zuschneiden prüfen", "body": ["Maße, Stoff- und Garnmengen, Maschenproben, schriftliche Anleitungen und Farbstoffmengen sind berechnete Richtwerte und können falsch sein. Prüfen Sie sie und fertigen Sie ein Probestück an, bevor Sie Material kaufen oder zuschneiden. Beachten Sie beim Umgang mit Farbstoffen oder anderen Chemikalien die Sicherheitshinweise des Herstellers."] },
+        { "h": "Keine Gewährleistung", "body": ["Die Website und alles, was sie erzeugt, werden im Rahmen des gesetzlich Zulässigen wie besehen und ohne jegliche Gewährleistung bereitgestellt. Wir können jeden Teil der Website jederzeit ändern, aussetzen oder entfernen."] },
+        { "h": "Haftungsbeschränkung", "body": ["Im gesetzlich größtmöglichen Umfang haften wir nicht für indirekte Schäden oder Folgeschäden und nicht für verlorenes oder verschwendetes Material, Zeit oder Geld, die aus der Nutzung der Website entstehen. Nichts in diesen Bedingungen beschränkt Rechte oder eine Haftung, deren Beschränkung das Gesetz nicht erlaubt."] },
+        { "h": "Andere Websites", "body": ["Links zu anderen Websites dienen Ihrer Bequemlichkeit. Wir kontrollieren diese Websites nicht und sind nicht für sie verantwortlich."] },
+        { "h": "Datenschutz", "body": ["Unsere [Datenschutzerklärung](/privacy/) erklärt, wie Informationen verarbeitet werden."] },
+        { "h": "Änderungen und Fragen", "body": ["Wenn sich diese Bedingungen ändern, veröffentlichen wir hier die neue Fassung und aktualisieren das Datum oben. Fragen richten Sie gern an [privacy@endless-patterns.com](mailto:privacy@endless-patterns.com)."] }
+      ]
+    }
+  },
+  "pt": {
+    "updated": "Última atualização: {date}",
+    "privacy": {
+      "metaTitle": "Política de Privacidade",
+      "metaDesc": "O que o Endless Patterns coleta, por quê, quem recebe e quais são suas opções.",
+      "h1": "Política de Privacidade",
+      "sections": [
+        { "h": "Quem somos", "body": ["O Endless Patterns administra este site e seu servidor de padrões. Para falar sobre privacidade, escreva para [privacy@endless-patterns.com](mailto:privacy@endless-patterns.com)."] },
+        { "h": "O que coletamos", "body": ["Você não precisa de uma conta, e não pedimos seu nome nem seu e-mail. As informações são tratadas destas formas:"], "items": [
+          "Servidor de padrões: para desenhar seu projeto, suas configurações são enviadas ao nosso servidor, que pode registrá-las com seu endereço IP e o horário da solicitação.",
+          "Hospedagem do site: as empresas que hospedam o site podem registrar dados técnicos de cada solicitação, como seu endereço IP e navegador.",
+          "Google Analytics: veja a próxima seção.",
+          "Seu navegador: as sementes e as paletas salvas ficam no armazenamento local deste navegador. Elas só chegam até nós se uma configuração fizer parte de uma solicitação para desenhar um projeto."
+        ] },
+        { "h": "Google Analytics", "body": ["Usamos o Google Analytics para saber como o site é usado. Ele define cookies e envia ao Google as páginas que você visita, incluindo o endereço completo de cada página com suas configurações, o site de onde você veio, seu dispositivo e navegador e sua localização aproximada.", "[Como o Google usa estas informações](https://policies.google.com/technologies/partner-sites) · [Desativar o Google Analytics](https://tools.google.com/dlpage/gaoptout)"] },
+        { "h": "Por que usamos", "body": ["Usamos estas informações para desenhar seus projetos, manter o site funcionando e seguro e entender como melhorá-lo. Quando a lei exige uma base legal, nos apoiamos em nosso legítimo interesse em fazer essas coisas."] },
+        { "h": "Quem recebe", "body": ["Só compartilhamos informações com o Google e nossos provedores de hospedagem, como descrito acima, ou quando a lei exige. Essas empresas podem tratá-las em outros países, inclusive nos Estados Unidos. Não vendemos suas informações, e o site não exibe anúncios."] },
+        { "h": "Por quanto tempo guardamos", "body": ["Guardamos os registros do servidor e os dados de análise apenas pelo tempo necessário para as finalidades acima. O que está no armazenamento local fica lá até você apagar do navegador."] },
+        { "h": "Suas opções e direitos", "body": ["Você pode bloquear cookies no navegador, usar a desativação do Google indicada acima e apagar o armazenamento local a qualquer momento. Dependendo de onde você mora, pode ter o direito de pedir acesso às suas informações, sua correção ou exclusão, de se opor ao uso ou limitá-lo e de reclamar à autoridade de proteção de dados. Para fazer um pedido, envie um e-mail. Como não pedimos seu nome, talvez não consigamos relacionar registros ou dados de análise a você."] },
+        { "h": "Crianças", "body": ["Este site não é direcionado a crianças menores de 13 anos, e não coletamos intencionalmente informações pessoais delas."] },
+        { "h": "Alterações", "body": ["Se esta política mudar, publicaremos a nova versão aqui e atualizaremos a data acima."] }
+      ]
+    },
+    "terms": {
+      "metaTitle": "Termos de Serviço",
+      "metaDesc": "Os termos para usar o Endless Patterns e os projetos que você cria com ele.",
+      "h1": "Termos de Serviço",
+      "sections": [
+        { "h": "Uso deste site", "body": ["O Endless Patterns é um site gratuito para personalizar blocos de patchwork, padrões de pontos e outros projetos. Ao usá-lo, você aceita estes termos. Se não aceitar, não use o site."] },
+        { "h": "Seus projetos", "body": ["Tudo o que você cria aqui pode ser baixado e usado de graça, inclusive em coisas que você vende. Muitos desenhos são tradicionais e não pertencem a ninguém, então não podemos prometer que o seu seja único nem dar direitos exclusivos sobre ele."] },
+        { "h": "O site", "body": ["Os textos e o software próprios do site pertencem a nós ou a quem os licencia para nós, e usar o site não os transfere para você. As fontes que usamos aparecem na página de [Agradecimentos](/acknowledgements/)."] },
+        { "h": "Uso aceitável", "body": ["Não use o site nem seu servidor de forma que viole a lei, interfira neles ou os sobrecarregue, inclusive com solicitações automáticas em massa, nem tente contornar sua segurança."] },
+        { "h": "Confira antes de cortar", "body": ["Medidas, quantidades de tecido e fio, amostras, instruções escritas e quantidades de corante são guias calculados e podem estar errados. Confira-os e faça uma peça de teste antes de comprar ou cortar materiais. Ao trabalhar com corantes ou outros produtos químicos, siga as instruções de segurança do fabricante."] },
+        { "h": "Sem garantia", "body": ["O site e tudo o que ele produz são fornecidos como estão, sem garantia de nenhum tipo, na máxima medida permitida por lei. Podemos alterar, suspender ou remover qualquer parte do site a qualquer momento."] },
+        { "h": "Limite de responsabilidade", "body": ["Na máxima medida permitida por lei, não respondemos por perdas indiretas ou consequentes, nem por materiais, tempo ou dinheiro perdidos ou desperdiçados em decorrência do uso do site. Nada nestes termos limita direitos ou responsabilidades que a lei não nos permita limitar."] },
+        { "h": "Outros sites", "body": ["Os links para outros sites são oferecidos por conveniência. Não controlamos esses sites nem respondemos por eles."] },
+        { "h": "Privacidade", "body": ["Nossa [Política de Privacidade](/privacy/) explica como as informações são tratadas."] },
+        { "h": "Alterações e dúvidas", "body": ["Se estes termos mudarem, publicaremos a nova versão aqui e atualizaremos a data acima. Envie suas dúvidas para [privacy@endless-patterns.com](mailto:privacy@endless-patterns.com)."] }
+      ]
+    }
+  }
+}

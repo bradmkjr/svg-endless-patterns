@@ -18,7 +18,9 @@
     "draft": "",
     "blog": "Blog",
     "changelog": "Changelog",
-    "acknowledgements": "Acknowledgements"
+    "acknowledgements": "Acknowledgements",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
   },
   "notFound": {
     "title": "That page isn't here",
@@ -318,8 +320,7 @@
     "dataH": "Your data",
     "data": "Most settings live in the page's address, which is what makes a share link work. To draw your design, those settings are sent to our pattern server, which can record them with your IP address in its logs. Seeds and the palettes you save stay in this browser's local storage.",
     "dataAnalytics": "We use Google Analytics to see how the site is used. It sets cookies and sends Google the pages you visit, including each page's full address with your settings, the site that sent you, your device and browser, and your approximate location.",
-    "dataGoogle": "How Google uses this information",
-    "dataOptOut": "Opt out of Google Analytics",
+    "dataPolicy": "Privacy Policy",
     "designsH": "The designs",
     "designs": "Blocks are drawn from geometry using traditional names. Layouts for the same name can vary between quilters and sources, so yours may differ from one you know.",
     "languageH": "",

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { pageMetadata } from "@/lib/pageMetadata";
 import type { Locale } from "@/lib/generator";
-import { messages } from "@/lib/i18n";
+import { localePath, messages } from "@/lib/i18n";
 
 export function aboutMetadata(locale: Locale): Metadata {
   const t = messages(locale).about;
@@ -34,11 +35,11 @@ export function AboutView({ locale }: { locale: Locale }) {
       <p>{t.stitch1}</p>
       <p>{t.stitch2}</p>
 
-      <h2 id="your-data">{t.dataH}</h2>
+      <h2>{t.dataH}</h2>
       <p>{t.data}</p>
       <p>{t.dataAnalytics}</p>
       <p>
-        <a href="https://policies.google.com/technologies/partner-sites">{t.dataGoogle}</a> · <a href="https://tools.google.com/dlpage/gaoptout">{t.dataOptOut}</a>
+        <Link href={localePath(locale, "/privacy/")}>{t.dataPolicy}</Link>
       </p>
 
       <h2>{t.designsH}</h2>

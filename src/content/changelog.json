@@ -1,6 +1,13 @@
 [
   {
     "date": "2026-11-01",
+    "title": "Privacy Policy and Terms of Service",
+    "items": [
+      "New Privacy Policy and Terms of Service pages, linked from the footer of every page"
+    ]
+  },
+  {
+    "date": "2026-11-01",
     "title": "Site analytics",
     "items": [
       "The site now uses Google Analytics, and the Your data section explains what is collected and how to opt out, and that settings are sent to our server to draw designs"

@@ -543,6 +543,12 @@
     }
   },
   "changelog": {
+    "Privacy Policy and Terms of Service": {
+      "title": "Datenschutzerklärung und Nutzungsbedingungen",
+      "items": [
+        "Neue Seiten für Datenschutzerklärung und Nutzungsbedingungen, verlinkt in der Fußzeile jeder Seite"
+      ]
+    },
     "Site analytics": {
       "title": "Website-Statistiken",
       "items": [

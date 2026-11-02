@@ -18,7 +18,9 @@
     "draft": "Diese Übersetzung ist ein erster Entwurf. Maße sind in Zoll und Yards angegeben.",
     "blog": "Blog",
     "changelog": "Änderungen",
-    "acknowledgements": "Danksagung"
+    "acknowledgements": "Danksagung",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen"
   },
   "notFound": {
     "title": "Diese Seite gibt es nicht",
@@ -318,8 +320,7 @@
     "dataH": "Deine Daten",
     "data": "Die meisten Einstellungen stehen in der Adresse der Seite, deshalb funktionieren geteilte Links. Um Ihr Muster zu zeichnen, werden diese Einstellungen an unseren Musterserver gesendet, der sie zusammen mit Ihrer IP-Adresse protokollieren kann. Startwerte und gespeicherte Paletten bleiben im lokalen Speicher dieses Browsers.",
     "dataAnalytics": "Wir verwenden Google Analytics, um zu sehen, wie die Website genutzt wird. Es setzt Cookies und sendet Google die von Ihnen besuchten Seiten, einschließlich der vollständigen Adresse jeder Seite mit Ihren Einstellungen, der Website, von der Sie kommen, Ihres Geräts und Browsers sowie Ihres ungefähren Standorts.",
-    "dataGoogle": "Wie Google diese Informationen verwendet",
-    "dataOptOut": "Google Analytics deaktivieren",
+    "dataPolicy": "Datenschutzerklärung",
     "designsH": "Die Muster",
     "designs": "Blöcke werden aus der Geometrie gezeichnet und tragen traditionelle Namen. Der Aufbau kann je nach Quelle unter demselben Namen abweichen.",
     "languageH": "Zu dieser Übersetzung",

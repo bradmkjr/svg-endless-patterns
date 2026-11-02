@@ -38,6 +38,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/needlepoint/",
     "/about/",
     "/acknowledgements/",
+    "/privacy/",
+    "/terms/",
     "/blog/",
     "/changelog/",
     ...posts.map((p) => `/blog/${p.slug}/`),

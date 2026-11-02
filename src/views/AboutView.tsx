@@ -34,8 +34,12 @@ export function AboutView({ locale }: { locale: Locale }) {
       <p>{t.stitch1}</p>
       <p>{t.stitch2}</p>
 
-      <h2>{t.dataH}</h2>
+      <h2 id="your-data">{t.dataH}</h2>
       <p>{t.data}</p>
+      <p>{t.dataAnalytics}</p>
+      <p>
+        <a href="https://policies.google.com/technologies/partner-sites">{t.dataGoogle}</a> · <a href="https://tools.google.com/dlpage/gaoptout">{t.dataOptOut}</a>
+      </p>
 
       <h2>{t.designsH}</h2>
       <p>{t.designs}</p>

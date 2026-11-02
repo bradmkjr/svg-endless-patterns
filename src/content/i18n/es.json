@@ -543,6 +543,12 @@
     }
   },
   "changelog": {
+    "Google Analytics": {
+      "title": "Google Analytics",
+      "items": [
+        "El sitio ahora usa Google Analytics, y la sección «Tus datos» explica qué se recoge y cómo desactivarlo, además de que los ajustes se envían a nuestro servidor para dibujar los diseños"
+      ]
+    },
     "Quilts and stitches now run on the API": {
       "title": "Patchwork y puntos ahora funcionan con la API",
       "items": [

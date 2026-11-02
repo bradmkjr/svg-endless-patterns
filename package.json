@@ -1,6 +1,6 @@
 {
   "name": "svg-endless-patterns",
-  "version": "0.1.71",
+  "version": "0.1.72",
   "private": true,
   "engines": {
     "node": "22.x"
@@ -15,6 +15,7 @@
     "prepare": "git config core.hooksPath .githooks || true"
   },
   "dependencies": {
+    "@next/third-parties": "16.3.3",
     "next": "16.3.3",
     "react": "19.2.8",
     "react-dom": "19.2.8"

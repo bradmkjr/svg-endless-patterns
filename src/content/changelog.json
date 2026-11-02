@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-11-01",
+    "title": "Google Analytics",
+    "items": [
+      "The site now uses Google Analytics, and the Your data section explains what is collected and how to opt out, and that settings are sent to our server to draw designs"
+    ]
+  },
+  {
     "date": "2026-10-31",
     "title": "Quilts and stitches now run on the API",
     "items": [

@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { Fraunces, Geist } from "next/font/google";
 import "@/app/globals.css";
@@ -29,6 +30,7 @@ export function RootDocument({ locale, children }: { locale: Locale; children: R
         <main>{children}</main>
         <SiteFooter locale={locale} />
       </body>
+      {process.env.NEXT_PUBLIC_GA_ID && <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />}
     </html>
   );
 }

@@ -31,4 +31,8 @@ deployed API origin, and configure the API's `CORS_ORIGIN` to allow
 `NEXT_PUBLIC_API_BASE_URL=http://localhost:4000` in `.env.local` and run the API
 on port 4000.
 
+Google Analytics loads only when the build has a measurement ID: set
+`NEXT_PUBLIC_GA_ID` in `.env` locally, and the GitHub repository variable
+`GA_MEASUREMENT_ID` for the deployed site, since `.env` isn't committed.
+
 See [AGENTS.md](./AGENTS.md) for the architecture.

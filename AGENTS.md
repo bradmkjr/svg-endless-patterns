@@ -53,13 +53,13 @@ Both are JSON in `src/content/`, for a database later. Read them only through
 `src/lib/content.ts`, which can become queries without changing its callers.
 
 ## Translations
-English is at the root; `es`, `fr`, `de` and `pt` (Brazilian) sit under a prefix.
+English is at the root; `es`, `fr`, `de`, `pt` (Brazilian), `it` and `nl` sit under a prefix.
 - `src/app/(en)` and `src/app/[locale]` are two root layouts, for a correct
   `<html lang>`. Their routes are thin: page bodies live in `src/views/` and take
   a `locale`. A new page needs a route in both trees, plus an entry in the sitemap.
 - Site text: `src/i18n/messages/`. Post and changelog text: `src/content/i18n/`.
   Generated text (cuts, steps, rows, PDFs) lives with the engine, in the API repository.
-- New text goes in all five languages. `lib/i18n.test.ts` fails on
+- New text goes in all seven languages. `lib/i18n.test.ts` fails on
   missing keys or mismatched placeholders and links.
 - Link with `localePath`. Translations only change words, never numbers or geometry.
 - A language changes one secondary color only, never the primary colors: the
@@ -80,7 +80,7 @@ for bots (`ToolLoading`, `primaryImageSrc`), drawn only when requested. Live dra
 with SVG from the same public API.
 
 ## Tools
-Each tool's files here: `lib/<tool>Types.ts` and `lib/<tool>State.ts`; `i18n/messages/<tool>.json` (all five
+Each tool's files here: `lib/<tool>Types.ts` and `lib/<tool>State.ts`; `i18n/messages/<tool>.json` (all seven
 languages in one file, checked by the tool's test); a builder and a view; and routes in both trees. They connect
 through `generator.ts`, the sitemap, `lib/libraryTools.ts`, sample kinds in `content.ts` and `PostSamples.tsx`, and
 library text under `library.tools` in the shared catalogs.

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import copy from "@/i18n/messages/crochetColorwork.json";
 import { COLORWORK_DESIGNS, COLORWORK_REPEAT_OPTIONS, COLORWORK_WEIGHT_OPTIONS, serializeCrochetColorworkState } from "@/lib/crochetColorworkState";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
+import { useTrackCustomize } from "@/lib/analytics";
 import { generateCrochetColorwork, generateCrochetColorworkPdf, type CrochetColorworkRequest, type CrochetColorworkResult, type Locale } from "@/lib/generator";
 import { fill, messages } from "@/lib/i18n";
 import { paletteAccents } from "@/lib/palettes";
@@ -22,6 +23,7 @@ export function CrochetColorworkBuilder({ locale, option, labels, initialState }
   const b = messages(locale).builder;
   const goToOption = useOptionNavigation("crochetColorwork", locale);
   const [state, setState] = useState(initialState);
+  useTrackCustomize("crochetColorwork", state);
   const [generated, setGenerated] = useState<{ key: string; result: CrochetColorworkResult } | null>(null);
   const [view, setView] = useState<View>("square");
   const [status, setStatus] = useState(t.loading);

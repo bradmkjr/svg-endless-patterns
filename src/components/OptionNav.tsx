@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { trackCustomize } from "@/lib/analytics";
 import type { Locale } from "@/lib/generator";
 import { messages } from "@/lib/i18n";
 import { optionHref, thumbSrc, TOOL_OPTIONS, type ToolId } from "@/lib/toolOptions";
@@ -10,7 +11,10 @@ import css from "./OptionNav.module.css";
 /** Goes to a choice's own page, keeping the other settings from the address bar. */
 export function useOptionNavigation(tool: ToolId, locale: Locale) {
   const router = useRouter();
-  return (slug: string) => router.push(optionHref(tool, locale, slug, window.location.search));
+  return (slug: string) => {
+    if (!window.location.pathname.endsWith(optionHref(tool, locale, slug))) trackCustomize(tool, [TOOL_OPTIONS[tool].param]);
+    router.push(optionHref(tool, locale, slug, window.location.search));
+  };
 }
 
 /** Thumbnails of a generator's main choice. Plain links in the HTML, so each page can be found. */

@@ -543,6 +543,12 @@
     }
   },
   "changelog": {
+    "Customization analytics": {
+      "title": "Análise de personalização",
+      "items": [
+        "A análise do site agora conta quando as configurações de um design são alteradas, por ferramenta e nome da configuração, e as páginas de privacidade informam isso"
+      ]
+    },
     "Privacy Policy and Terms of Service": {
       "title": "Política de Privacidade e Termos de Serviço",
       "items": [

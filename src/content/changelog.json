@@ -1,6 +1,13 @@
 [
   {
     "date": "2026-11-01",
+    "title": "Customization analytics",
+    "items": [
+      "Site analytics now count when a design's settings are changed, by tool and setting name, and the privacy pages say so"
+    ]
+  },
+  {
+    "date": "2026-11-01",
     "title": "Privacy Policy and Terms of Service",
     "items": [
       "New Privacy Policy and Terms of Service pages, linked from the footer of every page"

@@ -3,6 +3,7 @@
 import { useEffect, useState, type MouseEvent } from "react";
 import { generateLife, generateLifePdf, type LifeColors, type LifeRequest, type LifeResult, type Locale } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
+import { useTrackCustomize } from "@/lib/analytics";
 import { fill, messages } from "@/lib/i18n";
 import copy from "@/i18n/messages/life.json";
 import { CELL_SIZE_OPTIONS, columnOptions, COUNT_OPTIONS, NEIGHBORHOOD_OPTIONS, PATTERN_OPTIONS, phaseOptions, rowOptions, serializeLifeState, SPACING_OPTIONS } from "@/lib/lifeState";
@@ -37,6 +38,7 @@ export function LifeBuilder({ locale, option, labels, initialState }: { locale: 
   const b = messages(locale).builder;
   const goToOption = useOptionNavigation("life", locale);
   const [state, setState] = useState(initialState);
+  useTrackCustomize("life", state);
   const [view, setView] = useState<View>("sheet");
   const [status, setStatus] = useState("");
   const [busy, setBusy] = useState(false);

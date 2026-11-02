@@ -543,6 +543,12 @@
     }
   },
   "changelog": {
+    "Customization analytics": {
+      "title": "Statistiques de personnalisation",
+      "items": [
+        "Les statistiques du site comptent désormais les modifications des réglages d'un motif, par outil et par nom de réglage, et les pages de confidentialité le précisent"
+      ]
+    },
     "Privacy Policy and Terms of Service": {
       "title": "Politique de confidentialité et conditions d'utilisation",
       "items": [

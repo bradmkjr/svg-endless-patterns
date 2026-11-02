@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { generateGirih, generateGirihPdf, type GirihColors, type GirihRequest, type GirihStar, type Locale } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
+import { useTrackCustomize } from "@/lib/analytics";
 import { fill, messages } from "@/lib/i18n";
 import { COUNT_OPTIONS, GIRIH_PALETTES, REPEAT_OPTIONS, serializeGirihState, STARS_FOR, SYMMETRY_OPTIONS, WEIGHT_OPTIONS } from "@/lib/girihState";
 import text from "@/i18n/messages/girih.json";
@@ -37,6 +38,7 @@ export function GirihBuilder({ locale, option, labels, initialState }: { locale:
   const b = messages(locale).builder;
   const goToOption = useOptionNavigation("girih", locale);
   const [state, setState] = useState(initialState);
+  useTrackCustomize("girih", state);
   const [view, setView] = useState<View>("pattern");
   const [status, setStatus] = useState("");
   const [busy, setBusy] = useState(false);

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { generateTruchet, generateTruchetPdf, type Locale, type TruchetColors, type TruchetRequest } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
+import { useTrackCustomize } from "@/lib/analytics";
 import { fill, messages } from "@/lib/i18n";
 import copy from "@/i18n/messages/truchet.json";
 import { ARRANGEMENT_OPTIONS, GRID_OPTIONS, MAX_SEED, REPEAT_OPTIONS, serializeTruchetState, STYLE_OPTIONS, WEIGHT_OPTIONS } from "@/lib/truchetState";
@@ -35,6 +36,7 @@ export function TruchetBuilder({ locale, option, labels, initialState }: { local
   const b = messages(locale).builder;
   const goToOption = useOptionNavigation("truchet", locale);
   const [state, setState] = useState(initialState);
+  useTrackCustomize("truchet", state);
   const [status, setStatus] = useState("");
   const [busy, setBusy] = useState(false);
 

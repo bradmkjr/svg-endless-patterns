@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { generateTartan, generateTartanPdf, type Locale, type TartanRequest, type TartanStripe } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
+import { useTrackCustomize } from "@/lib/analytics";
 import { fill, messages } from "@/lib/i18n";
 import { COUNT_OPTIONS, LENGTH_OPTIONS, MAX_STRIPES, serializeTartanState, TARTAN_PRESETS, TPI_OPTIONS, WIDTH_OPTIONS } from "@/lib/tartanState";
 import { PalettePicker } from "./PalettePicker";
@@ -29,6 +30,7 @@ export function TartanBuilder({ locale, initialState }: { locale: Locale; initia
   const t = all.tartan;
   const b = all.builder;
   const [state, setState] = useState(initialState);
+  useTrackCustomize("tartan", state);
   const [status, setStatus] = useState("");
   const [busy, setBusy] = useState(false);
 

@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState, type CSSProperties } from "react";
 import { generatePattern, generatePdf, type BlockInfo, type CutLine, type Locale, type PatternRequest } from "@/lib/generator";
 import { fill, messages } from "@/lib/i18n";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
+import { useTrackCustomize } from "@/lib/analytics";
 import { BORDER_OPTIONS, COUNT_OPTIONS, paletteColors, palettesFor, SASHING_OPTIONS, serializeState, SETTINGS, SIZE_OPTIONS, WOF_OPTIONS } from "@/lib/state";
 import { PalettePicker } from "./PalettePicker";
 import { useLiveResult } from "@/lib/useLiveResult";
@@ -63,6 +64,7 @@ export function BlockBuilder({ block, locale, initialState }: { block: BlockInfo
   const all = messages(locale);
   const t = all.builder;
   const [state, setState] = useState(initialState);
+  useTrackCustomize("block", state);
   const [view, setView] = useState<View>("block");
   const [scope, setScope] = useState<"block" | "quilt">("quilt");
   const [status, setStatus] = useState("");

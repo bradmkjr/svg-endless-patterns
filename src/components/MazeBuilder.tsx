@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { generateMaze, generateMazePdf, generateMazePng, generateMazePosterPdf, MAZE_PAPERS, mazeAcross, mazeTallRows, type MazePaperId, type Locale, type MazeColors, type MazeRequest, type MazeResult } from "@/lib/generator";
 import { downloadBytes, downloadSvg } from "@/lib/download";
+import { useTrackCustomize } from "@/lib/analytics";
 import { fill, messages } from "@/lib/i18n";
 import copy from "@/i18n/messages/maze.json";
 import { ALGORITHM_OPTIONS, DIFFICULTY_OPTIONS, MAX_SEED, PNG_OPTIONS, SIZE_OPTIONS, serializeMazeState, SHAPE_OPTIONS, WEIGHT_OPTIONS } from "@/lib/mazeState";
@@ -21,6 +22,7 @@ export function MazeBuilder({ locale, option, labels, initialState }: { locale: 
   const b = messages(locale).builder;
   const goToOption = useOptionNavigation("maze", locale);
   const [state, setState] = useState(initialState);
+  useTrackCustomize("maze", state);
   const [paper, setPaper] = useState<MazePaperId>("a1");
   const [pngSize, setPngSize] = useState(PNG_OPTIONS[1]);
   const [generated, setGenerated] = useState<{ key: string; result: MazeResult } | null>(null);

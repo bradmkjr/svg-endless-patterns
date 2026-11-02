@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { generateSashiko, generateSashikoPdf, type Locale, type SashikoRequest } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
+import { useTrackCustomize } from "@/lib/analytics";
 import { fill, messages } from "@/lib/i18n";
 import copy from "@/i18n/messages/sashiko.json";
 import { COLOR_PRESETS, MOTIF_OPTIONS, PANEL_OPTIONS, serializeSashikoState, SPACING_OPTIONS, STITCH_OPTIONS } from "@/lib/sashikoState";
@@ -35,6 +36,7 @@ export function SashikoBuilder({ locale, option, labels, initialState }: { local
   const b = messages(locale).builder;
   const goToOption = useOptionNavigation("sashiko", locale);
   const [state, setState] = useState(initialState);
+  useTrackCustomize("sashiko", state);
   const [status, setStatus] = useState("");
   const [busy, setBusy] = useState(false);
 

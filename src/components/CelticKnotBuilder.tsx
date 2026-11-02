@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { generateCelticKnot, generateCelticKnotPdf, type CelticKnotRequest, type CelticKnotResult, type Locale } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
+import { useTrackCustomize } from "@/lib/analytics";
 import { fill, messages } from "@/lib/i18n";
 import celticText from "@/i18n/messages/celticKnot.json";
 import { DENSITY_OPTIONS, INCH_OPTIONS, INTERLACE_OPTIONS, MAX_COLORS, MAX_SEED, PATTERN_OPTIONS, RIBBON_OPTIONS, SEEDED_PATTERNS, serializeCelticKnotState, SIZE_OPTIONS } from "@/lib/celticKnotState";
@@ -35,6 +36,7 @@ export function CelticKnotBuilder({ locale, option, labels, initialState }: { lo
   const t = celticText[locale];
   const goToOption = useOptionNavigation("celticKnot", locale);
   const [state, setState] = useState(initialState);
+  useTrackCustomize("celticKnot", state);
   const [view, setView] = useState<View>("art");
   const [status, setStatus] = useState("");
   const [busy, setBusy] = useState(false);

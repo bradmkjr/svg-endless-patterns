@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { generateFractal, generateFractalPdf, type FractalColors, type FractalRequest, type FractalResult, type Locale } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
+import { useTrackCustomize } from "@/lib/analytics";
 import { fill, messages } from "@/lib/i18n";
 import copy from "@/i18n/messages/fractal.json";
 import { ANGLE_OPTIONS, ANGLED_TYPES, depthOptions, serializeFractalState, TYPE_OPTIONS, WEIGHT_OPTIONS } from "@/lib/fractalState";
@@ -34,6 +35,7 @@ export function FractalBuilder({ locale, option, labels, initialState }: { local
   const b = messages(locale).builder;
   const goToOption = useOptionNavigation("fractal", locale);
   const [state, setState] = useState(initialState);
+  useTrackCustomize("fractal", state);
   const [generated, setGenerated] = useState<{ key: string; result: FractalResult } | null>(null);
   const [view, setView] = useState<View>("art");
   const [status, setStatus] = useState(t.loading);

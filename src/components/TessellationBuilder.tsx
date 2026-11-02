@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { generateTessellation, generateTessellationPdf, type Locale, type TessellationColors, type TessellationMotif, type TessellationOptions, type TessellationRequest } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
+import { useTrackCustomize } from "@/lib/analytics";
 import { fill, messages } from "@/lib/i18n";
 import { COUNT_OPTIONS, REPEAT_OPTIONS, serializeTessellationState, TESSELLATION_PALETTES } from "@/lib/tessellationState";
 import text from "@/i18n/messages/tessellation.json";
@@ -36,6 +37,7 @@ export function TessellationBuilder({ locale, options, option, labels, initialSt
   const b = messages(locale).builder;
   const goToOption = useOptionNavigation("tessellation", locale);
   const [state, setState] = useState(initialState);
+  useTrackCustomize("tessellation", state);
   const [view, setView] = useState<View>("pattern");
   const [status, setStatus] = useState("");
   const [busy, setBusy] = useState(false);

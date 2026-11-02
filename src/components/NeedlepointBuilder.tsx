@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import catalog from "@/i18n/messages/needlepoint.json";
 import { generateNeedlepoint, generateNeedlepointPdf, type Locale, type NeedlepointRequest, type NeedlepointResult, type NeedlepointStitch, type NeedlepointYarn } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
+import { useTrackCustomize } from "@/lib/analytics";
 import { fill, messages } from "@/lib/i18n";
 import {
   FINISH_OPTIONS,
@@ -40,6 +41,7 @@ export function NeedlepointBuilder({ locale, option, labels, initialState }: { l
   const b = messages(locale).builder;
   const goToOption = useOptionNavigation("needlepoint", locale);
   const [state, setState] = useState(initialState);
+  useTrackCustomize("needlepoint", state);
   const [view, setView] = useState<View>("stitched");
   /** The color being painted, or -1 for bare canvas. */
   const [tool, setTool] = useState(0);

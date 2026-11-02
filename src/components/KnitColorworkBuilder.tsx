@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import copy from "@/i18n/messages/knitColorwork.json";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
+import { useTrackCustomize } from "@/lib/analytics";
 import { generateKnitColorwork, generateKnitColorworkPdf, type KnitColorworkRequest, type KnitColorworkResult, type Locale } from "@/lib/generator";
 import { fill, messages } from "@/lib/i18n";
 import { KNIT_COLORWORK_SIZES, DESIGN_IDS, ROW_GAUGE_OPTIONS, serializeKnitColorworkState, STITCH_GAUGE_OPTIONS } from "@/lib/knitColorworkState";
@@ -36,6 +37,7 @@ export function KnitColorworkBuilder({ locale, option, labels, initialState }: {
   const b = messages(locale).builder;
   const goToOption = useOptionNavigation("knitColorwork", locale);
   const [state, setState] = useState(initialState);
+  useTrackCustomize("knitColorwork", state);
   const [generated, setGenerated] = useState<{ key: string; result: KnitColorworkResult } | null>(null);
   const [view, setView] = useState<View>("square");
   const [status, setStatus] = useState(t.loading);

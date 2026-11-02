@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { generateTieDye, generateTieDyePdf, type TieDyeResult, type Locale, type TieDyeRequest } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
+import { useTrackCustomize } from "@/lib/analytics";
 import { fill, messages } from "@/lib/i18n";
 import copy from "@/i18n/messages/tieDye.json";
 import { paletteAccents } from "@/lib/palettes";
@@ -50,6 +51,7 @@ export function TieDyeBuilder({ locale, option, labels, initialState }: { locale
   const b = messages(locale).builder;
   const goToOption = useOptionNavigation("tieDye", locale);
   const [state, setState] = useState(initialState);
+  useTrackCustomize("tieDye", state);
   const [view, setView] = useState<View>("art");
   const [status, setStatus] = useState("");
   const [busy, setBusy] = useState(false);

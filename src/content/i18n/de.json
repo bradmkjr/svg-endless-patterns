@@ -543,6 +543,12 @@
     }
   },
   "changelog": {
+    "Customization analytics": {
+      "title": "Analyse der Anpassungen",
+      "items": [
+        "Die Website-Analyse zählt jetzt, wann die Einstellungen eines Designs geändert werden, nach Werkzeug und Name der Einstellung, und die Datenschutzseiten weisen darauf hin"
+      ]
+    },
     "Privacy Policy and Terms of Service": {
       "title": "Datenschutzerklärung und Nutzungsbedingungen",
       "items": [

@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import { generateStitchPattern, generateStitchPdf, type Locale, type StitchInfo, type StitchRequest } from "@/lib/generator";
 import { fill, messages } from "@/lib/i18n";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
+import { useTrackCustomize } from "@/lib/analytics";
 import { LENGTH_OPTIONS, PROJECTS, ROW_GAUGE_OPTIONS, serializeStitchState, SQUARE_SIZES, startingGauge, STITCH_GAUGE_OPTIONS, WIDTH_OPTIONS, YARN_WEIGHTS } from "@/lib/stitchState";
 import { PalettePicker } from "./PalettePicker";
 import { DEFAULT_KNIT_SQUARE, KNIT_SQUARE_SIZES } from "@/lib/generator";
@@ -32,6 +33,7 @@ export function StitchBuilder({ stitch, locale, initialState }: { stitch: Stitch
   const t = all.stitchBuilder;
   const b = all.builder;
   const [state, setState] = useState(initialState);
+  useTrackCustomize("stitch", state);
   const [view, setView] = useState<View>("swatch");
   const [weightId, setWeightId] = useState("worsted");
   const [status, setStatus] = useState("");

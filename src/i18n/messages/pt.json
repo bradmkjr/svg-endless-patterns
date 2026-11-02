@@ -319,7 +319,7 @@
     "stitch2": "O fio é uma estimativa aproximada, baseada em uma regra prática de quanto fio um ponto desse tamanho usa, mais 10%. A fibra e a tensão mudam muito esse valor; compre a mais.",
     "dataH": "Seus dados",
     "data": "A maioria das configurações fica no endereço da página, e é por isso que os links funcionam. Para desenhar seu projeto, essas configurações são enviadas ao nosso servidor de padrões, que pode registrá-las com seu endereço IP. As sementes e as paletas salvas ficam no armazenamento local deste navegador.",
-    "dataAnalytics": "Usamos o Google Analytics para saber como o site é usado. Ele define cookies e envia ao Google as páginas que você visita, incluindo o endereço completo de cada página com suas configurações, o site de onde você veio, seu dispositivo e navegador e sua localização aproximada.",
+    "dataAnalytics": "Usamos o Google Analytics para saber como o site é usado. Ele define cookies e envia ao Google as páginas que você visita, incluindo o endereço completo de cada página com suas configurações, quais configurações você altera em uma ferramenta, o site de onde você veio, seu dispositivo e navegador e sua localização aproximada.",
     "dataPolicy": "Política de Privacidade",
     "designsH": "Os modelos",
     "designs": "Os blocos são desenhados a partir da geometria e usam nomes tradicionais. O layout de um mesmo nome pode variar conforme a fonte.",

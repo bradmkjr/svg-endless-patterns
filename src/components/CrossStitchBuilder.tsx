@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import catalog from "@/i18n/messages/crossStitch.json";
 import { generateCrossStitch, generateCrossStitchPdf, type CrossStitchRequest, type CrossStitchResult, type Locale } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
+import { useTrackCustomize } from "@/lib/analytics";
 import { fill, messages } from "@/lib/i18n";
 import {
   COUNT_OPTIONS,
@@ -40,6 +41,7 @@ export function CrossStitchBuilder({ locale, option, labels, initialState }: { l
   const b = messages(locale).builder;
   const goToOption = useOptionNavigation("crossStitch", locale);
   const [state, setState] = useState(initialState);
+  useTrackCustomize("crossStitch", state);
   const [view, setView] = useState<View>("stitched");
   const [tool, setTool] = useState<Tool>(0);
   const [status, setStatus] = useState("");

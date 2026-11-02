@@ -319,7 +319,7 @@
     "stitch2": "Le fil est une estimation approximative, fondée sur une règle empirique de la quantité utilisée par une maille de cette taille, plus 10 %. La fibre et la tension la font beaucoup varier : prévoyez-en plus.",
     "dataH": "Vos données",
     "data": "La plupart des réglages sont dans l'adresse de la page, ce qui permet de partager un lien. Pour dessiner votre motif, ces réglages sont envoyés à notre serveur de motifs, qui peut les enregistrer avec votre adresse IP dans ses journaux. Les graines et les palettes enregistrées restent dans le stockage local de ce navigateur.",
-    "dataAnalytics": "Nous utilisons Google Analytics pour savoir comment le site est utilisé. Il dépose des cookies et envoie à Google les pages que vous consultez, y compris l'adresse complète de chaque page avec vos réglages, le site d'où vous venez, votre appareil et votre navigateur, ainsi que votre position approximative.",
+    "dataAnalytics": "Nous utilisons Google Analytics pour savoir comment le site est utilisé. Il dépose des cookies et envoie à Google les pages que vous consultez, y compris l'adresse complète de chaque page avec vos réglages, les réglages que vous modifiez dans un outil, le site d'où vous venez, votre appareil et votre navigateur, ainsi que votre position approximative.",
     "dataPolicy": "Politique de confidentialité",
     "designsH": "Les modèles",
     "designs": "Les blocs sont dessinés à partir de la géométrie et portent des noms traditionnels. La disposition d'un même nom peut varier selon les sources.",

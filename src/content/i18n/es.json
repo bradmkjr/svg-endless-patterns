@@ -543,6 +543,12 @@
     }
   },
   "changelog": {
+    "Customization analytics": {
+      "title": "Analítica de personalización",
+      "items": [
+        "La analítica del sitio ahora cuenta cuándo se cambian los ajustes de un diseño, por herramienta y nombre de ajuste, y las páginas de privacidad lo indican"
+      ]
+    },
     "Privacy Policy and Terms of Service": {
       "title": "Política de privacidad y condiciones de servicio",
       "items": [

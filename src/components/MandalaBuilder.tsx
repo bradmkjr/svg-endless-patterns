@@ -9,6 +9,7 @@ import { useLiveResult } from "@/lib/useLiveResult";
 import { OptionNav, useOptionNavigation } from "./OptionNav";
 import { PalettePicker } from "./PalettePicker";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
+import { useTrackCustomize } from "@/lib/analytics";
 import { fill, messages } from "@/lib/i18n";
 import mandalaText from "@/i18n/messages/mandala.json";
 import { LINE_OPTIONS, MAX_COLORS, MAX_SEED, MOTIF_OPTIONS, RING_OPTIONS, serializeMandalaState, SYMMETRY_OPTIONS } from "@/lib/mandalaState";
@@ -37,6 +38,7 @@ export function MandalaBuilder({ locale, option, labels, initialState }: { local
   const t = mandalaText[locale];
   const goToOption = useOptionNavigation("mandala", locale);
   const [state, setState] = useState(initialState);
+  useTrackCustomize("mandala", state);
   const [view, setView] = useState<View>("art");
   const [status, setStatus] = useState("");
   const [busy, setBusy] = useState(false);

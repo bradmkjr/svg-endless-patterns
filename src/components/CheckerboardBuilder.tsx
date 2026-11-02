@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { generateCheckerboard, generateCheckerboardPdf, type CheckerboardRequest, type CheckerboardResult, type Locale } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
+import { useTrackCustomize } from "@/lib/analytics";
 import { fill, messages } from "@/lib/i18n";
 import copy from "@/i18n/messages/checkerboard.json";
 import { boardAspect, COUNT_OPTIONS, isShapePattern, maxColors, MIN_COLORS, PATTERN_OPTIONS, RATIO_OPTIONS, RATIO_PRESETS, serializeCheckerboardState, spareColor, UNIT_OPTIONS } from "@/lib/checkerboardState";
@@ -33,6 +34,7 @@ export function CheckerboardBuilder({ locale, option, labels, initialState }: { 
   const b = messages(locale).builder;
   const goToOption = useOptionNavigation("checkerboard", locale);
   const [state, setState] = useState(initialState);
+  useTrackCustomize("checkerboard", state);
   const [generated, setGenerated] = useState<{ key: string; result: CheckerboardResult } | null>(null);
   const [view, setView] = useState<View>("art");
   const [status, setStatus] = useState(t.loading);

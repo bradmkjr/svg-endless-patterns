@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { generateStainedGlass, generateStainedGlassPdf, type Locale, type StainedGlassRequest } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
+import { useTrackCustomize } from "@/lib/analytics";
 import { fill, messages } from "@/lib/i18n";
 import text from "@/i18n/messages/stainedGlass.json";
 import { CAME_WIDTHS, GLASS_DETAILS, GLASS_LAYOUTS, GLASS_PALETTES, GLASS_SIDES, HEART_WIDTHS, serializeStainedGlassState } from "@/lib/stainedGlassState";
@@ -45,6 +46,7 @@ export function StainedGlassBuilder({ locale, option, labels, initialState }: { 
   const b = messages(locale).builder;
   const goToOption = useOptionNavigation("stainedGlass", locale);
   const [state, setState] = useState(initialState);
+  useTrackCustomize("stainedGlass", state);
   const [view, setView] = useState<"panel" | "numbered">("panel");
   const [status, setStatus] = useState("");
   const [busy, setBusy] = useState(false);

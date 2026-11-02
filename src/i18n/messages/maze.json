@@ -12,7 +12,8 @@
       "circle": "Circle",
       "hexagon": "Hexagon",
       "triangle": "Triangle",
-      "diamond": "Diamond"
+      "diamond": "Diamond",
+      "hidden-message": "Hidden message"
     },
     "algorithm": "Algorithm",
     "algorithms": {
@@ -71,7 +72,20 @@
     "pngSize": "PNG size, longest side",
     "pixels": "{n} px",
     "pngNote": "The PNG button above uses this size. The largest sizes need a desktop browser and plenty of memory.",
-    "pngTooLarge": "This browser couldn't make a PNG that large. Try a smaller size."
+    "pngTooLarge": "This browser couldn't make a PNG that large. Try a smaller size.",
+    "defaultMessage": "WILL YOU MARRY ME?",
+    "message": "Your message",
+    "hiddenHowNote": "Enter at the top left and find your way out at the bottom right. The only route through spells the message.",
+    "messageNote": "Up to {characters} characters: {words} words of up to {wordLength} letters. Letters, numbers, accents and . , ! ? ' - & + ♥ all work, in capitals.",
+    "messagePrivacy": "Your message is sent to our server to draw the maze and isn't saved. It stays out of the page address and share links, so a link won't give it away, or carry it. To share your maze, download it.",
+    "messageSize": "The longer your message, the bigger the maze. A higher difficulty makes the letters wider and harder to spot.",
+    "messageProblems": {
+      "empty": "Type a message to hide.",
+      "characters": "That's too long: use {characters} characters or fewer, spaces included.",
+      "words": "That's too many words: use {words} or fewer.",
+      "wordLength": "One word is too long: use {wordLength} letters or fewer in each.",
+      "unsupported": "That has a character the maze can't draw. Use letters, numbers, accents and . , ! ? ' - & + ♥."
+    }
   },
   "es": {
     "metaTitle": "Generador de laberintos para imprimir: cuadrados, circulares y hexagonales",
@@ -86,7 +100,8 @@
       "circle": "Círculo",
       "hexagon": "Hexágono",
       "triangle": "Triángulo",
-      "diamond": "Rombo"
+      "diamond": "Rombo",
+      "hidden-message": "Mensaje oculto"
     },
     "algorithm": "Algoritmo",
     "algorithms": {
@@ -145,7 +160,20 @@
     "pngSize": "Tamaño del PNG, lado mayor",
     "pixels": "{n} px",
     "pngNote": "El botón PNG de arriba usa este tamaño. Los mayores requieren un navegador de escritorio y bastante memoria.",
-    "pngTooLarge": "Este navegador no pudo crear un PNG tan grande. Prueba un tamaño menor."
+    "pngTooLarge": "Este navegador no pudo crear un PNG tan grande. Prueba un tamaño menor.",
+    "defaultMessage": "¿QUIERES CASARTE CONMIGO?",
+    "message": "Tu mensaje",
+    "hiddenHowNote": "Entra por arriba a la izquierda y busca la salida abajo a la derecha. La única ruta posible escribe el mensaje.",
+    "messageNote": "Hasta {characters} caracteres: {words} palabras de hasta {wordLength} letras. Sirven letras, números, acentos y . , ! ? ' - & + ♥, en mayúsculas.",
+    "messagePrivacy": "Tu mensaje se envía a nuestro servidor para dibujar el laberinto y no se guarda. No aparece en la dirección de la página ni en los enlaces, así que un enlace no lo revela ni lo lleva. Para compartir tu laberinto, descárgalo.",
+    "messageSize": "Cuanto más largo el mensaje, mayor el laberinto. Una dificultad más alta hace las letras más anchas y más difíciles de ver.",
+    "messageProblems": {
+      "empty": "Escribe un mensaje para ocultar.",
+      "characters": "Es demasiado largo: usa {characters} caracteres o menos, con espacios.",
+      "words": "Son demasiadas palabras: usa {words} o menos.",
+      "wordLength": "Una palabra es demasiado larga: usa {wordLength} letras o menos en cada una.",
+      "unsupported": "Hay un carácter que el laberinto no puede dibujar. Usa letras, números, acentos y . , ! ? ' - & + ♥."
+    }
   },
   "fr": {
     "metaTitle": "Générateur de labyrinthes à imprimer : carrés, circulaires et hexagonaux",
@@ -160,7 +188,8 @@
       "circle": "Cercle",
       "hexagon": "Hexagone",
       "triangle": "Triangle",
-      "diamond": "Losange"
+      "diamond": "Losange",
+      "hidden-message": "Message caché"
     },
     "algorithm": "Algorithme",
     "algorithms": {
@@ -219,7 +248,20 @@
     "pngSize": "Taille du PNG, plus grand côté",
     "pixels": "{n} px",
     "pngNote": "Le bouton PNG ci-dessus utilise cette taille. Les plus grandes demandent un navigateur d'ordinateur et beaucoup de mémoire.",
-    "pngTooLarge": "Ce navigateur n'a pas pu créer un PNG aussi grand. Essayez une taille plus petite."
+    "pngTooLarge": "Ce navigateur n'a pas pu créer un PNG aussi grand. Essayez une taille plus petite.",
+    "defaultMessage": "VEUX-TU M'ÉPOUSER ?",
+    "message": "Votre message",
+    "hiddenHowNote": "Entrez en haut à gauche et trouvez la sortie en bas à droite. Le seul chemin possible écrit le message.",
+    "messageNote": "Jusqu'à {characters} caractères : {words} mots de {wordLength} lettres au plus. Lettres, chiffres, accents et . , ! ? ' - & + ♥ sont acceptés, en majuscules.",
+    "messagePrivacy": "Votre message est envoyé à notre serveur pour dessiner le labyrinthe et n'est pas conservé. Il n'apparaît ni dans l'adresse de la page ni dans les liens : un lien ne le révèle pas et ne le transmet pas. Pour partager votre labyrinthe, téléchargez-le.",
+    "messageSize": "Plus le message est long, plus le labyrinthe est grand. Une difficulté plus élevée rend les lettres plus larges et plus difficiles à repérer.",
+    "messageProblems": {
+      "empty": "Saisissez un message à cacher.",
+      "characters": "C'est trop long : {characters} caractères au plus, espaces compris.",
+      "words": "Trop de mots : {words} au plus.",
+      "wordLength": "Un mot est trop long : {wordLength} lettres au plus par mot.",
+      "unsupported": "Un caractère ne peut pas être dessiné. Utilisez des lettres, des chiffres, des accents et . , ! ? ' - & + ♥."
+    }
   },
   "de": {
     "metaTitle": "Labyrinth-Generator zum Ausdrucken: quadratisch, rund und sechseckig",
@@ -234,7 +276,8 @@
       "circle": "Kreis",
       "hexagon": "Sechseck",
       "triangle": "Dreieck",
-      "diamond": "Raute"
+      "diamond": "Raute",
+      "hidden-message": "Versteckte Botschaft"
     },
     "algorithm": "Algorithmus",
     "algorithms": {
@@ -293,7 +336,20 @@
     "pngSize": "PNG-Größe, längste Seite",
     "pixels": "{n} px",
     "pngNote": "Die PNG-Schaltfläche oben verwendet diese Größe. Die größten Formate brauchen einen Desktop-Browser und viel Arbeitsspeicher.",
-    "pngTooLarge": "Dieser Browser konnte kein so großes PNG erstellen. Versuchen Sie eine kleinere Größe."
+    "pngTooLarge": "Dieser Browser konnte kein so großes PNG erstellen. Versuchen Sie eine kleinere Größe.",
+    "defaultMessage": "WILLST DU MICH HEIRATEN?",
+    "message": "Deine Botschaft",
+    "hiddenHowNote": "Geh oben links hinein und finde unten rechts hinaus. Der einzige Weg hindurch schreibt die Botschaft.",
+    "messageNote": "Bis zu {characters} Zeichen: {words} Wörter mit höchstens {wordLength} Buchstaben. Buchstaben, Zahlen, Akzente und . , ! ? ' - & + ♥ gehen, in Großbuchstaben.",
+    "messagePrivacy": "Deine Botschaft wird zum Zeichnen des Labyrinths an unseren Server geschickt und nicht gespeichert. Sie steht weder in der Seitenadresse noch in Links, ein Link verrät sie also nicht und enthält sie auch nicht. Um dein Labyrinth zu teilen, lade es herunter.",
+    "messageSize": "Je länger die Botschaft, desto größer das Labyrinth. Eine höhere Schwierigkeit macht die Buchstaben breiter und schwerer zu erkennen.",
+    "messageProblems": {
+      "empty": "Gib eine Botschaft zum Verstecken ein.",
+      "characters": "Das ist zu lang: höchstens {characters} Zeichen, mit Leerzeichen.",
+      "words": "Das sind zu viele Wörter: höchstens {words}.",
+      "wordLength": "Ein Wort ist zu lang: höchstens {wordLength} Buchstaben pro Wort.",
+      "unsupported": "Ein Zeichen kann das Labyrinth nicht zeichnen. Nutze Buchstaben, Zahlen, Akzente und . , ! ? ' - & + ♥."
+    }
   },
   "pt": {
     "metaTitle": "Gerador de labirintos para imprimir: quadrados, circulares e hexagonais",
@@ -308,7 +364,8 @@
       "circle": "Círculo",
       "hexagon": "Hexágono",
       "triangle": "Triângulo",
-      "diamond": "Losango"
+      "diamond": "Losango",
+      "hidden-message": "Mensagem oculta"
     },
     "algorithm": "Algoritmo",
     "algorithms": {
@@ -367,6 +424,19 @@
     "pngSize": "Tamanho do PNG, lado maior",
     "pixels": "{n} px",
     "pngNote": "O botão PNG acima usa este tamanho. Os maiores exigem um navegador de computador e bastante memória.",
-    "pngTooLarge": "Este navegador não conseguiu criar um PNG tão grande. Tente um tamanho menor."
+    "pngTooLarge": "Este navegador não conseguiu criar um PNG tão grande. Tente um tamanho menor.",
+    "defaultMessage": "QUER CASAR COMIGO?",
+    "message": "Sua mensagem",
+    "hiddenHowNote": "Entre no canto superior esquerdo e encontre a saída no canto inferior direito. O único caminho possível escreve a mensagem.",
+    "messageNote": "Até {characters} caracteres: {words} palavras de até {wordLength} letras. Letras, números, acentos e . , ! ? ' - & + ♥ funcionam, em maiúsculas.",
+    "messagePrivacy": "Sua mensagem é enviada ao nosso servidor para desenhar o labirinto e não é salva. Ela não aparece no endereço da página nem nos links, então um link não a revela nem a leva. Para compartilhar seu labirinto, baixe-o.",
+    "messageSize": "Quanto mais longa a mensagem, maior o labirinto. Uma dificuldade maior deixa as letras mais largas e mais difíceis de notar.",
+    "messageProblems": {
+      "empty": "Digite uma mensagem para ocultar.",
+      "characters": "Está longo demais: use {characters} caracteres ou menos, com espaços.",
+      "words": "São palavras demais: use {words} ou menos.",
+      "wordLength": "Uma palavra está longa demais: use {wordLength} letras ou menos em cada uma.",
+      "unsupported": "Há um caractere que o labirinto não consegue desenhar. Use letras, números, acentos e . , ! ? ' - & + ♥."
+    }
   }
 }

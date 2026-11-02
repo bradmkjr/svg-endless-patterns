@@ -1,5 +1,26 @@
 {
   "posts": {
+    "hidden-message-mazes": {
+      "title": "Des labyrinthes au message caché",
+      "summary": "Saisissez un message, et le seul chemin à travers le labyrinthe l'écrit. Imprimez-le, offrez-le et attendez la réponse.",
+      "blocks": [
+        "Saisissez un court message et l'[outil de labyrinthes](/mazes/hidden-message/) crée un labyrinthe dont le seul chemin l'écrit, du coin supérieur gauche au coin inférieur droit. Rien n'apparaît avant la résolution : une belle façon de poser une grande question.",
+        "Des exemples pour commencer",
+        [
+          "Le message, résolu",
+          "Un vœu d'anniversaire, résolu",
+          "Le même type de labyrinthe avant sa résolution"
+        ],
+        "Ce que vous obtenez",
+        [
+          "Jusqu'à 40 caractères, en 6 mots de 12 lettres au plus, avec accents, chiffres et cœur",
+          "Une grille à la taille du message, avec des lettres plus larges à chaque difficulté",
+          "Les cinq algorithmes, avec un seul chemin dans chaque labyrinthe",
+          "Solution animée, PDF à imprimer avec ou sans la page de solution, affiches, SVG et PNG",
+          "Votre message n'apparaît ni dans l'adresse de la page ni dans les liens"
+        ]
+      ]
+    },
     "life-patterns": {
       "title": "Des motifs du jeu de la vie à imprimer",
       "summary": "Huit formes stables et oscillateurs du jeu de la vie de Conway, en dessins continus, avec la règle expliquée sur n'importe quelle cellule.",
@@ -543,6 +564,12 @@
     }
   },
   "changelog": {
+    "Hidden message mazes": {
+      "title": "Labyrinthes à message caché",
+      "items": [
+        "Nouvelle forme de message caché pour les labyrinthes : saisissez un message et le seul chemin du coin supérieur gauche au coin inférieur droit l'écrit, avec une grille à sa taille"
+      ]
+    },
     "Maze PDF without the solution": {
       "title": "PDF du labyrinthe sans solution",
       "items": [

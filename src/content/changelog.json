@@ -1,6 +1,14 @@
 [
   {
     "date": "2026-11-01",
+    "title": "Hidden message mazes",
+    "post": "hidden-message-mazes",
+    "items": [
+      "New hidden message shape for mazes: type a message and the only route from the top left to the bottom right spells it out, with a grid sized to fit"
+    ]
+  },
+  {
+    "date": "2026-11-01",
     "title": "Maze PDF without the solution",
     "items": [
       "The maze tool can now download its printable PDF without the solution page, ready to use as an activity sheet"

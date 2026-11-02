@@ -1,4 +1,4 @@
-export type MazeShape = "square" | "rectangle" | "circle" | "hexagon" | "triangle" | "diamond";
+export type MazeShape = "square" | "rectangle" | "circle" | "hexagon" | "triangle" | "diamond" | "hidden-message";
 export type MazeAlgorithm = "backtracker" | "prim" | "kruskal" | "wilson" | "binaryTree";
 export type MazeDifficulty = "easy" | "medium" | "hard" | "expert" | "master" | "extreme";
 export type MazePaperId = "letter" | "legal" | "ansiC" | "ansiD" | "ansiE" | "a3" | "a2" | "a1" | "a0" | "2a0" | "4a0";
@@ -18,6 +18,8 @@ export type MazeRequest = {
   cols?: number;
   rows?: number;
   locale?: MazeLocale;
+  /** What a hidden message maze spells, which also sets its size. */
+  message?: string;
 };
 
 export type MazeResult = {

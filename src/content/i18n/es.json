@@ -1,5 +1,26 @@
 {
   "posts": {
+    "hidden-message-mazes": {
+      "title": "Laberintos con un mensaje oculto",
+      "summary": "Escribe un mensaje y la única salida del laberinto lo deletrea. Imprímelo, entrégalo y espera la respuesta.",
+      "blocks": [
+        "Escribe un mensaje corto y la [herramienta de laberintos](/mazes/hidden-message/) crea un laberinto cuya única ruta lo escribe, de la esquina superior izquierda a la inferior derecha. No se ve nada hasta resolverlo, y por eso es una buena forma de hacer una gran pregunta.",
+        "Ejemplos para empezar",
+        [
+          "El mensaje, resuelto",
+          "Una felicitación de cumpleaños, resuelta",
+          "El mismo tipo de laberinto antes de resolverlo"
+        ],
+        "Qué incluye",
+        [
+          "Hasta 40 caracteres, en un máximo de 6 palabras de hasta 12 letras, con acentos, números y un corazón",
+          "Una cuadrícula a la medida del mensaje, con letras más anchas en cada dificultad",
+          "Los cinco algoritmos, con una sola ruta en cada laberinto",
+          "Solución animada, PDF para imprimir con o sin la página de la solución, pósteres, SVG y PNG",
+          "Tu mensaje no aparece en la dirección de la página ni en los enlaces"
+        ]
+      ]
+    },
     "life-patterns": {
       "title": "Patrones del Juego de la Vida para imprimir",
       "summary": "Ocho vidas estáticas y osciladores del Juego de la Vida de Conway, como diseños continuos, con la regla explicada en cualquier celda.",
@@ -543,6 +564,12 @@
     }
   },
   "changelog": {
+    "Hidden message mazes": {
+      "title": "Laberintos con mensaje oculto",
+      "items": [
+        "Nueva forma de mensaje oculto para laberintos: escribe un mensaje y la única ruta de arriba a la izquierda a abajo a la derecha lo deletrea, con una cuadrícula a su medida"
+      ]
+    },
     "Maze PDF without the solution": {
       "title": "PDF del laberinto sin solución",
       "items": [

@@ -1,5 +1,26 @@
 {
   "posts": {
+    "hidden-message-mazes": {
+      "title": "Labyrinthe mit versteckter Botschaft",
+      "summary": "Gib eine Botschaft ein, und der einzige Weg durch das Labyrinth schreibt sie aus. Drucken, überreichen und auf die Antwort warten.",
+      "blocks": [
+        "Gib eine kurze Botschaft ein, und das [Labyrinth-Werkzeug](/mazes/hidden-message/) baut ein Labyrinth, dessen einziger Weg sie von der oberen linken bis zur unteren rechten Ecke ausschreibt. Vor dem Lösen ist nichts zu sehen, eine schöne Art, eine große Frage zu stellen.",
+        "Beispiele für den Anfang",
+        [
+          "Die Botschaft, gelöst",
+          "Ein Geburtstagsgruß, gelöst",
+          "Die gleiche Art Labyrinth vor dem Lösen"
+        ],
+        "Was du bekommst",
+        [
+          "Bis zu 40 Zeichen, in bis zu 6 Wörtern mit bis zu 12 Buchstaben, mit Akzenten, Zahlen und einem Herz",
+          "Ein Raster passend zur Botschaft, mit breiteren Buchstaben bei jeder Schwierigkeit",
+          "Alle fünf Algorithmen, mit genau einem Weg durch jedes Labyrinth",
+          "Animierte Lösung, druckbares PDF mit oder ohne Lösungsseite, Poster, SVG und PNG",
+          "Deine Botschaft steht weder in der Seitenadresse noch in Links"
+        ]
+      ]
+    },
     "life-patterns": {
       "title": "Muster aus dem Spiel des Lebens zum Drucken",
       "summary": "Acht Stillleben und Oszillatoren aus Conways Spiel des Lebens als nahtlose Designs, mit der Regel an jeder beliebigen Zelle erklärt.",
@@ -543,6 +564,12 @@
     }
   },
   "changelog": {
+    "Hidden message mazes": {
+      "title": "Labyrinthe mit versteckter Botschaft",
+      "items": [
+        "Neue Form „Versteckte Botschaft“ für Labyrinthe: Gib eine Botschaft ein, und der einzige Weg von oben links nach unten rechts schreibt sie aus, in einem passenden Raster"
+      ]
+    },
     "Maze PDF without the solution": {
       "title": "Labyrinth-PDF ohne Lösung",
       "items": [

@@ -6,7 +6,7 @@ import { downloadBytes, downloadSvg } from "@/lib/download";
 import { useTrackCustomize } from "@/lib/analytics";
 import { fill, messages } from "@/lib/i18n";
 import copy from "@/i18n/messages/maze.json";
-import { ALGORITHM_OPTIONS, DIFFICULTY_OPTIONS, MAX_SEED, PNG_OPTIONS, SIZE_OPTIONS, serializeMazeState, SHAPE_OPTIONS, WEIGHT_OPTIONS } from "@/lib/mazeState";
+import { ALGORITHM_OPTIONS, DIFFICULTY_OPTIONS, MAX_SEED, MESSAGE_DIFFICULTY_OPTIONS, MESSAGE_LIMITS, messageProblem, normalizeMessage, PNG_OPTIONS, SIZE_OPTIONS, serializeMazeState, SHAPE_OPTIONS, WEIGHT_OPTIONS } from "@/lib/mazeState";
 import { paletteAccents } from "@/lib/palettes";
 import { rememberSeed, syncShareLink } from "@/lib/toolOptions";
 import { OptionNav, useOptionNavigation } from "./OptionNav";
@@ -16,11 +16,15 @@ import styles from "./BlockBuilder.module.css";
 
 const COLOR_KEYS: (keyof MazeColors)[] = ["background", "wall", "accent"];
 const VIEWS = ["maze", "solution"] as const;
+/** Long enough that a word being typed doesn't draw a maze for every letter. */
+const MESSAGE_SETTLE_MS = 500;
 
 /** Draws the solution from start to exit. Capped at five seconds, so it needs no pause control. */
 function drawRoute(route: SVGPathElement, cells: number): Animation {
   const length = route.getTotalLength();
   const duration = Math.min(5000, Math.max(1500, cells * 30));
+  // A hidden message's letters come up as the route finishes spelling them.
+  route.ownerSVGElement?.querySelector("[data-letters]")?.animate({ opacity: [0, 0] }, { duration });
   return route.animate({ strokeDasharray: [`${length} ${length}`, `${length} ${length}`], strokeDashoffset: [length, 0] }, { duration, easing: "ease-in-out" });
 }
 
@@ -36,6 +40,10 @@ export function MazeBuilder({ locale, option, labels, initialState }: { locale: 
   const [view, setView] = useState<(typeof VIEWS)[number]>("maze");
   const [status, setStatus] = useState(t.loading);
   const [busy, setBusy] = useState(false);
+  const hidden = state.shape === "hidden-message";
+  const [draft, setDraft] = useState(state.message ?? "");
+  const message = normalizeMessage(draft);
+  const problem = hidden ? messageProblem(message) : null;
   const requestKey = JSON.stringify(state);
   const result = generated?.key === requestKey ? generated.result : undefined;
 
@@ -63,7 +71,16 @@ export function MazeBuilder({ locale, option, labels, initialState }: { locale: 
   }, [requestKey, state, b.updateError]);
 
   useEffect(() => {
-    const query = serializeMazeState(state);
+    if (!hidden || problem || message === state.message) return;
+    const timer = setTimeout(() => {
+      setStatus(t.loading);
+      setState((s) => ({ ...s, message }));
+    }, MESSAGE_SETTLE_MS);
+    return () => clearTimeout(timer);
+  }, [hidden, problem, message, state.message, t.loading]);
+
+  useEffect(() => {
+    const query = serializeMazeState({ ...state, message: undefined });
     syncShareLink(query, "maze", option);
   }, [state, option]);
 
@@ -145,7 +162,7 @@ export function MazeBuilder({ locale, option, labels, initialState }: { locale: 
           ) : (
             <ToolLoading locale={locale} />
           )}
-          <p className={styles.note}>{t.howNote}</p>
+          <p className={styles.note}>{hidden ? t.hiddenHowNote : t.howNote}</p>
           {result && <p className={styles.note}>{fill(t.stats, { cells: result.cells, length: result.solutionLength, deadEnds: result.deadEnds })}</p>}
           <div className={`${styles.actions} no-print`}>
             <button type="button" disabled={busy || !result} className={styles.primary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateMazePdf(state), "maze.pdf", "application/pdf"))}>
@@ -182,6 +199,16 @@ export function MazeBuilder({ locale, option, labels, initialState }: { locale: 
                 ))}
               </select>
             </label>
+            {hidden && (
+              <>
+                <label className={styles.field}>
+                  <span>{t.message}</span>
+                  <input type="text" value={draft} maxLength={MESSAGE_LIMITS.characters * 2} autoComplete="off" spellCheck={false} aria-invalid={problem !== null} onChange={(e) => setDraft(e.target.value)} />
+                </label>
+                {problem ? <p className={styles.note} role="alert">{fill(t.messageProblems[problem], MESSAGE_LIMITS)}</p> : <p className={styles.note}>{fill(t.messageNote, MESSAGE_LIMITS)}</p>}
+                <p className={styles.note}>{t.messagePrivacy}</p>
+              </>
+            )}
             <label className={styles.field}>
               <span>{t.algorithm}</span>
               <select value={state.algorithm} onChange={(e) => update({ algorithm: e.target.value as MazeRequest["algorithm"] })}>
@@ -198,7 +225,7 @@ export function MazeBuilder({ locale, option, labels, initialState }: { locale: 
                 <span>{t.difficulty}</span>
                 <select value={state.cols === undefined ? state.difficulty : "custom"} onChange={(e) => update({ difficulty: e.target.value as MazeRequest["difficulty"], cols: undefined, rows: undefined })}>
                   {state.cols !== undefined && <option value="custom">{t.custom}</option>}
-                  {DIFFICULTY_OPTIONS.map((id) => (
+                  {(hidden ? MESSAGE_DIFFICULTY_OPTIONS : DIFFICULTY_OPTIONS).map((id) => (
                     <option key={id} value={id}>
                       {t.difficulties[id]}
                     </option>
@@ -216,7 +243,7 @@ export function MazeBuilder({ locale, option, labels, initialState }: { locale: 
                 </select>
               </label>
             </div>
-            <div className={styles.fieldRow}>
+            {!hidden && <div className={styles.fieldRow}>
               <label className={styles.field}>
                 <span>{state.shape === "rectangle" ? t.columns : state.shape === "square" ? t.columnsAndRows : t.cellsAcross}</span>
                 <select value={across} onChange={(e) => update({ cols: Number(e.target.value) })}>
@@ -239,7 +266,8 @@ export function MazeBuilder({ locale, option, labels, initialState }: { locale: 
                   </select>
                 </label>
               )}
-            </div>
+            </div>}
+            {hidden && <p className={styles.note}>{t.messageSize}</p>}
             <div className={styles.fieldRow}>
               <label className={styles.field}>
                 <span>{t.seed}</span>

@@ -1,5 +1,61 @@
 [
   {
+    "slug": "hidden-message-mazes",
+    "title": "Mazes with a hidden message",
+    "date": "2026-11-01",
+    "summary": "Type a message, and the only way through the maze spells it out. Print it, hand it over and wait for the answer.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Type a short message and the [maze tool](/mazes/hidden-message/) builds a maze whose only route spells it out, from the top left corner to the bottom right. Nothing shows until it's solved, which makes it a fine way to ask a big question."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "maze",
+            "slug": "",
+            "query": "shape=hidden-message&d=easy",
+            "view": "solution",
+            "caption": "The message, solved"
+          },
+          {
+            "kind": "maze",
+            "slug": "",
+            "query": "shape=hidden-message&d=easy&m=HAPPY+BIRTHDAY",
+            "view": "solution",
+            "caption": "A birthday greeting, solved"
+          },
+          {
+            "kind": "maze",
+            "slug": "",
+            "query": "shape=hidden-message&d=easy",
+            "view": "maze",
+            "caption": "The same kind of maze before anyone has solved it"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Up to 40 characters, in up to 6 words of up to 12 letters, with accents, numbers and a heart",
+          "A grid sized to fit your message, with letters that grow wider at each difficulty",
+          "All five algorithms, with exactly one route through every maze",
+          "An animated solution, printable PDF with or without the solution page, posters, SVG and PNG",
+          "Your message stays out of the page address and share links"
+        ]
+      }
+    ]
+  },
+  {
     "slug": "life-patterns",
     "title": "Game of Life patterns you can print",
     "date": "2026-10-31",

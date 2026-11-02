@@ -1,5 +1,26 @@
 {
   "posts": {
+    "hidden-message-mazes": {
+      "title": "Labirintos com uma mensagem oculta",
+      "summary": "Digite uma mensagem, e o único caminho pelo labirinto a escreve. Imprima, entregue e espere a resposta.",
+      "blocks": [
+        "Digite uma mensagem curta e a [ferramenta de labirintos](/mazes/hidden-message/) cria um labirinto cujo único caminho a escreve, do canto superior esquerdo ao inferior direito. Nada aparece até ser resolvido, o que o torna um belo jeito de fazer uma grande pergunta.",
+        "Exemplos para começar",
+        [
+          "A mensagem, resolvida",
+          "Um parabéns de aniversário, resolvido",
+          "O mesmo tipo de labirinto antes de ser resolvido"
+        ],
+        "O que você recebe",
+        [
+          "Até 40 caracteres, em até 6 palavras de até 12 letras, com acentos, números e um coração",
+          "Uma grade do tamanho da mensagem, com letras mais largas a cada dificuldade",
+          "Os cinco algoritmos, com um único caminho em cada labirinto",
+          "Solução animada, PDF para imprimir com ou sem a página da solução, pôsteres, SVG e PNG",
+          "Sua mensagem não aparece no endereço da página nem nos links"
+        ]
+      ]
+    },
     "life-patterns": {
       "title": "Padrões do Jogo da Vida para imprimir",
       "summary": "Oito vidas estáticas e osciladores do Jogo da Vida de Conway, como desenhos contínuos, com a regra explicada em qualquer célula.",
@@ -543,6 +564,12 @@
     }
   },
   "changelog": {
+    "Hidden message mazes": {
+      "title": "Labirintos com mensagem oculta",
+      "items": [
+        "Nova forma de mensagem oculta para labirintos: digite uma mensagem e o único caminho do canto superior esquerdo ao inferior direito a escreve, em uma grade do seu tamanho"
+      ]
+    },
     "Maze PDF without the solution": {
       "title": "PDF do labirinto sem solução",
       "items": [

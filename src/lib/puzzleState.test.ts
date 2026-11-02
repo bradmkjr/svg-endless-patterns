@@ -49,7 +49,7 @@ describe("which puzzles have what", () => {
 });
 
 describe("translation", () => {
-  const shape = (value: unknown): unknown => (typeof value === "object" && value ? Object.fromEntries(Object.entries(value).map(([k, v]) => [k, shape(v)])) : [...String(value).matchAll(/\{(\w+)\}/g)].map((m) => m[1]).sort()));
+  const shape = (value: unknown): unknown => (typeof value === "object" && value ? Object.fromEntries(Object.entries(value).map(([k, v]) => [k, shape(v)])) : [...String(value).matchAll(/\{(\w+)\}/g)].map((m) => m[1]).sort());
 
   it.each(LOCALES)("has the same keys and placeholders in %s", (locale) => {
     expect(shape(uiText[locale])).toEqual(shape(uiText.en));

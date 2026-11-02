@@ -1,5 +1,5 @@
 /** The version in every API path. The API names the same one in `src/version.ts`. */
-export const API_VERSION = "v1.0.2";
+export const API_VERSION = "v1.0.3";
 
 export function mazeApiUrl(path: string): string {
   const base = (process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:4000").replace(/\/+$/, "");
@@ -13,15 +13,15 @@ function sorted(value: unknown): unknown {
   return Object.fromEntries(Object.entries(value).sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0)).map(([key, item]) => [key, sorted(item)]));
 }
 
-/** Settings as the API's `q`: JSON, as base64url. */
+/** Settings as the API reads them, one parameter each: a string as it is, and anything else as JSON. */
 export function encodeSettings(settings: unknown): string {
-  const bytes = new TextEncoder().encode(JSON.stringify(sorted(settings)));
-  return btoa(Array.from(bytes, (byte) => String.fromCharCode(byte)).join("")).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+  const entries = Object.entries(sorted(settings) as Record<string, unknown>).filter(([, value]) => value !== undefined);
+  return new URLSearchParams(entries.map(([key, value]) => [key, typeof value === "string" ? value : JSON.stringify(value)])).toString();
 }
 
 export async function mazeApiGet(path: string, settings: unknown, accept = "application/json"): Promise<Response> {
   const separator = path.includes("?") ? "&" : "?";
-  const response = await fetch(mazeApiUrl(`${path}${separator}q=${encodeSettings(settings)}`), { headers: { accept } });
+  const response = await fetch(mazeApiUrl(`${path}${separator}${encodeSettings(settings)}`), { headers: { accept } });
   if (!response.ok) {
     const detail = await response.text();
     throw new Error(`Maze API returned ${response.status}: ${detail || response.statusText}`);

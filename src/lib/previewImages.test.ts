@@ -8,7 +8,7 @@ afterEach(() => vi.unstubAllEnvs());
 describe.each(["", "1"])("the main image (internal API flag=%s)", (flag) => {
   it("is a PNG on the public API, loaded when requested", () => {
     vi.stubEnv("NEXT_PUBLIC_PRERENDERED_IMAGES", flag);
-    expect(primaryImageSrc("truchet", "arcs")).toMatch(/\/api\/v1\.0\.2\/preview\/truchet\/arcs\.png\?size=1200$/);
+    expect(primaryImageSrc("truchet", "arcs")).toMatch(/\/api\/v1\.0\.3\/preview\/truchet\/arcs\.png\?size=1200$/);
     expect(primaryImageSrc("blocks", "log-cabin")).toMatch(/\/preview\/blocks\/log-cabin\.png\?size=1200$/);
   });
 });
@@ -23,7 +23,7 @@ describe("small pictures", () => {
 
   it("are SVGs from the public API without one", () => {
     vi.stubEnv("NEXT_PUBLIC_PRERENDERED_IMAGES", "");
-    expect(thumbSrc("truchet", "arcs")).toContain("/api/v1.0.2/thumbnail/truchet/arcs");
+    expect(thumbSrc("truchet", "arcs")).toContain("/api/v1.0.3/thumbnail/truchet/arcs");
   });
 });
 
@@ -38,8 +38,8 @@ describe("the build's list", () => {
   it("are asked of the internal URL only", () => {
     vi.stubEnv("API_INTERNAL_URL", "http://127.0.0.1:4000/");
     vi.stubEnv("NEXT_PUBLIC_API_BASE_URL", "https://public.example");
-    expect(internalPreviewUrl("truchet", "arcs.svg")).toBe("http://127.0.0.1:4000/api/v1.0.2/thumbnail/truchet/arcs");
-    expect(internalPreviewUrl("knitColorwork", "heart-block.svg")).toBe("http://127.0.0.1:4000/api/v1.0.2/knit-colorwork/thumbnail/heart-block");
+    expect(internalPreviewUrl("truchet", "arcs.svg")).toBe("http://127.0.0.1:4000/api/v1.0.3/thumbnail/truchet/arcs");
+    expect(internalPreviewUrl("knitColorwork", "heart-block.svg")).toBe("http://127.0.0.1:4000/api/v1.0.3/knit-colorwork/thumbnail/heart-block");
   });
 });
 

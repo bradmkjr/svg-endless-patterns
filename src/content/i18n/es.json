@@ -561,6 +561,30 @@
         "Semillas",
         "Las disposiciones aleatorias salen de una semilla, así que la misma semilla siempre da el mismo patrón. Tu navegador recuerda tu última semilla, pero los enlaces no la incluyen."
       ]
+    },
+    "paper-puzzles": {
+      "title": "Pasatiempos de papel para imprimir o jugar en tableta",
+      "summary": "Sudoku, futoshiki, nonogramas, hundir la flota y más juegos de lápiz, en hojas pensadas para papel o una app de dibujo.",
+      "blocks": [
+        "La nueva sección de [pasatiempos de papel](/paper-puzzles/) reúne hojas que puedes imprimir, o abrir en una app de dibujo en tableta y completar con un lápiz. Hay tres tipos de pasatiempo y cuatro juegos de lápiz, entre ellos el [súper tres en raya](/paper-puzzles/ultimate-tic-tac-toe/), junto a nuestros [laberintos](/mazes/).",
+        "Ejemplos para empezar",
+        [
+          "Un sudoku difícil de 9 × 9",
+          "Un futoshiki de 6 × 6",
+          "Un nonograma de 15 × 15, resuelto",
+          "Una hoja de hundir la flota para un jugador",
+          "Puntos y cajas, 12 cajas de ancho",
+          "Un tablero de hex de 11 × 11"
+        ],
+        "Qué incluye",
+        [
+          "Sudoku de 4 × 4, 6 × 6 y 9 × 9, y futoshiki de 4 × 4 a 7 × 7, cada uno en tres dificultades",
+          "Nonogramas de 5 × 5, 10 × 10 y 15 × 15",
+          "Cada pasatiempo comprobado por un solucionador para que tenga una sola solución, y uno nuevo cuando quieras",
+          "Hojas de hundir la flota, puntos y cajas, súper tres en raya y hex para jugar con otra persona",
+          "PDF para carta, A4 o una página de tableta 4:3, con o sin la solución, además de SVG y PNG"
+        ]
+      ]
     }
   },
   "changelog": {
@@ -832,6 +856,13 @@
       "title": "Creador de azulejos de Truchet",
       "items": [
         "Se añadió un creador de azulejos de Truchet, con repeticiones continuas en SVG y PNG y PDF imprimible"
+      ]
+    },
+    "Paper puzzles": {
+      "title": "Pasatiempos de papel",
+      "items": [
+        "Nueva sección de pasatiempos de papel en el menú, con sudoku, futoshiki, nonogramas, hundir la flota, puntos y cajas, súper tres en raya y hex, junto a los laberintos",
+        "Cada hoja se descarga como PDF para carta, A4 o página de tableta, o como SVG o PNG"
       ]
     }
   }

@@ -7,6 +7,7 @@
     "quilting": "Quilting",
     "knitting": "Knitting",
     "crochet": "Crochet",
+    "puzzles": "Paper puzzles",
     "library": "Pattern library",
     "blog": "Blog",
     "how": "How it works",
@@ -295,6 +296,12 @@
         "text": "Set the rows, columns, colors and box shape, from a standard board to 3:1 bricks, honeycombs and triangles.",
         "output": "SVG and PNG, a seamless repeat, finished sizes, piece counts and a printable PDF.",
         "explore": "Make a checkerboard"
+      },
+      "puzzle": {
+        "title": "Paper puzzles",
+        "text": "Sudoku, futoshiki, nonograms and pencil games such as battleships, for paper or a drawing app on a tablet.",
+        "output": "PDF pages for letter, A4 or a tablet, solutions, SVG and PNG.",
+        "explore": "Make a puzzle sheet"
       }
     },
     "seeAllType": "See everything in {name}"

@@ -21,6 +21,9 @@ import { generateTartan } from "./generator";
 import { parseTartanState } from "./tartanState";
 import { generateTruchet } from "./generator";
 import { parseTruchetState } from "./truchetState";
+import { generatePuzzle } from "./generator";
+import { parsePuzzleState } from "./puzzleState";
+import { withOption } from "./toolOptions";
 import { generateLife } from "./generator";
 import { parseLifeState } from "./lifeState";
 import { generatePattern, generateStitchPattern, type Craft, type Locale } from "./generator";
@@ -44,6 +47,8 @@ const DRAW: Partial<Record<PostSample["kind"], Draw>> = {
   },
   knit: (p, locale, slug) => drawStitch("knit", p, locale, slug),
   crochet: (p, locale, slug) => drawStitch("crochet", p, locale, slug),
+  // The path names the puzzle, as it does on the page the link opens.
+  puzzle: async (p, locale, slug) => (await generatePuzzle(parsePuzzleState(withOption("puzzle", slug, p), locale))) as Svgs,
   life: async (p, locale) => generateLife(parseLifeState(p, locale)),
   truchet: async (p, locale) => generateTruchet(parseTruchetState(p, locale)),
   tartan: async (p, locale) => generateTartan(parseTartanState(p, locale)),

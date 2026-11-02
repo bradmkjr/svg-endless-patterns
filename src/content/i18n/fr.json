@@ -561,6 +561,30 @@
         "Graines",
         "Les dispositions aléatoires viennent d'une graine : la même graine donne toujours le même motif. Votre navigateur mémorise votre dernière graine, mais les liens ne la contiennent pas."
       ]
+    },
+    "paper-puzzles": {
+      "title": "Des jeux papier à imprimer ou à jouer sur tablette",
+      "summary": "Sudoku, futoshiki, nonogrammes, bataille navale et autres jeux papier-crayon, sur des feuilles faites pour le papier ou une appli de dessin.",
+      "blocks": [
+        "La nouvelle rubrique [jeux papier](/paper-puzzles/) réunit des feuilles à imprimer, ou à ouvrir dans une appli de dessin sur tablette et à remplir au stylet. On y trouve trois sortes de casse-tête et quatre jeux papier-crayon, dont le [super morpion](/paper-puzzles/ultimate-tic-tac-toe/), à côté de nos [labyrinthes](/mazes/).",
+        "Des exemples pour commencer",
+        [
+          "Un sudoku difficile de 9 × 9",
+          "Un futoshiki de 6 × 6",
+          "Un nonogramme de 15 × 15, résolu",
+          "Une feuille de bataille navale pour un joueur",
+          "Pipopipette, 12 cases de large",
+          "Un plateau de hex de 11 × 11"
+        ],
+        "Ce que vous obtenez",
+        [
+          "Sudoku en 4 × 4, 6 × 6 et 9 × 9, et futoshiki de 4 × 4 à 7 × 7, chacun en trois difficultés",
+          "Nonogrammes en 5 × 5, 10 × 10 et 15 × 15",
+          "Chaque casse-tête vérifié par un solveur pour n'avoir qu'une seule solution, et un nouveau quand vous voulez",
+          "Des feuilles de bataille navale, pipopipette, super morpion et hex pour jouer à plusieurs",
+          "Des PDF en US Letter, A4 ou page de tablette 4:3, avec ou sans la solution, plus SVG et PNG"
+        ]
+      ]
     }
   },
   "changelog": {
@@ -832,6 +856,13 @@
       "title": "Créateur de tuiles de Truchet",
       "items": [
         "Ajout d'un créateur de tuiles de Truchet, avec raccords continus en SVG et PNG et PDF à imprimer"
+      ]
+    },
+    "Paper puzzles": {
+      "title": "Jeux papier",
+      "items": [
+        "Nouvelle rubrique jeux papier dans le menu, avec sudoku, futoshiki, nonogrammes, bataille navale, pipopipette, super morpion et hex, à côté des labyrinthes",
+        "Chaque feuille se télécharge en PDF pour US Letter, A4 ou page de tablette, ou en SVG ou PNG"
       ]
     }
   }

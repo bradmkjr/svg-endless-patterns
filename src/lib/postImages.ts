@@ -19,6 +19,7 @@ type Sample = Extract<Post["body"][number], { type: "samples" }>["items"][number
 function picture(sample: Sample): PostPicture {
   if (sample.kind === "block") return { group: "blocks", slug: sample.slug };
   if (sample.kind === "knit" || sample.kind === "crochet") return { group: sample.kind, slug: sample.slug };
+  if (sample.kind === "puzzle") return { group: "puzzle", slug: sample.slug };
   if (sample.kind === "tartan") return { group: "tartan", slug: TARTAN_PRESETS[0].id };
   const tool = TOOLS[sample.kind] ?? (sample.kind as ToolId);
   const { param, options } = TOOL_OPTIONS[tool];

@@ -7,6 +7,7 @@
     "quilting": "Quilten",
     "knitting": "Stricken",
     "crochet": "Häkeln",
+    "puzzles": "Papierrätsel",
     "library": "Musterbibliothek",
     "blog": "Blog",
     "how": "So funktioniert's",
@@ -295,6 +296,12 @@
         "text": "Legen Sie Reihen, Spalten, Farben und Feldform fest, vom Standardbrett bis zu 3:1-Ziegeln, Waben und Dreiecken.",
         "output": "SVG und PNG, nahtloser Rapport, fertige Größen, Teileanzahl und druckbares PDF.",
         "explore": "Muster erstellen"
+      },
+      "puzzle": {
+        "title": "Papierrätsel",
+        "text": "Sudoku, Futoshiki, Nonogramme und Stift-und-Papier-Spiele wie Schiffe versenken, für Papier oder eine Zeichen-App auf dem Tablet.",
+        "output": "PDF-Seiten für Letter, A4 oder Tablet, Lösungen, SVG und PNG.",
+        "explore": "Ein Rätselblatt erstellen"
       }
     },
     "seeAllType": "Alles in {name} ansehen"

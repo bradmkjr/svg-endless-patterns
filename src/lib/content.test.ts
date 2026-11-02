@@ -3,7 +3,7 @@ import blog from "@/content/blog.json";
 import { getBlock, getBlocks, getStitchPattern, getStitchPatterns } from "./patternCatalog";
 import { getChangelog, getPosts, sampleHref, type PostSample } from "./content";
 import { PREFIXED_LOCALES } from "./i18n";
-import { optionPath, TOOL_OPTIONS, type ToolId } from "./toolOptions";
+import { isToolSlug, optionPath, TOOL_OPTIONS, withOption, type ToolId } from "./toolOptions";
 import { parseState, serializeState } from "./state";
 import { parseStitchState, serializeStitchState } from "./stitchState";
 import { parseCrossStitchState, serializeCrossStitchState } from "./crossStitchState";
@@ -18,6 +18,7 @@ import { parseKnitColorworkState, serializeKnitColorworkState } from "./knitColo
 import { parseCrochetColorworkState, serializeCrochetColorworkState } from "./crochetColorworkState";
 import { parseCheckerboardState, serializeCheckerboardState } from "./checkerboardState";
 import { parseLifeState, serializeLifeState } from "./lifeState";
+import { parsePuzzleState, serializePuzzleState } from "./puzzleState";
 import { parseFractalState, serializeFractalState } from "./fractalState";
 import { parseTieDyeState, serializeTieDyeState } from "./tieDyeState";
 import { parseTruchetState, serializeTruchetState } from "./truchetState";
@@ -29,7 +30,7 @@ const sorted = (query: string) => [...new URLSearchParams(query).entries()].map(
 async function knownPaths() {
   const posts = await getPosts();
   return new Set([
-    "/", ...PREFIXED_LOCALES.map((l) => `/${l}/`), "/tartans/", "/truchet/", "/tie-dye/", "/fractals/", "/life-patterns/", "/checkerboards/", "/crochet/colorwork/", "/knitting/colorwork/", "/mazes/", "/girih/", "/mandalas/", "/stained-glass/", "/celtic-knots/", "/sashiko/", "/tessellations/", "/cross-stitch/", "/needlepoint/", "/blocks/", "/knitting/", "/crochet/", "/patterns/", "/palettes/", "/about/", "/acknowledgements/", "/blog/", "/changelog/",
+    "/", ...PREFIXED_LOCALES.map((l) => `/${l}/`), "/tartans/", "/truchet/", "/tie-dye/", "/fractals/", "/life-patterns/", "/checkerboards/", "/crochet/colorwork/", "/knitting/colorwork/", "/mazes/", "/paper-puzzles/", "/girih/", "/mandalas/", "/stained-glass/", "/celtic-knots/", "/sashiko/", "/tessellations/", "/cross-stitch/", "/needlepoint/", "/blocks/", "/knitting/", "/crochet/", "/patterns/", "/palettes/", "/about/", "/acknowledgements/", "/blog/", "/changelog/",
     ...(await getBlocks()).map((b) => `/blocks/${b.slug}/`),
     ...(await getStitchPatterns("knit")).map((s) => `/knitting/${s.slug}/`),
     ...(await getStitchPatterns("crochet")).map((s) => `/crochet/${s.slug}/`),
@@ -93,6 +94,13 @@ describe("blog posts", () => {
       expect(sorted(serializeCrochetColorworkState(parseCrochetColorworkState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
     } else if (sample.kind === "checkerboard") {
       expect(sorted(serializeCheckerboardState(parseCheckerboardState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
+    } else if (sample.kind === "puzzle") {
+      // The link's path names the puzzle, so only its other settings are in the query.
+      const params = new URLSearchParams(serializePuzzleState(parsePuzzleState(withOption("puzzle", slug, sample.query), sample.locale)));
+      params.delete("t");
+      expect(sorted(params.toString())).toEqual(sorted(sample.query));
+      expect(isToolSlug("puzzle", slug)).toBe(true);
+      expect(new URLSearchParams(sample.query).has("seed")).toBe(false);
     } else if (sample.kind === "life") {
       expect(sorted(serializeLifeState(parseLifeState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
     } else if (sample.kind === "fractal") {

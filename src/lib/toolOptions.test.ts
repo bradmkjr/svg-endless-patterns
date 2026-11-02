@@ -16,6 +16,7 @@ import { parseKnitColorworkState, serializeKnitColorworkState } from "./knitColo
 import { parseCrochetColorworkState, serializeCrochetColorworkState } from "./crochetColorworkState";
 import { parseCheckerboardState, serializeCheckerboardState } from "./checkerboardState";
 import { parseLifeState, serializeLifeState } from "./lifeState";
+import { parsePuzzleState, serializePuzzleState } from "./puzzleState";
 import { parseFractalState, serializeFractalState } from "./fractalState";
 import { parseTieDyeState, serializeTieDyeState } from "./tieDyeState";
 import { parseTruchetState, serializeTruchetState } from "./truchetState";
@@ -39,6 +40,7 @@ const ROUND_TRIP: Record<ToolId, (params: URLSearchParams) => string> = {
   tieDye: (p) => serializeTieDyeState(parseTieDyeState(p)),
   maze: (p) => serializeMazeState(parseMazeState(p)),
   mandala: (p) => serializeMandalaState(parseMandalaState(p)),
+  puzzle: (p) => serializePuzzleState(parsePuzzleState(p)),
 };
 
 describe.each(TOOLS)("%s option pages", (tool) => {

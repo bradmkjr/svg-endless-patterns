@@ -561,6 +561,30 @@
         "Startwerte",
         "Zufällige Anordnungen entstehen aus einem Startwert, derselbe Startwert ergibt also immer dasselbe Muster. Ihr Browser merkt sich Ihren letzten Startwert, Links enthalten ihn aber nicht."
       ]
+    },
+    "paper-puzzles": {
+      "title": "Papierrätsel zum Ausdrucken oder Spielen auf dem Tablet",
+      "summary": "Sudoku, Futoshiki, Nonogramme, Schiffe versenken und weitere Stift-und-Papier-Spiele, auf Blättern für Papier oder eine Zeichen-App.",
+      "blocks": [
+        "Der neue Bereich [Papierrätsel](/paper-puzzles/) versammelt Blätter, die du ausdrucken oder in einer Zeichen-App auf dem Tablet öffnen und mit dem Stift ausfüllen kannst. Es gibt drei Rätselarten und vier Stift-und-Papier-Spiele, darunter [Super-Tic-Tac-Toe](/paper-puzzles/ultimate-tic-tac-toe/), neben unseren [Labyrinthen](/mazes/).",
+        "Beispiele für den Anfang",
+        [
+          "Ein schweres 9 × 9-Sudoku",
+          "Ein 6 × 6-Futoshiki",
+          "Ein 15 × 15-Nonogramm, gelöst",
+          "Ein Blatt Schiffe versenken für eine Person",
+          "Käsekästchen, 12 Kästchen breit",
+          "Ein 11 × 11-Hex-Brett"
+        ],
+        "Das bekommst du",
+        [
+          "Sudoku in 4 × 4, 6 × 6 und 9 × 9 und Futoshiki von 4 × 4 bis 7 × 7, jeweils in drei Schwierigkeiten",
+          "Nonogramme in 5 × 5, 10 × 10 und 15 × 15",
+          "Jedes Rätsel von einem Löser auf genau eine Lösung geprüft, und ein neues, wann immer du willst",
+          "Blätter für Schiffe versenken, Käsekästchen, Super-Tic-Tac-Toe und Hex zum gemeinsamen Spielen",
+          "PDFs für US Letter, A4 oder eine 4:3-Tablet-Seite, mit oder ohne Lösung, dazu SVG und PNG"
+        ]
+      ]
     }
   },
   "changelog": {
@@ -832,6 +856,13 @@
       "title": "Truchet-Kachel-Generator",
       "items": [
         "Truchet-Kachel-Generator hinzugefügt, mit nahtlosen Rapporten als SVG und PNG und druckbarem PDF"
+      ]
+    },
+    "Paper puzzles": {
+      "title": "Papierrätsel",
+      "items": [
+        "Neuer Bereich Papierrätsel im Menü, mit Sudoku, Futoshiki, Nonogrammen, Schiffe versenken, Käsekästchen, Super-Tic-Tac-Toe und Hex, neben den Labyrinthen",
+        "Jedes Blatt lässt sich als PDF für US Letter, A4 oder eine Tablet-Seite herunterladen, oder als SVG oder PNG"
       ]
     }
   }

@@ -1,6 +1,15 @@
 [
   {
     "date": "2026-11-01",
+    "title": "Paper puzzles",
+    "post": "paper-puzzles",
+    "items": [
+      "New paper puzzles section in the menu, with sudoku, futoshiki, nonograms, battleships, dots and boxes, ultimate tic-tac-toe and hex, alongside mazes",
+      "Each sheet downloads as a PDF for US Letter, A4 or a tablet page, or as SVG or PNG"
+    ]
+  },
+  {
+    "date": "2026-11-01",
     "title": "Faster repeat designs",
     "items": [
       "Designs now load with cacheable requests, so settings that have been drawn before can come back without being drawn again"

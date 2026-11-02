@@ -561,6 +561,30 @@
         "Sementes",
         "Os arranjos aleatórios vêm de uma semente, então a mesma semente sempre dá o mesmo padrão. Seu navegador lembra sua última semente, mas os links não a incluem."
       ]
+    },
+    "paper-puzzles": {
+      "title": "Passatempos de papel para imprimir ou jogar no tablet",
+      "summary": "Sudoku, futoshiki, nonogramas, batalha naval e mais jogos de lápis, em folhas feitas para papel ou um app de desenho.",
+      "blocks": [
+        "A nova seção de [passatempos de papel](/paper-puzzles/) reúne folhas que você pode imprimir, ou abrir em um app de desenho no tablet e preencher com uma caneta. São três tipos de passatempo e quatro jogos de lápis, entre eles o [super jogo da velha](/paper-puzzles/ultimate-tic-tac-toe/), ao lado dos nossos [labirintos](/mazes/).",
+        "Exemplos para começar",
+        [
+          "Um sudoku difícil de 9 × 9",
+          "Um futoshiki de 6 × 6",
+          "Um nonograma de 15 × 15, resolvido",
+          "Uma folha de batalha naval para um jogador",
+          "Jogo dos pontinhos, 12 quadrados de largura",
+          "Um tabuleiro de hex de 11 × 11"
+        ],
+        "O que você recebe",
+        [
+          "Sudoku em 4 × 4, 6 × 6 e 9 × 9, e futoshiki de 4 × 4 a 7 × 7, cada um em três dificuldades",
+          "Nonogramas em 5 × 5, 10 × 10 e 15 × 15",
+          "Cada passatempo verificado por um solucionador para ter uma única solução, e um novo quando você quiser",
+          "Folhas de batalha naval, jogo dos pontinhos, super jogo da velha e hex para jogar com outra pessoa",
+          "PDFs para carta, A4 ou uma página de tablet 4:3, com ou sem a solução, além de SVG e PNG"
+        ]
+      ]
     }
   },
   "changelog": {
@@ -832,6 +856,13 @@
       "title": "Criador de azulejos de Truchet",
       "items": [
         "Adicionado um criador de azulejos de Truchet, com repetições contínuas em SVG e PNG e PDF para imprimir"
+      ]
+    },
+    "Paper puzzles": {
+      "title": "Passatempos de papel",
+      "items": [
+        "Nova seção de passatempos de papel no menu, com sudoku, futoshiki, nonogramas, batalha naval, jogo dos pontinhos, super jogo da velha e hex, ao lado dos labirintos",
+        "Cada folha pode ser baixada como PDF para carta, A4 ou página de tablet, ou como SVG ou PNG"
       ]
     }
   }

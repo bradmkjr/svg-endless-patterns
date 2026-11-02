@@ -7,6 +7,7 @@
     "quilting": "Colchas",
     "knitting": "Punto",
     "crochet": "Ganchillo",
+    "puzzles": "Pasatiempos",
     "library": "Biblioteca de patrones",
     "blog": "Blog",
     "how": "Cómo funciona",
@@ -295,6 +296,12 @@
         "text": "Elige filas, columnas, colores y forma de las casillas, del tablero estándar a ladrillos 3:1, panales y triángulos.",
         "output": "SVG y PNG, repetición continua, tamaños finales, recuento de piezas y PDF imprimible.",
         "explore": "Crea un tablero"
+      },
+      "puzzle": {
+        "title": "Pasatiempos de papel",
+        "text": "Sudoku, futoshiki, nonogramas y juegos de lápiz como hundir la flota, para papel o una app de dibujo en tableta.",
+        "output": "Páginas PDF para carta, A4 o tableta, soluciones, SVG y PNG.",
+        "explore": "Crear una hoja de pasatiempos"
       }
     },
     "seeAllType": "Ver todo en {name}"

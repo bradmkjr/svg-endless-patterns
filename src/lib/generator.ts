@@ -20,10 +20,12 @@ import type { CrochetColorworkRequest, CrochetColorworkResult } from "./crochetC
 import type { FractalRequest, FractalResult } from "./fractalTypes";
 import type { LifeRequest, LifeResult } from "./lifeTypes";
 import type { KnitColorworkRequest, KnitColorworkResult } from "./knitColorworkTypes";
+import type { PuzzlePaper, PuzzleRequest, PuzzleResult } from "./puzzleTypes";
 
 export type { BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, Setting, StitchInfo, StitchRequest, StitchResult } from "./patternTypes";
 export type { KnitColorworkPlan, KnitColorworkRequest, KnitColorworkResult, KnitColorworkTechnique } from "./knitColorworkTypes";
 export type { CheckerboardRequest, CheckerboardResult, CheckerPattern } from "./checkerboardTypes";
+export type { PuzzleColors, PuzzleDifficulty, PuzzlePaper, PuzzleRequest, PuzzleResult, PuzzleType } from "./puzzleTypes";
 export type { ColorworkTechnique, ColorworkWeight, CrochetColorworkRequest, CrochetColorworkResult } from "./crochetColorworkTypes";
 export type { LifeColors, LifeNeighborhood, LifePattern, LifeRequest, LifeResult } from "./lifeTypes";
 export type { FractalColors, FractalRequest, FractalResult, FractalType } from "./fractalTypes";
@@ -160,6 +162,16 @@ export async function generateCrochetColorwork(request: CrochetColorworkRequest)
 
 export async function generateCrochetColorworkPdf(request: CrochetColorworkRequest): Promise<Uint8Array> {
   const response = await mazeApiGet("/crochet-colorwork/pdf", request, "application/pdf");
+  return new Uint8Array(await response.arrayBuffer());
+}
+
+export async function generatePuzzle(request: PuzzleRequest): Promise<PuzzleResult> {
+  const response = await mazeApiGet("/puzzle", request);
+  return response.json() as Promise<PuzzleResult>;
+}
+
+export async function generatePuzzlePdf(request: PuzzleRequest, { paper = "letter", solution = true }: { paper?: PuzzlePaper; solution?: boolean } = {}): Promise<Uint8Array> {
+  const response = await mazeApiGet(`/puzzle/pdf?paper=${paper}&solution=${solution}`, request, "application/pdf");
   return new Uint8Array(await response.arrayBuffer());
 }
 

@@ -7,6 +7,7 @@
     "quilting": "Colchas",
     "knitting": "Tricô",
     "crochet": "Crochê",
+    "puzzles": "Passatempos",
     "library": "Biblioteca de padrões",
     "blog": "Blog",
     "how": "Como funciona",
@@ -295,6 +296,12 @@
         "text": "Defina linhas, colunas, cores e a forma das casas, do padrão a tijolos 3:1, favos de mel e triângulos.",
         "output": "SVG e PNG, repetição contínua, tamanhos finais, contagem de peças e PDF para imprimir.",
         "explore": "Criar um xadrez"
+      },
+      "puzzle": {
+        "title": "Passatempos de papel",
+        "text": "Sudoku, futoshiki, nonogramas e jogos de lápis como batalha naval, para papel ou um app de desenho no tablet.",
+        "output": "Páginas PDF para carta, A4 ou tablet, soluções, SVG e PNG.",
+        "explore": "Criar uma folha de passatempo"
       }
     },
     "seeAllType": "Ver tudo em {name}"

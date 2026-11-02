@@ -1,5 +1,82 @@
 [
   {
+    "slug": "paper-puzzles",
+    "title": "Paper puzzles to print or play on a tablet",
+    "date": "2026-11-01",
+    "summary": "Sudoku, futoshiki, nonograms, battleships and more pencil games, on sheets made for paper or a drawing app.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The new [paper puzzles](/paper-puzzles/) section gathers sheets you can print, or open in a drawing app on a tablet and fill in with a pencil. There are three kinds of puzzle and four pencil games, including [ultimate tic-tac-toe](/paper-puzzles/ultimate-tic-tac-toe/), alongside our [mazes](/mazes/)."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "puzzle",
+            "slug": "sudoku",
+            "query": "d=hard",
+            "view": "puzzle",
+            "caption": "A hard 9 × 9 sudoku"
+          },
+          {
+            "kind": "puzzle",
+            "slug": "futoshiki",
+            "query": "n=6",
+            "view": "puzzle",
+            "caption": "A 6 × 6 futoshiki"
+          },
+          {
+            "kind": "puzzle",
+            "slug": "nonogram",
+            "query": "n=15",
+            "view": "solution",
+            "caption": "A 15 × 15 nonogram, solved"
+          },
+          {
+            "kind": "puzzle",
+            "slug": "battleships",
+            "query": "",
+            "view": "puzzle",
+            "caption": "A battleships sheet for one player"
+          },
+          {
+            "kind": "puzzle",
+            "slug": "dots-and-boxes",
+            "query": "n=12",
+            "view": "puzzle",
+            "caption": "Dots and boxes, 12 boxes across"
+          },
+          {
+            "kind": "puzzle",
+            "slug": "hex",
+            "query": "",
+            "view": "puzzle",
+            "caption": "An 11 × 11 hex board"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Sudoku at 4 × 4, 6 × 6 and 9 × 9, and futoshiki from 4 × 4 to 7 × 7, each in three difficulties",
+          "Nonograms at 5 × 5, 10 × 10 and 15 × 15",
+          "Every puzzle checked by a solver to have exactly one solution, and a new puzzle whenever you ask",
+          "Battleships, dots and boxes, ultimate tic-tac-toe and hex sheets for playing with someone else",
+          "PDFs for US Letter, A4 or a 4:3 tablet page, with or without the solution, plus SVG and PNG"
+        ]
+      }
+    ]
+  },
+  {
     "slug": "hidden-message-mazes",
     "title": "Mazes with a hidden message",
     "date": "2026-11-01",

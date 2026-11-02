@@ -7,6 +7,7 @@
     "quilting": "Quilt",
     "knitting": "Tricot",
     "crochet": "Crochet",
+    "puzzles": "Jeux papier",
     "library": "Bibliothèque de motifs",
     "blog": "Blog",
     "how": "Comment ça marche",
@@ -295,6 +296,12 @@
         "text": "Réglez les rangées, les colonnes, les couleurs et la forme des cases, du damier standard aux briques 3:1, nids d'abeille et triangles.",
         "output": "SVG et PNG, raccord continu, tailles finales, nombre d'éléments et PDF imprimable.",
         "explore": "Créer un damier"
+      },
+      "puzzle": {
+        "title": "Jeux papier",
+        "text": "Sudoku, futoshiki, nonogrammes et jeux papier-crayon comme la bataille navale, sur papier ou dans une appli de dessin sur tablette.",
+        "output": "Pages PDF en Letter, A4 ou tablette, solutions, SVG et PNG.",
+        "explore": "Créer une feuille de jeu"
       }
     },
     "seeAllType": "Tout voir dans {name}"

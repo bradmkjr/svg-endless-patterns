@@ -13,7 +13,7 @@ export type PuzzleRequest = {
   difficulty: PuzzleDifficulty;
   seed: number;
   colors: PuzzleColors;
-  locale?: "en" | "es" | "fr" | "de" | "pt";
+  locale?: "en" | "es" | "fr" | "de" | "pt" | "it" | "nl";
 };
 
 export type PuzzleResult = {

@@ -223,5 +223,95 @@
       "pythagoras-tree": "Quadrados crescem dos dois lados curtos de um triângulo retângulo apoiado em cada quadrado."
     },
     "loading": "Desenhando fractal…"
+  },
+  "it": {
+    "metaTitle": "Generatore di frattali: Koch, Sierpiński, drago e Hilbert",
+    "metaDesc": "Disegna frattali classici alla profondità che scegli, nei tuoi colori, poi scarica SVG, PNG o un PDF stampabile con una versione a linee nere.",
+    "h1": "Frattali",
+    "lede": "Ripeti una regola semplice e guarda crescere il dettaglio. Scegli un frattale classico e la sua profondità, poi scaricalo nei tuoi colori o a linee nere.",
+    "views": {
+      "art": "Colore",
+      "outline": "Linee nere"
+    },
+    "stats": "Profondità {depth}: {pieces} pezzi.",
+    "downloadPdf": "Scarica il PDF stampabile",
+    "design": "Disegno",
+    "type": "Frattale",
+    "depth": "Profondità",
+    "weight": "Spessore della linea",
+    "angle": "Angolo dei rami",
+    "colors": "Colori",
+    "background": "Sfondo",
+    "primary": "Colore iniziale",
+    "accent": "Colore finale",
+    "colorNote": "Il disegno passa dal colore iniziale a quello finale.",
+    "types": {
+      "koch-snowflake": "Fiocco di neve di Koch",
+      "sierpinski-triangle": "Triangolo di Sierpiński",
+      "sierpinski-carpet": "Tappeto di Sierpiński",
+      "dragon-curve": "Curva del drago",
+      "hilbert-curve": "Curva di Hilbert",
+      "levy-curve": "Curva C di Lévy",
+      "gosper-curve": "Curva di Gosper",
+      "fractal-tree": "Albero frattale",
+      "pythagoras-tree": "Albero di Pitagora"
+    },
+    "notes": {
+      "koch-snowflake": "Ogni lato dritto fa crescere una punta più piccola, ancora e ancora: il bordo si allunga a ogni livello mentre l'area resta limitata.",
+      "sierpinski-triangle": "Ogni triangolo si divide in quattro e perde quello centrale, lasciando tre copie più piccole dell'intero.",
+      "sierpinski-carpet": "Ogni quadrato si divide in nove e perde quello centrale, lasciando otto copie più piccole dell'intero.",
+      "dragon-curve": "Il percorso che ottieni piegando più volte a metà una striscia di carta e aprendo ogni piega ad angolo retto. Tocca se stesso ma non si incrocia mai.",
+      "hilbert-curve": "Una linea continua che visita ogni cella di una griglia quadrata esattamente una volta.",
+      "levy-curve": "Ogni segmento è sostituito dai due lati corti di un triangolo rettangolo isoscele.",
+      "gosper-curve": "Una linea continua su una griglia esagonale che riempie una forma dal bordo smerlato.",
+      "fractal-tree": "Ogni ramo si divide in due più corti all'angolo che imposti.",
+      "pythagoras-tree": "Dei quadrati crescono dai due lati corti di un triangolo rettangolo posato su ogni quadrato."
+    },
+    "loading": "Disegno del frattale…"
+  },
+  "nl": {
+    "metaTitle": "Fractalmaker: Koch, Sierpiński, draak en Hilbert",
+    "metaDesc": "Teken klassieke fractals tot de diepte die je kiest, in jouw kleuren, en download SVG, PNG of een printbare pdf met een versie in zwarte lijnen.",
+    "h1": "Fractals",
+    "lede": "Herhaal één eenvoudige regel en zie het detail groeien. Kies een klassieke fractal en de diepte, en download hem in jouw kleuren of in zwarte lijnen.",
+    "views": {
+      "art": "Kleur",
+      "outline": "Zwarte lijnen"
+    },
+    "stats": "Diepte {depth}: {pieces} stukken.",
+    "downloadPdf": "Printbare pdf downloaden",
+    "design": "Ontwerp",
+    "type": "Fractal",
+    "depth": "Diepte",
+    "weight": "Lijndikte",
+    "angle": "Takhoek",
+    "colors": "Kleuren",
+    "background": "Achtergrond",
+    "primary": "Beginkleur",
+    "accent": "Eindkleur",
+    "colorNote": "Het ontwerp verloopt van de beginkleur naar de eindkleur.",
+    "types": {
+      "koch-snowflake": "Koch-sneeuwvlok",
+      "sierpinski-triangle": "Sierpiński-driehoek",
+      "sierpinski-carpet": "Sierpiński-tapijt",
+      "dragon-curve": "Drakenkromme",
+      "hilbert-curve": "Hilbert-kromme",
+      "levy-curve": "Lévy C-kromme",
+      "gosper-curve": "Gosper-kromme",
+      "fractal-tree": "Fractalboom",
+      "pythagoras-tree": "Pythagorasboom"
+    },
+    "notes": {
+      "koch-snowflake": "Elke rechte zijde krijgt steeds weer een kleinere punt, dus de rand wordt op elke diepte langer terwijl het oppervlak begrensd blijft.",
+      "sierpinski-triangle": "Elke driehoek splitst in vier en verliest de middelste, waardoor drie kleinere kopieën van het geheel overblijven.",
+      "sierpinski-carpet": "Elk vierkant splitst in negen en verliest het middelste, waardoor acht kleinere kopieën van het geheel overblijven.",
+      "dragon-curve": "Het pad dat je krijgt door een strook papier steeds dubbel te vouwen en elke vouw tot een rechte hoek te openen. Het raakt zichzelf maar kruist nooit.",
+      "hilbert-curve": "Eén ononderbroken lijn die elke cel van een vierkant raster precies één keer aandoet.",
+      "levy-curve": "Elk segment wordt vervangen door de twee korte zijden van een rechthoekige gelijkbenige driehoek.",
+      "gosper-curve": "Eén ononderbroken lijn op een zeshoekig raster die een vorm met een geschulpte rand vult.",
+      "fractal-tree": "Elke tak splitst in twee kortere op de hoek die je instelt.",
+      "pythagoras-tree": "Vierkanten groeien uit de twee korte zijden van een rechthoekige driehoek op elk vierkant."
+    },
+    "loading": "De fractal wordt getekend…"
   }
 }

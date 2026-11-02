@@ -1,7 +1,23 @@
 {
-  "en": { "loading": "Generating…" },
-  "es": { "loading": "Generando…" },
-  "fr": { "loading": "Génération…" },
-  "de": { "loading": "Wird erstellt …" },
-  "pt": { "loading": "Gerando…" }
+  "en": {
+    "loading": "Generating…"
+  },
+  "es": {
+    "loading": "Generando…"
+  },
+  "fr": {
+    "loading": "Génération…"
+  },
+  "de": {
+    "loading": "Wird erstellt …"
+  },
+  "pt": {
+    "loading": "Gerando…"
+  },
+  "it": {
+    "loading": "Generazione…"
+  },
+  "nl": {
+    "loading": "Bezig met genereren…"
+  }
 }

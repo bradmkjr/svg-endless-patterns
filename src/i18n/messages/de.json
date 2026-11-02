@@ -233,13 +233,13 @@
       },
       "stainedGlass": {
         "title": "Bleiglas",
-        "text": "Entwerfen Sie ein eigenes Bleiglasfenster aus sechs parametrischen Entwürfen, mit Teilen, die sich wirklich von Hand schneiden lassen.",
+        "text": "Entwerfen Sie ein eigenes Bleiglasfenster aus neun parametrischen Entwürfen, mit Teilen, die sich wirklich von Hand schneiden lassen.",
         "output": "Nummerierte Schablonen in Originalgröße mit Profilzugabe, eine grobe Glasschätzung je Farbe und eine Vorschau als SVG oder PNG.",
         "explore": "Bleiglas-Generator öffnen"
       },
       "mandala": {
         "title": "Mandalas",
-        "text": "Erzeuge eigene geometrische Radialmuster aus Ringen einfacher Formen.",
+        "text": "Erzeuge eigene geometrische Radialmuster aus Ringen einfacher Formen, in acht Zeichenstilen.",
         "output": "Farbiges SVG oder PNG, Ausmalbild und druckbares PDF.",
         "explore": "Radialmuster erstellen"
       },
@@ -257,7 +257,7 @@
       },
       "tieDye": {
         "title": "Batik",
-        "text": "Sehen Sie eine Spirale, Zielscheibe, Ziehharmonika, Sonnenstrahlen, Chevron oder Doppelspirale in Ihren Farben.",
+        "text": "Sieh dir in deinen Farben eine Faltung als Spirale, Zielscheibe, Ziehharmonika, Sonnenstrahl, Chevron, Doppelspirale, diagonale Streifen, Knitterbatik oder Herz an.",
         "output": "Faltdiagramm, Farbplan, Mischmengen, druckbare Schritte und SVG- oder PNG-Vorschau.",
         "explore": "Batik planen"
       },

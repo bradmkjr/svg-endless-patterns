@@ -34,7 +34,7 @@ describe("square size in the share link", () => {
 });
 
 describe("the square's builder text", () => {
-  it.each(["es", "fr", "de", "pt"] as const)("has every key in %s", (locale) => {
+  it.each(["es", "fr", "de", "pt", "it", "nl"] as const)("has every key in %s", (locale) => {
     expect(Object.keys(uiText[locale]).sort()).toEqual(Object.keys(uiText.en).sort());
     for (const [key, value] of Object.entries(uiText[locale])) expect(value, key).toBeTruthy();
   });

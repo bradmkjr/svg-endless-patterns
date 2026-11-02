@@ -4,7 +4,7 @@ import { readPalettes } from "./customPalettes";
 import { HARMONIES, harmonyColors, HUES, paletteAccents, THEME_GROUPS } from "./palettes";
 
 const HEX = /^#[0-9a-f]{6}$/;
-const LOCALES = ["en", "es", "fr", "de", "pt"] as const;
+const LOCALES = ["en", "es", "fr", "de", "pt", "it", "nl"] as const;
 const flat = (value: object, prefix = ""): Record<string, string> => Object.fromEntries(Object.entries(value).flatMap(([k, v]) => (typeof v === "string" ? [[`${prefix}${k}`, v]] : Object.entries(flat(v, `${prefix}${k}.`)))));
 
 describe("palette library", () => {

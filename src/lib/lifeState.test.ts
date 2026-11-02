@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import uiText from "@/i18n/messages/life.json";
 import { CELL_SIZE_OPTIONS, COUNT_OPTIONS, defaultLifeState, LIFE_GRID, LIFE_PERIOD, parseLifeState, PATTERN_OPTIONS, phaseOptions, serializeLifeState, SPACING_OPTIONS } from "./lifeState";
 
-const LOCALES = ["en", "es", "fr", "de", "pt"] as const;
+const LOCALES = ["en", "es", "fr", "de", "pt", "it", "nl"] as const;
 
 describe("share links", () => {
   const parse = (query: string, locale?: (typeof LOCALES)[number]) => parseLifeState(new URLSearchParams(query), locale);

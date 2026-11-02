@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import copy from "@/i18n/messages/maze.json";
 import { ALGORITHM_OPTIONS, defaultMazeState, defaultMessage, DIFFICULTY_OPTIONS, MESSAGE_LIMITS, messageProblem, normalizeMessage, parseMazeState, serializeMazeState, SHAPE_OPTIONS, SIZE_OPTIONS, WEIGHT_OPTIONS } from "./mazeState";
 
-const LOCALES = ["en", "es", "fr", "de", "pt"] as const;
+const LOCALES = ["en", "es", "fr", "de", "pt", "it", "nl"] as const;
 
 describe("maze share links", () => {
   it.each(LOCALES)("round trips the defaults and options in %s", (locale) => {

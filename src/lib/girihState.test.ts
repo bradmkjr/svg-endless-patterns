@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import type { GirihRequest } from "./generator";
 import { parseGirihState, serializeGirihState, defaultGirihState } from "./girihState";
 
-const LOCALES = ["en", "es", "fr", "de", "pt"] as const;
+const LOCALES = ["en", "es", "fr", "de", "pt", "it", "nl"] as const;
 
 describe("share links", () => {
   const params = (query: string) => new URLSearchParams(query);

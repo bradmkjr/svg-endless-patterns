@@ -288,5 +288,121 @@
     "stretch": "Estiramento",
     "stretchNote": "Em 1:1 as formas são regulares. Qualquer outra proporção as estica, e a medida indicada é a largura e a altura totais de cada forma.",
     "houndstoothNote": "O pied-de-poule usa duas cores."
+  },
+  "it": {
+    "metaTitle": "Generatore di scacchiere: proporzioni e colori personalizzati",
+    "metaDesc": "Crea una scacchiera con le tue righe, colonne, proporzioni e colori, da una scacchiera normale a mattoni 3:1, poi scarica SVG, PNG o PDF.",
+    "h1": "Scacchiere",
+    "lede": "Parti da una scacchiera normale, poi cambia righe, colonne, colori e forma delle caselle, ad esempio 3:1 o 2:3.",
+    "loading": "Disegno della scacchiera…",
+    "views": {
+      "art": "Scacchiera",
+      "repeat": "Motivo continuo"
+    },
+    "viewNotes": {
+      "art": "Tutta la scacchiera, con le tue colonne e righe.",
+      "repeat": "Una piastrella che si unisce su ogni lato, per tessuto o carta da parati."
+    },
+    "stats": "Misura finita {w}\" × {h}\". Ogni casella {bw}\" × {bh}\".",
+    "count": "Colore {n}: {boxes} pezzi",
+    "downloadPdf": "Scarica il PDF stampabile",
+    "design": "Scacchiera",
+    "pattern": "Motivo",
+    "cols": "Colonne",
+    "rows": "Righe",
+    "boxShape": "Forma delle caselle",
+    "ratioWidth": "Parti in larghezza",
+    "ratioHeight": "Parti in altezza",
+    "unit": "Una parte è",
+    "unitNote": "Imposta la misura finita, non l'aspetto.",
+    "colors": "Colori",
+    "color": "Colore {n}",
+    "add": "Aggiungi colore",
+    "remove": "Rimuovi colore",
+    "ginghamNote": "Il vichy usa due colori e li mescola per il tono medio.",
+    "patterns": {
+      "checker": "Scacchiera normale",
+      "brick": "Mattoni",
+      "half-drop": "Mezzo salto",
+      "gingham": "Vichy",
+      "hexagon": "Nido d'ape",
+      "triangle": "Triangoli",
+      "double-check": "Quadri doppi",
+      "stairs": "Scala",
+      "houndstooth": "Pied-de-poule"
+    },
+    "patternNotes": {
+      "checker": "Le caselle si alternano in entrambe le direzioni.",
+      "brick": "Una riga sì e una no si sposta di mezza casella, come in un muro di mattoni.",
+      "half-drop": "Una colonna sì e una no si sposta di mezza casella.",
+      "gingham": "Le righe si incrociano come in un tessuto, con un tono medio dove incontrano il fondo.",
+      "hexagon": "Esagoni regolari, ciascuno con sei vicini, colorati in modo che due vicini non coincidano. Le colonne contano gli esagoni di una riga, e le righe si incastrano.",
+      "triangle": "Triangoli rivolti in su e in giù a turno, equilateri a 1:1. Ogni colonna è la base di un triangolo, quindi una riga ha due triangoli per colonna.",
+      "double-check": "Si alternano blocchi di quattro caselle, per un quadro più grande.",
+      "stairs": "Ogni riga si sposta di mezzo blocco, così i colori salgono come una scala.",
+      "houndstooth": "Il classico quadro tessuto, in due colori: una saia 2/2 con due fili scuri e due chiari in ogni direzione."
+    },
+    "hexagonNote": "Un nido d'ape usa tre colori, così due vicini non coincidono. Con due soli, il terzo è una loro miscela.",
+    "stretch": "Allungamento",
+    "stretchNote": "A 1:1 le forme sono regolari. Qualsiasi altra proporzione le allunga, e la misura indicata è la larghezza e l'altezza piene di ogni forma.",
+    "houndstoothNote": "Il pied-de-poule usa due colori."
+  },
+  "nl": {
+    "metaTitle": "Dambordpatroonmaker: eigen verhoudingen en kleuren",
+    "metaDesc": "Maak een dambord met je eigen rijen, kolommen, vakverhouding en kleuren, van een gewoon bord tot bakstenen van 3:1, en download SVG, PNG of pdf.",
+    "h1": "Dambordpatronen",
+    "lede": "Begin met een gewoon bord en verander de rijen, kolommen, kleuren en vakvorm, bijvoorbeeld 3:1 of 2:3.",
+    "loading": "Het bord wordt getekend…",
+    "views": {
+      "art": "Bord",
+      "repeat": "Naadloze herhaling"
+    },
+    "viewNotes": {
+      "art": "Het hele bord, met jouw kolommen en rijen.",
+      "repeat": "Een tegel die aan elke kant aansluit, voor stof of behang."
+    },
+    "stats": "Eindmaat {w}\" × {h}\". Elk vak {bw}\" × {bh}\".",
+    "count": "Kleur {n}: {boxes} stukken",
+    "downloadPdf": "Printbare pdf downloaden",
+    "design": "Bord",
+    "pattern": "Patroon",
+    "cols": "Kolommen",
+    "rows": "Rijen",
+    "boxShape": "Vakvorm",
+    "ratioWidth": "Delen in de breedte",
+    "ratioHeight": "Delen in de hoogte",
+    "unit": "Eén deel is",
+    "unitNote": "Bepaalt de eindmaat, niet het uiterlijk.",
+    "colors": "Kleuren",
+    "color": "Kleur {n}",
+    "add": "Kleur toevoegen",
+    "remove": "Kleur verwijderen",
+    "ginghamNote": "Vichy gebruikt twee kleuren en mengt ze voor de middentint.",
+    "patterns": {
+      "checker": "Gewoon dambord",
+      "brick": "Baksteen",
+      "half-drop": "Halve verspringing",
+      "gingham": "Vichy",
+      "hexagon": "Honingraat",
+      "triangle": "Driehoeken",
+      "double-check": "Dubbele ruit",
+      "stairs": "Trap",
+      "houndstooth": "Pied-de-poule"
+    },
+    "patternNotes": {
+      "checker": "Vakken wisselen elkaar in beide richtingen af.",
+      "brick": "Om de andere rij verschuift een half vak, als een bakstenen muur.",
+      "half-drop": "Om de andere kolom verschuift een half vak.",
+      "gingham": "Strepen kruisen als geweven stof, met een middentint waar ze de ondergrond raken.",
+      "hexagon": "Regelmatige zeshoeken, elk met zes buren, zo gekleurd dat geen twee buren gelijk zijn. Kolommen tellen de zeshoeken op een rij, en rijen grijpen in elkaar.",
+      "triangle": "Driehoeken om en om omhoog en omlaag, gelijkzijdig bij 1:1. Elke kolom is de basis van één driehoek, dus een rij heeft twee driehoeken per kolom.",
+      "double-check": "Blokken van vier vakken wisselen elkaar af, voor een grotere ruit.",
+      "stairs": "Elke rij schuift een half blok op, zodat de kleuren als een trap stijgen.",
+      "houndstooth": "De klassieke geweven ruit, in twee kleuren: een 2/2 keperbinding met twee donkere en twee lichte draden in elke richting."
+    },
+    "hexagonNote": "Een honingraat gebruikt drie kleuren, zodat geen twee buren gelijk zijn. Bij slechts twee is de derde een mengsel daarvan.",
+    "stretch": "Uitrekken",
+    "stretchNote": "Bij 1:1 zijn de vormen regelmatig. Elke andere verhouding rekt ze uit, en de opgegeven maat is de volledige breedte en hoogte van elke vorm.",
+    "houndstoothNote": "Pied-de-poule gebruikt twee kleuren."
   }
 }

@@ -3,7 +3,7 @@ import type { Locale } from "./generator";
 import siteText from "../i18n/messages/tessellation.json";
 import { defaultTessellationState, parseTessellationState, serializeTessellationState } from "./tessellationState";
 
-const LOCALE_CODES: Locale[] = ["en", "es", "fr", "de", "pt"];
+const LOCALE_CODES: Locale[] = ["en", "es", "fr", "de", "pt", "it", "nl"];
 
 
 describe("share links", () => {

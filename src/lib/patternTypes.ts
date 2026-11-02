@@ -1,6 +1,6 @@
 /** The JSON the API's `/quilt-block` and `/stitch` routes take and return. */
 
-export type Locale = "en" | "es" | "fr" | "de" | "pt";
+export type Locale = "en" | "es" | "fr" | "de" | "pt" | "it" | "nl";
 
 export type Setting = "straight" | "alternate" | "quadrants";
 

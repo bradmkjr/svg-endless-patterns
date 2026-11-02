@@ -238,5 +238,101 @@
     },
     "loading": "Desenhando o quadrado…",
     "indexLink": "Quadrados multicoloridos: tapestry, canto a canto e granny"
+  },
+  "it": {
+    "metaTitle": "Quadrati all'uncinetto a colori: tapestry, C2C e granny",
+    "metaDesc": "Quadrati all'uncinetto multicolori nei tuoi colori, scritti per esteso con i termini americani: schemi tapestry, grafici da angolo ad angolo e granny square, con un PDF stampabile.",
+    "h1": "Uncinetto a colori",
+    "lede": "Scegli un disegno tapestry, da angolo ad angolo o granny e imposta i colori, poi ottieni lo schema e ogni riga, diagonale o giro di un quadrato completo.",
+    "views": {
+      "square": "Quadrato",
+      "chart": "Schema e legenda"
+    },
+    "squareNote": "Una guida all'aspetto del quadrato finito, con il bordo.",
+    "downloadPdf": "Scarica lo schema in PDF",
+    "design": "Disegno",
+    "weight": "Spessore del filato",
+    "repeatsChart": "Ripetizioni dello schema per lato",
+    "repeatsGranny": "Volte attraverso la sequenza di colori",
+    "colors": "Colori",
+    "mainColor": "{letter}: principale e bordo",
+    "contrastColor": "{letter}: contrasto",
+    "yarnHeading": "Filato per colore",
+    "colorColumn": "Colore",
+    "yardsColumn": "Iarde",
+    "bobbinsColumn": "Rocchetti",
+    "totalRow": "Totale",
+    "techniques": {
+      "tapestry": "Tapestry",
+      "c2c": "C2C",
+      "granny": "Granny"
+    },
+    "weights": {
+      "sport": "Sport",
+      "dk": "DK",
+      "worsted": "Worsted",
+      "bulky": "Bulky"
+    },
+    "designs": {
+      "diamond-lattice": "Reticolo di rombi",
+      "stepped-cross": "Croce a gradini",
+      "nested-chevrons": "Chevron concentrici",
+      "heart": "Cuore",
+      "sunburst": "Raggiera",
+      "ripple-diamond": "Rombo a onde",
+      "frost": "Brina",
+      "meadow": "Prato",
+      "ember": "Brace"
+    },
+    "loading": "Disegno del quadrato…",
+    "indexLink": "Quadrati multicolori: tapestry, da angolo ad angolo e granny"
+  },
+  "nl": {
+    "metaTitle": "Gehaakte kleurenvierkanten: tapestry, C2C en granny",
+    "metaDesc": "Veelkleurige gehaakte vierkanten in jouw kleuren, volledig uitgeschreven in Amerikaanse termen: tapestryschema's, hoek-tot-hoekschema's en granny squares, met een printbare pdf.",
+    "h1": "Kleurenhaken",
+    "lede": "Kies een tapestry-, hoek-tot-hoek- of granny-ontwerp en stel je kleuren in, en krijg het schema en elke toer, diagonaal of ronde van een compleet vierkant.",
+    "views": {
+      "square": "Vierkant",
+      "chart": "Schema en legenda"
+    },
+    "squareNote": "Een indruk van het afgewerkte vierkant, met de rand.",
+    "downloadPdf": "Pdf-patroon downloaden",
+    "design": "Ontwerp",
+    "weight": "Garendikte",
+    "repeatsChart": "Schemaherhalingen per richting",
+    "repeatsGranny": "Keren door de kleurenreeks",
+    "colors": "Kleuren",
+    "mainColor": "{letter}: hoofdkleur en rand",
+    "contrastColor": "{letter}: contrast",
+    "yarnHeading": "Garen per kleur",
+    "colorColumn": "Kleur",
+    "yardsColumn": "Yards",
+    "bobbinsColumn": "Klosjes",
+    "totalRow": "Totaal",
+    "techniques": {
+      "tapestry": "Tapestry",
+      "c2c": "C2C",
+      "granny": "Granny"
+    },
+    "weights": {
+      "sport": "Sport",
+      "dk": "DK",
+      "worsted": "Worsted",
+      "bulky": "Bulky"
+    },
+    "designs": {
+      "diamond-lattice": "Ruitenrooster",
+      "stepped-cross": "Getrapt kruis",
+      "nested-chevrons": "Geneste chevrons",
+      "heart": "Hart",
+      "sunburst": "Zonnestraal",
+      "ripple-diamond": "Golvende ruit",
+      "frost": "Rijp",
+      "meadow": "Weide",
+      "ember": "Gloed"
+    },
+    "loading": "Het vierkant wordt getekend…",
+    "indexLink": "Veelkleurige vierkanten: tapestry, hoek-tot-hoek en granny"
   }
 }

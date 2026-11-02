@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import uiText from "@/i18n/messages/checkerboard.json";
 import { boardAspect, COUNT_OPTIONS, defaultCheckerboardState, maxColors, parseCheckerboardState, PATTERN_OPTIONS, RATIO_OPTIONS, RATIO_PRESETS, serializeCheckerboardState, UNIT_OPTIONS } from "./checkerboardState";
 
-const LOCALES = ["en", "es", "fr", "de", "pt"] as const;
+const LOCALES = ["en", "es", "fr", "de", "pt", "it", "nl"] as const;
 const parse = (query: string, locale?: (typeof LOCALES)[number]) => parseCheckerboardState(new URLSearchParams(query), locale);
 
 describe("share links", () => {

@@ -50,6 +50,16 @@ html[data-locale="pt"] {
   --flag: linear-gradient(90deg, #009b3a 40%, #ffdf00 40% 70%, #002776 70%);
 }
 
+html[data-locale="it"] {
+  --locale-swatch: #008c45;
+  --flag: linear-gradient(90deg, #008c45 33.33%, #f4f5f0 33.33% 66.66%, #cd212a 66.66%);
+}
+
+html[data-locale="nl"] {
+  --locale-swatch: #e8710a;
+  --flag: linear-gradient(90deg, #ae1c28 33.33%, #ffffff 33.33% 66.66%, #21468b 66.66%);
+}
+
 .flag-stripe {
   height: 3px;
   background: var(--flag);

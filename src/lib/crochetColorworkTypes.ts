@@ -13,7 +13,7 @@ export type CrochetColorworkRequest = {
   weight: ColorworkWeight;
   /** Tiles a chart this many times each way, or repeats a granny's color sequence. */
   repeats: number;
-  locale?: "en" | "es" | "fr" | "de" | "pt";
+  locale?: "en" | "es" | "fr" | "de" | "pt" | "it" | "nl";
 };
 
 export type ColorRun = { letter: string; count: number };

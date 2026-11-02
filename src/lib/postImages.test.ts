@@ -14,7 +14,7 @@ describe("featured images", () => {
     const sample = (kind: string, query: string, slug = "") => ({ body: [{ type: "samples", items: [{ kind, slug, query, view: "art", caption: "" }] }] }) as never;
     expect(postImage(sample("truchet", "style=triangles"))).toContain("/thumbnail/truchet/triangles");
     expect(postImage(sample("celtic", "p=diamond"))).toContain("/thumbnail/celticKnot/diamond");
-    expect(postImage(sample("mandala", "n=8"))).toContain("/thumbnail/mandala/8-fold");
+    expect(postImage(sample("mandala", "st=wavy"))).toContain("/thumbnail/mandala/wavy");
     expect(postImage(sample("block", "", "ohio-star"))).toContain("/thumbnail/blocks/ohio-star");
   });
 

@@ -233,13 +233,13 @@
       },
       "stainedGlass": {
         "title": "Vitral",
-        "text": "Crie um painel de vitral original a partir de seis composições paramétricas, com peças que podem mesmo ser cortadas à mão.",
+        "text": "Crie um painel de vitral original a partir de nove composições paramétricas, com peças que podem mesmo ser cortadas à mão.",
         "output": "Moldes numerados em tamanho real com margem para o perfil, estimativa aproximada de vidro por cor e prévia em SVG ou PNG.",
         "explore": "Abrir o criador de vitrais"
       },
       "mandala": {
         "title": "Mandalas",
-        "text": "Gere desenhos radiais geométricos originais a partir de anéis de formas simples.",
+        "text": "Gere desenhos radiais geométricos originais a partir de anéis de formas simples, em oito estilos de desenho.",
         "output": "SVG ou PNG colorido, página para colorir e PDF para imprimir.",
         "explore": "Criar um desenho radial"
       },
@@ -257,7 +257,7 @@
       },
       "tieDye": {
         "title": "Tie-dye",
-        "text": "Veja uma dobra em espiral, alvo, sanfona, raios de sol, chevron ou espiral dupla nas suas cores.",
+        "text": "Visualize em suas cores uma dobra em espiral, alvo, sanfona, raios, chevron, espiral dupla, listras diagonais, amassado ou coração.",
         "output": "Diagrama de dobra, mapa de tintas, quantidades, passos para imprimir e prévia em SVG ou PNG.",
         "explore": "Planejar um tie-dye"
       },

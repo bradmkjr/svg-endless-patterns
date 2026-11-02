@@ -1,19 +1,17 @@
 import { routeLocale } from "@/lib/i18n";
-import { optionMetadata } from "@/lib/toolPages";
-import { toolSlugs } from "@/lib/toolOptions";
-import { MandalaView, mandalaMetadata } from "@/views/MandalaView";
+import { MandalaView, mandalaOptionMetadata, mandalaStaticParams } from "@/views/MandalaView";
 
 type Props = { params: Promise<{ locale: string; option: string }> };
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return toolSlugs("mandala");
+  return mandalaStaticParams();
 }
 
 export async function generateMetadata({ params }: Props) {
   const { locale, option } = await params;
-  return optionMetadata("mandala", routeLocale(locale), option, mandalaMetadata(routeLocale(locale)));
+  return mandalaOptionMetadata(routeLocale(locale), option);
 }
 
 export default async function Page({ params }: Props) {

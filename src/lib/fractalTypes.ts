@@ -9,7 +9,7 @@ export type FractalRequest = {
   weight: number;
   angle: number;
   colors: FractalColors;
-  locale?: "en" | "es" | "fr" | "de" | "pt";
+  locale?: "en" | "es" | "fr" | "de" | "pt" | "it" | "nl";
 };
 
 export type FractalResult = {

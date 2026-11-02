@@ -233,13 +233,13 @@
       },
       "stainedGlass": {
         "title": "Vitrail",
-        "text": "Dessinez un panneau de vitrail original à partir de six compositions paramétriques, en pièces réellement coupables à la main.",
+        "text": "Dessinez un panneau de vitrail original à partir de neuf compositions paramétriques, en pièces réellement coupables à la main.",
         "output": "Gabarits numérotés grandeur nature avec marge pour le plomb, estimation approximative du verre par couleur et aperçu SVG ou PNG.",
         "explore": "Ouvrir le créateur de vitrail"
       },
       "mandala": {
         "title": "Mandalas",
-        "text": "Générez des motifs radiaux géométriques originaux à partir d'anneaux de formes simples.",
+        "text": "Générez des motifs radiaux géométriques originaux à partir d'anneaux de formes simples, en huit styles de dessin.",
         "output": "SVG ou PNG en couleur, page à colorier et PDF à imprimer.",
         "explore": "Créer un motif radial"
       },
@@ -257,7 +257,7 @@
       },
       "tieDye": {
         "title": "Tie-dye",
-        "text": "Prévisualisez un pliage en spirale, en cible, en accordéon, en rayons de soleil, en chevron ou en double spirale dans vos couleurs.",
+        "text": "Visualisez dans vos couleurs un pliage en spirale, cible, accordéon, rayons, chevron, double spirale, rayures diagonales, froissé ou coeur.",
         "output": "Schéma de pliage, plan des teintures, quantités, étapes imprimables et aperçu SVG ou PNG.",
         "explore": "Préparer un tie-dye"
       },

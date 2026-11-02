@@ -16,7 +16,7 @@ export type LifeRequest = {
   cellX: number;
   cellY: number;
   colors: LifeColors;
-  locale?: "en" | "es" | "fr" | "de" | "pt";
+  locale?: "en" | "es" | "fr" | "de" | "pt" | "it" | "nl";
 };
 
 export type LifeResult = {

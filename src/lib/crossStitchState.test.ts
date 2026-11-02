@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import {     defaultCrossStitchState,   DEFAULT_COUNT,   MAX_GRID,     MOTIFS,   parseCrossStitchState,     resizeGrid,   serializeCrossStitchState,   setCell, } from "./crossStitchState";
 import type { CrossStitchRequest } from "./generator";
 
-const LOCALES = ["en", "es", "fr", "de", "pt"] as const;
+const LOCALES = ["en", "es", "fr", "de", "pt", "it", "nl"] as const;
 
 
 const params = (query: string) => new URLSearchParams(query);

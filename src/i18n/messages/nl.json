@@ -1,0 +1,393 @@
+{
+  "meta": {
+    "defaultTitle": "Rekenhulpen voor quilt-, brei- en haakpatronen",
+    "description": "Pas traditionele quiltblokken en brei- en haaksteken aan op jouw maat en stekenverhouding. Krijg snijlijsten, geschreven instructies, telpatronen en printbare pdf's, gratis."
+  },
+  "nav": {
+    "quilting": "Quilten",
+    "knitting": "Breien",
+    "crochet": "Haken",
+    "puzzles": "Papierpuzzels",
+    "library": "Patroonbibliotheek",
+    "blog": "Blog",
+    "how": "Zo werkt het",
+    "language": "Taal",
+    "palettes": "Kleuren"
+  },
+  "footer": {
+    "note": "Alles wat je hier maakt, mag je gratis downloaden en gebruiken. Controleer de maten voordat je knipt: de cijfers worden geleverd zoals ze zijn, zonder garantie.",
+    "draft": "",
+    "blog": "Blog",
+    "changelog": "Wijzigingen",
+    "acknowledgements": "Dankwoord",
+    "privacy": "Privacybeleid",
+    "terms": "Gebruiksvoorwaarden"
+  },
+  "notFound": {
+    "title": "Deze pagina bestaat niet",
+    "before": "De link is misschien verouderd. Je kunt een ontwerp kiezen uit ",
+    "link": "alle blokken",
+    "after": "."
+  },
+  "home": {
+    "h1": "Traditionele patronen, uitgerekend voor wat jij maakt",
+    "lede": "Kies een quiltblok of een brei- of haaksteek, stel je maat in en krijg de cijfers en instructies om het te maken, klaar om te printen.",
+    "cta": "Begin met een quiltblok",
+    "quiltTitle": "Quilten",
+    "quiltText": "Snijlijsten, stofverbruik, naadloze herhalingen en sjablonen op ware grootte voor elk blok.",
+    "knitTitle": "Breien",
+    "knitText": "Op te zetten steken en geschreven naalden die passen bij je stekenverhouding, met een telpatroon voor elke steek.",
+    "crochetTitle": "Haken",
+    "crochetText": "Beginlossen, instructies per toer in Amerikaanse termen en symboolschema's.",
+    "quiltHeading": "Quiltblokken",
+    "knitHeading": "Breisteken",
+    "crochetHeading": "Haaksteken",
+    "typesHeading": "Soorten patronen",
+    "seeAll": "Bekijk alle {n}"
+  },
+  "blocks": {
+    "metaTitle": "Traditionele quiltblokken om aan te passen",
+    "metaDesc": "Kies een traditioneel quiltblok en stel de maat en kleuren in voor een snijlijst, stofverbruik, naadloze herhalingen en printbare sjablonen.",
+    "h1": "Quiltblokken",
+    "lede": "Elk van deze {n} blokken kun je maken in elke maat van 3\" tot 24\", in je eigen kleuren.",
+    "breadcrumb": "Quiltblokken",
+    "pageTitle": "Quiltblok {name}: snijlijst en sjablonen",
+    "pageDesc": "{summary} Stel je eigen maat en kleuren in voor een snijlijst, stofverbruik en printbare sjablonen."
+  },
+  "stitches": {
+    "knitMetaTitle": "Breisteken en projectcalculator",
+    "crochetMetaTitle": "Haaksteken en projectcalculator",
+    "knitMetaDesc": "Kies een breisteek, vul je maat en stekenverhouding in en krijg het aantal op te zetten steken, instructies per naald, een telpatroon en een schatting van het garen.",
+    "crochetMetaDesc": "Kies een haaksteek, vul je maat en stekenverhouding in en krijg het beginaantal, instructies per toer, een schema en een schatting van het garen.",
+    "knitH1": "Breisteken",
+    "crochetH1": "Haaksteken",
+    "lede": "Kies een steek en vul je maat en stekenverhouding in voor je cijfers, geschreven instructies en een schema. Elk proeflapje toont 4\" stof.",
+    "knitPageTitle": "{name}: breipatroon en calculator",
+    "crochetPageTitle": "{name}: haakpatroon en calculator",
+    "pageDesc": "{summary} Vul je maat en stekenverhouding in voor instructies per toer, een schema en een schatting van het garen."
+  },
+  "builder": {
+    "preview": "Voorbeeld",
+    "previewType": "Type voorbeeld",
+    "viewBlock": "Blok",
+    "viewQuilt": "Quilt",
+    "viewTile": "Naadloze herhaling",
+    "downloadPdf": "Pdf-patroon downloaden",
+    "copyLink": "Deellink kopiëren",
+    "pdfMaking": "Je pdf wordt gemaakt…",
+    "pdfDone": "Pdf gedownload.",
+    "saving": "Opslaan…",
+    "svgDone": "SVG gedownload.",
+    "pngMaking": "Je PNG wordt gemaakt…",
+    "pngDone": "PNG gedownload.",
+    "copying": "Kopiëren…",
+    "copied": "Link gekopieerd.",
+    "updateError": "Het ontwerp kon niet worden bijgewerkt. Probeer het opnieuw.",
+    "actionError": "Dat is niet gelukt. Probeer het opnieuw.",
+    "fabrics": "Stoffen",
+    "usePalette": "Palet {name} gebruiken",
+    "showSeams": "Naadlijnen tonen",
+    "block": "Blok",
+    "finishedSize": "Eindmaat",
+    "layout": "Indeling van de quilt",
+    "across": "In de breedte",
+    "down": "In de hoogte",
+    "sashing": "Sashing",
+    "border": "Rand",
+    "none": "Geen",
+    "direction": "Richting van de blokken",
+    "wof": "Bruikbare stofbreedte",
+    "roundedTitle": "Sommige maten zijn naar boven afgerond.",
+    "roundedText": "Bij {size}\" vallen de stukken van dit blok tussen de streepjes van de liniaal. Knip dus zoals aangegeven en snijd elk onderdeel bij, of gebruik de pdf-sjablonen.",
+    "evenSizes": "Maten die mooi uitkomen:",
+    "or": "of",
+    "cuttingList": "Snijlijst",
+    "cuttingScope": "Bereik van de snijlijst",
+    "wholeQuilt": "Hele quilt",
+    "oneBlock": "Eén blok",
+    "roundedUp": "naar boven afgerond",
+    "fabricBuy": "Te kopen stof",
+    "quiltTop": "Quiltbovenkant:",
+    "blocksOne": "{n} blok",
+    "blocksMany": "{n} blokken",
+    "backingOne": "Achterkant (1 baan)",
+    "backingMany": "Achterkant ({n} banen)",
+    "binding": "Bies ({n} stroken van {w}\")",
+    "batting": "Tussenvulling",
+    "allowance": "Inclusief 10% extra. Controleer de cijfers voordat je koopt.",
+    "howTo": "Zo naai je het in elkaar",
+    "tileAlt": "Naadloze herhaling van {name}",
+    "browseOptions": "Bekijk de opties"
+  },
+  "settings": {
+    "straight": "Allemaal dezelfde kant op",
+    "alternate": "Om en om gedraaid",
+    "quadrants": "Per kwadrant gedraaid"
+  },
+  "palettes": {
+    "indigo": "Indigo en crème",
+    "barn": "Schuurrood",
+    "sage": "Salie en roest",
+    "jewel": "Edelsteentinten",
+    "neutral": "Moderne neutrale tinten",
+    "flag": ""
+  },
+  "stitchBuilder": {
+    "swatch": "Proeflapje",
+    "chart": "Schema",
+    "swatchNote": "Een illustratie van de structuur, met 4\" stof bij jouw stekenverhouding. Het is geen foto van echt garen.",
+    "chartKnit": "Elk vakje is één steek, gezien van de goede kant. Leeg = recht, streepje = averecht. Begin bij naald 1, onderaan.",
+    "chartCrochet": "De symbolen tonen de eerste toeren op kleine breedte, in Amerikaanse termen. Begin bij toer 1, onderaan. X = sc, T = hdc, doorgestreepte T = dc, ovaal = ch.",
+    "swatchAlt": "Illustratie van 4 inch {name}",
+    "projectSize": "Projectmaat",
+    "width": "Breedte",
+    "length": "Lengte",
+    "yarnGauge": "Garen en stekenverhouding",
+    "yarnWeight": "Garendikte (bepaalt een beginverhouding)",
+    "needles": "Naalden: {tool}",
+    "hook": "Haaknaald: {tool}",
+    "toolNote": "Dit zijn gangbare maten, dus gebruik wat jouw stekenverhouding oplevert.",
+    "stitchesPer": "Steken per 4\"",
+    "rowsPer": "Rijen per 4\"",
+    "yarnColor": "Garenkleur",
+    "squarePreset": "Vierkant van {n}\"",
+    "swatchFirstTitle": "Maak eerst een proeflapje.",
+    "swatchFirstText": "Deze cijfers kloppen alleen bij jouw stekenverhouding, en de beginwaarden hierboven zijn gangbare cijfers, niet de jouwe. Maak een proeflapje van 4\", meet het op en vul in wat je krijgt.",
+    "instructions": "Instructies",
+    "yourProject": "Je project",
+    "stitchesPerRow": "Steken per rij",
+    "rows": "Rijen",
+    "finishedSize": "Eindmaat",
+    "yarnEstimate": "Garen (ruwe schatting)",
+    "about": "ongeveer {y} yd",
+    "roundNote": "De maat is afgerond op hele patroonherhalingen. Het werkelijke garenverbruik hangt sterk af van vezel en spanning, dus koop wat extra.",
+    "updateError": "Het patroon kon niet worden bijgewerkt. Probeer het opnieuw."
+  },
+  "projects": {
+    "dishcloth": "Vaatdoek",
+    "scarf": "Sjaal",
+    "babyBlanket": "Babydekentje",
+    "throw": "Plaid"
+  },
+  "weights": {
+    "sport": "Sport",
+    "dk": "DK",
+    "worsted": "Worsted",
+    "bulky": "Bulky",
+    "superBulky": "Super bulky"
+  },
+  "library": {
+    "metaTitle": "Patroonbibliotheek",
+    "metaDesc": "Ontdek patroonmakers voor quilten, Keltische knopen, geometrische sterren, vlakvullingen, tartans, sashiko, telwerk en glas-in-lood.",
+    "h1": "Patroonbibliotheek",
+    "lede": "Elk soort patroon op de site, met voorbeelden op naam. Elk soort heeft zijn eigen maker.",
+    "available": "Beschikbaar",
+    "quiltTitle": "Quiltblokken",
+    "quiltText": "Kies een traditioneel blok en pas de maat, kleuren, indeling en sashing aan.",
+    "quiltOutput": "Snijlijst, stofverbruik en printbare sjablonen.",
+    "knitTitle": "Breisteken",
+    "knitText": "Kies een steek en stel je projectmaat en stekenverhouding in.",
+    "knitOutput": "Op te zetten steken, geschreven naalden, schema en schatting van het garen.",
+    "crochetTitle": "Haaksteken",
+    "crochetText": "Kies een steek en stel je projectmaat en stekenverhouding in.",
+    "crochetOutput": "Beginlossen, instructies in Amerikaanse termen, symboolschema en schatting van het garen.",
+    "usefulOutput": "Wat je krijgt:",
+    "exploreQuilt": "Ontdek de quiltblokken",
+    "exploreKnit": "Ontdek de breisteken",
+    "exploreCrochet": "Ontdek de haaksteken",
+    "swatchAlt": "Illustratie van {name}",
+    "tartanTitle": "Tartans en ruiten",
+    "tartanText": "Rangschik gekleurde draden tot een evenwichtige, herhalende ruit.",
+    "tartanOutput": "Naadloos proeflapje, weefgids en schatting van het garen.",
+    "exploreTartan": "Maak een ruit",
+    "tools": {
+      "crossStitch": {
+        "title": "Kruissteek",
+        "text": "Kies een compleet vierkant ontwerp of teken je eigen, en stel dan je stofdichtheid en kleuren in.",
+        "output": "Printbaar telpatroon, borduurgaren en strengen per kleur, werkvolgorde en stappen voor een lijst of kussen.",
+        "explore": "Maak een project"
+      },
+      "needlepoint": {
+        "title": "Stramienwerk",
+        "text": "Kies een compleet vierkant stramien, met jouw maaswijdte, steek en garen.",
+        "output": "Printbaar telpatroon, garen per kleur, stramienmaat, werkvolgorde, opspannen en afwerken.",
+        "explore": "Maak een stramien"
+      },
+      "tessellation": {
+        "title": "Vlakvullingen",
+        "text": "Herhaal een motief volgens een van de 17 behangpatroongroepen, van eenvoudige verschuivingen tot zesvoudige draaiingen met spiegels.",
+        "output": "Een naadloze herhaling als SVG of PNG, een tegelindeling en een printbare pdf.",
+        "explore": "Maak een vlakvulling"
+      },
+      "sashiko": {
+        "title": "Sashiko-steekgidsen",
+        "text": "Leg geometrische sashiko-motieven aan als gestippelde steeklijnen, met openingen op de kruisingen.",
+        "output": "Printbare gids op ware grootte, verdeeld over Letter-vellen, plus SVG en PNG.",
+        "explore": "Maak een steekgids"
+      },
+      "celticKnot": {
+        "title": "Keltische knopen",
+        "text": "Bouw een vervlochten knoop op een raster, met onderbrekingen die veranderen hoe de strengen verbinden.",
+        "output": "SVG voor laser of Cricut, tatoeagesjabloon, kleurplaat, PNG en printbare pdf.",
+        "explore": "Maak een knoop"
+      },
+      "stainedGlass": {
+        "title": "Glas-in-lood",
+        "text": "Ontwerp een origineel glas-in-loodpaneel uit negen parametrische indelingen, met stukken die je echt met de hand kunt snijden.",
+        "output": "Genummerde sjablonen op ware grootte met loodmarge, een ruwe glasschatting per kleur en een voorbeeld in SVG of PNG.",
+        "explore": "Open de glas-in-loodmaker"
+      },
+      "mandala": {
+        "title": "Mandala's",
+        "text": "Genereer originele geometrische radiale ontwerpen uit ringen van eenvoudige vormen, in acht tekenstijlen.",
+        "output": "Gekleurde SVG of PNG, kleurplaat en printbare pdf.",
+        "explore": "Maak een radiaal ontwerp"
+      },
+      "girih": {
+        "title": "Geometrische sterren en girih",
+        "text": "Bouw echte girih uit de vijf tegels, of sterpatronen op regelmatige veelhoeken, met je eigen symmetrie, stertype, lijndikte en kleuren.",
+        "output": "Naadloze herhalingen in SVG en PNG, een sjabloon met bruggen, een wandpaneel en een printbare pdf.",
+        "explore": "Ontdek geometrische sterren en girih"
+      },
+      "truchet": {
+        "title": "Truchet-tegels",
+        "text": "Draai één eenvoudige tegel op een raster voor een naadloos patroon van bogen, lijnen of driehoeken.",
+        "output": "Naadloze herhaling in SVG en PNG, en een printbare pdf.",
+        "explore": "Maak een patroon"
+      },
+      "tieDye": {
+        "title": "Tie-dye",
+        "text": "Bekijk in jouw kleuren een spiraal, roos, harmonica, zonnestraal, chevron, dubbele spiraal, diagonale strepen, kreukel of hart.",
+        "output": "Vouwschema, verfkaart, mengverhoudingen, printbare stappen en een voorbeeld in SVG of PNG.",
+        "explore": "Plan een tie-dye"
+      },
+      "maze": {
+        "title": "Doolhoven",
+        "text": "Genereer een doolhof met precies één route, als vierkant, rechthoek, cirkel, zeshoek, driehoek of ruit, met vijf verschillende algoritmes.",
+        "output": "Printbare pdf met een aparte oplossingspagina, plus SVG en PNG van het doolhof en de oplossing.",
+        "explore": "Maak een doolhof"
+      },
+      "life": {
+        "title": "Patronen uit Game of Life",
+        "text": "Stillevens en oscillatoren uit Conways Game of Life, als herhalende ontwerpen, met de regel uitgelegd op elke cel.",
+        "output": "SVG en PNG van het vel, de tegel, de fasen en het regelschema, en een printbare pdf.",
+        "explore": "Teken een Life-patroon"
+      },
+      "fractal": {
+        "title": "Fractals",
+        "text": "Herhaal één eenvoudige regel tot de diepte die je kiest, van Koch-sneeuwvlokken tot drakenkrommen.",
+        "output": "SVG en PNG, een versie met zwarte lijnen en een printbare pdf.",
+        "explore": "Teken een fractal"
+      },
+      "knitColorwork": {
+        "title": "Kleurenbreien",
+        "text": "Originele schema's voor Fair Isle, mozaïek en intarsia, elk uitgeschreven als compleet vierkant bij jouw stekenverhouding.",
+        "output": "Schema met kleurenlegenda, naalden per kleur, controle van de vlotten, garen per kleur en een printbare pdf.",
+        "explore": "Ontdek kleurenbreien"
+      },
+      "crochetColorwork": {
+        "title": "Kleurenhaken",
+        "text": "Veelkleurige gehaakte vierkanten: tapestryschema's, hoek-tot-hoekschema's en granny squares in toeren, in jouw kleuren.",
+        "output": "Schema met kleurenlegenda, elke toer, diagonaal of ronde uitgeschreven, garen per kleur, een printbare pdf, SVG en PNG.",
+        "explore": "Maak een kleurenvierkant"
+      },
+      "checkerboard": {
+        "title": "Dambordpatronen",
+        "text": "Stel de rijen, kolommen, kleuren en vakvorm in, van een gewoon bord tot bakstenen van 3:1, honingraten en driehoeken.",
+        "output": "SVG en PNG, een naadloze herhaling, eindmaten, aantallen stukken en een printbare pdf.",
+        "explore": "Maak een dambord"
+      },
+      "puzzle": {
+        "title": "Papierpuzzels",
+        "text": "Sudoku, futoshiki, nonogrammen en potloodspellen zoals zeeslag, op papier of in een teken-app op een tablet.",
+        "output": "Pdf-pagina's voor Letter, A4 of een tablet, oplossingen, SVG en PNG.",
+        "explore": "Maak een puzzelvel"
+      }
+    },
+    "seeAllType": "Bekijk alles in {name}"
+  },
+  "about": {
+    "metaTitle": "Zo werken de berekeningen",
+    "metaDesc": "De formules, afrondingen en schattingen achter de rekenhulpen voor quiltblokken, breien en haken.",
+    "h1": "Zo werken de berekeningen",
+    "lede": "Elk cijfer komt uit de geometrie van het blok en de instellingen die je kiest. Dit zijn de regels, zodat je ze met je eigen kunt vergelijken.",
+    "cutH": "Snijmaten",
+    "cutRect": "Vierkanten en rechthoeken: eindmaat plus 1/2\".",
+    "cutHalf": "Halve-vierkantdriehoeken: een vierkant van de afgewerkte rechthoekszijde plus 7/8\", één keer diagonaal gesneden.",
+    "cutQuarter": "Kwart-vierkantdriehoeken: een vierkant van de afgewerkte lange zijde plus 1 1/4\", twee keer diagonaal gesneden.",
+    "cutTemplate": "Bogen, ruiten, zeshoeken en wiggen: geen formule voor de rolmes, dus die knip je met de sjablonen op ware grootte uit de pdf.",
+    "cutSeams": "Alle naden zijn 1/4\".",
+    "rulerH": "Als een maat tussen de streepjes van de liniaal valt",
+    "ruler": "Een blok van 12\" op een raster van 7 eenheden heeft eenheden van ongeveer 1,714\", en die staat op geen enkele liniaal. De maker rondt die maten af naar de volgende 1/8\", meldt dat en stelt de dichtstbijzijnde blokmaten voor die mooi uitkomen. Het midden van een Square in a Square valt bij geen enkele maat op een streepje, dus reken erop dat je dat blok moet bijsnijden.",
+    "yardageH": "Stofverbruik",
+    "yardage": "Stukken worden in stroken over de breedte van de stof gesneden, met 40\" bruikbare breedte tenzij je die wijzigt. De maker probeert beide strookrichtingen en gebruikt de kortste, telt er 10% bij voor rechtsnijden en fouten en rondt dan af naar de volgende 1/8 yard. De achterkant steekt aan elke kant 4\" buiten de quilt uit. De bies bestaat uit stroken van 2 1/2\" met 20\" extra voor verbindingen en hoeken. Deze cijfers zijn een richtlijn, dus controleer ze voordat je koopt of knipt.",
+    "stitchH": "Breien en haken",
+    "stitch1": "Je stekenverhouding bepaalt alles. Het beginaantal is je breedte maal je steken per inch, afgerond op de dichtstbijzijnde hele patroonherhaling, en rijen worden op dezelfde manier naar boven afgerond. De beginverhoudingen per garendikte zijn gangbare waarden, dus meet je eigen proeflapje op.",
+    "stitch2": "Het garen is een ruwe schatting, gebaseerd op een vuistregel voor hoeveel garen een steek van die grootte gebruikt, plus 10%. Vezel en spanning veranderen dat sterk, dus koop wat extra. Haaktermen zijn Amerikaans.",
+    "dataH": "Je gegevens",
+    "data": "De meeste instellingen staan in het adres van de pagina; daardoor werkt een deellink. Om je ontwerp te tekenen, worden die instellingen naar onze patroonserver gestuurd, die ze samen met je IP-adres in zijn logbestanden kan vastleggen. Seeds en de paletten die je opslaat, blijven in de lokale opslag van deze browser.",
+    "dataAnalytics": "We gebruiken Google Analytics om te zien hoe de site wordt gebruikt. Het plaatst cookies en stuurt Google de pagina's die je bezoekt, inclusief het volledige adres van elke pagina met je instellingen, welke instellingen je in een tool wijzigt, de site waar je vandaan komt, je apparaat en browser en je geschatte locatie.",
+    "dataPolicy": "Privacybeleid",
+    "designsH": "De ontwerpen",
+    "designs": "Blokken worden uit geometrie getekend en dragen traditionele namen. Indelingen met dezelfde naam kunnen per quilter en bron verschillen, dus die van jou kan afwijken van een die je kent.",
+    "languageH": "",
+    "language": ""
+  },
+  "blog": {
+    "metaTitle": "Blog",
+    "metaDesc": "Nieuwe patroontools en functies, met voorbeelden die je kunt openen en aanpassen.",
+    "h1": "Blog",
+    "ledeBefore": "Nieuwe tools en functies, met voorbeelden die je kunt openen en aanpassen. Zie voor de volledige lijst met updates de ",
+    "ledeLink": "wijzigingen",
+    "ledeAfter": ".",
+    "back": "Blog",
+    "openSample": "Openen met deze instellingen"
+  },
+  "changelog": {
+    "metaTitle": "Wijzigingen",
+    "metaDesc": "Wat er is veranderd op Endless Patterns, het nieuwste eerst.",
+    "h1": "Wijzigingen",
+    "lede": "Wat er op de site is veranderd, het nieuwste eerst.",
+    "readPost": "Lees het blogartikel"
+  },
+  "tartan": {
+    "metaTitle": "Tartan- en ruitenmaker: naadloos proeflapje en weefgids",
+    "metaDesc": "Stel je draadaantallen en kleuren in voor een evenwichtige ruit, en download een naadloos proeflapje en een printbare weefgids.",
+    "h1": "Tartans en ruiten",
+    "lede": "Rangschik gekleurde draden tot een evenwichtige, herhalende ruit, en krijg een naadloos proeflapje en een weefgids.",
+    "swatchAlt": "Geweven ruitherhaling",
+    "swatchNote": "8\" stof in 2/2 keperbinding bij jouw draaddichtheid. Elke pixel is één draadkruising.",
+    "downloadGuide": "Weefgids downloaden (pdf)",
+    "threads": "Draadkleuren en aantallen",
+    "stripeColor": "Kleur van streep {letter}",
+    "stripeCount": "Aantal draden van streep {letter}",
+    "remove": "Verwijderen",
+    "add": "Streep toevoegen",
+    "mirrored": "De strepen spiegelen, zoals bij de meeste tartans",
+    "cloth": "Stof",
+    "width": "Breedte",
+    "length": "Lengte",
+    "tpi": "Draden per inch",
+    "originalTitle": "Dit zijn originele ruiten.",
+    "originalText": "De voorbeelden zijn voor deze site bedacht en zijn geen tartans met een naam. Sommige tartans zijn beschermd of horen bij een familie of organisatie, dus controleer dat voordat je er een op naam namaakt.",
+    "guide": "Weefgids",
+    "repeatNote": "Eén herhaling is {threads} draden, oftewel {repeat}\" op de stof.",
+    "yarn": "Garen per kleur",
+    "color": "Kleur",
+    "warp": "Kettingdraden",
+    "weft": "Inslagdraden",
+    "yards": "Yards",
+    "yarnNote": "In totaal ongeveer {y} yards, met 10% extra. Een ruwe schatting: garen en weefgetouw veranderen die.",
+    "presets": {
+      "forest": "Bos",
+      "ember": "Gloed",
+      "harbor": "Haven",
+      "check": "Tweekleurige ruit",
+      "orchard": "Boomgaard",
+      "tide-pool": "Getijdenpoel",
+      "heather": "Heide",
+      "moss": "Mos",
+      "saffron": "Saffraan"
+    }
+  }
+}

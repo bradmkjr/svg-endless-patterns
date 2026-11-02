@@ -1,0 +1,393 @@
+{
+  "meta": {
+    "defaultTitle": "Calcolatori per schemi di patchwork, maglia e uncinetto",
+    "description": "Personalizza i blocchi tradizionali di patchwork e i punti a maglia e all'uncinetto secondo la tua misura e il tuo campione. Ottieni liste di taglio, istruzioni scritte, schemi e PDF stampabili, gratis."
+  },
+  "nav": {
+    "quilting": "Patchwork",
+    "knitting": "Maglia",
+    "crochet": "Uncinetto",
+    "puzzles": "Giochi su carta",
+    "library": "Libreria di motivi",
+    "blog": "Blog",
+    "how": "Come funziona",
+    "language": "Lingua",
+    "palettes": "Colori"
+  },
+  "footer": {
+    "note": "Tutto ciò che crei qui è gratis da scaricare e usare. Controlla le misure prima di tagliare: i valori sono forniti così come sono, senza alcuna garanzia.",
+    "draft": "",
+    "blog": "Blog",
+    "changelog": "Novità",
+    "acknowledgements": "Ringraziamenti",
+    "privacy": "Informativa sulla privacy",
+    "terms": "Termini di servizio"
+  },
+  "notFound": {
+    "title": "Questa pagina non c'è",
+    "before": "Il link potrebbe essere vecchio. Puoi scegliere un disegno tra ",
+    "link": "tutti i blocchi",
+    "after": "."
+  },
+  "home": {
+    "h1": "Motivi tradizionali, calcolati per ciò che stai creando",
+    "lede": "Scegli un blocco di patchwork o un punto a maglia o all'uncinetto, imposta la misura e ottieni i numeri e le istruzioni per realizzarlo, pronti da stampare.",
+    "cta": "Inizia con un blocco di patchwork",
+    "quiltTitle": "Patchwork",
+    "quiltText": "Liste di taglio, metraggio, motivi continui e sagome a grandezza reale per ogni blocco.",
+    "knitTitle": "Maglia",
+    "knitText": "Maglie da avviare e ferri scritti secondo il tuo campione, con uno schema per ogni punto.",
+    "crochetTitle": "Uncinetto",
+    "crochetText": "Catenelle di partenza, istruzioni riga per riga con i termini americani e schemi a simboli.",
+    "quiltHeading": "Blocchi di patchwork",
+    "knitHeading": "Punti a maglia",
+    "crochetHeading": "Punti all'uncinetto",
+    "typesHeading": "Tipi di motivo",
+    "seeAll": "Vedi tutti e {n}"
+  },
+  "blocks": {
+    "metaTitle": "Blocchi tradizionali di patchwork da personalizzare",
+    "metaDesc": "Scegli un blocco tradizionale di patchwork, poi imposta misura e colori per ottenere lista di taglio, metraggio, motivi continui e sagome stampabili.",
+    "h1": "Blocchi di patchwork",
+    "lede": "Ognuno di questi {n} blocchi si può realizzare in qualsiasi misura da 3\" a 24\", nei tuoi colori.",
+    "breadcrumb": "Blocchi di patchwork",
+    "pageTitle": "Blocco di patchwork {name}: lista di taglio e sagome",
+    "pageDesc": "{summary} Imposta misura e colori per ottenere lista di taglio, metraggio e sagome stampabili."
+  },
+  "stitches": {
+    "knitMetaTitle": "Punti a maglia e calcolatore per progetti",
+    "crochetMetaTitle": "Punti all'uncinetto e calcolatore per progetti",
+    "knitMetaDesc": "Scegli un punto a maglia, inserisci misura e campione e ottieni il numero di maglie da avviare, le istruzioni ferro per ferro, uno schema e una stima del filato.",
+    "crochetMetaDesc": "Scegli un punto all'uncinetto, inserisci misura e campione e ottieni il numero di partenza, le istruzioni riga per riga, uno schema e una stima del filato.",
+    "knitH1": "Punti a maglia",
+    "crochetH1": "Punti all'uncinetto",
+    "lede": "Scegli un punto, poi inserisci misura e campione per ottenere i numeri, le istruzioni scritte e uno schema. Ogni campione mostra 4\" di tessuto.",
+    "knitPageTitle": "{name}: schema a maglia e calcolatore",
+    "crochetPageTitle": "{name}: schema all'uncinetto e calcolatore",
+    "pageDesc": "{summary} Inserisci misura e campione per ottenere istruzioni riga per riga, uno schema e una stima del filato."
+  },
+  "builder": {
+    "preview": "Anteprima",
+    "previewType": "Tipo di anteprima",
+    "viewBlock": "Blocco",
+    "viewQuilt": "Trapunta",
+    "viewTile": "Motivo continuo",
+    "downloadPdf": "Scarica lo schema in PDF",
+    "copyLink": "Copia il link da condividere",
+    "pdfMaking": "Creazione del PDF…",
+    "pdfDone": "PDF scaricato.",
+    "saving": "Salvataggio…",
+    "svgDone": "SVG scaricato.",
+    "pngMaking": "Creazione del PNG…",
+    "pngDone": "PNG scaricato.",
+    "copying": "Copia in corso…",
+    "copied": "Link copiato.",
+    "updateError": "Impossibile aggiornare il disegno. Riprova.",
+    "actionError": "Non ha funzionato. Riprova.",
+    "fabrics": "Tessuti",
+    "usePalette": "Usa la tavolozza {name}",
+    "showSeams": "Mostra le cuciture",
+    "block": "Blocco",
+    "finishedSize": "Misura finita",
+    "layout": "Disposizione della trapunta",
+    "across": "In larghezza",
+    "down": "In altezza",
+    "sashing": "Strisce di separazione",
+    "border": "Bordo",
+    "none": "Nessuno",
+    "direction": "Direzione dei blocchi",
+    "wof": "Larghezza utile del tessuto",
+    "roundedTitle": "Alcuni tagli sono arrotondati per eccesso.",
+    "roundedText": "A {size}\", i pezzi di questo blocco cadono tra le tacche del righello: taglia come indicato e rifila ogni unità, oppure usa le sagome del PDF.",
+    "evenSizes": "Misure che si dividono esattamente:",
+    "or": "o",
+    "cuttingList": "Lista di taglio",
+    "cuttingScope": "Ambito della lista di taglio",
+    "wholeQuilt": "Tutta la trapunta",
+    "oneBlock": "Un blocco",
+    "roundedUp": "arrotondato per eccesso",
+    "fabricBuy": "Tessuto da acquistare",
+    "quiltTop": "Parte superiore:",
+    "blocksOne": "{n} blocco",
+    "blocksMany": "{n} blocchi",
+    "backingOne": "Retro (1 telo)",
+    "backingMany": "Retro ({n} teli)",
+    "binding": "Bordura ({n} strisce da {w}\")",
+    "batting": "Imbottitura",
+    "allowance": "Include un margine del 10%. Controlla i valori prima di acquistare.",
+    "howTo": "Come assemblarlo",
+    "tileAlt": "Motivo continuo di {name}",
+    "browseOptions": "Sfoglia le opzioni"
+  },
+  "settings": {
+    "straight": "Tutti nello stesso verso",
+    "alternate": "Un blocco sì e uno no girato",
+    "quadrants": "Girati per quadrante"
+  },
+  "palettes": {
+    "indigo": "Indaco e crema",
+    "barn": "Rosso fienile",
+    "sage": "Salvia e ruggine",
+    "jewel": "Toni gemma",
+    "neutral": "Neutri moderni",
+    "flag": ""
+  },
+  "stitchBuilder": {
+    "swatch": "Campione",
+    "chart": "Schema",
+    "swatchNote": "Un'illustrazione della trama, che mostra 4\" di tessuto al tuo campione. Non è una foto di filato vero.",
+    "chartKnit": "Ogni quadretto è una maglia, vista dal diritto. Vuoto = diritto, trattino = rovescio. Inizia dal ferro 1, in basso.",
+    "chartCrochet": "I simboli mostrano le prime righe a piccola larghezza, con i termini americani. Inizia dalla riga 1, in basso. X = sc, T = hdc, T barrata = dc, ovale = ch.",
+    "swatchAlt": "Illustrazione di 4 pollici di {name}",
+    "projectSize": "Misura del progetto",
+    "width": "Larghezza",
+    "length": "Lunghezza",
+    "yarnGauge": "Filato e campione",
+    "yarnWeight": "Spessore del filato (imposta un campione di partenza)",
+    "needles": "Ferri: {tool}",
+    "hook": "Uncinetto: {tool}",
+    "toolNote": "Sono misure tipiche: usa quelle che ti danno il tuo campione.",
+    "stitchesPer": "Maglie per 4\"",
+    "rowsPer": "Righe per 4\"",
+    "yarnColor": "Colore del filato",
+    "squarePreset": "Quadrato da {n}\"",
+    "swatchFirstTitle": "Prima fai il campione.",
+    "swatchFirstText": "Questi numeri sono giusti solo al tuo campione, e i valori di partenza qui sopra sono tipici, non i tuoi. Lavora un campione da 4\", misuralo e inserisci ciò che ottieni.",
+    "instructions": "Istruzioni",
+    "yourProject": "Il tuo progetto",
+    "stitchesPerRow": "Maglie per riga",
+    "rows": "Righe",
+    "finishedSize": "Misura finita",
+    "yarnEstimate": "Filato (stima approssimativa)",
+    "about": "circa {y} yd",
+    "roundNote": "La misura è arrotondata a ripetizioni intere del motivo. Il consumo reale di filato varia molto con la fibra e la tensione, quindi comprane in più.",
+    "updateError": "Impossibile aggiornare lo schema. Riprova."
+  },
+  "projects": {
+    "dishcloth": "Strofinaccio",
+    "scarf": "Sciarpa",
+    "babyBlanket": "Copertina per neonato",
+    "throw": "Plaid"
+  },
+  "weights": {
+    "sport": "Sport",
+    "dk": "DK",
+    "worsted": "Worsted",
+    "bulky": "Bulky",
+    "superBulky": "Super bulky"
+  },
+  "library": {
+    "metaTitle": "Libreria di motivi",
+    "metaDesc": "Esplora i generatori di motivi per patchwork, nodi celtici, stelle geometriche, tassellazioni, tartan, sashiko, lavori a fili contati e vetrate.",
+    "h1": "Libreria di motivi",
+    "lede": "Tutti i tipi di motivo del sito, con esempi elencati per nome. Ogni tipo ha il suo generatore.",
+    "available": "Disponibili",
+    "quiltTitle": "Blocchi di patchwork",
+    "quiltText": "Scegli un blocco tradizionale e personalizzane misura, colori, disposizione e strisce di separazione.",
+    "quiltOutput": "Lista di taglio, metraggio e sagome stampabili.",
+    "knitTitle": "Punti a maglia",
+    "knitText": "Scegli un punto e imposta la misura del progetto e il campione.",
+    "knitOutput": "Maglie da avviare, ferri scritti, schema e stima del filato.",
+    "crochetTitle": "Punti all'uncinetto",
+    "crochetText": "Scegli un punto e imposta la misura del progetto e il campione.",
+    "crochetOutput": "Catenella di partenza, istruzioni con termini americani, schema a simboli e stima del filato.",
+    "usefulOutput": "Cosa ottieni:",
+    "exploreQuilt": "Esplora i blocchi di patchwork",
+    "exploreKnit": "Esplora i punti a maglia",
+    "exploreCrochet": "Esplora i punti all'uncinetto",
+    "swatchAlt": "Illustrazione di {name}",
+    "tartanTitle": "Tartan e scozzesi",
+    "tartanText": "Disponi fili colorati in uno scozzese equilibrato e ripetuto.",
+    "tartanOutput": "Campione continuo, guida di tessitura e stima del filato.",
+    "exploreTartan": "Crea uno scozzese",
+    "tools": {
+      "crossStitch": {
+        "title": "Punto croce",
+        "text": "Scegli un disegno quadrato completo o disegna il tuo, poi imposta il conteggio del tessuto e i colori.",
+        "output": "Schema stampabile, mouliné e matassine per colore, ordine di lavoro e passaggi per cornice o cuscino.",
+        "explore": "Crea un progetto"
+      },
+      "needlepoint": {
+        "title": "Punto canovaccio",
+        "text": "Scegli un canovaccio quadrato completo, con la tua trama, il tuo punto e il tuo filato.",
+        "output": "Schema stampabile, filato per colore, misura del canovaccio, ordine di lavoro, messa in forma e finitura.",
+        "explore": "Crea un canovaccio"
+      },
+      "tessellation": {
+        "title": "Tassellazioni",
+        "text": "Ripeti un motivo secondo uno dei 17 gruppi di simmetria del piano, dalle semplici traslazioni alle rotazioni di ordine sei con specchi.",
+        "output": "Un motivo continuo in SVG o PNG, una disposizione delle piastrelle e un PDF stampabile.",
+        "explore": "Crea una tassellazione"
+      },
+      "sashiko": {
+        "title": "Guide per sashiko",
+        "text": "Disponi motivi geometrici sashiko come linee di punti tratteggiate, con spazi agli incroci.",
+        "output": "Guida stampabile a grandezza reale, divisa su fogli Letter, più SVG e PNG.",
+        "explore": "Crea una guida"
+      },
+      "celticKnot": {
+        "title": "Nodi celtici",
+        "text": "Costruisci un nodo intrecciato su una griglia, con interruzioni che cambiano il modo in cui i fili si uniscono.",
+        "output": "SVG per laser o Cricut, stencil per tatuaggi, pagina da colorare, PNG e PDF stampabile.",
+        "explore": "Crea un nodo"
+      },
+      "stainedGlass": {
+        "title": "Vetrate",
+        "text": "Progetta un pannello originale di vetro piombato a partire da nove disposizioni parametriche, con pezzi che si possono davvero tagliare a mano.",
+        "output": "Sagome numerate a grandezza reale con margine per il piombo, una stima del vetro per colore e un'anteprima SVG o PNG.",
+        "explore": "Apri il generatore di vetrate"
+      },
+      "mandala": {
+        "title": "Mandala",
+        "text": "Genera disegni radiali geometrici originali a partire da anelli di forme semplici, in otto stili di disegno.",
+        "output": "SVG o PNG a colori, pagina da colorare e PDF stampabile.",
+        "explore": "Crea un disegno radiale"
+      },
+      "girih": {
+        "title": "Stelle geometriche e girih",
+        "text": "Costruisci veri girih con le loro cinque piastrelle, o motivi di stelle su poligoni regolari, con la tua simmetria, tipo di stella, spessore della linea e colori.",
+        "output": "Motivi continui in SVG e PNG, uno stencil con ponti, un pannello da parete e un PDF stampabile.",
+        "explore": "Esplora stelle geometriche e girih"
+      },
+      "truchet": {
+        "title": "Piastrelle di Truchet",
+        "text": "Ruota una semplice piastrella su una griglia per creare un motivo continuo di archi, linee o triangoli.",
+        "output": "Motivo continuo in SVG e PNG e un PDF stampabile.",
+        "explore": "Crea un motivo"
+      },
+      "tieDye": {
+        "title": "Tie-dye",
+        "text": "Visualizza nei tuoi colori una piega a spirale, a bersaglio, a fisarmonica, a raggiera, a chevron, a doppia spirale, a righe diagonali, stropicciata o a cuore.",
+        "output": "Schema di piegatura, mappa delle tinte, quantità da miscelare, passaggi stampabili e un'anteprima SVG o PNG.",
+        "explore": "Pianifica un tie-dye"
+      },
+      "maze": {
+        "title": "Labirinti",
+        "text": "Genera un labirinto con un solo percorso, come quadrato, rettangolo, cerchio, esagono, triangolo o rombo, con cinque algoritmi diversi.",
+        "output": "PDF stampabile con pagina separata per la soluzione, più SVG e PNG del labirinto e della soluzione.",
+        "explore": "Crea un labirinto"
+      },
+      "life": {
+        "title": "Motivi del Gioco della vita",
+        "text": "Nature morte e oscillatori del Gioco della vita di Conway, come disegni ripetuti, con la regola spiegata su ogni cella.",
+        "output": "SVG e PNG del foglio, della piastrella, delle fasi e dello schema della regola, e un PDF stampabile.",
+        "explore": "Disegna un motivo Life"
+      },
+      "fractal": {
+        "title": "Frattali",
+        "text": "Ripeti una regola semplice alla profondità che scegli, dai fiocchi di neve di Koch alle curve del drago.",
+        "output": "SVG e PNG, una versione a linee nere e un PDF stampabile.",
+        "explore": "Disegna un frattale"
+      },
+      "knitColorwork": {
+        "title": "Maglia a colori",
+        "text": "Schemi originali jacquard, mosaico e intarsio, ognuno scritto come quadrato completo al tuo campione.",
+        "output": "Schema con legenda dei colori, ferri colore per colore, controllo dei fili passati, filato per colore e PDF stampabile.",
+        "explore": "Esplora la maglia a colori"
+      },
+      "crochetColorwork": {
+        "title": "Uncinetto a colori",
+        "text": "Quadrati all'uncinetto multicolori: schemi tapestry, grafici da angolo ad angolo e granny square in tondo, nei tuoi colori.",
+        "output": "Schema con legenda dei colori, ogni riga, diagonale o giro scritti per esteso, filato per colore, un PDF stampabile, SVG e PNG.",
+        "explore": "Crea un quadrato a colori"
+      },
+      "checkerboard": {
+        "title": "Scacchiere",
+        "text": "Imposta righe, colonne, colori e forma delle caselle, da una scacchiera normale a mattoni 3:1, nidi d'ape e triangoli.",
+        "output": "SVG e PNG, un motivo continuo, misure finite, conteggio dei pezzi e un PDF stampabile.",
+        "explore": "Crea una scacchiera"
+      },
+      "puzzle": {
+        "title": "Giochi su carta",
+        "text": "Sudoku, futoshiki, nonogrammi e giochi con la matita come la battaglia navale, su carta o in un'app di disegno sul tablet.",
+        "output": "Pagine PDF per Letter, A4 o tablet, soluzioni, SVG e PNG.",
+        "explore": "Crea un foglio di gioco"
+      }
+    },
+    "seeAllType": "Vedi tutto in {name}"
+  },
+  "about": {
+    "metaTitle": "Come funzionano i calcoli",
+    "metaDesc": "Le formule, gli arrotondamenti e le stime dietro i calcolatori per blocchi di patchwork, maglia e uncinetto.",
+    "h1": "Come funzionano i calcoli",
+    "lede": "Ogni numero deriva dalla geometria del blocco e dalle impostazioni che scegli. Ecco le regole, così puoi confrontarle con le tue.",
+    "cutH": "Misure di taglio",
+    "cutRect": "Quadrati e rettangoli: misura finita più 1/2\".",
+    "cutHalf": "Triangoli a mezzo quadrato: un quadrato con il cateto finito più 7/8\", tagliato una volta in diagonale.",
+    "cutQuarter": "Triangoli a quarto di quadrato: un quadrato con il lato lungo finito più 1 1/4\", tagliato due volte in diagonale.",
+    "cutTemplate": "Curve, rombi, esagoni e spicchi: nessuna formula per taglierina rotante, quindi si tagliano con le sagome a grandezza reale del PDF.",
+    "cutSeams": "Tutte le cuciture sono da 1/4\".",
+    "rulerH": "Quando una misura cade tra le tacche del righello",
+    "ruler": "Un blocco da 12\" su una griglia di 7 unità ha unità di circa 1,714\", che nessun righello segna. Il generatore arrotonda quei tagli al 1/8\" successivo, lo segnala e suggerisce le misure di blocco più vicine che si dividono esattamente. Il centro di un Square in a Square non cade mai su una tacca, a nessuna misura, quindi prevedi di rifilare quel blocco.",
+    "yardageH": "Metraggio",
+    "yardage": "I pezzi si tagliano in strisce lungo la larghezza del tessuto, con 40\" di larghezza utile se non la cambi. Il generatore prova entrambe le direzioni delle strisce e usa la più corta, aggiunge il 10% per squadrature ed errori, poi arrotonda al 1/8 di iarda successivo. Il retro sporge di 4\" dalla trapunta su ogni lato. La bordura è fatta di strisce da 2 1/2\" con 20\" in più per giunzioni e angoli. Questi valori sono indicativi, quindi controllali prima di acquistare o tagliare.",
+    "stitchH": "Maglia e uncinetto",
+    "stitch1": "Il campione di maglie e righe decide tutto. Il numero di partenza è la larghezza per le maglie per pollice, arrotondato alla ripetizione intera più vicina del motivo, e le righe si arrotondano per eccesso allo stesso modo. I campioni di partenza per ogni spessore di filato sono valori tipici, quindi misura il tuo.",
+    "stitch2": "Il filato è una stima approssimativa, basata su una regola pratica per quanto filato usa un punto di quella misura, più il 10%. Fibra e tensione la cambiano molto, quindi comprane in più. I termini dell'uncinetto sono quelli americani.",
+    "dataH": "I tuoi dati",
+    "data": "La maggior parte delle impostazioni si trova nell'indirizzo della pagina, ed è questo che fa funzionare un link condiviso. Per disegnare il tuo progetto, queste impostazioni vengono inviate al nostro server di motivi, che può registrarle nei log insieme al tuo indirizzo IP. I semi e le tavolozze che salvi restano nella memoria locale di questo browser.",
+    "dataAnalytics": "Usiamo Google Analytics per capire come viene usato il sito. Imposta cookie e invia a Google le pagine che visiti, compreso l'indirizzo completo di ogni pagina con le tue impostazioni, quali impostazioni cambi in uno strumento, il sito da cui provieni, il tuo dispositivo e browser e la tua posizione approssimativa.",
+    "dataPolicy": "Informativa sulla privacy",
+    "designsH": "I disegni",
+    "designs": "I blocchi sono disegnati dalla geometria usando i nomi tradizionali. Le disposizioni con lo stesso nome possono variare tra quilter e fonti, quindi la tua può differire da quella che conosci.",
+    "languageH": "",
+    "language": ""
+  },
+  "blog": {
+    "metaTitle": "Blog",
+    "metaDesc": "Nuovi strumenti e funzioni per i motivi, con esempi che puoi aprire e modificare.",
+    "h1": "Blog",
+    "ledeBefore": "Nuovi strumenti e funzioni, con esempi che puoi aprire e modificare. Per l'elenco completo degli aggiornamenti, vedi le ",
+    "ledeLink": "novità",
+    "ledeAfter": ".",
+    "back": "Blog",
+    "openSample": "Apri con queste impostazioni"
+  },
+  "changelog": {
+    "metaTitle": "Novità",
+    "metaDesc": "Cosa è cambiato su Endless Patterns, a partire dal più recente.",
+    "h1": "Novità",
+    "lede": "Cosa è cambiato sul sito, a partire dal più recente.",
+    "readPost": "Leggi l'articolo del blog"
+  },
+  "tartan": {
+    "metaTitle": "Generatore di tartan e scozzesi: campione continuo e guida di tessitura",
+    "metaDesc": "Imposta il numero di fili e i colori per creare uno scozzese equilibrato, poi scarica un campione continuo e una guida di tessitura stampabile.",
+    "h1": "Tartan e scozzesi",
+    "lede": "Disponi fili colorati in uno scozzese equilibrato e ripetuto, poi ottieni un campione continuo e una guida di tessitura.",
+    "swatchAlt": "Motivo scozzese tessuto",
+    "swatchNote": "8\" di stoffa in saia 2/2 alla tua densità di fili. Ogni pixel è un incrocio di fili.",
+    "downloadGuide": "Scarica la guida di tessitura (PDF)",
+    "threads": "Colori e numero di fili",
+    "stripeColor": "Colore della striscia {letter}",
+    "stripeCount": "Fili della striscia {letter}",
+    "remove": "Rimuovi",
+    "add": "Aggiungi una striscia",
+    "mirrored": "Rispecchia le strisce, come nella maggior parte dei tartan",
+    "cloth": "Stoffa",
+    "width": "Larghezza",
+    "length": "Lunghezza",
+    "tpi": "Fili per pollice",
+    "originalTitle": "Questi sono scozzesi originali.",
+    "originalText": "I modelli sono inventati per questo sito e non sono tartan con un nome. Alcuni tartan sono soggetti a restrizioni o appartengono a una famiglia o a un'organizzazione, quindi verifica prima di riprodurne uno per nome.",
+    "guide": "Guida di tessitura",
+    "repeatNote": "Una ripetizione è di {threads} fili, ovvero {repeat}\" sulla stoffa.",
+    "yarn": "Filato per colore",
+    "color": "Colore",
+    "warp": "Fili di ordito",
+    "weft": "Passate di trama",
+    "yards": "Iarde",
+    "yarnNote": "Circa {y} iarde in totale, con un margine del 10%. Una stima approssimativa: filato e telaio la cambiano.",
+    "presets": {
+      "forest": "Foresta",
+      "ember": "Brace",
+      "harbor": "Porto",
+      "check": "Quadri a due colori",
+      "orchard": "Frutteto",
+      "tide-pool": "Pozza di marea",
+      "heather": "Erica",
+      "moss": "Muschio",
+      "saffron": "Zafferano"
+    }
+  }
+}

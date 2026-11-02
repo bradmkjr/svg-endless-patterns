@@ -3,13 +3,15 @@ import en from "@/i18n/messages/en.json";
 import es from "@/i18n/messages/es.json";
 import fr from "@/i18n/messages/fr.json";
 import pt from "@/i18n/messages/pt.json";
+import it from "@/i18n/messages/it.json";
+import nl from "@/i18n/messages/nl.json";
 import { notFound } from "next/navigation";
 import type { Locale } from "./generator";
 import { absoluteUrl } from "./site";
 
 export type Messages = typeof en;
 
-export const MESSAGES: Record<Locale, Messages> = { en, es, fr, de, pt };
+export const MESSAGES: Record<Locale, Messages> = { en, es, fr, de, pt, it, nl };
 
 /** English keeps the site's original URLs; every other language sits under a prefix. */
 export const SITE_LOCALES: { code: Locale; label: string; htmlLang: string; ogLocale: string }[] = [
@@ -18,6 +20,8 @@ export const SITE_LOCALES: { code: Locale; label: string; htmlLang: string; ogLo
   { code: "fr", label: "Français", htmlLang: "fr", ogLocale: "fr_FR" },
   { code: "de", label: "Deutsch", htmlLang: "de", ogLocale: "de_DE" },
   { code: "pt", label: "Português", htmlLang: "pt-BR", ogLocale: "pt_BR" },
+  { code: "it", label: "Italiano", htmlLang: "it", ogLocale: "it_IT" },
+  { code: "nl", label: "Nederlands", htmlLang: "nl", ogLocale: "nl_NL" },
 ];
 
 export const PREFIXED_LOCALES = SITE_LOCALES.map((l) => l.code).filter((code) => code !== "en");
@@ -31,7 +35,7 @@ export function fill(text: string, values: Record<string, string | number>): str
   return text.replace(/\{(\w+)\}/g, (_, name) => String(values[name] ?? `{${name}}`));
 }
 
-const PREFIX = /^\/(es|fr|de|pt)(\/|$)/;
+const PREFIX = /^\/(es|fr|de|pt|it|nl)(\/|$)/;
 
 /** The same page without any language prefix. */
 export function stripLocale(path: string): string {

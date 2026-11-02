@@ -3,7 +3,7 @@ import site from "@/i18n/messages/knitColorwork.json";
 import { KNIT_COLORWORK_OPTIONS as DESIGNS } from "./knitColorworkOptions";
 import { defaultKnitColorworkState, parseKnitColorworkState, serializeKnitColorworkState } from "./knitColorworkState";
 
-const LOCALES = ["en", "es", "fr", "de", "pt"] as const;
+const LOCALES = ["en", "es", "fr", "de", "pt", "it", "nl"] as const;
 
 describe("share links", () => {
   it("round-trips every setting", () => {

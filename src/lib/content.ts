@@ -9,6 +9,8 @@ import de from "@/content/i18n/de.json";
 import es from "@/content/i18n/es.json";
 import fr from "@/content/i18n/fr.json";
 import pt from "@/content/i18n/pt.json";
+import it from "@/content/i18n/it.json";
+import nl from "@/content/i18n/nl.json";
 import type { Locale } from "./generator";
 import { localePath } from "./i18n";
 
@@ -52,7 +54,7 @@ type ContentTranslation = {
   changelog: Record<string, { title: string; items: string[] }>;
 };
 
-export const CONTENT_TRANSLATIONS: Record<Exclude<Locale, "en">, ContentTranslation> = { es, fr, de, pt };
+export const CONTENT_TRANSLATIONS: Record<Exclude<Locale, "en">, ContentTranslation> = { es, fr, de, pt, it, nl };
 
 function translatePost(post: Post, locale: Locale): Post {
   const translated = locale === "en" ? undefined : CONTENT_TRANSLATIONS[locale].posts[post.slug];

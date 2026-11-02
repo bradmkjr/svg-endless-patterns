@@ -778,5 +778,317 @@
         }
       ]
     }
+  },
+  "it": {
+    "metaTitle": "Generatore di tassellazioni: tutti i 17 gruppi, SVG, PNG e PDF",
+    "metaDesc": "Scegli un motivo, uno dei 17 gruppi di simmetria del piano e i tuoi colori. Scarica un motivo continuo in SVG o PNG, una disposizione delle piastrelle e un PDF stampabile.",
+    "h1": "Tassellazioni",
+    "lede": "Ripeti un motivo secondo uno dei 17 gruppi di simmetria del piano, poi scarica un motivo continuo, una disposizione delle piastrelle e un foglio stampabile.",
+    "patternAlt": "Motivo ripetuto nel gruppo {group}",
+    "viewPattern": "Motivo",
+    "viewRepeat": "Una ripetizione",
+    "viewLayout": "Disposizione",
+    "patternNote": "La ripetizione, affiancata per riempire il quadrato.",
+    "repeatNote": "Un rettangolo continuo. I gruppi esagonali si ripetono come un rettangolo alto circa 1,73 volte la larghezza.",
+    "layoutNote": "Le linee tratteggiate segnano ogni ripetizione. Il contorno pieno è una piastrella: la regione più piccola che forma tutto il motivo.",
+    "downloadPdf": "Scarica il PDF",
+    "svgRepeat": "SVG della ripetizione",
+    "pngRepeat": "PNG della ripetizione",
+    "svgLayout": "SVG della disposizione",
+    "pngLayout": "PNG della disposizione",
+    "design": "Disegno",
+    "group": "Gruppo di simmetria",
+    "motif": "Motivo",
+    "outlines": "Mostra i contorni delle piastrelle",
+    "colors": "Colori",
+    "background": "Sfondo",
+    "primary": "Motivo",
+    "accent": "Accento",
+    "size": "Misura",
+    "repeatWidth": "Larghezza della ripetizione",
+    "across": "Ripetizioni in larghezza",
+    "down": "Ripetizioni in altezza",
+    "palettes": {
+      "ink": "Inchiostro",
+      "clay": "Argilla",
+      "garden": "Giardino",
+      "tide": "Marea"
+    },
+    "originalTitle": "Motivi originali.",
+    "originalText": "I motivi sono disegnati per questo sito. Ognuno è volutamente asimmetrico, così il motivo mostra la simmetria del gruppo e nient'altro.",
+    "groupHeading": "Gruppo {group}",
+    "guide": "Come usare questo motivo",
+    "layoutSize": "Questa disposizione di {across} x {down} ripetizioni misura {w}\" x {h}\".",
+    "options": {
+      "groups": [
+        {
+          "id": "p1",
+          "family": "obliquo",
+          "description": "solo traslazioni"
+        },
+        {
+          "id": "p2",
+          "family": "obliquo",
+          "description": "mezzi giri, senza specchi"
+        },
+        {
+          "id": "pm",
+          "family": "rettangolare",
+          "description": "specchi paralleli"
+        },
+        {
+          "id": "pg",
+          "family": "rettangolare",
+          "description": "glissoriflessioni parallele"
+        },
+        {
+          "id": "cm",
+          "family": "rombico (rettangolare centrato)",
+          "description": "specchi paralleli con glissoriflessioni in mezzo"
+        },
+        {
+          "id": "pmm",
+          "family": "rettangolare",
+          "description": "specchi in due direzioni, con mezzi giri su di essi"
+        },
+        {
+          "id": "pmg",
+          "family": "rettangolare",
+          "description": "specchi in una direzione, con glissoriflessioni e mezzi giri"
+        },
+        {
+          "id": "pgg",
+          "family": "rettangolare",
+          "description": "glissoriflessioni in due direzioni, con mezzi giri"
+        },
+        {
+          "id": "cmm",
+          "family": "rombico (rettangolare centrato)",
+          "description": "specchi in due direzioni, con mezzi giri sopra e fuori di essi"
+        },
+        {
+          "id": "p4",
+          "family": "quadrato",
+          "description": "quarti di giro, senza specchi"
+        },
+        {
+          "id": "p4m",
+          "family": "quadrato",
+          "description": "quarti di giro sugli specchi"
+        },
+        {
+          "id": "p4g",
+          "family": "quadrato",
+          "description": "quarti di giro fuori dagli specchi"
+        },
+        {
+          "id": "p3",
+          "family": "esagonale",
+          "description": "terzi di giro, senza specchi"
+        },
+        {
+          "id": "p3m1",
+          "family": "esagonale",
+          "description": "terzi di giro, tutti sugli specchi"
+        },
+        {
+          "id": "p31m",
+          "family": "esagonale",
+          "description": "terzi di giro, alcuni fuori dagli specchi"
+        },
+        {
+          "id": "p6",
+          "family": "esagonale",
+          "description": "sesti di giro, senza specchi"
+        },
+        {
+          "id": "p6m",
+          "family": "esagonale",
+          "description": "sesti di giro e specchi"
+        }
+      ],
+      "motifs": [
+        {
+          "id": "leaf",
+          "name": "Foglia"
+        },
+        {
+          "id": "fish",
+          "name": "Pesce"
+        },
+        {
+          "id": "bird",
+          "name": "Uccello"
+        },
+        {
+          "id": "paisley",
+          "name": "Goccia"
+        },
+        {
+          "id": "flag",
+          "name": "Bandiera"
+        },
+        {
+          "id": "sailboat",
+          "name": "Barca a vela"
+        }
+      ]
+    }
+  },
+  "nl": {
+    "metaTitle": "Vlakvullingmaker: alle 17 behangpatroongroepen, SVG, PNG en pdf",
+    "metaDesc": "Kies een motief, een van de 17 behangpatroongroepen en je kleuren. Download een naadloze herhaling als SVG of PNG, een tegelindeling en een printbare pdf.",
+    "h1": "Vlakvullingen",
+    "lede": "Herhaal een motief volgens een van de 17 behangpatroongroepen, en download een naadloze herhaling, een tegelindeling en een printbaar vel.",
+    "patternAlt": "Herhalend patroon in behangpatroongroep {group}",
+    "viewPattern": "Patroon",
+    "viewRepeat": "Eén herhaling",
+    "viewLayout": "Tegelindeling",
+    "patternNote": "De herhaling, getegeld om het vierkant te vullen.",
+    "repeatNote": "Eén naadloze rechthoek. Zeshoekige groepen herhalen als een rechthoek die ongeveer 1,73 keer zo hoog als breed is.",
+    "layoutNote": "Gestippelde lijnen markeren elke herhaling. De doorgetrokken omtrek is één tegel: het kleinste gebied dat het hele patroon vormt.",
+    "downloadPdf": "Pdf downloaden",
+    "svgRepeat": "SVG van de herhaling",
+    "pngRepeat": "PNG van de herhaling",
+    "svgLayout": "SVG van de indeling",
+    "pngLayout": "PNG van de indeling",
+    "design": "Ontwerp",
+    "group": "Behangpatroongroep",
+    "motif": "Motief",
+    "outlines": "Tegelomtrekken tonen",
+    "colors": "Kleuren",
+    "background": "Achtergrond",
+    "primary": "Motief",
+    "accent": "Accent",
+    "size": "Maat",
+    "repeatWidth": "Breedte van de herhaling",
+    "across": "Herhalingen in de breedte",
+    "down": "Herhalingen in de hoogte",
+    "palettes": {
+      "ink": "Inkt",
+      "clay": "Klei",
+      "garden": "Tuin",
+      "tide": "Getij"
+    },
+    "originalTitle": "Originele motieven.",
+    "originalText": "De motieven zijn voor deze site getekend. Elk is bewust scheef, zodat het patroon de symmetrie van de groep toont en niets meer.",
+    "groupHeading": "Groep {group}",
+    "guide": "Dit patroon gebruiken",
+    "layoutSize": "Deze indeling van {across} x {down} herhalingen is {w}\" x {h}\".",
+    "options": {
+      "groups": [
+        {
+          "id": "p1",
+          "family": "scheef",
+          "description": "alleen verschuivingen"
+        },
+        {
+          "id": "p2",
+          "family": "scheef",
+          "description": "halve draaiingen, geen spiegels"
+        },
+        {
+          "id": "pm",
+          "family": "rechthoekig",
+          "description": "evenwijdige spiegels"
+        },
+        {
+          "id": "pg",
+          "family": "rechthoekig",
+          "description": "evenwijdige glijspiegelingen"
+        },
+        {
+          "id": "cm",
+          "family": "ruitvormig (gecentreerd rechthoekig)",
+          "description": "evenwijdige spiegels met glijspiegelingen ertussen"
+        },
+        {
+          "id": "pmm",
+          "family": "rechthoekig",
+          "description": "spiegels in twee richtingen, met halve draaiingen erop"
+        },
+        {
+          "id": "pmg",
+          "family": "rechthoekig",
+          "description": "spiegels in één richting, met glijspiegelingen en halve draaiingen"
+        },
+        {
+          "id": "pgg",
+          "family": "rechthoekig",
+          "description": "glijspiegelingen in twee richtingen, met halve draaiingen"
+        },
+        {
+          "id": "cmm",
+          "family": "ruitvormig (gecentreerd rechthoekig)",
+          "description": "spiegels in twee richtingen, met halve draaiingen erop en ernaast"
+        },
+        {
+          "id": "p4",
+          "family": "vierkant",
+          "description": "kwartdraaiingen, geen spiegels"
+        },
+        {
+          "id": "p4m",
+          "family": "vierkant",
+          "description": "kwartdraaiingen op spiegels"
+        },
+        {
+          "id": "p4g",
+          "family": "vierkant",
+          "description": "kwartdraaiingen naast de spiegels"
+        },
+        {
+          "id": "p3",
+          "family": "zeshoekig",
+          "description": "derdedraaiingen, geen spiegels"
+        },
+        {
+          "id": "p3m1",
+          "family": "zeshoekig",
+          "description": "derdedraaiingen, allemaal op spiegels"
+        },
+        {
+          "id": "p31m",
+          "family": "zeshoekig",
+          "description": "derdedraaiingen, sommige naast de spiegels"
+        },
+        {
+          "id": "p6",
+          "family": "zeshoekig",
+          "description": "zesdedraaiingen, geen spiegels"
+        },
+        {
+          "id": "p6m",
+          "family": "zeshoekig",
+          "description": "zesdedraaiingen en spiegels"
+        }
+      ],
+      "motifs": [
+        {
+          "id": "leaf",
+          "name": "Blad"
+        },
+        {
+          "id": "fish",
+          "name": "Vis"
+        },
+        {
+          "id": "bird",
+          "name": "Vogel"
+        },
+        {
+          "id": "paisley",
+          "name": "Druppel"
+        },
+        {
+          "id": "flag",
+          "name": "Vlag"
+        },
+        {
+          "id": "sailboat",
+          "name": "Zeilboot"
+        }
+      ]
+    }
   }
 }

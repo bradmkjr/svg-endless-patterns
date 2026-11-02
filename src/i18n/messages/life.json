@@ -298,5 +298,125 @@
       "beacon": "Um oscilador de período 2: dois quadrados que se tocam, com 8 células vivas em uma fase e 6 na outra.",
       "pulsar": "Um oscilador de período 3, com 48, 56 e depois 72 células vivas."
     }
+  },
+  "it": {
+    "metaTitle": "Motivi del Gioco della vita: nature morte e oscillatori stampabili",
+    "metaDesc": "Trasforma i motivi del Gioco della vita di Conway in disegni continui stampabili, vedi le fasi di ogni oscillatore e osserva la regola su qualsiasi cella.",
+    "h1": "Motivi del Gioco della vita",
+    "lede": "Otto motivi del Gioco della vita di Conway, come disegni ripetuti da stampare. Vedi ogni fase, poi scegli una cella e segui la regola che decide la sua prossima generazione.",
+    "views": {
+      "sheet": "Foglio",
+      "tile": "Piastrella",
+      "phases": "Fasi",
+      "neighborhood": "La regola"
+    },
+    "sheetStats": "{cols} × {rows} celle, {width} × {height} in, {live} celle vive.",
+    "tileStats": "Una piastrella è di {cols} × {rows} celle. Le copie distano {spacing} celle vuote, troppo per influenzarsi, quindi tutto il foglio si comporta come vuole Life.",
+    "phaseStats": "Periodo {period}. Celle vive in ogni fase: {counts}.",
+    "stillStats": "Una natura morta: la generazione successiva è uguale a questa. {live} celle vive.",
+    "clickNote": "Clicca una cella nella griglia di sinistra per sceglierla.",
+    "downloadPdf": "Scarica il PDF stampabile",
+    "design": "Disegno",
+    "pattern": "Motivo",
+    "phase": "Fase",
+    "layout": "Disposizione",
+    "columns": "Colonne",
+    "rows": "Righe",
+    "cellSize": "Misura della cella",
+    "spacing": "Celle vuote tra le copie",
+    "gridLines": "Mostra la griglia",
+    "neighborhood": "Vicinato",
+    "counting": "Conteggio",
+    "neighborhoods": {
+      "moore": "Moore: 8 vicini",
+      "von-neumann": "Von Neumann: 4 vicini"
+    },
+    "cellColumn": "Colonna della cella",
+    "cellRow": "Riga della cella",
+    "colors": "Colori",
+    "background": "Sfondo",
+    "primary": "Celle",
+    "accent": "Accento",
+    "colorNote": "Le celle che cambiano tra le fasi usano l'accento, come la fase e la cella scelte.",
+    "patterns": {
+      "block": "Blocco",
+      "beehive": "Alveare",
+      "loaf": "Pagnotta",
+      "tub": "Vasca",
+      "blinker": "Lampeggiante",
+      "toad": "Rospo",
+      "beacon": "Faro",
+      "pulsar": "Pulsar"
+    },
+    "notes": {
+      "block": "Una natura morta di 4 celle in un quadrato 2 × 2. Ognuna ha esattamente tre vicini vivi, quindi nulla cambia.",
+      "beehive": "Una natura morta di 6 celle.",
+      "loaf": "Una natura morta di 7 celle.",
+      "tub": "Una natura morta di 4 celle in un rombo vuoto.",
+      "blinker": "Un oscillatore di periodo 2: tre celle in fila passano da orizzontali a verticali.",
+      "toad": "Un oscillatore di periodo 2, con 6 celle vive in entrambe le fasi.",
+      "beacon": "Un oscillatore di periodo 2: due quadrati che si toccano, con 8 celle vive in una fase e 6 nell'altra.",
+      "pulsar": "Un oscillatore di periodo 3, con 48, 56 e poi 72 celle vive."
+    }
+  },
+  "nl": {
+    "metaTitle": "Patronen uit Game of Life: printbare stillevens en oscillatoren",
+    "metaDesc": "Maak van patronen uit Conways Game of Life naadloze printbare ontwerpen, bekijk de fasen van elke oscillator en zie de regel werken op elke cel.",
+    "h1": "Patronen uit Game of Life",
+    "lede": "Acht patronen uit Conways Game of Life, als herhalende ontwerpen om te printen. Bekijk elke fase, kies dan een cel en volg de regel die de volgende generatie bepaalt.",
+    "views": {
+      "sheet": "Vel",
+      "tile": "Herhaaltegel",
+      "phases": "Fasen",
+      "neighborhood": "De regel"
+    },
+    "sheetStats": "{cols} × {rows} cellen, {width} × {height} in, {live} levende cellen.",
+    "tileStats": "Eén tegel is {cols} × {rows} cellen. Kopieën staan {spacing} lege cellen uit elkaar, te ver om elkaar te beïnvloeden, dus het hele vel gedraagt zich zoals Life het voorschrijft.",
+    "phaseStats": "Periode {period}. Levende cellen per fase: {counts}.",
+    "stillStats": "Een stilleven: de volgende generatie is gelijk aan deze. {live} levende cellen.",
+    "clickNote": "Klik op een cel in het linkerraster om die te kiezen.",
+    "downloadPdf": "Printbare pdf downloaden",
+    "design": "Ontwerp",
+    "pattern": "Patroon",
+    "phase": "Fase",
+    "layout": "Indeling",
+    "columns": "Kolommen",
+    "rows": "Rijen",
+    "cellSize": "Celgrootte",
+    "spacing": "Lege cellen tussen kopieën",
+    "gridLines": "Rasterlijnen tonen",
+    "neighborhood": "Buurt",
+    "counting": "Tellen",
+    "neighborhoods": {
+      "moore": "Moore: 8 buren",
+      "von-neumann": "Von Neumann: 4 buren"
+    },
+    "cellColumn": "Kolom van de cel",
+    "cellRow": "Rij van de cel",
+    "colors": "Kleuren",
+    "background": "Achtergrond",
+    "primary": "Cellen",
+    "accent": "Accent",
+    "colorNote": "Cellen die tussen fasen wisselen, gebruiken het accent, net als de gekozen fase en cel.",
+    "patterns": {
+      "block": "Blok",
+      "beehive": "Bijenkorf",
+      "loaf": "Brood",
+      "tub": "Kuip",
+      "blinker": "Knipperlicht",
+      "toad": "Pad",
+      "beacon": "Baken",
+      "pulsar": "Pulsar"
+    },
+    "notes": {
+      "block": "Een stilleven van 4 cellen in een vierkant van 2 × 2. Elke cel heeft precies drie levende buren, dus er verandert niets.",
+      "beehive": "Een stilleven van 6 cellen.",
+      "loaf": "Een stilleven van 7 cellen.",
+      "tub": "Een stilleven van 4 cellen in een holle ruit.",
+      "blinker": "Een oscillator met periode 2: drie cellen op een rij wisselen tussen liggend en staand.",
+      "toad": "Een oscillator met periode 2, met 6 levende cellen in beide fasen.",
+      "beacon": "Een oscillator met periode 2: twee rakende vierkanten, met 8 levende cellen in de ene fase en 6 in de andere.",
+      "pulsar": "Een oscillator met periode 3, met 48, 56 en dan 72 levende cellen."
+    }
   }
 }

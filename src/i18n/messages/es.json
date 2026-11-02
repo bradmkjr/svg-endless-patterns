@@ -233,13 +233,13 @@
       },
       "stainedGlass": {
         "title": "Vidriera",
-        "text": "Diseña un panel original de vidriera a partir de seis composiciones paramétricas, con piezas que de verdad se pueden cortar a mano.",
+        "text": "Diseña un panel original de vidriera a partir de nueve composiciones paramétricas, con piezas que de verdad se pueden cortar a mano.",
         "output": "Plantillas numeradas a tamaño real con margen para el perfil, una estimación aproximada de vidrio por color y una vista previa en SVG o PNG.",
         "explore": "Abrir el creador de vidrieras"
       },
       "mandala": {
         "title": "Mandalas",
-        "text": "Genera diseños radiales geométricos originales a partir de anillos de formas sencillas.",
+        "text": "Genera diseños radiales geométricos originales a partir de anillos de formas sencillas, en ocho estilos de dibujo.",
         "output": "SVG o PNG en color, página para colorear y PDF imprimible.",
         "explore": "Crear un diseño radial"
       },
@@ -257,7 +257,7 @@
       },
       "tieDye": {
         "title": "Tie-dye",
-        "text": "Previsualiza un plegado en espiral, diana, acordeón, rayos de sol, chevrón o espiral doble con tus colores.",
+        "text": "Previsualiza en tus colores un pliegue en espiral, diana, acordeón, rayos, chevron, doble espiral, rayas diagonales, arrugado o corazón.",
         "output": "Diagrama de plegado, mapa de tintes, cantidades, pasos imprimibles y vista previa en SVG o PNG.",
         "explore": "Planifica un tie-dye"
       },

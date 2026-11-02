@@ -18,7 +18,7 @@ export type KnitColorworkRequest = {
   color: string;
   /** Contrast yarns, chart letters B and on. */
   contrast?: string[];
-  locale?: "en" | "es" | "fr" | "de" | "pt";
+  locale?: "en" | "es" | "fr" | "de" | "pt" | "it" | "nl";
 };
 
 export type KnitColorworkPlan = {

@@ -9,6 +9,9 @@ export const MOTIF_OPTIONS: MandalaMotif[] = ["petals", "arcs", "dots", "scallop
 /** What a seed chooses from unless the link says otherwise, so older links keep their designs. */
 const SEED_MOTIFS = MOTIF_OPTIONS.slice(0, 6);
 export const STYLE_OPTIONS: MandalaStyle[] = ["classic", "sharp", "smooth", "wavy", "geometric", "flowing", "sketched", "pixel"];
+/** The fold pages this tool used to have. Their old links still open, with that fold chosen. */
+export const foldPageSlugs = () => SYMMETRY_OPTIONS.map((n) => `${n}-fold`);
+export const foldFromSlug = (slug: string | undefined) => (slug && foldPageSlugs().includes(slug) ? parseInt(slug, 10) : undefined);
 export const MIN_PLAN_RINGS = 1;
 export const MAX_PLAN_RINGS = 16;
 export const REPEAT_OPTIONS = Array.from({ length: 16 }, (_, i) => i + 1);

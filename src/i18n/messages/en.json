@@ -233,13 +233,13 @@
       },
       "stainedGlass": {
         "title": "Stained glass",
-        "text": "Design an original leaded glass panel from six parametric layouts, in pieces that can really be cut by hand.",
+        "text": "Design an original leaded glass panel from nine parametric layouts, in pieces that can really be cut by hand.",
         "output": "Numbered true-size templates with came allowance, a rough glass estimate per color, and an SVG or PNG preview.",
         "explore": "Open the stained glass maker"
       },
       "mandala": {
         "title": "Mandalas",
-        "text": "Generate original geometric radial designs from rings of simple shapes.",
+        "text": "Generate original geometric radial designs from rings of simple shapes, in eight drawing styles.",
         "output": "Colored SVG or PNG, coloring page and printable PDF.",
         "explore": "Make a radial design"
       },
@@ -257,7 +257,7 @@
       },
       "tieDye": {
         "title": "Tie-dye",
-        "text": "Preview a spiral, bullseye, accordion, sunburst, chevron or double spiral fold in your colors.",
+        "text": "Preview a spiral, bullseye, accordion, sunburst, chevron, double spiral, diagonal stripe, crumple or heart fold in your colors.",
         "output": "Fold diagram, dye map, mixing amounts, printable steps, and an SVG or PNG preview.",
         "explore": "Plan a tie-dye"
       },

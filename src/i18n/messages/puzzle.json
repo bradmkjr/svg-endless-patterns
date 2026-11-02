@@ -328,5 +328,137 @@
     "puzzlesHeading": "Passatempos e jogos",
     "posterBox": "Cada quadrado é impresso com {size} in de largura nesta folha.",
     "posterNote": "Escolha até 200 quadrados de largura para um tabuleiro gigante. Tamanhos acima de Legal precisam de uma impressora de grande formato ou gráfica. Imprima em 100%."
+  },
+  "it": {
+    "metaTitle": "Giochi su carta da stampare: sudoku, battaglia navale e altri",
+    "metaDesc": "Crea gratis giochi su carta e con la matita da stampare, tra cui sudoku, nonogrammi e battaglia navale. Scarica un PDF da stampare o una pagina per l'app di disegno sul tablet.",
+    "h1": "Giochi su carta",
+    "lede": "Rompicapo e giochi con la matita da stampare, o da aprire in un'app di disegno sul tablet. Ogni rompicapo ha una sola soluzione e ogni foglio è gratis.",
+    "allPuzzles": "Tutti i giochi su carta",
+    "loading": "Disegno del foglio…",
+    "views": {
+      "puzzle": "Foglio",
+      "solution": "Soluzione"
+    },
+    "design": "Foglio",
+    "type": "Gioco",
+    "size": "Misura",
+    "sizeLabel": "{n} × {n}",
+    "boxesLabel": "{n} × {n} quadretti",
+    "difficulty": "Difficoltà",
+    "difficulties": {
+      "easy": "Facile",
+      "medium": "Media",
+      "hard": "Difficile"
+    },
+    "difficultyNote": "I fogli più difficili partono con meno indizi.",
+    "givens": "{n} indizi già inseriti all'inizio.",
+    "seed": "Numero del rompicapo",
+    "shuffle": "Nuovo rompicapo",
+    "seedNote": "Questo browser ricorda il tuo numero. I link condivisi mantengono le impostazioni ma non il numero: per disegnare lo stesso rompicapo altrove, digitalo.",
+    "colors": "Colori",
+    "background": "Sfondo",
+    "ink": "Inchiostro",
+    "accent": "Accento",
+    "colorNote": "Soluzioni ed etichette usano l'accento. Per la stampa, uno sfondo bianco fa risparmiare inchiostro.",
+    "download": "Scarica",
+    "paper": "Pagina",
+    "papers": {
+      "letter": "US Letter",
+      "a4": "A4",
+      "tablet": "Tablet (4:3)"
+    },
+    "paperNote": "La pagina per tablet riempie lo schermo di un iPad, pronta da annotare in un'app di disegno. Va bene anche un PNG.",
+    "includeSolution": "Aggiungi la soluzione come seconda pagina",
+    "downloadPdf": "Scarica il PDF",
+    "types": {
+      "sudoku": "Sudoku",
+      "futoshiki": "Futoshiki",
+      "nonogram": "Nonogrammi",
+      "battleships": "Battaglia navale",
+      "dots-and-boxes": "Punti e quadretti",
+      "ultimate-tic-tac-toe": "Super tris",
+      "hex": "Hex"
+    },
+    "blurbs": {
+      "sudoku": "La classica griglia di numeri, in 4 × 4, 6 × 6 e 9 × 9.",
+      "futoshiki": "Una griglia di numeri da risolvere con i segni di maggiore e minore.",
+      "nonogram": "Usa i numeri intorno alla griglia per riempire una forma nascosta.",
+      "battleships": "Due griglie e una flotta da affondare, per due giocatori.",
+      "dots-and-boxes": "Traccia linee e conquista quadretti, per due o più giocatori.",
+      "ultimate-tic-tac-toe": "Nove piccole griglie in una, dove ogni mossa prepara la successiva.",
+      "hex": "Collega i tuoi due lati del tabellone. Nessuno può pareggiare.",
+      "mazes": "Sette forme, compresi i messaggi nascosti, con soluzioni."
+    },
+    "mazes": "Labirinti",
+    "puzzlesHeading": "Rompicapo e giochi",
+    "posterBox": "Ogni quadretto si stampa largo {size} in su questo foglio.",
+    "posterNote": "Scegli fino a 200 quadretti di larghezza per un tabellone gigante. I formati oltre Legal richiedono una stampante di grande formato o una tipografia. Stampa al 100%."
+  },
+  "nl": {
+    "metaTitle": "Printbare papierpuzzels: sudoku, zeeslag en meer",
+    "metaDesc": "Maak gratis printbare papierpuzzels en potloodspellen, zoals sudoku, nonogrammen en zeeslag. Download een pdf om te printen of een tabletpagina voor je teken-app.",
+    "h1": "Papierpuzzels",
+    "lede": "Puzzels en potloodspellen om te printen, of om te openen in een teken-app op een tablet. Elke puzzel heeft precies één oplossing en elk vel is gratis.",
+    "allPuzzles": "Alle papierpuzzels",
+    "loading": "Het vel wordt getekend…",
+    "views": {
+      "puzzle": "Vel",
+      "solution": "Oplossing"
+    },
+    "design": "Vel",
+    "type": "Puzzel",
+    "size": "Maat",
+    "sizeLabel": "{n} × {n}",
+    "boxesLabel": "{n} × {n} hokjes",
+    "difficulty": "Moeilijkheid",
+    "difficulties": {
+      "easy": "Makkelijk",
+      "medium": "Gemiddeld",
+      "hard": "Moeilijk"
+    },
+    "difficultyNote": "Moeilijkere vellen beginnen met minder aanwijzingen.",
+    "givens": "{n} aanwijzingen staan al ingevuld.",
+    "seed": "Puzzelnummer",
+    "shuffle": "Nieuwe puzzel",
+    "seedNote": "Deze browser onthoudt je puzzelnummer. Deellinks bewaren je instellingen maar niet het nummer, dus typ het in om dezelfde puzzel elders te tekenen.",
+    "colors": "Kleuren",
+    "background": "Achtergrond",
+    "ink": "Inkt",
+    "accent": "Accent",
+    "colorNote": "Oplossingen en labels gebruiken het accent. Bij het printen bespaart een witte achtergrond inkt.",
+    "download": "Downloaden",
+    "paper": "Pagina",
+    "papers": {
+      "letter": "US Letter",
+      "a4": "A4",
+      "tablet": "Tablet (4:3)"
+    },
+    "paperNote": "De tabletpagina vult een iPad-scherm, klaar om in een teken-app te bewerken. Een PNG werkt daar ook.",
+    "includeSolution": "De oplossing als tweede pagina toevoegen",
+    "downloadPdf": "Pdf downloaden",
+    "types": {
+      "sudoku": "Sudoku",
+      "futoshiki": "Futoshiki",
+      "nonogram": "Nonogrammen",
+      "battleships": "Zeeslag",
+      "dots-and-boxes": "Kamertje verhuren",
+      "ultimate-tic-tac-toe": "Super boter-kaas-en-eieren",
+      "hex": "Hex"
+    },
+    "blurbs": {
+      "sudoku": "Het klassieke cijferrooster, in 4 × 4, 6 × 6 en 9 × 9.",
+      "futoshiki": "Een cijferrooster dat je oplost met groter-dan- en kleiner-dantekens.",
+      "nonogram": "Gebruik de cijfers rond het raster om een verborgen vorm in te vullen.",
+      "battleships": "Twee borden en een vloot om te laten zinken, voor twee spelers.",
+      "dots-and-boxes": "Trek lijnen en verover hokjes, voor twee of meer spelers.",
+      "ultimate-tic-tac-toe": "Negen kleine borden in één, waarbij elke zet de volgende bepaalt.",
+      "hex": "Verbind je twee kanten van het bord. Gelijkspel bestaat niet.",
+      "mazes": "Zeven vormen, met ook verborgen boodschappen, met oplossingen."
+    },
+    "mazes": "Doolhoven",
+    "puzzlesHeading": "Puzzels en spellen",
+    "posterBox": "Elk hokje wordt op dit vel {size} in breed geprint.",
+    "posterNote": "Kies tot 200 hokjes breed voor een reuzenbord. Maten boven Legal hebben een grootformaatprinter of drukkerij nodig. Print op 100%."
   }
 }

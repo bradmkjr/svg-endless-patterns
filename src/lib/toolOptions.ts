@@ -19,7 +19,7 @@ import { MOTIFS as STITCH_MOTIFS } from "./crossStitchState";
 import type { Locale, TessellationOptions } from "./generator";
 import { SYMMETRY_OPTIONS as GIRIH_SYMMETRY } from "./girihState";
 import { fill, localePath } from "./i18n";
-import { SYMMETRY_OPTIONS as MANDALA_SYMMETRY } from "./mandalaState";
+import { STYLE_OPTIONS as MANDALA_STYLES } from "./mandalaState";
 import { PUZZLE_OPTIONS } from "./puzzleState";
 import { MOTIF_OPTIONS as SASHIKO_MOTIFS } from "./sashikoState";
 import { GLASS_LAYOUTS } from "./stainedGlassState";
@@ -64,7 +64,7 @@ export const TOOL_OPTIONS: Record<ToolId, Tool> = {
   knitColorwork: { path: "/knitting/colorwork/", param: "d", options: named(KNIT_COLORWORK_OPTIONS.map((d) => d.id)) },
   crochetColorwork: { path: "/crochet/colorwork/", param: "d", options: named(COLORWORK_DESIGN_IDS) },
   checkerboard: { path: "/checkerboards/", param: "p", options: named(CHECKER_PATTERNS) },
-  mandala: { path: "/mandalas/", param: "n", options: folds(MANDALA_SYMMETRY) },
+  mandala: { path: "/mandalas/", param: "st", options: named(MANDALA_STYLES) },
   puzzle: { path: "/paper-puzzles/", param: "t", options: named(PUZZLE_OPTIONS) },
 };
 
@@ -156,7 +156,7 @@ export const thumbSrc = (group: ThumbGroup, slug: string) => {
 export const primaryImageSrc = (group: ThumbGroup, slug: string) => mazeApiUrl(`/preview/${group}/${slug}.png?size=1200`);
 
 /** The choice a tool opens with, for a page or sample that doesn't name one. */
-export const OPENING_OPTION: Record<ToolId, string> = { truchet: "arcs", tessellation: "p4", girih: "10-fold", sashiko: "asanoha", celticKnot: "mirror", stainedGlass: "rose", crossStitch: "rosette", needlepoint: "kilim", tieDye: "spiral", maze: "square", fractal: "dragon-curve", knitColorwork: "little-pines", crochetColorwork: "diamond-lattice", checkerboard: "checker", mandala: "12-fold", life: "block", puzzle: "sudoku" };
+export const OPENING_OPTION: Record<ToolId, string> = { truchet: "arcs", tessellation: "p4", girih: "10-fold", sashiko: "asanoha", celticKnot: "mirror", stainedGlass: "rose", crossStitch: "rosette", needlepoint: "kilim", tieDye: "spiral", maze: "square", fractal: "dragon-curve", knitColorwork: "little-pines", crochetColorwork: "diamond-lattice", checkerboard: "checker", mandala: "classic", life: "block", puzzle: "sudoku" };
 
 type Tessellation = Pick<TessellationOptions, "groups">;
 
@@ -195,7 +195,7 @@ export function optionLabel(tool: ToolId, slug: string, locale: Locale, tessella
     case "checkerboard":
       return checkerboard[locale].patterns[value as keyof (typeof checkerboard)["en"]["patterns"]];
     case "mandala":
-      return fill(mandala[locale].fold, { n: value });
+      return mandala[locale].drawingStyles[value as keyof (typeof mandala)["en"]["drawingStyles"]];
     case "puzzle":
       return puzzle[locale].types[value as keyof (typeof puzzle)["en"]["types"]];
   }

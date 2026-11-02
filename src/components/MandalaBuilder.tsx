@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { generateMandala, generateMandalaPdf, type Locale, type MandalaMotif, type MandalaStyle, type MandalaRequest, type MandalaResult } from "@/lib/generator";
-import { rememberSeed, syncShareLink, slugFor } from "@/lib/toolOptions";
+import { generateMandala, generateMandalaPdf, type Locale, type MandalaMotif, type MandalaRequest, type MandalaResult } from "@/lib/generator";
+import { rememberSeed, syncShareLink } from "@/lib/toolOptions";
 import { MandalaRings } from "./MandalaRings";
 import { ToolLoading } from "./ToolLoading";
 import { useLiveResult } from "@/lib/useLiveResult";
@@ -108,7 +108,18 @@ export function MandalaBuilder({ locale, option, labels, initialState }: { local
         <form className={`${styles.controls} no-print`} onSubmit={(e) => e.preventDefault()}>
           <fieldset>
             <legend>{t.design}</legend>
-            <NumberSelect label={t.symmetry} value={state.symmetry} options={SYMMETRY_OPTIONS} onChange={(n) => goToOption(slugFor("mandala", n)!)} />
+            <label className={styles.field}>
+              <span>{t.drawingStyle}</span>
+              <select value={state.style ?? "classic"} onChange={(e) => goToOption(e.target.value)}>
+                {STYLE_OPTIONS.map((id) => (
+                  <option key={id} value={id}>
+                    {t.drawingStyles[id]}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <p className={styles.note}>{t.drawingStyleNote}</p>
+            <NumberSelect label={t.symmetry} value={state.symmetry} options={SYMMETRY_OPTIONS} onChange={(symmetry) => update({ symmetry })} />
             <div className={styles.tabs}>
               <button type="button" className={state.ringPlan ? styles.tabOn : styles.tab} aria-pressed={!!state.ringPlan} disabled={!result} onClick={() => result && update({ ringPlan: result.rings.map((ring) => ring.spec) })}>
                 {t.modeRings}
@@ -167,17 +178,6 @@ export function MandalaBuilder({ locale, option, labels, initialState }: { local
 
           <fieldset>
             <legend>{t.lines}</legend>
-            <label className={styles.field}>
-              <span>{t.drawingStyle}</span>
-              <select value={state.style ?? "classic"} onChange={(e) => update({ style: e.target.value === "classic" ? undefined : (e.target.value as MandalaStyle) })}>
-                {STYLE_OPTIONS.map((id) => (
-                  <option key={id} value={id}>
-                    {t.drawingStyles[id]}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <p className={styles.note}>{t.drawingStyleNote}</p>
             <NumberSelect label={t.lineWeight} value={state.lineWeight} options={LINE_OPTIONS} onChange={(lineWeight) => update({ lineWeight })} />
           </fieldset>
 

@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import uiText from "@/i18n/messages/puzzle.json";
 import { defaultPuzzleState, DIFFICULTY_OPTIONS, hasDifficulty, hasPoster, isSolved, PAPER_OPTIONS, parsePuzzleState, PUZZLE_OPTIONS, PUZZLE_SIZES, serializePuzzleState } from "./puzzleState";
 
-const LOCALES = ["en", "es", "fr", "de", "pt"] as const;
+const LOCALES = ["en", "es", "fr", "de", "pt", "it", "nl"] as const;
 const parse = (query: string, locale?: (typeof LOCALES)[number]) => parsePuzzleState(new URLSearchParams(query), locale);
 
 describe("share links", () => {

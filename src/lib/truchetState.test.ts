@@ -3,7 +3,7 @@ import uiCopy from "../i18n/messages/truchet.json";
 import { defaultTruchetState, GRID_OPTIONS, parseTruchetState, serializeTruchetState } from "./truchetState";
 import type { TruchetRequest } from "./generator";
 
-const LOCALES = ["en", "es", "fr", "de", "pt"] as const;
+const LOCALES = ["en", "es", "fr", "de", "pt", "it", "nl"] as const;
 
 describe("share links", () => {
   const full: TruchetRequest = { style: "triangles", arrangement: "waves", grid: 16, weight: 6, seed: 7, colors: { background: "#010203", line: "#a0b0c0", accent: "#ffeedd" }, repeatWidth: 7.5 };

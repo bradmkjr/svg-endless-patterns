@@ -3,7 +3,7 @@ import uiText from "../i18n/messages/mandala.json";
 import { defaultMandalaState, moveRing, parseMandalaState, serializeMandalaState, SIZE_OPTIONS } from "./mandalaState";
 import type { MandalaRequest, MandalaRingSpec } from "./generator";
 
-const LOCALES = ["en", "es", "fr", "de", "pt"] as const;
+const LOCALES = ["en", "es", "fr", "de", "pt", "it", "nl"] as const;
 
 describe("older links", () => {
   it("keeps a seed's design, unchanged by the new motifs", () => {

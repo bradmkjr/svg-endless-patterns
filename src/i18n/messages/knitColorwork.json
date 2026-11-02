@@ -268,5 +268,113 @@
     "total": "Total",
     "patternLede": "Todas as carreiras de um quadrado pronto na sua amostra, da montagem ao blocking. Mude o tamanho ou a amostra e os números mudam junto.",
     "loading": "Desenhando o quadrado…"
+  },
+  "it": {
+    "metaTitle": "Maglia a colori: quadrati jacquard, mosaico e intarsio",
+    "metaDesc": "Schemi originali di maglia multicolore adattati al tuo campione, con ferri scritti colore per colore, controllo dei fili passati, filato per colore e un PDF stampabile.",
+    "h1": "Maglia a colori",
+    "lede": "Schemi originali in jacquard, mosaico e intarsio, ognuno scritto come quadrato completo al tuo campione.",
+    "indexLink": "Cerchi più di un colore? Prova la maglia a colori.",
+    "designs": {
+      "little-pines": "Piccoli pini",
+      "small-diamonds": "Piccoli rombi",
+      "two-way-diamonds": "Rombi a due vie",
+      "ribbon-chevron": "Chevron a nastro",
+      "little-bands": "Piccole fasce",
+      "block-check": "Quadri a blocchi",
+      "mosaic-chevron": "Chevron a mosaico",
+      "mosaic-diamonds": "Rombi a mosaico",
+      "mosaic-bricks": "Mattoni a mosaico",
+      "mosaic-crosses": "Croci a mosaico",
+      "heart-block": "Blocco a cuore",
+      "diamond-block": "Blocco a rombo",
+      "window-block": "Blocco a finestra"
+    },
+    "techniques": {
+      "stranded": "Jacquard: due filati nel ferro, con quello non usato passato sul retro. Spesso detto stile Fair Isle.",
+      "mosaic": "Mosaico: un filato per ferro, con le maglie dell'altro colore passate senza lavorarle.",
+      "intarsia": "Intarsio: blocchi di colore, ciascuno dal suo rocchetto, senza fili passati sul retro."
+    },
+    "views": {
+      "square": "Quadrato",
+      "chart": "Schema"
+    },
+    "viewNotes": {
+      "square": "Tutto il quadrato, bordo compreso, nelle proporzioni che gli dà il tuo campione.",
+      "chart": "Una ripetizione, vista dal diritto. Il ferro 1 è in basso. Leggi i ferri dispari da destra a sinistra e quelli pari da sinistra a destra, partendo dal numero di ogni ferro. Un ferro segnato con ! ha un filo passato oltre il limite."
+    },
+    "downloadPdf": "Scarica lo schema in PDF",
+    "design": "Disegno",
+    "pattern": "Motivo",
+    "size": "Misura del quadrato (pollici)",
+    "gauge": "Campione",
+    "stitchGauge": "Maglie per 4\"",
+    "rowGauge": "Ferri per 4\"",
+    "gaugeNote": "Il campione a colori è diverso da quello a tinta unita, quindi misura un campione di questo schema.",
+    "colors": "Filati",
+    "yarn": "Filato {letter}",
+    "flagTitle": "Fili passati lunghi.",
+    "flagText": "A questo campione, i ferri {rows} dello schema portano un filato oltre il limite di {limit} maglie. Il controllo qui sotto dice cosa fare.",
+    "yarnHeading": "Filato per colore",
+    "yarnColumn": "Filato",
+    "yardsColumn": "Iarde",
+    "bobbinsColumn": "Rocchetti",
+    "total": "Totale",
+    "patternLede": "Ogni ferro di un quadrato finito al tuo campione, dall'avvio alla messa in forma. Cambia misura o campione e i numeri cambiano con loro.",
+    "loading": "Disegno del quadrato…"
+  },
+  "nl": {
+    "metaTitle": "Kleurenbreien: vierkanten in Fair Isle, mozaïek en intarsia",
+    "metaDesc": "Originele veelkleurige breischema's op jouw stekenverhouding, met naalden per kleur, controle van de vlotten, garen per kleur en een printbare pdf.",
+    "h1": "Kleurenbreien",
+    "lede": "Originele schema's voor Fair Isle, mozaïek en intarsia, elk uitgeschreven als compleet vierkant bij jouw stekenverhouding.",
+    "indexLink": "Op zoek naar meer dan één kleur? Probeer kleurenbreien.",
+    "designs": {
+      "little-pines": "Dennetjes",
+      "small-diamonds": "Kleine ruiten",
+      "two-way-diamonds": "Tweerichtingsruiten",
+      "ribbon-chevron": "Lintchevron",
+      "little-bands": "Kleine banden",
+      "block-check": "Blokruit",
+      "mosaic-chevron": "Mozaïekchevron",
+      "mosaic-diamonds": "Mozaïekruiten",
+      "mosaic-bricks": "Mozaïekstenen",
+      "mosaic-crosses": "Mozaïekkruisen",
+      "heart-block": "Hartblok",
+      "diamond-block": "Ruitblok",
+      "window-block": "Raamblok"
+    },
+    "techniques": {
+      "stranded": "Fair Isle: twee garens op een naald, waarbij het ongebruikte over de achterkant loopt.",
+      "mosaic": "Mozaïek: één garen per naald, waarbij de steken van de andere kleur worden afgehaald.",
+      "intarsia": "Intarsia: kleurvlakken, elk van een eigen klosje, zonder draden over de achterkant."
+    },
+    "views": {
+      "square": "Vierkant",
+      "chart": "Schema"
+    },
+    "viewNotes": {
+      "square": "Het hele vierkant, met rand, in de verhoudingen die je stekenverhouding geeft.",
+      "chart": "Eén herhaling, gezien van de goede kant. Naald 1 staat onderaan. Lees oneven naalden van rechts naar links en even naalden van links naar rechts, beginnend bij het nummer van elke naald. Een naald met ! heeft een vlot boven de grens."
+    },
+    "downloadPdf": "Pdf-patroon downloaden",
+    "design": "Ontwerp",
+    "pattern": "Patroon",
+    "size": "Maat van het vierkant (inch)",
+    "gauge": "Stekenverhouding",
+    "stitchGauge": "Steken per 4\"",
+    "rowGauge": "Naalden per 4\"",
+    "gaugeNote": "De stekenverhouding bij kleurenbreien wijkt af van gewoon breien, dus meet een proeflapje van dit schema.",
+    "colors": "Garens",
+    "yarn": "Garen {letter}",
+    "flagTitle": "Lange vlotten.",
+    "flagText": "Bij deze stekenverhouding dragen schemanaalden {rows} een garen verder dan de grens van {limit} steken. De controle hieronder zegt wat je moet doen.",
+    "yarnHeading": "Garen per kleur",
+    "yarnColumn": "Garen",
+    "yardsColumn": "Yards",
+    "bobbinsColumn": "Klosjes",
+    "total": "Totaal",
+    "patternLede": "Elke naald van een afgewerkt vierkant bij jouw stekenverhouding, van opzetten tot opspannen. Verander de maat of stekenverhouding en de cijfers veranderen mee.",
+    "loading": "Het vierkant wordt getekend…"
   }
 }

@@ -3,7 +3,7 @@ import uiCopy from "../i18n/messages/sashiko.json";
 import { defaultSashikoState, MOTIF_OPTIONS, parseSashikoState, serializeSashikoState } from "./sashikoState";
 import type { SashikoRequest } from "./generator";
 
-const LOCALES = ["en", "es", "fr", "de", "pt"] as const;
+const LOCALES = ["en", "es", "fr", "de", "pt", "it", "nl"] as const;
 
 
 describe("share links", () => {

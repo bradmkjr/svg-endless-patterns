@@ -28,5 +28,17 @@
     "sizeLabel": "Tamanho do quadrado",
     "lede": "Todas as carreiras de um quadrado pronto na sua amostra, da montagem ao blocking. Mude o tamanho ou a amostra e os números acompanham.",
     "rectangleNote": "Só as carreiras do ponto, para um retângulo simples no tamanho de projeto acima. Elas não têm barra nem usam a numeração do quadrado."
+  },
+  "it": {
+    "size": "Quadrato completo",
+    "sizeLabel": "Misura del quadrato",
+    "lede": "Ogni ferro di un quadrato finito al tuo campione, dall'avvio alla messa in forma. Cambia misura o campione e i numeri li seguono.",
+    "rectangleNote": "I soli ferri del punto, per un semplice rettangolo alla misura di progetto indicata sopra. Non hanno bordo e non sono i numeri di ferro del quadrato."
+  },
+  "nl": {
+    "size": "Compleet vierkant",
+    "sizeLabel": "Maat van het vierkant",
+    "lede": "Elke naald van een afgewerkt vierkant bij jouw stekenverhouding, van opzetten tot opspannen. Verander de maat of stekenverhouding en de cijfers volgen.",
+    "rectangleNote": "Alleen de steeknaalden, voor een gewone rechthoek op de projectmaat hierboven. Ze hebben geen rand en zijn niet de naaldnummers van het vierkant."
   }
 }

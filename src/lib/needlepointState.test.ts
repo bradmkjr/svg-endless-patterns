@@ -3,7 +3,7 @@ import { MOTIFS as CROSS_MOTIFS } from "./crossStitchState";
 import {   defaultNeedlepointState,   DEFAULT_MESH,   legacyNeedlepointQuery,   MARGIN_OPTIONS,     MAX_GRID,   MESH_OPTIONS,     MOTIFS,   parseNeedlepointState,   resizeGrid,   serializeNeedlepointState,   setCell,     } from "./needlepointState";
 import type { NeedlepointRequest } from "./generator";
 
-const LOCALES = ["en", "es", "fr", "de", "pt"] as const;
+const LOCALES = ["en", "es", "fr", "de", "pt", "it", "nl"] as const;
 
 const params = (query: string) => new URLSearchParams(query);
 

@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import uiText from "@/i18n/messages/fractal.json";
 import { ANGLE_OPTIONS, defaultFractalState, depthOptions, FRACTAL_MAX_DEPTH, parseFractalState, serializeFractalState, TYPE_OPTIONS, WEIGHT_OPTIONS } from "./fractalState";
 
-const LOCALES = ["en", "es", "fr", "de", "pt"] as const;
+const LOCALES = ["en", "es", "fr", "de", "pt", "it", "nl"] as const;
 
 describe("share links", () => {
   const parse = (query: string, locale?: (typeof LOCALES)[number]) => parseFractalState(new URLSearchParams(query), locale);

@@ -11,7 +11,7 @@ import truchet from "../i18n/messages/truchet.json";
 import crossStitch from "../i18n/messages/crossStitch.json";
 import needlepoint from "../i18n/messages/needlepoint.json";
 
-const LOCALES = ["en", "es", "fr", "de", "pt"] as const;
+const LOCALES = ["en", "es", "fr", "de", "pt", "it", "nl"] as const;
 const leaves = (value: unknown, path = ""): [string, string][] =>
   typeof value === "string" ? [[path, value]] : Object.entries((value ?? {}) as object).flatMap(([k, v]) => leaves(v, path ? `${path}.${k}` : k));
 const holes = (text: string) => [...text.matchAll(/\{\w+\}/g)].map((m) => m[0]).sort();

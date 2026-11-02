@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import uiText from "../i18n/messages/celticKnot.json";
 import { defaultCelticKnotState, parseCelticKnotState, serializeCelticKnotState } from "./celticKnotState"; 
 
-const LOCALES = ["en", "es", "fr", "de", "pt"] as const;
+const LOCALES = ["en", "es", "fr", "de", "pt", "it", "nl"] as const;
 
 describe("share links", () => {
   const params = (query: string) => new URLSearchParams(query);

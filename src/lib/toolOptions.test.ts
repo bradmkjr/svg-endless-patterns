@@ -22,7 +22,7 @@ import { parseTieDyeState, serializeTieDyeState } from "./tieDyeState";
 import { parseTruchetState, serializeTruchetState } from "./truchetState";
 
 const TOOLS = Object.keys(TOOL_OPTIONS) as ToolId[];
-const LOCALES = ["en", "es", "fr", "de", "pt"] as const;
+const LOCALES = ["en", "es", "fr", "de", "pt", "it", "nl"] as const;
 const ROUND_TRIP: Record<ToolId, (params: URLSearchParams) => string> = {
   truchet: (p) => serializeTruchetState(parseTruchetState(p)),
   tessellation: (p) => serializeTessellationState(parseTessellationState(p)),

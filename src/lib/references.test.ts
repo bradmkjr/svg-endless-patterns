@@ -4,7 +4,7 @@ import { describe, expect, it } from "vitest";
 import text from "@/i18n/messages/acknowledgements.json";
 import { REFERENCES } from "./references";
 
-const LOCALES = ["en", "es", "fr", "de", "pt"] as const;
+const LOCALES = ["en", "es", "fr", "de", "pt", "it", "nl"] as const;
 const files = (dir: string): string[] => readdirSync(dir).flatMap((name) => {
   const path = join(dir, name);
   return statSync(path).isDirectory() ? files(path) : [path];

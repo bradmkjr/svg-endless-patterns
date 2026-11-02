@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import uiText from "../i18n/messages/tieDye.json";
 import { defaultTieDyeState, parseTieDyeState, serializeTieDyeState } from "./tieDyeState";
 
-const LOCALES = ["en", "es", "fr", "de", "pt"] as const;
+const LOCALES = ["en", "es", "fr", "de", "pt", "it", "nl"] as const;
 
 describe("share links", () => {
   const parse = (query: string, locale?: (typeof LOCALES)[number]) => parseTieDyeState(new URLSearchParams(query), locale);

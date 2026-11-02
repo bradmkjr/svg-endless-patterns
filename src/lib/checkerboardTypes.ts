@@ -10,7 +10,7 @@ export type CheckerboardRequest = {
   ratioHeight: number;
   unit: number;
   colors: string[];
-  locale?: "en" | "es" | "fr" | "de" | "pt";
+  locale?: "en" | "es" | "fr" | "de" | "pt" | "it" | "nl";
 };
 
 export type CheckerboardResult = {

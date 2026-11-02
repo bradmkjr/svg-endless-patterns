@@ -118,5 +118,53 @@
       "gardnerLife": "A regra do Jogo da Vida de Conway, que a ferramenta de padrões do Life executa para desenhar cada fase.",
       "walkerMosaic": "O nome e as regras de duas carreiras dos padrões em mosaico do tricô em cores. Os gráficos foram desenhados para este site."
     }
+  },
+  "it": {
+    "metaTitle": "Ringraziamenti e fonti",
+    "metaDesc": "Le fonti esterne a cui attinge Endless Patterns, con crediti e link.",
+    "h1": "Ringraziamenti",
+    "lede": "Questo sito poggia sul lavoro di altri. Ecco chi ringraziare e cosa abbiamo preso da ciascuno.",
+    "sourcesH": "Fonti",
+    "traditionsH": "Tradizioni",
+    "traditions": "Patchwork, maglia, uncinetto, sashiko, tartan, nodi celtici, vetrate e tie-dye appartengono a generazioni di artigiani, per lo più senza nome. I disegni qui presenti sono generati o disegnati per questo sito e non copiano il motivo di nessun singolo autore.",
+    "usedFor": {
+      "dharmaTieDye": "Le quantità di tintura, urea e carbonato di sodio, i tempi di fissaggio e i lavaggi nel pianificatore di tie-dye, e i suoi consigli di sicurezza su mascherine e guanti.",
+      "truchet": "Le piastrelle del generatore Truchet portano il suo nome, dal suo studio su come si combina un quadrato diviso.",
+      "girih": "Contesto sulle cinque piastrelle girih dietro l'opzione di ordine 10 del generatore di stelle. La disposizione stessa è stata trovata con una ricerca al computer e non viene da questo articolo.",
+      "prim": "L'algoritmo di Prim nel generatore di labirinti prende il nome da questo articolo.",
+      "kruskal": "L'algoritmo di Kruskal nel generatore di labirinti prende il nome da questo articolo.",
+      "wilson": "L'algoritmo di Wilson nel generatore di labirinti prende il nome da questo articolo.",
+      "mandelbrot": "Il libro che ha dato il nome ai frattali e li ha resi popolari, contesto per il generatore di frattali.",
+      "koch": "Il fiocco di neve di Koch nel generatore di frattali prende il nome da questo articolo.",
+      "sierpinski": "Il triangolo di Sierpiński nel generatore di frattali prende il nome da questo articolo.",
+      "hilbert": "La curva di Hilbert nel generatore di frattali prende il nome da questo articolo.",
+      "levy": "La curva C di Lévy nel generatore di frattali prende il nome da questo articolo.",
+      "gardnerLife": "La regola del Gioco della vita di Conway, che lo strumento esegue per disegnare ogni fase.",
+      "walkerMosaic": "Il nome e le regole a due ferri dei motivi a mosaico nella maglia a colori. Gli schemi stessi sono stati disegnati per questo sito."
+    }
+  },
+  "nl": {
+    "metaTitle": "Dankwoord en bronnen",
+    "metaDesc": "De externe bronnen waarop Endless Patterns steunt, met vermelding en links.",
+    "h1": "Dankwoord",
+    "lede": "Deze site staat op de schouders van het werk van anderen. Dit zijn de mensen om te bedanken, en wat we van elk hebben overgenomen.",
+    "sourcesH": "Bronnen",
+    "traditionsH": "Tradities",
+    "traditions": "Quilten, breien, haken, sashiko, tartan, Keltisch knoopwerk, glas-in-lood en tie-dye behoren toe aan generaties makers, de meesten naamloos. De ontwerpen hier zijn voor deze site gegenereerd of getekend en kopiëren niet het patroon van één maker.",
+    "usedFor": {
+      "dharmaTieDye": "De hoeveelheden verf, ureum en soda, de fixeertijden en wasstappen in de tie-dyeplanner, en het veiligheidsadvies over mondkapjes en handschoenen.",
+      "truchet": "De tegels in de Truchet-maker dragen zijn naam, vanwege zijn studie naar hoe een gedeeld vierkant combineert.",
+      "girih": "Achtergrond bij de vijf girih-tegels achter de tienvoudige optie van de stermaker. De indeling zelf is met een computerzoekopdracht gevonden en komt niet uit dit artikel.",
+      "prim": "Het algoritme van Prim in de doolhofmaker is naar dit artikel genoemd.",
+      "kruskal": "Het algoritme van Kruskal in de doolhofmaker is naar dit artikel genoemd.",
+      "wilson": "Het algoritme van Wilson in de doolhofmaker is naar dit artikel genoemd.",
+      "mandelbrot": "Het boek dat fractals hun naam en bekendheid gaf, achtergrond voor de fractalmaker.",
+      "koch": "De Koch-sneeuwvlok in de fractalmaker is naar dit artikel genoemd.",
+      "sierpinski": "De Sierpiński-driehoek in de fractalmaker is naar dit artikel genoemd.",
+      "hilbert": "De Hilbert-kromme in de fractalmaker is naar dit artikel genoemd.",
+      "levy": "De Lévy C-kromme in de fractalmaker is naar dit artikel genoemd.",
+      "gardnerLife": "De regel van Conways Game of Life, die de tool uitvoert om elke fase te tekenen.",
+      "walkerMosaic": "De naam en de regels per twee naalden van de mozaïekpatronen bij kleurenbreien. De schema's zelf zijn voor deze site getekend."
+    }
   }
 }

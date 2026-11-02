@@ -201,8 +201,8 @@ export async function generateMazePosterPdf(request: MazeRequest, paper: MazePap
   return new Uint8Array(await response.arrayBuffer());
 }
 
-export async function generateMazePdf(request: MazeRequest): Promise<Uint8Array> {
-  const response = await mazeApiPost("/maze/pdf", request, "application/pdf");
+export async function generateMazePdf(request: MazeRequest, { solution = true }: { solution?: boolean } = {}): Promise<Uint8Array> {
+  const response = await mazeApiPost(`/maze/pdf?solution=${solution}`, request, "application/pdf");
   return new Uint8Array(await response.arrayBuffer());
 }
 

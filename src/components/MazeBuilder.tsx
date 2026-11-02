@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { generateMaze, generateMazePdf, generateMazePng, generateMazePosterPdf, MAZE_PAPERS, mazeAcross, mazeTallRows, type MazePaperId, type Locale, type MazeColors, type MazeRequest, type MazeResult } from "@/lib/generator";
 import { downloadBytes, downloadSvg } from "@/lib/download";
 import { useTrackCustomize } from "@/lib/analytics";
@@ -16,6 +16,13 @@ import styles from "./BlockBuilder.module.css";
 
 const COLOR_KEYS: (keyof MazeColors)[] = ["background", "wall", "accent"];
 const VIEWS = ["maze", "solution"] as const;
+
+/** Draws the solution from start to exit. Capped at five seconds, so it needs no pause control. */
+function drawRoute(route: SVGPathElement, cells: number): Animation {
+  const length = route.getTotalLength();
+  const duration = Math.min(5000, Math.max(1500, cells * 30));
+  return route.animate({ strokeDasharray: [`${length} ${length}`, `${length} ${length}`], strokeDashoffset: [length, 0] }, { duration, easing: "ease-in-out" });
+}
 
 export function MazeBuilder({ locale, option, labels, initialState }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: MazeRequest }) {
   const t = copy[locale];
@@ -84,6 +91,27 @@ export function MazeBuilder({ locale, option, labels, initialState }: { locale: 
   };
 
   const svg = result?.svg[view] ?? "";
+  const solutionLength = result?.solutionLength ?? 0;
+
+  const artRef = useRef<HTMLDivElement>(null);
+  /** The route last drawn, so a change of color or wall weight doesn't draw it again. */
+  const drawnRoute = useRef<string | null>(null);
+
+  const solutionPath = () => artRef.current?.querySelector<SVGPathElement>("[data-solution]") ?? null;
+
+  useLayoutEffect(() => {
+    const route = solutionPath();
+    if (!route) {
+      if (view === "maze") drawnRoute.current = null;
+      return;
+    }
+    const d = route.getAttribute("d");
+    if (d === drawnRoute.current) return;
+    drawnRoute.current = d;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const animation = drawRoute(route, solutionLength);
+    return () => animation.cancel();
+  }, [view, svg, solutionLength]);
 
   return (
     <div className={styles.builder}>
@@ -96,9 +124,24 @@ export function MazeBuilder({ locale, option, labels, initialState }: { locale: 
                 {t.views[name]}
               </button>
             ))}
+            {view === "solution" && (
+              <button
+                type="button"
+                className={styles.tab}
+                disabled={!result}
+                onClick={() => {
+                  const route = solutionPath();
+                  if (!route) return;
+                  route.getAnimations().forEach((animation) => animation.cancel());
+                  drawRoute(route, solutionLength);
+                }}
+              >
+                {t.playSolution}
+              </button>
+            )}
           </div>
           {result ? (
-            <div className={`art ${styles.art}`} role="img" aria-label={view === "maze" ? t.mazeAlt : t.solutionAlt} dangerouslySetInnerHTML={{ __html: svg }} />
+            <div ref={artRef} className={`art ${styles.art}`} role="img" aria-label={view === "maze" ? t.mazeAlt : t.solutionAlt} dangerouslySetInnerHTML={{ __html: svg }} />
           ) : (
             <ToolLoading locale={locale} />
           )}
@@ -107,6 +150,9 @@ export function MazeBuilder({ locale, option, labels, initialState }: { locale: 
           <div className={`${styles.actions} no-print`}>
             <button type="button" disabled={busy || !result} className={styles.primary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateMazePdf(state), "maze.pdf", "application/pdf"))}>
               {t.downloadPdf}
+            </button>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateMazePdf(state, { solution: false }), "maze-activity.pdf", "application/pdf"))}>
+              {t.downloadActivity}
             </button>
             <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(b.saving, b.svgDone, () => downloadSvg(svg, `maze-${view}.svg`))}>
               SVG

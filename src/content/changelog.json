@@ -1,6 +1,27 @@
 [
   {
     "date": "2026-11-01",
+    "title": "Maze PDF without the solution",
+    "items": [
+      "The maze tool can now download its printable PDF without the solution page, ready to use as an activity sheet"
+    ]
+  },
+  {
+    "date": "2026-11-01",
+    "title": "Letter and Legal maze sheets",
+    "items": [
+      "Maze posters can now be made on US Letter and US Legal paper"
+    ]
+  },
+  {
+    "date": "2026-11-01",
+    "title": "Animated maze solution",
+    "items": [
+      "Choosing a maze's Solution tab now draws the route from start to exit, and a button plays it again"
+    ]
+  },
+  {
+    "date": "2026-11-01",
     "title": "Customization analytics",
     "items": [
       "Site analytics now count when a design's settings are changed, by tool and setting name, and the privacy pages say so"

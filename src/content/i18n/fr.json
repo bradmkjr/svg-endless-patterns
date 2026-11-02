@@ -543,6 +543,24 @@
     }
   },
   "changelog": {
+    "Maze PDF without the solution": {
+      "title": "PDF du labyrinthe sans solution",
+      "items": [
+        "L'outil de labyrinthes peut maintenant télécharger son PDF à imprimer sans la page de solution, prêt à servir de fiche d'activité"
+      ]
+    },
+    "Letter and Legal maze sheets": {
+      "title": "Labyrinthes en Letter et Legal",
+      "items": [
+        "Les affiches de labyrinthes peuvent maintenant être faites sur papier US Letter et US Legal"
+      ]
+    },
+    "Animated maze solution": {
+      "title": "Solution animée du labyrinthe",
+      "items": [
+        "L'onglet Solution d'un labyrinthe trace maintenant le chemin du départ à la sortie, et un bouton le rejoue"
+      ]
+    },
     "Customization analytics": {
       "title": "Statistiques de personnalisation",
       "items": [

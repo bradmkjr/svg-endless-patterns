@@ -543,6 +543,24 @@
     }
   },
   "changelog": {
+    "Maze PDF without the solution": {
+      "title": "PDF do labirinto sem solução",
+      "items": [
+        "A ferramenta de labirintos agora pode baixar o PDF para imprimir sem a página da solução, pronto para usar como folha de atividades"
+      ]
+    },
+    "Letter and Legal maze sheets": {
+      "title": "Labirintos em Letter e Legal",
+      "items": [
+        "Os pôsteres de labirintos agora podem ser feitos em papel US Letter e US Legal"
+      ]
+    },
+    "Animated maze solution": {
+      "title": "Solução animada do labirinto",
+      "items": [
+        "A aba Solução de um labirinto agora desenha o caminho da entrada à saída, e um botão o reproduz de novo"
+      ]
+    },
     "Customization analytics": {
       "title": "Análise de personalização",
       "items": [

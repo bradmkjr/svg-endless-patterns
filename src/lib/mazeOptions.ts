@@ -8,6 +8,8 @@ const inches = (width: number, height: number) => ({
 const millimeters = (width: number, height: number) => inches(width / 25.4, height / 25.4);
 
 export const MAZE_PAPERS: { id: MazePaperId; label: string; width: number; height: number }[] = [
+  { id: "letter", label: "US Letter (8.5 × 11 in)", ...inches(8.5, 11) },
+  { id: "legal", label: "US Legal (8.5 × 14 in)", ...inches(8.5, 14) },
   { id: "ansiC", label: "ANSI C (17 × 22 in)", ...inches(17, 22) },
   { id: "ansiD", label: "ANSI D (22 × 34 in)", ...inches(22, 34) },
   { id: "ansiE", label: "ANSI E (34 × 44 in)", ...inches(34, 44) },

@@ -1,6 +1,13 @@
 [
   {
     "date": "2026-11-01",
+    "title": "Faster repeat designs",
+    "items": [
+      "Designs now load with cacheable requests, so settings that have been drawn before can come back without being drawn again"
+    ]
+  },
+  {
+    "date": "2026-11-01",
     "title": "Hidden message mazes",
     "post": "hidden-message-mazes",
     "items": [

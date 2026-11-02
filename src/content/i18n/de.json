@@ -564,6 +564,12 @@
     }
   },
   "changelog": {
+    "Faster repeat designs": {
+      "title": "Schnellere wiederholte Muster",
+      "items": [
+        "Muster werden jetzt mit zwischenspeicherbaren Anfragen geladen, sodass bereits gezeichnete Einstellungen zurückkommen können, ohne neu gezeichnet zu werden"
+      ]
+    },
     "Hidden message mazes": {
       "title": "Labyrinthe mit versteckter Botschaft",
       "items": [

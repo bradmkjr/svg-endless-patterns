@@ -77,7 +77,7 @@
     "message": "Your message",
     "hiddenHowNote": "Enter at the top left and find your way out at the bottom right. The only route through spells the message.",
     "messageNote": "Up to {characters} characters: {words} words of up to {wordLength} letters. Letters, numbers, accents and . , ! ? ' - & + ♥ all work, in capitals.",
-    "messagePrivacy": "Your message is sent to our server to draw the maze and isn't saved. It stays out of the page address and share links, so a link won't give it away, or carry it. To share your maze, download it.",
+    "messagePrivacy": "To draw the maze, your message is sent to our server as part of the request's address, and it can appear in server logs. We don't put it on shared caches. It stays out of this page's address and share links, so a link won't give it away, or carry it. To share your maze, download it.",
     "messageSize": "The longer your message, the bigger the maze. A higher difficulty makes the letters wider and harder to spot.",
     "messageProblems": {
       "empty": "Type a message to hide.",
@@ -165,7 +165,7 @@
     "message": "Tu mensaje",
     "hiddenHowNote": "Entra por arriba a la izquierda y busca la salida abajo a la derecha. La única ruta posible escribe el mensaje.",
     "messageNote": "Hasta {characters} caracteres: {words} palabras de hasta {wordLength} letras. Sirven letras, números, acentos y . , ! ? ' - & + ♥, en mayúsculas.",
-    "messagePrivacy": "Tu mensaje se envía a nuestro servidor para dibujar el laberinto y no se guarda. No aparece en la dirección de la página ni en los enlaces, así que un enlace no lo revela ni lo lleva. Para compartir tu laberinto, descárgalo.",
+    "messagePrivacy": "Para dibujar el laberinto, tu mensaje se envía a nuestro servidor como parte de la dirección de la solicitud y puede aparecer en los registros del servidor. No lo guardamos en cachés compartidas. No aparece en la dirección de esta página ni en los enlaces, así que un enlace no lo revela ni lo lleva. Para compartir tu laberinto, descárgalo.",
     "messageSize": "Cuanto más largo el mensaje, mayor el laberinto. Una dificultad más alta hace las letras más anchas y más difíciles de ver.",
     "messageProblems": {
       "empty": "Escribe un mensaje para ocultar.",
@@ -253,7 +253,7 @@
     "message": "Votre message",
     "hiddenHowNote": "Entrez en haut à gauche et trouvez la sortie en bas à droite. Le seul chemin possible écrit le message.",
     "messageNote": "Jusqu'à {characters} caractères : {words} mots de {wordLength} lettres au plus. Lettres, chiffres, accents et . , ! ? ' - & + ♥ sont acceptés, en majuscules.",
-    "messagePrivacy": "Votre message est envoyé à notre serveur pour dessiner le labyrinthe et n'est pas conservé. Il n'apparaît ni dans l'adresse de la page ni dans les liens : un lien ne le révèle pas et ne le transmet pas. Pour partager votre labyrinthe, téléchargez-le.",
+    "messagePrivacy": "Pour dessiner le labyrinthe, votre message est envoyé à notre serveur dans l'adresse de la requête et peut figurer dans les journaux du serveur. Nous ne le plaçons pas dans des caches partagés. Il n'apparaît ni dans l'adresse de cette page ni dans les liens : un lien ne le révèle pas et ne le transmet pas. Pour partager votre labyrinthe, téléchargez-le.",
     "messageSize": "Plus le message est long, plus le labyrinthe est grand. Une difficulté plus élevée rend les lettres plus larges et plus difficiles à repérer.",
     "messageProblems": {
       "empty": "Saisissez un message à cacher.",
@@ -341,7 +341,7 @@
     "message": "Deine Botschaft",
     "hiddenHowNote": "Geh oben links hinein und finde unten rechts hinaus. Der einzige Weg hindurch schreibt die Botschaft.",
     "messageNote": "Bis zu {characters} Zeichen: {words} Wörter mit höchstens {wordLength} Buchstaben. Buchstaben, Zahlen, Akzente und . , ! ? ' - & + ♥ gehen, in Großbuchstaben.",
-    "messagePrivacy": "Deine Botschaft wird zum Zeichnen des Labyrinths an unseren Server geschickt und nicht gespeichert. Sie steht weder in der Seitenadresse noch in Links, ein Link verrät sie also nicht und enthält sie auch nicht. Um dein Labyrinth zu teilen, lade es herunter.",
+    "messagePrivacy": "Zum Zeichnen des Labyrinths wird deine Botschaft als Teil der Anfrageadresse an unseren Server geschickt und kann in Serverprotokollen erscheinen. In gemeinsamen Caches legen wir sie nicht ab. Sie steht weder in der Adresse dieser Seite noch in Links, ein Link verrät sie also nicht und enthält sie auch nicht. Um dein Labyrinth zu teilen, lade es herunter.",
     "messageSize": "Je länger die Botschaft, desto größer das Labyrinth. Eine höhere Schwierigkeit macht die Buchstaben breiter und schwerer zu erkennen.",
     "messageProblems": {
       "empty": "Gib eine Botschaft zum Verstecken ein.",
@@ -429,7 +429,7 @@
     "message": "Sua mensagem",
     "hiddenHowNote": "Entre no canto superior esquerdo e encontre a saída no canto inferior direito. O único caminho possível escreve a mensagem.",
     "messageNote": "Até {characters} caracteres: {words} palavras de até {wordLength} letras. Letras, números, acentos e . , ! ? ' - & + ♥ funcionam, em maiúsculas.",
-    "messagePrivacy": "Sua mensagem é enviada ao nosso servidor para desenhar o labirinto e não é salva. Ela não aparece no endereço da página nem nos links, então um link não a revela nem a leva. Para compartilhar seu labirinto, baixe-o.",
+    "messagePrivacy": "Para desenhar o labirinto, sua mensagem é enviada ao nosso servidor como parte do endereço da solicitação e pode aparecer nos registros do servidor. Não a colocamos em caches compartilhados. Ela não aparece no endereço desta página nem nos links, então um link não a revela nem a leva. Para compartilhar seu labirinto, baixe-o.",
     "messageSize": "Quanto mais longa a mensagem, maior o labirinto. Uma dificuldade maior deixa as letras mais largas e mais difíceis de notar.",
     "messageProblems": {
       "empty": "Digite uma mensagem para ocultar.",

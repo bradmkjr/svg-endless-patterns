@@ -20,8 +20,10 @@ All generation lives in the separate `api-endless-patterns` repository, behind o
 - `src/lib/state.ts`, `<tool>State.ts` — site concerns: options, palettes, defaults, share links.
 - `src/lib/download.ts` — browser-only saving and SVG-to-PNG.
 
-Requests use a versioned path (`/api/v1.0.1/maze`, version in `lib/mazeApi.ts`). The static site
-needs `NEXT_PUBLIC_API_BASE_URL` at build time.
+Requests are GETs on a versioned path (`/api/v1.0.2/maze?q=…`, version in `lib/mazeApi.ts`), with the
+settings as sorted JSON in base64url, so identical settings are one cacheable URL. The API keeps up to
+three versions running; change a route's output only in a new one. The static site needs
+`NEXT_PUBLIC_API_BASE_URL` at build time.
 
 ## Adding a block or stitch
 Add it in the API repository: `src/engine/patterns/blocks.ts` or `stitchCatalog.ts`, with its text in

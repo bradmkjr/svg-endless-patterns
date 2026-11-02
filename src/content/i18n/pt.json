@@ -564,6 +564,12 @@
     }
   },
   "changelog": {
+    "Faster repeat designs": {
+      "title": "Designs repetidos mais rápidos",
+      "items": [
+        "Os designs agora carregam com solicitações que podem ficar em cache, então configurações já desenhadas podem voltar sem serem desenhadas de novo"
+      ]
+    },
     "Hidden message mazes": {
       "title": "Labirintos com mensagem oculta",
       "items": [

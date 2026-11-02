@@ -14,7 +14,7 @@ import type { SashikoRequest, SashikoResult } from "./sashikoTypes";
 import type { TieDyeRequest, TieDyeResult } from "./tieDyeTypes";
 import type { TartanRequest, TartanResult } from "./tartanTypes";
 import type { TruchetRequest, TruchetResult } from "./truchetTypes";
-import { mazeApiPost } from "./mazeApi";
+import { mazeApiGet } from "./mazeApi";
 import type { CheckerboardRequest, CheckerboardResult } from "./checkerboardTypes";
 import type { CrochetColorworkRequest, CrochetColorworkResult } from "./crochetColorworkTypes";
 import type { FractalRequest, FractalResult } from "./fractalTypes";
@@ -144,42 +144,42 @@ export async function generateGirihPdf(request: GirihRequest): Promise<Uint8Arra
 }
 
 export async function generateKnitColorwork(request: KnitColorworkRequest): Promise<KnitColorworkResult> {
-  const response = await mazeApiPost("/knit-colorwork", request);
+  const response = await mazeApiGet("/knit-colorwork", request);
   return response.json() as Promise<KnitColorworkResult>;
 }
 
 export async function generateKnitColorworkPdf(request: KnitColorworkRequest): Promise<Uint8Array> {
-  const response = await mazeApiPost("/knit-colorwork/pdf", request, "application/pdf");
+  const response = await mazeApiGet("/knit-colorwork/pdf", request, "application/pdf");
   return new Uint8Array(await response.arrayBuffer());
 }
 
 export async function generateCrochetColorwork(request: CrochetColorworkRequest): Promise<CrochetColorworkResult> {
-  const response = await mazeApiPost("/crochet-colorwork", request);
+  const response = await mazeApiGet("/crochet-colorwork", request);
   return response.json() as Promise<CrochetColorworkResult>;
 }
 
 export async function generateCrochetColorworkPdf(request: CrochetColorworkRequest): Promise<Uint8Array> {
-  const response = await mazeApiPost("/crochet-colorwork/pdf", request, "application/pdf");
+  const response = await mazeApiGet("/crochet-colorwork/pdf", request, "application/pdf");
   return new Uint8Array(await response.arrayBuffer());
 }
 
 export async function generateCheckerboard(request: CheckerboardRequest): Promise<CheckerboardResult> {
-  const response = await mazeApiPost("/checkerboard", request);
+  const response = await mazeApiGet("/checkerboard", request);
   return response.json() as Promise<CheckerboardResult>;
 }
 
 export async function generateCheckerboardPdf(request: CheckerboardRequest): Promise<Uint8Array> {
-  const response = await mazeApiPost("/checkerboard/pdf", request, "application/pdf");
+  const response = await mazeApiGet("/checkerboard/pdf", request, "application/pdf");
   return new Uint8Array(await response.arrayBuffer());
 }
 
 export async function generateFractal(request: FractalRequest): Promise<FractalResult> {
-  const response = await mazeApiPost("/fractal", request);
+  const response = await mazeApiGet("/fractal", request);
   return response.json() as Promise<FractalResult>;
 }
 
 export async function generateFractalPdf(request: FractalRequest): Promise<Uint8Array> {
-  const response = await mazeApiPost("/fractal/pdf", request, "application/pdf");
+  const response = await mazeApiGet("/fractal/pdf", request, "application/pdf");
   return new Uint8Array(await response.arrayBuffer());
 }
 
@@ -192,23 +192,23 @@ export async function generateTieDyePdf(request: TieDyeRequest): Promise<Uint8Ar
 }
 
 export async function generateMaze(request: MazeRequest): Promise<MazeResult> {
-  const response = await mazeApiPost("/maze", request);
+  const response = await mazeApiGet("/maze", request);
   return response.json() as Promise<MazeResult>;
 }
 
 export async function generateMazePosterPdf(request: MazeRequest, paper: MazePaperId): Promise<Uint8Array> {
-  const response = await mazeApiPost(`/maze/poster-pdf?paper=${encodeURIComponent(paper)}`, request, "application/pdf");
+  const response = await mazeApiGet(`/maze/poster-pdf?paper=${encodeURIComponent(paper)}`, request, "application/pdf");
   return new Uint8Array(await response.arrayBuffer());
 }
 
 export async function generateMazePdf(request: MazeRequest, { solution = true }: { solution?: boolean } = {}): Promise<Uint8Array> {
-  const response = await mazeApiPost(`/maze/pdf?solution=${solution}`, request, "application/pdf");
+  const response = await mazeApiGet(`/maze/pdf?solution=${solution}`, request, "application/pdf");
   return new Uint8Array(await response.arrayBuffer());
 }
 
 export async function generateMazePng(request: MazeRequest, view: "maze" | "solution", size: number): Promise<Uint8Array> {
   const query = new URLSearchParams({ view, size: String(size) });
-  const response = await mazeApiPost(`/maze/png?${query}`, request, "image/png");
+  const response = await mazeApiGet(`/maze/png?${query}`, request, "image/png");
   return new Uint8Array(await response.arrayBuffer());
 }
 

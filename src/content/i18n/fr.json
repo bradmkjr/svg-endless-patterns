@@ -564,6 +564,12 @@
     }
   },
   "changelog": {
+    "Faster repeat designs": {
+      "title": "Motifs répétés plus rapides",
+      "items": [
+        "Les motifs se chargent désormais avec des requêtes pouvant être mises en cache : des réglages déjà dessinés peuvent revenir sans être redessinés"
+      ]
+    },
     "Hidden message mazes": {
       "title": "Labyrinthes à message caché",
       "items": [

@@ -21,7 +21,7 @@ describe("share links", () => {
   });
 
   it("varies default colors by language", () => {
-    expect(new Set(LOCALES.map((l) => defaultStainedGlassState(l).colors.join())).size).toBe(5);
+    expect(new Set(LOCALES.map((l) => defaultStainedGlassState(l).colors.join())).size).toBe(7);
   });
 
 });

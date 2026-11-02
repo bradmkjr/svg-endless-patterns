@@ -16,7 +16,7 @@
   },
   "footer": {
     "note": "Alles wat je hier maakt, mag je gratis downloaden en gebruiken. Controleer de maten voordat je knipt: de cijfers worden geleverd zoals ze zijn, zonder garantie.",
-    "draft": "",
+    "draft": "Deze vertaling is een eerste versie. Maten zijn in inches en yards.",
     "blog": "Blog",
     "changelog": "Wijzigingen",
     "acknowledgements": "Dankwoord",
@@ -38,7 +38,7 @@
     "knitTitle": "Breien",
     "knitText": "Op te zetten steken en geschreven naalden die passen bij je stekenverhouding, met een telpatroon voor elke steek.",
     "crochetTitle": "Haken",
-    "crochetText": "Beginlossen, instructies per toer in Amerikaanse termen en symboolschema's.",
+    "crochetText": "Beginlossen, instructies per toer en symboolschema's.",
     "quiltHeading": "Quiltblokken",
     "knitHeading": "Breisteken",
     "crochetHeading": "Haaksteken",
@@ -130,14 +130,14 @@
     "sage": "Salie en roest",
     "jewel": "Edelsteentinten",
     "neutral": "Moderne neutrale tinten",
-    "flag": ""
+    "flag": "Rood en blauw"
   },
   "stitchBuilder": {
     "swatch": "Proeflapje",
     "chart": "Schema",
     "swatchNote": "Een illustratie van de structuur, met 4\" stof bij jouw stekenverhouding. Het is geen foto van echt garen.",
     "chartKnit": "Elk vakje is één steek, gezien van de goede kant. Leeg = recht, streepje = averecht. Begin bij naald 1, onderaan.",
-    "chartCrochet": "De symbolen tonen de eerste toeren op kleine breedte, in Amerikaanse termen. Begin bij toer 1, onderaan. X = sc, T = hdc, doorgestreepte T = dc, ovaal = ch.",
+    "chartCrochet": "De symbolen tonen de eerste toeren op kleine breedte. Begin bij toer 1, onderaan. X = v, T = hst, doorgestreepte T = st, ovaal = l.",
     "swatchAlt": "Illustratie van 4 inch {name}",
     "projectSize": "Projectmaat",
     "width": "Breedte",
@@ -190,7 +190,7 @@
     "knitOutput": "Op te zetten steken, geschreven naalden, schema en schatting van het garen.",
     "crochetTitle": "Haaksteken",
     "crochetText": "Kies een steek en stel je projectmaat en stekenverhouding in.",
-    "crochetOutput": "Beginlossen, instructies in Amerikaanse termen, symboolschema en schatting van het garen.",
+    "crochetOutput": "Beginlossen, geschreven instructies, symboolschema en schatting van het garen.",
     "usefulOutput": "Wat je krijgt:",
     "exploreQuilt": "Ontdek de quiltblokken",
     "exploreKnit": "Ontdek de breisteken",
@@ -330,8 +330,8 @@
     "dataPolicy": "Privacybeleid",
     "designsH": "De ontwerpen",
     "designs": "Blokken worden uit geometrie getekend en dragen traditionele namen. Indelingen met dezelfde naam kunnen per quilter en bron verschillen, dus die van jou kan afwijken van een die je kent.",
-    "languageH": "",
-    "language": ""
+    "languageH": "Over deze vertaling",
+    "language": "Dit is een eerste versie die nog niet door makers is nagekeken. Namen van blokken en steken blijven Engels, maten zijn in inches en yards, en naalden en haaknaalden gebruiken de Amerikaanse nummering. Haken gebruikt Nederlandse afkortingen met de Amerikaanse term tussen haakjes."
   },
   "blog": {
     "metaTitle": "Blog",

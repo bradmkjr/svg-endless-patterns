@@ -1,6 +1,15 @@
 [
   {
     "date": "2026-11-01",
+    "title": "Italian and Dutch",
+    "post": "now-in-seven-languages",
+    "items": [
+      "Added Italian and Dutch, including generated instructions and PDFs",
+      "Added language links and a color accent for each"
+    ]
+  },
+  {
+    "date": "2026-11-01",
     "title": "Mandala styles and more patterns",
     "post": "mandala-styles-and-more-patterns",
     "items": [

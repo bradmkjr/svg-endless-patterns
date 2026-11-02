@@ -611,6 +611,20 @@
           "[Girih](/girih/) : un motif d'étoiles d'ordre 3, fait de triangles"
         ]
       ]
+    },
+    "now-in-seven-languages": {
+      "title": "Endless Patterns parle maintenant italien et néerlandais",
+      "summary": "Tout le site, avec chaque instruction générée et chaque PDF, est désormais aussi en italien et en néerlandais.",
+      "blocks": [
+        "Chaque page, liste de coupe, instruction et PDF est désormais disponible en [Italiano](/it/) et [Nederlands](/nl/), aux côtés de l'anglais, de l'espagnol, du français, de l'allemand et du portugais du Brésil. Utilisez les liens de langue en haut de chaque page pour changer.",
+        "Des exemples pour commencer",
+        [
+          "Un mandala fluide, ouvert en italien",
+          "Une feuille de bataille navale, légendée en néerlandais"
+        ],
+        "Une première version",
+        "Ces traductions sont une première version et n'ont pas encore été relues par des artisans. Les noms de blocs et de points restent en anglais, les mesures en pouces et en yards, et les aiguilles et crochets utilisent la numérotation américaine. Le crochet utilise des abréviations locales, avec le terme américain entre parenthèses."
+      ]
     }
   },
   "changelog": {
@@ -897,6 +911,13 @@
       "items": [
         "Nouveaux styles de dessin pour les mandalas : pointu, doux, ondulé, géométrique, fluide, esquissé à la main et pixel art",
         "Nouvelles options pour les carreaux de Truchet, damiers, vitraux, tie-dye, tartans et girih"
+      ]
+    },
+    "Italian and Dutch": {
+      "title": "Italien et néerlandais",
+      "items": [
+        "Ajout de l'italien et du néerlandais, avec instructions générées et PDF",
+        "Ajout de liens de langue et d'une couleur d'accent pour chacun"
       ]
     }
   }

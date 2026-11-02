@@ -29,7 +29,7 @@ describe("share links", () => {
   });
 
   it("varies default colors by language", () => {
-    expect(new Set(LOCALES.map((l) => JSON.stringify(defaultTruchetState(l).colors))).size).toBe(5);
+    expect(new Set(LOCALES.map((l) => JSON.stringify(defaultTruchetState(l).colors))).size).toBe(7);
   });
 });
 

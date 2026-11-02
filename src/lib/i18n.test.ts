@@ -104,7 +104,7 @@ describe("paths", () => {
   it("gives search engines every language of a page", () => {
     const { canonical, languages } = pageAlternates("de", "/about/");
     expect(canonical).toContain("/de/about/");
-    expect(Object.keys(languages).sort()).toEqual(["de", "en", "es", "fr", "pt-BR", "x-default"]);
+    expect(Object.keys(languages).sort()).toEqual(["de", "en", "es", "fr", "it", "nl", "pt-BR", "x-default"]);
     expect(languages["x-default"]).not.toContain("/de/");
   });
 

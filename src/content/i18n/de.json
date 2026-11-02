@@ -611,6 +611,20 @@
           "[Girih](/girih/): ein dreizähliges Sternmuster aus Dreiecken"
         ]
       ]
+    },
+    "now-in-seven-languages": {
+      "title": "Endless Patterns spricht jetzt Italienisch und Niederländisch",
+      "summary": "Die ganze Website, mit jeder erzeugten Anleitung und jedem PDF, gibt es jetzt auch auf Italienisch und Niederländisch.",
+      "blocks": [
+        "Jede Seite, Zuschnittliste, Anleitung und jedes PDF gibt es jetzt auf [Italiano](/it/) und [Nederlands](/nl/), neben Englisch, Spanisch, Französisch, Deutsch und brasilianischem Portugiesisch. Wechsle über die Sprachlinks oben auf jeder Seite.",
+        "Beispiele für den Anfang",
+        [
+          "Ein fließendes Mandala, auf Italienisch geöffnet",
+          "Ein Blatt Schiffe versenken, auf Niederländisch beschriftet"
+        ],
+        "Ein erster Entwurf",
+        "Diese Übersetzungen sind ein erster Entwurf und wurden noch nicht von Handarbeitenden geprüft. Block- und Maschennamen bleiben Englisch, Maße bleiben in Zoll und Yards, und Nadeln und Häkelnadeln nutzen die US-Nummerierung. Häkeln nutzt lokale Abkürzungen, mit dem US-Begriff in Klammern."
+      ]
     }
   },
   "changelog": {
@@ -897,6 +911,13 @@
       "items": [
         "Neue Zeichenstile für Mandalas: spitz, weich, wellig, geometrisch, fließend, handskizziert und Pixel-Art",
         "Neue Optionen für Truchet-Kacheln, Schachbretter, Buntglas, Tie-Dye, Tartans und Girih"
+      ]
+    },
+    "Italian and Dutch": {
+      "title": "Italienisch und Niederländisch",
+      "items": [
+        "Italienisch und Niederländisch ergänzt, einschließlich erzeugter Anleitungen und PDFs",
+        "Sprachlinks und je eine Akzentfarbe ergänzt"
       ]
     }
   }

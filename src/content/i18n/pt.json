@@ -611,6 +611,20 @@
           "[Girih](/girih/): um padrão de estrelas de ordem 3, feito de triângulos"
         ]
       ]
+    },
+    "now-in-seven-languages": {
+      "title": "Endless Patterns agora fala italiano e holandês",
+      "summary": "Todo o site, com cada instrução gerada e cada PDF, agora também está em italiano e holandês.",
+      "blocks": [
+        "Cada página, lista de corte, instrução e PDF agora está disponível em [Italiano](/it/) e [Nederlands](/nl/), ao lado de inglês, espanhol, francês, alemão e português do Brasil. Use os links de idioma no topo de qualquer página para trocar.",
+        "Exemplos para começar",
+        [
+          "Uma mandala fluida, aberta em italiano",
+          "Uma folha de batalha naval, com legendas em holandês"
+        ],
+        "Um primeiro rascunho",
+        "Estas traduções são um primeiro rascunho e ainda não foram revisadas por artesãos. Os nomes de blocos e pontos seguem em inglês, as medidas em polegadas e jardas, e agulhas e ganchos usam a numeração dos EUA. O crochê usa abreviações locais, com o termo dos EUA entre parênteses."
+      ]
     }
   },
   "changelog": {
@@ -897,6 +911,13 @@
       "items": [
         "Novos estilos de desenho para mandalas: pontiagudo, suave, ondulado, geométrico, fluido, à mão livre e pixel art",
         "Novas opções para azulejos de Truchet, tabuleiros, vitrais, tie-dye, tartãs e girih"
+      ]
+    },
+    "Italian and Dutch": {
+      "title": "Italiano e holandês",
+      "items": [
+        "Adicionados italiano e holandês, com instruções geradas e PDFs",
+        "Adicionados links de idioma e uma cor de destaque para cada um"
       ]
     }
   }

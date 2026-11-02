@@ -16,7 +16,7 @@
   },
   "footer": {
     "note": "Tutto ciò che crei qui è gratis da scaricare e usare. Controlla le misure prima di tagliare: i valori sono forniti così come sono, senza alcuna garanzia.",
-    "draft": "",
+    "draft": "Questa traduzione è una prima bozza. Le misure sono in pollici e iarde.",
     "blog": "Blog",
     "changelog": "Novità",
     "acknowledgements": "Ringraziamenti",
@@ -38,7 +38,7 @@
     "knitTitle": "Maglia",
     "knitText": "Maglie da avviare e ferri scritti secondo il tuo campione, con uno schema per ogni punto.",
     "crochetTitle": "Uncinetto",
-    "crochetText": "Catenelle di partenza, istruzioni riga per riga con i termini americani e schemi a simboli.",
+    "crochetText": "Catenelle di partenza, istruzioni riga per riga e schemi a simboli.",
     "quiltHeading": "Blocchi di patchwork",
     "knitHeading": "Punti a maglia",
     "crochetHeading": "Punti all'uncinetto",
@@ -130,14 +130,14 @@
     "sage": "Salvia e ruggine",
     "jewel": "Toni gemma",
     "neutral": "Neutri moderni",
-    "flag": ""
+    "flag": "Verde e rosso"
   },
   "stitchBuilder": {
     "swatch": "Campione",
     "chart": "Schema",
     "swatchNote": "Un'illustrazione della trama, che mostra 4\" di tessuto al tuo campione. Non è una foto di filato vero.",
     "chartKnit": "Ogni quadretto è una maglia, vista dal diritto. Vuoto = diritto, trattino = rovescio. Inizia dal ferro 1, in basso.",
-    "chartCrochet": "I simboli mostrano le prime righe a piccola larghezza, con i termini americani. Inizia dalla riga 1, in basso. X = sc, T = hdc, T barrata = dc, ovale = ch.",
+    "chartCrochet": "I simboli mostrano le prime righe a piccola larghezza. Inizia dalla riga 1, in basso. X = mb, T = mma, T barrata = ma, ovale = cat.",
     "swatchAlt": "Illustrazione di 4 pollici di {name}",
     "projectSize": "Misura del progetto",
     "width": "Larghezza",
@@ -190,7 +190,7 @@
     "knitOutput": "Maglie da avviare, ferri scritti, schema e stima del filato.",
     "crochetTitle": "Punti all'uncinetto",
     "crochetText": "Scegli un punto e imposta la misura del progetto e il campione.",
-    "crochetOutput": "Catenella di partenza, istruzioni con termini americani, schema a simboli e stima del filato.",
+    "crochetOutput": "Catenella di partenza, istruzioni scritte, schema a simboli e stima del filato.",
     "usefulOutput": "Cosa ottieni:",
     "exploreQuilt": "Esplora i blocchi di patchwork",
     "exploreKnit": "Esplora i punti a maglia",
@@ -330,8 +330,8 @@
     "dataPolicy": "Informativa sulla privacy",
     "designsH": "I disegni",
     "designs": "I blocchi sono disegnati dalla geometria usando i nomi tradizionali. Le disposizioni con lo stesso nome possono variare tra quilter e fonti, quindi la tua può differire da quella che conosci.",
-    "languageH": "",
-    "language": ""
+    "languageH": "Su questa traduzione",
+    "language": "È una prima bozza e non è ancora stata rivista da chi pratica queste arti. I nomi di blocchi e punti restano in inglese, le misure sono in pollici e iarde, e ferri e uncinetti usano la numerazione americana. L'uncinetto usa abbreviazioni italiane con il termine americano tra parentesi."
   },
   "blog": {
     "metaTitle": "Blog",

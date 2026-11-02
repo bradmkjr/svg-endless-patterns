@@ -1,1 +1,924 @@
-{"posts":{"mandala-styles-and-more-patterns":{"title":"Stili di disegno per i mandala, e più di tutto","summary":"Disegna qualsiasi mandala appuntito, morbido, ondulato, geometrico, fluido, schizzato a mano o in pixel art, con nuove scelte in altri sei generatori.","blocks":["Il [generatore di mandala](/mandalas/) ora ha uno stile di disegno: gli stessi anelli e colori, disegnati in otto modi diversi. Scegline uno e tutti gli anelli lo seguono, anche nella pagina da colorare e nel PDF.","Esempi da cui partire",["Un mandala appuntito","Un mandala ondulato","Un mandala fluido","Un mandala geometrico","Una pagina da colorare schizzata a mano","Un mandala in pixel art"],"Cos'altro c'è di nuovo",["[Piastrelle di Truchet](/truchet/): archi tripli, smussi doppi e gradini squadrati","[Scacchiere](/checkerboards/): quadri doppi, scala e pied-de-poule","[Vetrate](/stained-glass/): mattoni, intreccio a cesto e finestra prairie","[Tie-dye](/tie-dye/): righe diagonali, stropicciato e cuore, ciascuno con passaggi di piegatura e mappa delle tinte","[Tartan](/tartans/): erica, muschio e zafferano","[Girih](/girih/): un motivo di stelle di ordine 3, fatto di triangoli"]]},"paper-puzzles":{"title":"Giochi su carta da stampare o da giocare sul tablet","summary":"Sudoku, futoshiki, nonogrammi, battaglia navale e altri giochi con la matita, su fogli fatti per la carta o per un'app di disegno.","blocks":["La nuova sezione [giochi su carta](/paper-puzzles/) raccoglie fogli da stampare, o da aprire in un'app di disegno sul tablet e completare con una penna. Ci sono tre tipi di rompicapo e quattro giochi con la matita, tra cui il [super tris](/paper-puzzles/ultimate-tic-tac-toe/), accanto ai nostri [labirinti](/mazes/).","Esempi da cui partire",["Un sudoku difficile 9 × 9","Un futoshiki 6 × 6","Un nonogramma 15 × 15, risolto","Un foglio di battaglia navale per un giocatore","Punti e quadretti, 12 quadretti di larghezza","Un tabellone di hex 11 × 11"],"Cosa ottieni",["Sudoku 4 × 4, 6 × 6 e 9 × 9, e futoshiki da 4 × 4 a 7 × 7, ciascuno in tre difficoltà","Nonogrammi 5 × 5, 10 × 10 e 15 × 15","Ogni rompicapo controllato da un risolutore per avere una sola soluzione, e uno nuovo quando vuoi","Fogli di battaglia navale, punti e quadretti, super tris e hex per giocare con qualcun altro","PDF per US Letter, A4 o una pagina tablet 4:3, con o senza soluzione, più SVG e PNG","Punti e quadretti fino a 200 quadretti di larghezza, in ogni formato poster da US Letter a 4A0"]]},"hidden-message-mazes":{"title":"Labirinti con un messaggio nascosto","summary":"Scrivi un messaggio, e l'unica via attraverso il labirinto lo compone. Stampalo, consegnalo e aspetta la risposta.","blocks":["Scrivi un breve messaggio e lo [strumento labirinti](/mazes/hidden-message/) costruisce un labirinto il cui unico percorso lo compone, dall'angolo in alto a sinistra a quello in basso a destra. Non si vede nulla finché non viene risolto: un bel modo per fare una grande domanda.","Esempi da cui partire",["Il messaggio, risolto","Un augurio di compleanno, risolto","Lo stesso tipo di labirinto prima che qualcuno lo risolva"],"Cosa ottieni",["Fino a 40 caratteri, in massimo 6 parole di massimo 12 lettere, con accenti, numeri e un cuore","Una griglia su misura per il messaggio, con lettere che si allargano a ogni difficoltà","Tutti e cinque gli algoritmi, con un solo percorso in ogni labirinto","Una soluzione animata, PDF stampabile con o senza pagina della soluzione, poster, SVG e PNG","Il messaggio resta fuori dall'indirizzo della pagina e dai link condivisi"]]},"life-patterns":{"title":"Motivi del Gioco della vita da stampare","summary":"Otto nature morte e oscillatori del Gioco della vita di Conway, come disegni continui, con la regola spiegata su ogni cella.","blocks":["Il nuovo [strumento Gioco della vita](/life-patterns/) trasforma otto motivi classici in disegni ripetuti. Ogni fase nasce dall'esecuzione della regola stessa, e le copie sono abbastanza distanti perché un intero foglio continui a comportarsi come vuole Life.","Esempi da cui partire",["Un foglio di pulsar","Alveari ravvicinati, con la griglia","Le due fasi di un faro, poi di nuovo all'inizio","Cosa fa a un lampeggiante contare solo 4 vicini"],"Cosa ottieni",["Blocco, alveare, pagnotta e vasca, le nature morte","Lampeggiante, rospo, faro e pulsar, gli oscillatori, con ogni fase in una striscia","Un foglio e una piastrella, con misura delle celle, colonne, righe, spaziatura, colori e griglia opzionale","La regola applicata a qualsiasi cella tu scelga, con vicinato di Moore (8) o Von Neumann (4)","SVG, PNG e un PDF stampabile"]]},"checkerboard-maker":{"title":"Scacchiere in qualsiasi proporzione","summary":"Parti da una scacchiera normale, poi imposta righe, colonne, colori e forma delle caselle, ad esempio 3:1 o 2:3.","blocks":["Il nuovo [generatore di scacchiere](/checkerboards/) si apre su una scacchiera normale 8 per 8. Da lì puoi allungare le caselle e spostare le righe.","Esempi da cui partire",["Una scacchiera normale","Caselle larghe tre volte l'altezza","Un motivo a mattoni 2:3 in tre colori","Vichy rosso"],"Cosa ottieni",["Motivi normale, a mattoni, a mezzo salto e vichy","Fino a 100 colonne e righe, e qualsiasi proporzione fino a 8:8","Da due a quattro colori, con ogni tavolozza del sito","Un motivo continuo, misure finite, conteggio dei pezzi, SVG, PNG e un PDF stampabile"]]},"crochet-colorwork-squares":{"title":"Quadrati all'uncinetto a colori, scritti per esteso","summary":"Schemi tapestry, grafici da angolo ad angolo e granny square nei tuoi colori, con ogni riga, diagonale e giro scritti con i termini americani.","blocks":["L'[uncinetto a colori](/crochet/colorwork/) è un nuovo strumento della [libreria di motivi](/patterns/), con nove disegni originali in tre tecniche. Scegline uno, imposta i colori e ottieni un quadrato completo dalla catenella di partenza alla messa in forma.","Esempi da cui partire",["Una croce a gradini in tapestry","Lo schema di un cuore da angolo ad angolo","Una granny square in sei giri","Una granny square a quattro colori in filato DK"],"Cosa ottieni",["Tapestry: uno schema con numeri di riga e legenda, il verso di lettura di ogni riga, come portare il filato non usato e i cambi di colore sull'ultimo gettato","Da angolo ad angolo: diagonali in aumento e poi in diminuzione, numero e colori dei blocchi per ogni diagonale e quanti rocchetti preparare","Granny square: conteggio delle maglie per ogni giro, angoli e attacco di un nuovo colore","Ogni quadrato: un bordo, chiusura, fili da nascondere, messa in forma, note sul campione, filato per colore che somma al totale e un PDF stampabile"],"I tuoi colori e i link condivisi","Il colore A è quello principale e del bordo, gli altri sono contrasti. Usa qualsiasi tavolozza, e un link condiviso mantiene colori, spessore del filato e misura. Il metraggio è una stima approssimativa, quindi controllalo con il tuo campione."]},"knit-colorwork-patterns":{"title":"Maglia a colori su schema, scritta come quadrati completi","summary":"Tredici schemi originali jacquard, mosaico e intarsio, adattati al tuo campione, con ogni ferro scritto colore per colore.","blocks":["La [maglia a colori](/knitting/colorwork/) è un nuovo strumento della [libreria di motivi](/patterns/). Ogni schema è stato disegnato per questo sito ed è scritto come quadrato completo, dall'avvio alla messa in forma, alla tua misura e al tuo campione.","Esempi da cui partire",["Piccoli pini, jacquard a due filati","Chevron a nastro, schema jacquard a tre filati","Rombi a mosaico, con un filato per ferro","Blocco a rombo, un motivo a intarsio"],"Cosa ottieni",["Uno schema con legenda dei colori e numeri di ferro sul lato da cui parte ogni ferro","Ferri scritti, colore per colore, in ordine di lavoro","Ripetizioni adattate al tuo numero di maglie, con bordi simmetrici e un bordo a legaccio","Un controllo che segnala ogni ferro che porta un filo per più di circa un pollice al tuo campione","Filato stimato per colore, che somma al totale","Un PDF stampabile, più SVG e PNG del quadrato e dello schema"],"Fai il campione nel motivo","La maglia a colori raramente ha lo stesso campione di quella a tinta unita, quindi ogni schema chiede un campione proprio. Inserisci ciò che misuri e quadrato, ferri, fili passati e filato cambiano di conseguenza. Se vuoi un solo colore, i [punti a maglia](/knitting/) sono sempre lì."]},"fractal-maker":{"title":"Disegna frattali da una regola semplice","summary":"Nove frattali classici alla profondità che scegli, nei tuoi colori o a linee nere, con download SVG, PNG e PDF.","blocks":["Il nuovo [generatore di frattali](/fractals/) ripete una regola semplice tutte le volte che chiedi, e ogni tipo di frattale ha la [sua pagina](/fractals/hilbert-curve/).","Esempi da cui partire",["Una curva del drago a profondità 11","Un albero di Pitagora inclinato di 40 gradi","Un fiocco di neve di Koch a linee nere"],"Cosa ottieni",["Fiocco di neve di Koch, triangolo e tappeto di Sierpiński, curve del drago, di Hilbert, C di Lévy e di Gosper, e due alberi","Profondità, spessore della linea e colori a scelta, e un angolo dei rami per gli alberi","Download SVG e PNG, e un PDF stampabile con una pagina a linee nere"]]},"poster-size-mazes":{"title":"Labirinti grandi come la tua parete","summary":"Scegli colonne e righe esatte, fino a 400 per 400, poi scarica un poster PDF fino a 4A0 o un PNG fino a 16384 pixel.","blocks":["Il [generatore di labirinti](/mazes/) ora accetta le colonne e righe che scegli, e stampa grande quanto può la tua stampante.","Esempi da cui partire",["Maestro: 60 colonne e righe","80 colonne per 120 righe","Un labirinto circolare estremo"],"Le novità",["Livelli di difficoltà Maestro ed Estremo","Le tue colonne e righe, fino a 400 per ciascuna","Poster PDF su ANSI C, D ed E e da A3 a 4A0, con la soluzione su un foglio uguale","Download PNG fino a 16384 pixel sul lato più lungo"]]},"maze-generator":{"title":"Genera un labirinto stampabile con un solo percorso","summary":"Scegli forma, algoritmo e difficoltà, poi stampa il labirinto con la soluzione su una pagina separata.","blocks":["Il [generatore di labirinti](/mazes/) è un nuovo strumento della [libreria di motivi](/patterns/). Ogni labirinto ha un solo percorso tra due celle qualsiasi, senza anelli né zone murate.","Esempi da cui partire",["Un labirinto circolare con l'algoritmo di Wilson","Un labirinto esagonale facile con l'algoritmo di Prim","Un labirinto quadrato con l'algoritmo di Kruskal, con la soluzione","Un labirinto rettangolare ad albero binario, con la sua tendenza diagonale"],"Cosa ottieni",["Quattro forme: quadrato, rettangolo, cerchio ed esagono","Cinque algoritmi con trame diverse: backtracking ricorsivo, Prim, Kruskal, Wilson e albero binario","Sei difficoltà, da facile a estremo, che fissano quante celle ha il labirinto","Un PDF stampabile con la soluzione su una pagina a parte","SVG e PNG del labirinto e della soluzione, con spessore dei muri e colori a scelta"],"Semi e link condivisi","Un seme sceglie il labirinto: lo stesso seme con le stesse impostazioni disegna sempre lo stesso. Il browser ricorda il tuo seme e il PDF lo stampa. I link condivisi mantengono le impostazioni ma non il seme: per disegnare lo stesso labirinto altrove, digita il seme."]},"tie-dye-planner":{"title":"Pianifica un tie-dye prima di prendere la tinta","summary":"Visualizza una piega a spirale, a bersaglio o a fisarmonica nei tuoi colori, poi ottieni le pieghe, una mappa delle tinte, le quantità da miscelare e passaggi stampabili.","blocks":["Il nuovo [pianificatore di tie-dye](/tie-dye/) mostra un disegno nei tuoi colori e ti dice come piegarlo e quanta tinta miscelare.","Esempi da cui partire",["Una spirale a sei spicchi","Un bersaglio a otto anelli con due tinte","Le pieghe e la mappa delle tinte per una fisarmonica"],"Cosa ottieni",["Pieghe a spirale, a bersaglio e a fisarmonica con un massimo di quattro tinte","Un'anteprima in SVG o PNG e uno schema di piegatura con la mappa delle tinte","Quantità di acqua, polvere e urea per un massimo di 12 T-shirt da adulto","Un PDF stampabile con le note di sicurezza e ogni passaggio dall'ammollo al lavaggio"],"Un'anteprima, non una promessa","La tinta vera si spande ogni volta in modo diverso, quindi considera l'immagine una guida. Le quantità sono stime riportate in scala dalle [istruzioni pubblicate da Dharma Trading](https://www.dharmatrading.com/blogs/t/tie-dye-instructions), e l'etichetta della tua tinta viene prima di tutto."]},"complete-cross-stitch-and-needlepoint-projects":{"title":"Punto croce e punto canovaccio, ora progetti completi","summary":"Il punto canovaccio ha il suo generatore, ed entrambi gli strumenti ora danno tutto per un lavoro quadrato finito: taglio esatto, ordine di lavoro, filo per colore, finitura e schemi divisi su più fogli.","blocks":["Il punto canovaccio ora ha il [suo generatore](/needlepoint/), separato dal [generatore di punto croce](/cross-stitch/). Entrambi danno istruzioni complete per un lavoro quadrato finito, non solo uno schema, ed entrambi hanno sei nuovi disegni completi con bordi, creati per questo sito.","Esempi da cui partire",["Medaglione a stella, a punto croce","Albero della vita su tessuto da 18, come cuscino","Sole di mare su canovaccio, a punto continentale","Quadrato a fiamma in lana persiana su canovaccio a trama 18"],"Cosa include ogni progetto",["La misura esatta di tessuto o canovaccio da tagliare, e come trovare e segnare il centro","Un ordine di lavoro per colore, con il quadretto da cui iniziare ogni colore","Capi, iarde e stima delle matassine per colore","Passaggi per cornice o cuscino, con ogni misura calcolata","Schemi PDF divisi su più fogli quando sono grandi, con righe sovrapposte e frecce al centro"],"Il punto canovaccio è un'arte a sé","Scegli la trama del canovaccio da 10 a 18, poi punto cesto, continentale o mezzo punto, e lana da arazzo o persiana. Le stime del filato seguono punto e filato. Il canovaccio ha un margine per messa in forma e finitura, l'ordine di lavoro lascia lo sfondo per ultimo e la messa in forma viene prima del confezionamento. I vecchi link al punto canovaccio dalla pagina del punto croce si aprono sulla nuova pagina."]},"complete-crochet-squares":{"title":"Ogni punto all'uncinetto ora scrive un quadrato completo","summary":"Scegli un punto e una misura per ottenere tutto lo schema: materiali, catenella di base, ogni riga, un bordo e la finitura.","blocks":["Le [pagine dei punti all'uncinetto](/crochet/) davano qualche riga da ripetere. Ora ognuna scrive un quadrato intero, come un panno o un quadrato per coperta, con i termini americani, sulla pagina e nel PDF.","Esempi da cui partire",["Un quadrato da 6\" a punto muschio","Un quadrato da 8\" a double crochet","Un quadrato da 10\" a punto V","Un quadrato da 12\" a coste in asola posteriore"],"Cosa ottieni",["Materiali: spessore del filato, misura dell'uncinetto, metraggio stimato, accessori, campione, misura finita e legenda delle abbreviazioni","Una catenella di base esatta, e come conta la catenella di voltata di ogni punto","Riga 1 e riga 2 scritte con il numero di maglie, poi un numero esatto di ripetizioni che finisce su una riga di rovescio","Un giro di bordo a single crochet, con 3 maglie in ogni angolo e un conteggio per ogni lato","Come chiudere, nascondere i fili e mettere in forma"],"Misure e campione","Scegli un quadrato da 6, 8, 10 o 12 pollici, o imposta larghezza e lunghezza. Il bordo conta nella misura finita, e il numero di righe è calcolato dal tuo campione perché il lavoro venga quadrato. Come sempre, prima fai il campione: questi numeri sono giusti solo al tuo campione."]},"complete-knitted-squares":{"title":"Lavora a maglia un quadrato completo in qualsiasi punto","summary":"Ogni pagina di punti a maglia ora scrive un quadrato intero al tuo campione: materiali, avvio, bordo, ogni ferro, chiusura e messa in forma.","blocks":["Ogni punto della [libreria della maglia](/knitting/) ora dà uno schema completo per un quadrato, come uno strofinaccio o un quadrato per coperta, invece delle sole righe che si ripetono. Scegli 6, 8, 10 o 12 pollici, inserisci il campione e lo schema è scritto per quei numeri.","Esempi da cui partire",["Un quadrato da 12 pollici a punto riso","Un quadrato da 10 pollici a punto cesto","Un quadrato da 6 pollici a maglia rasata, tenuto piatto dal bordo"],"Cosa include ogni schema",["Spessore del filato, misura dei ferri, metraggio stimato, accessori e abbreviazioni","Campione e misura finita, con un avvio adatto alla ripetizione del punto","Un bordo a legaccio sui quattro lati, per evitare che si arricci","Ferri numerati, un numero esatto di ripetizioni che finisce su un ferro di rovescio, e controlli del numero di maglie lungo il lavoro","Chiusura, fili da nascondere e messa in forma","Tutto nel PDF stampabile e nel link condiviso"],"Perché i numeri reggono","I ferri scritti vengono dallo stesso schema dell'anteprima del punto. I nostri test seguono ogni schema ferro per ferro a molte misure e campioni, contando ogni maglia e controllando che il lavoro finito sia quadrato entro una ripetizione. La misura reale la decide il tuo campione, quindi misuralo prima."]},"mandala-rings-palettes-and-pattern-pages":{"title":"Costruisci mandala anello per anello e conserva le tue tavolozze","summary":"Scegli il motivo esatto di ogni anello, sfoglia le tavolozze per tema o armonia, salva le tue e passa tra le opzioni con le miniature.","blocks":["Il [generatore di mandala](/mandalas/) ora costruisce un disegno anello per anello, la [pagina delle tavolozze](/palettes/) raggruppa i colori per tema e armonia, e la [libreria di motivi](/patterns/) mostra diversi motivi di ogni tipo.","Esempi da cui partire",["Il nuovo disegno iniziale a undici anelli","Sei anelli scelti a mano, con simmetria di ordine 16","Una pagina da colorare da un seme con quattro dei nuovi motivi"],"Le novità",["Nove nuovi motivi per i mandala, e controllo su motivo, ripetizione, profondità, colori, punti d'accento e mezzo giro di ogni anello","Trascina gli anelli per riordinarli e i motivi sugli anelli, con pulsanti che fanno lo stesso da tastiera o touchscreen","60 tavolozze a tema in dieci gruppi e 72 tavolozze di armonie, in una pagina propria e in ogni generatore","Tavolozze tue con un nome, salvate nel browser","Una pagina e una miniatura per ogni opzione principale in otto generatori, come ogni piastrella di Truchet e gruppo di simmetria"],"Lingue e colore","Cambiare lingua ora modifica un solo colore secondario invece di tutto l'aspetto. I colori principali del sito e di ogni disegno restano uguali."]},"truchet-tile-maker":{"title":"Crea motivi continui da una piastrella che ruota","summary":"Scegli piastrella, griglia e disposizione, poi scarica una ripetizione continua in SVG o PNG o un PDF stampabile.","blocks":["Il [generatore di piastrelle di Truchet](/truchet/) è un nuovo strumento della [libreria di motivi](/patterns/). Riempie una griglia con una semplice piastrella, girata in modo diverso da un punto all'altro, e sono le rotazioni a creare il motivo.","Esempi da cui partire",["Quarti di cerchio a scacchi","Triangoli specchiati da un seme","Smussi dritti a righe"],"Cosa ottieni",["Quattro piastrelle: quarti di cerchio, smussi dritti, linee diagonali e triangoli diagonali","Disposizioni casuale, specchiata, a scacchi, a righe e a onde diagonali","Una ripetizione continua in SVG o PNG","Un PDF stampabile con una ripetizione a grandezza reale e un foglio intero di ripetizioni"],"Semi","Le disposizioni casuali nascono da un seme, quindi lo stesso seme dà sempre lo stesso motivo. Il browser ricorda il tuo ultimo seme, ma i link non lo trasportano."]},"geometric-stars-and-girih":{"title":"Disegna veri girih e motivi di stelle geometriche","summary":"Costruisci un modulo ripetuto con le cinque piastrelle girih, o un motivo di stelle su poligoni regolari, poi scarica un motivo continuo, uno stencil, un pannello da parete e un PDF stampabile.","blocks":["Il [generatore di stelle geometriche e girih](/girih/) viene dalla [libreria di motivi](/patterns/). La sua opzione di ordine 10 usa le cinque piastrelle girih: decagono, pentagono, farfalla, rombo ed esagono allungato. Tutti i lati hanno la stessa lunghezza e le linee attraversano il punto medio di ogni lato a 72 e 108 gradi.","Esempi da cui partire",["Girih con rosoni a decagono","Un motivo di stelle di ordine 8 in terracotta","Un motivo di stelle di ordine 12 in verde"],"Cosa ottieni",["Un motivo continuo in SVG o PNG","Un pannello da parete di ripetizioni dentro un bordo semplice","Uno stencil le cui fasce tengono il foglio in un pezzo solo, con fori per allinearlo","Un PDF stampabile con il pannello, una ripetizione, lo stencil e le note"],"Cos'è ogni opzione","Solo l'opzione di ordine 10 si chiama girih. Le opzioni di ordine 4, 6, 8 e 12 sono motivi di stelle geometriche su poligoni regolari. Una stella di ordine 8, 10 o 12 non può dare quella simmetria a un intero motivo ripetuto, quindi lo strumento indica separatamente la rotazione della stella e quella del motivo. Il modulo girih viene da una ricerca al computer e non è copiato da nessun edificio."]},"mandala-maker":{"title":"Genera disegni radiali geometrici e pagine da colorare","summary":"Scegli simmetria, anelli, motivi e colori per generare un disegno radiale originale, poi scaricalo a colori o come pagina da colorare.","blocks":["Il [generatore di mandala](/mandalas/) crea disegni radiali geometrici dalla [libreria di motivi](/patterns/). Scegli una simmetria da 6 a 24, da 2 a 8 anelli e i motivi che ogni anello può usare: petali, archi, punti, smerli, rombi o triangoli.","Esempi da cui partire",["Ordine otto, petali e punti","Ordine sedici, sette anelli","Una pagina da colorare di ordine 24"],"Cosa ottieni",["Un disegno a colori in SVG o PNG","Una pagina da colorare in nero su bianco, in SVG o PNG","Un PDF stampabile con il disegno a colori e la pagina da colorare","Un link condiviso che riapre lo stesso disegno"],"Lo stesso seme con le stesse impostazioni dà sempre lo stesso disegno. Sono forme generate: non copiano un disegno tradizionale e non hanno un significato voluto."]},"stained-glass-patterns":{"title":"Progetta un pannello di vetrata e stampa le sagome di taglio","summary":"Scegli disegno, misura, piombo e colori, poi stampa sagome numerate a grandezza reale con il margine per il piombo già applicato.","blocks":["Il [generatore di vetrate](/stained-glass/) è un nuovo strumento della [libreria di motivi](/patterns/). Scegli uno di quattro disegni originali, imposta misura e piombo e scegli quattro colori del vetro.","Esempi da cui partire",["Un sopraluce a raggiera","Losanghe","La legenda numerata di un bordo e centro"],"Cosa ottieni",["Un PDF con legenda numerata e sagome a grandezza reale, con il margine per il piombo applicato e un quadrato di controllo da 1 pollice su ogni foglio","I pezzi troppo grandi per una pagina divisi su fogli da unire con il nastro, e indicati come tali","Una stima del vetro per colore, incluso un margine di scarto dichiarato del 30%","Un'anteprima del pannello in SVG o PNG"],"Severo su ciò che si può tagliare","Un'incisione corre solo dritta da bordo a bordo, quindi ogni pezzo ha lati dritti e nessun angolo rientrante. Nessun angolo è sotto i 30 gradi, il vetro tagliato è largo almeno 3/4\" e i pezzi lunghi vengono divisi. Se un disegno viola una regola alla tua misura, lo strumento abbassa il dettaglio e te lo dice. Questi limiti sono indicazioni prudenti, non una garanzia, e le stime sono approssimative: verifica con il tuo piombo e il tuo fornitore."]},"celtic-knot-maker":{"title":"Crea un nodo celtico per laser, stencil o pagina da colorare","summary":"Costruisci un nodo intrecciato su una griglia, aggiungi interruzioni e scarica un file di taglio, uno stencil per tatuaggi, una pagina da colorare, un PNG o un PDF stampabile.","blocks":["Il [generatore di nodi celtici](/celtic-knots/) è un nuovo strumento della [libreria di motivi](/patterns/). Scegli la misura della griglia e un motivo di interruzioni, e traccia i fili in anelli chiusi che passano sopra e sotto a turno.","Esempi da cui partire",["Un rombo di interruzioni","Interruzioni casuali da un seme","Una cornice senza intreccio, come pagina da colorare"],"Cosa ottieni",["File SVG di taglio con forme chiuse e piene per laser o Cricut","Uno stencil per tatuaggi con i bordi del nastro e spazi a ogni passaggio sotto","Una pagina da colorare con contorni neri su bianco","Immagini PNG e un PDF stampabile"],"Semi e colori","I motivi casuali nascono da un seme, quindi lo stesso seme dà sempre lo stesso nodo. Il browser ricorda il tuo ultimo seme, ma i link non lo trasportano. I motivi specchiati, ruotati e fissi sono simmetrici. Puoi dare a ogni filo il suo colore, e la pagina ti dice quanti fili ha il tuo disegno."]},"sashiko-stitch-guides":{"title":"Stampa una guida sashiko a grandezza reale","summary":"Scegli un motivo geometrico, la misura della griglia e del pannello, poi stampa una guida a grandezza reale con gli spazi agli incroci.","blocks":["Il [generatore di guide sashiko](/sashiko/) disegna motivi geometrici come linee di punti tratteggiate, pronte da stampare e trasferire sul tessuto. Scegli asanoha, seigaiha, shippo, kikko, kagome o una griglia semplice, poi imposta griglia, lunghezza del punto, pannello e colori.","Esempi da cui partire",["Seigaiha, squame da 3\"","Shippo indaco su naturale","Kikko su antracite"],"Cosa ottieni",["Un PDF a grandezza reale, diviso su fogli Letter quando il pannello è più grande, con un quadrato di controllo da 1 pollice su ogni foglio","Punti centrati su ogni linea, così gli spazi cadono agli incroci e i punti non vi si incrociano","Un SVG e un PNG del pannello nei colori del tuo tessuto e filo","Un conteggio approssimativo dei punti e una stima del filo"],"Cosa non fa questo strumento","Il sashiko è una tradizione giapponese di ricamo con i propri maestri e molti modi di lavorare. Questo strumento disegna solo guide a linee e non afferma nulla sull'origine di un motivo. Lunghezza del punto e spazio sono un punto di partenza: adattali al tuo filo, tessuto e mano."]},"tessellation-maker":{"title":"Crea una tassellazione in uno dei 17 gruppi di simmetria","summary":"Scegli un motivo, un gruppo di simmetria e i tuoi colori, poi scarica un motivo continuo, una disposizione delle piastrelle e un PDF stampabile.","blocks":["Il [generatore di tassellazioni](/tessellations/) è un nuovo strumento della [libreria di motivi](/patterns/). Scegli un motivo, uno dei 17 gruppi di simmetria del piano e tre colori.","Esempi da cui partire",["Barche a vela in p4g","Bandiere in p6m","Pesci in pgg"],"Cosa ottieni",["Un motivo continuo in SVG o PNG","Una disposizione in SVG o PNG che segna ogni ripetizione e una piastrella","Un PDF stampabile con la disposizione, la simmetria del gruppo e una ripetizione"],"I gruppi esagonali si ripetono come rettangoli","I cinque gruppi esagonali non hanno una ripetizione quadrata. Il loro rettangolo verticale più piccolo è alto circa 1,73 volte la larghezza, ed è questa la forma del file che scarichi. I test controllano rotazioni, specchi e glissoriflessioni di ogni gruppo, e che ogni ripetizione combaci con se stessa ai bordi."]},"cross-stitch-charts":{"title":"Crea uno schema stampabile a punto croce o canovaccio","summary":"Scegli o disegna un motivo, imposta conteggio del tessuto e colori, e ottieni uno schema a simboli, conteggio dei punti, una stima del filo e la misura finita.","blocks":["Il [generatore di punto croce e canovaccio](/cross-stitch/) è una novità della [libreria di motivi](/patterns/). Parti da un motivo o disegna il tuo sulla griglia, poi scegli colori e conteggio del tessuto.","Esempi da cui partire",["Cuore","Pino, su tessuto da 18","Schema di barca a vela, per punto canovaccio"],"Cosa ottieni",["Uno schema PDF stampabile, con un simbolo per ogni colore e una linea spessa ogni 10 punti","Un elenco dei colori con il numero di punti per ciascuno","Una stima del filo per ogni colore","La misura finita al tuo conteggio, e quanto tessuto tagliare"],"I tuoi colori, i nostri motivi","I colori sono quelli che scegli, non abbinati a nessuna marca di filo, quindi scegli il filo più simile che hai. I motivi sono stati disegnati per questo sito."]},"tartan-maker":{"title":"Progetta uno scozzese e ottieni una guida di tessitura","summary":"Imposta colori e numero di fili per creare uno scozzese equilibrato, poi scarica un campione continuo e una guida di tessitura stampabile.","blocks":["Il [generatore di tartan e scozzesi](/tartans/) è il primo nuovo strumento della [libreria di motivi](/patterns/). Scegli colori e numero di fili, rispecchiali se vuoi e guarda la stoffa tessuta in saia 2/2.","Esempi da cui partire",["Brace","Porto","Quadri a due colori"],"Cosa ottieni",["Un motivo continuo in SVG o PNG","L'ordine dei fili da orditare e tessere","Fili di ordito e passate di trama per la tua misura di stoffa","Una stima del filato per colore e una guida PDF stampabile"],"Per ora solo scozzesi originali","I modelli sono inventati per questo sito. Alcuni tartan sono soggetti a restrizioni o appartengono a una famiglia o a un'organizzazione, quindi i tartan storici con un nome saranno aggiunti solo con fonti documentate."]},"now-in-five-languages":{"title":"Endless Patterns ora parla cinque lingue","summary":"Il sito è ora in inglese, spagnolo, francese, tedesco e portoghese brasiliano, con colori che cambiano un po' per ciascuna.","blocks":["Ogni pagina, lista di taglio, istruzione e PDF è ora disponibile in [Español](/es/), [Français](/fr/), [Deutsch](/de/) e [Português](/pt/). Usa i link delle lingue in cima a ogni pagina per cambiare.","Colori che seguono la lingua","Ogni lingua ha una lieve variazione nei colori del sito e nella tavolozza predefinita, liberamente ispirata a una bandiera comunemente associata. Ogni esempio qui sotto si apre in quella lingua.",["Ohio Star nei colori spagnoli","Sawtooth Star nei colori francesi","Pinwheel nei colori tedeschi","Variable Star nei colori brasiliani"],"Una prima bozza","Queste traduzioni sono una prima bozza e non sono ancora state riviste da chi pratica queste arti. I nomi di blocchi e punti restano in inglese, le misure restano in pollici e iarde, e le misure di ferri e uncinetti usano la numerazione americana. L'uncinetto usa abbreviazioni locali, con il termine americano tra parentesi."]},"blog-and-changelog":{"title":"Un blog e un elenco delle novità","summary":"Le nuove funzioni ora hanno un articolo con esempi da aprire e modificare, e ogni aggiornamento finisce nell'elenco delle novità.","blocks":["Endless Patterns ora ha questo blog e un elenco delle [novità](/changelog/). L'elenco è la lista breve di cosa è cambiato e quando. Gli articoli sono per le aggiunte più grandi, con esempi da provare.","Esempi da aprire e modificare","Ogni esempio in un articolo è un link allo strumento corrispondente, con le stesse impostazioni già inserite. Aprine uno, poi cambia misura, colori o campione per farlo tuo.",["Bear's Paw, nove blocchi da 14\" con strisce di separazione","Punto riso in salvia","Punto rete in rosso fienile"]]},"knitting-and-crochet":{"title":"Punti a maglia e all'uncinetto, su misura per il tuo campione","summary":"Scegli un punto, inserisci misura e campione, e ottieni un numero di partenza, righe scritte, uno schema e una stima del filato.","blocks":["Ora ci sono 9 [punti a maglia](/knitting/) e 7 [punti all'uncinetto](/crochet/). Ogni pagina calcola il progetto dal tuo campione, così i numeri si adattano al filato e agli strumenti che usi.","Cosa ottieni",["Maglie da avviare o catenelle di partenza, arrotondate a ripetizioni intere del motivo","Istruzioni riga per riga, con l'uncinetto in termini americani","Uno schema del punto e un PDF stampabile","Una stima del filato"],"Provane uno",["Coste 2x2, impostate come sciarpa da 8\" x 60\"","Schema del punto cesto","Punto V, impostato come copertina per neonato"],"Prima il campione","Il campione di partenza per ogni spessore di filato è solo un valore tipico, e la cifra del filato è una stima. Lavora un campione da 4\", inserisci ciò che misuri e compra un po' di filato in più. [Come funzionano i calcoli](/about/) spiega le ipotesi."]},"quilt-block-builder":{"title":"Costruisci una trapunta con 36 blocchi tradizionali","summary":"Imposta misura, colori e disposizione di un blocco, poi ottieni lista di taglio, metraggio, motivi continui e sagome stampabili.","blocks":["Il [generatore di blocchi di patchwork](/blocks/) copre 36 blocchi tradizionali, da un semplice [Nine Patch](/blocks/nine-patch/) a disegni curvi e applicati. Scegli qualsiasi misura finita da 3\" a 24\", imposta i colori e disponi un'intera trapunta.","Esempi da cui partire",["Log Cabin, girato per quadrante","Ohio Star in rosso fienile, con strisce di separazione","Dresden Plate, applicato su uno sfondo"],"Cosa ottieni",["Una lista di taglio per un blocco o tutta la trapunta","Metraggio per ogni tessuto, più retro, bordura e imbottitura","Download SVG e PNG, incluso un motivo continuo","Un PDF con i passaggi di assemblaggio e sagome a grandezza reale"],"Quando una misura cade tra le tacche del righello, il generatore arrotonda il taglio per eccesso, lo segnala e suggerisce le misure più vicine che si dividono esattamente. Controlla i valori prima di acquistare o tagliare."]}},"changelog":{"Mandala styles and more patterns":{"title":"Stili di mandala e più motivi","items":["Nuovi stili di disegno per i mandala: appuntito, morbido, ondulato, geometrico, fluido, schizzato a mano e pixel art","Nuove opzioni per piastrelle di Truchet, scacchiere, vetrate, tie-dye, tartan e girih"]},"Paper puzzles":{"title":"Giochi su carta","items":["Nuova sezione giochi su carta nel menu, con sudoku, futoshiki, nonogrammi, battaglia navale, punti e quadretti, super tris e hex, accanto ai labirinti","Ogni foglio si scarica come PDF per US Letter, A4 o pagina tablet, o come SVG o PNG","Punti e quadretti fino a 200 quadretti di larghezza, in ogni formato poster da US Letter a 4A0"]},"Faster repeat designs":{"title":"Disegni ripetuti più veloci","items":["I disegni ora si caricano con richieste memorizzabili, così le impostazioni già disegnate possono tornare senza essere ridisegnate"]},"Hidden message mazes":{"title":"Labirinti con messaggio nascosto","items":["Nuova forma a messaggio nascosto per i labirinti: scrivi un messaggio e l'unico percorso dall'alto a sinistra al basso a destra lo compone, con una griglia su misura"]},"Maze PDF without the solution":{"title":"PDF del labirinto senza soluzione","items":["Lo strumento labirinti ora può scaricare il PDF stampabile senza la pagina della soluzione, pronto come foglio di attività"]},"Letter and Legal maze sheets":{"title":"Labirinti su fogli Letter e Legal","items":["I poster dei labirinti ora si possono creare su carta US Letter e US Legal"]},"Animated maze solution":{"title":"Soluzione animata del labirinto","items":["Scegliendo la scheda Soluzione ora viene disegnato il percorso dalla partenza all'uscita, e un pulsante lo riproduce"]},"Customization analytics":{"title":"Statistiche sulla personalizzazione","items":["Le statistiche del sito ora contano quando le impostazioni di un disegno cambiano, per strumento e nome dell'impostazione, e le pagine sulla privacy lo indicano"]},"Privacy Policy and Terms of Service":{"title":"Informativa sulla privacy e Termini di servizio","items":["Nuove pagine Informativa sulla privacy e Termini di servizio, collegate dal piè di pagina di ogni pagina"]},"Site analytics":{"title":"Statistiche del sito","items":["Il sito ora usa Google Analytics, e la sezione I tuoi dati spiega cosa viene raccolto, come disattivarlo e che le impostazioni vengono inviate al nostro server per disegnare i progetti"]},"Quilts and stitches now run on the API":{"title":"Patchwork e punti ora funzionano sull'API","items":["I generatori di blocchi, maglia e uncinetto, i loro PDF e le immagini ora sono generati dall'API, come ogni altro strumento, e quelle pagine si condividono con un'immagine del proprio motivo"]},"Better link previews":{"title":"Anteprime dei link migliori","items":["Ogni pagina di generatore ora si condivide con un'immagine del suo motivo, e ogni pagina ha titolo, descrizione e dettagli del link propri per social e app di messaggistica"]},"More patterns in five tools":{"title":"Più motivi in cinque strumenti","items":["Aggiunte nuove opzioni perché ogni voce della libreria ne mostri sei: piastrelle di Truchet ad archi doppi e intrecciate, scozzesi Frutteto e Pozza di marea, vetrate a nido d'ape e a girandole, stelle di ordine 16 e tie-dye a raggiera, chevron e doppia spirale"]},"Game of Life patterns":{"title":"Motivi del Gioco della vita","items":["Aggiunti motivi del Gioco della vita come disegni ripetuti stampabili, con strisce delle fasi e la regola spiegata su ogni cella"]},"Preview images":{"title":"Immagini di anteprima","items":["Le pagine dei motivi ora possono includere un'immagine di anteprima nel loro HTML, per i motori di ricerca e le schede di condivisione"]},"More checkerboards and mazes":{"title":"Più scacchiere e labirinti","items":["Aggiunte scacchiere a nido d'ape e a triangoli, con veri esagoni e triangoli nella scacchiera, nella piastrella e nel PDF","Aggiunti labirinti a triangolo e a rombo, con ogni algoritmo, il poster PDF e il PNG"]},"Checkerboard maker":{"title":"Generatore di scacchiere","items":["Aggiunto un generatore di scacchiere con righe, colonne, proporzioni e colori a scelta"]},"Blog images":{"title":"Immagini del blog","items":["Aggiunta un'immagine in evidenza per ogni articolo nella pagina del blog"]},"Crochet colorwork squares":{"title":"Quadrati all'uncinetto a colori","items":["Aggiunto l'uncinetto a colori in /crochet/colorwork/: schemi tapestry, grafici da angolo ad angolo e granny square, ognuno scritto come quadrato multicolore completo con un PDF stampabile"]},"Knit colorwork patterns":{"title":"Maglia a colori","items":["Aggiunta la maglia a colori: tredici schemi originali jacquard, mosaico e intarsio, scritti come quadrati completi con controllo dei fili passati, filato per colore e un PDF"]},"Fractal maker":{"title":"Generatore di frattali","items":["Aggiunto un generatore di frattali, con nove tipi, download SVG e PNG e un PDF stampabile"]},"Poster-size mazes":{"title":"Labirinti in formato poster","items":["Labirinti con colonne e righe a scelta, livelli Maestro ed Estremo, poster PDF e PNG molto grandi"]},"Maze generator":{"title":"Generatore di labirinti","items":["Aggiunto un generatore di labirinti quadrati, rettangolari, circolari ed esagonali, con cinque algoritmi, un PDF con pagina separata per la soluzione, e SVG e PNG del labirinto e della soluzione"]},"Tie-dye planner":{"title":"Pianificatore di tie-dye","items":["Aggiunto un pianificatore di tie-dye, con anteprima, mappa delle tinte, quantità da miscelare e un PDF stampabile"]},"Complete cross-stitch and needlepoint projects":{"title":"Progetti completi a punto croce e canovaccio","items":["Il punto canovaccio è diventato un generatore a sé, con scelta di trama, punto e filato, e un margine per messa in forma e finitura","Entrambi i generatori ora danno materiali, ordine di lavoro, stima delle matassine e passaggi per cornice o cuscino","Aggiunti sei disegni quadrati completi a ciascun generatore, e schemi PDF divisi su più fogli con sovrapposizione"]},"Complete crochet squares":{"title":"Quadrati completi all'uncinetto","items":["Le pagine e i PDF dei punti all'uncinetto ora scrivono un quadrato completo: materiali, catenella di base, ogni riga con il numero di maglie, un bordo con gli angoli e la finitura","Aggiunte le misure quadrate da 6, 8, 10 e 12 pollici al generatore di uncinetto"]},"Complete knitted squares":{"title":"Quadrati completi a maglia","items":["Le pagine dei punti a maglia ora scrivono uno schema di quadrato completo, da 6, 8, 10 o 12 pollici, sulla pagina e nel PDF"]},"Mandala rings, palettes and pattern pages":{"title":"Anelli dei mandala, tavolozze e pagine dei motivi","items":["Generatore di mandala anello per anello con trascinamento e nove nuovi motivi","Libreria di tavolozze per tema e armonia, con le tue tavolozze salvate nel browser","Pagine e miniature per le opzioni principali di otto generatori","Pagina iniziale e libreria con più motivi di ogni tipo, in ordine alfabetico","La lingua ora cambia un solo colore secondario","I semi vengono ricordati nel browser invece che nei link"]},"Truchet tile maker":{"title":"Generatore di piastrelle di Truchet","items":["Aggiunto un generatore di piastrelle di Truchet, con ripetizioni continue in SVG e PNG e un PDF stampabile"]},"Geometric stars and girih maker":{"title":"Generatore di stelle geometriche e girih","items":["Aggiunto un generatore di stelle geometriche e girih, con veri girih a cinque piastrelle, motivi di stelle di ordine 4, 6, 8 e 12, motivi continui, stencil, pannelli da parete e PDF"]},"Mandala maker":{"title":"Generatore di mandala","items":["Aggiunto un generatore di mandala per disegni radiali geometrici, con SVG e PNG a colori, pagine da colorare e PDF stampabili"]},"Stained glass pattern maker":{"title":"Generatore di vetrate","items":["Aggiunto un generatore di vetrate, con sagome numerate a grandezza reale, regole di taglio severe e una stima del vetro"]},"Celtic knot maker":{"title":"Generatore di nodi celtici","items":["Aggiunto un generatore di nodi celtici, con file di taglio, stencil per tatuaggi, pagine da colorare, PNG e PDF stampabile"]},"Sashiko stitch guides":{"title":"Guide per sashiko","items":["Aggiunto un generatore di guide sashiko, con guide stampabili a grandezza reale, spazi agli incroci e pannelli SVG e PNG"]},"Tessellation maker":{"title":"Generatore di tassellazioni","items":["Aggiunto un generatore di tassellazioni con tutti i 17 gruppi di simmetria, motivi continui, disposizioni delle piastrelle e PDF stampabili"]},"Cross-stitch and needlepoint maker":{"title":"Generatore di punto croce e canovaccio","items":["Aggiunto un generatore di punto croce e canovaccio, con griglia modificabile, schemi a simboli stampabili, conteggio dei punti, stime del filo e misure finite"]},"Tartan and plaid maker":{"title":"Generatore di tartan e scozzesi","items":["Aggiunto un generatore di tartan e scozzesi, con campioni continui, guide di tessitura e stime del filato"]},"Five languages":{"title":"Cinque lingue","items":["Aggiunti spagnolo, francese, tedesco e portoghese brasiliano, comprese istruzioni generate e PDF","Aggiunti link delle lingue in ogni pagina","Aggiunta una lieve variazione di colore e una tavolozza predefinita per ogni lingua"]},"Pattern library samples":{"title":"Esempi nella libreria di motivi","items":["Aggiunto un esempio a ogni voce della libreria di motivi, con esempi statici per gli strumenti previsti"]},"Blog and changelog":{"title":"Blog e novità","items":["Aggiunto un blog, con esempi che si aprono nello strumento corrispondente","Aggiunto questo elenco delle novità"]},"Pattern library preview":{"title":"Anteprima della libreria di motivi","items":["Aggiunta una libreria di motivi che elenca gli strumenti funzionanti e quelli previsti","Corretta la navigazione del sito che usciva dallo schermo sui telefoni"]},"Knitting and crochet":{"title":"Maglia e uncinetto","items":["Aggiunti 9 punti a maglia e 7 punti all'uncinetto","Aggiunti numeri di partenza, righe scritte, schemi e stime del filato in base a misura e campione","Aggiunti schemi PDF stampabili per ogni punto"]},"More quilt blocks":{"title":"Più blocchi di patchwork","items":["Aggiunti 14 blocchi, per un totale di 36","Aggiunti blocchi con angoli piegati, curve e applicazioni, tagliati con le sagome PDF","Corretta la disposizione del blocco Anvil"]},"Quilt block builder":{"title":"Generatore di blocchi di patchwork","items":["Prima versione, con 22 blocchi tradizionali di patchwork","Aggiunte liste di taglio, metraggio, motivi continui, link condivisi e sagome PDF"]}}}
+{
+  "posts": {
+    "mandala-styles-and-more-patterns": {
+      "title": "Stili di disegno per i mandala, e più di tutto",
+      "summary": "Disegna qualsiasi mandala appuntito, morbido, ondulato, geometrico, fluido, schizzato a mano o in pixel art, con nuove scelte in altri sei generatori.",
+      "blocks": [
+        "Il [generatore di mandala](/mandalas/) ora ha uno stile di disegno: gli stessi anelli e colori, disegnati in otto modi diversi. Scegline uno e tutti gli anelli lo seguono, anche nella pagina da colorare e nel PDF.",
+        "Esempi da cui partire",
+        [
+          "Un mandala appuntito",
+          "Un mandala ondulato",
+          "Un mandala fluido",
+          "Un mandala geometrico",
+          "Una pagina da colorare schizzata a mano",
+          "Un mandala in pixel art"
+        ],
+        "Cos'altro c'è di nuovo",
+        [
+          "[Piastrelle di Truchet](/truchet/): archi tripli, smussi doppi e gradini squadrati",
+          "[Scacchiere](/checkerboards/): quadri doppi, scala e pied-de-poule",
+          "[Vetrate](/stained-glass/): mattoni, intreccio a cesto e finestra prairie",
+          "[Tie-dye](/tie-dye/): righe diagonali, stropicciato e cuore, ciascuno con passaggi di piegatura e mappa delle tinte",
+          "[Tartan](/tartans/): erica, muschio e zafferano",
+          "[Girih](/girih/): un motivo di stelle di ordine 3, fatto di triangoli"
+        ]
+      ]
+    },
+    "paper-puzzles": {
+      "title": "Giochi su carta da stampare o da giocare sul tablet",
+      "summary": "Sudoku, futoshiki, nonogrammi, battaglia navale e altri giochi con la matita, su fogli fatti per la carta o per un'app di disegno.",
+      "blocks": [
+        "La nuova sezione [giochi su carta](/paper-puzzles/) raccoglie fogli da stampare, o da aprire in un'app di disegno sul tablet e completare con una penna. Ci sono tre tipi di rompicapo e quattro giochi con la matita, tra cui il [super tris](/paper-puzzles/ultimate-tic-tac-toe/), accanto ai nostri [labirinti](/mazes/).",
+        "Esempi da cui partire",
+        [
+          "Un sudoku difficile 9 × 9",
+          "Un futoshiki 6 × 6",
+          "Un nonogramma 15 × 15, risolto",
+          "Un foglio di battaglia navale per un giocatore",
+          "Punti e quadretti, 12 quadretti di larghezza",
+          "Un tabellone di hex 11 × 11"
+        ],
+        "Cosa ottieni",
+        [
+          "Sudoku 4 × 4, 6 × 6 e 9 × 9, e futoshiki da 4 × 4 a 7 × 7, ciascuno in tre difficoltà",
+          "Nonogrammi 5 × 5, 10 × 10 e 15 × 15",
+          "Ogni rompicapo controllato da un risolutore per avere una sola soluzione, e uno nuovo quando vuoi",
+          "Fogli di battaglia navale, punti e quadretti, super tris e hex per giocare con qualcun altro",
+          "PDF per US Letter, A4 o una pagina tablet 4:3, con o senza soluzione, più SVG e PNG",
+          "Punti e quadretti fino a 200 quadretti di larghezza, in ogni formato poster da US Letter a 4A0"
+        ]
+      ]
+    },
+    "hidden-message-mazes": {
+      "title": "Labirinti con un messaggio nascosto",
+      "summary": "Scrivi un messaggio, e l'unica via attraverso il labirinto lo compone. Stampalo, consegnalo e aspetta la risposta.",
+      "blocks": [
+        "Scrivi un breve messaggio e lo [strumento labirinti](/mazes/hidden-message/) costruisce un labirinto il cui unico percorso lo compone, dall'angolo in alto a sinistra a quello in basso a destra. Non si vede nulla finché non viene risolto: un bel modo per fare una grande domanda.",
+        "Esempi da cui partire",
+        [
+          "Il messaggio, risolto",
+          "Un augurio di compleanno, risolto",
+          "Lo stesso tipo di labirinto prima che qualcuno lo risolva"
+        ],
+        "Cosa ottieni",
+        [
+          "Fino a 40 caratteri, in massimo 6 parole di massimo 12 lettere, con accenti, numeri e un cuore",
+          "Una griglia su misura per il messaggio, con lettere che si allargano a ogni difficoltà",
+          "Tutti e cinque gli algoritmi, con un solo percorso in ogni labirinto",
+          "Una soluzione animata, PDF stampabile con o senza pagina della soluzione, poster, SVG e PNG",
+          "Il messaggio resta fuori dall'indirizzo della pagina e dai link condivisi"
+        ]
+      ]
+    },
+    "life-patterns": {
+      "title": "Motivi del Gioco della vita da stampare",
+      "summary": "Otto nature morte e oscillatori del Gioco della vita di Conway, come disegni continui, con la regola spiegata su ogni cella.",
+      "blocks": [
+        "Il nuovo [strumento Gioco della vita](/life-patterns/) trasforma otto motivi classici in disegni ripetuti. Ogni fase nasce dall'esecuzione della regola stessa, e le copie sono abbastanza distanti perché un intero foglio continui a comportarsi come vuole Life.",
+        "Esempi da cui partire",
+        [
+          "Un foglio di pulsar",
+          "Alveari ravvicinati, con la griglia",
+          "Le due fasi di un faro, poi di nuovo all'inizio",
+          "Cosa fa a un lampeggiante contare solo 4 vicini"
+        ],
+        "Cosa ottieni",
+        [
+          "Blocco, alveare, pagnotta e vasca, le nature morte",
+          "Lampeggiante, rospo, faro e pulsar, gli oscillatori, con ogni fase in una striscia",
+          "Un foglio e una piastrella, con misura delle celle, colonne, righe, spaziatura, colori e griglia opzionale",
+          "La regola applicata a qualsiasi cella tu scelga, con vicinato di Moore (8) o Von Neumann (4)",
+          "SVG, PNG e un PDF stampabile"
+        ]
+      ]
+    },
+    "checkerboard-maker": {
+      "title": "Scacchiere in qualsiasi proporzione",
+      "summary": "Parti da una scacchiera normale, poi imposta righe, colonne, colori e forma delle caselle, ad esempio 3:1 o 2:3.",
+      "blocks": [
+        "Il nuovo [generatore di scacchiere](/checkerboards/) si apre su una scacchiera normale 8 per 8. Da lì puoi allungare le caselle e spostare le righe.",
+        "Esempi da cui partire",
+        [
+          "Una scacchiera normale",
+          "Caselle larghe tre volte l'altezza",
+          "Un motivo a mattoni 2:3 in tre colori",
+          "Vichy rosso"
+        ],
+        "Cosa ottieni",
+        [
+          "Motivi normale, a mattoni, a mezzo salto e vichy",
+          "Fino a 100 colonne e righe, e qualsiasi proporzione fino a 8:8",
+          "Da due a quattro colori, con ogni tavolozza del sito",
+          "Un motivo continuo, misure finite, conteggio dei pezzi, SVG, PNG e un PDF stampabile"
+        ]
+      ]
+    },
+    "crochet-colorwork-squares": {
+      "title": "Quadrati all'uncinetto a colori, scritti per esteso",
+      "summary": "Schemi tapestry, grafici da angolo ad angolo e granny square nei tuoi colori, con ogni riga, diagonale e giro scritti con i termini americani.",
+      "blocks": [
+        "L'[uncinetto a colori](/crochet/colorwork/) è un nuovo strumento della [libreria di motivi](/patterns/), con nove disegni originali in tre tecniche. Scegline uno, imposta i colori e ottieni un quadrato completo dalla catenella di partenza alla messa in forma.",
+        "Esempi da cui partire",
+        [
+          "Una croce a gradini in tapestry",
+          "Lo schema di un cuore da angolo ad angolo",
+          "Una granny square in sei giri",
+          "Una granny square a quattro colori in filato DK"
+        ],
+        "Cosa ottieni",
+        [
+          "Tapestry: uno schema con numeri di riga e legenda, il verso di lettura di ogni riga, come portare il filato non usato e i cambi di colore sull'ultimo gettato",
+          "Da angolo ad angolo: diagonali in aumento e poi in diminuzione, numero e colori dei blocchi per ogni diagonale e quanti rocchetti preparare",
+          "Granny square: conteggio delle maglie per ogni giro, angoli e attacco di un nuovo colore",
+          "Ogni quadrato: un bordo, chiusura, fili da nascondere, messa in forma, note sul campione, filato per colore che somma al totale e un PDF stampabile"
+        ],
+        "I tuoi colori e i link condivisi",
+        "Il colore A è quello principale e del bordo, gli altri sono contrasti. Usa qualsiasi tavolozza, e un link condiviso mantiene colori, spessore del filato e misura. Il metraggio è una stima approssimativa, quindi controllalo con il tuo campione."
+      ]
+    },
+    "knit-colorwork-patterns": {
+      "title": "Maglia a colori su schema, scritta come quadrati completi",
+      "summary": "Tredici schemi originali jacquard, mosaico e intarsio, adattati al tuo campione, con ogni ferro scritto colore per colore.",
+      "blocks": [
+        "La [maglia a colori](/knitting/colorwork/) è un nuovo strumento della [libreria di motivi](/patterns/). Ogni schema è stato disegnato per questo sito ed è scritto come quadrato completo, dall'avvio alla messa in forma, alla tua misura e al tuo campione.",
+        "Esempi da cui partire",
+        [
+          "Piccoli pini, jacquard a due filati",
+          "Chevron a nastro, schema jacquard a tre filati",
+          "Rombi a mosaico, con un filato per ferro",
+          "Blocco a rombo, un motivo a intarsio"
+        ],
+        "Cosa ottieni",
+        [
+          "Uno schema con legenda dei colori e numeri di ferro sul lato da cui parte ogni ferro",
+          "Ferri scritti, colore per colore, in ordine di lavoro",
+          "Ripetizioni adattate al tuo numero di maglie, con bordi simmetrici e un bordo a legaccio",
+          "Un controllo che segnala ogni ferro che porta un filo per più di circa un pollice al tuo campione",
+          "Filato stimato per colore, che somma al totale",
+          "Un PDF stampabile, più SVG e PNG del quadrato e dello schema"
+        ],
+        "Fai il campione nel motivo",
+        "La maglia a colori raramente ha lo stesso campione di quella a tinta unita, quindi ogni schema chiede un campione proprio. Inserisci ciò che misuri e quadrato, ferri, fili passati e filato cambiano di conseguenza. Se vuoi un solo colore, i [punti a maglia](/knitting/) sono sempre lì."
+      ]
+    },
+    "fractal-maker": {
+      "title": "Disegna frattali da una regola semplice",
+      "summary": "Nove frattali classici alla profondità che scegli, nei tuoi colori o a linee nere, con download SVG, PNG e PDF.",
+      "blocks": [
+        "Il nuovo [generatore di frattali](/fractals/) ripete una regola semplice tutte le volte che chiedi, e ogni tipo di frattale ha la [sua pagina](/fractals/hilbert-curve/).",
+        "Esempi da cui partire",
+        [
+          "Una curva del drago a profondità 11",
+          "Un albero di Pitagora inclinato di 40 gradi",
+          "Un fiocco di neve di Koch a linee nere"
+        ],
+        "Cosa ottieni",
+        [
+          "Fiocco di neve di Koch, triangolo e tappeto di Sierpiński, curve del drago, di Hilbert, C di Lévy e di Gosper, e due alberi",
+          "Profondità, spessore della linea e colori a scelta, e un angolo dei rami per gli alberi",
+          "Download SVG e PNG, e un PDF stampabile con una pagina a linee nere"
+        ]
+      ]
+    },
+    "poster-size-mazes": {
+      "title": "Labirinti grandi come la tua parete",
+      "summary": "Scegli colonne e righe esatte, fino a 400 per 400, poi scarica un poster PDF fino a 4A0 o un PNG fino a 16384 pixel.",
+      "blocks": [
+        "Il [generatore di labirinti](/mazes/) ora accetta le colonne e righe che scegli, e stampa grande quanto può la tua stampante.",
+        "Esempi da cui partire",
+        [
+          "Maestro: 60 colonne e righe",
+          "80 colonne per 120 righe",
+          "Un labirinto circolare estremo"
+        ],
+        "Le novità",
+        [
+          "Livelli di difficoltà Maestro ed Estremo",
+          "Le tue colonne e righe, fino a 400 per ciascuna",
+          "Poster PDF su ANSI C, D ed E e da A3 a 4A0, con la soluzione su un foglio uguale",
+          "Download PNG fino a 16384 pixel sul lato più lungo"
+        ]
+      ]
+    },
+    "maze-generator": {
+      "title": "Genera un labirinto stampabile con un solo percorso",
+      "summary": "Scegli forma, algoritmo e difficoltà, poi stampa il labirinto con la soluzione su una pagina separata.",
+      "blocks": [
+        "Il [generatore di labirinti](/mazes/) è un nuovo strumento della [libreria di motivi](/patterns/). Ogni labirinto ha un solo percorso tra due celle qualsiasi, senza anelli né zone murate.",
+        "Esempi da cui partire",
+        [
+          "Un labirinto circolare con l'algoritmo di Wilson",
+          "Un labirinto esagonale facile con l'algoritmo di Prim",
+          "Un labirinto quadrato con l'algoritmo di Kruskal, con la soluzione",
+          "Un labirinto rettangolare ad albero binario, con la sua tendenza diagonale"
+        ],
+        "Cosa ottieni",
+        [
+          "Quattro forme: quadrato, rettangolo, cerchio ed esagono",
+          "Cinque algoritmi con trame diverse: backtracking ricorsivo, Prim, Kruskal, Wilson e albero binario",
+          "Sei difficoltà, da facile a estremo, che fissano quante celle ha il labirinto",
+          "Un PDF stampabile con la soluzione su una pagina a parte",
+          "SVG e PNG del labirinto e della soluzione, con spessore dei muri e colori a scelta"
+        ],
+        "Semi e link condivisi",
+        "Un seme sceglie il labirinto: lo stesso seme con le stesse impostazioni disegna sempre lo stesso. Il browser ricorda il tuo seme e il PDF lo stampa. I link condivisi mantengono le impostazioni ma non il seme: per disegnare lo stesso labirinto altrove, digita il seme."
+      ]
+    },
+    "tie-dye-planner": {
+      "title": "Pianifica un tie-dye prima di prendere la tinta",
+      "summary": "Visualizza una piega a spirale, a bersaglio o a fisarmonica nei tuoi colori, poi ottieni le pieghe, una mappa delle tinte, le quantità da miscelare e passaggi stampabili.",
+      "blocks": [
+        "Il nuovo [pianificatore di tie-dye](/tie-dye/) mostra un disegno nei tuoi colori e ti dice come piegarlo e quanta tinta miscelare.",
+        "Esempi da cui partire",
+        [
+          "Una spirale a sei spicchi",
+          "Un bersaglio a otto anelli con due tinte",
+          "Le pieghe e la mappa delle tinte per una fisarmonica"
+        ],
+        "Cosa ottieni",
+        [
+          "Pieghe a spirale, a bersaglio e a fisarmonica con un massimo di quattro tinte",
+          "Un'anteprima in SVG o PNG e uno schema di piegatura con la mappa delle tinte",
+          "Quantità di acqua, polvere e urea per un massimo di 12 T-shirt da adulto",
+          "Un PDF stampabile con le note di sicurezza e ogni passaggio dall'ammollo al lavaggio"
+        ],
+        "Un'anteprima, non una promessa",
+        "La tinta vera si spande ogni volta in modo diverso, quindi considera l'immagine una guida. Le quantità sono stime riportate in scala dalle [istruzioni pubblicate da Dharma Trading](https://www.dharmatrading.com/blogs/t/tie-dye-instructions), e l'etichetta della tua tinta viene prima di tutto."
+      ]
+    },
+    "complete-cross-stitch-and-needlepoint-projects": {
+      "title": "Punto croce e punto canovaccio, ora progetti completi",
+      "summary": "Il punto canovaccio ha il suo generatore, ed entrambi gli strumenti ora danno tutto per un lavoro quadrato finito: taglio esatto, ordine di lavoro, filo per colore, finitura e schemi divisi su più fogli.",
+      "blocks": [
+        "Il punto canovaccio ora ha il [suo generatore](/needlepoint/), separato dal [generatore di punto croce](/cross-stitch/). Entrambi danno istruzioni complete per un lavoro quadrato finito, non solo uno schema, ed entrambi hanno sei nuovi disegni completi con bordi, creati per questo sito.",
+        "Esempi da cui partire",
+        [
+          "Medaglione a stella, a punto croce",
+          "Albero della vita su tessuto da 18, come cuscino",
+          "Sole di mare su canovaccio, a punto continentale",
+          "Quadrato a fiamma in lana persiana su canovaccio a trama 18"
+        ],
+        "Cosa include ogni progetto",
+        [
+          "La misura esatta di tessuto o canovaccio da tagliare, e come trovare e segnare il centro",
+          "Un ordine di lavoro per colore, con il quadretto da cui iniziare ogni colore",
+          "Capi, iarde e stima delle matassine per colore",
+          "Passaggi per cornice o cuscino, con ogni misura calcolata",
+          "Schemi PDF divisi su più fogli quando sono grandi, con righe sovrapposte e frecce al centro"
+        ],
+        "Il punto canovaccio è un'arte a sé",
+        "Scegli la trama del canovaccio da 10 a 18, poi punto cesto, continentale o mezzo punto, e lana da arazzo o persiana. Le stime del filato seguono punto e filato. Il canovaccio ha un margine per messa in forma e finitura, l'ordine di lavoro lascia lo sfondo per ultimo e la messa in forma viene prima del confezionamento. I vecchi link al punto canovaccio dalla pagina del punto croce si aprono sulla nuova pagina."
+      ]
+    },
+    "complete-crochet-squares": {
+      "title": "Ogni punto all'uncinetto ora scrive un quadrato completo",
+      "summary": "Scegli un punto e una misura per ottenere tutto lo schema: materiali, catenella di base, ogni riga, un bordo e la finitura.",
+      "blocks": [
+        "Le [pagine dei punti all'uncinetto](/crochet/) davano qualche riga da ripetere. Ora ognuna scrive un quadrato intero, come un panno o un quadrato per coperta, con i termini americani, sulla pagina e nel PDF.",
+        "Esempi da cui partire",
+        [
+          "Un quadrato da 6\" a punto muschio",
+          "Un quadrato da 8\" a double crochet",
+          "Un quadrato da 10\" a punto V",
+          "Un quadrato da 12\" a coste in asola posteriore"
+        ],
+        "Cosa ottieni",
+        [
+          "Materiali: spessore del filato, misura dell'uncinetto, metraggio stimato, accessori, campione, misura finita e legenda delle abbreviazioni",
+          "Una catenella di base esatta, e come conta la catenella di voltata di ogni punto",
+          "Riga 1 e riga 2 scritte con il numero di maglie, poi un numero esatto di ripetizioni che finisce su una riga di rovescio",
+          "Un giro di bordo a single crochet, con 3 maglie in ogni angolo e un conteggio per ogni lato",
+          "Come chiudere, nascondere i fili e mettere in forma"
+        ],
+        "Misure e campione",
+        "Scegli un quadrato da 6, 8, 10 o 12 pollici, o imposta larghezza e lunghezza. Il bordo conta nella misura finita, e il numero di righe è calcolato dal tuo campione perché il lavoro venga quadrato. Come sempre, prima fai il campione: questi numeri sono giusti solo al tuo campione."
+      ]
+    },
+    "complete-knitted-squares": {
+      "title": "Lavora a maglia un quadrato completo in qualsiasi punto",
+      "summary": "Ogni pagina di punti a maglia ora scrive un quadrato intero al tuo campione: materiali, avvio, bordo, ogni ferro, chiusura e messa in forma.",
+      "blocks": [
+        "Ogni punto della [libreria della maglia](/knitting/) ora dà uno schema completo per un quadrato, come uno strofinaccio o un quadrato per coperta, invece delle sole righe che si ripetono. Scegli 6, 8, 10 o 12 pollici, inserisci il campione e lo schema è scritto per quei numeri.",
+        "Esempi da cui partire",
+        [
+          "Un quadrato da 12 pollici a punto riso",
+          "Un quadrato da 10 pollici a punto cesto",
+          "Un quadrato da 6 pollici a maglia rasata, tenuto piatto dal bordo"
+        ],
+        "Cosa include ogni schema",
+        [
+          "Spessore del filato, misura dei ferri, metraggio stimato, accessori e abbreviazioni",
+          "Campione e misura finita, con un avvio adatto alla ripetizione del punto",
+          "Un bordo a legaccio sui quattro lati, per evitare che si arricci",
+          "Ferri numerati, un numero esatto di ripetizioni che finisce su un ferro di rovescio, e controlli del numero di maglie lungo il lavoro",
+          "Chiusura, fili da nascondere e messa in forma",
+          "Tutto nel PDF stampabile e nel link condiviso"
+        ],
+        "Perché i numeri reggono",
+        "I ferri scritti vengono dallo stesso schema dell'anteprima del punto. I nostri test seguono ogni schema ferro per ferro a molte misure e campioni, contando ogni maglia e controllando che il lavoro finito sia quadrato entro una ripetizione. La misura reale la decide il tuo campione, quindi misuralo prima."
+      ]
+    },
+    "mandala-rings-palettes-and-pattern-pages": {
+      "title": "Costruisci mandala anello per anello e conserva le tue tavolozze",
+      "summary": "Scegli il motivo esatto di ogni anello, sfoglia le tavolozze per tema o armonia, salva le tue e passa tra le opzioni con le miniature.",
+      "blocks": [
+        "Il [generatore di mandala](/mandalas/) ora costruisce un disegno anello per anello, la [pagina delle tavolozze](/palettes/) raggruppa i colori per tema e armonia, e la [libreria di motivi](/patterns/) mostra diversi motivi di ogni tipo.",
+        "Esempi da cui partire",
+        [
+          "Il nuovo disegno iniziale a undici anelli",
+          "Sei anelli scelti a mano, con simmetria di ordine 16",
+          "Una pagina da colorare da un seme con quattro dei nuovi motivi"
+        ],
+        "Le novità",
+        [
+          "Nove nuovi motivi per i mandala, e controllo su motivo, ripetizione, profondità, colori, punti d'accento e mezzo giro di ogni anello",
+          "Trascina gli anelli per riordinarli e i motivi sugli anelli, con pulsanti che fanno lo stesso da tastiera o touchscreen",
+          "60 tavolozze a tema in dieci gruppi e 72 tavolozze di armonie, in una pagina propria e in ogni generatore",
+          "Tavolozze tue con un nome, salvate nel browser",
+          "Una pagina e una miniatura per ogni opzione principale in otto generatori, come ogni piastrella di Truchet e gruppo di simmetria"
+        ],
+        "Lingue e colore",
+        "Cambiare lingua ora modifica un solo colore secondario invece di tutto l'aspetto. I colori principali del sito e di ogni disegno restano uguali."
+      ]
+    },
+    "truchet-tile-maker": {
+      "title": "Crea motivi continui da una piastrella che ruota",
+      "summary": "Scegli piastrella, griglia e disposizione, poi scarica una ripetizione continua in SVG o PNG o un PDF stampabile.",
+      "blocks": [
+        "Il [generatore di piastrelle di Truchet](/truchet/) è un nuovo strumento della [libreria di motivi](/patterns/). Riempie una griglia con una semplice piastrella, girata in modo diverso da un punto all'altro, e sono le rotazioni a creare il motivo.",
+        "Esempi da cui partire",
+        [
+          "Quarti di cerchio a scacchi",
+          "Triangoli specchiati da un seme",
+          "Smussi dritti a righe"
+        ],
+        "Cosa ottieni",
+        [
+          "Quattro piastrelle: quarti di cerchio, smussi dritti, linee diagonali e triangoli diagonali",
+          "Disposizioni casuale, specchiata, a scacchi, a righe e a onde diagonali",
+          "Una ripetizione continua in SVG o PNG",
+          "Un PDF stampabile con una ripetizione a grandezza reale e un foglio intero di ripetizioni"
+        ],
+        "Semi",
+        "Le disposizioni casuali nascono da un seme, quindi lo stesso seme dà sempre lo stesso motivo. Il browser ricorda il tuo ultimo seme, ma i link non lo trasportano."
+      ]
+    },
+    "geometric-stars-and-girih": {
+      "title": "Disegna veri girih e motivi di stelle geometriche",
+      "summary": "Costruisci un modulo ripetuto con le cinque piastrelle girih, o un motivo di stelle su poligoni regolari, poi scarica un motivo continuo, uno stencil, un pannello da parete e un PDF stampabile.",
+      "blocks": [
+        "Il [generatore di stelle geometriche e girih](/girih/) viene dalla [libreria di motivi](/patterns/). La sua opzione di ordine 10 usa le cinque piastrelle girih: decagono, pentagono, farfalla, rombo ed esagono allungato. Tutti i lati hanno la stessa lunghezza e le linee attraversano il punto medio di ogni lato a 72 e 108 gradi.",
+        "Esempi da cui partire",
+        [
+          "Girih con rosoni a decagono",
+          "Un motivo di stelle di ordine 8 in terracotta",
+          "Un motivo di stelle di ordine 12 in verde"
+        ],
+        "Cosa ottieni",
+        [
+          "Un motivo continuo in SVG o PNG",
+          "Un pannello da parete di ripetizioni dentro un bordo semplice",
+          "Uno stencil le cui fasce tengono il foglio in un pezzo solo, con fori per allinearlo",
+          "Un PDF stampabile con il pannello, una ripetizione, lo stencil e le note"
+        ],
+        "Cos'è ogni opzione",
+        "Solo l'opzione di ordine 10 si chiama girih. Le opzioni di ordine 4, 6, 8 e 12 sono motivi di stelle geometriche su poligoni regolari. Una stella di ordine 8, 10 o 12 non può dare quella simmetria a un intero motivo ripetuto, quindi lo strumento indica separatamente la rotazione della stella e quella del motivo. Il modulo girih viene da una ricerca al computer e non è copiato da nessun edificio."
+      ]
+    },
+    "mandala-maker": {
+      "title": "Genera disegni radiali geometrici e pagine da colorare",
+      "summary": "Scegli simmetria, anelli, motivi e colori per generare un disegno radiale originale, poi scaricalo a colori o come pagina da colorare.",
+      "blocks": [
+        "Il [generatore di mandala](/mandalas/) crea disegni radiali geometrici dalla [libreria di motivi](/patterns/). Scegli una simmetria da 6 a 24, da 2 a 8 anelli e i motivi che ogni anello può usare: petali, archi, punti, smerli, rombi o triangoli.",
+        "Esempi da cui partire",
+        [
+          "Ordine otto, petali e punti",
+          "Ordine sedici, sette anelli",
+          "Una pagina da colorare di ordine 24"
+        ],
+        "Cosa ottieni",
+        [
+          "Un disegno a colori in SVG o PNG",
+          "Una pagina da colorare in nero su bianco, in SVG o PNG",
+          "Un PDF stampabile con il disegno a colori e la pagina da colorare",
+          "Un link condiviso che riapre lo stesso disegno"
+        ],
+        "Lo stesso seme con le stesse impostazioni dà sempre lo stesso disegno. Sono forme generate: non copiano un disegno tradizionale e non hanno un significato voluto."
+      ]
+    },
+    "stained-glass-patterns": {
+      "title": "Progetta un pannello di vetrata e stampa le sagome di taglio",
+      "summary": "Scegli disegno, misura, piombo e colori, poi stampa sagome numerate a grandezza reale con il margine per il piombo già applicato.",
+      "blocks": [
+        "Il [generatore di vetrate](/stained-glass/) è un nuovo strumento della [libreria di motivi](/patterns/). Scegli uno di quattro disegni originali, imposta misura e piombo e scegli quattro colori del vetro.",
+        "Esempi da cui partire",
+        [
+          "Un sopraluce a raggiera",
+          "Losanghe",
+          "La legenda numerata di un bordo e centro"
+        ],
+        "Cosa ottieni",
+        [
+          "Un PDF con legenda numerata e sagome a grandezza reale, con il margine per il piombo applicato e un quadrato di controllo da 1 pollice su ogni foglio",
+          "I pezzi troppo grandi per una pagina divisi su fogli da unire con il nastro, e indicati come tali",
+          "Una stima del vetro per colore, incluso un margine di scarto dichiarato del 30%",
+          "Un'anteprima del pannello in SVG o PNG"
+        ],
+        "Severo su ciò che si può tagliare",
+        "Un'incisione corre solo dritta da bordo a bordo, quindi ogni pezzo ha lati dritti e nessun angolo rientrante. Nessun angolo è sotto i 30 gradi, il vetro tagliato è largo almeno 3/4\" e i pezzi lunghi vengono divisi. Se un disegno viola una regola alla tua misura, lo strumento abbassa il dettaglio e te lo dice. Questi limiti sono indicazioni prudenti, non una garanzia, e le stime sono approssimative: verifica con il tuo piombo e il tuo fornitore."
+      ]
+    },
+    "celtic-knot-maker": {
+      "title": "Crea un nodo celtico per laser, stencil o pagina da colorare",
+      "summary": "Costruisci un nodo intrecciato su una griglia, aggiungi interruzioni e scarica un file di taglio, uno stencil per tatuaggi, una pagina da colorare, un PNG o un PDF stampabile.",
+      "blocks": [
+        "Il [generatore di nodi celtici](/celtic-knots/) è un nuovo strumento della [libreria di motivi](/patterns/). Scegli la misura della griglia e un motivo di interruzioni, e traccia i fili in anelli chiusi che passano sopra e sotto a turno.",
+        "Esempi da cui partire",
+        [
+          "Un rombo di interruzioni",
+          "Interruzioni casuali da un seme",
+          "Una cornice senza intreccio, come pagina da colorare"
+        ],
+        "Cosa ottieni",
+        [
+          "File SVG di taglio con forme chiuse e piene per laser o Cricut",
+          "Uno stencil per tatuaggi con i bordi del nastro e spazi a ogni passaggio sotto",
+          "Una pagina da colorare con contorni neri su bianco",
+          "Immagini PNG e un PDF stampabile"
+        ],
+        "Semi e colori",
+        "I motivi casuali nascono da un seme, quindi lo stesso seme dà sempre lo stesso nodo. Il browser ricorda il tuo ultimo seme, ma i link non lo trasportano. I motivi specchiati, ruotati e fissi sono simmetrici. Puoi dare a ogni filo il suo colore, e la pagina ti dice quanti fili ha il tuo disegno."
+      ]
+    },
+    "sashiko-stitch-guides": {
+      "title": "Stampa una guida sashiko a grandezza reale",
+      "summary": "Scegli un motivo geometrico, la misura della griglia e del pannello, poi stampa una guida a grandezza reale con gli spazi agli incroci.",
+      "blocks": [
+        "Il [generatore di guide sashiko](/sashiko/) disegna motivi geometrici come linee di punti tratteggiate, pronte da stampare e trasferire sul tessuto. Scegli asanoha, seigaiha, shippo, kikko, kagome o una griglia semplice, poi imposta griglia, lunghezza del punto, pannello e colori.",
+        "Esempi da cui partire",
+        [
+          "Seigaiha, squame da 3\"",
+          "Shippo indaco su naturale",
+          "Kikko su antracite"
+        ],
+        "Cosa ottieni",
+        [
+          "Un PDF a grandezza reale, diviso su fogli Letter quando il pannello è più grande, con un quadrato di controllo da 1 pollice su ogni foglio",
+          "Punti centrati su ogni linea, così gli spazi cadono agli incroci e i punti non vi si incrociano",
+          "Un SVG e un PNG del pannello nei colori del tuo tessuto e filo",
+          "Un conteggio approssimativo dei punti e una stima del filo"
+        ],
+        "Cosa non fa questo strumento",
+        "Il sashiko è una tradizione giapponese di ricamo con i propri maestri e molti modi di lavorare. Questo strumento disegna solo guide a linee e non afferma nulla sull'origine di un motivo. Lunghezza del punto e spazio sono un punto di partenza: adattali al tuo filo, tessuto e mano."
+      ]
+    },
+    "tessellation-maker": {
+      "title": "Crea una tassellazione in uno dei 17 gruppi di simmetria",
+      "summary": "Scegli un motivo, un gruppo di simmetria e i tuoi colori, poi scarica un motivo continuo, una disposizione delle piastrelle e un PDF stampabile.",
+      "blocks": [
+        "Il [generatore di tassellazioni](/tessellations/) è un nuovo strumento della [libreria di motivi](/patterns/). Scegli un motivo, uno dei 17 gruppi di simmetria del piano e tre colori.",
+        "Esempi da cui partire",
+        [
+          "Barche a vela in p4g",
+          "Bandiere in p6m",
+          "Pesci in pgg"
+        ],
+        "Cosa ottieni",
+        [
+          "Un motivo continuo in SVG o PNG",
+          "Una disposizione in SVG o PNG che segna ogni ripetizione e una piastrella",
+          "Un PDF stampabile con la disposizione, la simmetria del gruppo e una ripetizione"
+        ],
+        "I gruppi esagonali si ripetono come rettangoli",
+        "I cinque gruppi esagonali non hanno una ripetizione quadrata. Il loro rettangolo verticale più piccolo è alto circa 1,73 volte la larghezza, ed è questa la forma del file che scarichi. I test controllano rotazioni, specchi e glissoriflessioni di ogni gruppo, e che ogni ripetizione combaci con se stessa ai bordi."
+      ]
+    },
+    "cross-stitch-charts": {
+      "title": "Crea uno schema stampabile a punto croce o canovaccio",
+      "summary": "Scegli o disegna un motivo, imposta conteggio del tessuto e colori, e ottieni uno schema a simboli, conteggio dei punti, una stima del filo e la misura finita.",
+      "blocks": [
+        "Il [generatore di punto croce e canovaccio](/cross-stitch/) è una novità della [libreria di motivi](/patterns/). Parti da un motivo o disegna il tuo sulla griglia, poi scegli colori e conteggio del tessuto.",
+        "Esempi da cui partire",
+        [
+          "Cuore",
+          "Pino, su tessuto da 18",
+          "Schema di barca a vela, per punto canovaccio"
+        ],
+        "Cosa ottieni",
+        [
+          "Uno schema PDF stampabile, con un simbolo per ogni colore e una linea spessa ogni 10 punti",
+          "Un elenco dei colori con il numero di punti per ciascuno",
+          "Una stima del filo per ogni colore",
+          "La misura finita al tuo conteggio, e quanto tessuto tagliare"
+        ],
+        "I tuoi colori, i nostri motivi",
+        "I colori sono quelli che scegli, non abbinati a nessuna marca di filo, quindi scegli il filo più simile che hai. I motivi sono stati disegnati per questo sito."
+      ]
+    },
+    "tartan-maker": {
+      "title": "Progetta uno scozzese e ottieni una guida di tessitura",
+      "summary": "Imposta colori e numero di fili per creare uno scozzese equilibrato, poi scarica un campione continuo e una guida di tessitura stampabile.",
+      "blocks": [
+        "Il [generatore di tartan e scozzesi](/tartans/) è il primo nuovo strumento della [libreria di motivi](/patterns/). Scegli colori e numero di fili, rispecchiali se vuoi e guarda la stoffa tessuta in saia 2/2.",
+        "Esempi da cui partire",
+        [
+          "Brace",
+          "Porto",
+          "Quadri a due colori"
+        ],
+        "Cosa ottieni",
+        [
+          "Un motivo continuo in SVG o PNG",
+          "L'ordine dei fili da orditare e tessere",
+          "Fili di ordito e passate di trama per la tua misura di stoffa",
+          "Una stima del filato per colore e una guida PDF stampabile"
+        ],
+        "Per ora solo scozzesi originali",
+        "I modelli sono inventati per questo sito. Alcuni tartan sono soggetti a restrizioni o appartengono a una famiglia o a un'organizzazione, quindi i tartan storici con un nome saranno aggiunti solo con fonti documentate."
+      ]
+    },
+    "now-in-five-languages": {
+      "title": "Endless Patterns ora parla cinque lingue",
+      "summary": "Il sito è ora in inglese, spagnolo, francese, tedesco e portoghese brasiliano, con colori che cambiano un po' per ciascuna.",
+      "blocks": [
+        "Ogni pagina, lista di taglio, istruzione e PDF è ora disponibile in [Español](/es/), [Français](/fr/), [Deutsch](/de/) e [Português](/pt/). Usa i link delle lingue in cima a ogni pagina per cambiare.",
+        "Colori che seguono la lingua",
+        "Ogni lingua ha una lieve variazione nei colori del sito e nella tavolozza predefinita, liberamente ispirata a una bandiera comunemente associata. Ogni esempio qui sotto si apre in quella lingua.",
+        [
+          "Ohio Star nei colori spagnoli",
+          "Sawtooth Star nei colori francesi",
+          "Pinwheel nei colori tedeschi",
+          "Variable Star nei colori brasiliani"
+        ],
+        "Una prima bozza",
+        "Queste traduzioni sono una prima bozza e non sono ancora state riviste da chi pratica queste arti. I nomi di blocchi e punti restano in inglese, le misure restano in pollici e iarde, e le misure di ferri e uncinetti usano la numerazione americana. L'uncinetto usa abbreviazioni locali, con il termine americano tra parentesi."
+      ]
+    },
+    "blog-and-changelog": {
+      "title": "Un blog e un elenco delle novità",
+      "summary": "Le nuove funzioni ora hanno un articolo con esempi da aprire e modificare, e ogni aggiornamento finisce nell'elenco delle novità.",
+      "blocks": [
+        "Endless Patterns ora ha questo blog e un elenco delle [novità](/changelog/). L'elenco è la lista breve di cosa è cambiato e quando. Gli articoli sono per le aggiunte più grandi, con esempi da provare.",
+        "Esempi da aprire e modificare",
+        "Ogni esempio in un articolo è un link allo strumento corrispondente, con le stesse impostazioni già inserite. Aprine uno, poi cambia misura, colori o campione per farlo tuo.",
+        [
+          "Bear's Paw, nove blocchi da 14\" con strisce di separazione",
+          "Punto riso in salvia",
+          "Punto rete in rosso fienile"
+        ]
+      ]
+    },
+    "knitting-and-crochet": {
+      "title": "Punti a maglia e all'uncinetto, su misura per il tuo campione",
+      "summary": "Scegli un punto, inserisci misura e campione, e ottieni un numero di partenza, righe scritte, uno schema e una stima del filato.",
+      "blocks": [
+        "Ora ci sono 9 [punti a maglia](/knitting/) e 7 [punti all'uncinetto](/crochet/). Ogni pagina calcola il progetto dal tuo campione, così i numeri si adattano al filato e agli strumenti che usi.",
+        "Cosa ottieni",
+        [
+          "Maglie da avviare o catenelle di partenza, arrotondate a ripetizioni intere del motivo",
+          "Istruzioni riga per riga, con l'uncinetto in termini americani",
+          "Uno schema del punto e un PDF stampabile",
+          "Una stima del filato"
+        ],
+        "Provane uno",
+        [
+          "Coste 2x2, impostate come sciarpa da 8\" x 60\"",
+          "Schema del punto cesto",
+          "Punto V, impostato come copertina per neonato"
+        ],
+        "Prima il campione",
+        "Il campione di partenza per ogni spessore di filato è solo un valore tipico, e la cifra del filato è una stima. Lavora un campione da 4\", inserisci ciò che misuri e compra un po' di filato in più. [Come funzionano i calcoli](/about/) spiega le ipotesi."
+      ]
+    },
+    "quilt-block-builder": {
+      "title": "Costruisci una trapunta con 36 blocchi tradizionali",
+      "summary": "Imposta misura, colori e disposizione di un blocco, poi ottieni lista di taglio, metraggio, motivi continui e sagome stampabili.",
+      "blocks": [
+        "Il [generatore di blocchi di patchwork](/blocks/) copre 36 blocchi tradizionali, da un semplice [Nine Patch](/blocks/nine-patch/) a disegni curvi e applicati. Scegli qualsiasi misura finita da 3\" a 24\", imposta i colori e disponi un'intera trapunta.",
+        "Esempi da cui partire",
+        [
+          "Log Cabin, girato per quadrante",
+          "Ohio Star in rosso fienile, con strisce di separazione",
+          "Dresden Plate, applicato su uno sfondo"
+        ],
+        "Cosa ottieni",
+        [
+          "Una lista di taglio per un blocco o tutta la trapunta",
+          "Metraggio per ogni tessuto, più retro, bordura e imbottitura",
+          "Download SVG e PNG, incluso un motivo continuo",
+          "Un PDF con i passaggi di assemblaggio e sagome a grandezza reale"
+        ],
+        "Quando una misura cade tra le tacche del righello, il generatore arrotonda il taglio per eccesso, lo segnala e suggerisce le misure più vicine che si dividono esattamente. Controlla i valori prima di acquistare o tagliare."
+      ]
+    },
+    "now-in-seven-languages": {
+      "title": "Endless Patterns ora parla italiano e olandese",
+      "summary": "Tutto il sito, con ogni istruzione generata e ogni PDF, è ora anche in italiano e olandese.",
+      "blocks": [
+        "Ogni pagina, lista di taglio, istruzione e PDF è ora disponibile in [Italiano](/it/) e [Nederlands](/nl/), accanto a inglese, spagnolo, francese, tedesco e portoghese brasiliano. Usa i link delle lingue in cima a ogni pagina per cambiare.",
+        "Esempi da cui partire",
+        [
+          "Un mandala fluido, aperto in italiano",
+          "Un foglio di battaglia navale, con etichette in olandese"
+        ],
+        "Una prima bozza",
+        "Queste traduzioni sono una prima bozza e non sono ancora state riviste da chi pratica queste arti. I nomi di blocchi e punti restano in inglese, le misure in pollici e iarde, e ferri e uncinetti usano la numerazione americana. L'uncinetto usa abbreviazioni locali, con il termine americano tra parentesi."
+      ]
+    }
+  },
+  "changelog": {
+    "Mandala styles and more patterns": {
+      "title": "Stili di mandala e più motivi",
+      "items": [
+        "Nuovi stili di disegno per i mandala: appuntito, morbido, ondulato, geometrico, fluido, schizzato a mano e pixel art",
+        "Nuove opzioni per piastrelle di Truchet, scacchiere, vetrate, tie-dye, tartan e girih"
+      ]
+    },
+    "Paper puzzles": {
+      "title": "Giochi su carta",
+      "items": [
+        "Nuova sezione giochi su carta nel menu, con sudoku, futoshiki, nonogrammi, battaglia navale, punti e quadretti, super tris e hex, accanto ai labirinti",
+        "Ogni foglio si scarica come PDF per US Letter, A4 o pagina tablet, o come SVG o PNG",
+        "Punti e quadretti fino a 200 quadretti di larghezza, in ogni formato poster da US Letter a 4A0"
+      ]
+    },
+    "Faster repeat designs": {
+      "title": "Disegni ripetuti più veloci",
+      "items": [
+        "I disegni ora si caricano con richieste memorizzabili, così le impostazioni già disegnate possono tornare senza essere ridisegnate"
+      ]
+    },
+    "Hidden message mazes": {
+      "title": "Labirinti con messaggio nascosto",
+      "items": [
+        "Nuova forma a messaggio nascosto per i labirinti: scrivi un messaggio e l'unico percorso dall'alto a sinistra al basso a destra lo compone, con una griglia su misura"
+      ]
+    },
+    "Maze PDF without the solution": {
+      "title": "PDF del labirinto senza soluzione",
+      "items": [
+        "Lo strumento labirinti ora può scaricare il PDF stampabile senza la pagina della soluzione, pronto come foglio di attività"
+      ]
+    },
+    "Letter and Legal maze sheets": {
+      "title": "Labirinti su fogli Letter e Legal",
+      "items": [
+        "I poster dei labirinti ora si possono creare su carta US Letter e US Legal"
+      ]
+    },
+    "Animated maze solution": {
+      "title": "Soluzione animata del labirinto",
+      "items": [
+        "Scegliendo la scheda Soluzione ora viene disegnato il percorso dalla partenza all'uscita, e un pulsante lo riproduce"
+      ]
+    },
+    "Customization analytics": {
+      "title": "Statistiche sulla personalizzazione",
+      "items": [
+        "Le statistiche del sito ora contano quando le impostazioni di un disegno cambiano, per strumento e nome dell'impostazione, e le pagine sulla privacy lo indicano"
+      ]
+    },
+    "Privacy Policy and Terms of Service": {
+      "title": "Informativa sulla privacy e Termini di servizio",
+      "items": [
+        "Nuove pagine Informativa sulla privacy e Termini di servizio, collegate dal piè di pagina di ogni pagina"
+      ]
+    },
+    "Site analytics": {
+      "title": "Statistiche del sito",
+      "items": [
+        "Il sito ora usa Google Analytics, e la sezione I tuoi dati spiega cosa viene raccolto, come disattivarlo e che le impostazioni vengono inviate al nostro server per disegnare i progetti"
+      ]
+    },
+    "Quilts and stitches now run on the API": {
+      "title": "Patchwork e punti ora funzionano sull'API",
+      "items": [
+        "I generatori di blocchi, maglia e uncinetto, i loro PDF e le immagini ora sono generati dall'API, come ogni altro strumento, e quelle pagine si condividono con un'immagine del proprio motivo"
+      ]
+    },
+    "Better link previews": {
+      "title": "Anteprime dei link migliori",
+      "items": [
+        "Ogni pagina di generatore ora si condivide con un'immagine del suo motivo, e ogni pagina ha titolo, descrizione e dettagli del link propri per social e app di messaggistica"
+      ]
+    },
+    "More patterns in five tools": {
+      "title": "Più motivi in cinque strumenti",
+      "items": [
+        "Aggiunte nuove opzioni perché ogni voce della libreria ne mostri sei: piastrelle di Truchet ad archi doppi e intrecciate, scozzesi Frutteto e Pozza di marea, vetrate a nido d'ape e a girandole, stelle di ordine 16 e tie-dye a raggiera, chevron e doppia spirale"
+      ]
+    },
+    "Game of Life patterns": {
+      "title": "Motivi del Gioco della vita",
+      "items": [
+        "Aggiunti motivi del Gioco della vita come disegni ripetuti stampabili, con strisce delle fasi e la regola spiegata su ogni cella"
+      ]
+    },
+    "Preview images": {
+      "title": "Immagini di anteprima",
+      "items": [
+        "Le pagine dei motivi ora possono includere un'immagine di anteprima nel loro HTML, per i motori di ricerca e le schede di condivisione"
+      ]
+    },
+    "More checkerboards and mazes": {
+      "title": "Più scacchiere e labirinti",
+      "items": [
+        "Aggiunte scacchiere a nido d'ape e a triangoli, con veri esagoni e triangoli nella scacchiera, nella piastrella e nel PDF",
+        "Aggiunti labirinti a triangolo e a rombo, con ogni algoritmo, il poster PDF e il PNG"
+      ]
+    },
+    "Checkerboard maker": {
+      "title": "Generatore di scacchiere",
+      "items": [
+        "Aggiunto un generatore di scacchiere con righe, colonne, proporzioni e colori a scelta"
+      ]
+    },
+    "Blog images": {
+      "title": "Immagini del blog",
+      "items": [
+        "Aggiunta un'immagine in evidenza per ogni articolo nella pagina del blog"
+      ]
+    },
+    "Crochet colorwork squares": {
+      "title": "Quadrati all'uncinetto a colori",
+      "items": [
+        "Aggiunto l'uncinetto a colori in /crochet/colorwork/: schemi tapestry, grafici da angolo ad angolo e granny square, ognuno scritto come quadrato multicolore completo con un PDF stampabile"
+      ]
+    },
+    "Knit colorwork patterns": {
+      "title": "Maglia a colori",
+      "items": [
+        "Aggiunta la maglia a colori: tredici schemi originali jacquard, mosaico e intarsio, scritti come quadrati completi con controllo dei fili passati, filato per colore e un PDF"
+      ]
+    },
+    "Fractal maker": {
+      "title": "Generatore di frattali",
+      "items": [
+        "Aggiunto un generatore di frattali, con nove tipi, download SVG e PNG e un PDF stampabile"
+      ]
+    },
+    "Poster-size mazes": {
+      "title": "Labirinti in formato poster",
+      "items": [
+        "Labirinti con colonne e righe a scelta, livelli Maestro ed Estremo, poster PDF e PNG molto grandi"
+      ]
+    },
+    "Maze generator": {
+      "title": "Generatore di labirinti",
+      "items": [
+        "Aggiunto un generatore di labirinti quadrati, rettangolari, circolari ed esagonali, con cinque algoritmi, un PDF con pagina separata per la soluzione, e SVG e PNG del labirinto e della soluzione"
+      ]
+    },
+    "Tie-dye planner": {
+      "title": "Pianificatore di tie-dye",
+      "items": [
+        "Aggiunto un pianificatore di tie-dye, con anteprima, mappa delle tinte, quantità da miscelare e un PDF stampabile"
+      ]
+    },
+    "Complete cross-stitch and needlepoint projects": {
+      "title": "Progetti completi a punto croce e canovaccio",
+      "items": [
+        "Il punto canovaccio è diventato un generatore a sé, con scelta di trama, punto e filato, e un margine per messa in forma e finitura",
+        "Entrambi i generatori ora danno materiali, ordine di lavoro, stima delle matassine e passaggi per cornice o cuscino",
+        "Aggiunti sei disegni quadrati completi a ciascun generatore, e schemi PDF divisi su più fogli con sovrapposizione"
+      ]
+    },
+    "Complete crochet squares": {
+      "title": "Quadrati completi all'uncinetto",
+      "items": [
+        "Le pagine e i PDF dei punti all'uncinetto ora scrivono un quadrato completo: materiali, catenella di base, ogni riga con il numero di maglie, un bordo con gli angoli e la finitura",
+        "Aggiunte le misure quadrate da 6, 8, 10 e 12 pollici al generatore di uncinetto"
+      ]
+    },
+    "Complete knitted squares": {
+      "title": "Quadrati completi a maglia",
+      "items": [
+        "Le pagine dei punti a maglia ora scrivono uno schema di quadrato completo, da 6, 8, 10 o 12 pollici, sulla pagina e nel PDF"
+      ]
+    },
+    "Mandala rings, palettes and pattern pages": {
+      "title": "Anelli dei mandala, tavolozze e pagine dei motivi",
+      "items": [
+        "Generatore di mandala anello per anello con trascinamento e nove nuovi motivi",
+        "Libreria di tavolozze per tema e armonia, con le tue tavolozze salvate nel browser",
+        "Pagine e miniature per le opzioni principali di otto generatori",
+        "Pagina iniziale e libreria con più motivi di ogni tipo, in ordine alfabetico",
+        "La lingua ora cambia un solo colore secondario",
+        "I semi vengono ricordati nel browser invece che nei link"
+      ]
+    },
+    "Truchet tile maker": {
+      "title": "Generatore di piastrelle di Truchet",
+      "items": [
+        "Aggiunto un generatore di piastrelle di Truchet, con ripetizioni continue in SVG e PNG e un PDF stampabile"
+      ]
+    },
+    "Geometric stars and girih maker": {
+      "title": "Generatore di stelle geometriche e girih",
+      "items": [
+        "Aggiunto un generatore di stelle geometriche e girih, con veri girih a cinque piastrelle, motivi di stelle di ordine 4, 6, 8 e 12, motivi continui, stencil, pannelli da parete e PDF"
+      ]
+    },
+    "Mandala maker": {
+      "title": "Generatore di mandala",
+      "items": [
+        "Aggiunto un generatore di mandala per disegni radiali geometrici, con SVG e PNG a colori, pagine da colorare e PDF stampabili"
+      ]
+    },
+    "Stained glass pattern maker": {
+      "title": "Generatore di vetrate",
+      "items": [
+        "Aggiunto un generatore di vetrate, con sagome numerate a grandezza reale, regole di taglio severe e una stima del vetro"
+      ]
+    },
+    "Celtic knot maker": {
+      "title": "Generatore di nodi celtici",
+      "items": [
+        "Aggiunto un generatore di nodi celtici, con file di taglio, stencil per tatuaggi, pagine da colorare, PNG e PDF stampabile"
+      ]
+    },
+    "Sashiko stitch guides": {
+      "title": "Guide per sashiko",
+      "items": [
+        "Aggiunto un generatore di guide sashiko, con guide stampabili a grandezza reale, spazi agli incroci e pannelli SVG e PNG"
+      ]
+    },
+    "Tessellation maker": {
+      "title": "Generatore di tassellazioni",
+      "items": [
+        "Aggiunto un generatore di tassellazioni con tutti i 17 gruppi di simmetria, motivi continui, disposizioni delle piastrelle e PDF stampabili"
+      ]
+    },
+    "Cross-stitch and needlepoint maker": {
+      "title": "Generatore di punto croce e canovaccio",
+      "items": [
+        "Aggiunto un generatore di punto croce e canovaccio, con griglia modificabile, schemi a simboli stampabili, conteggio dei punti, stime del filo e misure finite"
+      ]
+    },
+    "Tartan and plaid maker": {
+      "title": "Generatore di tartan e scozzesi",
+      "items": [
+        "Aggiunto un generatore di tartan e scozzesi, con campioni continui, guide di tessitura e stime del filato"
+      ]
+    },
+    "Five languages": {
+      "title": "Cinque lingue",
+      "items": [
+        "Aggiunti spagnolo, francese, tedesco e portoghese brasiliano, comprese istruzioni generate e PDF",
+        "Aggiunti link delle lingue in ogni pagina",
+        "Aggiunta una lieve variazione di colore e una tavolozza predefinita per ogni lingua"
+      ]
+    },
+    "Pattern library samples": {
+      "title": "Esempi nella libreria di motivi",
+      "items": [
+        "Aggiunto un esempio a ogni voce della libreria di motivi, con esempi statici per gli strumenti previsti"
+      ]
+    },
+    "Blog and changelog": {
+      "title": "Blog e novità",
+      "items": [
+        "Aggiunto un blog, con esempi che si aprono nello strumento corrispondente",
+        "Aggiunto questo elenco delle novità"
+      ]
+    },
+    "Pattern library preview": {
+      "title": "Anteprima della libreria di motivi",
+      "items": [
+        "Aggiunta una libreria di motivi che elenca gli strumenti funzionanti e quelli previsti",
+        "Corretta la navigazione del sito che usciva dallo schermo sui telefoni"
+      ]
+    },
+    "Knitting and crochet": {
+      "title": "Maglia e uncinetto",
+      "items": [
+        "Aggiunti 9 punti a maglia e 7 punti all'uncinetto",
+        "Aggiunti numeri di partenza, righe scritte, schemi e stime del filato in base a misura e campione",
+        "Aggiunti schemi PDF stampabili per ogni punto"
+      ]
+    },
+    "More quilt blocks": {
+      "title": "Più blocchi di patchwork",
+      "items": [
+        "Aggiunti 14 blocchi, per un totale di 36",
+        "Aggiunti blocchi con angoli piegati, curve e applicazioni, tagliati con le sagome PDF",
+        "Corretta la disposizione del blocco Anvil"
+      ]
+    },
+    "Quilt block builder": {
+      "title": "Generatore di blocchi di patchwork",
+      "items": [
+        "Prima versione, con 22 blocchi tradizionali di patchwork",
+        "Aggiunte liste di taglio, metraggio, motivi continui, link condivisi e sagome PDF"
+      ]
+    },
+    "Italian and Dutch": {
+      "title": "Italiano e olandese",
+      "items": [
+        "Aggiunti italiano e olandese, comprese istruzioni generate e PDF",
+        "Aggiunti link delle lingue e un colore d'accento per ciascuna"
+      ]
+    }
+  }
+}

@@ -3714,1484 +3714,1484 @@
    {
     "slug": "four-patch",
     "name": "Four Patch",
-    "family": "Squares & strips",
-    "level": "Beginner",
+    "family": "Quadrati e strisce",
+    "level": "Principiante",
     "grid": 2,
     "fabrics": [
      {
       "id": "light",
-      "label": "Light"
+      "label": "Chiaro"
      },
      {
       "id": "dark",
-      "label": "Dark"
+      "label": "Scuro"
      }
     ],
-    "summary": "Two rows of two squares in alternating fabrics: the smallest pieced block, and a good first project."
+    "summary": "Due file di due quadrati in tessuti alternati: il blocco più piccolo e un buon primo progetto."
    },
    {
     "slug": "nine-patch",
     "name": "Nine Patch",
-    "family": "Squares & strips",
-    "level": "Beginner",
+    "family": "Quadrati e strisce",
+    "level": "Principiante",
     "grid": 3,
     "fabrics": [
      {
       "id": "light",
-      "label": "Light"
+      "label": "Chiaro"
      },
      {
       "id": "dark",
-      "label": "Dark"
+      "label": "Scuro"
      }
     ],
-    "summary": "Three rows of three squares in a checkerboard, with the dark fabric at the corners and center."
+    "summary": "Tre file di tre quadrati a scacchi, con il tessuto scuro agli angoli e al centro."
    },
    {
     "slug": "checkerboard",
     "name": "Checkerboard",
-    "family": "Squares & strips",
-    "level": "Beginner",
+    "family": "Quadrati e strisce",
+    "level": "Principiante",
     "grid": 4,
     "fabrics": [
      {
       "id": "light",
-      "label": "Light"
+      "label": "Chiaro"
      },
      {
       "id": "dark",
-      "label": "Dark"
+      "label": "Scuro"
      }
     ],
-    "summary": "Four rows of four squares. It makes a busy all-over texture when blocks are set side by side."
+    "summary": "Quattro file di quattro quadrati. Crea una trama fitta quando i blocchi sono affiancati."
    },
    {
     "slug": "double-four-patch",
     "name": "Double Four Patch",
-    "family": "Squares & strips",
-    "level": "Beginner",
+    "family": "Quadrati e strisce",
+    "level": "Principiante",
     "grid": 4,
     "fabrics": [
      {
       "id": "light",
-      "label": "Light"
+      "label": "Chiaro"
      },
      {
       "id": "dark",
-      "label": "Dark"
+      "label": "Scuro"
      },
      {
       "id": "plain",
-      "label": "Plain squares"
+      "label": "Quadrati semplici"
      }
     ],
-    "summary": "Two small four patches alternate with two plain squares of the same size, forming a strong diagonal."
+    "summary": "Due piccoli four patch si alternano a due quadrati semplici della stessa misura, formando una forte diagonale."
    },
    {
     "slug": "double-nine-patch",
     "name": "Double Nine Patch",
-    "family": "Squares & strips",
-    "level": "Confident beginner",
+    "family": "Quadrati e strisce",
+    "level": "Principiante esperto",
     "grid": 9,
     "fabrics": [
      {
       "id": "light",
-      "label": "Light"
+      "label": "Chiaro"
      },
      {
       "id": "dark",
-      "label": "Dark"
+      "label": "Scuro"
      },
      {
       "id": "plain",
-      "label": "Plain squares"
+      "label": "Quadrati semplici"
      }
     ],
-    "summary": "A nine patch made of nine patches: five small pieced units alternate with four plain squares."
+    "summary": "Un nine patch fatto di nine patch: cinque piccole unità si alternano a quattro quadrati semplici."
    },
    {
     "slug": "rail-fence",
     "name": "Rail Fence",
-    "family": "Squares & strips",
-    "level": "Beginner",
+    "family": "Quadrati e strisce",
+    "level": "Principiante",
     "grid": 6,
     "fabrics": [
      {
       "id": "outer",
-      "label": "Outer rail"
+      "label": "Striscia esterna"
      },
      {
       "id": "middle",
-      "label": "Middle rail"
+      "label": "Striscia centrale"
      },
      {
       "id": "inner",
-      "label": "Inner rail"
+      "label": "Striscia interna"
      }
     ],
-    "summary": "Four sets of three strips, each set turned a quarter from its neighbor, so the rails appear to zigzag."
+    "summary": "Quattro gruppi di tre strisce, ognuno girato di un quarto rispetto al vicino, così le strisce sembrano fare zigzag."
    },
    {
     "slug": "brick-wall",
     "name": "Brick Wall",
-    "family": "Squares & strips",
-    "level": "Beginner",
+    "family": "Quadrati e strisce",
+    "level": "Principiante",
     "grid": 4,
     "fabrics": [
      {
       "id": "a",
-      "label": "Brick A"
+      "label": "Mattone A"
      },
      {
       "id": "b",
-      "label": "Brick B"
+      "label": "Mattone B"
      },
      {
       "id": "c",
-      "label": "Brick C"
+      "label": "Mattone C"
      }
     ],
-    "summary": "Staggered rows of rectangles with half-bricks at the ends. There are no matching seams to worry about."
+    "summary": "File sfalsate di rettangoli con mezzi mattoni alle estremità. Nessuna cucitura da far coincidere."
    },
    {
     "slug": "trip-around-the-world",
     "name": "Trip Around the World",
-    "family": "Squares & strips",
-    "level": "Confident beginner",
+    "family": "Quadrati e strisce",
+    "level": "Principiante esperto",
     "grid": 7,
     "fabrics": [
      {
       "id": "center",
-      "label": "Center ring"
+      "label": "Anello centrale"
      },
      {
       "id": "second",
-      "label": "Second ring"
+      "label": "Secondo anello"
      },
      {
       "id": "third",
-      "label": "Third ring"
+      "label": "Terzo anello"
      },
      {
       "id": "fourth",
-      "label": "Fourth ring"
+      "label": "Quarto anello"
      }
     ],
-    "summary": "Squares arranged in diamond-shaped rings that spread out from the center, cycling through four fabrics."
+    "summary": "Quadrati disposti in anelli a rombo che si allargano dal centro, alternando quattro tessuti."
    },
    {
     "slug": "hourglass",
     "name": "Hourglass",
-    "family": "Triangles",
-    "level": "Confident beginner",
+    "family": "Triangoli",
+    "level": "Principiante esperto",
     "grid": 1,
     "fabrics": [
      {
       "id": "light",
-      "label": "Light"
+      "label": "Chiaro"
      },
      {
       "id": "dark",
-      "label": "Dark"
+      "label": "Scuro"
      }
     ],
-    "summary": "Four triangles meeting at the center, with the same fabric on opposite sides."
+    "summary": "Quattro triangoli che si incontrano al centro, con lo stesso tessuto sui lati opposti."
    },
    {
     "slug": "pinwheel",
     "name": "Pinwheel",
-    "family": "Triangles",
-    "level": "Beginner",
+    "family": "Triangoli",
+    "level": "Principiante",
     "grid": 2,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Sfondo"
      },
      {
       "id": "blade",
-      "label": "Blades"
+      "label": "Pale"
      }
     ],
-    "summary": "Four half-square triangle units, each turned a quarter, so the blades appear to spin around the center."
+    "summary": "Quattro unità a mezzo quadrato, ognuna girata di un quarto, così le pale sembrano ruotare intorno al centro."
    },
    {
     "slug": "square-in-a-square",
     "name": "Square in a Square",
-    "family": "Triangles",
-    "level": "Confident beginner",
+    "family": "Triangoli",
+    "level": "Principiante esperto",
     "grid": 1,
     "fabrics": [
      {
       "id": "center",
-      "label": "Center"
+      "label": "Centro"
      },
      {
       "id": "corners",
-      "label": "Corners"
+      "label": "Angoli"
      }
     ],
-    "summary": "A center square set on point, with a triangle on each side to square it up."
+    "summary": "Un quadrato centrale messo di punta, con un triangolo su ogni lato per squadrarlo."
    },
    {
     "slug": "shoo-fly",
     "name": "Shoo Fly",
-    "family": "Triangles",
-    "level": "Beginner",
+    "family": "Triangoli",
+    "level": "Principiante",
     "grid": 3,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Sfondo"
      },
      {
       "id": "fly",
-      "label": "Fly"
+      "label": "Mosca"
      }
     ],
-    "summary": "A nine-patch layout with half-square triangles at the corners, which form an X through the center square."
+    "summary": "Una disposizione a nine patch con triangoli a mezzo quadrato agli angoli, che formano una X attraverso il quadrato centrale."
    },
    {
     "slug": "churn-dash",
     "name": "Churn Dash",
-    "family": "Triangles",
-    "level": "Beginner",
+    "family": "Triangoli",
+    "level": "Principiante",
     "grid": 6,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Sfondo"
      },
      {
       "id": "dash",
-      "label": "Dash"
+      "label": "Trattino"
      }
     ],
-    "summary": "Corner triangles and two-strip side units frame a plain center square."
+    "summary": "Triangoli d'angolo e unità laterali a due strisce incorniciano un quadrato centrale semplice."
    },
    {
     "slug": "jacobs-ladder",
     "name": "Jacob's Ladder",
-    "family": "Triangles",
-    "level": "Confident beginner",
+    "family": "Triangoli",
+    "level": "Principiante esperto",
     "grid": 6,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Sfondo"
      },
      {
       "id": "rung",
-      "label": "Ladder squares"
+      "label": "Quadrati della scala"
      },
      {
       "id": "corner",
-      "label": "Large triangles"
+      "label": "Triangoli grandi"
      }
     ],
-    "summary": "Five four patches and four large half-square triangles alternate to create crossing diagonal chains."
+    "summary": "Cinque four patch e quattro grandi triangoli a mezzo quadrato si alternano creando catene diagonali incrociate."
    },
    {
     "slug": "friendship-star",
     "name": "Friendship Star",
-    "family": "Stars",
-    "level": "Beginner",
+    "family": "Stelle",
+    "level": "Principiante",
     "grid": 3,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Sfondo"
      },
      {
       "id": "star",
-      "label": "Star"
+      "label": "Stella"
      }
     ],
-    "summary": "Four half-square triangles spin around a center square to make a simple four-pointed star."
+    "summary": "Quattro triangoli a mezzo quadrato ruotano intorno a un quadrato centrale formando una semplice stella a quattro punte."
    },
    {
     "slug": "ohio-star",
     "name": "Ohio Star",
-    "family": "Stars",
-    "level": "Confident beginner",
+    "family": "Stelle",
+    "level": "Principiante esperto",
     "grid": 3,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Sfondo"
      },
      {
       "id": "star",
-      "label": "Star points"
+      "label": "Punte della stella"
      },
      {
       "id": "center",
-      "label": "Center"
+      "label": "Centro"
      }
     ],
-    "summary": "An eight-pointed star built from four quarter-square triangle units around a center square."
+    "summary": "Una stella a otto punte fatta di quattro unità a quarto di quadrato intorno a un quadrato centrale."
    },
    {
     "slug": "sawtooth-star",
     "name": "Sawtooth Star",
-    "family": "Stars",
-    "level": "Confident beginner",
+    "family": "Stelle",
+    "level": "Principiante esperto",
     "grid": 4,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Sfondo"
      },
      {
       "id": "star",
-      "label": "Star points"
+      "label": "Punte della stella"
      },
      {
       "id": "center",
-      "label": "Center"
+      "label": "Centro"
      }
     ],
-    "summary": "A large center square surrounded by four flying geese units whose small triangles form the star points."
+    "summary": "Un grande quadrato centrale circondato da quattro unità flying geese i cui triangoli piccoli formano le punte della stella."
    },
    {
     "slug": "flying-geese",
     "name": "Flying Geese",
-    "family": "Triangles",
-    "level": "Confident beginner",
+    "family": "Triangoli",
+    "level": "Principiante esperto",
     "grid": 4,
     "fabrics": [
      {
       "id": "sky",
-      "label": "Sky"
+      "label": "Cielo"
      },
      {
       "id": "goose",
-      "label": "Geese"
+      "label": "Oche"
      }
     ],
-    "summary": "Two columns of four 2:1 units, each a large triangle flanked by two smaller ones."
+    "summary": "Due colonne di quattro unità 2:1, ciascuna un triangolo grande affiancato da due più piccoli."
    },
    {
     "slug": "dutchmans-puzzle",
     "name": "Dutchman's Puzzle",
-    "family": "Triangles",
-    "level": "Intermediate",
+    "family": "Triangoli",
+    "level": "Intermedio",
     "grid": 4,
     "fabrics": [
      {
       "id": "sky",
-      "label": "Background"
+      "label": "Sfondo"
      },
      {
       "id": "goose",
-      "label": "Geese"
+      "label": "Oche"
      }
     ],
-    "summary": "Eight flying geese in four pairs, each pair turned a quarter from the last, so the block seems to rotate."
+    "summary": "Otto flying geese in quattro coppie, ognuna girata di un quarto rispetto alla precedente, così il blocco sembra ruotare."
    },
    {
     "slug": "log-cabin",
     "name": "Log Cabin",
-    "family": "Squares & strips",
-    "level": "Confident beginner",
+    "family": "Quadrati e strisce",
+    "level": "Principiante esperto",
     "grid": 7,
     "fabrics": [
      {
       "id": "light",
-      "label": "Light logs"
+      "label": "Strisce chiare"
      },
      {
       "id": "dark",
-      "label": "Dark logs"
+      "label": "Strisce scure"
      },
      {
       "id": "center",
-      "label": "Center"
+      "label": "Centro"
      }
     ],
-    "summary": "Strips spiral outward from a center square, with light fabrics on two sides and dark on the other two."
+    "summary": "Strisce a spirale da un quadrato centrale, con tessuti chiari su due lati e scuri sugli altri due."
    },
    {
     "slug": "courthouse-steps",
     "name": "Courthouse Steps",
-    "family": "Squares & strips",
-    "level": "Confident beginner",
+    "family": "Quadrati e strisce",
+    "level": "Principiante esperto",
     "grid": 7,
     "fabrics": [
      {
       "id": "light",
-      "label": "Light steps"
+      "label": "Gradini chiari"
      },
      {
       "id": "dark",
-      "label": "Dark steps"
+      "label": "Gradini scuri"
      },
      {
       "id": "center",
-      "label": "Center"
+      "label": "Centro"
      }
     ],
-    "summary": "Strips are added to opposite sides of a center square, with light above and below and dark left and right."
+    "summary": "Strisce aggiunte ai lati opposti di un quadrato centrale, chiare sopra e sotto e scure a sinistra e a destra."
    },
    {
     "slug": "bears-paw",
     "name": "Bear's Paw",
-    "family": "Triangles",
-    "level": "Intermediate",
+    "family": "Triangoli",
+    "level": "Intermedio",
     "grid": 7,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Sfondo"
      },
      {
       "id": "paw",
-      "label": "Paws"
+      "label": "Zampe"
      },
      {
       "id": "center",
-      "label": "Center"
+      "label": "Centro"
      }
     ],
-    "summary": "Four paws, each a large square edged with small triangle claws, separated by a cross of strips."
+    "summary": "Quattro zampe, ciascuna un grande quadrato bordato di piccoli triangoli ad artiglio, separate da una croce di strisce."
    },
    {
     "slug": "puss-in-the-corner",
     "name": "Puss in the Corner",
-    "family": "Squares & strips",
-    "level": "Beginner",
+    "family": "Quadrati e strisce",
+    "level": "Principiante",
     "grid": 5,
     "fabrics": [
      {
       "id": "light",
-      "label": "Sides"
+      "label": "Lati"
      },
      {
       "id": "dark",
-      "label": "Corners"
+      "label": "Angoli"
      },
      {
       "id": "center",
-      "label": "Center"
+      "label": "Centro"
      }
     ],
-    "summary": "An uneven nine patch: small corner squares, long side strips and a large center square."
+    "summary": "Un nine patch irregolare: piccoli quadrati d'angolo, lunghe strisce laterali e un grande quadrato centrale."
    },
    {
     "slug": "single-irish-chain",
     "name": "Single Irish Chain",
-    "family": "Squares & strips",
-    "level": "Beginner",
+    "family": "Quadrati e strisce",
+    "level": "Principiante",
     "grid": 5,
     "fabrics": [
      {
       "id": "light",
-      "label": "Light"
+      "label": "Chiaro"
      },
      {
       "id": "dark",
-      "label": "Dark"
+      "label": "Scuro"
      }
     ],
-    "summary": "Five rows of five squares with dark diagonals, which link into chains when blocks are set together."
+    "summary": "Cinque file di cinque quadrati con diagonali scure, che si collegano in catene quando i blocchi sono uniti."
    },
    {
     "slug": "double-irish-chain",
     "name": "Double Irish Chain",
-    "family": "Squares & strips",
-    "level": "Confident beginner",
+    "family": "Quadrati e strisce",
+    "level": "Principiante esperto",
     "grid": 10,
     "fabrics": [
      {
       "id": "light",
-      "label": "Background"
+      "label": "Sfondo"
      },
      {
       "id": "middle",
-      "label": "Outer chain"
+      "label": "Catena esterna"
      },
      {
       "id": "dark",
-      "label": "Inner chain"
+      "label": "Catena interna"
      }
     ],
-    "summary": "Two checkered five-patch units alternate with two mostly plain units, forming wide diagonal chains."
+    "summary": "Due unità five patch a scacchi si alternano a due unità quasi semplici, formando larghe catene diagonali."
    },
    {
     "slug": "broken-dishes",
     "name": "Broken Dishes",
-    "family": "Triangles",
-    "level": "Beginner",
+    "family": "Triangoli",
+    "level": "Principiante",
     "grid": 2,
     "fabrics": [
      {
       "id": "light",
-      "label": "Light"
+      "label": "Chiaro"
      },
      {
       "id": "dark",
-      "label": "Dark"
+      "label": "Scuro"
      }
     ],
-    "summary": "Four half-square triangle units, turned against each other to give a shifting, jagged look."
+    "summary": "Quattro unità a mezzo quadrato, girate l'una contro l'altra per un aspetto mosso e frastagliato."
    },
    {
     "slug": "yankee-puzzle",
     "name": "Yankee Puzzle",
-    "family": "Triangles",
-    "level": "Confident beginner",
+    "family": "Triangoli",
+    "level": "Principiante esperto",
     "grid": 2,
     "fabrics": [
      {
       "id": "light",
-      "label": "Light"
+      "label": "Chiaro"
      },
      {
       "id": "dark",
-      "label": "Dark"
+      "label": "Scuro"
      }
     ],
-    "summary": "Four quarter-square triangle units, each turned a quarter from its neighbors."
+    "summary": "Quattro unità a quarto di quadrato, ognuna girata di un quarto rispetto alle vicine."
    },
    {
     "slug": "road-to-oklahoma",
     "name": "Road to Oklahoma",
-    "family": "Triangles",
-    "level": "Confident beginner",
+    "family": "Triangoli",
+    "level": "Principiante esperto",
     "grid": 4,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Sfondo"
      },
      {
       "id": "road",
-      "label": "Main road"
+      "label": "Strada principale"
      },
      {
       "id": "cross",
-      "label": "Cross road"
+      "label": "Strada trasversale"
      }
     ],
-    "summary": "Squares and half-square triangles form two roads that cross diagonally through the block."
+    "summary": "Quadrati e triangoli a mezzo quadrato formano due strade che si incrociano in diagonale."
    },
    {
     "slug": "anvil",
     "name": "Anvil",
-    "family": "Triangles",
-    "level": "Confident beginner",
+    "family": "Triangoli",
+    "level": "Principiante esperto",
     "grid": 4,
     "fabrics": [
      {
       "id": "light",
-      "label": "Light"
+      "label": "Chiaro"
      },
      {
       "id": "dark",
-      "label": "Dark"
+      "label": "Scuro"
      },
      {
       "id": "accent",
-      "label": "Small squares"
+      "label": "Quadrati piccoli"
      }
     ],
-    "summary": "Two large half-square triangles alternate with two units of small squares and triangles, giving a stepped diagonal."
+    "summary": "Due grandi triangoli a mezzo quadrato si alternano a due unità di piccoli quadrati e triangoli, con una diagonale a gradini."
    },
    {
     "slug": "bow-tie",
     "name": "Bow Tie",
-    "family": "Triangles",
-    "level": "Beginner",
+    "family": "Triangoli",
+    "level": "Principiante",
     "grid": 2,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Sfondo"
      },
      {
       "id": "tie",
-      "label": "Tie"
+      "label": "Nodo"
      }
     ],
-    "summary": "Two squares meet at a small knot in the center, made by folding corners onto two background squares."
+    "summary": "Due quadrati si incontrano in un piccolo nodo al centro, fatto piegando gli angoli su due quadrati di sfondo."
    },
    {
     "slug": "variable-star",
     "name": "Variable Star",
-    "family": "Stars",
-    "level": "Confident beginner",
+    "family": "Stelle",
+    "level": "Principiante esperto",
     "grid": 4,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Sfondo"
      },
      {
       "id": "star",
-      "label": "Star points"
+      "label": "Punte della stella"
      },
      {
       "id": "center",
-      "label": "Center"
+      "label": "Centro"
      }
     ],
-    "summary": "Pairs of half-square triangles make four broad points around a center of four squares."
+    "summary": "Coppie di triangoli a mezzo quadrato formano quattro ampie punte intorno a un centro di quattro quadrati."
    },
    {
     "slug": "sisters-choice",
     "name": "Sister's Choice",
-    "family": "Stars",
-    "level": "Confident beginner",
+    "family": "Stelle",
+    "level": "Principiante esperto",
     "grid": 5,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Sfondo"
      },
      {
       "id": "star",
-      "label": "Star"
+      "label": "Stella"
      },
      {
       "id": "accent",
-      "label": "Accent"
+      "label": "Accento"
      }
     ],
-    "summary": "A five-by-five block of squares and half-square triangles that form a star around a center square."
+    "summary": "Un blocco cinque per cinque di quadrati e triangoli a mezzo quadrato che formano una stella intorno a un quadrato centrale."
    },
    {
     "slug": "lemoyne-star",
     "name": "LeMoyne Star",
-    "family": "Stars",
-    "level": "Intermediate",
+    "family": "Stelle",
+    "level": "Intermedio",
     "grid": 1,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Sfondo"
      },
      {
       "id": "star",
-      "label": "Star"
+      "label": "Stella"
      },
      {
       "id": "alternate",
-      "label": "Alternate points"
+      "label": "Punte alternate"
      }
     ],
-    "summary": "Eight 45-degree diamonds meet at the center, with corner squares and side triangles set in around them."
+    "summary": "Otto rombi a 45 gradi si incontrano al centro, con quadrati d'angolo e triangoli laterali inseriti intorno."
    },
    {
     "slug": "drunkards-path",
     "name": "Drunkard's Path",
-    "family": "Curves & appliqué",
-    "level": "Intermediate",
+    "family": "Curve e applicazioni",
+    "level": "Intermedio",
     "grid": 4,
     "fabrics": [
      {
       "id": "light",
-      "label": "Light"
+      "label": "Chiaro"
      },
      {
       "id": "dark",
-      "label": "Dark"
+      "label": "Scuro"
      }
     ],
-    "summary": "Sixteen units with a curved seam, turned and recolored so that a path wanders across the block."
+    "summary": "Sedici unità con cucitura curva, girate e ricolorate in modo che un sentiero vaghi attraverso il blocco."
    },
    {
     "slug": "dresden-plate",
     "name": "Dresden Plate",
-    "family": "Curves & appliqué",
-    "level": "Intermediate",
+    "family": "Curve e applicazioni",
+    "level": "Intermedio",
     "grid": 1,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Sfondo"
      },
      {
       "id": "petal",
-      "label": "Plate"
+      "label": "Piatto"
      },
      {
       "id": "alternate",
-      "label": "Alternate wedges"
+      "label": "Spicchi alternati"
      },
      {
       "id": "center",
-      "label": "Center"
+      "label": "Centro"
      }
     ],
-    "summary": "Sixteen pointed wedges form a ring that's appliquéd to a background square, with a center circle on top."
+    "summary": "Sedici spicchi appuntiti formano un anello applicato su un quadrato di sfondo, con un cerchio centrale sopra."
    },
    {
     "slug": "grandmothers-flower-garden",
     "name": "Grandmother's Flower Garden",
-    "family": "Curves & appliqué",
-    "level": "Intermediate",
+    "family": "Curve e applicazioni",
+    "level": "Intermedio",
     "grid": 1,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Sfondo"
      },
      {
       "id": "center",
-      "label": "Flower center"
+      "label": "Centro del fiore"
      },
      {
       "id": "petal",
-      "label": "Petals"
+      "label": "Petali"
      },
      {
       "id": "path",
-      "label": "Path"
+      "label": "Sentiero"
      }
     ],
-    "summary": "A center hexagon with two rings around it, shown here as a single rosette appliquéd to a background square."
+    "summary": "Un esagono centrale con due anelli intorno, mostrato come una rosetta applicata su un quadrato di sfondo."
    }
   ],
   "nl": [
    {
     "slug": "four-patch",
     "name": "Four Patch",
-    "family": "Squares & strips",
+    "family": "Vierkanten en stroken",
     "level": "Beginner",
     "grid": 2,
     "fabrics": [
      {
       "id": "light",
-      "label": "Light"
+      "label": "Licht"
      },
      {
       "id": "dark",
-      "label": "Dark"
+      "label": "Donker"
      }
     ],
-    "summary": "Two rows of two squares in alternating fabrics: the smallest pieced block, and a good first project."
+    "summary": "Twee rijen van twee vierkanten in afwisselende stoffen: het kleinste blok en een goed eerste project."
    },
    {
     "slug": "nine-patch",
     "name": "Nine Patch",
-    "family": "Squares & strips",
+    "family": "Vierkanten en stroken",
     "level": "Beginner",
     "grid": 3,
     "fabrics": [
      {
       "id": "light",
-      "label": "Light"
+      "label": "Licht"
      },
      {
       "id": "dark",
-      "label": "Dark"
+      "label": "Donker"
      }
     ],
-    "summary": "Three rows of three squares in a checkerboard, with the dark fabric at the corners and center."
+    "summary": "Drie rijen van drie vierkanten als een dambord, met de donkere stof op de hoeken en in het midden."
    },
    {
     "slug": "checkerboard",
     "name": "Checkerboard",
-    "family": "Squares & strips",
+    "family": "Vierkanten en stroken",
     "level": "Beginner",
     "grid": 4,
     "fabrics": [
      {
       "id": "light",
-      "label": "Light"
+      "label": "Licht"
      },
      {
       "id": "dark",
-      "label": "Dark"
+      "label": "Donker"
      }
     ],
-    "summary": "Four rows of four squares. It makes a busy all-over texture when blocks are set side by side."
+    "summary": "Vier rijen van vier vierkanten. Geeft een drukke structuur als blokken naast elkaar liggen."
    },
    {
     "slug": "double-four-patch",
     "name": "Double Four Patch",
-    "family": "Squares & strips",
+    "family": "Vierkanten en stroken",
     "level": "Beginner",
     "grid": 4,
     "fabrics": [
      {
       "id": "light",
-      "label": "Light"
+      "label": "Licht"
      },
      {
       "id": "dark",
-      "label": "Dark"
+      "label": "Donker"
      },
      {
       "id": "plain",
-      "label": "Plain squares"
+      "label": "Effen vierkanten"
      }
     ],
-    "summary": "Two small four patches alternate with two plain squares of the same size, forming a strong diagonal."
+    "summary": "Twee kleine four patches wisselen af met twee effen vierkanten van dezelfde maat, voor een sterke diagonaal."
    },
    {
     "slug": "double-nine-patch",
     "name": "Double Nine Patch",
-    "family": "Squares & strips",
-    "level": "Confident beginner",
+    "family": "Vierkanten en stroken",
+    "level": "Gevorderde beginner",
     "grid": 9,
     "fabrics": [
      {
       "id": "light",
-      "label": "Light"
+      "label": "Licht"
      },
      {
       "id": "dark",
-      "label": "Dark"
+      "label": "Donker"
      },
      {
       "id": "plain",
-      "label": "Plain squares"
+      "label": "Effen vierkanten"
      }
     ],
-    "summary": "A nine patch made of nine patches: five small pieced units alternate with four plain squares."
+    "summary": "Een nine patch van nine patches: vijf kleine eenheden wisselen af met vier effen vierkanten."
    },
    {
     "slug": "rail-fence",
     "name": "Rail Fence",
-    "family": "Squares & strips",
+    "family": "Vierkanten en stroken",
     "level": "Beginner",
     "grid": 6,
     "fabrics": [
      {
       "id": "outer",
-      "label": "Outer rail"
+      "label": "Buitenste strook"
      },
      {
       "id": "middle",
-      "label": "Middle rail"
+      "label": "Middelste strook"
      },
      {
       "id": "inner",
-      "label": "Inner rail"
+      "label": "Binnenste strook"
      }
     ],
-    "summary": "Four sets of three strips, each set turned a quarter from its neighbor, so the rails appear to zigzag."
+    "summary": "Vier sets van drie stroken, elk een kwartslag gedraaid ten opzichte van de buur, zodat de stroken lijken te zigzaggen."
    },
    {
     "slug": "brick-wall",
     "name": "Brick Wall",
-    "family": "Squares & strips",
+    "family": "Vierkanten en stroken",
     "level": "Beginner",
     "grid": 4,
     "fabrics": [
      {
       "id": "a",
-      "label": "Brick A"
+      "label": "Steen A"
      },
      {
       "id": "b",
-      "label": "Brick B"
+      "label": "Steen B"
      },
      {
       "id": "c",
-      "label": "Brick C"
+      "label": "Steen C"
      }
     ],
-    "summary": "Staggered rows of rectangles with half-bricks at the ends. There are no matching seams to worry about."
+    "summary": "Verspringende rijen rechthoeken met halve stenen aan de uiteinden. Geen naden om op elkaar te laten aansluiten."
    },
    {
     "slug": "trip-around-the-world",
     "name": "Trip Around the World",
-    "family": "Squares & strips",
-    "level": "Confident beginner",
+    "family": "Vierkanten en stroken",
+    "level": "Gevorderde beginner",
     "grid": 7,
     "fabrics": [
      {
       "id": "center",
-      "label": "Center ring"
+      "label": "Middenring"
      },
      {
       "id": "second",
-      "label": "Second ring"
+      "label": "Tweede ring"
      },
      {
       "id": "third",
-      "label": "Third ring"
+      "label": "Derde ring"
      },
      {
       "id": "fourth",
-      "label": "Fourth ring"
+      "label": "Vierde ring"
      }
     ],
-    "summary": "Squares arranged in diamond-shaped rings that spread out from the center, cycling through four fabrics."
+    "summary": "Vierkanten in ruitvormige ringen die vanuit het midden uitwaaieren, door vier stoffen heen."
    },
    {
     "slug": "hourglass",
     "name": "Hourglass",
-    "family": "Triangles",
-    "level": "Confident beginner",
+    "family": "Driehoeken",
+    "level": "Gevorderde beginner",
     "grid": 1,
     "fabrics": [
      {
       "id": "light",
-      "label": "Light"
+      "label": "Licht"
      },
      {
       "id": "dark",
-      "label": "Dark"
+      "label": "Donker"
      }
     ],
-    "summary": "Four triangles meeting at the center, with the same fabric on opposite sides."
+    "summary": "Vier driehoeken die in het midden samenkomen, met dezelfde stof aan tegenoverliggende zijden."
    },
    {
     "slug": "pinwheel",
     "name": "Pinwheel",
-    "family": "Triangles",
+    "family": "Driehoeken",
     "level": "Beginner",
     "grid": 2,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Achtergrond"
      },
      {
       "id": "blade",
-      "label": "Blades"
+      "label": "Wieken"
      }
     ],
-    "summary": "Four half-square triangle units, each turned a quarter, so the blades appear to spin around the center."
+    "summary": "Vier halve-vierkanteenheden, elk een kwartslag gedraaid, zodat de wieken rond het midden lijken te draaien."
    },
    {
     "slug": "square-in-a-square",
     "name": "Square in a Square",
-    "family": "Triangles",
-    "level": "Confident beginner",
+    "family": "Driehoeken",
+    "level": "Gevorderde beginner",
     "grid": 1,
     "fabrics": [
      {
       "id": "center",
-      "label": "Center"
+      "label": "Midden"
      },
      {
       "id": "corners",
-      "label": "Corners"
+      "label": "Hoeken"
      }
     ],
-    "summary": "A center square set on point, with a triangle on each side to square it up."
+    "summary": "Een middenvierkant op zijn punt, met een driehoek aan elke zijde om het recht te maken."
    },
    {
     "slug": "shoo-fly",
     "name": "Shoo Fly",
-    "family": "Triangles",
+    "family": "Driehoeken",
     "level": "Beginner",
     "grid": 3,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Achtergrond"
      },
      {
       "id": "fly",
-      "label": "Fly"
+      "label": "Vlieg"
      }
     ],
-    "summary": "A nine-patch layout with half-square triangles at the corners, which form an X through the center square."
+    "summary": "Een nine patch-indeling met halve-vierkantdriehoeken op de hoeken, die een X door het middenvierkant vormen."
    },
    {
     "slug": "churn-dash",
     "name": "Churn Dash",
-    "family": "Triangles",
+    "family": "Driehoeken",
     "level": "Beginner",
     "grid": 6,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Achtergrond"
      },
      {
       "id": "dash",
-      "label": "Dash"
+      "label": "Streep"
      }
     ],
-    "summary": "Corner triangles and two-strip side units frame a plain center square."
+    "summary": "Hoekdriehoeken en zij-eenheden van twee stroken omlijsten een effen middenvierkant."
    },
    {
     "slug": "jacobs-ladder",
     "name": "Jacob's Ladder",
-    "family": "Triangles",
-    "level": "Confident beginner",
+    "family": "Driehoeken",
+    "level": "Gevorderde beginner",
     "grid": 6,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Achtergrond"
      },
      {
       "id": "rung",
-      "label": "Ladder squares"
+      "label": "Laddervierkanten"
      },
      {
       "id": "corner",
-      "label": "Large triangles"
+      "label": "Grote driehoeken"
      }
     ],
-    "summary": "Five four patches and four large half-square triangles alternate to create crossing diagonal chains."
+    "summary": "Vijf four patches en vier grote halve-vierkantdriehoeken wisselen af tot kruisende diagonale kettingen."
    },
    {
     "slug": "friendship-star",
     "name": "Friendship Star",
-    "family": "Stars",
+    "family": "Sterren",
     "level": "Beginner",
     "grid": 3,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Achtergrond"
      },
      {
       "id": "star",
-      "label": "Star"
+      "label": "Ster"
      }
     ],
-    "summary": "Four half-square triangles spin around a center square to make a simple four-pointed star."
+    "summary": "Vier halve-vierkantdriehoeken draaien rond een middenvierkant tot een eenvoudige vierpuntige ster."
    },
    {
     "slug": "ohio-star",
     "name": "Ohio Star",
-    "family": "Stars",
-    "level": "Confident beginner",
+    "family": "Sterren",
+    "level": "Gevorderde beginner",
     "grid": 3,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Achtergrond"
      },
      {
       "id": "star",
-      "label": "Star points"
+      "label": "Sterpunten"
      },
      {
       "id": "center",
-      "label": "Center"
+      "label": "Midden"
      }
     ],
-    "summary": "An eight-pointed star built from four quarter-square triangle units around a center square."
+    "summary": "Een achtpuntige ster van vier kwart-vierkanteenheden rond een middenvierkant."
    },
    {
     "slug": "sawtooth-star",
     "name": "Sawtooth Star",
-    "family": "Stars",
-    "level": "Confident beginner",
+    "family": "Sterren",
+    "level": "Gevorderde beginner",
     "grid": 4,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Achtergrond"
      },
      {
       "id": "star",
-      "label": "Star points"
+      "label": "Sterpunten"
      },
      {
       "id": "center",
-      "label": "Center"
+      "label": "Midden"
      }
     ],
-    "summary": "A large center square surrounded by four flying geese units whose small triangles form the star points."
+    "summary": "Een groot middenvierkant omringd door vier flying geese-eenheden waarvan de kleine driehoeken de sterpunten vormen."
    },
    {
     "slug": "flying-geese",
     "name": "Flying Geese",
-    "family": "Triangles",
-    "level": "Confident beginner",
+    "family": "Driehoeken",
+    "level": "Gevorderde beginner",
     "grid": 4,
     "fabrics": [
      {
       "id": "sky",
-      "label": "Sky"
+      "label": "Lucht"
      },
      {
       "id": "goose",
-      "label": "Geese"
+      "label": "Ganzen"
      }
     ],
-    "summary": "Two columns of four 2:1 units, each a large triangle flanked by two smaller ones."
+    "summary": "Twee kolommen van vier 2:1-eenheden, elk een grote driehoek met twee kleinere ernaast."
    },
    {
     "slug": "dutchmans-puzzle",
     "name": "Dutchman's Puzzle",
-    "family": "Triangles",
-    "level": "Intermediate",
+    "family": "Driehoeken",
+    "level": "Gemiddeld",
     "grid": 4,
     "fabrics": [
      {
       "id": "sky",
-      "label": "Background"
+      "label": "Achtergrond"
      },
      {
       "id": "goose",
-      "label": "Geese"
+      "label": "Ganzen"
      }
     ],
-    "summary": "Eight flying geese in four pairs, each pair turned a quarter from the last, so the block seems to rotate."
+    "summary": "Acht flying geese in vier paren, elk paar een kwartslag gedraaid ten opzichte van het vorige, zodat het blok lijkt te draaien."
    },
    {
     "slug": "log-cabin",
     "name": "Log Cabin",
-    "family": "Squares & strips",
-    "level": "Confident beginner",
+    "family": "Vierkanten en stroken",
+    "level": "Gevorderde beginner",
     "grid": 7,
     "fabrics": [
      {
       "id": "light",
-      "label": "Light logs"
+      "label": "Lichte stroken"
      },
      {
       "id": "dark",
-      "label": "Dark logs"
+      "label": "Donkere stroken"
      },
      {
       "id": "center",
-      "label": "Center"
+      "label": "Midden"
      }
     ],
-    "summary": "Strips spiral outward from a center square, with light fabrics on two sides and dark on the other two."
+    "summary": "Stroken draaien spiraalsgewijs vanuit een middenvierkant, met lichte stoffen aan twee zijden en donkere aan de andere twee."
    },
    {
     "slug": "courthouse-steps",
     "name": "Courthouse Steps",
-    "family": "Squares & strips",
-    "level": "Confident beginner",
+    "family": "Vierkanten en stroken",
+    "level": "Gevorderde beginner",
     "grid": 7,
     "fabrics": [
      {
       "id": "light",
-      "label": "Light steps"
+      "label": "Lichte treden"
      },
      {
       "id": "dark",
-      "label": "Dark steps"
+      "label": "Donkere treden"
      },
      {
       "id": "center",
-      "label": "Center"
+      "label": "Midden"
      }
     ],
-    "summary": "Strips are added to opposite sides of a center square, with light above and below and dark left and right."
+    "summary": "Stroken aan tegenoverliggende zijden van een middenvierkant, licht boven en onder, donker links en rechts."
    },
    {
     "slug": "bears-paw",
     "name": "Bear's Paw",
-    "family": "Triangles",
-    "level": "Intermediate",
+    "family": "Driehoeken",
+    "level": "Gemiddeld",
     "grid": 7,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Achtergrond"
      },
      {
       "id": "paw",
-      "label": "Paws"
+      "label": "Poten"
      },
      {
       "id": "center",
-      "label": "Center"
+      "label": "Midden"
      }
     ],
-    "summary": "Four paws, each a large square edged with small triangle claws, separated by a cross of strips."
+    "summary": "Vier poten, elk een groot vierkant met kleine driehoekige klauwen, gescheiden door een kruis van stroken."
    },
    {
     "slug": "puss-in-the-corner",
     "name": "Puss in the Corner",
-    "family": "Squares & strips",
+    "family": "Vierkanten en stroken",
     "level": "Beginner",
     "grid": 5,
     "fabrics": [
      {
       "id": "light",
-      "label": "Sides"
+      "label": "Zijden"
      },
      {
       "id": "dark",
-      "label": "Corners"
+      "label": "Hoeken"
      },
      {
       "id": "center",
-      "label": "Center"
+      "label": "Midden"
      }
     ],
-    "summary": "An uneven nine patch: small corner squares, long side strips and a large center square."
+    "summary": "Een ongelijke nine patch: kleine hoekvierkanten, lange zijstroken en een groot middenvierkant."
    },
    {
     "slug": "single-irish-chain",
     "name": "Single Irish Chain",
-    "family": "Squares & strips",
+    "family": "Vierkanten en stroken",
     "level": "Beginner",
     "grid": 5,
     "fabrics": [
      {
       "id": "light",
-      "label": "Light"
+      "label": "Licht"
      },
      {
       "id": "dark",
-      "label": "Dark"
+      "label": "Donker"
      }
     ],
-    "summary": "Five rows of five squares with dark diagonals, which link into chains when blocks are set together."
+    "summary": "Vijf rijen van vijf vierkanten met donkere diagonalen, die tot kettingen aansluiten als blokken samenkomen."
    },
    {
     "slug": "double-irish-chain",
     "name": "Double Irish Chain",
-    "family": "Squares & strips",
-    "level": "Confident beginner",
+    "family": "Vierkanten en stroken",
+    "level": "Gevorderde beginner",
     "grid": 10,
     "fabrics": [
      {
       "id": "light",
-      "label": "Background"
+      "label": "Achtergrond"
      },
      {
       "id": "middle",
-      "label": "Outer chain"
+      "label": "Buitenste ketting"
      },
      {
       "id": "dark",
-      "label": "Inner chain"
+      "label": "Binnenste ketting"
      }
     ],
-    "summary": "Two checkered five-patch units alternate with two mostly plain units, forming wide diagonal chains."
+    "summary": "Twee geruite five patch-eenheden wisselen af met twee bijna effen eenheden, voor brede diagonale kettingen."
    },
    {
     "slug": "broken-dishes",
     "name": "Broken Dishes",
-    "family": "Triangles",
+    "family": "Driehoeken",
     "level": "Beginner",
     "grid": 2,
     "fabrics": [
      {
       "id": "light",
-      "label": "Light"
+      "label": "Licht"
      },
      {
       "id": "dark",
-      "label": "Dark"
+      "label": "Donker"
      }
     ],
-    "summary": "Four half-square triangle units, turned against each other to give a shifting, jagged look."
+    "summary": "Vier halve-vierkanteenheden, tegen elkaar in gedraaid voor een verspringend, gekarteld uiterlijk."
    },
    {
     "slug": "yankee-puzzle",
     "name": "Yankee Puzzle",
-    "family": "Triangles",
-    "level": "Confident beginner",
+    "family": "Driehoeken",
+    "level": "Gevorderde beginner",
     "grid": 2,
     "fabrics": [
      {
       "id": "light",
-      "label": "Light"
+      "label": "Licht"
      },
      {
       "id": "dark",
-      "label": "Dark"
+      "label": "Donker"
      }
     ],
-    "summary": "Four quarter-square triangle units, each turned a quarter from its neighbors."
+    "summary": "Vier kwart-vierkanteenheden, elk een kwartslag gedraaid ten opzichte van de buren."
    },
    {
     "slug": "road-to-oklahoma",
     "name": "Road to Oklahoma",
-    "family": "Triangles",
-    "level": "Confident beginner",
+    "family": "Driehoeken",
+    "level": "Gevorderde beginner",
     "grid": 4,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Achtergrond"
      },
      {
       "id": "road",
-      "label": "Main road"
+      "label": "Hoofdweg"
      },
      {
       "id": "cross",
-      "label": "Cross road"
+      "label": "Dwarsweg"
      }
     ],
-    "summary": "Squares and half-square triangles form two roads that cross diagonally through the block."
+    "summary": "Vierkanten en halve-vierkantdriehoeken vormen twee wegen die diagonaal door het blok kruisen."
    },
    {
     "slug": "anvil",
     "name": "Anvil",
-    "family": "Triangles",
-    "level": "Confident beginner",
+    "family": "Driehoeken",
+    "level": "Gevorderde beginner",
     "grid": 4,
     "fabrics": [
      {
       "id": "light",
-      "label": "Light"
+      "label": "Licht"
      },
      {
       "id": "dark",
-      "label": "Dark"
+      "label": "Donker"
      },
      {
       "id": "accent",
-      "label": "Small squares"
+      "label": "Kleine vierkanten"
      }
     ],
-    "summary": "Two large half-square triangles alternate with two units of small squares and triangles, giving a stepped diagonal."
+    "summary": "Twee grote halve-vierkantdriehoeken wisselen af met twee eenheden van kleine vierkanten en driehoeken, voor een getrapte diagonaal."
    },
    {
     "slug": "bow-tie",
     "name": "Bow Tie",
-    "family": "Triangles",
+    "family": "Driehoeken",
     "level": "Beginner",
     "grid": 2,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Achtergrond"
      },
      {
       "id": "tie",
-      "label": "Tie"
+      "label": "Strik"
      }
     ],
-    "summary": "Two squares meet at a small knot in the center, made by folding corners onto two background squares."
+    "summary": "Twee vierkanten komen samen in een kleine knoop in het midden, gemaakt door hoeken op twee achtergrondvierkanten te vouwen."
    },
    {
     "slug": "variable-star",
     "name": "Variable Star",
-    "family": "Stars",
-    "level": "Confident beginner",
+    "family": "Sterren",
+    "level": "Gevorderde beginner",
     "grid": 4,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Achtergrond"
      },
      {
       "id": "star",
-      "label": "Star points"
+      "label": "Sterpunten"
      },
      {
       "id": "center",
-      "label": "Center"
+      "label": "Midden"
      }
     ],
-    "summary": "Pairs of half-square triangles make four broad points around a center of four squares."
+    "summary": "Paren halve-vierkantdriehoeken vormen vier brede punten rond een midden van vier vierkanten."
    },
    {
     "slug": "sisters-choice",
     "name": "Sister's Choice",
-    "family": "Stars",
-    "level": "Confident beginner",
+    "family": "Sterren",
+    "level": "Gevorderde beginner",
     "grid": 5,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Achtergrond"
      },
      {
       "id": "star",
-      "label": "Star"
+      "label": "Ster"
      },
      {
       "id": "accent",
       "label": "Accent"
      }
     ],
-    "summary": "A five-by-five block of squares and half-square triangles that form a star around a center square."
+    "summary": "Een blok van vijf bij vijf met vierkanten en halve-vierkantdriehoeken die een ster rond een middenvierkant vormen."
    },
    {
     "slug": "lemoyne-star",
     "name": "LeMoyne Star",
-    "family": "Stars",
-    "level": "Intermediate",
+    "family": "Sterren",
+    "level": "Gemiddeld",
     "grid": 1,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Achtergrond"
      },
      {
       "id": "star",
-      "label": "Star"
+      "label": "Ster"
      },
      {
       "id": "alternate",
-      "label": "Alternate points"
+      "label": "Afwisselende punten"
      }
     ],
-    "summary": "Eight 45-degree diamonds meet at the center, with corner squares and side triangles set in around them."
+    "summary": "Acht ruiten van 45 graden komen in het midden samen, met hoekvierkanten en zijdriehoeken eromheen ingezet."
    },
    {
     "slug": "drunkards-path",
     "name": "Drunkard's Path",
-    "family": "Curves & appliqué",
-    "level": "Intermediate",
+    "family": "Bogen en applicatie",
+    "level": "Gemiddeld",
     "grid": 4,
     "fabrics": [
      {
       "id": "light",
-      "label": "Light"
+      "label": "Licht"
      },
      {
       "id": "dark",
-      "label": "Dark"
+      "label": "Donker"
      }
     ],
-    "summary": "Sixteen units with a curved seam, turned and recolored so that a path wanders across the block."
+    "summary": "Zestien eenheden met een gebogen naad, gedraaid en verkleurd zodat een pad door het blok dwaalt."
    },
    {
     "slug": "dresden-plate",
     "name": "Dresden Plate",
-    "family": "Curves & appliqué",
-    "level": "Intermediate",
+    "family": "Bogen en applicatie",
+    "level": "Gemiddeld",
     "grid": 1,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Achtergrond"
      },
      {
       "id": "petal",
-      "label": "Plate"
+      "label": "Bord"
      },
      {
       "id": "alternate",
-      "label": "Alternate wedges"
+      "label": "Afwisselende wiggen"
      },
      {
       "id": "center",
-      "label": "Center"
+      "label": "Midden"
      }
     ],
-    "summary": "Sixteen pointed wedges form a ring that's appliquéd to a background square, with a center circle on top."
+    "summary": "Zestien puntige wiggen vormen een ring die op een achtergrondvierkant wordt geappliqueerd, met een middencirkel erop."
    },
    {
     "slug": "grandmothers-flower-garden",
     "name": "Grandmother's Flower Garden",
-    "family": "Curves & appliqué",
-    "level": "Intermediate",
+    "family": "Bogen en applicatie",
+    "level": "Gemiddeld",
     "grid": 1,
     "fabrics": [
      {
       "id": "ground",
-      "label": "Background"
+      "label": "Achtergrond"
      },
      {
       "id": "center",
-      "label": "Flower center"
+      "label": "Bloemhart"
      },
      {
       "id": "petal",
-      "label": "Petals"
+      "label": "Bloemblaadjes"
      },
      {
       "id": "path",
-      "label": "Path"
+      "label": "Pad"
      }
     ],
-    "summary": "A center hexagon with two rings around it, shown here as a single rosette appliquéd to a background square."
+    "summary": "Een middenzeshoek met twee ringen eromheen, hier als één rozet geappliqueerd op een achtergrondvierkant."
    }
   ]
  },
@@ -5851,128 +5851,128 @@
     "slug": "garter-stitch",
     "name": "Garter Stitch",
     "craft": "knit",
-    "level": "Beginner",
-    "summary": "Knit every row. It lies flat, looks the same on both sides, and makes soft horizontal ridges.",
+    "level": "Principiante",
+    "summary": "Lavora a diritto ogni ferro. Resta piatto, è uguale sui due lati e forma morbide coste orizzontali.",
     "rowFactor": 1.4
    },
    {
     "slug": "stockinette-stitch",
     "name": "Stockinette Stitch",
     "craft": "knit",
-    "level": "Beginner",
-    "summary": "Knit one row, purl the next. It's smooth on the front, bumpy on the back, and its edges tend to curl.",
+    "level": "Principiante",
+    "summary": "Un ferro a diritto, uno a rovescio. Liscio davanti, a nodini dietro, con bordi che tendono ad arricciarsi.",
     "rowFactor": 1
    },
    {
     "slug": "seed-stitch",
     "name": "Seed Stitch",
     "craft": "knit",
-    "level": "Beginner",
-    "summary": "Knits and purls alternate along each row and stack in opposition, giving a firm, pebbled fabric that lies flat.",
+    "level": "Principiante",
+    "summary": "Diritti e rovesci si alternano in ogni ferro e si oppongono, per un tessuto compatto e granuloso che resta piatto.",
     "rowFactor": 1.1
    },
    {
     "slug": "double-seed-stitch",
     "name": "Double Seed Stitch",
     "craft": "knit",
-    "level": "Beginner",
-    "summary": "Like seed stitch, but each pattern row is worked twice before the knits and purls swap, for a larger texture.",
+    "level": "Principiante",
+    "summary": "Come il punto riso, ma ogni ferro si lavora due volte prima di scambiare diritti e rovesci, per una trama più grande.",
     "rowFactor": 1.1
    },
    {
     "slug": "one-by-one-rib",
     "name": "1x1 Rib",
     "craft": "knit",
-    "level": "Beginner",
-    "summary": "Single knit and purl columns make a stretchy fabric, often used for cuffs and hems.",
+    "level": "Principiante",
+    "summary": "Colonne singole di diritto e rovescio creano un tessuto elastico, spesso usato per polsini e orli.",
     "rowFactor": 1
    },
    {
     "slug": "two-by-two-rib",
     "name": "2x2 Rib",
     "craft": "knit",
-    "level": "Beginner",
-    "summary": "Pairs of knit and purl columns give bolder ribs and plenty of stretch.",
+    "level": "Principiante",
+    "summary": "Coppie di colonne di diritto e rovescio danno coste più marcate e molta elasticità.",
     "rowFactor": 1
    },
    {
     "slug": "broken-rib",
     "name": "Broken Rib",
     "craft": "knit",
-    "level": "Beginner",
-    "summary": "One row of knit one, purl one alternates with a plain purl row, for a subtle rib with small ridges.",
+    "level": "Principiante",
+    "summary": "Un ferro a una maglia diritta e una rovescia si alterna a un ferro a rovescio, per una costa discreta con piccoli rilievi.",
     "rowFactor": 1
    },
    {
     "slug": "basketweave",
     "name": "Basketweave",
     "craft": "knit",
-    "level": "Confident beginner",
-    "summary": "Blocks of knits and purls swap every four rows, so the fabric looks woven. It lies flat.",
+    "level": "Principiante esperto",
+    "summary": "Blocchi di diritti e rovesci si scambiano ogni quattro ferri, così il tessuto sembra intrecciato. Resta piatto.",
     "rowFactor": 1.1
    },
    {
     "slug": "diagonal-rib",
     "name": "Diagonal Rib",
     "craft": "knit",
-    "level": "Confident beginner",
-    "summary": "A 2x2 rib that shifts one stitch on every row, so the ribs travel across the fabric at an angle.",
+    "level": "Principiante esperto",
+    "summary": "Una costa 2x2 che si sposta di una maglia a ogni ferro, così le coste attraversano il tessuto in diagonale.",
     "rowFactor": 1
    },
    {
     "slug": "single-crochet",
     "name": "Single Crochet",
     "craft": "crochet",
-    "level": "Beginner",
-    "summary": "The shortest basic stitch, making a firm, dense fabric that's good for dishcloths and bags.",
+    "level": "Principiante",
+    "summary": "Il punto base più basso, per un tessuto compatto e denso, ottimo per strofinacci e borse.",
     "rowFactor": 1
    },
    {
     "slug": "half-double-crochet",
     "name": "Half Double Crochet",
     "craft": "crochet",
-    "level": "Beginner",
-    "summary": "Between single and double crochet in height: quick to work, with a soft, warm feel.",
+    "level": "Principiante",
+    "summary": "Di altezza intermedia tra maglia bassa e alta: veloce da lavorare, morbido e caldo.",
     "rowFactor": 0.7
    },
    {
     "slug": "double-crochet",
     "name": "Double Crochet",
     "craft": "crochet",
-    "level": "Beginner",
-    "summary": "A tall stitch that grows fast and drapes well, so it suits blankets and scarves.",
+    "level": "Principiante",
+    "summary": "Un punto alto che cresce in fretta e cade bene, adatto a coperte e sciarpe.",
     "rowFactor": 0.55
    },
    {
     "slug": "back-loop-rib",
     "name": "Back Loop Rib",
     "craft": "crochet",
-    "level": "Beginner",
-    "summary": "Single crochet worked through the back loop only, which forms stretchy ridges that resemble knit ribbing.",
+    "level": "Principiante",
+    "summary": "Maglia bassa lavorata solo nell'asola posteriore, che forma coste elastiche simili a quelle a maglia.",
     "rowFactor": 0.9
    },
    {
     "slug": "moss-stitch",
     "name": "Moss Stitch",
     "craft": "crochet",
-    "level": "Beginner",
-    "summary": "Single crochets separated by a chain, set into the spaces of the row below. Also called linen or granite stitch.",
+    "level": "Principiante",
+    "summary": "Maglie basse separate da una catenella, inserite negli spazi della riga sotto. Detto anche punto lino o granito.",
     "rowFactor": 1
    },
    {
     "slug": "mesh-stitch",
     "name": "Mesh Stitch",
     "craft": "crochet",
-    "level": "Beginner",
-    "summary": "Double crochets separated by single chains, forming an open grid that's light and airy.",
+    "level": "Principiante",
+    "summary": "Maglie alte separate da singole catenelle, per una griglia aperta, leggera e ariosa.",
     "rowFactor": 0.55
    },
    {
     "slug": "v-stitch",
     "name": "V-Stitch",
     "craft": "crochet",
-    "level": "Confident beginner",
-    "summary": "Pairs of double crochet share a stitch, and each row stacks into the V's below for an open, textured fabric.",
+    "level": "Principiante esperto",
+    "summary": "Coppie di maglie alte condividono una maglia, e ogni riga si impila sulle V sotto, per un tessuto aperto e con trama.",
     "rowFactor": 0.55
    }
   ],
@@ -5982,7 +5982,7 @@
     "name": "Garter Stitch",
     "craft": "knit",
     "level": "Beginner",
-    "summary": "Knit every row. It lies flat, looks the same on both sides, and makes soft horizontal ridges.",
+    "summary": "Brei elke naald recht. Blijft plat, ziet er aan beide kanten hetzelfde uit en vormt zachte horizontale ribbels.",
     "rowFactor": 1.4
    },
    {
@@ -5990,7 +5990,7 @@
     "name": "Stockinette Stitch",
     "craft": "knit",
     "level": "Beginner",
-    "summary": "Knit one row, purl the next. It's smooth on the front, bumpy on the back, and its edges tend to curl.",
+    "summary": "Eén naald recht, de volgende averecht. Glad aan de voorkant, bobbelig aan de achterkant, met randen die omkrullen.",
     "rowFactor": 1
    },
    {
@@ -5998,7 +5998,7 @@
     "name": "Seed Stitch",
     "craft": "knit",
     "level": "Beginner",
-    "summary": "Knits and purls alternate along each row and stack in opposition, giving a firm, pebbled fabric that lies flat.",
+    "summary": "Rechte en averechte steken wisselen af op elke naald en liggen tegenover elkaar, voor een stevige, korrelige stof die plat blijft.",
     "rowFactor": 1.1
    },
    {
@@ -6006,7 +6006,7 @@
     "name": "Double Seed Stitch",
     "craft": "knit",
     "level": "Beginner",
-    "summary": "Like seed stitch, but each pattern row is worked twice before the knits and purls swap, for a larger texture.",
+    "summary": "Als gerstekorrel, maar elke naald wordt twee keer gebreid voordat recht en averecht wisselen, voor een grotere structuur.",
     "rowFactor": 1.1
    },
    {
@@ -6014,7 +6014,7 @@
     "name": "1x1 Rib",
     "craft": "knit",
     "level": "Beginner",
-    "summary": "Single knit and purl columns make a stretchy fabric, often used for cuffs and hems.",
+    "summary": "Enkele kolommen recht en averecht geven een rekbare stof, vaak gebruikt voor manchetten en zomen.",
     "rowFactor": 1
    },
    {
@@ -6022,7 +6022,7 @@
     "name": "2x2 Rib",
     "craft": "knit",
     "level": "Beginner",
-    "summary": "Pairs of knit and purl columns give bolder ribs and plenty of stretch.",
+    "summary": "Paren kolommen recht en averecht geven forsere ribbels en veel rek.",
     "rowFactor": 1
    },
    {
@@ -6030,23 +6030,23 @@
     "name": "Broken Rib",
     "craft": "knit",
     "level": "Beginner",
-    "summary": "One row of knit one, purl one alternates with a plain purl row, for a subtle rib with small ridges.",
+    "summary": "Een naald één recht, één averecht wisselt af met een averechte naald, voor een subtiele boord met kleine ribbels.",
     "rowFactor": 1
    },
    {
     "slug": "basketweave",
     "name": "Basketweave",
     "craft": "knit",
-    "level": "Confident beginner",
-    "summary": "Blocks of knits and purls swap every four rows, so the fabric looks woven. It lies flat.",
+    "level": "Gevorderde beginner",
+    "summary": "Blokken recht en averecht wisselen om de vier naalden, zodat de stof geweven lijkt. Blijft plat.",
     "rowFactor": 1.1
    },
    {
     "slug": "diagonal-rib",
     "name": "Diagonal Rib",
     "craft": "knit",
-    "level": "Confident beginner",
-    "summary": "A 2x2 rib that shifts one stitch on every row, so the ribs travel across the fabric at an angle.",
+    "level": "Gevorderde beginner",
+    "summary": "Een 2x2-boord die op elke naald één steek verschuift, zodat de ribbels schuin over de stof lopen.",
     "rowFactor": 1
    },
    {
@@ -6054,7 +6054,7 @@
     "name": "Single Crochet",
     "craft": "crochet",
     "level": "Beginner",
-    "summary": "The shortest basic stitch, making a firm, dense fabric that's good for dishcloths and bags.",
+    "summary": "De laagste basissteek, voor een stevige, dichte stof die goed is voor vaatdoeken en tassen.",
     "rowFactor": 1
    },
    {
@@ -6062,7 +6062,7 @@
     "name": "Half Double Crochet",
     "craft": "crochet",
     "level": "Beginner",
-    "summary": "Between single and double crochet in height: quick to work, with a soft, warm feel.",
+    "summary": "Qua hoogte tussen vaste en stokje: snel te haken, met een zacht, warm gevoel.",
     "rowFactor": 0.7
    },
    {
@@ -6070,7 +6070,7 @@
     "name": "Double Crochet",
     "craft": "crochet",
     "level": "Beginner",
-    "summary": "A tall stitch that grows fast and drapes well, so it suits blankets and scarves.",
+    "summary": "Een hoge steek die snel groeit en mooi valt, dus geschikt voor dekens en sjaals.",
     "rowFactor": 0.55
    },
    {
@@ -6078,7 +6078,7 @@
     "name": "Back Loop Rib",
     "craft": "crochet",
     "level": "Beginner",
-    "summary": "Single crochet worked through the back loop only, which forms stretchy ridges that resemble knit ribbing.",
+    "summary": "Vaste steken alleen door de achterste lus, die rekbare ribbels vormen als een gebreide boord.",
     "rowFactor": 0.9
    },
    {
@@ -6086,7 +6086,7 @@
     "name": "Moss Stitch",
     "craft": "crochet",
     "level": "Beginner",
-    "summary": "Single crochets separated by a chain, set into the spaces of the row below. Also called linen or granite stitch.",
+    "summary": "Vaste steken gescheiden door een losse, in de ruimtes van de vorige toer. Ook wel linnen- of granietsteek genoemd.",
     "rowFactor": 1
    },
    {
@@ -6094,15 +6094,15 @@
     "name": "Mesh Stitch",
     "craft": "crochet",
     "level": "Beginner",
-    "summary": "Double crochets separated by single chains, forming an open grid that's light and airy.",
+    "summary": "Stokjes gescheiden door enkele lossen, voor een open raster dat licht en luchtig is.",
     "rowFactor": 0.55
    },
    {
     "slug": "v-stitch",
     "name": "V-Stitch",
     "craft": "crochet",
-    "level": "Confident beginner",
-    "summary": "Pairs of double crochet share a stitch, and each row stacks into the V's below for an open, textured fabric.",
+    "level": "Gevorderde beginner",
+    "summary": "Paren stokjes delen een steek, en elke toer stapelt op de V's eronder, voor een open stof met structuur.",
     "rowFactor": 0.55
    }
   ]

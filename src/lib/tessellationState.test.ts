@@ -22,7 +22,7 @@ describe("share links", () => {
 
   it("has a different default palette in each language", () => {
     const palettes = LOCALE_CODES.map((locale) => JSON.stringify(defaultTessellationState(locale).colors));
-    expect(new Set(palettes).size).toBe(5);
+    expect(new Set(palettes).size).toBe(7);
   });
 });
 

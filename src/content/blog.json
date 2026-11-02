@@ -1,5 +1,50 @@
 [
   {
+    "slug": "now-in-seven-languages",
+    "title": "Endless Patterns now speaks Italian and Dutch",
+    "date": "2026-11-01",
+    "summary": "The whole site, with every generated instruction and PDF, is now in Italian and Dutch as well.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Every page, cutting list, row instruction and PDF is now available in [Italiano](/it/) and [Nederlands](/nl/), alongside English, Spanish, French, German and Brazilian Portuguese. Use the language links at the top of any page to switch."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "mandala",
+            "slug": "",
+            "query": "st=flowing",
+            "view": "art",
+            "caption": "A flowing mandala, opened in Italian",
+            "locale": "it"
+          },
+          {
+            "kind": "puzzle",
+            "slug": "battleships",
+            "query": "",
+            "view": "puzzle",
+            "caption": "A battleships sheet, labeled in Dutch",
+            "locale": "nl"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "A first draft"
+      },
+      {
+        "type": "paragraph",
+        "text": "These translations are a first draft and haven't been reviewed by crafters yet. Block and stitch names stay in English, measurements stay in inches and yards, and needle and hook sizes use US numbering. Crochet uses local abbreviations, with the US term in parentheses."
+      }
+    ]
+  },
+  {
     "slug": "mandala-styles-and-more-patterns",
     "title": "Mandala drawing styles, and more of everything",
     "date": "2026-11-01",

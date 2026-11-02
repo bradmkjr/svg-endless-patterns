@@ -384,7 +384,10 @@
       "harbor": "Port",
       "check": "Carreau bicolore",
       "orchard": "Verger",
-      "tide-pool": "Mare de marée"
+      "tide-pool": "Mare de marée",
+      "heather": "Bruyère",
+      "moss": "Mousse",
+      "saffron": "Safran"
     }
   }
 }

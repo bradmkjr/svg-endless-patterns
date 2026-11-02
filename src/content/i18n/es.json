@@ -586,6 +586,31 @@
           "Puntos y cajas de hasta 200 cajas de ancho, en todos los tamaños de póster, de Carta a 4A0"
         ]
       ]
+    },
+    "mandala-styles-and-more-patterns": {
+      "title": "Estilos de dibujo para mandalas, y más de todo",
+      "summary": "Dibuja cualquier mandala afilado, suave, ondulado, geométrico, fluido, a mano alzada o en pixel art, con nuevas opciones en otros seis creadores.",
+      "blocks": [
+        "El [creador de mandalas](/mandalas/) ahora tiene estilo de dibujo: los mismos anillos y colores, dibujados de ocho maneras. Elige uno en el creador y todos los anillos lo siguen, también en la página para colorear y en el PDF.",
+        "Ejemplos para empezar",
+        [
+          "Un mandala afilado",
+          "Un mandala ondulado",
+          "Un mandala fluido",
+          "Un mandala geométrico",
+          "Una página para colorear a mano alzada",
+          "Un mandala en pixel art"
+        ],
+        "Qué más hay de nuevo",
+        [
+          "[Azulejos de Truchet](/truchet/): arcos triples, chaflanes dobles y escalones cuadrados",
+          "[Tableros](/checkerboards/): cuadros dobles, escalera y pata de gallo",
+          "[Vidrieras](/stained-glass/): aparejo de ladrillo, cestería y ventana pradera",
+          "[Tie-dye](/tie-dye/): rayas diagonales, arrugado y corazón, cada uno con pasos de plegado y mapa de tintes",
+          "[Tartanes](/tartans/): brezo, musgo y azafrán",
+          "[Girih](/girih/): un patrón de estrellas de orden 3, hecho con triángulos"
+        ]
+      ]
     }
   },
   "changelog": {
@@ -865,6 +890,13 @@
         "Nueva sección de pasatiempos de papel en el menú, con sudoku, futoshiki, nonogramas, hundir la flota, puntos y cajas, súper tres en raya y hex, junto a los laberintos",
         "Cada hoja se descarga como PDF para carta, A4 o página de tableta, o como SVG o PNG",
         "Puntos y cajas de hasta 200 cajas de ancho, en todos los tamaños de póster, de Carta a 4A0"
+      ]
+    },
+    "Mandala styles and more patterns": {
+      "title": "Estilos de mandala y más patrones",
+      "items": [
+        "Nuevos estilos de dibujo para mandalas: afilado, suave, ondulado, geométrico, fluido, a mano alzada y pixel art",
+        "Nuevas opciones para azulejos de Truchet, tableros, vidrieras, tie-dye, tartanes y girih"
       ]
     }
   }

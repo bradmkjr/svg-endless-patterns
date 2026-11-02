@@ -1,4 +1,4 @@
-import type { Locale, MandalaMotif, MandalaRequest, MandalaRingSpec } from "./generator";
+import type { Locale, MandalaMotif, MandalaRequest, MandalaRingSpec, MandalaStyle } from "./generator";
 import { localeAccent } from "./localeAccent";
 
 /** The mandala builder's options, defaults and share links. */
@@ -8,6 +8,7 @@ export const RING_OPTIONS = [2, 3, 4, 5, 6, 7, 8];
 export const MOTIF_OPTIONS: MandalaMotif[] = ["petals", "arcs", "dots", "scallops", "diamonds", "triangles", "lotus", "leaves", "teardrops", "stars", "hearts", "chevrons", "rays", "fans", "ogees"];
 /** What a seed chooses from unless the link says otherwise, so older links keep their designs. */
 const SEED_MOTIFS = MOTIF_OPTIONS.slice(0, 6);
+export const STYLE_OPTIONS: MandalaStyle[] = ["classic", "sharp", "smooth", "wavy", "geometric", "flowing", "sketched", "pixel"];
 export const MIN_PLAN_RINGS = 1;
 export const MAX_PLAN_RINGS = 16;
 export const REPEAT_OPTIONS = Array.from({ length: 16 }, (_, i) => i + 1);
@@ -106,6 +107,12 @@ function decodePlan(raw: string | null): MandalaRingSpec[] | null {
   return plan.every(Boolean) ? (plan as MandalaRingSpec[]) : null;
 }
 
+/** The classic look stays out of requests and links, so every older design keeps its URL. */
+function styleFrom(raw: string | null): { style?: MandalaStyle } {
+  const style = STYLE_OPTIONS.find((s) => s === raw);
+  return style && style !== "classic" ? { style } : {};
+}
+
 export function parseMandalaState(params: { get(name: string): string | null }, locale: Locale = "en"): MandalaRequest {
   const { ringPlan: basePlan, ...base } = defaultMandalaState(locale);
   const seed = params.get("seed");
@@ -123,6 +130,7 @@ export function parseMandalaState(params: { get(name: string): string | null }, 
     colors: decodeColors(params.get("k")) ?? base.colors,
     background: decodeColor(params.get("bg"), base.background),
     outline: decodeColor(params.get("ol"), base.outline),
+    ...styleFrom(params.get("st")),
   };
 }
 
@@ -141,5 +149,6 @@ export function serializeMandalaState(state: MandalaRequest): string {
   if (encodeColors(state.colors) !== encodeColors(base.colors)) params.set("k", encodeColors(state.colors));
   if (state.background !== base.background) params.set("bg", state.background.slice(1));
   if (state.outline !== base.outline) params.set("ol", state.outline.slice(1));
+  if (state.style && state.style !== "classic") params.set("st", state.style);
   return params.toString();
 }

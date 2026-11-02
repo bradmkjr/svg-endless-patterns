@@ -384,7 +384,10 @@
       "harbor": "Puerto",
       "check": "Cuadro de dos colores",
       "orchard": "Huerto",
-      "tide-pool": "Charca de marea"
+      "tide-pool": "Charca de marea",
+      "heather": "Brezo",
+      "moss": "Musgo",
+      "saffron": "Azafrán"
     }
   }
 }

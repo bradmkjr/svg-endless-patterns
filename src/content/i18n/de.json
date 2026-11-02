@@ -586,6 +586,31 @@
           "Käsekästchen bis 200 Kästchen breit, in jeder Postergröße von US Letter bis 4A0"
         ]
       ]
+    },
+    "mandala-styles-and-more-patterns": {
+      "title": "Zeichenstile für Mandalas, und von allem mehr",
+      "summary": "Zeichne jedes Mandala spitz, weich, wellig, geometrisch, fließend, handskizziert oder als Pixel-Art, dazu neue Optionen in sechs weiteren Werkzeugen.",
+      "blocks": [
+        "Der [Mandala-Generator](/mandalas/) hat jetzt einen Zeichenstil: dieselben Ringe und Farben, auf acht Arten gezeichnet. Wähle einen aus, und alle Ringe folgen ihm, auch auf der Malvorlage und im PDF.",
+        "Beispiele für den Anfang",
+        [
+          "Ein spitzes Mandala",
+          "Ein welliges Mandala",
+          "Ein fließendes Mandala",
+          "Ein geometrisches Mandala",
+          "Eine handskizzierte Malvorlage",
+          "Ein Pixel-Art-Mandala"
+        ],
+        "Was sonst noch neu ist",
+        [
+          "[Truchet-Kacheln](/truchet/): Dreifachbögen, doppelte Fasen und eckige Stufen",
+          "[Schachbretter](/checkerboards/): Doppelkaro, Treppe und Hahnentritt",
+          "[Buntglas](/stained-glass/): Ziegelverband, Korbgeflecht und Prärie-Fenster",
+          "[Tie-Dye](/tie-dye/): diagonale Streifen, Knitterbatik und Herz, jeweils mit Faltschritten und Farbplan",
+          "[Tartans](/tartans/): Heide, Moos und Safran",
+          "[Girih](/girih/): ein dreizähliges Sternmuster aus Dreiecken"
+        ]
+      ]
     }
   },
   "changelog": {
@@ -865,6 +890,13 @@
         "Neuer Bereich Papierrätsel im Menü, mit Sudoku, Futoshiki, Nonogrammen, Schiffe versenken, Käsekästchen, Super-Tic-Tac-Toe und Hex, neben den Labyrinthen",
         "Jedes Blatt lässt sich als PDF für US Letter, A4 oder eine Tablet-Seite herunterladen, oder als SVG oder PNG",
         "Käsekästchen bis 200 Kästchen breit, in jeder Postergröße von US Letter bis 4A0"
+      ]
+    },
+    "Mandala styles and more patterns": {
+      "title": "Mandala-Stile und mehr Muster",
+      "items": [
+        "Neue Zeichenstile für Mandalas: spitz, weich, wellig, geometrisch, fließend, handskizziert und Pixel-Art",
+        "Neue Optionen für Truchet-Kacheln, Schachbretter, Buntglas, Tie-Dye, Tartans und Girih"
       ]
     }
   }

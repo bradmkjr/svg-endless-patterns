@@ -11,7 +11,10 @@
       "medallion": "Border and center",
       "sunburst": "Sunburst",
       "honeycomb": "Honeycomb",
-      "pinwheels": "Pinwheels"
+      "pinwheels": "Pinwheels",
+      "brickwork": "Brickwork",
+      "basketweave": "Basketweave",
+      "prairie": "Prairie window"
     },
     "panel": "Panel",
     "width": "Width",
@@ -69,7 +72,10 @@
       "medallion": "Cenefa y centro",
       "sunburst": "Sol radiante",
       "honeycomb": "Panal",
-      "pinwheels": "Molinetes"
+      "pinwheels": "Molinetes",
+      "brickwork": "Aparejo de ladrillo",
+      "basketweave": "Cestería",
+      "prairie": "Ventana pradera"
     },
     "panel": "Panel",
     "width": "Ancho",
@@ -127,7 +133,10 @@
       "medallion": "Bordure et centre",
       "sunburst": "Soleil rayonnant",
       "honeycomb": "Nid d'abeilles",
-      "pinwheels": "Moulinets"
+      "pinwheels": "Moulinets",
+      "brickwork": "Appareil de briques",
+      "basketweave": "Vannerie",
+      "prairie": "Fenêtre prairie"
     },
     "panel": "Panneau",
     "width": "Largeur",
@@ -185,7 +194,10 @@
       "medallion": "Bordüre und Mitte",
       "sunburst": "Sonnenstrahlen",
       "honeycomb": "Wabenmuster",
-      "pinwheels": "Windräder"
+      "pinwheels": "Windräder",
+      "brickwork": "Ziegelverband",
+      "basketweave": "Korbgeflecht",
+      "prairie": "Prärie-Fenster"
     },
     "panel": "Fenster",
     "width": "Breite",
@@ -243,7 +255,10 @@
       "medallion": "Borda e centro",
       "sunburst": "Sol radiante",
       "honeycomb": "Favo de mel",
-      "pinwheels": "Cata-ventos"
+      "pinwheels": "Cata-ventos",
+      "brickwork": "Aparelho de tijolos",
+      "basketweave": "Cestaria",
+      "prairie": "Janela pradaria"
     },
     "panel": "Painel",
     "width": "Largura",

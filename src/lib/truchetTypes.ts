@@ -29,4 +29,4 @@ export type TruchetResult = {
   seeded: boolean;
 };
 
-export type TruchetStyle = "arcs" | "chamfers" | "diagonals" | "triangles" | "double-arcs" | "woven";
+export type TruchetStyle = "arcs" | "chamfers" | "diagonals" | "triangles" | "double-arcs" | "woven" | "triple-arcs" | "double-chamfers" | "steps";

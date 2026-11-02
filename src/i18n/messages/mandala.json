@@ -73,7 +73,19 @@
     "copyRing": "Duplicate ring {n}",
     "removeRing": "Remove ring {n}",
     "addRing": "Add ring",
-    "innerNote": "The innermost ring always has one copy per fold, which sets the design's symmetry."
+    "innerNote": "The innermost ring always has one copy per fold, which sets the design's symmetry.",
+    "drawingStyle": "Drawing style",
+    "drawingStyles": {
+      "classic": "Classic",
+      "sharp": "Sharp",
+      "smooth": "Smooth",
+      "wavy": "Wavy",
+      "geometric": "Geometric",
+      "flowing": "Flowing",
+      "sketched": "Hand-sketched",
+      "pixel": "Pixel art"
+    },
+    "drawingStyleNote": "The same rings and colors, drawn a different way."
   },
   "es": {
     "metaTitle": "Creador de mandalas: diseños radiales geométricos, página para colorear y PDF",
@@ -149,7 +161,19 @@
     "copyRing": "Duplicar el anillo {n}",
     "removeRing": "Quitar el anillo {n}",
     "addRing": "Añadir anillo",
-    "innerNote": "El anillo central siempre tiene una copia por pliegue, lo que fija la simetría del diseño."
+    "innerNote": "El anillo central siempre tiene una copia por pliegue, lo que fija la simetría del diseño.",
+    "drawingStyle": "Estilo de dibujo",
+    "drawingStyles": {
+      "classic": "Clásico",
+      "sharp": "Afilado",
+      "smooth": "Suave",
+      "wavy": "Ondulado",
+      "geometric": "Geométrico",
+      "flowing": "Fluido",
+      "sketched": "A mano alzada",
+      "pixel": "Pixel art"
+    },
+    "drawingStyleNote": "Los mismos anillos y colores, dibujados de otra manera."
   },
   "fr": {
     "metaTitle": "Créateur de mandalas : motifs radiaux géométriques, coloriage et PDF",
@@ -225,7 +249,19 @@
     "copyRing": "Dupliquer l'anneau {n}",
     "removeRing": "Retirer l'anneau {n}",
     "addRing": "Ajouter un anneau",
-    "innerNote": "L'anneau central a toujours une copie par pli, ce qui fixe la symétrie du motif."
+    "innerNote": "L'anneau central a toujours une copie par pli, ce qui fixe la symétrie du motif.",
+    "drawingStyle": "Style de dessin",
+    "drawingStyles": {
+      "classic": "Classique",
+      "sharp": "Pointu",
+      "smooth": "Doux",
+      "wavy": "Ondulé",
+      "geometric": "Géométrique",
+      "flowing": "Fluide",
+      "sketched": "Esquissé à la main",
+      "pixel": "Pixel art"
+    },
+    "drawingStyleNote": "Les mêmes anneaux et couleurs, dessinés autrement."
   },
   "de": {
     "metaTitle": "Mandala-Generator: geometrische Radialmuster, Ausmalbild und PDF",
@@ -301,7 +337,19 @@
     "copyRing": "Ring {n} duplizieren",
     "removeRing": "Ring {n} entfernen",
     "addRing": "Ring hinzufügen",
-    "innerNote": "Der innerste Ring hat immer eine Kopie pro Falte, was die Symmetrie des Musters festlegt."
+    "innerNote": "Der innerste Ring hat immer eine Kopie pro Falte, was die Symmetrie des Musters festlegt.",
+    "drawingStyle": "Zeichenstil",
+    "drawingStyles": {
+      "classic": "Klassisch",
+      "sharp": "Spitz",
+      "smooth": "Weich",
+      "wavy": "Wellig",
+      "geometric": "Geometrisch",
+      "flowing": "Fließend",
+      "sketched": "Handskizziert",
+      "pixel": "Pixel-Art"
+    },
+    "drawingStyleNote": "Dieselben Ringe und Farben, anders gezeichnet."
   },
   "pt": {
     "metaTitle": "Criador de mandalas: desenhos radiais geométricos, página para colorir e PDF",
@@ -377,6 +425,18 @@
     "copyRing": "Duplicar o anel {n}",
     "removeRing": "Remover o anel {n}",
     "addRing": "Adicionar anel",
-    "innerNote": "O anel central sempre tem uma cópia por dobra, o que define a simetria do desenho."
+    "innerNote": "O anel central sempre tem uma cópia por dobra, o que define a simetria do desenho.",
+    "drawingStyle": "Estilo de desenho",
+    "drawingStyles": {
+      "classic": "Clássico",
+      "sharp": "Pontiagudo",
+      "smooth": "Suave",
+      "wavy": "Ondulado",
+      "geometric": "Geométrico",
+      "flowing": "Fluido",
+      "sketched": "À mão livre",
+      "pixel": "Pixel art"
+    },
+    "drawingStyleNote": "Os mesmos anéis e cores, desenhados de outra forma."
   }
 }

@@ -2,7 +2,7 @@ import type { CheckerboardRequest, CheckerPattern, Locale } from "./generator";
 
 /** The checkerboard builder's options, defaults and share links. */
 
-export const PATTERN_OPTIONS: CheckerPattern[] = ["checker", "brick", "half-drop", "gingham", "hexagon", "triangle"];
+export const PATTERN_OPTIONS: CheckerPattern[] = ["checker", "brick", "half-drop", "gingham", "double-check", "stairs", "houndstooth", "hexagon", "triangle"];
 export const COUNT_OPTIONS = [2, 3, 4, 5, 6, 8, 10, 12, 16, 20, 24, 30, 36, 40, 50, 60, 80, 100];
 export const RATIO_OPTIONS = [1, 2, 3, 4, 5, 6, 7, 8];
 export const UNIT_OPTIONS = [0.25, 0.5, 1, 1.5, 2, 3, 4, 6];
@@ -23,7 +23,7 @@ export const isShapePattern = (pattern: CheckerPattern) => pattern === "hexagon"
 
 /** Colors a pattern can show. A gingham mixes two; a honeycomb needs just three, so no two neighbors match. */
 export function maxColors(pattern: CheckerPattern): number {
-  if (pattern === "gingham") return MIN_COLORS;
+  if (pattern === "gingham" || pattern === "houndstooth") return MIN_COLORS;
   return pattern === "hexagon" ? 3 : MAX_COLORS;
 }
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { generateMandala, generateMandalaPdf, type Locale, type MandalaMotif, type MandalaRequest, type MandalaResult } from "@/lib/generator";
+import { generateMandala, generateMandalaPdf, type Locale, type MandalaMotif, type MandalaStyle, type MandalaRequest, type MandalaResult } from "@/lib/generator";
 import { rememberSeed, syncShareLink, slugFor } from "@/lib/toolOptions";
 import { MandalaRings } from "./MandalaRings";
 import { ToolLoading } from "./ToolLoading";
@@ -12,7 +12,7 @@ import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { useTrackCustomize } from "@/lib/analytics";
 import { fill, messages } from "@/lib/i18n";
 import mandalaText from "@/i18n/messages/mandala.json";
-import { LINE_OPTIONS, MAX_COLORS, MAX_SEED, MOTIF_OPTIONS, RING_OPTIONS, serializeMandalaState, SYMMETRY_OPTIONS } from "@/lib/mandalaState";
+import { STYLE_OPTIONS, LINE_OPTIONS, MAX_COLORS, MAX_SEED, MOTIF_OPTIONS, RING_OPTIONS, serializeMandalaState, SYMMETRY_OPTIONS } from "@/lib/mandalaState";
 import styles from "./BlockBuilder.module.css";
 
 type View = keyof MandalaResult["svg"];
@@ -167,6 +167,17 @@ export function MandalaBuilder({ locale, option, labels, initialState }: { local
 
           <fieldset>
             <legend>{t.lines}</legend>
+            <label className={styles.field}>
+              <span>{t.drawingStyle}</span>
+              <select value={state.style ?? "classic"} onChange={(e) => update({ style: e.target.value === "classic" ? undefined : (e.target.value as MandalaStyle) })}>
+                {STYLE_OPTIONS.map((id) => (
+                  <option key={id} value={id}>
+                    {t.drawingStyles[id]}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <p className={styles.note}>{t.drawingStyleNote}</p>
             <NumberSelect label={t.lineWeight} value={state.lineWeight} options={LINE_OPTIONS} onChange={(lineWeight) => update({ lineWeight })} />
           </fieldset>
 

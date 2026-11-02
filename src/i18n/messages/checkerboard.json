@@ -36,7 +36,10 @@
       "half-drop": "Half drop",
       "gingham": "Gingham",
       "hexagon": "Honeycomb",
-      "triangle": "Triangles"
+      "triangle": "Triangles",
+      "double-check": "Double check",
+      "stairs": "Stairs",
+      "houndstooth": "Houndstooth"
     },
     "patternNotes": {
       "checker": "Boxes alternate in both directions.",
@@ -44,11 +47,15 @@
       "half-drop": "Every other column shifts by half a box.",
       "gingham": "Stripes cross like woven cloth, with a mid tone where they meet the ground.",
       "hexagon": "Regular hexagons, each with six neighbors, colored so no two neighbors match. Columns count the hexagons across a row, and rows interlock.",
-      "triangle": "Triangles pointing up and down in turn, equilateral at 1:1. Each column is one triangle's base, so a row holds two triangles per column."
+      "triangle": "Triangles pointing up and down in turn, equilateral at 1:1. Each column is one triangle's base, so a row holds two triangles per column.",
+      "double-check": "Blocks of four boxes alternate, for a larger check.",
+      "stairs": "Each row moves over by half a block, so the colors climb like stairs.",
+      "houndstooth": "The classic woven check, in two colors: a 2/2 twill with two dark and two light threads each way."
     },
     "hexagonNote": "A honeycomb uses three colors, so that no two neighbors match. With only two, the third is a mix of them.",
     "stretch": "Stretch",
-    "stretchNote": "At 1:1 the shapes are regular. Any other ratio stretches them, and the size given is each shape's full width and height."
+    "stretchNote": "At 1:1 the shapes are regular. Any other ratio stretches them, and the size given is each shape's full width and height.",
+    "houndstoothNote": "Houndstooth uses two colors."
   },
   "es": {
     "metaTitle": "Generador de tableros: proporciones y colores a medida",
@@ -87,7 +94,10 @@
       "half-drop": "Medio salto",
       "gingham": "Vichy",
       "hexagon": "Panal",
-      "triangle": "Triángulos"
+      "triangle": "Triángulos",
+      "double-check": "Cuadros dobles",
+      "stairs": "Escalera",
+      "houndstooth": "Pata de gallo"
     },
     "patternNotes": {
       "checker": "Las casillas se alternan en ambas direcciones.",
@@ -95,11 +105,15 @@
       "half-drop": "Una de cada dos columnas se desplaza media casilla.",
       "gingham": "Las rayas se cruzan como una tela tejida, con un tono medio donde se encuentran con el fondo.",
       "hexagon": "Hexágonos regulares, cada uno con seis vecinos, coloreados para que dos vecinos nunca coincidan. Las columnas cuentan los hexágonos de cada fila, y las filas encajan entre sí.",
-      "triangle": "Triángulos que apuntan arriba y abajo por turnos, equiláteros en 1:1. Cada columna es la base de un triángulo, así que una fila tiene dos triángulos por columna."
+      "triangle": "Triángulos que apuntan arriba y abajo por turnos, equiláteros en 1:1. Cada columna es la base de un triángulo, así que una fila tiene dos triángulos por columna.",
+      "double-check": "Se alternan bloques de cuatro casillas, para un cuadro mayor.",
+      "stairs": "Cada fila se desplaza medio bloque, y los colores suben como una escalera.",
+      "houndstooth": "El clásico cuadro tejido, en dos colores: una sarga 2/2 con dos hilos oscuros y dos claros en cada sentido."
     },
     "hexagonNote": "El panal usa tres colores para que dos vecinos nunca coincidan. Con solo dos, el tercero es una mezcla de ambos.",
     "stretch": "Estiramiento",
-    "stretchNote": "En 1:1 las formas son regulares. Cualquier otra proporción las estira, y la medida indicada es el ancho y el alto totales de cada forma."
+    "stretchNote": "En 1:1 las formas son regulares. Cualquier otra proporción las estira, y la medida indicada es el ancho y el alto totales de cada forma.",
+    "houndstoothNote": "La pata de gallo usa dos colores."
   },
   "fr": {
     "metaTitle": "Créateur de damiers : proportions et couleurs sur mesure",
@@ -138,7 +152,10 @@
       "half-drop": "Demi-saut",
       "gingham": "Vichy",
       "hexagon": "Nid d'abeille",
-      "triangle": "Triangles"
+      "triangle": "Triangles",
+      "double-check": "Double damier",
+      "stairs": "Escalier",
+      "houndstooth": "Pied-de-poule"
     },
     "patternNotes": {
       "checker": "Les cases alternent dans les deux sens.",
@@ -146,11 +163,15 @@
       "half-drop": "Une colonne sur deux est décalée d'une demi-case.",
       "gingham": "Les rayures se croisent comme un tissu, avec un ton moyen là où elles rencontrent le fond.",
       "hexagon": "Des hexagones réguliers, chacun avec six voisins, colorés pour que deux voisins ne soient jamais identiques. Les colonnes comptent les hexagones d'une rangée, et les rangées s'emboîtent.",
-      "triangle": "Des triangles pointant tour à tour vers le haut et vers le bas, équilatéraux en 1:1. Chaque colonne est la base d'un triangle : une rangée compte donc deux triangles par colonne."
+      "triangle": "Des triangles pointant tour à tour vers le haut et vers le bas, équilatéraux en 1:1. Chaque colonne est la base d'un triangle : une rangée compte donc deux triangles par colonne.",
+      "double-check": "Des blocs de quatre cases alternent, pour un damier plus grand.",
+      "stairs": "Chaque rangée se décale d'un demi-bloc, et les couleurs montent en escalier.",
+      "houndstooth": "Le motif tissé classique, en deux couleurs : un sergé 2/2 avec deux fils sombres et deux clairs dans chaque sens."
     },
     "hexagonNote": "Le nid d'abeille utilise trois couleurs pour que deux voisins ne soient jamais identiques. Avec deux seulement, la troisième est leur mélange.",
     "stretch": "Étirement",
-    "stretchNote": "En 1:1, les formes sont régulières. Toute autre proportion les étire, et la taille indiquée est la largeur et la hauteur totales de chaque forme."
+    "stretchNote": "En 1:1, les formes sont régulières. Toute autre proportion les étire, et la taille indiquée est la largeur et la hauteur totales de chaque forme.",
+    "houndstoothNote": "Le pied-de-poule utilise deux couleurs."
   },
   "de": {
     "metaTitle": "Schachbrettmuster erstellen: eigene Proportionen und Farben",
@@ -189,7 +210,10 @@
       "half-drop": "Halber Versatz",
       "gingham": "Vichy",
       "hexagon": "Bienenwabe",
-      "triangle": "Dreiecke"
+      "triangle": "Dreiecke",
+      "double-check": "Doppelkaro",
+      "stairs": "Treppe",
+      "houndstooth": "Hahnentritt"
     },
     "patternNotes": {
       "checker": "Die Felder wechseln sich in beiden Richtungen ab.",
@@ -197,11 +221,15 @@
       "half-drop": "Jede zweite Spalte ist um ein halbes Feld versetzt.",
       "gingham": "Streifen kreuzen sich wie gewebter Stoff, mit einem Mittelton, wo sie auf den Grund treffen.",
       "hexagon": "Regelmäßige Sechsecke mit je sechs Nachbarn, so gefärbt, dass zwei Nachbarn nie gleich sind. Spalten zählen die Sechsecke einer Reihe, und die Reihen greifen ineinander.",
-      "triangle": "Dreiecke, abwechselnd nach oben und unten zeigend, bei 1:1 gleichseitig. Jede Spalte ist die Grundseite eines Dreiecks, eine Reihe hat also zwei Dreiecke pro Spalte."
+      "triangle": "Dreiecke, abwechselnd nach oben und unten zeigend, bei 1:1 gleichseitig. Jede Spalte ist die Grundseite eines Dreiecks, eine Reihe hat also zwei Dreiecke pro Spalte.",
+      "double-check": "Blöcke aus vier Kästchen wechseln sich ab, für ein größeres Karo.",
+      "stairs": "Jede Reihe rückt einen halben Block weiter, sodass die Farben wie Treppen steigen.",
+      "houndstooth": "Das klassische gewebte Muster in zwei Farben: Köper 2/2 mit je zwei dunklen und zwei hellen Fäden in beide Richtungen."
     },
     "hexagonNote": "Die Bienenwabe verwendet drei Farben, damit zwei Nachbarn nie gleich sind. Bei nur zwei Farben wird die dritte aus ihnen gemischt.",
     "stretch": "Streckung",
-    "stretchNote": "Bei 1:1 sind die Formen regelmäßig. Jedes andere Verhältnis streckt sie, und die angegebene Größe ist die volle Breite und Höhe jeder Form."
+    "stretchNote": "Bei 1:1 sind die Formen regelmäßig. Jedes andere Verhältnis streckt sie, und die angegebene Größe ist die volle Breite und Höhe jeder Form.",
+    "houndstoothNote": "Hahnentritt verwendet zwei Farben."
   },
   "pt": {
     "metaTitle": "Gerador de xadrez: proporções e cores personalizadas",
@@ -240,7 +268,10 @@
       "half-drop": "Meio salto",
       "gingham": "Xadrez vichy",
       "hexagon": "Favo de mel",
-      "triangle": "Triângulos"
+      "triangle": "Triângulos",
+      "double-check": "Xadrez duplo",
+      "stairs": "Escada",
+      "houndstooth": "Pied-de-poule"
     },
     "patternNotes": {
       "checker": "As casas se alternam nas duas direções.",
@@ -248,10 +279,14 @@
       "half-drop": "Uma coluna a cada duas se desloca meia casa.",
       "gingham": "As listras se cruzam como um tecido, com um tom médio onde encontram o fundo.",
       "hexagon": "Hexágonos regulares, cada um com seis vizinhos, coloridos para que dois vizinhos nunca coincidam. As colunas contam os hexágonos de cada linha, e as linhas se encaixam.",
-      "triangle": "Triângulos que apontam para cima e para baixo alternadamente, equiláteros em 1:1. Cada coluna é a base de um triângulo, então uma linha tem dois triângulos por coluna."
+      "triangle": "Triângulos que apontam para cima e para baixo alternadamente, equiláteros em 1:1. Cada coluna é a base de um triângulo, então uma linha tem dois triângulos por coluna.",
+      "double-check": "Blocos de quatro casas se alternam, para um xadrez maior.",
+      "stairs": "Cada fileira avança meio bloco, e as cores sobem como uma escada.",
+      "houndstooth": "O clássico xadrez tecido, em duas cores: uma sarja 2/2 com dois fios escuros e dois claros em cada sentido."
     },
     "hexagonNote": "O favo de mel usa três cores para que dois vizinhos nunca coincidam. Com apenas duas, a terceira é uma mistura delas.",
     "stretch": "Estiramento",
-    "stretchNote": "Em 1:1 as formas são regulares. Qualquer outra proporção as estica, e a medida indicada é a largura e a altura totais de cada forma."
+    "stretchNote": "Em 1:1 as formas são regulares. Qualquer outra proporção as estica, e a medida indicada é a largura e a altura totais de cada forma.",
+    "houndstoothNote": "O pied-de-poule usa duas cores."
   }
 }

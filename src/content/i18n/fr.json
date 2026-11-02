@@ -586,6 +586,31 @@
           "Pipopipette jusqu'à 200 cases de large, dans tous les formats d'affiche, de US Letter à 4A0"
         ]
       ]
+    },
+    "mandala-styles-and-more-patterns": {
+      "title": "Styles de dessin pour mandalas, et plus de tout",
+      "summary": "Dessinez n'importe quel mandala pointu, doux, ondulé, géométrique, fluide, esquissé ou en pixel art, avec de nouveaux choix dans six autres créateurs.",
+      "blocks": [
+        "Le [créateur de mandalas](/mandalas/) a désormais un style de dessin : les mêmes anneaux et couleurs, dessinés de huit façons. Choisissez-en un et tous les anneaux le suivent, y compris sur la page de coloriage et dans le PDF.",
+        "Des exemples pour commencer",
+        [
+          "Un mandala pointu",
+          "Un mandala ondulé",
+          "Un mandala fluide",
+          "Un mandala géométrique",
+          "Une page de coloriage esquissée à la main",
+          "Un mandala en pixel art"
+        ],
+        "Quoi d'autre de neuf",
+        [
+          "[Carreaux de Truchet](/truchet/) : arcs triples, doubles chanfreins et marches carrées",
+          "[Damiers](/checkerboards/) : double damier, escalier et pied-de-poule",
+          "[Vitraux](/stained-glass/) : appareil de briques, vannerie et fenêtre prairie",
+          "[Tie-dye](/tie-dye/) : rayures diagonales, froissé et coeur, chacun avec ses étapes de pliage et son plan de teinture",
+          "[Tartans](/tartans/) : bruyère, mousse et safran",
+          "[Girih](/girih/) : un motif d'étoiles d'ordre 3, fait de triangles"
+        ]
+      ]
     }
   },
   "changelog": {
@@ -865,6 +890,13 @@
         "Nouvelle rubrique jeux papier dans le menu, avec sudoku, futoshiki, nonogrammes, bataille navale, pipopipette, super morpion et hex, à côté des labyrinthes",
         "Chaque feuille se télécharge en PDF pour US Letter, A4 ou page de tablette, ou en SVG ou PNG",
         "Pipopipette jusqu'à 200 cases de large, dans tous les formats d'affiche, de US Letter à 4A0"
+      ]
+    },
+    "Mandala styles and more patterns": {
+      "title": "Styles de mandala et plus de motifs",
+      "items": [
+        "Nouveaux styles de dessin pour les mandalas : pointu, doux, ondulé, géométrique, fluide, esquissé à la main et pixel art",
+        "Nouvelles options pour les carreaux de Truchet, damiers, vitraux, tie-dye, tartans et girih"
       ]
     }
   }

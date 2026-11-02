@@ -2,6 +2,8 @@ import type { Locale } from "./generator";
 
 export type MandalaMotif = "petals" | "arcs" | "dots" | "scallops" | "diamonds" | "triangles" | "lotus" | "leaves" | "teardrops" | "stars" | "hearts" | "chevrons" | "rays" | "fans" | "ogees";
 
+export type MandalaStyle = "classic" | "sharp" | "smooth" | "wavy" | "geometric" | "flowing" | "sketched" | "pixel";
+
 export type MandalaRequest = {
   /** How many times the design repeats in one turn. */
   symmetry: number;
@@ -17,6 +19,8 @@ export type MandalaRequest = {
   colors: string[];
   background: string;
   outline: string;
+  /** Left out for the classic look. */
+  style?: MandalaStyle;
   locale?: Locale;
 };
 

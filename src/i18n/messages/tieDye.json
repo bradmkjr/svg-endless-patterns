@@ -21,7 +21,10 @@
       "accordion": "Accordion and boards",
       "sunburst": "Sunburst",
       "chevron": "Chevron",
-      "double-spiral": "Double spiral"
+      "double-spiral": "Double spiral",
+      "diagonal": "Diagonal stripes",
+      "crumple": "Crumple",
+      "heart": "Heart"
     },
     "bands": {
       "spiral": "Wedges",
@@ -29,7 +32,10 @@
       "accordion": "Pleat detail",
       "sunburst": "Tied spots",
       "chevron": "Stripes down the center",
-      "double-spiral": "Wedges on each spiral"
+      "double-spiral": "Wedges on each spiral",
+      "diagonal": "Stripes",
+      "crumple": "Tightness",
+      "heart": "Rings"
     },
     "seed": "Seed",
     "newSeed": "New seed",
@@ -86,7 +92,10 @@
       "accordion": "Acordeón con tablas",
       "sunburst": "Rayos de sol",
       "chevron": "Chevrón",
-      "double-spiral": "Espiral doble"
+      "double-spiral": "Espiral doble",
+      "diagonal": "Rayas diagonales",
+      "crumple": "Arrugado",
+      "heart": "Corazón"
     },
     "bands": {
       "spiral": "Cuñas",
@@ -94,7 +103,10 @@
       "accordion": "Detalle de pliegues",
       "sunburst": "Puntos atados",
       "chevron": "Franjas por el centro",
-      "double-spiral": "Cuñas en cada espiral"
+      "double-spiral": "Cuñas en cada espiral",
+      "diagonal": "Rayas",
+      "crumple": "Densidad",
+      "heart": "Anillos"
     },
     "seed": "Semilla",
     "newSeed": "Nueva semilla",
@@ -151,7 +163,10 @@
       "accordion": "Accordéon et planches",
       "sunburst": "Rayons de soleil",
       "chevron": "Chevron",
-      "double-spiral": "Double spirale"
+      "double-spiral": "Double spirale",
+      "diagonal": "Rayures diagonales",
+      "crumple": "Froissé",
+      "heart": "Coeur"
     },
     "bands": {
       "spiral": "Parts",
@@ -159,7 +174,10 @@
       "accordion": "Finesse des plis",
       "sunburst": "Points attachés",
       "chevron": "Bandes au centre",
-      "double-spiral": "Parts par spirale"
+      "double-spiral": "Parts par spirale",
+      "diagonal": "Rayures",
+      "crumple": "Densité",
+      "heart": "Anneaux"
     },
     "seed": "Graine",
     "newSeed": "Nouvelle graine",
@@ -216,7 +234,10 @@
       "accordion": "Ziehharmonika mit Brettern",
       "sunburst": "Sonnenstrahlen",
       "chevron": "Chevron",
-      "double-spiral": "Doppelspirale"
+      "double-spiral": "Doppelspirale",
+      "diagonal": "Diagonale Streifen",
+      "crumple": "Knitterbatik",
+      "heart": "Herz"
     },
     "bands": {
       "spiral": "Segmente",
@@ -224,7 +245,10 @@
       "accordion": "Faltendichte",
       "sunburst": "Abgebundene Punkte",
       "chevron": "Streifen in der Mitte",
-      "double-spiral": "Keile je Spirale"
+      "double-spiral": "Keile je Spirale",
+      "diagonal": "Streifen",
+      "crumple": "Dichte",
+      "heart": "Ringe"
     },
     "seed": "Startwert",
     "newSeed": "Neuer Startwert",
@@ -281,7 +305,10 @@
       "accordion": "Sanfona com tábuas",
       "sunburst": "Raios de sol",
       "chevron": "Chevron",
-      "double-spiral": "Espiral dupla"
+      "double-spiral": "Espiral dupla",
+      "diagonal": "Listras diagonais",
+      "crumple": "Amassado",
+      "heart": "Coração"
     },
     "bands": {
       "spiral": "Fatias",
@@ -289,7 +316,10 @@
       "accordion": "Detalhe das pregas",
       "sunburst": "Pontos amarrados",
       "chevron": "Listras no centro",
-      "double-spiral": "Fatias em cada espiral"
+      "double-spiral": "Fatias em cada espiral",
+      "diagonal": "Listras",
+      "crumple": "Densidade",
+      "heart": "Anéis"
     },
     "seed": "Semente",
     "newSeed": "Nova semente",

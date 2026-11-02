@@ -84,6 +84,7 @@ export function CheckerboardBuilder({ locale, option, labels, initialState }: { 
 
   const svg = result?.svg[view] ?? "";
   const gingham = state.pattern === "gingham";
+  const twoColors = gingham || state.pattern === "houndstooth";
   const colorLimit = maxColors(state.pattern);
   const shownColors = state.colors.slice(0, colorLimit);
 
@@ -173,8 +174,8 @@ export function CheckerboardBuilder({ locale, option, labels, initialState }: { 
                 </label>
               ))}
             </div>
-            {gingham ? (
-              <p className={styles.note}>{t.ginghamNote}</p>
+            {twoColors ? (
+              <p className={styles.note}>{gingham ? t.ginghamNote : t.houndstoothNote}</p>
             ) : (
               <>
                 {state.pattern === "hexagon" && <p className={styles.note}>{t.hexagonNote}</p>}

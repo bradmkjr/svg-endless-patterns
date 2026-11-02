@@ -37,7 +37,7 @@ export type { CelticBreakPattern, CelticInterlace, CelticKnotRequest, CelticKnot
 export type { TessellationColors, TessellationMotif, TessellationOptions, TessellationRequest, TessellationResult, GroupId } from "./tessellationTypes";
 export type { GirihColors, GirihPart, GirihRequest, GirihResult, GirihStar, GirihSymmetry } from "./girihTypes";
 export type { StainedGlassColor, StainedGlassLayout, StainedGlassPiece, StainedGlassRequest, StainedGlassResult } from "./stainedGlassTypes";
-export type { MandalaMotif, MandalaRequest, MandalaResult, MandalaRing, MandalaRingSpec } from "./mandalaTypes";
+export type { MandalaMotif, MandalaRequest, MandalaResult, MandalaRing, MandalaRingSpec, MandalaStyle } from "./mandalaTypes";
 export type { CountedFinish, CrossStitchColor, CrossStitchRequest, CrossStitchResult } from "./crossStitchTypes";
 export type { NeedlepointColor, NeedlepointRequest, NeedlepointResult, NeedlepointStitch, NeedlepointYarn } from "./needlepointTypes";
 export type { MazeAlgorithm, MazeColors, MazeDifficulty, MazePaperId, MazeRequest, MazeResult, MazeShape, MazeSize } from "./mazeTypes";

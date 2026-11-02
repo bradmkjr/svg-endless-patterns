@@ -1,5 +1,83 @@
 [
   {
+    "slug": "mandala-styles-and-more-patterns",
+    "title": "Mandala drawing styles, and more of everything",
+    "date": "2026-11-01",
+    "summary": "Draw any mandala sharp, smooth, wavy, geometric, flowing, hand-sketched or as pixel art, with new choices in six other pattern makers.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The [mandala maker](/mandalas/) now has a drawing style: the same rings and colors, drawn eight different ways. Pick one from the builder and every ring follows it, on the coloring page and in the PDF too."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "mandala",
+            "slug": "",
+            "query": "st=sharp",
+            "view": "art",
+            "caption": "A sharp mandala"
+          },
+          {
+            "kind": "mandala",
+            "slug": "",
+            "query": "st=wavy",
+            "view": "art",
+            "caption": "A wavy mandala"
+          },
+          {
+            "kind": "mandala",
+            "slug": "",
+            "query": "st=flowing",
+            "view": "art",
+            "caption": "A flowing mandala"
+          },
+          {
+            "kind": "mandala",
+            "slug": "",
+            "query": "st=geometric",
+            "view": "art",
+            "caption": "A geometric mandala"
+          },
+          {
+            "kind": "mandala",
+            "slug": "",
+            "query": "st=sketched",
+            "view": "coloring",
+            "caption": "A hand-sketched coloring page"
+          },
+          {
+            "kind": "mandala",
+            "slug": "",
+            "query": "st=pixel",
+            "view": "art",
+            "caption": "A pixel art mandala"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What else is new"
+      },
+      {
+        "type": "list",
+        "items": [
+          "[Truchet tiles](/truchet/): triple arcs, double chamfers and square steps",
+          "[Checkerboards](/checkerboards/): double check, stairs and houndstooth",
+          "[Stained glass](/stained-glass/): brickwork, basketweave and a prairie window",
+          "[Tie-dye](/tie-dye/): diagonal stripes, crumple and heart, each with folding steps and a dye map",
+          "[Tartans](/tartans/): heather, moss and saffron",
+          "[Girih](/girih/): a 3-fold star pattern, built from triangles"
+        ]
+      }
+    ]
+  },
+  {
     "slug": "paper-puzzles",
     "title": "Paper puzzles to print or play on a tablet",
     "date": "2026-11-01",

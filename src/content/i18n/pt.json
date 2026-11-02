@@ -586,6 +586,31 @@
           "Jogo dos pontinhos com até 200 quadrados de largura, em todos os tamanhos de pôster, de Carta a 4A0"
         ]
       ]
+    },
+    "mandala-styles-and-more-patterns": {
+      "title": "Estilos de desenho para mandalas, e mais de tudo",
+      "summary": "Desenhe qualquer mandala pontiaguda, suave, ondulada, geométrica, fluida, à mão livre ou em pixel art, com novas opções em outros seis criadores.",
+      "blocks": [
+        "O [criador de mandalas](/mandalas/) agora tem estilo de desenho: os mesmos anéis e cores, desenhados de oito formas. Escolha um e todos os anéis o seguem, também na página de colorir e no PDF.",
+        "Exemplos para começar",
+        [
+          "Uma mandala pontiaguda",
+          "Uma mandala ondulada",
+          "Uma mandala fluida",
+          "Uma mandala geométrica",
+          "Uma página de colorir à mão livre",
+          "Uma mandala em pixel art"
+        ],
+        "O que mais há de novo",
+        [
+          "[Azulejos de Truchet](/truchet/): arcos triplos, chanfros duplos e degraus quadrados",
+          "[Tabuleiros](/checkerboards/): xadrez duplo, escada e pied-de-poule",
+          "[Vitrais](/stained-glass/): aparelho de tijolos, cestaria e janela pradaria",
+          "[Tie-dye](/tie-dye/): listras diagonais, amassado e coração, cada um com passos de dobra e mapa de tintas",
+          "[Tartãs](/tartans/): urze, musgo e açafrão",
+          "[Girih](/girih/): um padrão de estrelas de ordem 3, feito de triângulos"
+        ]
+      ]
     }
   },
   "changelog": {
@@ -865,6 +890,13 @@
         "Nova seção de passatempos de papel no menu, com sudoku, futoshiki, nonogramas, batalha naval, jogo dos pontinhos, super jogo da velha e hex, ao lado dos labirintos",
         "Cada folha pode ser baixada como PDF para carta, A4 ou página de tablet, ou como SVG ou PNG",
         "Jogo dos pontinhos com até 200 quadrados de largura, em todos os tamanhos de pôster, de Carta a 4A0"
+      ]
+    },
+    "Mandala styles and more patterns": {
+      "title": "Estilos de mandala e mais padrões",
+      "items": [
+        "Novos estilos de desenho para mandalas: pontiagudo, suave, ondulado, geométrico, fluido, à mão livre e pixel art",
+        "Novas opções para azulejos de Truchet, tabuleiros, vitrais, tie-dye, tartãs e girih"
       ]
     }
   }

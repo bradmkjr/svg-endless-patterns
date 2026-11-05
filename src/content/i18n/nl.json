@@ -1,5 +1,28 @@
 {
   "posts": {
+    "spiral-and-cone-checkerboards": {
+      "title": "Dambordspiralen en -kegels",
+      "summary": "De dambordmaker kan zijn raster nu tot een spiraal winden, of op een kegel leggen die je van boven ziet, in elk patroon.",
+      "blocks": [
+        "De [dambordmaker](/checkerboards/) heeft een nieuwe instelling voor de indeling. Het raster blijft de standaard, en er komen twee ronde indelingen bij. Een spiraal windt het raster om een middelpunt: de rijen worden armen die naar binnen draaien, en de vakken worden kleiner maar houden hun vorm, zoals in de klassieke dambordspiraal-illusie. Een kegel toont het raster van boven op zijn punt: rijen worden even brede ringen, en kolommen worden punten die in het midden samenkomen.",
+        "Beide werken met elk patroon, van het gewone dambord tot [honingraat](/checkerboards/hexagon/), [baksteen](/checkerboards/brick/) en pied-de-poule. Kolommen tellen de vakken rond en rijen de ringen. Een spiraal kiest hoe ver zijn armen draaien, zodat de kleuren rondom sluiten. Lukt dat niet, dan is er één naad waar de cirkel sluit, en met 24 vakken rond sluit het altijd.",
+        "Voorbeelden om mee te beginnen",
+        [
+          "Een dambordspiraal",
+          "Vierentwintig vakken rond, diep gewonden",
+          "Baksteen, op een kegel",
+          "Een honingraatspiraal in drie kleuren"
+        ],
+        "Wat erbij zit",
+        [
+          "Raster, spiraal en kegel, voor elk dambordpatroon",
+          "Spiraalvakken die hun vorm houden terwijl ze naar het midden kleiner worden",
+          "Kegelringen van gelijke breedte, met punten die in de top samenkomen",
+          "Een herhaling die het ronde bord op een vierkant in zijn eerste kleur zet, zodat tegels rand aan rand passen",
+          "SVG, PNG en een afdrukbare pdf met de eindmaat in doorsnede en de stukken per kleur"
+        ]
+      ]
+    },
     "seamless-nature-patterns": {
       "title": "Naadloze natuurpatronen: bladeren, bloemen, wolken en kiezels",
       "summary": "Een nieuwe maker strooit bladeren, bloemen, wolken, kiezels, varens of gras over een tegel die naadloos herhaalt.",
@@ -650,6 +673,13 @@
     }
   },
   "changelog": {
+    "Spiral and cone checkerboards": {
+      "title": "Dambordspiralen en -kegels",
+      "items": [
+        "Spiraal- en kegelindeling in de dambordmaker, voor elk patroon, met het raster nog steeds als standaard",
+        "Ronde borden te downloaden als SVG, PNG en pdf, met een herhaling op een vierkant in hun eerste kleur"
+      ]
+    },
     "Nature patterns": {
       "title": "Natuurpatronen",
       "items": [

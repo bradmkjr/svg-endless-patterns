@@ -1,5 +1,28 @@
 {
   "posts": {
+    "spiral-and-cone-checkerboards": {
+      "title": "Damiers en spirale et en cône",
+      "summary": "Le créateur de damiers peut désormais enrouler sa grille en spirale, ou la poser sur un cône vu d'en haut, pour tous les motifs.",
+      "blocks": [
+        "Le [créateur de damiers](/checkerboards/) a un nouveau réglage de disposition. La grille reste la disposition par défaut, et deux dispositions rondes la rejoignent. Une spirale enroule la grille autour d'un centre : ses rangées deviennent des bras qui tournent vers l'intérieur, et ses cases rapetissent en gardant leur forme, comme dans l'illusion classique du damier en spirale. Un cône montre la grille vue d'au-dessus de sa pointe : les rangées deviennent des anneaux de même largeur, et les colonnes des parts qui se rejoignent au centre.",
+        "Les deux fonctionnent avec tous les motifs, du damier standard au [nid d'abeille](/checkerboards/hexagon/), à la [brique](/checkerboards/brick/) et au pied-de-poule. Les colonnes comptent les cases autour, et les rangées les anneaux. Une spirale choisit de combien ses bras tournent pour que les couleurs se raccordent sur tout le tour. Si c'est impossible, une couture se voit là où le cercle se referme, et 24 cases autour se raccordent toujours.",
+        "Des exemples pour commencer",
+        [
+          "Un damier en spirale",
+          "Vingt-quatre cases autour, en spirale profonde",
+          "De la brique, sur un cône",
+          "Une spirale en nid d'abeille, en trois couleurs"
+        ],
+        "Ce qui est inclus",
+        [
+          "Dispositions en grille, en spirale et en cône, pour tous les motifs de damier",
+          "Des cases en spirale qui gardent leur forme en rapetissant vers le centre",
+          "Des anneaux de cône de même largeur, avec des parts qui se rejoignent à la pointe",
+          "Un raccord qui pose le damier rond sur un carré de sa première couleur, pour que les carreaux se joignent bord à bord",
+          "SVG, PNG et un PDF à imprimer avec le diamètre fini et les pièces de chaque couleur"
+        ]
+      ]
+    },
     "seamless-nature-patterns": {
       "title": "Motifs nature sans raccord visible : feuilles, fleurs, nuages et galets",
       "summary": "Un nouvel outil sème feuilles, fleurs, nuages, galets, fougères ou herbe sur une tuile qui se répète sans raccord visible.",
@@ -650,6 +673,13 @@
     }
   },
   "changelog": {
+    "Spiral and cone checkerboards": {
+      "title": "Damiers en spirale et en cône",
+      "items": [
+        "Dispositions en spirale et en cône dans le créateur de damiers, pour tous les motifs, la grille restant par défaut",
+        "Les damiers ronds se téléchargent en SVG, PNG et PDF, avec un raccord sur un carré de leur première couleur"
+      ]
+    },
     "Nature patterns": {
       "title": "Motifs nature",
       "items": [

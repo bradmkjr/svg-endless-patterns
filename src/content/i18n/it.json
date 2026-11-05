@@ -1,5 +1,28 @@
 {
   "posts": {
+    "spiral-and-cone-checkerboards": {
+      "title": "Scacchiere a spirale e a cono",
+      "summary": "Il generatore di scacchiere ora può avvolgere la griglia in una spirale, o posarla su un cono visto dall'alto, in ogni motivo.",
+      "blocks": [
+        "Il [generatore di scacchiere](/checkerboards/) ha una nuova impostazione di disposizione. La griglia resta quella predefinita, e si aggiungono due disposizioni rotonde. Una spirale avvolge la griglia attorno a un centro: le righe diventano bracci che girano verso l'interno, e le caselle rimpiccioliscono mantenendo la loro forma, come nella classica illusione della scacchiera a spirale. Un cono mostra la griglia vista dall'alto della sua punta: le righe diventano anelli di uguale larghezza e le colonne spicchi che si incontrano al centro.",
+        "Entrambe funzionano con ogni motivo, dalla scacchiera normale al [nido d'ape](/checkerboards/hexagon/), al [mattone](/checkerboards/brick/) e al pied-de-poule. Le colonne contano le caselle in giro e le righe gli anelli. Una spirale sceglie quanto girano i bracci perché i colori si uniscano su tutto il giro. Se non è possibile, si vede una cucitura dove il cerchio si chiude, e con 24 caselle in giro si unisce sempre.",
+        "Esempi per iniziare",
+        [
+          "Una scacchiera a spirale",
+          "Ventiquattro caselle in giro, con una spirale profonda",
+          "Mattone, su un cono",
+          "Una spirale a nido d'ape in tre colori"
+        ],
+        "Cosa include",
+        [
+          "Disposizioni a griglia, a spirale e a cono, per ogni motivo di scacchiera",
+          "Caselle a spirale che mantengono la forma rimpicciolendo verso il centro",
+          "Anelli del cono di uguale larghezza, con spicchi che si incontrano sulla punta",
+          "Una ripetizione che posa la scacchiera rotonda su un quadrato del suo primo colore, così le piastrelle si uniscono bordo a bordo",
+          "SVG, PNG e un PDF da stampare con il diametro finito e i pezzi di ogni colore"
+        ]
+      ]
+    },
     "seamless-nature-patterns": {
       "title": "Motivi naturali senza giunture: foglie, fiori, nuvole e ciottoli",
       "summary": "Un nuovo generatore sparge foglie, fiori, nuvole, ciottoli, felci o erba su una piastrella che si ripete senza giunture.",
@@ -650,6 +673,13 @@
     }
   },
   "changelog": {
+    "Spiral and cone checkerboards": {
+      "title": "Scacchiere a spirale e a cono",
+      "items": [
+        "Disposizioni a spirale e a cono nel generatore di scacchiere, per ogni motivo, con la griglia ancora predefinita",
+        "Le scacchiere rotonde si scaricano in SVG, PNG e PDF, con una ripetizione su un quadrato del loro primo colore"
+      ]
+    },
     "Nature patterns": {
       "title": "Motivi naturali",
       "items": [

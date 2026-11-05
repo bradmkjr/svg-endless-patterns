@@ -1,5 +1,28 @@
 {
   "posts": {
+    "spiral-and-cone-checkerboards": {
+      "title": "Spiral- und Kegel-Schachbretter",
+      "summary": "Der Schachbrett-Generator kann sein Raster jetzt zu einer Spirale wickeln oder auf einen Kegel von oben legen, in jedem Muster.",
+      "blocks": [
+        "Der [Schachbrett-Generator](/checkerboards/) hat eine neue Einstellung für die Anordnung. Das Raster bleibt die Voreinstellung, und zwei runde Anordnungen kommen hinzu. Eine Spirale wickelt das Raster um eine Mitte: Seine Reihen werden zu Armen, die sich nach innen drehen, und seine Felder werden kleiner, behalten aber ihre Form, wie bei der klassischen Spiral-Schachbrett-Täuschung. Ein Kegel zeigt das Raster von oben auf seine Spitze: Reihen werden zu gleich breiten Ringen, Spalten zu Keilen, die sich in der Mitte treffen.",
+        "Beide funktionieren mit jedem Muster, vom Standardbrett über [Wabe](/checkerboards/hexagon/) und [Ziegel](/checkerboards/brick/) bis Hahnentritt. Spalten zählen die Felder rundherum, Reihen die Ringe. Eine Spirale wählt, wie weit sich ihre Arme drehen, damit die Farben rundherum aufgehen. Geht das nicht, zeigt sich eine Naht, wo sich der Kreis schließt, und mit 24 Feldern rundherum geht es immer auf.",
+        "Beispiele zum Start",
+        [
+          "Ein Spiral-Schachbrett",
+          "Vierundzwanzig Felder rundherum, tief gewunden",
+          "Ziegel auf einem Kegel",
+          "Eine Waben-Spirale in drei Farben"
+        ],
+        "Was dabei ist",
+        [
+          "Raster, Spirale und Kegel für jedes Schachbrettmuster",
+          "Spiralfelder, die ihre Form behalten, während sie zur Mitte hin kleiner werden",
+          "Kegelringe gleicher Breite, mit Keilen, die sich an der Spitze treffen",
+          "Ein Rapport, der das runde Brett auf ein Quadrat in seiner ersten Farbe setzt, damit Kacheln Kante an Kante passen",
+          "SVG, PNG und ein druckbares PDF mit dem fertigen Durchmesser und den Teilen jeder Farbe"
+        ]
+      ]
+    },
     "seamless-nature-patterns": {
       "title": "Nahtlose Naturmuster: Blätter, Blumen, Wolken und Kiesel",
       "summary": "Ein neuer Generator verteilt Blätter, Blumen, Wolken, Kiesel, Farne oder Gras auf einer Kachel, die sich nahtlos wiederholt.",
@@ -650,6 +673,13 @@
     }
   },
   "changelog": {
+    "Spiral and cone checkerboards": {
+      "title": "Spiral- und Kegel-Schachbretter",
+      "items": [
+        "Spiral- und Kegelanordnung im Schachbrett-Generator, für jedes Muster, mit dem Raster weiter als Voreinstellung",
+        "Runde Bretter als SVG, PNG und PDF, mit einem Rapport auf einem Quadrat in ihrer ersten Farbe"
+      ]
+    },
     "Nature patterns": {
       "title": "Naturmuster",
       "items": [

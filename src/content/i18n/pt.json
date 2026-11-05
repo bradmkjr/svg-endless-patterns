@@ -1,5 +1,28 @@
 {
   "posts": {
+    "spiral-and-cone-checkerboards": {
+      "title": "Tabuleiros em espiral e em cone",
+      "summary": "O criador de tabuleiros agora pode enrolar a grade em uma espiral, ou colocá-la sobre um cone visto de cima, em todos os padrões.",
+      "blocks": [
+        "O [criador de tabuleiros](/checkerboards/) tem um novo ajuste de disposição. A grade continua sendo o padrão, e duas disposições redondas chegam junto. Uma espiral enrola a grade em torno de um centro: as linhas viram braços que giram para dentro, e as casas diminuem sem perder a forma, como na clássica ilusão do tabuleiro em espiral. Um cone mostra a grade vista de cima da ponta: as linhas viram anéis de mesma largura e as colunas, fatias que se encontram no meio.",
+        "As duas funcionam com todos os padrões, do tabuleiro padrão à [colmeia](/checkerboards/hexagon/), ao [tijolo](/checkerboards/brick/) e ao pied-de-poule. As colunas contam as casas ao redor e as linhas, os anéis. Uma espiral escolhe quanto os braços giram para que as cores fechem na volta toda. Se não der, aparece uma emenda onde o círculo se encontra, e com 24 casas ao redor sempre fecha.",
+        "Exemplos para começar",
+        [
+          "Um tabuleiro em espiral",
+          "Vinte e quatro casas ao redor, com giro profundo",
+          "Tijolo, sobre um cone",
+          "Uma espiral de colmeia em três cores"
+        ],
+        "O que está incluído",
+        [
+          "Disposições em grade, espiral e cone, para todos os padrões de tabuleiro",
+          "Casas em espiral que mantêm a forma ao diminuir rumo ao centro",
+          "Anéis de cone de mesma largura, com fatias que se encontram na ponta",
+          "Uma repetição que coloca o tabuleiro redondo sobre um quadrado da primeira cor, para que os módulos se encaixem lado a lado",
+          "SVG, PNG e um PDF para imprimir com o diâmetro final e as peças de cada cor"
+        ]
+      ]
+    },
     "seamless-nature-patterns": {
       "title": "Estampas da natureza contínuas: folhas, flores, nuvens e seixos",
       "summary": "Um novo criador espalha folhas, flores, nuvens, seixos, samambaias ou grama sobre um ladrilho que se repete sem emendas.",
@@ -650,6 +673,13 @@
     }
   },
   "changelog": {
+    "Spiral and cone checkerboards": {
+      "title": "Tabuleiros em espiral e em cone",
+      "items": [
+        "Disposições em espiral e em cone no criador de tabuleiros, para todos os padrões, com a grade ainda como padrão",
+        "Tabuleiros redondos baixam em SVG, PNG e PDF, com uma repetição sobre um quadrado da primeira cor"
+      ]
+    },
     "Nature patterns": {
       "title": "Estampas da natureza",
       "items": [

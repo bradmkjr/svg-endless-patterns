@@ -1,5 +1,28 @@
 {
   "posts": {
+    "spiral-and-cone-checkerboards": {
+      "title": "Tableros en espiral y en cono",
+      "summary": "El creador de tableros ahora puede enrollar su cuadrícula en una espiral, o ponerla sobre un cono visto desde arriba, en todos los patrones.",
+      "blocks": [
+        "El [creador de tableros](/checkerboards/) tiene un nuevo ajuste de disposición. La cuadrícula sigue siendo la opción por defecto, y se suman dos disposiciones redondas. Una espiral enrolla la cuadrícula alrededor de un centro, así que sus filas se vuelven brazos que giran hacia dentro y sus casillas se achican sin perder su forma, como la clásica ilusión del tablero en espiral. Un cono muestra la cuadrícula desde arriba de su punta: las filas se vuelven anillos de igual ancho y las columnas, cuñas que se juntan en el centro.",
+        "Ambas funcionan con todos los patrones, del tablero estándar al [panal](/checkerboards/hexagon/), el [ladrillo](/checkerboards/brick/) y la pata de gallo. Las columnas cuentan las casillas alrededor y las filas, los anillos. Una espiral elige cuánto giran sus brazos para que los colores encajen en toda la vuelta. Si no pueden, se ve una costura donde el círculo se cierra, y con 24 casillas alrededor siempre encaja.",
+        "Ejemplos para empezar",
+        [
+          "Un tablero en espiral",
+          "Veinticuatro casillas alrededor, con un giro profundo",
+          "Ladrillo, sobre un cono",
+          "Una espiral de panal en tres colores"
+        ],
+        "Qué incluye",
+        [
+          "Disposiciones en cuadrícula, espiral y cono, para todos los patrones de tablero",
+          "Casillas en espiral que conservan su forma al achicarse hacia el centro",
+          "Anillos de cono de igual ancho, con cuñas que se juntan en la punta",
+          "Una repetición que pone el tablero redondo sobre un cuadrado de su primer color, para que los módulos encajen borde con borde",
+          "SVG, PNG y un PDF para imprimir con el diámetro final y las piezas de cada color"
+        ]
+      ]
+    },
     "seamless-nature-patterns": {
       "title": "Patrones naturales continuos: hojas, flores, nubes y guijarros",
       "summary": "Un nuevo creador esparce hojas, flores, nubes, guijarros, helechos o hierba sobre un azulejo que se repite sin costuras.",
@@ -650,6 +673,13 @@
     }
   },
   "changelog": {
+    "Spiral and cone checkerboards": {
+      "title": "Tableros en espiral y en cono",
+      "items": [
+        "Disposiciones en espiral y en cono en el creador de tableros, para todos los patrones, con la cuadrícula aún por defecto",
+        "Los tableros redondos se descargan en SVG, PNG y PDF, con una repetición sobre un cuadrado de su primer color"
+      ]
+    },
     "Nature patterns": {
       "title": "Patrones naturales",
       "items": [

@@ -1,5 +1,27 @@
 {
   "posts": {
+    "seamless-nature-patterns": {
+      "title": "Estampas da natureza contínuas: folhas, flores, nuvens e seixos",
+      "summary": "Um novo criador espalha folhas, flores, nuvens, seixos, samambaias ou grama sobre um ladrilho que se repete sem emendas.",
+      "blocks": [
+        "O novo [criador de estampas da natureza](/nature-patterns/) espalha folhas, flores, nuvens, seixos, samambaias ou grama sobre um ladrilho quadrado que se repete sem emendas. Cada motivo é desenhado com curvas simples, então nenhuma folha ou [seixo](/nature-patterns/rocks/) é exatamente igual, e o que passa de uma borda volta pelo lado oposto.",
+        "Exemplos para começar",
+        [
+          "Folhas espalhadas em qualquer ângulo",
+          "Flores em contorno, um pouco mais cheias",
+          "Nuvens em uma grade irregular",
+          "Seixos sobrepostos"
+        ],
+        "O que vem incluído",
+        [
+          "Seis motivos: folhas, flores, nuvens, seixos, samambaias e grama, cada um com sua própria página",
+          "Uma distribuição espalhada com motivos afastados, próximos ou sobrepostos, ou uma grade irregular",
+          "Densidade, tamanho, variação de tamanho e rotação, com motivos preenchidos ou em contorno",
+          "Qualquer paleta da biblioteca, ou suas próprias cores",
+          "Uma repetição contínua em SVG ou PNG, e um PDF para imprimir em tamanho real"
+        ]
+      ]
+    },
     "hidden-message-mazes": {
       "title": "Labirintos com uma mensagem oculta",
       "summary": "Digite uma mensagem, e o único caminho pelo labirinto a escreve. Imprima, entregue e espere a resposta.",
@@ -628,6 +650,13 @@
     }
   },
   "changelog": {
+    "Nature patterns": {
+      "title": "Estampas da natureza",
+      "items": [
+        "Novo criador de estampas contínuas de folhas, flores, nuvens, seixos, samambaias e grama",
+        "Distribuição espalhada ou em grade irregular, com ajustes de densidade, tamanho, variação, rotação e contorno"
+      ]
+    },
     "Pattern margins": {
       "title": "Margens com padrões",
       "items": [

@@ -1,5 +1,135 @@
 [
   {
+    "slug": "spiral-and-cone-checkerboards",
+    "title": "Spiral and cone checkerboards",
+    "date": "2026-11-05",
+    "summary": "The checkerboard maker can now wind its grid into a spiral, or lay it over a cone seen from above, in every pattern.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The [checkerboard maker](/checkerboards/) has a new layout setting. The grid is still the default, and two round layouts join it. A spiral winds the grid around a center, so its rows become arms that curl inward and its boxes shrink as they go while keeping their shape, like the classic spiral checkerboard illusion. A cone shows the grid from above a cone's point: rows become rings of equal depth, and columns become wedges that meet in the middle."
+      },
+      {
+        "type": "paragraph",
+        "text": "Both work with every pattern, from the standard board to [honeycomb](/checkerboards/hexagon/), [brick](/checkerboards/brick/) and houndstooth. Columns count the boxes around and rows count the rings. A spiral picks how far its arms wind so the colors join up all the way round. If they can't, one seam shows where the circle meets itself, and 24 boxes around always joins up."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "checkerboard",
+            "slug": "",
+            "query": "l=spiral",
+            "view": "art",
+            "caption": "A spiral checkerboard"
+          },
+          {
+            "kind": "checkerboard",
+            "slug": "",
+            "query": "c=24&r=24&l=spiral",
+            "view": "art",
+            "caption": "Twenty-four boxes around, winding deep"
+          },
+          {
+            "kind": "checkerboard",
+            "slug": "",
+            "query": "p=brick&c=16&l=conical",
+            "view": "art",
+            "caption": "Brick, on a cone"
+          },
+          {
+            "kind": "checkerboard",
+            "slug": "",
+            "query": "p=hexagon&c=12&r=12&k=25221c-f4ecdc-b3403a&l=spiral",
+            "view": "art",
+            "caption": "A honeycomb spiral in three colors"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What's included"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Grid, spiral and cone layouts, for every checkerboard pattern",
+          "Spiral boxes that keep their shape as they shrink toward the center",
+          "Cone rings of equal depth, with wedges that meet at the point",
+          "A repeat that sets the round board on a square of its first color, so tiles meet edge to edge",
+          "SVG, PNG and a printable PDF with the finished size across and each color's pieces"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "seamless-nature-patterns",
+    "title": "Seamless nature patterns: leaves, flowers, clouds and pebbles",
+    "date": "2026-11-05",
+    "summary": "A new maker scatters leaves, flowers, clouds, pebbles, ferns or grass across a tile that repeats without a seam.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The new [nature pattern maker](/nature-patterns/) scatters leaves, flowers, clouds, pebbles, ferns or grass across a square tile that repeats without a seam. Each motif is drawn from simple curves, so no two leaves or [pebbles](/nature-patterns/rocks/) are quite alike, and anything that crosses an edge comes back in on the opposite side."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "nature",
+            "slug": "",
+            "query": "",
+            "view": "repeat",
+            "caption": "Leaves, scattered at any angle"
+          },
+          {
+            "kind": "nature",
+            "slug": "",
+            "query": "m=flowers&st=outline&d=4",
+            "view": "repeat",
+            "caption": "Outlined flowers, a little fuller"
+          },
+          {
+            "kind": "nature",
+            "slug": "",
+            "query": "m=clouds&l=grid&v=40",
+            "view": "repeat",
+            "caption": "Clouds on a jittered grid"
+          },
+          {
+            "kind": "nature",
+            "slug": "",
+            "query": "m=rocks&p=overlapping&d=5",
+            "view": "repeat",
+            "caption": "Overlapping pebbles"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What's included"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Six motifs: leaves, flowers, clouds, pebbles, ferns and grass, each with its own page",
+          "A scattered layout that keeps motifs spaced apart, close together or overlapping, or a jittered grid",
+          "Density, size, size variation and rotation, with filled or outlined motifs",
+          "Any palette from the library, or your own colors",
+          "A seamless SVG or PNG repeat, and a printable PDF at true size"
+        ]
+      }
+    ]
+  },
+  {
     "slug": "now-in-seven-languages",
     "title": "Endless Patterns now speaks Italian and Dutch",
     "date": "2026-11-01",

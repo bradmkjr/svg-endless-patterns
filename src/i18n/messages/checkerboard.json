@@ -55,7 +55,23 @@
     "hexagonNote": "A honeycomb uses three colors, so that no two neighbors match. With only two, the third is a mix of them.",
     "stretch": "Stretch",
     "stretchNote": "At 1:1 the shapes are regular. Any other ratio stretches them, and the size given is each shape's full width and height.",
-    "houndstoothNote": "Houndstooth uses two colors."
+    "houndstoothNote": "Houndstooth uses two colors.",
+    "layout": "Layout",
+    "layouts": {
+      "grid": "Grid",
+      "spiral": "Spiral",
+      "conical": "Cone"
+    },
+    "layoutNotes": {
+      "grid": "A flat board of rows and columns.",
+      "spiral": "The grid wound around a center: rows become arms that spiral inward, and the boxes shrink as they go but keep their shape.",
+      "conical": "The grid seen from above a cone's point: rows become rings of equal depth, and columns become wedges that meet in the middle."
+    },
+    "colsRound": "Boxes around",
+    "rowsRound": "Rings",
+    "statsRound": "Finished size {w}\" across. Each box at the edge {bw}\" × {bh}\".",
+    "repeatRound": "The round board on a square of its first color, so tiles meet edge to edge like quilt medallions.",
+    "seamNote": "These colors don't come out even all the way round, so one seam shows where the circle meets itself. 24 boxes around always joins up."
   },
   "es": {
     "metaTitle": "Generador de tableros: proporciones y colores a medida",
@@ -113,7 +129,23 @@
     "hexagonNote": "El panal usa tres colores para que dos vecinos nunca coincidan. Con solo dos, el tercero es una mezcla de ambos.",
     "stretch": "Estiramiento",
     "stretchNote": "En 1:1 las formas son regulares. Cualquier otra proporción las estira, y la medida indicada es el ancho y el alto totales de cada forma.",
-    "houndstoothNote": "La pata de gallo usa dos colores."
+    "houndstoothNote": "La pata de gallo usa dos colores.",
+    "layout": "Disposición",
+    "layouts": {
+      "grid": "Cuadrícula",
+      "spiral": "Espiral",
+      "conical": "Cono"
+    },
+    "layoutNotes": {
+      "grid": "Un tablero plano de filas y columnas.",
+      "spiral": "La cuadrícula enrollada alrededor de un centro: las filas se vuelven brazos que giran hacia dentro, y las casillas se achican sin perder su forma.",
+      "conical": "La cuadrícula vista desde arriba de la punta de un cono: las filas se vuelven anillos de igual ancho y las columnas, cuñas que se juntan en el centro."
+    },
+    "colsRound": "Casillas alrededor",
+    "rowsRound": "Anillos",
+    "statsRound": "Tamaño final {w}\" de diámetro. Cada casilla del borde {bw}\" × {bh}\".",
+    "repeatRound": "El tablero redondo sobre un cuadrado de su primer color, para que los módulos encajen borde con borde como medallones de quilt.",
+    "seamNote": "Estos colores no salen parejos en toda la vuelta, así que se ve una costura donde el círculo se cierra. Con 24 casillas alrededor siempre encaja."
   },
   "fr": {
     "metaTitle": "Créateur de damiers : proportions et couleurs sur mesure",
@@ -171,7 +203,23 @@
     "hexagonNote": "Le nid d'abeille utilise trois couleurs pour que deux voisins ne soient jamais identiques. Avec deux seulement, la troisième est leur mélange.",
     "stretch": "Étirement",
     "stretchNote": "En 1:1, les formes sont régulières. Toute autre proportion les étire, et la taille indiquée est la largeur et la hauteur totales de chaque forme.",
-    "houndstoothNote": "Le pied-de-poule utilise deux couleurs."
+    "houndstoothNote": "Le pied-de-poule utilise deux couleurs.",
+    "layout": "Disposition",
+    "layouts": {
+      "grid": "Grille",
+      "spiral": "Spirale",
+      "conical": "Cône"
+    },
+    "layoutNotes": {
+      "grid": "Un damier plat, en rangées et colonnes.",
+      "spiral": "La grille enroulée autour d'un centre : les rangées deviennent des bras qui tournent vers l'intérieur, et les cases rapetissent en gardant leur forme.",
+      "conical": "La grille vue d'au-dessus de la pointe d'un cône : les rangées deviennent des anneaux de même largeur, et les colonnes des parts qui se rejoignent au centre."
+    },
+    "colsRound": "Cases autour",
+    "rowsRound": "Anneaux",
+    "statsRound": "Taille finale {w}\" de diamètre. Chaque case du bord {bw}\" × {bh}\".",
+    "repeatRound": "Le damier rond sur un carré de sa première couleur, pour que les carreaux se joignent bord à bord comme des médaillons de patchwork.",
+    "seamNote": "Ces couleurs ne tombent pas juste sur tout le tour : une couture se voit là où le cercle se referme. Avec 24 cases autour, tout se raccorde toujours."
   },
   "de": {
     "metaTitle": "Schachbrettmuster erstellen: eigene Proportionen und Farben",
@@ -229,7 +277,23 @@
     "hexagonNote": "Die Bienenwabe verwendet drei Farben, damit zwei Nachbarn nie gleich sind. Bei nur zwei Farben wird die dritte aus ihnen gemischt.",
     "stretch": "Streckung",
     "stretchNote": "Bei 1:1 sind die Formen regelmäßig. Jedes andere Verhältnis streckt sie, und die angegebene Größe ist die volle Breite und Höhe jeder Form.",
-    "houndstoothNote": "Hahnentritt verwendet zwei Farben."
+    "houndstoothNote": "Hahnentritt verwendet zwei Farben.",
+    "layout": "Anordnung",
+    "layouts": {
+      "grid": "Raster",
+      "spiral": "Spirale",
+      "conical": "Kegel"
+    },
+    "layoutNotes": {
+      "grid": "Ein flaches Brett aus Reihen und Spalten.",
+      "spiral": "Das Raster um eine Mitte gewickelt: Reihen werden zu Armen, die sich nach innen drehen, und die Felder werden kleiner, behalten aber ihre Form.",
+      "conical": "Das Raster von oben auf die Spitze eines Kegels gesehen: Reihen werden zu gleich breiten Ringen, Spalten zu Keilen, die sich in der Mitte treffen."
+    },
+    "colsRound": "Felder rundherum",
+    "rowsRound": "Ringe",
+    "statsRound": "Fertige Größe {w}\" Durchmesser. Jedes Feld am Rand {bw}\" × {bh}\".",
+    "repeatRound": "Das runde Brett auf einem Quadrat in seiner ersten Farbe, damit Kacheln Kante an Kante passen wie Quilt-Medaillons.",
+    "seamNote": "Diese Farben gehen rundherum nicht auf, daher zeigt sich eine Naht, wo sich der Kreis schließt. Mit 24 Feldern rundherum passt es immer."
   },
   "pt": {
     "metaTitle": "Gerador de xadrez: proporções e cores personalizadas",
@@ -287,7 +351,23 @@
     "hexagonNote": "O favo de mel usa três cores para que dois vizinhos nunca coincidam. Com apenas duas, a terceira é uma mistura delas.",
     "stretch": "Estiramento",
     "stretchNote": "Em 1:1 as formas são regulares. Qualquer outra proporção as estica, e a medida indicada é a largura e a altura totais de cada forma.",
-    "houndstoothNote": "O pied-de-poule usa duas cores."
+    "houndstoothNote": "O pied-de-poule usa duas cores.",
+    "layout": "Disposição",
+    "layouts": {
+      "grid": "Grade",
+      "spiral": "Espiral",
+      "conical": "Cone"
+    },
+    "layoutNotes": {
+      "grid": "Um tabuleiro plano de linhas e colunas.",
+      "spiral": "A grade enrolada em torno de um centro: as linhas viram braços que giram para dentro, e as casas diminuem sem perder a forma.",
+      "conical": "A grade vista de cima da ponta de um cone: as linhas viram anéis de mesma largura e as colunas, fatias que se encontram no meio."
+    },
+    "colsRound": "Casas ao redor",
+    "rowsRound": "Anéis",
+    "statsRound": "Tamanho final {w}\" de diâmetro. Cada casa da borda {bw}\" × {bh}\".",
+    "repeatRound": "O tabuleiro redondo sobre um quadrado da primeira cor, para que os módulos se encaixem lado a lado como medalhões de patchwork.",
+    "seamNote": "Estas cores não fecham certinho na volta toda, então aparece uma emenda onde o círculo se encontra. Com 24 casas ao redor sempre fecha."
   },
   "it": {
     "metaTitle": "Generatore di scacchiere: proporzioni e colori personalizzati",
@@ -345,7 +425,23 @@
     "hexagonNote": "Un nido d'ape usa tre colori, così due vicini non coincidono. Con due soli, il terzo è una loro miscela.",
     "stretch": "Allungamento",
     "stretchNote": "A 1:1 le forme sono regolari. Qualsiasi altra proporzione le allunga, e la misura indicata è la larghezza e l'altezza piene di ogni forma.",
-    "houndstoothNote": "Il pied-de-poule usa due colori."
+    "houndstoothNote": "Il pied-de-poule usa due colori.",
+    "layout": "Disposizione",
+    "layouts": {
+      "grid": "Griglia",
+      "spiral": "Spirale",
+      "conical": "Cono"
+    },
+    "layoutNotes": {
+      "grid": "Una scacchiera piana di righe e colonne.",
+      "spiral": "La griglia avvolta attorno a un centro: le righe diventano bracci che girano verso l'interno, e le caselle rimpiccioliscono mantenendo la loro forma.",
+      "conical": "La griglia vista dall'alto della punta di un cono: le righe diventano anelli di uguale larghezza e le colonne spicchi che si incontrano al centro."
+    },
+    "colsRound": "Caselle in giro",
+    "rowsRound": "Anelli",
+    "statsRound": "Misura finita {w}\" di diametro. Ogni casella sul bordo {bw}\" × {bh}\".",
+    "repeatRound": "La scacchiera rotonda su un quadrato del suo primo colore, così le piastrelle si uniscono bordo a bordo come medaglioni di patchwork.",
+    "seamNote": "Questi colori non tornano pari su tutto il giro, quindi si vede una cucitura dove il cerchio si chiude. Con 24 caselle in giro si unisce sempre."
   },
   "nl": {
     "metaTitle": "Dambordpatroonmaker: eigen verhoudingen en kleuren",
@@ -403,6 +499,22 @@
     "hexagonNote": "Een honingraat gebruikt drie kleuren, zodat geen twee buren gelijk zijn. Bij slechts twee is de derde een mengsel daarvan.",
     "stretch": "Uitrekken",
     "stretchNote": "Bij 1:1 zijn de vormen regelmatig. Elke andere verhouding rekt ze uit, en de opgegeven maat is de volledige breedte en hoogte van elke vorm.",
-    "houndstoothNote": "Pied-de-poule gebruikt twee kleuren."
+    "houndstoothNote": "Pied-de-poule gebruikt twee kleuren.",
+    "layout": "Indeling",
+    "layouts": {
+      "grid": "Raster",
+      "spiral": "Spiraal",
+      "conical": "Kegel"
+    },
+    "layoutNotes": {
+      "grid": "Een plat bord van rijen en kolommen.",
+      "spiral": "Het raster om een middelpunt gewikkeld: rijen worden armen die naar binnen draaien, en de vakken worden kleiner maar houden hun vorm.",
+      "conical": "Het raster van boven op de punt van een kegel gezien: rijen worden even brede ringen en kolommen worden punten die in het midden samenkomen."
+    },
+    "colsRound": "Vakken rond",
+    "rowsRound": "Ringen",
+    "statsRound": "Eindmaat {w}\" doorsnede. Elk vak aan de rand {bw}\" × {bh}\".",
+    "repeatRound": "Het ronde bord op een vierkant in zijn eerste kleur, zodat tegels rand aan rand passen als quiltmedaillons.",
+    "seamNote": "Deze kleuren komen niet rond uit, dus is er één naad waar de cirkel sluit. Met 24 vakken rond sluit het altijd."
   }
 }

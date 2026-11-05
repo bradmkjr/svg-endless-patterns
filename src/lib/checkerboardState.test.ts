@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import uiText from "@/i18n/messages/checkerboard.json";
-import { boardAspect, COUNT_OPTIONS, defaultCheckerboardState, maxColors, parseCheckerboardState, PATTERN_OPTIONS, RATIO_OPTIONS, RATIO_PRESETS, serializeCheckerboardState, UNIT_OPTIONS } from "./checkerboardState";
+import { boardAspect, COUNT_OPTIONS, defaultCheckerboardState, LAYOUT_OPTIONS, layoutOf, maxColors, parseCheckerboardState, PATTERN_OPTIONS, RATIO_OPTIONS, RATIO_PRESETS, serializeCheckerboardState, UNIT_OPTIONS, withLayout } from "./checkerboardState";
 
 const LOCALES = ["en", "es", "fr", "de", "pt", "it", "nl"] as const;
 const parse = (query: string, locale?: (typeof LOCALES)[number]) => parseCheckerboardState(new URLSearchParams(query), locale);
@@ -64,5 +64,38 @@ describe("translation", () => {
 
   it.each(LOCALES)("has the same keys and placeholders in %s", (locale) => {
     expect(shape(uiText[locale])).toEqual(shape(uiText.en));
+  });
+});
+
+describe("layouts", () => {
+  it("starts as a grid, and leaves the grid out of requests and links", () => {
+    expect(LAYOUT_OPTIONS[0]).toBe("grid");
+    expect(defaultCheckerboardState()).not.toHaveProperty("layout");
+    expect(layoutOf(defaultCheckerboardState())).toBe("grid");
+    expect(withLayout({ ...defaultCheckerboardState(), layout: "spiral" }, "grid")).toEqual(defaultCheckerboardState());
+    expect(parse("l=grid")).toEqual(defaultCheckerboardState());
+  });
+
+  it.each(["spiral", "conical"] as const)("keeps a %s through a share link, with the rest of its settings", (layout) => {
+    const state = withLayout({ ...defaultCheckerboardState("fr"), pattern: "hexagon" as const, cols: 24, rows: 12, colors: ["#111111", "#eeeeee", "#777777"] }, layout);
+    expect(state.layout).toBe(layout);
+    expect(serializeCheckerboardState(state)).toContain(`l=${layout}`);
+    expect(parse(serializeCheckerboardState(state), "fr")).toEqual(state);
+  });
+
+  it("ignores a layout it doesn't know", () => {
+    expect(parse("l=cylinder")).toEqual(defaultCheckerboardState());
+  });
+
+  it("draws round boards square", () => {
+    expect(boardAspect({ ...defaultCheckerboardState(), cols: 30, rows: 4, layout: "conical" })).toBe(1);
+  });
+
+  it.each(LOCALES)("names and explains every layout in %s", (locale) => {
+    for (const layout of LAYOUT_OPTIONS) {
+      expect(uiText[locale].layouts[layout]).toBeTruthy();
+      expect(uiText[locale].layoutNotes[layout]).toBeTruthy();
+    }
+    expect(uiText[locale].statsRound).toContain("{w}");
   });
 });

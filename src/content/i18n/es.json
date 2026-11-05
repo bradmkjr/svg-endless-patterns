@@ -1,5 +1,27 @@
 {
   "posts": {
+    "seamless-nature-patterns": {
+      "title": "Patrones naturales continuos: hojas, flores, nubes y guijarros",
+      "summary": "Un nuevo creador esparce hojas, flores, nubes, guijarros, helechos o hierba sobre un azulejo que se repite sin costuras.",
+      "blocks": [
+        "El nuevo [creador de patrones naturales](/nature-patterns/) esparce hojas, flores, nubes, guijarros, helechos o hierba sobre un azulejo cuadrado que se repite sin costuras. Cada motivo se dibuja con curvas sencillas, así que no hay dos hojas ni dos [guijarros](/nature-patterns/rocks/) iguales, y lo que cruza un borde vuelve a entrar por el lado opuesto.",
+        "Ejemplos para empezar",
+        [
+          "Hojas dispersas en cualquier ángulo",
+          "Flores en contorno, un poco más llenas",
+          "Nubes en una cuadrícula irregular",
+          "Guijarros superpuestos"
+        ],
+        "Qué incluye",
+        [
+          "Seis motivos: hojas, flores, nubes, guijarros, helechos e hierba, cada uno con su propia página",
+          "Una distribución dispersa con los motivos separados, juntos o superpuestos, o una cuadrícula irregular",
+          "Densidad, tamaño, variación de tamaño y giro, con motivos rellenos o en contorno",
+          "Cualquier paleta de la biblioteca, o tus propios colores",
+          "Una repetición continua en SVG o PNG, y un PDF para imprimir a tamaño real"
+        ]
+      ]
+    },
     "hidden-message-mazes": {
       "title": "Laberintos con un mensaje oculto",
       "summary": "Escribe un mensaje y la única salida del laberinto lo deletrea. Imprímelo, entrégalo y espera la respuesta.",
@@ -628,6 +650,13 @@
     }
   },
   "changelog": {
+    "Nature patterns": {
+      "title": "Patrones naturales",
+      "items": [
+        "Nuevo creador de patrones naturales con hojas, flores, nubes, guijarros, helechos e hierba continuos",
+        "Distribución dispersa o en cuadrícula irregular, con ajustes de densidad, tamaño, variación, giro y contorno"
+      ]
+    },
     "Pattern margins": {
       "title": "Márgenes con patrones",
       "items": [

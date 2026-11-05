@@ -1,5 +1,27 @@
 {
   "posts": {
+    "seamless-nature-patterns": {
+      "title": "Nahtlose Naturmuster: Blätter, Blumen, Wolken und Kiesel",
+      "summary": "Ein neuer Generator verteilt Blätter, Blumen, Wolken, Kiesel, Farne oder Gras auf einer Kachel, die sich nahtlos wiederholt.",
+      "blocks": [
+        "Der neue [Naturmuster-Generator](/nature-patterns/) verteilt Blätter, Blumen, Wolken, Kiesel, Farne oder Gras auf einer quadratischen Kachel, die sich nahtlos wiederholt. Jedes Motiv entsteht aus einfachen Kurven, deshalb gleicht kein Blatt und kein [Kiesel](/nature-patterns/rocks/) dem anderen, und was über eine Kante ragt, kommt auf der gegenüberliegenden Seite wieder herein.",
+        "Beispiele zum Loslegen",
+        [
+          "Blätter, verstreut in jedem Winkel",
+          "Umrissene Blumen, etwas dichter",
+          "Wolken auf einem versetzten Raster",
+          "Überlappende Kiesel"
+        ],
+        "Was dazugehört",
+        [
+          "Sechs Motive: Blätter, Blumen, Wolken, Kiesel, Farne und Gras, jedes mit eigener Seite",
+          "Eine verstreute Anordnung mit Motiven mit Abstand, dicht an dicht oder überlappend, oder ein versetztes Raster",
+          "Dichte, Größe, Größenstreuung und Drehung, mit gefüllten oder umrissenen Motiven",
+          "Jede Palette aus der Bibliothek oder deine eigenen Farben",
+          "Ein nahtloser Rapport als SVG oder PNG und ein druckbares PDF in Originalgröße"
+        ]
+      ]
+    },
     "hidden-message-mazes": {
       "title": "Labyrinthe mit versteckter Botschaft",
       "summary": "Gib eine Botschaft ein, und der einzige Weg durch das Labyrinth schreibt sie aus. Drucken, überreichen und auf die Antwort warten.",
@@ -628,6 +650,13 @@
     }
   },
   "changelog": {
+    "Nature patterns": {
+      "title": "Naturmuster",
+      "items": [
+        "Neuer Generator für nahtlose Blätter, Blumen, Wolken, Kiesel, Farne und Gras",
+        "Verstreute Anordnung oder versetztes Raster, mit Einstellungen für Dichte, Größe, Streuung, Drehung und Umrisse"
+      ]
+    },
     "Pattern margins": {
       "title": "Ränder mit Mustern",
       "items": [

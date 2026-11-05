@@ -6,6 +6,7 @@ import { apiGetJson, apiJson, apiPdf } from "./api";
 import type { CrossStitchRequest, CrossStitchResult } from "./crossStitchTypes";
 import type { NeedlepointRequest, NeedlepointResult } from "./needlepointTypes";
 import type { MandalaMotif, MandalaRequest, MandalaResult } from "./mandalaTypes";
+import type { KaleidoscopeRequest, KaleidoscopeResult } from "./kaleidoscopeTypes";
 import type { StainedGlassRequest, StainedGlassResult } from "./stainedGlassTypes";
 import type { GirihRequest, GirihResult } from "./girihTypes";
 import type { TessellationOptions, TessellationRequest, TessellationResult } from "./tessellationTypes";
@@ -25,7 +26,7 @@ import type { PuzzlePaper, PuzzleRequest, PuzzleResult } from "./puzzleTypes";
 
 export type { BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, Setting, StitchInfo, StitchRequest, StitchResult } from "./patternTypes";
 export type { KnitColorworkPlan, KnitColorworkRequest, KnitColorworkResult, KnitColorworkTechnique } from "./knitColorworkTypes";
-export type { CheckerboardRequest, CheckerboardResult, CheckerPattern } from "./checkerboardTypes";
+export type { CheckerboardRequest, CheckerboardResult, CheckerLayout, CheckerPattern } from "./checkerboardTypes";
 export type { PuzzleColors, PuzzleDifficulty, PuzzlePaper, PuzzleRequest, PuzzleResult, PuzzleType } from "./puzzleTypes";
 export type { ColorworkTechnique, ColorworkWeight, CrochetColorworkRequest, CrochetColorworkResult } from "./crochetColorworkTypes";
 export type { LifeColors, LifeNeighborhood, LifePattern, LifeRequest, LifeResult } from "./lifeTypes";
@@ -40,6 +41,7 @@ export type { TessellationColors, TessellationMotif, TessellationOptions, Tessel
 export type { GirihColors, GirihPart, GirihRequest, GirihResult, GirihStar, GirihSymmetry } from "./girihTypes";
 export type { StainedGlassColor, StainedGlassLayout, StainedGlassPiece, StainedGlassRequest, StainedGlassResult } from "./stainedGlassTypes";
 export type { MandalaMotif, MandalaRequest, MandalaResult, MandalaRing, MandalaRingSpec, MandalaStyle } from "./mandalaTypes";
+export type { KaleidoscopeMirrors, KaleidoscopeRequest, KaleidoscopeResult, KaleidoscopeSource } from "./kaleidoscopeTypes";
 export type { CountedFinish, CrossStitchColor, CrossStitchRequest, CrossStitchResult } from "./crossStitchTypes";
 export type { NeedlepointColor, NeedlepointRequest, NeedlepointResult, NeedlepointStitch, NeedlepointYarn } from "./needlepointTypes";
 export type { MazeAlgorithm, MazeColors, MazeDifficulty, MazePaperId, MazeRequest, MazeResult, MazeShape, MazeSize } from "./mazeTypes";
@@ -137,6 +139,15 @@ export async function getMandalaMotifThumbs(): Promise<Record<MandalaMotif, stri
 
 export async function generateMandalaPdf(request: MandalaRequest): Promise<Uint8Array> {
   return apiPdf("/mandala/pdf", request);
+}
+
+/** The picture at the request's angle. A builder turns it live by updating its `data-turn` element. */
+export async function generateKaleidoscope(request: KaleidoscopeRequest): Promise<KaleidoscopeResult> {
+  return apiJson("/kaleidoscope", request);
+}
+
+export async function generateKaleidoscopePdf(request: KaleidoscopeRequest): Promise<Uint8Array> {
+  return apiPdf("/kaleidoscope/pdf", request);
 }
 
 export async function generateGirih(request: GirihRequest): Promise<GirihResult> {

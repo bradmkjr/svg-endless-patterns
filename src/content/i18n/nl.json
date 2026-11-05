@@ -1,5 +1,27 @@
 {
   "posts": {
+    "seamless-nature-patterns": {
+      "title": "Naadloze natuurpatronen: bladeren, bloemen, wolken en kiezels",
+      "summary": "Een nieuwe maker strooit bladeren, bloemen, wolken, kiezels, varens of gras over een tegel die naadloos herhaalt.",
+      "blocks": [
+        "De nieuwe [natuurpatroonmaker](/nature-patterns/) strooit bladeren, bloemen, wolken, kiezels, varens of gras over een vierkante tegel die naadloos herhaalt. Elk motief is getekend met eenvoudige curven, dus geen blad of [kiezel](/nature-patterns/rocks/) is precies hetzelfde, en wat over een rand steekt, komt aan de overkant weer binnen.",
+        "Voorbeelden om mee te beginnen",
+        [
+          "Bladeren, verspreid onder elke hoek",
+          "Omlijnde bloemen, wat voller",
+          "Wolken op een verschoven raster",
+          "Overlappende kiezels"
+        ],
+        "Wat erbij zit",
+        [
+          "Zes motieven: bladeren, bloemen, wolken, kiezels, varens en gras, elk met een eigen pagina",
+          "Een verspreide indeling met motieven met ruimte, dicht op elkaar of overlappend, of een verschoven raster",
+          "Dichtheid, grootte, variatie in grootte en draaiing, met gevulde of omlijnde motieven",
+          "Elk palet uit de bibliotheek, of je eigen kleuren",
+          "Een naadloze herhaling als SVG of PNG, en een printbare PDF op ware grootte"
+        ]
+      ]
+    },
     "mandala-styles-and-more-patterns": {
       "title": "Tekenstijlen voor mandala's, en meer van alles",
       "summary": "Teken elke mandala scherp, zacht, golvend, geometrisch, vloeiend, handgeschetst of als pixelart, met nieuwe keuzes in zes andere patroonmakers.",
@@ -628,6 +650,13 @@
     }
   },
   "changelog": {
+    "Nature patterns": {
+      "title": "Natuurpatronen",
+      "items": [
+        "Nieuwe maker voor naadloze bladeren, bloemen, wolken, kiezels, varens en gras",
+        "Verspreide indeling of verschoven raster, met instellingen voor dichtheid, grootte, variatie, draaiing en omlijning"
+      ]
+    },
     "Pattern margins": {
       "title": "Randen met patronen",
       "items": [

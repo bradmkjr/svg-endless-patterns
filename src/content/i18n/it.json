@@ -1,5 +1,27 @@
 {
   "posts": {
+    "seamless-nature-patterns": {
+      "title": "Motivi naturali senza giunture: foglie, fiori, nuvole e ciottoli",
+      "summary": "Un nuovo generatore sparge foglie, fiori, nuvole, ciottoli, felci o erba su una piastrella che si ripete senza giunture.",
+      "blocks": [
+        "Il nuovo [generatore di motivi naturali](/nature-patterns/) sparge foglie, fiori, nuvole, ciottoli, felci o erba su una piastrella quadrata che si ripete senza giunture. Ogni motivo è disegnato con curve semplici, così non ci sono due foglie o due [ciottoli](/nature-patterns/rocks/) uguali, e ciò che supera un bordo rientra dal lato opposto.",
+        "Esempi da cui partire",
+        [
+          "Foglie sparse in ogni direzione",
+          "Fiori a contorno, un po' più fitti",
+          "Nuvole su una griglia sfalsata",
+          "Ciottoli sovrapposti"
+        ],
+        "Cosa include",
+        [
+          "Sei motivi: foglie, fiori, nuvole, ciottoli, felci ed erba, ognuno con la sua pagina",
+          "Una distribuzione sparsa con motivi distanziati, ravvicinati o sovrapposti, oppure una griglia sfalsata",
+          "Densità, dimensione, variazione di dimensione e rotazione, con motivi pieni o a contorno",
+          "Qualsiasi tavolozza della libreria, o i tuoi colori",
+          "Una ripetizione continua in SVG o PNG e un PDF da stampare a grandezza reale"
+        ]
+      ]
+    },
     "mandala-styles-and-more-patterns": {
       "title": "Stili di disegno per i mandala, e più di tutto",
       "summary": "Disegna qualsiasi mandala appuntito, morbido, ondulato, geometrico, fluido, schizzato a mano o in pixel art, con nuove scelte in altri sei generatori.",
@@ -628,6 +650,13 @@
     }
   },
   "changelog": {
+    "Nature patterns": {
+      "title": "Motivi naturali",
+      "items": [
+        "Nuovo generatore di motivi continui di foglie, fiori, nuvole, ciottoli, felci ed erba",
+        "Distribuzione sparsa o a griglia sfalsata, con impostazioni di densità, dimensione, variazione, rotazione e contorno"
+      ]
+    },
     "Pattern margins": {
       "title": "Margini con motivi",
       "items": [

@@ -1,6 +1,24 @@
 [
   {
     "date": "2026-11-05",
+    "title": "Spiral and cone checkerboards",
+    "post": "spiral-and-cone-checkerboards",
+    "items": [
+      "Added spiral and cone layouts to the checkerboard maker, for every pattern, with the grid still the default",
+      "Round boards download as SVG, PNG and PDF, with a repeat that sets them on a square of their first color"
+    ]
+  },
+  {
+    "date": "2026-11-05",
+    "title": "Nature patterns",
+    "post": "seamless-nature-patterns",
+    "items": [
+      "Added a nature pattern maker for seamless leaves, flowers, clouds, pebbles, ferns and grass",
+      "Added scattered and jittered grid layouts, with density, size, variation, rotation and outline settings"
+    ]
+  },
+  {
+    "date": "2026-11-05",
     "title": "Pattern margins",
     "items": [
       "On wide screens, the margins either side of each page show a faint repeat of the site's own patterns, truchet arcs on one side and a tessellation on the other"

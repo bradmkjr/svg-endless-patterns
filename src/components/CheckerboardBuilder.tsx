@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { generateCheckerboard, generateCheckerboardPdf, type CheckerboardRequest, type CheckerboardResult, type Locale } from "@/lib/generator";
+import { generateCheckerboard, generateCheckerboardPdf, type CheckerboardRequest, type CheckerLayout, type CheckerboardResult, type Locale } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { useTrackCustomize } from "@/lib/analytics";
 import { fill, messages } from "@/lib/i18n";
 import copy from "@/i18n/messages/checkerboard.json";
-import { boardAspect, COUNT_OPTIONS, isShapePattern, maxColors, MIN_COLORS, PATTERN_OPTIONS, RATIO_OPTIONS, RATIO_PRESETS, serializeCheckerboardState, spareColor, UNIT_OPTIONS } from "@/lib/checkerboardState";
+import { COUNT_OPTIONS, isShapePattern, LAYOUT_OPTIONS, layoutOf, maxColors, MIN_COLORS, PATTERN_OPTIONS, RATIO_OPTIONS, RATIO_PRESETS, serializeCheckerboardState, spareColor, UNIT_OPTIONS, withLayout } from "@/lib/checkerboardState";
 import { syncShareLink } from "@/lib/toolOptions";
 import { OptionNav, useOptionNavigation } from "./OptionNav";
 import { PalettePicker } from "./PalettePicker";
@@ -45,6 +45,10 @@ export function CheckerboardBuilder({ locale, option, labels, initialState }: { 
   const update = (patch: Partial<CheckerboardRequest>) => {
     setStatus(t.loading);
     setState((s) => ({ ...s, ...patch }));
+  };
+  const setLayout = (layout: CheckerLayout) => {
+    setStatus(t.loading);
+    setState((s) => withLayout(s, layout));
   };
 
   useEffect(() => {
@@ -87,6 +91,8 @@ export function CheckerboardBuilder({ locale, option, labels, initialState }: { 
   const twoColors = gingham || state.pattern === "houndstooth";
   const colorLimit = maxColors(state.pattern);
   const shownColors = state.colors.slice(0, colorLimit);
+  const layout = layoutOf(state);
+  const round = layout !== "grid";
 
   return (
     <div className={styles.builder}>
@@ -101,8 +107,9 @@ export function CheckerboardBuilder({ locale, option, labels, initialState }: { 
             ))}
           </div>
           {result ? <div className={`art ${styles.art}`} role="img" aria-label={t.views[view]} dangerouslySetInnerHTML={{ __html: svg }} /> : <ToolLoading locale={locale} />}
-          <p className={styles.note}>{t.viewNotes[view]}</p>
-          {result && <p className={styles.note}>{fill(t.stats, { w: result.finished.width, h: result.finished.height, bw: result.box.width, bh: result.box.height })}</p>}
+          <p className={styles.note}>{round && view === "repeat" ? t.repeatRound : t.viewNotes[view]}</p>
+          {result && <p className={styles.note}>{fill(round ? t.statsRound : t.stats, { w: result.finished.width, h: result.finished.height, bw: result.box.width, bh: result.box.height })}</p>}
+          {result?.seamless === false && <p className={styles.note}>{t.seamNote}</p>}
           {result && <p className={styles.note}>{result.counts.map((count, i) => fill(t.count, { n: i + 1, boxes: count.boxes })).join(" · ")}</p>}
           <div className={`${styles.actions} no-print`}>
             <button type="button" disabled={busy || !result} className={styles.primary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateCheckerboardPdf(state), "checkerboard.pdf", "application/pdf"))}>
@@ -137,9 +144,20 @@ export function CheckerboardBuilder({ locale, option, labels, initialState }: { 
               </select>
             </label>
             <p className={styles.note}>{t.patternNotes[state.pattern]}</p>
+            <label className={styles.field}>
+              <span>{t.layout}</span>
+              <select value={layout} onChange={(e) => setLayout(e.target.value as CheckerLayout)}>
+                {LAYOUT_OPTIONS.map((id) => (
+                  <option key={id} value={id}>
+                    {t.layouts[id]}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <p className={styles.note}>{t.layoutNotes[layout]}</p>
             <div className={styles.fieldRow}>
-              <NumberSelect label={t.cols} value={state.cols} options={COUNT_OPTIONS} onChange={(cols) => update({ cols })} />
-              <NumberSelect label={t.rows} value={state.rows} options={COUNT_OPTIONS} onChange={(rows) => update({ rows })} />
+              <NumberSelect label={round ? t.colsRound : t.cols} value={state.cols} options={COUNT_OPTIONS} onChange={(cols) => update({ cols })} />
+              <NumberSelect label={round ? t.rowsRound : t.rows} value={state.rows} options={COUNT_OPTIONS} onChange={(rows) => update({ rows })} />
             </div>
           </fieldset>
 

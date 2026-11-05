@@ -1,5 +1,27 @@
 {
   "posts": {
+    "seamless-nature-patterns": {
+      "title": "Motifs nature sans raccord visible : feuilles, fleurs, nuages et galets",
+      "summary": "Un nouvel outil sème feuilles, fleurs, nuages, galets, fougères ou herbe sur une tuile qui se répète sans raccord visible.",
+      "blocks": [
+        "Le nouvel [outil de motifs nature](/nature-patterns/) sème des feuilles, des fleurs, des nuages, des galets, des fougères ou de l'herbe sur une tuile carrée qui se répète sans raccord visible. Chaque motif est dessiné avec des courbes simples : aucune feuille ni aucun [galet](/nature-patterns/rocks/) n'est tout à fait identique, et ce qui dépasse d'un bord revient par le bord opposé.",
+        "Des exemples pour commencer",
+        [
+          "Des feuilles dispersées dans tous les sens",
+          "Des fleurs en contours, un peu plus garnies",
+          "Des nuages sur une grille décalée",
+          "Des galets superposés"
+        ],
+        "Ce qui est inclus",
+        [
+          "Six motifs : feuilles, fleurs, nuages, galets, fougères et herbe, chacun avec sa page",
+          "Une répartition dispersée avec des motifs espacés, rapprochés ou superposés, ou une grille décalée",
+          "Densité, taille, variation de taille et rotation, avec des motifs pleins ou en contours",
+          "N'importe quelle palette de la bibliothèque, ou vos propres couleurs",
+          "Un raccord continu en SVG ou PNG, et un PDF à imprimer en taille réelle"
+        ]
+      ]
+    },
     "hidden-message-mazes": {
       "title": "Des labyrinthes au message caché",
       "summary": "Saisissez un message, et le seul chemin à travers le labyrinthe l'écrit. Imprimez-le, offrez-le et attendez la réponse.",
@@ -628,6 +650,13 @@
     }
   },
   "changelog": {
+    "Nature patterns": {
+      "title": "Motifs nature",
+      "items": [
+        "Nouvel outil de motifs nature continus : feuilles, fleurs, nuages, galets, fougères et herbe",
+        "Répartition dispersée ou en grille décalée, avec réglages de densité, taille, variation, rotation et contours"
+      ]
+    },
     "Pattern margins": {
       "title": "Marges à motifs",
       "items": [

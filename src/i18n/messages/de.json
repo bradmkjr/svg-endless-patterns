@@ -255,6 +255,12 @@
         "output": "Nahtloser Rapport als SVG und PNG sowie druckbares PDF.",
         "explore": "Muster erstellen"
       },
+      "nature": {
+        "title": "Naturmuster",
+        "text": "Verteile Blätter, Blumen, Wolken, Kiesel, Farne oder Gras auf einer Kachel, die sich nahtlos wiederholt.",
+        "output": "Nahtloser Rapport als SVG und PNG und ein druckbares PDF.",
+        "explore": "Naturmuster erstellen"
+      },
       "tieDye": {
         "title": "Batik",
         "text": "Sieh dir in deinen Farben eine Faltung als Spirale, Zielscheibe, Ziehharmonika, Sonnenstrahl, Chevron, Doppelspirale, diagonale Streifen, Knitterbatik oder Herz an.",

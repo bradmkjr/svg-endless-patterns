@@ -255,6 +255,12 @@
         "output": "Repetição contínua em SVG e PNG e PDF para imprimir.",
         "explore": "Criar um padrão"
       },
+      "nature": {
+        "title": "Estampas da natureza",
+        "text": "Espalhe folhas, flores, nuvens, seixos, samambaias ou grama sobre um ladrilho que se repete sem emendas.",
+        "output": "Repetição contínua em SVG e PNG, e um PDF para imprimir.",
+        "explore": "Criar uma estampa da natureza"
+      },
       "tieDye": {
         "title": "Tie-dye",
         "text": "Visualize em suas cores uma dobra em espiral, alvo, sanfona, raios, chevron, espiral dupla, listras diagonais, amassado ou coração.",

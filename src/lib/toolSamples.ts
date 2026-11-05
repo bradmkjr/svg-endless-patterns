@@ -21,6 +21,8 @@ import { generateTartan } from "./generator";
 import { parseTartanState } from "./tartanState";
 import { generateTruchet } from "./generator";
 import { parseTruchetState } from "./truchetState";
+import { generateNature } from "./generator";
+import { parseNatureState } from "./natureState";
 import { generatePuzzle } from "./generator";
 import { parsePuzzleState } from "./puzzleState";
 import { withOption } from "./toolOptions";
@@ -51,6 +53,7 @@ const DRAW: Partial<Record<PostSample["kind"], Draw>> = {
   puzzle: async (p, locale, slug) => (await generatePuzzle(parsePuzzleState(withOption("puzzle", slug, p), locale))) as Svgs,
   life: async (p, locale) => generateLife(parseLifeState(p, locale)),
   truchet: async (p, locale) => generateTruchet(parseTruchetState(p, locale)),
+  nature: async (p, locale) => generateNature(parseNatureState(p, locale)),
   tartan: async (p, locale) => generateTartan(parseTartanState(p, locale)),
   tieDye: async (p, locale) => generateTieDye(parseTieDyeState(p, locale)),
   sashiko: async (p, locale) => generateSashiko(parseSashikoState(p, locale)),

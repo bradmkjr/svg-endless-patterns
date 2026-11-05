@@ -35,6 +35,7 @@ export type PostSample =
   | { kind: "fractal"; slug: ""; query: string; view: "art" | "outline"; caption: string; locale?: Locale }
   | { kind: "tieDye"; slug: ""; query: string; view: "art" | "guide"; caption: string; locale?: Locale }
   | { kind: "truchet"; slug: ""; query: string; view: "repeat"; caption: string; locale?: Locale }
+  | { kind: "nature"; slug: ""; query: string; view: "repeat"; caption: string; locale?: Locale }
   | { kind: "tartan"; slug: ""; query: string; view: "swatch"; caption: string; locale?: Locale };
 
 export type PostBlock =
@@ -121,6 +122,7 @@ export function sampleHref(sample: PostSample, locale: Locale = "en"): string {
   if (sample.kind === "fractal") return localePath(sample.locale ?? locale, `/fractals/${query}`);
   if (sample.kind === "tieDye") return localePath(sample.locale ?? locale, `/tie-dye/${query}`);
   if (sample.kind === "truchet") return localePath(sample.locale ?? locale, `/truchet/${query}`);
+  if (sample.kind === "nature") return localePath(sample.locale ?? locale, `/nature-patterns/${query}`);
   if (sample.kind === "tartan") return localePath(sample.locale ?? locale, `/tartans/${query}`);
   const section = sample.kind === "block" ? "blocks" : sample.kind === "knit" ? "knitting" : "crochet";
   return localePath(sample.locale ?? locale, `/${section}/${sample.slug}/${query}`);

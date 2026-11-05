@@ -255,6 +255,12 @@
         "output": "Motivo continuo in SVG e PNG e un PDF stampabile.",
         "explore": "Crea un motivo"
       },
+      "nature": {
+        "title": "Motivi naturali",
+        "text": "Spargi foglie, fiori, nuvole, ciottoli, felci o erba su una piastrella che si ripete senza giunture.",
+        "output": "Ripetizione continua in SVG e PNG e un PDF da stampare.",
+        "explore": "Crea un motivo naturale"
+      },
       "tieDye": {
         "title": "Tie-dye",
         "text": "Visualizza nei tuoi colori una piega a spirale, a bersaglio, a fisarmonica, a raggiera, a chevron, a doppia spirale, a righe diagonali, stropicciata o a cuore.",

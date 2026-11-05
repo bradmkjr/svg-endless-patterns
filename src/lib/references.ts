@@ -20,6 +20,7 @@ export const REFERENCES: Reference[] = [
   { id: "walkerMosaic", author: "Barbara G. Walker", title: "Mosaic Knitting", detail: "Charles Scribner's Sons, 1976" },
   { id: "truchet", author: "Sébastien Truchet", title: "Mémoire sur les combinaisons", detail: "Mémoires de l'Académie Royale des Sciences, 1704" },
   { id: "girih", author: "Peter J. Lu and Paul J. Steinhardt", title: "Decagonal and Quasi-Crystalline Tilings in Medieval Islamic Architecture", detail: "Science 315, 2007" },
+  { id: "cookStochastic", author: "Robert L. Cook", title: "Stochastic Sampling in Computer Graphics", detail: "ACM Transactions on Graphics 5, 1986" },
 ];
 
 export const referencesFor = (ids: ReferenceId[]) => REFERENCES.filter((reference) => ids.includes(reference.id));

@@ -255,6 +255,12 @@
         "output": "Repetición continua en SVG y PNG, y PDF imprimible.",
         "explore": "Crear un patrón"
       },
+      "nature": {
+        "title": "Patrones naturales",
+        "text": "Esparce hojas, flores, nubes, guijarros, helechos o hierba sobre un azulejo que se repite sin costuras.",
+        "output": "Repetición continua en SVG y PNG, y un PDF para imprimir.",
+        "explore": "Crear un patrón natural"
+      },
       "tieDye": {
         "title": "Tie-dye",
         "text": "Previsualiza en tus colores un pliegue en espiral, diana, acordeón, rayos, chevron, doble espiral, rayas diagonales, arrugado o corazón.",

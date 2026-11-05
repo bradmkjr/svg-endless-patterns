@@ -255,6 +255,12 @@
         "output": "Seamless SVG and PNG repeat, and a printable PDF.",
         "explore": "Make a pattern"
       },
+      "nature": {
+        "title": "Nature patterns",
+        "text": "Scatter leaves, flowers, clouds, pebbles, ferns or grass across a tile that repeats without a seam.",
+        "output": "Seamless SVG and PNG repeat, and a printable PDF.",
+        "explore": "Make a nature pattern"
+      },
       "tieDye": {
         "title": "Tie-dye",
         "text": "Preview a spiral, bullseye, accordion, sunburst, chevron, double spiral, diagonal stripe, crumple or heart fold in your colors.",

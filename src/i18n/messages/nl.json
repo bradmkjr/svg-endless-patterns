@@ -255,6 +255,12 @@
         "output": "Naadloze herhaling in SVG en PNG, en een printbare pdf.",
         "explore": "Maak een patroon"
       },
+      "nature": {
+        "title": "Natuurpatronen",
+        "text": "Strooi bladeren, bloemen, wolken, kiezels, varens of gras over een tegel die naadloos herhaalt.",
+        "output": "Naadloze herhaling als SVG en PNG, en een printbare PDF.",
+        "explore": "Maak een natuurpatroon"
+      },
       "tieDye": {
         "title": "Tie-dye",
         "text": "Bekijk in jouw kleuren een spiraal, roos, harmonica, zonnestraal, chevron, dubbele spiraal, diagonale strepen, kreukel of hart.",

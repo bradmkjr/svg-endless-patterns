@@ -255,6 +255,12 @@
         "output": "Raccord continu en SVG et PNG, et PDF à imprimer.",
         "explore": "Créer un motif"
       },
+      "nature": {
+        "title": "Motifs nature",
+        "text": "Semez feuilles, fleurs, nuages, galets, fougères ou herbe sur une tuile qui se répète sans raccord visible.",
+        "output": "Raccord continu en SVG et PNG, et un PDF à imprimer.",
+        "explore": "Créer un motif nature"
+      },
       "tieDye": {
         "title": "Tie-dye",
         "text": "Visualisez dans vos couleurs un pliage en spirale, cible, accordéon, rayons, chevron, double spirale, rayures diagonales, froissé ou coeur.",

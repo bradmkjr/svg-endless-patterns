@@ -14,6 +14,7 @@ import type { SashikoRequest, SashikoResult } from "./sashikoTypes";
 import type { TieDyeRequest, TieDyeResult } from "./tieDyeTypes";
 import type { TartanRequest, TartanResult } from "./tartanTypes";
 import type { TruchetRequest, TruchetResult } from "./truchetTypes";
+import type { NatureRequest, NatureResult } from "./natureTypes";
 import { mazeApiGet } from "./mazeApi";
 import type { CheckerboardRequest, CheckerboardResult } from "./checkerboardTypes";
 import type { CrochetColorworkRequest, CrochetColorworkResult } from "./crochetColorworkTypes";
@@ -30,6 +31,7 @@ export type { ColorworkTechnique, ColorworkWeight, CrochetColorworkRequest, Croc
 export type { LifeColors, LifeNeighborhood, LifePattern, LifeRequest, LifeResult } from "./lifeTypes";
 export type { FractalColors, FractalRequest, FractalResult, FractalType } from "./fractalTypes";
 export type { TruchetArrangement, TruchetColors, TruchetRequest, TruchetResult, TruchetStyle } from "./truchetTypes";
+export type { NatureColors, NatureLayout, NatureMotif, NaturePacking, NatureRequest, NatureResult, NatureStyle } from "./natureTypes";
 export type { TartanColor, TartanRequest, TartanResult, TartanStripe } from "./tartanTypes";
 export type { TieDyeGuide, TieDyeGuideLabel, TieDyeGuideShape, TieDyeLayer, TieDyeMix, TieDyeRequest, TieDyeResult, TieDyeTechnique } from "./tieDyeTypes";
 export type { SashikoMotif, SashikoRequest, SashikoResult } from "./sashikoTypes";
@@ -243,4 +245,12 @@ export async function generateTruchet(request: TruchetRequest): Promise<TruchetR
 
 export async function generateTruchetPdf(request: TruchetRequest): Promise<Uint8Array> {
   return apiPdf("/truchet/pdf", request);
+}
+
+export async function generateNature(request: NatureRequest): Promise<NatureResult> {
+  return apiJson("/nature", request);
+}
+
+export async function generateNaturePdf(request: NatureRequest): Promise<Uint8Array> {
+  return apiPdf("/nature/pdf", request);
 }

@@ -628,6 +628,18 @@
     }
   },
   "changelog": {
+    "Pattern margins": {
+      "title": "Márgenes con patrones",
+      "items": [
+        "En pantallas anchas, los márgenes a cada lado de la página muestran una repetición tenue de los patrones del sitio: arcos truchet a un lado y un teselado al otro"
+      ]
+    },
+    "Mandala colors by style": {
+      "title": "Colores de mandala por estilo",
+      "items": [
+        "Cada estilo de dibujo de mandala se abre ahora con sus propios colores: zafiro para afilado, lavanda para suave, marea para ondulado, años cincuenta para geométrico, helecho para fluido, terracota para a mano alzada y neón para pixel art. El clásico conserva sus colores"
+      ]
+    },
     "Faster repeat designs": {
       "title": "Diseños repetidos más rápidos",
       "items": [

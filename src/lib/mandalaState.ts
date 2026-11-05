@@ -1,5 +1,6 @@
 import type { Locale, MandalaMotif, MandalaRequest, MandalaRingSpec, MandalaStyle } from "./generator";
 import { localeAccent } from "./localeAccent";
+import { THEME_GROUPS, type NamedId } from "./palettes";
 
 /** The mandala builder's options, defaults and share links. */
 
@@ -22,7 +23,26 @@ export const LINE_OPTIONS = [1, 2, 3, 4, 6, 8];
 export const MAX_COLORS = 6;
 export const MAX_SEED = 999999;
 
-const LOOK = { colors: ["#23395d", "#2f7f79", "#d98e32", "#b8473d"], background: "#f7f1e3", outline: "#1d2b3a" };
+type Look = { colors: string[]; background: string; outline: string };
+const CLASSIC_LOOK: Look = { colors: ["#23395d", "#2f7f79", "#d98e32", "#b8473d"], background: "#f7f1e3", outline: "#1d2b3a" };
+
+/** A library palette placed as the palette picker places it: ground, then the main color as outline and first fill. */
+function paletteLook(id: NamedId): Look {
+  const colors = THEME_GROUPS.flatMap((group) => group.palettes).find((palette) => palette.id === id)!.colors;
+  return { background: colors[0], outline: colors[1], colors: colors.slice(1, 1 + MAX_COLORS) };
+}
+
+/** Each drawing style opens in its own colors. Classic keeps the original look, so its links are unchanged. */
+const STYLE_LOOKS: Record<MandalaStyle, Look> = {
+  classic: CLASSIC_LOOK,
+  sharp: paletteLook("sapphire"),
+  smooth: paletteLook("lavender"),
+  wavy: paletteLook("tide"),
+  geometric: paletteLook("retro"),
+  flowing: paletteLook("fern"),
+  sketched: paletteLook("terracotta"),
+  pixel: paletteLook("neon"),
+};
 
 const ring = (motif: MandalaMotif, repeat: number, size: number, color: number, band: number | null = null, accent = false, offset = false): MandalaRingSpec => ({ motif, repeat, size, color, band, accent, offset });
 
@@ -54,7 +74,9 @@ export function moveRing(plan: MandalaRingSpec[], from: number, to: number): Man
   return next;
 }
 
-export function defaultMandalaState(locale: Locale = "en"): MandalaRequest {
+/** The defaults for a drawing style, which sets the opening colors. */
+export function defaultMandalaState(locale: Locale = "en", style: MandalaStyle = "classic"): MandalaRequest {
+  const look = STYLE_LOOKS[style];
   return {
     ...(locale === "en" ? {} : { locale }),
     symmetry: 12,
@@ -63,8 +85,9 @@ export function defaultMandalaState(locale: Locale = "en"): MandalaRequest {
     motifs: SEED_MOTIFS,
     seed: 12,
     lineWeight: 3,
-    ...LOOK,
-    colors: LOOK.colors.map((color, i) => (i === 3 ? localeAccent(locale, color) : color)),
+    ...look,
+    colors: look.colors.map((color, i) => (i === 3 ? localeAccent(locale, color) : color)),
+    ...(style === "classic" ? {} : { style }),
   };
 }
 
@@ -117,7 +140,8 @@ function styleFrom(raw: string | null): { style?: MandalaStyle } {
 }
 
 export function parseMandalaState(params: { get(name: string): string | null }, locale: Locale = "en"): MandalaRequest {
-  const { ringPlan: basePlan, ...base } = defaultMandalaState(locale);
+  const { style } = styleFrom(params.get("st"));
+  const { ringPlan: basePlan, ...base } = defaultMandalaState(locale, style);
   const seed = params.get("seed");
   // A link marked as seeded, or naming a ring count or motif list, has no plan. Older links name the seed itself.
   const seeded = params.get("seeded") === "1" || seed !== null || params.get("r") !== null || params.get("m") !== null;
@@ -133,14 +157,14 @@ export function parseMandalaState(params: { get(name: string): string | null }, 
     colors: decodeColors(params.get("k")) ?? base.colors,
     background: decodeColor(params.get("bg"), base.background),
     outline: decodeColor(params.get("ol"), base.outline),
-    ...styleFrom(params.get("st")),
+    ...(style ? { style } : {}),
   };
 }
 
 const encodeColors = (colors: string[]) => colors.map((c) => c.slice(1)).join("-");
 
 export function serializeMandalaState(state: MandalaRequest): string {
-  const base = defaultMandalaState(state.locale);
+  const base = defaultMandalaState(state.locale, state.style);
   const params = new URLSearchParams();
   if (state.symmetry !== base.symmetry) params.set("n", String(state.symmetry));
   if (state.rings !== base.rings) params.set("r", String(state.rings));

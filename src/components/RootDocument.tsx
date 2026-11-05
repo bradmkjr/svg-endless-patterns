@@ -7,6 +7,7 @@ import { SiteNav } from "@/components/SiteNav";
 import type { Locale } from "@/lib/generator";
 import { messages, SITE_LOCALES } from "@/lib/i18n";
 import { absoluteUrl, SITE_NAME } from "@/lib/site";
+import { thumbSrc } from "@/lib/toolOptions";
 
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const fraunces = Fraunces({ variable: "--font-fraunces", subsets: ["latin"] });
@@ -20,6 +21,12 @@ export function rootMetadata(locale: Locale): Metadata {
   };
 }
 
+/** The faint repeats either side of the page, in `globals.css`: seamless thumbnails, one per side. */
+const WALLPAPER = {
+  "--wallpaper-start": `url("${thumbSrc("truchet", "arcs")}")`,
+  "--wallpaper-end": `url("${thumbSrc("tessellation", "p4")}")`,
+} as React.CSSProperties;
+
 /** The page shell for one language. `data-locale` picks its colors in `globals.css`. */
 export function RootDocument({ locale, children }: { locale: Locale; children: React.ReactNode }) {
   const { htmlLang } = SITE_LOCALES.find((l) => l.code === locale)!;
@@ -27,7 +34,7 @@ export function RootDocument({ locale, children }: { locale: Locale; children: R
     <html lang={htmlLang} data-locale={locale} className={`${geist.variable} ${fraunces.variable}`}>
       <body>
         <SiteNav locale={locale} />
-        <main>{children}</main>
+        <main style={WALLPAPER}>{children}</main>
         <SiteFooter locale={locale} />
       </body>
       {process.env.NEXT_PUBLIC_GA_ID && <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />}

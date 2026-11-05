@@ -628,6 +628,18 @@
     }
   },
   "changelog": {
+    "Pattern margins": {
+      "title": "Ränder mit Mustern",
+      "items": [
+        "Auf breiten Bildschirmen zeigen die Ränder links und rechts jeder Seite eine zarte Wiederholung der Muster der Website: Truchet-Bögen auf der einen Seite und eine Parkettierung auf der anderen"
+      ]
+    },
+    "Mandala colors by style": {
+      "title": "Mandalafarben je Stil",
+      "items": [
+        "Jeder Zeichenstil für Mandalas öffnet jetzt in eigenen Farben: Saphir für spitz, Lavendel für weich, Gezeiten für wellig, Fünfzigerjahre für geometrisch, Farn für fließend, Terrakotta für handskizziert und Neon für Pixel-Art. Klassisch behält seine Farben"
+      ]
+    },
     "Faster repeat designs": {
       "title": "Schnellere wiederholte Muster",
       "items": [

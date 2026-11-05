@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-11-05",
+    "title": "Pattern margins",
+    "items": [
+      "On wide screens, the margins either side of each page show a faint repeat of the site's own patterns, truchet arcs on one side and a tessellation on the other"
+    ]
+  },
+  {
+    "date": "2026-11-05",
+    "title": "Mandala colors by style",
+    "items": [
+      "Each mandala drawing style now opens in its own colors: sapphire for sharp, lavender for smooth, tide for wavy, mid-century for geometric, fern for flowing, terracotta for hand-sketched and neon for pixel art. Classic keeps its colors"
+    ]
+  },
+  {
     "date": "2026-11-01",
     "title": "Italian and Dutch",
     "post": "now-in-seven-languages",

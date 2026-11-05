@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import uiText from "../i18n/messages/mandala.json";
-import { defaultMandalaState, moveRing, parseMandalaState, serializeMandalaState, SIZE_OPTIONS } from "./mandalaState";
+import { defaultMandalaState, moveRing, parseMandalaState, serializeMandalaState, SIZE_OPTIONS, STYLE_OPTIONS } from "./mandalaState";
 import type { MandalaRequest, MandalaRingSpec } from "./generator";
 
 const LOCALES = ["en", "es", "fr", "de", "pt", "it", "nl"] as const;
@@ -85,6 +85,49 @@ describe("share links", () => {
   it("gives each language its own colors", () => {
     const looks = LOCALES.map((locale) => defaultMandalaState(locale).colors.join());
     expect(new Set(looks).size).toBe(LOCALES.length);
+  });
+
+  describe("drawing styles", () => {
+    it("gives each style its own colors", () => {
+      const looks = STYLE_OPTIONS.map((style) => {
+        const { colors, background, outline } = defaultMandalaState("en", style);
+        return [background, outline, ...colors].join();
+      });
+      expect(new Set(looks).size).toBe(STYLE_OPTIONS.length);
+    });
+
+    it("keeps the classic colors, so older links look the same", () => {
+      expect(defaultMandalaState("en", "classic")).toEqual(defaultMandalaState());
+      expect(defaultMandalaState().colors).toEqual(["#23395d", "#2f7f79", "#d98e32", "#b8473d"]);
+    });
+
+    it.each(LOCALES)("changes only the secondary color in %s", (locale) => {
+      for (const style of STYLE_OPTIONS) {
+        const english = defaultMandalaState("en", style);
+        const local = defaultMandalaState(locale, style);
+        expect(local.background).toBe(english.background);
+        expect(local.outline).toBe(english.outline);
+        expect(local.colors.filter((c, i) => c !== english.colors[i]).length).toBe(locale === "en" ? 0 : 1);
+      }
+    });
+
+    it.each(STYLE_OPTIONS)("opens %s in its own colors, left out of the link", (style) => {
+      const query = style === "classic" ? "" : `st=${style}`;
+      for (const locale of LOCALES) {
+        expect(parse(query, locale)).toEqual(defaultMandalaState(locale, style));
+        expect(serializeMandalaState(defaultMandalaState(locale, style))).toBe(query);
+      }
+    });
+
+    it.each(STYLE_OPTIONS)("keeps other colors in a %s link", (style) => {
+      const st = style === "classic" ? "" : `st=${style}&`;
+      const classic = defaultMandalaState();
+      const state = { ...defaultMandalaState("en", style), colors: classic.colors, background: classic.background, outline: classic.outline };
+      const query = serializeMandalaState(state);
+      if (style !== "classic") expect(query).toBe(`k=${classic.colors.map((c) => c.slice(1)).join("-")}&bg=f7f1e3&ol=1d2b3a&st=${style}`);
+      expect(parse(query)).toEqual(state);
+      expect(serializeMandalaState(parse(`${st}k=111111-222222`)).split("&")).toContain("k=111111-222222");
+    });
   });
 
 });

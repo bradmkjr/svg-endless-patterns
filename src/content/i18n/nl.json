@@ -628,6 +628,18 @@
     }
   },
   "changelog": {
+    "Pattern margins": {
+      "title": "Randen met patronen",
+      "items": [
+        "Op brede schermen tonen de randen aan weerszijden van elke pagina een vage herhaling van de patronen van de site: truchetbogen aan de ene kant en een vlakvulling aan de andere"
+      ]
+    },
+    "Mandala colors by style": {
+      "title": "Mandalakleuren per stijl",
+      "items": [
+        "Elke tekenstijl voor mandala's opent nu in eigen kleuren: saffier voor scherp, lavendel voor zacht, getij voor golvend, jaren vijftig voor geometrisch, varen voor vloeiend, terracotta voor handgeschetst en neon voor pixelart. Klassiek houdt zijn kleuren"
+      ]
+    },
     "Mandala styles and more patterns": {
       "title": "Mandalastijlen en meer patronen",
       "items": [

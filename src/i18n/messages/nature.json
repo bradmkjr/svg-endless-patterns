@@ -1,0 +1,415 @@
+{
+  "en": {
+    "metaTitle": "Nature Pattern Maker: Seamless Leaves, Flowers, Clouds and Pebbles",
+    "metaDesc": "Make an endless, seamless pattern of leaves, flowers, clouds, pebbles, ferns or grass. Set the density, size, variation, rotation and colors, then download SVG, PNG or a printable PDF.",
+    "h1": "Nature patterns",
+    "lede": "Scatter leaves, flowers, clouds, pebbles, ferns or grass across a tile that repeats without a seam. Every motif is drawn fresh from your seed, so no two patterns are quite alike.",
+    "motifHeading": "Motif",
+    "motif": "Motif",
+    "motifs": {
+      "leaves": "Leaves",
+      "flowers": "Flowers",
+      "clouds": "Clouds",
+      "rocks": "Pebbles",
+      "ferns": "Ferns",
+      "grass": "Grass"
+    },
+    "style": "Look",
+    "styles": {
+      "filled": "Filled",
+      "outline": "Outlined"
+    },
+    "arrangement": "Arrangement",
+    "layout": "Layout",
+    "layouts": {
+      "scatter": "Scattered",
+      "grid": "Jittered grid"
+    },
+    "packing": "Spacing",
+    "packings": {
+      "spaced": "Spaced apart",
+      "touching": "Close together",
+      "overlapping": "Overlapping"
+    },
+    "density": "Density",
+    "densities": {
+      "1": "Sparse",
+      "2": "Light",
+      "3": "Medium",
+      "4": "Full",
+      "5": "Dense"
+    },
+    "scale": "Size",
+    "variation": "Size variation",
+    "rotation": "Turn",
+    "rotationNone": "None",
+    "rotationAny": "Any angle",
+    "seed": "Seed",
+    "shuffle": "New seed",
+    "colors": "Colors",
+    "background": "Background",
+    "primary": "Main",
+    "secondary": "Second",
+    "accent": "Accent",
+    "colorNote": "Each motif takes one of the three colors at random. Flowers use the accent for their centers.",
+    "print": "Printing",
+    "repeatWidth": "Repeat width",
+    "downloadPdf": "Download printable PDF",
+    "previewAlt": "Preview of the nature pattern repeat",
+    "previewNote": "Two repeats across, to show the join. Each repeat holds {count} motifs and is {repeat}\" wide."
+  },
+  "es": {
+    "metaTitle": "Creador de patrones naturales: hojas, flores, nubes y guijarros continuos",
+    "metaDesc": "Crea un patrón continuo e infinito de hojas, flores, nubes, guijarros, helechos o hierba. Ajusta la densidad, el tamaño, la variación, el giro y los colores, y descarga SVG, PNG o un PDF para imprimir.",
+    "h1": "Patrones naturales",
+    "lede": "Esparce hojas, flores, nubes, guijarros, helechos o hierba sobre un azulejo que se repite sin costuras. Cada motivo se dibuja de nuevo a partir de tu semilla, así que no hay dos patrones iguales.",
+    "motifHeading": "Motivo",
+    "motif": "Motivo",
+    "motifs": {
+      "leaves": "Hojas",
+      "flowers": "Flores",
+      "clouds": "Nubes",
+      "rocks": "Guijarros",
+      "ferns": "Helechos",
+      "grass": "Hierba"
+    },
+    "style": "Aspecto",
+    "styles": {
+      "filled": "Relleno",
+      "outline": "Contorno"
+    },
+    "arrangement": "Disposición",
+    "layout": "Distribución",
+    "layouts": {
+      "scatter": "Dispersa",
+      "grid": "Cuadrícula irregular"
+    },
+    "packing": "Separación",
+    "packings": {
+      "spaced": "Separados",
+      "touching": "Juntos",
+      "overlapping": "Superpuestos"
+    },
+    "density": "Densidad",
+    "densities": {
+      "1": "Escasa",
+      "2": "Ligera",
+      "3": "Media",
+      "4": "Llena",
+      "5": "Densa"
+    },
+    "scale": "Tamaño",
+    "variation": "Variación de tamaño",
+    "rotation": "Giro",
+    "rotationNone": "Ninguno",
+    "rotationAny": "Cualquier ángulo",
+    "seed": "Semilla",
+    "shuffle": "Nueva semilla",
+    "colors": "Colores",
+    "background": "Fondo",
+    "primary": "Principal",
+    "secondary": "Segundo",
+    "accent": "Acento",
+    "colorNote": "Cada motivo toma uno de los tres colores al azar. Las flores usan el acento en el centro.",
+    "print": "Impresión",
+    "repeatWidth": "Ancho de la repetición",
+    "downloadPdf": "Descargar PDF para imprimir",
+    "previewAlt": "Vista previa de la repetición del patrón natural",
+    "previewNote": "Dos repeticiones a lo ancho, para mostrar la unión. Cada repetición tiene {count} motivos y mide {repeat}\" de ancho."
+  },
+  "fr": {
+    "metaTitle": "Créateur de motifs nature : feuilles, fleurs, nuages et galets sans raccord visible",
+    "metaDesc": "Créez un motif continu et infini de feuilles, fleurs, nuages, galets, fougères ou herbe. Réglez la densité, la taille, la variation, la rotation et les couleurs, puis téléchargez en SVG, PNG ou PDF à imprimer.",
+    "h1": "Motifs nature",
+    "lede": "Semez des feuilles, des fleurs, des nuages, des galets, des fougères ou de l'herbe sur une tuile qui se répète sans raccord visible. Chaque motif est dessiné à partir de votre graine : aucun motif n'est tout à fait le même.",
+    "motifHeading": "Motif",
+    "motif": "Motif",
+    "motifs": {
+      "leaves": "Feuilles",
+      "flowers": "Fleurs",
+      "clouds": "Nuages",
+      "rocks": "Galets",
+      "ferns": "Fougères",
+      "grass": "Herbe"
+    },
+    "style": "Rendu",
+    "styles": {
+      "filled": "Pleins",
+      "outline": "Contours"
+    },
+    "arrangement": "Disposition",
+    "layout": "Répartition",
+    "layouts": {
+      "scatter": "Dispersés",
+      "grid": "Grille décalée"
+    },
+    "packing": "Espacement",
+    "packings": {
+      "spaced": "Espacés",
+      "touching": "Rapprochés",
+      "overlapping": "Superposés"
+    },
+    "density": "Densité",
+    "densities": {
+      "1": "Clairsemée",
+      "2": "Légère",
+      "3": "Moyenne",
+      "4": "Garnie",
+      "5": "Dense"
+    },
+    "scale": "Taille",
+    "variation": "Variation de taille",
+    "rotation": "Rotation",
+    "rotationNone": "Aucune",
+    "rotationAny": "Tous les angles",
+    "seed": "Graine",
+    "shuffle": "Nouvelle graine",
+    "colors": "Couleurs",
+    "background": "Fond",
+    "primary": "Principale",
+    "secondary": "Deuxième",
+    "accent": "Accent",
+    "colorNote": "Chaque motif prend l'une des trois couleurs au hasard. Le cœur des fleurs utilise l'accent.",
+    "print": "Impression",
+    "repeatWidth": "Largeur du raccord",
+    "downloadPdf": "Télécharger le PDF à imprimer",
+    "previewAlt": "Aperçu du raccord du motif nature",
+    "previewNote": "Deux raccords en largeur, pour montrer la jonction. Chaque raccord compte {count} motifs et mesure {repeat}\" de large."
+  },
+  "de": {
+    "metaTitle": "Naturmuster-Generator: nahtlose Blätter, Blumen, Wolken und Kiesel",
+    "metaDesc": "Erstelle ein endloses, nahtloses Muster aus Blättern, Blumen, Wolken, Kieseln, Farnen oder Gras. Lege Dichte, Größe, Streuung, Drehung und Farben fest und lade SVG, PNG oder ein druckbares PDF herunter.",
+    "h1": "Naturmuster",
+    "lede": "Verteile Blätter, Blumen, Wolken, Kiesel, Farne oder Gras auf einer Kachel, die sich nahtlos wiederholt. Jedes Motiv wird aus deinem Startwert neu gezeichnet, deshalb gleicht kein Muster dem anderen.",
+    "motifHeading": "Motiv",
+    "motif": "Motiv",
+    "motifs": {
+      "leaves": "Blätter",
+      "flowers": "Blumen",
+      "clouds": "Wolken",
+      "rocks": "Kiesel",
+      "ferns": "Farne",
+      "grass": "Gras"
+    },
+    "style": "Darstellung",
+    "styles": {
+      "filled": "Gefüllt",
+      "outline": "Umrisse"
+    },
+    "arrangement": "Anordnung",
+    "layout": "Verteilung",
+    "layouts": {
+      "scatter": "Verstreut",
+      "grid": "Versetztes Raster"
+    },
+    "packing": "Abstand",
+    "packings": {
+      "spaced": "Mit Abstand",
+      "touching": "Dicht an dicht",
+      "overlapping": "Überlappend"
+    },
+    "density": "Dichte",
+    "densities": {
+      "1": "Spärlich",
+      "2": "Locker",
+      "3": "Mittel",
+      "4": "Voll",
+      "5": "Dicht"
+    },
+    "scale": "Größe",
+    "variation": "Größenstreuung",
+    "rotation": "Drehung",
+    "rotationNone": "Keine",
+    "rotationAny": "Beliebiger Winkel",
+    "seed": "Startwert",
+    "shuffle": "Neuer Startwert",
+    "colors": "Farben",
+    "background": "Hintergrund",
+    "primary": "Hauptfarbe",
+    "secondary": "Zweitfarbe",
+    "accent": "Akzent",
+    "colorNote": "Jedes Motiv erhält zufällig eine der drei Farben. Blumen bekommen in der Mitte den Akzent.",
+    "print": "Drucken",
+    "repeatWidth": "Rapportbreite",
+    "downloadPdf": "Druckbares PDF herunterladen",
+    "previewAlt": "Vorschau des Naturmuster-Rapports",
+    "previewNote": "Zwei Rapporte nebeneinander, damit die Naht sichtbar ist. Jeder Rapport enthält {count} Motive und ist {repeat}\" breit."
+  },
+  "pt": {
+    "metaTitle": "Criador de estampas da natureza: folhas, flores, nuvens e seixos contínuos",
+    "metaDesc": "Crie uma estampa contínua e infinita de folhas, flores, nuvens, seixos, samambaias ou grama. Ajuste a densidade, o tamanho, a variação, a rotação e as cores, e baixe SVG, PNG ou um PDF para imprimir.",
+    "h1": "Estampas da natureza",
+    "lede": "Espalhe folhas, flores, nuvens, seixos, samambaias ou grama sobre um ladrilho que se repete sem emendas. Cada motivo é desenhado a partir da sua semente, então nenhuma estampa é igual a outra.",
+    "motifHeading": "Motivo",
+    "motif": "Motivo",
+    "motifs": {
+      "leaves": "Folhas",
+      "flowers": "Flores",
+      "clouds": "Nuvens",
+      "rocks": "Seixos",
+      "ferns": "Samambaias",
+      "grass": "Grama"
+    },
+    "style": "Aparência",
+    "styles": {
+      "filled": "Preenchido",
+      "outline": "Contorno"
+    },
+    "arrangement": "Disposição",
+    "layout": "Distribuição",
+    "layouts": {
+      "scatter": "Espalhada",
+      "grid": "Grade irregular"
+    },
+    "packing": "Espaçamento",
+    "packings": {
+      "spaced": "Afastados",
+      "touching": "Próximos",
+      "overlapping": "Sobrepostos"
+    },
+    "density": "Densidade",
+    "densities": {
+      "1": "Esparsa",
+      "2": "Leve",
+      "3": "Média",
+      "4": "Cheia",
+      "5": "Densa"
+    },
+    "scale": "Tamanho",
+    "variation": "Variação de tamanho",
+    "rotation": "Rotação",
+    "rotationNone": "Nenhuma",
+    "rotationAny": "Qualquer ângulo",
+    "seed": "Semente",
+    "shuffle": "Nova semente",
+    "colors": "Cores",
+    "background": "Fundo",
+    "primary": "Principal",
+    "secondary": "Segunda",
+    "accent": "Destaque",
+    "colorNote": "Cada motivo recebe uma das três cores ao acaso. As flores usam o destaque no miolo.",
+    "print": "Impressão",
+    "repeatWidth": "Largura da repetição",
+    "downloadPdf": "Baixar PDF para imprimir",
+    "previewAlt": "Prévia da repetição da estampa da natureza",
+    "previewNote": "Duas repetições lado a lado, para mostrar a emenda. Cada repetição tem {count} motivos e {repeat}\" de largura."
+  },
+  "it": {
+    "metaTitle": "Generatore di motivi naturali: foglie, fiori, nuvole e ciottoli senza giunture",
+    "metaDesc": "Crea un motivo continuo e infinito di foglie, fiori, nuvole, ciottoli, felci o erba. Imposta densità, dimensione, variazione, rotazione e colori, poi scarica SVG, PNG o un PDF da stampare.",
+    "h1": "Motivi naturali",
+    "lede": "Spargi foglie, fiori, nuvole, ciottoli, felci o erba su una piastrella che si ripete senza giunture. Ogni motivo viene disegnato dal tuo seme, così non esistono due motivi uguali.",
+    "motifHeading": "Motivo",
+    "motif": "Motivo",
+    "motifs": {
+      "leaves": "Foglie",
+      "flowers": "Fiori",
+      "clouds": "Nuvole",
+      "rocks": "Ciottoli",
+      "ferns": "Felci",
+      "grass": "Erba"
+    },
+    "style": "Aspetto",
+    "styles": {
+      "filled": "Pieno",
+      "outline": "Contorno"
+    },
+    "arrangement": "Disposizione",
+    "layout": "Distribuzione",
+    "layouts": {
+      "scatter": "Sparsa",
+      "grid": "Griglia sfalsata"
+    },
+    "packing": "Spaziatura",
+    "packings": {
+      "spaced": "Distanziati",
+      "touching": "Ravvicinati",
+      "overlapping": "Sovrapposti"
+    },
+    "density": "Densità",
+    "densities": {
+      "1": "Rada",
+      "2": "Leggera",
+      "3": "Media",
+      "4": "Piena",
+      "5": "Fitta"
+    },
+    "scale": "Dimensione",
+    "variation": "Variazione di dimensione",
+    "rotation": "Rotazione",
+    "rotationNone": "Nessuna",
+    "rotationAny": "Qualsiasi angolo",
+    "seed": "Seme",
+    "shuffle": "Nuovo seme",
+    "colors": "Colori",
+    "background": "Sfondo",
+    "primary": "Principale",
+    "secondary": "Secondo",
+    "accent": "Accento",
+    "colorNote": "Ogni motivo prende a caso uno dei tre colori. I fiori usano l'accento al centro.",
+    "print": "Stampa",
+    "repeatWidth": "Larghezza della ripetizione",
+    "downloadPdf": "Scarica il PDF da stampare",
+    "previewAlt": "Anteprima della ripetizione del motivo naturale",
+    "previewNote": "Due ripetizioni affiancate, per mostrare la giunzione. Ogni ripetizione contiene {count} motivi ed è larga {repeat}\"."
+  },
+  "nl": {
+    "metaTitle": "Natuurpatroonmaker: naadloze bladeren, bloemen, wolken en kiezels",
+    "metaDesc": "Maak een eindeloos, naadloos patroon van bladeren, bloemen, wolken, kiezels, varens of gras. Stel dichtheid, grootte, variatie, draaiing en kleuren in en download SVG, PNG of een printbare PDF.",
+    "h1": "Natuurpatronen",
+    "lede": "Strooi bladeren, bloemen, wolken, kiezels, varens of gras over een tegel die naadloos herhaalt. Elk motief wordt opnieuw getekend vanuit je seed, dus geen twee patronen zijn precies gelijk.",
+    "motifHeading": "Motief",
+    "motif": "Motief",
+    "motifs": {
+      "leaves": "Bladeren",
+      "flowers": "Bloemen",
+      "clouds": "Wolken",
+      "rocks": "Kiezels",
+      "ferns": "Varens",
+      "grass": "Gras"
+    },
+    "style": "Uiterlijk",
+    "styles": {
+      "filled": "Gevuld",
+      "outline": "Omlijnd"
+    },
+    "arrangement": "Schikking",
+    "layout": "Indeling",
+    "layouts": {
+      "scatter": "Verspreid",
+      "grid": "Verschoven raster"
+    },
+    "packing": "Tussenruimte",
+    "packings": {
+      "spaced": "Met ruimte",
+      "touching": "Dicht op elkaar",
+      "overlapping": "Overlappend"
+    },
+    "density": "Dichtheid",
+    "densities": {
+      "1": "Schaars",
+      "2": "Licht",
+      "3": "Gemiddeld",
+      "4": "Vol",
+      "5": "Dicht"
+    },
+    "scale": "Grootte",
+    "variation": "Variatie in grootte",
+    "rotation": "Draaiing",
+    "rotationNone": "Geen",
+    "rotationAny": "Elke hoek",
+    "seed": "Seed",
+    "shuffle": "Nieuwe seed",
+    "colors": "Kleuren",
+    "background": "Achtergrond",
+    "primary": "Hoofdkleur",
+    "secondary": "Tweede kleur",
+    "accent": "Accent",
+    "colorNote": "Elk motief krijgt willekeurig een van de drie kleuren. Bloemen gebruiken het accent in het hart.",
+    "print": "Afdrukken",
+    "repeatWidth": "Breedte van de herhaling",
+    "downloadPdf": "Printbare PDF downloaden",
+    "previewAlt": "Voorbeeld van de herhaling van het natuurpatroon",
+    "previewNote": "Twee herhalingen naast elkaar, om de naad te tonen. Elke herhaling bevat {count} motieven en is {repeat}\" breed."
+  }
+}

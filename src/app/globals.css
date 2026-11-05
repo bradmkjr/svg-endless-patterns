@@ -9,6 +9,8 @@
   --warn-bg: #fbf0d9;
   --warn-line: #dcc088;
   --locale-swatch: var(--accent);
+  --wallpaper-opacity: 0.07;
+  --wallpaper-filter: grayscale(1);
   --font-display: var(--font-fraunces), Georgia, serif;
 }
 
@@ -23,6 +25,8 @@
     --accent-contrast: #14181f;
     --warn-bg: #33291a;
     --warn-line: #6b5529;
+    --wallpaper-opacity: 0.06;
+    --wallpaper-filter: grayscale(1) invert(1);
   }
 }
 
@@ -88,6 +92,45 @@ body {
 main {
   flex: 1;
   width: 100%;
+  position: relative;
+  isolation: isolate;
+}
+
+/*
+ * Wallpaper: a faint repeat in the margins either side of the page on wide screens, a different
+ * one on each side. The pictures are the site's own seamless thumbnails, which `RootDocument`
+ * names in `--wallpaper-start` and `--wallpaper-end`. Pages sit on a solid `.page`.
+ */
+@media (min-width: 1280px) {
+  main::before,
+  main::after {
+    content: "";
+    position: absolute;
+    inset-block: 0;
+    z-index: -1;
+    width: calc(50% - 600px);
+    background: var(--wallpaper-start) 0 0 / 320px repeat;
+    opacity: var(--wallpaper-opacity);
+    filter: var(--wallpaper-filter);
+    pointer-events: none;
+  }
+
+  main::before {
+    inset-inline-start: 0;
+    background-position: right top;
+  }
+
+  main::after {
+    inset-inline-end: 0;
+    background-image: var(--wallpaper-end);
+  }
+}
+
+@media (prefers-reduced-transparency: reduce), (prefers-contrast: more), (forced-colors: active), print {
+  main::before,
+  main::after {
+    display: none;
+  }
 }
 
 h1,
@@ -107,6 +150,7 @@ a {
 .page {
   max-width: 1200px;
   margin: 0 auto;
+  background: var(--background);
   padding: 2.5rem 1.5rem 4rem;
 }
 

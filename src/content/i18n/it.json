@@ -628,6 +628,18 @@
     }
   },
   "changelog": {
+    "Pattern margins": {
+      "title": "Margini con motivi",
+      "items": [
+        "Sugli schermi larghi, i margini ai lati di ogni pagina mostrano una ripetizione tenue dei motivi del sito: archi di Truchet da un lato e una tassellatura dall’altro"
+      ]
+    },
+    "Mandala colors by style": {
+      "title": "Colori dei mandala per stile",
+      "items": [
+        "Ogni stile di disegno dei mandala ora si apre con i suoi colori: zaffiro per appuntito, lavanda per morbido, marea per ondulato, anni Cinquanta per geometrico, felce per fluido, terracotta per schizzato a mano e neon per pixel art. Il classico mantiene i suoi colori"
+      ]
+    },
     "Mandala styles and more patterns": {
       "title": "Stili di mandala e più motivi",
       "items": [

@@ -628,6 +628,18 @@
     }
   },
   "changelog": {
+    "Pattern margins": {
+      "title": "Marges à motifs",
+      "items": [
+        "Sur les grands écrans, les marges de chaque côté de la page montrent une répétition discrète des motifs du site : des arcs de Truchet d’un côté et un pavage de l’autre"
+      ]
+    },
+    "Mandala colors by style": {
+      "title": "Couleurs de mandala par style",
+      "items": [
+        "Chaque style de dessin de mandala s’ouvre désormais dans ses propres couleurs : saphir pour pointu, lavande pour doux, marée pour ondulé, années cinquante pour géométrique, fougère pour fluide, terre cuite pour esquissé à la main et néon pour pixel art. Le classique garde ses couleurs"
+      ]
+    },
     "Faster repeat designs": {
       "title": "Motifs répétés plus rapides",
       "items": [

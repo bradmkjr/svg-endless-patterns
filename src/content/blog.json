@@ -1,5 +1,84 @@
 [
   {
+    "slug": "weaving",
+    "title": "Weaving drafts: threading, tie-up, treadling and the cloth they make",
+    "date": "2026-11-05",
+    "summary": "A new weaving drafter turns a weave structure into the full draft a weaver reads at the loom, with 26 traditional drafts to start from, from bird's eye and goose eye to monk's belt and houndstooth.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The new [weaving drafter](/weaving/) draws handweaving drafts: the threading across the top, the tie-up at the corner, the treadling down the side and the drawdown, the cloth they make. Pick a structure, from [plain weave](/weaving/plain/) and [twill](/weaving/twill/) to [point twill](/weaving/point-twill/), [overshot](/weaving/overshot/), [huck](/weaving/huck/), [M's and O's](/weaving/ms-and-os/) and [summer and winter](/weaving/summer-and-winter/), choose 4, 8 or 16 shafts where the structure allows, and stripe the warp and weft in your own colors. Download the cloth as a seamless SVG or PNG, or a PDF of the full draft to take to the loom."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "weaving",
+            "slug": "",
+            "query": "s=point-twill&wp=b5533c.1",
+            "view": "draft",
+            "caption": "Goose eye: a point twill woven as drawn in"
+          },
+          {
+            "kind": "weaving",
+            "slug": "",
+            "query": "s=overshot&d=monks-belt&wp=f4ecdc.1&wf=a31621.1",
+            "view": "draft",
+            "caption": "Monk's belt, overshot on opposites"
+          },
+          {
+            "kind": "weaving",
+            "slug": "",
+            "query": "wp=1a1a1a.4-f7f4ec.4&wf=1a1a1a.4-f7f4ec.4&v=cloth",
+            "view": "cloth",
+            "caption": "Houndstooth: a 2/2 twill, four dark and four light"
+          },
+          {
+            "kind": "weaving",
+            "slug": "",
+            "query": "s=overshot",
+            "view": "draft",
+            "caption": "An overshot diamond on four blocks"
+          },
+          {
+            "kind": "weaving",
+            "slug": "",
+            "query": "s=huck&wp=f4ecdc.1&wf=b5533c.1",
+            "view": "draft",
+            "caption": "Huck lace, warp and weft floats on plain weave"
+          },
+          {
+            "kind": "weaving",
+            "slug": "",
+            "query": "s=plain&wp=23395d.1-f4ecdc.1-23395d.1-f4ecdc.1-23395d.1-f4ecdc.2-23395d.1-f4ecdc.1-23395d.1-f4ecdc.1-23395d.1&wf=23395d.1-f4ecdc.1-23395d.1-f4ecdc.1-23395d.1-f4ecdc.2-23395d.1-f4ecdc.1-23395d.1-f4ecdc.1-23395d.1&v=cloth",
+            "view": "cloth",
+            "caption": "Log cabin, plain weave in alternating colors"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Reading the draft"
+      },
+      {
+        "type": "paragraph",
+        "text": "Each square of the drawdown is one crossing. It shows the warp where the shaft that end is threaded on is tied to the treadle for that pick, and the weft where it isn't. Filled tie-up squares are shafts that rise, as on a jack loom; on a counterbalance or countermarch loom, tie the empty ones. Overshot and summer and winter leave their tabby picks out of the drawdown, as drafts usually do, and the steps say which shafts to raise for them. Each draft also gives its longest float, so you can see at a glance whether the cloth will hold together."
+      },
+      {
+        "type": "heading",
+        "text": "Traditional drafts"
+      },
+      {
+        "type": "paragraph",
+        "text": "Below the builder sit 26 traditional drafts and cloths, among them bird's eye, goose eye, dornik, crowfoot, monk's belt, huckaback, Bronson lace, houndstooth, glen check, log cabin and gingham. Each opens the builder with its threading, treadling and colors, ready to change. They are drawn for this site from the structures in G. H. Oelsner's A Handbook of Weaves (1915) and William Watson's Textile Design and Colour, both public domain, and listed on the [acknowledgements](/acknowledgements/) page. The tests check that every structure repeats seamlessly, every draft uses each of its shafts and treadles, and no float runs past fifteen threads."
+      }
+    ]
+  },
+  {
     "slug": "kolam",
     "title": "Kolam, drawn around a grid of dots",
     "date": "2026-11-05",

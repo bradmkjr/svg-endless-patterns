@@ -67,7 +67,8 @@ export function normalizeWeaving(state: WeavingState): WeavingState {
   const defaults = structureDefaults(state.structure);
   const shafts = shaftOptions(state.structure).includes(state.shafts) ? state.shafts : defaults.shafts;
   const tieUps = tieUpOptions(state.structure, shafts);
-  const { draft: _draft, ...rest } = state;
+  const rest = { ...state };
+  delete rest.draft;
   return {
     ...rest,
     ...(state.draft && NAMED_DRAFTS[state.draft] === state.structure ? { draft: state.draft } : {}),
@@ -79,7 +80,8 @@ export function normalizeWeaving(state: WeavingState): WeavingState {
 
 /** What the API is asked for: everything but the view. */
 export function weavingRequest(state: WeavingState): WeavingRequest {
-  const { view: _view, ...request } = state;
+  const request: WeavingRequest & { view?: WeavingView } = { ...state };
+  delete request.view;
   return request;
 }
 
@@ -190,6 +192,7 @@ export const WEAVING_PRESETS: WeavingPreset[] = [
 
 /** A preset's full settings, as the builder opens it. */
 export function presetState(preset: WeavingPreset, locale: Locale = "en"): WeavingState {
-  const { id: _id, ...patch } = preset;
+  const patch: Partial<WeavingPreset> = { ...preset };
+  delete patch.id;
   return normalizeWeaving({ ...defaultWeavingState(locale), ...structureDefaults(preset.structure), ...patch });
 }

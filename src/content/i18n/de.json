@@ -1,5 +1,25 @@
 {
   "posts": {
+    "weaving": {
+      "title": "Webpatronen: Einzug, Anschnürung, Trittfolge und das Gewebe, das daraus entsteht",
+      "summary": "Ein neuer Webpatronen-Generator macht aus einer Bindung die ganze Patrone, wie man sie am Webstuhl liest, mit 26 traditionellen Patronen zum Anfangen, von Vogel- und Gänseauge bis Mönchsgürtel und Hahnentritt.",
+      "blocks": [
+        "Der neue [Webpatronen-Generator](/weaving/) zeichnet Patronen für das Handweben: den Einzug oben, die Anschnürung in der Ecke, die Trittfolge an der Seite und das Bindungsbild, also das Gewebe, das daraus entsteht. Wähle eine Bindung, von [Leinwand](/weaving/plain/) und [Köper](/weaving/twill/) bis [Spitzköper](/weaving/point-twill/), [Overshot](/weaving/overshot/), [Huck](/weaving/huck/), [M's and O's](/weaving/ms-and-os/) und [Summer and Winter](/weaving/summer-and-winter/), auf 4, 8 oder 16 Schäften, wo die Bindung es erlaubt, und streife Kette und Schuss in deinen Farben. Lade das Gewebe als nahtloses SVG oder PNG oder die ganze Patrone als PDF für den Webstuhl.",
+        "Beispiele zum Anfangen",
+        [
+          "Gänseauge: ein Spitzköper, getreten wie eingezogen",
+          "Mönchsgürtel, Overshot auf Gegenblöcken",
+          "Hahnentritt: ein 2/2-Köper, vier dunkle und vier helle Fäden",
+          "Eine Overshot-Raute auf vier Blöcken",
+          "Huck-Spitze, Kett- und Schussflottungen auf Leinwand",
+          "Log Cabin, Leinwand in wechselnden Farben"
+        ],
+        "So liest du die Patrone",
+        "Jedes Feld im Bindungsbild ist eine Kreuzung. Es zeigt die Kette, wo der Schaft, auf dem dieser Faden eingezogen ist, an den Tritt dieses Schusses angeschnürt ist, sonst den Schuss. Gefüllte Felder der Anschnürung sind Schäfte, die sich heben, wie an einem Webstuhl mit Hochfach; an einem Kontermarsch- oder Gegenzugwebstuhl schnürst du die leeren an. Overshot und Summer and Winter lassen ihre Grundschüsse im Bindungsbild weg, wie Patronen es meist tun, und die Schritte sagen, welche Schäfte du dafür hebst. Jede Patrone nennt auch ihre längste Flottung, damit du auf einen Blick siehst, ob das Gewebe hält.",
+        "Traditionelle Patronen",
+        "Unter dem Generator stehen 26 traditionelle Patronen und Stoffe, darunter Vogelauge, Gänseauge, Dornik, Krähenfuß, Mönchsgürtel, Huckaback, Bronson-Spitze, Hahnentritt, Glencheck, Log Cabin und Vichykaro. Jede öffnet den Generator mit Einzug, Trittfolge und Farben, bereit zum Ändern. Sie wurden für diese Website aus den Bindungen in G. H. Oelsners A Handbook of Weaves (1915) und William Watsons Textile Design and Colour gezeichnet, beide gemeinfrei und auf der Seite [Danksagungen](/acknowledgements/) genannt. Die Tests prüfen, dass sich jede Bindung nahtlos wiederholt, jede Patrone alle ihre Schäfte und Tritte nutzt und keine Flottung länger als fünfzehn Fäden ist."
+      ]
+    },
     "kolam": {
       "title": "Kolam, gezeichnet um ein Punkteraster",
       "summary": "Ein neuer Generator zeichnet Kolam um ein Punkteraster als nahtlosen Rapport: die eine umlaufende Linie eines Sikku-Kolam, die verbundenen Punkte eines Pulli-Kolam oder die geschlossenen Linien eines Kambi-Kolam, auf quadratischem, rautenförmigem oder sechseckigem Raster.",
@@ -780,6 +800,14 @@
     }
   },
   "changelog": {
+    "Weaving drafts": {
+      "title": "Webpatronen",
+      "items": [
+        "Neuer Webpatronen-Generator: Leinwand, Köper, Fischgrat, Spitz- und gebrochener Köper, Atlas, Panama, Huck, Overshot, M's and O's, Summer and Winter und Rosengang, auf 4, 8 oder 16 Schäften",
+        "Die ganze Patrone mit Einzug, Anschnürung, Trittfolge und Bindungsbild, gestreifte Kette und Schuss, ein nahtloser Rapport, 26 traditionelle Patronen und eine Patrone als PDF zum Drucken",
+        "Weben kommt ins Hauptmenü und auf die Startseite"
+      ]
+    },
     "Kolam": {
       "title": "Kolam-Generator",
       "items": [

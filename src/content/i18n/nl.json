@@ -1,5 +1,25 @@
 {
   "posts": {
+    "weaving": {
+      "title": "Weefpatronen: inrijging, opbinding, trapping en het weefsel dat eruit komt",
+      "summary": "Een nieuwe weefpatroonmaker maakt van een binding het volledige patroon zoals je het aan het getouw leest, met 26 traditionele patronen om mee te beginnen, van vogeloog en ganzenoog tot monnikenriem en pied-de-poule.",
+      "blocks": [
+        "De nieuwe [weefpatroonmaker](/weaving/) tekent patronen voor het handweven: de inrijging bovenaan, de opbinding in de hoek, de trapping langs de zijkant en het weefbeeld, het weefsel dat eruit komt. Kies een binding, van [linnenbinding](/weaving/plain/) en [keper](/weaving/twill/) tot [spitskeper](/weaving/point-twill/), [overshot](/weaving/overshot/), [huck](/weaving/huck/), [M's and O's](/weaving/ms-and-os/) en [zomer en winter](/weaving/summer-and-winter/), op 4, 8 of 16 schachten waar de binding dat toelaat, en streep schering en inslag in je eigen kleuren. Download het weefsel als naadloze SVG of PNG, of een pdf van het volledige patroon om mee naar het getouw te nemen.",
+        "Voorbeelden om mee te beginnen",
+        [
+          "Ganzenoog: een spitskeper, getrapt zoals ingeregen",
+          "Monnikenriem, overshot op tegengestelde blokken",
+          "Pied-de-poule: een 2/2-keper, vier donker en vier licht",
+          "Een overshotruit op vier blokken",
+          "Huckkant, scherings- en inslagfloteringen op linnenbinding",
+          "Log cabin, linnenbinding in afwisselende kleuren"
+        ],
+        "Het patroon lezen",
+        "Elk hokje van het weefbeeld is een kruising. Het toont de schering waar de schacht waarop die draad is ingeregen aan de trapper van die inslag is opgebonden, en anders de inslag. Gevulde hokjes in de opbinding zijn schachten die omhooggaan, zoals op een getouw met stijgend sprong; op een contrabalans- of contramarchegetouw bind je de lege op. Overshot en zomer en winter laten hun linnen inslagen uit het weefbeeld weg, zoals patronen meestal doen, en de stappen zeggen welke schachten je daarvoor heft. Elk patroon noemt ook de langste flotering, zodat je in één oogopslag ziet of het weefsel stevig blijft.",
+        "Traditionele patronen",
+        "Onder de maker staan 26 traditionele patronen en stoffen, waaronder vogeloog, ganzenoog, dornik, kraaienpoot, monnikenriem, huckaback, Bronsonkant, pied-de-poule, glencheck, log cabin en vichyruit. Elk opent de maker met inrijging, trapping en kleuren, klaar om aan te passen. Ze zijn voor deze site getekend vanuit de bindingen in A Handbook of Weaves van G. H. Oelsner (1915) en Textile Design and Colour van William Watson, beide in het publieke domein en genoemd op de pagina [dankwoord](/acknowledgements/). De tests controleren dat elke binding naadloos herhaalt, dat elk patroon al zijn schachten en trappers gebruikt en dat geen flotering langer is dan vijftien draden."
+      ]
+    },
     "kolam": {
       "title": "Kolam, getekend rond een raster van stippen",
       "summary": "Een nieuwe maker tekent kolam rond een raster van stippen als naadloze herhaling: de ene doorlopende lijn van een sikku-kolam, de verbonden stippen van een pulli-kolam of de gesloten lijnen van een kambi-kolam, op een vierkant, ruitvormig of zeshoekig raster.",
@@ -780,6 +800,14 @@
     }
   },
   "changelog": {
+    "Weaving drafts": {
+      "title": "Weefpatronen",
+      "items": [
+        "Nieuwe weefpatroonmaker: linnenbinding, keper, visgraat, spitse en gebroken keper, satijn, panama, huck, overshot, M's and O's, zomer en winter en rosengang, op 4, 8 of 16 schachten",
+        "Het volledige patroon met inrijging, opbinding, trapping en weefbeeld, gestreepte schering en inslag, een naadloos rapport, 26 traditionele patronen en een pdf om te printen",
+        "Weven komt in het hoofdmenu en op de voorpagina"
+      ]
+    },
     "Kolam": {
       "title": "Kolam-maker",
       "items": [

@@ -1,5 +1,25 @@
 {
   "posts": {
+    "weaving": {
+      "title": "Patrones de tejido: remetido, amarre, pedaleo y el tejido que resulta",
+      "summary": "Un nuevo creador de tejidos convierte un ligamento en el patrón completo que se lee en el telar, con 26 patrones tradicionales para empezar, del ojo de perdiz y el ojo de ganso al cinturón de monje y la pata de gallo.",
+      "blocks": [
+        "El nuevo [creador de tejidos](/weaving/) dibuja patrones para telar: el remetido arriba, el amarre en la esquina, el pedaleo a un lado y el dibujo, el tejido que resulta. Elige un ligamento, del [tafetán](/weaving/plain/) y la [sarga](/weaving/twill/) a la [sarga en punta](/weaving/point-twill/), el [overshot](/weaving/overshot/), el [huck](/weaving/huck/), [M's and O's](/weaving/ms-and-os/) y [verano e invierno](/weaving/summer-and-winter/), usa 4, 8 o 16 lizos donde el ligamento lo permita y raya la urdimbre y la trama con tus colores. Descarga el tejido como SVG o PNG sin costuras, o un PDF del patrón completo para llevar al telar.",
+        "Ejemplos para empezar",
+        [
+          "Ojo de ganso: una sarga en punta pisada como se remetió",
+          "Cinturón de monje, overshot en opuestos",
+          "Pata de gallo: una sarga 2/2, cuatro oscuros y cuatro claros",
+          "Un rombo de overshot en cuatro bloques",
+          "Encaje huck, bastas de urdimbre y de trama sobre tafetán",
+          "Log cabin, tafetán en colores alternos"
+        ],
+        "Cómo leer el patrón",
+        "Cada cuadro del dibujo es un cruce. Muestra la urdimbre donde el lizo en que está remetido ese hilo está amarrado al pedal de esa pasada, y la trama donde no. Los cuadros llenos del amarre son lizos que suben, como en un telar de calada ascendente; en un telar de contrabalanceo o de contramarcha, amarra los vacíos. El overshot y el verano e invierno dejan fuera del dibujo sus pasadas de tafetán, como suelen hacer los patrones, y los pasos indican qué lizos levantar para ellas. Cada patrón da también su basta más larga, para ver de un vistazo si el tejido se sostendrá.",
+        "Patrones tradicionales",
+        "Debajo del creador hay 26 patrones y telas tradicionales, entre ellos ojo de perdiz, ojo de ganso, dornik, pata de cuervo, cinturón de monje, huckaback, encaje Bronson, pata de gallo, príncipe de Gales, log cabin y vichy. Cada uno abre el creador con su remetido, pedaleo y colores, listo para cambiar. Se dibujaron para este sitio a partir de los ligamentos de A Handbook of Weaves de G. H. Oelsner (1915) y Textile Design and Colour de William Watson, ambos de dominio público, citados en la página de [agradecimientos](/acknowledgements/). Las pruebas comprueban que cada ligamento se repite sin costuras, que cada patrón usa todos sus lizos y pedales y que ninguna basta pasa de quince hilos."
+      ]
+    },
     "kolam": {
       "title": "Kolam, dibujado alrededor de una cuadrícula de puntos",
       "summary": "Un nuevo generador dibuja kolam alrededor de una cuadrícula de puntos como repetición continua: la línea única de un sikku kolam, los puntos unidos de un pulli kolam o las líneas cerradas de un kambi kolam, en cuadrícula cuadrada, en rombo o hexagonal.",
@@ -780,6 +800,14 @@
     }
   },
   "changelog": {
+    "Weaving drafts": {
+      "title": "Patrones de tejido",
+      "items": [
+        "Nuevo creador de tejidos: tafetán, sargas, espiga, sargas en punta y quebradas, raso, panamá, huck, overshot, M's and O's, verano e invierno y rosepath, en 4, 8 o 16 lizos",
+        "El patrón completo con remetido, amarre, pedaleo y dibujo, urdimbre y trama a rayas, una repetición sin costuras, 26 patrones tradicionales y un patrón en PDF para imprimir",
+        "El tejido llega al menú superior y a la portada"
+      ]
+    },
     "Kolam": {
       "title": "Generador de kolam",
       "items": [

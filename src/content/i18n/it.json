@@ -1,5 +1,25 @@
 {
   "posts": {
+    "weaving": {
+      "title": "Messe in carta: rimettaggio, legatura, pedalatura e il tessuto che ne risulta",
+      "summary": "Un nuovo generatore di tessitura trasforma un'armatura nella messa in carta completa che si legge al telaio, con 26 messe in carta tradizionali da cui partire, dall'occhio di pernice e dall'occhio d'oca alla cintura del monaco e al pied de poule.",
+      "blocks": [
+        "Il nuovo [generatore di tessitura](/weaving/) disegna messe in carta per la tessitura a mano: il rimettaggio in alto, la legatura nell'angolo, la pedalatura di lato e il disegno del tessuto che ne risulta. Scegli un'armatura, dalla [tela](/weaving/plain/) e dalla [saia](/weaving/twill/) alla [saia a punta](/weaving/point-twill/), all'[overshot](/weaving/overshot/), allo [huck](/weaving/huck/), a [M's and O's](/weaving/ms-and-os/) e a [estate e inverno](/weaving/summer-and-winter/), su 4, 8 o 16 licci dove l'armatura lo consente, e rigata ordito e trama con i tuoi colori. Scarica il tessuto come SVG o PNG senza giunture, o un PDF della messa in carta completa da portare al telaio.",
+        "Esempi da cui partire",
+        [
+          "Occhio d'oca: una saia a punta tessuta come rimessa",
+          "Cintura del monaco, overshot su blocchi opposti",
+          "Pied de poule: una saia 2/2, quattro scuri e quattro chiari",
+          "Un rombo di overshot su quattro blocchi",
+          "Pizzo huck, slegature d'ordito e di trama su fondo tela",
+          "Log cabin, tela a colori alternati"
+        ],
+        "Come leggere la messa in carta",
+        "Ogni quadretto del disegno è un incrocio. Mostra l'ordito dove il liccio su cui è rimesso quel filo è legato al pedale di quella passata, e la trama altrimenti. I quadretti pieni della legatura sono licci che salgono, come su un telaio a passo ascendente; su un telaio a contrappeso o a contromarcia, lega quelli vuoti. Overshot ed estate e inverno lasciano fuori dal disegno le passate di tela, come fanno di solito le messe in carta, e i passaggi dicono quali licci alzare per esse. Ogni messa in carta indica anche la slegatura più lunga, per vedere a colpo d'occhio se il tessuto terrà.",
+        "Messe in carta tradizionali",
+        "Sotto il generatore ci sono 26 messe in carta e tessuti tradizionali, tra cui occhio di pernice, occhio d'oca, dornik, zampa di corvo, cintura del monaco, huckaback, pizzo Bronson, pied de poule, principe di Galles, log cabin e vichy. Ognuno apre il generatore con rimettaggio, pedalatura e colori, pronto da cambiare. Sono disegnati per questo sito a partire dalle armature di A Handbook of Weaves di G. H. Oelsner (1915) e di Textile Design and Colour di William Watson, entrambi di pubblico dominio e citati nella pagina dei [ringraziamenti](/acknowledgements/). I test verificano che ogni armatura si ripeta senza giunture, che ogni messa in carta usi tutti i suoi licci e pedali e che nessuna slegatura superi i quindici fili."
+      ]
+    },
     "kolam": {
       "title": "Il kolam, disegnato attorno a una griglia di punti",
       "summary": "Un nuovo generatore disegna il kolam attorno a una griglia di punti come ripetizione continua: la linea unica di un sikku kolam, i punti uniti di un pulli kolam o le linee chiuse di un kambi kolam, su griglia quadrata, a rombi o esagonale.",
@@ -780,6 +800,14 @@
     }
   },
   "changelog": {
+    "Weaving drafts": {
+      "title": "Messe in carta",
+      "items": [
+        "Nuovo generatore di tessitura: tela, saie, spina di pesce, saie a punta e spezzate, raso, panama, huck, overshot, M's and O's, estate e inverno e rosepath, su 4, 8 o 16 licci",
+        "La messa in carta completa con rimettaggio, legatura, pedalatura e disegno, ordito e trama rigati, un rapporto senza giunture, 26 messe in carta tradizionali e un PDF da stampare",
+        "La tessitura entra nel menu principale e nella home page"
+      ]
+    },
     "Kolam": {
       "title": "Generatore di kolam",
       "items": [

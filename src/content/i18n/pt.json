@@ -1,5 +1,25 @@
 {
   "posts": {
+    "weaving": {
+      "title": "Padrões de tecelagem: passamento, amarração, pedalagem e o tecido que resulta",
+      "summary": "Um novo criador de tecelagem transforma um ligamento no padrão completo que se lê no tear, com 26 padrões tradicionais para começar, do olho de perdiz e do olho de ganso ao cinto de monge e ao pied-de-poule.",
+      "blocks": [
+        "O novo [criador de tecelagem](/weaving/) desenha padrões para tear manual: o passamento em cima, a amarração no canto, a pedalagem ao lado e o desenho, o tecido que resulta. Escolha um ligamento, do [tafetá](/weaving/plain/) e da [sarja](/weaving/twill/) à [sarja em ponta](/weaving/point-twill/), ao [overshot](/weaving/overshot/), ao [huck](/weaving/huck/), ao [M's and O's](/weaving/ms-and-os/) e ao [verão e inverno](/weaving/summer-and-winter/), use 4, 8 ou 16 quadros quando o ligamento permitir e liste o urdume e a trama nas suas cores. Baixe o tecido como SVG ou PNG sem emendas, ou um PDF do padrão completo para levar ao tear.",
+        "Exemplos para começar",
+        [
+          "Olho de ganso: uma sarja em ponta tecida como foi passada",
+          "Cinto de monge, overshot em opostos",
+          "Pied-de-poule: uma sarja 2/2, quatro escuros e quatro claros",
+          "Um losango de overshot em quatro blocos",
+          "Renda huck, flutuações de urdume e de trama sobre tafetá",
+          "Log cabin, tafetá em cores alternadas"
+        ],
+        "Como ler o padrão",
+        "Cada quadrado do desenho é um cruzamento. Mostra o urdume onde o quadro em que esse fio foi passado está amarrado ao pedal daquela passada, e a trama onde não está. Os quadrados cheios da amarração são quadros que sobem, como num tear de cala ascendente; num tear de contrapeso ou de contramarcha, amarre os vazios. O overshot e o verão e inverno deixam as passadas de tafetá fora do desenho, como os padrões costumam fazer, e os passos dizem quais quadros levantar para elas. Cada padrão mostra também sua flutuação mais longa, para ver de relance se o tecido vai se sustentar.",
+        "Padrões tradicionais",
+        "Abaixo do criador ficam 26 padrões e tecidos tradicionais, entre eles olho de perdiz, olho de ganso, dornik, pé de corvo, cinto de monge, huckaback, renda Bronson, pied-de-poule, príncipe de Gales, log cabin e xadrez vichy. Cada um abre o criador com seu passamento, pedalagem e cores, pronto para mudar. Foram desenhados para este site a partir dos ligamentos de A Handbook of Weaves, de G. H. Oelsner (1915), e Textile Design and Colour, de William Watson, ambos em domínio público e citados na página de [agradecimentos](/acknowledgements/). Os testes verificam que cada ligamento se repete sem emendas, que cada padrão usa todos os seus quadros e pedais e que nenhuma flutuação passa de quinze fios."
+      ]
+    },
     "kolam": {
       "title": "Kolam, desenhado ao redor de uma grade de pontos",
       "summary": "Um novo gerador desenha kolam ao redor de uma grade de pontos como repetição contínua: a linha única de um sikku kolam, os pontos unidos de um pulli kolam ou as linhas fechadas de um kambi kolam, em grade quadrada, em losango ou hexagonal.",
@@ -780,6 +800,14 @@
     }
   },
   "changelog": {
+    "Weaving drafts": {
+      "title": "Padrões de tecelagem",
+      "items": [
+        "Novo criador de tecelagem: tafetá, sarjas, espinha de peixe, sarjas em ponta e quebradas, cetim, panamá, huck, overshot, M's and O's, verão e inverno e rosepath, em 4, 8 ou 16 quadros",
+        "O padrão completo com passamento, amarração, pedalagem e desenho, urdume e trama listrados, uma repetição sem emendas, 26 padrões tradicionais e um padrão em PDF para imprimir",
+        "A tecelagem entra no menu principal e na página inicial"
+      ]
+    },
     "Kolam": {
       "title": "Gerador de kolam",
       "items": [

@@ -1,5 +1,25 @@
 {
   "posts": {
+    "weaving": {
+      "title": "Armures de tissage : rentrage, attache, marchure et le tissu qui en sort",
+      "summary": "Un nouveau créateur d'armures transforme une armure en dessin complet, tel qu'on le lit au métier, avec 26 armures traditionnelles pour commencer, de l'œil-de-perdrix et l'œil d'oie à la ceinture de moine et au pied-de-poule.",
+      "blocks": [
+        "Le nouveau [créateur d'armures](/weaving/) dessine des armures pour le tissage à la main : le rentrage en haut, l'attache des marches dans le coin, la marchure sur le côté et le dessin du tissu qui en sort. Choisissez une armure, de la [toile](/weaving/plain/) et du [sergé](/weaving/twill/) au [sergé à pointe](/weaving/point-twill/), à l'[overshot](/weaving/overshot/), au [huck](/weaving/huck/), aux [M's and O's](/weaving/ms-and-os/) et à l'[été-hiver](/weaving/summer-and-winter/), sur 4, 8 ou 16 lames quand l'armure le permet, et rayez la chaîne et la trame de vos couleurs. Téléchargez le tissu en SVG ou PNG sans raccord, ou un PDF de l'armure complète à emporter au métier.",
+        "Exemples pour commencer",
+        [
+          "Œil d'oie : un sergé à pointe tissé comme il est rentré",
+          "Ceinture de moine, overshot en opposition",
+          "Pied-de-poule : un sergé 2/2, quatre foncés et quatre clairs",
+          "Un losange d'overshot sur quatre blocs",
+          "Dentelle huck, flottés de chaîne et de trame sur fond de toile",
+          "Log cabin, toile en couleurs alternées"
+        ],
+        "Lire l'armure",
+        "Chaque case du dessin est un croisement. Elle montre la chaîne là où la lame qui porte ce fil est attachée à la marche de cette duite, et la trame sinon. Les cases pleines de l'attache sont des lames qui montent, comme sur un métier à pas montant ; sur un métier à contrebalance ou à contremarche, attachez les cases vides. L'overshot et l'été-hiver laissent leurs duites de toile hors du dessin, comme le font d'habitude les armures, et les étapes disent quelles lames lever pour elles. Chaque armure donne aussi son plus long flotté, pour voir d'un coup d'œil si le tissu tiendra.",
+        "Armures traditionnelles",
+        "Sous le créateur se trouvent 26 armures et étoffes traditionnelles, dont l'œil-de-perdrix, l'œil d'oie, le dornik, la patte de corbeau, la ceinture de moine, le huckaback, la dentelle Bronson, le pied-de-poule, le prince-de-Galles, le log cabin et le vichy. Chacune ouvre le créateur avec son rentrage, sa marchure et ses couleurs, prête à modifier. Elles sont dessinées pour ce site à partir des armures d'A Handbook of Weaves de G. H. Oelsner (1915) et de Textile Design and Colour de William Watson, tous deux dans le domaine public, cités sur la page des [remerciements](/acknowledgements/). Les tests vérifient que chaque armure se répète sans raccord, que chaque dessin utilise toutes ses lames et marches et qu'aucun flotté ne dépasse quinze fils."
+      ]
+    },
     "kolam": {
       "title": "Le kolam, tracé autour d'une grille de points",
       "summary": "Un nouvel outil dessine le kolam autour d'une grille de points en raccord continu : la ligne unique d'un sikku kolam, les points reliés d'un pulli kolam ou les lignes fermées d'un kambi kolam, sur une grille carrée, en losange ou hexagonale.",
@@ -780,6 +800,14 @@
     }
   },
   "changelog": {
+    "Weaving drafts": {
+      "title": "Armures de tissage",
+      "items": [
+        "Nouveau créateur d'armures : toile, sergés, chevron, sergés à pointe et brisés, satin, natté, huck, overshot, M's and O's, été-hiver et rosepath, sur 4, 8 ou 16 lames",
+        "L'armure complète avec rentrage, attache, marchure et dessin, chaîne et trame rayées, un rapport sans raccord, 26 armures traditionnelles et une armure en PDF à imprimer",
+        "Le tissage rejoint le menu principal et la page d'accueil"
+      ]
+    },
     "Kolam": {
       "title": "Outil kolam",
       "items": [

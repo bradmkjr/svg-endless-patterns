@@ -59,7 +59,8 @@ describe("traditional drafts", () => {
       expect(STRUCTURE_OPTIONS).not.toContain(preset.id);
       const state = presetState(preset);
       // Nothing in a preset is dropped or corrected on the way in.
-      const { id: _id, ...patch } = preset;
+      const patch: Partial<typeof preset> = { ...preset };
+      delete patch.id;
       expect(state).toMatchObject(patch);
       if (preset.draft) expect(NAMED_DRAFTS[preset.draft]).toBe(preset.structure);
       expect(parseWeavingState(new URLSearchParams(serializeWeavingState(state)))).toEqual(state);

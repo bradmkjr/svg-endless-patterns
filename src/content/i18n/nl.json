@@ -800,6 +800,12 @@
     }
   },
   "changelog": {
+      "Wider nature pattern sizes": {
+        "title": "Meer formaten voor natuurpatronen",
+        "items": [
+          "Natuurpatronen gaan nu van 25% tot 300% groot, met tot ±90% variatie in grootte, voor veel gevarieerdere motieven in één herhaling"
+        ]
+      },
     "Weaving drafts": {
       "title": "Weefpatronen",
       "items": [

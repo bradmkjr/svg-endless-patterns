@@ -800,6 +800,12 @@
     }
   },
   "changelog": {
+      "Wider nature pattern sizes": {
+        "title": "Mais tamanhos nas estampas da natureza",
+        "items": [
+          "As estampas da natureza agora vão de 25% a 300% de tamanho, com até ±90% de variação, para motivos muito mais variados em uma mesma repetição"
+        ]
+      },
     "Weaving drafts": {
       "title": "Padrões de tecelagem",
       "items": [

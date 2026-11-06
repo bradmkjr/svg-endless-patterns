@@ -800,6 +800,12 @@
     }
   },
   "changelog": {
+      "Wider nature pattern sizes": {
+        "title": "Más tamaños en los patrones de la naturaleza",
+        "items": [
+          "Los patrones de la naturaleza van ahora del 25 % al 300 % de tamaño, con hasta ±90 % de variación, para mezclar mucho más los motivos en un mismo módulo"
+        ]
+      },
     "Weaving drafts": {
       "title": "Patrones de tejido",
       "items": [

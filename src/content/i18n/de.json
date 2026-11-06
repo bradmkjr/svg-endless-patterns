@@ -800,6 +800,12 @@
     }
   },
   "changelog": {
+      "Wider nature pattern sizes": {
+        "title": "Mehr Größen für Naturmuster",
+        "items": [
+          "Naturmuster reichen jetzt von 25 % bis 300 % Größe, mit bis zu ±90 % Größenvariation, für viel gemischtere Motive in einem Rapport"
+        ]
+      },
     "Weaving drafts": {
       "title": "Webpatronen",
       "items": [

@@ -800,6 +800,12 @@
     }
   },
   "changelog": {
+      "Wider nature pattern sizes": {
+        "title": "Plus de tailles pour les motifs nature",
+        "items": [
+          "Les motifs nature vont désormais de 25 % à 300 % de taille, avec jusqu'à ±90 % de variation, pour des motifs bien plus variés dans un même raccord"
+        ]
+      },
     "Weaving drafts": {
       "title": "Armures de tissage",
       "items": [

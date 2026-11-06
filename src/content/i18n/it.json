@@ -800,6 +800,12 @@
     }
   },
   "changelog": {
+      "Wider nature pattern sizes": {
+        "title": "Più dimensioni per i motivi naturali",
+        "items": [
+          "I motivi naturali ora vanno dal 25% al 300% di dimensione, con variazione fino a ±90%, per motivi molto più assortiti in un solo modulo"
+        ]
+      },
     "Weaving drafts": {
       "title": "Messe in carta",
       "items": [

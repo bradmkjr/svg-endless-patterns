@@ -4,6 +4,7 @@ import { localePath, messages } from "./i18n";
 import { serializeTartanState, defaultTartanState, TARTAN_PRESETS } from "./tartanState";
 import { optionHref, thumbSrc, TOOL_OPTIONS, type ThumbGroup, type ToolId } from "./toolOptions";
 import { optionLabels } from "./toolPages";
+import { weavingDraftLinks } from "./weavingDrafts";
 
 /** One pattern shown under its type. */
 export type LibrarySample = { name: string; href: string; src: string };
@@ -42,7 +43,10 @@ export async function libraryTypes(locale: Locale): Promise<LibraryType[]> {
   const tools = await Promise.all(
     (Object.keys(TOOL_OPTIONS) as ToolId[]).map(async (tool) => {
       const labels = await optionLabels(tool, locale);
-      const all = alphabetical(TOOL_OPTIONS[tool].options.map(({ slug }) => ({ name: labels[slug], href: optionHref(tool, locale, slug), src: thumbSrc(tool, slug) })), locale);
+      const options = TOOL_OPTIONS[tool].options.map(({ slug }) => ({ name: labels[slug], href: optionHref(tool, locale, slug), src: thumbSrc(tool, slug) }));
+      // Weaving's traditional drafts sit beside its structures.
+      const extra = tool === "weaving" ? weavingDraftLinks(locale).map(({ name, href, src }) => ({ name, href, src })) : [];
+      const all = alphabetical([...options, ...extra], locale);
       return { id: tool, ...toolText[tool], href: localePath(locale, TOOL_OPTIONS[tool].path), all };
     }),
   );

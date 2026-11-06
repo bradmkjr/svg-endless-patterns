@@ -201,6 +201,12 @@
     "tartanOutput": "Campione continuo, guida di tessitura e stima del filato.",
     "exploreTartan": "Crea uno scozzese",
     "tools": {
+      "weaving": {
+        "title": "Messe in carta",
+        "text": "Scegli un'armatura o una messa in carta tradizionale, dall'occhio di pernice alla cintura del monaco, e guarda rimettaggio, legatura, pedalatura e tessuto.",
+        "output": "Messa in carta completa e tessuto senza giunture in SVG e PNG, e una messa in carta in PDF da stampare.",
+        "explore": "Crea una messa in carta"
+      },
       "crossStitch": {
         "title": "Punto croce",
         "text": "Scegli un disegno quadrato completo o disegna il tuo, poi imposta il conteggio del tessuto e i colori.",

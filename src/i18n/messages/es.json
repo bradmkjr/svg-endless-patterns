@@ -201,6 +201,12 @@
     "tartanOutput": "Muestra continua, guía de tejido y estimación de hilo.",
     "exploreTartan": "Crear un cuadro",
     "tools": {
+      "weaving": {
+        "title": "Patrones de tejido",
+        "text": "Elige un ligamento o un patrón tradicional, del ojo de perdiz al cinturón de monje, y mira el remetido, el amarre, el pedaleo y el tejido.",
+        "output": "Patrón completo y tejido sin costuras en SVG y PNG, y un patrón en PDF para imprimir.",
+        "explore": "Crear un patrón de tejido"
+      },
       "crossStitch": {
         "title": "Punto de cruz",
         "text": "Elige un diseño cuadrado completo o dibuja el tuyo y ajusta el conteo de la tela y los colores.",

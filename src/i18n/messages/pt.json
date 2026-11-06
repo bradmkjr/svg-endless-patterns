@@ -201,6 +201,12 @@
     "tartanOutput": "Amostra contínua, guia de tecelagem e estimativa de fio.",
     "exploreTartan": "Criar um xadrez",
     "tools": {
+      "weaving": {
+        "title": "Padrões de tecelagem",
+        "text": "Escolha um ligamento ou um padrão tradicional, do olho de perdiz ao cinto de monge, e veja o passamento, a amarração, a pedalagem e o tecido.",
+        "output": "Padrão completo e tecido sem emendas em SVG e PNG, e um padrão em PDF para imprimir.",
+        "explore": "Criar um padrão de tecelagem"
+      },
       "crossStitch": {
         "title": "Ponto cruz",
         "text": "Escolha um desenho quadrado completo ou desenhe o seu e ajuste a contagem do tecido e as cores.",

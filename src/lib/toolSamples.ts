@@ -33,6 +33,8 @@ import { generateWaves } from "./generator";
 import { parseWavesState } from "./wavesState";
 import { generateNature } from "./generator";
 import { parseNatureState } from "./natureState";
+import { generateWeaving } from "./generator";
+import { parseWeavingState, weavingRequest } from "./weavingState";
 import { generatePuzzle } from "./generator";
 import { parsePuzzleState } from "./puzzleState";
 import { withOption } from "./toolOptions";
@@ -67,6 +69,7 @@ const DRAW: Partial<Record<PostSample["kind"], Draw>> = {
   reactionDiffusion: async (p, locale) => generateReactionDiffusion(parseRdState(p, locale)),
   waves: async (p, locale) => generateWaves(parseWavesState(p, locale)),
   nature: async (p, locale) => generateNature(parseNatureState(p, locale)),
+  weaving: async (p, locale) => generateWeaving(weavingRequest(parseWeavingState(p, locale))),
   tartan: async (p, locale) => generateTartan(parseTartanState(p, locale)),
   tieDye: async (p, locale) => generateTieDye(parseTieDyeState(p, locale)),
   sashiko: async (p, locale) => generateSashiko(parseSashikoState(p, locale)),

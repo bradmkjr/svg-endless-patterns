@@ -28,6 +28,7 @@ import { parseKolamState, serializeKolamState } from "./kolamState";
 import { parseRdState, serializeRdState } from "./reactionDiffusionState";
 import { parseWavesState, serializeWavesState } from "./wavesState";
 import { parseNatureState, serializeNatureState } from "./natureState";
+import { parseWeavingState, serializeWeavingState } from "./weavingState";
 import { parseMazeState, serializeMazeState } from "./mazeState";
 import { parseTartanState, serializeTartanState } from "./tartanState";
 
@@ -36,7 +37,7 @@ const sorted = (query: string) => [...new URLSearchParams(query).entries()].map(
 async function knownPaths() {
   const posts = await getPosts();
   return new Set([
-    "/", ...PREFIXED_LOCALES.map((l) => `/${l}/`), "/tartans/", "/truchet/", "/kolam/", "/turing-patterns/", "/waves/", "/nature-patterns/", "/tie-dye/", "/fractals/", "/life-patterns/", "/checkerboards/", "/crochet/colorwork/", "/knitting/colorwork/", "/mazes/", "/paper-puzzles/", "/girih/", "/chinese-lattice/", "/mandalas/", "/kaleidoscopes/", "/stained-glass/", "/celtic-knots/", "/sashiko/", "/tessellations/", "/cross-stitch/", "/needlepoint/", "/blocks/", "/knitting/", "/crochet/", "/patterns/", "/palettes/", "/about/", "/acknowledgements/", "/blog/", "/changelog/",
+    "/", ...PREFIXED_LOCALES.map((l) => `/${l}/`), "/tartans/", "/truchet/", "/kolam/", "/turing-patterns/", "/waves/", "/nature-patterns/", "/weaving/", "/tie-dye/", "/fractals/", "/life-patterns/", "/checkerboards/", "/crochet/colorwork/", "/knitting/colorwork/", "/mazes/", "/paper-puzzles/", "/girih/", "/chinese-lattice/", "/mandalas/", "/kaleidoscopes/", "/stained-glass/", "/celtic-knots/", "/sashiko/", "/tessellations/", "/cross-stitch/", "/needlepoint/", "/blocks/", "/knitting/", "/crochet/", "/patterns/", "/palettes/", "/about/", "/acknowledgements/", "/blog/", "/changelog/",
     ...(await getBlocks()).map((b) => `/blocks/${b.slug}/`),
     ...(await getStitchPatterns("knit")).map((s) => `/knitting/${s.slug}/`),
     ...(await getStitchPatterns("crochet")).map((s) => `/crochet/${s.slug}/`),
@@ -126,6 +127,8 @@ describe("blog posts", () => {
       expect(sorted(serializeKolamState(parseKolamState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
     } else if (sample.kind === "waves") {
       expect(sorted(serializeWavesState(parseWavesState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
+    } else if (sample.kind === "weaving") {
+      expect(sorted(serializeWeavingState(parseWeavingState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
     } else if (sample.kind === "nature") {
       expect(sorted(serializeNatureState(parseNatureState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
     } else if (sample.kind === "maze") {

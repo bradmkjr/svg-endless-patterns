@@ -201,6 +201,12 @@
     "tartanOutput": "Naadloos proeflapje, weefgids en schatting van het garen.",
     "exploreTartan": "Maak een ruit",
     "tools": {
+      "weaving": {
+        "title": "Weefpatronen",
+        "text": "Kies een binding of een traditioneel patroon, van vogeloog tot monnikenriem, en zie de inrijging, opbinding, trapping en het weefsel.",
+        "output": "Volledig patroon en naadloos weefsel als SVG en PNG, en een patroon als pdf om te printen.",
+        "explore": "Maak een weefpatroon"
+      },
       "crossStitch": {
         "title": "Kruissteek",
         "text": "Kies een compleet vierkant ontwerp of teken je eigen, en stel dan je stofdichtheid en kleuren in.",

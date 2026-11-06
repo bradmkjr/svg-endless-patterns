@@ -201,6 +201,12 @@
     "tartanOutput": "Seamless swatch, weaving guide and yarn estimate.",
     "exploreTartan": "Make a plaid",
     "tools": {
+      "weaving": {
+        "title": "Weaving drafts",
+        "text": "Pick a weave structure or a traditional draft, from bird's eye to monk's belt, and see the threading, tie-up, treadling and cloth.",
+        "output": "Full draft and seamless cloth as SVG and PNG, and a printable PDF draft.",
+        "explore": "Make a weaving draft"
+      },
       "crossStitch": {
         "title": "Cross stitch",
         "text": "Choose a complete square design or draw your own, then set your fabric count and colors.",

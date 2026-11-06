@@ -8,6 +8,9 @@
     "traditionsH": "Traditions",
     "traditions": "Quilting, knitting, crochet, sashiko, tartan, Celtic knotwork, stained glass and tie-dye belong to generations of makers, most of them unnamed. The designs here are generated or drawn for this site, and they don't copy any one maker's pattern.",
     "usedFor": {
+      "oelsnerWeaves": "The weave structures in the weaving drafter, from plain weave, twills and satins to basket, rib and huckaback weaves, and the crowfoot, Oxford and warp rib drafts. The drafts are drawn for this site from those structures.",
+      "watsonColour": "Color-and-weave effects such as houndstooth, hairline and log cabin, which the weaving drafter's color presets build from plain weave and twill.",
+      "bronsonLace": "The spot lace weave that carries the Bronsons' name, behind the Bronson lace draft in the weaving drafter.",
       "brewster": "Brewster named and patented the kaleidoscope; his mirror angles, which must divide a half turn evenly, set the systems in the kaleidoscope maker.",
       "coxeter": "Why only the 60-60-60, 45-45-90 and 30-60-90 triangles and the square reflect into a pattern that never ends: the mirror cells the kaleidoscope maker offers for seamless repeats.",
       "dharmaTieDye": "The dye, urea and soda ash amounts, cure times and washing steps in the tie-dye planner, and its safety advice on masks and gloves.",
@@ -41,6 +44,9 @@
     "traditionsH": "Tradiciones",
     "traditions": "El acolchado, el punto, el ganchillo, el sashiko, el tartán, los nudos celtas, las vidrieras y el tie-dye pertenecen a generaciones de artesanos, en su mayoría anónimos. Los diseños de este sitio se generan o se dibujan para él y no copian el patrón de nadie en particular.",
     "usedFor": {
+      "oelsnerWeaves": "Los ligamentos del creador de tejidos, del tafetán, las sargas y los rasos al panamá, el reps y el huckaback, y los patrones pata de cuervo, Oxford y reps de urdimbre. Los patrones se dibujaron para este sitio a partir de esos ligamentos.",
+      "watsonColour": "Los efectos de color y ligamento, como la pata de gallo, el fil a fil y el log cabin, que los colores predefinidos del creador de tejidos construyen con tafetán y sarga.",
+      "bronsonLace": "El encaje de puntos que lleva el nombre de los Bronson, base del patrón de encaje Bronson del creador de tejidos.",
       "brewster": "Brewster dio nombre al caleidoscopio y lo patentó; sus ángulos de espejo, que deben dividir media vuelta en partes iguales, fijan los sistemas del creador de caleidoscopios.",
       "coxeter": "Por qué solo los triángulos 60-60-60, 45-45-90 y 30-60-90 y el cuadrado se reflejan en un patrón sin fin: las celdas de espejos que ofrece el creador de caleidoscopios para repeticiones continuas.",
       "dharmaTieDye": "Las cantidades de tinte, urea y carbonato de sodio, los tiempos de reposo y los pasos de lavado del planificador de tie-dye, y su consejo de seguridad sobre mascarillas y guantes.",
@@ -74,6 +80,9 @@
     "traditionsH": "Traditions",
     "traditions": "Le quilting, le tricot, le crochet, le sashiko, le tartan, les entrelacs celtiques, le vitrail et le tie-dye appartiennent à des générations d'artisans, la plupart anonymes. Les motifs d'ici sont générés ou dessinés pour ce site et ne copient le modèle de personne en particulier.",
     "usedFor": {
+      "oelsnerWeaves": "Les armures du créateur d'armures, de la toile, des sergés et des satins au natté, au reps et au huckaback, et les armures patte de corbeau, Oxford et reps chaîne. Les armures sont dessinées pour ce site à partir de ces structures.",
+      "watsonColour": "Les effets de couleur et d'armure comme le pied-de-poule, le fil-à-fil et le log cabin, que les couleurs prédéfinies du créateur construisent en toile et en sergé.",
+      "bronsonLace": "La dentelle à points qui porte le nom des Bronson, à l'origine de l'armure dentelle Bronson du créateur.",
       "brewster": "Brewster a nommé et breveté le kaléidoscope ; ses angles de miroirs, qui doivent diviser un demi-tour en parts égales, fixent les systèmes du créateur de kaléidoscopes.",
       "coxeter": "Pourquoi seuls les triangles 60-60-60, 45-45-90 et 30-60-90 et le carré se reflètent en un motif sans fin : les cellules de miroirs que propose le créateur de kaléidoscopes pour les raccords sans couture.",
       "dharmaTieDye": "Les quantités de teinture, d'urée et de carbonate de soude, les temps d'action et les étapes de lavage du planificateur de tie-dye, et son conseil de sécurité sur les masques et les gants.",
@@ -107,6 +116,9 @@
     "traditionsH": "Traditionen",
     "traditions": "Quilten, Stricken, Häkeln, Sashiko, Tartan, keltische Knoten, Glasmalerei und Batik gehören Generationen von Handwerkern, die meisten namenlos. Die Muster hier werden für diese Website erzeugt oder gezeichnet und kopieren keine Vorlage einer bestimmten Person.",
     "usedFor": {
+      "oelsnerWeaves": "Die Bindungen im Webpatronen-Generator, von Leinwand, Köper und Atlas bis zu Panama, Rips und Huckaback, sowie die Patronen Krähenfuß, Oxford und Kettrips. Die Patronen wurden für diese Website aus diesen Bindungen gezeichnet.",
+      "watsonColour": "Farb-und-Bindungs-Effekte wie Hahnentritt, Fil-à-fil und Log Cabin, die die Farbvorlagen des Generators aus Leinwand und Köper aufbauen.",
+      "bronsonLace": "Die Punktspitze, die den Namen der Bronsons trägt, Grundlage der Patrone Bronson-Spitze im Generator.",
       "brewster": "Brewster benannte und patentierte das Kaleidoskop; seine Spiegelwinkel, die eine halbe Drehung gleichmäßig teilen müssen, bestimmen die Systeme des Kaleidoskop-Generators.",
       "coxeter": "Warum sich nur die Dreiecke 60-60-60, 45-45-90 und 30-60-90 und das Quadrat zu einem endlosen Muster spiegeln: die Spiegelzellen, die der Kaleidoskop-Generator für nahtlose Rapporte anbietet.",
       "dharmaTieDye": "Die Mengen für Farbe, Harnstoff und Soda, die Einwirkzeiten und Waschschritte im Batik-Planer sowie der Sicherheitshinweis zu Maske und Handschuhen.",
@@ -140,6 +152,9 @@
     "traditionsH": "Tradições",
     "traditions": "O quilting, o tricô, o crochê, o sashiko, o tartan, os nós celtas, os vitrais e o tie-dye pertencem a gerações de artesãos, em sua maioria anônimos. Os desenhos daqui são gerados ou desenhados para este site e não copiam o padrão de ninguém em particular.",
     "usedFor": {
+      "oelsnerWeaves": "Os ligamentos do criador de tecelagem, do tafetá, das sarjas e dos cetins ao panamá, ao reps e ao huckaback, e os padrões pé de corvo, Oxford e reps de urdume. Os padrões foram desenhados para este site a partir desses ligamentos.",
+      "watsonColour": "Os efeitos de cor e ligamento, como pied-de-poule, fil-à-fil e log cabin, que as cores prontas do criador montam com tafetá e sarja.",
+      "bronsonLace": "A renda de pontos que leva o nome dos Bronson, base do padrão renda Bronson do criador de tecelagem.",
       "brewster": "Brewster deu nome ao caleidoscópio e o patenteou; seus ângulos de espelho, que devem dividir meia volta em partes iguais, definem os sistemas do criador de caleidoscópios.",
       "coxeter": "Por que só os triângulos 60-60-60, 45-45-90 e 30-60-90 e o quadrado se refletem em um padrão sem fim: as células de espelhos que o criador de caleidoscópios oferece para repetições contínuas.",
       "dharmaTieDye": "As quantidades de tinta, ureia e barrilha, os tempos de cura e os passos de lavagem do planejador de tie-dye, e o conselho de segurança sobre máscaras e luvas.",
@@ -173,6 +188,9 @@
     "traditionsH": "Tradizioni",
     "traditions": "Patchwork, maglia, uncinetto, sashiko, tartan, nodi celtici, vetrate e tie-dye appartengono a generazioni di artigiani, per lo più senza nome. I disegni qui presenti sono generati o disegnati per questo sito e non copiano il motivo di nessun singolo autore.",
     "usedFor": {
+      "oelsnerWeaves": "Le armature del generatore di tessitura, dalla tela, dalle saie e dai rasi al panama, al reps e allo huckaback, e le messe in carta zampa di corvo, Oxford e reps di ordito. Le messe in carta sono disegnate per questo sito a partire da quelle armature.",
+      "watsonColour": "Gli effetti di colore e armatura come pied de poule, fil-à-fil e log cabin, che i colori predefiniti del generatore costruiscono con tela e saia.",
+      "bronsonLace": "Il pizzo a punti che porta il nome dei Bronson, alla base della messa in carta pizzo Bronson del generatore.",
       "brewster": "Brewster diede il nome al caleidoscopio e lo brevettò; i suoi angoli tra gli specchi, che devono dividere mezzo giro in parti uguali, fissano i sistemi del generatore di caleidoscopi.",
       "coxeter": "Perché solo i triangoli 60-60-60, 45-45-90 e 30-60-90 e il quadrato si riflettono in un motivo senza fine: le celle di specchi che il generatore di caleidoscopi offre per le ripetizioni continue.",
       "dharmaTieDye": "Le quantità di tintura, urea e carbonato di sodio, i tempi di fissaggio e i lavaggi nel pianificatore di tie-dye, e i suoi consigli di sicurezza su mascherine e guanti.",
@@ -206,6 +224,9 @@
     "traditionsH": "Tradities",
     "traditions": "Quilten, breien, haken, sashiko, tartan, Keltisch knoopwerk, glas-in-lood en tie-dye behoren toe aan generaties makers, de meesten naamloos. De ontwerpen hier zijn voor deze site gegenereerd of getekend en kopiëren niet het patroon van één maker.",
     "usedFor": {
+      "oelsnerWeaves": "De bindingen in de weefpatroonmaker, van linnenbinding, keper en satijn tot panama, rips en huckaback, en de patronen kraaienpoot, Oxford en kettingrips. De patronen zijn voor deze site getekend vanuit die bindingen.",
+      "watsonColour": "Kleur-en-bindingseffecten zoals pied-de-poule, fil-à-fil en log cabin, die de kleurvoorbeelden van de maker opbouwen uit linnenbinding en keper.",
+      "bronsonLace": "Het puntkant dat de naam van de Bronsons draagt, de basis van het patroon Bronsonkant in de maker.",
       "brewster": "Brewster gaf de caleidoscoop zijn naam en patent; zijn spiegelhoeken, die een halve slag gelijk moeten verdelen, bepalen de systemen van de caleidoscoopmaker.",
       "coxeter": "Waarom alleen de driehoeken 60-60-60, 45-45-90 en 30-60-90 en het vierkant weerkaatsen tot een eindeloos patroon: de spiegelcellen die de caleidoscoopmaker biedt voor naadloze herhalingen.",
       "dharmaTieDye": "De hoeveelheden verf, ureum en soda, de fixeertijden en wasstappen in de tie-dyeplanner, en het veiligheidsadvies over mondkapjes en handschoenen.",

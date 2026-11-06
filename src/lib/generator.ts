@@ -15,6 +15,7 @@ import type { CelticKnotRequest, CelticKnotResult } from "./celticKnotTypes";
 import type { SashikoRequest, SashikoResult } from "./sashikoTypes";
 import type { TieDyeRequest, TieDyeResult } from "./tieDyeTypes";
 import type { TartanRequest, TartanResult } from "./tartanTypes";
+import type { WeavingRequest, WeavingResult } from "./weavingTypes";
 import type { TruchetRequest, TruchetResult } from "./truchetTypes";
 import type { RdRequest, RdResult } from "./reactionDiffusionTypes";
 import type { KolamRequest, KolamResult } from "./kolamTypes";
@@ -41,6 +42,7 @@ export type { KolamColors, KolamForm, KolamGrid, KolamLine, KolamRequest, KolamR
 export type { WaveColors, WaveFill, WaveFunction, WaveMix, WavesRequest, WavesResult } from "./wavesTypes";
 export type { NatureColors, NatureLayout, NatureMotif, NaturePacking, NatureRequest, NatureResult, NatureStyle } from "./natureTypes";
 export type { TartanColor, TartanRequest, TartanResult, TartanStripe } from "./tartanTypes";
+export type { WeavingRequest, WeavingResult, WeavingStripe, WeavingStructure } from "./weavingTypes";
 export type { TieDyeGuide, TieDyeGuideLabel, TieDyeGuideShape, TieDyeLayer, TieDyeMix, TieDyeRequest, TieDyeResult, TieDyeTechnique } from "./tieDyeTypes";
 export type { SashikoMotif, SashikoRequest, SashikoResult } from "./sashikoTypes";
 export type { CelticBreakPattern, CelticInterlace, CelticKnotRequest, CelticKnotResult, CelticStrand } from "./celticKnotTypes";
@@ -81,6 +83,14 @@ export async function generateTartan(request: TartanRequest): Promise<TartanResu
 
 export async function generateTartanPdf(request: TartanRequest): Promise<Uint8Array> {
   return apiPdf("/tartan/pdf", request);
+}
+
+export async function generateWeaving(request: WeavingRequest): Promise<WeavingResult> {
+  return apiJson("/weaving", request);
+}
+
+export async function generateWeavingPdf(request: WeavingRequest): Promise<Uint8Array> {
+  return apiPdf("/weaving/pdf", request);
 }
 
 export async function generateCrossStitch(request: CrossStitchRequest): Promise<CrossStitchResult> {

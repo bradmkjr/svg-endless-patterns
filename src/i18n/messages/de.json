@@ -201,6 +201,12 @@
     "tartanOutput": "Nahtloses Muster, Webanleitung und Garnschätzung.",
     "exploreTartan": "Karo gestalten",
     "tools": {
+      "weaving": {
+        "title": "Webpatronen",
+        "text": "Wähle eine Bindung oder eine traditionelle Patrone, vom Vogelauge bis zum Mönchsgürtel, und sieh Einzug, Anschnürung, Trittfolge und Gewebe.",
+        "output": "Ganze Patrone und nahtloses Gewebe als SVG und PNG sowie eine Patrone als PDF zum Drucken.",
+        "explore": "Webpatrone erstellen"
+      },
       "crossStitch": {
         "title": "Kreuzstich",
         "text": "Wähle ein komplettes quadratisches Motiv oder zeichne dein eigenes und stelle dann Stoffzählung und Farben ein.",

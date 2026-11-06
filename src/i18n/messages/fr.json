@@ -201,6 +201,12 @@
     "tartanOutput": "Échantillon continu, guide de tissage et estimation de fil.",
     "exploreTartan": "Créer un carreau",
     "tools": {
+      "weaving": {
+        "title": "Armures de tissage",
+        "text": "Choisissez une armure ou un dessin traditionnel, de l'œil-de-perdrix à la ceinture de moine, et voyez le rentrage, l'attache, la marchure et le tissu.",
+        "output": "Armure complète et tissu sans raccord en SVG et PNG, et une armure en PDF à imprimer.",
+        "explore": "Créer une armure"
+      },
       "crossStitch": {
         "title": "Point de croix",
         "text": "Choisissez un dessin carré complet ou dessinez le vôtre, puis réglez le compte de la toile et les couleurs.",

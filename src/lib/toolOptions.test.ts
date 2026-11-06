@@ -26,6 +26,7 @@ import { parseKolamState, serializeKolamState } from "./kolamState";
 import { parseRdState, serializeRdState } from "./reactionDiffusionState";
 import { parseWavesState, serializeWavesState } from "./wavesState";
 import { parseNatureState, serializeNatureState } from "./natureState";
+import { parseWeavingState, serializeWeavingState } from "./weavingState";
 
 const TOOLS = Object.keys(TOOL_OPTIONS) as ToolId[];
 const LOCALES = ["en", "es", "fr", "de", "pt", "it", "nl"] as const;
@@ -35,6 +36,7 @@ const ROUND_TRIP: Record<ToolId, (params: URLSearchParams) => string> = {
   reactionDiffusion: (p) => serializeRdState(parseRdState(p)),
   waves: (p) => serializeWavesState(parseWavesState(p)),
   nature: (p) => serializeNatureState(parseNatureState(p)),
+  weaving: (p) => serializeWeavingState(parseWeavingState(p)),
   tessellation: (p) => serializeTessellationState(parseTessellationState(p)),
   girih: (p) => serializeGirihState(parseGirihState(p)),
   chineseLattice: (p) => serializeChineseLatticeState(parseChineseLatticeState(p)),
@@ -111,7 +113,7 @@ describe("API thumbnails", () => {
 });
 
 describe("the library's fill", () => {
-  it.each(["truchet", "stainedGlass", "girih", "tieDye", "nature", "reactionDiffusion"] as const)("%s offers at least six choices, each with a page and an API thumbnail", (tool) => {
+  it.each(["truchet", "stainedGlass", "girih", "tieDye", "nature", "reactionDiffusion", "weaving"] as const)("%s offers at least six choices, each with a page and an API thumbnail", (tool) => {
     expect(TOOL_OPTIONS[tool].options.length).toBeGreaterThanOrEqual(6);
     for (const { slug } of TOOL_OPTIONS[tool].options) {
       expect(optionPath(tool, slug)).toContain(`/${slug}/`);

@@ -9,6 +9,9 @@ import { libraryTypes } from "@/lib/libraryTools";
 import { pageMetadata } from "@/lib/pageMetadata";
 import { SITE_NAME } from "@/lib/site";
 import { thumbSrc } from "@/lib/toolOptions";
+import { weavingDraftLinks } from "@/lib/weavingDrafts";
+import { WeavingDrafts } from "@/components/WeavingDrafts";
+import weavingCopy from "@/i18n/messages/weaving.json";
 import styles from "./HomeView.module.css";
 
 /** Patterns shown per craft: the rest are a click away. */
@@ -26,6 +29,8 @@ export async function HomeView({ locale }: { locale: Locale }) {
   const knitting = await getStitchPatterns("knit", locale);
   const crochet = await getStitchPatterns("crochet", locale);
   const types = await libraryTypes(locale);
+  const w = weavingCopy[locale];
+  const drafts = weavingDraftLinks(locale);
 
   return (
     <>
@@ -41,6 +46,21 @@ export async function HomeView({ locale }: { locale: Locale }) {
           {/* eslint-disable-next-line @next/next/no-img-element -- a standard image tag from the API */}
           <img src={thumbSrc("blocks", "log-cabin-layout")} alt="" width={1000} height={1000} />
         </div>
+      </section>
+
+      <section className={styles.weaving} aria-labelledby="home-weaving">
+        <div className={styles.weavingIntro}>
+          <p className={styles.kicker}>{w.homeKicker}</p>
+          <h2 id="home-weaving">{w.homeTitle}</h2>
+          <p>{fill(w.homeText, { n: drafts.length })}</p>
+          <Link href={localePath(locale, "/weaving/")} className={styles.cta}>
+            {w.homeCta}
+          </Link>
+        </div>
+        <WeavingDrafts drafts={drafts.slice(0, 12)} />
+        <Link href={`${localePath(locale, "/weaving/")}#drafts`} className={styles.more}>
+          {fill(t.seeAll, { n: drafts.length })}
+        </Link>
       </section>
 
       <section className={styles.band}>

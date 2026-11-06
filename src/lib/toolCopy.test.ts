@@ -11,6 +11,7 @@ import truchet from "../i18n/messages/truchet.json";
 import kolam from "../i18n/messages/kolam.json";
 import waves from "../i18n/messages/waves.json";
 import nature from "../i18n/messages/nature.json";
+import weaving from "../i18n/messages/weaving.json";
 import crossStitch from "../i18n/messages/crossStitch.json";
 import needlepoint from "../i18n/messages/needlepoint.json";
 
@@ -20,7 +21,7 @@ const leaves = (value: unknown, path = ""): [string, string][] =>
 const holes = (text: string) => [...text.matchAll(/\{\w+\}/g)].map((m) => m[0]).sort();
 
 /** Generated text moved to the API with its tests; the site's own text stays checked here. */
-describe.each(Object.entries({ apiStatus, celticKnot, girih, mandala, sashiko, stainedGlass, tessellation, tieDye, truchet, kolam, waves, nature, crossStitch, needlepoint }))("%s site text", (_, copy) => {
+describe.each(Object.entries({ apiStatus, celticKnot, girih, mandala, sashiko, stainedGlass, tessellation, tieDye, truchet, kolam, waves, nature, weaving, crossStitch, needlepoint }))("%s site text", (_, copy) => {
   it.each(LOCALES)("%s matches English", (locale) => {
     const english = Object.fromEntries(leaves(copy.en));
     const here = Object.fromEntries(leaves(copy[locale]));

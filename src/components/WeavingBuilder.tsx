@@ -114,7 +114,8 @@ export function WeavingBuilder({ locale, option, labels, initialState }: { local
       <OptionNav tool="weaving" locale={locale} current={option} labels={labels} />
       <div className={styles.workspace}>
         <section className={styles.preview} aria-label={b.preview}>
-          {result ? <div className={`${styles.art} ${styles.quiltArt}`} role="img" aria-label={state.view === "draft" ? t.draftAlt : t.clothAlt} dangerouslySetInnerHTML={{ __html: picture }} /> : <ToolLoading locale={locale} />}
+          {/* The draft has no inch size, so it fills the column rather than sizing to the SVG as quilts do. */}
+          {result ? <div className={styles.art} role="img" aria-label={state.view === "draft" ? t.draftAlt : t.clothAlt} dangerouslySetInnerHTML={{ __html: picture }} /> : <ToolLoading locale={locale} />}
           {result ? <p className={styles.note}>{fill(t.repeatNote, { ends: result.ends, picks: result.picks, repeatEnds: result.repeatEnds, repeatPicks: result.repeatPicks })}</p> : null}
           <div className={`${styles.actions} no-print`}>
             <button type="button" disabled={busy} className={styles.primary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateWeavingPdf(weavingRequest(state)), `${fileName}-draft.pdf`, "application/pdf"))}>

@@ -1,6 +1,33 @@
 [
   {
     "date": "2026-11-05",
+    "title": "Chinese lattice",
+    "post": "chinese-lattice-patterns",
+    "items": [
+      "New Chinese lattice maker: square fret, octagons and squares, hexagons, diagonal, interlocking frames and ice-ray, in thick bars with clean joins",
+      "Bar width, cell density, up to three nested frames, a solid frame or open edge, and a seeded ice-ray that still repeats, with SVG, PNG and PDF downloads"
+    ]
+  },
+  {
+    "date": "2026-11-05",
+    "title": "Kaleidoscopes",
+    "post": "kaleidoscopes",
+    "items": [
+      "Added a kaleidoscope maker with two-mirror, square, 60-60-60, 45-45-90 and 30-60-90 mirror systems",
+      "The source turns live with a dial, slider or spin button, and links, downloads and PDFs follow the angle on screen"
+    ]
+  },
+  {
+    "date": "2026-11-05",
+    "title": "Wave patterns",
+    "post": "seamless-wave-patterns",
+    "items": [
+      "New wave pattern maker: sine, cosine, tangent, square, triangle, sawtooth, damped, interference, moiré and Lissajous figures",
+      "Lines or filled bands, with phase, drift and an optional second wave, in a seamless repeat with SVG, PNG and PDF downloads"
+    ]
+  },
+  {
+    "date": "2026-11-05",
     "title": "Spiral and cone checkerboards",
     "post": "spiral-and-cone-checkerboards",
     "items": [

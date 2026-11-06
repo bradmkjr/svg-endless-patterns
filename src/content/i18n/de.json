@@ -1,5 +1,70 @@
 {
   "posts": {
+    "chinese-lattice-patterns": {
+      "title": "Chinesisches Gitterwerk aus kräftigen Stäben, nahtlos wiederholt",
+      "summary": "Ein neuer Generator zeichnet chinesisches Fenstergitter auf sechs Grundgerüsten, vom quadratischen Mäander bis zum Eisbruch, mit Rahmen in den Öffnungen und einem Rapport, der immer an seine Nachbarn anschließt.",
+      "blocks": [
+        "Der neue [Generator für chinesisches Gitterwerk](/chinese-lattice/) zeichnet Fenstergitter aus kräftigen Stäben auf sechs Grundgerüsten: quadratischer Mäander, Achtecke und Quadrate, Sechsecke, diagonal, verschränkte Rahmen und [Eisbruch](/chinese-lattice/ice-ray/). Stelle die Stabbreite ein und wie viele Zellen in einen Rapport passen, verschachtele bis zu drei Rahmen in jeder Öffnung, wähle einen festen Rahmen oder einen offenen Rand und lade einen nahtlosen Rapport, eine Tafel oder ein druckbares PDF herunter.",
+        "Beispiele zum Einstieg",
+        [
+          "Eisbruch mit einem verschachtelten Rahmen, in festem Rahmen",
+          "Achtecke und Quadrate, zwei Rahmen tief",
+          "Ein feinerer quadratischer Mäander, drei Zellen pro Rapport",
+          "Verschränkte Rahmen aus dünnen Stäben, mit offenem Rand",
+          "Sechsecke, drei Rahmen tief",
+          "Feineres Eis, ohne verschachtelte Rahmen"
+        ],
+        "Wie die Stäbe zusammenkommen",
+        "Jedes Grundgerüst ist eine Menge von Teilen, die die Ebene füllen, und ein Stab ist die Stelle, an der zwei Teile aneinanderstoßen. Jede Öffnung ist ihr Teil, um eine halbe Stabbreite eingerückt. So sind Ecken, Kreuzungen und T-Stöße bei jedem Winkel sauber auf Gehrung, und weil sich die Teile selbst wiederholen, tritt ein Stab, der eine Seite des Rapports verlässt, an genau derselben Stelle der anderen wieder ein. Verschachtelte Rahmen sitzen mit Abstand in der Öffnung und sind mit kurzen Stäben am äußeren Rahmen befestigt, damit ein ausgeschnittenes Gitter zusammenhält.",
+        "Eisbruch, der sich trotzdem wiederholt",
+        "Eisbruch, auf Chinesisch 冰裂纹, ahmt Eis nach, das auf einem Teich bricht, und hat deshalb kein regelmäßiges Raster. Hier bricht das Eis von Punkten aus, die auf einer Fläche verstreut sind, die an ihren Rändern in sich zurückläuft: Jedes Stück ist der Bereich, der einem Punkt am nächsten liegt, und manche werden durch einen geraden Schnitt ein- oder zweimal weiter zerteilt. Die Risse wirken zufällig, doch der Rapport schließt nahtlos an seine Nachbarn an. Ändere den Startwert, um es neu zu brechen; der Generator merkt sich deinen letzten Startwert in diesem Browser.",
+        "Quellen und Namen",
+        "Die Ordnung des Gitterwerks nach seinem Grundgerüst und das Anreichern der Entwürfe durch verschachtelte Rahmen folgen Daniel Sheets Dyes A Grammar of Chinese Lattice (1937), aufgeführt in den [Danksagungen](/acknowledgements/). Die Entwürfe sind aus ihrer Geometrie konstruiert, nicht aus den Abbildungen des Buchs kopiert. Dyes Gruppenbezeichnungen sind Beschreibungen, keine traditionellen Namen, daher tragen die Grundgerüste hier schlichte Namen, und nur der Eisbruch erhält seinen chinesischen Namen."
+      ]
+    },
+    "kaleidoscopes": {
+      "title": "Kaleidoskope zum Drehen",
+      "summary": "Ein neuer Kaleidoskop-Generator legt Perlen, Glas oder eines der Muster dieser Seite zwischen zwei, drei oder vier Spiegel und dreht es live mit einem Drehregler. Die Zellen mit drei und vier Spiegeln wiederholen sich endlos.",
+      "blocks": [
+        "Der neue [Kaleidoskop-Generator](/kaleidoscopes/) legt ein Bild zwischen Spiegel und lässt dich daran drehen. Ziehe den Drehregler oder den Schieberegler daneben, und die Vorlage dreht sich in ihrer Spiegelzelle, während alle Spiegelungen sofort folgen. Wenn du loslässt, wandert der Winkel in den Link, sodass ein geteilter Link, SVG und PNG und das druckbare PDF das Bild zeigen, bei dem du angehalten hast. Ein Knopf lässt es von selbst drehen und bleibt aus, wenn dein Gerät weniger Bewegung wünscht.",
+        "Es gibt fünf Spiegelsysteme. [Zwei Spiegel](/kaleidoscopes/two-mirror/) im Winkel ergeben ein rundes Bild aus 3 bis 12 Segmenten, wie das Kaleidoskop, das David Brewster 1817 patentieren ließ. Drei Spiegel im Dreieck [60-60-60](/kaleidoscopes/60-60-60/), [45-45-90](/kaleidoscopes/45-45-90/) oder [30-60-90](/kaleidoscopes/30-60-90/) oder vier im [Quadrat](/kaleidoscopes/square/) sind die klassischen Zellen, deren Spiegelungen endlos ineinandergreifen. Deshalb gibt es für sie einen nahtlosen Rapport, der jede Fläche füllt.",
+        "In der Zelle kannst du Perlen, Glasscherben oder Bänder aus einem Startwert in deiner Palette verteilen oder eines der Muster dieser Seite einsetzen, etwa [Truchet-Kacheln](/truchet/) oder [Sashiko](/sashiko/), die ihre eigenen Farben behalten. Zoome und verschiebe die Vorlage, um zu ändern, welchen Teil die Spiegel einfangen. Die Quellen zu den Spiegelwinkeln stehen auf der Seite [Danksagungen](/acknowledgements/).",
+        "Beispiele zum Loslegen",
+        [
+          "Perlen in der klassischen 60-60-60-Zelle",
+          "Glasscherben zwischen zwei Spiegeln, in acht Segmenten",
+          "Truchet-Kacheln in einer 30-60-90-Zelle, um 45° gedreht",
+          "Sashiko in doppelter Größe, in einer 45-45-90-Zelle",
+          "Bänder in einem Quadrat aus vier Spiegeln",
+          "Ein Log-Cabin-Block, um 15° gedreht"
+        ],
+        "Was dazugehört",
+        [
+          "Zwei Spiegel mit 3 bis 12 Segmenten sowie 60-60-60-, 45-45-90-, 30-60-90- und Quadratzellen, die die Fläche füllen",
+          "Ein Drehregler und ein Schieberegler, die das Bild live drehen, und ein Drehknopf, der reduzierte Bewegung respektiert",
+          "Perlen, Glasscherben und Bänder aus einem Startwert oder acht Muster dieser Seite als Vorlage",
+          "Zoom und Position der Vorlage sowie Farben aus der Palettenbibliothek",
+          "Ein nahtloser SVG- oder PNG-Rapport, das ganze Bild und ein druckbares PDF im Winkel auf dem Bildschirm"
+        ]
+      ]
+    },
+    "seamless-wave-patterns": {
+      "title": "Nahtlose Wellenmuster, vom Sinus bis Lissajous",
+      "summary": "Ein neues Werkzeug zeichnet Reihen aus Sinus-, Tangens-, Rechteck- und weiteren Wellen, Moiré und Lissajous-Figuren, als Linien oder gefüllte Bänder, in einem Rapport, dessen Kanten immer zusammenpassen.",
+      "blocks": [
+        "Das neue [Wellenmuster-Werkzeug](/waves/) zeichnet Reihen von Wellen aus zehn Funktionen: Sinus, Kosinus, Tangens, Rechteck, Dreieck, Sägezahn, gedämpft, Interferenz, Moiré und [Lissajous-Figuren](/waves/lissajous/). Zeichne sie als Linien oder gefüllte Bänder, lege eine zweite Welle darüber und lade ein nahtloses SVG oder PNG herunter oder drucke ein PDF in Originalgröße.",
+        "Beispiele für den Einstieg",
+        [
+          "Sinuswellen in gefüllten Bändern",
+          "Tangensäste, abgeschnitten, bevor sie davonlaufen",
+          "Lissajous-Figuren im Verhältnis 3:4, Reihe für Reihe verschoben",
+          "Ein Moiré aus 16 Linien über 18",
+          "Eine Sinuswelle, die eine schnellere trägt und über den Rapport hinweg versetzt ist"
+        ],
+        "Warum es immer passt",
+        "Jede Einstellung, die die Naht stören könnte, zählt in ganzen Wellen. Ein Rapport enthält eine ganze Zahl von Wellen in der Breite, eine zweite Welle fügt eine ganze Zahl eigener hinzu, und der Versatz verschiebt die Phase von oben nach unten um ganze Wellen. So trifft die rechte Kante auf die linke und die untere auf die obere. Ein Tangens läuft ins Unendliche, daher wird jeder Ast dort abgeschnitten, wo er die dreifache Wellenhöhe erreicht."
+      ]
+    },
     "spiral-and-cone-checkerboards": {
       "title": "Spiral- und Kegel-Schachbretter",
       "summary": "Der Schachbrett-Generator kann sein Raster jetzt zu einer Spirale wickeln oder auf einen Kegel von oben legen, in jedem Muster.",
@@ -673,6 +738,27 @@
     }
   },
   "changelog": {
+    "Chinese lattice": {
+      "title": "Chinesisches Gitterwerk",
+      "items": [
+        "Neuer Generator für chinesisches Gitterwerk: quadratischer Mäander, Achtecke und Quadrate, Sechsecke, diagonal, verschränkte Rahmen und Eisbruch, aus kräftigen Stäben mit sauberen Stößen",
+        "Stabbreite, Zellendichte, bis zu drei verschachtelte Rahmen, fester Rahmen oder offener Rand und ein Eisbruch mit Startwert, der sich trotzdem wiederholt, als SVG, PNG und PDF"
+      ]
+    },
+    "Kaleidoscopes": {
+      "title": "Kaleidoskope",
+      "items": [
+        "Kaleidoskop-Generator mit den Spiegelsystemen zwei Spiegel, Quadrat, 60-60-60, 45-45-90 und 30-60-90 hinzugefügt",
+        "Die Vorlage dreht sich live mit Drehregler, Schieberegler oder Drehknopf, und Links, Downloads und PDFs folgen dem Winkel auf dem Bildschirm"
+      ]
+    },
+    "Wave patterns": {
+      "title": "Wellenmuster",
+      "items": [
+        "Neues Wellenmuster-Werkzeug: Sinus, Kosinus, Tangens, Rechteck, Dreieck, Sägezahn, gedämpft, Interferenz, Moiré und Lissajous-Figuren",
+        "Linien oder gefüllte Bänder, mit Phase, Versatz und optionaler zweiter Welle, in einem nahtlosen Rapport mit SVG-, PNG- und PDF-Download"
+      ]
+    },
     "Spiral and cone checkerboards": {
       "title": "Spiral- und Kegel-Schachbretter",
       "items": [

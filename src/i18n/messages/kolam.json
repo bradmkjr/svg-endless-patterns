@@ -1,0 +1,373 @@
+{
+  "en": {
+    "metaTitle": "Kolam Maker: Seamless Sikku, Pulli and Kambi Kolam Repeats",
+    "metaDesc": "Draw a seamless kolam repeat around a grid of dots: a sikku kolam's single looping line, a pulli kolam's joined dots or a kambi kolam's closed lines. Choose a square, diamond or hexagonal grid, then download SVG, PNG or PDF.",
+    "h1": "Kolam",
+    "lede": "Draw a kolam around a grid of dots, as a seamless repeat. Pick a form, a grid and your colors, then download the repeat or print it.",
+    "aboutTitle": "About kolam",
+    "about": "Kolam is a living practice of Tamil Nadu and across South India: drawings made by hand on the ground, often at the entrance to a home, in white flour or powdered limestone. Many begin with a grid of dots, called pulli, and are drawn from memory; for many who draw them, kolam has religious as well as ornamental significance. This tool draws in the spirit of the dot-grid kolam on a computer. It doesn't stand in for the hand, the practice or what a kolam means to the people who draw it.",
+    "tiles": "Kolam",
+    "form": "Form",
+    "forms": {
+      "sikku": "Sikku kolam",
+      "pulli": "Pulli kolam",
+      "kambi": "Kambi kolam"
+    },
+    "formNotes": {
+      "sikku": "One continuous line loops around every dot and closes on itself, crossing between neighbors.",
+      "pulli": "Pulli means dot. Here, curved petals join neighboring dots until every dot is linked.",
+      "kambi": "Closed lines run around single dots and groups of dots without crossing, each line in turn in the line or accent color."
+    },
+    "grid": "Dot grid",
+    "grids": {
+      "square": "Square",
+      "diamond": "Diamond",
+      "hexagonal": "Hexagonal"
+    },
+    "size": "Dots across",
+    "rule": "Tile rule",
+    "rules": {
+      "symmetric": "Symmetric",
+      "random": "Seeded random"
+    },
+    "ruleNote": "Symmetric draws one finished kolam in each repeat, turned about its center. Seeded random lets the line run across the repeat's edges.",
+    "line": "Line style",
+    "lines": {
+      "single": "Single",
+      "double": "Double"
+    },
+    "showDots": "Show dots",
+    "weight": "Stroke width",
+    "seed": "Seed",
+    "shuffle": "New seed",
+    "colors": "Colors",
+    "background": "Ground",
+    "lineColor": "Line",
+    "accent": "Dots",
+    "accentNote": "Dots use the third color. In a kambi kolam, every other closed line does too.",
+    "print": "Printing",
+    "repeatWidth": "Repeat width",
+    "downloadPdf": "Download printable PDF",
+    "previewAlt": "Preview of the kolam repeat",
+    "previewNote": "Two repeats across, to show the join. Each repeat holds {dots} dots and is {width}\" x {height}\".",
+    "loopsNote": "Closed lines in one repeat: {loops}."
+  },
+  "es": {
+    "metaTitle": "Creador de kolam: repeticiones continuas de sikku, pulli y kambi kolam",
+    "metaDesc": "Dibuja una repetición continua de kolam alrededor de una cuadrícula de puntos: la línea única de un sikku kolam, los puntos unidos de un pulli kolam o las líneas cerradas de un kambi kolam. Elige una cuadrícula cuadrada, en rombo o hexagonal y descarga SVG, PNG o PDF.",
+    "h1": "Kolam",
+    "lede": "Dibuja un kolam alrededor de una cuadrícula de puntos, como repetición continua. Elige una forma, una cuadrícula y tus colores, y descarga la repetición o imprímela.",
+    "aboutTitle": "Sobre el kolam",
+    "about": "El kolam es una práctica viva de Tamil Nadu y de todo el sur de la India: dibujos hechos a mano en el suelo, a menudo a la entrada de una casa, con harina blanca o piedra caliza en polvo. Muchos comienzan con una cuadrícula de puntos, llamados pulli, y se dibujan de memoria; para muchas de las personas que los dibujan, el kolam tiene un significado religioso además de ornamental. Esta herramienta dibuja en el espíritu del kolam de puntos en un ordenador. No sustituye a la mano, a la práctica ni a lo que un kolam significa para quienes lo dibujan.",
+    "tiles": "Kolam",
+    "form": "Forma",
+    "forms": {
+      "sikku": "Sikku kolam",
+      "pulli": "Pulli kolam",
+      "kambi": "Kambi kolam"
+    },
+    "formNotes": {
+      "sikku": "Una sola línea continua rodea cada punto y se cierra sobre sí misma, cruzando entre puntos vecinos.",
+      "pulli": "Pulli significa punto. Aquí, pétalos curvos unen puntos vecinos hasta que todos quedan enlazados.",
+      "kambi": "Líneas cerradas rodean puntos sueltos y grupos de puntos sin cruzarse, cada línea por turnos en el color de línea o de acento."
+    },
+    "grid": "Cuadrícula de puntos",
+    "grids": {
+      "square": "Cuadrada",
+      "diamond": "En rombo",
+      "hexagonal": "Hexagonal"
+    },
+    "size": "Puntos de ancho",
+    "rule": "Regla de las piezas",
+    "rules": {
+      "symmetric": "Simétrica",
+      "random": "Aleatoria con semilla"
+    },
+    "ruleNote": "La simétrica dibuja un kolam completo en cada repetición, girado alrededor de su centro. La aleatoria con semilla deja que la línea cruce los bordes de la repetición.",
+    "line": "Estilo de línea",
+    "lines": {
+      "single": "Sencilla",
+      "double": "Doble"
+    },
+    "showDots": "Mostrar puntos",
+    "weight": "Grosor del trazo",
+    "seed": "Semilla",
+    "shuffle": "Nueva semilla",
+    "colors": "Colores",
+    "background": "Fondo",
+    "lineColor": "Línea",
+    "accent": "Puntos",
+    "accentNote": "Los puntos usan el tercer color. En un kambi kolam, también una de cada dos líneas cerradas.",
+    "print": "Impresión",
+    "repeatWidth": "Ancho de la repetición",
+    "downloadPdf": "Descargar PDF imprimible",
+    "previewAlt": "Vista previa de la repetición del kolam",
+    "previewNote": "Dos repeticiones de ancho, para mostrar la unión. Cada repetición tiene {dots} puntos y mide {width}\" x {height}\".",
+    "loopsNote": "Líneas cerradas en una repetición: {loops}."
+  },
+  "fr": {
+    "metaTitle": "Créateur de kolam : raccords continus de sikku, pulli et kambi kolam",
+    "metaDesc": "Dessinez un raccord continu de kolam autour d'une grille de points : la ligne unique d'un sikku kolam, les points reliés d'un pulli kolam ou les lignes fermées d'un kambi kolam. Choisissez une grille carrée, en losange ou hexagonale, puis téléchargez en SVG, PNG ou PDF.",
+    "h1": "Kolam",
+    "lede": "Dessinez un kolam autour d'une grille de points, en raccord continu. Choisissez une forme, une grille et vos couleurs, puis téléchargez le raccord ou imprimez-le.",
+    "aboutTitle": "À propos du kolam",
+    "about": "Le kolam est une pratique vivante du Tamil Nadu et de tout le sud de l'Inde : des dessins tracés à la main sur le sol, souvent à l'entrée d'une maison, à la farine blanche ou au calcaire en poudre. Beaucoup commencent par une grille de points, appelés pulli, et se tracent de mémoire ; pour bien des personnes qui les dessinent, le kolam a une portée religieuse autant qu'ornementale. Cet outil dessine dans l'esprit du kolam à points, sur ordinateur. Il ne remplace ni la main, ni la pratique, ni ce qu'un kolam signifie pour celles et ceux qui le tracent.",
+    "tiles": "Kolam",
+    "form": "Forme",
+    "forms": {
+      "sikku": "Sikku kolam",
+      "pulli": "Pulli kolam",
+      "kambi": "Kambi kolam"
+    },
+    "formNotes": {
+      "sikku": "Une seule ligne continue fait le tour de chaque point et se referme sur elle-même, en se croisant entre voisins.",
+      "pulli": "Pulli signifie point. Ici, des pétales courbes relient les points voisins jusqu'à ce que tous soient liés.",
+      "kambi": "Des lignes fermées entourent des points seuls et des groupes de points sans se croiser, chaque ligne à son tour dans la couleur du trait ou d'accent."
+    },
+    "grid": "Grille de points",
+    "grids": {
+      "square": "Carrée",
+      "diamond": "En losange",
+      "hexagonal": "Hexagonale"
+    },
+    "size": "Points en largeur",
+    "rule": "Règle des tuiles",
+    "rules": {
+      "symmetric": "Symétrique",
+      "random": "Aléatoire avec graine"
+    },
+    "ruleNote": "La règle symétrique dessine un kolam complet dans chaque raccord, tourné autour de son centre. L'aléatoire avec graine laisse la ligne passer les bords du raccord.",
+    "line": "Style de ligne",
+    "lines": {
+      "single": "Simple",
+      "double": "Double"
+    },
+    "showDots": "Afficher les points",
+    "weight": "Épaisseur du trait",
+    "seed": "Graine",
+    "shuffle": "Nouvelle graine",
+    "colors": "Couleurs",
+    "background": "Fond",
+    "lineColor": "Ligne",
+    "accent": "Points",
+    "accentNote": "Les points prennent la troisième couleur. Dans un kambi kolam, une ligne fermée sur deux aussi.",
+    "print": "Impression",
+    "repeatWidth": "Largeur du raccord",
+    "downloadPdf": "Télécharger le PDF imprimable",
+    "previewAlt": "Aperçu du raccord de kolam",
+    "previewNote": "Deux raccords en largeur, pour montrer la jonction. Chaque raccord compte {dots} points et mesure {width}\" x {height}\".",
+    "loopsNote": "Lignes fermées dans un raccord : {loops}."
+  },
+  "de": {
+    "metaTitle": "Kolam-Generator: nahtlose Rapporte aus Sikku-, Pulli- und Kambi-Kolam",
+    "metaDesc": "Zeichne einen nahtlosen Kolam-Rapport um ein Punkteraster: die eine Linie eines Sikku-Kolam, die verbundenen Punkte eines Pulli-Kolam oder die geschlossenen Linien eines Kambi-Kolam. Wähle ein quadratisches, rautenförmiges oder sechseckiges Raster und lade SVG, PNG oder PDF herunter.",
+    "h1": "Kolam",
+    "lede": "Zeichne ein Kolam um ein Punkteraster, als nahtlosen Rapport. Wähle eine Form, ein Raster und deine Farben und lade den Rapport herunter oder drucke ihn.",
+    "aboutTitle": "Über Kolam",
+    "about": "Kolam ist eine lebendige Praxis in Tamil Nadu und ganz Südindien: Zeichnungen, die von Hand auf den Boden gemacht werden, oft am Eingang eines Hauses, mit weißem Mehl oder Kalksteinpulver. Viele beginnen mit einem Raster aus Punkten, Pulli genannt, und werden aus dem Gedächtnis gezeichnet; für viele, die sie zeichnen, hat Kolam neben der schmückenden auch eine religiöse Bedeutung. Dieses Werkzeug zeichnet im Sinne des Punkte-Kolam am Computer. Es ersetzt weder die Hand noch die Praxis noch das, was ein Kolam den Menschen bedeutet, die es zeichnen.",
+    "tiles": "Kolam",
+    "form": "Form",
+    "forms": {
+      "sikku": "Sikku-Kolam",
+      "pulli": "Pulli-Kolam",
+      "kambi": "Kambi-Kolam"
+    },
+    "formNotes": {
+      "sikku": "Eine einzige durchgehende Linie läuft um jeden Punkt und schließt sich, wobei sie sich zwischen Nachbarn kreuzt.",
+      "pulli": "Pulli bedeutet Punkt. Hier verbinden geschwungene Blütenblätter benachbarte Punkte, bis alle Punkte verbunden sind.",
+      "kambi": "Geschlossene Linien laufen um einzelne Punkte und Punktgruppen, ohne sich zu kreuzen, jede Linie abwechselnd in der Linien- oder Akzentfarbe."
+    },
+    "grid": "Punkteraster",
+    "grids": {
+      "square": "Quadratisch",
+      "diamond": "Rautenförmig",
+      "hexagonal": "Sechseckig"
+    },
+    "size": "Punkte in der Breite",
+    "rule": "Kachelregel",
+    "rules": {
+      "symmetric": "Symmetrisch",
+      "random": "Zufällig mit Startwert"
+    },
+    "ruleNote": "Symmetrisch zeichnet in jedem Rapport ein fertiges Kolam, gedreht um seine Mitte. Zufällig mit Startwert lässt die Linie über die Kanten des Rapports laufen.",
+    "line": "Linienstil",
+    "lines": {
+      "single": "Einfach",
+      "double": "Doppelt"
+    },
+    "showDots": "Punkte zeigen",
+    "weight": "Strichstärke",
+    "seed": "Startwert",
+    "shuffle": "Neuer Startwert",
+    "colors": "Farben",
+    "background": "Grund",
+    "lineColor": "Linie",
+    "accent": "Punkte",
+    "accentNote": "Die Punkte nutzen die dritte Farbe. Im Kambi-Kolam auch jede zweite geschlossene Linie.",
+    "print": "Drucken",
+    "repeatWidth": "Rapportbreite",
+    "downloadPdf": "Druckbares PDF herunterladen",
+    "previewAlt": "Vorschau des Kolam-Rapports",
+    "previewNote": "Zwei Rapporte nebeneinander, damit die Naht zu sehen ist. Jeder Rapport hat {dots} Punkte und misst {width}\" x {height}\".",
+    "loopsNote": "Geschlossene Linien in einem Rapport: {loops}."
+  },
+  "pt": {
+    "metaTitle": "Criador de kolam: repetições contínuas de sikku, pulli e kambi kolam",
+    "metaDesc": "Desenhe uma repetição contínua de kolam ao redor de uma grade de pontos: a linha única de um sikku kolam, os pontos unidos de um pulli kolam ou as linhas fechadas de um kambi kolam. Escolha uma grade quadrada, em losango ou hexagonal e baixe SVG, PNG ou PDF.",
+    "h1": "Kolam",
+    "lede": "Desenhe um kolam ao redor de uma grade de pontos, como repetição contínua. Escolha uma forma, uma grade e suas cores, depois baixe a repetição ou imprima.",
+    "aboutTitle": "Sobre o kolam",
+    "about": "O kolam é uma prática viva de Tamil Nadu e de todo o sul da Índia: desenhos feitos à mão no chão, muitas vezes na entrada de uma casa, com farinha branca ou calcário em pó. Muitos começam com uma grade de pontos, chamados pulli, e são desenhados de memória; para muitas das pessoas que os desenham, o kolam tem significado religioso além de ornamental. Esta ferramenta desenha no espírito do kolam de pontos, no computador. Ela não substitui a mão, a prática nem o que um kolam significa para quem o desenha.",
+    "tiles": "Kolam",
+    "form": "Forma",
+    "forms": {
+      "sikku": "Sikku kolam",
+      "pulli": "Pulli kolam",
+      "kambi": "Kambi kolam"
+    },
+    "formNotes": {
+      "sikku": "Uma única linha contínua contorna cada ponto e se fecha sobre si mesma, cruzando entre vizinhos.",
+      "pulli": "Pulli significa ponto. Aqui, pétalas curvas unem pontos vizinhos até que todos estejam ligados.",
+      "kambi": "Linhas fechadas contornam pontos isolados e grupos de pontos sem se cruzar, cada linha por vez na cor da linha ou de destaque."
+    },
+    "grid": "Grade de pontos",
+    "grids": {
+      "square": "Quadrada",
+      "diamond": "Em losango",
+      "hexagonal": "Hexagonal"
+    },
+    "size": "Pontos na largura",
+    "rule": "Regra das peças",
+    "rules": {
+      "symmetric": "Simétrica",
+      "random": "Aleatória com semente"
+    },
+    "ruleNote": "A simétrica desenha um kolam completo em cada repetição, girado em torno do centro. A aleatória com semente deixa a linha atravessar as bordas da repetição.",
+    "line": "Estilo de linha",
+    "lines": {
+      "single": "Simples",
+      "double": "Dupla"
+    },
+    "showDots": "Mostrar pontos",
+    "weight": "Espessura do traço",
+    "seed": "Semente",
+    "shuffle": "Nova semente",
+    "colors": "Cores",
+    "background": "Fundo",
+    "lineColor": "Linha",
+    "accent": "Pontos",
+    "accentNote": "Os pontos usam a terceira cor. Em um kambi kolam, uma a cada duas linhas fechadas também.",
+    "print": "Impressão",
+    "repeatWidth": "Largura da repetição",
+    "downloadPdf": "Baixar PDF para imprimir",
+    "previewAlt": "Prévia da repetição do kolam",
+    "previewNote": "Duas repetições lado a lado, para mostrar a emenda. Cada repetição tem {dots} pontos e mede {width}\" x {height}\".",
+    "loopsNote": "Linhas fechadas em uma repetição: {loops}."
+  },
+  "it": {
+    "metaTitle": "Generatore di kolam: ripetizioni continue di sikku, pulli e kambi kolam",
+    "metaDesc": "Disegna una ripetizione continua di kolam attorno a una griglia di punti: la linea unica di un sikku kolam, i punti uniti di un pulli kolam o le linee chiuse di un kambi kolam. Scegli una griglia quadrata, a rombi o esagonale, poi scarica SVG, PNG o PDF.",
+    "h1": "Kolam",
+    "lede": "Disegna un kolam attorno a una griglia di punti, come ripetizione continua. Scegli una forma, una griglia e i tuoi colori, poi scarica la ripetizione o stampala.",
+    "aboutTitle": "Il kolam",
+    "about": "Il kolam è una pratica viva del Tamil Nadu e di tutto il sud dell'India: disegni tracciati a mano sul suolo, spesso all'ingresso di una casa, con farina bianca o calcare in polvere. Molti cominciano da una griglia di punti, detti pulli, e si disegnano a memoria; per molte delle persone che li tracciano, il kolam ha un significato religioso oltre che ornamentale. Questo strumento disegna nello spirito del kolam a punti, al computer. Non sostituisce la mano, la pratica né ciò che un kolam significa per chi lo traccia.",
+    "tiles": "Kolam",
+    "form": "Forma",
+    "forms": {
+      "sikku": "Sikku kolam",
+      "pulli": "Pulli kolam",
+      "kambi": "Kambi kolam"
+    },
+    "formNotes": {
+      "sikku": "Un'unica linea continua gira attorno a ogni punto e si richiude su sé stessa, incrociandosi tra punti vicini.",
+      "pulli": "Pulli significa punto. Qui petali curvi uniscono i punti vicini finché tutti sono collegati.",
+      "kambi": "Linee chiuse girano attorno a punti singoli e a gruppi di punti senza incrociarsi, ogni linea a turno nel colore della linea o d'accento."
+    },
+    "grid": "Griglia di punti",
+    "grids": {
+      "square": "Quadrata",
+      "diamond": "A rombi",
+      "hexagonal": "Esagonale"
+    },
+    "size": "Punti in larghezza",
+    "rule": "Regola delle tessere",
+    "rules": {
+      "symmetric": "Simmetrica",
+      "random": "Casuale con seme"
+    },
+    "ruleNote": "La simmetrica disegna un kolam completo in ogni ripetizione, ruotato attorno al centro. La casuale con seme lascia che la linea attraversi i bordi della ripetizione.",
+    "line": "Stile della linea",
+    "lines": {
+      "single": "Singola",
+      "double": "Doppia"
+    },
+    "showDots": "Mostra i punti",
+    "weight": "Spessore del tratto",
+    "seed": "Seme",
+    "shuffle": "Nuovo seme",
+    "colors": "Colori",
+    "background": "Fondo",
+    "lineColor": "Linea",
+    "accent": "Punti",
+    "accentNote": "I punti usano il terzo colore. In un kambi kolam, anche una linea chiusa su due.",
+    "print": "Stampa",
+    "repeatWidth": "Larghezza della ripetizione",
+    "downloadPdf": "Scarica il PDF da stampare",
+    "previewAlt": "Anteprima della ripetizione del kolam",
+    "previewNote": "Due ripetizioni affiancate, per mostrare la giunzione. Ogni ripetizione ha {dots} punti e misura {width}\" x {height}\".",
+    "loopsNote": "Linee chiuse in una ripetizione: {loops}."
+  },
+  "nl": {
+    "metaTitle": "Kolam-maker: naadloze herhalingen van sikku-, pulli- en kambi-kolam",
+    "metaDesc": "Teken een naadloze kolam-herhaling rond een raster van stippen: de ene lijn van een sikku-kolam, de verbonden stippen van een pulli-kolam of de gesloten lijnen van een kambi-kolam. Kies een vierkant, ruitvormig of zeshoekig raster en download SVG, PNG of PDF.",
+    "h1": "Kolam",
+    "lede": "Teken een kolam rond een raster van stippen, als naadloze herhaling. Kies een vorm, een raster en je kleuren en download de herhaling of print hem.",
+    "aboutTitle": "Over kolam",
+    "about": "Kolam is een levende praktijk in Tamil Nadu en heel Zuid-India: tekeningen die met de hand op de grond worden gemaakt, vaak bij de ingang van een huis, met wit meel of kalksteenpoeder. Veel ervan beginnen met een raster van stippen, pulli genoemd, en worden uit het hoofd getekend; voor veel mensen die ze tekenen heeft kolam naast een sierende ook een religieuze betekenis. Dit hulpmiddel tekent in de geest van de stippenkolam op een computer. Het vervangt de hand niet, en ook niet de praktijk of wat een kolam betekent voor wie hem tekent.",
+    "tiles": "Kolam",
+    "form": "Vorm",
+    "forms": {
+      "sikku": "Sikku-kolam",
+      "pulli": "Pulli-kolam",
+      "kambi": "Kambi-kolam"
+    },
+    "formNotes": {
+      "sikku": "Eén doorlopende lijn loopt om elke stip en sluit zich, en kruist zichzelf tussen buren.",
+      "pulli": "Pulli betekent stip. Hier verbinden gebogen bloemblaadjes naburige stippen tot alle stippen verbonden zijn.",
+      "kambi": "Gesloten lijnen lopen om losse stippen en groepjes stippen zonder te kruisen, elke lijn om de beurt in de lijn- of accentkleur."
+    },
+    "grid": "Stippenraster",
+    "grids": {
+      "square": "Vierkant",
+      "diamond": "Ruitvormig",
+      "hexagonal": "Zeshoekig"
+    },
+    "size": "Stippen in de breedte",
+    "rule": "Tegelregel",
+    "rules": {
+      "symmetric": "Symmetrisch",
+      "random": "Willekeurig met seed"
+    },
+    "ruleNote": "Symmetrisch tekent in elke herhaling één afgeronde kolam, gedraaid om het midden. Willekeurig met seed laat de lijn over de randen van de herhaling lopen.",
+    "line": "Lijnstijl",
+    "lines": {
+      "single": "Enkel",
+      "double": "Dubbel"
+    },
+    "showDots": "Stippen tonen",
+    "weight": "Lijndikte",
+    "seed": "Seed",
+    "shuffle": "Nieuwe seed",
+    "colors": "Kleuren",
+    "background": "Ondergrond",
+    "lineColor": "Lijn",
+    "accent": "Stippen",
+    "accentNote": "De stippen krijgen de derde kleur. In een kambi-kolam ook elke tweede gesloten lijn.",
+    "print": "Printen",
+    "repeatWidth": "Breedte van de herhaling",
+    "downloadPdf": "Printbare pdf downloaden",
+    "previewAlt": "Voorbeeld van de kolam-herhaling",
+    "previewNote": "Twee herhalingen naast elkaar, om de aansluiting te tonen. Elke herhaling heeft {dots} stippen en is {width}\" x {height}\".",
+    "loopsNote": "Gesloten lijnen in één herhaling: {loops}."
+  }
+}

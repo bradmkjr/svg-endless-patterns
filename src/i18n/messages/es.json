@@ -243,17 +243,35 @@
         "output": "SVG o PNG en color, página para colorear y PDF imprimible.",
         "explore": "Crear un diseño radial"
       },
+      "kaleidoscope": {
+        "title": "Caleidoscopios",
+        "text": "Pon cuentas, vidrio o uno de los patrones de este sitio entre dos, tres o cuatro espejos, y gíralo en vivo con un dial.",
+        "output": "Repeticiones continuas en SVG y PNG, la imagen redonda y un PDF para imprimir.",
+        "explore": "Gira un caleidoscopio"
+      },
       "girih": {
         "title": "Estrellas geométricas y girih",
         "text": "Crea girih auténtico con sus cinco piezas, o patrones de estrellas sobre polígonos regulares, con tu simetría, tipo de estrella, grosor de línea y colores.",
         "output": "Repeticiones continuas en SVG y PNG, una plantilla con puentes, un panel de pared y un PDF para imprimir.",
         "explore": "Explorar estrellas geométricas y girih"
       },
+      "chineseLattice": {
+        "title": "Celosía china",
+        "text": "Celosías de ventana con barras gruesas sobre seis estructuras, de la greca cuadrada al hielo agrietado, con marcos anidados en las aberturas.",
+        "output": "Repetición continua en SVG y PNG, un panel enmarcado y un PDF imprimible.",
+        "explore": "Crear una celosía"
+      },
       "truchet": {
         "title": "Azulejos de Truchet",
         "text": "Gira un azulejo sencillo sobre una cuadrícula para crear un patrón continuo de arcos, líneas o triángulos.",
         "output": "Repetición continua en SVG y PNG, y PDF imprimible.",
         "explore": "Crear un patrón"
+      },
+      "waves": {
+        "title": "Patrones de ondas",
+        "text": "Filas de ondas seno, cuadradas, tangentes y más, muaré y figuras de Lissajous, en líneas o franjas rellenas, en una repetición continua.",
+        "output": "Repetición continua en SVG y PNG, y un PDF imprimible.",
+        "explore": "Crear un patrón de ondas"
       },
       "nature": {
         "title": "Patrones naturales",

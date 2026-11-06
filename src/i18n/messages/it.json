@@ -243,17 +243,35 @@
         "output": "SVG o PNG a colori, pagina da colorare e PDF stampabile.",
         "explore": "Crea un disegno radiale"
       },
+      "kaleidoscope": {
+        "title": "Caleidoscopi",
+        "text": "Metti perline, vetro o uno dei motivi di questo sito tra due, tre o quattro specchi e ruotalo dal vivo con una manopola.",
+        "output": "Ripetizioni continue in SVG e PNG, l'immagine rotonda e un PDF da stampare.",
+        "explore": "Ruota un caleidoscopio"
+      },
       "girih": {
         "title": "Stelle geometriche e girih",
         "text": "Costruisci veri girih con le loro cinque piastrelle, o motivi di stelle su poligoni regolari, con la tua simmetria, tipo di stella, spessore della linea e colori.",
         "output": "Motivi continui in SVG e PNG, uno stencil con ponti, un pannello da parete e un PDF stampabile.",
         "explore": "Esplora stelle geometriche e girih"
       },
+      "chineseLattice": {
+        "title": "Grata cinese",
+        "text": "Grate da finestra con barre spesse su sei strutture, dalla greca quadrata al ghiaccio incrinato, con cornici annidate nelle aperture.",
+        "output": "Modulo senza giunture in SVG e PNG, un pannello incorniciato e un PDF da stampare.",
+        "explore": "Crea una grata"
+      },
       "truchet": {
         "title": "Piastrelle di Truchet",
         "text": "Ruota una semplice piastrella su una griglia per creare un motivo continuo di archi, linee o triangoli.",
         "output": "Motivo continuo in SVG e PNG e un PDF stampabile.",
         "explore": "Crea un motivo"
+      },
+      "waves": {
+        "title": "Motivi a onde",
+        "text": "File di onde seno, quadre, tangenti e altre, moiré e figure di Lissajous, a linee o a fasce piene, in una ripetizione continua.",
+        "output": "Ripetizione continua in SVG e PNG, e un PDF da stampare.",
+        "explore": "Crea un motivo a onde"
       },
       "nature": {
         "title": "Motivi naturali",

@@ -243,17 +243,35 @@
         "output": "Farbiges SVG oder PNG, Ausmalbild und druckbares PDF.",
         "explore": "Radialmuster erstellen"
       },
+      "kaleidoscope": {
+        "title": "Kaleidoskope",
+        "text": "Lege Perlen, Glas oder ein Muster dieser Seite zwischen zwei, drei oder vier Spiegel und drehe es live mit einem Drehregler.",
+        "output": "Nahtlose SVG- und PNG-Rapporte, das runde Bild und ein druckbares PDF.",
+        "explore": "Ein Kaleidoskop drehen"
+      },
       "girih": {
         "title": "Geometrische Sterne und Girih",
         "text": "Erstelle echtes Girih aus seinen fünf Fliesen oder Sternmuster auf regelmäßigen Vielecken, mit eigener Symmetrie, Sternart, Linienstärke und eigenen Farben.",
         "output": "Nahtlose Rapporte als SVG und PNG, eine Schablone mit Stegen, eine Wandtafel und ein druckbares PDF.",
         "explore": "Geometrische Sterne und Girih entdecken"
       },
+      "chineseLattice": {
+        "title": "Chinesisches Gitterwerk",
+        "text": "Fenstergitter aus kräftigen Stäben auf sechs Grundgerüsten, vom quadratischen Mäander bis zum Eisbruch, mit Rahmen in den Öffnungen.",
+        "output": "Nahtloser Rapport als SVG und PNG, eine gerahmte Tafel und ein druckbares PDF.",
+        "explore": "Gitter entwerfen"
+      },
       "truchet": {
         "title": "Truchet-Kacheln",
         "text": "Drehe eine einfache Kachel auf einem Raster, um ein nahtloses Muster aus Bögen, Linien oder Dreiecken zu erstellen.",
         "output": "Nahtloser Rapport als SVG und PNG sowie druckbares PDF.",
         "explore": "Muster erstellen"
+      },
+      "waves": {
+        "title": "Wellenmuster",
+        "text": "Reihen aus Sinus-, Rechteck-, Tangens- und weiteren Wellen, Moiré und Lissajous-Figuren, als Linien oder gefüllte Bänder, in einem nahtlosen Rapport.",
+        "output": "Nahtloser Rapport als SVG und PNG und ein druckbares PDF.",
+        "explore": "Wellenmuster erstellen"
       },
       "nature": {
         "title": "Naturmuster",

@@ -9,12 +9,16 @@ import type { MandalaMotif, MandalaRequest, MandalaResult } from "./mandalaTypes
 import type { KaleidoscopeRequest, KaleidoscopeResult } from "./kaleidoscopeTypes";
 import type { StainedGlassRequest, StainedGlassResult } from "./stainedGlassTypes";
 import type { GirihRequest, GirihResult } from "./girihTypes";
+import type { ChineseLatticeRequest, ChineseLatticeResult } from "./chineseLatticeTypes";
 import type { TessellationOptions, TessellationRequest, TessellationResult } from "./tessellationTypes";
 import type { CelticKnotRequest, CelticKnotResult } from "./celticKnotTypes";
 import type { SashikoRequest, SashikoResult } from "./sashikoTypes";
 import type { TieDyeRequest, TieDyeResult } from "./tieDyeTypes";
 import type { TartanRequest, TartanResult } from "./tartanTypes";
 import type { TruchetRequest, TruchetResult } from "./truchetTypes";
+import type { RdRequest, RdResult } from "./reactionDiffusionTypes";
+import type { KolamRequest, KolamResult } from "./kolamTypes";
+import type { WavesRequest, WavesResult } from "./wavesTypes";
 import type { NatureRequest, NatureResult } from "./natureTypes";
 import { mazeApiGet } from "./mazeApi";
 import type { CheckerboardRequest, CheckerboardResult } from "./checkerboardTypes";
@@ -32,6 +36,9 @@ export type { ColorworkTechnique, ColorworkWeight, CrochetColorworkRequest, Croc
 export type { LifeColors, LifeNeighborhood, LifePattern, LifeRequest, LifeResult } from "./lifeTypes";
 export type { FractalColors, FractalRequest, FractalResult, FractalType } from "./fractalTypes";
 export type { TruchetArrangement, TruchetColors, TruchetRequest, TruchetResult, TruchetStyle } from "./truchetTypes";
+export type { RdColors, RdDirection, RdPreset, RdRequest, RdResult, RdStyle } from "./reactionDiffusionTypes";
+export type { KolamColors, KolamForm, KolamGrid, KolamLine, KolamRequest, KolamResult, KolamRule } from "./kolamTypes";
+export type { WaveColors, WaveFill, WaveFunction, WaveMix, WavesRequest, WavesResult } from "./wavesTypes";
 export type { NatureColors, NatureLayout, NatureMotif, NaturePacking, NatureRequest, NatureResult, NatureStyle } from "./natureTypes";
 export type { TartanColor, TartanRequest, TartanResult, TartanStripe } from "./tartanTypes";
 export type { TieDyeGuide, TieDyeGuideLabel, TieDyeGuideShape, TieDyeLayer, TieDyeMix, TieDyeRequest, TieDyeResult, TieDyeTechnique } from "./tieDyeTypes";
@@ -39,6 +46,7 @@ export type { SashikoMotif, SashikoRequest, SashikoResult } from "./sashikoTypes
 export type { CelticBreakPattern, CelticInterlace, CelticKnotRequest, CelticKnotResult, CelticStrand } from "./celticKnotTypes";
 export type { TessellationColors, TessellationMotif, TessellationOptions, TessellationRequest, TessellationResult, GroupId } from "./tessellationTypes";
 export type { GirihColors, GirihPart, GirihRequest, GirihResult, GirihStar, GirihSymmetry } from "./girihTypes";
+export type { ChineseLatticeRequest, ChineseLatticeResult, LatticeColors, LatticeEdge, LatticeFramework } from "./chineseLatticeTypes";
 export type { StainedGlassColor, StainedGlassLayout, StainedGlassPiece, StainedGlassRequest, StainedGlassResult } from "./stainedGlassTypes";
 export type { MandalaMotif, MandalaRequest, MandalaResult, MandalaRing, MandalaRingSpec, MandalaStyle } from "./mandalaTypes";
 export type { KaleidoscopeMirrors, KaleidoscopeRequest, KaleidoscopeResult, KaleidoscopeSource } from "./kaleidoscopeTypes";
@@ -158,6 +166,14 @@ export async function generateGirihPdf(request: GirihRequest): Promise<Uint8Arra
   return apiPdf("/girih/pdf", request);
 }
 
+export async function generateChineseLattice(request: ChineseLatticeRequest): Promise<ChineseLatticeResult> {
+  return apiJson("/chinese-lattice", request);
+}
+
+export async function generateChineseLatticePdf(request: ChineseLatticeRequest): Promise<Uint8Array> {
+  return apiPdf("/chinese-lattice/pdf", request);
+}
+
 export async function generateKnitColorwork(request: KnitColorworkRequest): Promise<KnitColorworkResult> {
   const response = await mazeApiGet("/knit-colorwork", request);
   return response.json() as Promise<KnitColorworkResult>;
@@ -256,6 +272,30 @@ export async function generateTruchet(request: TruchetRequest): Promise<TruchetR
 
 export async function generateTruchetPdf(request: TruchetRequest): Promise<Uint8Array> {
   return apiPdf("/truchet/pdf", request);
+}
+
+export async function generateReactionDiffusion(request: RdRequest): Promise<RdResult> {
+  return apiJson("/reaction-diffusion", request);
+}
+
+export async function generateReactionDiffusionPdf(request: RdRequest): Promise<Uint8Array> {
+  return apiPdf("/reaction-diffusion/pdf", request);
+}
+
+export async function generateKolam(request: KolamRequest): Promise<KolamResult> {
+  return apiJson("/kolam", request);
+}
+
+export async function generateKolamPdf(request: KolamRequest): Promise<Uint8Array> {
+  return apiPdf("/kolam/pdf", request);
+}
+
+export async function generateWaves(request: WavesRequest): Promise<WavesResult> {
+  return apiJson("/waves", request);
+}
+
+export async function generateWavesPdf(request: WavesRequest): Promise<Uint8Array> {
+  return apiPdf("/waves/pdf", request);
 }
 
 export async function generateNature(request: NatureRequest): Promise<NatureResult> {

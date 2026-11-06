@@ -13,7 +13,9 @@ import { parseSashikoState, serializeSashikoState } from "./sashikoState";
 import { parseCelticKnotState, serializeCelticKnotState } from "./celticKnotState";
 import { parseStainedGlassState, serializeStainedGlassState } from "./stainedGlassState";
 import { parseMandalaState, serializeMandalaState } from "./mandalaState";
+import { parseKaleidoscopeState, serializeKaleidoscopeState } from "./kaleidoscopeState";
 import { parseGirihState, serializeGirihState } from "./girihState";
+import { parseChineseLatticeState, serializeChineseLatticeState } from "./chineseLatticeState";
 import { parseKnitColorworkState, serializeKnitColorworkState } from "./knitColorworkState";
 import { parseCrochetColorworkState, serializeCrochetColorworkState } from "./crochetColorworkState";
 import { parseCheckerboardState, serializeCheckerboardState } from "./checkerboardState";
@@ -22,6 +24,8 @@ import { parsePuzzleState, serializePuzzleState } from "./puzzleState";
 import { parseFractalState, serializeFractalState } from "./fractalState";
 import { parseTieDyeState, serializeTieDyeState } from "./tieDyeState";
 import { parseTruchetState, serializeTruchetState } from "./truchetState";
+import { parseRdState, serializeRdState } from "./reactionDiffusionState";
+import { parseWavesState, serializeWavesState } from "./wavesState";
 import { parseNatureState, serializeNatureState } from "./natureState";
 import { parseMazeState, serializeMazeState } from "./mazeState";
 import { parseTartanState, serializeTartanState } from "./tartanState";
@@ -31,7 +35,7 @@ const sorted = (query: string) => [...new URLSearchParams(query).entries()].map(
 async function knownPaths() {
   const posts = await getPosts();
   return new Set([
-    "/", ...PREFIXED_LOCALES.map((l) => `/${l}/`), "/tartans/", "/truchet/", "/nature-patterns/", "/tie-dye/", "/fractals/", "/life-patterns/", "/checkerboards/", "/crochet/colorwork/", "/knitting/colorwork/", "/mazes/", "/paper-puzzles/", "/girih/", "/mandalas/", "/stained-glass/", "/celtic-knots/", "/sashiko/", "/tessellations/", "/cross-stitch/", "/needlepoint/", "/blocks/", "/knitting/", "/crochet/", "/patterns/", "/palettes/", "/about/", "/acknowledgements/", "/blog/", "/changelog/",
+    "/", ...PREFIXED_LOCALES.map((l) => `/${l}/`), "/tartans/", "/truchet/", "/turing-patterns/", "/waves/", "/nature-patterns/", "/tie-dye/", "/fractals/", "/life-patterns/", "/checkerboards/", "/crochet/colorwork/", "/knitting/colorwork/", "/mazes/", "/paper-puzzles/", "/girih/", "/chinese-lattice/", "/mandalas/", "/kaleidoscopes/", "/stained-glass/", "/celtic-knots/", "/sashiko/", "/tessellations/", "/cross-stitch/", "/needlepoint/", "/blocks/", "/knitting/", "/crochet/", "/patterns/", "/palettes/", "/about/", "/acknowledgements/", "/blog/", "/changelog/",
     ...(await getBlocks()).map((b) => `/blocks/${b.slug}/`),
     ...(await getStitchPatterns("knit")).map((s) => `/knitting/${s.slug}/`),
     ...(await getStitchPatterns("crochet")).map((s) => `/crochet/${s.slug}/`),
@@ -87,8 +91,13 @@ describe("blog posts", () => {
       expect(sorted(serializeStainedGlassState(parseStainedGlassState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
     } else if (sample.kind === "mandala") {
       expect(sorted(serializeMandalaState(parseMandalaState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
+    } else if (sample.kind === "kaleidoscope") {
+      expect(sorted(serializeKaleidoscopeState(parseKaleidoscopeState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
+      expect(new URLSearchParams(sample.query).has("seed")).toBe(false);
     } else if (sample.kind === "girih") {
       expect(sorted(serializeGirihState(parseGirihState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
+    } else if (sample.kind === "chineseLattice") {
+      expect(sorted(serializeChineseLatticeState(parseChineseLatticeState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
     } else if (sample.kind === "knitColorwork") {
       expect(sorted(serializeKnitColorworkState(parseKnitColorworkState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
     } else if (sample.kind === "crochetColorwork") {
@@ -108,8 +117,12 @@ describe("blog posts", () => {
       expect(sorted(serializeFractalState(parseFractalState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
     } else if (sample.kind === "tieDye") {
       expect(sorted(serializeTieDyeState(parseTieDyeState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
+    } else if (sample.kind === "reactionDiffusion") {
+      expect(sorted(serializeRdState(parseRdState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
     } else if (sample.kind === "truchet") {
       expect(sorted(serializeTruchetState(parseTruchetState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
+    } else if (sample.kind === "waves") {
+      expect(sorted(serializeWavesState(parseWavesState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
     } else if (sample.kind === "nature") {
       expect(sorted(serializeNatureState(parseNatureState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
     } else if (sample.kind === "maze") {

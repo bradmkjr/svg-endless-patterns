@@ -5,10 +5,14 @@ import { generateCrossStitch } from "./generator";
 import { parseCrossStitchState } from "./crossStitchState";
 import { generateMandala } from "./generator";
 import { parseMandalaState } from "./mandalaState";
+import { generateKaleidoscope } from "./generator";
+import { parseKaleidoscopeState } from "./kaleidoscopeState";
 import { generateStainedGlass } from "./generator";
 import { parseStainedGlassState } from "./stainedGlassState";
 import { generateGirih } from "./generator";
 import { parseGirihState } from "./girihState";
+import { generateChineseLattice } from "./generator";
+import { parseChineseLatticeState } from "./chineseLatticeState";
 import { generateTessellation } from "./generator";
 import { parseTessellationState } from "./tessellationState";
 import { generateCelticKnot } from "./generator";
@@ -21,6 +25,10 @@ import { generateTartan } from "./generator";
 import { parseTartanState } from "./tartanState";
 import { generateTruchet } from "./generator";
 import { parseTruchetState } from "./truchetState";
+import { generateReactionDiffusion } from "./generator";
+import { parseRdState } from "./reactionDiffusionState";
+import { generateWaves } from "./generator";
+import { parseWavesState } from "./wavesState";
 import { generateNature } from "./generator";
 import { parseNatureState } from "./natureState";
 import { generatePuzzle } from "./generator";
@@ -53,6 +61,8 @@ const DRAW: Partial<Record<PostSample["kind"], Draw>> = {
   puzzle: async (p, locale, slug) => (await generatePuzzle(parsePuzzleState(withOption("puzzle", slug, p), locale))) as Svgs,
   life: async (p, locale) => generateLife(parseLifeState(p, locale)),
   truchet: async (p, locale) => generateTruchet(parseTruchetState(p, locale)),
+  reactionDiffusion: async (p, locale) => generateReactionDiffusion(parseRdState(p, locale)),
+  waves: async (p, locale) => generateWaves(parseWavesState(p, locale)),
   nature: async (p, locale) => generateNature(parseNatureState(p, locale)),
   tartan: async (p, locale) => generateTartan(parseTartanState(p, locale)),
   tieDye: async (p, locale) => generateTieDye(parseTieDyeState(p, locale)),
@@ -60,8 +70,10 @@ const DRAW: Partial<Record<PostSample["kind"], Draw>> = {
   celtic: async (p, locale) => generateCelticKnot(parseCelticKnotState(p, locale)),
   tessellation: async (p, locale) => generateTessellation(parseTessellationState(p, locale)),
   girih: async (p, locale) => generateGirih(parseGirihState(p, locale)),
+  chineseLattice: async (p, locale) => generateChineseLattice(parseChineseLatticeState(p, locale)),
   stainedGlass: async (p, locale) => generateStainedGlass(parseStainedGlassState(p, locale)),
   mandala: async (p, locale) => generateMandala(parseMandalaState(p, locale)),
+  kaleidoscope: async (p, locale) => (await generateKaleidoscope(parseKaleidoscopeState(p, locale))) as Svgs,
   crossStitch: async (p, locale) => generateCrossStitch(parseCrossStitchState(p, locale)),
   needlepoint: async (p, locale) => generateNeedlepoint(parseNeedlepointState(p, locale)),
 };

@@ -3,8 +3,10 @@ import { describe, expect, it } from "vitest";
 import { parseCelticKnotState, serializeCelticKnotState } from "./celticKnotState";
 import { parseCrossStitchState, serializeCrossStitchState } from "./crossStitchState";
 import { parseGirihState, serializeGirihState } from "./girihState";
+import { parseChineseLatticeState, serializeChineseLatticeState } from "./chineseLatticeState";
 import { parseNeedlepointState, serializeNeedlepointState } from "./needlepointState";
 import { parseMandalaState, serializeMandalaState } from "./mandalaState";
+import { parseKaleidoscopeState, serializeKaleidoscopeState } from "./kaleidoscopeState";
 import { parseSashikoState, serializeSashikoState } from "./sashikoState";
 import { parseStainedGlassState, serializeStainedGlassState } from "./stainedGlassState";
 import { parseTessellationState, serializeTessellationState } from "./tessellationState";
@@ -20,15 +22,20 @@ import { parsePuzzleState, serializePuzzleState } from "./puzzleState";
 import { parseFractalState, serializeFractalState } from "./fractalState";
 import { parseTieDyeState, serializeTieDyeState } from "./tieDyeState";
 import { parseTruchetState, serializeTruchetState } from "./truchetState";
+import { parseRdState, serializeRdState } from "./reactionDiffusionState";
+import { parseWavesState, serializeWavesState } from "./wavesState";
 import { parseNatureState, serializeNatureState } from "./natureState";
 
 const TOOLS = Object.keys(TOOL_OPTIONS) as ToolId[];
 const LOCALES = ["en", "es", "fr", "de", "pt", "it", "nl"] as const;
 const ROUND_TRIP: Record<ToolId, (params: URLSearchParams) => string> = {
   truchet: (p) => serializeTruchetState(parseTruchetState(p)),
+  reactionDiffusion: (p) => serializeRdState(parseRdState(p)),
+  waves: (p) => serializeWavesState(parseWavesState(p)),
   nature: (p) => serializeNatureState(parseNatureState(p)),
   tessellation: (p) => serializeTessellationState(parseTessellationState(p)),
   girih: (p) => serializeGirihState(parseGirihState(p)),
+  chineseLattice: (p) => serializeChineseLatticeState(parseChineseLatticeState(p)),
   sashiko: (p) => serializeSashikoState(parseSashikoState(p)),
   celticKnot: (p) => serializeCelticKnotState(parseCelticKnotState(p)),
   stainedGlass: (p) => serializeStainedGlassState(parseStainedGlassState(p)),
@@ -42,6 +49,7 @@ const ROUND_TRIP: Record<ToolId, (params: URLSearchParams) => string> = {
   tieDye: (p) => serializeTieDyeState(parseTieDyeState(p)),
   maze: (p) => serializeMazeState(parseMazeState(p)),
   mandala: (p) => serializeMandalaState(parseMandalaState(p)),
+  kaleidoscope: (p) => serializeKaleidoscopeState(parseKaleidoscopeState(p)),
   puzzle: (p) => serializePuzzleState(parsePuzzleState(p)),
 };
 
@@ -101,7 +109,7 @@ describe("API thumbnails", () => {
 });
 
 describe("the library's fill", () => {
-  it.each(["truchet", "stainedGlass", "girih", "tieDye", "nature"] as const)("%s offers at least six choices, each with a page and an API thumbnail", (tool) => {
+  it.each(["truchet", "stainedGlass", "girih", "tieDye", "nature", "reactionDiffusion"] as const)("%s offers at least six choices, each with a page and an API thumbnail", (tool) => {
     expect(TOOL_OPTIONS[tool].options.length).toBeGreaterThanOrEqual(6);
     for (const { slug } of TOOL_OPTIONS[tool].options) {
       expect(optionPath(tool, slug)).toContain(`/${slug}/`);

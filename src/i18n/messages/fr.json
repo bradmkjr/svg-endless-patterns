@@ -243,17 +243,35 @@
         "output": "SVG ou PNG en couleur, page à colorier et PDF à imprimer.",
         "explore": "Créer un motif radial"
       },
+      "kaleidoscope": {
+        "title": "Kaléidoscopes",
+        "text": "Placez des perles, du verre ou un motif de ce site entre deux, trois ou quatre miroirs, et tournez-le en direct avec un cadran.",
+        "output": "Raccords SVG et PNG sans couture, l'image ronde et un PDF à imprimer.",
+        "explore": "Tourner un kaléidoscope"
+      },
       "girih": {
         "title": "Étoiles géométriques et girih",
         "text": "Créez un véritable girih à partir de ses cinq tuiles, ou des motifs d'étoiles sur des polygones réguliers, avec votre symétrie, votre type d'étoile, votre épaisseur de ligne et vos couleurs.",
         "output": "Raccords continus en SVG et PNG, pochoir à ponts, panneau mural et PDF à imprimer.",
         "explore": "Explorer les étoiles géométriques et le girih"
       },
+      "chineseLattice": {
+        "title": "Treillis chinois",
+        "text": "Treillis de fenêtre en barres épaisses sur six structures, de la grecque carrée à la glace craquelée, avec des cadres imbriqués dans les ouvertures.",
+        "output": "Raccord sans couture en SVG et PNG, un panneau encadré et un PDF imprimable.",
+        "explore": "Créer un treillis"
+      },
       "truchet": {
         "title": "Tuiles de Truchet",
         "text": "Faites pivoter une tuile simple sur une grille pour créer un motif continu d'arcs, de lignes ou de triangles.",
         "output": "Raccord continu en SVG et PNG, et PDF à imprimer.",
         "explore": "Créer un motif"
+      },
+      "waves": {
+        "title": "Motifs d'ondes",
+        "text": "Des rangées d'ondes sinus, carrées, tangentes et autres, moirés et figures de Lissajous, en lignes ou en bandes pleines, dans un raccord continu.",
+        "output": "Raccord continu en SVG et PNG, et un PDF à imprimer.",
+        "explore": "Créer un motif d'ondes"
       },
       "nature": {
         "title": "Motifs nature",

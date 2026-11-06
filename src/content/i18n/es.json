@@ -1,5 +1,70 @@
 {
   "posts": {
+    "chinese-lattice-patterns": {
+      "title": "Celosía china, en barras gruesas que se repiten",
+      "summary": "Un nuevo creador dibuja celosías chinas de ventana sobre seis estructuras, de la greca cuadrada al hielo agrietado, con marcos anidados en las aberturas y una repetición que siempre encaja con sus vecinas.",
+      "blocks": [
+        "El nuevo [creador de celosías chinas](/chinese-lattice/) dibuja rejas de ventana con barras gruesas sobre seis estructuras: greca cuadrada, octógonos y cuadrados, hexágonos, diagonal, marcos entrelazados y [hielo agrietado](/chinese-lattice/ice-ray/). Ajusta el ancho de barra y cuántas celdas caben en una repetición, anida hasta tres marcos en cada abertura, elige un marco macizo o un borde abierto y descarga una repetición continua, un panel o un PDF imprimible.",
+        "Ejemplos para empezar",
+        [
+          "Hielo agrietado con un marco anidado, en un marco macizo",
+          "Octógonos y cuadrados, con dos marcos de profundidad",
+          "Una greca cuadrada más fina, tres celdas por repetición",
+          "Marcos entrelazados en barras finas, con borde abierto",
+          "Hexágonos, con tres marcos de profundidad",
+          "Hielo más fino, sin marcos anidados"
+        ],
+        "Cómo se unen las barras",
+        "Cada estructura es un conjunto de piezas que llenan el plano, y una barra es donde se tocan dos piezas. Cada abertura es su pieza encogida medio ancho de barra, así que esquinas, cruces y uniones en T quedan ingletadas limpiamente en cualquier ángulo, y como las piezas se repiten, una barra que sale por un lado de la repetición vuelve a entrar exactamente en el mismo punto del otro. Los marcos anidados quedan a cierta distancia dentro de la abertura y se sujetan al marco exterior con barras cortas, para que una celosía recortada no se deshaga.",
+        "Hielo agrietado que aun así se repite",
+        "El hielo agrietado, 冰裂纹 en chino, imita el hielo que se resquebraja en un estanque, así que no tiene una cuadrícula regular. Aquí el hielo se rompe a partir de puntos repartidos sobre una superficie que da la vuelta por sus bordes: cada pedazo es la zona más cercana a un punto, y algunos se agrietan una o dos veces más con un corte recto. Las grietas parecen aleatorias, pero la repetición encaja con sus vecinas sin costura. Cambia la semilla para agrietarlo de nuevo; el creador recuerda tu última semilla en este navegador.",
+        "Fuentes y nombres",
+        "Clasificar la celosía por su estructura y enriquecer los diseños anidando marcos sigue a A Grammar of Chinese Lattice (1937) de Daniel Sheets Dye, citado en los [agradecimientos](/acknowledgements/). Los diseños se construyen a partir de su geometría, sin copiar las figuras del libro. Las etiquetas de grupo de Dye son descripciones, no nombres tradicionales, así que las estructuras llevan nombres sencillos, y solo el hielo agrietado lleva su nombre chino."
+      ]
+    },
+    "kaleidoscopes": {
+      "title": "Caleidoscopios que puedes girar",
+      "summary": "Un nuevo creador de caleidoscopios pone cuentas, vidrio o uno de los patrones de este sitio entre dos, tres o cuatro espejos, y lo gira en vivo con un dial. Las celdas de tres y cuatro espejos se repiten sin fin.",
+      "blocks": [
+        "El nuevo [creador de caleidoscopios](/kaleidoscopes/) pone una imagen entre espejos y te deja girarla. Arrastra el dial, o el control deslizante de al lado, y la fuente gira dentro de su celda de espejos mientras todos los reflejos la siguen al instante. Al soltar, el ángulo pasa al enlace, así que un enlace compartido, el SVG y el PNG, y el PDF para imprimir muestran la imagen en la que te detuviste. Un botón la hace girar sola, y se queda apagado si tu dispositivo pide menos movimiento.",
+        "Hay cinco sistemas de espejos. [Dos espejos](/kaleidoscopes/two-mirror/) en ángulo forman una imagen redonda de 3 a 12 segmentos, como el caleidoscopio que David Brewster patentó en 1817. Tres espejos en un triángulo [60-60-60](/kaleidoscopes/60-60-60/), [45-45-90](/kaleidoscopes/45-45-90/) o [30-60-90](/kaleidoscopes/30-60-90/), o cuatro en un [cuadrado](/kaleidoscopes/square/), son las celdas clásicas cuyos reflejos encajan sin fin, así que traen una repetición continua para cubrir cualquier superficie.",
+        "En la celda puedes repartir cuentas, trozos de vidrio o cintas a partir de una semilla, en tu paleta, o poner uno de los patrones de este sitio, como las [teselas de Truchet](/truchet/) o el [sashiko](/sashiko/), que conservan sus propios colores. Amplía y mueve la fuente para cambiar qué parte captan los espejos. Las fuentes de los ángulos de los espejos están en la página de [agradecimientos](/acknowledgements/).",
+        "Ejemplos para empezar",
+        [
+          "Cuentas en la clásica celda 60-60-60",
+          "Trozos de vidrio entre dos espejos, en ocho segmentos",
+          "Teselas de Truchet en una celda 30-60-90, giradas 45°",
+          "Sashiko al doble de tamaño, en una celda 45-45-90",
+          "Cintas en un cuadrado de cuatro espejos",
+          "Un bloque cabaña de troncos, girado 15°"
+        ],
+        "Qué incluye",
+        [
+          "Dos espejos con 3 a 12 segmentos, y celdas 60-60-60, 45-45-90, 30-60-90 y cuadradas que forman teselados",
+          "Un dial y un control deslizante que giran la imagen en vivo, y un botón de giro que respeta la preferencia de menos movimiento",
+          "Cuentas, trozos de vidrio y cintas a partir de una semilla, u ocho patrones de este sitio como fuente",
+          "Zoom y posición de la fuente, y colores de la biblioteca de paletas",
+          "Una repetición continua en SVG o PNG, la imagen completa y un PDF para imprimir con el ángulo que ves"
+        ]
+      ]
+    },
+    "seamless-wave-patterns": {
+      "title": "Patrones de ondas continuos, del seno a Lissajous",
+      "summary": "Un nuevo creador dibuja filas de ondas seno, tangentes, cuadradas y más, muaré y figuras de Lissajous, en líneas o franjas rellenas, en una repetición cuyos bordes siempre encajan.",
+      "blocks": [
+        "El nuevo [creador de patrones de ondas](/waves/) dibuja filas de ondas con diez funciones: seno, coseno, tangente, cuadrada, triangular, diente de sierra, amortiguada, interferencia, muaré y [figuras de Lissajous](/waves/lissajous/). Dibújalas como líneas o franjas rellenas, suma una segunda onda encima y descarga un SVG o PNG continuo, o imprime un PDF a tamaño real.",
+        "Ejemplos para empezar",
+        [
+          "Ondas seno en franjas rellenas",
+          "Ramas de tangente, cortadas antes de escaparse",
+          "Figuras de Lissajous que trazan 3:4 y se desplazan fila a fila",
+          "Un muaré de 16 líneas sobre 18",
+          "Una onda seno que lleva otra más rápida, con deriva a lo largo de la repetición"
+        ],
+        "Por qué siempre se repite",
+        "Todo ajuste que podría romper la unión se cuenta en ondas completas. Una repetición contiene un número entero de ondas a lo ancho, una segunda onda suma un número entero de las suyas y la deriva desplaza la fase en ondas completas de arriba abajo, así que el borde derecho encaja con el izquierdo y el inferior con el superior. La tangente se va al infinito, así que cada rama se corta donde alcanza tres veces la altura de la onda."
+      ]
+    },
     "spiral-and-cone-checkerboards": {
       "title": "Tableros en espiral y en cono",
       "summary": "El creador de tableros ahora puede enrollar su cuadrícula en una espiral, o ponerla sobre un cono visto desde arriba, en todos los patrones.",
@@ -673,6 +738,27 @@
     }
   },
   "changelog": {
+    "Chinese lattice": {
+      "title": "Celosía china",
+      "items": [
+        "Nuevo creador de celosías chinas: greca cuadrada, octógonos y cuadrados, hexágonos, diagonal, marcos entrelazados y hielo agrietado, en barras gruesas con uniones limpias",
+        "Ancho de barra, densidad de celdas, hasta tres marcos anidados, marco macizo o borde abierto, y un hielo agrietado con semilla que se repite igualmente, con descargas en SVG, PNG y PDF"
+      ]
+    },
+    "Kaleidoscopes": {
+      "title": "Caleidoscopios",
+      "items": [
+        "Se añadió un creador de caleidoscopios con sistemas de dos espejos, cuadrado, 60-60-60, 45-45-90 y 30-60-90",
+        "La fuente gira en vivo con un dial, un control deslizante o un botón de giro, y los enlaces, las descargas y los PDF siguen el ángulo en pantalla"
+      ]
+    },
+    "Wave patterns": {
+      "title": "Patrones de ondas",
+      "items": [
+        "Nuevo creador de patrones de ondas: seno, coseno, tangente, cuadrada, triangular, diente de sierra, amortiguada, interferencia, muaré y figuras de Lissajous",
+        "Líneas o franjas rellenas, con fase, deriva y una segunda onda opcional, en una repetición continua con descargas en SVG, PNG y PDF"
+      ]
+    },
     "Spiral and cone checkerboards": {
       "title": "Tableros en espiral y en cono",
       "items": [

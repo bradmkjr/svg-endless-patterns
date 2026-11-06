@@ -1,5 +1,241 @@
 [
   {
+    "slug": "chinese-lattice-patterns",
+    "title": "Chinese lattice, in thick bars that repeat",
+    "date": "2026-11-05",
+    "summary": "A new maker draws Chinese window lattice on six frameworks, from square fret to cracked ice, with frames nested in the openings and a repeat that always meets its neighbors.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The new [Chinese lattice maker](/chinese-lattice/) draws window-grille lattice in thick bars on six frameworks: square fret, octagons and squares, hexagons, diagonal, interlocking frames and [ice-ray](/chinese-lattice/ice-ray/). Set the bar width and how many cells fit in a repeat, nest up to three frames inside each opening, choose a solid frame or an open edge, then download a seamless repeat, a panel or a printable PDF."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "chineseLattice",
+            "slug": "",
+            "query": "",
+            "view": "panel",
+            "caption": "Ice-ray with one nested frame, in a solid frame"
+          },
+          {
+            "kind": "chineseLattice",
+            "slug": "",
+            "query": "f=octagon-square&nest=2",
+            "view": "panel",
+            "caption": "Octagons and squares, two frames deep"
+          },
+          {
+            "kind": "chineseLattice",
+            "slug": "",
+            "query": "f=square-fret&d=3",
+            "view": "repeat",
+            "caption": "A finer square fret, three cells to a repeat"
+          },
+          {
+            "kind": "chineseLattice",
+            "slug": "",
+            "query": "f=interlocking&bar=4&edge=open",
+            "view": "panel",
+            "caption": "Interlocking frames in thin bars, with an open edge"
+          },
+          {
+            "kind": "chineseLattice",
+            "slug": "",
+            "query": "f=hexagon&nest=3&bar=4",
+            "view": "repeat",
+            "caption": "Hexagons, three frames deep"
+          },
+          {
+            "kind": "chineseLattice",
+            "slug": "",
+            "query": "d=4&nest=0",
+            "view": "repeat",
+            "caption": "Finer ice, with no nested frames"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "How the bars join"
+      },
+      {
+        "type": "paragraph",
+        "text": "Each framework is a set of tiles that fill the plane, and a bar is where two tiles meet. Every opening is its tile moved in by half a bar width, so corners, crossings and T-joints are mitered cleanly at any angle, and because the tiles themselves repeat, a bar leaving one side of the repeat comes back in at exactly the same place on the other. Nested frames sit a gap inside the opening and are tied to the frame outside by short bars, so a cut-out lattice holds together."
+      },
+      {
+        "type": "heading",
+        "text": "Cracked ice that still repeats"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ice-ray, 冰裂纹 in Chinese, imitates ice cracking on a pond, so it has no regular grid. Here the ice is broken from points scattered on a surface that wraps around at its edges: each piece is the area nearest one point, and some pieces are cracked once or twice more by a straight cut. The cracks look random, but the repeat still meets its neighbors without a seam. Change the seed to crack it again; the maker remembers your last seed in this browser."
+      },
+      {
+        "type": "heading",
+        "text": "Sources and names"
+      },
+      {
+        "type": "paragraph",
+        "text": "Sorting lattice by its framework, and building richer designs by nesting frames, follows Daniel Sheets Dye's A Grammar of Chinese Lattice (1937), listed in the [acknowledgements](/acknowledgements/). The designs are constructed from their geometry, not copied from the book's figures. Dye's group labels are descriptions, not traditional names, so the frameworks here have plain names, with the Chinese name given only for ice-ray."
+      }
+    ]
+  },
+  {
+    "slug": "kaleidoscopes",
+    "title": "Kaleidoscopes you can turn",
+    "date": "2026-11-05",
+    "summary": "A new kaleidoscope maker puts beads, glass or one of this site's patterns between two, three or four mirrors, and turns it live with a dial. The three- and four-mirror cells repeat without end.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The new [kaleidoscope maker](/kaleidoscopes/) puts a picture between mirrors and lets you turn it. Drag the dial, or the slider beside it, and the source spins inside its mirror cell while every reflection follows at once. When you let go, the angle goes into the link, so a shared link, the SVG and PNG, and the printable PDF all show the picture you stopped on. A spin button turns it on its own, and stays off when your device asks for reduced motion."
+      },
+      {
+        "type": "paragraph",
+        "text": "There are five mirror systems. [Two mirrors](/kaleidoscopes/two-mirror/) at an angle make a round picture of 3 to 12 segments, like the kaleidoscope David Brewster patented in 1817. Three mirrors in a [60-60-60](/kaleidoscopes/60-60-60/), [45-45-90](/kaleidoscopes/45-45-90/) or [30-60-90](/kaleidoscopes/30-60-90/) triangle, or four in a [square](/kaleidoscopes/square/), are the classic cells whose reflections fit together without end, so those come with a seamless repeat to tile across any area."
+      },
+      {
+        "type": "paragraph",
+        "text": "In the cell you can scatter beads, glass shards or ribbons from a seed, in your palette, or drop in one of this site's own patterns, such as [Truchet tiles](/truchet/) or [sashiko](/sashiko/), which keep their own colors. Zoom and move the source to change which part of it the mirrors catch. The sources behind the mirror angles are on the [acknowledgements](/acknowledgements/) page."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "kaleidoscope",
+            "slug": "",
+            "query": "",
+            "view": "art",
+            "caption": "Beads in the classic 60-60-60 cell"
+          },
+          {
+            "kind": "kaleidoscope",
+            "slug": "",
+            "query": "m=two-mirror&n=8&src=shards&a=30",
+            "view": "art",
+            "caption": "Glass shards between two mirrors, in eight segments"
+          },
+          {
+            "kind": "kaleidoscope",
+            "slug": "",
+            "query": "m=30-60-90&src=truchet&a=45",
+            "view": "art",
+            "caption": "Truchet tiles in a 30-60-90 cell, turned 45°"
+          },
+          {
+            "kind": "kaleidoscope",
+            "slug": "",
+            "query": "m=45-45-90&src=sashiko&z=200",
+            "view": "art",
+            "caption": "Sashiko at twice the size, in a 45-45-90 cell"
+          },
+          {
+            "kind": "kaleidoscope",
+            "slug": "",
+            "query": "m=square&r=3&src=ribbons&a=120",
+            "view": "art",
+            "caption": "Ribbons in a square of four mirrors"
+          },
+          {
+            "kind": "kaleidoscope",
+            "slug": "",
+            "query": "src=quilt-block&a=15&z=150",
+            "view": "art",
+            "caption": "A log cabin block, turned 15°"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What's included"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Two mirrors with 3 to 12 segments, and 60-60-60, 45-45-90, 30-60-90 and square cells that tile",
+          "A dial and slider that turn the picture live, and a spin button that respects reduced motion",
+          "Beads, glass shards and ribbons from a seed, or eight of this site's patterns as the source",
+          "Zoom and position for the source, and colors from the palette library",
+          "A seamless SVG or PNG repeat, the whole picture, and a printable PDF at the angle on screen"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "seamless-wave-patterns",
+    "title": "Seamless wave patterns, from sine to Lissajous",
+    "date": "2026-11-05",
+    "summary": "A new maker draws rows of sine, tangent, square and other waves, moiré and Lissajous figures, as lines or filled bands, in a repeat whose edges always meet.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The new [wave pattern maker](/waves/) draws rows of waves from ten functions: sine, cosine, tangent, square, triangle, sawtooth, damped, interference, moiré and [Lissajous figures](/waves/lissajous/). Draw them as lines or as filled bands, add a second wave on top, then download a seamless SVG or PNG, or print a PDF at true size."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "waves",
+            "slug": "",
+            "query": "fill=bands",
+            "view": "repeat",
+            "caption": "Sine waves in filled bands"
+          },
+          {
+            "kind": "waves",
+            "slug": "",
+            "query": "wave=tangent",
+            "view": "repeat",
+            "caption": "Tangent branches, cut before they run off"
+          },
+          {
+            "kind": "waves",
+            "slug": "",
+            "query": "wave=lissajous&n=3&a=75&d=1",
+            "view": "repeat",
+            "caption": "Lissajous figures tracing 3:4, slipping row by row"
+          },
+          {
+            "kind": "waves",
+            "slug": "",
+            "query": "wave=moire&sw=4&l=16",
+            "view": "repeat",
+            "caption": "A moiré of 16 lines over 18"
+          },
+          {
+            "kind": "waves",
+            "slug": "",
+            "query": "mix=sine&mn=12&d=1&fill=bands&sw=4&l=12",
+            "view": "repeat",
+            "caption": "A sine wave carrying a faster one, drifting down the repeat"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Why it always repeats"
+      },
+      {
+        "type": "paragraph",
+        "text": "Every setting that could break the join counts in whole waves. A repeat holds a whole number of waves across, a second wave adds a whole number of its own, and drift slips the phase by whole waves from top to bottom, so the right edge meets the left and the bottom meets the top. A tangent runs off to infinity, so each branch is cut where it reaches three times the wave's height."
+      }
+    ]
+  },
+  {
     "slug": "spiral-and-cone-checkerboards",
     "title": "Spiral and cone checkerboards",
     "date": "2026-11-05",

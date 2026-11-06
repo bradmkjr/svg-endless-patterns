@@ -1,5 +1,70 @@
 {
   "posts": {
+    "chinese-lattice-patterns": {
+      "title": "Chinees traliewerk, in dikke latten die herhalen",
+      "summary": "Een nieuwe maker tekent Chinees venstertraliewerk op zes grondvormen, van vierkante meander tot gebarsten ijs, met kaders genest in de openingen en een rapport dat altijd op zijn buren aansluit.",
+      "blocks": [
+        "De nieuwe [maker van Chinees traliewerk](/chinese-lattice/) tekent venstertralies van dikke latten op zes grondvormen: vierkante meander, achthoeken en vierkanten, zeshoeken, diagonaal, verstrengelde kaders en [gebarsten ijs](/chinese-lattice/ice-ray/). Stel de latbreedte in en hoeveel cellen er in een rapport passen, nest tot drie kaders in elke opening, kies een massief kader of een open rand, en download een naadloos rapport, een paneel of een printbare pdf.",
+        "Voorbeelden om mee te beginnen",
+        [
+          "Gebarsten ijs met één genest kader, in een massief kader",
+          "Achthoeken en vierkanten, twee kaders diep",
+          "Een fijnere vierkante meander, drie cellen per rapport",
+          "Verstrengelde kaders in dunne latten, met een open rand",
+          "Zeshoeken, drie kaders diep",
+          "Fijner ijs, zonder geneste kaders"
+        ],
+        "Hoe de latten samenkomen",
+        "Elke grondvorm is een set stukken die het vlak vullen, en een lat is waar twee stukken elkaar raken. Elke opening is haar stuk, een halve latbreedte naar binnen gezet, zodat hoeken, kruisingen en T-verbindingen bij elke hoek strak in verstek sluiten. En omdat de stukken zelf herhalen, komt een lat die aan één kant het rapport verlaat op precies dezelfde plek aan de andere kant weer binnen. Geneste kaders staan op afstand in de opening en zijn met korte latten aan het kader eromheen vastgemaakt, zodat uitgesneden traliewerk heel blijft.",
+        "Gebarsten ijs dat toch herhaalt",
+        "Gebarsten ijs, in het Chinees 冰裂纹, bootst ijs na dat op een vijver breekt en heeft dus geen regelmatig raster. Hier breekt het ijs vanuit punten verspreid over een vlak dat aan zijn randen in zichzelf terugloopt: elk stuk is het gebied dat het dichtst bij één punt ligt, en sommige worden met een rechte snede nog een of twee keer gebroken. De barsten lijken willekeurig, maar het rapport sluit naadloos op zijn buren aan. Verander de startwaarde om het opnieuw te breken; de maker onthoudt je laatste startwaarde in deze browser.",
+        "Bronnen en namen",
+        "Traliewerk indelen naar zijn grondvorm, en ontwerpen verrijken door kaders te nesten, volgt A Grammar of Chinese Lattice (1937) van Daniel Sheets Dye, vermeld bij de [dankbetuigingen](/acknowledgements/). De ontwerpen zijn vanuit hun geometrie geconstrueerd, niet overgenomen uit de figuren van het boek. Dyes groepsnamen zijn beschrijvingen, geen traditionele namen, dus de grondvormen hebben hier eenvoudige namen, en alleen gebarsten ijs krijgt zijn Chinese naam."
+      ]
+    },
+    "kaleidoscopes": {
+      "title": "Caleidoscopen om aan te draaien",
+      "summary": "Een nieuwe caleidoscoopmaker legt kralen, glas of een van de patronen van deze site tussen twee, drie of vier spiegels en draait het live met een draaiknop. De cellen met drie en vier spiegels herhalen zich eindeloos.",
+      "blocks": [
+        "De nieuwe [caleidoscoopmaker](/kaleidoscopes/) legt een beeld tussen spiegels en laat je eraan draaien. Sleep de draaiknop, of de schuifregelaar ernaast, en de bron draait in zijn spiegelcel terwijl alle spiegelingen meteen volgen. Als je loslaat, gaat de hoek in de link, zodat een gedeelde link, de SVG en PNG en de printbare pdf het beeld tonen waarop je stopte. Een knop laat het vanzelf draaien en blijft uit als je apparaat om minder beweging vraagt.",
+        "Er zijn vijf spiegelsystemen. [Twee spiegels](/kaleidoscopes/two-mirror/) onder een hoek geven een rond beeld van 3 tot 12 segmenten, zoals de caleidoscoop waarop David Brewster in 1817 patent kreeg. Drie spiegels in een driehoek van [60-60-60](/kaleidoscopes/60-60-60/), [45-45-90](/kaleidoscopes/45-45-90/) of [30-60-90](/kaleidoscopes/30-60-90/), of vier in een [vierkant](/kaleidoscopes/square/), zijn de klassieke cellen waarvan de spiegelingen eindeloos in elkaar passen. Die hebben dus een naadloze herhaling om elk oppervlak mee te bedekken.",
+        "In de cel kun je kralen, glasscherven of linten verspreiden vanuit een startgetal, in je palet, of een van de patronen van deze site neerleggen, zoals [Truchet-tegels](/truchet/) of [sashiko](/sashiko/), die hun eigen kleuren houden. Zoom en verschuif de bron om te veranderen welk deel de spiegels vangen. De bronnen achter de spiegelhoeken staan op de pagina [dankwoord](/acknowledgements/).",
+        "Voorbeelden om mee te beginnen",
+        [
+          "Kralen in de klassieke 60-60-60-cel",
+          "Glasscherven tussen twee spiegels, in acht segmenten",
+          "Truchet-tegels in een 30-60-90-cel, 45° gedraaid",
+          "Sashiko op dubbele grootte, in een 45-45-90-cel",
+          "Linten in een vierkant van vier spiegels",
+          "Een log cabin-blok, 15° gedraaid"
+        ],
+        "Wat erbij zit",
+        [
+          "Twee spiegels met 3 tot 12 segmenten, en 60-60-60-, 45-45-90-, 30-60-90- en vierkante cellen die het vlak vullen",
+          "Een draaiknop en schuifregelaar die het beeld live draaien, en een knop om het te laten draaien die minder beweging respecteert",
+          "Kralen, glasscherven en linten vanuit een startgetal, of acht patronen van deze site als bron",
+          "Zoom en positie van de bron, en kleuren uit de paletbibliotheek",
+          "Een naadloze SVG- of PNG-herhaling, het hele beeld en een printbare pdf onder de hoek op het scherm"
+        ]
+      ]
+    },
+    "seamless-wave-patterns": {
+      "title": "Naadloze golfpatronen, van sinus tot Lissajous",
+      "summary": "Een nieuwe maker tekent rijen sinus-, tangens-, blok- en andere golven, moiré en Lissajousfiguren, als lijnen of gevulde banen, in een herhaling waarvan de randen altijd aansluiten.",
+      "blocks": [
+        "De nieuwe [golfpatroonmaker](/waves/) tekent rijen golven met tien functies: sinus, cosinus, tangens, blok, driehoek, zaagtand, gedempt, interferentie, moiré en [Lissajousfiguren](/waves/lissajous/). Teken ze als lijnen of gevulde banen, leg er een tweede golf overheen en download een naadloze SVG of PNG, of druk een PDF op ware grootte af.",
+        "Voorbeelden om mee te beginnen",
+        [
+          "Sinusgolven in gevulde banen",
+          "Tangenstakken, afgekapt voordat ze weglopen",
+          "Lissajousfiguren in de verhouding 3:4, rij voor rij verschoven",
+          "Een moiré van 16 lijnen over 18",
+          "Een sinusgolf die een snellere draagt, verschuivend door de herhaling"
+        ],
+        "Waarom het altijd herhaalt",
+        "Elke instelling die de naad zou kunnen breken telt in hele golven. Een herhaling bevat een geheel aantal golven in de breedte, een tweede golf voegt een geheel aantal eigen golven toe, en de verschuiving schuift de fase van boven naar beneden met hele golven op. Zo sluit de rechterrand aan op de linker en de onderrand op de bovenrand. Een tangens loopt naar oneindig, dus elke tak wordt afgekapt waar hij drie keer de golfhoogte bereikt."
+      ]
+    },
     "spiral-and-cone-checkerboards": {
       "title": "Dambordspiralen en -kegels",
       "summary": "De dambordmaker kan zijn raster nu tot een spiraal winden, of op een kegel leggen die je van boven ziet, in elk patroon.",
@@ -673,6 +738,27 @@
     }
   },
   "changelog": {
+    "Chinese lattice": {
+      "title": "Chinees traliewerk",
+      "items": [
+        "Nieuwe maker van Chinees traliewerk: vierkante meander, achthoeken en vierkanten, zeshoeken, diagonaal, verstrengelde kaders en gebarsten ijs, in dikke latten met strakke verbindingen",
+        "Latbreedte, celdichtheid, tot drie geneste kaders, een massief kader of open rand, en gebarsten ijs met startwaarde dat toch herhaalt, als SVG, PNG en pdf"
+      ]
+    },
+    "Kaleidoscopes": {
+      "title": "Caleidoscopen",
+      "items": [
+        "Caleidoscoopmaker toegevoegd met de spiegelsystemen twee spiegels, vierkant, 60-60-60, 45-45-90 en 30-60-90",
+        "De bron draait live met draaiknop, schuifregelaar of de knop Laten draaien, en links, downloads en pdf's volgen de hoek op het scherm"
+      ]
+    },
+    "Wave patterns": {
+      "title": "Golfpatronen",
+      "items": [
+        "Nieuwe golfpatroonmaker: sinus, cosinus, tangens, blok, driehoek, zaagtand, gedempt, interferentie, moiré en Lissajousfiguren",
+        "Lijnen of gevulde banen, met fase, verschuiving en een optionele tweede golf, in een naadloze herhaling met downloads als SVG, PNG en PDF"
+      ]
+    },
     "Spiral and cone checkerboards": {
       "title": "Dambordspiralen en -kegels",
       "items": [

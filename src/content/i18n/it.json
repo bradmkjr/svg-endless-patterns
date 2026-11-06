@@ -1,5 +1,70 @@
 {
   "posts": {
+    "chinese-lattice-patterns": {
+      "title": "Grata cinese, in barre spesse che si ripetono",
+      "summary": "Un nuovo generatore disegna grate cinesi da finestra su sei strutture, dalla greca quadrata al ghiaccio incrinato, con cornici annidate nelle aperture e un modulo che combacia sempre con i vicini.",
+      "blocks": [
+        "Il nuovo [generatore di grate cinesi](/chinese-lattice/) disegna grate da finestra con barre spesse su sei strutture: greca quadrata, ottagoni e quadrati, esagoni, diagonale, cornici intrecciate e [ghiaccio incrinato](/chinese-lattice/ice-ray/). Regola la larghezza delle barre e quante celle stanno in un modulo, annida fino a tre cornici in ogni apertura, scegli una cornice piena o un bordo aperto, poi scarica un modulo senza giunture, un pannello o un PDF da stampare.",
+        "Esempi da cui partire",
+        [
+          "Ghiaccio incrinato con una cornice annidata, in una cornice piena",
+          "Ottagoni e quadrati, con due cornici di profondità",
+          "Una greca quadrata più fitta, tre celle per modulo",
+          "Cornici intrecciate in barre sottili, con bordo aperto",
+          "Esagoni, con tre cornici di profondità",
+          "Ghiaccio più fitto, senza cornici annidate"
+        ],
+        "Come si uniscono le barre",
+        "Ogni struttura è un insieme di tessere che riempiono il piano, e una barra è il punto in cui due tessere si toccano. Ogni apertura è la sua tessera rientrata di mezza larghezza di barra, così angoli, incroci e giunti a T sono tagliati a quartabuono in modo pulito a qualsiasi angolo, e poiché le tessere si ripetono, una barra che esce da un lato del modulo rientra esattamente nello stesso punto dall'altro. Le cornici annidate stanno arretrate nell'apertura e sono fissate alla cornice esterna con barre corte, così una grata ritagliata resta unita.",
+        "Ghiaccio incrinato che si ripete comunque",
+        "Il ghiaccio incrinato, 冰裂纹 in cinese, imita il ghiaccio che si spacca su uno stagno, quindi non ha una griglia regolare. Qui il ghiaccio si rompe a partire da punti sparsi su una superficie che si richiude ai bordi: ogni pezzo è la zona più vicina a un punto, e alcuni vengono incrinati una o due volte in più da un taglio diritto. Le crepe sembrano casuali, ma il modulo combacia con i vicini senza giunture. Cambia il seme per incrinarlo di nuovo; il generatore ricorda il tuo ultimo seme in questo browser.",
+        "Fonti e nomi",
+        "Ordinare la grata secondo la sua struttura e arricchire i disegni annidando cornici segue A Grammar of Chinese Lattice (1937) di Daniel Sheets Dye, citato nei [ringraziamenti](/acknowledgements/). I disegni sono costruiti dalla loro geometria, non copiati dalle figure del libro. Le etichette di gruppo di Dye sono descrizioni, non nomi tradizionali, quindi le strutture hanno nomi semplici, e solo il ghiaccio incrinato riceve il suo nome cinese."
+      ]
+    },
+    "kaleidoscopes": {
+      "title": "Caleidoscopi da far girare",
+      "summary": "Un nuovo generatore di caleidoscopi mette perline, vetro o uno dei motivi di questo sito tra due, tre o quattro specchi e lo fa ruotare dal vivo con una manopola. Le celle a tre e quattro specchi si ripetono all'infinito.",
+      "blocks": [
+        "Il nuovo [generatore di caleidoscopi](/kaleidoscopes/) mette un'immagine tra gli specchi e ti lascia ruotarla. Trascina la manopola, o il cursore accanto, e la sorgente gira nella sua cella di specchi mentre tutti i riflessi la seguono all'istante. Quando rilasci, l'angolo entra nel link, così un link condiviso, l'SVG e il PNG e il PDF da stampare mostrano l'immagine su cui ti sei fermato. Un pulsante la fa girare da sola e resta spento se il tuo dispositivo chiede meno movimento.",
+        "Ci sono cinque sistemi di specchi. [Due specchi](/kaleidoscopes/two-mirror/) ad angolo formano un'immagine rotonda da 3 a 12 segmenti, come il caleidoscopio brevettato da David Brewster nel 1817. Tre specchi in un triangolo [60-60-60](/kaleidoscopes/60-60-60/), [45-45-90](/kaleidoscopes/45-45-90/) o [30-60-90](/kaleidoscopes/30-60-90/), o quattro in un [quadrato](/kaleidoscopes/square/), sono le celle classiche i cui riflessi si incastrano all'infinito, quindi hanno una ripetizione continua per coprire qualsiasi superficie.",
+        "Nella cella puoi spargere perline, schegge di vetro o nastri a partire da un seme, nella tua tavolozza, oppure mettere uno dei motivi di questo sito, come le [piastrelle di Truchet](/truchet/) o il [sashiko](/sashiko/), che mantengono i propri colori. Ingrandisci e sposta la sorgente per cambiare la parte che gli specchi catturano. Le fonti degli angoli degli specchi sono nella pagina dei [ringraziamenti](/acknowledgements/).",
+        "Esempi per iniziare",
+        [
+          "Perline nella classica cella 60-60-60",
+          "Schegge di vetro tra due specchi, in otto segmenti",
+          "Piastrelle di Truchet in una cella 30-60-90, ruotate di 45°",
+          "Sashiko a dimensione doppia, in una cella 45-45-90",
+          "Nastri in un quadrato di quattro specchi",
+          "Un blocco log cabin, ruotato di 15°"
+        ],
+        "Cosa è incluso",
+        [
+          "Due specchi da 3 a 12 segmenti, e celle 60-60-60, 45-45-90, 30-60-90 e quadrate che tassellano il piano",
+          "Una manopola e un cursore che ruotano l'immagine dal vivo, e un pulsante di rotazione che rispetta la preferenza per meno movimento",
+          "Perline, schegge di vetro e nastri a partire da un seme, oppure otto motivi di questo sito come sorgente",
+          "Zoom e posizione della sorgente, e colori dalla libreria di tavolozze",
+          "Una ripetizione continua in SVG o PNG, l'immagine intera e un PDF da stampare all'angolo sullo schermo"
+        ]
+      ]
+    },
+    "seamless-wave-patterns": {
+      "title": "Motivi a onde continui, dal seno a Lissajous",
+      "summary": "Un nuovo generatore disegna file di onde seno, tangenti, quadre e altre, moiré e figure di Lissajous, a linee o a fasce piene, in una ripetizione i cui bordi combaciano sempre.",
+      "blocks": [
+        "Il nuovo [generatore di motivi a onde](/waves/) disegna file di onde con dieci funzioni: seno, coseno, tangente, quadra, triangolare, dente di sega, smorzata, interferenza, moiré e [figure di Lissajous](/waves/lissajous/). Disegnale a linee o a fasce piene, aggiungi sopra una seconda onda, poi scarica un SVG o PNG continuo o stampa un PDF a grandezza reale.",
+        "Esempi da cui partire",
+        [
+          "Onde seno a fasce piene",
+          "Rami di tangente, tagliati prima che scappino",
+          "Figure di Lissajous che tracciano 3:4, scorrendo fila dopo fila",
+          "Un moiré di 16 linee sopra 18",
+          "Un'onda seno che ne porta una più veloce, scorrendo lungo la ripetizione"
+        ],
+        "Perché si ripete sempre",
+        "Ogni impostazione che potrebbe rompere la giunzione si conta in onde intere. Una ripetizione contiene un numero intero di onde in larghezza, una seconda onda ne aggiunge un numero intero delle sue e lo scorrimento sposta la fase di onde intere dall'alto in basso, così il bordo destro incontra il sinistro e quello inferiore il superiore. La tangente va all'infinito, quindi ogni ramo viene tagliato dove raggiunge tre volte l'altezza dell'onda."
+      ]
+    },
     "spiral-and-cone-checkerboards": {
       "title": "Scacchiere a spirale e a cono",
       "summary": "Il generatore di scacchiere ora può avvolgere la griglia in una spirale, o posarla su un cono visto dall'alto, in ogni motivo.",
@@ -673,6 +738,27 @@
     }
   },
   "changelog": {
+    "Chinese lattice": {
+      "title": "Grata cinese",
+      "items": [
+        "Nuovo generatore di grate cinesi: greca quadrata, ottagoni e quadrati, esagoni, diagonale, cornici intrecciate e ghiaccio incrinato, in barre spesse con giunti puliti",
+        "Larghezza delle barre, densità delle celle, fino a tre cornici annidate, cornice piena o bordo aperto, e un ghiaccio incrinato con seme che si ripete comunque, in SVG, PNG e PDF"
+      ]
+    },
+    "Kaleidoscopes": {
+      "title": "Caleidoscopi",
+      "items": [
+        "Aggiunto un generatore di caleidoscopi con i sistemi a due specchi, quadrato, 60-60-60, 45-45-90 e 30-60-90",
+        "La sorgente ruota dal vivo con manopola, cursore o pulsante, e link, download e PDF seguono l'angolo sullo schermo"
+      ]
+    },
+    "Wave patterns": {
+      "title": "Motivi a onde",
+      "items": [
+        "Nuovo generatore di motivi a onde: seno, coseno, tangente, quadra, triangolare, dente di sega, smorzata, interferenza, moiré e figure di Lissajous",
+        "Linee o fasce piene, con fase, scorrimento e una seconda onda facoltativa, in una ripetizione continua con download in SVG, PNG e PDF"
+      ]
+    },
     "Spiral and cone checkerboards": {
       "title": "Scacchiere a spirale e a cono",
       "items": [

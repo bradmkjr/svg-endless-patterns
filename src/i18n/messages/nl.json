@@ -243,17 +243,35 @@
         "output": "Gekleurde SVG of PNG, kleurplaat en printbare pdf.",
         "explore": "Maak een radiaal ontwerp"
       },
+      "kaleidoscope": {
+        "title": "Caleidoscopen",
+        "text": "Leg kralen, glas of een patroon van deze site tussen twee, drie of vier spiegels en draai het live met een draaiknop.",
+        "output": "Naadloze SVG- en PNG-herhalingen, het ronde beeld en een printbare pdf.",
+        "explore": "Draai een caleidoscoop"
+      },
       "girih": {
         "title": "Geometrische sterren en girih",
         "text": "Bouw echte girih uit de vijf tegels, of sterpatronen op regelmatige veelhoeken, met je eigen symmetrie, stertype, lijndikte en kleuren.",
         "output": "Naadloze herhalingen in SVG en PNG, een sjabloon met bruggen, een wandpaneel en een printbare pdf.",
         "explore": "Ontdek geometrische sterren en girih"
       },
+      "chineseLattice": {
+        "title": "Chinees traliewerk",
+        "text": "Venstertraliewerk van dikke latten op zes grondvormen, van vierkante meander tot gebarsten ijs, met kaders genest in de openingen.",
+        "output": "Naadloos rapport als SVG en PNG, een omlijst paneel en een printbare pdf.",
+        "explore": "Traliewerk maken"
+      },
       "truchet": {
         "title": "Truchet-tegels",
         "text": "Draai één eenvoudige tegel op een raster voor een naadloos patroon van bogen, lijnen of driehoeken.",
         "output": "Naadloze herhaling in SVG en PNG, en een printbare pdf.",
         "explore": "Maak een patroon"
+      },
+      "waves": {
+        "title": "Golfpatronen",
+        "text": "Rijen sinus-, blok-, tangens- en andere golven, moiré en Lissajousfiguren, als lijnen of gevulde banen, in een naadloze herhaling.",
+        "output": "Naadloze herhaling als SVG en PNG, en een afdrukbare PDF.",
+        "explore": "Maak een golfpatroon"
       },
       "nature": {
         "title": "Natuurpatronen",

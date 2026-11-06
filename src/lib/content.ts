@@ -25,7 +25,9 @@ export type PostSample =
   | { kind: "celtic"; slug: ""; query: string; view: "art"; caption: string; locale?: Locale }
   | { kind: "stainedGlass"; slug: ""; query: string; view: "panel" | "numbered"; caption: string; locale?: Locale }
   | { kind: "mandala"; slug: ""; query: string; view: "art" | "coloring"; caption: string; locale?: Locale }
+  | { kind: "kaleidoscope"; slug: ""; query: string; view: "art" | "repeat"; caption: string; locale?: Locale }
   | { kind: "girih"; slug: ""; query: string; view: "repeat"; caption: string; locale?: Locale }
+  | { kind: "chineseLattice"; slug: ""; query: string; view: "repeat" | "panel"; caption: string; locale?: Locale }
   | { kind: "maze"; slug: ""; query: string; view: "maze" | "solution"; caption: string; locale?: Locale }
   | { kind: "knitColorwork"; slug: ""; query: string; view: "square" | "chart"; caption: string; locale?: Locale }
   | { kind: "crochetColorwork"; slug: ""; query: string; view: "square" | "chart"; caption: string; locale?: Locale }
@@ -35,6 +37,8 @@ export type PostSample =
   | { kind: "fractal"; slug: ""; query: string; view: "art" | "outline"; caption: string; locale?: Locale }
   | { kind: "tieDye"; slug: ""; query: string; view: "art" | "guide"; caption: string; locale?: Locale }
   | { kind: "truchet"; slug: ""; query: string; view: "repeat"; caption: string; locale?: Locale }
+  | { kind: "reactionDiffusion"; slug: ""; query: string; view: "repeat"; caption: string; locale?: Locale }
+  | { kind: "waves"; slug: ""; query: string; view: "repeat"; caption: string; locale?: Locale }
   | { kind: "nature"; slug: ""; query: string; view: "repeat"; caption: string; locale?: Locale }
   | { kind: "tartan"; slug: ""; query: string; view: "swatch"; caption: string; locale?: Locale };
 
@@ -112,7 +116,9 @@ export function sampleHref(sample: PostSample, locale: Locale = "en"): string {
   if (sample.kind === "celtic") return localePath(sample.locale ?? locale, `/celtic-knots/${query}`);
   if (sample.kind === "stainedGlass") return localePath(sample.locale ?? locale, `/stained-glass/${query}`);
   if (sample.kind === "mandala") return localePath(sample.locale ?? locale, `/mandalas/${query}`);
+  if (sample.kind === "kaleidoscope") return localePath(sample.locale ?? locale, `/kaleidoscopes/${query}`);
   if (sample.kind === "girih") return localePath(sample.locale ?? locale, `/girih/${query}`);
+  if (sample.kind === "chineseLattice") return localePath(sample.locale ?? locale, `/chinese-lattice/${query}`);
   if (sample.kind === "maze") return localePath(sample.locale ?? locale, `/mazes/${query}`);
   if (sample.kind === "knitColorwork") return localePath(sample.locale ?? locale, `/knitting/colorwork/${query}`);
   if (sample.kind === "crochetColorwork") return localePath(sample.locale ?? locale, `/crochet/colorwork/${query}`);
@@ -122,6 +128,8 @@ export function sampleHref(sample: PostSample, locale: Locale = "en"): string {
   if (sample.kind === "fractal") return localePath(sample.locale ?? locale, `/fractals/${query}`);
   if (sample.kind === "tieDye") return localePath(sample.locale ?? locale, `/tie-dye/${query}`);
   if (sample.kind === "truchet") return localePath(sample.locale ?? locale, `/truchet/${query}`);
+  if (sample.kind === "reactionDiffusion") return localePath(sample.locale ?? locale, `/turing-patterns/${query}`);
+  if (sample.kind === "waves") return localePath(sample.locale ?? locale, `/waves/${query}`);
   if (sample.kind === "nature") return localePath(sample.locale ?? locale, `/nature-patterns/${query}`);
   if (sample.kind === "tartan") return localePath(sample.locale ?? locale, `/tartans/${query}`);
   const section = sample.kind === "block" ? "blocks" : sample.kind === "knit" ? "knitting" : "crochet";

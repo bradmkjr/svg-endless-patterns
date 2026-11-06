@@ -243,17 +243,35 @@
         "output": "SVG ou PNG colorido, página para colorir e PDF para imprimir.",
         "explore": "Criar um desenho radial"
       },
+      "kaleidoscope": {
+        "title": "Caleidoscópios",
+        "text": "Coloque contas, vidro ou um dos padrões deste site entre dois, três ou quatro espelhos e gire ao vivo com um botão giratório.",
+        "output": "Repetições contínuas em SVG e PNG, a imagem redonda e um PDF para imprimir.",
+        "explore": "Gire um caleidoscópio"
+      },
       "girih": {
         "title": "Estrelas geométricas e girih",
         "text": "Crie girih verdadeiro com suas cinco peças, ou padrões de estrelas sobre polígonos regulares, com sua simetria, tipo de estrela, espessura de linha e cores.",
         "output": "Repetições contínuas em SVG e PNG, um estêncil com pontes, um painel de parede e um PDF para imprimir.",
         "explore": "Explorar estrelas geométricas e girih"
       },
+      "chineseLattice": {
+        "title": "Treliça chinesa",
+        "text": "Treliças de janela com barras grossas sobre seis estruturas, da grega quadrada ao gelo rachado, com molduras aninhadas nas aberturas.",
+        "output": "Repetição contínua em SVG e PNG, um painel emoldurado e um PDF para imprimir.",
+        "explore": "Criar uma treliça"
+      },
       "truchet": {
         "title": "Azulejos de Truchet",
         "text": "Gire um azulejo simples em uma grade para criar um padrão contínuo de arcos, linhas ou triângulos.",
         "output": "Repetição contínua em SVG e PNG e PDF para imprimir.",
         "explore": "Criar um padrão"
+      },
+      "waves": {
+        "title": "Padrões de ondas",
+        "text": "Fileiras de ondas seno, quadradas, tangentes e outras, moiré e figuras de Lissajous, em linhas ou faixas preenchidas, numa repetição contínua.",
+        "output": "Repetição contínua em SVG e PNG, e um PDF para imprimir.",
+        "explore": "Criar um padrão de ondas"
       },
       "nature": {
         "title": "Estampas da natureza",

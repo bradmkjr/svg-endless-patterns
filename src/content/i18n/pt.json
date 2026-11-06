@@ -1,5 +1,70 @@
 {
   "posts": {
+    "chinese-lattice-patterns": {
+      "title": "Treliça chinesa, em barras grossas que se repetem",
+      "summary": "Um novo gerador desenha treliças chinesas de janela sobre seis estruturas, da grega quadrada ao gelo rachado, com molduras aninhadas nas aberturas e uma repetição que sempre se encaixa nas vizinhas.",
+      "blocks": [
+        "O novo [gerador de treliça chinesa](/chinese-lattice/) desenha grades de janela com barras grossas sobre seis estruturas: grega quadrada, octógonos e quadrados, hexágonos, diagonal, molduras entrelaçadas e [gelo rachado](/chinese-lattice/ice-ray/). Ajuste a largura da barra e quantas células cabem numa repetição, aninhe até três molduras em cada abertura, escolha uma moldura sólida ou uma borda aberta e baixe uma repetição contínua, um painel ou um PDF para imprimir.",
+        "Exemplos para começar",
+        [
+          "Gelo rachado com uma moldura aninhada, numa moldura sólida",
+          "Octógonos e quadrados, com duas molduras de profundidade",
+          "Uma grega quadrada mais fina, três células por repetição",
+          "Molduras entrelaçadas em barras finas, com borda aberta",
+          "Hexágonos, com três molduras de profundidade",
+          "Gelo mais fino, sem molduras aninhadas"
+        ],
+        "Como as barras se encontram",
+        "Cada estrutura é um conjunto de peças que preenchem o plano, e uma barra é onde duas peças se tocam. Cada abertura é a sua peça recuada meia largura de barra, então cantos, cruzamentos e junções em T ficam em meia-esquadria limpa em qualquer ângulo, e como as próprias peças se repetem, uma barra que sai por um lado da repetição volta a entrar exatamente no mesmo ponto do outro. As molduras aninhadas ficam recuadas dentro da abertura e presas à moldura de fora por barras curtas, para que uma treliça recortada não se desmanche.",
+        "Gelo rachado que ainda assim se repete",
+        "O gelo rachado, 冰裂纹 em chinês, imita o gelo trincando num lago, por isso não tem uma grade regular. Aqui o gelo se quebra a partir de pontos espalhados numa superfície que dá a volta pelas bordas: cada pedaço é a área mais próxima de um ponto, e alguns são rachados mais uma ou duas vezes por um corte reto. As rachaduras parecem aleatórias, mas a repetição se encaixa nas vizinhas sem emenda. Mude a semente para rachar de novo; o gerador lembra sua última semente neste navegador.",
+        "Fontes e nomes",
+        "Classificar a treliça pela estrutura e enriquecer os desenhos aninhando molduras segue A Grammar of Chinese Lattice (1937), de Daniel Sheets Dye, citado nos [agradecimentos](/acknowledgements/). Os desenhos são construídos pela geometria, sem copiar as figuras do livro. Os rótulos de grupo de Dye são descrições, não nomes tradicionais, então as estruturas têm nomes simples, e só o gelo rachado recebe seu nome chinês."
+      ]
+    },
+    "kaleidoscopes": {
+      "title": "Caleidoscópios para girar",
+      "summary": "Um novo criador de caleidoscópios coloca contas, vidro ou um dos padrões deste site entre dois, três ou quatro espelhos e gira tudo ao vivo com um botão giratório. As células de três e quatro espelhos se repetem sem fim.",
+      "blocks": [
+        "O novo [criador de caleidoscópios](/kaleidoscopes/) coloca uma imagem entre espelhos e deixa você girá-la. Arraste o botão giratório, ou o controle deslizante ao lado, e a fonte gira dentro da célula de espelhos enquanto todos os reflexos acompanham na hora. Quando você solta, o ângulo vai para o link, então um link compartilhado, o SVG e o PNG, e o PDF para imprimir mostram a imagem em que você parou. Um botão faz girar sozinho, e fica desligado quando seu dispositivo pede menos movimento.",
+        "São cinco sistemas de espelhos. [Dois espelhos](/kaleidoscopes/two-mirror/) em ângulo formam uma imagem redonda de 3 a 12 segmentos, como o caleidoscópio que David Brewster patenteou em 1817. Três espelhos em um triângulo [60-60-60](/kaleidoscopes/60-60-60/), [45-45-90](/kaleidoscopes/45-45-90/) ou [30-60-90](/kaleidoscopes/30-60-90/), ou quatro em um [quadrado](/kaleidoscopes/square/), são as células clássicas cujos reflexos se encaixam sem fim, por isso vêm com uma repetição contínua para cobrir qualquer área.",
+        "Na célula você pode espalhar contas, cacos de vidro ou fitas a partir de uma semente, na sua paleta, ou colocar um dos padrões deste site, como os [ladrilhos de Truchet](/truchet/) ou o [sashiko](/sashiko/), que mantêm as próprias cores. Amplie e mova a fonte para mudar a parte que os espelhos captam. As fontes dos ângulos dos espelhos estão na página de [agradecimentos](/acknowledgements/).",
+        "Exemplos para começar",
+        [
+          "Contas na clássica célula 60-60-60",
+          "Cacos de vidro entre dois espelhos, em oito segmentos",
+          "Ladrilhos de Truchet em uma célula 30-60-90, girados 45°",
+          "Sashiko com o dobro do tamanho, em uma célula 45-45-90",
+          "Fitas em um quadrado de quatro espelhos",
+          "Um bloco log cabin, girado 15°"
+        ],
+        "O que está incluído",
+        [
+          "Dois espelhos com 3 a 12 segmentos, e células 60-60-60, 45-45-90, 30-60-90 e quadradas que ladrilham o plano",
+          "Um botão giratório e um controle deslizante que giram a imagem ao vivo, e um botão de giro que respeita a preferência por menos movimento",
+          "Contas, cacos de vidro e fitas a partir de uma semente, ou oito padrões deste site como fonte",
+          "Zoom e posição da fonte, e cores da biblioteca de paletas",
+          "Uma repetição contínua em SVG ou PNG, a imagem inteira e um PDF para imprimir no ângulo da tela"
+        ]
+      ]
+    },
+    "seamless-wave-patterns": {
+      "title": "Padrões de ondas contínuos, do seno a Lissajous",
+      "summary": "Um novo gerador desenha fileiras de ondas seno, tangentes, quadradas e outras, moiré e figuras de Lissajous, em linhas ou faixas preenchidas, numa repetição cujas bordas sempre se encaixam.",
+      "blocks": [
+        "O novo [gerador de padrões de ondas](/waves/) desenha fileiras de ondas com dez funções: seno, cosseno, tangente, quadrada, triangular, dente de serra, amortecida, interferência, moiré e [figuras de Lissajous](/waves/lissajous/). Desenhe-as como linhas ou faixas preenchidas, some uma segunda onda por cima e baixe um SVG ou PNG contínuo, ou imprima um PDF em tamanho real.",
+        "Exemplos para começar",
+        [
+          "Ondas seno em faixas preenchidas",
+          "Ramos de tangente, cortados antes de escaparem",
+          "Figuras de Lissajous traçando 3:4, deslizando fileira a fileira",
+          "Um moiré de 16 linhas sobre 18",
+          "Uma onda seno carregando outra mais rápida, com deslocamento ao longo da repetição"
+        ],
+        "Por que sempre se repete",
+        "Todo ajuste que poderia quebrar a emenda conta em ondas inteiras. Uma repetição contém um número inteiro de ondas na largura, uma segunda onda soma um número inteiro das suas, e o deslocamento desliza a fase em ondas inteiras de cima para baixo, então a borda direita encontra a esquerda e a de baixo encontra a de cima. A tangente vai ao infinito, então cada ramo é cortado onde chega a três vezes a altura da onda."
+      ]
+    },
     "spiral-and-cone-checkerboards": {
       "title": "Tabuleiros em espiral e em cone",
       "summary": "O criador de tabuleiros agora pode enrolar a grade em uma espiral, ou colocá-la sobre um cone visto de cima, em todos os padrões.",
@@ -673,6 +738,27 @@
     }
   },
   "changelog": {
+    "Chinese lattice": {
+      "title": "Treliça chinesa",
+      "items": [
+        "Novo gerador de treliça chinesa: grega quadrada, octógonos e quadrados, hexágonos, diagonal, molduras entrelaçadas e gelo rachado, em barras grossas com junções limpas",
+        "Largura da barra, densidade de células, até três molduras aninhadas, moldura sólida ou borda aberta, e um gelo rachado com semente que ainda se repete, com downloads em SVG, PNG e PDF"
+      ]
+    },
+    "Kaleidoscopes": {
+      "title": "Caleidoscópios",
+      "items": [
+        "Adicionado um criador de caleidoscópios com os sistemas de dois espelhos, quadrado, 60-60-60, 45-45-90 e 30-60-90",
+        "A fonte gira ao vivo com botão giratório, controle deslizante ou botão de giro, e links, downloads e PDFs seguem o ângulo da tela"
+      ]
+    },
+    "Wave patterns": {
+      "title": "Padrões de ondas",
+      "items": [
+        "Novo gerador de padrões de ondas: seno, cosseno, tangente, quadrada, triangular, dente de serra, amortecida, interferência, moiré e figuras de Lissajous",
+        "Linhas ou faixas preenchidas, com fase, deslocamento e uma segunda onda opcional, numa repetição contínua com downloads em SVG, PNG e PDF"
+      ]
+    },
     "Spiral and cone checkerboards": {
       "title": "Tabuleiros em espiral e em cone",
       "items": [

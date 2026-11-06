@@ -1,5 +1,70 @@
 {
   "posts": {
+    "chinese-lattice-patterns": {
+      "title": "Treillis chinois, en barres épaisses qui se répètent",
+      "summary": "Un nouvel outil dessine des treillis de fenêtre chinois sur six structures, de la grecque carrée à la glace craquelée, avec des cadres imbriqués dans les ouvertures et un raccord qui rejoint toujours ses voisins.",
+      "blocks": [
+        "Le nouvel [outil de treillis chinois](/chinese-lattice/) dessine des grilles de fenêtre en barres épaisses sur six structures : grecque carrée, octogones et carrés, hexagones, diagonale, cadres entrelacés et [glace craquelée](/chinese-lattice/ice-ray/). Réglez la largeur des barres et le nombre de cellules par raccord, imbriquez jusqu'à trois cadres dans chaque ouverture, choisissez un cadre plein ou un bord ouvert, puis téléchargez un raccord sans couture, un panneau ou un PDF imprimable.",
+        "Des exemples pour commencer",
+        [
+          "Glace craquelée avec un cadre imbriqué, dans un cadre plein",
+          "Octogones et carrés, sur deux cadres de profondeur",
+          "Une grecque carrée plus fine, trois cellules par raccord",
+          "Cadres entrelacés en barres fines, bord ouvert",
+          "Hexagones, sur trois cadres de profondeur",
+          "Une glace plus fine, sans cadre imbriqué"
+        ],
+        "Comment les barres se rejoignent",
+        "Chaque structure est un ensemble de pièces qui remplissent le plan, et une barre est l'endroit où deux pièces se touchent. Chaque ouverture est sa pièce rentrée d'une demi-largeur de barre : angles, croisements et assemblages en T sont donc d'onglet net à tout angle, et comme les pièces se répètent, une barre qui sort d'un côté du raccord rentre exactement au même endroit de l'autre. Les cadres imbriqués sont placés en retrait dans l'ouverture et reliés au cadre extérieur par de courtes barres, pour qu'un treillis découpé tienne d'un seul morceau.",
+        "Une glace craquelée qui se répète quand même",
+        "La glace craquelée, 冰裂纹 en chinois, imite la glace qui se fend sur un étang : elle n'a donc pas de grille régulière. Ici la glace est brisée à partir de points semés sur une surface qui se referme par ses bords : chaque morceau est la zone la plus proche d'un point, et certains sont fendus une ou deux fois de plus par une coupe droite. Les fissures semblent aléatoires, mais le raccord rejoint ses voisins sans couture. Changez la graine pour la fendre à nouveau ; l'outil retient votre dernière graine dans ce navigateur.",
+        "Sources et noms",
+        "Classer le treillis selon sa structure, et enrichir les motifs en imbriquant des cadres, suit A Grammar of Chinese Lattice (1937) de Daniel Sheets Dye, cité dans les [remerciements](/acknowledgements/). Les motifs sont construits à partir de leur géométrie, sans copier les figures du livre. Les intitulés de groupe de Dye sont des descriptions, pas des noms traditionnels : les structures portent donc des noms simples, et seule la glace craquelée reçoit son nom chinois."
+      ]
+    },
+    "kaleidoscopes": {
+      "title": "Des kaléidoscopes à faire tourner",
+      "summary": "Un nouveau créateur de kaléidoscopes place des perles, du verre ou un motif de ce site entre deux, trois ou quatre miroirs, et le fait tourner en direct avec un cadran. Les cellules à trois et quatre miroirs se répètent à l'infini.",
+      "blocks": [
+        "Le nouveau [créateur de kaléidoscopes](/kaleidoscopes/) place une image entre des miroirs et vous laisse la faire tourner. Faites glisser le cadran, ou le curseur à côté, et la source tourne dans sa cellule de miroirs pendant que tous les reflets suivent aussitôt. Quand vous relâchez, l'angle passe dans le lien : un lien partagé, le SVG et le PNG, et le PDF à imprimer montrent l'image sur laquelle vous vous êtes arrêté. Un bouton la fait tourner toute seule, et reste désactivé si votre appareil demande moins d'animations.",
+        "Il y a cinq systèmes de miroirs. [Deux miroirs](/kaleidoscopes/two-mirror/) en angle forment une image ronde de 3 à 12 segments, comme le kaléidoscope breveté par David Brewster en 1817. Trois miroirs en triangle [60-60-60](/kaleidoscopes/60-60-60/), [45-45-90](/kaleidoscopes/45-45-90/) ou [30-60-90](/kaleidoscopes/30-60-90/), ou quatre en [carré](/kaleidoscopes/square/), sont les cellules classiques dont les reflets s'emboîtent à l'infini : elles ont donc un raccord sans couture pour couvrir n'importe quelle surface.",
+        "Dans la cellule, vous pouvez disperser des perles, des éclats de verre ou des rubans à partir d'une graine, dans votre palette, ou placer un des motifs de ce site, comme les [tuiles de Truchet](/truchet/) ou le [sashiko](/sashiko/), qui gardent leurs propres couleurs. Zoomez et déplacez la source pour changer la partie que captent les miroirs. Les sources des angles des miroirs sont sur la page des [remerciements](/acknowledgements/).",
+        "Des exemples pour commencer",
+        [
+          "Des perles dans la cellule classique 60-60-60",
+          "Des éclats de verre entre deux miroirs, en huit segments",
+          "Des tuiles de Truchet dans une cellule 30-60-90, tournées de 45°",
+          "Du sashiko deux fois plus grand, dans une cellule 45-45-90",
+          "Des rubans dans un carré de quatre miroirs",
+          "Un bloc Log Cabin, tourné de 15°"
+        ],
+        "Ce qui est inclus",
+        [
+          "Deux miroirs de 3 à 12 segments, et des cellules 60-60-60, 45-45-90, 30-60-90 et carrées qui pavent le plan",
+          "Un cadran et un curseur qui tournent l'image en direct, et un bouton de rotation qui respecte la préférence de mouvement réduit",
+          "Des perles, des éclats de verre et des rubans à partir d'une graine, ou huit motifs de ce site comme source",
+          "Le zoom et la position de la source, et les couleurs de la bibliothèque de palettes",
+          "Un raccord SVG ou PNG sans couture, l'image entière et un PDF à imprimer à l'angle affiché"
+        ]
+      ]
+    },
+    "seamless-wave-patterns": {
+      "title": "Motifs d'ondes raccordables, du sinus à Lissajous",
+      "summary": "Un nouvel outil dessine des rangées d'ondes sinus, tangentes, carrées et autres, des moirés et des figures de Lissajous, en lignes ou en bandes pleines, dans un raccord dont les bords se rejoignent toujours.",
+      "blocks": [
+        "Le nouvel [outil de motifs d'ondes](/waves/) dessine des rangées d'ondes à partir de dix fonctions : sinus, cosinus, tangente, carrée, triangulaire, dents de scie, amortie, interférence, moiré et [figures de Lissajous](/waves/lissajous/). Dessinez-les en lignes ou en bandes pleines, ajoutez une deuxième onde par-dessus, puis téléchargez un SVG ou un PNG raccordable, ou imprimez un PDF en taille réelle.",
+        "Des exemples pour commencer",
+        [
+          "Des ondes sinus en bandes pleines",
+          "Des branches de tangente, coupées avant de s'échapper",
+          "Des figures de Lissajous qui tracent 3:4 et glissent rangée après rangée",
+          "Un moiré de 16 lignes sur 18",
+          "Une onde sinus qui en porte une plus rapide, en décalage sur la hauteur du raccord"
+        ],
+        "Pourquoi le raccord tombe toujours juste",
+        "Chaque réglage qui pourrait rompre la jonction se compte en ondes entières. Un raccord contient un nombre entier d'ondes en largeur, une deuxième onde en ajoute un nombre entier des siennes, et le décalage fait glisser la phase d'ondes entières de haut en bas : le bord droit rejoint le gauche et le bas rejoint le haut. La tangente part à l'infini : chaque branche est donc coupée là où elle atteint trois fois la hauteur de l'onde."
+      ]
+    },
     "spiral-and-cone-checkerboards": {
       "title": "Damiers en spirale et en cône",
       "summary": "Le créateur de damiers peut désormais enrouler sa grille en spirale, ou la poser sur un cône vu d'en haut, pour tous les motifs.",
@@ -673,6 +738,27 @@
     }
   },
   "changelog": {
+    "Chinese lattice": {
+      "title": "Treillis chinois",
+      "items": [
+        "Nouvel outil de treillis chinois : grecque carrée, octogones et carrés, hexagones, diagonale, cadres entrelacés et glace craquelée, en barres épaisses aux assemblages nets",
+        "Largeur des barres, densité des cellules, jusqu'à trois cadres imbriqués, cadre plein ou bord ouvert, et une glace craquelée à graine qui se répète quand même, en SVG, PNG et PDF"
+      ]
+    },
+    "Kaleidoscopes": {
+      "title": "Kaléidoscopes",
+      "items": [
+        "Ajout d'un créateur de kaléidoscopes avec les systèmes à deux miroirs, carré, 60-60-60, 45-45-90 et 30-60-90",
+        "La source tourne en direct avec un cadran, un curseur ou un bouton, et les liens, téléchargements et PDF suivent l'angle affiché"
+      ]
+    },
+    "Wave patterns": {
+      "title": "Motifs d'ondes",
+      "items": [
+        "Nouvel outil de motifs d'ondes : sinus, cosinus, tangente, carrée, triangulaire, dents de scie, amortie, interférence, moiré et figures de Lissajous",
+        "Lignes ou bandes pleines, avec phase, décalage et une deuxième onde facultative, dans un raccord continu à télécharger en SVG, PNG et PDF"
+      ]
+    },
     "Spiral and cone checkerboards": {
       "title": "Damiers en spirale et en cône",
       "items": [

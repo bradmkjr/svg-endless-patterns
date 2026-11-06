@@ -1,5 +1,171 @@
 [
   {
+    "slug": "kolam",
+    "title": "Kolam, drawn around a grid of dots",
+    "date": "2026-11-05",
+    "summary": "A new maker draws kolam around a grid of dots as a seamless repeat: a sikku kolam's single looping line, a pulli kolam's joined dots or a kambi kolam's closed lines, on a square, diamond or hexagonal grid.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The new [kolam maker](/kolam/) draws kolam around a grid of dots, called pulli, as a seamless repeat. Choose a [sikku kolam](/kolam/sikku/), where one line loops around every dot, a [pulli kolam](/kolam/pulli/), where curved petals join the dots, or a [kambi kolam](/kolam/kambi/), where closed lines run around dots and groups of dots without crossing. Pick a square, diamond or hexagonal grid, a single or double line and your colors, then download SVG, PNG or a printable PDF."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "kolam",
+            "slug": "",
+            "query": "",
+            "view": "repeat",
+            "caption": "A symmetric sikku kolam on a square grid of 81 dots"
+          },
+          {
+            "kind": "kolam",
+            "slug": "",
+            "query": "g=diamond&n=7",
+            "view": "repeat",
+            "caption": "A sikku kolam on the diamond grid"
+          },
+          {
+            "kind": "kolam",
+            "slug": "",
+            "query": "g=hexagonal&rule=random&l=double",
+            "view": "repeat",
+            "caption": "Seeded random on a hexagonal grid, in a double line"
+          },
+          {
+            "kind": "kolam",
+            "slug": "",
+            "query": "f=pulli&n=7",
+            "view": "repeat",
+            "caption": "A pulli kolam, its dots joined by petals"
+          },
+          {
+            "kind": "kolam",
+            "slug": "",
+            "query": "f=kambi&rule=random&n=11",
+            "view": "repeat",
+            "caption": "A seeded kambi kolam, its closed lines in two colors"
+          },
+          {
+            "kind": "kolam",
+            "slug": "",
+            "query": "rule=random&n=13&w=6",
+            "view": "repeat",
+            "caption": "A finer seeded sikku, 13 dots across"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "One line, around every dot"
+      },
+      {
+        "type": "paragraph",
+        "text": "Each dot sits in its own square, and at each side of that square the line either crosses over to the neighbor or turns back around its own dot. Neighbors share that choice, so the squares always match: on the square grid there are sixteen such tiles. A sikku starts with a ring around every dot and opens rings into each other one at a time, keeping an opening only when it joins two lines into one, so it always ends as a single closed line that passes between every pair of neighbors. The maker's tests check that for every grid, size and seed."
+      },
+      {
+        "type": "heading",
+        "text": "Symmetric or seeded"
+      },
+      {
+        "type": "paragraph",
+        "text": "With the symmetric rule each repeat holds one finished kolam, turned about its center: a quarter turn on the square grid, the two diagonals on the diamond grid and a half turn on the hexagonal one. Its line stays inside the repeat, so repeats sit side by side on an unbroken grid of dots. With seeded random the line runs across the repeat's edges and comes back in on the other side, so the whole surface is woven from one line. Change the seed for another; the maker remembers your last seed in this browser."
+      },
+      {
+        "type": "heading",
+        "text": "A living practice"
+      },
+      {
+        "type": "paragraph",
+        "text": "Kolam is drawn by hand across Tamil Nadu and South India, often at the entrance to a home, and for many who draw it, it has religious as well as ornamental significance. This maker borrows the dot grid and the rules of the line, not the practice, and it makes no claim about what any particular kolam means. The tile method follows Saty Raghavachary's Tile-based kolam patterns (SIGGRAPH 2004), and the rules for a sikku follow Venkatraman Gopalan's study of square-tile sikku kolams; both are listed in the [acknowledgements](/acknowledgements/)."
+      }
+    ]
+  },
+  {
+    "slug": "turing-patterns",
+    "title": "Turing patterns that grow into seamless repeats",
+    "date": "2026-11-05",
+    "summary": "A new maker grows spots, stripes, labyrinths and coral from the Gray-Scott reaction-diffusion model, on a grid whose edges wrap around, so every repeat is seamless.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The new [Turing pattern maker](/turing-patterns/) runs a reaction-diffusion simulation and draws what grows: [spots](/turing-patterns/spots/), [mitosis](/turing-patterns/mitosis/), [coral](/turing-patterns/coral/), [labyrinths](/turing-patterns/labyrinth/), stripes, worms, holes and bubbles. Set the grid, the number of steps and which way the chemicals spread, choose filled shapes, outlines or two bands, then download a seamless repeat or a printable PDF."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "reactionDiffusion",
+            "slug": "",
+            "query": "",
+            "view": "repeat",
+            "caption": "Coral, filled"
+          },
+          {
+            "kind": "reactionDiffusion",
+            "slug": "",
+            "query": "p=labyrinth&st=outline",
+            "view": "repeat",
+            "caption": "A labyrinth in outline"
+          },
+          {
+            "kind": "reactionDiffusion",
+            "slug": "",
+            "query": "p=mitosis&s=160",
+            "view": "repeat",
+            "caption": "Mitosis on a finer grid"
+          },
+          {
+            "kind": "reactionDiffusion",
+            "slug": "",
+            "query": "p=labyrinth&d=horizontal",
+            "view": "repeat",
+            "caption": "A labyrinth stretched across into stripes"
+          },
+          {
+            "kind": "reactionDiffusion",
+            "slug": "",
+            "query": "p=holes&st=bands",
+            "view": "repeat",
+            "caption": "Holes, in two bands"
+          },
+          {
+            "kind": "reactionDiffusion",
+            "slug": "",
+            "query": "p=worms&it=1000",
+            "view": "repeat",
+            "caption": "Worms, still growing after 1,000 steps"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Why there's no seam"
+      },
+      {
+        "type": "paragraph",
+        "text": "Each cell trades chemicals only with its eight neighbors, and the grid's left edge counts as the right edge's neighbor, as the top does the bottom's, so the pattern grows on the surface of a doughnut. The edge of each shape is traced where the second chemical crosses the level you pick, then smoothed into curves whose bends carry over the join, so a shape cut by the edge of the repeat comes back in on the other side exactly where it left. The start is seeded and the arithmetic is fixed, so the same settings grow the same pattern every time."
+      },
+      {
+        "type": "heading",
+        "text": "Where the presets come from"
+      },
+      {
+        "type": "paragraph",
+        "text": "In 1993 John Pearson ran this model, the Gray-Scott model, across a wide range of feed and kill rates and mapped what each region grows ([Science 261](https://arxiv.org/abs/patt-sol/9304003)). Each preset is a pair from one of those regions. The mitosis and coral pairs, and the simulation step itself, follow [Karl Sims' tutorial](https://www.karlsims.com/rd.html). Both are credited on the [acknowledgements](/acknowledgements/) page."
+      }
+    ]
+  },
+  {
     "slug": "chinese-lattice-patterns",
     "title": "Chinese lattice, in thick bars that repeat",
     "date": "2026-11-05",

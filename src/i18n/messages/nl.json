@@ -267,6 +267,18 @@
         "output": "Naadloze herhaling in SVG en PNG, en een printbare pdf.",
         "explore": "Maak een patroon"
       },
+      "reactionDiffusion": {
+        "title": "Turingpatronen",
+        "text": "Laat stippen, strepen, labyrinten en koraal groeien uit een reactie-diffusiesimulatie die rondloopt, zodat de herhaling naadloos is.",
+        "output": "Naadloze herhaling als SVG en PNG, en een afdrukbare PDF.",
+        "explore": "Laat een patroon groeien"
+      },
+      "kolam": {
+        "title": "Kolam",
+        "text": "Zuid-Indiase lijntekeningen rond een raster van stippen: de ene doorlopende lijn van een sikku-kolam, verbonden stippen of gesloten lijnen, op een vierkant, ruitvormig of zeshoekig raster.",
+        "output": "Naadloze herhaling als SVG en PNG, en een printbare pdf.",
+        "explore": "Teken een kolam"
+      },
       "waves": {
         "title": "Golfpatronen",
         "text": "Rijen sinus-, blok-, tangens- en andere golven, moiré en Lissajousfiguren, als lijnen of gevulde banen, in een naadloze herhaling.",

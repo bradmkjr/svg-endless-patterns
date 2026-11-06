@@ -267,6 +267,18 @@
         "output": "Nahtloser Rapport als SVG und PNG sowie druckbares PDF.",
         "explore": "Muster erstellen"
       },
+      "reactionDiffusion": {
+        "title": "Turing-Muster",
+        "text": "Lass Punkte, Streifen, Labyrinthe und Korallen aus einer Reaktions-Diffusions-Simulation wachsen, die in sich zurückläuft, damit der Rapport nahtlos ist.",
+        "output": "Nahtloser Rapport als SVG und PNG und ein druckbares PDF.",
+        "explore": "Ein Muster wachsen lassen"
+      },
+      "kolam": {
+        "title": "Kolam",
+        "text": "Südindische Linienzeichnungen um ein Punkteraster: die eine umlaufende Linie eines Sikku-Kolam, verbundene Punkte oder geschlossene Linien, auf quadratischem, rautenförmigem oder sechseckigem Raster.",
+        "output": "Nahtloser Rapport als SVG und PNG und ein druckbares PDF.",
+        "explore": "Ein Kolam zeichnen"
+      },
       "waves": {
         "title": "Wellenmuster",
         "text": "Reihen aus Sinus-, Rechteck-, Tangens- und weiteren Wellen, Moiré und Lissajous-Figuren, als Linien oder gefüllte Bänder, in einem nahtlosen Rapport.",

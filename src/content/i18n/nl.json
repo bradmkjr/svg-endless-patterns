@@ -1,5 +1,47 @@
 {
   "posts": {
+    "kolam": {
+      "title": "Kolam, getekend rond een raster van stippen",
+      "summary": "Een nieuwe maker tekent kolam rond een raster van stippen als naadloze herhaling: de ene doorlopende lijn van een sikku-kolam, de verbonden stippen van een pulli-kolam of de gesloten lijnen van een kambi-kolam, op een vierkant, ruitvormig of zeshoekig raster.",
+      "blocks": [
+        "De nieuwe [kolam-maker](/kolam/) tekent kolam rond een raster van stippen, pulli genoemd, als naadloze herhaling. Kies een [sikku-kolam](/kolam/sikku/), waarin één lijn om elke stip loopt, een [pulli-kolam](/kolam/pulli/), waarin gebogen bloemblaadjes de stippen verbinden, of een [kambi-kolam](/kolam/kambi/), waarin gesloten lijnen om stippen en groepjes stippen lopen zonder te kruisen. Kies een vierkant, ruitvormig of zeshoekig raster, een enkele of dubbele lijn en je kleuren, en download SVG, PNG of een printbare pdf.",
+        "Voorbeelden om mee te beginnen",
+        [
+          "Een symmetrische sikku-kolam op een vierkant raster van 81 stippen",
+          "Een sikku-kolam op het ruitvormige raster",
+          "Willekeurig met seed op een zeshoekig raster, met dubbele lijn",
+          "Een pulli-kolam, met de stippen verbonden door bloemblaadjes",
+          "Een kambi-kolam met seed, met de gesloten lijnen in twee kleuren",
+          "Een fijnere sikku met seed, 13 stippen breed"
+        ],
+        "Eén lijn, om elke stip",
+        "Elke stip zit in een eigen vierkant, en aan elke zijde van dat vierkant kruist de lijn naar de buur of keert hij terug om zijn eigen stip. Buren delen die keuze, dus de vierkanten sluiten altijd aan: op het vierkante raster zijn er zestien van zulke tegels. Een sikku begint met een ring om elke stip en opent de ringen een voor een in elkaar, en houdt een opening alleen als die twee lijnen tot één verbindt. Zo eindigt hij altijd als één gesloten lijn die tussen elk paar buren door loopt. De tests van de maker controleren dat voor elk raster, elke maat en elke seed.",
+        "Symmetrisch of met seed",
+        "Met de symmetrische regel bevat elke herhaling één afgeronde kolam, gedraaid om het midden: een kwartslag op het vierkante raster, de twee diagonalen op het ruitvormige en een halve slag op het zeshoekige. De lijn blijft binnen de herhaling, dus herhalingen liggen naast elkaar op een ononderbroken raster van stippen. Met willekeurig met seed loopt de lijn over de randen van de herhaling en komt aan de andere kant weer binnen, zodat het hele vlak uit één lijn geweven is. Verander de seed voor een andere; de maker onthoudt je laatste seed in deze browser.",
+        "Een levende praktijk",
+        "Kolam wordt met de hand getekend in heel Tamil Nadu en Zuid-India, vaak bij de ingang van een huis, en voor veel mensen die hem tekenen heeft hij naast een sierende ook een religieuze betekenis. Deze maker leent het stippenraster en de regels van de lijn, niet de praktijk, en beweert niets over wat een bepaalde kolam betekent. De tegelmethode volgt Tile-based kolam patterns van Saty Raghavachary (SIGGRAPH 2004), en de regels voor een sikku volgen de studie van Venkatraman Gopalan naar sikku-kolams uit vierkante tegels; beide staan bij de [dankbetuigingen](/acknowledgements/)."
+      ]
+    },
+    "turing-patterns": {
+      "title": "Turingpatronen die uitgroeien tot naadloze herhalingen",
+      "summary": "Een nieuwe maker laat stippen, strepen, labyrinten en koraal groeien met het Gray-Scott-reactie-diffusiemodel, op een raster waarvan de randen rondlopen, zodat elke herhaling naadloos is.",
+      "blocks": [
+        "De nieuwe [Turingpatroonmaker](/turing-patterns/) draait een reactie-diffusiesimulatie en tekent wat er groeit: [stippen](/turing-patterns/spots/), [mitose](/turing-patterns/mitosis/), [koraal](/turing-patterns/coral/), [labyrinten](/turing-patterns/labyrinth/), strepen, wormen, gaten en bellen. Stel het raster, het aantal stappen en de richting waarin de stoffen zich verspreiden in, kies gevulde vormen, omtrekken of twee banden, en download een naadloze herhaling of een afdrukbare PDF.",
+        "Voorbeelden om mee te beginnen",
+        [
+          "Koraal, gevuld",
+          "Een labyrint in omtrek",
+          "Mitose op een fijner raster",
+          "Een labyrint in de breedte uitgerekt tot strepen",
+          "Gaten, in twee banden",
+          "Wormen, na 1.000 stappen nog aan het groeien"
+        ],
+        "Waarom er geen naad is",
+        "Elke cel wisselt alleen stoffen uit met haar acht buren, en de linkerrand van het raster telt als buur van de rechterrand, zoals de bovenrand van de onderrand, dus het patroon groeit op het oppervlak van een donut. De rand van elke vorm wordt getekend waar de tweede stof het gekozen niveau passeert, en gladgestreken tot bochten die over de aansluiting doorlopen, zodat een vorm die door de rand van de herhaling wordt afgesneden aan de andere kant precies daar weer binnenkomt waar hij vertrok. De start hangt af van een startgetal en de rekensom ligt vast, dus dezelfde instellingen laten altijd hetzelfde patroon groeien.",
+        "Waar de voorinstellingen vandaan komen",
+        "In 1993 liet John Pearson dit model, het Gray-Scott-model, lopen over een breed bereik van toevoer- en afbraaksnelheden en bracht in kaart wat elk gebied laat groeien ([Science 261](https://arxiv.org/abs/patt-sol/9304003)). Elke voorinstelling is een paar uit een van die gebieden. De paren voor mitose en koraal, en de simulatiestap zelf, volgen de [tutorial van Karl Sims](https://www.karlsims.com/rd.html). Beide staan op de pagina [dankwoord](/acknowledgements/)."
+      ]
+    },
     "chinese-lattice-patterns": {
       "title": "Chinees traliewerk, in dikke latten die herhalen",
       "summary": "Een nieuwe maker tekent Chinees venstertraliewerk op zes grondvormen, van vierkante meander tot gebarsten ijs, met kaders genest in de openingen en een rapport dat altijd op zijn buren aansluit.",
@@ -738,6 +780,20 @@
     }
   },
   "changelog": {
+    "Kolam": {
+      "title": "Kolam-maker",
+      "items": [
+        "Nieuwe kolam-maker: sikku-, pulli- en kambi-kolam rond een vierkant, ruitvormig of zeshoekig raster van stippen, als naadloze herhaling",
+        "Een sikku is altijd één gesloten lijn; symmetrische of willekeurige tegels met seed, enkele of dubbele lijnen en downloads als SVG, PNG en pdf"
+      ]
+    },
+    "Turing patterns": {
+      "title": "Turingpatronen",
+      "items": [
+        "Nieuwe Turingpatroonmaker: stippen, mitose, koraal, labyrint, strepen, wormen, gaten en bellen, gegroeid in een Gray-Scott-reactie-diffusiesimulatie",
+        "Raster, stappen, verspreidingsrichting en randniveau, gevuld, als omtrek of in twee banden, in een naadloze herhaling met downloads als SVG, PNG en PDF"
+      ]
+    },
     "Chinese lattice": {
       "title": "Chinees traliewerk",
       "items": [

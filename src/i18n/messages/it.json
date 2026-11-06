@@ -267,6 +267,18 @@
         "output": "Motivo continuo in SVG e PNG e un PDF stampabile.",
         "explore": "Crea un motivo"
       },
+      "reactionDiffusion": {
+        "title": "Motivi di Turing",
+        "text": "Fai crescere macchie, strisce, labirinti e corallo con una simulazione di reazione-diffusione che si richiude su se stessa, così la ripetizione non ha giunture.",
+        "output": "Ripetizione senza giunture in SVG e PNG, e un PDF stampabile.",
+        "explore": "Fai crescere un motivo"
+      },
+      "kolam": {
+        "title": "Kolam",
+        "text": "Disegni a linee dell'India meridionale attorno a una griglia di punti: la linea unica di un sikku kolam, punti uniti o linee chiuse, su griglia quadrata, a rombi o esagonale.",
+        "output": "Ripetizione continua in SVG e PNG, e un PDF da stampare.",
+        "explore": "Disegna un kolam"
+      },
       "waves": {
         "title": "Motivi a onde",
         "text": "File di onde seno, quadre, tangenti e altre, moiré e figure di Lissajous, a linee o a fasce piene, in una ripetizione continua.",

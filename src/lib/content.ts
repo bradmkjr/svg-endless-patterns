@@ -37,6 +37,7 @@ export type PostSample =
   | { kind: "fractal"; slug: ""; query: string; view: "art" | "outline"; caption: string; locale?: Locale }
   | { kind: "tieDye"; slug: ""; query: string; view: "art" | "guide"; caption: string; locale?: Locale }
   | { kind: "truchet"; slug: ""; query: string; view: "repeat"; caption: string; locale?: Locale }
+  | { kind: "kolam"; slug: ""; query: string; view: "repeat"; caption: string; locale?: Locale }
   | { kind: "reactionDiffusion"; slug: ""; query: string; view: "repeat"; caption: string; locale?: Locale }
   | { kind: "waves"; slug: ""; query: string; view: "repeat"; caption: string; locale?: Locale }
   | { kind: "nature"; slug: ""; query: string; view: "repeat"; caption: string; locale?: Locale }
@@ -128,6 +129,7 @@ export function sampleHref(sample: PostSample, locale: Locale = "en"): string {
   if (sample.kind === "fractal") return localePath(sample.locale ?? locale, `/fractals/${query}`);
   if (sample.kind === "tieDye") return localePath(sample.locale ?? locale, `/tie-dye/${query}`);
   if (sample.kind === "truchet") return localePath(sample.locale ?? locale, `/truchet/${query}`);
+  if (sample.kind === "kolam") return localePath(sample.locale ?? locale, `/kolam/${query}`);
   if (sample.kind === "reactionDiffusion") return localePath(sample.locale ?? locale, `/turing-patterns/${query}`);
   if (sample.kind === "waves") return localePath(sample.locale ?? locale, `/waves/${query}`);
   if (sample.kind === "nature") return localePath(sample.locale ?? locale, `/nature-patterns/${query}`);

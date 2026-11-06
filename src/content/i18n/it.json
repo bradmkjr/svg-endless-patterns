@@ -1,5 +1,47 @@
 {
   "posts": {
+    "kolam": {
+      "title": "Il kolam, disegnato attorno a una griglia di punti",
+      "summary": "Un nuovo generatore disegna il kolam attorno a una griglia di punti come ripetizione continua: la linea unica di un sikku kolam, i punti uniti di un pulli kolam o le linee chiuse di un kambi kolam, su griglia quadrata, a rombi o esagonale.",
+      "blocks": [
+        "Il nuovo [generatore di kolam](/kolam/) disegna il kolam attorno a una griglia di punti, detti pulli, come ripetizione continua. Scegli un [sikku kolam](/kolam/sikku/), in cui un'unica linea gira attorno a ogni punto, un [pulli kolam](/kolam/pulli/), in cui petali curvi uniscono i punti, o un [kambi kolam](/kolam/kambi/), in cui linee chiuse girano attorno a punti e gruppi di punti senza incrociarsi. Scegli una griglia quadrata, a rombi o esagonale, una linea singola o doppia e i tuoi colori, poi scarica SVG, PNG o un PDF da stampare.",
+        "Esempi da cui partire",
+        [
+          "Un sikku kolam simmetrico su una griglia quadrata di 81 punti",
+          "Un sikku kolam sulla griglia a rombi",
+          "Casuale con seme su una griglia esagonale, a linea doppia",
+          "Un pulli kolam, con i punti uniti da petali",
+          "Un kambi kolam con seme, con le linee chiuse in due colori",
+          "Un sikku con seme più fitto, largo 13 punti"
+        ],
+        "Una linea, attorno a ogni punto",
+        "Ogni punto sta nel proprio quadrato, e su ogni lato di quel quadrato la linea passa al vicino oppure torna attorno al proprio punto. I vicini condividono quella scelta, quindi i quadrati combaciano sempre: sulla griglia quadrata le tessere di questo tipo sono sedici. Un sikku parte da un anello attorno a ogni punto e apre gli anelli l'uno nell'altro uno alla volta, tenendo un'apertura solo quando unisce due linee in una, così finisce sempre come un'unica linea chiusa che passa tra ogni coppia di vicini. I test del generatore lo verificano per ogni griglia, dimensione e seme.",
+        "Simmetrico o con seme",
+        "Con la regola simmetrica ogni ripetizione contiene un kolam completo, ruotato attorno al centro: un quarto di giro sulla griglia quadrata, le due diagonali sulla griglia a rombi e mezzo giro su quella esagonale. La sua linea resta dentro la ripetizione, così le ripetizioni si affiancano su una griglia di punti senza interruzioni. Con la regola casuale con seme la linea attraversa i bordi della ripetizione e rientra dall'altro lato, così l'intera superficie è intessuta da una sola linea. Cambia il seme per averne un altro; il generatore ricorda il tuo ultimo seme in questo browser.",
+        "Una pratica viva",
+        "Il kolam si disegna a mano in tutto il Tamil Nadu e nell'India meridionale, spesso all'ingresso di una casa, e per molte delle persone che lo tracciano ha un significato religioso oltre che ornamentale. Questo generatore prende in prestito la griglia di punti e le regole della linea, non la pratica, e non afferma nulla su cosa significhi un kolam in particolare. Il metodo a tessere segue Tile-based kolam patterns di Saty Raghavachary (SIGGRAPH 2004), e le regole del sikku seguono lo studio di Venkatraman Gopalan sui sikku kolam a tessere quadrate; entrambi sono nei [ringraziamenti](/acknowledgements/)."
+      ]
+    },
+    "turing-patterns": {
+      "title": "Motivi di Turing che crescono in ripetizioni senza giunture",
+      "summary": "Un nuovo generatore fa crescere macchie, strisce, labirinti e corallo con il modello di reazione-diffusione di Gray-Scott, su una griglia i cui bordi si richiudono, così ogni ripetizione è senza giunture.",
+      "blocks": [
+        "Il nuovo [generatore di motivi di Turing](/turing-patterns/) esegue una simulazione di reazione-diffusione e disegna ciò che cresce: [macchie](/turing-patterns/spots/), [mitosi](/turing-patterns/mitosis/), [corallo](/turing-patterns/coral/), [labirinti](/turing-patterns/labyrinth/), strisce, vermi, buchi e bolle. Imposta la griglia, il numero di passi e la direzione in cui si diffondono le sostanze, scegli forme piene, contorni o due fasce, poi scarica una ripetizione senza giunture o un PDF stampabile.",
+        "Esempi da cui partire",
+        [
+          "Corallo, pieno",
+          "Un labirinto in contorno",
+          "Mitosi su una griglia più fine",
+          "Un labirinto allungato in larghezza fino a diventare strisce",
+          "Buchi, in due fasce",
+          "Vermi, ancora in crescita dopo 1.000 passi"
+        ],
+        "Perché non c'è giuntura",
+        "Ogni cella scambia sostanze solo con le sue otto vicine, e il bordo sinistro della griglia conta come vicino del destro, come quello superiore dell'inferiore, quindi il motivo cresce sulla superficie di una ciambella. Il bordo di ogni forma viene tracciato dove la seconda sostanza supera il livello scelto, poi levigato in curve la cui curvatura prosegue attraverso la giunzione, così una forma tagliata dal bordo della ripetizione rientra dall'altro lato esattamente dove era uscita. La partenza usa un seme e il calcolo è fisso, quindi le stesse impostazioni fanno crescere sempre lo stesso motivo.",
+        "Da dove vengono le impostazioni",
+        "Nel 1993 John Pearson ha eseguito questo modello, quello di Gray-Scott, su un'ampia gamma di tassi di alimentazione e rimozione e ha mappato ciò che cresce in ogni regione ([Science 261](https://arxiv.org/abs/patt-sol/9304003)). Ogni impostazione è una coppia presa da una di quelle regioni. Le coppie di mitosi e corallo, e il passo di simulazione stesso, seguono il [tutorial di Karl Sims](https://www.karlsims.com/rd.html). Entrambi sono citati nella pagina dei [ringraziamenti](/acknowledgements/)."
+      ]
+    },
     "chinese-lattice-patterns": {
       "title": "Grata cinese, in barre spesse che si ripetono",
       "summary": "Un nuovo generatore disegna grate cinesi da finestra su sei strutture, dalla greca quadrata al ghiaccio incrinato, con cornici annidate nelle aperture e un modulo che combacia sempre con i vicini.",
@@ -738,6 +780,20 @@
     }
   },
   "changelog": {
+    "Kolam": {
+      "title": "Generatore di kolam",
+      "items": [
+        "Nuovo generatore di kolam: sikku, pulli e kambi kolam attorno a una griglia di punti quadrata, a rombi o esagonale, in una ripetizione continua",
+        "Un sikku è sempre un'unica linea chiusa; tessere simmetriche o casuali con seme, linee singole o doppie e download in SVG, PNG e PDF"
+      ]
+    },
+    "Turing patterns": {
+      "title": "Motivi di Turing",
+      "items": [
+        "Nuovo generatore di motivi di Turing: macchie, mitosi, corallo, labirinto, strisce, vermi, buchi e bolle, cresciuti in una simulazione di reazione-diffusione di Gray-Scott",
+        "Griglia, passi, direzione di diffusione e livello del bordo, negli stili pieno, contorno o due fasce, in una ripetizione senza giunture con download in SVG, PNG e PDF"
+      ]
+    },
     "Chinese lattice": {
       "title": "Grata cinese",
       "items": [

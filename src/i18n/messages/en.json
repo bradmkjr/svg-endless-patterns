@@ -267,6 +267,18 @@
         "output": "Seamless SVG and PNG repeat, and a printable PDF.",
         "explore": "Make a pattern"
       },
+      "reactionDiffusion": {
+        "title": "Turing patterns",
+        "text": "Grow spots, stripes, labyrinths and coral from a reaction-diffusion simulation that wraps around, so the repeat is seamless.",
+        "output": "Seamless SVG and PNG repeat, and a printable PDF.",
+        "explore": "Grow a pattern"
+      },
+      "kolam": {
+        "title": "Kolam",
+        "text": "South Indian line drawings around a grid of dots: a sikku kolam's single looping line, joined dots or closed lines, on a square, diamond or hexagonal grid.",
+        "output": "Seamless SVG and PNG repeat, and a printable PDF.",
+        "explore": "Draw a kolam"
+      },
       "waves": {
         "title": "Wave patterns",
         "text": "Rows of sine, square, tangent and other waves, moiré and Lissajous figures, as lines or filled bands, in a seamless repeat.",

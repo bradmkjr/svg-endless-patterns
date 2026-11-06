@@ -1,6 +1,24 @@
 [
   {
     "date": "2026-11-05",
+    "title": "Kolam",
+    "post": "kolam",
+    "items": [
+      "New kolam maker: sikku, pulli and kambi kolam around a square, diamond or hexagonal grid of dots, in a seamless repeat",
+      "A sikku is always one closed line; symmetric or seeded random tiles, single or double lines, and SVG, PNG and PDF downloads"
+    ]
+  },
+  {
+    "date": "2026-11-05",
+    "title": "Turing patterns",
+    "post": "turing-patterns",
+    "items": [
+      "New Turing pattern maker: spots, mitosis, coral, labyrinth, stripes, worms, holes and bubbles, grown by a Gray-Scott reaction-diffusion simulation",
+      "Grid, steps, spread direction and edge level, with filled, outline or two-band styles, in a seamless repeat with SVG, PNG and PDF downloads"
+    ]
+  },
+  {
+    "date": "2026-11-05",
     "title": "Chinese lattice",
     "post": "chinese-lattice-patterns",
     "items": [

@@ -267,6 +267,18 @@
         "output": "Raccord continu en SVG et PNG, et PDF à imprimer.",
         "explore": "Créer un motif"
       },
+      "reactionDiffusion": {
+        "title": "Motifs de Turing",
+        "text": "Faites pousser taches, rayures, labyrinthes et corail avec une simulation de réaction-diffusion qui se referme sur elle-même, pour un raccord sans couture.",
+        "output": "Raccord sans couture en SVG et PNG, et un PDF imprimable.",
+        "explore": "Faire pousser un motif"
+      },
+      "kolam": {
+        "title": "Kolam",
+        "text": "Dessins de lignes du sud de l'Inde autour d'une grille de points : la ligne unique d'un sikku kolam, des points reliés ou des lignes fermées, sur une grille carrée, en losange ou hexagonale.",
+        "output": "Raccord continu en SVG et PNG, et un PDF imprimable.",
+        "explore": "Dessiner un kolam"
+      },
       "waves": {
         "title": "Motifs d'ondes",
         "text": "Des rangées d'ondes sinus, carrées, tangentes et autres, moirés et figures de Lissajous, en lignes ou en bandes pleines, dans un raccord continu.",

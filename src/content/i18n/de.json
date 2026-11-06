@@ -1,5 +1,47 @@
 {
   "posts": {
+    "kolam": {
+      "title": "Kolam, gezeichnet um ein Punkteraster",
+      "summary": "Ein neuer Generator zeichnet Kolam um ein Punkteraster als nahtlosen Rapport: die eine umlaufende Linie eines Sikku-Kolam, die verbundenen Punkte eines Pulli-Kolam oder die geschlossenen Linien eines Kambi-Kolam, auf quadratischem, rautenförmigem oder sechseckigem Raster.",
+      "blocks": [
+        "Der neue [Kolam-Generator](/kolam/) zeichnet Kolam um ein Raster aus Punkten, Pulli genannt, als nahtlosen Rapport. Wähle ein [Sikku-Kolam](/kolam/sikku/), bei dem eine einzige Linie um jeden Punkt läuft, ein [Pulli-Kolam](/kolam/pulli/), bei dem geschwungene Blütenblätter die Punkte verbinden, oder ein [Kambi-Kolam](/kolam/kambi/), bei dem geschlossene Linien um Punkte und Punktgruppen laufen, ohne sich zu kreuzen. Wähle ein quadratisches, rautenförmiges oder sechseckiges Raster, eine einfache oder doppelte Linie und deine Farben und lade SVG, PNG oder ein druckbares PDF herunter.",
+        "Beispiele zum Einstieg",
+        [
+          "Ein symmetrisches Sikku-Kolam auf einem quadratischen Raster aus 81 Punkten",
+          "Ein Sikku-Kolam auf dem rautenförmigen Raster",
+          "Zufällig mit Startwert auf einem sechseckigen Raster, mit doppelter Linie",
+          "Ein Pulli-Kolam, dessen Punkte Blütenblätter verbinden",
+          "Ein Kambi-Kolam mit Startwert, seine geschlossenen Linien in zwei Farben",
+          "Ein feineres Sikku mit Startwert, 13 Punkte breit"
+        ],
+        "Eine Linie, um jeden Punkt",
+        "Jeder Punkt sitzt in seinem eigenen Quadrat, und an jeder Seite dieses Quadrats kreuzt die Linie entweder zum Nachbarn hinüber oder kehrt um ihren eigenen Punkt zurück. Nachbarn teilen sich diese Wahl, deshalb passen die Quadrate immer zusammen: Auf dem quadratischen Raster gibt es sechzehn solcher Kacheln. Ein Sikku beginnt mit einem Ring um jeden Punkt und öffnet die Ringe nacheinander ineinander, wobei eine Öffnung nur bleibt, wenn sie zwei Linien zu einer verbindet. So endet es immer als eine einzige geschlossene Linie, die zwischen allen benachbarten Punkten hindurchläuft. Die Tests des Generators prüfen das für jedes Raster, jede Größe und jeden Startwert.",
+        "Symmetrisch oder mit Startwert",
+        "Mit der symmetrischen Regel enthält jeder Rapport ein fertiges Kolam, gedreht um seine Mitte: eine Vierteldrehung auf dem quadratischen Raster, die beiden Diagonalen auf dem rautenförmigen und eine halbe Drehung auf dem sechseckigen. Seine Linie bleibt im Rapport, sodass die Rapporte nebeneinander auf einem durchgehenden Punkteraster liegen. Mit der Zufallsregel läuft die Linie über die Kanten des Rapports und kommt auf der anderen Seite wieder herein, sodass die ganze Fläche aus einer Linie gewebt ist. Ändere den Startwert für ein anderes; der Generator merkt sich deinen letzten Startwert in diesem Browser.",
+        "Eine lebendige Praxis",
+        "Kolam wird in ganz Tamil Nadu und Südindien von Hand gezeichnet, oft am Eingang eines Hauses, und für viele, die es zeichnen, hat es neben der schmückenden auch eine religiöse Bedeutung. Dieser Generator übernimmt das Punkteraster und die Regeln der Linie, nicht die Praxis, und er behauptet nichts darüber, was ein bestimmtes Kolam bedeutet. Das Kachelverfahren folgt Saty Raghavacharys Tile-based kolam patterns (SIGGRAPH 2004), die Regeln für ein Sikku folgen Venkatraman Gopalans Studie über Sikku-Kolams aus quadratischen Kacheln; beide stehen in den [Danksagungen](/acknowledgements/)."
+      ]
+    },
+    "turing-patterns": {
+      "title": "Turing-Muster, die zu nahtlosen Rapporten wachsen",
+      "summary": "Ein neues Werkzeug lässt Punkte, Streifen, Labyrinthe und Korallen mit dem Gray-Scott-Reaktions-Diffusions-Modell wachsen, auf einem Raster, dessen Ränder ineinander übergehen, damit jeder Rapport nahtlos ist.",
+      "blocks": [
+        "Das neue [Turing-Muster-Werkzeug](/turing-patterns/) lässt eine Reaktions-Diffusions-Simulation laufen und zeichnet, was wächst: [Punkte](/turing-patterns/spots/), [Mitose](/turing-patterns/mitosis/), [Koralle](/turing-patterns/coral/), [Labyrinthe](/turing-patterns/labyrinth/), Streifen, Würmer, Löcher und Blasen. Lege das Raster, die Zahl der Schritte und die Ausbreitungsrichtung der Stoffe fest, wähle gefüllte Formen, Konturen oder zwei Stufen und lade einen nahtlosen Rapport oder ein druckbares PDF herunter.",
+        "Beispiele zum Einstieg",
+        [
+          "Koralle, gefüllt",
+          "Ein Labyrinth als Kontur",
+          "Mitose auf einem feineren Raster",
+          "Ein Labyrinth, in die Breite zu Streifen gezogen",
+          "Löcher, in zwei Stufen",
+          "Würmer, nach 1.000 Schritten noch im Wachsen"
+        ],
+        "Warum es keine Naht gibt",
+        "Jede Zelle tauscht Stoffe nur mit ihren acht Nachbarn aus, und der linke Rand des Rasters gilt als Nachbar des rechten, der obere als Nachbar des unteren. Das Muster wächst also auf der Oberfläche eines Donuts. Die Kante jeder Form wird dort gezogen, wo der zweite Stoff die gewählte Höhe überschreitet, und zu Kurven geglättet, deren Biegung über den Übergang hinweg weiterläuft. Eine Form, die vom Rand des Rapports abgeschnitten wird, kommt deshalb auf der anderen Seite genau dort wieder herein, wo sie hinausging. Der Start hängt vom Startwert ab und die Rechnung ist festgelegt, also wachsen aus denselben Einstellungen immer dieselben Muster.",
+        "Woher die Voreinstellungen stammen",
+        "1993 ließ John Pearson dieses Modell, das Gray-Scott-Modell, über eine große Spanne von Zufuhr- und Abbauraten laufen und kartierte, was in jedem Bereich wächst ([Science 261](https://arxiv.org/abs/patt-sol/9304003)). Jede Voreinstellung ist ein Paar aus einem dieser Bereiche. Die Paare für Mitose und Koralle sowie der Simulationsschritt selbst folgen dem [Tutorial von Karl Sims](https://www.karlsims.com/rd.html). Beide sind auf der Seite [Danksagungen](/acknowledgements/) genannt."
+      ]
+    },
     "chinese-lattice-patterns": {
       "title": "Chinesisches Gitterwerk aus kräftigen Stäben, nahtlos wiederholt",
       "summary": "Ein neuer Generator zeichnet chinesisches Fenstergitter auf sechs Grundgerüsten, vom quadratischen Mäander bis zum Eisbruch, mit Rahmen in den Öffnungen und einem Rapport, der immer an seine Nachbarn anschließt.",
@@ -738,6 +780,20 @@
     }
   },
   "changelog": {
+    "Kolam": {
+      "title": "Kolam-Generator",
+      "items": [
+        "Neuer Kolam-Generator: Sikku-, Pulli- und Kambi-Kolam um ein quadratisches, rautenförmiges oder sechseckiges Punkteraster, als nahtloser Rapport",
+        "Ein Sikku ist immer eine einzige geschlossene Linie; symmetrische oder zufällige Kacheln mit Startwert, einfache oder doppelte Linien und Downloads als SVG, PNG und PDF"
+      ]
+    },
+    "Turing patterns": {
+      "title": "Turing-Muster",
+      "items": [
+        "Neues Turing-Muster-Werkzeug: Punkte, Mitose, Koralle, Labyrinth, Streifen, Würmer, Löcher und Blasen, gewachsen in einer Gray-Scott-Reaktions-Diffusions-Simulation",
+        "Raster, Schritte, Ausbreitungsrichtung und Kantenhöhe, gefüllt, als Kontur oder in zwei Stufen, als nahtloser Rapport mit Downloads als SVG, PNG und PDF"
+      ]
+    },
     "Chinese lattice": {
       "title": "Chinesisches Gitterwerk",
       "items": [

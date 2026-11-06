@@ -5,7 +5,7 @@
     "h1": "Kolam",
     "lede": "Draw a kolam around a grid of dots, as a seamless repeat. Pick a form, a grid and your colors, then download the repeat or print it.",
     "aboutTitle": "About kolam",
-    "about": "Kolam is a living practice of Tamil Nadu and across South India: drawings made by hand on the ground, often at the entrance to a home, in white flour or powdered limestone. Many begin with a grid of dots, called pulli, and are drawn from memory; for many who draw them, kolam has religious as well as ornamental significance. This tool draws in the spirit of the dot-grid kolam on a computer. It doesn't stand in for the hand, the practice or what a kolam means to the people who draw it.",
+    "about": "Kolam is a living practice of Tamil Nadu and across South India: drawings made by hand on the ground, often at the entrance to a home, in white flour or powdered limestone. Many begin with a grid of dots, called pulli; for many who draw them, kolam has religious as well as ornamental significance. This tool draws in the spirit of the dot-grid kolam on a computer. It doesn't stand in for the hand, the practice or what a kolam means to the people who draw it.",
     "tiles": "Kolam",
     "form": "Form",
     "forms": {
@@ -58,7 +58,7 @@
     "h1": "Kolam",
     "lede": "Dibuja un kolam alrededor de una cuadrícula de puntos, como repetición continua. Elige una forma, una cuadrícula y tus colores, y descarga la repetición o imprímela.",
     "aboutTitle": "Sobre el kolam",
-    "about": "El kolam es una práctica viva de Tamil Nadu y de todo el sur de la India: dibujos hechos a mano en el suelo, a menudo a la entrada de una casa, con harina blanca o piedra caliza en polvo. Muchos comienzan con una cuadrícula de puntos, llamados pulli, y se dibujan de memoria; para muchas de las personas que los dibujan, el kolam tiene un significado religioso además de ornamental. Esta herramienta dibuja en el espíritu del kolam de puntos en un ordenador. No sustituye a la mano, a la práctica ni a lo que un kolam significa para quienes lo dibujan.",
+    "about": "El kolam es una práctica viva de Tamil Nadu y de todo el sur de la India: dibujos hechos a mano en el suelo, a menudo a la entrada de una casa, con harina blanca o piedra caliza en polvo. Muchos comienzan con una cuadrícula de puntos, llamados pulli; para muchas de las personas que los dibujan, el kolam tiene un significado religioso además de ornamental. Esta herramienta dibuja en el espíritu del kolam de puntos en un ordenador. No sustituye a la mano, a la práctica ni a lo que un kolam significa para quienes lo dibujan.",
     "tiles": "Kolam",
     "form": "Forma",
     "forms": {
@@ -111,7 +111,7 @@
     "h1": "Kolam",
     "lede": "Dessinez un kolam autour d'une grille de points, en raccord continu. Choisissez une forme, une grille et vos couleurs, puis téléchargez le raccord ou imprimez-le.",
     "aboutTitle": "À propos du kolam",
-    "about": "Le kolam est une pratique vivante du Tamil Nadu et de tout le sud de l'Inde : des dessins tracés à la main sur le sol, souvent à l'entrée d'une maison, à la farine blanche ou au calcaire en poudre. Beaucoup commencent par une grille de points, appelés pulli, et se tracent de mémoire ; pour bien des personnes qui les dessinent, le kolam a une portée religieuse autant qu'ornementale. Cet outil dessine dans l'esprit du kolam à points, sur ordinateur. Il ne remplace ni la main, ni la pratique, ni ce qu'un kolam signifie pour celles et ceux qui le tracent.",
+    "about": "Le kolam est une pratique vivante du Tamil Nadu et de tout le sud de l'Inde : des dessins tracés à la main sur le sol, souvent à l'entrée d'une maison, à la farine blanche ou au calcaire en poudre. Beaucoup commencent par une grille de points, appelés pulli ; pour bien des personnes qui les dessinent, le kolam a une portée religieuse autant qu'ornementale. Cet outil dessine dans l'esprit du kolam à points, sur ordinateur. Il ne remplace ni la main, ni la pratique, ni ce qu'un kolam signifie pour celles et ceux qui le tracent.",
     "tiles": "Kolam",
     "form": "Forme",
     "forms": {
@@ -164,7 +164,7 @@
     "h1": "Kolam",
     "lede": "Zeichne ein Kolam um ein Punkteraster, als nahtlosen Rapport. Wähle eine Form, ein Raster und deine Farben und lade den Rapport herunter oder drucke ihn.",
     "aboutTitle": "Über Kolam",
-    "about": "Kolam ist eine lebendige Praxis in Tamil Nadu und ganz Südindien: Zeichnungen, die von Hand auf den Boden gemacht werden, oft am Eingang eines Hauses, mit weißem Mehl oder Kalksteinpulver. Viele beginnen mit einem Raster aus Punkten, Pulli genannt, und werden aus dem Gedächtnis gezeichnet; für viele, die sie zeichnen, hat Kolam neben der schmückenden auch eine religiöse Bedeutung. Dieses Werkzeug zeichnet im Sinne des Punkte-Kolam am Computer. Es ersetzt weder die Hand noch die Praxis noch das, was ein Kolam den Menschen bedeutet, die es zeichnen.",
+    "about": "Kolam ist eine lebendige Praxis in Tamil Nadu und ganz Südindien: Zeichnungen, die von Hand auf den Boden gemacht werden, oft am Eingang eines Hauses, mit weißem Mehl oder Kalksteinpulver. Viele beginnen mit einem Raster aus Punkten, Pulli genannt; für viele, die sie zeichnen, hat Kolam neben der schmückenden auch eine religiöse Bedeutung. Dieses Werkzeug zeichnet im Sinne des Punkte-Kolam am Computer. Es ersetzt weder die Hand noch die Praxis noch das, was ein Kolam den Menschen bedeutet, die es zeichnen.",
     "tiles": "Kolam",
     "form": "Form",
     "forms": {
@@ -217,7 +217,7 @@
     "h1": "Kolam",
     "lede": "Desenhe um kolam ao redor de uma grade de pontos, como repetição contínua. Escolha uma forma, uma grade e suas cores, depois baixe a repetição ou imprima.",
     "aboutTitle": "Sobre o kolam",
-    "about": "O kolam é uma prática viva de Tamil Nadu e de todo o sul da Índia: desenhos feitos à mão no chão, muitas vezes na entrada de uma casa, com farinha branca ou calcário em pó. Muitos começam com uma grade de pontos, chamados pulli, e são desenhados de memória; para muitas das pessoas que os desenham, o kolam tem significado religioso além de ornamental. Esta ferramenta desenha no espírito do kolam de pontos, no computador. Ela não substitui a mão, a prática nem o que um kolam significa para quem o desenha.",
+    "about": "O kolam é uma prática viva de Tamil Nadu e de todo o sul da Índia: desenhos feitos à mão no chão, muitas vezes na entrada de uma casa, com farinha branca ou calcário em pó. Muitos começam com uma grade de pontos, chamados pulli; para muitas das pessoas que os desenham, o kolam tem significado religioso além de ornamental. Esta ferramenta desenha no espírito do kolam de pontos, no computador. Ela não substitui a mão, a prática nem o que um kolam significa para quem o desenha.",
     "tiles": "Kolam",
     "form": "Forma",
     "forms": {
@@ -270,7 +270,7 @@
     "h1": "Kolam",
     "lede": "Disegna un kolam attorno a una griglia di punti, come ripetizione continua. Scegli una forma, una griglia e i tuoi colori, poi scarica la ripetizione o stampala.",
     "aboutTitle": "Il kolam",
-    "about": "Il kolam è una pratica viva del Tamil Nadu e di tutto il sud dell'India: disegni tracciati a mano sul suolo, spesso all'ingresso di una casa, con farina bianca o calcare in polvere. Molti cominciano da una griglia di punti, detti pulli, e si disegnano a memoria; per molte delle persone che li tracciano, il kolam ha un significato religioso oltre che ornamentale. Questo strumento disegna nello spirito del kolam a punti, al computer. Non sostituisce la mano, la pratica né ciò che un kolam significa per chi lo traccia.",
+    "about": "Il kolam è una pratica viva del Tamil Nadu e di tutto il sud dell'India: disegni tracciati a mano sul suolo, spesso all'ingresso di una casa, con farina bianca o calcare in polvere. Molti cominciano da una griglia di punti, detti pulli; per molte delle persone che li tracciano, il kolam ha un significato religioso oltre che ornamentale. Questo strumento disegna nello spirito del kolam a punti, al computer. Non sostituisce la mano, la pratica né ciò che un kolam significa per chi lo traccia.",
     "tiles": "Kolam",
     "form": "Forma",
     "forms": {
@@ -323,7 +323,7 @@
     "h1": "Kolam",
     "lede": "Teken een kolam rond een raster van stippen, als naadloze herhaling. Kies een vorm, een raster en je kleuren en download de herhaling of print hem.",
     "aboutTitle": "Over kolam",
-    "about": "Kolam is een levende praktijk in Tamil Nadu en heel Zuid-India: tekeningen die met de hand op de grond worden gemaakt, vaak bij de ingang van een huis, met wit meel of kalksteenpoeder. Veel ervan beginnen met een raster van stippen, pulli genoemd, en worden uit het hoofd getekend; voor veel mensen die ze tekenen heeft kolam naast een sierende ook een religieuze betekenis. Dit hulpmiddel tekent in de geest van de stippenkolam op een computer. Het vervangt de hand niet, en ook niet de praktijk of wat een kolam betekent voor wie hem tekent.",
+    "about": "Kolam is een levende praktijk in Tamil Nadu en heel Zuid-India: tekeningen die met de hand op de grond worden gemaakt, vaak bij de ingang van een huis, met wit meel of kalksteenpoeder. Veel ervan beginnen met een raster van stippen, pulli genoemd; voor veel mensen die ze tekenen heeft kolam naast een sierende ook een religieuze betekenis. Dit hulpmiddel tekent in de geest van de stippenkolam op een computer. Het vervangt de hand niet, en ook niet de praktijk of wat een kolam betekent voor wie hem tekent.",
     "tiles": "Kolam",
     "form": "Vorm",
     "forms": {

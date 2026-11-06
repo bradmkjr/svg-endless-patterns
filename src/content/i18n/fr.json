@@ -1,5 +1,47 @@
 {
   "posts": {
+    "kolam": {
+      "title": "Le kolam, tracé autour d'une grille de points",
+      "summary": "Un nouvel outil dessine le kolam autour d'une grille de points en raccord continu : la ligne unique d'un sikku kolam, les points reliés d'un pulli kolam ou les lignes fermées d'un kambi kolam, sur une grille carrée, en losange ou hexagonale.",
+      "blocks": [
+        "Le nouvel [outil kolam](/kolam/) dessine le kolam autour d'une grille de points, appelés pulli, en raccord continu. Choisissez un [sikku kolam](/kolam/sikku/), où une seule ligne fait le tour de chaque point, un [pulli kolam](/kolam/pulli/), où des pétales courbes relient les points, ou un [kambi kolam](/kolam/kambi/), où des lignes fermées entourent des points et des groupes de points sans se croiser. Prenez une grille carrée, en losange ou hexagonale, une ligne simple ou double et vos couleurs, puis téléchargez en SVG, PNG ou en PDF imprimable.",
+        "Des exemples pour commencer",
+        [
+          "Un sikku kolam symétrique sur une grille carrée de 81 points",
+          "Un sikku kolam sur la grille en losange",
+          "Aléatoire avec graine sur une grille hexagonale, en ligne double",
+          "Un pulli kolam, ses points reliés par des pétales",
+          "Un kambi kolam avec graine, ses lignes fermées en deux couleurs",
+          "Un sikku avec graine plus fin, de 13 points de large"
+        ],
+        "Une ligne, autour de chaque point",
+        "Chaque point occupe son propre carré, et sur chaque côté de ce carré la ligne passe chez le voisin ou revient autour de son propre point. Les voisins partagent ce choix, si bien que les carrés se raccordent toujours : sur la grille carrée, il existe seize tuiles de ce genre. Un sikku commence par un anneau autour de chaque point et ouvre les anneaux les uns dans les autres un à un, en ne gardant une ouverture que si elle réunit deux lignes en une, de sorte qu'il finit toujours en une seule ligne fermée qui passe entre chaque paire de voisins. Les tests de l'outil le vérifient pour chaque grille, taille et graine.",
+        "Symétrique ou avec graine",
+        "Avec la règle symétrique, chaque raccord contient un kolam complet, tourné autour de son centre : un quart de tour sur la grille carrée, les deux diagonales sur la grille en losange et un demi-tour sur la grille hexagonale. Sa ligne reste dans le raccord, si bien que les raccords se posent côte à côte sur une grille de points ininterrompue. Avec l'aléatoire avec graine, la ligne passe les bords du raccord et revient de l'autre côté, si bien que toute la surface est tissée d'une seule ligne. Changez la graine pour en obtenir un autre ; l'outil se souvient de votre dernière graine dans ce navigateur.",
+        "Une pratique vivante",
+        "Le kolam est tracé à la main dans tout le Tamil Nadu et le sud de l'Inde, souvent à l'entrée d'une maison, et pour bien des personnes qui le dessinent, il a une portée religieuse autant qu'ornementale. Cet outil emprunte la grille de points et les règles de la ligne, pas la pratique, et il ne prétend rien sur ce que signifie un kolam en particulier. La méthode des tuiles suit Tile-based kolam patterns de Saty Raghavachary (SIGGRAPH 2004), et les règles du sikku suivent l'étude de Venkatraman Gopalan sur les sikku kolams à tuiles carrées ; tous deux figurent dans les [remerciements](/acknowledgements/)."
+      ]
+    },
+    "turing-patterns": {
+      "title": "Des motifs de Turing qui poussent en raccords sans couture",
+      "summary": "Un nouvel outil fait pousser taches, rayures, labyrinthes et corail avec le modèle de réaction-diffusion de Gray-Scott, sur une grille dont les bords se rejoignent, pour que chaque raccord soit sans couture.",
+      "blocks": [
+        "Le nouvel [outil de motifs de Turing](/turing-patterns/) fait tourner une simulation de réaction-diffusion et dessine ce qui pousse : [taches](/turing-patterns/spots/), [mitose](/turing-patterns/mitosis/), [corail](/turing-patterns/coral/), [labyrinthes](/turing-patterns/labyrinth/), rayures, vers, trous et bulles. Réglez la grille, le nombre de pas et le sens de diffusion des substances, choisissez des formes pleines, des contours ou deux bandes, puis téléchargez un raccord sans couture ou un PDF imprimable.",
+        "Des exemples pour commencer",
+        [
+          "Corail, plein",
+          "Un labyrinthe en contour",
+          "Mitose sur une grille plus fine",
+          "Un labyrinthe étiré en largeur jusqu'aux rayures",
+          "Trous, en deux bandes",
+          "Vers, encore en croissance après 1 000 pas"
+        ],
+        "Pourquoi il n'y a pas de couture",
+        "Chaque cellule n'échange des substances qu'avec ses huit voisines, et le bord gauche de la grille compte comme voisin du bord droit, comme le haut du bas : le motif pousse donc sur la surface d'un beignet. Le bord de chaque forme est tracé là où la seconde substance franchit le niveau choisi, puis lissé en courbes dont la courbure se prolonge à travers la jonction, si bien qu'une forme coupée par le bord du raccord revient de l'autre côté exactement où elle est sortie. Le départ est tiré d'une graine et le calcul est fixe, donc les mêmes réglages font toujours pousser le même motif.",
+        "D'où viennent les réglages",
+        "En 1993, John Pearson a fait tourner ce modèle, celui de Gray-Scott, sur une large gamme de taux d'alimentation et d'élimination et a cartographié ce que chaque région fait pousser ([Science 261](https://arxiv.org/abs/patt-sol/9304003)). Chaque réglage est un couple tiré de l'une de ces régions. Les couples de la mitose et du corail, ainsi que le pas de simulation lui-même, suivent le [tutoriel de Karl Sims](https://www.karlsims.com/rd.html). Tous deux sont cités sur la page des [remerciements](/acknowledgements/)."
+      ]
+    },
     "chinese-lattice-patterns": {
       "title": "Treillis chinois, en barres épaisses qui se répètent",
       "summary": "Un nouvel outil dessine des treillis de fenêtre chinois sur six structures, de la grecque carrée à la glace craquelée, avec des cadres imbriqués dans les ouvertures et un raccord qui rejoint toujours ses voisins.",
@@ -738,6 +780,20 @@
     }
   },
   "changelog": {
+    "Kolam": {
+      "title": "Outil kolam",
+      "items": [
+        "Nouvel outil kolam : sikku, pulli et kambi kolam autour d'une grille de points carrée, en losange ou hexagonale, en raccord continu",
+        "Un sikku est toujours une seule ligne fermée ; tuiles symétriques ou aléatoires avec graine, lignes simples ou doubles, et téléchargements SVG, PNG et PDF"
+      ]
+    },
+    "Turing patterns": {
+      "title": "Motifs de Turing",
+      "items": [
+        "Nouvel outil de motifs de Turing : taches, mitose, corail, labyrinthe, rayures, vers, trous et bulles, qui poussent dans une simulation de réaction-diffusion de Gray-Scott",
+        "Grille, pas, sens de diffusion et niveau du bord, en style plein, contour ou deux bandes, dans un raccord sans couture avec téléchargements SVG, PNG et PDF"
+      ]
+    },
     "Chinese lattice": {
       "title": "Treillis chinois",
       "items": [

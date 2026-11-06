@@ -1,5 +1,47 @@
 {
   "posts": {
+    "kolam": {
+      "title": "Kolam, dibujado alrededor de una cuadrícula de puntos",
+      "summary": "Un nuevo generador dibuja kolam alrededor de una cuadrícula de puntos como repetición continua: la línea única de un sikku kolam, los puntos unidos de un pulli kolam o las líneas cerradas de un kambi kolam, en cuadrícula cuadrada, en rombo o hexagonal.",
+      "blocks": [
+        "El nuevo [generador de kolam](/kolam/) dibuja kolam alrededor de una cuadrícula de puntos, llamados pulli, como repetición continua. Elige un [sikku kolam](/kolam/sikku/), donde una sola línea rodea cada punto, un [pulli kolam](/kolam/pulli/), donde pétalos curvos unen los puntos, o un [kambi kolam](/kolam/kambi/), donde líneas cerradas rodean puntos y grupos de puntos sin cruzarse. Escoge una cuadrícula cuadrada, en rombo o hexagonal, una línea sencilla o doble y tus colores, y descarga SVG, PNG o un PDF imprimible.",
+        "Ejemplos para empezar",
+        [
+          "Un sikku kolam simétrico en una cuadrícula cuadrada de 81 puntos",
+          "Un sikku kolam en la cuadrícula en rombo",
+          "Aleatorio con semilla en una cuadrícula hexagonal, con línea doble",
+          "Un pulli kolam, con sus puntos unidos por pétalos",
+          "Un kambi kolam con semilla, con sus líneas cerradas en dos colores",
+          "Un sikku con semilla más fino, de 13 puntos de ancho"
+        ],
+        "Una línea, alrededor de cada punto",
+        "Cada punto ocupa su propio cuadro, y en cada lado de ese cuadro la línea cruza hacia el vecino o vuelve alrededor de su propio punto. Los vecinos comparten esa elección, así que los cuadros siempre encajan: en la cuadrícula cuadrada hay dieciséis piezas así. Un sikku empieza con un anillo alrededor de cada punto y abre unos anillos hacia otros de uno en uno, conservando una abertura solo cuando une dos líneas en una, de modo que siempre termina como una sola línea cerrada que pasa entre cada par de vecinos. Las pruebas del generador lo comprueban para cada cuadrícula, tamaño y semilla.",
+        "Simétrico o con semilla",
+        "Con la regla simétrica, cada repetición contiene un kolam completo, girado alrededor de su centro: un cuarto de vuelta en la cuadrícula cuadrada, las dos diagonales en la cuadrícula en rombo y media vuelta en la hexagonal. Su línea se queda dentro de la repetición, así que las repeticiones se colocan una junto a otra sobre una cuadrícula de puntos sin interrupciones. Con la regla aleatoria con semilla, la línea cruza los bordes de la repetición y vuelve a entrar por el otro lado, de modo que toda la superficie se teje con una sola línea. Cambia la semilla para obtener otro; el generador recuerda tu última semilla en este navegador.",
+        "Una práctica viva",
+        "El kolam se dibuja a mano en todo Tamil Nadu y el sur de la India, a menudo a la entrada de una casa, y para muchas de las personas que lo dibujan tiene un significado religioso además de ornamental. Este generador toma prestadas la cuadrícula de puntos y las reglas de la línea, no la práctica, y no afirma nada sobre lo que significa un kolam en particular. El método de piezas sigue Tile-based kolam patterns de Saty Raghavachary (SIGGRAPH 2004), y las reglas del sikku siguen el estudio de Venkatraman Gopalan sobre los sikku kolam de piezas cuadradas; ambos figuran en los [agradecimientos](/acknowledgements/)."
+      ]
+    },
+    "turing-patterns": {
+      "title": "Patrones de Turing que crecen hasta formar repeticiones sin costuras",
+      "summary": "Un nuevo creador hace crecer puntos, rayas, laberintos y coral con el modelo de reacción-difusión de Gray-Scott, en una cuadrícula cuyos bordes dan la vuelta, así que cada repetición encaja sin costuras.",
+      "blocks": [
+        "El nuevo [creador de patrones de Turing](/turing-patterns/) ejecuta una simulación de reacción-difusión y dibuja lo que crece: [puntos](/turing-patterns/spots/), [mitosis](/turing-patterns/mitosis/), [coral](/turing-patterns/coral/), [laberintos](/turing-patterns/labyrinth/), rayas, gusanos, agujeros y burbujas. Ajusta la cuadrícula, el número de pasos y hacia dónde se extienden las sustancias, elige formas rellenas, contornos o dos bandas, y descarga una repetición sin costuras o un PDF imprimible.",
+        "Ejemplos para empezar",
+        [
+          "Coral, relleno",
+          "Un laberinto en contorno",
+          "Mitosis en una cuadrícula más fina",
+          "Un laberinto estirado a lo ancho hasta formar rayas",
+          "Agujeros, en dos bandas",
+          "Gusanos, aún creciendo tras 1.000 pasos"
+        ],
+        "Por qué no hay costura",
+        "Cada celda intercambia sustancias solo con sus ocho vecinas, y el borde izquierdo de la cuadrícula cuenta como vecino del derecho, igual que el superior del inferior, así que el patrón crece sobre la superficie de un dónut. El borde de cada forma se traza donde la segunda sustancia cruza el nivel que elijas y se suaviza en curvas cuya curvatura continúa a través de la unión, de modo que una forma cortada por el borde de la repetición vuelve a entrar por el otro lado justo donde salió. El inicio usa una semilla y la aritmética es fija, así que los mismos ajustes hacen crecer siempre el mismo patrón.",
+        "De dónde salen los ajustes",
+        "En 1993 John Pearson ejecutó este modelo, el de Gray-Scott, con una amplia gama de tasas de alimentación y eliminación y cartografió lo que crece en cada región ([Science 261](https://arxiv.org/abs/patt-sol/9304003)). Cada ajuste es un par de una de esas regiones. Los pares de mitosis y coral, y el propio paso de simulación, siguen el [tutorial de Karl Sims](https://www.karlsims.com/rd.html). Ambos aparecen en la página de [agradecimientos](/acknowledgements/)."
+      ]
+    },
     "chinese-lattice-patterns": {
       "title": "Celosía china, en barras gruesas que se repiten",
       "summary": "Un nuevo creador dibuja celosías chinas de ventana sobre seis estructuras, de la greca cuadrada al hielo agrietado, con marcos anidados en las aberturas y una repetición que siempre encaja con sus vecinas.",
@@ -738,6 +780,20 @@
     }
   },
   "changelog": {
+    "Kolam": {
+      "title": "Generador de kolam",
+      "items": [
+        "Nuevo generador de kolam: sikku, pulli y kambi kolam alrededor de una cuadrícula de puntos cuadrada, en rombo o hexagonal, en una repetición continua",
+        "Un sikku es siempre una sola línea cerrada; piezas simétricas o aleatorias con semilla, líneas sencillas o dobles y descargas en SVG, PNG y PDF"
+      ]
+    },
+    "Turing patterns": {
+      "title": "Patrones de Turing",
+      "items": [
+        "Nuevo creador de patrones de Turing: puntos, mitosis, coral, laberinto, rayas, gusanos, agujeros y burbujas, que crecen en una simulación de reacción-difusión de Gray-Scott",
+        "Cuadrícula, pasos, dirección de difusión y nivel del borde, con estilos relleno, contorno o dos bandas, en una repetición sin costuras con descargas en SVG, PNG y PDF"
+      ]
+    },
     "Chinese lattice": {
       "title": "Celosía china",
       "items": [

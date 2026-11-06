@@ -1,5 +1,47 @@
 {
   "posts": {
+    "kolam": {
+      "title": "Kolam, desenhado ao redor de uma grade de pontos",
+      "summary": "Um novo gerador desenha kolam ao redor de uma grade de pontos como repetição contínua: a linha única de um sikku kolam, os pontos unidos de um pulli kolam ou as linhas fechadas de um kambi kolam, em grade quadrada, em losango ou hexagonal.",
+      "blocks": [
+        "O novo [gerador de kolam](/kolam/) desenha kolam ao redor de uma grade de pontos, chamados pulli, como repetição contínua. Escolha um [sikku kolam](/kolam/sikku/), em que uma única linha contorna cada ponto, um [pulli kolam](/kolam/pulli/), em que pétalas curvas unem os pontos, ou um [kambi kolam](/kolam/kambi/), em que linhas fechadas contornam pontos e grupos de pontos sem se cruzar. Escolha uma grade quadrada, em losango ou hexagonal, uma linha simples ou dupla e suas cores, depois baixe SVG, PNG ou um PDF para imprimir.",
+        "Exemplos para começar",
+        [
+          "Um sikku kolam simétrico em uma grade quadrada de 81 pontos",
+          "Um sikku kolam na grade em losango",
+          "Aleatório com semente em uma grade hexagonal, com linha dupla",
+          "Um pulli kolam, com os pontos unidos por pétalas",
+          "Um kambi kolam com semente, com as linhas fechadas em duas cores",
+          "Um sikku com semente mais fino, com 13 pontos de largura"
+        ],
+        "Uma linha, ao redor de cada ponto",
+        "Cada ponto ocupa seu próprio quadrado, e em cada lado desse quadrado a linha atravessa para o vizinho ou volta ao redor do próprio ponto. Os vizinhos compartilham essa escolha, então os quadrados sempre se encaixam: na grade quadrada há dezesseis peças assim. Um sikku começa com um anel ao redor de cada ponto e abre os anéis uns nos outros, um de cada vez, mantendo uma abertura só quando ela une duas linhas em uma, de modo que sempre termina como uma única linha fechada que passa entre cada par de vizinhos. Os testes do gerador conferem isso para cada grade, tamanho e semente.",
+        "Simétrico ou com semente",
+        "Com a regra simétrica, cada repetição traz um kolam completo, girado em torno do centro: um quarto de volta na grade quadrada, as duas diagonais na grade em losango e meia volta na hexagonal. A linha fica dentro da repetição, então as repetições ficam lado a lado sobre uma grade de pontos contínua. Com a regra aleatória com semente, a linha atravessa as bordas da repetição e volta pelo outro lado, de modo que toda a superfície é tecida com uma só linha. Mude a semente para obter outro; o gerador lembra sua última semente neste navegador.",
+        "Uma prática viva",
+        "O kolam é desenhado à mão em todo o Tamil Nadu e no sul da Índia, muitas vezes na entrada de uma casa, e para muitas das pessoas que o desenham tem significado religioso além de ornamental. Este gerador toma emprestadas a grade de pontos e as regras da linha, não a prática, e não afirma nada sobre o que um kolam em particular significa. O método das peças segue Tile-based kolam patterns, de Saty Raghavachary (SIGGRAPH 2004), e as regras do sikku seguem o estudo de Venkatraman Gopalan sobre sikku kolams de peças quadradas; ambos estão nos [agradecimentos](/acknowledgements/)."
+      ]
+    },
+    "turing-patterns": {
+      "title": "Padrões de Turing que crescem em repetições sem emendas",
+      "summary": "Um novo gerador faz crescer pintas, listras, labirintos e coral com o modelo de reação-difusão de Gray-Scott, numa grade cujas bordas dão a volta, então cada repetição encaixa sem emendas.",
+      "blocks": [
+        "O novo [gerador de padrões de Turing](/turing-patterns/) roda uma simulação de reação-difusão e desenha o que cresce: [pintas](/turing-patterns/spots/), [mitose](/turing-patterns/mitosis/), [coral](/turing-patterns/coral/), [labirintos](/turing-patterns/labyrinth/), listras, minhocas, furos e bolhas. Ajuste a grade, o número de passos e para onde as substâncias se espalham, escolha formas preenchidas, contornos ou duas faixas, e baixe uma repetição sem emendas ou um PDF para imprimir.",
+        "Exemplos para começar",
+        [
+          "Coral, preenchido",
+          "Um labirinto em contorno",
+          "Mitose numa grade mais fina",
+          "Um labirinto esticado na largura até virar listras",
+          "Furos, em duas faixas",
+          "Minhocas, ainda crescendo após 1.000 passos"
+        ],
+        "Por que não há emenda",
+        "Cada célula troca substâncias só com suas oito vizinhas, e a borda esquerda da grade conta como vizinha da direita, assim como a de cima da de baixo, então o padrão cresce na superfície de um donut. A borda de cada forma é traçada onde a segunda substância cruza o nível escolhido e suavizada em curvas cuja curvatura continua através da junção, de modo que uma forma cortada pela borda da repetição volta pelo outro lado exatamente onde saiu. O início usa uma semente e a aritmética é fixa, então os mesmos ajustes fazem crescer sempre o mesmo padrão.",
+        "De onde vêm as predefinições",
+        "Em 1993, John Pearson rodou este modelo, o de Gray-Scott, numa ampla faixa de taxas de alimentação e remoção e mapeou o que cada região faz crescer ([Science 261](https://arxiv.org/abs/patt-sol/9304003)). Cada predefinição é um par de uma dessas regiões. Os pares de mitose e coral, e o próprio passo de simulação, seguem o [tutorial de Karl Sims](https://www.karlsims.com/rd.html). Os dois aparecem na página de [agradecimentos](/acknowledgements/)."
+      ]
+    },
     "chinese-lattice-patterns": {
       "title": "Treliça chinesa, em barras grossas que se repetem",
       "summary": "Um novo gerador desenha treliças chinesas de janela sobre seis estruturas, da grega quadrada ao gelo rachado, com molduras aninhadas nas aberturas e uma repetição que sempre se encaixa nas vizinhas.",
@@ -738,6 +780,20 @@
     }
   },
   "changelog": {
+    "Kolam": {
+      "title": "Gerador de kolam",
+      "items": [
+        "Novo gerador de kolam: sikku, pulli e kambi kolam ao redor de uma grade de pontos quadrada, em losango ou hexagonal, em repetição contínua",
+        "Um sikku é sempre uma única linha fechada; peças simétricas ou aleatórias com semente, linhas simples ou duplas e downloads em SVG, PNG e PDF"
+      ]
+    },
+    "Turing patterns": {
+      "title": "Padrões de Turing",
+      "items": [
+        "Novo gerador de padrões de Turing: pintas, mitose, coral, labirinto, listras, minhocas, furos e bolhas, crescidos numa simulação de reação-difusão de Gray-Scott",
+        "Grade, passos, direção da difusão e nível da borda, nos estilos preenchido, contorno ou duas faixas, numa repetição sem emendas com downloads em SVG, PNG e PDF"
+      ]
+    },
     "Chinese lattice": {
       "title": "Treliça chinesa",
       "items": [

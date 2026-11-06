@@ -267,6 +267,18 @@
         "output": "Repetição contínua em SVG e PNG e PDF para imprimir.",
         "explore": "Criar um padrão"
       },
+      "reactionDiffusion": {
+        "title": "Padrões de Turing",
+        "text": "Faça crescer pintas, listras, labirintos e coral numa simulação de reação-difusão que dá a volta, então a repetição não tem emendas.",
+        "output": "Repetição sem emendas em SVG e PNG, e um PDF para imprimir.",
+        "explore": "Faça crescer um padrão"
+      },
+      "kolam": {
+        "title": "Kolam",
+        "text": "Desenhos de linhas do sul da Índia ao redor de uma grade de pontos: a linha única de um sikku kolam, pontos unidos ou linhas fechadas, em grade quadrada, em losango ou hexagonal.",
+        "output": "Repetição contínua em SVG e PNG, e um PDF para imprimir.",
+        "explore": "Desenhe um kolam"
+      },
       "waves": {
         "title": "Padrões de ondas",
         "text": "Fileiras de ondas seno, quadradas, tangentes e outras, moiré e figuras de Lissajous, em linhas ou faixas preenchidas, numa repetição contínua.",

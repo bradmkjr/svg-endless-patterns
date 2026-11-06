@@ -267,6 +267,18 @@
         "output": "Repetición continua en SVG y PNG, y PDF imprimible.",
         "explore": "Crear un patrón"
       },
+      "reactionDiffusion": {
+        "title": "Patrones de Turing",
+        "text": "Haz crecer puntos, rayas, laberintos y coral con una simulación de reacción-difusión que da la vuelta, así que la repetición no tiene costuras.",
+        "output": "Repetición sin costuras en SVG y PNG, y un PDF imprimible.",
+        "explore": "Haz crecer un patrón"
+      },
+      "kolam": {
+        "title": "Kolam",
+        "text": "Dibujos de líneas del sur de la India alrededor de una cuadrícula de puntos: la línea única de un sikku kolam, puntos unidos o líneas cerradas, en cuadrícula cuadrada, en rombo o hexagonal.",
+        "output": "Repetición continua en SVG y PNG, y un PDF imprimible.",
+        "explore": "Dibuja un kolam"
+      },
       "waves": {
         "title": "Patrones de ondas",
         "text": "Filas de ondas seno, cuadradas, tangentes y más, muaré y figuras de Lissajous, en líneas o franjas rellenas, en una repetición continua.",

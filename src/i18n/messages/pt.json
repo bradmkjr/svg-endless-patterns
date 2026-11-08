@@ -1,7 +1,8 @@
 {
   "meta": {
     "defaultTitle": "Calculadoras de moldes de colcha, tricô e crochê",
-    "description": "Personalize blocos tradicionais de colcha e pontos de tricô e crochê para o seu tamanho e amostra. Listas de corte, instruções, gráficos e PDFs para imprimir, grátis."
+    "description": "Personalize blocos tradicionais de colcha e pontos de tricô e crochê para o seu tamanho e amostra. Listas de corte, instruções, gráficos e PDFs para imprimir, grátis.",
+    "optionTitle": "{name} – {kind}: molde grátis para imprimir"
   },
   "nav": {
     "quilting": "Colchas",

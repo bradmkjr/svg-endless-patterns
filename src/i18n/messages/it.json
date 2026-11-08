@@ -1,7 +1,8 @@
 {
   "meta": {
     "defaultTitle": "Calcolatori per schemi di patchwork, maglia e uncinetto",
-    "description": "Personalizza i blocchi tradizionali di patchwork e i punti a maglia e all'uncinetto secondo la tua misura e il tuo campione. Ottieni liste di taglio, istruzioni scritte, schemi e PDF stampabili, gratis."
+    "description": "Personalizza i blocchi tradizionali di patchwork e i punti a maglia e all'uncinetto secondo la tua misura e il tuo campione. Ottieni liste di taglio, istruzioni scritte, schemi e PDF stampabili, gratis.",
+    "optionTitle": "{name} – {kind}: schema gratuito da stampare"
   },
   "nav": {
     "quilting": "Patchwork",

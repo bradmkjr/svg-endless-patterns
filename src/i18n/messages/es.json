@@ -1,7 +1,8 @@
 {
   "meta": {
     "defaultTitle": "Calculadoras de patrones de colcha, punto y ganchillo",
-    "description": "Personaliza bloques tradicionales de colcha y puntos de tejido según tu tamaño y tu muestra. Obtén listas de corte, instrucciones, gráficos y PDF imprimibles, gratis."
+    "description": "Personaliza bloques tradicionales de colcha y puntos de tejido según tu tamaño y tu muestra. Obtén listas de corte, instrucciones, gráficos y PDF imprimibles, gratis.",
+    "optionTitle": "{name} – {kind}: patrón gratis para imprimir"
   },
   "nav": {
     "quilting": "Colchas",

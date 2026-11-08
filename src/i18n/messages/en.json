@@ -1,7 +1,8 @@
 {
   "meta": {
     "defaultTitle": "Quilt, Knitting & Crochet Pattern Calculators",
-    "description": "Customize traditional quilt blocks and knit and crochet stitch patterns for your size and gauge. Get cutting lists, written instructions, charts and printable PDFs, free."
+    "description": "Customize traditional quilt blocks and knit and crochet stitch patterns for your size and gauge. Get cutting lists, written instructions, charts and printable PDFs, free.",
+    "optionTitle": "{name} – {kind}: free printable pattern"
   },
   "nav": {
     "quilting": "Quilting",

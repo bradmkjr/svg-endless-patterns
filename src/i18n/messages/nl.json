@@ -1,7 +1,8 @@
 {
   "meta": {
     "defaultTitle": "Rekenhulpen voor quilt-, brei- en haakpatronen",
-    "description": "Pas traditionele quiltblokken en brei- en haaksteken aan op jouw maat en stekenverhouding. Krijg snijlijsten, geschreven instructies, telpatronen en printbare pdf's, gratis."
+    "description": "Pas traditionele quiltblokken en brei- en haaksteken aan op jouw maat en stekenverhouding. Krijg snijlijsten, geschreven instructies, telpatronen en printbare pdf's, gratis.",
+    "optionTitle": "{name} – {kind}: gratis patroon om te printen"
   },
   "nav": {
     "quilting": "Quilten",

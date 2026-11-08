@@ -1,7 +1,8 @@
 {
   "meta": {
     "defaultTitle": "Calculateurs de patrons de quilt, tricot et crochet",
-    "description": "Personnalisez des blocs de quilt traditionnels et des points de tricot et de crochet selon votre taille et votre échantillon. Listes de coupe, instructions, grilles et PDF à imprimer, gratuits."
+    "description": "Personnalisez des blocs de quilt traditionnels et des points de tricot et de crochet selon votre taille et votre échantillon. Listes de coupe, instructions, grilles et PDF à imprimer, gratuits.",
+    "optionTitle": "{name} – {kind} : modèle gratuit à imprimer"
   },
   "nav": {
     "quilting": "Quilt",

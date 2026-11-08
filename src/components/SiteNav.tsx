@@ -13,6 +13,8 @@ export function SiteNav({ locale }: { locale: Locale }) {
     <header className={`${styles.nav} no-print`}>
       {locale !== "en" && <div className="flag-stripe" aria-hidden />}
       <div className={styles.inner}>
+        {/* First and on the left, where a browser's own translate prompt doesn't cover it. */}
+        <LanguageLinks locale={locale} />
         <Link href={href("/")} className={styles.brand}>
           {SITE_NAME}
         </Link>
@@ -27,7 +29,6 @@ export function SiteNav({ locale }: { locale: Locale }) {
           <Link href={href("/blog/")}>{t.blog}</Link>
           <Link href={href("/about/")}>{t.how}</Link>
         </nav>
-        <LanguageLinks locale={locale} />
       </div>
     </header>
   );

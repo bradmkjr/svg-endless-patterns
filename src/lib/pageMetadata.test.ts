@@ -24,9 +24,15 @@ describe("share cards", () => {
     expect(cardUrl()).toMatch(/\/card\/default\.png$/);
   });
 
+  it("are labeled in the page's language", () => {
+    expect(cardUrl({ group: "stainedGlass", slug: "medallion" }, "pt")).toMatch(/\/card\/stainedGlass\/medallion\.png\?lang=pt$/);
+    expect(cardUrl({ group: "stainedGlass", slug: "medallion" }, "en")).toMatch(/medallion\.png$/);
+    expect(cardUrl(undefined, "pt")).toMatch(/\/card\/default\.png$/);
+  });
+
   it("are named in every tag that shares a page", () => {
     const meta = pageMetadata("es", "/mazes/circle/", "T", "D");
-    const url = cardUrl({ group: "maze", slug: "circle" });
+    const url = cardUrl({ group: "maze", slug: "circle" }, "es");
     expect(meta.openGraph).toMatchObject({ type: "website", siteName: "Endless Patterns", locale: "es_ES", title: "T", description: "D", images: [{ url, width: 1200, height: 630 }] });
     expect(meta.openGraph?.url).toMatch(/\/es\/mazes\/circle\/$/);
     expect(meta.twitter).toMatchObject({ card: "summary_large_image", images: [{ url }] });

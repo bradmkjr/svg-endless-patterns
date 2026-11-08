@@ -30,16 +30,17 @@ export function pathPicture(path: string): CardPicture | undefined {
   return undefined;
 }
 
-/** A share card on the API, drawn when it's asked for. Pages with no pattern get its default card. */
-export function cardUrl(picture?: CardPicture): string {
-  return mazeApiUrl(picture ? `/card/${picture.group}/${picture.slug}.png` : "/card/default.png");
+/** A share card on the API, drawn when it's asked for, labeled with the kind of pattern in the page's language. Pages with no pattern get its default card. */
+export function cardUrl(picture?: CardPicture, locale: Locale = "en"): string {
+  if (!picture) return mazeApiUrl("/card/default.png");
+  return mazeApiUrl(`/card/${picture.group}/${picture.slug}.png${locale === "en" ? "" : `?lang=${locale}`}`);
 }
 
 type Options = { openGraph?: { type: "article"; publishedTime: string }; picture?: CardPicture };
 
 /** The tags that name and share a page. A page's `openGraph` replaces its layout's, so this gives all of it. */
 export function pageMetadata(locale: Locale, path: string, title: string, description: string, { openGraph = undefined, picture = pathPicture(path) }: Options = {}): Metadata {
-  const images = [{ url: cardUrl(picture), ...CARD_SIZE, alt: title }];
+  const images = [{ url: cardUrl(picture, locale), ...CARD_SIZE, alt: title }];
   return {
     title,
     description,

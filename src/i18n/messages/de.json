@@ -1,7 +1,8 @@
 {
   "meta": {
     "defaultTitle": "Rechner für Quilt-, Strick- und Häkelmuster",
-    "description": "Passe traditionelle Quiltblöcke sowie Strick- und Häkelmuster an deine Größe und Maschenprobe an. Zuschnittlisten, Anleitungen, Diagramme und druckbare PDFs, kostenlos."
+    "description": "Passe traditionelle Quiltblöcke sowie Strick- und Häkelmuster an deine Größe und Maschenprobe an. Zuschnittlisten, Anleitungen, Diagramme und druckbare PDFs, kostenlos.",
+    "optionTitle": "{name} – {kind}: kostenlose Vorlage zum Ausdrucken"
   },
   "nav": {
     "quilting": "Quilten",

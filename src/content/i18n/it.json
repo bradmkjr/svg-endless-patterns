@@ -1,5 +1,26 @@
 {
   "posts": {
+    "advanced-patterns": {
+      "title": "Mariner's Compass, Snail's Trail e altri schemi avanzati",
+      "summary": "Tre nuovi blocchi di patchwork, tra cui i primi due di livello Avanzato, un broccato a rombi per la maglia e tre nuovi schemi di uncinetto a colori: una stella a otto punte, pied-de-poule e argyle.",
+      "blocks": [
+        "Questo aggiornamento porta schemi per quando le basi sono ormai familiari. Nel patchwork, [Mariner's Compass](/blocks/mariners-compass/) dispone sedici punte di tre lunghezze intorno a un cerchio centrale, e [Snail's Trail](/blocks/snails-trail/) fa ruotare quattro anelli di triangoli intorno a un piccolo blocco a quattro, così spirali chiare e scure si avvolgono dal centro. Entrambi hanno il nuovo livello Avanzato. [Caleidoscopio](/blocks/kaleidoscope/) si aggiunge a livello Intermedio: otto spicchi e quattro triangoli d'angolo, i cui angoli formano cerchi quando i blocchi sono affiancati. Ognuno ha la sua lista di taglio, i modelli da stampare e il fabbisogno di tessuto, in qualsiasi misura.",
+        "Esempi da cui partire",
+        [
+          "Mariner's Compass, applicato a strati",
+          "Snail's Trail, nove blocchi affiancati",
+          "Caleidoscopio, con gli angoli che si uniscono in cerchi",
+          "Lo schema del broccato a rombi",
+          "Una stella a otto punte all'uncinetto tapestry",
+          "Pied-de-poule, un cambio di colore ogni poche maglie",
+          "Lo schema argyle per il corner-to-corner"
+        ],
+        "Per chi lavora a maglia e all'uncinetto",
+        "Il [broccato a rombi](/knitting/diamond-brocade/) è il primo punto a maglia di livello Intermedio: linee di maglie a rovescio salgono e scendono sulla maglia rasata e disegnano un reticolo di rombi, su un multiplo di 8 maglie più 1. Nell'[uncinetto a colori](/crochet/colorwork/), la [stella a otto punte](/crochet/colorwork/eight-point-star/) usa quattro colori all'uncinetto tapestry, il [pied-de-poule](/crochet/colorwork/houndstooth/) cambia colore ogni poche maglie in ogni riga, e i [rombi argyle](/crochet/colorwork/argyle/) sono uno schema corner-to-corner attraversato da linee. Il pied-de-poule è disegnato come si tesse il tessuto: una saia 2/2 con quattro fili scuri e quattro chiari in ogni direzione.",
+        "Campioni all'uncinetto che sembrano uncinetto",
+        "Le immagini dei [punti all'uncinetto](/crochet/) sono ridisegnate. Ogni maglia mostra ora la treccia di asole in alto e un gambo della sua altezza, così maglia bassa, mezza maglia alta e maglia alta non si somigliano più: la mezza maglia alta mostra la terza asola, la maglia alta il gettato che attraversa il gambo, le coste in asola posteriore i rilievi lasciati dalle asole anteriori, e il punto rete e il punto muschio i vuoti sotto le catenelle. Ogni punto della pagina uncinetto ha anche il suo colore di filato."
+      ]
+    },
     "weaving": {
       "title": "Messe in carta: rimettaggio, legatura, pedalatura e il tessuto che ne risulta",
       "summary": "Un nuovo generatore di tessitura trasforma un'armatura nella messa in carta completa che si legge al telaio, con 26 messe in carta tradizionali da cui partire, dall'occhio di pernice e dall'occhio d'oca alla cintura del monaco e al pied de poule.",
@@ -800,12 +821,23 @@
     }
   },
   "changelog": {
-      "Wider nature pattern sizes": {
-        "title": "Più dimensioni per i motivi naturali",
-        "items": [
-          "I motivi naturali ora vanno dal 25% al 300% di dimensione, con variazione fino a ±90%, per motivi molto più assortiti in un solo modulo"
-        ]
-      },
+    "Advanced patterns": {
+      "title": "Schemi avanzati",
+      "items": [
+        "Nuovi blocchi di patchwork: Mariner's Compass e Snail's Trail, i primi di livello Avanzato, e Caleidoscopio",
+        "Nuovo punto a maglia: broccato a rombi, il primo di livello Intermedio",
+        "Nuovo uncinetto a colori: stella a otto punte, pied-de-poule e rombi argyle",
+        "Immagini dei punti all'uncinetto ridisegnate con le asole e l'altezza di ogni maglia, ognuna nel suo colore di filato",
+        "Link delle lingue con bandiere, all'inizio della barra del menu",
+        "Le immagini di condivisione indicano il tipo di schema nella lingua della pagina, e le pagine degli schemi hanno titoli più chiari nei risultati di ricerca"
+      ]
+    },
+    "Wider nature pattern sizes": {
+      "title": "Più dimensioni per i motivi naturali",
+      "items": [
+        "I motivi naturali ora vanno dal 25% al 300% di dimensione, con variazione fino a ±90%, per motivi molto più assortiti in un solo modulo"
+      ]
+    },
     "Weaving drafts": {
       "title": "Messe in carta",
       "items": [

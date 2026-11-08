@@ -1,5 +1,91 @@
 [
   {
+    "slug": "advanced-patterns",
+    "title": "Mariner's Compass, Snail's Trail and more advanced patterns",
+    "date": "2026-11-08",
+    "summary": "Three new quilt blocks, among them the first two marked Advanced, a diamond brocade for knitters, and three new crochet colorwork charts: an eight-point star, houndstooth and argyle.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "This update adds patterns for when the basics feel familiar. In quilting, [Mariner's Compass](/blocks/mariners-compass/) sets sixteen points in three lengths around a center circle, and [Snail's Trail](/blocks/snails-trail/) turns four rings of triangles around a small four-patch so dark and light spirals curl out from the middle. Both are marked Advanced, a new level. [Kaleidoscope](/blocks/kaleidoscope/) joins them at Intermediate: eight wedges and four corner triangles, whose corners form circles when blocks are set side by side. Each comes with its cutting list, printable templates and yardage, at any size."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "block",
+            "slug": "mariners-compass",
+            "query": "",
+            "view": "block",
+            "caption": "Mariner's Compass, appliquéd in layers"
+          },
+          {
+            "kind": "block",
+            "slug": "snails-trail",
+            "query": "cols=3&rows=3&border=0",
+            "view": "quilt",
+            "caption": "Snail's Trail, nine blocks side by side"
+          },
+          {
+            "kind": "block",
+            "slug": "kaleidoscope",
+            "query": "cols=3&rows=3&border=0",
+            "view": "quilt",
+            "caption": "Kaleidoscope, where the corners meet in circles"
+          },
+          {
+            "kind": "knit",
+            "slug": "diamond-brocade",
+            "query": "",
+            "view": "chart",
+            "caption": "The diamond brocade chart"
+          },
+          {
+            "kind": "crochetColorwork",
+            "slug": "",
+            "query": "d=eight-point-star",
+            "view": "square",
+            "caption": "An eight-point star in tapestry crochet"
+          },
+          {
+            "kind": "crochetColorwork",
+            "slug": "",
+            "query": "d=houndstooth",
+            "view": "square",
+            "caption": "Houndstooth, a color change every few stitches"
+          },
+          {
+            "kind": "crochetColorwork",
+            "slug": "",
+            "query": "d=argyle",
+            "view": "chart",
+            "caption": "The argyle chart for corner-to-corner"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "For knitters and crocheters"
+      },
+      {
+        "type": "paragraph",
+        "text": "[Diamond brocade](/knitting/diamond-brocade/) is the first Intermediate knitting stitch: lines of purl stitches climb and fall across stockinette to outline a lattice of diamonds, on a multiple of 8 stitches plus 1. In [crochet colorwork](/crochet/colorwork/), the [eight-point star](/crochet/colorwork/eight-point-star/) uses four colors in tapestry crochet, [houndstooth](/crochet/colorwork/houndstooth/) changes color every few stitches across every row, and [argyle](/crochet/colorwork/argyle/) is a corner-to-corner chart with an overcheck through its diamonds. The houndstooth is charted the way the cloth is woven, as a 2/2 twill with four dark and four light threads each way."
+      },
+      {
+        "type": "heading",
+        "text": "Crochet swatches that look like crochet"
+      },
+      {
+        "type": "paragraph",
+        "text": "The [crochet stitch](/crochet/) pictures are redrawn. Each stitch now shows its braid of top loops and a post as tall as the stitch, so single, half double and double crochet no longer look alike: a half double shows its third loop, a double the yarn over wrapped across its post, back loop rib the ridges its front loops leave, and mesh and moss stitch the holes under their chains. The stitches on the crochet page each take their own yarn color, too."
+      }
+    ]
+  },
+  {
     "slug": "weaving",
     "title": "Weaving drafts: threading, tie-up, treadling and the cloth they make",
     "date": "2026-11-05",

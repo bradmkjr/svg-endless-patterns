@@ -740,6 +740,80 @@
      }
     ],
     "summary": "A center hexagon with two rings around it, shown here as a single rosette appliquéd to a background square."
+   },
+   {
+    "slug": "snails-trail",
+    "name": "Snail's Trail",
+    "family": "Triangles",
+    "level": "Advanced",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Light"
+     },
+     {
+      "id": "dark",
+      "label": "Dark"
+     }
+    ],
+    "summary": "A small four-patch with four rings of triangles around it, each ring turned 45 degrees, so dark and light spirals curl out from the center."
+   },
+   {
+    "slug": "kaleidoscope",
+    "name": "Kaleidoscope",
+    "family": "Triangles",
+    "level": "Intermediate",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "wedge",
+      "label": "Wedges"
+     },
+     {
+      "id": "alternate",
+      "label": "Alternate wedges"
+     },
+     {
+      "id": "corner",
+      "label": "Corners"
+     }
+    ],
+    "summary": "Eight 45-degree wedges in two fabrics meet at the center, and corner triangles turn the octagon into a square. Set side by side, the corners form circles."
+   },
+   {
+    "slug": "mariners-compass",
+    "name": "Mariner's Compass",
+    "family": "Curves & appliqué",
+    "level": "Advanced",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Background"
+     },
+     {
+      "id": "cardinal",
+      "label": "Cardinal points"
+     },
+     {
+      "id": "diagonal",
+      "label": "Diagonal points"
+     },
+     {
+      "id": "ring",
+      "label": "Compass circle"
+     },
+     {
+      "id": "short",
+      "label": "Short points"
+     },
+     {
+      "id": "center",
+      "label": "Center"
+     }
+    ],
+    "summary": "Sixteen sharp points in three lengths radiate from a center circle, set on a circle of its own on a background square."
    }
   ],
   "es": [
@@ -1482,6 +1556,80 @@
      }
     ],
     "summary": "Un hexágono central con dos anillos a su alrededor, mostrado aquí como una sola roseta aplicada sobre un cuadrado de fondo."
+   },
+   {
+    "slug": "snails-trail",
+    "name": "Snail's Trail",
+    "family": "Triángulos",
+    "level": "Avanzado",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Claro"
+     },
+     {
+      "id": "dark",
+      "label": "Oscuro"
+     }
+    ],
+    "summary": "Un pequeño bloque de cuatro cuadrados con cuatro anillos de triángulos alrededor, cada uno girado 45 grados, para que espirales claras y oscuras se enrosquen desde el centro."
+   },
+   {
+    "slug": "kaleidoscope",
+    "name": "Kaleidoscope",
+    "family": "Triángulos",
+    "level": "Intermedio",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "wedge",
+      "label": "Cuñas"
+     },
+     {
+      "id": "alternate",
+      "label": "Cuñas alternas"
+     },
+     {
+      "id": "corner",
+      "label": "Esquinas"
+     }
+    ],
+    "summary": "Ocho cuñas de 45 grados en dos telas se unen en el centro, y unos triángulos de esquina convierten el octógono en un cuadrado. Al juntar bloques, las esquinas forman círculos."
+   },
+   {
+    "slug": "mariners-compass",
+    "name": "Mariner's Compass",
+    "family": "Curvas y aplicación",
+    "level": "Avanzado",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fondo"
+     },
+     {
+      "id": "cardinal",
+      "label": "Puntas cardinales"
+     },
+     {
+      "id": "diagonal",
+      "label": "Puntas diagonales"
+     },
+     {
+      "id": "ring",
+      "label": "Círculo de la brújula"
+     },
+     {
+      "id": "short",
+      "label": "Puntas cortas"
+     },
+     {
+      "id": "center",
+      "label": "Centro"
+     }
+    ],
+    "summary": "Dieciséis puntas afiladas de tres largos irradian desde un círculo central, sobre un círculo propio en un cuadrado de fondo."
    }
   ],
   "fr": [
@@ -2224,6 +2372,80 @@
      }
     ],
     "summary": "Un hexagone central entouré de deux anneaux, présenté ici en une seule rosace appliquée sur un carré de fond."
+   },
+   {
+    "slug": "snails-trail",
+    "name": "Snail's Trail",
+    "family": "Triangles",
+    "level": "Avancé",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Clair"
+     },
+     {
+      "id": "dark",
+      "label": "Foncé"
+     }
+    ],
+    "summary": "Un petit carré de quatre entouré de quatre anneaux de triangles, chacun tourné de 45 degrés, pour que des spirales claires et foncées s'enroulent depuis le centre."
+   },
+   {
+    "slug": "kaleidoscope",
+    "name": "Kaleidoscope",
+    "family": "Triangles",
+    "level": "Intermédiaire",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "wedge",
+      "label": "Pointes"
+     },
+     {
+      "id": "alternate",
+      "label": "Pétales alternés"
+     },
+     {
+      "id": "corner",
+      "label": "Coins"
+     }
+    ],
+    "summary": "Huit pointes à 45 degrés en deux tissus se rejoignent au centre, et des triangles de coin transforment l'octogone en carré. Côte à côte, les coins forment des cercles."
+   },
+   {
+    "slug": "mariners-compass",
+    "name": "Mariner's Compass",
+    "family": "Courbes et appliqué",
+    "level": "Avancé",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fond"
+     },
+     {
+      "id": "cardinal",
+      "label": "Pointes cardinales"
+     },
+     {
+      "id": "diagonal",
+      "label": "Pointes diagonales"
+     },
+     {
+      "id": "ring",
+      "label": "Cercle de la boussole"
+     },
+     {
+      "id": "short",
+      "label": "Pointes courtes"
+     },
+     {
+      "id": "center",
+      "label": "Centre"
+     }
+    ],
+    "summary": "Seize pointes fines de trois longueurs rayonnent d'un cercle central, posées sur leur propre cercle sur un carré de fond."
    }
   ],
   "de": [
@@ -2966,6 +3188,80 @@
      }
     ],
     "summary": "Ein mittleres Sechseck mit zwei Ringen darum, hier als einzelne Rosette auf einem Hintergrundquadrat appliziert."
+   },
+   {
+    "slug": "snails-trail",
+    "name": "Snail's Trail",
+    "family": "Dreiecke",
+    "level": "Fortgeschritten",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Hell"
+     },
+     {
+      "id": "dark",
+      "label": "Dunkel"
+     }
+    ],
+    "summary": "Ein kleiner Vierer-Patch mit vier Dreieckringen darum, jeder Ring um 45 Grad gedreht, sodass sich dunkle und helle Spiralen aus der Mitte winden."
+   },
+   {
+    "slug": "kaleidoscope",
+    "name": "Kaleidoscope",
+    "family": "Dreiecke",
+    "level": "Mittelstufe",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "wedge",
+      "label": "Segmente"
+     },
+     {
+      "id": "alternate",
+      "label": "Wechselnde Segmente"
+     },
+     {
+      "id": "corner",
+      "label": "Ecken"
+     }
+    ],
+    "summary": "Acht 45-Grad-Segmente aus zwei Stoffen treffen sich in der Mitte, und Eckdreiecke machen aus dem Achteck ein Quadrat. Nebeneinander gesetzt bilden die Ecken Kreise."
+   },
+   {
+    "slug": "mariners-compass",
+    "name": "Mariner's Compass",
+    "family": "Kurven und Applikation",
+    "level": "Fortgeschritten",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Hintergrund"
+     },
+     {
+      "id": "cardinal",
+      "label": "Hauptspitzen"
+     },
+     {
+      "id": "diagonal",
+      "label": "Diagonale Spitzen"
+     },
+     {
+      "id": "ring",
+      "label": "Kompasskreis"
+     },
+     {
+      "id": "short",
+      "label": "Kurze Spitzen"
+     },
+     {
+      "id": "center",
+      "label": "Mitte"
+     }
+    ],
+    "summary": "Sechzehn spitze Zacken in drei Längen strahlen von einem Mittelkreis aus, auf einem eigenen Kreis auf einem Hintergrundquadrat."
    }
   ],
   "pt": [
@@ -3708,6 +4004,80 @@
      }
     ],
     "summary": "Um hexágono central com dois anéis ao redor, mostrado aqui como uma só roseta aplicada sobre um quadrado de fundo."
+   },
+   {
+    "slug": "snails-trail",
+    "name": "Snail's Trail",
+    "family": "Triângulos",
+    "level": "Avançado",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Claro"
+     },
+     {
+      "id": "dark",
+      "label": "Escuro"
+     }
+    ],
+    "summary": "Um pequeno bloco de quatro quadrados com quatro anéis de triângulos em volta, cada anel girado 45 graus, para que espirais claras e escuras se enrolem a partir do centro."
+   },
+   {
+    "slug": "kaleidoscope",
+    "name": "Kaleidoscope",
+    "family": "Triângulos",
+    "level": "Intermediário",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "wedge",
+      "label": "Cunhas"
+     },
+     {
+      "id": "alternate",
+      "label": "Cunhas alternadas"
+     },
+     {
+      "id": "corner",
+      "label": "Cantos"
+     }
+    ],
+    "summary": "Oito cunhas de 45 graus em dois tecidos se encontram no centro, e triângulos de canto transformam o octógono em um quadrado. Lado a lado, os cantos formam círculos."
+   },
+   {
+    "slug": "mariners-compass",
+    "name": "Mariner's Compass",
+    "family": "Curvas e aplicação",
+    "level": "Avançado",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fundo"
+     },
+     {
+      "id": "cardinal",
+      "label": "Pontas cardeais"
+     },
+     {
+      "id": "diagonal",
+      "label": "Pontas diagonais"
+     },
+     {
+      "id": "ring",
+      "label": "Círculo da bússola"
+     },
+     {
+      "id": "short",
+      "label": "Pontas curtas"
+     },
+     {
+      "id": "center",
+      "label": "Centro"
+     }
+    ],
+    "summary": "Dezesseis pontas finas de três comprimentos irradiam de um círculo central, sobre um círculo próprio em um quadrado de fundo."
    }
   ],
   "it": [
@@ -4450,6 +4820,80 @@
      }
     ],
     "summary": "Un esagono centrale con due anelli intorno, mostrato come una rosetta applicata su un quadrato di sfondo."
+   },
+   {
+    "slug": "snails-trail",
+    "name": "Snail's Trail",
+    "family": "Triangoli",
+    "level": "Avanzato",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Chiaro"
+     },
+     {
+      "id": "dark",
+      "label": "Scuro"
+     }
+    ],
+    "summary": "Un piccolo blocco a quattro quadrati con quattro anelli di triangoli intorno, ciascuno ruotato di 45 gradi, così spirali chiare e scure si avvolgono dal centro."
+   },
+   {
+    "slug": "kaleidoscope",
+    "name": "Kaleidoscope",
+    "family": "Triangoli",
+    "level": "Intermedio",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "wedge",
+      "label": "Spicchi"
+     },
+     {
+      "id": "alternate",
+      "label": "Spicchi alternati"
+     },
+     {
+      "id": "corner",
+      "label": "Angoli"
+     }
+    ],
+    "summary": "Otto spicchi a 45 gradi in due tessuti si incontrano al centro, e triangoli d'angolo trasformano l'ottagono in un quadrato. Affiancati, gli angoli formano cerchi."
+   },
+   {
+    "slug": "mariners-compass",
+    "name": "Mariner's Compass",
+    "family": "Curve e applicazioni",
+    "level": "Avanzato",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Sfondo"
+     },
+     {
+      "id": "cardinal",
+      "label": "Punte cardinali"
+     },
+     {
+      "id": "diagonal",
+      "label": "Punte diagonali"
+     },
+     {
+      "id": "ring",
+      "label": "Cerchio della bussola"
+     },
+     {
+      "id": "short",
+      "label": "Punte corte"
+     },
+     {
+      "id": "center",
+      "label": "Centro"
+     }
+    ],
+    "summary": "Sedici punte affilate di tre lunghezze si irradiano da un cerchio centrale, su un proprio cerchio applicato a un quadrato di sfondo."
    }
   ],
   "nl": [
@@ -5192,6 +5636,80 @@
      }
     ],
     "summary": "Een middenzeshoek met twee ringen eromheen, hier als één rozet geappliqueerd op een achtergrondvierkant."
+   },
+   {
+    "slug": "snails-trail",
+    "name": "Snail's Trail",
+    "family": "Driehoeken",
+    "level": "Gevorderd",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Licht"
+     },
+     {
+      "id": "dark",
+      "label": "Donker"
+     }
+    ],
+    "summary": "Een kleine vierpatch met vier ringen driehoeken eromheen, elke ring 45 graden gedraaid, zodat donkere en lichte spiralen vanuit het midden krullen."
+   },
+   {
+    "slug": "kaleidoscope",
+    "name": "Kaleidoscope",
+    "family": "Driehoeken",
+    "level": "Gemiddeld",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "wedge",
+      "label": "Wiggen"
+     },
+     {
+      "id": "alternate",
+      "label": "Afwisselende wiggen"
+     },
+     {
+      "id": "corner",
+      "label": "Hoeken"
+     }
+    ],
+    "summary": "Acht wiggen van 45 graden in twee stoffen komen in het midden samen, en hoekdriehoeken maken van de achthoek een vierkant. Naast elkaar vormen de hoeken cirkels."
+   },
+   {
+    "slug": "mariners-compass",
+    "name": "Mariner's Compass",
+    "family": "Bogen en applicatie",
+    "level": "Gevorderd",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Achtergrond"
+     },
+     {
+      "id": "cardinal",
+      "label": "Hoofdpunten"
+     },
+     {
+      "id": "diagonal",
+      "label": "Diagonale punten"
+     },
+     {
+      "id": "ring",
+      "label": "Kompascirkel"
+     },
+     {
+      "id": "short",
+      "label": "Korte punten"
+     },
+     {
+      "id": "center",
+      "label": "Midden"
+     }
+    ],
+    "summary": "Zestien scherpe punten in drie lengtes stralen uit van een middencirkel, op een eigen cirkel op een achtergrondvierkant."
    }
   ]
  },
@@ -5267,6 +5785,14 @@
     "craft": "knit",
     "level": "Confident beginner",
     "summary": "A 2x2 rib that shifts one stitch on every row, so the ribs travel across the fabric at an angle.",
+    "rowFactor": 1
+   },
+   {
+    "slug": "diamond-brocade",
+    "name": "Diamond Brocade",
+    "craft": "knit",
+    "level": "Intermediate",
+    "summary": "Purl stitches climb and fall in diagonal lines across smooth stockinette, outlining a lattice of diamonds.",
     "rowFactor": 1
    },
    {
@@ -5400,6 +5926,14 @@
     "rowFactor": 1
    },
    {
+    "slug": "diamond-brocade",
+    "name": "Diamond Brocade",
+    "craft": "knit",
+    "level": "Intermedio",
+    "summary": "Puntos del revés suben y bajan en líneas diagonales sobre punto jersey liso y dibujan una retícula de rombos.",
+    "rowFactor": 1
+   },
+   {
     "slug": "single-crochet",
     "name": "Single Crochet",
     "craft": "crochet",
@@ -5527,6 +6061,14 @@
     "craft": "knit",
     "level": "Débutant confirmé",
     "summary": "Des côtes 2x2 décalées d'une maille à chaque rang, qui avancent en diagonale.",
+    "rowFactor": 1
+   },
+   {
+    "slug": "diamond-brocade",
+    "name": "Diamond Brocade",
+    "craft": "knit",
+    "level": "Intermédiaire",
+    "summary": "Des mailles envers montent et descendent en lignes diagonales sur un jersey lisse et dessinent un treillis de losanges.",
     "rowFactor": 1
    },
    {
@@ -5660,6 +6202,14 @@
     "rowFactor": 1
    },
    {
+    "slug": "diamond-brocade",
+    "name": "Diamond Brocade",
+    "craft": "knit",
+    "level": "Mittelstufe",
+    "summary": "Linke Maschen steigen und fallen in schrägen Linien über glatt rechts und umreißen ein Gitter aus Rauten.",
+    "rowFactor": 1
+   },
+   {
     "slug": "single-crochet",
     "name": "Single Crochet",
     "craft": "crochet",
@@ -5787,6 +6337,14 @@
     "craft": "knit",
     "level": "Iniciante avançado",
     "summary": "Um canelado 2x2 que se desloca um ponto a cada carreira, para as linhas correrem na diagonal.",
+    "rowFactor": 1
+   },
+   {
+    "slug": "diamond-brocade",
+    "name": "Diamond Brocade",
+    "craft": "knit",
+    "level": "Intermediário",
+    "summary": "Pontos de tricô sobem e descem em linhas diagonais sobre o ponto meia liso e desenham uma treliça de losangos.",
     "rowFactor": 1
    },
    {
@@ -5920,6 +6478,14 @@
     "rowFactor": 1
    },
    {
+    "slug": "diamond-brocade",
+    "name": "Diamond Brocade",
+    "craft": "knit",
+    "level": "Intermedio",
+    "summary": "Maglie a rovescio salgono e scendono in linee diagonali sul maglia rasata liscia e disegnano un reticolo di rombi.",
+    "rowFactor": 1
+   },
+   {
     "slug": "single-crochet",
     "name": "Single Crochet",
     "craft": "crochet",
@@ -6047,6 +6613,14 @@
     "craft": "knit",
     "level": "Gevorderde beginner",
     "summary": "Een 2x2-boord die op elke naald één steek verschuift, zodat de ribbels schuin over de stof lopen.",
+    "rowFactor": 1
+   },
+   {
+    "slug": "diamond-brocade",
+    "name": "Diamond Brocade",
+    "craft": "knit",
+    "level": "Gemiddeld",
+    "summary": "Averechte steken stijgen en dalen in schuine lijnen over glad tricot en tekenen een raster van ruiten.",
     "rowFactor": 1
    },
    {

@@ -1,5 +1,26 @@
 {
   "posts": {
+    "advanced-patterns": {
+      "title": "Mariner's Compass, Snail's Trail e mais padrões avançados",
+      "summary": "Três novos blocos de colcha, entre eles os dois primeiros de nível Avançado, um brocado de losangos para o tricô e três novos gráficos de crochê multicolorido: uma estrela de oito pontas, pied-de-poule e argyle.",
+      "blocks": [
+        "Esta atualização traz padrões para quando o básico já é familiar. No patchwork, [Mariner's Compass](/blocks/mariners-compass/) dispõe dezesseis pontas de três comprimentos em volta de um círculo central, e [Snail's Trail](/blocks/snails-trail/) gira quatro anéis de triângulos em volta de um pequeno bloco de quatro, para que espirais claras e escuras se enrolem a partir do centro. Os dois têm o novo nível Avançado. [Caleidoscópio](/blocks/kaleidoscope/) entra no nível Intermediário: oito cunhas e quatro triângulos de canto, cujos cantos formam círculos quando os blocos ficam lado a lado. Cada um vem com lista de corte, moldes para imprimir e metragem, em qualquer tamanho.",
+        "Exemplos para começar",
+        [
+          "Mariner's Compass, aplicado em camadas",
+          "Snail's Trail, nove blocos lado a lado",
+          "Caleidoscópio, com os cantos que se encontram em círculos",
+          "O gráfico do brocado de losangos",
+          "Uma estrela de oito pontas em crochê tapestry",
+          "Pied-de-poule, uma troca de cor a cada poucos pontos",
+          "O gráfico argyle para canto a canto"
+        ],
+        "Para quem faz tricô e crochê",
+        "O [brocado de losangos](/knitting/diamond-brocade/) é o primeiro ponto de tricô de nível Intermediário: linhas de pontos de tricô sobem e descem sobre o ponto meia e desenham uma treliça de losangos, em um múltiplo de 8 pontos mais 1. No [crochê multicolorido](/crochet/colorwork/), a [estrela de oito pontas](/crochet/colorwork/eight-point-star/) usa quatro cores em crochê tapestry, o [pied-de-poule](/crochet/colorwork/houndstooth/) troca de cor a cada poucos pontos em todas as carreiras, e os [losangos argyle](/crochet/colorwork/argyle/) são um gráfico canto a canto com linhas cruzando os losangos. O pied-de-poule foi desenhado como o tecido é tecido: uma sarja 2/2 com quatro fios escuros e quatro claros em cada sentido.",
+        "Amostras de crochê com cara de crochê",
+        "As imagens dos [pontos de crochê](/crochet/) foram redesenhadas. Cada ponto mostra agora a trança de alças no alto e uma haste da sua altura, então ponto baixo, meio ponto alto e ponto alto não se parecem mais: o meio ponto alto mostra a terceira alça, o ponto alto a laçada que cruza a haste, a canelado pela alça de trás os relevos deixados pelas alças da frente, e o ponto rede e o ponto musgo os vãos sob as correntinhas. Cada ponto da página de crochê também ganhou sua própria cor de fio."
+      ]
+    },
     "weaving": {
       "title": "Padrões de tecelagem: passamento, amarração, pedalagem e o tecido que resulta",
       "summary": "Um novo criador de tecelagem transforma um ligamento no padrão completo que se lê no tear, com 26 padrões tradicionais para começar, do olho de perdiz e do olho de ganso ao cinto de monge e ao pied-de-poule.",
@@ -800,12 +821,23 @@
     }
   },
   "changelog": {
-      "Wider nature pattern sizes": {
-        "title": "Mais tamanhos nas estampas da natureza",
-        "items": [
-          "As estampas da natureza agora vão de 25% a 300% de tamanho, com até ±90% de variação, para motivos muito mais variados em uma mesma repetição"
-        ]
-      },
+    "Advanced patterns": {
+      "title": "Padrões avançados",
+      "items": [
+        "Novos blocos de colcha: Mariner's Compass e Snail's Trail, os primeiros de nível Avançado, e Caleidoscópio",
+        "Novo ponto de tricô: brocado de losangos, o primeiro de nível Intermediário",
+        "Novo crochê multicolorido: estrela de oito pontas, pied-de-poule e losangos argyle",
+        "Imagens dos pontos de crochê redesenhadas com as alças e a altura de cada ponto, cada uma na sua cor de fio",
+        "Links de idioma com bandeiras, no começo da barra de menu",
+        "As imagens de compartilhamento dizem o tipo de padrão no idioma da página, e as páginas de padrões têm títulos mais claros nos resultados de busca"
+      ]
+    },
+    "Wider nature pattern sizes": {
+      "title": "Mais tamanhos nas estampas da natureza",
+      "items": [
+        "As estampas da natureza agora vão de 25% a 300% de tamanho, com até ±90% de variação, para motivos muito mais variados em uma mesma repetição"
+      ]
+    },
     "Weaving drafts": {
       "title": "Padrões de tecelagem",
       "items": [

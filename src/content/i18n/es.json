@@ -1,5 +1,26 @@
 {
   "posts": {
+    "advanced-patterns": {
+      "title": "Mariner's Compass, Snail's Trail y más patrones avanzados",
+      "summary": "Tres nuevos bloques de colcha, entre ellos los dos primeros de nivel Avanzado, un brocado de rombos para tejer y tres nuevos gráficos de ganchillo multicolor: una estrella de ocho puntas, pata de gallo y argyle.",
+      "blocks": [
+        "Esta actualización trae patrones para cuando lo básico ya resulta familiar. En patchwork, [Mariner's Compass](/blocks/mariners-compass/) dispone dieciséis puntas de tres largos alrededor de un círculo central, y [Snail's Trail](/blocks/snails-trail/) gira cuatro anillos de triángulos alrededor de un pequeño bloque de cuatro para que espirales claras y oscuras se enrosquen desde el centro. Ambos llevan el nuevo nivel Avanzado. [Caleidoscopio](/blocks/kaleidoscope/) se suma en nivel Intermedio: ocho cuñas y cuatro triángulos de esquina, cuyas esquinas forman círculos al juntar los bloques. Cada uno trae su lista de corte, plantillas para imprimir y metraje, en cualquier tamaño.",
+        "Ejemplos para empezar",
+        [
+          "Mariner's Compass, aplicado por capas",
+          "Snail's Trail, nueve bloques juntos",
+          "Caleidoscopio, con las esquinas unidas en círculos",
+          "El gráfico del brocado de rombos",
+          "Una estrella de ocho puntas en ganchillo tapestry",
+          "Pata de gallo, un cambio de color cada pocos puntos",
+          "El gráfico argyle para esquina a esquina"
+        ],
+        "Para quien teje y quien hace ganchillo",
+        "El [brocado de rombos](/knitting/diamond-brocade/) es el primer punto de tejido de nivel Intermedio: líneas de puntos del revés suben y bajan sobre punto jersey y dibujan una retícula de rombos, sobre un múltiplo de 8 puntos más 1. En [ganchillo multicolor](/crochet/colorwork/), la [estrella de ocho puntas](/crochet/colorwork/eight-point-star/) usa cuatro colores en ganchillo tapestry, la [pata de gallo](/crochet/colorwork/houndstooth/) cambia de color cada pocos puntos en todas las filas y los [rombos argyle](/crochet/colorwork/argyle/) son un gráfico de esquina a esquina con líneas que cruzan los rombos. La pata de gallo está dibujada como se teje la tela: una sarga 2/2 con cuatro hilos oscuros y cuatro claros en cada sentido.",
+        "Muestras de ganchillo que parecen ganchillo",
+        "Las imágenes de los [puntos de ganchillo](/crochet/) están redibujadas. Cada punto muestra ahora su trenza de lazadas superiores y un poste de su altura, así que el punto bajo, el punto medio alto y el punto alto ya no se parecen: el medio alto muestra su tercera lazada, el alto la lazada que cruza su poste, el elástico por la hebra trasera los relieves que dejan las hebras delanteras, y el punto de malla y el punto musgo los huecos bajo sus cadenetas. Además, cada punto de la página de ganchillo tiene su propio color de hilo."
+      ]
+    },
     "weaving": {
       "title": "Patrones de tejido: remetido, amarre, pedaleo y el tejido que resulta",
       "summary": "Un nuevo creador de tejidos convierte un ligamento en el patrón completo que se lee en el telar, con 26 patrones tradicionales para empezar, del ojo de perdiz y el ojo de ganso al cinturón de monje y la pata de gallo.",
@@ -800,12 +821,23 @@
     }
   },
   "changelog": {
-      "Wider nature pattern sizes": {
-        "title": "Más tamaños en los patrones de la naturaleza",
-        "items": [
-          "Los patrones de la naturaleza van ahora del 25 % al 300 % de tamaño, con hasta ±90 % de variación, para mezclar mucho más los motivos en un mismo módulo"
-        ]
-      },
+    "Advanced patterns": {
+      "title": "Patrones avanzados",
+      "items": [
+        "Nuevos bloques de colcha: Mariner's Compass y Snail's Trail, los primeros de nivel Avanzado, y Caleidoscopio",
+        "Nuevo punto de tejido: brocado de rombos, el primero de nivel Intermedio",
+        "Nuevo ganchillo multicolor: estrella de ocho puntas, pata de gallo y rombos argyle",
+        "Imágenes de los puntos de ganchillo redibujadas con las lazadas y la altura de cada punto, cada una en su color de hilo",
+        "Enlaces de idioma con banderas, al principio de la barra de menú",
+        "Las imágenes para compartir nombran el tipo de patrón en el idioma de la página, y las páginas de patrones tienen títulos más claros en los buscadores"
+      ]
+    },
+    "Wider nature pattern sizes": {
+      "title": "Más tamaños en los patrones de la naturaleza",
+      "items": [
+        "Los patrones de la naturaleza van ahora del 25 % al 300 % de tamaño, con hasta ±90 % de variación, para mezclar mucho más los motivos en un mismo módulo"
+      ]
+    },
     "Weaving drafts": {
       "title": "Patrones de tejido",
       "items": [

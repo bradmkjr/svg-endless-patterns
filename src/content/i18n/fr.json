@@ -1,5 +1,26 @@
 {
   "posts": {
+    "advanced-patterns": {
+      "title": "Mariner's Compass, Snail's Trail et d'autres modèles avancés",
+      "summary": "Trois nouveaux blocs de quilt, dont les deux premiers de niveau Avancé, un brocart de losanges pour le tricot et trois nouvelles grilles de crochet multicolore : une étoile à huit branches, du pied-de-poule et de l'argyle.",
+      "blocks": [
+        "Cette mise à jour ajoute des modèles pour quand les bases sont acquises. En patchwork, [Mariner's Compass](/blocks/mariners-compass/) dispose seize pointes de trois longueurs autour d'un cercle central, et [Snail's Trail](/blocks/snails-trail/) fait tourner quatre anneaux de triangles autour d'un petit carré de quatre, pour que des spirales claires et foncées s'enroulent depuis le centre. Tous deux portent le nouveau niveau Avancé. [Kaléidoscope](/blocks/kaleidoscope/) les rejoint au niveau Intermédiaire : huit pointes et quatre triangles de coin, dont les coins forment des cercles quand les blocs sont posés côte à côte. Chacun a sa liste de coupe, ses gabarits à imprimer et son métrage, à toutes les tailles.",
+        "Des exemples pour commencer",
+        [
+          "Mariner's Compass, appliqué par couches",
+          "Snail's Trail, neuf blocs côte à côte",
+          "Kaléidoscope, dont les coins se rejoignent en cercles",
+          "La grille du brocart de losanges",
+          "Une étoile à huit branches au crochet tapestry",
+          "Pied-de-poule, un changement de couleur toutes les quelques mailles",
+          "La grille argyle en coin à coin"
+        ],
+        "Pour le tricot et le crochet",
+        "Le [brocart de losanges](/knitting/diamond-brocade/) est le premier point de tricot de niveau Intermédiaire : des lignes de mailles envers montent et descendent sur le jersey et dessinent un treillis de losanges, sur un multiple de 8 mailles plus 1. En [crochet multicolore](/crochet/colorwork/), l'[étoile à huit branches](/crochet/colorwork/eight-point-star/) utilise quatre couleurs au crochet tapestry, le [pied-de-poule](/crochet/colorwork/houndstooth/) change de couleur toutes les quelques mailles à chaque rang, et les [losanges argyle](/crochet/colorwork/argyle/) forment une grille en coin à coin traversée de lignes. Le pied-de-poule est dessiné comme le tissu est tissé : un sergé 2/2 avec quatre fils foncés et quatre clairs dans chaque sens.",
+        "Des échantillons de crochet qui ressemblent à du crochet",
+        "Les images des [points de crochet](/crochet/) sont redessinées. Chaque maille montre maintenant sa tresse de brins du haut et un pied de sa hauteur, si bien que la maille serrée, la demi-bride et la bride ne se ressemblent plus : la demi-bride montre son troisième brin, la bride le jeté qui traverse son pied, les côtes au brin arrière les reliefs laissés par les brins avant, et le point filet et le point mousse les jours sous leurs chaînettes. Chaque point de la page crochet a aussi sa propre couleur de fil."
+      ]
+    },
     "weaving": {
       "title": "Armures de tissage : rentrage, attache, marchure et le tissu qui en sort",
       "summary": "Un nouveau créateur d'armures transforme une armure en dessin complet, tel qu'on le lit au métier, avec 26 armures traditionnelles pour commencer, de l'œil-de-perdrix et l'œil d'oie à la ceinture de moine et au pied-de-poule.",
@@ -800,12 +821,23 @@
     }
   },
   "changelog": {
-      "Wider nature pattern sizes": {
-        "title": "Plus de tailles pour les motifs nature",
-        "items": [
-          "Les motifs nature vont désormais de 25 % à 300 % de taille, avec jusqu'à ±90 % de variation, pour des motifs bien plus variés dans un même raccord"
-        ]
-      },
+    "Advanced patterns": {
+      "title": "Modèles avancés",
+      "items": [
+        "Nouveaux blocs de quilt : Mariner's Compass et Snail's Trail, les premiers de niveau Avancé, et Kaléidoscope",
+        "Nouveau point de tricot : brocart de losanges, le premier de niveau Intermédiaire",
+        "Nouveau crochet multicolore : étoile à huit branches, pied-de-poule et losanges argyle",
+        "Images des points de crochet redessinées avec les brins et la hauteur de chaque maille, chacune dans sa couleur de fil",
+        "Liens de langue avec drapeaux, en tête de la barre de menu",
+        "Les images de partage indiquent le type de modèle dans la langue de la page, et les pages de modèles ont des titres plus clairs dans les résultats de recherche"
+      ]
+    },
+    "Wider nature pattern sizes": {
+      "title": "Plus de tailles pour les motifs nature",
+      "items": [
+        "Les motifs nature vont désormais de 25 % à 300 % de taille, avec jusqu'à ±90 % de variation, pour des motifs bien plus variés dans un même raccord"
+      ]
+    },
     "Weaving drafts": {
       "title": "Armures de tissage",
       "items": [

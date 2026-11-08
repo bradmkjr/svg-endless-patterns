@@ -1,5 +1,26 @@
 {
   "posts": {
+    "advanced-patterns": {
+      "title": "Mariner's Compass, Snail's Trail und weitere anspruchsvolle Muster",
+      "summary": "Drei neue Quiltblöcke, darunter die ersten zwei mit der Stufe Fortgeschritten, ein Rautenbrokat zum Stricken und drei neue Häkel-Farbmuster: ein achtzackiger Stern, Hahnentritt und Argyle.",
+      "blocks": [
+        "Dieses Update bringt Muster für alle, denen die Grundlagen vertraut sind. Beim Quilten setzt [Mariner's Compass](/blocks/mariners-compass/) sechzehn Spitzen in drei Längen um einen Mittelkreis, und [Snail's Trail](/blocks/snails-trail/) dreht vier Dreieckringe um einen kleinen Vierer-Patch, sodass sich dunkle und helle Spiralen aus der Mitte winden. Beide tragen die neue Stufe Fortgeschritten. [Kaleidoskop](/blocks/kaleidoscope/) kommt auf Mittelstufe dazu: acht Segmente und vier Eckdreiecke, deren Ecken Kreise bilden, wenn die Blöcke nebeneinanderliegen. Jeder hat Zuschnittliste, druckbare Schablonen und Stoffbedarf, in jeder Größe.",
+        "Beispiele zum Anfangen",
+        [
+          "Mariner's Compass, in Lagen appliziert",
+          "Snail's Trail, neun Blöcke nebeneinander",
+          "Kaleidoskop, dessen Ecken sich zu Kreisen treffen",
+          "Die Strickschrift für den Rautenbrokat",
+          "Ein achtzackiger Stern im Tapestry-Häkeln",
+          "Hahnentritt, ein Farbwechsel alle paar Maschen",
+          "Die Argyle-Häkelschrift für Corner-to-Corner"
+        ],
+        "Für Strickende und Häkelnde",
+        "[Rautenbrokat](/knitting/diamond-brocade/) ist das erste Strickmuster auf Mittelstufe: Linien aus linken Maschen steigen und fallen über glatt rechts und umreißen ein Gitter aus Rauten, über ein Vielfaches von 8 Maschen plus 1. Beim [mehrfarbigen Häkeln](/crochet/colorwork/) braucht der [achtzackige Stern](/crochet/colorwork/eight-point-star/) vier Farben im Tapestry-Häkeln, [Hahnentritt](/crochet/colorwork/houndstooth/) wechselt in jeder Reihe alle paar Maschen die Farbe, und [Argyle](/crochet/colorwork/argyle/) ist eine Corner-to-Corner-Schrift mit Überkaro durch die Rauten. Der Hahnentritt ist so gezeichnet, wie das Gewebe gewebt wird: als 2/2-Köper mit je vier dunklen und vier hellen Fäden.",
+        "Häkelproben, die nach Häkeln aussehen",
+        "Die Bilder der [Häkelmuster](/crochet/) sind neu gezeichnet. Jede Masche zeigt jetzt ihre Abmaschglieder oben und einen Steg in ihrer Höhe, sodass feste Maschen, halbe Stäbchen und Stäbchen nicht mehr gleich aussehen: Das halbe Stäbchen zeigt sein drittes Glied, das Stäbchen den Umschlag quer über dem Steg, die Rippen aus hinteren Maschengliedern die Grate der vorderen Glieder, und Netz- und Moosmuster die Löcher unter ihren Luftmaschen. Die Muster auf der Häkelseite haben außerdem jedes eine eigene Garnfarbe."
+      ]
+    },
     "weaving": {
       "title": "Webpatronen: Einzug, Anschnürung, Trittfolge und das Gewebe, das daraus entsteht",
       "summary": "Ein neuer Webpatronen-Generator macht aus einer Bindung die ganze Patrone, wie man sie am Webstuhl liest, mit 26 traditionellen Patronen zum Anfangen, von Vogel- und Gänseauge bis Mönchsgürtel und Hahnentritt.",
@@ -800,12 +821,23 @@
     }
   },
   "changelog": {
-      "Wider nature pattern sizes": {
-        "title": "Mehr Größen für Naturmuster",
-        "items": [
-          "Naturmuster reichen jetzt von 25 % bis 300 % Größe, mit bis zu ±90 % Größenvariation, für viel gemischtere Motive in einem Rapport"
-        ]
-      },
+    "Advanced patterns": {
+      "title": "Anspruchsvolle Muster",
+      "items": [
+        "Neue Quiltblöcke: Mariner's Compass und Snail's Trail, die ersten auf Stufe Fortgeschritten, und Kaleidoskop",
+        "Neues Strickmuster: Rautenbrokat, das erste auf Mittelstufe",
+        "Neue Häkel-Farbmuster: achtzackiger Stern, Hahnentritt und Argyle",
+        "Bilder der Häkelmuster neu gezeichnet, mit den Gliedern und der Höhe jeder Masche, jedes in eigener Garnfarbe",
+        "Sprachlinks mit Flaggen, zuerst in der Menüleiste",
+        "Vorschaubilder beim Teilen nennen die Art des Musters in der Sprache der Seite, und Musterseiten haben klarere Titel in Suchergebnissen"
+      ]
+    },
+    "Wider nature pattern sizes": {
+      "title": "Mehr Größen für Naturmuster",
+      "items": [
+        "Naturmuster reichen jetzt von 25 % bis 300 % Größe, mit bis zu ±90 % Größenvariation, für viel gemischtere Motive in einem Rapport"
+      ]
+    },
     "Weaving drafts": {
       "title": "Webpatronen",
       "items": [

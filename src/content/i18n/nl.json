@@ -1,5 +1,26 @@
 {
   "posts": {
+    "advanced-patterns": {
+      "title": "Mariner's Compass, Snail's Trail en meer gevorderde patronen",
+      "summary": "Drie nieuwe quiltblokken, waaronder de eerste twee op niveau Gevorderd, een ruitenbrokaat om te breien en drie nieuwe haakpatronen in kleur: een achtpuntige ster, pied-de-poule en argyle.",
+      "blocks": [
+        "Deze update brengt patronen voor wie de basis onder de knie heeft. Bij het quilten zet [Mariner's Compass](/blocks/mariners-compass/) zestien punten in drie lengtes rond een middencirkel, en [Snail's Trail](/blocks/snails-trail/) draait vier ringen driehoeken rond een kleine vierpatch, zodat donkere en lichte spiralen vanuit het midden krullen. Beide hebben het nieuwe niveau Gevorderd. [Caleidoscoop](/blocks/kaleidoscope/) komt erbij op niveau Gemiddeld: acht wiggen en vier hoekdriehoeken, waarvan de hoeken cirkels vormen als je blokken naast elkaar legt. Elk heeft een snijlijst, sjablonen om te printen en stofverbruik, in elke maat.",
+        "Voorbeelden om mee te beginnen",
+        [
+          "Mariner's Compass, in lagen geappliqueerd",
+          "Snail's Trail, negen blokken naast elkaar",
+          "Caleidoscoop, met hoeken die samen cirkels vormen",
+          "Het telpatroon voor ruitenbrokaat",
+          "Een achtpuntige ster in tapestryhaakwerk",
+          "Pied-de-poule, om de paar steken een kleurwissel",
+          "Het argyle-telpatroon voor corner-to-corner"
+        ],
+        "Voor breiers en hakers",
+        "[Ruitenbrokaat](/knitting/diamond-brocade/) is de eerste breisteek op niveau Gemiddeld: lijnen averechte steken stijgen en dalen over tricot en tekenen een raster van ruiten, op een veelvoud van 8 steken plus 1. Bij [kleurenhaken](/crochet/colorwork/) gebruikt de [achtpuntige ster](/crochet/colorwork/eight-point-star/) vier kleuren in tapestryhaakwerk, wisselt [pied-de-poule](/crochet/colorwork/houndstooth/) in elke toer om de paar steken van kleur, en zijn de [argyle-ruiten](/crochet/colorwork/argyle/) een corner-to-corner-patroon met lijnen door de ruiten. Pied-de-poule is getekend zoals de stof wordt geweven: een 2/2-keper met vier donkere en vier lichte draden in beide richtingen.",
+        "Haakproefjes die op haakwerk lijken",
+        "De afbeeldingen van de [haaksteken](/crochet/) zijn opnieuw getekend. Elke steek toont nu zijn vlecht van bovenste lussen en een stam zo hoog als de steek, zodat vasten, halve stokjes en stokjes niet meer op elkaar lijken: het halve stokje toont zijn derde lus, het stokje de omslag schuin over de stam, de achterste-lusrib de ribbels die de voorste lussen achterlaten, en de netsteek en mossteek de gaatjes onder hun lossen. Elke steek op de haakpagina heeft ook zijn eigen garenkleur."
+      ]
+    },
     "weaving": {
       "title": "Weefpatronen: inrijging, opbinding, trapping en het weefsel dat eruit komt",
       "summary": "Een nieuwe weefpatroonmaker maakt van een binding het volledige patroon zoals je het aan het getouw leest, met 26 traditionele patronen om mee te beginnen, van vogeloog en ganzenoog tot monnikenriem en pied-de-poule.",
@@ -800,12 +821,23 @@
     }
   },
   "changelog": {
-      "Wider nature pattern sizes": {
-        "title": "Meer formaten voor natuurpatronen",
-        "items": [
-          "Natuurpatronen gaan nu van 25% tot 300% groot, met tot ±90% variatie in grootte, voor veel gevarieerdere motieven in één herhaling"
-        ]
-      },
+    "Advanced patterns": {
+      "title": "Gevorderde patronen",
+      "items": [
+        "Nieuwe quiltblokken: Mariner's Compass en Snail's Trail, de eerste op niveau Gevorderd, en Caleidoscoop",
+        "Nieuwe breisteek: ruitenbrokaat, de eerste op niveau Gemiddeld",
+        "Nieuw kleurenhaken: achtpuntige ster, pied-de-poule en argyle-ruiten",
+        "Afbeeldingen van haaksteken opnieuw getekend met de lussen en hoogte van elke steek, elk in een eigen garenkleur",
+        "Taallinks met vlaggen, vooraan in de menubalk",
+        "Deelafbeeldingen noemen het soort patroon in de taal van de pagina, en patroonpagina's hebben duidelijkere titels in zoekresultaten"
+      ]
+    },
+    "Wider nature pattern sizes": {
+      "title": "Meer formaten voor natuurpatronen",
+      "items": [
+        "Natuurpatronen gaan nu van 25% tot 300% groot, met tot ±90% variatie in grootte, voor veel gevarieerdere motieven in één herhaling"
+      ]
+    },
     "Weaving drafts": {
       "title": "Weefpatronen",
       "items": [

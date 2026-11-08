@@ -4,6 +4,8 @@ export type Locale = "en" | "es" | "fr" | "de" | "pt" | "it" | "nl";
 
 export type Setting = "straight" | "alternate" | "quadrants";
 
+export type QuiltFinish = "cloth" | "plain";
+
 export type PatternRequest = {
   /** Finished block size, in inches. */
   size: number;
@@ -16,6 +18,8 @@ export type PatternRequest = {
   wof: number;
   /** Draw seam lines on the block, quilt and tile. */
   seams: boolean;
+  /** Drawn as cloth, with weave, puff and quilting, or as plain flat color. Cloth when left out. */
+  finish?: QuiltFinish;
   /** Color per block fabric id, plus "sashing" and "border". */
   colors: Record<string, string>;
   /** Language for generated text. English when left out. */

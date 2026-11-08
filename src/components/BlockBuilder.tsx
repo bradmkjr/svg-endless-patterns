@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState, type CSSProperties } from "react";
-import { generatePattern, generatePdf, type BlockInfo, type CutLine, type Locale, type PatternRequest } from "@/lib/generator";
+import { generatePattern, generatePdf, type BlockInfo, type CutLine, type Locale, type PatternRequest, type QuiltFinish } from "@/lib/generator";
 import { fill, messages } from "@/lib/i18n";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { useTrackCustomize } from "@/lib/analytics";
@@ -69,6 +69,8 @@ export function BlockBuilder({ block, locale, initialState }: { block: BlockInfo
   const [scope, setScope] = useState<"block" | "quilt">("quilt");
   const [status, setStatus] = useState("");
   const [busy, setBusy] = useState(false);
+  // How SVG and PNG downloads are drawn. The preview is always cloth.
+  const [finish, setFinish] = useState<QuiltFinish>("cloth");
 
   const update = (patch: Partial<PatternRequest>) => setState((s) => ({ ...s, ...patch }));
   const setColor = (id: string, color: string) => setState((s) => ({ ...s, colors: { ...s.colors, [id]: color } }));
@@ -84,7 +86,9 @@ export function BlockBuilder({ block, locale, initialState }: { block: BlockInfo
 
   const labelOf = (id: string) => (id === "sashing" ? t.sashing : id === "border" ? t.border : (block.fabrics.find((f) => f.id === id)?.label ?? id));
   const currentSvg = result?.svg[view] ?? "";
-  const fileBase = `${block.slug}-${state.size}in-${view}`;
+  const fileBase = `${block.slug}-${state.size}in-${view}${finish === "plain" ? "-plain" : ""}`;
+  /** The picture to download: the one on screen, or the same design asked for again in flat color. */
+  const downloadSvgText = async () => (finish === "plain" ? (await generatePattern(block.slug, { ...state, finish })).svg[view] : currentSvg);
   const tileUrl = `data:image/svg+xml,${encodeURIComponent(result?.svg.tile ?? "")}`;
   const tileStyle: CSSProperties = { backgroundImage: `url("${tileUrl}")` };
 
@@ -123,10 +127,17 @@ export function BlockBuilder({ block, locale, initialState }: { block: BlockInfo
             <button type="button" disabled={busy} className={styles.primary} onClick={() => run(t.pdfMaking, t.pdfDone, async () => downloadBytes(await generatePdf(block.slug, state), `${block.slug}-${state.size}in-pattern.pdf`, "application/pdf"))}>
               {t.downloadPdf}
             </button>
-            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(t.saving, t.svgDone, () => downloadSvg(currentSvg, `${fileBase}.svg`))}>
+            <label className={styles.finish}>
+              <span>{t.downloadStyle}</span>
+              <select value={finish} disabled={busy} onChange={(e) => setFinish(e.target.value as QuiltFinish)}>
+                <option value="cloth">{t.styleCloth}</option>
+                <option value="plain">{t.stylePlain}</option>
+              </select>
+            </label>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(t.saving, t.svgDone, async () => downloadSvg(await downloadSvgText(), `${fileBase}.svg`))}>
               SVG
             </button>
-            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(t.pngMaking, t.pngDone, () => downloadPng(currentSvg, `${fileBase}.png`))}>
+            <button type="button" disabled={busy || !result} className={styles.secondary} onClick={() => run(t.pngMaking, t.pngDone, async () => downloadPng(await downloadSvgText(), `${fileBase}.png`))}>
               PNG
             </button>
             <button type="button" disabled={busy} className={styles.secondary} onClick={() => run(t.copying, t.copied, () => navigator.clipboard.writeText(window.location.href))}>

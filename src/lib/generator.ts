@@ -29,7 +29,7 @@ import type { LifeRequest, LifeResult } from "./lifeTypes";
 import type { KnitColorworkRequest, KnitColorworkResult } from "./knitColorworkTypes";
 import type { PuzzlePaper, PuzzleRequest, PuzzleResult } from "./puzzleTypes";
 
-export type { BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, Setting, StitchInfo, StitchRequest, StitchResult } from "./patternTypes";
+export type { BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, QuiltFinish, Setting, StitchInfo, StitchRequest, StitchResult } from "./patternTypes";
 export type { KnitColorworkPlan, KnitColorworkRequest, KnitColorworkResult, KnitColorworkTechnique } from "./knitColorworkTypes";
 export type { CheckerboardRequest, CheckerboardResult, CheckerLayout, CheckerPattern } from "./checkerboardTypes";
 export type { PuzzleColors, PuzzleDifficulty, PuzzlePaper, PuzzleRequest, PuzzleResult, PuzzleType } from "./puzzleTypes";

@@ -1,5 +1,28 @@
 {
   "posts": {
+    "thirty-three-quilt-blocks": {
+      "title": "Drieëndertig nieuwe quiltblokken",
+      "summary": "De bibliotheek met quiltblokken verdubbelt bijna, van 39 naar 72 blokken: nog vier blokken voor gevorderden, nieuwe sterren, bochten, applicaties en afbeeldingsblokken, en klassiekers uit stroken, vierkanten en driehoeken.",
+      "blocks": [
+        "De [bibliotheek met quiltblokken](/blocks/) groeit van 39 naar 72 blokken. Elk nieuw blok heeft een snijlijst, naaistappen en stofbehoefte in elke maat, met afdrukbare mallen voor de stukken die ze nodig hebben.",
+        "Voorbeelden om mee te beginnen",
+        [
+          "Lone Star, elke punt genaaid uit negen ruiten",
+          "Storm at Sea, negen blokken naast elkaar",
+          "Spider Web, met ruiten waar de hoeken samenkomen",
+          "Orange Peel, waarin de schillen zich tot cirkels verbinden",
+          "Een rij Schoolhouse met tussenstroken",
+          "Card Trick, vier kaarten in een kring"
+        ],
+        "Nog vier blokken voor gevorderden",
+        "[Pineapple](/blocks/pineapple/) draait zijn stroken bij elke ronde 45 graden. [Storm at Sea](/blocks/storm-at-sea/) combineert drie soorten eenheden, elk met stukken op hun punt. [New York Beauty](/blocks/new-york-beauty/) zet een boog van zeven scherpe punten rond een kwartcirkel, en [Lone Star](/blocks/lone-star/) bouwt elk van zijn acht punten uit negen kleine ruiten.",
+        "Sterren, bochten en afbeeldingen",
+        "[Rising Star](/blocks/rising-star/) zet een kleine ster in een grote, [Card Trick](/blocks/card-trick/) lijkt vier kaarten over elkaar te leggen en [Spider Web](/blocks/spider-web/) naait acht punten uit stroken. Voor bochten en appliqué zijn er [Orange Peel](/blocks/orange-peel/), [Grandmother's Fan](/blocks/grandmothers-fan/), [Bull's Eye](/blocks/bulls-eye/), [Tulip](/blocks/tulip/), [Butterfly](/blocks/butterfly/), [Heart](/blocks/heart/) en [Tumbling Blocks](/blocks/tumbling-blocks/), en als afbeelding [Schoolhouse](/blocks/schoolhouse/) en [Sailboat](/blocks/sailboat/).",
+        "Stroken, vierkanten en driehoeken",
+        "De rest bouwt voort op bekende vormen. Uit stroken en vierkanten: [Half Log Cabin](/blocks/half-log-cabin/), [Chimneys and Cornerstones](/blocks/chimneys-and-cornerstones/), [Chinese Coins](/blocks/chinese-coins/), [Bars](/blocks/bars/), [Center Diamond](/blocks/center-diamond/), [Roman Stripe](/blocks/roman-stripe/), [Spools](/blocks/spools/), [Attic Windows](/blocks/attic-windows/) en [Tumbler](/blocks/tumbler/). Uit driehoeken: [Economy Block](/blocks/economy-block/), [Snowball](/blocks/snowball/), [Birds in the Air](/blocks/birds-in-the-air/), [Lady of the Lake](/blocks/lady-of-the-lake/), [Delectable Mountains](/blocks/delectable-mountains/), [Wild Goose Chase](/blocks/wild-goose-chase/), [Thousand Pyramids](/blocks/thousand-pyramids/) en [Zigzag](/blocks/zigzag/).",
+        "De naaistappen noemen nu elke maat eenheid apart, zodat een blok met grote en kleine eenheden, zoals [Anvil](/blocks/anvil/), elke eenheid op zijn eigen maat bijsnijdt."
+      ]
+    },
     "cables-lace-puffs": {
       "title": "Kabels, kant, puffsteken en clusters",
       "summary": "Breien krijgt kabels en kant, van een touwkabel tot Feather and Fan, en haken krijgt puffsteken en clusters. Elk brei- en haakproefje is opnieuw getekend en lijkt nu op de stof.",
@@ -840,6 +863,15 @@
     }
   },
   "changelog": {
+    "Thirty-three new quilt blocks": {
+      "title": "Drieëndertig nieuwe quiltblokken",
+      "items": [
+        "33 nieuwe quiltblokken: de bibliotheek groeit van 39 naar 72",
+        "Nog vier blokken voor gevorderden: Pineapple, Storm at Sea, New York Beauty en Lone Star",
+        "Nieuwe sterren, bochten, applicaties en afbeeldingsblokken, waaronder Rising Star, Card Trick, Spider Web, Orange Peel, Grandmother's Fan, Schoolhouse en Sailboat",
+        "De naaistappen noemen elke maat eenheid apart, zodat blokken met gemengde maten elke eenheid goed bijsnijden"
+      ]
+    },
     "Quilts that look like cloth": {
       "title": "Quilts die op stof lijken",
       "items": [

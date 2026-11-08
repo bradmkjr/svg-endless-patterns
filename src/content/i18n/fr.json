@@ -1,5 +1,28 @@
 {
   "posts": {
+    "thirty-three-quilt-blocks": {
+      "title": "Trente-trois nouveaux blocs de quilt",
+      "summary": "La bibliothèque de blocs de quilt double presque, de 39 blocs à 72 : quatre blocs Avancés de plus, de nouvelles étoiles, courbes, appliqués et blocs figuratifs, et des classiques en bandes, carrés et triangles.",
+      "blocks": [
+        "La [bibliothèque de blocs de quilt](/blocks/) passe de 39 blocs à 72. Chaque nouveau bloc a sa liste de coupe, ses étapes d'assemblage et son métrage pour toute taille, avec des gabarits imprimables pour les pièces qui en ont besoin.",
+        "Des exemples pour commencer",
+        [
+          "Lone Star, chaque branche cousue de neuf losanges",
+          "Storm at Sea, neuf blocs côte à côte",
+          "Spider Web, avec des losanges là où les coins se rejoignent",
+          "Orange Peel, où les pelures s'enchaînent en cercles",
+          "Une rangée de Schoolhouse avec des bandes de séparation",
+          "Card Trick, quatre cartes en cercle"
+        ],
+        "Quatre blocs Avancés de plus",
+        "[Pineapple](/blocks/pineapple/) fait pivoter ses bandes de 45 degrés à chaque tour. [Storm at Sea](/blocks/storm-at-sea/) combine trois sortes d'unités, chacune avec des pièces sur la pointe. [New York Beauty](/blocks/new-york-beauty/) dispose un arc de sept pointes acérées autour d'un quart de cercle, et [Lone Star](/blocks/lone-star/) construit chacune de ses huit branches avec neuf petits losanges.",
+        "Étoiles, courbes et figures",
+        "[Rising Star](/blocks/rising-star/) place une petite étoile dans une grande, [Card Trick](/blocks/card-trick/) semble superposer quatre cartes et [Spider Web](/blocks/spider-web/) coud huit pointes en bandes. Pour les courbes et l'appliqué, il y a [Orange Peel](/blocks/orange-peel/), [Grandmother's Fan](/blocks/grandmothers-fan/), [Bull's Eye](/blocks/bulls-eye/), [Tulip](/blocks/tulip/), [Butterfly](/blocks/butterfly/), [Heart](/blocks/heart/) et [Tumbling Blocks](/blocks/tumbling-blocks/), et pour les figures, [Schoolhouse](/blocks/schoolhouse/) et [Sailboat](/blocks/sailboat/).",
+        "Bandes, carrés et triangles",
+        "Les autres partent de formes familières. En bandes et carrés : [Half Log Cabin](/blocks/half-log-cabin/), [Chimneys and Cornerstones](/blocks/chimneys-and-cornerstones/), [Chinese Coins](/blocks/chinese-coins/), [Bars](/blocks/bars/), [Center Diamond](/blocks/center-diamond/), [Roman Stripe](/blocks/roman-stripe/), [Spools](/blocks/spools/), [Attic Windows](/blocks/attic-windows/) et [Tumbler](/blocks/tumbler/). En triangles : [Economy Block](/blocks/economy-block/), [Snowball](/blocks/snowball/), [Birds in the Air](/blocks/birds-in-the-air/), [Lady of the Lake](/blocks/lady-of-the-lake/), [Delectable Mountains](/blocks/delectable-mountains/), [Wild Goose Chase](/blocks/wild-goose-chase/), [Thousand Pyramids](/blocks/thousand-pyramids/) et [Zigzag](/blocks/zigzag/).",
+        "Les étapes d'assemblage indiquent désormais chaque taille d'unité séparément : un bloc qui mêle grandes et petites unités, comme [Anvil](/blocks/anvil/), recoupe chacune à sa taille."
+      ]
+    },
     "cables-lace-puffs": {
       "title": "Torsades, dentelle, points soufflés et groupes",
       "summary": "Le tricot gagne des torsades et de la dentelle, de la torsade corde à Feather and Fan, et le crochet des points soufflés et des groupes de brides. Tous les échantillons de tricot et de crochet sont redessinés pour ressembler au tissu.",
@@ -840,6 +863,15 @@
     }
   },
   "changelog": {
+    "Thirty-three new quilt blocks": {
+      "title": "Trente-trois nouveaux blocs de quilt",
+      "items": [
+        "33 nouveaux blocs de quilt : la bibliothèque passe de 39 à 72",
+        "Quatre blocs Avancés de plus : Pineapple, Storm at Sea, New York Beauty et Lone Star",
+        "De nouvelles étoiles, courbes, appliqués et blocs figuratifs, dont Rising Star, Card Trick, Spider Web, Orange Peel, Grandmother's Fan, Schoolhouse et Sailboat",
+        "Les étapes d'assemblage indiquent chaque taille d'unité séparément : les blocs qui mêlent les tailles recoupent correctement chaque unité"
+      ]
+    },
     "Quilts that look like cloth": {
       "title": "Des quilts qui ressemblent à du tissu",
       "items": [

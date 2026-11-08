@@ -1,5 +1,28 @@
 {
   "posts": {
+    "thirty-three-quilt-blocks": {
+      "title": "Dreiunddreißig neue Quiltblöcke",
+      "summary": "Die Bibliothek der Quiltblöcke verdoppelt sich fast, von 39 auf 72 Blöcke: vier weitere Blöcke der Stufe Fortgeschritten, neue Sterne, Rundungen, Applikationen und Bildblöcke sowie Klassiker aus Streifen, Quadraten und Dreiecken.",
+      "blocks": [
+        "Die [Bibliothek der Quiltblöcke](/blocks/) wächst von 39 auf 72 Blöcke. Jeder neue Block hat seine Zuschnittliste, Nähschritte und den Stoffbedarf in jeder Größe, mit druckbaren Schablonen für die Teile, die welche brauchen.",
+        "Beispiele zum Anfangen",
+        [
+          "Lone Star, jede Zacke aus neun Rauten genäht",
+          "Storm at Sea, neun Blöcke nebeneinander",
+          "Spider Web, mit Rauten, wo sich die Ecken treffen",
+          "Orange Peel, dessen Schalen sich zu Kreisen verbinden",
+          "Eine Reihe Schoolhouse mit Zwischenstreifen",
+          "Card Trick, vier Karten im Kreis"
+        ],
+        "Vier weitere Blöcke für Fortgeschrittene",
+        "[Pineapple](/blocks/pineapple/) dreht seine Streifen mit jeder Runde um 45 Grad. [Storm at Sea](/blocks/storm-at-sea/) verbindet drei Arten von Einheiten, jede mit Teilen auf der Spitze. [New York Beauty](/blocks/new-york-beauty/) setzt einen Bogen aus sieben scharfen Spitzen um einen Viertelkreis, und [Lone Star](/blocks/lone-star/) baut jede seiner acht Zacken aus neun kleinen Rauten.",
+        "Sterne, Rundungen und Bilder",
+        "[Rising Star](/blocks/rising-star/) setzt einen kleinen Stern in einen großen, [Card Trick](/blocks/card-trick/) scheint vier Karten übereinanderzulegen, und [Spider Web](/blocks/spider-web/) näht acht Segmente aus Streifen. Für Rundungen und Applikation gibt es [Orange Peel](/blocks/orange-peel/), [Grandmother's Fan](/blocks/grandmothers-fan/), [Bull's Eye](/blocks/bulls-eye/), [Tulip](/blocks/tulip/), [Butterfly](/blocks/butterfly/), [Heart](/blocks/heart/) und [Tumbling Blocks](/blocks/tumbling-blocks/), als Bilder [Schoolhouse](/blocks/schoolhouse/) und [Sailboat](/blocks/sailboat/).",
+        "Streifen, Quadrate und Dreiecke",
+        "Die übrigen bauen auf vertrauten Formen auf. Aus Streifen und Quadraten: [Half Log Cabin](/blocks/half-log-cabin/), [Chimneys and Cornerstones](/blocks/chimneys-and-cornerstones/), [Chinese Coins](/blocks/chinese-coins/), [Bars](/blocks/bars/), [Center Diamond](/blocks/center-diamond/), [Roman Stripe](/blocks/roman-stripe/), [Spools](/blocks/spools/), [Attic Windows](/blocks/attic-windows/) und [Tumbler](/blocks/tumbler/). Aus Dreiecken: [Economy Block](/blocks/economy-block/), [Snowball](/blocks/snowball/), [Birds in the Air](/blocks/birds-in-the-air/), [Lady of the Lake](/blocks/lady-of-the-lake/), [Delectable Mountains](/blocks/delectable-mountains/), [Wild Goose Chase](/blocks/wild-goose-chase/), [Thousand Pyramids](/blocks/thousand-pyramids/) und [Zigzag](/blocks/zigzag/).",
+        "Die Nähschritte nennen jetzt jede Größe einer Einheit für sich, sodass ein Block mit großen und kleinen Einheiten wie [Anvil](/blocks/anvil/) jede auf ihr eigenes Maß schneidet."
+      ]
+    },
     "cables-lace-puffs": {
       "title": "Zöpfe, Lochmuster, Büschelmaschen und Gruppen",
       "summary": "Beim Stricken kommen Zöpfe und Lochmuster dazu, vom Seilzopf bis Feather and Fan, beim Häkeln Büschelmaschen und Stäbchengruppen. Jede Strick- und Häkelprobe ist neu gezeichnet und sieht aus wie das Gestrick.",
@@ -840,6 +863,15 @@
     }
   },
   "changelog": {
+    "Thirty-three new quilt blocks": {
+      "title": "Dreiunddreißig neue Quiltblöcke",
+      "items": [
+        "33 neue Quiltblöcke: die Bibliothek wächst von 39 auf 72",
+        "Vier weitere Blöcke für Fortgeschrittene: Pineapple, Storm at Sea, New York Beauty und Lone Star",
+        "Neue Sterne, Rundungen, Applikationen und Bildblöcke, darunter Rising Star, Card Trick, Spider Web, Orange Peel, Grandmother's Fan, Schoolhouse und Sailboat",
+        "Die Nähschritte nennen jede Größe einer Einheit für sich, sodass Blöcke mit gemischten Größen jede Einheit richtig zuschneiden"
+      ]
+    },
     "Quilts that look like cloth": {
       "title": "Quilts, die wie Stoff aussehen",
       "items": [

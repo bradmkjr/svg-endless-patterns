@@ -1,5 +1,28 @@
 {
   "posts": {
+    "thirty-three-quilt-blocks": {
+      "title": "Trinta e três blocos de quilt novos",
+      "summary": "A biblioteca de blocos de quilt quase dobra, de 39 blocos para 72: mais quatro blocos Avançados, novas estrelas, curvas, aplicações e blocos figurativos, e clássicos de tiras, quadrados e triângulos.",
+      "blocks": [
+        "A [biblioteca de blocos de quilt](/blocks/) cresce de 39 blocos para 72. Cada bloco novo vem com lista de corte, passos de costura e quantidade de tecido em qualquer tamanho, com moldes para imprimir nas peças que precisam deles.",
+        "Exemplos para começar",
+        [
+          "Lone Star, cada ponta costurada com nove losangos",
+          "Storm at Sea, nove blocos lado a lado",
+          "Spider Web, com losangos onde os cantos se encontram",
+          "Orange Peel, em que os gomos se ligam em círculos",
+          "Uma fileira de Schoolhouse com faixas divisórias",
+          "Card Trick, quatro cartas em círculo"
+        ],
+        "Mais quatro blocos Avançados",
+        "[Pineapple](/blocks/pineapple/) gira suas tiras 45 graus a cada rodada. [Storm at Sea](/blocks/storm-at-sea/) combina três tipos de unidade, cada uma com peças em ponta. [New York Beauty](/blocks/new-york-beauty/) dispõe um arco de sete pontas afiadas em volta de um quarto de círculo, e [Lone Star](/blocks/lone-star/) monta cada uma de suas oito pontas com nove losangos pequenos.",
+        "Estrelas, curvas e figuras",
+        "[Rising Star](/blocks/rising-star/) coloca uma estrela pequena dentro de uma grande, [Card Trick](/blocks/card-trick/) parece sobrepor quatro cartas e [Spider Web](/blocks/spider-web/) costura oito fatias com tiras. Para curvas e aplicação há [Orange Peel](/blocks/orange-peel/), [Grandmother's Fan](/blocks/grandmothers-fan/), [Bull's Eye](/blocks/bulls-eye/), [Tulip](/blocks/tulip/), [Butterfly](/blocks/butterfly/), [Heart](/blocks/heart/) e [Tumbling Blocks](/blocks/tumbling-blocks/), e como figuras, [Schoolhouse](/blocks/schoolhouse/) e [Sailboat](/blocks/sailboat/).",
+        "Tiras, quadrados e triângulos",
+        "Os demais partem de formas conhecidas. Em tiras e quadrados: [Half Log Cabin](/blocks/half-log-cabin/), [Chimneys and Cornerstones](/blocks/chimneys-and-cornerstones/), [Chinese Coins](/blocks/chinese-coins/), [Bars](/blocks/bars/), [Center Diamond](/blocks/center-diamond/), [Roman Stripe](/blocks/roman-stripe/), [Spools](/blocks/spools/), [Attic Windows](/blocks/attic-windows/) e [Tumbler](/blocks/tumbler/). Em triângulos: [Economy Block](/blocks/economy-block/), [Snowball](/blocks/snowball/), [Birds in the Air](/blocks/birds-in-the-air/), [Lady of the Lake](/blocks/lady-of-the-lake/), [Delectable Mountains](/blocks/delectable-mountains/), [Wild Goose Chase](/blocks/wild-goose-chase/), [Thousand Pyramids](/blocks/thousand-pyramids/) e [Zigzag](/blocks/zigzag/).",
+        "Os passos de costura agora indicam cada tamanho de unidade separadamente, de modo que um bloco que mistura unidades grandes e pequenas, como [Anvil](/blocks/anvil/), apara cada uma no seu tamanho."
+      ]
+    },
     "cables-lace-puffs": {
       "title": "Tranças, rendados, pontos puff e grupos",
       "summary": "O tricô ganha tranças e rendados, da trança corda ao Feather and Fan, e o crochê ganha pontos puff e grupos. Todas as amostras de tricô e crochê foram redesenhadas para parecer o tecido.",
@@ -840,6 +863,15 @@
     }
   },
   "changelog": {
+    "Thirty-three new quilt blocks": {
+      "title": "Trinta e três blocos de quilt novos",
+      "items": [
+        "33 blocos de quilt novos: a biblioteca passa de 39 para 72",
+        "Mais quatro blocos Avançados: Pineapple, Storm at Sea, New York Beauty e Lone Star",
+        "Novas estrelas, curvas, aplicações e blocos figurativos, entre eles Rising Star, Card Trick, Spider Web, Orange Peel, Grandmother's Fan, Schoolhouse e Sailboat",
+        "Os passos de costura indicam cada tamanho de unidade separadamente, então blocos que misturam tamanhos aparam cada unidade corretamente"
+      ]
+    },
     "Quilts that look like cloth": {
       "title": "Quilts com cara de tecido",
       "items": [

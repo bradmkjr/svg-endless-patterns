@@ -1,5 +1,28 @@
 {
   "posts": {
+    "thirty-three-quilt-blocks": {
+      "title": "Trentatré nuovi blocchi per quilt",
+      "summary": "La raccolta di blocchi per quilt quasi raddoppia, da 39 a 72 blocchi: altri quattro blocchi Avanzati, nuove stelle, curve, applicazioni e blocchi figurativi, e classici a strisce, quadrati e triangoli.",
+      "blocks": [
+        "La [raccolta di blocchi per quilt](/blocks/) passa da 39 a 72 blocchi. Ogni nuovo blocco ha la sua lista di taglio, i passaggi di cucitura e il fabbisogno di tessuto per ogni misura, con cartamodelli da stampare per i pezzi che ne hanno bisogno.",
+        "Esempi da cui partire",
+        [
+          "Lone Star, ogni punta cucita con nove rombi",
+          "Storm at Sea, nove blocchi affiancati",
+          "Spider Web, con rombi dove si incontrano gli angoli",
+          "Orange Peel, dove gli spicchi si legano in cerchi",
+          "Una fila di Schoolhouse con strisce divisorie",
+          "Card Trick, quattro carte in cerchio"
+        ],
+        "Altri quattro blocchi Avanzati",
+        "[Pineapple](/blocks/pineapple/) ruota le sue strisce di 45 gradi a ogni giro. [Storm at Sea](/blocks/storm-at-sea/) combina tre tipi di unità, ognuna con pezzi in punta. [New York Beauty](/blocks/new-york-beauty/) dispone un arco di sette punte aguzze attorno a un quarto di cerchio, e [Lone Star](/blocks/lone-star/) costruisce ognuna delle sue otto punte con nove piccoli rombi.",
+        "Stelle, curve e figure",
+        "[Rising Star](/blocks/rising-star/) mette una stella piccola dentro una grande, [Card Trick](/blocks/card-trick/) sembra sovrapporre quattro carte e [Spider Web](/blocks/spider-web/) cuce otto spicchi a strisce. Per curve e applicazione ci sono [Orange Peel](/blocks/orange-peel/), [Grandmother's Fan](/blocks/grandmothers-fan/), [Bull's Eye](/blocks/bulls-eye/), [Tulip](/blocks/tulip/), [Butterfly](/blocks/butterfly/), [Heart](/blocks/heart/) e [Tumbling Blocks](/blocks/tumbling-blocks/), e come figure [Schoolhouse](/blocks/schoolhouse/) e [Sailboat](/blocks/sailboat/).",
+        "Strisce, quadrati e triangoli",
+        "Gli altri partono da forme familiari. A strisce e quadrati: [Half Log Cabin](/blocks/half-log-cabin/), [Chimneys and Cornerstones](/blocks/chimneys-and-cornerstones/), [Chinese Coins](/blocks/chinese-coins/), [Bars](/blocks/bars/), [Center Diamond](/blocks/center-diamond/), [Roman Stripe](/blocks/roman-stripe/), [Spools](/blocks/spools/), [Attic Windows](/blocks/attic-windows/) e [Tumbler](/blocks/tumbler/). A triangoli: [Economy Block](/blocks/economy-block/), [Snowball](/blocks/snowball/), [Birds in the Air](/blocks/birds-in-the-air/), [Lady of the Lake](/blocks/lady-of-the-lake/), [Delectable Mountains](/blocks/delectable-mountains/), [Wild Goose Chase](/blocks/wild-goose-chase/), [Thousand Pyramids](/blocks/thousand-pyramids/) e [Zigzag](/blocks/zigzag/).",
+        "I passaggi di cucitura ora indicano ogni misura di unità a parte, così un blocco che mescola unità grandi e piccole, come [Anvil](/blocks/anvil/), rifila ognuna alla sua misura."
+      ]
+    },
     "cables-lace-puffs": {
       "title": "Trecce, trafori, punti puff e gruppi",
       "summary": "La maglia guadagna trecce e trafori, dalla treccia a corda a Feather and Fan, e l'uncinetto punti puff e gruppi. Tutti i campioni di maglia e uncinetto sono ridisegnati per somigliare al tessuto.",
@@ -840,6 +863,15 @@
     }
   },
   "changelog": {
+    "Thirty-three new quilt blocks": {
+      "title": "Trentatré nuovi blocchi per quilt",
+      "items": [
+        "33 nuovi blocchi per quilt: la raccolta passa da 39 a 72",
+        "Altri quattro blocchi Avanzati: Pineapple, Storm at Sea, New York Beauty e Lone Star",
+        "Nuove stelle, curve, applicazioni e blocchi figurativi, tra cui Rising Star, Card Trick, Spider Web, Orange Peel, Grandmother's Fan, Schoolhouse e Sailboat",
+        "I passaggi di cucitura indicano ogni misura di unità a parte, così i blocchi con misure miste rifilano correttamente ogni unità"
+      ]
+    },
     "Quilts that look like cloth": {
       "title": "Quilt che sembrano stoffa",
       "items": [

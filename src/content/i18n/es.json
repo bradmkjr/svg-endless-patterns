@@ -1,5 +1,28 @@
 {
   "posts": {
+    "thirty-three-quilt-blocks": {
+      "title": "Treinta y tres bloques de quilt nuevos",
+      "summary": "La biblioteca de bloques de quilt casi se duplica, de 39 bloques a 72: cuatro bloques Avanzados más, nuevas estrellas, curvas, aplicaciones y bloques figurativos, y diseños clásicos de tiras, cuadrados y triángulos.",
+      "blocks": [
+        "La [biblioteca de bloques de quilt](/blocks/) crece de 39 bloques a 72. Cada bloque nuevo trae su lista de corte, los pasos de costura y la cantidad de tela para cualquier tamaño, con plantillas imprimibles para las piezas que las necesitan.",
+        "Ejemplos para empezar",
+        [
+          "Lone Star, cada punta cosida con nueve rombos",
+          "Storm at Sea, nueve bloques uno junto a otro",
+          "Spider Web, con rombos donde se encuentran las esquinas",
+          "Orange Peel, donde los gajos se enlazan en círculos",
+          "Una fila de Schoolhouse con tiras separadoras",
+          "Card Trick, cuatro cartas en círculo"
+        ],
+        "Cuatro bloques Avanzados más",
+        "[Pineapple](/blocks/pineapple/) gira sus tiras 45 grados en cada ronda. [Storm at Sea](/blocks/storm-at-sea/) combina tres tipos de unidad, cada una con piezas en punta. [New York Beauty](/blocks/new-york-beauty/) coloca un arco de siete puntas afiladas alrededor de un cuarto de círculo, y [Lone Star](/blocks/lone-star/) construye cada una de sus ocho puntas con nueve rombos pequeños.",
+        "Estrellas, curvas y figuras",
+        "[Rising Star](/blocks/rising-star/) pone una estrella pequeña dentro de una grande, [Card Trick](/blocks/card-trick/) parece superponer cuatro cartas y [Spider Web](/blocks/spider-web/) cose ocho cuñas con tiras. Para curvas y aplicación están [Orange Peel](/blocks/orange-peel/), [Grandmother's Fan](/blocks/grandmothers-fan/), [Bull's Eye](/blocks/bulls-eye/), [Tulip](/blocks/tulip/), [Butterfly](/blocks/butterfly/), [Heart](/blocks/heart/) y [Tumbling Blocks](/blocks/tumbling-blocks/), y como figuras, [Schoolhouse](/blocks/schoolhouse/) y [Sailboat](/blocks/sailboat/).",
+        "Tiras, cuadrados y triángulos",
+        "Los demás parten de formas conocidas. En tiras y cuadrados: [Half Log Cabin](/blocks/half-log-cabin/), [Chimneys and Cornerstones](/blocks/chimneys-and-cornerstones/), [Chinese Coins](/blocks/chinese-coins/), [Bars](/blocks/bars/), [Center Diamond](/blocks/center-diamond/), [Roman Stripe](/blocks/roman-stripe/), [Spools](/blocks/spools/), [Attic Windows](/blocks/attic-windows/) y [Tumbler](/blocks/tumbler/). En triángulos: [Economy Block](/blocks/economy-block/), [Snowball](/blocks/snowball/), [Birds in the Air](/blocks/birds-in-the-air/), [Lady of the Lake](/blocks/lady-of-the-lake/), [Delectable Mountains](/blocks/delectable-mountains/), [Wild Goose Chase](/blocks/wild-goose-chase/), [Thousand Pyramids](/blocks/thousand-pyramids/) y [Zigzag](/blocks/zigzag/).",
+        "Los pasos de costura ahora indican cada tamaño de unidad por separado, de modo que un bloque que mezcla unidades grandes y pequeñas, como [Anvil](/blocks/anvil/), recorta cada una a su tamaño."
+      ]
+    },
     "cables-lace-puffs": {
       "title": "Ochos, calados, puntos puff y grupos",
       "summary": "El tejido gana ochos y calados, desde un ocho de cuerda hasta Feather and Fan, y el ganchillo gana puntos puff y grupos. Todas las muestras de tejido y ganchillo están redibujadas para parecerse a la tela.",
@@ -840,6 +863,15 @@
     }
   },
   "changelog": {
+    "Thirty-three new quilt blocks": {
+      "title": "Treinta y tres bloques de quilt nuevos",
+      "items": [
+        "33 bloques de quilt nuevos: la biblioteca pasa de 39 a 72",
+        "Cuatro bloques Avanzados más: Pineapple, Storm at Sea, New York Beauty y Lone Star",
+        "Nuevas estrellas, curvas, aplicaciones y bloques figurativos, entre ellos Rising Star, Card Trick, Spider Web, Orange Peel, Grandmother's Fan, Schoolhouse y Sailboat",
+        "Los pasos de costura indican cada tamaño de unidad por separado, así los bloques que mezclan tamaños recortan bien cada unidad"
+      ]
+    },
     "Quilts that look like cloth": {
       "title": "Edredones que parecen tela",
       "items": [

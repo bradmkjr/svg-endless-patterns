@@ -40,6 +40,9 @@
       "heart": "Heart",
       "sunburst": "Sunburst",
       "ripple-diamond": "Ripple diamond",
+      "eight-point-star": "Eight-point star",
+      "houndstooth": "Houndstooth",
+      "argyle": "Argyle",
       "frost": "Frost",
       "meadow": "Meadow",
       "ember": "Ember"
@@ -88,6 +91,9 @@
       "heart": "Corazón",
       "sunburst": "Rayos de sol",
       "ripple-diamond": "Rombos en onda",
+      "eight-point-star": "Estrella de ocho puntas",
+      "houndstooth": "Pata de gallo",
+      "argyle": "Rombos argyle",
       "frost": "Escarcha",
       "meadow": "Pradera",
       "ember": "Brasa"
@@ -136,6 +142,9 @@
       "heart": "Cœur",
       "sunburst": "Soleil rayonnant",
       "ripple-diamond": "Losanges en ondes",
+      "eight-point-star": "Étoile à huit branches",
+      "houndstooth": "Pied-de-poule",
+      "argyle": "Losanges argyle",
       "frost": "Givre",
       "meadow": "Prairie",
       "ember": "Braise"
@@ -184,6 +193,9 @@
       "heart": "Herz",
       "sunburst": "Sonnenstrahlen",
       "ripple-diamond": "Rautenwellen",
+      "eight-point-star": "Achtzackiger Stern",
+      "houndstooth": "Hahnentritt",
+      "argyle": "Argyle-Rauten",
       "frost": "Raureif",
       "meadow": "Wiese",
       "ember": "Glut"
@@ -232,6 +244,9 @@
       "heart": "Coração",
       "sunburst": "Raios de sol",
       "ripple-diamond": "Losangos em onda",
+      "eight-point-star": "Estrela de oito pontas",
+      "houndstooth": "Pied-de-poule",
+      "argyle": "Losangos argyle",
       "frost": "Geada",
       "meadow": "Campina",
       "ember": "Brasa"
@@ -280,6 +295,9 @@
       "heart": "Cuore",
       "sunburst": "Raggiera",
       "ripple-diamond": "Rombo a onde",
+      "eight-point-star": "Stella a otto punte",
+      "houndstooth": "Pied-de-poule",
+      "argyle": "Rombi argyle",
       "frost": "Brina",
       "meadow": "Prato",
       "ember": "Brace"
@@ -328,6 +346,9 @@
       "heart": "Hart",
       "sunburst": "Zonnestraal",
       "ripple-diamond": "Golvende ruit",
+      "eight-point-star": "Achtpuntige ster",
+      "houndstooth": "Pied-de-poule",
+      "argyle": "Argyle-ruiten",
       "frost": "Rijp",
       "meadow": "Weide",
       "ember": "Gloed"

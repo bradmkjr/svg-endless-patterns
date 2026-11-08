@@ -1,5 +1,24 @@
 {
   "posts": {
+    "cables-lace-puffs": {
+      "title": "Kabels, kant, puffsteken en clusters",
+      "summary": "Breien krijgt kabels en kant, van een touwkabel tot Feather and Fan, en haken krijgt puffsteken en clusters. Elk brei- en haakproefje is opnieuw getekend en lijkt nu op de stof.",
+      "blocks": [
+        "De steekpatroonmakers gaan nu verder dan recht, averecht en de basissteken van het haken. Bij het breien kruist de [touwkabel](/knitting/rope-cable/) om de vier naalden vier steken tussen averechte steken, kruist de [hoefijzerkabel](/knitting/horseshoe-cable/) een kabel naar rechts en een naar links zodat ze uiteenbuigen, en trekt [Feather and Fan](/knitting/feather-and-fan/), ook Old Shale genoemd, het breiwerk met minderingen en omslagen in schulpen. Bij het haken zet de [puffsteek](/crochet/puff-stitch/) zachte puffs in de ruimtes van de vorige toer, en haakt de [clustersteek](/crochet/cluster-stitch/) drie stokjes samen af tot één kop. Elk heeft een telpatroon, toer voor toer daaruit geschreven instructies, een garenschatting en een volledig patroon voor een vierkant, in alle zeven talen.",
+        "Voorbeelden om mee te beginnen",
+        [
+          "Touwkabel, om de vier naalden gekruist",
+          "Het telpatroon voor de hoefijzerkabel",
+          "Feather and Fan, in schulpen getrokken",
+          "Puffsteek, in de ruimtes eronder",
+          "Het telpatroon voor de clustersteek"
+        ],
+        "Nieuwe symbolen, voluit geschreven",
+        "De telpatronen krijgen de gangbare symbolen: een rondje voor een omslag, schuine lijnen voor minderingen, gekruiste lijnen voor een kabel, een breed ovaal voor een puff en een waaier voor een cluster. De geschreven toeren noemen elk zoals patronen dat doen, en de afkortingen leggen uit hoe je de steken van het patroon maakt. De tests volgen elke geschreven toer terug naar steken, bij elke breedte en stekenverhouding, en controleren dat die bij het telpatroon past en het aantal steken houdt.",
+        "Proefjes die op breiwerk lijken",
+        "De afbeeldingen van de [breisteken](/knitting/) zijn opnieuw getekend, zoals eerder die van het [haken](/crochet/): rechte steken als V, averechte als dwarse bobbeltjes, omslagen als gaatjes, minderingen naar hun kant gekanteld en kabels als banen die elkaar kruisen. Elke steek op de brei- en haakpagina heeft zijn eigen garenkleur."
+      ]
+    },
     "advanced-patterns": {
       "title": "Mariner's Compass, Snail's Trail en meer gevorderde patronen",
       "summary": "Drie nieuwe quiltblokken, waaronder de eerste twee op niveau Gevorderd, een ruitenbrokaat om te breien en drie nieuwe haakpatronen in kleur: een achtpuntige ster, pied-de-poule en argyle.",
@@ -821,6 +840,17 @@
     }
   },
   "changelog": {
+    "Cables, lace, puffs and clusters": {
+      "title": "Kabels, kant, puffsteken en clusters",
+      "items": [
+        "Nieuwe breisteken: touwkabel, hoefijzerkabel en het kantpatroon Feather and Fan",
+        "Nieuwe haaksteken: puffsteek en clustersteek",
+        "Telpatronen en geschreven toeren voor kabels, omslagen, minderingen, puffs en clusters, met hun afkortingen",
+        "Afbeeldingen van breisteken opnieuw getekend zoals echt breiwerk, elk in een eigen garenkleur",
+        "Categoriepagina's delen een afbeelding van hun eigen patronen",
+        "De taallinks staan in een donkerdere band boven het menu"
+      ]
+    },
     "Advanced patterns": {
       "title": "Gevorderde patronen",
       "items": [

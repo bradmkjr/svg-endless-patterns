@@ -1,11 +1,11 @@
 import { describe, expect, it } from "vitest";
 import { cardUrl, pageMetadata, pathPicture } from "./pageMetadata";
-import { OPENING_OPTION, optionPath, TOOL_OPTIONS, type ToolId } from "./toolOptions";
+import { optionPath, TOOL_OPTIONS, type ToolId } from "./toolOptions";
 
 describe("share cards", () => {
   it("are the pattern of every tool and option page", () => {
     for (const tool of Object.keys(TOOL_OPTIONS) as ToolId[]) {
-      expect(pathPicture(TOOL_OPTIONS[tool].path)).toEqual({ group: tool, slug: OPENING_OPTION[tool] });
+      expect(pathPicture(TOOL_OPTIONS[tool].path)).toEqual({ group: tool, collection: true });
       for (const { slug } of TOOL_OPTIONS[tool].options) expect(pathPicture(optionPath(tool, slug))).toEqual({ group: tool, slug });
     }
   });
@@ -15,6 +15,8 @@ describe("share cards", () => {
     expect(pathPicture("/knitting/seed-stitch/")).toEqual({ group: "knit", slug: "seed-stitch" });
     expect(pathPicture("/crochet/moss-stitch/")).toEqual({ group: "crochet", slug: "moss-stitch" });
     expect(pathPicture("/knitting/colorwork/")?.group).toBe("knitColorwork");
+    expect(pathPicture("/crochet/")).toEqual({ group: "crochet", collection: true });
+    expect(pathPicture("/blocks/")).toEqual({ group: "blocks", collection: true });
     expect(pathPicture("/blog/")).toBeUndefined();
   });
 
@@ -22,6 +24,11 @@ describe("share cards", () => {
     expect(cardUrl({ group: "maze", slug: "circle" })).toMatch(/\/api\/v[\d.]+\/card\/maze\/circle\.png$/);
     expect(cardUrl({ group: "blocks", slug: "log-cabin" })).toMatch(/\/api\/v[\d.]+\/card\/blocks\/log-cabin\.png$/);
     expect(cardUrl()).toMatch(/\/card\/default\.png$/);
+  });
+
+  it("show a category page's own patterns", () => {
+    expect(cardUrl({ group: "crochet", collection: true }, "pt")).toMatch(/\/card\/collection\/crochet\.png\?lang=pt$/);
+    expect(cardUrl(pathPicture("/stained-glass/"))).toMatch(/\/card\/collection\/stainedGlass\.png$/);
   });
 
   it("are labeled in the page's language", () => {

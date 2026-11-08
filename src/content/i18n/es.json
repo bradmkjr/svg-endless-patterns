@@ -1,5 +1,24 @@
 {
   "posts": {
+    "cables-lace-puffs": {
+      "title": "Ochos, calados, puntos puff y grupos",
+      "summary": "El tejido gana ochos y calados, desde un ocho de cuerda hasta Feather and Fan, y el ganchillo gana puntos puff y grupos. Todas las muestras de tejido y ganchillo están redibujadas para parecerse a la tela.",
+      "blocks": [
+        "Los creadores de puntos van ahora más allá del derecho, el revés y los puntos básicos de ganchillo. En tejido, el [ocho de cuerda](/knitting/rope-cable/) cruza cuatro puntos cada cuatro vueltas entre columnas de revés, el [ocho de herradura](/knitting/horseshoe-cable/) cruza un ocho hacia atrás y otro hacia delante para que se separen, y [Feather and Fan](/knitting/feather-and-fan/), también llamado Old Shale, usa disminuciones y lazadas para ondular el tejido en festones. En ganchillo, el [punto puff](/crochet/puff-stitch/) coloca puffs suaves en los espacios de la vuelta anterior, y el [punto grupo](/crochet/cluster-stitch/) cierra tres puntos altos en una sola cabeza. Cada uno trae su gráfico, instrucciones vuelta a vuelta escritas a partir de él, una estimación de hilo y un patrón completo de cuadrado, en los siete idiomas.",
+        "Ejemplos para empezar",
+        [
+          "Ocho de cuerda, cruzado cada cuatro vueltas",
+          "El gráfico del ocho de herradura",
+          "Feather and Fan, ondulado en festones",
+          "Punto puff, en los espacios de abajo",
+          "El gráfico del punto grupo"
+        ],
+        "Símbolos nuevos, escritos completos",
+        "Los gráficos suman los símbolos habituales: un círculo para la lazada, líneas inclinadas para las disminuciones, líneas cruzadas para un ocho, un óvalo ancho para un puff y un abanico para un grupo. Las vueltas escritas nombran cada uno como lo hacen los patrones, y las abreviaturas explican cómo trabajar los que usa el punto. Las pruebas siguen cada vuelta escrita hasta los puntos, en cada ancho y muestra, y comprueban que coincide con el gráfico y mantiene el número de puntos.",
+        "Muestras que parecen tejido",
+        "Las imágenes de los [puntos de tejido](/knitting/) están redibujadas como antes las de [ganchillo](/crochet/): puntos del derecho como V, del revés como bultos atravesados, lazadas como agujeros, disminuciones inclinadas hacia su lado y ochos como cintas que se cruzan. Cada punto de las páginas de tejido y ganchillo tiene su propio color de hilo."
+      ]
+    },
     "advanced-patterns": {
       "title": "Mariner's Compass, Snail's Trail y más patrones avanzados",
       "summary": "Tres nuevos bloques de colcha, entre ellos los dos primeros de nivel Avanzado, un brocado de rombos para tejer y tres nuevos gráficos de ganchillo multicolor: una estrella de ocho puntas, pata de gallo y argyle.",
@@ -821,6 +840,17 @@
     }
   },
   "changelog": {
+    "Cables, lace, puffs and clusters": {
+      "title": "Ochos, calados, puntos puff y grupos",
+      "items": [
+        "Nuevos puntos de tejido: ocho de cuerda, ocho de herradura y el calado Feather and Fan",
+        "Nuevos puntos de ganchillo: punto puff y punto grupo",
+        "Gráficos y vueltas escritas para ochos, lazadas, disminuciones, puffs y grupos, con sus abreviaturas",
+        "Imágenes de los puntos de tejido redibujadas como la tela real, cada una en su color de hilo",
+        "Las páginas de categoría comparten una imagen hecha de sus propios patrones",
+        "Los enlaces de idioma están en una franja más oscura sobre el menú"
+      ]
+    },
     "Advanced patterns": {
       "title": "Patrones avanzados",
       "items": [

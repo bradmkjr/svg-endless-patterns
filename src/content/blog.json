@@ -1,5 +1,77 @@
 [
   {
+    "slug": "cables-lace-puffs",
+    "title": "Cables, lace, puffs and clusters",
+    "date": "2026-11-08",
+    "summary": "Knitting gains cables and lace, from a rope cable to Feather and Fan, and crochet gains puff and cluster stitches. Every knit and crochet swatch is redrawn to look like the fabric.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The stitch pattern makers now go past knit, purl and the basic crochet stitches. In knitting, [Rope Cable](/knitting/rope-cable/) crosses four stitches every fourth row between purl columns, [Horseshoe Cable](/knitting/horseshoe-cable/) crosses one cable to the back and one to the front so they curve apart, and [Feather and Fan](/knitting/feather-and-fan/), also called Old Shale, uses decreases and yarn overs to pull the fabric into scallops. In crochet, [Puff Stitch](/crochet/puff-stitch/) sets soft puffs into the spaces of the row below, and [Cluster Stitch](/crochet/cluster-stitch/) closes three double crochets into one top. Each has its chart, row-by-row instructions written from that chart, a yarn estimate and a complete square pattern, in all seven languages."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "knit",
+            "slug": "rope-cable",
+            "query": "",
+            "view": "swatch",
+            "caption": "Rope Cable, crossed every fourth row"
+          },
+          {
+            "kind": "knit",
+            "slug": "horseshoe-cable",
+            "query": "",
+            "view": "chart",
+            "caption": "The Horseshoe Cable chart"
+          },
+          {
+            "kind": "knit",
+            "slug": "feather-and-fan",
+            "query": "",
+            "view": "swatch",
+            "caption": "Feather and Fan, pulled into scallops"
+          },
+          {
+            "kind": "crochet",
+            "slug": "puff-stitch",
+            "query": "",
+            "view": "swatch",
+            "caption": "Puff Stitch, set into the spaces below"
+          },
+          {
+            "kind": "crochet",
+            "slug": "cluster-stitch",
+            "query": "",
+            "view": "chart",
+            "caption": "The Cluster Stitch chart"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "New symbols, written out in full"
+      },
+      {
+        "type": "paragraph",
+        "text": "Charts gain the standard symbols: a circle for a yarn over, slanted lines for k2tog and ssk, crossed lines for a cable, a wide oval for a puff and a fan for a cluster. The written rows name each one the way patterns do, as C4F or yo, k2tog, and the abbreviations explain how to work any the stitch uses. The tests follow each written row back into stitches, at every width and gauge, and check that it matches the chart and keeps the stitch count."
+      },
+      {
+        "type": "heading",
+        "text": "Swatches that look like knitting"
+      },
+      {
+        "type": "paragraph",
+        "text": "The [knitting stitch](/knitting/) pictures are redrawn the way the [crochet](/crochet/) ones were: knit stitches as Vs, purls as bumps lying across, yarn overs as holes, decreases leaning their way and cables as bands crossing over each other. Each stitch on the knitting and crochet pages takes its own yarn color."
+      }
+    ]
+  },
+  {
     "slug": "advanced-patterns",
     "title": "Mariner's Compass, Snail's Trail and more advanced patterns",
     "date": "2026-11-08",

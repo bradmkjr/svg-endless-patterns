@@ -1,5 +1,24 @@
 {
   "posts": {
+    "cables-lace-puffs": {
+      "title": "Tranças, rendados, pontos puff e grupos",
+      "summary": "O tricô ganha tranças e rendados, da trança corda ao Feather and Fan, e o crochê ganha pontos puff e grupos. Todas as amostras de tricô e crochê foram redesenhadas para parecer o tecido.",
+      "blocks": [
+        "Os criadores de pontos agora vão além da meia, do tricô e dos pontos básicos de crochê. No tricô, a [trança corda](/knitting/rope-cable/) cruza quatro pontos a cada quatro carreiras entre colunas de tricô, a [trança ferradura](/knitting/horseshoe-cable/) cruza uma trança para a direita e outra para a esquerda para que se afastem, e o [Feather and Fan](/knitting/feather-and-fan/), também chamado Old Shale, ondula o tricô em festões com diminuições e laçadas. No crochê, o [ponto puff](/crochet/puff-stitch/) coloca puffs macios nos espaços da carreira anterior, e o [ponto grupo](/crochet/cluster-stitch/) fecha três pontos altos em uma só cabeça. Cada um tem seu gráfico, instruções carreira a carreira escritas a partir dele, uma estimativa de fio e uma receita completa de quadrado, nos sete idiomas.",
+        "Exemplos para começar",
+        [
+          "Trança corda, cruzada a cada quatro carreiras",
+          "O gráfico da trança ferradura",
+          "Feather and Fan, ondulado em festões",
+          "Ponto puff, nos espaços de baixo",
+          "O gráfico do ponto grupo"
+        ],
+        "Símbolos novos, escritos por extenso",
+        "Os gráficos ganham os símbolos de costume: um círculo para a laçada, linhas inclinadas para as diminuições, linhas cruzadas para uma trança, um oval largo para um puff e um leque para um grupo. As carreiras escritas nomeiam cada um como as receitas fazem, e as abreviações explicam como trabalhar os que o ponto usa. Os testes seguem cada carreira escrita de volta aos pontos, em cada largura e amostra, e conferem que ela corresponde ao gráfico e mantém o número de pontos.",
+        "Amostras com cara de tricô",
+        "As imagens dos [pontos de tricô](/knitting/) foram redesenhadas como as do [crochê](/crochet/): pontos meia como V, pontos tricô como calombos deitados, laçadas como furos, diminuições inclinadas para o seu lado e tranças como faixas que se cruzam. Cada ponto das páginas de tricô e crochê tem sua própria cor de fio."
+      ]
+    },
     "advanced-patterns": {
       "title": "Mariner's Compass, Snail's Trail e mais padrões avançados",
       "summary": "Três novos blocos de colcha, entre eles os dois primeiros de nível Avançado, um brocado de losangos para o tricô e três novos gráficos de crochê multicolorido: uma estrela de oito pontas, pied-de-poule e argyle.",
@@ -821,6 +840,17 @@
     }
   },
   "changelog": {
+    "Cables, lace, puffs and clusters": {
+      "title": "Tranças, rendados, pontos puff e grupos",
+      "items": [
+        "Novos pontos de tricô: trança corda, trança ferradura e o rendado Feather and Fan",
+        "Novos pontos de crochê: ponto puff e ponto grupo",
+        "Gráficos e carreiras escritas para tranças, laçadas, diminuições, puffs e grupos, com suas abreviações",
+        "Imagens dos pontos de tricô redesenhadas como o tecido de verdade, cada uma na sua cor de fio",
+        "As páginas de categoria compartilham uma imagem feita dos seus próprios padrões",
+        "Os links de idioma ficam em uma faixa mais escura acima do menu"
+      ]
+    },
     "Advanced patterns": {
       "title": "Padrões avançados",
       "items": [

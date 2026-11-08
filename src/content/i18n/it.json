@@ -1,5 +1,24 @@
 {
   "posts": {
+    "cables-lace-puffs": {
+      "title": "Trecce, trafori, punti puff e gruppi",
+      "summary": "La maglia guadagna trecce e trafori, dalla treccia a corda a Feather and Fan, e l'uncinetto punti puff e gruppi. Tutti i campioni di maglia e uncinetto sono ridisegnati per somigliare al tessuto.",
+      "blocks": [
+        "I generatori di punti ora vanno oltre il diritto, il rovescio e le maglie di base dell'uncinetto. Nella maglia, la [treccia a corda](/knitting/rope-cable/) incrocia quattro maglie ogni quattro righe tra coste a rovescio, la [treccia a ferro di cavallo](/knitting/horseshoe-cable/) incrocia una treccia verso destra e una verso sinistra perché si aprano, e [Feather and Fan](/knitting/feather-and-fan/), detto anche Old Shale, ondula il lavoro in smerli con diminuzioni e gettati. All'uncinetto, il [punto puff](/crochet/puff-stitch/) posa morbidi puff negli spazi della riga precedente, e il [punto gruppo](/crochet/cluster-stitch/) chiude tre maglie alte in un'unica testa. Ognuno ha il suo schema, istruzioni riga per riga scritte a partire da esso, una stima del filato e uno schema completo per un quadrato, in tutte e sette le lingue.",
+        "Esempi da cui partire",
+        [
+          "Treccia a corda, incrociata ogni quattro righe",
+          "Lo schema della treccia a ferro di cavallo",
+          "Feather and Fan, ondulato in smerli",
+          "Punto puff, negli spazi della riga sotto",
+          "Lo schema del punto gruppo"
+        ],
+        "Nuovi simboli, scritti per esteso",
+        "Gli schemi aggiungono i simboli consueti: un cerchio per il gettato, linee oblique per le diminuzioni, linee incrociate per una treccia, un ovale largo per un puff e un ventaglio per un gruppo. Le righe scritte nominano ciascuno come fanno gli schemi, e le abbreviazioni spiegano come lavorare quelli usati dal punto. I test seguono ogni riga scritta fino alle maglie, a ogni larghezza e campione, e verificano che corrisponda allo schema e mantenga il numero di maglie.",
+        "Campioni che sembrano maglia",
+        "Le immagini dei [punti a maglia](/knitting/) sono ridisegnate come quelle dell'[uncinetto](/crochet/): maglie a diritto come V, a rovescio come nodini di traverso, gettati come fori, diminuzioni inclinate dal loro lato e trecce come nastri che si incrociano. Ogni punto delle pagine maglia e uncinetto ha il suo colore di filato."
+      ]
+    },
     "advanced-patterns": {
       "title": "Mariner's Compass, Snail's Trail e altri schemi avanzati",
       "summary": "Tre nuovi blocchi di patchwork, tra cui i primi due di livello Avanzato, un broccato a rombi per la maglia e tre nuovi schemi di uncinetto a colori: una stella a otto punte, pied-de-poule e argyle.",
@@ -821,6 +840,17 @@
     }
   },
   "changelog": {
+    "Cables, lace, puffs and clusters": {
+      "title": "Trecce, trafori, punti puff e gruppi",
+      "items": [
+        "Nuovi punti a maglia: treccia a corda, treccia a ferro di cavallo e il traforo Feather and Fan",
+        "Nuovi punti all'uncinetto: punto puff e punto gruppo",
+        "Schemi e righe scritte per trecce, gettati, diminuzioni, puff e gruppi, con le loro abbreviazioni",
+        "Immagini dei punti a maglia ridisegnate come il vero tessuto, ognuna nel suo colore di filato",
+        "Le pagine di categoria condividono un'immagine fatta dei loro schemi",
+        "I link delle lingue stanno in una fascia più scura sopra il menu"
+      ]
+    },
     "Advanced patterns": {
       "title": "Schemi avanzati",
       "items": [

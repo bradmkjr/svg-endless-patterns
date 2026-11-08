@@ -1,5 +1,24 @@
 {
   "posts": {
+    "cables-lace-puffs": {
+      "title": "Zöpfe, Lochmuster, Büschelmaschen und Gruppen",
+      "summary": "Beim Stricken kommen Zöpfe und Lochmuster dazu, vom Seilzopf bis Feather and Fan, beim Häkeln Büschelmaschen und Stäbchengruppen. Jede Strick- und Häkelprobe ist neu gezeichnet und sieht aus wie das Gestrick.",
+      "blocks": [
+        "Die Strick- und Häkelmuster gehen jetzt über rechte und linke Maschen und die Grundmaschen hinaus. Beim Stricken verkreuzt der [Seilzopf](/knitting/rope-cable/) vier Maschen in jeder vierten Reihe zwischen linken Maschen, der [Hufeisenzopf](/knitting/horseshoe-cable/) verkreuzt einen Zopf nach rechts und einen nach links, sodass sie auseinanderbiegen, und [Feather and Fan](/knitting/feather-and-fan/), auch Old Shale genannt, zieht das Gestrick mit Abnahmen und Umschlägen zu Bögen. Beim Häkeln setzt das [Büschelmaschenmuster](/crochet/puff-stitch/) weiche Büschel in die Bögen der Vorreihe, und das [Gruppenmuster](/crochet/cluster-stitch/) maschet drei Stäbchen zu einer Spitze zusammen ab. Jedes hat eine Schrift, Reihe für Reihe daraus geschriebene Anleitungen, eine Garnschätzung und eine vollständige Quadrat-Anleitung, in allen sieben Sprachen.",
+        "Beispiele zum Anfangen",
+        [
+          "Seilzopf, in jeder vierten Reihe verkreuzt",
+          "Die Strickschrift für den Hufeisenzopf",
+          "Feather and Fan, zu Bögen gezogen",
+          "Büschelmaschen in den Bögen der Vorreihe",
+          "Die Häkelschrift für das Gruppenmuster"
+        ],
+        "Neue Symbole, ausgeschrieben",
+        "Die Schriften bekommen die üblichen Symbole: einen Kreis für den Umschlag, schräge Linien für Abnahmen, gekreuzte Linien für einen Zopf, ein breites Oval für eine Büschelmasche und einen Fächer für eine Gruppe. Die geschriebenen Reihen nennen jede so, wie Anleitungen es tun, und die Abkürzungen erklären, wie man die Maschen des Musters arbeitet. Die Tests verfolgen jede geschriebene Reihe in jeder Breite und Maschenprobe zurück in Maschen und prüfen, dass sie zur Schrift passt und die Maschenzahl hält.",
+        "Proben, die nach Stricken aussehen",
+        "Die Bilder der [Strickmuster](/knitting/) sind neu gezeichnet, wie zuvor die der [Häkelmuster](/crochet/): rechte Maschen als V, linke als quer liegende Knötchen, Umschläge als Löcher, Abnahmen in ihre Richtung geneigt und Zöpfe als Bänder, die sich überkreuzen. Jedes Muster auf der Strick- und Häkelseite hat seine eigene Garnfarbe."
+      ]
+    },
     "advanced-patterns": {
       "title": "Mariner's Compass, Snail's Trail und weitere anspruchsvolle Muster",
       "summary": "Drei neue Quiltblöcke, darunter die ersten zwei mit der Stufe Fortgeschritten, ein Rautenbrokat zum Stricken und drei neue Häkel-Farbmuster: ein achtzackiger Stern, Hahnentritt und Argyle.",
@@ -821,6 +840,17 @@
     }
   },
   "changelog": {
+    "Cables, lace, puffs and clusters": {
+      "title": "Zöpfe, Lochmuster, Büschelmaschen und Gruppen",
+      "items": [
+        "Neue Strickmuster: Seilzopf, Hufeisenzopf und das Lochmuster Feather and Fan",
+        "Neue Häkelmuster: Büschelmaschen und Stäbchengruppen",
+        "Schriften und geschriebene Reihen für Zöpfe, Umschläge, Abnahmen, Büschelmaschen und Gruppen, mit ihren Abkürzungen",
+        "Bilder der Strickmuster neu gezeichnet, wie echtes Gestrick, jedes in eigener Garnfarbe",
+        "Kategorieseiten teilen ein Bild aus ihren eigenen Mustern",
+        "Die Sprachlinks stehen in einem dunkleren Band über dem Menü"
+      ]
+    },
     "Advanced patterns": {
       "title": "Anspruchsvolle Muster",
       "items": [

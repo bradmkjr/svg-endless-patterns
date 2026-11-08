@@ -1,5 +1,24 @@
 {
   "posts": {
+    "cables-lace-puffs": {
+      "title": "Torsades, dentelle, points soufflés et groupes",
+      "summary": "Le tricot gagne des torsades et de la dentelle, de la torsade corde à Feather and Fan, et le crochet des points soufflés et des groupes de brides. Tous les échantillons de tricot et de crochet sont redessinés pour ressembler au tissu.",
+      "blocks": [
+        "Les générateurs de points vont maintenant au-delà de l'endroit, de l'envers et des mailles de base du crochet. En tricot, la [torsade corde](/knitting/rope-cable/) croise quatre mailles tous les quatre rangs entre des côtes envers, la [torsade fer à cheval](/knitting/horseshoe-cable/) croise une torsade vers la droite et une vers la gauche pour qu'elles s'écartent, et [Feather and Fan](/knitting/feather-and-fan/), aussi appelé Old Shale, ondule le tricot en festons avec des diminutions et des jetés. Au crochet, le [point soufflé](/crochet/puff-stitch/) pose de doux points soufflés dans les espaces du rang précédent, et le [point groupé](/crochet/cluster-stitch/) écoule trois brides ensemble en une seule tête. Chacun a sa grille, des explications rang par rang écrites à partir d'elle, une estimation de fil et un modèle complet de carré, dans les sept langues.",
+        "Des exemples pour commencer",
+        [
+          "Torsade corde, croisée tous les quatre rangs",
+          "La grille de la torsade fer à cheval",
+          "Feather and Fan, ondulé en festons",
+          "Point soufflé, posé dans les espaces du dessous",
+          "La grille du point groupé"
+        ],
+        "De nouveaux symboles, écrits en toutes lettres",
+        "Les grilles gagnent les symboles habituels : un cercle pour le jeté, des traits obliques pour les diminutions, des traits croisés pour une torsade, un ovale large pour un point soufflé et un éventail pour un groupe. Les rangs écrits nomment chacun comme le font les modèles, et les abréviations expliquent comment tricoter ou crocheter ceux que le point utilise. Les tests suivent chaque rang écrit jusqu'aux mailles, à toutes les largeurs et tous les échantillons, et vérifient qu'il correspond à la grille et garde le nombre de mailles.",
+        "Des échantillons qui ressemblent à du tricot",
+        "Les images des [points de tricot](/knitting/) sont redessinées comme celles du [crochet](/crochet/) : mailles endroit en V, mailles envers en bosses couchées, jetés en trous, diminutions penchées de leur côté et torsades en bandes qui se croisent. Chaque point des pages tricot et crochet a sa propre couleur de fil."
+      ]
+    },
     "advanced-patterns": {
       "title": "Mariner's Compass, Snail's Trail et d'autres modèles avancés",
       "summary": "Trois nouveaux blocs de quilt, dont les deux premiers de niveau Avancé, un brocart de losanges pour le tricot et trois nouvelles grilles de crochet multicolore : une étoile à huit branches, du pied-de-poule et de l'argyle.",
@@ -821,6 +840,17 @@
     }
   },
   "changelog": {
+    "Cables, lace, puffs and clusters": {
+      "title": "Torsades, dentelle, points soufflés et groupes",
+      "items": [
+        "Nouveaux points de tricot : torsade corde, torsade fer à cheval et la dentelle Feather and Fan",
+        "Nouveaux points de crochet : point soufflé et point groupé",
+        "Grilles et rangs écrits pour les torsades, jetés, diminutions, points soufflés et groupes, avec leurs abréviations",
+        "Images des points de tricot redessinées comme le vrai tricot, chacune dans sa couleur de fil",
+        "Les pages de catégorie partagent une image faite de leurs propres modèles",
+        "Les liens de langue sont dans une bande plus foncée au-dessus du menu"
+      ]
+    },
     "Advanced patterns": {
       "title": "Modèles avancés",
       "items": [

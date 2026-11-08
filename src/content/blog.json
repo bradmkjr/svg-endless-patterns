@@ -1,5 +1,96 @@
 [
   {
+    "slug": "thirty-three-quilt-blocks",
+    "title": "Thirty-three new quilt blocks",
+    "date": "2026-11-08",
+    "summary": "The quilt block library nearly doubles, from 39 blocks to 72: four more Advanced blocks, new stars, curves, appliqué and picture blocks, and classic designs in strips, squares and triangles.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The [quilt block library](/blocks/) grows from 39 blocks to 72. Every new block comes with its cutting list, piecing steps and yardage at any block size, with printable templates for the pieces that need them."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "block",
+            "slug": "lone-star",
+            "query": "",
+            "view": "block",
+            "caption": "Lone Star, every point sewn from nine diamonds"
+          },
+          {
+            "kind": "block",
+            "slug": "storm-at-sea",
+            "query": "border=0&cols=3&rows=3",
+            "view": "quilt",
+            "caption": "Storm at Sea, nine blocks side by side"
+          },
+          {
+            "kind": "block",
+            "slug": "spider-web",
+            "query": "border=0&cols=3&rows=3",
+            "view": "quilt",
+            "caption": "Spider Web, with diamonds where the corners meet"
+          },
+          {
+            "kind": "block",
+            "slug": "orange-peel",
+            "query": "border=0&cols=3&rows=3",
+            "view": "quilt",
+            "caption": "Orange Peel, where the peels link into circles"
+          },
+          {
+            "kind": "block",
+            "slug": "schoolhouse",
+            "query": "cols=3&rows=2&sash=1",
+            "view": "quilt",
+            "caption": "A row of Schoolhouses with sashing"
+          },
+          {
+            "kind": "block",
+            "slug": "card-trick",
+            "query": "",
+            "view": "block",
+            "caption": "Card Trick, four cards in a ring"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Four more Advanced blocks"
+      },
+      {
+        "type": "paragraph",
+        "text": "[Pineapple](/blocks/pineapple/) turns its logs 45 degrees with every round. [Storm at Sea](/blocks/storm-at-sea/) combines three kinds of unit, each with pieces set on point. [New York Beauty](/blocks/new-york-beauty/) sets an arc of seven sharp points around a quarter circle, and [Lone Star](/blocks/lone-star/) builds each of its eight points from nine small diamonds."
+      },
+      {
+        "type": "heading",
+        "text": "Stars, curves and pictures"
+      },
+      {
+        "type": "paragraph",
+        "text": "[Rising Star](/blocks/rising-star/) sets a small star inside a large one, [Card Trick](/blocks/card-trick/) seems to lay four cards over one another, and [Spider Web](/blocks/spider-web/) sews eight wedges from strips. For curves and appliqué there are [Orange Peel](/blocks/orange-peel/), [Grandmother's Fan](/blocks/grandmothers-fan/), [Bull's Eye](/blocks/bulls-eye/), [Tulip](/blocks/tulip/), [Butterfly](/blocks/butterfly/), [Heart](/blocks/heart/) and [Tumbling Blocks](/blocks/tumbling-blocks/), and for pictures, [Schoolhouse](/blocks/schoolhouse/) and [Sailboat](/blocks/sailboat/)."
+      },
+      {
+        "type": "heading",
+        "text": "Strips, squares and triangles"
+      },
+      {
+        "type": "paragraph",
+        "text": "The rest build on familiar shapes. In strips and squares: [Half Log Cabin](/blocks/half-log-cabin/), [Chimneys and Cornerstones](/blocks/chimneys-and-cornerstones/), [Chinese Coins](/blocks/chinese-coins/), [Bars](/blocks/bars/), [Center Diamond](/blocks/center-diamond/), [Roman Stripe](/blocks/roman-stripe/), [Spools](/blocks/spools/), [Attic Windows](/blocks/attic-windows/) and [Tumbler](/blocks/tumbler/). In triangles: [Economy Block](/blocks/economy-block/), [Snowball](/blocks/snowball/), [Birds in the Air](/blocks/birds-in-the-air/), [Lady of the Lake](/blocks/lady-of-the-lake/), [Delectable Mountains](/blocks/delectable-mountains/), [Wild Goose Chase](/blocks/wild-goose-chase/), [Thousand Pyramids](/blocks/thousand-pyramids/) and [Zigzag](/blocks/zigzag/)."
+      },
+      {
+        "type": "paragraph",
+        "text": "Piecing steps now list each size of unit on its own, so a block that mixes large and small units, like [Anvil](/blocks/anvil/), trims each to its own size."
+      }
+    ]
+  },
+  {
     "slug": "cables-lace-puffs",
     "title": "Cables, lace, puffs and clusters",
     "date": "2026-11-08",

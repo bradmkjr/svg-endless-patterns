@@ -814,6 +814,788 @@
      }
     ],
     "summary": "Sixteen sharp points in three lengths radiate from a center circle, set on a circle of its own on a background square."
+   },
+   {
+    "slug": "pineapple",
+    "name": "Pineapple",
+    "family": "Squares & strips",
+    "level": "Advanced",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Light logs"
+     },
+     {
+      "id": "dark",
+      "label": "Dark logs"
+     },
+     {
+      "id": "center",
+      "label": "Center"
+     }
+    ],
+    "summary": "Rounds of logs alternate between the sides and the corners of a center square, so each round turns 45 degrees from the last, and corner triangles square it off."
+   },
+   {
+    "slug": "economy-block",
+    "name": "Economy Block",
+    "family": "Triangles",
+    "level": "Confident beginner",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "center",
+      "label": "Center"
+     },
+     {
+      "id": "inner",
+      "label": "Inner triangles"
+     },
+     {
+      "id": "outer",
+      "label": "Corners"
+     }
+    ],
+    "summary": "A square in a square in a square: one round of triangles sets the center on point, and a second squares it up again."
+   },
+   {
+    "slug": "spools",
+    "name": "Spools",
+    "family": "Squares & strips",
+    "level": "Intermediate",
+    "grid": 2,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Background"
+     },
+     {
+      "id": "spool",
+      "label": "Spool ends"
+     },
+     {
+      "id": "thread",
+      "label": "Thread"
+     }
+    ],
+    "summary": "Four spools, two standing and two lying down, each a square of thread between two trapezoid ends."
+   },
+   {
+    "slug": "attic-windows",
+    "name": "Attic Windows",
+    "family": "Squares & strips",
+    "level": "Intermediate",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "window",
+      "label": "Window"
+     },
+     {
+      "id": "side",
+      "label": "Side frame"
+     },
+     {
+      "id": "sill",
+      "label": "Sill"
+     }
+    ],
+    "summary": "A window square with a side frame and a sill meeting in a mitered corner. Set side by side, the blocks look like a view through a row of deep windows."
+   },
+   {
+    "slug": "storm-at-sea",
+    "name": "Storm at Sea",
+    "family": "Triangles",
+    "level": "Advanced",
+    "grid": 4,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Background"
+     },
+     {
+      "id": "dark",
+      "label": "Dark"
+     },
+     {
+      "id": "center",
+      "label": "Center"
+     },
+     {
+      "id": "accent",
+      "label": "Accent"
+     }
+    ],
+    "summary": "A square in a square in a square at the center, small squares on point in the corners, and long diamonds between them. Set side by side, the straight seams seem to swell like waves."
+   },
+   {
+    "slug": "orange-peel",
+    "name": "Orange Peel",
+    "family": "Curves & appliqué",
+    "level": "Intermediate",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Background"
+     },
+     {
+      "id": "petal",
+      "label": "Petals"
+     }
+    ],
+    "summary": "Four pointed ovals, each appliquéd across a background square from corner to corner, meet at the center like the petals of a flower."
+   },
+   {
+    "slug": "grandmothers-fan",
+    "name": "Grandmother's Fan",
+    "family": "Curves & appliqué",
+    "level": "Intermediate",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Background"
+     },
+     {
+      "id": "blade",
+      "label": "Blades"
+     },
+     {
+      "id": "alternate",
+      "label": "Alternate blades"
+     },
+     {
+      "id": "base",
+      "label": "Fan base"
+     }
+    ],
+    "summary": "Six blades fan out from one corner over a quarter-circle base, appliquéd to a background square."
+   },
+   {
+    "slug": "new-york-beauty",
+    "name": "New York Beauty",
+    "family": "Curves & appliqué",
+    "level": "Advanced",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Background"
+     },
+     {
+      "id": "spike",
+      "label": "Star points"
+     },
+     {
+      "id": "sky",
+      "label": "Sky"
+     },
+     {
+      "id": "center",
+      "label": "Center"
+     }
+    ],
+    "summary": "A quarter circle in one corner, an arc of seven sharp points around it, and the background curving around them."
+   },
+   {
+    "slug": "schoolhouse",
+    "name": "Schoolhouse",
+    "family": "Squares & strips",
+    "level": "Intermediate",
+    "grid": 8,
+    "fabrics": [
+     {
+      "id": "sky",
+      "label": "Sky"
+     },
+     {
+      "id": "house",
+      "label": "House"
+     },
+     {
+      "id": "roof",
+      "label": "Roof"
+     },
+     {
+      "id": "door",
+      "label": "Door and chimneys"
+     },
+     {
+      "id": "window",
+      "label": "Windows"
+     }
+    ],
+    "summary": "A house with two chimneys, a gable end with a door, and two windows along its side, under a sloping roof."
+   },
+   {
+    "slug": "tumbler",
+    "name": "Tumbler",
+    "family": "Squares & strips",
+    "level": "Confident beginner",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Light"
+     },
+     {
+      "id": "dark",
+      "label": "Dark"
+     }
+    ],
+    "summary": "Rows of tumblers, each narrower at one end, turned up and down in turn, with an end piece squaring off each row."
+   },
+   {
+    "slug": "rising-star",
+    "name": "Rising Star",
+    "family": "Stars",
+    "level": "Intermediate",
+    "grid": 8,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Background"
+     },
+     {
+      "id": "star",
+      "label": "Large star"
+     },
+     {
+      "id": "inner",
+      "label": "Small star"
+     },
+     {
+      "id": "center",
+      "label": "Center"
+     }
+    ],
+    "summary": "A small Sawtooth Star sits in the center of a large one, so the large star's center becomes the small star's background."
+   },
+   {
+    "slug": "snowball",
+    "name": "Snowball",
+    "family": "Triangles",
+    "level": "Beginner",
+    "grid": 3,
+    "fabrics": [
+     {
+      "id": "ball",
+      "label": "Snowball"
+     },
+     {
+      "id": "corners",
+      "label": "Corners"
+     }
+    ],
+    "summary": "A large square with its four corners folded off by small squares, leaving an octagon. Alternated with Nine Patch blocks, the corners link into chains."
+   },
+   {
+    "slug": "spider-web",
+    "name": "Spider Web",
+    "family": "Triangles",
+    "level": "Intermediate",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "center",
+      "label": "Center"
+     },
+     {
+      "id": "inner",
+      "label": "Inner strips"
+     },
+     {
+      "id": "middle",
+      "label": "Middle strips"
+     },
+     {
+      "id": "outer",
+      "label": "Outer strips"
+     },
+     {
+      "id": "corner",
+      "label": "Corners"
+     }
+    ],
+    "summary": "Eight wedges, each sewn from strips, meet at the center, with corner triangles squaring off the octagon. Set side by side, the corners form diamonds between the webs."
+   },
+   {
+    "slug": "lady-of-the-lake",
+    "name": "Lady of the Lake",
+    "family": "Triangles",
+    "level": "Confident beginner",
+    "grid": 5,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Light"
+     },
+     {
+      "id": "dark",
+      "label": "Dark"
+     }
+    ],
+    "summary": "A large half-square triangle in the center, framed by a ring of small ones that give the dark half a sawtooth edge."
+   },
+   {
+    "slug": "chinese-coins",
+    "name": "Chinese Coins",
+    "family": "Squares & strips",
+    "level": "Beginner",
+    "grid": 8,
+    "fabrics": [
+     {
+      "id": "a",
+      "label": "Coin A"
+     },
+     {
+      "id": "b",
+      "label": "Coin B"
+     },
+     {
+      "id": "c",
+      "label": "Coin C"
+     },
+     {
+      "id": "divider",
+      "label": "Dividers"
+     }
+    ],
+    "summary": "Three columns of stacked strips, like rolls of coins, divided by long plain strips."
+   },
+   {
+    "slug": "birds-in-the-air",
+    "name": "Birds in the Air",
+    "family": "Triangles",
+    "level": "Confident beginner",
+    "grid": 3,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Background"
+     },
+     {
+      "id": "bird",
+      "label": "Birds"
+     },
+     {
+      "id": "large",
+      "label": "Large triangles"
+     }
+    ],
+    "summary": "Half the block is one large triangle; the other half is a flock of small triangles all flying the same way."
+   },
+   {
+    "slug": "lone-star",
+    "name": "Lone Star",
+    "family": "Stars",
+    "level": "Advanced",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Background"
+     },
+     {
+      "id": "center",
+      "label": "Center ring"
+     },
+     {
+      "id": "second",
+      "label": "Second ring"
+     },
+     {
+      "id": "third",
+      "label": "Third ring"
+     }
+    ],
+    "summary": "An eight-pointed star whose every point is nine small diamonds, shaded in rings that ripple out from the center."
+   },
+   {
+    "slug": "bars",
+    "name": "Bars",
+    "family": "Squares & strips",
+    "level": "Beginner",
+    "grid": 9,
+    "fabrics": [
+     {
+      "id": "bar",
+      "label": "Bars"
+     },
+     {
+      "id": "alternate",
+      "label": "Alternate bars"
+     },
+     {
+      "id": "frame",
+      "label": "Outer border"
+     },
+     {
+      "id": "corner",
+      "label": "Corner blocks"
+     }
+    ],
+    "summary": "Seven bars in two alternating fabrics, framed by a wide border with a block in each corner."
+   },
+   {
+    "slug": "center-diamond",
+    "name": "Center Diamond",
+    "family": "Squares & strips",
+    "level": "Confident beginner",
+    "grid": 12,
+    "fabrics": [
+     {
+      "id": "diamond",
+      "label": "Diamond"
+     },
+     {
+      "id": "field",
+      "label": "Field"
+     },
+     {
+      "id": "inner",
+      "label": "Inner border"
+     },
+     {
+      "id": "frame",
+      "label": "Outer border"
+     },
+     {
+      "id": "corner",
+      "label": "Corner blocks"
+     }
+    ],
+    "summary": "A diamond set on point in a square, framed by a narrow inner border and a wide outer border, each with corner blocks."
+   },
+   {
+    "slug": "roman-stripe",
+    "name": "Roman Stripe",
+    "family": "Squares & strips",
+    "level": "Confident beginner",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "plain",
+      "label": "Plain triangle"
+     },
+     {
+      "id": "a",
+      "label": "Stripe A"
+     },
+     {
+      "id": "b",
+      "label": "Stripe B"
+     },
+     {
+      "id": "c",
+      "label": "Stripe C"
+     }
+    ],
+    "summary": "Half the block is a plain triangle; the other half is stripes running parallel to the diagonal."
+   },
+   {
+    "slug": "sailboat",
+    "name": "Sailboat",
+    "family": "Triangles",
+    "level": "Beginner",
+    "grid": 4,
+    "fabrics": [
+     {
+      "id": "sky",
+      "label": "Sky"
+     },
+     {
+      "id": "sail",
+      "label": "Main sail"
+     },
+     {
+      "id": "jib",
+      "label": "Jib"
+     },
+     {
+      "id": "hull",
+      "label": "Hull"
+     },
+     {
+      "id": "water",
+      "label": "Water"
+     }
+    ],
+    "summary": "Two triangle sails above a hull with slanted ends, sailing on a strip of water."
+   },
+   {
+    "slug": "chimneys-and-cornerstones",
+    "name": "Chimneys and Cornerstones",
+    "family": "Squares & strips",
+    "level": "Confident beginner",
+    "grid": 7,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Light logs"
+     },
+     {
+      "id": "dark",
+      "label": "Dark logs"
+     },
+     {
+      "id": "center",
+      "label": "Center and cornerstones"
+     }
+    ],
+    "summary": "Logs build out from the center as in a Log Cabin, with a small square where each round turns, so the squares run in a chain from corner to corner."
+   },
+   {
+    "slug": "thousand-pyramids",
+    "name": "Thousand Pyramids",
+    "family": "Triangles",
+    "level": "Confident beginner",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Light"
+     },
+     {
+      "id": "dark",
+      "label": "Dark"
+     }
+    ],
+    "summary": "Rows of triangles pointing up and down in turn, with half triangles squaring off each end."
+   },
+   {
+    "slug": "zigzag",
+    "name": "Zigzag",
+    "family": "Triangles",
+    "level": "Beginner",
+    "grid": 4,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Light"
+     },
+     {
+      "id": "dark",
+      "label": "Dark"
+     }
+    ],
+    "summary": "Sixteen half-square triangle units, turned in pairs so dark and light bands zigzag across the block."
+   },
+   {
+    "slug": "wild-goose-chase",
+    "name": "Wild Goose Chase",
+    "family": "Triangles",
+    "level": "Confident beginner",
+    "grid": 6,
+    "fabrics": [
+     {
+      "id": "sky",
+      "label": "Sky"
+     },
+     {
+      "id": "goose",
+      "label": "Geese"
+     },
+     {
+      "id": "center",
+      "label": "Center"
+     }
+    ],
+    "summary": "Pairs of flying geese fly out from a center square in four directions, with plain squares in the corners."
+   },
+   {
+    "slug": "delectable-mountains",
+    "name": "Delectable Mountains",
+    "family": "Triangles",
+    "level": "Intermediate",
+    "grid": 4,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Light"
+     },
+     {
+      "id": "dark",
+      "label": "Dark"
+     }
+    ],
+    "summary": "A large half-square triangle whose dark half ends in a row of sawtooth points along two sides, like a mountain range."
+   },
+   {
+    "slug": "bulls-eye",
+    "name": "Bull's Eye",
+    "family": "Curves & appliqué",
+    "level": "Confident beginner",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Background"
+     },
+     {
+      "id": "dark",
+      "label": "Dark"
+     },
+     {
+      "id": "light",
+      "label": "Light"
+     },
+     {
+      "id": "center",
+      "label": "Center"
+     }
+    ],
+    "summary": "Four circles, largest first, appliquéd one on top of the next, so rings of color spread out from the center."
+   },
+   {
+    "slug": "tulip",
+    "name": "Tulip",
+    "family": "Curves & appliqué",
+    "level": "Intermediate",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Background"
+     },
+     {
+      "id": "flower",
+      "label": "Flower"
+     },
+     {
+      "id": "leaf",
+      "label": "Leaves"
+     },
+     {
+      "id": "stem",
+      "label": "Stem"
+     }
+    ],
+    "summary": "A three-pointed tulip on a straight stem with a leaf on each side, appliquéd to a background square."
+   },
+   {
+    "slug": "half-log-cabin",
+    "name": "Half Log Cabin",
+    "family": "Squares & strips",
+    "level": "Beginner",
+    "grid": 6,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Light logs"
+     },
+     {
+      "id": "dark",
+      "label": "Dark logs"
+     },
+     {
+      "id": "center",
+      "label": "Center"
+     }
+    ],
+    "summary": "Logs are added on only two sides of a corner square, light on one and dark on the other, so the block divides along its diagonal."
+   },
+   {
+    "slug": "card-trick",
+    "name": "Card Trick",
+    "family": "Triangles",
+    "level": "Intermediate",
+    "grid": 3,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Background"
+     },
+     {
+      "id": "a",
+      "label": "Card A"
+     },
+     {
+      "id": "b",
+      "label": "Card B"
+     },
+     {
+      "id": "c",
+      "label": "Card C"
+     },
+     {
+      "id": "d",
+      "label": "Card D"
+     }
+    ],
+    "summary": "Four cards seem to lie over one another in a ring, pieced from half- and quarter-square triangles in four card fabrics."
+   },
+   {
+    "slug": "butterfly",
+    "name": "Butterfly",
+    "family": "Curves & appliqué",
+    "level": "Intermediate",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Background"
+     },
+     {
+      "id": "upper",
+      "label": "Upper wings"
+     },
+     {
+      "id": "lower",
+      "label": "Lower wings"
+     },
+     {
+      "id": "body",
+      "label": "Body"
+     }
+    ],
+    "summary": "A butterfly with an upper and a lower wing on each side of a narrow body, appliquéd to a background square."
+   },
+   {
+    "slug": "heart",
+    "name": "Heart",
+    "family": "Curves & appliqué",
+    "level": "Confident beginner",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Background"
+     },
+     {
+      "id": "heart",
+      "label": "Heart"
+     }
+    ],
+    "summary": "A single heart appliquéd to the center of a background square."
+   },
+   {
+    "slug": "tumbling-blocks",
+    "name": "Tumbling Blocks",
+    "family": "Curves & appliqué",
+    "level": "Intermediate",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Background"
+     },
+     {
+      "id": "light",
+      "label": "Light"
+     },
+     {
+      "id": "medium",
+      "label": "Medium"
+     },
+     {
+      "id": "dark",
+      "label": "Dark"
+     }
+    ],
+    "summary": "Three cubes, each a light, a medium and a dark diamond, stacked two and one and appliquéd to a background square."
    }
   ],
   "es": [
@@ -1630,6 +2412,788 @@
      }
     ],
     "summary": "Dieciséis puntas afiladas de tres largos irradian desde un círculo central, sobre un círculo propio en un cuadrado de fondo."
+   },
+   {
+    "slug": "pineapple",
+    "name": "Pineapple",
+    "family": "Cuadrados y tiras",
+    "level": "Avanzado",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Troncos claros"
+     },
+     {
+      "id": "dark",
+      "label": "Troncos oscuros"
+     },
+     {
+      "id": "center",
+      "label": "Centro"
+     }
+    ],
+    "summary": "Rondas de tiras alternan entre los lados y las esquinas de un cuadrado central, de modo que cada ronda gira 45 grados respecto a la anterior, y unos triángulos de esquina cuadran el bloque."
+   },
+   {
+    "slug": "economy-block",
+    "name": "Economy Block",
+    "family": "Triángulos",
+    "level": "Principiante avanzado",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "center",
+      "label": "Centro"
+     },
+     {
+      "id": "inner",
+      "label": "Triángulos interiores"
+     },
+     {
+      "id": "outer",
+      "label": "Esquinas"
+     }
+    ],
+    "summary": "Un cuadrado dentro de un cuadrado dentro de otro: una ronda de triángulos pone el centro en punta y una segunda lo vuelve a cuadrar."
+   },
+   {
+    "slug": "spools",
+    "name": "Spools",
+    "family": "Cuadrados y tiras",
+    "level": "Intermedio",
+    "grid": 2,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fondo"
+     },
+     {
+      "id": "spool",
+      "label": "Extremos del carrete"
+     },
+     {
+      "id": "thread",
+      "label": "Hilo"
+     }
+    ],
+    "summary": "Cuatro carretes, dos de pie y dos tumbados, cada uno un cuadrado de hilo entre dos extremos en forma de trapecio."
+   },
+   {
+    "slug": "attic-windows",
+    "name": "Attic Windows",
+    "family": "Cuadrados y tiras",
+    "level": "Intermedio",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "window",
+      "label": "Ventana"
+     },
+     {
+      "id": "side",
+      "label": "Marco lateral"
+     },
+     {
+      "id": "sill",
+      "label": "Alféizar"
+     }
+    ],
+    "summary": "Un cuadrado de ventana con un marco lateral y un alféizar que se unen en una esquina en inglete. Puestos uno junto a otro, los bloques parecen una vista a través de una fila de ventanas profundas."
+   },
+   {
+    "slug": "storm-at-sea",
+    "name": "Storm at Sea",
+    "family": "Triángulos",
+    "level": "Avanzado",
+    "grid": 4,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fondo"
+     },
+     {
+      "id": "dark",
+      "label": "Oscuro"
+     },
+     {
+      "id": "center",
+      "label": "Centro"
+     },
+     {
+      "id": "accent",
+      "label": "Acento"
+     }
+    ],
+    "summary": "Un cuadrado dentro de un cuadrado dentro de otro en el centro, cuadrados pequeños en punta en las esquinas y rombos alargados entre ellos. Puestos uno junto a otro, las costuras rectas parecen ondularse como olas."
+   },
+   {
+    "slug": "orange-peel",
+    "name": "Orange Peel",
+    "family": "Curvas y aplicación",
+    "level": "Intermedio",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fondo"
+     },
+     {
+      "id": "petal",
+      "label": "Pétalos"
+     }
+    ],
+    "summary": "Cuatro óvalos en punta, cada uno aplicado en diagonal sobre un cuadrado de fondo de esquina a esquina, se encuentran en el centro como los pétalos de una flor."
+   },
+   {
+    "slug": "grandmothers-fan",
+    "name": "Grandmother's Fan",
+    "family": "Curvas y aplicación",
+    "level": "Intermedio",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fondo"
+     },
+     {
+      "id": "blade",
+      "label": "Aspas"
+     },
+     {
+      "id": "alternate",
+      "label": "Aspas alternas"
+     },
+     {
+      "id": "base",
+      "label": "Base del abanico"
+     }
+    ],
+    "summary": "Seis aspas se abren en abanico desde una esquina sobre una base de cuarto de círculo, aplicadas a un cuadrado de fondo."
+   },
+   {
+    "slug": "new-york-beauty",
+    "name": "New York Beauty",
+    "family": "Curvas y aplicación",
+    "level": "Avanzado",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fondo"
+     },
+     {
+      "id": "spike",
+      "label": "Puntas de estrella"
+     },
+     {
+      "id": "sky",
+      "label": "Cielo"
+     },
+     {
+      "id": "center",
+      "label": "Centro"
+     }
+    ],
+    "summary": "Un cuarto de círculo en una esquina, un arco de siete puntas afiladas a su alrededor y el fondo curvándose alrededor de ellas."
+   },
+   {
+    "slug": "schoolhouse",
+    "name": "Schoolhouse",
+    "family": "Cuadrados y tiras",
+    "level": "Intermedio",
+    "grid": 8,
+    "fabrics": [
+     {
+      "id": "sky",
+      "label": "Cielo"
+     },
+     {
+      "id": "house",
+      "label": "Casa"
+     },
+     {
+      "id": "roof",
+      "label": "Tejado"
+     },
+     {
+      "id": "door",
+      "label": "Puerta y chimeneas"
+     },
+     {
+      "id": "window",
+      "label": "Ventanas"
+     }
+    ],
+    "summary": "Una casa con dos chimeneas, un hastial con puerta y dos ventanas en el lateral, bajo un tejado inclinado."
+   },
+   {
+    "slug": "tumbler",
+    "name": "Tumbler",
+    "family": "Cuadrados y tiras",
+    "level": "Principiante avanzado",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Claro"
+     },
+     {
+      "id": "dark",
+      "label": "Oscuro"
+     }
+    ],
+    "summary": "Filas de vasos, cada uno más estrecho por un extremo, alternando hacia arriba y hacia abajo, con una pieza final que cuadra cada fila."
+   },
+   {
+    "slug": "rising-star",
+    "name": "Rising Star",
+    "family": "Estrellas",
+    "level": "Intermedio",
+    "grid": 8,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fondo"
+     },
+     {
+      "id": "star",
+      "label": "Estrella grande"
+     },
+     {
+      "id": "inner",
+      "label": "Estrella pequeña"
+     },
+     {
+      "id": "center",
+      "label": "Centro"
+     }
+    ],
+    "summary": "Una Sawtooth Star pequeña dentro de una grande, de modo que el centro de la estrella grande es el fondo de la pequeña."
+   },
+   {
+    "slug": "snowball",
+    "name": "Snowball",
+    "family": "Triángulos",
+    "level": "Principiante",
+    "grid": 3,
+    "fabrics": [
+     {
+      "id": "ball",
+      "label": "Bola de nieve"
+     },
+     {
+      "id": "corners",
+      "label": "Esquinas"
+     }
+    ],
+    "summary": "Un cuadrado grande con sus cuatro esquinas dobladas por cuadrados pequeños, que deja un octógono. Alternado con bloques Nine Patch, las esquinas forman cadenas."
+   },
+   {
+    "slug": "spider-web",
+    "name": "Spider Web",
+    "family": "Triángulos",
+    "level": "Intermedio",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "center",
+      "label": "Centro"
+     },
+     {
+      "id": "inner",
+      "label": "Tiras interiores"
+     },
+     {
+      "id": "middle",
+      "label": "Tiras del medio"
+     },
+     {
+      "id": "outer",
+      "label": "Tiras exteriores"
+     },
+     {
+      "id": "corner",
+      "label": "Esquinas"
+     }
+    ],
+    "summary": "Ocho cuñas, cada una cosida con tiras, se encuentran en el centro, y unos triángulos de esquina cuadran el octógono. Puestos uno junto a otro, las esquinas forman rombos entre las telarañas."
+   },
+   {
+    "slug": "lady-of-the-lake",
+    "name": "Lady of the Lake",
+    "family": "Triángulos",
+    "level": "Principiante avanzado",
+    "grid": 5,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Claro"
+     },
+     {
+      "id": "dark",
+      "label": "Oscuro"
+     }
+    ],
+    "summary": "Un triángulo de medio cuadrado grande en el centro, enmarcado por una vuelta de triángulos pequeños que dan a la mitad oscura un borde de dientes de sierra."
+   },
+   {
+    "slug": "chinese-coins",
+    "name": "Chinese Coins",
+    "family": "Cuadrados y tiras",
+    "level": "Principiante",
+    "grid": 8,
+    "fabrics": [
+     {
+      "id": "a",
+      "label": "Moneda A"
+     },
+     {
+      "id": "b",
+      "label": "Moneda B"
+     },
+     {
+      "id": "c",
+      "label": "Moneda C"
+     },
+     {
+      "id": "divider",
+      "label": "Separadores"
+     }
+    ],
+    "summary": "Tres columnas de tiras apiladas, como cartuchos de monedas, separadas por tiras lisas largas."
+   },
+   {
+    "slug": "birds-in-the-air",
+    "name": "Birds in the Air",
+    "family": "Triángulos",
+    "level": "Principiante avanzado",
+    "grid": 3,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fondo"
+     },
+     {
+      "id": "bird",
+      "label": "Pájaros"
+     },
+     {
+      "id": "large",
+      "label": "Triángulos grandes"
+     }
+    ],
+    "summary": "La mitad del bloque es un triángulo grande; la otra mitad, una bandada de triángulos pequeños que vuelan en la misma dirección."
+   },
+   {
+    "slug": "lone-star",
+    "name": "Lone Star",
+    "family": "Estrellas",
+    "level": "Avanzado",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fondo"
+     },
+     {
+      "id": "center",
+      "label": "Anillo central"
+     },
+     {
+      "id": "second",
+      "label": "Segundo anillo"
+     },
+     {
+      "id": "third",
+      "label": "Tercer anillo"
+     }
+    ],
+    "summary": "Una estrella de ocho puntas en la que cada punta son nueve rombos pequeños, sombreados en anillos que se extienden desde el centro."
+   },
+   {
+    "slug": "bars",
+    "name": "Bars",
+    "family": "Cuadrados y tiras",
+    "level": "Principiante",
+    "grid": 9,
+    "fabrics": [
+     {
+      "id": "bar",
+      "label": "Barras"
+     },
+     {
+      "id": "alternate",
+      "label": "Barras alternas"
+     },
+     {
+      "id": "frame",
+      "label": "Borde exterior"
+     },
+     {
+      "id": "corner",
+      "label": "Bloques de esquina"
+     }
+    ],
+    "summary": "Siete barras en dos telas alternas, enmarcadas por un borde ancho con un bloque en cada esquina."
+   },
+   {
+    "slug": "center-diamond",
+    "name": "Center Diamond",
+    "family": "Cuadrados y tiras",
+    "level": "Principiante avanzado",
+    "grid": 12,
+    "fabrics": [
+     {
+      "id": "diamond",
+      "label": "Rombo"
+     },
+     {
+      "id": "field",
+      "label": "Campo"
+     },
+     {
+      "id": "inner",
+      "label": "Borde interior"
+     },
+     {
+      "id": "frame",
+      "label": "Borde exterior"
+     },
+     {
+      "id": "corner",
+      "label": "Bloques de esquina"
+     }
+    ],
+    "summary": "Un rombo en punta dentro de un cuadrado, enmarcado por un borde interior estrecho y otro exterior ancho, cada uno con bloques de esquina."
+   },
+   {
+    "slug": "roman-stripe",
+    "name": "Roman Stripe",
+    "family": "Cuadrados y tiras",
+    "level": "Principiante avanzado",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "plain",
+      "label": "Triángulo liso"
+     },
+     {
+      "id": "a",
+      "label": "Franja A"
+     },
+     {
+      "id": "b",
+      "label": "Franja B"
+     },
+     {
+      "id": "c",
+      "label": "Franja C"
+     }
+    ],
+    "summary": "La mitad del bloque es un triángulo liso; la otra mitad, franjas paralelas a la diagonal."
+   },
+   {
+    "slug": "sailboat",
+    "name": "Sailboat",
+    "family": "Triángulos",
+    "level": "Principiante",
+    "grid": 4,
+    "fabrics": [
+     {
+      "id": "sky",
+      "label": "Cielo"
+     },
+     {
+      "id": "sail",
+      "label": "Vela mayor"
+     },
+     {
+      "id": "jib",
+      "label": "Foque"
+     },
+     {
+      "id": "hull",
+      "label": "Casco"
+     },
+     {
+      "id": "water",
+      "label": "Agua"
+     }
+    ],
+    "summary": "Dos velas triangulares sobre un casco de extremos inclinados, navegando sobre una franja de agua."
+   },
+   {
+    "slug": "chimneys-and-cornerstones",
+    "name": "Chimneys and Cornerstones",
+    "family": "Cuadrados y tiras",
+    "level": "Principiante avanzado",
+    "grid": 7,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Troncos claros"
+     },
+     {
+      "id": "dark",
+      "label": "Troncos oscuros"
+     },
+     {
+      "id": "center",
+      "label": "Centro y cuadrados de esquina"
+     }
+    ],
+    "summary": "Las tiras crecen desde el centro como en un Log Cabin, con un cuadrado pequeño donde gira cada ronda, de modo que los cuadrados forman una cadena de esquina a esquina."
+   },
+   {
+    "slug": "thousand-pyramids",
+    "name": "Thousand Pyramids",
+    "family": "Triángulos",
+    "level": "Principiante avanzado",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Claro"
+     },
+     {
+      "id": "dark",
+      "label": "Oscuro"
+     }
+    ],
+    "summary": "Filas de triángulos que apuntan arriba y abajo alternativamente, con medios triángulos que cuadran cada extremo."
+   },
+   {
+    "slug": "zigzag",
+    "name": "Zigzag",
+    "family": "Triángulos",
+    "level": "Principiante",
+    "grid": 4,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Claro"
+     },
+     {
+      "id": "dark",
+      "label": "Oscuro"
+     }
+    ],
+    "summary": "Dieciséis unidades de triángulos de medio cuadrado, giradas por parejas para que franjas oscuras y claras zigzagueen por el bloque."
+   },
+   {
+    "slug": "wild-goose-chase",
+    "name": "Wild Goose Chase",
+    "family": "Triángulos",
+    "level": "Principiante avanzado",
+    "grid": 6,
+    "fabrics": [
+     {
+      "id": "sky",
+      "label": "Cielo"
+     },
+     {
+      "id": "goose",
+      "label": "Gansos"
+     },
+     {
+      "id": "center",
+      "label": "Centro"
+     }
+    ],
+    "summary": "Parejas de ocas vuelan desde un cuadrado central en cuatro direcciones, con cuadrados lisos en las esquinas."
+   },
+   {
+    "slug": "delectable-mountains",
+    "name": "Delectable Mountains",
+    "family": "Triángulos",
+    "level": "Intermedio",
+    "grid": 4,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Claro"
+     },
+     {
+      "id": "dark",
+      "label": "Oscuro"
+     }
+    ],
+    "summary": "Un triángulo de medio cuadrado grande cuya mitad oscura termina en una fila de puntas de sierra a lo largo de dos lados, como una cordillera."
+   },
+   {
+    "slug": "bulls-eye",
+    "name": "Bull's Eye",
+    "family": "Curvas y aplicación",
+    "level": "Principiante avanzado",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fondo"
+     },
+     {
+      "id": "dark",
+      "label": "Oscuro"
+     },
+     {
+      "id": "light",
+      "label": "Claro"
+     },
+     {
+      "id": "center",
+      "label": "Centro"
+     }
+    ],
+    "summary": "Cuatro círculos, del mayor al menor, aplicados uno sobre otro, de modo que anillos de color se extienden desde el centro."
+   },
+   {
+    "slug": "tulip",
+    "name": "Tulip",
+    "family": "Curvas y aplicación",
+    "level": "Intermedio",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fondo"
+     },
+     {
+      "id": "flower",
+      "label": "Flor"
+     },
+     {
+      "id": "leaf",
+      "label": "Hojas"
+     },
+     {
+      "id": "stem",
+      "label": "Tallo"
+     }
+    ],
+    "summary": "Un tulipán de tres puntas sobre un tallo recto con una hoja a cada lado, aplicado a un cuadrado de fondo."
+   },
+   {
+    "slug": "half-log-cabin",
+    "name": "Half Log Cabin",
+    "family": "Cuadrados y tiras",
+    "level": "Principiante",
+    "grid": 6,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Troncos claros"
+     },
+     {
+      "id": "dark",
+      "label": "Troncos oscuros"
+     },
+     {
+      "id": "center",
+      "label": "Centro"
+     }
+    ],
+    "summary": "Las tiras se añaden solo a dos lados de un cuadrado de esquina, claras en uno y oscuras en el otro, de modo que el bloque se divide por la diagonal."
+   },
+   {
+    "slug": "card-trick",
+    "name": "Card Trick",
+    "family": "Triángulos",
+    "level": "Intermedio",
+    "grid": 3,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fondo"
+     },
+     {
+      "id": "a",
+      "label": "Carta A"
+     },
+     {
+      "id": "b",
+      "label": "Carta B"
+     },
+     {
+      "id": "c",
+      "label": "Carta C"
+     },
+     {
+      "id": "d",
+      "label": "Carta D"
+     }
+    ],
+    "summary": "Cuatro cartas parecen superponerse en círculo, cosidas con triángulos de medio y de cuarto de cuadrado en cuatro telas de carta."
+   },
+   {
+    "slug": "butterfly",
+    "name": "Butterfly",
+    "family": "Curvas y aplicación",
+    "level": "Intermedio",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fondo"
+     },
+     {
+      "id": "upper",
+      "label": "Alas superiores"
+     },
+     {
+      "id": "lower",
+      "label": "Alas inferiores"
+     },
+     {
+      "id": "body",
+      "label": "Cuerpo"
+     }
+    ],
+    "summary": "Una mariposa con un ala superior y otra inferior a cada lado de un cuerpo estrecho, aplicada a un cuadrado de fondo."
+   },
+   {
+    "slug": "heart",
+    "name": "Heart",
+    "family": "Curvas y aplicación",
+    "level": "Principiante avanzado",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fondo"
+     },
+     {
+      "id": "heart",
+      "label": "Corazón"
+     }
+    ],
+    "summary": "Un único corazón aplicado en el centro de un cuadrado de fondo."
+   },
+   {
+    "slug": "tumbling-blocks",
+    "name": "Tumbling Blocks",
+    "family": "Curvas y aplicación",
+    "level": "Intermedio",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fondo"
+     },
+     {
+      "id": "light",
+      "label": "Claro"
+     },
+     {
+      "id": "medium",
+      "label": "Medio"
+     },
+     {
+      "id": "dark",
+      "label": "Oscuro"
+     }
+    ],
+    "summary": "Tres cubos, cada uno con un rombo claro, uno medio y uno oscuro, apilados dos y uno y aplicados a un cuadrado de fondo."
    }
   ],
   "fr": [
@@ -2446,6 +4010,788 @@
      }
     ],
     "summary": "Seize pointes fines de trois longueurs rayonnent d'un cercle central, posées sur leur propre cercle sur un carré de fond."
+   },
+   {
+    "slug": "pineapple",
+    "name": "Pineapple",
+    "family": "Carrés et bandes",
+    "level": "Avancé",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Rondins clairs"
+     },
+     {
+      "id": "dark",
+      "label": "Rondins foncés"
+     },
+     {
+      "id": "center",
+      "label": "Centre"
+     }
+    ],
+    "summary": "Des tours de bandes alternent entre les côtés et les coins d'un carré central, si bien que chaque tour pivote de 45 degrés par rapport au précédent, et des triangles d'angle referment le carré."
+   },
+   {
+    "slug": "economy-block",
+    "name": "Economy Block",
+    "family": "Triangles",
+    "level": "Débutant confirmé",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "center",
+      "label": "Centre"
+     },
+     {
+      "id": "inner",
+      "label": "Triangles intérieurs"
+     },
+     {
+      "id": "outer",
+      "label": "Coins"
+     }
+    ],
+    "summary": "Un carré dans un carré dans un carré : un tour de triangles met le centre sur la pointe, un second le remet d'équerre."
+   },
+   {
+    "slug": "spools",
+    "name": "Spools",
+    "family": "Carrés et bandes",
+    "level": "Intermédiaire",
+    "grid": 2,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fond"
+     },
+     {
+      "id": "spool",
+      "label": "Extrémités de bobine"
+     },
+     {
+      "id": "thread",
+      "label": "Fil"
+     }
+    ],
+    "summary": "Quatre bobines, deux debout et deux couchées, chacune un carré de fil entre deux extrémités en trapèze."
+   },
+   {
+    "slug": "attic-windows",
+    "name": "Attic Windows",
+    "family": "Carrés et bandes",
+    "level": "Intermédiaire",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "window",
+      "label": "Fenêtre"
+     },
+     {
+      "id": "side",
+      "label": "Montant"
+     },
+     {
+      "id": "sill",
+      "label": "Appui"
+     }
+    ],
+    "summary": "Un carré de fenêtre avec un montant et un appui qui se rejoignent en onglet. Côte à côte, les blocs donnent l'impression de regarder par une rangée de fenêtres profondes."
+   },
+   {
+    "slug": "storm-at-sea",
+    "name": "Storm at Sea",
+    "family": "Triangles",
+    "level": "Avancé",
+    "grid": 4,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fond"
+     },
+     {
+      "id": "dark",
+      "label": "Foncé"
+     },
+     {
+      "id": "center",
+      "label": "Centre"
+     },
+     {
+      "id": "accent",
+      "label": "Accent"
+     }
+    ],
+    "summary": "Un carré dans un carré dans un carré au centre, de petits carrés sur la pointe aux coins et de longs losanges entre eux. Côte à côte, les coutures droites semblent onduler comme des vagues."
+   },
+   {
+    "slug": "orange-peel",
+    "name": "Orange Peel",
+    "family": "Courbes et appliqué",
+    "level": "Intermédiaire",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fond"
+     },
+     {
+      "id": "petal",
+      "label": "Pétales"
+     }
+    ],
+    "summary": "Quatre ovales pointus, chacun appliqué en travers d'un carré de fond d'un coin à l'autre, se rejoignent au centre comme les pétales d'une fleur."
+   },
+   {
+    "slug": "grandmothers-fan",
+    "name": "Grandmother's Fan",
+    "family": "Courbes et appliqué",
+    "level": "Intermédiaire",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fond"
+     },
+     {
+      "id": "blade",
+      "label": "Ailes"
+     },
+     {
+      "id": "alternate",
+      "label": "Pales alternées"
+     },
+     {
+      "id": "base",
+      "label": "Base de l'éventail"
+     }
+    ],
+    "summary": "Six pales s'ouvrent en éventail depuis un coin au-dessus d'une base en quart de cercle, appliquées sur un carré de fond."
+   },
+   {
+    "slug": "new-york-beauty",
+    "name": "New York Beauty",
+    "family": "Courbes et appliqué",
+    "level": "Avancé",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fond"
+     },
+     {
+      "id": "spike",
+      "label": "Pointes de l'étoile"
+     },
+     {
+      "id": "sky",
+      "label": "Ciel"
+     },
+     {
+      "id": "center",
+      "label": "Centre"
+     }
+    ],
+    "summary": "Un quart de cercle dans un coin, un arc de sept pointes acérées autour, et le fond qui s'arrondit autour d'elles."
+   },
+   {
+    "slug": "schoolhouse",
+    "name": "Schoolhouse",
+    "family": "Carrés et bandes",
+    "level": "Intermédiaire",
+    "grid": 8,
+    "fabrics": [
+     {
+      "id": "sky",
+      "label": "Ciel"
+     },
+     {
+      "id": "house",
+      "label": "Maison"
+     },
+     {
+      "id": "roof",
+      "label": "Toit"
+     },
+     {
+      "id": "door",
+      "label": "Porte et cheminées"
+     },
+     {
+      "id": "window",
+      "label": "Fenêtres"
+     }
+    ],
+    "summary": "Une maison à deux cheminées, un pignon avec une porte et deux fenêtres sur le côté, sous un toit en pente."
+   },
+   {
+    "slug": "tumbler",
+    "name": "Tumbler",
+    "family": "Carrés et bandes",
+    "level": "Débutant confirmé",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Clair"
+     },
+     {
+      "id": "dark",
+      "label": "Foncé"
+     }
+    ],
+    "summary": "Des rangs de gobelets, chacun plus étroit à un bout, tournés tour à tour vers le haut et vers le bas, avec une pièce d'extrémité qui ferme chaque rang."
+   },
+   {
+    "slug": "rising-star",
+    "name": "Rising Star",
+    "family": "Étoiles",
+    "level": "Intermédiaire",
+    "grid": 8,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fond"
+     },
+     {
+      "id": "star",
+      "label": "Grande étoile"
+     },
+     {
+      "id": "inner",
+      "label": "Petite étoile"
+     },
+     {
+      "id": "center",
+      "label": "Centre"
+     }
+    ],
+    "summary": "Une petite Sawtooth Star au centre d'une grande, si bien que le centre de la grande étoile devient le fond de la petite."
+   },
+   {
+    "slug": "snowball",
+    "name": "Snowball",
+    "family": "Triangles",
+    "level": "Débutant",
+    "grid": 3,
+    "fabrics": [
+     {
+      "id": "ball",
+      "label": "Boule de neige"
+     },
+     {
+      "id": "corners",
+      "label": "Coins"
+     }
+    ],
+    "summary": "Un grand carré dont les quatre coins sont rabattus par de petits carrés, ce qui laisse un octogone. Alterné avec des blocs Nine Patch, les coins forment des chaînes."
+   },
+   {
+    "slug": "spider-web",
+    "name": "Spider Web",
+    "family": "Triangles",
+    "level": "Intermédiaire",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "center",
+      "label": "Centre"
+     },
+     {
+      "id": "inner",
+      "label": "Bandes intérieures"
+     },
+     {
+      "id": "middle",
+      "label": "Bandes du milieu"
+     },
+     {
+      "id": "outer",
+      "label": "Bandes extérieures"
+     },
+     {
+      "id": "corner",
+      "label": "Coins"
+     }
+    ],
+    "summary": "Huit pointes, chacune cousue de bandes, se rejoignent au centre, et des triangles d'angle referment l'octogone. Côte à côte, les coins forment des losanges entre les toiles."
+   },
+   {
+    "slug": "lady-of-the-lake",
+    "name": "Lady of the Lake",
+    "family": "Triangles",
+    "level": "Débutant confirmé",
+    "grid": 5,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Clair"
+     },
+     {
+      "id": "dark",
+      "label": "Foncé"
+     }
+    ],
+    "summary": "Un grand triangle demi-carré au centre, encadré d'un tour de petits triangles qui donnent à la moitié foncée un bord en dents de scie."
+   },
+   {
+    "slug": "chinese-coins",
+    "name": "Chinese Coins",
+    "family": "Carrés et bandes",
+    "level": "Débutant",
+    "grid": 8,
+    "fabrics": [
+     {
+      "id": "a",
+      "label": "Pièce A"
+     },
+     {
+      "id": "b",
+      "label": "Pièce B"
+     },
+     {
+      "id": "c",
+      "label": "Pièce C"
+     },
+     {
+      "id": "divider",
+      "label": "Séparations"
+     }
+    ],
+    "summary": "Trois colonnes de bandes empilées, comme des rouleaux de pièces, séparées par de longues bandes unies."
+   },
+   {
+    "slug": "birds-in-the-air",
+    "name": "Birds in the Air",
+    "family": "Triangles",
+    "level": "Débutant confirmé",
+    "grid": 3,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fond"
+     },
+     {
+      "id": "bird",
+      "label": "Oiseaux"
+     },
+     {
+      "id": "large",
+      "label": "Grands triangles"
+     }
+    ],
+    "summary": "La moitié du bloc est un grand triangle ; l'autre moitié, une volée de petits triangles qui volent tous dans le même sens."
+   },
+   {
+    "slug": "lone-star",
+    "name": "Lone Star",
+    "family": "Étoiles",
+    "level": "Avancé",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fond"
+     },
+     {
+      "id": "center",
+      "label": "Anneau central"
+     },
+     {
+      "id": "second",
+      "label": "Deuxième anneau"
+     },
+     {
+      "id": "third",
+      "label": "Troisième anneau"
+     }
+    ],
+    "summary": "Une étoile à huit branches dont chaque branche est faite de neuf petits losanges, ombrés en anneaux qui rayonnent depuis le centre."
+   },
+   {
+    "slug": "bars",
+    "name": "Bars",
+    "family": "Carrés et bandes",
+    "level": "Débutant",
+    "grid": 9,
+    "fabrics": [
+     {
+      "id": "bar",
+      "label": "Barres"
+     },
+     {
+      "id": "alternate",
+      "label": "Barres alternées"
+     },
+     {
+      "id": "frame",
+      "label": "Bordure extérieure"
+     },
+     {
+      "id": "corner",
+      "label": "Blocs de coin"
+     }
+    ],
+    "summary": "Sept barres en deux tissus alternés, encadrées d'une large bordure avec un bloc à chaque coin."
+   },
+   {
+    "slug": "center-diamond",
+    "name": "Center Diamond",
+    "family": "Carrés et bandes",
+    "level": "Débutant confirmé",
+    "grid": 12,
+    "fabrics": [
+     {
+      "id": "diamond",
+      "label": "Losange"
+     },
+     {
+      "id": "field",
+      "label": "Champ"
+     },
+     {
+      "id": "inner",
+      "label": "Bordure intérieure"
+     },
+     {
+      "id": "frame",
+      "label": "Bordure extérieure"
+     },
+     {
+      "id": "corner",
+      "label": "Blocs de coin"
+     }
+    ],
+    "summary": "Un losange sur la pointe dans un carré, encadré d'une bordure intérieure étroite et d'une large bordure extérieure, chacune avec des blocs de coin."
+   },
+   {
+    "slug": "roman-stripe",
+    "name": "Roman Stripe",
+    "family": "Carrés et bandes",
+    "level": "Débutant confirmé",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "plain",
+      "label": "Triangle uni"
+     },
+     {
+      "id": "a",
+      "label": "Rayure A"
+     },
+     {
+      "id": "b",
+      "label": "Rayure B"
+     },
+     {
+      "id": "c",
+      "label": "Rayure C"
+     }
+    ],
+    "summary": "La moitié du bloc est un triangle uni ; l'autre moitié, des rayures parallèles à la diagonale."
+   },
+   {
+    "slug": "sailboat",
+    "name": "Sailboat",
+    "family": "Triangles",
+    "level": "Débutant",
+    "grid": 4,
+    "fabrics": [
+     {
+      "id": "sky",
+      "label": "Ciel"
+     },
+     {
+      "id": "sail",
+      "label": "Grand-voile"
+     },
+     {
+      "id": "jib",
+      "label": "Foc"
+     },
+     {
+      "id": "hull",
+      "label": "Coque"
+     },
+     {
+      "id": "water",
+      "label": "Eau"
+     }
+    ],
+    "summary": "Deux voiles triangulaires au-dessus d'une coque aux extrémités inclinées, sur une bande d'eau."
+   },
+   {
+    "slug": "chimneys-and-cornerstones",
+    "name": "Chimneys and Cornerstones",
+    "family": "Carrés et bandes",
+    "level": "Débutant confirmé",
+    "grid": 7,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Rondins clairs"
+     },
+     {
+      "id": "dark",
+      "label": "Rondins foncés"
+     },
+     {
+      "id": "center",
+      "label": "Centre et carrés d'angle"
+     }
+    ],
+    "summary": "Les bandes s'ajoutent depuis le centre comme dans un Log Cabin, avec un petit carré là où chaque tour tourne, si bien que les carrés forment une chaîne d'un coin à l'autre."
+   },
+   {
+    "slug": "thousand-pyramids",
+    "name": "Thousand Pyramids",
+    "family": "Triangles",
+    "level": "Débutant confirmé",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Clair"
+     },
+     {
+      "id": "dark",
+      "label": "Foncé"
+     }
+    ],
+    "summary": "Des rangs de triangles pointant tour à tour vers le haut et vers le bas, avec des demi-triangles qui ferment chaque bout."
+   },
+   {
+    "slug": "zigzag",
+    "name": "Zigzag",
+    "family": "Triangles",
+    "level": "Débutant",
+    "grid": 4,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Clair"
+     },
+     {
+      "id": "dark",
+      "label": "Foncé"
+     }
+    ],
+    "summary": "Seize unités triangles demi-carrés, tournées par paires pour que des bandes foncées et claires zigzaguent sur le bloc."
+   },
+   {
+    "slug": "wild-goose-chase",
+    "name": "Wild Goose Chase",
+    "family": "Triangles",
+    "level": "Débutant confirmé",
+    "grid": 6,
+    "fabrics": [
+     {
+      "id": "sky",
+      "label": "Ciel"
+     },
+     {
+      "id": "goose",
+      "label": "Oies"
+     },
+     {
+      "id": "center",
+      "label": "Centre"
+     }
+    ],
+    "summary": "Des paires d'oies s'envolent d'un carré central dans quatre directions, avec des carrés unis aux coins."
+   },
+   {
+    "slug": "delectable-mountains",
+    "name": "Delectable Mountains",
+    "family": "Triangles",
+    "level": "Intermédiaire",
+    "grid": 4,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Clair"
+     },
+     {
+      "id": "dark",
+      "label": "Foncé"
+     }
+    ],
+    "summary": "Un grand triangle demi-carré dont la moitié foncée se termine par une rangée de dents de scie sur deux côtés, comme une chaîne de montagnes."
+   },
+   {
+    "slug": "bulls-eye",
+    "name": "Bull's Eye",
+    "family": "Courbes et appliqué",
+    "level": "Débutant confirmé",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fond"
+     },
+     {
+      "id": "dark",
+      "label": "Foncé"
+     },
+     {
+      "id": "light",
+      "label": "Clair"
+     },
+     {
+      "id": "center",
+      "label": "Centre"
+     }
+    ],
+    "summary": "Quatre cercles, du plus grand au plus petit, appliqués l'un sur l'autre, si bien que des anneaux de couleur rayonnent depuis le centre."
+   },
+   {
+    "slug": "tulip",
+    "name": "Tulip",
+    "family": "Courbes et appliqué",
+    "level": "Intermédiaire",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fond"
+     },
+     {
+      "id": "flower",
+      "label": "Fleur"
+     },
+     {
+      "id": "leaf",
+      "label": "Feuilles"
+     },
+     {
+      "id": "stem",
+      "label": "Tige"
+     }
+    ],
+    "summary": "Une tulipe à trois pointes sur une tige droite, avec une feuille de chaque côté, appliquée sur un carré de fond."
+   },
+   {
+    "slug": "half-log-cabin",
+    "name": "Half Log Cabin",
+    "family": "Carrés et bandes",
+    "level": "Débutant",
+    "grid": 6,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Rondins clairs"
+     },
+     {
+      "id": "dark",
+      "label": "Rondins foncés"
+     },
+     {
+      "id": "center",
+      "label": "Centre"
+     }
+    ],
+    "summary": "Les bandes ne s'ajoutent que sur deux côtés d'un carré d'angle, claires d'un côté et foncées de l'autre, si bien que le bloc se partage selon sa diagonale."
+   },
+   {
+    "slug": "card-trick",
+    "name": "Card Trick",
+    "family": "Triangles",
+    "level": "Intermédiaire",
+    "grid": 3,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fond"
+     },
+     {
+      "id": "a",
+      "label": "Carte A"
+     },
+     {
+      "id": "b",
+      "label": "Carte B"
+     },
+     {
+      "id": "c",
+      "label": "Carte C"
+     },
+     {
+      "id": "d",
+      "label": "Carte D"
+     }
+    ],
+    "summary": "Quatre cartes semblent se chevaucher en cercle, assemblées de triangles demi-carrés et quart-de-carré en quatre tissus de cartes."
+   },
+   {
+    "slug": "butterfly",
+    "name": "Butterfly",
+    "family": "Courbes et appliqué",
+    "level": "Intermédiaire",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fond"
+     },
+     {
+      "id": "upper",
+      "label": "Ailes supérieures"
+     },
+     {
+      "id": "lower",
+      "label": "Ailes inférieures"
+     },
+     {
+      "id": "body",
+      "label": "Corps"
+     }
+    ],
+    "summary": "Un papillon avec une aile supérieure et une aile inférieure de chaque côté d'un corps étroit, appliqué sur un carré de fond."
+   },
+   {
+    "slug": "heart",
+    "name": "Heart",
+    "family": "Courbes et appliqué",
+    "level": "Débutant confirmé",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fond"
+     },
+     {
+      "id": "heart",
+      "label": "Cœur"
+     }
+    ],
+    "summary": "Un seul cœur appliqué au centre d'un carré de fond."
+   },
+   {
+    "slug": "tumbling-blocks",
+    "name": "Tumbling Blocks",
+    "family": "Courbes et appliqué",
+    "level": "Intermédiaire",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fond"
+     },
+     {
+      "id": "light",
+      "label": "Clair"
+     },
+     {
+      "id": "medium",
+      "label": "Moyen"
+     },
+     {
+      "id": "dark",
+      "label": "Foncé"
+     }
+    ],
+    "summary": "Trois cubes, chacun fait d'un losange clair, d'un moyen et d'un foncé, empilés deux et un et appliqués sur un carré de fond."
    }
   ],
   "de": [
@@ -3262,6 +5608,788 @@
      }
     ],
     "summary": "Sechzehn spitze Zacken in drei Längen strahlen von einem Mittelkreis aus, auf einem eigenen Kreis auf einem Hintergrundquadrat."
+   },
+   {
+    "slug": "pineapple",
+    "name": "Pineapple",
+    "family": "Quadrate und Streifen",
+    "level": "Fortgeschritten",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Helle Balken"
+     },
+     {
+      "id": "dark",
+      "label": "Dunkle Balken"
+     },
+     {
+      "id": "center",
+      "label": "Mitte"
+     }
+    ],
+    "summary": "Runden aus Streifen wechseln zwischen den Seiten und den Ecken eines mittleren Quadrats, sodass jede Runde um 45 Grad zur vorigen gedreht ist; Eckdreiecke schließen das Quadrat."
+   },
+   {
+    "slug": "economy-block",
+    "name": "Economy Block",
+    "family": "Dreiecke",
+    "level": "Fortgeschrittene Anfänger",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "center",
+      "label": "Mitte"
+     },
+     {
+      "id": "inner",
+      "label": "Innere Dreiecke"
+     },
+     {
+      "id": "outer",
+      "label": "Ecken"
+     }
+    ],
+    "summary": "Ein Quadrat im Quadrat im Quadrat: Eine Runde Dreiecke stellt die Mitte auf die Spitze, eine zweite macht sie wieder gerade."
+   },
+   {
+    "slug": "spools",
+    "name": "Spools",
+    "family": "Quadrate und Streifen",
+    "level": "Mittelstufe",
+    "grid": 2,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Hintergrund"
+     },
+     {
+      "id": "spool",
+      "label": "Spulenenden"
+     },
+     {
+      "id": "thread",
+      "label": "Garn"
+     }
+    ],
+    "summary": "Vier Garnspulen, zwei stehend und zwei liegend, jede ein Quadrat aus Garn zwischen zwei trapezförmigen Enden."
+   },
+   {
+    "slug": "attic-windows",
+    "name": "Attic Windows",
+    "family": "Quadrate und Streifen",
+    "level": "Mittelstufe",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "window",
+      "label": "Fenster"
+     },
+     {
+      "id": "side",
+      "label": "Seitenrahmen"
+     },
+     {
+      "id": "sill",
+      "label": "Fensterbank"
+     }
+    ],
+    "summary": "Ein Fensterquadrat mit Seitenrahmen und Fensterbank, die sich in einer Gehrung treffen. Nebeneinander wirken die Blöcke wie ein Blick durch eine Reihe tiefer Fenster."
+   },
+   {
+    "slug": "storm-at-sea",
+    "name": "Storm at Sea",
+    "family": "Dreiecke",
+    "level": "Fortgeschritten",
+    "grid": 4,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Hintergrund"
+     },
+     {
+      "id": "dark",
+      "label": "Dunkel"
+     },
+     {
+      "id": "center",
+      "label": "Mitte"
+     },
+     {
+      "id": "accent",
+      "label": "Akzent"
+     }
+    ],
+    "summary": "Ein Quadrat im Quadrat im Quadrat in der Mitte, kleine Quadrate auf der Spitze in den Ecken und lange Rauten dazwischen. Nebeneinander scheinen die geraden Nähte wie Wellen zu wogen."
+   },
+   {
+    "slug": "orange-peel",
+    "name": "Orange Peel",
+    "family": "Kurven und Applikation",
+    "level": "Mittelstufe",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Hintergrund"
+     },
+     {
+      "id": "petal",
+      "label": "Blütenblätter"
+     }
+    ],
+    "summary": "Vier spitze Ovale, jedes von Ecke zu Ecke über ein Hintergrundquadrat appliziert, treffen sich in der Mitte wie die Blätter einer Blüte."
+   },
+   {
+    "slug": "grandmothers-fan",
+    "name": "Grandmother's Fan",
+    "family": "Kurven und Applikation",
+    "level": "Mittelstufe",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Hintergrund"
+     },
+     {
+      "id": "blade",
+      "label": "Flügel"
+     },
+     {
+      "id": "alternate",
+      "label": "Wechselnde Flügel"
+     },
+     {
+      "id": "base",
+      "label": "Fächerfuß"
+     }
+    ],
+    "summary": "Sechs Flügel fächern sich von einer Ecke über einem Viertelkreis als Fuß auf, appliziert auf ein Hintergrundquadrat."
+   },
+   {
+    "slug": "new-york-beauty",
+    "name": "New York Beauty",
+    "family": "Kurven und Applikation",
+    "level": "Fortgeschritten",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Hintergrund"
+     },
+     {
+      "id": "spike",
+      "label": "Sternspitzen"
+     },
+     {
+      "id": "sky",
+      "label": "Himmel"
+     },
+     {
+      "id": "center",
+      "label": "Mitte"
+     }
+    ],
+    "summary": "Ein Viertelkreis in einer Ecke, darum ein Bogen aus sieben scharfen Spitzen und der Hintergrund, der sich um sie wölbt."
+   },
+   {
+    "slug": "schoolhouse",
+    "name": "Schoolhouse",
+    "family": "Quadrate und Streifen",
+    "level": "Mittelstufe",
+    "grid": 8,
+    "fabrics": [
+     {
+      "id": "sky",
+      "label": "Himmel"
+     },
+     {
+      "id": "house",
+      "label": "Haus"
+     },
+     {
+      "id": "roof",
+      "label": "Dach"
+     },
+     {
+      "id": "door",
+      "label": "Tür und Schornsteine"
+     },
+     {
+      "id": "window",
+      "label": "Fenster"
+     }
+    ],
+    "summary": "Ein Haus mit zwei Schornsteinen, einem Giebel mit Tür und zwei Fenstern an der Seite, unter einem schrägen Dach."
+   },
+   {
+    "slug": "tumbler",
+    "name": "Tumbler",
+    "family": "Quadrate und Streifen",
+    "level": "Fortgeschrittene Anfänger",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Hell"
+     },
+     {
+      "id": "dark",
+      "label": "Dunkel"
+     }
+    ],
+    "summary": "Reihen von Bechern, jeder an einem Ende schmaler, abwechselnd nach oben und unten gedreht, mit einem Endstück, das jede Reihe gerade abschließt."
+   },
+   {
+    "slug": "rising-star",
+    "name": "Rising Star",
+    "family": "Sterne",
+    "level": "Mittelstufe",
+    "grid": 8,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Hintergrund"
+     },
+     {
+      "id": "star",
+      "label": "Großer Stern"
+     },
+     {
+      "id": "inner",
+      "label": "Kleiner Stern"
+     },
+     {
+      "id": "center",
+      "label": "Mitte"
+     }
+    ],
+    "summary": "Ein kleiner Sawtooth Star sitzt in der Mitte eines großen, sodass die Mitte des großen Sterns der Hintergrund des kleinen ist."
+   },
+   {
+    "slug": "snowball",
+    "name": "Snowball",
+    "family": "Dreiecke",
+    "level": "Anfänger",
+    "grid": 3,
+    "fabrics": [
+     {
+      "id": "ball",
+      "label": "Schneeball"
+     },
+     {
+      "id": "corners",
+      "label": "Ecken"
+     }
+    ],
+    "summary": "Ein großes Quadrat, dessen vier Ecken mit kleinen Quadraten umgeklappt sind, sodass ein Achteck bleibt. Im Wechsel mit Nine-Patch-Blöcken verbinden sich die Ecken zu Ketten."
+   },
+   {
+    "slug": "spider-web",
+    "name": "Spider Web",
+    "family": "Dreiecke",
+    "level": "Mittelstufe",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "center",
+      "label": "Mitte"
+     },
+     {
+      "id": "inner",
+      "label": "Innere Streifen"
+     },
+     {
+      "id": "middle",
+      "label": "Mittlere Streifen"
+     },
+     {
+      "id": "outer",
+      "label": "Äußere Streifen"
+     },
+     {
+      "id": "corner",
+      "label": "Ecken"
+     }
+    ],
+    "summary": "Acht Segmente, jedes aus Streifen genäht, treffen sich in der Mitte; Eckdreiecke machen aus dem Achteck ein Quadrat. Nebeneinander bilden die Ecken Rauten zwischen den Netzen."
+   },
+   {
+    "slug": "lady-of-the-lake",
+    "name": "Lady of the Lake",
+    "family": "Dreiecke",
+    "level": "Fortgeschrittene Anfänger",
+    "grid": 5,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Hell"
+     },
+     {
+      "id": "dark",
+      "label": "Dunkel"
+     }
+    ],
+    "summary": "Ein großes Halbquadrat-Dreieck in der Mitte, umrahmt von einem Kranz kleiner, die der dunklen Hälfte einen Sägezahnrand geben."
+   },
+   {
+    "slug": "chinese-coins",
+    "name": "Chinese Coins",
+    "family": "Quadrate und Streifen",
+    "level": "Anfänger",
+    "grid": 8,
+    "fabrics": [
+     {
+      "id": "a",
+      "label": "Münze A"
+     },
+     {
+      "id": "b",
+      "label": "Münze B"
+     },
+     {
+      "id": "c",
+      "label": "Münze C"
+     },
+     {
+      "id": "divider",
+      "label": "Trennstreifen"
+     }
+    ],
+    "summary": "Drei Spalten gestapelter Streifen, wie Geldrollen, getrennt durch lange einfarbige Streifen."
+   },
+   {
+    "slug": "birds-in-the-air",
+    "name": "Birds in the Air",
+    "family": "Dreiecke",
+    "level": "Fortgeschrittene Anfänger",
+    "grid": 3,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Hintergrund"
+     },
+     {
+      "id": "bird",
+      "label": "Vögel"
+     },
+     {
+      "id": "large",
+      "label": "Große Dreiecke"
+     }
+    ],
+    "summary": "Eine Hälfte des Blocks ist ein großes Dreieck, die andere ein Schwarm kleiner Dreiecke, die alle in dieselbe Richtung fliegen."
+   },
+   {
+    "slug": "lone-star",
+    "name": "Lone Star",
+    "family": "Sterne",
+    "level": "Fortgeschritten",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Hintergrund"
+     },
+     {
+      "id": "center",
+      "label": "Mittlerer Ring"
+     },
+     {
+      "id": "second",
+      "label": "Zweiter Ring"
+     },
+     {
+      "id": "third",
+      "label": "Dritter Ring"
+     }
+    ],
+    "summary": "Ein achtzackiger Stern, dessen Zacken aus je neun kleinen Rauten bestehen, schattiert in Ringen, die sich von der Mitte ausbreiten."
+   },
+   {
+    "slug": "bars",
+    "name": "Bars",
+    "family": "Quadrate und Streifen",
+    "level": "Anfänger",
+    "grid": 9,
+    "fabrics": [
+     {
+      "id": "bar",
+      "label": "Bahnen"
+     },
+     {
+      "id": "alternate",
+      "label": "Wechselnde Bahnen"
+     },
+     {
+      "id": "frame",
+      "label": "Äußerer Rand"
+     },
+     {
+      "id": "corner",
+      "label": "Eckblöcke"
+     }
+    ],
+    "summary": "Sieben Bahnen in zwei abwechselnden Stoffen, gerahmt von einem breiten Rand mit einem Block in jeder Ecke."
+   },
+   {
+    "slug": "center-diamond",
+    "name": "Center Diamond",
+    "family": "Quadrate und Streifen",
+    "level": "Fortgeschrittene Anfänger",
+    "grid": 12,
+    "fabrics": [
+     {
+      "id": "diamond",
+      "label": "Raute"
+     },
+     {
+      "id": "field",
+      "label": "Feld"
+     },
+     {
+      "id": "inner",
+      "label": "Innerer Rand"
+     },
+     {
+      "id": "frame",
+      "label": "Äußerer Rand"
+     },
+     {
+      "id": "corner",
+      "label": "Eckblöcke"
+     }
+    ],
+    "summary": "Eine auf die Spitze gestellte Raute in einem Quadrat, gerahmt von einem schmalen inneren und einem breiten äußeren Rand, jeweils mit Eckblöcken."
+   },
+   {
+    "slug": "roman-stripe",
+    "name": "Roman Stripe",
+    "family": "Quadrate und Streifen",
+    "level": "Fortgeschrittene Anfänger",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "plain",
+      "label": "Einfarbiges Dreieck"
+     },
+     {
+      "id": "a",
+      "label": "Streifen A"
+     },
+     {
+      "id": "b",
+      "label": "Streifen B"
+     },
+     {
+      "id": "c",
+      "label": "Streifen C"
+     }
+    ],
+    "summary": "Eine Hälfte des Blocks ist ein einfarbiges Dreieck, die andere besteht aus Streifen parallel zur Diagonale."
+   },
+   {
+    "slug": "sailboat",
+    "name": "Sailboat",
+    "family": "Dreiecke",
+    "level": "Anfänger",
+    "grid": 4,
+    "fabrics": [
+     {
+      "id": "sky",
+      "label": "Himmel"
+     },
+     {
+      "id": "sail",
+      "label": "Großsegel"
+     },
+     {
+      "id": "jib",
+      "label": "Fock"
+     },
+     {
+      "id": "hull",
+      "label": "Rumpf"
+     },
+     {
+      "id": "water",
+      "label": "Wasser"
+     }
+    ],
+    "summary": "Zwei dreieckige Segel über einem Rumpf mit schrägen Enden, auf einem Streifen Wasser."
+   },
+   {
+    "slug": "chimneys-and-cornerstones",
+    "name": "Chimneys and Cornerstones",
+    "family": "Quadrate und Streifen",
+    "level": "Fortgeschrittene Anfänger",
+    "grid": 7,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Helle Balken"
+     },
+     {
+      "id": "dark",
+      "label": "Dunkle Balken"
+     },
+     {
+      "id": "center",
+      "label": "Mitte und Eckquadrate"
+     }
+    ],
+    "summary": "Streifen wachsen wie beim Log Cabin von der Mitte nach außen, mit einem kleinen Quadrat, wo jede Runde wendet, sodass die Quadrate eine Kette von Ecke zu Ecke bilden."
+   },
+   {
+    "slug": "thousand-pyramids",
+    "name": "Thousand Pyramids",
+    "family": "Dreiecke",
+    "level": "Fortgeschrittene Anfänger",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Hell"
+     },
+     {
+      "id": "dark",
+      "label": "Dunkel"
+     }
+    ],
+    "summary": "Reihen von Dreiecken, die abwechselnd nach oben und unten zeigen, mit halben Dreiecken, die jedes Ende gerade abschließen."
+   },
+   {
+    "slug": "zigzag",
+    "name": "Zigzag",
+    "family": "Dreiecke",
+    "level": "Anfänger",
+    "grid": 4,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Hell"
+     },
+     {
+      "id": "dark",
+      "label": "Dunkel"
+     }
+    ],
+    "summary": "Sechzehn Halbquadrat-Dreieckseinheiten, paarweise gedreht, sodass dunkle und helle Bänder im Zickzack über den Block laufen."
+   },
+   {
+    "slug": "wild-goose-chase",
+    "name": "Wild Goose Chase",
+    "family": "Dreiecke",
+    "level": "Fortgeschrittene Anfänger",
+    "grid": 6,
+    "fabrics": [
+     {
+      "id": "sky",
+      "label": "Himmel"
+     },
+     {
+      "id": "goose",
+      "label": "Gänse"
+     },
+     {
+      "id": "center",
+      "label": "Mitte"
+     }
+    ],
+    "summary": "Gänsepaare fliegen von einem mittleren Quadrat in vier Richtungen, mit einfarbigen Quadraten in den Ecken."
+   },
+   {
+    "slug": "delectable-mountains",
+    "name": "Delectable Mountains",
+    "family": "Dreiecke",
+    "level": "Mittelstufe",
+    "grid": 4,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Hell"
+     },
+     {
+      "id": "dark",
+      "label": "Dunkel"
+     }
+    ],
+    "summary": "Ein großes Halbquadrat-Dreieck, dessen dunkle Hälfte an zwei Seiten in einer Reihe Sägezähne endet, wie eine Bergkette."
+   },
+   {
+    "slug": "bulls-eye",
+    "name": "Bull's Eye",
+    "family": "Kurven und Applikation",
+    "level": "Fortgeschrittene Anfänger",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Hintergrund"
+     },
+     {
+      "id": "dark",
+      "label": "Dunkel"
+     },
+     {
+      "id": "light",
+      "label": "Hell"
+     },
+     {
+      "id": "center",
+      "label": "Mitte"
+     }
+    ],
+    "summary": "Vier Kreise, vom größten zum kleinsten übereinander appliziert, sodass sich Farbringe von der Mitte ausbreiten."
+   },
+   {
+    "slug": "tulip",
+    "name": "Tulip",
+    "family": "Kurven und Applikation",
+    "level": "Mittelstufe",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Hintergrund"
+     },
+     {
+      "id": "flower",
+      "label": "Blüte"
+     },
+     {
+      "id": "leaf",
+      "label": "Blätter"
+     },
+     {
+      "id": "stem",
+      "label": "Stiel"
+     }
+    ],
+    "summary": "Eine dreizackige Tulpe auf einem geraden Stiel mit einem Blatt auf jeder Seite, appliziert auf ein Hintergrundquadrat."
+   },
+   {
+    "slug": "half-log-cabin",
+    "name": "Half Log Cabin",
+    "family": "Quadrate und Streifen",
+    "level": "Anfänger",
+    "grid": 6,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Helle Balken"
+     },
+     {
+      "id": "dark",
+      "label": "Dunkle Balken"
+     },
+     {
+      "id": "center",
+      "label": "Mitte"
+     }
+    ],
+    "summary": "Streifen kommen nur an zwei Seiten eines Eckquadrats dazu, hell an der einen und dunkel an der anderen, sodass der Block entlang der Diagonale geteilt ist."
+   },
+   {
+    "slug": "card-trick",
+    "name": "Card Trick",
+    "family": "Dreiecke",
+    "level": "Mittelstufe",
+    "grid": 3,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Hintergrund"
+     },
+     {
+      "id": "a",
+      "label": "Karte A"
+     },
+     {
+      "id": "b",
+      "label": "Karte B"
+     },
+     {
+      "id": "c",
+      "label": "Karte C"
+     },
+     {
+      "id": "d",
+      "label": "Karte D"
+     }
+    ],
+    "summary": "Vier Karten scheinen im Kreis übereinanderzuliegen, genäht aus Halb- und Viertelquadrat-Dreiecken in vier Kartenstoffen."
+   },
+   {
+    "slug": "butterfly",
+    "name": "Butterfly",
+    "family": "Kurven und Applikation",
+    "level": "Mittelstufe",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Hintergrund"
+     },
+     {
+      "id": "upper",
+      "label": "Obere Flügel"
+     },
+     {
+      "id": "lower",
+      "label": "Untere Flügel"
+     },
+     {
+      "id": "body",
+      "label": "Körper"
+     }
+    ],
+    "summary": "Ein Schmetterling mit einem oberen und einem unteren Flügel auf jeder Seite eines schmalen Körpers, appliziert auf ein Hintergrundquadrat."
+   },
+   {
+    "slug": "heart",
+    "name": "Heart",
+    "family": "Kurven und Applikation",
+    "level": "Fortgeschrittene Anfänger",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Hintergrund"
+     },
+     {
+      "id": "heart",
+      "label": "Herz"
+     }
+    ],
+    "summary": "Ein einzelnes Herz, mittig auf ein Hintergrundquadrat appliziert."
+   },
+   {
+    "slug": "tumbling-blocks",
+    "name": "Tumbling Blocks",
+    "family": "Kurven und Applikation",
+    "level": "Mittelstufe",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Hintergrund"
+     },
+     {
+      "id": "light",
+      "label": "Hell"
+     },
+     {
+      "id": "medium",
+      "label": "Mittel"
+     },
+     {
+      "id": "dark",
+      "label": "Dunkel"
+     }
+    ],
+    "summary": "Drei Würfel aus je einer hellen, einer mittleren und einer dunklen Raute, zu zwei und einem gestapelt und auf ein Hintergrundquadrat appliziert."
    }
   ],
   "pt": [
@@ -4078,6 +7206,788 @@
      }
     ],
     "summary": "Dezesseis pontas finas de três comprimentos irradiam de um círculo central, sobre um círculo próprio em um quadrado de fundo."
+   },
+   {
+    "slug": "pineapple",
+    "name": "Pineapple",
+    "family": "Quadrados e tiras",
+    "level": "Avançado",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Toras claras"
+     },
+     {
+      "id": "dark",
+      "label": "Toras escuras"
+     },
+     {
+      "id": "center",
+      "label": "Centro"
+     }
+    ],
+    "summary": "Rodadas de tiras alternam entre os lados e os cantos de um quadrado central, de modo que cada rodada gira 45 graus em relação à anterior, e triângulos de canto fecham o quadrado."
+   },
+   {
+    "slug": "economy-block",
+    "name": "Economy Block",
+    "family": "Triângulos",
+    "level": "Iniciante avançado",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "center",
+      "label": "Centro"
+     },
+     {
+      "id": "inner",
+      "label": "Triângulos internos"
+     },
+     {
+      "id": "outer",
+      "label": "Cantos"
+     }
+    ],
+    "summary": "Um quadrado dentro de um quadrado dentro de outro: uma rodada de triângulos coloca o centro em ponta e uma segunda o esquadra de novo."
+   },
+   {
+    "slug": "spools",
+    "name": "Spools",
+    "family": "Quadrados e tiras",
+    "level": "Intermediário",
+    "grid": 2,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fundo"
+     },
+     {
+      "id": "spool",
+      "label": "Pontas do carretel"
+     },
+     {
+      "id": "thread",
+      "label": "Linha"
+     }
+    ],
+    "summary": "Quatro carretéis, dois em pé e dois deitados, cada um um quadrado de linha entre duas pontas em trapézio."
+   },
+   {
+    "slug": "attic-windows",
+    "name": "Attic Windows",
+    "family": "Quadrados e tiras",
+    "level": "Intermediário",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "window",
+      "label": "Janela"
+     },
+     {
+      "id": "side",
+      "label": "Moldura lateral"
+     },
+     {
+      "id": "sill",
+      "label": "Peitoril"
+     }
+    ],
+    "summary": "Um quadrado de janela com uma moldura lateral e um peitoril que se encontram num canto em meia-esquadria. Lado a lado, os blocos parecem uma vista através de uma fileira de janelas fundas."
+   },
+   {
+    "slug": "storm-at-sea",
+    "name": "Storm at Sea",
+    "family": "Triângulos",
+    "level": "Avançado",
+    "grid": 4,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fundo"
+     },
+     {
+      "id": "dark",
+      "label": "Escuro"
+     },
+     {
+      "id": "center",
+      "label": "Centro"
+     },
+     {
+      "id": "accent",
+      "label": "Destaque"
+     }
+    ],
+    "summary": "Um quadrado dentro de um quadrado dentro de outro no centro, quadradinhos em ponta nos cantos e losangos alongados entre eles. Lado a lado, as costuras retas parecem ondular como ondas."
+   },
+   {
+    "slug": "orange-peel",
+    "name": "Orange Peel",
+    "family": "Curvas e aplicação",
+    "level": "Intermediário",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fundo"
+     },
+     {
+      "id": "petal",
+      "label": "Pétalas"
+     }
+    ],
+    "summary": "Quatro ovais pontudos, cada um aplicado na diagonal de um quadrado de fundo de canto a canto, encontram-se no centro como pétalas de uma flor."
+   },
+   {
+    "slug": "grandmothers-fan",
+    "name": "Grandmother's Fan",
+    "family": "Curvas e aplicação",
+    "level": "Intermediário",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fundo"
+     },
+     {
+      "id": "blade",
+      "label": "Pás"
+     },
+     {
+      "id": "alternate",
+      "label": "Lâminas alternadas"
+     },
+     {
+      "id": "base",
+      "label": "Base do leque"
+     }
+    ],
+    "summary": "Seis lâminas se abrem em leque a partir de um canto sobre uma base de quarto de círculo, aplicadas num quadrado de fundo."
+   },
+   {
+    "slug": "new-york-beauty",
+    "name": "New York Beauty",
+    "family": "Curvas e aplicação",
+    "level": "Avançado",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fundo"
+     },
+     {
+      "id": "spike",
+      "label": "Pontas da estrela"
+     },
+     {
+      "id": "sky",
+      "label": "Céu"
+     },
+     {
+      "id": "center",
+      "label": "Centro"
+     }
+    ],
+    "summary": "Um quarto de círculo num canto, um arco de sete pontas afiadas ao redor e o fundo curvando-se em volta delas."
+   },
+   {
+    "slug": "schoolhouse",
+    "name": "Schoolhouse",
+    "family": "Quadrados e tiras",
+    "level": "Intermediário",
+    "grid": 8,
+    "fabrics": [
+     {
+      "id": "sky",
+      "label": "Céu"
+     },
+     {
+      "id": "house",
+      "label": "Casa"
+     },
+     {
+      "id": "roof",
+      "label": "Telhado"
+     },
+     {
+      "id": "door",
+      "label": "Porta e chaminés"
+     },
+     {
+      "id": "window",
+      "label": "Janelas"
+     }
+    ],
+    "summary": "Uma casa com duas chaminés, uma empena com porta e duas janelas na lateral, sob um telhado inclinado."
+   },
+   {
+    "slug": "tumbler",
+    "name": "Tumbler",
+    "family": "Quadrados e tiras",
+    "level": "Iniciante avançado",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Claro"
+     },
+     {
+      "id": "dark",
+      "label": "Escuro"
+     }
+    ],
+    "summary": "Fileiras de copos, cada um mais estreito numa ponta, virados para cima e para baixo alternadamente, com uma peça final que esquadra cada fileira."
+   },
+   {
+    "slug": "rising-star",
+    "name": "Rising Star",
+    "family": "Estrelas",
+    "level": "Intermediário",
+    "grid": 8,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fundo"
+     },
+     {
+      "id": "star",
+      "label": "Estrela grande"
+     },
+     {
+      "id": "inner",
+      "label": "Estrela pequena"
+     },
+     {
+      "id": "center",
+      "label": "Centro"
+     }
+    ],
+    "summary": "Uma Sawtooth Star pequena no centro de uma grande, de modo que o centro da estrela grande vira o fundo da pequena."
+   },
+   {
+    "slug": "snowball",
+    "name": "Snowball",
+    "family": "Triângulos",
+    "level": "Iniciante",
+    "grid": 3,
+    "fabrics": [
+     {
+      "id": "ball",
+      "label": "Bola de neve"
+     },
+     {
+      "id": "corners",
+      "label": "Cantos"
+     }
+    ],
+    "summary": "Um quadrado grande com os quatro cantos dobrados por quadradinhos, deixando um octógono. Alternado com blocos Nine Patch, os cantos formam correntes."
+   },
+   {
+    "slug": "spider-web",
+    "name": "Spider Web",
+    "family": "Triângulos",
+    "level": "Intermediário",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "center",
+      "label": "Centro"
+     },
+     {
+      "id": "inner",
+      "label": "Tiras internas"
+     },
+     {
+      "id": "middle",
+      "label": "Tiras do meio"
+     },
+     {
+      "id": "outer",
+      "label": "Tiras externas"
+     },
+     {
+      "id": "corner",
+      "label": "Cantos"
+     }
+    ],
+    "summary": "Oito fatias, cada uma costurada com tiras, encontram-se no centro, e triângulos de canto esquadram o octógono. Lado a lado, os cantos formam losangos entre as teias."
+   },
+   {
+    "slug": "lady-of-the-lake",
+    "name": "Lady of the Lake",
+    "family": "Triângulos",
+    "level": "Iniciante avançado",
+    "grid": 5,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Claro"
+     },
+     {
+      "id": "dark",
+      "label": "Escuro"
+     }
+    ],
+    "summary": "Um triângulo de meio quadrado grande no centro, emoldurado por uma volta de triângulos pequenos que dão à metade escura uma borda dentada."
+   },
+   {
+    "slug": "chinese-coins",
+    "name": "Chinese Coins",
+    "family": "Quadrados e tiras",
+    "level": "Iniciante",
+    "grid": 8,
+    "fabrics": [
+     {
+      "id": "a",
+      "label": "Moeda A"
+     },
+     {
+      "id": "b",
+      "label": "Moeda B"
+     },
+     {
+      "id": "c",
+      "label": "Moeda C"
+     },
+     {
+      "id": "divider",
+      "label": "Divisórias"
+     }
+    ],
+    "summary": "Três colunas de tiras empilhadas, como rolos de moedas, separadas por tiras lisas compridas."
+   },
+   {
+    "slug": "birds-in-the-air",
+    "name": "Birds in the Air",
+    "family": "Triângulos",
+    "level": "Iniciante avançado",
+    "grid": 3,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fundo"
+     },
+     {
+      "id": "bird",
+      "label": "Pássaros"
+     },
+     {
+      "id": "large",
+      "label": "Triângulos grandes"
+     }
+    ],
+    "summary": "Metade do bloco é um triângulo grande; a outra metade, um bando de triângulos pequenos voando na mesma direção."
+   },
+   {
+    "slug": "lone-star",
+    "name": "Lone Star",
+    "family": "Estrelas",
+    "level": "Avançado",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fundo"
+     },
+     {
+      "id": "center",
+      "label": "Anel central"
+     },
+     {
+      "id": "second",
+      "label": "Segundo anel"
+     },
+     {
+      "id": "third",
+      "label": "Terceiro anel"
+     }
+    ],
+    "summary": "Uma estrela de oito pontas em que cada ponta é feita de nove losangos pequenos, sombreados em anéis que se espalham a partir do centro."
+   },
+   {
+    "slug": "bars",
+    "name": "Bars",
+    "family": "Quadrados e tiras",
+    "level": "Iniciante",
+    "grid": 9,
+    "fabrics": [
+     {
+      "id": "bar",
+      "label": "Barras"
+     },
+     {
+      "id": "alternate",
+      "label": "Barras alternadas"
+     },
+     {
+      "id": "frame",
+      "label": "Borda externa"
+     },
+     {
+      "id": "corner",
+      "label": "Blocos de canto"
+     }
+    ],
+    "summary": "Sete barras em dois tecidos alternados, emolduradas por uma borda larga com um bloco em cada canto."
+   },
+   {
+    "slug": "center-diamond",
+    "name": "Center Diamond",
+    "family": "Quadrados e tiras",
+    "level": "Iniciante avançado",
+    "grid": 12,
+    "fabrics": [
+     {
+      "id": "diamond",
+      "label": "Losango"
+     },
+     {
+      "id": "field",
+      "label": "Campo"
+     },
+     {
+      "id": "inner",
+      "label": "Borda interna"
+     },
+     {
+      "id": "frame",
+      "label": "Borda externa"
+     },
+     {
+      "id": "corner",
+      "label": "Blocos de canto"
+     }
+    ],
+    "summary": "Um losango em ponta dentro de um quadrado, emoldurado por uma borda interna estreita e uma externa larga, cada uma com blocos de canto."
+   },
+   {
+    "slug": "roman-stripe",
+    "name": "Roman Stripe",
+    "family": "Quadrados e tiras",
+    "level": "Iniciante avançado",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "plain",
+      "label": "Triângulo liso"
+     },
+     {
+      "id": "a",
+      "label": "Listra A"
+     },
+     {
+      "id": "b",
+      "label": "Listra B"
+     },
+     {
+      "id": "c",
+      "label": "Listra C"
+     }
+    ],
+    "summary": "Metade do bloco é um triângulo liso; a outra metade, listras paralelas à diagonal."
+   },
+   {
+    "slug": "sailboat",
+    "name": "Sailboat",
+    "family": "Triângulos",
+    "level": "Iniciante",
+    "grid": 4,
+    "fabrics": [
+     {
+      "id": "sky",
+      "label": "Céu"
+     },
+     {
+      "id": "sail",
+      "label": "Vela grande"
+     },
+     {
+      "id": "jib",
+      "label": "Bujarrona"
+     },
+     {
+      "id": "hull",
+      "label": "Casco"
+     },
+     {
+      "id": "water",
+      "label": "Água"
+     }
+    ],
+    "summary": "Duas velas triangulares sobre um casco de pontas inclinadas, navegando numa faixa de água."
+   },
+   {
+    "slug": "chimneys-and-cornerstones",
+    "name": "Chimneys and Cornerstones",
+    "family": "Quadrados e tiras",
+    "level": "Iniciante avançado",
+    "grid": 7,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Toras claras"
+     },
+     {
+      "id": "dark",
+      "label": "Toras escuras"
+     },
+     {
+      "id": "center",
+      "label": "Centro e quadrados de canto"
+     }
+    ],
+    "summary": "As tiras crescem a partir do centro como num Log Cabin, com um quadradinho onde cada rodada vira, de modo que os quadradinhos formam uma corrente de canto a canto."
+   },
+   {
+    "slug": "thousand-pyramids",
+    "name": "Thousand Pyramids",
+    "family": "Triângulos",
+    "level": "Iniciante avançado",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Claro"
+     },
+     {
+      "id": "dark",
+      "label": "Escuro"
+     }
+    ],
+    "summary": "Fileiras de triângulos que apontam para cima e para baixo alternadamente, com meios triângulos que esquadram cada ponta."
+   },
+   {
+    "slug": "zigzag",
+    "name": "Zigzag",
+    "family": "Triângulos",
+    "level": "Iniciante",
+    "grid": 4,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Claro"
+     },
+     {
+      "id": "dark",
+      "label": "Escuro"
+     }
+    ],
+    "summary": "Dezesseis unidades de triângulos de meio quadrado, viradas em pares para que faixas escuras e claras façam zigue-zague pelo bloco."
+   },
+   {
+    "slug": "wild-goose-chase",
+    "name": "Wild Goose Chase",
+    "family": "Triângulos",
+    "level": "Iniciante avançado",
+    "grid": 6,
+    "fabrics": [
+     {
+      "id": "sky",
+      "label": "Céu"
+     },
+     {
+      "id": "goose",
+      "label": "Gansos"
+     },
+     {
+      "id": "center",
+      "label": "Centro"
+     }
+    ],
+    "summary": "Pares de gansos voam a partir de um quadrado central em quatro direções, com quadrados lisos nos cantos."
+   },
+   {
+    "slug": "delectable-mountains",
+    "name": "Delectable Mountains",
+    "family": "Triângulos",
+    "level": "Intermediário",
+    "grid": 4,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Claro"
+     },
+     {
+      "id": "dark",
+      "label": "Escuro"
+     }
+    ],
+    "summary": "Um triângulo de meio quadrado grande cuja metade escura termina numa fileira de dentes de serra em dois lados, como uma cordilheira."
+   },
+   {
+    "slug": "bulls-eye",
+    "name": "Bull's Eye",
+    "family": "Curvas e aplicação",
+    "level": "Iniciante avançado",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fundo"
+     },
+     {
+      "id": "dark",
+      "label": "Escuro"
+     },
+     {
+      "id": "light",
+      "label": "Claro"
+     },
+     {
+      "id": "center",
+      "label": "Centro"
+     }
+    ],
+    "summary": "Quatro círculos, do maior para o menor, aplicados um sobre o outro, de modo que anéis de cor se espalham a partir do centro."
+   },
+   {
+    "slug": "tulip",
+    "name": "Tulip",
+    "family": "Curvas e aplicação",
+    "level": "Intermediário",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fundo"
+     },
+     {
+      "id": "flower",
+      "label": "Flor"
+     },
+     {
+      "id": "leaf",
+      "label": "Folhas"
+     },
+     {
+      "id": "stem",
+      "label": "Caule"
+     }
+    ],
+    "summary": "Uma tulipa de três pontas num caule reto com uma folha de cada lado, aplicada num quadrado de fundo."
+   },
+   {
+    "slug": "half-log-cabin",
+    "name": "Half Log Cabin",
+    "family": "Quadrados e tiras",
+    "level": "Iniciante",
+    "grid": 6,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Toras claras"
+     },
+     {
+      "id": "dark",
+      "label": "Toras escuras"
+     },
+     {
+      "id": "center",
+      "label": "Centro"
+     }
+    ],
+    "summary": "As tiras entram só em dois lados de um quadrado de canto, claras de um lado e escuras do outro, de modo que o bloco se divide pela diagonal."
+   },
+   {
+    "slug": "card-trick",
+    "name": "Card Trick",
+    "family": "Triângulos",
+    "level": "Intermediário",
+    "grid": 3,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fundo"
+     },
+     {
+      "id": "a",
+      "label": "Carta A"
+     },
+     {
+      "id": "b",
+      "label": "Carta B"
+     },
+     {
+      "id": "c",
+      "label": "Carta C"
+     },
+     {
+      "id": "d",
+      "label": "Carta D"
+     }
+    ],
+    "summary": "Quatro cartas parecem se sobrepor em círculo, montadas com triângulos de meio e de quarto de quadrado em quatro tecidos de carta."
+   },
+   {
+    "slug": "butterfly",
+    "name": "Butterfly",
+    "family": "Curvas e aplicação",
+    "level": "Intermediário",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fundo"
+     },
+     {
+      "id": "upper",
+      "label": "Asas superiores"
+     },
+     {
+      "id": "lower",
+      "label": "Asas inferiores"
+     },
+     {
+      "id": "body",
+      "label": "Corpo"
+     }
+    ],
+    "summary": "Uma borboleta com uma asa superior e uma inferior de cada lado de um corpo estreito, aplicada num quadrado de fundo."
+   },
+   {
+    "slug": "heart",
+    "name": "Heart",
+    "family": "Curvas e aplicação",
+    "level": "Iniciante avançado",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fundo"
+     },
+     {
+      "id": "heart",
+      "label": "Coração"
+     }
+    ],
+    "summary": "Um único coração aplicado no centro de um quadrado de fundo."
+   },
+   {
+    "slug": "tumbling-blocks",
+    "name": "Tumbling Blocks",
+    "family": "Curvas e aplicação",
+    "level": "Intermediário",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Fundo"
+     },
+     {
+      "id": "light",
+      "label": "Claro"
+     },
+     {
+      "id": "medium",
+      "label": "Médio"
+     },
+     {
+      "id": "dark",
+      "label": "Escuro"
+     }
+    ],
+    "summary": "Três cubos, cada um com um losango claro, um médio e um escuro, empilhados dois e um e aplicados num quadrado de fundo."
    }
   ],
   "it": [
@@ -4894,6 +8804,788 @@
      }
     ],
     "summary": "Sedici punte affilate di tre lunghezze si irradiano da un cerchio centrale, su un proprio cerchio applicato a un quadrato di sfondo."
+   },
+   {
+    "slug": "pineapple",
+    "name": "Pineapple",
+    "family": "Quadrati e strisce",
+    "level": "Avanzato",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Strisce chiare"
+     },
+     {
+      "id": "dark",
+      "label": "Strisce scure"
+     },
+     {
+      "id": "center",
+      "label": "Centro"
+     }
+    ],
+    "summary": "Giri di strisce si alternano tra i lati e gli angoli di un quadrato centrale, così ogni giro ruota di 45 gradi rispetto al precedente, e triangoli d'angolo chiudono il quadrato."
+   },
+   {
+    "slug": "economy-block",
+    "name": "Economy Block",
+    "family": "Triangoli",
+    "level": "Principiante esperto",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "center",
+      "label": "Centro"
+     },
+     {
+      "id": "inner",
+      "label": "Triangoli interni"
+     },
+     {
+      "id": "outer",
+      "label": "Angoli"
+     }
+    ],
+    "summary": "Un quadrato dentro un quadrato dentro un altro: un giro di triangoli mette il centro in punta e un secondo lo raddrizza."
+   },
+   {
+    "slug": "spools",
+    "name": "Spools",
+    "family": "Quadrati e strisce",
+    "level": "Intermedio",
+    "grid": 2,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Sfondo"
+     },
+     {
+      "id": "spool",
+      "label": "Estremità del rocchetto"
+     },
+     {
+      "id": "thread",
+      "label": "Filo"
+     }
+    ],
+    "summary": "Quattro rocchetti, due in piedi e due sdraiati, ognuno un quadrato di filo tra due estremità a trapezio."
+   },
+   {
+    "slug": "attic-windows",
+    "name": "Attic Windows",
+    "family": "Quadrati e strisce",
+    "level": "Intermedio",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "window",
+      "label": "Finestra"
+     },
+     {
+      "id": "side",
+      "label": "Montante"
+     },
+     {
+      "id": "sill",
+      "label": "Davanzale"
+     }
+    ],
+    "summary": "Un quadrato di finestra con un montante e un davanzale che si incontrano in un angolo a quartabuono. Affiancati, i blocchi sembrano una vista attraverso una fila di finestre profonde."
+   },
+   {
+    "slug": "storm-at-sea",
+    "name": "Storm at Sea",
+    "family": "Triangoli",
+    "level": "Avanzato",
+    "grid": 4,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Sfondo"
+     },
+     {
+      "id": "dark",
+      "label": "Scuro"
+     },
+     {
+      "id": "center",
+      "label": "Centro"
+     },
+     {
+      "id": "accent",
+      "label": "Accento"
+     }
+    ],
+    "summary": "Un quadrato dentro un quadrato dentro un altro al centro, quadratini in punta negli angoli e rombi allungati tra di loro. Affiancate, le cuciture diritte sembrano ondeggiare come onde."
+   },
+   {
+    "slug": "orange-peel",
+    "name": "Orange Peel",
+    "family": "Curve e applicazioni",
+    "level": "Intermedio",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Sfondo"
+     },
+     {
+      "id": "petal",
+      "label": "Petali"
+     }
+    ],
+    "summary": "Quattro ovali appuntiti, ognuno applicato di traverso su un quadrato di fondo da un angolo all'altro, si incontrano al centro come i petali di un fiore."
+   },
+   {
+    "slug": "grandmothers-fan",
+    "name": "Grandmother's Fan",
+    "family": "Curve e applicazioni",
+    "level": "Intermedio",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Sfondo"
+     },
+     {
+      "id": "blade",
+      "label": "Pale"
+     },
+     {
+      "id": "alternate",
+      "label": "Pale alternate"
+     },
+     {
+      "id": "base",
+      "label": "Base del ventaglio"
+     }
+    ],
+    "summary": "Sei pale si aprono a ventaglio da un angolo sopra una base a quarto di cerchio, applicate su un quadrato di fondo."
+   },
+   {
+    "slug": "new-york-beauty",
+    "name": "New York Beauty",
+    "family": "Curve e applicazioni",
+    "level": "Avanzato",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Sfondo"
+     },
+     {
+      "id": "spike",
+      "label": "Punte della stella"
+     },
+     {
+      "id": "sky",
+      "label": "Cielo"
+     },
+     {
+      "id": "center",
+      "label": "Centro"
+     }
+    ],
+    "summary": "Un quarto di cerchio in un angolo, un arco di sette punte aguzze intorno e il fondo che si incurva attorno a loro."
+   },
+   {
+    "slug": "schoolhouse",
+    "name": "Schoolhouse",
+    "family": "Quadrati e strisce",
+    "level": "Intermedio",
+    "grid": 8,
+    "fabrics": [
+     {
+      "id": "sky",
+      "label": "Cielo"
+     },
+     {
+      "id": "house",
+      "label": "Casa"
+     },
+     {
+      "id": "roof",
+      "label": "Tetto"
+     },
+     {
+      "id": "door",
+      "label": "Porta e comignoli"
+     },
+     {
+      "id": "window",
+      "label": "Finestre"
+     }
+    ],
+    "summary": "Una casa con due comignoli, un timpano con la porta e due finestre sul lato, sotto un tetto spiovente."
+   },
+   {
+    "slug": "tumbler",
+    "name": "Tumbler",
+    "family": "Quadrati e strisce",
+    "level": "Principiante esperto",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Chiaro"
+     },
+     {
+      "id": "dark",
+      "label": "Scuro"
+     }
+    ],
+    "summary": "File di bicchieri, ognuno più stretto a un'estremità, girati in su e in giù a turno, con un pezzo d'estremità che chiude ogni fila."
+   },
+   {
+    "slug": "rising-star",
+    "name": "Rising Star",
+    "family": "Stelle",
+    "level": "Intermedio",
+    "grid": 8,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Sfondo"
+     },
+     {
+      "id": "star",
+      "label": "Stella grande"
+     },
+     {
+      "id": "inner",
+      "label": "Stella piccola"
+     },
+     {
+      "id": "center",
+      "label": "Centro"
+     }
+    ],
+    "summary": "Una piccola Sawtooth Star al centro di una grande, così il centro della stella grande diventa il fondo di quella piccola."
+   },
+   {
+    "slug": "snowball",
+    "name": "Snowball",
+    "family": "Triangoli",
+    "level": "Principiante",
+    "grid": 3,
+    "fabrics": [
+     {
+      "id": "ball",
+      "label": "Palla di neve"
+     },
+     {
+      "id": "corners",
+      "label": "Angoli"
+     }
+    ],
+    "summary": "Un quadrato grande con i quattro angoli piegati da quadratini, che lascia un ottagono. Alternato a blocchi Nine Patch, gli angoli formano catene."
+   },
+   {
+    "slug": "spider-web",
+    "name": "Spider Web",
+    "family": "Triangoli",
+    "level": "Intermedio",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "center",
+      "label": "Centro"
+     },
+     {
+      "id": "inner",
+      "label": "Strisce interne"
+     },
+     {
+      "id": "middle",
+      "label": "Strisce centrali"
+     },
+     {
+      "id": "outer",
+      "label": "Strisce esterne"
+     },
+     {
+      "id": "corner",
+      "label": "Angoli"
+     }
+    ],
+    "summary": "Otto spicchi, ognuno cucito a strisce, si incontrano al centro, e triangoli d'angolo chiudono l'ottagono. Affiancati, gli angoli formano rombi tra le ragnatele."
+   },
+   {
+    "slug": "lady-of-the-lake",
+    "name": "Lady of the Lake",
+    "family": "Triangoli",
+    "level": "Principiante esperto",
+    "grid": 5,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Chiaro"
+     },
+     {
+      "id": "dark",
+      "label": "Scuro"
+     }
+    ],
+    "summary": "Un grande triangolo a mezzo quadrato al centro, incorniciato da un giro di triangoli piccoli che danno alla metà scura un bordo a dente di sega."
+   },
+   {
+    "slug": "chinese-coins",
+    "name": "Chinese Coins",
+    "family": "Quadrati e strisce",
+    "level": "Principiante",
+    "grid": 8,
+    "fabrics": [
+     {
+      "id": "a",
+      "label": "Moneta A"
+     },
+     {
+      "id": "b",
+      "label": "Moneta B"
+     },
+     {
+      "id": "c",
+      "label": "Moneta C"
+     },
+     {
+      "id": "divider",
+      "label": "Divisori"
+     }
+    ],
+    "summary": "Tre colonne di strisce impilate, come rotoli di monete, separate da lunghe strisce in tinta unita."
+   },
+   {
+    "slug": "birds-in-the-air",
+    "name": "Birds in the Air",
+    "family": "Triangoli",
+    "level": "Principiante esperto",
+    "grid": 3,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Sfondo"
+     },
+     {
+      "id": "bird",
+      "label": "Uccelli"
+     },
+     {
+      "id": "large",
+      "label": "Triangoli grandi"
+     }
+    ],
+    "summary": "Metà del blocco è un triangolo grande; l'altra metà è uno stormo di triangoli piccoli che volano tutti nella stessa direzione."
+   },
+   {
+    "slug": "lone-star",
+    "name": "Lone Star",
+    "family": "Stelle",
+    "level": "Avanzato",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Sfondo"
+     },
+     {
+      "id": "center",
+      "label": "Anello centrale"
+     },
+     {
+      "id": "second",
+      "label": "Secondo anello"
+     },
+     {
+      "id": "third",
+      "label": "Terzo anello"
+     }
+    ],
+    "summary": "Una stella a otto punte in cui ogni punta è fatta di nove rombi piccoli, sfumati in anelli che si allargano dal centro."
+   },
+   {
+    "slug": "bars",
+    "name": "Bars",
+    "family": "Quadrati e strisce",
+    "level": "Principiante",
+    "grid": 9,
+    "fabrics": [
+     {
+      "id": "bar",
+      "label": "Barre"
+     },
+     {
+      "id": "alternate",
+      "label": "Barre alternate"
+     },
+     {
+      "id": "frame",
+      "label": "Bordo esterno"
+     },
+     {
+      "id": "corner",
+      "label": "Blocchi d'angolo"
+     }
+    ],
+    "summary": "Sette barre in due tessuti alternati, incorniciate da un bordo largo con un blocco in ogni angolo."
+   },
+   {
+    "slug": "center-diamond",
+    "name": "Center Diamond",
+    "family": "Quadrati e strisce",
+    "level": "Principiante esperto",
+    "grid": 12,
+    "fabrics": [
+     {
+      "id": "diamond",
+      "label": "Rombo"
+     },
+     {
+      "id": "field",
+      "label": "Campo"
+     },
+     {
+      "id": "inner",
+      "label": "Bordo interno"
+     },
+     {
+      "id": "frame",
+      "label": "Bordo esterno"
+     },
+     {
+      "id": "corner",
+      "label": "Blocchi d'angolo"
+     }
+    ],
+    "summary": "Un rombo in punta dentro un quadrato, incorniciato da un bordo interno stretto e da uno esterno largo, ognuno con blocchi d'angolo."
+   },
+   {
+    "slug": "roman-stripe",
+    "name": "Roman Stripe",
+    "family": "Quadrati e strisce",
+    "level": "Principiante esperto",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "plain",
+      "label": "Triangolo in tinta unita"
+     },
+     {
+      "id": "a",
+      "label": "Riga A"
+     },
+     {
+      "id": "b",
+      "label": "Riga B"
+     },
+     {
+      "id": "c",
+      "label": "Riga C"
+     }
+    ],
+    "summary": "Metà del blocco è un triangolo in tinta unita; l'altra metà sono righe parallele alla diagonale."
+   },
+   {
+    "slug": "sailboat",
+    "name": "Sailboat",
+    "family": "Triangoli",
+    "level": "Principiante",
+    "grid": 4,
+    "fabrics": [
+     {
+      "id": "sky",
+      "label": "Cielo"
+     },
+     {
+      "id": "sail",
+      "label": "Randa"
+     },
+     {
+      "id": "jib",
+      "label": "Fiocco"
+     },
+     {
+      "id": "hull",
+      "label": "Scafo"
+     },
+     {
+      "id": "water",
+      "label": "Acqua"
+     }
+    ],
+    "summary": "Due vele triangolari sopra uno scafo con le estremità inclinate, in navigazione su una striscia d'acqua."
+   },
+   {
+    "slug": "chimneys-and-cornerstones",
+    "name": "Chimneys and Cornerstones",
+    "family": "Quadrati e strisce",
+    "level": "Principiante esperto",
+    "grid": 7,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Strisce chiare"
+     },
+     {
+      "id": "dark",
+      "label": "Strisce scure"
+     },
+     {
+      "id": "center",
+      "label": "Centro e quadrati d'angolo"
+     }
+    ],
+    "summary": "Le strisce crescono dal centro come in un Log Cabin, con un quadratino dove ogni giro gira, così i quadratini formano una catena da un angolo all'altro."
+   },
+   {
+    "slug": "thousand-pyramids",
+    "name": "Thousand Pyramids",
+    "family": "Triangoli",
+    "level": "Principiante esperto",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Chiaro"
+     },
+     {
+      "id": "dark",
+      "label": "Scuro"
+     }
+    ],
+    "summary": "File di triangoli che puntano in su e in giù a turno, con mezzi triangoli che chiudono ogni estremità."
+   },
+   {
+    "slug": "zigzag",
+    "name": "Zigzag",
+    "family": "Triangoli",
+    "level": "Principiante",
+    "grid": 4,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Chiaro"
+     },
+     {
+      "id": "dark",
+      "label": "Scuro"
+     }
+    ],
+    "summary": "Sedici unità a triangoli di mezzo quadrato, girate a coppie perché bande scure e chiare corrano a zigzag sul blocco."
+   },
+   {
+    "slug": "wild-goose-chase",
+    "name": "Wild Goose Chase",
+    "family": "Triangoli",
+    "level": "Principiante esperto",
+    "grid": 6,
+    "fabrics": [
+     {
+      "id": "sky",
+      "label": "Cielo"
+     },
+     {
+      "id": "goose",
+      "label": "Oche"
+     },
+     {
+      "id": "center",
+      "label": "Centro"
+     }
+    ],
+    "summary": "Coppie di oche volano da un quadrato centrale in quattro direzioni, con quadrati in tinta unita negli angoli."
+   },
+   {
+    "slug": "delectable-mountains",
+    "name": "Delectable Mountains",
+    "family": "Triangoli",
+    "level": "Intermedio",
+    "grid": 4,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Chiaro"
+     },
+     {
+      "id": "dark",
+      "label": "Scuro"
+     }
+    ],
+    "summary": "Un grande triangolo a mezzo quadrato la cui metà scura finisce in una fila di denti di sega lungo due lati, come una catena di montagne."
+   },
+   {
+    "slug": "bulls-eye",
+    "name": "Bull's Eye",
+    "family": "Curve e applicazioni",
+    "level": "Principiante esperto",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Sfondo"
+     },
+     {
+      "id": "dark",
+      "label": "Scuro"
+     },
+     {
+      "id": "light",
+      "label": "Chiaro"
+     },
+     {
+      "id": "center",
+      "label": "Centro"
+     }
+    ],
+    "summary": "Quattro cerchi, dal più grande al più piccolo, applicati uno sull'altro, così anelli di colore si allargano dal centro."
+   },
+   {
+    "slug": "tulip",
+    "name": "Tulip",
+    "family": "Curve e applicazioni",
+    "level": "Intermedio",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Sfondo"
+     },
+     {
+      "id": "flower",
+      "label": "Fiore"
+     },
+     {
+      "id": "leaf",
+      "label": "Foglie"
+     },
+     {
+      "id": "stem",
+      "label": "Stelo"
+     }
+    ],
+    "summary": "Un tulipano a tre punte su uno stelo diritto con una foglia per lato, applicato su un quadrato di fondo."
+   },
+   {
+    "slug": "half-log-cabin",
+    "name": "Half Log Cabin",
+    "family": "Quadrati e strisce",
+    "level": "Principiante",
+    "grid": 6,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Strisce chiare"
+     },
+     {
+      "id": "dark",
+      "label": "Strisce scure"
+     },
+     {
+      "id": "center",
+      "label": "Centro"
+     }
+    ],
+    "summary": "Le strisce si aggiungono solo su due lati di un quadrato d'angolo, chiare su uno e scure sull'altro, così il blocco si divide lungo la diagonale."
+   },
+   {
+    "slug": "card-trick",
+    "name": "Card Trick",
+    "family": "Triangoli",
+    "level": "Intermedio",
+    "grid": 3,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Sfondo"
+     },
+     {
+      "id": "a",
+      "label": "Carta A"
+     },
+     {
+      "id": "b",
+      "label": "Carta B"
+     },
+     {
+      "id": "c",
+      "label": "Carta C"
+     },
+     {
+      "id": "d",
+      "label": "Carta D"
+     }
+    ],
+    "summary": "Quattro carte sembrano sovrapporsi in cerchio, cucite con triangoli a mezzo e a quarto di quadrato in quattro tessuti per le carte."
+   },
+   {
+    "slug": "butterfly",
+    "name": "Butterfly",
+    "family": "Curve e applicazioni",
+    "level": "Intermedio",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Sfondo"
+     },
+     {
+      "id": "upper",
+      "label": "Ali superiori"
+     },
+     {
+      "id": "lower",
+      "label": "Ali inferiori"
+     },
+     {
+      "id": "body",
+      "label": "Corpo"
+     }
+    ],
+    "summary": "Una farfalla con un'ala superiore e una inferiore per lato di un corpo stretto, applicata su un quadrato di fondo."
+   },
+   {
+    "slug": "heart",
+    "name": "Heart",
+    "family": "Curve e applicazioni",
+    "level": "Principiante esperto",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Sfondo"
+     },
+     {
+      "id": "heart",
+      "label": "Cuore"
+     }
+    ],
+    "summary": "Un solo cuore applicato al centro di un quadrato di fondo."
+   },
+   {
+    "slug": "tumbling-blocks",
+    "name": "Tumbling Blocks",
+    "family": "Curve e applicazioni",
+    "level": "Intermedio",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Sfondo"
+     },
+     {
+      "id": "light",
+      "label": "Chiaro"
+     },
+     {
+      "id": "medium",
+      "label": "Medio"
+     },
+     {
+      "id": "dark",
+      "label": "Scuro"
+     }
+    ],
+    "summary": "Tre cubi, ognuno con un rombo chiaro, uno medio e uno scuro, impilati due e uno e applicati su un quadrato di fondo."
    }
   ],
   "nl": [
@@ -5710,6 +10402,788 @@
      }
     ],
     "summary": "Zestien scherpe punten in drie lengtes stralen uit van een middencirkel, op een eigen cirkel op een achtergrondvierkant."
+   },
+   {
+    "slug": "pineapple",
+    "name": "Pineapple",
+    "family": "Vierkanten en stroken",
+    "level": "Gevorderd",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Lichte stroken"
+     },
+     {
+      "id": "dark",
+      "label": "Donkere stroken"
+     },
+     {
+      "id": "center",
+      "label": "Midden"
+     }
+    ],
+    "summary": "Rondes stroken wisselen tussen de zijden en de hoeken van een middenvierkant, zodat elke ronde 45 graden draait ten opzichte van de vorige; hoekdriehoeken maken het vierkant af."
+   },
+   {
+    "slug": "economy-block",
+    "name": "Economy Block",
+    "family": "Driehoeken",
+    "level": "Gevorderde beginner",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "center",
+      "label": "Midden"
+     },
+     {
+      "id": "inner",
+      "label": "Binnenste driehoeken"
+     },
+     {
+      "id": "outer",
+      "label": "Hoeken"
+     }
+    ],
+    "summary": "Een vierkant in een vierkant in een vierkant: een ronde driehoeken zet het midden op zijn punt en een tweede maakt het weer recht."
+   },
+   {
+    "slug": "spools",
+    "name": "Spools",
+    "family": "Vierkanten en stroken",
+    "level": "Gemiddeld",
+    "grid": 2,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Achtergrond"
+     },
+     {
+      "id": "spool",
+      "label": "Klosuiteinden"
+     },
+     {
+      "id": "thread",
+      "label": "Garen"
+     }
+    ],
+    "summary": "Vier klosjes, twee staand en twee liggend, elk een vierkant garen tussen twee trapeziumvormige uiteinden."
+   },
+   {
+    "slug": "attic-windows",
+    "name": "Attic Windows",
+    "family": "Vierkanten en stroken",
+    "level": "Gemiddeld",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "window",
+      "label": "Raam"
+     },
+     {
+      "id": "side",
+      "label": "Zijkozijn"
+     },
+     {
+      "id": "sill",
+      "label": "Vensterbank"
+     }
+    ],
+    "summary": "Een raamvierkant met een zijkozijn en een vensterbank die in verstek samenkomen. Naast elkaar lijken de blokken een blik door een rij diepe ramen."
+   },
+   {
+    "slug": "storm-at-sea",
+    "name": "Storm at Sea",
+    "family": "Driehoeken",
+    "level": "Gevorderd",
+    "grid": 4,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Achtergrond"
+     },
+     {
+      "id": "dark",
+      "label": "Donker"
+     },
+     {
+      "id": "center",
+      "label": "Midden"
+     },
+     {
+      "id": "accent",
+      "label": "Accent"
+     }
+    ],
+    "summary": "Een vierkant in een vierkant in een vierkant in het midden, kleine vierkanten op hun punt in de hoeken en lange ruiten ertussen. Naast elkaar lijken de rechte naden als golven te deinen."
+   },
+   {
+    "slug": "orange-peel",
+    "name": "Orange Peel",
+    "family": "Bogen en applicatie",
+    "level": "Gemiddeld",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Achtergrond"
+     },
+     {
+      "id": "petal",
+      "label": "Bloemblaadjes"
+     }
+    ],
+    "summary": "Vier spitse ovalen, elk van hoek tot hoek over een achtergrondvierkant geappliqueerd, komen in het midden samen als de bladeren van een bloem."
+   },
+   {
+    "slug": "grandmothers-fan",
+    "name": "Grandmother's Fan",
+    "family": "Bogen en applicatie",
+    "level": "Gemiddeld",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Achtergrond"
+     },
+     {
+      "id": "blade",
+      "label": "Wieken"
+     },
+     {
+      "id": "alternate",
+      "label": "Afwisselende bladen"
+     },
+     {
+      "id": "base",
+      "label": "Waaiervoet"
+     }
+    ],
+    "summary": "Zes bladen waaieren vanuit één hoek uit boven een kwartcirkel als voet, geappliqueerd op een achtergrondvierkant."
+   },
+   {
+    "slug": "new-york-beauty",
+    "name": "New York Beauty",
+    "family": "Bogen en applicatie",
+    "level": "Gevorderd",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Achtergrond"
+     },
+     {
+      "id": "spike",
+      "label": "Sterpunten"
+     },
+     {
+      "id": "sky",
+      "label": "Lucht"
+     },
+     {
+      "id": "center",
+      "label": "Midden"
+     }
+    ],
+    "summary": "Een kwartcirkel in één hoek, daaromheen een boog van zeven scherpe punten en de achtergrond die zich eromheen buigt."
+   },
+   {
+    "slug": "schoolhouse",
+    "name": "Schoolhouse",
+    "family": "Vierkanten en stroken",
+    "level": "Gemiddeld",
+    "grid": 8,
+    "fabrics": [
+     {
+      "id": "sky",
+      "label": "Lucht"
+     },
+     {
+      "id": "house",
+      "label": "Huis"
+     },
+     {
+      "id": "roof",
+      "label": "Dak"
+     },
+     {
+      "id": "door",
+      "label": "Deur en schoorstenen"
+     },
+     {
+      "id": "window",
+      "label": "Ramen"
+     }
+    ],
+    "summary": "Een huis met twee schoorstenen, een gevel met een deur en twee ramen aan de zijkant, onder een schuin dak."
+   },
+   {
+    "slug": "tumbler",
+    "name": "Tumbler",
+    "family": "Vierkanten en stroken",
+    "level": "Gevorderde beginner",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Licht"
+     },
+     {
+      "id": "dark",
+      "label": "Donker"
+     }
+    ],
+    "summary": "Rijen bekers, elk aan één kant smaller, om beurten omhoog en omlaag gedraaid, met een eindstuk dat elke rij recht afsluit."
+   },
+   {
+    "slug": "rising-star",
+    "name": "Rising Star",
+    "family": "Sterren",
+    "level": "Gemiddeld",
+    "grid": 8,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Achtergrond"
+     },
+     {
+      "id": "star",
+      "label": "Grote ster"
+     },
+     {
+      "id": "inner",
+      "label": "Kleine ster"
+     },
+     {
+      "id": "center",
+      "label": "Midden"
+     }
+    ],
+    "summary": "Een kleine Sawtooth Star zit in het midden van een grote, zodat het midden van de grote ster de achtergrond van de kleine wordt."
+   },
+   {
+    "slug": "snowball",
+    "name": "Snowball",
+    "family": "Driehoeken",
+    "level": "Beginner",
+    "grid": 3,
+    "fabrics": [
+     {
+      "id": "ball",
+      "label": "Sneeuwbal"
+     },
+     {
+      "id": "corners",
+      "label": "Hoeken"
+     }
+    ],
+    "summary": "Een groot vierkant met vier hoeken omgevouwen door kleine vierkanten, zodat een achthoek overblijft. Afgewisseld met Nine Patch-blokken vormen de hoeken kettingen."
+   },
+   {
+    "slug": "spider-web",
+    "name": "Spider Web",
+    "family": "Driehoeken",
+    "level": "Gemiddeld",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "center",
+      "label": "Midden"
+     },
+     {
+      "id": "inner",
+      "label": "Binnenste stroken"
+     },
+     {
+      "id": "middle",
+      "label": "Middelste stroken"
+     },
+     {
+      "id": "outer",
+      "label": "Buitenste stroken"
+     },
+     {
+      "id": "corner",
+      "label": "Hoeken"
+     }
+    ],
+    "summary": "Acht punten, elk uit stroken genaaid, komen in het midden samen; hoekdriehoeken maken van de achthoek een vierkant. Naast elkaar vormen de hoeken ruiten tussen de webben."
+   },
+   {
+    "slug": "lady-of-the-lake",
+    "name": "Lady of the Lake",
+    "family": "Driehoeken",
+    "level": "Gevorderde beginner",
+    "grid": 5,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Licht"
+     },
+     {
+      "id": "dark",
+      "label": "Donker"
+     }
+    ],
+    "summary": "Een grote halfvierkante driehoek in het midden, omlijst door een krans kleine die de donkere helft een zaagtandrand geven."
+   },
+   {
+    "slug": "chinese-coins",
+    "name": "Chinese Coins",
+    "family": "Vierkanten en stroken",
+    "level": "Beginner",
+    "grid": 8,
+    "fabrics": [
+     {
+      "id": "a",
+      "label": "Munt A"
+     },
+     {
+      "id": "b",
+      "label": "Munt B"
+     },
+     {
+      "id": "c",
+      "label": "Munt C"
+     },
+     {
+      "id": "divider",
+      "label": "Scheidingsstroken"
+     }
+    ],
+    "summary": "Drie kolommen gestapelde stroken, als rollen munten, gescheiden door lange effen stroken."
+   },
+   {
+    "slug": "birds-in-the-air",
+    "name": "Birds in the Air",
+    "family": "Driehoeken",
+    "level": "Gevorderde beginner",
+    "grid": 3,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Achtergrond"
+     },
+     {
+      "id": "bird",
+      "label": "Vogels"
+     },
+     {
+      "id": "large",
+      "label": "Grote driehoeken"
+     }
+    ],
+    "summary": "De ene helft van het blok is één grote driehoek, de andere een zwerm kleine driehoeken die allemaal dezelfde kant op vliegen."
+   },
+   {
+    "slug": "lone-star",
+    "name": "Lone Star",
+    "family": "Sterren",
+    "level": "Gevorderd",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Achtergrond"
+     },
+     {
+      "id": "center",
+      "label": "Middenring"
+     },
+     {
+      "id": "second",
+      "label": "Tweede ring"
+     },
+     {
+      "id": "third",
+      "label": "Derde ring"
+     }
+    ],
+    "summary": "Een achtpuntige ster waarvan elke punt uit negen kleine ruiten bestaat, gearceerd in ringen die vanuit het midden uitdijen."
+   },
+   {
+    "slug": "bars",
+    "name": "Bars",
+    "family": "Vierkanten en stroken",
+    "level": "Beginner",
+    "grid": 9,
+    "fabrics": [
+     {
+      "id": "bar",
+      "label": "Banen"
+     },
+     {
+      "id": "alternate",
+      "label": "Afwisselende banen"
+     },
+     {
+      "id": "frame",
+      "label": "Buitenrand"
+     },
+     {
+      "id": "corner",
+      "label": "Hoekblokken"
+     }
+    ],
+    "summary": "Zeven banen in twee afwisselende stoffen, omlijst door een brede rand met een blok in elke hoek."
+   },
+   {
+    "slug": "center-diamond",
+    "name": "Center Diamond",
+    "family": "Vierkanten en stroken",
+    "level": "Gevorderde beginner",
+    "grid": 12,
+    "fabrics": [
+     {
+      "id": "diamond",
+      "label": "Ruit"
+     },
+     {
+      "id": "field",
+      "label": "Veld"
+     },
+     {
+      "id": "inner",
+      "label": "Binnenrand"
+     },
+     {
+      "id": "frame",
+      "label": "Buitenrand"
+     },
+     {
+      "id": "corner",
+      "label": "Hoekblokken"
+     }
+    ],
+    "summary": "Een ruit op zijn punt in een vierkant, omlijst door een smalle binnenrand en een brede buitenrand, elk met hoekblokken."
+   },
+   {
+    "slug": "roman-stripe",
+    "name": "Roman Stripe",
+    "family": "Vierkanten en stroken",
+    "level": "Gevorderde beginner",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "plain",
+      "label": "Effen driehoek"
+     },
+     {
+      "id": "a",
+      "label": "Streep A"
+     },
+     {
+      "id": "b",
+      "label": "Streep B"
+     },
+     {
+      "id": "c",
+      "label": "Streep C"
+     }
+    ],
+    "summary": "De ene helft van het blok is een effen driehoek, de andere bestaat uit strepen evenwijdig aan de diagonaal."
+   },
+   {
+    "slug": "sailboat",
+    "name": "Sailboat",
+    "family": "Driehoeken",
+    "level": "Beginner",
+    "grid": 4,
+    "fabrics": [
+     {
+      "id": "sky",
+      "label": "Lucht"
+     },
+     {
+      "id": "sail",
+      "label": "Grootzeil"
+     },
+     {
+      "id": "jib",
+      "label": "Fok"
+     },
+     {
+      "id": "hull",
+      "label": "Romp"
+     },
+     {
+      "id": "water",
+      "label": "Water"
+     }
+    ],
+    "summary": "Twee driehoekige zeilen boven een romp met schuine uiteinden, varend op een strook water."
+   },
+   {
+    "slug": "chimneys-and-cornerstones",
+    "name": "Chimneys and Cornerstones",
+    "family": "Vierkanten en stroken",
+    "level": "Gevorderde beginner",
+    "grid": 7,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Lichte stroken"
+     },
+     {
+      "id": "dark",
+      "label": "Donkere stroken"
+     },
+     {
+      "id": "center",
+      "label": "Midden en hoekvierkanten"
+     }
+    ],
+    "summary": "Stroken groeien vanuit het midden zoals bij een Log Cabin, met een klein vierkant waar elke ronde draait, zodat de vierkantjes een ketting van hoek tot hoek vormen."
+   },
+   {
+    "slug": "thousand-pyramids",
+    "name": "Thousand Pyramids",
+    "family": "Driehoeken",
+    "level": "Gevorderde beginner",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Licht"
+     },
+     {
+      "id": "dark",
+      "label": "Donker"
+     }
+    ],
+    "summary": "Rijen driehoeken die om beurten omhoog en omlaag wijzen, met halve driehoeken die elk uiteinde recht afsluiten."
+   },
+   {
+    "slug": "zigzag",
+    "name": "Zigzag",
+    "family": "Driehoeken",
+    "level": "Beginner",
+    "grid": 4,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Licht"
+     },
+     {
+      "id": "dark",
+      "label": "Donker"
+     }
+    ],
+    "summary": "Zestien halfvierkante driehoekseenheden, per paar gedraaid zodat donkere en lichte banen zigzaggend over het blok lopen."
+   },
+   {
+    "slug": "wild-goose-chase",
+    "name": "Wild Goose Chase",
+    "family": "Driehoeken",
+    "level": "Gevorderde beginner",
+    "grid": 6,
+    "fabrics": [
+     {
+      "id": "sky",
+      "label": "Lucht"
+     },
+     {
+      "id": "goose",
+      "label": "Ganzen"
+     },
+     {
+      "id": "center",
+      "label": "Midden"
+     }
+    ],
+    "summary": "Paren ganzen vliegen vanuit een middenvierkant in vier richtingen, met effen vierkanten in de hoeken."
+   },
+   {
+    "slug": "delectable-mountains",
+    "name": "Delectable Mountains",
+    "family": "Driehoeken",
+    "level": "Gemiddeld",
+    "grid": 4,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Licht"
+     },
+     {
+      "id": "dark",
+      "label": "Donker"
+     }
+    ],
+    "summary": "Een grote halfvierkante driehoek waarvan de donkere helft langs twee zijden eindigt in een rij zaagtanden, als een bergketen."
+   },
+   {
+    "slug": "bulls-eye",
+    "name": "Bull's Eye",
+    "family": "Bogen en applicatie",
+    "level": "Gevorderde beginner",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Achtergrond"
+     },
+     {
+      "id": "dark",
+      "label": "Donker"
+     },
+     {
+      "id": "light",
+      "label": "Licht"
+     },
+     {
+      "id": "center",
+      "label": "Midden"
+     }
+    ],
+    "summary": "Vier cirkels, van groot naar klein op elkaar geappliqueerd, zodat ringen van kleur zich vanuit het midden uitbreiden."
+   },
+   {
+    "slug": "tulip",
+    "name": "Tulip",
+    "family": "Bogen en applicatie",
+    "level": "Gemiddeld",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Achtergrond"
+     },
+     {
+      "id": "flower",
+      "label": "Bloem"
+     },
+     {
+      "id": "leaf",
+      "label": "Bladeren"
+     },
+     {
+      "id": "stem",
+      "label": "Steel"
+     }
+    ],
+    "summary": "Een driepuntige tulp op een rechte steel met een blad aan elke kant, geappliqueerd op een achtergrondvierkant."
+   },
+   {
+    "slug": "half-log-cabin",
+    "name": "Half Log Cabin",
+    "family": "Vierkanten en stroken",
+    "level": "Beginner",
+    "grid": 6,
+    "fabrics": [
+     {
+      "id": "light",
+      "label": "Lichte stroken"
+     },
+     {
+      "id": "dark",
+      "label": "Donkere stroken"
+     },
+     {
+      "id": "center",
+      "label": "Midden"
+     }
+    ],
+    "summary": "Stroken komen er maar aan twee zijden van een hoekvierkant bij, licht aan de ene en donker aan de andere, zodat het blok langs de diagonaal verdeeld is."
+   },
+   {
+    "slug": "card-trick",
+    "name": "Card Trick",
+    "family": "Driehoeken",
+    "level": "Gemiddeld",
+    "grid": 3,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Achtergrond"
+     },
+     {
+      "id": "a",
+      "label": "Kaart A"
+     },
+     {
+      "id": "b",
+      "label": "Kaart B"
+     },
+     {
+      "id": "c",
+      "label": "Kaart C"
+     },
+     {
+      "id": "d",
+      "label": "Kaart D"
+     }
+    ],
+    "summary": "Vier kaarten lijken in een kring over elkaar te liggen, genaaid uit half- en kwartvierkante driehoeken in vier kaartstoffen."
+   },
+   {
+    "slug": "butterfly",
+    "name": "Butterfly",
+    "family": "Bogen en applicatie",
+    "level": "Gemiddeld",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Achtergrond"
+     },
+     {
+      "id": "upper",
+      "label": "Bovenvleugels"
+     },
+     {
+      "id": "lower",
+      "label": "Ondervleugels"
+     },
+     {
+      "id": "body",
+      "label": "Lijf"
+     }
+    ],
+    "summary": "Een vlinder met een boven- en een ondervleugel aan elke kant van een smal lijf, geappliqueerd op een achtergrondvierkant."
+   },
+   {
+    "slug": "heart",
+    "name": "Heart",
+    "family": "Bogen en applicatie",
+    "level": "Gevorderde beginner",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Achtergrond"
+     },
+     {
+      "id": "heart",
+      "label": "Hart"
+     }
+    ],
+    "summary": "Eén hart, geappliqueerd in het midden van een achtergrondvierkant."
+   },
+   {
+    "slug": "tumbling-blocks",
+    "name": "Tumbling Blocks",
+    "family": "Bogen en applicatie",
+    "level": "Gemiddeld",
+    "grid": 1,
+    "fabrics": [
+     {
+      "id": "ground",
+      "label": "Achtergrond"
+     },
+     {
+      "id": "light",
+      "label": "Licht"
+     },
+     {
+      "id": "medium",
+      "label": "Middel"
+     },
+     {
+      "id": "dark",
+      "label": "Donker"
+     }
+    ],
+    "summary": "Drie kubussen, elk uit een lichte, een middelste en een donkere ruit, gestapeld twee en één en geappliqueerd op een achtergrondvierkant."
    }
   ]
  },

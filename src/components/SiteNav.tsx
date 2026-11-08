@@ -12,9 +12,13 @@ export function SiteNav({ locale }: { locale: Locale }) {
   return (
     <header className={`${styles.nav} no-print`}>
       {locale !== "en" && <div className="flag-stripe" aria-hidden />}
+      {/* A darker band above the menu, on the left, where a browser's own translate prompt doesn't cover it. */}
+      <div className={styles.languageBand}>
+        <div className={styles.languageInner}>
+          <LanguageLinks locale={locale} />
+        </div>
+      </div>
       <div className={styles.inner}>
-        {/* First and on the left, where a browser's own translate prompt doesn't cover it. */}
-        <LanguageLinks locale={locale} />
         <Link href={href("/")} className={styles.brand}>
           {SITE_NAME}
         </Link>

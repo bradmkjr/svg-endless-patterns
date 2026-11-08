@@ -11,7 +11,7 @@
   gap: 0.35rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0.8rem 1.5rem;
+  padding: 1.1rem 1.5rem 0.8rem;
 }
 
 .brand {
@@ -49,14 +49,38 @@
   }
 }
 
+/* The language band: darker than the page, with a wavy lower edge drawn in its own color. */
+.languageBand {
+  position: relative;
+  background: var(--language-band);
+  color: var(--language-band-text);
+}
+
+.languageBand::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 8px;
+  background: var(--language-band);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='8' viewBox='0 0 32 8'%3E%3Cpath d='M0 0H32V2C24 2 24 8 16 8S8 2 0 2Z'/%3E%3C/svg%3E") repeat-x 0 0 / 32px 8px;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='8' viewBox='0 0 32 8'%3E%3Cpath d='M0 0H32V2C24 2 24 8 16 8S8 2 0 2Z'/%3E%3C/svg%3E") repeat-x 0 0 / 32px 8px;
+  pointer-events: none;
+}
+
+.languageInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.45rem 1.5rem 0.4rem;
+}
+
 .languages {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  flex-basis: 100%;
   justify-content: flex-start;
   gap: 0.3rem 0.4rem;
-  margin-bottom: 0.2rem;
   font-size: 0.85rem;
 }
 
@@ -65,7 +89,7 @@
   align-items: center;
   gap: 0.3rem;
   margin-right: 0.2rem;
-  color: var(--muted);
+  opacity: 0.85;
 }
 
 .languages a {
@@ -73,26 +97,26 @@
   align-items: center;
   gap: 0.4rem;
   padding: 0.2rem 0.55rem;
-  border: 1px solid var(--line);
+  border: 1px solid var(--language-pill-line);
   border-radius: 999px;
-  background: var(--surface);
-  color: var(--foreground);
+  color: inherit;
   text-decoration: none;
   white-space: nowrap;
 }
 
 .languages a:hover {
-  border-color: var(--accent);
+  background: var(--language-pill-hover);
 }
 
 .languages a:focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--language-band-text);
   outline-offset: 2px;
 }
 
 .languages .languageOn {
-  border-color: var(--locale-swatch);
-  box-shadow: inset 0 0 0 1px var(--locale-swatch);
+  background: var(--language-band-text);
+  border-color: var(--language-band-text);
+  color: var(--language-band);
   font-weight: 600;
 }
 
@@ -101,7 +125,7 @@
   width: 21px;
   height: 15px;
   border-radius: 2px;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.35);
 }
 
 .languageCode {
@@ -110,10 +134,11 @@
 
 /* On a phone, flags with short codes, so all seven fit on one or two lines. */
 @media (max-width: 640px) {
-  .languageLabel {
-    display: none;
+  .languageInner {
+    padding: 0.4rem 1rem 0.35rem;
   }
 
+  .languageLabel,
   .languageName {
     display: none;
   }

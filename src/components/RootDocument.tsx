@@ -27,11 +27,23 @@ const WALLPAPER = {
   "--wallpaper-end": `url("${thumbSrc("tessellation", "p4")}")`,
 } as React.CSSProperties;
 
+/** Google AdSense publisher ID; `public/ads.txt` lists the same account. */
+const ADSENSE_CLIENT = "ca-pub-8989714718895680";
+
 /** The page shell for one language. `data-locale` picks its colors in `globals.css`. */
 export function RootDocument({ locale, children }: { locale: Locale; children: React.ReactNode }) {
   const { htmlLang } = SITE_LOCALES.find((l) => l.code === locale)!;
   return (
     <html lang={htmlLang} data-locale={locale} className={`${geist.variable} ${fraunces.variable}`}>
+      {/* eslint-disable-next-line @next/next/no-head-element -- App Router root layouts render <head> directly */}
+      <head>
+        {/* A plain tag, not next/script: AdSense rejects the data-nscript attribute it adds. */}
+        <script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
+          crossOrigin="anonymous"
+        />
+      </head>
       <body>
         <SiteNav locale={locale} />
         <main style={WALLPAPER}>{children}</main>

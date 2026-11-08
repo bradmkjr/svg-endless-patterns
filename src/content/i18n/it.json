@@ -840,6 +840,14 @@
     }
   },
   "changelog": {
+    "Quilts that look like cloth": {
+      "title": "Quilt che sembrano stoffa",
+      "items": [
+        "Blocchi e schemi di quilt disegnati come stoffa: una trama fine, ogni pezzo leggermente imbottito tra le sue cuciture",
+        "Punti di trapuntatura tratteggiati a un quarto di pollice all'interno di ogni pezzo, lungo le strisce divisorie e intorno al bordo",
+        "Ogni immagine di blocco della libreria ha la sua combinazione di colori"
+      ]
+    },
     "Cables, lace, puffs and clusters": {
       "title": "Trecce, trafori, punti puff e gruppi",
       "items": [

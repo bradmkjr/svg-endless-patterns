@@ -840,6 +840,14 @@
     }
   },
   "changelog": {
+    "Quilts that look like cloth": {
+      "title": "Des quilts qui ressemblent à du tissu",
+      "items": [
+        "Blocs et plans de quilt dessinés comme du tissu : un tissage fin, chaque pièce légèrement bombée entre ses coutures",
+        "Points de matelassage en pointillés à un quart de pouce à l'intérieur de chaque pièce, le long des bandes de séparation et autour de la bordure",
+        "Chaque image de bloc de la bibliothèque a sa propre harmonie de couleurs"
+      ]
+    },
     "Cables, lace, puffs and clusters": {
       "title": "Torsades, dentelle, points soufflés et groupes",
       "items": [

@@ -840,6 +840,14 @@
     }
   },
   "changelog": {
+    "Quilts that look like cloth": {
+      "title": "Quilts, die wie Stoff aussehen",
+      "items": [
+        "Quiltblöcke und Quiltpläne als Stoff gezeichnet: ein feines Gewebe, jedes Teil zwischen seinen Nähten leicht gewölbt",
+        "Gestrichelte Quiltstiche einen Viertelzoll innerhalb jedes Teils, entlang der Zwischenstreifen und rund um den Rand",
+        "Jedes Blockbild in der Bibliothek hat seine eigene Farbkombination"
+      ]
+    },
     "Cables, lace, puffs and clusters": {
       "title": "Zöpfe, Lochmuster, Büschelmaschen und Gruppen",
       "items": [

@@ -840,6 +840,14 @@
     }
   },
   "changelog": {
+    "Quilts that look like cloth": {
+      "title": "Quilts com cara de tecido",
+      "items": [
+        "Blocos e layouts de quilt desenhados como tecido: uma trama fina, cada peça levemente estufada entre as costuras",
+        "Pontos de quilting tracejados a um quarto de polegada dentro de cada peça, ao longo das faixas divisórias e em volta da borda",
+        "Cada imagem de bloco da biblioteca tem sua própria combinação de cores"
+      ]
+    },
     "Cables, lace, puffs and clusters": {
       "title": "Tranças, rendados, pontos puff e grupos",
       "items": [

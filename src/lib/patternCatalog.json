@@ -11299,7 +11299,8 @@
     "craft": "crochet",
     "level": "Beginner",
     "summary": "The shortest basic stitch, making a firm, dense fabric that's good for dishcloths and bags.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "abbreviation": "sc"
    },
    {
     "slug": "half-double-crochet",
@@ -11307,7 +11308,8 @@
     "craft": "crochet",
     "level": "Beginner",
     "summary": "Between single and double crochet in height: quick to work, with a soft, warm feel.",
-    "rowFactor": 0.7
+    "rowFactor": 0.7,
+    "abbreviation": "hdc"
    },
    {
     "slug": "double-crochet",
@@ -11315,7 +11317,8 @@
     "craft": "crochet",
     "level": "Beginner",
     "summary": "A tall stitch that grows fast and drapes well, so it suits blankets and scarves.",
-    "rowFactor": 0.55
+    "rowFactor": 0.55,
+    "abbreviation": "dc"
    },
    {
     "slug": "back-loop-rib",
@@ -11363,7 +11366,8 @@
     "craft": "crochet",
     "level": "Intermediate",
     "summary": "Three double crochets closed together into one top, worked into the chain spaces of the row below, for a light, textured fabric that drapes well.",
-    "rowFactor": 0.55
+    "rowFactor": 0.55,
+    "abbreviation": "cl"
    }
   ],
   "es": [
@@ -11477,7 +11481,8 @@
     "craft": "crochet",
     "level": "Principiante",
     "summary": "El punto básico más bajo. Da un tejido firme y denso, ideal para paños y bolsas.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "abbreviation": "pb"
    },
    {
     "slug": "half-double-crochet",
@@ -11485,7 +11490,8 @@
     "craft": "crochet",
     "level": "Principiante",
     "summary": "De altura intermedia entre el punto bajo y el punto alto: rápido de tejer, suave y cálido.",
-    "rowFactor": 0.7
+    "rowFactor": 0.7,
+    "abbreviation": "mpa"
    },
    {
     "slug": "double-crochet",
@@ -11493,7 +11499,8 @@
     "craft": "crochet",
     "level": "Principiante",
     "summary": "Un punto alto que crece rápido y cae bien, adecuado para mantas y bufandas.",
-    "rowFactor": 0.55
+    "rowFactor": 0.55,
+    "abbreviation": "pa"
    },
    {
     "slug": "back-loop-rib",
@@ -11533,7 +11540,8 @@
     "craft": "crochet",
     "level": "Intermedio",
     "summary": "Puntos puff suaves y redondos en los espacios de cadeneta de la vuelta anterior, separados por una cadeneta, para un tejido grueso y mullido.",
-    "rowFactor": 0.7
+    "rowFactor": 0.7,
+    "abbreviation": "pf"
    },
    {
     "slug": "cluster-stitch",
@@ -11541,7 +11549,8 @@
     "craft": "crochet",
     "level": "Intermedio",
     "summary": "Tres puntos altos cerrados juntos en una sola cabeza, en los espacios de cadeneta de la vuelta anterior, para un tejido ligero y texturado con buena caída.",
-    "rowFactor": 0.55
+    "rowFactor": 0.55,
+    "abbreviation": "gr"
    }
   ],
   "fr": [
@@ -11655,7 +11664,8 @@
     "craft": "crochet",
     "level": "Débutant",
     "summary": "Le point de base le plus bas, pour un ouvrage ferme et dense, idéal pour les lavettes et les sacs.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "abbreviation": "ms"
    },
    {
     "slug": "half-double-crochet",
@@ -11663,7 +11673,8 @@
     "craft": "crochet",
     "level": "Débutant",
     "summary": "Une hauteur entre la maille serrée et la bride : rapide à faire, doux et chaud.",
-    "rowFactor": 0.7
+    "rowFactor": 0.7,
+    "abbreviation": "db"
    },
    {
     "slug": "double-crochet",
@@ -11671,7 +11682,8 @@
     "craft": "crochet",
     "level": "Débutant",
     "summary": "Un point haut qui avance vite et tombe bien, adapté aux couvertures et aux écharpes.",
-    "rowFactor": 0.55
+    "rowFactor": 0.55,
+    "abbreviation": "b"
    },
    {
     "slug": "back-loop-rib",
@@ -11711,7 +11723,8 @@
     "craft": "crochet",
     "level": "Intermédiaire",
     "summary": "Des points soufflés doux et ronds dans les espaces de la rangée précédente, séparés par une maille en l'air, pour un ouvrage épais et moelleux.",
-    "rowFactor": 0.7
+    "rowFactor": 0.7,
+    "abbreviation": "ps"
    },
    {
     "slug": "cluster-stitch",
@@ -11719,7 +11732,8 @@
     "craft": "crochet",
     "level": "Intermédiaire",
     "summary": "Trois brides écoulées ensemble en une seule tête, dans les espaces de la rangée précédente, pour un ouvrage léger, texturé et fluide.",
-    "rowFactor": 0.55
+    "rowFactor": 0.55,
+    "abbreviation": "gr"
    }
   ],
   "de": [
@@ -11833,7 +11847,8 @@
     "craft": "crochet",
     "level": "Anfänger",
     "summary": "Die niedrigste Grundmasche ergibt ein festes, dichtes Häkelstück, gut für Spültücher und Taschen.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "abbreviation": "fM"
    },
    {
     "slug": "half-double-crochet",
@@ -11841,7 +11856,8 @@
     "craft": "crochet",
     "level": "Anfänger",
     "summary": "In der Höhe zwischen fester Masche und Stäbchen: schnell gearbeitet, weich und warm.",
-    "rowFactor": 0.7
+    "rowFactor": 0.7,
+    "abbreviation": "hStb"
    },
    {
     "slug": "double-crochet",
@@ -11849,7 +11865,8 @@
     "craft": "crochet",
     "level": "Anfänger",
     "summary": "Eine hohe Masche, die schnell wächst und gut fällt, passend für Decken und Schals.",
-    "rowFactor": 0.55
+    "rowFactor": 0.55,
+    "abbreviation": "Stb"
    },
    {
     "slug": "back-loop-rib",
@@ -11889,7 +11906,8 @@
     "craft": "crochet",
     "level": "Mittelstufe",
     "summary": "Weiche, runde Büschelmaschen in den Lm-Bögen der Vorreihe, jeweils durch eine Luftmasche getrennt, für ein dickes, gepolstertes Häkelstück.",
-    "rowFactor": 0.7
+    "rowFactor": 0.7,
+    "abbreviation": "BüM"
    },
    {
     "slug": "cluster-stitch",
@@ -11897,7 +11915,8 @@
     "craft": "crochet",
     "level": "Mittelstufe",
     "summary": "Drei Stäbchen, zu einer Spitze zusammen abgemascht, in den Lm-Bögen der Vorreihe, für ein leichtes, strukturiertes Häkelstück mit schönem Fall.",
-    "rowFactor": 0.55
+    "rowFactor": 0.55,
+    "abbreviation": "Gr"
    }
   ],
   "pt": [
@@ -12011,7 +12030,8 @@
     "craft": "crochet",
     "level": "Iniciante",
     "summary": "O ponto básico mais baixo, para um tecido firme e denso, bom para panos e bolsas.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "abbreviation": "pb"
    },
    {
     "slug": "half-double-crochet",
@@ -12019,7 +12039,8 @@
     "craft": "crochet",
     "level": "Iniciante",
     "summary": "Altura entre o ponto baixo e o ponto alto: rápido de fazer, macio e quente.",
-    "rowFactor": 0.7
+    "rowFactor": 0.7,
+    "abbreviation": "mpa"
    },
    {
     "slug": "double-crochet",
@@ -12027,7 +12048,8 @@
     "craft": "crochet",
     "level": "Iniciante",
     "summary": "Um ponto alto que cresce rápido e tem bom caimento, próprio para mantas e cachecóis.",
-    "rowFactor": 0.55
+    "rowFactor": 0.55,
+    "abbreviation": "pa"
    },
    {
     "slug": "back-loop-rib",
@@ -12067,7 +12089,8 @@
     "craft": "crochet",
     "level": "Intermediário",
     "summary": "Pontos puff macios e redondos nos espaços de corrente da carreira anterior, separados por uma corrente, para um trabalho grosso e fofo.",
-    "rowFactor": 0.7
+    "rowFactor": 0.7,
+    "abbreviation": "pf"
    },
    {
     "slug": "cluster-stitch",
@@ -12075,7 +12098,8 @@
     "craft": "crochet",
     "level": "Intermediário",
     "summary": "Três pontos altos fechados juntos em uma só cabeça, nos espaços de corrente da carreira anterior, para um trabalho leve e texturizado com bom caimento.",
-    "rowFactor": 0.55
+    "rowFactor": 0.55,
+    "abbreviation": "gr"
    }
   ],
   "it": [
@@ -12189,7 +12213,8 @@
     "craft": "crochet",
     "level": "Principiante",
     "summary": "Il punto base più basso, per un tessuto compatto e denso, ottimo per strofinacci e borse.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "abbreviation": "mb"
    },
    {
     "slug": "half-double-crochet",
@@ -12197,7 +12222,8 @@
     "craft": "crochet",
     "level": "Principiante",
     "summary": "Di altezza intermedia tra maglia bassa e alta: veloce da lavorare, morbido e caldo.",
-    "rowFactor": 0.7
+    "rowFactor": 0.7,
+    "abbreviation": "mma"
    },
    {
     "slug": "double-crochet",
@@ -12205,7 +12231,8 @@
     "craft": "crochet",
     "level": "Principiante",
     "summary": "Un punto alto che cresce in fretta e cade bene, adatto a coperte e sciarpe.",
-    "rowFactor": 0.55
+    "rowFactor": 0.55,
+    "abbreviation": "ma"
    },
    {
     "slug": "back-loop-rib",
@@ -12245,7 +12272,8 @@
     "craft": "crochet",
     "level": "Intermedio",
     "summary": "Punti puff morbidi e rotondi negli spazi di catenella della riga precedente, separati da una catenella, per un tessuto spesso e soffice.",
-    "rowFactor": 0.7
+    "rowFactor": 0.7,
+    "abbreviation": "pf"
    },
    {
     "slug": "cluster-stitch",
@@ -12253,7 +12281,8 @@
     "craft": "crochet",
     "level": "Intermedio",
     "summary": "Tre maglie alte chiuse insieme in un'unica testa, negli spazi di catenella della riga precedente, per un tessuto leggero e lavorato che cade bene.",
-    "rowFactor": 0.55
+    "rowFactor": 0.55,
+    "abbreviation": "gr"
    }
   ],
   "nl": [
@@ -12367,7 +12396,8 @@
     "craft": "crochet",
     "level": "Beginner",
     "summary": "De laagste basissteek, voor een stevige, dichte stof die goed is voor vaatdoeken en tassen.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "abbreviation": "v"
    },
    {
     "slug": "half-double-crochet",
@@ -12375,7 +12405,8 @@
     "craft": "crochet",
     "level": "Beginner",
     "summary": "Qua hoogte tussen vaste en stokje: snel te haken, met een zacht, warm gevoel.",
-    "rowFactor": 0.7
+    "rowFactor": 0.7,
+    "abbreviation": "hst"
    },
    {
     "slug": "double-crochet",
@@ -12383,7 +12414,8 @@
     "craft": "crochet",
     "level": "Beginner",
     "summary": "Een hoge steek die snel groeit en mooi valt, dus geschikt voor dekens en sjaals.",
-    "rowFactor": 0.55
+    "rowFactor": 0.55,
+    "abbreviation": "st"
    },
    {
     "slug": "back-loop-rib",
@@ -12423,7 +12455,8 @@
     "craft": "crochet",
     "level": "Gemiddeld",
     "summary": "Zachte, ronde puffsteken in de ruimtes van de vorige toer, telkens gescheiden door een losse, voor een dik, zacht haakwerk.",
-    "rowFactor": 0.7
+    "rowFactor": 0.7,
+    "abbreviation": "ps"
    },
    {
     "slug": "cluster-stitch",
@@ -12431,7 +12464,8 @@
     "craft": "crochet",
     "level": "Gemiddeld",
     "summary": "Drie stokjes samen afgehaakt tot één kop, in de ruimtes van de vorige toer, voor een licht haakwerk met reliëf dat mooi valt.",
-    "rowFactor": 0.55
+    "rowFactor": 0.55,
+    "abbreviation": "cl"
    }
   ]
  }

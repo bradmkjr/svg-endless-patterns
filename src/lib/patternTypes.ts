@@ -51,6 +51,8 @@ export type StitchInfo = {
   summary: string;
   /** Rows per 4" relative to plain fabric in the same yarn: a starting point before swatching. */
   rowFactor: number;
+  /** Crochet only: the abbreviation the written pattern uses for the stitch it's named for, when the name doesn't already say it. */
+  abbreviation?: string;
 };
 
 export type StitchResult = {

@@ -4,6 +4,7 @@ import { localePath, messages } from "./i18n";
 import { serializeTartanState, defaultTartanState, TARTAN_PRESETS } from "./tartanState";
 import { optionHref, thumbSrc, TOOL_OPTIONS, type ThumbGroup, type ToolId } from "./toolOptions";
 import { optionLabels } from "./toolPages";
+import { stitchLabel } from "./stitchState";
 import { weavingDraftLinks } from "./weavingDrafts";
 
 /** One pattern shown under its type. */
@@ -26,7 +27,7 @@ export async function libraryTypes(locale: Locale): Promise<LibraryType[]> {
   const fromSlugs = (group: ThumbGroup, path: string, items: { slug: string; name: string }[]) => alphabetical(items, locale).map((item) => ({ name: item.name, href: localePath(locale, `${path}${item.slug}/`), src: thumbSrc(group, item.slug) }));
   const blocks = fromSlugs("blocks", "/blocks/", await getBlocks(locale));
   const knit = fromSlugs("knit", "/knitting/", await getStitchPatterns("knit", locale));
-  const crochet = fromSlugs("crochet", "/crochet/", await getStitchPatterns("crochet", locale));
+  const crochet = fromSlugs("crochet", "/crochet/", (await getStitchPatterns("crochet", locale)).map((stitch) => ({ ...stitch, name: stitchLabel(stitch) })));
   const tartans = alphabetical(
     TARTAN_PRESETS.map((preset) => {
       const query = serializeTartanState({ ...defaultTartanState(locale), stripes: preset.stripes });

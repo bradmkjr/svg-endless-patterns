@@ -863,6 +863,12 @@
     }
   },
   "changelog": {
+    "Crochet stitch abbreviations": {
+      "title": "Abreviações dos pontos de crochê",
+      "items": [
+        "Os nomes dos pontos de crochê mostram a abreviação usada na receita escrita, como Single Crochet (pb) e Half Double Crochet (mpa), nos termos de cada idioma"
+      ]
+    },
     "Thirty-three new quilt blocks": {
       "title": "Trinta e três blocos de quilt novos",
       "items": [

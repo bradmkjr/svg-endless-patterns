@@ -863,6 +863,12 @@
     }
   },
   "changelog": {
+    "Crochet stitch abbreviations": {
+      "title": "Abréviations des points de crochet",
+      "items": [
+        "Les noms des points de crochet indiquent l'abréviation qu'utilise leur explication écrite, comme Single Crochet (ms) et Half Double Crochet (db), dans les termes de chaque langue"
+      ]
+    },
     "Thirty-three new quilt blocks": {
       "title": "Trente-trois nouveaux blocs de quilt",
       "items": [

@@ -94,3 +94,8 @@ export function serializeStitchState(stitch: StitchInfo, state: StitchRequest): 
 }
 
 export const CRAFT_PATHS: Record<Craft, string> = { knit: "/knitting", crochet: "/crochet" };
+
+/** A stitch's name with the abbreviation its written pattern uses, as patterns are read: "Single Crochet (sc)". */
+export function stitchLabel(stitch: { name: string; abbreviation?: string }): string {
+  return stitch.abbreviation ? `${stitch.name} (${stitch.abbreviation})` : stitch.name;
+}

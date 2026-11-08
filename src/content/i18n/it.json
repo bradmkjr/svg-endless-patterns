@@ -863,6 +863,12 @@
     }
   },
   "changelog": {
+    "Crochet stitch abbreviations": {
+      "title": "Abbreviazioni dei punti all'uncinetto",
+      "items": [
+        "I nomi dei punti all'uncinetto mostrano l'abbreviazione usata dallo schema scritto, come Single Crochet (mb) e Half Double Crochet (mma), nei termini di ogni lingua"
+      ]
+    },
     "Thirty-three new quilt blocks": {
       "title": "Trentatré nuovi blocchi per quilt",
       "items": [

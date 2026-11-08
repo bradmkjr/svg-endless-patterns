@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Locale, StitchInfo } from "@/lib/generator";
 import { localePath } from "@/lib/i18n";
-import { CRAFT_PATHS } from "@/lib/stitchState";
+import { CRAFT_PATHS, stitchLabel } from "@/lib/stitchState";
 import { thumbSrc } from "@/lib/toolOptions";
 import styles from "./BlockGrid.module.css";
 
@@ -15,7 +15,7 @@ export function StitchGrid({ stitches, locale }: { stitches: StitchInfo[]; local
               {/* eslint-disable-next-line @next/next/no-img-element -- a small file, loaded as it nears the screen */}
               <img src={thumbSrc(stitch.craft, stitch.slug)} alt="" loading="lazy" width={200} height={200} />
             </span>
-            <span className={styles.name}>{stitch.name}</span>
+            <span className={styles.name}>{stitchLabel(stitch)}</span>
             <span className={styles.level}>{stitch.level}</span>
           </Link>
         </li>

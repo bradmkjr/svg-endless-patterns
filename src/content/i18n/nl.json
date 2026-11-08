@@ -863,6 +863,12 @@
     }
   },
   "changelog": {
+    "Crochet stitch abbreviations": {
+      "title": "Afkortingen voor haaksteken",
+      "items": [
+        "De namen van haaksteken tonen de afkorting die hun geschreven patroon gebruikt, zoals Single Crochet (v) en Half Double Crochet (hst), in de termen van elke taal"
+      ]
+    },
     "Thirty-three new quilt blocks": {
       "title": "Drieëndertig nieuwe quiltblokken",
       "items": [

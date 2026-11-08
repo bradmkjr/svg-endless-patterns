@@ -10,7 +10,7 @@ import colorwork from "@/i18n/messages/knitColorwork.json";
 import { type Craft, type Locale } from "@/lib/generator";
 import { getStitchPattern, getStitchPatterns } from "@/lib/patternCatalog";
 import { fill, localePath, messages } from "@/lib/i18n";
-import { CRAFT_PATHS } from "@/lib/stitchState";
+import { CRAFT_PATHS, stitchLabel } from "@/lib/stitchState";
 
 export function stitchesMetadata(locale: Locale, craft: Craft): Metadata {
   const t = messages(locale).stitches;
@@ -47,7 +47,7 @@ export async function stitchMetadata(locale: Locale, craft: Craft, slug: string)
   const stitch = await getStitchPattern(craft, slug, locale);
   if (!stitch) return {};
   const t = messages(locale).stitches;
-  return pageMetadata(locale, `${CRAFT_PATHS[craft]}/${stitch.slug}/`, fill(craft === "knit" ? t.knitPageTitle : t.crochetPageTitle, { name: stitch.name }), fill(t.pageDesc, { summary: stitch.summary }));
+  return pageMetadata(locale, `${CRAFT_PATHS[craft]}/${stitch.slug}/`, fill(craft === "knit" ? t.knitPageTitle : t.crochetPageTitle, { name: stitchLabel(stitch) }), fill(t.pageDesc, { summary: stitch.summary }));
 }
 
 export async function StitchView({ locale, craft, slug }: { locale: Locale; craft: Craft; slug: string }) {
@@ -59,7 +59,7 @@ export async function StitchView({ locale, craft, slug }: { locale: Locale; craf
       <p className="no-print" style={{ margin: "0 0 0.5rem", color: "var(--muted)", fontSize: "0.9rem" }}>
         <Link href={localePath(locale, `${CRAFT_PATHS[craft]}/`)}>{craft === "knit" ? all.nav.knitting : all.nav.crochet}</Link> / {stitch.level}
       </p>
-      <h1 style={{ margin: "0 0 0.5rem", fontSize: "clamp(2rem, 4vw, 3rem)" }}>{stitch.name}</h1>
+      <h1 style={{ margin: "0 0 0.5rem", fontSize: "clamp(2rem, 4vw, 3rem)" }}>{stitchLabel(stitch)}</h1>
       <p className="lede" style={{ marginTop: 0 }}>
         {stitch.summary}
       </p>

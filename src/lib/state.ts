@@ -122,7 +122,8 @@ export function withUnits(block: Pick<BlockInfo, "grid">, state: PatternRequest,
   const from = state.units ?? "in";
   if (from === units) return state;
   const m = MEASURES[units];
-  const { units: _, ...rest } = state;
+  const rest: PatternRequest = { ...state };
+  delete rest.units;
   return {
     ...rest,
     ...unitsField(units),

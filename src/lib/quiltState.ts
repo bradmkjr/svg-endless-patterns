@@ -241,6 +241,7 @@ export function quiltHrefFromBlock(block: Pick<BlockInfo, "slug" | "fabrics">, r
 export function quiltWithUnits(state: QuiltState, units: Units): QuiltState {
   const from = state.units ?? "in";
   if (from === units) return state;
-  const { units: _, ...rest } = convertLayout(state, from, units);
-  return { ...rest, ...unitsField(units), wof: convertWof(state.wof, from, units) } as QuiltState;
+  const rest: QuiltState = { ...convertLayout(state, from, units) };
+  delete rest.units;
+  return { ...rest, ...unitsField(units), wof: convertWof(state.wof, from, units) };
 }

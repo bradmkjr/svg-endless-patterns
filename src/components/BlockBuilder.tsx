@@ -1,5 +1,6 @@
 "use client";
 
+import { ColorInput } from "./ColorInput";
 import { useCallback, useEffect, useState, type CSSProperties } from "react";
 import { generatePattern, generatePdf, type BlockInfo, type CutLine, type Locale, type PatternRequest, type QuiltFinish } from "@/lib/generator";
 import { fill, messages } from "@/lib/i18n";
@@ -174,19 +175,19 @@ export function BlockBuilder({ block, locale, initialState }: { block: BlockInfo
             <div className={styles.colors}>
               {block.fabrics.map((fabric) => (
                 <label key={fabric.id} className={styles.color}>
-                  <input type="color" value={state.colors[fabric.id]} onChange={(e) => setColor(fabric.id, e.target.value)} />
+                  <ColorInput value={state.colors[fabric.id]} onChange={(picked) => setColor(fabric.id, picked)} />
                   {fabric.label}
                 </label>
               ))}
               {state.sashing > 0 && (
                 <label className={styles.color}>
-                  <input type="color" value={state.colors.sashing} onChange={(e) => setColor("sashing", e.target.value)} />
+                  <ColorInput value={state.colors.sashing} onChange={(picked) => setColor("sashing", picked)} />
                   {t.sashing}
                 </label>
               )}
               {state.border > 0 && (
                 <label className={styles.color}>
-                  <input type="color" value={state.colors.border} onChange={(e) => setColor("border", e.target.value)} />
+                  <ColorInput value={state.colors.border} onChange={(picked) => setColor("border", picked)} />
                   {t.border}
                 </label>
               )}

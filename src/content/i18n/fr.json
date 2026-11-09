@@ -891,6 +891,13 @@
     }
   },
   "changelog": {
+    "Easier color choices": {
+      "title": "Choisir les couleurs plus facilement",
+      "items": [
+        "Cliquer sur une couleur ouvre désormais de grands échantillons au lieu d’une roue chromatique : les couleurs déjà présentes dans votre motif suivies de suggestions complémentaires, et dix-huit couleurs de base",
+        "Des boutons plus clair et plus foncé pour ajuster une couleur, et le sélecteur de couleur exacte reste à un clic"
+      ]
+    },
     "Five more quilt designs": {
       "title": "Cinq modèles de quilt de plus",
       "items": [

@@ -1,5 +1,6 @@
 "use client";
 
+import { ColorInput } from "./ColorInput";
 import { useEffect, useState } from "react";
 import { generateCheckerboard, generateCheckerboardPdf, type CheckerboardRequest, type CheckerLayout, type CheckerboardResult, type Locale } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
@@ -187,7 +188,7 @@ export function CheckerboardBuilder({ locale, option, labels, initialState }: { 
             <div className={styles.colors}>
               {shownColors.map((color, i) => (
                 <label key={i} className={styles.color}>
-                  <input type="color" value={color} onChange={(e) => update({ colors: state.colors.map((c, n) => (n === i ? e.target.value : c)) })} />
+                  <ColorInput value={color} onChange={(picked) => update({ colors: state.colors.map((c, n) => (n === i ? picked : c)) })} />
                   {fill(t.color, { n: i + 1 })}
                 </label>
               ))}

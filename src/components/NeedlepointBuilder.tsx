@@ -1,5 +1,6 @@
 "use client";
 
+import { ColorInput } from "./ColorInput";
 import { useEffect, useState } from "react";
 import catalog from "@/i18n/messages/needlepoint.json";
 import { generateNeedlepoint, generateNeedlepointPdf, type Locale, type NeedlepointRequest, type NeedlepointResult, type NeedlepointStitch, type NeedlepointYarn } from "@/lib/generator";
@@ -181,7 +182,7 @@ export function NeedlepointBuilder({ locale, option, labels, initialState }: { l
               return (
                 <div key={i} className={styles.stripe}>
                   <strong>{symbol}</strong>
-                  <input type="color" aria-label={fill(t.colorLabel, { symbol })} value={color} onChange={(e) => setColor(i, e.target.value)} />
+                  <ColorInput aria-label={fill(t.colorLabel, { symbol })} value={color} onChange={(picked) => setColor(i, picked)} />
                   <span className={css.colorCount}>{result?.colors[i]?.stitches ?? 0}</span>
                   <button
                     type="button"
@@ -202,7 +203,7 @@ export function NeedlepointBuilder({ locale, option, labels, initialState }: { l
               {t.add}
             </button>
             <label className={`${styles.color} ${styles.check}`}>
-              <input type="color" value={state.canvas} onChange={(e) => update({ canvas: e.target.value })} />
+              <ColorInput value={state.canvas} onChange={(picked) => update({ canvas: picked })} />
               {t.canvasColor}
             </label>
             <PalettePicker locale={locale} current={[state.canvas, ...state.colors]} onApply={(c) => update({ canvas: c[0], colors: paletteAccents(c, state.colors.length) })} />

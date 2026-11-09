@@ -1,5 +1,6 @@
 "use client";
 
+import { ColorInput } from "./ColorInput";
 import { useEffect, useState, type MouseEvent } from "react";
 import { generateLife, generateLifePdf, type LifeColors, type LifeRequest, type LifeResult, type Locale } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
@@ -188,7 +189,7 @@ export function LifeBuilder({ locale, option, labels, initialState }: { locale: 
               {COLOR_KEYS.map((key) => (
                 <label key={key} className={styles.field}>
                   <span>{t[key]}</span>
-                  <input type="color" value={state.colors[key]} onChange={(e) => update({ colors: { ...state.colors, [key]: e.target.value } })} />
+                  <ColorInput value={state.colors[key]} onChange={(picked) => update({ colors: { ...state.colors, [key]: picked } })} />
                 </label>
               ))}
             </div>

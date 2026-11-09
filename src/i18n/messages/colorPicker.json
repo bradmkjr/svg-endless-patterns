@@ -1,0 +1,93 @@
+{
+  "en": {
+    "title": "Choose a color",
+    "matching": "Complementary colors",
+    "used": "Used in your pattern",
+    "basic": "Basic colors",
+    "adjust": "Adjust",
+    "lighter": "Lighter",
+    "darker": "Darker",
+    "exact": "Exact color…",
+    "done": "Done",
+    "use": "Use {name}",
+    "names": { "red": "Red", "orange": "Orange", "yellow": "Yellow", "lightGreen": "Light green", "green": "Green", "teal": "Teal", "lightBlue": "Light blue", "blue": "Blue", "navy": "Navy", "purple": "Purple", "lavender": "Lavender", "pink": "Pink", "maroon": "Maroon", "brown": "Brown", "white": "White", "cream": "Cream", "gray": "Gray", "black": "Black" }
+  },
+  "es": {
+    "title": "Elige un color",
+    "matching": "Colores complementarios",
+    "used": "Ya en tu patrón",
+    "basic": "Colores básicos",
+    "adjust": "Ajustar",
+    "lighter": "Más claro",
+    "darker": "Más oscuro",
+    "exact": "Color exacto…",
+    "done": "Listo",
+    "use": "Usar {name}",
+    "names": { "red": "Rojo", "orange": "Naranja", "yellow": "Amarillo", "lightGreen": "Verde claro", "green": "Verde", "teal": "Verde azulado", "lightBlue": "Azul claro", "blue": "Azul", "navy": "Azul marino", "purple": "Morado", "lavender": "Lavanda", "pink": "Rosa", "maroon": "Granate", "brown": "Marrón", "white": "Blanco", "cream": "Crema", "gray": "Gris", "black": "Negro" }
+  },
+  "fr": {
+    "title": "Choisir une couleur",
+    "matching": "Couleurs complémentaires",
+    "used": "Déjà dans votre motif",
+    "basic": "Couleurs de base",
+    "adjust": "Ajuster",
+    "lighter": "Plus clair",
+    "darker": "Plus foncé",
+    "exact": "Couleur exacte…",
+    "done": "Terminé",
+    "use": "Utiliser {name}",
+    "names": { "red": "Rouge", "orange": "Orange", "yellow": "Jaune", "lightGreen": "Vert clair", "green": "Vert", "teal": "Bleu canard", "lightBlue": "Bleu clair", "blue": "Bleu", "navy": "Bleu marine", "purple": "Violet", "lavender": "Lavande", "pink": "Rose", "maroon": "Bordeaux", "brown": "Marron", "white": "Blanc", "cream": "Crème", "gray": "Gris", "black": "Noir" }
+  },
+  "de": {
+    "title": "Farbe wählen",
+    "matching": "Komplementärfarben",
+    "used": "Schon in deinem Muster",
+    "basic": "Grundfarben",
+    "adjust": "Anpassen",
+    "lighter": "Heller",
+    "darker": "Dunkler",
+    "exact": "Genaue Farbe…",
+    "done": "Fertig",
+    "use": "{name} verwenden",
+    "names": { "red": "Rot", "orange": "Orange", "yellow": "Gelb", "lightGreen": "Hellgrün", "green": "Grün", "teal": "Petrol", "lightBlue": "Hellblau", "blue": "Blau", "navy": "Marineblau", "purple": "Lila", "lavender": "Lavendel", "pink": "Rosa", "maroon": "Weinrot", "brown": "Braun", "white": "Weiß", "cream": "Creme", "gray": "Grau", "black": "Schwarz" }
+  },
+  "pt": {
+    "title": "Escolha uma cor",
+    "matching": "Cores complementares",
+    "used": "Já no seu padrão",
+    "basic": "Cores básicas",
+    "adjust": "Ajustar",
+    "lighter": "Mais clara",
+    "darker": "Mais escura",
+    "exact": "Cor exata…",
+    "done": "Pronto",
+    "use": "Usar {name}",
+    "names": { "red": "Vermelho", "orange": "Laranja", "yellow": "Amarelo", "lightGreen": "Verde-claro", "green": "Verde", "teal": "Verde-azulado", "lightBlue": "Azul-claro", "blue": "Azul", "navy": "Azul-marinho", "purple": "Roxo", "lavender": "Lavanda", "pink": "Rosa", "maroon": "Bordô", "brown": "Marrom", "white": "Branco", "cream": "Creme", "gray": "Cinza", "black": "Preto" }
+  },
+  "it": {
+    "title": "Scegli un colore",
+    "matching": "Colori complementari",
+    "used": "Già nel tuo motivo",
+    "basic": "Colori di base",
+    "adjust": "Regola",
+    "lighter": "Più chiaro",
+    "darker": "Più scuro",
+    "exact": "Colore esatto…",
+    "done": "Fatto",
+    "use": "Usa {name}",
+    "names": { "red": "Rosso", "orange": "Arancione", "yellow": "Giallo", "lightGreen": "Verde chiaro", "green": "Verde", "teal": "Verde acqua", "lightBlue": "Azzurro", "blue": "Blu", "navy": "Blu navy", "purple": "Viola", "lavender": "Lavanda", "pink": "Rosa", "maroon": "Bordeaux", "brown": "Marrone", "white": "Bianco", "cream": "Crema", "gray": "Grigio", "black": "Nero" }
+  },
+  "nl": {
+    "title": "Kies een kleur",
+    "matching": "Complementaire kleuren",
+    "used": "Al in je patroon",
+    "basic": "Basiskleuren",
+    "adjust": "Aanpassen",
+    "lighter": "Lichter",
+    "darker": "Donkerder",
+    "exact": "Precieze kleur…",
+    "done": "Klaar",
+    "use": "{name} gebruiken",
+    "names": { "red": "Rood", "orange": "Oranje", "yellow": "Geel", "lightGreen": "Lichtgroen", "green": "Groen", "teal": "Petrol", "lightBlue": "Lichtblauw", "blue": "Blauw", "navy": "Marineblauw", "purple": "Paars", "lavender": "Lavendel", "pink": "Roze", "maroon": "Bordeauxrood", "brown": "Bruin", "white": "Wit", "cream": "Crème", "gray": "Grijs", "black": "Zwart" }
+  }
+}

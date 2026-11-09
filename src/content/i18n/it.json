@@ -891,6 +891,13 @@
     }
   },
   "changelog": {
+    "Easier color choices": {
+      "title": "Scegliere i colori è più facile",
+      "items": [
+        "Cliccando su un colore ora si aprono grandi campioni invece di una ruota dei colori: i colori già presenti nel tuo motivo seguiti da suggerimenti complementari, e diciotto colori di base",
+        "Pulsanti più chiaro e più scuro per regolare un colore, e il selettore del colore esatto resta a un clic"
+      ]
+    },
     "Five more quilt designs": {
       "title": "Altri cinque modelli di trapunta",
       "items": [

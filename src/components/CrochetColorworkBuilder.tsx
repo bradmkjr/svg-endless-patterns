@@ -1,5 +1,6 @@
 "use client";
 
+import { ColorInput } from "./ColorInput";
 import { useEffect, useState } from "react";
 import copy from "@/i18n/messages/crochetColorwork.json";
 import { COLORWORK_DESIGNS, COLORWORK_REPEAT_OPTIONS, COLORWORK_WEIGHT_OPTIONS, serializeCrochetColorworkState } from "@/lib/crochetColorworkState";
@@ -145,12 +146,12 @@ export function CrochetColorworkBuilder({ locale, option, labels, initialState }
             <legend>{t.colors}</legend>
             <div className={styles.colors}>
               <label className={styles.color}>
-                <input type="color" value={state.color} onChange={(e) => update({ color: e.target.value })} />
+                <ColorInput value={state.color} onChange={(picked) => update({ color: picked })} />
                 {fill(t.mainColor, { letter: "A" })}
               </label>
               {contrast.map((color, i) => (
                 <label key={i} className={styles.color}>
-                  <input type="color" value={color} onChange={(e) => update({ contrast: contrast.map((c, n) => (n === i ? e.target.value : c)) })} />
+                  <ColorInput value={color} onChange={(picked) => update({ contrast: contrast.map((c, n) => (n === i ? picked : c)) })} />
                   {fill(t.contrastColor, { letter: LETTERS[i + 1] })}
                 </label>
               ))}

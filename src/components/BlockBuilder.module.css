@@ -227,17 +227,6 @@
   margin-top: 0.8rem;
 }
 
-.color input {
-  flex-shrink: 0;
-  width: 2.25rem;
-  height: 2.25rem;
-  padding: 2px;
-  border: 1px solid var(--line);
-  border-radius: 5px;
-  background: var(--surface);
-  cursor: pointer;
-}
-
 .notice {
   margin: 2rem 0 0;
   padding: 0.8rem 1rem;

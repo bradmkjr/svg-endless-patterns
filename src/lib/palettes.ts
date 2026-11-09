@@ -136,7 +136,7 @@ const HARMONY_TURNS: Record<HarmonyId, number[]> = {
 };
 export const HARMONIES = Object.keys(HARMONY_TURNS) as HarmonyId[];
 
-function hsl(degrees: number, saturation: number, lightness: number): string {
+export function hsl(degrees: number, saturation: number, lightness: number): string {
   const h = ((degrees % 360) + 360) % 360;
   const s = saturation / 100;
   const l = lightness / 100;

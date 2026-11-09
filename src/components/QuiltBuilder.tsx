@@ -1,5 +1,6 @@
 "use client";
 
+import { ColorInput } from "./ColorInput";
 import { useEffect, useState } from "react";
 import { generateQuilt, type Locale, type QuiltCutMapLine, type QuiltFinish, type QuiltResult, type Setting } from "@/lib/generator";
 import { downloadPng, downloadSvg } from "@/lib/download";
@@ -255,7 +256,7 @@ export function QuiltBuilder({ locale, option, labels, blockNames, initialState 
                 {state.palette.map((color, i) => (
                   <label key={i} className={q.colorField}>
                     <span>{fill(t.colorN, { n: i + 1 })}</span>
-                    <input type="color" value={color} onChange={(e) => setPalette(state.palette.map((c, j) => (j === i ? e.target.value : c)))} />
+                    <ColorInput value={color} onChange={(picked) => setPalette(state.palette.map((c, j) => (j === i ? picked : c)))} />
                   </label>
                 ))}
                 {state.palette.length < MAX_PALETTE && (
@@ -274,13 +275,13 @@ export function QuiltBuilder({ locale, option, labels, blockNames, initialState 
                 {state.sashing > 0 && (
                   <label className={q.colorField}>
                     <span>{b.sashing}</span>
-                    <input type="color" value={state.sashingColor} onChange={(e) => update({ sashingColor: e.target.value })} />
+                    <ColorInput value={state.sashingColor} onChange={(picked) => update({ sashingColor: picked })} />
                   </label>
                 )}
                 {state.border > 0 && (
                   <label className={q.colorField}>
                     <span>{b.border}</span>
-                    <input type="color" value={state.borderColor} onChange={(e) => update({ borderColor: e.target.value })} />
+                    <ColorInput value={state.borderColor} onChange={(picked) => update({ borderColor: picked })} />
                   </label>
                 )}
               </div>
@@ -325,7 +326,7 @@ export function QuiltBuilder({ locale, option, labels, blockNames, initialState 
               <div className={styles.fieldRow}>
                 <label className={q.colorField}>
                   <span>{t.thread}</span>
-                  <input type="color" value={state.thread} onChange={(e) => update({ thread: e.target.value })} />
+                  <ColorInput value={state.thread} onChange={(picked) => update({ thread: picked })} />
                 </label>
                 <Select label={t.battingLabel} value={state.batting} options={BATTING_OPTIONS} format={(id) => t.battings[id]} onChange={(batting) => update({ batting })} />
               </div>

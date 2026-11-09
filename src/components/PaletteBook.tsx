@@ -1,5 +1,6 @@
 "use client";
 
+import { ColorInput } from "./ColorInput";
 import { useState } from "react";
 import type { Locale } from "@/lib/generator";
 import { deletePalette, MAX_NAME, MAX_PALETTE_COLORS, MIN_PALETTE_COLORS, renamePalette, savePalette, useCustomPalettes } from "@/lib/customPalettes";
@@ -71,7 +72,7 @@ export function PaletteBook({ locale }: { locale: Locale }) {
           <input type="text" aria-label={t.name} placeholder={t.name} maxLength={MAX_NAME} value={name} onChange={(e) => setName(e.target.value)} />
           <div className={css.inputs}>
             {colors.map((color, i) => (
-              <input key={i} type="color" aria-label={fill(t.color, { n: i + 1 })} value={color} onChange={(e) => setColors(colors.map((c, n) => (n === i ? e.target.value : c)))} />
+              <ColorInput key={i} aria-label={fill(t.color, { n: i + 1 })} value={color} onChange={(picked) => setColors(colors.map((c, n) => (n === i ? picked : c)))} />
             ))}
           </div>
           <div className={css.cardActions}>

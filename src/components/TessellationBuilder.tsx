@@ -1,5 +1,6 @@
 "use client";
 
+import { ColorInput } from "./ColorInput";
 import { useEffect, useState } from "react";
 import { generateTessellation, generateTessellationPdf, type Locale, type TessellationColors, type TessellationMotif, type TessellationOptions, type TessellationRequest } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
@@ -166,7 +167,7 @@ export function TessellationBuilder({ locale, options, option, labels, initialSt
               {(["background", "primary", "accent"] as const).map((role) => (
                 <label key={role} className={styles.field}>
                   <span>{t[role]}</span>
-                  <input type="color" value={state.colors[role]} onChange={(e) => setColor(role, e.target.value)} />
+                  <ColorInput value={state.colors[role]} onChange={(picked) => setColor(role, picked)} />
                 </label>
               ))}
             </div>

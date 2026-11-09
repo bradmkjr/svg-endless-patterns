@@ -891,6 +891,13 @@
     }
   },
   "changelog": {
+    "Easier color choices": {
+      "title": "Elegir colores es más fácil",
+      "items": [
+        "Al pulsar un color se abren muestras grandes en lugar de una rueda de color: los colores que ya tiene tu patrón seguidos de sugerencias complementarias, y dieciocho colores básicos",
+        "Botones para hacer un color más claro o más oscuro, y el selector de color exacto sigue a un clic"
+      ]
+    },
     "Five more quilt designs": {
       "title": "Cinco diseños de colcha más",
       "items": [

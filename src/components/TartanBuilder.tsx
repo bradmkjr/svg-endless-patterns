@@ -1,5 +1,6 @@
 "use client";
 
+import { ColorInput } from "./ColorInput";
 import { useEffect, useState } from "react";
 import { generateTartan, generateTartanPdf, type Locale, type TartanRequest, type TartanStripe } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
@@ -101,7 +102,7 @@ export function TartanBuilder({ locale, initialState }: { locale: Locale; initia
             {state.stripes.map((stripe, i) => (
               <div key={i} className={styles.stripe}>
                 <strong>{String.fromCharCode(65 + i)}</strong>
-                <input type="color" aria-label={fill(t.stripeColor, { letter: String.fromCharCode(65 + i) })} value={stripe.color} onChange={(e) => setStripe(i, { color: e.target.value })} />
+                <ColorInput aria-label={fill(t.stripeColor, { letter: String.fromCharCode(65 + i) })} value={stripe.color} onChange={(picked) => setStripe(i, { color: picked })} />
                 <select aria-label={fill(t.stripeCount, { letter: String.fromCharCode(65 + i) })} value={stripe.count} onChange={(e) => setStripe(i, { count: Number(e.target.value) })}>
                   {COUNT_OPTIONS.map((count) => (
                     <option key={count} value={count}>

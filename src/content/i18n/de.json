@@ -891,6 +891,13 @@
     }
   },
   "changelog": {
+    "Easier color choices": {
+      "title": "Farben leichter wählen",
+      "items": [
+        "Ein Klick auf eine Farbe öffnet jetzt große Farbfelder statt eines Farbkreises: die Farben deines Musters, gefolgt von Komplementärfarben als Vorschlag, und achtzehn Grundfarben",
+        "Schaltflächen für heller und dunkler zum Feinabstimmen, und die genaue Farbauswahl ist weiter nur einen Klick entfernt"
+      ]
+    },
     "Five more quilt designs": {
       "title": "Fünf weitere Quilt-Entwürfe",
       "items": [

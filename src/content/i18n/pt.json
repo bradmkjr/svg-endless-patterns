@@ -891,6 +891,13 @@
     }
   },
   "changelog": {
+    "Easier color choices": {
+      "title": "Escolher cores ficou mais fácil",
+      "items": [
+        "Clicar em uma cor agora abre amostras grandes em vez de uma roda de cores: as cores que já estão no seu padrão seguidas de sugestões complementares, e dezoito cores básicas",
+        "Botões para deixar uma cor mais clara ou mais escura, e o seletor de cor exata continua a um clique"
+      ]
+    },
     "Five more quilt designs": {
       "title": "Mais cinco modelos de colcha",
       "items": [

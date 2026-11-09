@@ -1,5 +1,6 @@
 "use client";
 
+import { ColorInput } from "./ColorInput";
 import { useEffect, useState } from "react";
 import { generateSashiko, generateSashikoPdf, type Locale, type SashikoRequest } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
@@ -125,11 +126,11 @@ export function SashikoBuilder({ locale, option, labels, initialState }: { local
             </div>
             <div className={styles.colors} style={{ marginTop: "0.6rem" }}>
               <label className={styles.color}>
-                <input type="color" value={state.cloth} onChange={(e) => update({ cloth: e.target.value })} />
+                <ColorInput value={state.cloth} onChange={(picked) => update({ cloth: picked })} />
                 {t.cloth}
               </label>
               <label className={styles.color}>
-                <input type="color" value={state.thread} onChange={(e) => update({ thread: e.target.value })} />
+                <ColorInput value={state.thread} onChange={(picked) => update({ thread: picked })} />
                 {t.thread}
               </label>
             </div>

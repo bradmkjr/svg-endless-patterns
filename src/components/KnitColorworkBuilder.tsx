@@ -1,5 +1,6 @@
 "use client";
 
+import { ColorInput } from "./ColorInput";
 import { useEffect, useState } from "react";
 import copy from "@/i18n/messages/knitColorwork.json";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
@@ -150,12 +151,12 @@ export function KnitColorworkBuilder({ locale, option, labels, initialState }: {
             <legend>{t.colors}</legend>
             <div className={styles.colors}>
               <label className={styles.color}>
-                <input type="color" value={state.color} onChange={(e) => update({ color: e.target.value })} />
+                <ColorInput value={state.color} onChange={(picked) => update({ color: picked })} />
                 {fill(t.yarn, { letter: "A" })}
               </label>
               {contrast.map((color, i) => (
                 <label key={i} className={styles.color}>
-                  <input type="color" value={color} onChange={(e) => update({ contrast: contrast.map((c, n) => (n === i ? e.target.value : c)) })} />
+                  <ColorInput value={color} onChange={(picked) => update({ contrast: contrast.map((c, n) => (n === i ? picked : c)) })} />
                   {fill(t.yarn, { letter: String.fromCharCode(66 + i) })}
                 </label>
               ))}

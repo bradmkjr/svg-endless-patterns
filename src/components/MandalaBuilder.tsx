@@ -1,5 +1,6 @@
 "use client";
 
+import { ColorInput } from "./ColorInput";
 import { useEffect, useState } from "react";
 import { generateMandala, generateMandalaPdf, type Locale, type MandalaMotif, type MandalaRequest, type MandalaResult } from "@/lib/generator";
 import { rememberSeed, syncShareLink } from "@/lib/toolOptions";
@@ -186,16 +187,16 @@ export function MandalaBuilder({ locale, option, labels, initialState }: { local
             <div className={styles.colors}>
               {state.colors.map((color, i) => (
                 <label key={i} className={styles.color}>
-                  <input type="color" value={color} onChange={(e) => setColor(i, e.target.value)} />
+                  <ColorInput value={color} onChange={(picked) => setColor(i, picked)} />
                   {fill(t.color, { n: i + 1 })}
                 </label>
               ))}
               <label className={styles.color}>
-                <input type="color" value={state.background} onChange={(e) => update({ background: e.target.value })} />
+                <ColorInput value={state.background} onChange={(picked) => update({ background: picked })} />
                 {t.background}
               </label>
               <label className={styles.color}>
-                <input type="color" value={state.outline} onChange={(e) => update({ outline: e.target.value })} />
+                <ColorInput value={state.outline} onChange={(picked) => update({ outline: picked })} />
                 {t.outline}
               </label>
             </div>

@@ -891,6 +891,13 @@
     }
   },
   "changelog": {
+    "Easier color choices": {
+      "title": "Makkelijker kleuren kiezen",
+      "items": [
+        "Klikken op een kleur opent nu grote stalen in plaats van een kleurenwiel: de kleuren die al in je patroon zitten gevolgd door complementaire suggesties, en achttien basiskleuren",
+        "Knoppen voor lichter en donkerder om een kleur bij te stellen, en de precieze kleurkiezer blijft één klik verderop"
+      ]
+    },
     "Five more quilt designs": {
       "title": "Vijf quiltontwerpen erbij",
       "items": [

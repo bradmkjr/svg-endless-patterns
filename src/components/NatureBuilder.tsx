@@ -1,5 +1,6 @@
 "use client";
 
+import { ColorInput } from "./ColorInput";
 import { useEffect, useState } from "react";
 import { generateNature, generateNaturePdf, type Locale, type NatureColors, type NatureRequest } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
@@ -151,7 +152,7 @@ export function NatureBuilder({ locale, option, labels, initialState }: { locale
               {COLOR_KEYS.map((key) => (
                 <label key={key} className={styles.field}>
                   <span>{t[key]}</span>
-                  <input type="color" value={state.colors[key]} onChange={(e) => update({ colors: { ...state.colors, [key]: e.target.value } })} />
+                  <ColorInput value={state.colors[key]} onChange={(picked) => update({ colors: { ...state.colors, [key]: picked } })} />
                 </label>
               ))}
             </div>

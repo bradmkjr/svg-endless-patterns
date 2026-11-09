@@ -1,5 +1,6 @@
 "use client";
 
+import { ColorInput } from "./ColorInput";
 import { useCallback, useEffect, useLayoutEffect, useRef, useState, useSyncExternalStore, type KeyboardEvent, type PointerEvent } from "react";
 import { generateKaleidoscope, generateKaleidoscopePdf, type KaleidoscopeRequest, type KaleidoscopeResult, type KaleidoscopeSource, type Locale } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
@@ -369,12 +370,12 @@ export function KaleidoscopeBuilder({ locale, option, labels, initialState }: { 
             <legend>{t.colors}</legend>
             <div className={styles.colors}>
               <label className={styles.color}>
-                <input type="color" value={state.background} onChange={(e) => update({ background: e.target.value })} />
+                <ColorInput value={state.background} onChange={(picked) => update({ background: picked })} />
                 {t.background}
               </label>
               {state.colors.map((color, i) => (
                 <label key={i} className={styles.color}>
-                  <input type="color" value={color} onChange={(e) => setColor(i, e.target.value)} />
+                  <ColorInput value={color} onChange={(picked) => setColor(i, picked)} />
                   {fill(t.color, { n: i + 1 })}
                 </label>
               ))}

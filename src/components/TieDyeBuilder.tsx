@@ -1,5 +1,6 @@
 "use client";
 
+import { ColorInput } from "./ColorInput";
 import { useEffect, useState } from "react";
 import { generateTieDye, generateTieDyePdf, type TieDyeResult, type Locale, type TieDyeRequest } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
@@ -143,12 +144,12 @@ export function TieDyeBuilder({ locale, option, labels, initialState }: { locale
             <div className={styles.colors}>
               {state.dyes.map((dye, i) => (
                 <label key={i} className={styles.color}>
-                  <input type="color" value={dye} onChange={(e) => update({ dyes: state.dyes.map((c, n) => (n === i ? e.target.value : c)) })} />
+                  <ColorInput value={dye} onChange={(picked) => update({ dyes: state.dyes.map((c, n) => (n === i ? picked : c)) })} />
                   {fill(t.dye, { letter: String.fromCharCode(65 + i) })}
                 </label>
               ))}
               <label className={styles.color}>
-                <input type="color" value={state.fabric} onChange={(e) => update({ fabric: e.target.value })} />
+                <ColorInput value={state.fabric} onChange={(picked) => update({ fabric: picked })} />
                 {t.fabric}
               </label>
             </div>

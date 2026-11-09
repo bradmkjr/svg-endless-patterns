@@ -1,5 +1,6 @@
 "use client";
 
+import { ColorInput } from "./ColorInput";
 import { useEffect, useState } from "react";
 import { generateGirih, generateGirihPdf, type GirihColors, type GirihRequest, type GirihStar, type Locale } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
@@ -168,7 +169,7 @@ export function GirihBuilder({ locale, option, labels, initialState }: { locale:
               {COLOR_ROLES.map((role) => (
                 <label key={role} className={styles.field}>
                   <span>{t[role]}</span>
-                  <input type="color" value={state.colors[role]} onChange={(e) => setColor(role, e.target.value)} />
+                  <ColorInput value={state.colors[role]} onChange={(picked) => setColor(role, picked)} />
                 </label>
               ))}
             </div>

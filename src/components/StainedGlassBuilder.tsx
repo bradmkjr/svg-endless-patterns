@@ -1,5 +1,6 @@
 "use client";
 
+import { ColorInput } from "./ColorInput";
 import { useEffect, useState } from "react";
 import { generateStainedGlass, generateStainedGlassPdf, type Locale, type StainedGlassRequest } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
@@ -156,7 +157,7 @@ export function StainedGlassBuilder({ locale, option, labels, initialState }: { 
                 const name = fill(t.glassColor, { letter: String.fromCharCode(65 + i) });
                 return (
                   <label key={i} className={styles.color}>
-                    <input type="color" value={color} onChange={(e) => update({ colors: state.colors.map((c, n) => (n === i ? e.target.value : c)) })} />
+                    <ColorInput value={color} onChange={(picked) => update({ colors: state.colors.map((c, n) => (n === i ? picked : c)) })} />
                     {name}
                   </label>
                 );

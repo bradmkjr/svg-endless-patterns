@@ -1,5 +1,6 @@
 "use client";
 
+import { ColorInput } from "./ColorInput";
 import { useEffect, useState } from "react";
 import { generateTruchet, generateTruchetPdf, type Locale, type TruchetColors, type TruchetRequest } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
@@ -155,7 +156,7 @@ export function TruchetBuilder({ locale, option, labels, initialState }: { local
               {COLOR_KEYS.map((key) => (
                 <label key={key} className={styles.field}>
                   <span>{t[key]}</span>
-                  <input type="color" value={state.colors[key]} onChange={(e) => update({ colors: { ...state.colors, [key]: e.target.value } })} />
+                  <ColorInput value={state.colors[key]} onChange={(picked) => update({ colors: { ...state.colors, [key]: picked } })} />
                 </label>
               ))}
             </div>

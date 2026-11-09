@@ -1,5 +1,6 @@
 "use client";
 
+import { ColorInput } from "./ColorInput";
 import { useCallback, useEffect, useState } from "react";
 import { FavoriteButton } from "./FavoriteButton";
 import { generateStitchPattern, generateStitchPdf, type Locale, type StitchInfo, type StitchRequest } from "@/lib/generator";
@@ -174,7 +175,7 @@ export function StitchBuilder({ stitch, locale, initialState }: { stitch: Stitch
               <NumberSelect label={t.rowsPer} value={state.rowGauge} options={ROW_GAUGE_OPTIONS} onChange={(rowGauge) => update({ rowGauge })} />
             </div>
             <label className={styles.color} style={{ marginTop: "0.8rem" }}>
-              <input type="color" value={state.color} onChange={(e) => update({ color: e.target.value })} />
+              <ColorInput value={state.color} onChange={(picked) => update({ color: picked })} />
               {t.yarnColor}
             </label>
             <PalettePicker locale={locale} current={[state.color]} onApply={(c) => update({ color: c[1] })} />

@@ -1,5 +1,6 @@
 "use client";
 
+import { ColorInput } from "./ColorInput";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { generateMaze, generateMazePdf, generateMazePng, generateMazePosterPdf, MAZE_PAPERS, mazeAcross, mazeTallRows, type MazePaperId, type Locale, type MazeColors, type MazeRequest, type MazeResult } from "@/lib/generator";
 import { downloadBytes, downloadSvg } from "@/lib/download";
@@ -286,7 +287,7 @@ export function MazeBuilder({ locale, option, labels, initialState }: { locale: 
               {COLOR_KEYS.map((key) => (
                 <label key={key} className={styles.field}>
                   <span>{t[key]}</span>
-                  <input type="color" value={state.colors[key]} onChange={(e) => update({ colors: { ...state.colors, [key]: e.target.value } })} />
+                  <ColorInput value={state.colors[key]} onChange={(picked) => update({ colors: { ...state.colors, [key]: picked } })} />
                 </label>
               ))}
             </div>

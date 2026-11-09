@@ -1,5 +1,6 @@
 "use client";
 
+import { ColorInput } from "./ColorInput";
 import { useEffect, useState, type ReactNode } from "react";
 import { generateWeavingPdf, generateWeaving, type Locale, type WeavingStripe } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
@@ -39,7 +40,7 @@ function Stripes({ label, stripes, t, onChange, extra }: { label: string; stripe
       <strong>{label}</strong>
       {stripes.map((stripe, i) => (
         <div key={i} style={ROW}>
-          <input type="color" aria-label={fill(t.stripeColor, { n: i + 1 })} value={stripe.color} onChange={(e) => set(i, { color: e.target.value })} />
+          <ColorInput aria-label={fill(t.stripeColor, { n: i + 1 })} value={stripe.color} onChange={(picked) => set(i, { color: picked })} />
           <select aria-label={fill(t.stripeCount, { n: i + 1 })} value={stripe.count} onChange={(e) => set(i, { count: Number(e.target.value) })}>
             {COUNT_OPTIONS.map((count) => (
               <option key={count} value={count}>

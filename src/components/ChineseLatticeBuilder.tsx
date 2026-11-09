@@ -1,5 +1,6 @@
 "use client";
 
+import { ColorInput } from "./ColorInput";
 import { useEffect, useState } from "react";
 import { generateChineseLattice, generateChineseLatticePdf, type ChineseLatticeRequest, type LatticeColors, type LatticeEdge, type Locale } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
@@ -168,7 +169,7 @@ export function ChineseLatticeBuilder({ locale, option, labels, initialState }: 
               {COLOR_ROLES.map((role) => (
                 <label key={role} className={styles.field}>
                   <span>{t[role]}</span>
-                  <input type="color" value={state.colors[role]} onChange={(e) => setColor(role, e.target.value)} />
+                  <ColorInput value={state.colors[role]} onChange={(picked) => setColor(role, picked)} />
                 </label>
               ))}
             </div>

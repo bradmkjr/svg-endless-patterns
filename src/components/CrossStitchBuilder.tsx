@@ -1,5 +1,6 @@
 "use client";
 
+import { ColorInput } from "./ColorInput";
 import { useEffect, useState } from "react";
 import catalog from "@/i18n/messages/crossStitch.json";
 import { generateCrossStitch, generateCrossStitchPdf, type CrossStitchRequest, type CrossStitchResult, type Locale } from "@/lib/generator";
@@ -178,7 +179,7 @@ export function CrossStitchBuilder({ locale, option, labels, initialState }: { l
               return (
                 <div key={i} className={styles.stripe}>
                   <strong>{symbol}</strong>
-                  <input type="color" aria-label={fill(t.colorLabel, { symbol })} value={color} onChange={(e) => setColor(i, e.target.value)} />
+                  <ColorInput aria-label={fill(t.colorLabel, { symbol })} value={color} onChange={(picked) => setColor(i, picked)} />
                   <span className={css.colorCount}>{result?.colors[i]?.stitches ?? 0}</span>
                   <button
                     type="button"
@@ -199,7 +200,7 @@ export function CrossStitchBuilder({ locale, option, labels, initialState }: { l
               {t.add}
             </button>
             <label className={`${styles.color} ${styles.check}`}>
-              <input type="color" value={state.fabric} onChange={(e) => update({ fabric: e.target.value })} />
+              <ColorInput value={state.fabric} onChange={(picked) => update({ fabric: picked })} />
               {t.fabricColor}
             </label>
             <PalettePicker locale={locale} current={[state.fabric, ...state.colors]} onApply={(c) => update({ fabric: c[0], colors: paletteAccents(c, state.colors.length) })} />

@@ -372,7 +372,7 @@
     "stitch2": "El hilo es una estimación aproximada, basada en una regla práctica de cuánto hilo usa un punto de ese tamaño, más un 10 %. La fibra y la tensión lo cambian mucho; compra de más.",
     "dataH": "Tus datos",
     "data": "La mayoría de los ajustes están en la dirección de la página, y por eso funcionan los enlaces. Para dibujar tu diseño, esos ajustes se envían a nuestro servidor de patrones, que puede registrarlos junto con tu dirección IP. Las semillas y las paletas que guardas se quedan en el almacenamiento local de este navegador.",
-    "dataAnalytics": "Usamos Google Analytics para saber cómo se usa el sitio. Instala cookies y envía a Google las páginas que visitas, incluida la dirección completa de cada página con tus ajustes, qué ajustes cambias en una herramienta, el sitio del que vienes, tu dispositivo y navegador, y tu ubicación aproximada.",
+    "dataAnalytics": "Usamos Google Analytics para saber cómo se usa el sitio. Instala cookies y envía a Google las páginas que visitas, incluida la dirección completa de cada página con tus ajustes, qué ajustes cambias en una herramienta, el sitio del que vienes, tu dispositivo y navegador, y tu ubicación aproximada. Los anuncios vienen de Google AdSense, que instala cookies para elegirlos y puede basarlos en tus visitas a este y otros sitios.",
     "dataPolicy": "Política de privacidad",
     "designsH": "Los diseños",
     "designs": "Los bloques se dibujan a partir de la geometría y usan nombres tradicionales. La disposición de un mismo nombre puede variar según la fuente.",

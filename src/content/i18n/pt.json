@@ -863,6 +863,13 @@
     }
   },
   "changelog": {
+    "Ads from Google AdSense": {
+      "title": "Anúncios do Google AdSense",
+      "items": [
+        "O site exibe anúncios do Google AdSense, que ajudam a pagá-lo",
+        "A Política de Privacidade explica os cookies de publicidade e como desativar anúncios personalizados"
+      ]
+    },
     "Crochet stitch abbreviations": {
       "title": "Abreviações dos pontos de crochê",
       "items": [

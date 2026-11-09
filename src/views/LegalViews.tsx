@@ -7,7 +7,7 @@ import { fill } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/pageMetadata";
 
 /** Change this whenever the wording of either page changes. */
-const UPDATED = "2026-11-01";
+const UPDATED = "2026-11-08";
 
 type Page = { metaTitle: string; metaDesc: string; h1: string; sections: { h: string; body: string[]; items?: string[] }[] };
 

@@ -863,6 +863,13 @@
     }
   },
   "changelog": {
+    "Ads from Google AdSense": {
+      "title": "Anzeigen von Google AdSense",
+      "items": [
+        "Die Website zeigt Anzeigen von Google AdSense, die zu ihrer Finanzierung beitragen",
+        "Die Datenschutzerklärung erklärt die Werbe-Cookies und wie Sie personalisierte Anzeigen deaktivieren"
+      ]
+    },
     "Crochet stitch abbreviations": {
       "title": "Abkürzungen für Häkelmaschen",
       "items": [

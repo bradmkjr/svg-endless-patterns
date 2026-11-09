@@ -20,7 +20,7 @@
           "items": [
             "Pattern server: to draw your design, your settings are sent to our server, which can record them in its logs with your IP address and the time of the request.",
             "Website hosting: the companies that host the site can log technical details of each request, such as your IP address and browser.",
-            "Google Analytics: see the next section.",
+            "Google Analytics and Google AdSense: see the next two sections.",
             "Your browser: seeds and the palettes you save stay in this browser's local storage. They aren't sent to us unless a setting is part of a request to draw a design."
           ]
         },
@@ -32,27 +32,35 @@
           ]
         },
         {
+          "h": "Advertising",
+          "body": [
+            "We use Google AdSense to show ads, which help pay for the site. Google and other third-party vendors use cookies to serve ads based on your past visits to this site and other websites. Google's advertising cookies let Google and its partners show you ads based on those visits. To show and measure ads, they receive the page you're on, your IP address, your device and browser, and the cookies already in your browser.",
+            "In the European Economic Area, the United Kingdom and Switzerland, we ask for your consent before cookies are used for personalized ads. Without it, Google may still show ads that aren't personalized, and use cookies with them to limit how often you see an ad, to measure ads and to prevent fraud. Some US state laws may treat personalized advertising as selling or sharing personal information; you can opt out of it with the links below.",
+            "[How Google uses cookies in advertising](https://policies.google.com/technologies/ads) · [Turn off personalized ads from Google](https://adssettings.google.com) · [Opt out of personalized ads from other vendors](https://www.aboutads.info/choices) · [Your Online Choices, for Europe](https://www.youronlinechoices.eu)"
+          ]
+        },
+        {
           "h": "Why we use it",
           "body": [
-            "We use this information to draw your designs, keep the site running and secure, and understand how to improve it. Where the law requires a legal basis, we rely on our legitimate interest in doing those things."
+            "We use this information to draw your designs, show ads that help pay for the site, keep the site running and secure, and understand how to improve it. Where the law requires a legal basis, we rely on our legitimate interest in doing those things and, for advertising cookies, on your consent where the law requires it."
           ]
         },
         {
           "h": "Who receives it",
           "body": [
-            "We share information only with Google and our hosting providers, as described above, or when the law requires it. These companies may process it in other countries, including the United States. We don't sell your information, and the site shows no ads."
+            "We share information only with Google, the advertising vendors described above and our hosting providers, or when the law requires it. These companies may process it in other countries, including the United States. Apart from the advertising described above, we don't sell or share your information."
           ]
         },
         {
           "h": "How long we keep it",
           "body": [
-            "We keep server logs and analytics data only as long as we need them for the purposes above. Items in local storage stay until you clear them from your browser."
+            "We keep server logs and analytics data only as long as we need them for the purposes above. Google and its advertising partners keep advertising data under their own policies. Items in local storage stay until you clear them from your browser."
           ]
         },
         {
           "h": "Your choices and rights",
           "body": [
-            "You can block cookies in your browser, use Google's opt-out above, and clear local storage at any time. Depending on where you live, you may have the right to ask for access to your information, or to have it corrected or deleted, to object to or limit its use, and to complain to your data protection authority. To make a request, email us. We don't ask for your name, so we may not be able to link logs or analytics data to you."
+            "You can block cookies in your browser, use the opt-outs above, and clear local storage at any time. Depending on where you live, you may have the right to ask for access to your information, or to have it corrected or deleted, to object to or limit its use, and to complain to your data protection authority. To make a request, email us. We don't ask for your name, so we may not be able to link logs or analytics data to you."
           ]
         },
         {
@@ -158,7 +166,7 @@
           "items": [
             "Servidor de patrones: para dibujar tu diseño, tus ajustes se envían a nuestro servidor, que puede registrarlos junto con tu dirección IP y la hora de la solicitud.",
             "Alojamiento web: las empresas que alojan el sitio pueden registrar datos técnicos de cada solicitud, como tu dirección IP y tu navegador.",
-            "Google Analytics: consulta la sección siguiente.",
+            "Google Analytics y Google AdSense: consulta las dos secciones siguientes.",
             "Tu navegador: las semillas y las paletas que guardas se quedan en el almacenamiento local de este navegador. No nos llegan salvo que un ajuste forme parte de una solicitud para dibujar un diseño."
           ]
         },
@@ -170,27 +178,35 @@
           ]
         },
         {
+          "h": "Publicidad",
+          "body": [
+            "Usamos Google AdSense para mostrar anuncios, que ayudan a pagar el sitio. Google y otros proveedores externos usan cookies para mostrar anuncios basados en tus visitas anteriores a este sitio y a otros sitios web. Las cookies publicitarias de Google permiten que Google y sus socios te muestren anuncios basados en esas visitas. Para mostrar y medir los anuncios, reciben la página en la que estás, tu dirección IP, tu dispositivo y navegador, y las cookies que ya hay en tu navegador.",
+            "En el Espacio Económico Europeo, el Reino Unido y Suiza, te pedimos tu consentimiento antes de usar cookies para anuncios personalizados. Sin él, Google puede seguir mostrando anuncios no personalizados y usar cookies con ellos para limitar cuántas veces ves un anuncio, medir los anuncios y prevenir el fraude. Algunas leyes estatales de EE. UU. pueden considerar la publicidad personalizada como venta o cesión de información personal; puedes desactivarla con los enlaces siguientes.",
+            "[Cómo usa Google las cookies en publicidad](https://policies.google.com/technologies/ads) · [Desactivar los anuncios personalizados de Google](https://adssettings.google.com) · [Desactivar los anuncios personalizados de otros proveedores](https://www.aboutads.info/choices) · [Your Online Choices, para Europa](https://www.youronlinechoices.eu)"
+          ]
+        },
+        {
           "h": "Para qué lo usamos",
           "body": [
-            "Usamos esta información para dibujar tus diseños, mantener el sitio en funcionamiento y seguro, y saber cómo mejorarlo. Cuando la ley exige una base jurídica, nos basamos en nuestro interés legítimo en hacer esas cosas."
+            "Usamos esta información para dibujar tus diseños, mostrar anuncios que ayudan a pagar el sitio, mantener el sitio en funcionamiento y seguro, y saber cómo mejorarlo. Cuando la ley exige una base jurídica, nos basamos en nuestro interés legítimo en hacer esas cosas y, para las cookies publicitarias, en tu consentimiento cuando la ley lo exige."
           ]
         },
         {
           "h": "Quién la recibe",
           "body": [
-            "Solo compartimos información con Google y nuestros proveedores de alojamiento, como se describe arriba, o cuando la ley lo exige. Estas empresas pueden tratarla en otros países, incluidos los Estados Unidos. No vendemos tu información, y el sitio no muestra anuncios."
+            "Solo compartimos información con Google, los proveedores de publicidad descritos arriba y nuestros proveedores de alojamiento, o cuando la ley lo exige. Estas empresas pueden tratarla en otros países, incluidos los Estados Unidos. Aparte de la publicidad descrita arriba, no vendemos ni cedemos tu información."
           ]
         },
         {
           "h": "Cuánto tiempo la conservamos",
           "body": [
-            "Conservamos los registros del servidor y los datos de analítica solo mientras los necesitamos para los fines anteriores. Lo que está en el almacenamiento local permanece hasta que lo borres de tu navegador."
+            "Conservamos los registros del servidor y los datos de analítica solo mientras los necesitamos para los fines anteriores. Google y sus socios publicitarios conservan los datos de publicidad según sus propias políticas. Lo que está en el almacenamiento local permanece hasta que lo borres de tu navegador."
           ]
         },
         {
           "h": "Tus opciones y derechos",
           "body": [
-            "Puedes bloquear las cookies en tu navegador, usar la desactivación de Google indicada arriba y borrar el almacenamiento local en cualquier momento. Según dónde vivas, puedes tener derecho a pedir acceso a tu información, su corrección o eliminación, a oponerte a su uso o limitarlo, y a reclamar ante tu autoridad de protección de datos. Para hacer una solicitud, escríbenos. Como no te pedimos el nombre, puede que no podamos relacionar contigo los registros o los datos de analítica."
+            "Puedes bloquear las cookies en tu navegador, usar las opciones de desactivación indicadas arriba y borrar el almacenamiento local en cualquier momento. Según dónde vivas, puedes tener derecho a pedir acceso a tu información, su corrección o eliminación, a oponerte a su uso o limitarlo, y a reclamar ante tu autoridad de protección de datos. Para hacer una solicitud, escríbenos. Como no te pedimos el nombre, puede que no podamos relacionar contigo los registros o los datos de analítica."
           ]
         },
         {
@@ -296,7 +312,7 @@
           "items": [
             "Serveur de motifs : pour dessiner votre motif, vos réglages sont envoyés à notre serveur, qui peut les enregistrer dans ses journaux avec votre adresse IP et l'heure de la requête.",
             "Hébergement du site : les sociétés qui hébergent le site peuvent journaliser des données techniques de chaque requête, comme votre adresse IP et votre navigateur.",
-            "Google Analytics : voir la section suivante.",
+            "Google Analytics et Google AdSense : voir les deux sections suivantes.",
             "Votre navigateur : les graines et les palettes enregistrées restent dans le stockage local de ce navigateur. Elles ne nous parviennent que si un réglage fait partie d'une requête pour dessiner un motif."
           ]
         },
@@ -308,27 +324,35 @@
           ]
         },
         {
+          "h": "Publicité",
+          "body": [
+            "Nous utilisons Google AdSense pour afficher des annonces, qui aident à financer le site. Google et d'autres fournisseurs tiers utilisent des cookies pour diffuser des annonces en fonction de vos visites précédentes sur ce site et sur d'autres sites web. Les cookies publicitaires de Google permettent à Google et à ses partenaires de vous présenter des annonces en fonction de ces visites. Pour afficher et mesurer les annonces, ils reçoivent la page que vous consultez, votre adresse IP, votre appareil et votre navigateur, ainsi que les cookies déjà présents dans votre navigateur.",
+            "Dans l'Espace économique européen, au Royaume-Uni et en Suisse, nous vous demandons votre consentement avant d'utiliser des cookies pour des annonces personnalisées. Sans lui, Google peut tout de même afficher des annonces non personnalisées et utiliser des cookies pour limiter le nombre de fois où vous voyez une annonce, mesurer les annonces et prévenir la fraude. Certaines lois d'États américains peuvent considérer la publicité personnalisée comme une vente ou un partage d'informations personnelles ; vous pouvez la refuser grâce aux liens ci-dessous.",
+            "[Comment Google utilise les cookies dans la publicité](https://policies.google.com/technologies/ads) · [Désactiver les annonces personnalisées de Google](https://adssettings.google.com) · [Refuser les annonces personnalisées d'autres fournisseurs](https://www.aboutads.info/choices) · [Your Online Choices, pour l'Europe](https://www.youronlinechoices.eu)"
+          ]
+        },
+        {
           "h": "Pourquoi nous les utilisons",
           "body": [
-            "Nous utilisons ces informations pour dessiner vos motifs, assurer le fonctionnement et la sécurité du site, et savoir comment l'améliorer. Lorsque la loi exige une base juridique, nous nous fondons sur notre intérêt légitime à faire ces choses."
+            "Nous utilisons ces informations pour dessiner vos motifs, afficher des annonces qui aident à financer le site, assurer le fonctionnement et la sécurité du site, et savoir comment l'améliorer. Lorsque la loi exige une base juridique, nous nous fondons sur notre intérêt légitime à faire ces choses et, pour les cookies publicitaires, sur votre consentement lorsque la loi l'exige."
           ]
         },
         {
           "h": "Qui les reçoit",
           "body": [
-            "Nous ne partageons des informations qu'avec Google et nos hébergeurs, comme décrit ci-dessus, ou lorsque la loi l'exige. Ces sociétés peuvent les traiter dans d'autres pays, notamment aux États-Unis. Nous ne vendons pas vos informations, et le site n'affiche pas de publicité."
+            "Nous ne partageons des informations qu'avec Google, les fournisseurs publicitaires décrits ci-dessus et nos hébergeurs, ou lorsque la loi l'exige. Ces sociétés peuvent les traiter dans d'autres pays, notamment aux États-Unis. En dehors de la publicité décrite ci-dessus, nous ne vendons ni ne partageons vos informations."
           ]
         },
         {
           "h": "Durée de conservation",
           "body": [
-            "Nous conservons les journaux du serveur et les données d'analyse uniquement le temps nécessaire aux finalités ci-dessus. Ce qui se trouve dans le stockage local y reste jusqu'à ce que vous l'effaciez de votre navigateur."
+            "Nous conservons les journaux du serveur et les données d'analyse uniquement le temps nécessaire aux finalités ci-dessus. Google et ses partenaires publicitaires conservent les données publicitaires selon leurs propres règles. Ce qui se trouve dans le stockage local y reste jusqu'à ce que vous l'effaciez de votre navigateur."
           ]
         },
         {
           "h": "Vos choix et vos droits",
           "body": [
-            "Vous pouvez bloquer les cookies dans votre navigateur, utiliser l'outil de désactivation de Google indiqué ci-dessus et effacer le stockage local à tout moment. Selon votre lieu de résidence, vous pouvez avoir le droit de demander l'accès à vos informations, leur rectification ou leur suppression, de vous opposer à leur utilisation ou de la limiter, et de saisir votre autorité de protection des données. Pour faire une demande, écrivez-nous. Comme nous ne demandons pas votre nom, nous ne pourrons peut-être pas relier les journaux ou les données d'analyse à vous."
+            "Vous pouvez bloquer les cookies dans votre navigateur, utiliser les outils de désactivation indiqués ci-dessus et effacer le stockage local à tout moment. Selon votre lieu de résidence, vous pouvez avoir le droit de demander l'accès à vos informations, leur rectification ou leur suppression, de vous opposer à leur utilisation ou de la limiter, et de saisir votre autorité de protection des données. Pour faire une demande, écrivez-nous. Comme nous ne demandons pas votre nom, nous ne pourrons peut-être pas relier les journaux ou les données d'analyse à vous."
           ]
         },
         {
@@ -434,7 +458,7 @@
           "items": [
             "Musterserver: Um Ihr Muster zu zeichnen, werden Ihre Einstellungen an unseren Server gesendet, der sie zusammen mit Ihrer IP-Adresse und dem Zeitpunkt der Anfrage protokollieren kann.",
             "Website-Hosting: Die Unternehmen, die die Website hosten, können technische Angaben zu jeder Anfrage protokollieren, etwa Ihre IP-Adresse und Ihren Browser.",
-            "Google Analytics: siehe nächster Abschnitt.",
+            "Google Analytics und Google AdSense: siehe die nächsten beiden Abschnitte.",
             "Ihr Browser: Startwerte und gespeicherte Paletten bleiben im lokalen Speicher dieses Browsers. Sie erreichen uns nur, wenn eine Einstellung Teil einer Anfrage zum Zeichnen eines Musters ist."
           ]
         },
@@ -446,27 +470,35 @@
           ]
         },
         {
+          "h": "Werbung",
+          "body": [
+            "Wir verwenden Google AdSense, um Anzeigen zu zeigen, die zur Finanzierung der Website beitragen. Google und andere Drittanbieter verwenden Cookies, um Anzeigen auf Grundlage Ihrer früheren Besuche auf dieser und anderen Websites auszuliefern. Mit den Werbe-Cookies von Google können Google und seine Partner Ihnen Anzeigen auf Grundlage dieser Besuche zeigen. Um Anzeigen zu zeigen und zu messen, erhalten sie die Seite, auf der Sie sich befinden, Ihre IP-Adresse, Ihr Gerät und Ihren Browser sowie die Cookies, die bereits in Ihrem Browser gespeichert sind.",
+            "Im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz bitten wir um Ihre Einwilligung, bevor Cookies für personalisierte Anzeigen verwendet werden. Ohne Einwilligung kann Google weiterhin nicht personalisierte Anzeigen zeigen und dafür Cookies verwenden, um zu begrenzen, wie oft Sie eine Anzeige sehen, Anzeigen zu messen und Betrug zu verhindern. Manche Gesetze von US-Bundesstaaten können personalisierte Werbung als Verkauf oder Weitergabe personenbezogener Informationen ansehen; Sie können ihr über die folgenden Links widersprechen.",
+            "[Wie Google Cookies in der Werbung verwendet](https://policies.google.com/technologies/ads) · [Personalisierte Anzeigen von Google deaktivieren](https://adssettings.google.com) · [Personalisierte Anzeigen anderer Anbieter ablehnen](https://www.aboutads.info/choices) · [Your Online Choices, für Europa](https://www.youronlinechoices.eu)"
+          ]
+        },
+        {
           "h": "Wozu wir sie verwenden",
           "body": [
-            "Wir verwenden diese Informationen, um Ihre Muster zu zeichnen, die Website funktionsfähig und sicher zu halten und zu verstehen, wie wir sie verbessern können. Wo das Gesetz eine Rechtsgrundlage verlangt, stützen wir uns auf unser berechtigtes Interesse an diesen Zwecken."
+            "Wir verwenden diese Informationen, um Ihre Muster zu zeichnen, Anzeigen zu zeigen, die zur Finanzierung der Website beitragen, die Website funktionsfähig und sicher zu halten und zu verstehen, wie wir sie verbessern können. Wo das Gesetz eine Rechtsgrundlage verlangt, stützen wir uns auf unser berechtigtes Interesse an diesen Zwecken und bei Werbe-Cookies auf Ihre Einwilligung, wo das Gesetz sie verlangt."
           ]
         },
         {
           "h": "Wer sie erhält",
           "body": [
-            "Wir geben Informationen nur an Google und unsere Hosting-Anbieter weiter, wie oben beschrieben, oder wenn das Gesetz es verlangt. Diese Unternehmen können sie in anderen Ländern verarbeiten, auch in den Vereinigten Staaten. Wir verkaufen Ihre Informationen nicht, und die Website zeigt keine Werbung."
+            "Wir geben Informationen nur an Google, die oben beschriebenen Werbeanbieter und unsere Hosting-Anbieter weiter oder wenn das Gesetz es verlangt. Diese Unternehmen können sie in anderen Ländern verarbeiten, auch in den Vereinigten Staaten. Abgesehen von der oben beschriebenen Werbung verkaufen wir Ihre Informationen nicht und geben sie nicht weiter."
           ]
         },
         {
           "h": "Wie lange wir sie aufbewahren",
           "body": [
-            "Serverprotokolle und Analysedaten bewahren wir nur so lange auf, wie wir sie für die genannten Zwecke brauchen. Inhalte im lokalen Speicher bleiben, bis Sie sie in Ihrem Browser löschen."
+            "Serverprotokolle und Analysedaten bewahren wir nur so lange auf, wie wir sie für die genannten Zwecke brauchen. Google und seine Werbepartner bewahren Werbedaten nach ihren eigenen Richtlinien auf. Inhalte im lokalen Speicher bleiben, bis Sie sie in Ihrem Browser löschen."
           ]
         },
         {
           "h": "Ihre Wahlmöglichkeiten und Rechte",
           "body": [
-            "Sie können Cookies in Ihrem Browser blockieren, die oben genannte Deaktivierung von Google nutzen und den lokalen Speicher jederzeit löschen. Je nach Wohnort haben Sie möglicherweise das Recht, Auskunft über Ihre Informationen, ihre Berichtigung oder Löschung zu verlangen, ihrer Nutzung zu widersprechen oder sie einzuschränken und sich bei Ihrer Datenschutzbehörde zu beschweren. Für eine Anfrage schreiben Sie uns eine E-Mail. Da wir nicht nach Ihrem Namen fragen, können wir Protokolle oder Analysedaten Ihnen möglicherweise nicht zuordnen."
+            "Sie können Cookies in Ihrem Browser blockieren, die oben genannten Deaktivierungsmöglichkeiten nutzen und den lokalen Speicher jederzeit löschen. Je nach Wohnort haben Sie möglicherweise das Recht, Auskunft über Ihre Informationen, ihre Berichtigung oder Löschung zu verlangen, ihrer Nutzung zu widersprechen oder sie einzuschränken und sich bei Ihrer Datenschutzbehörde zu beschweren. Für eine Anfrage schreiben Sie uns eine E-Mail. Da wir nicht nach Ihrem Namen fragen, können wir Protokolle oder Analysedaten Ihnen möglicherweise nicht zuordnen."
           ]
         },
         {
@@ -572,7 +604,7 @@
           "items": [
             "Servidor de padrões: para desenhar seu projeto, suas configurações são enviadas ao nosso servidor, que pode registrá-las com seu endereço IP e o horário da solicitação.",
             "Hospedagem do site: as empresas que hospedam o site podem registrar dados técnicos de cada solicitação, como seu endereço IP e navegador.",
-            "Google Analytics: veja a próxima seção.",
+            "Google Analytics e Google AdSense: veja as duas próximas seções.",
             "Seu navegador: as sementes e as paletas salvas ficam no armazenamento local deste navegador. Elas só chegam até nós se uma configuração fizer parte de uma solicitação para desenhar um projeto."
           ]
         },
@@ -584,27 +616,35 @@
           ]
         },
         {
+          "h": "Publicidade",
+          "body": [
+            "Usamos o Google AdSense para exibir anúncios, que ajudam a pagar o site. O Google e outros fornecedores terceirizados usam cookies para veicular anúncios com base nas suas visitas anteriores a este site e a outros sites. Os cookies de publicidade do Google permitem que o Google e seus parceiros mostrem anúncios a você com base nessas visitas. Para exibir e medir os anúncios, eles recebem a página em que você está, seu endereço IP, seu dispositivo e navegador e os cookies que já estão no seu navegador.",
+            "No Espaço Econômico Europeu, no Reino Unido e na Suíça, pedimos seu consentimento antes de usar cookies para anúncios personalizados. Sem ele, o Google ainda pode exibir anúncios não personalizados e usar cookies neles para limitar quantas vezes você vê um anúncio, medir os anúncios e evitar fraudes. Algumas leis estaduais dos EUA podem considerar a publicidade personalizada como venda ou compartilhamento de informações pessoais; você pode recusá-la pelos links abaixo.",
+            "[Como o Google usa cookies em publicidade](https://policies.google.com/technologies/ads) · [Desativar anúncios personalizados do Google](https://adssettings.google.com) · [Recusar anúncios personalizados de outros fornecedores](https://www.aboutads.info/choices) · [Your Online Choices, para a Europa](https://www.youronlinechoices.eu)"
+          ]
+        },
+        {
           "h": "Por que usamos",
           "body": [
-            "Usamos estas informações para desenhar seus projetos, manter o site funcionando e seguro e entender como melhorá-lo. Quando a lei exige uma base legal, nos apoiamos em nosso legítimo interesse em fazer essas coisas."
+            "Usamos estas informações para desenhar seus projetos, exibir anúncios que ajudam a pagar o site, manter o site funcionando e seguro e entender como melhorá-lo. Quando a lei exige uma base legal, nos apoiamos em nosso legítimo interesse em fazer essas coisas e, para os cookies de publicidade, no seu consentimento quando a lei o exige."
           ]
         },
         {
           "h": "Quem recebe",
           "body": [
-            "Só compartilhamos informações com o Google e nossos provedores de hospedagem, como descrito acima, ou quando a lei exige. Essas empresas podem tratá-las em outros países, inclusive nos Estados Unidos. Não vendemos suas informações, e o site não exibe anúncios."
+            "Só compartilhamos informações com o Google, os fornecedores de publicidade descritos acima e nossos provedores de hospedagem, ou quando a lei exige. Essas empresas podem tratá-las em outros países, inclusive nos Estados Unidos. Além da publicidade descrita acima, não vendemos nem compartilhamos suas informações."
           ]
         },
         {
           "h": "Por quanto tempo guardamos",
           "body": [
-            "Guardamos os registros do servidor e os dados de análise apenas pelo tempo necessário para as finalidades acima. O que está no armazenamento local fica lá até você apagar do navegador."
+            "Guardamos os registros do servidor e os dados de análise apenas pelo tempo necessário para as finalidades acima. O Google e seus parceiros de publicidade guardam os dados de publicidade conforme as próprias políticas. O que está no armazenamento local fica lá até você apagar do navegador."
           ]
         },
         {
           "h": "Suas opções e direitos",
           "body": [
-            "Você pode bloquear cookies no navegador, usar a desativação do Google indicada acima e apagar o armazenamento local a qualquer momento. Dependendo de onde você mora, pode ter o direito de pedir acesso às suas informações, sua correção ou exclusão, de se opor ao uso ou limitá-lo e de reclamar à autoridade de proteção de dados. Para fazer um pedido, envie um e-mail. Como não pedimos seu nome, talvez não consigamos relacionar registros ou dados de análise a você."
+            "Você pode bloquear cookies no navegador, usar as opções de desativação indicadas acima e apagar o armazenamento local a qualquer momento. Dependendo de onde você mora, pode ter o direito de pedir acesso às suas informações, sua correção ou exclusão, de se opor ao uso ou limitá-lo e de reclamar à autoridade de proteção de dados. Para fazer um pedido, envie um e-mail. Como não pedimos seu nome, talvez não consigamos relacionar registros ou dados de análise a você."
           ]
         },
         {
@@ -710,7 +750,7 @@
           "items": [
             "Server di motivi: per disegnare il tuo progetto, le tue impostazioni vengono inviate al nostro server, che può registrarle nei log con il tuo indirizzo IP e l'ora della richiesta.",
             "Hosting del sito: le società che ospitano il sito possono registrare dettagli tecnici di ogni richiesta, come il tuo indirizzo IP e il browser.",
-            "Google Analytics: vedi la sezione seguente.",
+            "Google Analytics e Google AdSense: vedi le due sezioni seguenti.",
             "Il tuo browser: i semi e le tavolozze che salvi restano nella memoria locale di questo browser. Non ci vengono inviati, a meno che un'impostazione non faccia parte di una richiesta per disegnare un progetto."
           ]
         },
@@ -722,27 +762,35 @@
           ]
         },
         {
+          "h": "Pubblicità",
+          "body": [
+            "Usiamo Google AdSense per mostrare annunci, che aiutano a sostenere il sito. Google e altri fornitori terzi usano cookie per pubblicare annunci basati sulle tue visite precedenti a questo sito e ad altri siti web. I cookie pubblicitari di Google consentono a Google e ai suoi partner di mostrarti annunci basati su queste visite. Per mostrare e misurare gli annunci, ricevono la pagina in cui ti trovi, il tuo indirizzo IP, il tuo dispositivo e browser e i cookie già presenti nel browser.",
+            "Nello Spazio economico europeo, nel Regno Unito e in Svizzera ti chiediamo il consenso prima di usare cookie per annunci personalizzati. Senza consenso, Google può comunque mostrare annunci non personalizzati e usare cookie per limitare quante volte vedi un annuncio, misurare gli annunci e prevenire le frodi. Alcune leggi statali degli Stati Uniti possono considerare la pubblicità personalizzata una vendita o condivisione di informazioni personali; puoi rifiutarla con i link qui sotto.",
+            "[Come Google usa i cookie nella pubblicità](https://policies.google.com/technologies/ads) · [Disattiva gli annunci personalizzati di Google](https://adssettings.google.com) · [Rifiuta gli annunci personalizzati di altri fornitori](https://www.aboutads.info/choices) · [Your Online Choices, per l'Europa](https://www.youronlinechoices.eu)"
+          ]
+        },
+        {
           "h": "Perché le usiamo",
           "body": [
-            "Usiamo queste informazioni per disegnare i tuoi progetti, mantenere il sito funzionante e sicuro e capire come migliorarlo. Dove la legge richiede una base giuridica, ci basiamo sul nostro legittimo interesse a fare queste cose."
+            "Usiamo queste informazioni per disegnare i tuoi progetti, mostrare annunci che aiutano a sostenere il sito, mantenere il sito funzionante e sicuro e capire come migliorarlo. Dove la legge richiede una base giuridica, ci basiamo sul nostro legittimo interesse a fare queste cose e, per i cookie pubblicitari, sul tuo consenso quando la legge lo richiede."
           ]
         },
         {
           "h": "Chi le riceve",
           "body": [
-            "Condividiamo le informazioni solo con Google e con i nostri fornitori di hosting, come descritto sopra, o quando la legge lo richiede. Queste società possono trattarle in altri paesi, compresi gli Stati Uniti. Non vendiamo le tue informazioni e il sito non mostra pubblicità."
+            "Condividiamo le informazioni solo con Google, con i fornitori pubblicitari descritti sopra e con i nostri fornitori di hosting, o quando la legge lo richiede. Queste società possono trattarle in altri paesi, compresi gli Stati Uniti. A parte la pubblicità descritta sopra, non vendiamo né condividiamo le tue informazioni."
           ]
         },
         {
           "h": "Per quanto tempo le conserviamo",
           "body": [
-            "Conserviamo i log del server e i dati di analisi solo per il tempo necessario agli scopi sopra indicati. Gli elementi nella memoria locale restano finché non li cancelli dal browser."
+            "Conserviamo i log del server e i dati di analisi solo per il tempo necessario agli scopi sopra indicati. Google e i suoi partner pubblicitari conservano i dati pubblicitari secondo le proprie norme. Gli elementi nella memoria locale restano finché non li cancelli dal browser."
           ]
         },
         {
           "h": "Le tue scelte e i tuoi diritti",
           "body": [
-            "Puoi bloccare i cookie nel browser, usare la disattivazione di Google indicata sopra e cancellare la memoria locale in qualsiasi momento. A seconda di dove vivi, potresti avere il diritto di chiedere l'accesso alle tue informazioni, di farle correggere o cancellare, di opporti al loro uso o limitarlo e di presentare reclamo alla tua autorità per la protezione dei dati. Per fare una richiesta, scrivici via email. Non chiediamo il tuo nome, quindi potremmo non riuscire a collegare a te i log o i dati di analisi."
+            "Puoi bloccare i cookie nel browser, usare le opzioni di disattivazione indicate sopra e cancellare la memoria locale in qualsiasi momento. A seconda di dove vivi, potresti avere il diritto di chiedere l'accesso alle tue informazioni, di farle correggere o cancellare, di opporti al loro uso o limitarlo e di presentare reclamo alla tua autorità per la protezione dei dati. Per fare una richiesta, scrivici via email. Non chiediamo il tuo nome, quindi potremmo non riuscire a collegare a te i log o i dati di analisi."
           ]
         },
         {
@@ -848,7 +896,7 @@
           "items": [
             "Patroonserver: om je ontwerp te tekenen, worden je instellingen naar onze server gestuurd, die ze met je IP-adres en het tijdstip van het verzoek in zijn logbestanden kan vastleggen.",
             "Websitehosting: de bedrijven die de site hosten, kunnen technische gegevens van elk verzoek vastleggen, zoals je IP-adres en browser.",
-            "Google Analytics: zie het volgende onderdeel.",
+            "Google Analytics en Google AdSense: zie de volgende twee onderdelen.",
             "Je browser: seeds en de paletten die je opslaat, blijven in de lokale opslag van deze browser. Ze worden niet naar ons gestuurd, tenzij een instelling deel uitmaakt van een verzoek om een ontwerp te tekenen."
           ]
         },
@@ -860,27 +908,35 @@
           ]
         },
         {
+          "h": "Advertenties",
+          "body": [
+            "We gebruiken Google AdSense om advertenties te tonen, die helpen de site te betalen. Google en andere externe leveranciers gebruiken cookies om advertenties te tonen op basis van je eerdere bezoeken aan deze site en andere websites. Met de advertentiecookies van Google kunnen Google en zijn partners je advertenties tonen op basis van die bezoeken. Om advertenties te tonen en te meten, ontvangen ze de pagina waarop je bent, je IP-adres, je apparaat en browser en de cookies die al in je browser staan.",
+            "In de Europese Economische Ruimte, het Verenigd Koninkrijk en Zwitserland vragen we je toestemming voordat cookies voor gepersonaliseerde advertenties worden gebruikt. Zonder toestemming kan Google nog steeds niet-gepersonaliseerde advertenties tonen en daarvoor cookies gebruiken om te beperken hoe vaak je een advertentie ziet, advertenties te meten en fraude te voorkomen. Sommige wetten van Amerikaanse staten kunnen gepersonaliseerde advertenties zien als het verkopen of delen van persoonsgegevens; je kunt je daarvoor afmelden met de links hieronder.",
+            "[Hoe Google cookies gebruikt voor advertenties](https://policies.google.com/technologies/ads) · [Gepersonaliseerde advertenties van Google uitzetten](https://adssettings.google.com) · [Gepersonaliseerde advertenties van andere leveranciers weigeren](https://www.aboutads.info/choices) · [Your Online Choices, voor Europa](https://www.youronlinechoices.eu)"
+          ]
+        },
+        {
           "h": "Waarom we het gebruiken",
           "body": [
-            "We gebruiken deze informatie om je ontwerpen te tekenen, de site draaiende en veilig te houden en te begrijpen hoe we hem kunnen verbeteren. Waar de wet een rechtsgrondslag vereist, baseren we ons op ons gerechtvaardigd belang om deze dingen te doen."
+            "We gebruiken deze informatie om je ontwerpen te tekenen, advertenties te tonen die helpen de site te betalen, de site draaiende en veilig te houden en te begrijpen hoe we hem kunnen verbeteren. Waar de wet een rechtsgrondslag vereist, baseren we ons op ons gerechtvaardigd belang om deze dingen te doen en, voor advertentiecookies, op je toestemming waar de wet die vereist."
           ]
         },
         {
           "h": "Wie het ontvangt",
           "body": [
-            "We delen informatie alleen met Google en onze hostingproviders, zoals hierboven beschreven, of wanneer de wet dat vereist. Deze bedrijven kunnen ze in andere landen verwerken, waaronder de Verenigde Staten. We verkopen je informatie niet en de site toont geen advertenties."
+            "We delen informatie alleen met Google, de hierboven beschreven advertentieleveranciers en onze hostingproviders, of wanneer de wet dat vereist. Deze bedrijven kunnen ze in andere landen verwerken, waaronder de Verenigde Staten. Afgezien van de hierboven beschreven advertenties verkopen of delen we je informatie niet."
           ]
         },
         {
           "h": "Hoe lang we het bewaren",
           "body": [
-            "We bewaren serverlogboeken en analysegegevens alleen zolang we ze voor bovenstaande doelen nodig hebben. Items in de lokale opslag blijven staan totdat je ze uit je browser wist."
+            "We bewaren serverlogboeken en analysegegevens alleen zolang we ze voor bovenstaande doelen nodig hebben. Google en zijn advertentiepartners bewaren advertentiegegevens volgens hun eigen beleid. Items in de lokale opslag blijven staan totdat je ze uit je browser wist."
           ]
         },
         {
           "h": "Je keuzes en rechten",
           "body": [
-            "Je kunt cookies in je browser blokkeren, de uitschakeloptie van Google hierboven gebruiken en de lokale opslag op elk moment wissen. Afhankelijk van waar je woont, heb je mogelijk het recht om inzage in je gegevens te vragen, ze te laten corrigeren of verwijderen, bezwaar te maken tegen het gebruik of dat te beperken, en een klacht in te dienen bij je gegevensbeschermingsautoriteit. Stuur ons een e-mail om een verzoek te doen. We vragen niet om je naam, dus we kunnen logboeken of analysegegevens mogelijk niet aan jou koppelen."
+            "Je kunt cookies in je browser blokkeren, de uitschakelopties hierboven gebruiken en de lokale opslag op elk moment wissen. Afhankelijk van waar je woont, heb je mogelijk het recht om inzage in je gegevens te vragen, ze te laten corrigeren of verwijderen, bezwaar te maken tegen het gebruik of dat te beperken, en een klacht in te dienen bij je gegevensbeschermingsautoriteit. Stuur ons een e-mail om een verzoek te doen. We vragen niet om je naam, dus we kunnen logboeken of analysegegevens mogelijk niet aan jou koppelen."
           ]
         },
         {

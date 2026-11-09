@@ -863,6 +863,13 @@
     }
   },
   "changelog": {
+    "Ads from Google AdSense": {
+      "title": "Advertenties van Google AdSense",
+      "items": [
+        "De site toont advertenties van Google AdSense, die helpen de site te betalen",
+        "Het privacybeleid legt de advertentiecookies uit en hoe je gepersonaliseerde advertenties uitzet"
+      ]
+    },
     "Crochet stitch abbreviations": {
       "title": "Afkortingen voor haaksteken",
       "items": [

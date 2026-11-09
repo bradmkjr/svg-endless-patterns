@@ -20,7 +20,7 @@ All generation lives in the separate `api-endless-patterns` repository, behind o
 - `src/lib/state.ts`, `<tool>State.ts` — site concerns: options, palettes, defaults, share links.
 - `src/lib/download.ts` — browser-only saving and SVG-to-PNG.
 
-Requests are GETs on a versioned path (`/api/v1.0.3/maze?shape=square&seed=7`, version in `lib/mazeApi.ts`),
+Requests are GETs on a versioned path (`/api/v1.0.4/maze?shape=square&seed=7`, version in `lib/mazeApi.ts`),
 with each setting its own sorted parameter (strings as they are, anything else as JSON), so identical settings
 are one cacheable URL that can be read as it is. The API keeps up to
 three versions running; change a route's output only in a new one. The static site needs

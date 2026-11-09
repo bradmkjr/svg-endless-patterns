@@ -38,6 +38,8 @@ import { parseWeavingState, weavingRequest } from "./weavingState";
 import { generatePuzzle } from "./generator";
 import { parsePuzzleState } from "./puzzleState";
 import { withOption } from "./toolOptions";
+import { generateQuilt } from "./generator";
+import { parseQuiltState, quiltRequest } from "./quiltState";
 import { generateLife } from "./generator";
 import { parseLifeState } from "./lifeState";
 import { generatePattern, generateStitchPattern, type Craft, type Locale } from "./generator";
@@ -63,6 +65,8 @@ const DRAW: Partial<Record<PostSample["kind"], Draw>> = {
   crochet: (p, locale, slug) => drawStitch("crochet", p, locale, slug),
   // The path names the puzzle, as it does on the page the link opens.
   puzzle: async (p, locale, slug) => (await generatePuzzle(parsePuzzleState(withOption("puzzle", slug, p), locale))) as Svgs,
+  // The path names the design, as on the page the link opens.
+  quilt: async (p, locale, slug) => (await generateQuilt(quiltRequest(parseQuiltState(withOption("quilt", slug, p), locale)))) as Svgs,
   life: async (p, locale) => generateLife(parseLifeState(p, locale)),
   truchet: async (p, locale) => generateTruchet(parseTruchetState(p, locale)),
   kolam: async (p, locale) => generateKolam(parseKolamState(p, locale)),

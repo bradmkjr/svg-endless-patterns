@@ -28,8 +28,10 @@ import type { FractalRequest, FractalResult } from "./fractalTypes";
 import type { LifeRequest, LifeResult } from "./lifeTypes";
 import type { KnitColorworkRequest, KnitColorworkResult } from "./knitColorworkTypes";
 import type { PuzzlePaper, PuzzleRequest, PuzzleResult } from "./puzzleTypes";
+import type { QuiltRequest, QuiltResult } from "./quiltTypes";
 
 export type { BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, QuiltFinish, Setting, StitchInfo, StitchRequest, StitchResult } from "./patternTypes";
+export type { QuiltArrangement, QuiltBatting, QuiltCutMapLine, QuiltQuilting, QuiltRequest, QuiltResult, QuiltWeightPart } from "./quiltTypes";
 export type { KnitColorworkPlan, KnitColorworkRequest, KnitColorworkResult, KnitColorworkTechnique } from "./knitColorworkTypes";
 export type { CheckerboardRequest, CheckerboardResult, CheckerLayout, CheckerPattern } from "./checkerboardTypes";
 export type { PuzzleColors, PuzzleDifficulty, PuzzlePaper, PuzzleRequest, PuzzleResult, PuzzleType } from "./puzzleTypes";
@@ -67,6 +69,11 @@ export async function generatePattern(slug: string, request: PatternRequest): Pr
 
 export async function generatePdf(slug: string, request: PatternRequest): Promise<Uint8Array> {
   return apiPdf("/quilt-block/pdf", { slug, ...request });
+}
+
+/** A whole quilt from a choice of blocks. There's no PDF: its cut map prints from the page. */
+export async function generateQuilt(request: QuiltRequest): Promise<QuiltResult> {
+  return apiJson("/quilt", request);
 }
 
 export async function generateStitchPattern(slug: string, request: StitchRequest): Promise<StitchResult> {

@@ -17,6 +17,8 @@ import { localePath } from "./i18n";
 /** A sample in a post: a live pattern, and the deep link that opens it with these settings. */
 export type PostSample =
   | { kind: "block"; slug: string; query: string; view: "block" | "quilt" | "tile"; caption: string; locale?: Locale }
+  /** `slug` is the design, as in the page's path. */
+  | { kind: "quilt"; slug: string; query: string; view: "quilt" | "detail"; caption: string; locale?: Locale }
   | { kind: "knit" | "crochet"; slug: string; query: string; view: "swatch" | "chart"; caption: string; locale?: Locale }
   | { kind: "crossStitch"; slug: ""; query: string; view: "stitched" | "chart"; caption: string; locale?: Locale }
   | { kind: "needlepoint"; slug: ""; query: string; view: "stitched" | "chart"; caption: string; locale?: Locale }
@@ -125,6 +127,7 @@ export function sampleHref(sample: PostSample, locale: Locale = "en"): string {
   if (sample.kind === "knitColorwork") return localePath(sample.locale ?? locale, `/knitting/colorwork/${query}`);
   if (sample.kind === "crochetColorwork") return localePath(sample.locale ?? locale, `/crochet/colorwork/${query}`);
   if (sample.kind === "checkerboard") return localePath(sample.locale ?? locale, `/checkerboards/${query}`);
+  if (sample.kind === "quilt") return localePath(sample.locale ?? locale, `/quilts/${sample.slug}/${query}`);
   if (sample.kind === "puzzle") return localePath(sample.locale ?? locale, `/paper-puzzles/${sample.slug}/${query}`);
   if (sample.kind === "life") return localePath(sample.locale ?? locale, `/life-patterns/${query}`);
   if (sample.kind === "fractal") return localePath(sample.locale ?? locale, `/fractals/${query}`);

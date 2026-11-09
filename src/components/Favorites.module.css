@@ -1,0 +1,126 @@
+.heart {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.heart:hover {
+  background: var(--surface);
+}
+
+.heart[aria-pressed="true"] {
+  border-color: var(--accent);
+}
+
+.icon {
+  width: 1.1em;
+  height: 1.1em;
+  flex: none;
+}
+
+.heart[aria-pressed="true"] .icon {
+  color: var(--accent);
+}
+
+.shelf {
+  margin: 0 0 2rem;
+  padding: 1rem 1.1rem 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.shelf h2 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.shelfNote {
+  margin: 0.25rem 0 0.9rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.9rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  position: relative;
+}
+
+.card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.art {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 4px;
+  background: var(--background);
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.art :global(svg) {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.name {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.swatches {
+  display: flex;
+  gap: 2px;
+  margin-top: 0.3rem;
+}
+
+.swatches span {
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+.remove {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.3rem;
+  display: grid;
+  place-items: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.88);
+  color: #8a2b2b;
+  cursor: pointer;
+}
+
+.remove:hover {
+  background: #fff;
+}

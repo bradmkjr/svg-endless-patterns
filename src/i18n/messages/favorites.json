@@ -1,0 +1,86 @@
+{
+  "en": {
+    "save": "Save to favorites",
+    "saved": "Saved to favorites",
+    "unsave": "Remove from favorites",
+    "savedStatus": "Saved to your favorites, with these colors.",
+    "removedStatus": "Removed from your favorites.",
+    "storageError": "This browser wouldn't save it.",
+    "shelfTitle": "Your favorites",
+    "shelfNote": "Saved in this browser, each with its own colors. Open one to pick up where you left off.",
+    "remove": "Remove {name} from favorites",
+    "open": "Open"
+  },
+  "es": {
+    "save": "Guardar en favoritos",
+    "saved": "Guardado en favoritos",
+    "unsave": "Quitar de favoritos",
+    "savedStatus": "Guardado en tus favoritos, con estos colores.",
+    "removedStatus": "Quitado de tus favoritos.",
+    "storageError": "Este navegador no permitió guardarlo.",
+    "shelfTitle": "Tus favoritos",
+    "shelfNote": "Guardados en este navegador, cada uno con sus colores. Abre uno para seguir donde lo dejaste.",
+    "remove": "Quitar {name} de favoritos",
+    "open": "Abrir"
+  },
+  "fr": {
+    "save": "Ajouter aux favoris",
+    "saved": "Dans les favoris",
+    "unsave": "Retirer des favoris",
+    "savedStatus": "Ajouté à vos favoris, avec ces couleurs.",
+    "removedStatus": "Retiré de vos favoris.",
+    "storageError": "Ce navigateur n'a pas permis de l'enregistrer.",
+    "shelfTitle": "Vos favoris",
+    "shelfNote": "Enregistrés dans ce navigateur, chacun avec ses couleurs. Ouvrez-en un pour reprendre là où vous en étiez.",
+    "remove": "Retirer {name} des favoris",
+    "open": "Ouvrir"
+  },
+  "de": {
+    "save": "Zu Favoriten hinzufügen",
+    "saved": "In den Favoriten",
+    "unsave": "Aus Favoriten entfernen",
+    "savedStatus": "Mit diesen Farben in deinen Favoriten gespeichert.",
+    "removedStatus": "Aus deinen Favoriten entfernt.",
+    "storageError": "Dieser Browser hat das Speichern nicht erlaubt.",
+    "shelfTitle": "Deine Favoriten",
+    "shelfNote": "In diesem Browser gespeichert, jeder mit seinen eigenen Farben. Öffne einen, um dort weiterzumachen, wo du aufgehört hast.",
+    "remove": "{name} aus Favoriten entfernen",
+    "open": "Öffnen"
+  },
+  "pt": {
+    "save": "Salvar nos favoritos",
+    "saved": "Salvo nos favoritos",
+    "unsave": "Tirar dos favoritos",
+    "savedStatus": "Salvo nos seus favoritos, com estas cores.",
+    "removedStatus": "Removido dos seus favoritos.",
+    "storageError": "Este navegador não deixou salvar.",
+    "shelfTitle": "Seus favoritos",
+    "shelfNote": "Salvos neste navegador, cada um com suas cores. Abra um para continuar de onde parou.",
+    "remove": "Tirar {name} dos favoritos",
+    "open": "Abrir"
+  },
+  "it": {
+    "save": "Aggiungi ai preferiti",
+    "saved": "Nei preferiti",
+    "unsave": "Togli dai preferiti",
+    "savedStatus": "Salvato nei tuoi preferiti, con questi colori.",
+    "removedStatus": "Tolto dai tuoi preferiti.",
+    "storageError": "Questo browser non ha permesso di salvarlo.",
+    "shelfTitle": "I tuoi preferiti",
+    "shelfNote": "Salvati in questo browser, ognuno con i suoi colori. Aprine uno per riprendere da dove avevi lasciato.",
+    "remove": "Togli {name} dai preferiti",
+    "open": "Apri"
+  },
+  "nl": {
+    "save": "Bewaren bij favorieten",
+    "saved": "Bij favorieten",
+    "unsave": "Uit favorieten halen",
+    "savedStatus": "Bewaard bij je favorieten, met deze kleuren.",
+    "removedStatus": "Uit je favorieten gehaald.",
+    "storageError": "Deze browser liet het niet bewaren.",
+    "shelfTitle": "Je favorieten",
+    "shelfNote": "Bewaard in deze browser, elk met zijn eigen kleuren. Open er een om verder te gaan waar je was gebleven.",
+    "remove": "{name} uit favorieten halen",
+    "open": "Openen"
+  }
+}

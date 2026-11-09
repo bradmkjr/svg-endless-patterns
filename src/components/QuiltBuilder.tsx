@@ -6,13 +6,14 @@ import { downloadPng, downloadSvg } from "@/lib/download";
 import { useTrackCustomize } from "@/lib/analytics";
 import { fill, messages } from "@/lib/i18n";
 import copy from "@/i18n/messages/quilt.json";
-import { ARRANGEMENTS, BATTING_OPTIONS, followsDesign, MAX_PALETTE, MAX_SAMPLER_BLOCKS, MAX_SEED, MIN_PALETTE, NOISE_OPTIONS, PLAIN, QUILTING_OPTIONS, quiltRequest, SCRAP_PALETTES, serializeQuiltState, type QuiltState } from "@/lib/quiltState";
+import { ARRANGEMENTS, BATTING_OPTIONS, followsDesign, MAX_PALETTE, MAX_SAMPLER_BLOCKS, MAX_SEED, MIN_PALETTE, NOISE_OPTIONS, PLAIN, QUILTING_OPTIONS, quiltRequest, serializeQuiltState, type QuiltState } from "@/lib/quiltState";
 import { BORDER_OPTIONS, COUNT_OPTIONS, SASHING_OPTIONS, SETTINGS, SIZE_OPTIONS, WOF_OPTIONS } from "@/lib/state";
 import { rememberSeed, syncShareLink } from "@/lib/toolOptions";
 import { useLiveResult } from "@/lib/useLiveResult";
 import { FavoriteButton } from "./FavoriteButton";
 import { OptionNav, useOptionNavigation } from "./OptionNav";
 import { PalettePicker } from "./PalettePicker";
+import { ScrapBaskets } from "./ScrapBaskets";
 import { ToolLoading } from "./ToolLoading";
 import styles from "./BlockBuilder.module.css";
 import q from "./Quilt.module.css";
@@ -283,19 +284,7 @@ export function QuiltBuilder({ locale, option, labels, blockNames, initialState 
                   </label>
                 )}
               </div>
-              <span className={styles.note}>{t.scrapBaskets}</span>
-              <div className={q.baskets}>
-                {SCRAP_PALETTES.map((basket) => (
-                  <button key={basket.id} type="button" className={q.basket} title={fill(t.useScraps, { name: t.scrapNames[basket.id] })} onClick={() => update({ palette: [...basket.colors], sashingColor: basket.colors[0]!, borderColor: basket.border })}>
-                    <span aria-hidden>
-                      {basket.colors.map((c) => (
-                        <span key={c} style={{ background: c }} />
-                      ))}
-                    </span>
-                    {t.scrapNames[basket.id]}
-                  </button>
-                ))}
-              </div>
+              <ScrapBaskets locale={locale} onApply={(basket) => update({ palette: [...basket.colors], sashingColor: basket.colors[0]!, borderColor: basket.border })} />
               <PalettePicker locale={locale} current={state.palette} onApply={(c) => (c.length >= MIN_PALETTE ? update({ palette: c.slice(0, MAX_PALETTE), sashingColor: c[0]!, borderColor: c[1]! }) : undefined)} />
               <Select label={t.noise} value={state.noise} options={NOISE_OPTIONS} format={(n) => `${n}%`} onChange={(noise) => update({ noise })} />
               <p className={styles.note}>{t.noiseNote}</p>

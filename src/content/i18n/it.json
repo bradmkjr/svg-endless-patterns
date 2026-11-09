@@ -17,7 +17,7 @@
         "Blocchi che stanno bene insieme",
         "Tutti i blocchi di una trapunta condividono una palette: il primo tessuto di un blocco prende il primo colore, il secondo il secondo, e così via. È questo che permette a due blocchi di unirsi oltre le cuciture, come gli angoli scuri di [Snowball e Nine Patch](/quilts/snowball-and-nine-patch/) che formano catene. Ripeti un blocco, alternane due (un quadrato in tinta unita è una delle scelte, come in [Ohio Star e quadrati in tinta unita](/quilts/ohio-star-and-plain/)) o fai un sampler fino a dodici, come il [sampler di stelle](/quilts/star-sampler/). La pagina di ogni blocco ora porta al pianificatore con quel blocco nei suoi colori.",
         "Stampe e scampoli",
-        "Le trapunte vere hanno raramente un solo tessuto per colore. Il rumore di stampe sostituisce alcuni tessuti con toni vicini e stampe dello stesso colore: vichy, scozzese, pois, fiori piccoli e grandi, righe e lino. Attiva gli scampoli e ogni pezzo prende uno qualsiasi dei colori, come nei [quadrati charm](/quilts/charm-squares/). Due cesti di scampoli, uno caldo e uno con tutti i blu, sono un modo rapido per cominciare, e rimescolare ridistribuisce gli scampoli.",
+        "Le trapunte vere hanno raramente un solo tessuto per colore. Il rumore di stampe sostituisce alcuni tessuti con toni vicini e stampe dello stesso colore: vichy, scozzese, pois, fiori piccoli e grandi, righe e lino. Attiva gli scampoli e ogni pezzo prende uno qualsiasi dei colori, come nei [quadrati charm](/quilts/charm-squares/). Sei cesti di scampoli, uno per stagione, uno monocromatico e uno con tutti i blu, sono un modo rapido per cominciare, nel pianificatore e nella pagina di ogni blocco, e rimescolare ridistribuisce gli scampoli.",
         "Una trapuntatura da mostrare o nascondere",
         "Scegli stippling, meandri, griglia diagonale, un contorno a un quarto di pollice dentro ogni pezzo o la trapuntatura nel solco della cucitura, e mostra o nascondi le linee per vedere la trapunta con e senza. Lo stippling e i meandri sono disegnati come un'unica linea continua che non si incrocia mai, come vengono cuciti.",
         "Una mappa di taglio da stampare",
@@ -891,6 +891,13 @@
     }
   },
   "changelog": {
+    "Six scrap baskets": {
+      "title": "Sei cesti di scampoli",
+      "items": [
+        "Sei cesti di scampoli per cominciare: primavera, estate, autunno, inverno, monocromatico e tutti i blu",
+        "I cesti di scampoli sono anche nella pagina di ogni blocco"
+      ]
+    },
     "A whole quilt from any block": {
       "title": "Una trapunta intera da qualsiasi blocco",
       "items": [

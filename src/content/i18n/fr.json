@@ -17,7 +17,7 @@
         "Des blocs qui vont ensemble",
         "Tous les blocs d'un quilt partagent une palette : le premier tissu d'un bloc prend la première couleur, le deuxième la deuxième, et ainsi de suite. C'est ce qui permet à deux blocs de se rejoindre par-dessus leurs coutures, comme les coins foncés de [Snowball et Nine Patch](/quilts/snowball-and-nine-patch/) qui forment des chaînes. Répétez un bloc, alternez-en deux (le carré uni fait partie des choix, comme dans [Ohio Star et carrés unis](/quilts/ohio-star-and-plain/)) ou faites un sampler de douze au plus, comme le [sampler d'étoiles](/quilts/star-sampler/). La page de chaque bloc mène maintenant au planificateur, avec ce bloc dans ses couleurs.",
         "Imprimés et chutes",
-        "Les vrais quilts ont rarement un seul tissu par couleur. Le bruit d'imprimés remplace certains tissus par des nuances proches et des imprimés de la même couleur : vichy, écossais, pois, petites et grandes fleurs, rayures et lin. Activez les chutes et chaque pièce prend n'importe quelle couleur, comme dans les [carrés charm](/quilts/charm-squares/). Deux paniers de chutes, l'un chaleureux et l'autre de tous les bleus, permettent de démarrer vite, et remélanger redistribue les chutes.",
+        "Les vrais quilts ont rarement un seul tissu par couleur. Le bruit d'imprimés remplace certains tissus par des nuances proches et des imprimés de la même couleur : vichy, écossais, pois, petites et grandes fleurs, rayures et lin. Activez les chutes et chaque pièce prend n'importe quelle couleur, comme dans les [carrés charm](/quilts/charm-squares/). Six paniers de chutes, un par saison, un monochrome et un de tous les bleus, permettent de démarrer vite, dans le planificateur comme sur la page de chaque bloc, et remélanger redistribue les chutes.",
         "Un quilting à afficher ou masquer",
         "Choisissez le pointillé, les méandres, le quadrillage en diagonale, un contour à un quart de pouce à l'intérieur de chaque pièce ou le piquage dans la couture, et affichez ou masquez les lignes pour voir le quilt avec et sans. Le pointillé et les méandres sont tracés d'une seule ligne continue qui ne se croise jamais, comme on les pique.",
         "Un plan de coupe à imprimer",
@@ -891,6 +891,13 @@
     }
   },
   "changelog": {
+    "Six scrap baskets": {
+      "title": "Six paniers de chutes",
+      "items": [
+        "Six paniers de chutes pour commencer : printemps, été, automne, hiver, monochrome et tous les bleus",
+        "Les paniers de chutes sont aussi sur la page de chaque bloc"
+      ]
+    },
     "A whole quilt from any block": {
       "title": "Un quilt entier à partir de n'importe quel bloc",
       "items": [

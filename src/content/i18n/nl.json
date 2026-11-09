@@ -17,7 +17,7 @@
         "Blokken die samengaan",
         "Alle blokken in een quilt delen één palet: de eerste stof van een blok krijgt de eerste kleur, de tweede de tweede, enzovoort. Daardoor kunnen twee blokken over hun naden heen samenkomen, zoals de donkere hoeken van [Snowball en Nine Patch](/quilts/snowball-and-nine-patch/) kettingen vormen. Herhaal één blok, wissel er twee af (een effen vierkant is een van de keuzes, zoals bij [Ohio Star en effen vierkanten](/quilts/ohio-star-and-plain/)) of maak een sampler van maximaal twaalf, zoals de [sterrensampler](/quilts/star-sampler/). Elke blokpagina linkt nu naar de planner, met dat blok in zijn kleuren.",
         "Prints en lapjes",
-        "Echte quilts hebben zelden één stof per kleur. Printruis ruilt een deel van de stoffen voor nabije tinten en prints in dezelfde kleur: boerenbont, Schotse ruit, stippen, kleine en grote bloemen, strepen en linnen. Zet lapjes aan en elk stukje krijgt een van de kleuren, zoals bij de [charmvierkanten](/quilts/charm-squares/). Twee lapjesmanden, een warme en een met alle blauwtinten, zijn een snel begin, en opnieuw schudden deelt de lapjes opnieuw uit.",
+        "Echte quilts hebben zelden één stof per kleur. Printruis ruilt een deel van de stoffen voor nabije tinten en prints in dezelfde kleur: boerenbont, Schotse ruit, stippen, kleine en grote bloemen, strepen en linnen. Zet lapjes aan en elk stukje krijgt een van de kleuren, zoals bij de [charmvierkanten](/quilts/charm-squares/). Zes lapjesmanden, één voor elk seizoen, een monochrome en een met alle blauwtinten, zijn een snel begin, in de planner en op elke blokpagina, en opnieuw schudden deelt de lapjes opnieuw uit.",
         "Quilten dat je kunt tonen of verbergen",
         "Kies stippling, meanders, een diagonaal ruitpatroon, een contour een kwart inch binnen elk stukje of quilten in de naad, en zet de lijnen aan of uit om de quilt met en zonder te zien. Stippling en meanders worden getekend als één doorlopende lijn die zichzelf nooit kruist, zoals ze gestikt worden.",
         "Een snijkaart om te printen",
@@ -891,6 +891,13 @@
     }
   },
   "changelog": {
+    "Six scrap baskets": {
+      "title": "Zes lapjesmanden",
+      "items": [
+        "Zes lapjesmanden om mee te beginnen: lente, zomer, herfst, winter, monochroom en alle blauwtinten",
+        "De lapjesmanden staan ook op elke blokpagina"
+      ]
+    },
     "A whole quilt from any block": {
       "title": "Een hele quilt vanuit elk blok",
       "items": [

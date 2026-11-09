@@ -17,7 +17,7 @@
         "Bloques que combinan",
         "Todos los bloques de una colcha comparten una paleta: la primera tela de un bloque toma el primer color, la segunda el segundo, y así sucesivamente. Eso permite que dos bloques se unan a través de sus costuras, como las esquinas oscuras de [Snowball y Nine Patch](/quilts/snowball-and-nine-patch/) que forman cadenas. Repite un bloque, alterna dos (un cuadrado liso es una de las opciones, como en [Ohio Star y cuadrados lisos](/quilts/ohio-star-and-plain/)) o haz un muestrario de hasta doce, como el [muestrario de estrellas](/quilts/star-sampler/). La página de cada bloque enlaza ahora con el planificador, con ese bloque en sus colores.",
         "Estampados y retales",
-        "Las colchas de verdad casi nunca usan una sola tela por color. El ruido de estampados cambia algunas telas por tonos cercanos y estampados del mismo color: vichy, cuadros, lunares, flores pequeñas y grandes, rayas y lino. Activa los retales y cada pieza toma cualquiera de los colores, como en los [cuadrados charm](/quilts/charm-squares/). Dos cestas de retales, una cálida y otra con todos los azules, son un buen punto de partida, y volver a mezclar reparte los retales de nuevo.",
+        "Las colchas de verdad casi nunca usan una sola tela por color. El ruido de estampados cambia algunas telas por tonos cercanos y estampados del mismo color: vichy, cuadros, lunares, flores pequeñas y grandes, rayas y lino. Activa los retales y cada pieza toma cualquiera de los colores, como en los [cuadrados charm](/quilts/charm-squares/). Seis cestas de retales, una por estación, una monocroma y otra con todos los azules, son un buen punto de partida, en el planificador y en la página de cada bloque, y volver a mezclar reparte los retales de nuevo.",
         "Un acolchado que puedes mostrar u ocultar",
         "Elige punteado, meandros, cuadrícula diagonal, un contorno a un cuarto de pulgada dentro de cada pieza o pespunte en la costura, y muestra u oculta las líneas para ver la colcha con y sin ellas. El punteado y los meandros se dibujan como una sola línea continua que nunca se cruza, tal como se cosen.",
         "Un mapa de cortes para imprimir",
@@ -891,6 +891,13 @@
     }
   },
   "changelog": {
+    "Six scrap baskets": {
+      "title": "Seis cestas de retales",
+      "items": [
+        "Seis cestas de retales para empezar: primavera, verano, otoño, invierno, monocromo y todos los azules",
+        "Las cestas de retales están también en la página de cada bloque"
+      ]
+    },
     "A whole quilt from any block": {
       "title": "Una colcha entera desde cualquier bloque",
       "items": [

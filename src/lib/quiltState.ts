@@ -22,9 +22,18 @@ export const MIN_PALETTE = 2;
 export const MAX_PALETTE = 6;
 export const MAX_SEED = 999999;
 
-/** Scrap baskets to start from: a warm one of rust, olive and gingham browns, and one of every blue. */
-export const SCRAP_PALETTES: { id: "autumn" | "blues"; colors: string[]; border: string }[] = [
+export type ScrapBasketId = "spring" | "summer" | "autumn" | "winter" | "monochrome" | "blues";
+
+/**
+ * Scrap baskets to start from: the four seasons, a monochrome, and every blue. Like every
+ * palette on the site, each starts with a light ground and then its main color.
+ */
+export const SCRAP_PALETTES: { id: ScrapBasketId; colors: string[]; border: string }[] = [
+  { id: "spring", colors: ["#f6f1e1", "#6f9a5b", "#e8a0b4", "#f2d16b", "#9cc3e0", "#b9a3d6"], border: "#4f7a44" },
+  { id: "summer", colors: ["#fdf6e3", "#1f7a8c", "#f26b4f", "#ffc93c", "#7cc6a4", "#e85d8a"], border: "#1f5f6e" },
   { id: "autumn", colors: ["#c9b27a", "#8a4a2c", "#7d8a3c", "#2a2d3a", "#b5532f", "#6f7f5c"], border: "#5a4636" },
+  { id: "winter", colors: ["#eef2f5", "#2b3a55", "#8a1c2b", "#5d7f73", "#b8c4d0", "#c9a86a"], border: "#1e2a3d" },
+  { id: "monochrome", colors: ["#f4f4f2", "#2b2b2b", "#6e6e6e", "#a8a8a8", "#d4d4d2", "#111111"], border: "#1a1a1a" },
   { id: "blues", colors: ["#9fb6d9", "#1f3f8f", "#2a7fb8", "#1d2a5c", "#3b6fd1", "#2e6f78"], border: "#1d2a5c" },
 ];
 

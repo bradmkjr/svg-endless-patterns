@@ -45,7 +45,11 @@
     "paletteNote": "A block's first fabric takes color 1, its second color 2, and so on around.",
     "scrapBaskets": "Scrap baskets",
     "scrapNames": {
-      "autumn": "Autumn charm squares",
+      "spring": "Spring",
+      "summer": "Summer",
+      "autumn": "Autumn",
+      "winter": "Winter",
+      "monochrome": "Monochrome",
       "blues": "Every blue"
     },
     "useScraps": "Use the {name} colors",
@@ -158,7 +162,11 @@
     "paletteNote": "La primera tela de un bloque toma el color 1, la segunda el color 2, y así sucesivamente.",
     "scrapBaskets": "Cestas de retales",
     "scrapNames": {
-      "autumn": "Cuadrados charm de otoño",
+      "spring": "Primavera",
+      "summer": "Verano",
+      "autumn": "Otoño",
+      "winter": "Invierno",
+      "monochrome": "Monocromo",
       "blues": "Todos los azules"
     },
     "useScraps": "Usar los colores {name}",
@@ -271,7 +279,11 @@
     "paletteNote": "Le premier tissu d'un bloc prend la couleur 1, le deuxième la couleur 2, et ainsi de suite.",
     "scrapBaskets": "Paniers de chutes",
     "scrapNames": {
-      "autumn": "Carrés charm d'automne",
+      "spring": "Printemps",
+      "summer": "Été",
+      "autumn": "Automne",
+      "winter": "Hiver",
+      "monochrome": "Monochrome",
       "blues": "Tous les bleus"
     },
     "useScraps": "Utiliser les couleurs {name}",
@@ -384,7 +396,11 @@
     "paletteNote": "Der erste Stoff eines Blocks bekommt Farbe 1, der zweite Farbe 2 und so weiter.",
     "scrapBaskets": "Restekörbe",
     "scrapNames": {
-      "autumn": "Herbstliche Charm-Quadrate",
+      "spring": "Frühling",
+      "summer": "Sommer",
+      "autumn": "Herbst",
+      "winter": "Winter",
+      "monochrome": "Monochrom",
       "blues": "Alle Blautöne"
     },
     "useScraps": "Die Farben {name} verwenden",
@@ -497,7 +513,11 @@
     "paletteNote": "O primeiro tecido de um bloco fica com a cor 1, o segundo com a cor 2, e assim por diante.",
     "scrapBaskets": "Cestos de retalhos",
     "scrapNames": {
-      "autumn": "Quadrados charm de outono",
+      "spring": "Primavera",
+      "summer": "Verão",
+      "autumn": "Outono",
+      "winter": "Inverno",
+      "monochrome": "Monocromático",
       "blues": "Todos os azuis"
     },
     "useScraps": "Usar as cores {name}",
@@ -610,7 +630,11 @@
     "paletteNote": "Il primo tessuto di un blocco prende il colore 1, il secondo il colore 2, e così via.",
     "scrapBaskets": "Cesti di scampoli",
     "scrapNames": {
-      "autumn": "Quadrati charm d'autunno",
+      "spring": "Primavera",
+      "summer": "Estate",
+      "autumn": "Autunno",
+      "winter": "Inverno",
+      "monochrome": "Monocromatico",
       "blues": "Tutti i blu"
     },
     "useScraps": "Usa i colori {name}",
@@ -723,7 +747,11 @@
     "paletteNote": "De eerste stof van een blok krijgt kleur 1, de tweede kleur 2, enzovoort.",
     "scrapBaskets": "Lapjesmanden",
     "scrapNames": {
-      "autumn": "Herfstige charmvierkanten",
+      "spring": "Lente",
+      "summer": "Zomer",
+      "autumn": "Herfst",
+      "winter": "Winter",
+      "monochrome": "Monochroom",
       "blues": "Alle blauwtinten"
     },
     "useScraps": "De kleuren {name} gebruiken",

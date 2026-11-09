@@ -9,6 +9,7 @@ import { BORDER_OPTIONS, COUNT_OPTIONS, paletteColors, palettesFor, SASHING_OPTI
 import { PalettePicker } from "./PalettePicker";
 import { FavoriteButton } from "./FavoriteButton";
 import { QuiltPromo } from "./QuiltPromo";
+import { ScrapBaskets } from "./ScrapBaskets";
 import { quiltHrefFromBlock } from "@/lib/quiltState";
 import { useLiveResult } from "@/lib/useLiveResult";
 import { ToolLoading } from "./ToolLoading";
@@ -168,6 +169,8 @@ export function BlockBuilder({ block, locale, initialState }: { block: BlockInfo
                 </button>
               ))}
             </div>
+            {/* A block's fabrics take a basket's colors in order, as they would in a quilt. */}
+            <ScrapBaskets locale={locale} onApply={(basket) => update({ colors: paletteColors(block, { id: "flag", colors: basket.colors, sashing: basket.colors[0]!, border: basket.border }) })} />
             <div className={styles.colors}>
               {block.fabrics.map((fabric) => (
                 <label key={fabric.id} className={styles.color}>

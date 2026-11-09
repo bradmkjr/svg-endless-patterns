@@ -17,7 +17,7 @@
         "Blocos que combinam",
         "Todos os blocos de uma colcha compartilham uma paleta: o primeiro tecido de um bloco fica com a primeira cor, o segundo com a segunda, e assim por diante. É isso que deixa dois blocos se unirem por cima das costuras, como os cantos escuros de [Snowball e Nine Patch](/quilts/snowball-and-nine-patch/) que formam correntes. Repita um bloco, alterne dois (um quadrado liso é uma das opções, como em [Ohio Star e quadrados lisos](/quilts/ohio-star-and-plain/)) ou faça um sampler de até doze, como o [sampler de estrelas](/quilts/star-sampler/). A página de cada bloco agora leva ao planejador com esse bloco nas suas cores.",
         "Estampas e retalhos",
-        "Colchas de verdade quase nunca têm um só tecido por cor. O ruído de estampas troca alguns tecidos por tons próximos e estampas da mesma cor: vichy, xadrez, poá, florais pequenos e grandes, listras e linho. Ative os retalhos e cada peça fica com qualquer uma das cores, como nos [quadrados charm](/quilts/charm-squares/). Dois cestos de retalhos, um quente e outro com todos os azuis, são um jeito rápido de começar, e misturar de novo redistribui os retalhos.",
+        "Colchas de verdade quase nunca têm um só tecido por cor. O ruído de estampas troca alguns tecidos por tons próximos e estampas da mesma cor: vichy, xadrez, poá, florais pequenos e grandes, listras e linho. Ative os retalhos e cada peça fica com qualquer uma das cores, como nos [quadrados charm](/quilts/charm-squares/). Seis cestos de retalhos, um para cada estação, um monocromático e outro com todos os azuis, são um jeito rápido de começar, no planejador e na página de cada bloco, e misturar de novo redistribui os retalhos.",
         "Quilting que você mostra ou esconde",
         "Escolha pontilhado, meandros, grade diagonal, um contorno a um quarto de polegada dentro de cada peça ou costura na costura, e mostre ou esconda as linhas para ver a colcha com e sem elas. O pontilhado e os meandros são desenhados como uma única linha contínua que nunca se cruza, do jeito que são costurados.",
         "Um mapa de cortes para imprimir",
@@ -891,6 +891,13 @@
     }
   },
   "changelog": {
+    "Six scrap baskets": {
+      "title": "Seis cestos de retalhos",
+      "items": [
+        "Seis cestos de retalhos para começar: primavera, verão, outono, inverno, monocromático e todos os azuis",
+        "Os cestos de retalhos também estão na página de cada bloco"
+      ]
+    },
     "A whole quilt from any block": {
       "title": "Uma colcha inteira a partir de qualquer bloco",
       "items": [

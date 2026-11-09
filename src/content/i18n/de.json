@@ -17,7 +17,7 @@
         "Blöcke, die zusammenpassen",
         "Alle Blöcke eines Quilts teilen sich eine Palette: Der erste Stoff eines Blocks bekommt die erste Farbe, der zweite die zweite und so weiter. Deshalb können zwei Blöcke über ihre Nähte hinweg zusammenwachsen, so wie die dunklen Ecken von [Snowball und Nine Patch](/quilts/snowball-and-nine-patch/) Ketten bilden. Wiederhole einen Block, wechsle zwei ab (ein einfarbiges Quadrat ist eine der Möglichkeiten, wie bei [Ohio Star und einfarbige Quadrate](/quilts/ohio-star-and-plain/)) oder mach einen Sampler aus bis zu zwölf, wie den [Sternen-Sampler](/quilts/star-sampler/). Jede Blockseite führt jetzt mit diesem Block in seinen Farben zum Planer.",
         "Drucke und Reste",
-        "Echte Quilts haben selten nur einen Stoff pro Farbe. Das Druckrauschen tauscht einige Stoffe gegen nahe Töne und Drucke derselben Farbe: Vichy, Karo, Punkte, kleine und große Blumen, Streifen und Leinen. Schalte Reste ein, und jedes Teil bekommt eine beliebige Farbe, wie bei den [Charm-Quadraten](/quilts/charm-squares/). Zwei Restekörbe, ein warmer und einer mit allen Blautönen, sind ein schneller Anfang, und neu mischen verteilt die Reste noch einmal.",
+        "Echte Quilts haben selten nur einen Stoff pro Farbe. Das Druckrauschen tauscht einige Stoffe gegen nahe Töne und Drucke derselben Farbe: Vichy, Karo, Punkte, kleine und große Blumen, Streifen und Leinen. Schalte Reste ein, und jedes Teil bekommt eine beliebige Farbe, wie bei den [Charm-Quadraten](/quilts/charm-squares/). Sechs Restekörbe, einer für jede Jahreszeit, ein monochromer und einer mit allen Blautönen, sind ein schneller Anfang, im Planer wie auf jeder Blockseite, und neu mischen verteilt die Reste noch einmal.",
         "Quilten zum Ein- und Ausblenden",
         "Wähle Stippling, Mäander, Rautengitter, eine Kontur einen Viertelzoll innerhalb jedes Teils oder Quilten im Nahtschatten, und blende die Linien ein oder aus, um den Quilt mit und ohne sie zu sehen. Stippling und Mäander sind als eine durchgehende Linie gezeichnet, die sich nie kreuzt, so wie sie genäht werden.",
         "Ein Zuschnittplan zum Drucken",
@@ -891,6 +891,13 @@
     }
   },
   "changelog": {
+    "Six scrap baskets": {
+      "title": "Sechs Restekörbe",
+      "items": [
+        "Sechs Restekörbe zum Start: Frühling, Sommer, Herbst, Winter, Monochrom und alle Blautöne",
+        "Die Restekörbe gibt es auch auf jeder Blockseite"
+      ]
+    },
     "A whole quilt from any block": {
       "title": "Ein ganzer Quilt aus jedem Block",
       "items": [

@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import uiCopy from "../i18n/messages/quilt.json";
 import catalog from "./patternCatalog.json";
-import { BLOCK_CHOICES, DEFAULT_DESIGN, followsDesign, DESIGN_IDS, DESIGN_PARAMS, DESIGNS, defaultQuiltState, MAX_PALETTE, parseQuiltState, PLAIN, QUILTING_OPTIONS, quiltFromBlock, quiltHrefFromBlock, serializeQuiltState, type QuiltState } from "./quiltState";
+import { BLOCK_CHOICES, DEFAULT_DESIGN, followsDesign, MIN_PALETTE, SCRAP_PALETTES, DESIGN_IDS, DESIGN_PARAMS, DESIGNS, defaultQuiltState, MAX_PALETTE, parseQuiltState, PLAIN, QUILTING_OPTIONS, quiltFromBlock, quiltHrefFromBlock, serializeQuiltState, type QuiltState } from "./quiltState";
 import { optionHref, TOOL_OPTIONS, withOption } from "./toolOptions";
 
 const LOCALES = ["en", "es", "fr", "de", "pt", "it", "nl"] as const;
@@ -112,5 +112,26 @@ describe("a block's design in the quilt planner", () => {
 
   it("fits every block's fabrics in a quilt palette", () => {
     for (const { fabrics } of catalog.blocks.en) expect(fabrics.length).toBeLessThanOrEqual(MAX_PALETTE);
+  });
+});
+
+describe("scrap baskets", () => {
+  it("offers the four seasons, a monochrome and every blue, each a light ground first", () => {
+    expect(SCRAP_PALETTES.map((b) => b.id)).toEqual(["spring", "summer", "autumn", "winter", "monochrome", "blues"]);
+    const light = (hex: string) => {
+      const n = parseInt(hex.slice(1), 16);
+      return 0.299 * ((n >> 16) & 255) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255);
+    };
+    for (const basket of SCRAP_PALETTES) {
+      expect(basket.colors.length).toBeGreaterThanOrEqual(MIN_PALETTE);
+      expect(basket.colors.length).toBeLessThanOrEqual(MAX_PALETTE);
+      expect(new Set(basket.colors).size, basket.id).toBe(basket.colors.length);
+      // A monochrome's ground can be gray; every other ground is light against its main color.
+      expect(light(basket.colors[0]!), basket.id).toBeGreaterThan(light(basket.colors[1]!));
+    }
+  });
+
+  it.each(LOCALES)("names every basket in %s", (locale) => {
+    for (const { id } of SCRAP_PALETTES) expect(uiCopy[locale].scrapNames[id]).toBeTruthy();
   });
 });

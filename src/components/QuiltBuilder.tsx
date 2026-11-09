@@ -6,7 +6,7 @@ import { downloadPng, downloadSvg } from "@/lib/download";
 import { useTrackCustomize } from "@/lib/analytics";
 import { fill, messages } from "@/lib/i18n";
 import copy from "@/i18n/messages/quilt.json";
-import { ARRANGEMENTS, BATTING_OPTIONS, MAX_PALETTE, MAX_SAMPLER_BLOCKS, MAX_SEED, MIN_PALETTE, NOISE_OPTIONS, PLAIN, QUILTING_OPTIONS, quiltRequest, SCRAP_PALETTES, serializeQuiltState, type QuiltState } from "@/lib/quiltState";
+import { ARRANGEMENTS, BATTING_OPTIONS, followsDesign, MAX_PALETTE, MAX_SAMPLER_BLOCKS, MAX_SEED, MIN_PALETTE, NOISE_OPTIONS, PLAIN, QUILTING_OPTIONS, quiltRequest, SCRAP_PALETTES, serializeQuiltState, type QuiltState } from "@/lib/quiltState";
 import { BORDER_OPTIONS, COUNT_OPTIONS, SASHING_OPTIONS, SETTINGS, SIZE_OPTIONS, WOF_OPTIONS } from "@/lib/state";
 import { rememberSeed, syncShareLink } from "@/lib/toolOptions";
 import { useLiveResult } from "@/lib/useLiveResult";
@@ -156,7 +156,9 @@ export function QuiltBuilder({ locale, option, labels, blockNames, initialState 
   };
   const colorName = (id: string) => (id === "sashing" ? b.sashing : id === "border" ? b.border : fill(t.colorN, { n: Number(id.slice("palette-".length)) + 1 }));
   const setPalette = (palette: string[]) => update({ palette: palette.slice(0, MAX_PALETTE) });
-  const name = labels[state.design] ?? t.h1;
+  // Once its blocks change, a quilt is no longer its design, so it's named for its blocks.
+  const ownDesign = !followsDesign(state);
+  const name = ownDesign ? state.blocks.slice(0, shownBlocks).map(blockName).join(" + ") : (labels[state.design] ?? t.h1);
   const favoriteQuery = new URLSearchParams(query);
   favoriteQuery.delete("d");
   favoriteQuery.set("seed", String(state.seed));
@@ -210,8 +212,18 @@ export function QuiltBuilder({ locale, option, labels, blockNames, initialState 
           <form className={`${styles.controls} no-print`} onSubmit={(e) => e.preventDefault()}>
             <fieldset>
               <legend>{t.blocksHeading}</legend>
-              <Select label={t.design} value={state.design} options={Object.keys(labels)} format={(id) => labels[id]!} onChange={goToDesign} />
-              <p className={styles.note}>{t.designNotes[state.design as keyof Copy["designNotes"]]}</p>
+              <label className={styles.field}>
+                <span>{t.design}</span>
+                <select value={ownDesign ? "" : state.design} onChange={(e) => e.target.value && goToDesign(e.target.value)}>
+                  {ownDesign && <option value="">{t.customDesign}</option>}
+                  {Object.keys(labels).map((id) => (
+                    <option key={id} value={id}>
+                      {labels[id]}
+                    </option>
+                  ))}
+                </select>
+              </label>
+              {!ownDesign && <p className={styles.note}>{t.designNotes[state.design as keyof Copy["designNotes"]]}</p>}
               <Select label={t.arrangement} value={state.arrangement} options={ARRANGEMENTS} format={(id) => t.arrangements[id]} onChange={setArrangement} />
               {state.blocks.slice(0, shownBlocks).map((slug, i) => (
                 <div key={i} className={q.blockRow}>

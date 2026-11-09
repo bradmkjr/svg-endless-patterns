@@ -105,9 +105,12 @@
     "stitchingNote": "About {length} of quilting, which takes about {thread} of 50 wt thread, top and bobbin.",
     "lengthValue": "{yd} yd ({m} m)",
     "weightNote": "Figures used: quilting cotton at 130 g per square meter, cotton batting at 4 oz per square yard, polyester batting at 4.5 oz per running yard 48\" wide, and 50 wt thread. Washing, prints and dense quilting all change it a little.",
-    "openQuilt": "Make a whole quilt with this block",
     "downloadPng": "PNG",
-    "downloadSvg": "SVG"
+    "downloadSvg": "SVG",
+    "ctaTitle": "Make it a whole quilt",
+    "ctaText": "This block, in your colors, size and layout, opens in the quilt planner. Mix in prints, choose stippling or other quilting, print a cut map and see what the finished quilt weighs.",
+    "ctaButton": "Build the full quilt",
+    "customDesign": "Your own design"
   },
   "es": {
     "metaTitle": "Planificador de colchas: diseños completos, telas estampadas, acolchado libre y peso",
@@ -215,9 +218,12 @@
     "stitchingNote": "Unos {length} de acolchado, que necesitan unos {thread} de hilo 50 wt, entre aguja y canilla.",
     "lengthValue": "{m} m ({yd} yd)",
     "weightNote": "Cifras usadas: algodón de patchwork a 130 g por metro cuadrado, guata de algodón a 4 oz por yarda cuadrada, guata de poliéster a 4,5 oz por yarda lineal de 48\" de ancho, e hilo 50 wt. El lavado, los estampados y un acolchado denso lo cambian un poco.",
-    "openQuilt": "Hacer una colcha entera con este bloque",
     "downloadPng": "PNG",
-    "downloadSvg": "SVG"
+    "downloadSvg": "SVG",
+    "ctaTitle": "Conviértelo en una colcha entera",
+    "ctaText": "Este bloque, con tus colores, tamaño y diseño, se abre en el planificador de colchas. Mezcla estampados, elige punteado u otro acolchado, imprime un mapa de cortes y descubre cuánto pesará la colcha terminada.",
+    "ctaButton": "Crear la colcha entera",
+    "customDesign": "Tu propio diseño"
   },
   "fr": {
     "metaTitle": "Planificateur de quilt : quilts entiers, tissus imprimés, quilting libre et poids",
@@ -325,9 +331,12 @@
     "stitchingNote": "Environ {length} de quilting, soit environ {thread} de fil 50 wt, dessus et canette.",
     "lengthValue": "{m} m ({yd} yd)",
     "weightNote": "Valeurs utilisées : coton de patchwork à 130 g par mètre carré, molleton de coton à 4 oz par yard carré, molleton polyester à 4,5 oz par yard courant de 48\" de large, et fil 50 wt. Le lavage, les imprimés et un quilting dense le font un peu varier.",
-    "openQuilt": "Faire un quilt entier avec ce bloc",
     "downloadPng": "PNG",
-    "downloadSvg": "SVG"
+    "downloadSvg": "SVG",
+    "ctaTitle": "Faites-en un quilt entier",
+    "ctaText": "Ce bloc s'ouvre dans le planificateur de quilt, avec vos couleurs, votre taille et votre disposition. Mêlez des imprimés, choisissez le pointillé ou un autre quilting, imprimez un plan de coupe et découvrez le poids du quilt terminé.",
+    "ctaButton": "Créer le quilt entier",
+    "customDesign": "Votre propre modèle"
   },
   "de": {
     "metaTitle": "Quiltplaner: ganze Quilts, Patchwork-Drucke, Freihandquilten und Gewicht",
@@ -435,9 +444,12 @@
     "stitchingNote": "Etwa {length} Quiltlinien, die etwa {thread} 50-wt-Garn brauchen, Ober- und Unterfaden.",
     "lengthValue": "{m} m ({yd} yd)",
     "weightNote": "Verwendete Werte: Patchworkbaumwolle mit 130 g pro Quadratmeter, Baumwollvlies mit 4 oz pro Quadratyard, Polyestervlies mit 4,5 oz pro laufendem Yard bei 48\" Breite und Garn 50 wt. Waschen, Drucke und dichtes Quilten ändern es etwas.",
-    "openQuilt": "Einen ganzen Quilt mit diesem Block machen",
     "downloadPng": "PNG",
-    "downloadSvg": "SVG"
+    "downloadSvg": "SVG",
+    "ctaTitle": "Mach einen ganzen Quilt daraus",
+    "ctaText": "Dieser Block öffnet sich mit deinen Farben, deiner Größe und deinem Aufbau im Quiltplaner. Mische Drucke dazu, wähle Stippling oder ein anderes Quiltmuster, drucke einen Zuschnittplan und sieh, wie viel der fertige Quilt wiegt.",
+    "ctaButton": "Den ganzen Quilt planen",
+    "customDesign": "Dein eigener Entwurf"
   },
   "pt": {
     "metaTitle": "Planejador de colchas: colchas inteiras, estampas de retalhos, quilting livre e peso",
@@ -545,9 +557,12 @@
     "stitchingNote": "Cerca de {length} de quilting, que pedem cerca de {thread} de linha 50 wt, entre agulha e bobina.",
     "lengthValue": "{m} m ({yd} yd)",
     "weightNote": "Valores usados: tricoline de algodão a 130 g por metro quadrado, manta de algodão a 4 oz por jarda quadrada, manta de poliéster a 4,5 oz por jarda linear com 48\" de largura, e linha 50 wt. Lavagem, estampas e quilting denso mudam um pouco.",
-    "openQuilt": "Fazer uma colcha inteira com este bloco",
     "downloadPng": "PNG",
-    "downloadSvg": "SVG"
+    "downloadSvg": "SVG",
+    "ctaTitle": "Transforme numa colcha inteira",
+    "ctaText": "Este bloco abre no planejador de colchas, com suas cores, tamanho e layout. Misture estampas, escolha pontilhado ou outro quilting, imprima um mapa de cortes e veja quanto a colcha pronta vai pesar.",
+    "ctaButton": "Montar a colcha inteira",
+    "customDesign": "Seu próprio modelo"
   },
   "it": {
     "metaTitle": "Pianificatore di trapunte: trapunte intere, stampe di scampoli, trapuntatura a mano libera e peso",
@@ -655,9 +670,12 @@
     "stitchingNote": "Circa {length} di trapuntatura, che richiedono circa {thread} di filo 50 wt, tra ago e spolina.",
     "lengthValue": "{m} m ({yd} yd)",
     "weightNote": "Valori usati: cotone da patchwork a 130 g per metro quadrato, imbottitura di cotone a 4 oz per iarda quadrata, imbottitura di poliestere a 4,5 oz per iarda lineare larga 48\", e filo 50 wt. Lavaggi, stampe e trapuntatura fitta lo cambiano un po'.",
-    "openQuilt": "Fai una trapunta intera con questo blocco",
     "downloadPng": "PNG",
-    "downloadSvg": "SVG"
+    "downloadSvg": "SVG",
+    "ctaTitle": "Trasformalo in una trapunta intera",
+    "ctaText": "Questo blocco si apre nel pianificatore di trapunte, con i tuoi colori, la tua misura e la tua disposizione. Mescola le stampe, scegli lo stippling o un'altra trapuntatura, stampa una mappa di taglio e scopri quanto peserà la trapunta finita.",
+    "ctaButton": "Crea la trapunta intera",
+    "customDesign": "Il tuo modello"
   },
   "nl": {
     "metaTitle": "Quiltplanner: hele quilts, lapjesprints, vrij quilten en gewicht",
@@ -765,8 +783,11 @@
     "stitchingNote": "Ongeveer {length} quiltlijn, die ongeveer {thread} garen van 50 wt vraagt, boven- en onderdraad.",
     "lengthValue": "{m} m ({yd} yd)",
     "weightNote": "Gebruikte waarden: quiltkatoen van 130 g per vierkante meter, katoenen tussenvulling van 4 oz per vierkante yard, polyester tussenvulling van 4,5 oz per strekkende yard bij 48\" breed, en garen van 50 wt. Wassen, prints en dicht quilten veranderen het een beetje.",
-    "openQuilt": "Een hele quilt maken met dit blok",
     "downloadPng": "PNG",
-    "downloadSvg": "SVG"
+    "downloadSvg": "SVG",
+    "ctaTitle": "Maak er een hele quilt van",
+    "ctaText": "Dit blok opent in de quiltplanner, met jouw kleuren, maat en indeling. Meng prints erdoor, kies stippling of ander quiltwerk, print een snijkaart en zie hoeveel de afgewerkte quilt weegt.",
+    "ctaButton": "Bouw de hele quilt",
+    "customDesign": "Je eigen ontwerp"
   }
 }

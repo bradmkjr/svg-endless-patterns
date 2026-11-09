@@ -1,5 +1,6 @@
 import catalog from "./patternCatalog.json";
-import type { Locale, Setting } from "./generator";
+import type { BlockInfo, Locale, PatternRequest, Setting } from "./generator";
+import { localePath } from "./i18n";
 import { localeAccent } from "./localeAccent";
 import type { QuiltArrangement, QuiltBatting, QuiltQuilting, QuiltRequest } from "./quiltTypes";
 import { BORDER_OPTIONS, COUNT_OPTIONS, PALETTES, SASHING_OPTIONS, SETTINGS, SIZE_OPTIONS, WOF_OPTIONS } from "./state";
@@ -71,6 +72,12 @@ export function defaultQuiltState(locale: Locale = "en", design = DEFAULT_DESIGN
     showQuilting: true,
     batting: "cotton",
   };
+}
+
+/** Whether the quilt is still its design's blocks in its design's arrangement, or has become its own. */
+export function followsDesign(state: Pick<QuiltState, "design" | "arrangement" | "blocks">): boolean {
+  const { settings } = designOf(state.design);
+  return state.arrangement === settings.arrangement && state.blocks.join(".") === settings.blocks.join(".");
 }
 
 /** What the API is sent: the state without the design's name. */
@@ -159,7 +166,32 @@ export function serializeQuiltState(state: QuiltState): string {
   return params.toString();
 }
 
-/** The colors a block's fabrics take in a quilt, so a block's own colors can open the quilt builder. */
-export function paletteFromBlock(fabricIds: string[], colors: Record<string, string>): string[] {
-  return fabricIds.map((id) => colors[id]).filter((c): c is string => !!c).slice(0, MAX_PALETTE);
+/**
+ * A block builder's design as a quilt: that block, repeated, in its colors and layout. Its fabrics
+ * become the palette in their own order, so each keeps its color, and the block's size, counts,
+ * sashing, border, direction and fabric width all carry over.
+ */
+export function quiltFromBlock(block: Pick<BlockInfo, "slug" | "fabrics">, request: PatternRequest): QuiltState {
+  const locale = request.locale ?? "en";
+  return {
+    ...defaultQuiltState(locale),
+    arrangement: "repeat",
+    blocks: [block.slug],
+    size: request.size,
+    cols: request.cols,
+    rows: request.rows,
+    sashing: request.sashing,
+    border: request.border,
+    setting: request.setting,
+    wof: request.wof,
+    palette: block.fabrics.map((fabric) => request.colors[fabric.id]!).slice(0, MAX_PALETTE),
+    sashingColor: request.colors.sashing!,
+    borderColor: request.colors.border!,
+  };
+}
+
+/** The quilt planner's link for a block builder's design, in the block builder's language. */
+export function quiltHrefFromBlock(block: Pick<BlockInfo, "slug" | "fabrics">, request: PatternRequest): string {
+  const query = serializeQuiltState(quiltFromBlock(block, request));
+  return `${localePath(request.locale ?? "en", "/quilts/")}${query ? `?${query}` : ""}`;
 }

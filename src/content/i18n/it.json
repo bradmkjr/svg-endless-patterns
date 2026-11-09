@@ -891,6 +891,12 @@
     }
   },
   "changelog": {
+    "A whole quilt from any block": {
+      "title": "Una trapunta intera da qualsiasi blocco",
+      "items": [
+        "La pagina di ogni blocco mostra la sua trapunta intera, con un pulsante che la apre nel pianificatore di trapunte, colori, misura e disposizione compresi"
+      ]
+    },
     "Whole quilts, quilting, a cut map and favorites": {
       "title": "Trapunte intere, trapuntatura, mappa di taglio e preferiti",
       "items": [

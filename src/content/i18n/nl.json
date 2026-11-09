@@ -891,6 +891,12 @@
     }
   },
   "changelog": {
+    "A whole quilt from any block": {
+      "title": "Een hele quilt vanuit elk blok",
+      "items": [
+        "Elke blokpagina toont zijn hele quilt, met een knop die hem met kleuren, maat en indeling en al in de quiltplanner opent"
+      ]
+    },
     "Whole quilts, quilting, a cut map and favorites": {
       "title": "Hele quilts, quilten, een snijkaart en favorieten",
       "items": [

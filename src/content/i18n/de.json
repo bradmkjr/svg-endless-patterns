@@ -891,6 +891,12 @@
     }
   },
   "changelog": {
+    "A whole quilt from any block": {
+      "title": "Ein ganzer Quilt aus jedem Block",
+      "items": [
+        "Jede Blockseite zeigt ihren ganzen Quilt, mit einer Schaltfläche, die ihn samt Farben, Größe und Aufbau im Quiltplaner öffnet"
+      ]
+    },
     "Whole quilts, quilting, a cut map and favorites": {
       "title": "Ganze Quilts, Quilten, Zuschnittplan und Favoriten",
       "items": [

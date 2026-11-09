@@ -891,6 +891,12 @@
     }
   },
   "changelog": {
+    "A whole quilt from any block": {
+      "title": "Un quilt entier à partir de n'importe quel bloc",
+      "items": [
+        "La page de chaque bloc montre son quilt entier, avec un bouton qui l'ouvre dans le planificateur de quilt, couleurs, taille et disposition comprises"
+      ]
+    },
     "Whole quilts, quilting, a cut map and favorites": {
       "title": "Quilts entiers, quilting, plan de coupe et favoris",
       "items": [

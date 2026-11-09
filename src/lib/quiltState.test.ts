@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import uiCopy from "../i18n/messages/quilt.json";
-import { BLOCK_CHOICES, DEFAULT_DESIGN, DESIGN_IDS, DESIGN_PARAMS, DESIGNS, defaultQuiltState, parseQuiltState, PLAIN, QUILTING_OPTIONS, serializeQuiltState, type QuiltState } from "./quiltState";
+import catalog from "./patternCatalog.json";
+import { BLOCK_CHOICES, DEFAULT_DESIGN, followsDesign, DESIGN_IDS, DESIGN_PARAMS, DESIGNS, defaultQuiltState, MAX_PALETTE, parseQuiltState, PLAIN, QUILTING_OPTIONS, quiltFromBlock, quiltHrefFromBlock, serializeQuiltState, type QuiltState } from "./quiltState";
 import { optionHref, TOOL_OPTIONS, withOption } from "./toolOptions";
 
 const LOCALES = ["en", "es", "fr", "de", "pt", "it", "nl"] as const;
@@ -78,5 +79,38 @@ describe("quilt state", () => {
   it("gives every language the same colors except one secondary", () => {
     expect(new Set(LOCALES.map((l) => defaultQuiltState(l).palette.join())).size).toBe(7);
     for (const l of LOCALES) expect(defaultQuiltState(l).palette[1]).toBe(defaultQuiltState().palette[1]);
+  });
+});
+
+describe("a block's design in the quilt planner", () => {
+  const block = { slug: "ohio-star", fabrics: [{ id: "ground", label: "" }, { id: "star", label: "" }, { id: "center", label: "" }] };
+  const request = {
+    locale: "fr" as const,
+    size: 10.5,
+    cols: 3,
+    rows: 6,
+    sashing: 1.5,
+    border: 2,
+    setting: "quadrants" as const,
+    wof: 42,
+    seams: true,
+    colors: { ground: "#ffffff", star: "#112233", center: "#aa0000", sashing: "#eeeeee", border: "#222222" },
+  };
+
+  it("puts the block first and carries every setting and color over, its fabrics in order", () => {
+    const href = quiltHrefFromBlock(block, request);
+    expect(href.startsWith("/fr/quilts/?")).toBe(true);
+    const state = parseQuiltState(new URLSearchParams(href.split("?")[1]), "fr");
+    expect(state).toMatchObject({ arrangement: "repeat", blocks: ["ohio-star"], size: 10.5, cols: 3, rows: 6, sashing: 1.5, border: 2, setting: "quadrants", wof: 42, palette: ["#ffffff", "#112233", "#aa0000"], sashingColor: "#eeeeee", borderColor: "#222222" });
+    expect(state).toEqual({ ...quiltFromBlock(block, request), seed: state.seed });
+  });
+
+  it("is its own design once the block is in it", () => {
+    expect(followsDesign(quiltFromBlock(block, request))).toBe(false);
+    expect(followsDesign(defaultQuiltState("fr"))).toBe(true);
+  });
+
+  it("fits every block's fabrics in a quilt palette", () => {
+    for (const { fabrics } of catalog.blocks.en) expect(fabrics.length).toBeLessThanOrEqual(MAX_PALETTE);
   });
 });

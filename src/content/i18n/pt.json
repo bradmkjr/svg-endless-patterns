@@ -891,6 +891,12 @@
     }
   },
   "changelog": {
+    "A whole quilt from any block": {
+      "title": "Uma colcha inteira a partir de qualquer bloco",
+      "items": [
+        "A página de cada bloco mostra a colcha inteira, com um botão que a abre no planejador de colchas, com cores, tamanho e layout incluídos"
+      ]
+    },
     "Whole quilts, quilting, a cut map and favorites": {
       "title": "Colchas inteiras, quilting, mapa de cortes e favoritos",
       "items": [

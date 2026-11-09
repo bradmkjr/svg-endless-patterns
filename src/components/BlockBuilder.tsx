@@ -8,9 +8,8 @@ import { useTrackCustomize } from "@/lib/analytics";
 import { BORDER_OPTIONS, COUNT_OPTIONS, paletteColors, palettesFor, SASHING_OPTIONS, serializeState, SETTINGS, SIZE_OPTIONS, WOF_OPTIONS } from "@/lib/state";
 import { PalettePicker } from "./PalettePicker";
 import { FavoriteButton } from "./FavoriteButton";
-import Link from "next/link";
-import { localePath } from "@/lib/i18n";
-import quiltCopy from "@/i18n/messages/quilt.json";
+import { QuiltPromo } from "./QuiltPromo";
+import { quiltHrefFromBlock } from "@/lib/quiltState";
 import { useLiveResult } from "@/lib/useLiveResult";
 import { ToolLoading } from "./ToolLoading";
 import styles from "./BlockBuilder.module.css";
@@ -94,8 +93,8 @@ export function BlockBuilder({ block, locale, initialState }: { block: BlockInfo
   /** The picture to download: the one on screen, or the same design asked for again in flat color. */
   const downloadSvgText = async () => (finish === "plain" ? (await generatePattern(block.slug, { ...state, finish })).svg[view] : currentSvg);
   const query = serializeState(block, state);
-  // The quilt planner, with this block repeated in these colors.
-  const quiltHref = `${localePath(locale, "/quilts/")}?${new URLSearchParams({ arr: "repeat", a: block.slug, p: block.fabrics.map((f) => state.colors[f.id]!.slice(1)).slice(0, 6).join("-"), sc: state.colors.sashing!.slice(1), bc: state.colors.border!.slice(1) })}`;
+  // The quilt planner, with this block first and every setting carried over.
+  const quiltHref = quiltHrefFromBlock(block, state);
   const tileUrl = `data:image/svg+xml,${encodeURIComponent(result?.svg.tile ?? "")}`;
   const tileStyle: CSSProperties = { backgroundImage: `url("${tileUrl}")` };
 
@@ -154,9 +153,6 @@ export function BlockBuilder({ block, locale, initialState }: { block: BlockInfo
           </div>
           <p className={styles.status} role="status">
             {status}
-          </p>
-          <p className="no-print">
-            <Link href={quiltHref}>{quiltCopy[locale].openQuilt}</Link>
           </p>
         </section>
 
@@ -226,6 +222,8 @@ export function BlockBuilder({ block, locale, initialState }: { block: BlockInfo
           </fieldset>
         </form>
       </div>
+
+      <QuiltPromo href={quiltHref} quiltSvg={result?.svg.quilt} locale={locale} />
 
       {result?.hasRoundedCuts && (
         <p className={styles.notice}>

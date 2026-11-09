@@ -14,7 +14,12 @@
       "log-cabin-quarters": "Log Cabin in quarters",
       "churn-dash-sashed": "Churn Dash with sashing",
       "star-sampler": "Star sampler",
-      "charm-squares": "Charm squares"
+      "charm-squares": "Charm squares",
+      "scrappy-pinwheels": "Scrappy pinwheels",
+      "rail-fence-turned": "Rail Fence, turned",
+      "hearts-and-plain": "Hearts and plain squares",
+      "bow-ties-turned": "Bow Ties, turned",
+      "trip-around-the-world": "Trip Around the World"
     },
     "designNotes": {
       "snowball-and-nine-patch": "Nine Patches and Snowballs in turn: the dark corners meet across the seams and run in chains on the diagonal.",
@@ -23,7 +28,12 @@
       "log-cabin-quarters": "Log Cabin blocks turned a different way in each quarter of the quilt, so their light and dark halves make one large pattern across it.",
       "churn-dash-sashed": "Churn Dash blocks set apart by sashing, with some of the fabrics swapped for scraps.",
       "star-sampler": "A different star in each block, in turn, set with sashing.",
-      "charm-squares": "Small squares of every color and print, like a pack of charm squares: set scrappy, so every piece is different."
+      "charm-squares": "Small squares of every color and print, like a pack of charm squares: set scrappy, so every piece is different.",
+      "scrappy-pinwheels": "Pinwheels in summer brights, every blade cut from a different scrap, so no two blocks spin alike.",
+      "rail-fence-turned": "Rail Fence blocks, every other one turned a quarter, so the rails step across the quilt in zigzags.",
+      "hearts-and-plain": "Appliqué hearts set apart by plain squares, in spring colors, with stippling over the open background.",
+      "bow-ties-turned": "Bow Tie blocks, every other one turned, so the background between the ties reads as a field of octagons.",
+      "trip-around-the-world": "Trip Around the World blocks side by side: each block's rings of squares meet its neighbors' to make new rings between them."
     },
     "blocksHeading": "Blocks",
     "arrangement": "Arrangement",
@@ -131,7 +141,12 @@
       "log-cabin-quarters": "Log Cabin por cuartos",
       "churn-dash-sashed": "Churn Dash con sashing",
       "star-sampler": "Muestrario de estrellas",
-      "charm-squares": "Cuadrados charm"
+      "charm-squares": "Cuadrados charm",
+      "scrappy-pinwheels": "Molinillos de retales",
+      "rail-fence-turned": "Rail Fence, girado",
+      "hearts-and-plain": "Corazones y cuadrados lisos",
+      "bow-ties-turned": "Bow Tie, girado",
+      "trip-around-the-world": "Trip Around the World"
     },
     "designNotes": {
       "snowball-and-nine-patch": "Nine Patch y Snowball alternados: las esquinas oscuras se encuentran a través de las costuras y forman cadenas en diagonal.",
@@ -140,7 +155,12 @@
       "log-cabin-quarters": "Bloques Log Cabin girados de forma distinta en cada cuarto de la colcha, para que sus mitades claras y oscuras formen un gran dibujo de lado a lado.",
       "churn-dash-sashed": "Bloques Churn Dash separados por sashing, con algunas telas cambiadas por retales.",
       "star-sampler": "Una estrella distinta en cada bloque, por turnos, con sashing.",
-      "charm-squares": "Cuadrados pequeños de todos los colores y estampados, como un paquete de cuadrados charm: con retales, cada pieza es distinta."
+      "charm-squares": "Cuadrados pequeños de todos los colores y estampados, como un paquete de cuadrados charm: con retales, cada pieza es distinta.",
+      "scrappy-pinwheels": "Molinillos en colores de verano, cada aspa cortada de un retal distinto, para que no haya dos bloques que giren igual.",
+      "rail-fence-turned": "Bloques Rail Fence, uno de cada dos girado un cuarto, para que las tiras avancen en zigzag por la colcha.",
+      "hearts-and-plain": "Corazones aplicados separados por cuadrados lisos, en colores de primavera, con punteado sobre el fondo abierto.",
+      "bow-ties-turned": "Bloques Bow Tie, uno de cada dos girado, para que el fondo entre las pajaritas se vea como un campo de octógonos.",
+      "trip-around-the-world": "Bloques Trip Around the World uno al lado de otro: los anillos de cuadrados de cada bloque se encuentran con los de sus vecinos y forman nuevos anillos entre ellos."
     },
     "blocksHeading": "Bloques",
     "arrangement": "Disposición",
@@ -248,7 +268,12 @@
       "log-cabin-quarters": "Log Cabin en quartiers",
       "churn-dash-sashed": "Churn Dash avec sashing",
       "star-sampler": "Sampler d'étoiles",
-      "charm-squares": "Carrés charm"
+      "charm-squares": "Carrés charm",
+      "scrappy-pinwheels": "Moulinets en chutes",
+      "rail-fence-turned": "Rail Fence, tourné",
+      "hearts-and-plain": "Cœurs et carrés unis",
+      "bow-ties-turned": "Bow Tie, tourné",
+      "trip-around-the-world": "Trip Around the World"
     },
     "designNotes": {
       "snowball-and-nine-patch": "Nine Patch et Snowball en alternance : les coins foncés se rejoignent par-dessus les coutures et forment des chaînes en diagonale.",
@@ -257,7 +282,12 @@
       "log-cabin-quarters": "Des blocs Log Cabin tournés différemment dans chaque quart du quilt, pour que leurs moitiés claires et foncées forment un grand motif d'un bord à l'autre.",
       "churn-dash-sashed": "Des blocs Churn Dash séparés par du sashing, certains tissus remplacés par des chutes.",
       "star-sampler": "Une étoile différente dans chaque bloc, à tour de rôle, avec du sashing.",
-      "charm-squares": "De petits carrés de toutes les couleurs et de tous les imprimés, comme un paquet de carrés charm : en mode chutes, chaque pièce est différente."
+      "charm-squares": "De petits carrés de toutes les couleurs et de tous les imprimés, comme un paquet de carrés charm : en mode chutes, chaque pièce est différente.",
+      "scrappy-pinwheels": "Des moulinets aux couleurs vives de l'été, chaque pale coupée dans une chute différente, pour qu'aucun bloc ne tourne pareil.",
+      "rail-fence-turned": "Des blocs Rail Fence, un sur deux tourné d'un quart, pour que les bandes avancent en zigzag sur le quilt.",
+      "hearts-and-plain": "Des cœurs appliqués séparés par des carrés unis, aux couleurs du printemps, avec du pointillé sur le fond dégagé.",
+      "bow-ties-turned": "Des blocs Bow Tie, un sur deux tourné, pour que le fond entre les nœuds se lise comme un champ d'octogones.",
+      "trip-around-the-world": "Des blocs Trip Around the World côte à côte : les anneaux de carrés de chaque bloc rejoignent ceux de ses voisins et forment de nouveaux anneaux entre eux."
     },
     "blocksHeading": "Blocs",
     "arrangement": "Disposition",
@@ -365,7 +395,12 @@
       "log-cabin-quarters": "Log Cabin in Vierteln",
       "churn-dash-sashed": "Churn Dash mit Sashing",
       "star-sampler": "Sternen-Sampler",
-      "charm-squares": "Charm-Quadrate"
+      "charm-squares": "Charm-Quadrate",
+      "scrappy-pinwheels": "Windräder aus Resten",
+      "rail-fence-turned": "Rail Fence, gedreht",
+      "hearts-and-plain": "Herzen und einfarbige Quadrate",
+      "bow-ties-turned": "Bow Tie, gedreht",
+      "trip-around-the-world": "Trip Around the World"
     },
     "designNotes": {
       "snowball-and-nine-patch": "Nine Patch und Snowball im Wechsel: Die dunklen Ecken treffen sich über die Nähte und laufen als Ketten diagonal.",
@@ -374,7 +409,12 @@
       "log-cabin-quarters": "Log-Cabin-Blöcke, in jedem Viertel des Quilts anders gedreht, sodass ihre hellen und dunklen Hälften ein großes Muster über den ganzen Quilt bilden.",
       "churn-dash-sashed": "Churn-Dash-Blöcke mit Sashing dazwischen, einige Stoffe gegen Reste getauscht.",
       "star-sampler": "In jedem Block ein anderer Stern, der Reihe nach, mit Sashing.",
-      "charm-squares": "Kleine Quadrate in allen Farben und Drucken, wie ein Paket Charm-Quadrate: aus Resten, jedes Teil anders."
+      "charm-squares": "Kleine Quadrate in allen Farben und Drucken, wie ein Paket Charm-Quadrate: aus Resten, jedes Teil anders.",
+      "scrappy-pinwheels": "Windräder in sommerlichen Farben, jeder Flügel aus einem anderen Rest geschnitten, sodass sich keine zwei Blöcke gleich drehen.",
+      "rail-fence-turned": "Rail-Fence-Blöcke, jeder zweite um eine Vierteldrehung gedreht, sodass die Streifen im Zickzack über den Quilt laufen.",
+      "hearts-and-plain": "Applizierte Herzen, getrennt durch einfarbige Quadrate, in Frühlingsfarben, mit Stippling auf dem freien Hintergrund.",
+      "bow-ties-turned": "Bow-Tie-Blöcke, jeder zweite gedreht, sodass der Hintergrund zwischen den Fliegen wie ein Feld aus Achtecken wirkt.",
+      "trip-around-the-world": "Trip-Around-the-World-Blöcke nebeneinander: Die Quadratringe jedes Blocks treffen auf die der Nachbarn und bilden dazwischen neue Ringe."
     },
     "blocksHeading": "Blöcke",
     "arrangement": "Anordnung",
@@ -482,7 +522,12 @@
       "log-cabin-quarters": "Log Cabin em quartos",
       "churn-dash-sashed": "Churn Dash com sashing",
       "star-sampler": "Sampler de estrelas",
-      "charm-squares": "Quadrados charm"
+      "charm-squares": "Quadrados charm",
+      "scrappy-pinwheels": "Cata-ventos de retalhos",
+      "rail-fence-turned": "Rail Fence, virado",
+      "hearts-and-plain": "Corações e quadrados lisos",
+      "bow-ties-turned": "Bow Tie, virado",
+      "trip-around-the-world": "Trip Around the World"
     },
     "designNotes": {
       "snowball-and-nine-patch": "Nine Patch e Snowball alternados: os cantos escuros se encontram por cima das costuras e formam correntes na diagonal.",
@@ -491,7 +536,12 @@
       "log-cabin-quarters": "Blocos Log Cabin virados de um jeito diferente em cada quarto da colcha, para que as metades claras e escuras formem um grande desenho de ponta a ponta.",
       "churn-dash-sashed": "Blocos Churn Dash separados por sashing, com alguns tecidos trocados por retalhos.",
       "star-sampler": "Uma estrela diferente em cada bloco, em sequência, com sashing.",
-      "charm-squares": "Quadradinhos de todas as cores e estampas, como um pacote de quadrados charm: com retalhos, cada peça é diferente."
+      "charm-squares": "Quadradinhos de todas as cores e estampas, como um pacote de quadrados charm: com retalhos, cada peça é diferente.",
+      "scrappy-pinwheels": "Cata-ventos em cores de verão, cada pá cortada de um retalho diferente, para que nenhum bloco gire igual.",
+      "rail-fence-turned": "Blocos Rail Fence, um sim e outro não virado um quarto, para que as tiras avancem em zigue-zague pela colcha.",
+      "hearts-and-plain": "Corações aplicados separados por quadrados lisos, em cores de primavera, com pontilhado sobre o fundo aberto.",
+      "bow-ties-turned": "Blocos Bow Tie, um sim e outro não virado, para que o fundo entre as gravatas pareça um campo de octógonos.",
+      "trip-around-the-world": "Blocos Trip Around the World lado a lado: os anéis de quadrados de cada bloco encontram os dos vizinhos e formam novos anéis entre eles."
     },
     "blocksHeading": "Blocos",
     "arrangement": "Arranjo",
@@ -599,7 +649,12 @@
       "log-cabin-quarters": "Log Cabin a quarti",
       "churn-dash-sashed": "Churn Dash con strisce di separazione",
       "star-sampler": "Sampler di stelle",
-      "charm-squares": "Quadrati charm"
+      "charm-squares": "Quadrati charm",
+      "scrappy-pinwheels": "Girandole di scampoli",
+      "rail-fence-turned": "Rail Fence, girato",
+      "hearts-and-plain": "Cuori e quadrati in tinta unita",
+      "bow-ties-turned": "Bow Tie, girato",
+      "trip-around-the-world": "Trip Around the World"
     },
     "designNotes": {
       "snowball-and-nine-patch": "Nine Patch e Snowball alternati: gli angoli scuri si incontrano oltre le cuciture e formano catene in diagonale.",
@@ -608,7 +663,12 @@
       "log-cabin-quarters": "Blocchi Log Cabin girati in modo diverso in ogni quarto della trapunta, così le metà chiare e scure formano un unico grande disegno da un capo all'altro.",
       "churn-dash-sashed": "Blocchi Churn Dash separati da strisce, con alcuni tessuti sostituiti da scampoli.",
       "star-sampler": "Una stella diversa in ogni blocco, a turno, con strisce di separazione.",
-      "charm-squares": "Quadratini di ogni colore e stampa, come un pacchetto di quadrati charm: con gli scampoli, ogni pezzo è diverso."
+      "charm-squares": "Quadratini di ogni colore e stampa, come un pacchetto di quadrati charm: con gli scampoli, ogni pezzo è diverso.",
+      "scrappy-pinwheels": "Girandole nei colori vivaci dell'estate, ogni pala tagliata da uno scampolo diverso, così nessun blocco gira uguale.",
+      "rail-fence-turned": "Blocchi Rail Fence, uno sì e uno no girato di un quarto, così le strisce avanzano a zigzag sulla trapunta.",
+      "hearts-and-plain": "Cuori applicati separati da quadrati in tinta unita, nei colori della primavera, con lo stippling sullo sfondo libero.",
+      "bow-ties-turned": "Blocchi Bow Tie, uno sì e uno no girato, così lo sfondo tra i papillon si legge come un campo di ottagoni.",
+      "trip-around-the-world": "Blocchi Trip Around the World affiancati: gli anelli di quadrati di ogni blocco incontrano quelli dei vicini e formano nuovi anelli tra loro."
     },
     "blocksHeading": "Blocchi",
     "arrangement": "Disposizione",
@@ -716,7 +776,12 @@
       "log-cabin-quarters": "Log Cabin in kwarten",
       "churn-dash-sashed": "Churn Dash met sashing",
       "star-sampler": "Sterrensampler",
-      "charm-squares": "Charmvierkanten"
+      "charm-squares": "Charmvierkanten",
+      "scrappy-pinwheels": "Molentjes van lapjes",
+      "rail-fence-turned": "Rail Fence, gedraaid",
+      "hearts-and-plain": "Hartjes en effen vierkanten",
+      "bow-ties-turned": "Bow Tie, gedraaid",
+      "trip-around-the-world": "Trip Around the World"
     },
     "designNotes": {
       "snowball-and-nine-patch": "Nine Patch en Snowball om en om: de donkere hoeken raken elkaar over de naden en lopen als kettingen diagonaal.",
@@ -725,7 +790,12 @@
       "log-cabin-quarters": "Log Cabin-blokken die in elk kwart van de quilt anders gedraaid zijn, zodat hun lichte en donkere helften samen één groot patroon over de hele quilt vormen.",
       "churn-dash-sashed": "Churn Dash-blokken met sashing ertussen, waarbij een deel van de stoffen door lapjes is vervangen.",
       "star-sampler": "In elk blok een andere ster, om de beurt, met sashing.",
-      "charm-squares": "Kleine vierkantjes in alle kleuren en prints, zoals een pakje charmvierkanten: met lapjes is elk stukje anders."
+      "charm-squares": "Kleine vierkantjes in alle kleuren en prints, zoals een pakje charmvierkanten: met lapjes is elk stukje anders.",
+      "scrappy-pinwheels": "Molentjes in zomerse kleuren, elke wiek uit een ander lapje gesneden, zodat geen twee blokken hetzelfde draaien.",
+      "rail-fence-turned": "Rail Fence-blokken, om en om een kwartslag gedraaid, zodat de stroken in zigzag over de quilt lopen.",
+      "hearts-and-plain": "Geappliqueerde hartjes, gescheiden door effen vierkanten, in lentekleuren, met stippling over de open achtergrond.",
+      "bow-ties-turned": "Bow Tie-blokken, om en om gedraaid, zodat de achtergrond tussen de strikjes leest als een veld van achthoeken.",
+      "trip-around-the-world": "Trip Around the World-blokken naast elkaar: de ringen van vierkanten in elk blok raken die van de buren en vormen er nieuwe ringen tussen."
     },
     "blocksHeading": "Blokken",
     "arrangement": "Opstelling",

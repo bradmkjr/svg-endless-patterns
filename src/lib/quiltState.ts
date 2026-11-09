@@ -48,6 +48,11 @@ export const DESIGNS: { id: string; settings: DesignSettings }[] = [
   { id: "churn-dash-sashed", settings: { arrangement: "repeat", blocks: ["churn-dash"], size: 9, cols: 6, rows: 7, sashing: 2, border: 4, setting: "straight", noise: 40, scrappy: false, quilting: "outline" } },
   { id: "star-sampler", settings: { arrangement: "sampler", blocks: ["sawtooth-star", "ohio-star", "variable-star", "friendship-star", "lemoyne-star", "card-trick"], size: 12, cols: 4, rows: 5, sashing: 2, border: 4, setting: "straight", noise: 20, scrappy: false, quilting: "stipple" } },
   { id: "charm-squares", settings: { arrangement: "repeat", blocks: ["checkerboard"], size: 10, cols: 6, rows: 7, sashing: 0, border: 3, setting: "straight", noise: 70, scrappy: true, quilting: "meander", scraps: "autumn" } },
+  { id: "scrappy-pinwheels", settings: { arrangement: "repeat", blocks: ["pinwheel"], size: 8, cols: 7, rows: 9, sashing: 0, border: 3, setting: "straight", noise: 50, scrappy: true, quilting: "meander", scraps: "summer" } },
+  { id: "rail-fence-turned", settings: { arrangement: "repeat", blocks: ["rail-fence"], size: 6, cols: 10, rows: 12, sashing: 0, border: 3, setting: "alternate", noise: 0, scrappy: false, quilting: "ditch", scraps: "winter" } },
+  { id: "hearts-and-plain", settings: { arrangement: "alternate", blocks: ["heart", PLAIN], size: 9, cols: 7, rows: 9, sashing: 0, border: 4, setting: "straight", noise: 0, scrappy: false, quilting: "stipple", scraps: "spring" } },
+  { id: "bow-ties-turned", settings: { arrangement: "repeat", blocks: ["bow-tie"], size: 6, cols: 10, rows: 12, sashing: 0, border: 3, setting: "alternate", noise: 0, scrappy: false, quilting: "outline", scraps: "monochrome" } },
+  { id: "trip-around-the-world", settings: { arrangement: "repeat", blocks: ["trip-around-the-world"], size: 14, cols: 4, rows: 5, sashing: 0, border: 3, setting: "straight", noise: 0, scrappy: false, quilting: "crosshatch" } },
 ];
 export const DESIGN_IDS = DESIGNS.map((design) => design.id);
 export const DEFAULT_DESIGN = DESIGN_IDS[0]!;

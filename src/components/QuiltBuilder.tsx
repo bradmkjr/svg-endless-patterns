@@ -2,8 +2,8 @@
 
 import { ColorInput } from "./ColorInput";
 import { useEffect, useState } from "react";
-import { generateQuilt, type Locale, type QuiltCutMapLine, type QuiltFinish, type QuiltResult, type Setting } from "@/lib/generator";
-import { downloadPng, downloadSvg } from "@/lib/download";
+import { generateQuilt, generateQuiltPdf, type Locale, type QuiltCutMapLine, type QuiltFinish, type QuiltResult, type Setting } from "@/lib/generator";
+import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { useTrackCustomize } from "@/lib/analytics";
 import { fill, messages } from "@/lib/i18n";
 import copy from "@/i18n/messages/quilt.json";
@@ -188,6 +188,9 @@ export function QuiltBuilder({ locale, option, labels, blockNames, initialState 
               <ToolLoading locale={locale} />
             )}
             <div className={`${styles.actions} no-print`}>
+              <button type="button" disabled={busy || !result} className={styles.primary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateQuiltPdf({ ...quiltRequest(state), finish }), `quilt-${state.design}-pattern.pdf`, "application/pdf"))}>
+                {b.downloadPdf}
+              </button>
               <FavoriteButton kind="quilt" slug={state.design} name={name} query={favoriteQuery.toString()} colors={[...state.palette, state.borderColor]} locale={locale} onStatus={setStatus} />
               <label className={styles.finish}>
                 <span>{b.downloadStyle}</span>

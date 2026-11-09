@@ -76,6 +76,11 @@ export async function generateQuilt(request: QuiltRequest): Promise<QuiltResult>
   return apiJson("/quilt", request);
 }
 
+/** The whole quilt's printable pattern: picture, fabric, cutting, every block's piecing, assembly and templates. */
+export async function generateQuiltPdf(request: QuiltRequest): Promise<Uint8Array> {
+  return apiPdf("/quilt/pdf", request);
+}
+
 export async function generateStitchPattern(slug: string, request: StitchRequest): Promise<StitchResult> {
   return apiJson("/stitch", { slug, ...request });
 }

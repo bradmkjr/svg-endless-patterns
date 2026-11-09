@@ -1,5 +1,70 @@
 [
   {
+    "slug": "whole-quilt-pdf",
+    "title": "A printable pattern for the whole quilt",
+    "date": "2026-11-08",
+    "summary": "The quilt planner now downloads one PDF pattern for the whole quilt, however many blocks it's made of: the picture, fabric to buy, every cut, each block's piecing, how the top goes together, quilting, binding and templates.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The [quilt planner](/quilts/) now downloads a PDF pattern for the whole quilt, however many blocks it's made of. It's one reference to print and keep beside the sewing machine."
+      },
+      {
+        "type": "heading",
+        "text": "What's in it"
+      },
+      {
+        "type": "paragraph",
+        "text": "First, the quilt exactly as you designed it, prints and quilting included, with its size and how many of each block it takes. Then the fabric to buy for each color, with backing, binding and batting, and the cutting list for the whole top, grouped by color. Each kind of block follows, drawn in your colors, with how many to make and how to piece it. Last come the steps that put the top together, row by row with any sashing and border, then layering, quilting and binding, and what the finished quilt weighs."
+      },
+      {
+        "type": "heading",
+        "text": "Samplers and curves"
+      },
+      {
+        "type": "paragraph",
+        "text": "A quilt of one or two blocks is named for them, like [Snowball and Nine Patch](/quilts/snowball-and-nine-patch/). One with more is a sampler, like the [star sampler](/quilts/star-sampler/), and its pattern lists every block it uses. Shapes that can't be cut with a ruler, such as curves, print at true size at the end, each named for its block. Like the patterns in the [block library](/blocks/), it comes in all seven of the site's languages."
+      },
+      {
+        "type": "heading",
+        "text": "Quilts to print"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "quilt",
+            "slug": "snowball-and-nine-patch",
+            "query": "",
+            "view": "quilt",
+            "caption": "Snowball and Nine Patch"
+          },
+          {
+            "kind": "quilt",
+            "slug": "star-sampler",
+            "query": "",
+            "view": "quilt",
+            "caption": "A star sampler with sashing"
+          },
+          {
+            "kind": "quilt",
+            "slug": "double-irish-chain",
+            "query": "",
+            "view": "quilt",
+            "caption": "Double Irish Chain"
+          },
+          {
+            "kind": "quilt",
+            "slug": "trip-around-the-world",
+            "query": "",
+            "view": "quilt",
+            "caption": "Trip Around the World"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "slug": "plan-a-whole-quilt",
     "title": "Plan a whole quilt: prints, quilting, a cut map and its weight",
     "date": "2026-11-08",

@@ -71,7 +71,7 @@ export async function generatePdf(slug: string, request: PatternRequest): Promis
   return apiPdf("/quilt-block/pdf", { slug, ...request });
 }
 
-/** A whole quilt from a choice of blocks. There's no PDF: its cut map prints from the page. */
+/** A whole quilt from a choice of blocks. Its cut map also prints from the page. */
 export async function generateQuilt(request: QuiltRequest): Promise<QuiltResult> {
   return apiJson("/quilt", request);
 }

@@ -1,5 +1,23 @@
 {
   "posts": {
+    "whole-quilt-pdf": {
+      "title": "Um padrão para imprimir da colcha inteira",
+      "summary": "O planejador de colchas agora baixa um único padrão em PDF para a colcha inteira, com quantos blocos ela tiver: a imagem, o tecido a comprar, cada corte, como costurar cada bloco, como montar o top, o acolchoado, o viés e os moldes.",
+      "blocks": [
+        "O [planejador de colchas](/quilts/) agora baixa um padrão em PDF para a colcha inteira, com quantos blocos ela tiver. É uma só referência para imprimir e deixar ao lado da máquina de costura.",
+        "O que vem nele",
+        "Primeiro, a colcha exatamente como você a criou, com estampas e acolchoado, o tamanho e quantos blocos de cada tipo ela leva. Depois, o tecido a comprar de cada cor, com forro, viés e manta, e a lista de cortes do top inteiro, agrupada por cor. Em seguida vem cada tipo de bloco, desenhado nas suas cores, com quantos fazer e como costurá-lo. Por fim, os passos para montar o top, fileira por fileira com sashing e borda se houver, depois as camadas, o acolchoado e o viés, e quanto pesa a colcha pronta.",
+        "Samplers e curvas",
+        "Uma colcha de um ou dois blocos leva o nome deles, como [Snowball e Nine Patch](/quilts/snowball-and-nine-patch/). Uma com mais é um sampler, como o [sampler de estrelas](/quilts/star-sampler/), e o padrão lista todos os blocos usados. As formas que não dá para cortar com régua, como as curvas, saem em tamanho real no final, cada uma com o nome do seu bloco. Como os padrões da [biblioteca de blocos](/blocks/), ele vem nos sete idiomas do site.",
+        "Colchas para imprimir",
+        [
+          "Snowball e Nine Patch",
+          "Um sampler de estrelas com sashing",
+          "Double Irish Chain",
+          "Trip Around the World"
+        ]
+      ]
+    },
     "plan-a-whole-quilt": {
       "title": "Planeje uma colcha inteira: estampas, quilting, mapa de cortes e peso",
       "summary": "Um novo planejador de colchas monta combinações clássicas de blocos numa colcha inteira, mistura estampas de retalhos, desenha pontilhado e outros quiltings que você pode mostrar ou esconder, imprime uma lista de cortes ilustrada e pesa a colcha pronta. Agora os padrões podem ser salvos nos favoritos, com as cores.",
@@ -891,6 +909,13 @@
     }
   },
   "changelog": {
+    "A PDF pattern for the whole quilt": {
+      "title": "Um padrão em PDF para a colcha inteira",
+      "items": [
+        "O planejador de colchas baixa um padrão em PDF para a colcha inteira: a imagem, o tecido a comprar, a lista de cortes, como costurar cada bloco, a montagem, o acolchoado, o viés e o peso final",
+        "As formas que precisam de molde saem em tamanho real, cada uma com o nome do seu bloco"
+      ]
+    },
     "Easier color choices": {
       "title": "Escolher cores ficou mais fácil",
       "items": [

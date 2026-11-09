@@ -1,5 +1,23 @@
 {
   "posts": {
+    "whole-quilt-pdf": {
+      "title": "Een printbaar patroon voor de hele quilt",
+      "summary": "De quiltplanner downloadt nu één PDF-patroon voor de hele quilt, uit hoeveel blokken hij ook bestaat: de afbeelding, de stof die je nodig hebt, elke snede, hoe je elk blok naait, hoe de top in elkaar gaat, quilten, bies en mallen.",
+      "blocks": [
+        "De [quiltplanner](/quilts/) downloadt nu een PDF-patroon voor de hele quilt, uit hoeveel blokken hij ook bestaat. Eén naslag om te printen en naast de naaimachine te leggen.",
+        "Wat erin staat",
+        "Eerst de quilt precies zoals je hem ontwierp, met prints en quiltlijnen, zijn maat en hoeveel blokken van elke soort hij nodig heeft. Dan de stof die je per kleur koopt, met achterkant, bies en vulmateriaal, en de snijlijst voor de hele top, per kleur. Daarna elke bloksoort, getekend in jouw kleuren, met hoeveel je er maakt en hoe je hem naait. Tot slot de stappen om de top in elkaar te zetten, rij voor rij met sashing en rand als die er zijn, dan het stapelen, quilten en de bies, en wat de afgewerkte quilt weegt.",
+        "Samplers en rondingen",
+        "Een quilt van een of twee blokken is naar die blokken genoemd, zoals [Snowball en Nine Patch](/quilts/snowball-and-nine-patch/). Met meer is het een sampler, zoals de [sterrensampler](/quilts/star-sampler/), en het patroon noemt elk blok dat erin zit. Vormen die je niet met een liniaal snijdt, zoals rondingen, worden aan het eind op ware grootte geprint, elk met de naam van zijn blok. Net als de patronen in de [blokkenbibliotheek](/blocks/) is het er in alle zeven talen van de site.",
+        "Quilts om te printen",
+        [
+          "Snowball en Nine Patch",
+          "Een sterrensampler met sashing",
+          "Double Irish Chain",
+          "Trip Around the World"
+        ]
+      ]
+    },
     "plan-a-whole-quilt": {
       "title": "Plan een hele quilt: prints, quilten, een snijkaart en het gewicht",
       "summary": "Een nieuwe quiltplanner zet klassieke blokcombinaties uit als hele quilt, mengt lapjesprints erdoor, tekent stippling en ander quiltwerk dat je kunt tonen of verbergen, print een geïllustreerde snijlijst en weegt de afgewerkte quilt. Patronen kun je nu met kleuren en al als favoriet bewaren.",
@@ -891,6 +909,13 @@
     }
   },
   "changelog": {
+    "A PDF pattern for the whole quilt": {
+      "title": "Een PDF-patroon voor de hele quilt",
+      "items": [
+        "De quiltplanner downloadt een PDF-patroon voor de hele quilt: afbeelding, benodigde stof, snijlijst, hoe je elk blok naait, in elkaar zetten, quilten, bies en eindgewicht",
+        "Vormen die een mal nodig hebben worden op ware grootte geprint, elk met de naam van zijn blok"
+      ]
+    },
     "Easier color choices": {
       "title": "Makkelijker kleuren kiezen",
       "items": [

@@ -1,5 +1,23 @@
 {
   "posts": {
+    "whole-quilt-pdf": {
+      "title": "Un patrón imprimible para toda la colcha",
+      "summary": "El planificador de colchas ahora descarga un único patrón en PDF para toda la colcha, tenga los bloques que tenga: la imagen, la tela que comprar, cada corte, cómo coser cada bloque, cómo armar el top, el acolchado, el ribete y las plantillas.",
+      "blocks": [
+        "El [planificador de colchas](/quilts/) ahora descarga un patrón en PDF para toda la colcha, tenga los bloques que tenga. Es una sola referencia para imprimir y tener junto a la máquina de coser.",
+        "Qué incluye",
+        "Primero, la colcha tal como la diseñaste, con estampados y acolchado, su tamaño y cuántos bloques de cada tipo lleva. Después, la tela que comprar de cada color, con reverso, ribete y guata, y la lista de cortes de todo el top, agrupada por color. Sigue cada tipo de bloque, dibujado en tus colores, con cuántos hacer y cómo coserlo. Al final, los pasos para armar el top, fila a fila con el sashing y el borde si los hay, luego las capas, el acolchado y el ribete, y lo que pesa la colcha terminada.",
+        "Samplers y curvas",
+        "Una colcha de uno o dos bloques lleva su nombre, como [Snowball y Nine Patch](/quilts/snowball-and-nine-patch/). Una con más es un sampler, como el [sampler de estrellas](/quilts/star-sampler/), y su patrón enumera todos los bloques que usa. Las formas que no se pueden cortar con regla, como las curvas, se imprimen a tamaño real al final, cada una con el nombre de su bloque. Como los patrones de la [biblioteca de bloques](/blocks/), está en los siete idiomas del sitio.",
+        "Colchas para imprimir",
+        [
+          "Snowball y Nine Patch",
+          "Un sampler de estrellas con sashing",
+          "Double Irish Chain",
+          "Trip Around the World"
+        ]
+      ]
+    },
     "plan-a-whole-quilt": {
       "title": "Planifica una colcha entera: estampados, acolchado, un mapa de cortes y su peso",
       "summary": "Un nuevo planificador de colchas dispone combinaciones clásicas de bloques en una colcha entera, mezcla estampados de retales, dibuja punteado y otros acolchados que puedes mostrar u ocultar, imprime una lista de cortes con dibujos y pesa la colcha terminada. Ahora los patrones se pueden guardar en favoritos, con sus colores.",
@@ -891,6 +909,13 @@
     }
   },
   "changelog": {
+    "A PDF pattern for the whole quilt": {
+      "title": "Un patrón en PDF para toda la colcha",
+      "items": [
+        "El planificador de colchas descarga un patrón en PDF para toda la colcha: su imagen, la tela que comprar, la lista de cortes, cómo coser cada bloque, el armado, el acolchado, el ribete y el peso final",
+        "Las formas que necesitan plantilla se imprimen a tamaño real, cada una con el nombre de su bloque"
+      ]
+    },
     "Easier color choices": {
       "title": "Elegir colores es más fácil",
       "items": [

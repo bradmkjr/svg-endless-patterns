@@ -1,5 +1,23 @@
 {
   "posts": {
+    "whole-quilt-pdf": {
+      "title": "Un cartamodello stampabile per tutto il quilt",
+      "summary": "Il pianificatore di quilt ora scarica un unico cartamodello PDF per tutto il quilt, con qualsiasi numero di blocchi: l’immagine, la stoffa da comprare, ogni taglio, come cucire ogni blocco, come assemblare il top, la trapuntatura, lo sbieco e le sagome.",
+      "blocks": [
+        "Il [pianificatore di quilt](/quilts/) ora scarica un cartamodello PDF per tutto il quilt, con qualsiasi numero di blocchi. Un solo riferimento da stampare e tenere accanto alla macchina da cucire.",
+        "Cosa contiene",
+        "Prima di tutto, il quilt esattamente come l’hai progettato, stampe e trapuntatura comprese, con le misure e quanti blocchi di ogni tipo servono. Poi la stoffa da comprare per ogni colore, con retro, sbieco e imbottitura, e l’elenco dei tagli di tutto il top, raggruppato per colore. Segue ogni tipo di blocco, disegnato nei tuoi colori, con quanti farne e come cucirlo. Infine i passaggi per assemblare il top, fila per fila con sashing e bordo se ci sono, poi gli strati, la trapuntatura e lo sbieco, e quanto pesa il quilt finito.",
+        "Sampler e curve",
+        "Un quilt di uno o due blocchi prende il loro nome, come [Snowball e Nine Patch](/quilts/snowball-and-nine-patch/). Con più blocchi è un sampler, come il [sampler di stelle](/quilts/star-sampler/), e il cartamodello elenca tutti i blocchi usati. Le forme che non si tagliano con il righello, come le curve, si stampano a grandezza reale alla fine, ognuna con il nome del suo blocco. Come i cartamodelli della [libreria di blocchi](/blocks/), è disponibile in tutte e sette le lingue del sito.",
+        "Quilt da stampare",
+        [
+          "Snowball e Nine Patch",
+          "Un sampler di stelle con sashing",
+          "Double Irish Chain",
+          "Trip Around the World"
+        ]
+      ]
+    },
     "plan-a-whole-quilt": {
       "title": "Pianifica una trapunta intera: stampe, trapuntatura, mappa di taglio e peso",
       "summary": "Un nuovo pianificatore di trapunte dispone abbinamenti classici di blocchi in una trapunta intera, mescola stampe di scampoli, disegna lo stippling e altre trapuntature da mostrare o nascondere, stampa una lista di taglio illustrata e pesa la trapunta finita. Ora i modelli si possono salvare nei preferiti, con i loro colori.",
@@ -891,6 +909,13 @@
     }
   },
   "changelog": {
+    "A PDF pattern for the whole quilt": {
+      "title": "Un cartamodello PDF per tutto il quilt",
+      "items": [
+        "Il pianificatore di quilt scarica un cartamodello PDF per tutto il quilt: immagine, stoffa da comprare, elenco dei tagli, come cucire ogni blocco, assemblaggio, trapuntatura, sbieco e peso finito",
+        "Le forme che richiedono una sagoma si stampano a grandezza reale, ognuna con il nome del suo blocco"
+      ]
+    },
     "Easier color choices": {
       "title": "Scegliere i colori è più facile",
       "items": [

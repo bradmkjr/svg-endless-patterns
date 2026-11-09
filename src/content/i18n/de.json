@@ -1,5 +1,23 @@
 {
   "posts": {
+    "whole-quilt-pdf": {
+      "title": "Ein druckbares Muster für den ganzen Quilt",
+      "summary": "Der Quiltplaner lädt jetzt ein einziges PDF-Muster für den ganzen Quilt herunter, egal aus wie vielen Blöcken er besteht: Bild, Stoffbedarf, jeder Zuschnitt, das Nähen jedes Blocks, das Zusammensetzen des Tops, Quilten, Binding und Schablonen.",
+      "blocks": [
+        "Der [Quiltplaner](/quilts/) lädt jetzt ein PDF-Muster für den ganzen Quilt herunter, egal aus wie vielen Blöcken er besteht. Eine einzige Anleitung zum Ausdrucken, die neben der Nähmaschine liegen kann.",
+        "Was drinsteht",
+        "Zuerst der Quilt genau so, wie du ihn entworfen hast, mit Drucken und Quiltlinien, seiner Größe und wie viele Blöcke jeder Art er braucht. Dann der Stoffbedarf für jede Farbe, mit Rückseite, Binding und Vlies, und die Zuschnittliste für das ganze Top, nach Farben geordnet. Es folgt jede Blockart, in deinen Farben gezeichnet, mit der Anzahl und wie sie genäht wird. Zuletzt die Schritte zum Zusammensetzen des Tops, Reihe für Reihe mit Sashing und Rand, falls vorhanden, dann Schichten, Quilten und Binding, und was der fertige Quilt wiegt.",
+        "Sampler und Rundungen",
+        "Ein Quilt aus ein oder zwei Blöcken trägt ihre Namen, wie [Snowball und Nine Patch](/quilts/snowball-and-nine-patch/). Einer mit mehr ist ein Sampler, wie der [Sternen-Sampler](/quilts/star-sampler/), und sein Muster listet jeden verwendeten Block auf. Formen, die sich nicht mit dem Lineal schneiden lassen, etwa Rundungen, werden am Ende in Originalgröße gedruckt, jede mit dem Namen ihres Blocks. Wie die Muster der [Blockbibliothek](/blocks/) gibt es das in allen sieben Sprachen der Seite.",
+        "Quilts zum Ausdrucken",
+        [
+          "Snowball und Nine Patch",
+          "Ein Sternen-Sampler mit Sashing",
+          "Double Irish Chain",
+          "Trip Around the World"
+        ]
+      ]
+    },
     "plan-a-whole-quilt": {
       "title": "Einen ganzen Quilt planen: Drucke, Quilten, Zuschnittplan und Gewicht",
       "summary": "Ein neuer Quiltplaner legt klassische Blockkombinationen als ganzen Quilt an, mischt Reststoff-Drucke dazu, zeichnet Stippling und andere Quiltmuster zum Ein- und Ausblenden, druckt eine bebilderte Zuschneideliste und wiegt den fertigen Quilt. Muster lassen sich jetzt samt Farben als Favoriten speichern.",
@@ -891,6 +909,13 @@
     }
   },
   "changelog": {
+    "A PDF pattern for the whole quilt": {
+      "title": "Ein PDF-Muster für den ganzen Quilt",
+      "items": [
+        "Der Quiltplaner lädt ein PDF-Muster für den ganzen Quilt herunter: Bild, Stoffbedarf, Zuschnittliste, das Nähen jedes Blocks, Zusammensetzen, Quilten, Binding und Gewicht",
+        "Formen, die eine Schablone brauchen, werden in Originalgröße gedruckt, jede mit dem Namen ihres Blocks"
+      ]
+    },
     "Easier color choices": {
       "title": "Farben leichter wählen",
       "items": [

@@ -1,5 +1,23 @@
 {
   "posts": {
+    "whole-quilt-pdf": {
+      "title": "Un patron imprimable pour tout le quilt",
+      "summary": "Le planificateur de quilt télécharge maintenant un seul patron PDF pour tout le quilt, quel que soit le nombre de blocs : l’image, le tissu à acheter, chaque coupe, l’assemblage de chaque bloc, le montage du dessus, le matelassage, le biais et les gabarits.",
+      "blocks": [
+        "Le [planificateur de quilt](/quilts/) télécharge maintenant un patron PDF pour tout le quilt, quel que soit le nombre de blocs qui le composent. Une seule référence à imprimer et à garder près de la machine à coudre.",
+        "Ce qu’il contient",
+        "D’abord, le quilt tel que vous l’avez conçu, imprimés et matelassage compris, avec sa taille et le nombre de chaque bloc. Puis le tissu à acheter pour chaque couleur, avec le dos, le biais et le molleton, et la liste de coupe de tout le dessus, groupée par couleur. Vient ensuite chaque type de bloc, dessiné dans vos couleurs, avec le nombre à faire et la façon de l’assembler. Enfin, les étapes du montage du dessus, rangée par rangée avec le sashing et la bordure s’il y en a, puis la superposition, le matelassage et le biais, et le poids du quilt fini.",
+        "Samplers et courbes",
+        "Un quilt d’un ou deux blocs porte leur nom, comme [Snowball et Nine Patch](/quilts/snowball-and-nine-patch/). Avec davantage, c’est un sampler, comme le [sampler d’étoiles](/quilts/star-sampler/), et son patron liste tous les blocs utilisés. Les formes qui ne se coupent pas à la règle, comme les courbes, s’impriment en taille réelle à la fin, chacune au nom de son bloc. Comme les patrons de la [bibliothèque de blocs](/blocks/), il existe dans les sept langues du site.",
+        "Des quilts à imprimer",
+        [
+          "Snowball et Nine Patch",
+          "Un sampler d’étoiles avec du sashing",
+          "Double Irish Chain",
+          "Trip Around the World"
+        ]
+      ]
+    },
     "plan-a-whole-quilt": {
       "title": "Planifiez un quilt entier : imprimés, quilting, plan de coupe et poids",
       "summary": "Un nouveau planificateur de quilt dispose des associations de blocs classiques en quilt entier, mêle des imprimés façon chutes, dessine du pointillé et d'autres quiltings à afficher ou masquer, imprime une liste de coupe illustrée et pèse le quilt terminé. Les modèles peuvent désormais être ajoutés aux favoris, avec leurs couleurs.",
@@ -891,6 +909,13 @@
     }
   },
   "changelog": {
+    "A PDF pattern for the whole quilt": {
+      "title": "Un patron PDF pour tout le quilt",
+      "items": [
+        "Le planificateur de quilt télécharge un patron PDF pour tout le quilt : son image, le tissu à acheter, la liste de coupe, l’assemblage de chaque bloc, le montage, le matelassage, le biais et le poids fini",
+        "Les formes qui demandent un gabarit s’impriment en taille réelle, chacune au nom de son bloc"
+      ]
+    },
     "Easier color choices": {
       "title": "Choisir les couleurs plus facilement",
       "items": [

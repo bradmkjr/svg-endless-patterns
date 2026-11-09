@@ -23,7 +23,7 @@
       "girih": "Background on the five girih tiles behind the 10-fold option of the star maker. The layout itself was found by computer search and doesn't come from this paper.",
       "dyeLattice": "The Chinese lattice maker sorts its designs by framework and nests frames inside openings, after Dye's method. No figure from the book is reproduced, and its group labels aren't used as names.",
       "cookStochastic": "Dart throwing, the Poisson-disc method the nature pattern maker uses to scatter motifs evenly without a visible grid.",
-      "prim": "Prim's algorithm in the maze maker is named for this paper.",
+      "prim": "Prim's algorithm in the maze maker is named for this paper. The quilt planner's stippling grows from the same method.",
       "kruskal": "Kruskal's algorithm in the maze maker is named for this paper.",
       "wilson": "Wilson's algorithm in the maze maker is named for this paper.",
       "mandelbrot": "The book that named and popularized fractals, background for the fractal maker.",
@@ -32,7 +32,11 @@
       "hilbert": "The Hilbert curve in the fractal maker is named for this paper.",
       "levy": "The Lévy C curve in the fractal maker is named for this paper.",
       "gardnerLife": "The rule of Conway's Game of Life, which the Game of Life pattern tool runs to draw every phase.",
-      "walkerMosaic": "The name and the two-row rules of the mosaic patterns in knit colorwork. The charts themselves were drawn for this site."
+      "walkerMosaic": "The name and the two-row rules of the mosaic patterns in knit colorwork. The charts themselves were drawn for this site.",
+      "quiltingCottonWeight": "The quilt planner weighs quilting cotton at 130 g per square meter, from this guide's range for it.",
+      "cottonBattingWeight": "The quilt planner weighs cotton batting at 4 oz per square yard, as this listing gives for Warm & Natural.",
+      "polyesterBattingWeight": "The quilt planner weighs polyester batting at 4.5 oz per running yard, 48\" wide, from this table of batting by the yard.",
+      "threadWeight": "The quilt planner weighs quilting thread from what a thread's weight number means: 50 wt is 50 km to the kilogram."
     }
   },
   "es": {
@@ -59,7 +63,7 @@
       "girih": "Información sobre las cinco piezas de girih de la opción de orden 10. La disposición se halló por búsqueda informática y no procede de este artículo.",
       "dyeLattice": "El generador de celosías chinas clasifica sus diseños por estructura y anida marcos dentro de las aberturas, según el método de Dye. No se reproduce ninguna figura del libro, y sus etiquetas de grupo no se usan como nombres.",
       "cookStochastic": "El lanzamiento de dardos, el método de disco de Poisson con el que el creador de patrones naturales esparce los motivos de forma uniforme y sin una cuadrícula visible.",
-      "prim": "El algoritmo de Prim del generador de laberintos toma su nombre de este artículo.",
+      "prim": "El algoritmo de Prim del generador de laberintos toma su nombre de este artículo. El punteado del planificador de colchas crece con el mismo método.",
       "kruskal": "El algoritmo de Kruskal del generador de laberintos toma su nombre de este artículo.",
       "wilson": "El algoritmo de Wilson del generador de laberintos toma su nombre de este artículo.",
       "mandelbrot": "El libro que dio nombre a los fractales y los popularizó, base del generador de fractales.",
@@ -68,7 +72,11 @@
       "hilbert": "La curva de Hilbert del generador de fractales toma su nombre de este artículo.",
       "levy": "La curva C de Lévy del generador de fractales toma su nombre de este artículo.",
       "gardnerLife": "La regla del Juego de la Vida de Conway, que la herramienta de patrones de Life ejecuta para dibujar cada fase.",
-      "walkerMosaic": "El nombre y las reglas de dos vueltas de los patrones en mosaico del tejido en colores. Los gráficos se dibujaron para este sitio."
+      "walkerMosaic": "El nombre y las reglas de dos vueltas de los patrones en mosaico del tejido en colores. Los gráficos se dibujaron para este sitio.",
+      "quiltingCottonWeight": "El planificador de colchas pesa el algodón de patchwork a 130 g por metro cuadrado, según el rango que da esta guía.",
+      "cottonBattingWeight": "El planificador de colchas pesa la guata de algodón a 4 oz por yarda cuadrada, como indica esta ficha para Warm & Natural.",
+      "polyesterBattingWeight": "El planificador de colchas pesa la guata de poliéster a 4,5 oz por yarda lineal de 48\" de ancho, según esta tabla de guata por metros.",
+      "threadWeight": "El planificador de colchas pesa el hilo de acolchar a partir de lo que significa el número de grosor: 50 wt son 50 km por kilogramo."
     }
   },
   "fr": {
@@ -95,7 +103,7 @@
       "girih": "Contexte sur les cinq tuiles girih de l'option d'ordre 10. La disposition a été trouvée par recherche informatique et ne vient pas de cet article.",
       "dyeLattice": "L'outil de treillis chinois classe ses motifs par structure et imbrique des cadres dans les ouvertures, d'après la méthode de Dye. Aucune figure du livre n'est reproduite, et ses intitulés de groupe ne servent pas de noms.",
       "cookStochastic": "Le lancer de fléchettes, la méthode du disque de Poisson qu'utilise l'outil de motifs nature pour répartir les motifs régulièrement, sans grille visible.",
-      "prim": "L'algorithme de Prim de l'outil de labyrinthes doit son nom à cet article.",
+      "prim": "L'algorithme de Prim de l'outil de labyrinthes doit son nom à cet article. Le pointillé du planificateur de quilt pousse selon la même méthode.",
       "kruskal": "L'algorithme de Kruskal de l'outil de labyrinthes doit son nom à cet article.",
       "wilson": "L'algorithme de Wilson de l'outil de labyrinthes doit son nom à cet article.",
       "mandelbrot": "Le livre qui a nommé et popularisé les fractales, à l'origine de cet outil.",
@@ -104,7 +112,11 @@
       "hilbert": "La courbe de Hilbert de l'outil doit son nom à cet article.",
       "levy": "La courbe C de Lévy de l'outil doit son nom à cet article.",
       "gardnerLife": "La règle du jeu de la vie de Conway, que l'outil de motifs Life applique pour dessiner chaque phase.",
-      "walkerMosaic": "Le nom et les règles à deux rangs des motifs en mosaïque du tricot en couleurs. Les grilles ont été dessinées pour ce site."
+      "walkerMosaic": "Le nom et les règles à deux rangs des motifs en mosaïque du tricot en couleurs. Les grilles ont été dessinées pour ce site.",
+      "quiltingCottonWeight": "Le planificateur de quilt compte le coton de patchwork à 130 g par mètre carré, d'après la fourchette de ce guide.",
+      "cottonBattingWeight": "Le planificateur de quilt compte le molleton de coton à 4 oz par yard carré, comme l'indique cette fiche pour Warm & Natural.",
+      "polyesterBattingWeight": "Le planificateur de quilt compte le molleton polyester à 4,5 oz par yard courant de 48\" de large, d'après ce tableau de molleton au mètre.",
+      "threadWeight": "Le planificateur de quilt pèse le fil de quilting d'après le sens du numéro de grosseur : 50 wt, c'est 50 km au kilogramme."
     }
   },
   "de": {
@@ -131,7 +143,7 @@
       "girih": "Hintergrund zu den fünf Girih-Fliesen der 10-zähligen Option. Die Anordnung wurde per Computersuche gefunden und stammt nicht aus diesem Artikel.",
       "dyeLattice": "Der Generator für chinesisches Gitterwerk ordnet seine Entwürfe nach Grundgerüst und verschachtelt Rahmen in Öffnungen, nach Dyes Methode. Keine Abbildung des Buchs wird wiedergegeben, und seine Gruppenbezeichnungen dienen nicht als Namen.",
       "cookStochastic": "Das Dart-Throwing, das Poisson-Disk-Verfahren, mit dem der Naturmuster-Generator Motive gleichmäßig und ohne sichtbares Raster verteilt.",
-      "prim": "Der Prim-Algorithmus im Labyrinth-Werkzeug ist nach dieser Arbeit benannt.",
+      "prim": "Der Prim-Algorithmus im Labyrinth-Werkzeug ist nach dieser Arbeit benannt. Das Stippling des Quiltplaners wächst nach derselben Methode.",
       "kruskal": "Der Kruskal-Algorithmus im Labyrinth-Werkzeug ist nach dieser Arbeit benannt.",
       "wilson": "Der Wilson-Algorithmus im Labyrinth-Werkzeug ist nach dieser Arbeit benannt.",
       "mandelbrot": "Das Buch, das Fraktale benannte und bekannt machte, Hintergrund des Fraktal-Werkzeugs.",
@@ -140,7 +152,11 @@
       "hilbert": "Die Hilbert-Kurve im Fraktal-Werkzeug ist nach dieser Arbeit benannt.",
       "levy": "Die Lévy-C-Kurve im Fraktal-Werkzeug ist nach dieser Arbeit benannt.",
       "gardnerLife": "Die Regel von Conways Spiel des Lebens, mit der das Life-Werkzeug jede Phase berechnet.",
-      "walkerMosaic": "Der Name und die Zwei-Reihen-Regeln der Mosaikmuster bei den Farbmustern. Die Diagramme wurden für diese Website gezeichnet."
+      "walkerMosaic": "Der Name und die Zwei-Reihen-Regeln der Mosaikmuster bei den Farbmustern. Die Diagramme wurden für diese Website gezeichnet.",
+      "quiltingCottonWeight": "Der Quiltplaner rechnet Patchworkbaumwolle mit 130 g pro Quadratmeter, nach der Spanne in diesem Leitfaden.",
+      "cottonBattingWeight": "Der Quiltplaner rechnet Baumwollvlies mit 4 oz pro Quadratyard, wie dieses Angebot es für Warm & Natural angibt.",
+      "polyesterBattingWeight": "Der Quiltplaner rechnet Polyestervlies mit 4,5 oz pro laufendem Yard bei 48\" Breite, nach dieser Tabelle für Meterware.",
+      "threadWeight": "Der Quiltplaner wiegt das Quiltgarn nach der Bedeutung der Garnstärke: 50 wt sind 50 km pro Kilogramm."
     }
   },
   "pt": {
@@ -167,7 +183,7 @@
       "girih": "Contexto sobre as cinco peças de girih da opção de ordem 10. O arranjo foi encontrado por busca em computador e não vem deste artigo.",
       "dyeLattice": "O gerador de treliça chinesa classifica seus desenhos por estrutura e aninha molduras nas aberturas, segundo o método de Dye. Nenhuma figura do livro é reproduzida, e os rótulos de grupo dele não são usados como nomes.",
       "cookStochastic": "O lançamento de dardos, o método de disco de Poisson que o criador de estampas da natureza usa para espalhar os motivos por igual, sem uma grade visível.",
-      "prim": "O algoritmo de Prim do gerador de labirintos leva o nome deste artigo.",
+      "prim": "O algoritmo de Prim do gerador de labirintos leva o nome deste artigo. O pontilhado do planejador de colchas cresce pelo mesmo método.",
       "kruskal": "O algoritmo de Kruskal do gerador de labirintos leva o nome deste artigo.",
       "wilson": "O algoritmo de Wilson do gerador de labirintos leva o nome deste artigo.",
       "mandelbrot": "O livro que deu nome aos fractais e os popularizou, base do gerador de fractais.",
@@ -176,7 +192,11 @@
       "hilbert": "A curva de Hilbert do gerador leva o nome deste artigo.",
       "levy": "A curva C de Lévy do gerador leva o nome deste artigo.",
       "gardnerLife": "A regra do Jogo da Vida de Conway, que a ferramenta de padrões do Life executa para desenhar cada fase.",
-      "walkerMosaic": "O nome e as regras de duas carreiras dos padrões em mosaico do tricô em cores. Os gráficos foram desenhados para este site."
+      "walkerMosaic": "O nome e as regras de duas carreiras dos padrões em mosaico do tricô em cores. Os gráficos foram desenhados para este site.",
+      "quiltingCottonWeight": "O planejador de colchas pesa a tricoline de algodão a 130 g por metro quadrado, pela faixa deste guia.",
+      "cottonBattingWeight": "O planejador de colchas pesa a manta de algodão a 4 oz por jarda quadrada, como esta ficha indica para Warm & Natural.",
+      "polyesterBattingWeight": "O planejador de colchas pesa a manta de poliéster a 4,5 oz por jarda linear com 48\" de largura, por esta tabela de manta a metro.",
+      "threadWeight": "O planejador de colchas pesa a linha de quilting pelo que significa o número da linha: 50 wt são 50 km por quilograma."
     }
   },
   "it": {
@@ -203,7 +223,7 @@
       "girih": "Contesto sulle cinque piastrelle girih dietro l'opzione di ordine 10 del generatore di stelle. La disposizione stessa è stata trovata con una ricerca al computer e non viene da questo articolo.",
       "dyeLattice": "Il generatore di grate cinesi ordina i disegni per struttura e annida cornici nelle aperture, secondo il metodo di Dye. Nessuna figura del libro è riprodotta, e le sue etichette di gruppo non sono usate come nomi.",
       "cookStochastic": "Il lancio di freccette, il metodo del disco di Poisson con cui il generatore di motivi naturali distribuisce i motivi in modo uniforme, senza una griglia visibile.",
-      "prim": "L'algoritmo di Prim nel generatore di labirinti prende il nome da questo articolo.",
+      "prim": "L'algoritmo di Prim nel generatore di labirinti prende il nome da questo articolo. Lo stippling del pianificatore di trapunte cresce con lo stesso metodo.",
       "kruskal": "L'algoritmo di Kruskal nel generatore di labirinti prende il nome da questo articolo.",
       "wilson": "L'algoritmo di Wilson nel generatore di labirinti prende il nome da questo articolo.",
       "mandelbrot": "Il libro che ha dato il nome ai frattali e li ha resi popolari, contesto per il generatore di frattali.",
@@ -212,7 +232,11 @@
       "hilbert": "La curva di Hilbert nel generatore di frattali prende il nome da questo articolo.",
       "levy": "La curva C di Lévy nel generatore di frattali prende il nome da questo articolo.",
       "gardnerLife": "La regola del Gioco della vita di Conway, che lo strumento esegue per disegnare ogni fase.",
-      "walkerMosaic": "Il nome e le regole a due ferri dei motivi a mosaico nella maglia a colori. Gli schemi stessi sono stati disegnati per questo sito."
+      "walkerMosaic": "Il nome e le regole a due ferri dei motivi a mosaico nella maglia a colori. Gli schemi stessi sono stati disegnati per questo sito.",
+      "quiltingCottonWeight": "Il pianificatore di trapunte pesa il cotone da patchwork a 130 g per metro quadrato, secondo l'intervallo di questa guida.",
+      "cottonBattingWeight": "Il pianificatore di trapunte pesa l'imbottitura di cotone a 4 oz per iarda quadrata, come indica questa scheda per Warm & Natural.",
+      "polyesterBattingWeight": "Il pianificatore di trapunte pesa l'imbottitura di poliestere a 4,5 oz per iarda lineare larga 48\", da questa tabella dell'imbottitura a metraggio.",
+      "threadWeight": "Il pianificatore di trapunte pesa il filo per trapuntare in base al numero del filo: 50 wt sono 50 km per chilogrammo."
     }
   },
   "nl": {
@@ -239,7 +263,7 @@
       "girih": "Achtergrond bij de vijf girih-tegels achter de tienvoudige optie van de stermaker. De indeling zelf is met een computerzoekopdracht gevonden en komt niet uit dit artikel.",
       "dyeLattice": "De maker van Chinees traliewerk deelt zijn ontwerpen in naar grondvorm en nest kaders in openingen, naar de methode van Dye. Geen figuur uit het boek wordt overgenomen, en zijn groepsnamen worden niet als namen gebruikt.",
       "cookStochastic": "Dart throwing, de Poisson-schijfmethode waarmee de natuurpatroonmaker motieven gelijkmatig verspreidt, zonder zichtbaar raster.",
-      "prim": "Het algoritme van Prim in de doolhofmaker is naar dit artikel genoemd.",
+      "prim": "Het algoritme van Prim in de doolhofmaker is naar dit artikel genoemd. De stippling van de quiltplanner groeit volgens dezelfde methode.",
       "kruskal": "Het algoritme van Kruskal in de doolhofmaker is naar dit artikel genoemd.",
       "wilson": "Het algoritme van Wilson in de doolhofmaker is naar dit artikel genoemd.",
       "mandelbrot": "Het boek dat fractals hun naam en bekendheid gaf, achtergrond voor de fractalmaker.",
@@ -248,7 +272,11 @@
       "hilbert": "De Hilbert-kromme in de fractalmaker is naar dit artikel genoemd.",
       "levy": "De Lévy C-kromme in de fractalmaker is naar dit artikel genoemd.",
       "gardnerLife": "De regel van Conways Game of Life, die de tool uitvoert om elke fase te tekenen.",
-      "walkerMosaic": "De naam en de regels per twee naalden van de mozaïekpatronen bij kleurenbreien. De schema's zelf zijn voor deze site getekend."
+      "walkerMosaic": "De naam en de regels per twee naalden van de mozaïekpatronen bij kleurenbreien. De schema's zelf zijn voor deze site getekend.",
+      "quiltingCottonWeight": "De quiltplanner rekent quiltkatoen op 130 g per vierkante meter, uit de marge in deze gids.",
+      "cottonBattingWeight": "De quiltplanner rekent katoenen tussenvulling op 4 oz per vierkante yard, zoals deze productpagina voor Warm & Natural opgeeft.",
+      "polyesterBattingWeight": "De quiltplanner rekent polyester tussenvulling op 4,5 oz per strekkende yard bij 48\" breed, uit deze tabel van tussenvulling per meter.",
+      "threadWeight": "De quiltplanner weegt het quiltgaren uit wat het garennummer betekent: 50 wt is 50 km per kilogram."
     }
   }
 }

@@ -205,6 +205,12 @@
     "tartanOutput": "Campione continuo, guida di tessitura e stima del filato.",
     "exploreTartan": "Crea uno scozzese",
     "tools": {
+      "quilt": {
+        "title": "Trapunte intere",
+        "text": "Abbinamenti classici di blocchi come Snowball e Nine Patch, in una trapunta intera, con stampe di scampoli, trapuntatura a mano libera e il peso finale.",
+        "output": "SVG e PNG della trapunta, il tessuto da comprare e una mappa di taglio da stampare.",
+        "explore": "Pianifica una trapunta"
+      },
       "weaving": {
         "title": "Messe in carta",
         "text": "Scegli un'armatura o una messa in carta tradizionale, dall'occhio di pernice alla cintura del monaco, e guarda rimettaggio, legatura, pedalatura e tessuto.",

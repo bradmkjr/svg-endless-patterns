@@ -205,6 +205,12 @@
     "tartanOutput": "Seamless swatch, weaving guide and yarn estimate.",
     "exploreTartan": "Make a plaid",
     "tools": {
+      "quilt": {
+        "title": "Whole quilts",
+        "text": "Classic block pairings like Snowball and Nine Patch, laid out as a whole quilt, with scrappy prints, free-motion quilting and a finished weight.",
+        "output": "SVG and PNG of the quilt, fabric to buy, and a printable cut map.",
+        "explore": "Plan a quilt"
+      },
       "weaving": {
         "title": "Weaving drafts",
         "text": "Pick a weave structure or a traditional draft, from bird's eye to monk's belt, and see the threading, tie-up, treadling and cloth.",

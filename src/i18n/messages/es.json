@@ -205,6 +205,12 @@
     "tartanOutput": "Muestra continua, guía de tejido y estimación de hilo.",
     "exploreTartan": "Crear un cuadro",
     "tools": {
+      "quilt": {
+        "title": "Colchas completas",
+        "text": "Combinaciones clásicas de bloques como Snowball y Nine Patch, en una colcha entera, con estampados de retales, acolchado libre y el peso final.",
+        "output": "SVG y PNG de la colcha, la tela que comprar y un mapa de cortes para imprimir.",
+        "explore": "Planifica una colcha"
+      },
       "weaving": {
         "title": "Patrones de tejido",
         "text": "Elige un ligamento o un patrón tradicional, del ojo de perdiz al cinturón de monje, y mira el remetido, el amarre, el pedaleo y el tejido.",

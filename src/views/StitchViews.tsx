@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { StitchBuilderRoute } from "@/components/StitchBuilderRoute";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { StitchGrid } from "@/components/StitchGrid";
+import { FavoritesShelf } from "@/components/FavoritesShelf";
 import crochetColorwork from "@/i18n/messages/crochetColorwork.json";
 import colorwork from "@/i18n/messages/knitColorwork.json";
 import { type Craft, type Locale } from "@/lib/generator";
@@ -22,6 +23,7 @@ export async function StitchesView({ locale, craft }: { locale: Locale; craft: C
   const stitches = await getStitchPatterns(craft, locale);
   return (
     <div className="page">
+      <FavoritesShelf locale={locale} kinds={[craft]} />
       <h1>{craft === "knit" ? t.knitH1 : t.crochetH1}</h1>
       <p className="lede">{t.lede}</p>
       {craft === "knit" && (

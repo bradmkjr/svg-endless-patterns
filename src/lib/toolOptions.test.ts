@@ -27,10 +27,12 @@ import { parseRdState, serializeRdState } from "./reactionDiffusionState";
 import { parseWavesState, serializeWavesState } from "./wavesState";
 import { parseNatureState, serializeNatureState } from "./natureState";
 import { parseWeavingState, serializeWeavingState } from "./weavingState";
+import { parseQuiltState, serializeQuiltState } from "./quiltState";
 
 const TOOLS = Object.keys(TOOL_OPTIONS) as ToolId[];
 const LOCALES = ["en", "es", "fr", "de", "pt", "it", "nl"] as const;
 const ROUND_TRIP: Record<ToolId, (params: URLSearchParams) => string> = {
+  quilt: (p) => serializeQuiltState(parseQuiltState(p)),
   truchet: (p) => serializeTruchetState(parseTruchetState(p)),
   kolam: (p) => serializeKolamState(parseKolamState(p)),
   reactionDiffusion: (p) => serializeRdState(parseRdState(p)),

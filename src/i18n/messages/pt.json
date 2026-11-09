@@ -205,6 +205,12 @@
     "tartanOutput": "Amostra contínua, guia de tecelagem e estimativa de fio.",
     "exploreTartan": "Criar um xadrez",
     "tools": {
+      "quilt": {
+        "title": "Colchas inteiras",
+        "text": "Combinações clássicas de blocos como Snowball e Nine Patch, numa colcha inteira, com estampas de retalhos, quilting livre e o peso final.",
+        "output": "SVG e PNG da colcha, o tecido a comprar e um mapa de cortes para imprimir.",
+        "explore": "Planeje uma colcha"
+      },
       "weaving": {
         "title": "Padrões de tecelagem",
         "text": "Escolha um ligamento ou um padrão tradicional, do olho de perdiz ao cinto de monge, e veja o passamento, a amarração, a pedalagem e o tecido.",

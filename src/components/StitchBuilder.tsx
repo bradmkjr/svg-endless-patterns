@@ -1,11 +1,12 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import { FavoriteButton } from "./FavoriteButton";
 import { generateStitchPattern, generateStitchPdf, type Locale, type StitchInfo, type StitchRequest } from "@/lib/generator";
 import { fill, messages } from "@/lib/i18n";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { useTrackCustomize } from "@/lib/analytics";
-import { LENGTH_OPTIONS, PROJECTS, ROW_GAUGE_OPTIONS, serializeStitchState, SQUARE_SIZES, startingGauge, STITCH_GAUGE_OPTIONS, WIDTH_OPTIONS, YARN_WEIGHTS } from "@/lib/stitchState";
+import { LENGTH_OPTIONS, PROJECTS, ROW_GAUGE_OPTIONS, serializeStitchState, SQUARE_SIZES, startingGauge, STITCH_GAUGE_OPTIONS, stitchLabel, WIDTH_OPTIONS, YARN_WEIGHTS } from "@/lib/stitchState";
 import { PalettePicker } from "./PalettePicker";
 import { DEFAULT_KNIT_SQUARE, KNIT_SQUARE_SIZES } from "@/lib/generator";
 import { KnitSquarePattern, squareCopy } from "./KnitSquarePattern";
@@ -97,6 +98,7 @@ export function StitchBuilder({ stitch, locale, initialState }: { stitch: Stitch
             {view === "swatch" ? t.swatchNote : stitch.craft === "knit" ? t.chartKnit : t.chartCrochet}
           </p>
           <div className={`${styles.actions} no-print`}>
+            <FavoriteButton kind={stitch.craft} slug={stitch.slug} name={stitchLabel(stitch)} query={serializeStitchState(stitch, state)} colors={[state.color]} locale={locale} onStatus={setStatus} />
             <button type="button" disabled={busy} className={styles.primary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateStitchPdf(stitch.slug, state), `${stitch.slug}-pattern.pdf`, "application/pdf"))}>
               {b.downloadPdf}
             </button>

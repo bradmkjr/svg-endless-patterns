@@ -205,6 +205,12 @@
     "tartanOutput": "Échantillon continu, guide de tissage et estimation de fil.",
     "exploreTartan": "Créer un carreau",
     "tools": {
+      "quilt": {
+        "title": "Quilts entiers",
+        "text": "Des associations de blocs classiques comme Snowball et Nine Patch, en quilt entier, avec des imprimés de chutes, du quilting libre et le poids final.",
+        "output": "SVG et PNG du quilt, tissu à acheter et un plan de coupe à imprimer.",
+        "explore": "Planifier un quilt"
+      },
       "weaving": {
         "title": "Armures de tissage",
         "text": "Choisissez une armure ou un dessin traditionnel, de l'œil-de-perdrix à la ceinture de moine, et voyez le rentrage, l'attache, la marchure et le tissu.",

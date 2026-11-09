@@ -5,6 +5,8 @@ import { notFound } from "next/navigation";
 import { BlockBuilderRoute } from "@/components/BlockBuilderRoute";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { BlockGrid } from "@/components/BlockGrid";
+import { FavoritesShelf } from "@/components/FavoritesShelf";
+import quiltCopy from "@/i18n/messages/quilt.json";
 import type { Locale } from "@/lib/generator";
 import { getBlock, getBlocks } from "@/lib/patternCatalog";
 import { fill, localePath, messages } from "@/lib/i18n";
@@ -20,8 +22,12 @@ export async function BlocksView({ locale }: { locale: Locale }) {
   const families = [...new Set(blocks.map((b) => b.family))];
   return (
     <div className="page">
+      <FavoritesShelf locale={locale} kinds={["block", "quilt"]} />
       <h1>{t.h1}</h1>
       <p className="lede">{fill(t.lede, { n: blocks.length })}</p>
+      <p>
+        <Link href={localePath(locale, "/quilts/")}>{messages(locale).library.tools.quilt.explore}</Link>: {quiltCopy[locale].lede}
+      </p>
       {families.map((family) => (
         <section key={family}>
           <h2>{family}</h2>

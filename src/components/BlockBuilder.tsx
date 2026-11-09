@@ -7,6 +7,10 @@ import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { useTrackCustomize } from "@/lib/analytics";
 import { BORDER_OPTIONS, COUNT_OPTIONS, paletteColors, palettesFor, SASHING_OPTIONS, serializeState, SETTINGS, SIZE_OPTIONS, WOF_OPTIONS } from "@/lib/state";
 import { PalettePicker } from "./PalettePicker";
+import { FavoriteButton } from "./FavoriteButton";
+import Link from "next/link";
+import { localePath } from "@/lib/i18n";
+import quiltCopy from "@/i18n/messages/quilt.json";
 import { useLiveResult } from "@/lib/useLiveResult";
 import { ToolLoading } from "./ToolLoading";
 import styles from "./BlockBuilder.module.css";
@@ -89,6 +93,9 @@ export function BlockBuilder({ block, locale, initialState }: { block: BlockInfo
   const fileBase = `${block.slug}-${state.size}in-${view}${finish === "plain" ? "-plain" : ""}`;
   /** The picture to download: the one on screen, or the same design asked for again in flat color. */
   const downloadSvgText = async () => (finish === "plain" ? (await generatePattern(block.slug, { ...state, finish })).svg[view] : currentSvg);
+  const query = serializeState(block, state);
+  // The quilt planner, with this block repeated in these colors.
+  const quiltHref = `${localePath(locale, "/quilts/")}?${new URLSearchParams({ arr: "repeat", a: block.slug, p: block.fabrics.map((f) => state.colors[f.id]!.slice(1)).slice(0, 6).join("-"), sc: state.colors.sashing!.slice(1), bc: state.colors.border!.slice(1) })}`;
   const tileUrl = `data:image/svg+xml,${encodeURIComponent(result?.svg.tile ?? "")}`;
   const tileStyle: CSSProperties = { backgroundImage: `url("${tileUrl}")` };
 
@@ -124,6 +131,7 @@ export function BlockBuilder({ block, locale, initialState }: { block: BlockInfo
             <div className={`${styles.art} ${view === "quilt" ? styles.quiltArt : ""}`} dangerouslySetInnerHTML={{ __html: currentSvg }} />
           )}
           <div className={`${styles.actions} no-print`}>
+            <FavoriteButton kind="block" slug={block.slug} name={block.name} query={query} colors={block.fabrics.map((f) => state.colors[f.id]!)} locale={locale} onStatus={setStatus} />
             <button type="button" disabled={busy} className={styles.primary} onClick={() => run(t.pdfMaking, t.pdfDone, async () => downloadBytes(await generatePdf(block.slug, state), `${block.slug}-${state.size}in-pattern.pdf`, "application/pdf"))}>
               {t.downloadPdf}
             </button>
@@ -146,6 +154,9 @@ export function BlockBuilder({ block, locale, initialState }: { block: BlockInfo
           </div>
           <p className={styles.status} role="status">
             {status}
+          </p>
+          <p className="no-print">
+            <Link href={quiltHref}>{quiltCopy[locale].openQuilt}</Link>
           </p>
         </section>
 

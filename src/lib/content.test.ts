@@ -31,13 +31,14 @@ import { parseNatureState, serializeNatureState } from "./natureState";
 import { parseWeavingState, serializeWeavingState } from "./weavingState";
 import { parseMazeState, serializeMazeState } from "./mazeState";
 import { parseTartanState, serializeTartanState } from "./tartanState";
+import { parseQuiltState, serializeQuiltState } from "./quiltState";
 
 const sorted = (query: string) => [...new URLSearchParams(query).entries()].map(([k, v]) => `${k}=${v}`).sort();
 
 async function knownPaths() {
   const posts = await getPosts();
   return new Set([
-    "/", ...PREFIXED_LOCALES.map((l) => `/${l}/`), "/tartans/", "/truchet/", "/kolam/", "/turing-patterns/", "/waves/", "/nature-patterns/", "/weaving/", "/tie-dye/", "/fractals/", "/life-patterns/", "/checkerboards/", "/crochet/colorwork/", "/knitting/colorwork/", "/mazes/", "/paper-puzzles/", "/girih/", "/chinese-lattice/", "/mandalas/", "/kaleidoscopes/", "/stained-glass/", "/celtic-knots/", "/sashiko/", "/tessellations/", "/cross-stitch/", "/needlepoint/", "/blocks/", "/knitting/", "/crochet/", "/patterns/", "/palettes/", "/about/", "/acknowledgements/", "/blog/", "/changelog/",
+    "/", ...PREFIXED_LOCALES.map((l) => `/${l}/`), "/tartans/", "/truchet/", "/kolam/", "/turing-patterns/", "/waves/", "/nature-patterns/", "/weaving/", "/tie-dye/", "/fractals/", "/life-patterns/", "/checkerboards/", "/crochet/colorwork/", "/knitting/colorwork/", "/mazes/", "/paper-puzzles/", "/girih/", "/chinese-lattice/", "/mandalas/", "/kaleidoscopes/", "/stained-glass/", "/celtic-knots/", "/sashiko/", "/tessellations/", "/cross-stitch/", "/needlepoint/", "/blocks/", "/quilts/", "/knitting/", "/crochet/", "/patterns/", "/palettes/", "/about/", "/acknowledgements/", "/blog/", "/changelog/",
     ...(await getBlocks()).map((b) => `/blocks/${b.slug}/`),
     ...(await getStitchPatterns("knit")).map((s) => `/knitting/${s.slug}/`),
     ...(await getStitchPatterns("crochet")).map((s) => `/crochet/${s.slug}/`),
@@ -112,6 +113,13 @@ describe("blog posts", () => {
       params.delete("t");
       expect(sorted(params.toString())).toEqual(sorted(sample.query));
       expect(isToolSlug("puzzle", slug)).toBe(true);
+      expect(new URLSearchParams(sample.query).has("seed")).toBe(false);
+    } else if (sample.kind === "quilt") {
+      // The link's path names the design, so only its other settings are in the query.
+      const params = new URLSearchParams(serializeQuiltState(parseQuiltState(withOption("quilt", slug, sample.query), sample.locale)));
+      params.delete("d");
+      expect(sorted(params.toString())).toEqual(sorted(sample.query));
+      expect(isToolSlug("quilt", slug)).toBe(true);
       expect(new URLSearchParams(sample.query).has("seed")).toBe(false);
     } else if (sample.kind === "life") {
       expect(sorted(serializeLifeState(parseLifeState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));

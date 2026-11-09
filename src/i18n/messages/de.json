@@ -205,6 +205,12 @@
     "tartanOutput": "Nahtloses Muster, Webanleitung und Garnschätzung.",
     "exploreTartan": "Karo gestalten",
     "tools": {
+      "quilt": {
+        "title": "Ganze Quilts",
+        "text": "Klassische Blockkombinationen wie Snowball und Nine Patch als ganzer Quilt, mit Reststoff-Drucken, Freihandquilten und dem fertigen Gewicht.",
+        "output": "SVG und PNG des Quilts, Stoffbedarf und ein druckbarer Zuschnittplan.",
+        "explore": "Einen Quilt planen"
+      },
       "weaving": {
         "title": "Webpatronen",
         "text": "Wähle eine Bindung oder eine traditionelle Patrone, vom Vogelauge bis zum Mönchsgürtel, und sieh Einzug, Anschnürung, Trittfolge und Gewebe.",

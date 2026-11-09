@@ -31,6 +31,10 @@ export const REFERENCES: Reference[] = [
   { id: "dyeLattice", author: "Daniel Sheets Dye", title: "A Grammar of Chinese Lattice", detail: "Harvard-Yenching Institute Monograph Series 5, 1937; reissued by Dover as Chinese Lattice Designs", url: "https://openlibrary.org/books/OL13806393M" },
   { id: "oelsnerWeaves", author: "G. H. Oelsner", title: "A Handbook of Weaves", detail: "Translated by Samuel S. Dale, Macmillan, 1915", url: "https://www2.cs.arizona.edu/patterns/weaving/books.html" },
   { id: "watsonColour", author: "William Watson", title: "Textile Design and Colour", detail: "Second edition, Longmans, Green and Co., 1921", url: "https://www2.cs.arizona.edu/patterns/weaving/books.html" },
+  { id: "quiltingCottonWeight", author: "Linda's Electric Quilters", title: "Fabric Weight Guide for Quilting and Longarm Projects", url: "https://lindas.com/blogs/tips-and-tricks/fabric-weight-guide" },
+  { id: "cottonBattingWeight", author: "Patched Works", title: "Warm & White Batting, 90\" wide", url: "https://patchedworks.com/products/warm-white-batting-90in" },
+  { id: "polyesterBattingWeight", author: "Hobbs Bonded Fibers", title: "By The Yard Products", url: "https://www.hobbsbatting.com/?p=133" },
+  { id: "threadWeight", author: "Wikipedia", title: "Thread (textiles): Weight", url: "https://en.wikipedia.org/wiki/Thread_(yarn)" },
   { id: "bronsonLace", author: "J. and R. Bronson", title: "The Domestic Manufacturer's Assistant, and Family Directory, in the Arts of Weaving and Dyeing", detail: "Utica, 1817", url: "https://www2.cs.arizona.edu/patterns/weaving/wtopic_bronsonl.html" },
 ];
 

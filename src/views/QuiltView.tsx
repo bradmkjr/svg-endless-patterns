@@ -35,7 +35,7 @@ export async function QuiltView({ locale, option }: { locale: Locale; option?: s
         <h2>{t.aboutTitle}</h2>
         <p>{t.about}</p>
       </section>
-      <References ids={["quiltingCottonWeight", "cottonBattingWeight", "polyesterBattingWeight", "threadWeight"]} locale={locale} />
+      <References ids={["prim", "quiltingCottonWeight", "cottonBattingWeight", "polyesterBattingWeight", "threadWeight"]} locale={locale} />
     </div>
   );
 }

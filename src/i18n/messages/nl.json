@@ -205,6 +205,12 @@
     "tartanOutput": "Naadloos proeflapje, weefgids en schatting van het garen.",
     "exploreTartan": "Maak een ruit",
     "tools": {
+      "quilt": {
+        "title": "Hele quilts",
+        "text": "Klassieke blokcombinaties zoals Snowball en Nine Patch als hele quilt, met lapjesprints, vrij quilten en het eindgewicht.",
+        "output": "SVG en PNG van de quilt, de stof om te kopen en een printbare snijkaart.",
+        "explore": "Een quilt plannen"
+      },
       "weaving": {
         "title": "Weefpatronen",
         "text": "Kies een binding of een traditioneel patroon, van vogeloog tot monnikenriem, en zie de inrijging, opbinding, trapping en het weefsel.",

@@ -33,6 +33,6 @@ on port 4000.
 
 Google Analytics loads only when the build has a measurement ID: set
 `NEXT_PUBLIC_GA_ID` in `.env` locally, and the GitHub repository variable
-`GA_MEASUREMENT_ID` for the deployed site, since `.env` isn't committed.
+`NEXT_PUBLIC_GA_ID` for the deployed site, since `.env` isn't committed.
 
 See [AGENTS.md](./AGENTS.md) for the architecture.

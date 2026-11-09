@@ -7,6 +7,8 @@ export type QuiltQuilting = "none" | "outline" | "ditch" | "stipple" | "meander"
 export type QuiltBatting = "none" | "cotton" | "polyester";
 
 export type QuiltRequest = {
+  /** Inches, or a pattern written in metric. Inches when left out. */
+  units?: "in" | "cm";
   arrangement: QuiltArrangement;
   /** Block slugs, or "plain" for a plain square: the first to repeat, the first two to alternate, all of them for a sampler. */
   blocks: string[];

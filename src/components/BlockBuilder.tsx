@@ -6,7 +6,8 @@ import { generatePattern, generatePdf, type BlockInfo, type CutLine, type Locale
 import { fill, messages } from "@/lib/i18n";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { useTrackCustomize } from "@/lib/analytics";
-import { BORDER_OPTIONS, COUNT_OPTIONS, paletteColors, palettesFor, SASHING_OPTIONS, serializeState, SETTINGS, SIZE_OPTIONS, WOF_OPTIONS } from "@/lib/state";
+import { COUNT_OPTIONS, paletteColors, palettesFor, serializeState, SETTINGS, withUnits } from "@/lib/state";
+import { formatLength, MEASURES, UNIT_OPTIONS, type Units } from "@/lib/units";
 import { PalettePicker } from "./PalettePicker";
 import { FavoriteButton } from "./FavoriteButton";
 import { QuiltPromo } from "./QuiltPromo";
@@ -24,14 +25,14 @@ const VIEWS: { id: View; label: "viewBlock" | "viewQuilt" | "viewTile" }[] = [
   { id: "tile", label: "viewTile" },
 ];
 
-function NumberSelect({ label, value, options, unit = "", none, onChange }: { label: string; value: number; options: number[]; unit?: string; none: string; onChange: (value: number) => void }) {
+function NumberSelect({ label, value, options, format = String, none, onChange }: { label: string; value: number; options: number[]; format?: (value: number) => string; none: string; onChange: (value: number) => void }) {
   return (
     <label className={styles.field}>
       <span>{label}</span>
       <select value={value} onChange={(e) => onChange(Number(e.target.value))}>
         {options.map((option) => (
           <option key={option} value={option}>
-            {option === 0 ? none : `${option}${unit}`}
+            {option === 0 ? none : format(option)}
           </option>
         ))}
       </select>
@@ -78,6 +79,9 @@ export function BlockBuilder({ block, locale, initialState }: { block: BlockInfo
   const [finish, setFinish] = useState<QuiltFinish>("cloth");
 
   const update = (patch: Partial<PatternRequest>) => setState((s) => ({ ...s, ...patch }));
+  const units: Units = state.units ?? "in";
+  const measures = MEASURES[units];
+  const len = (value: number) => formatLength(value, units, locale);
   const setColor = (id: string, color: string) => setState((s) => ({ ...s, colors: { ...s.colors, [id]: color } }));
 
   const generate = useCallback((request: PatternRequest) => generatePattern(block.slug, request), [block.slug]);
@@ -133,7 +137,7 @@ export function BlockBuilder({ block, locale, initialState }: { block: BlockInfo
           )}
           <div className={`${styles.actions} no-print`}>
             <FavoriteButton kind="block" slug={block.slug} name={block.name} query={query} colors={block.fabrics.map((f) => state.colors[f.id]!)} locale={locale} onStatus={setStatus} />
-            <button type="button" disabled={busy} className={styles.primary} onClick={() => run(t.pdfMaking, t.pdfDone, async () => downloadBytes(await generatePdf(block.slug, state), `${block.slug}-${state.size}in-pattern.pdf`, "application/pdf"))}>
+            <button type="button" disabled={busy} className={styles.primary} onClick={() => run(t.pdfMaking, t.pdfDone, async () => downloadBytes(await generatePdf(block.slug, state), `${block.slug}-${state.size}${units}-pattern.pdf`, "application/pdf"))}>
               {t.downloadPdf}
             </button>
             <label className={styles.finish}>
@@ -201,7 +205,17 @@ export function BlockBuilder({ block, locale, initialState }: { block: BlockInfo
 
           <fieldset>
             <legend>{t.block}</legend>
-            <NumberSelect none={t.none} label={t.finishedSize} value={state.size} options={SIZE_OPTIONS} unit={'"'} onChange={(size) => update({ size })} />
+            <label className={styles.field}>
+              <span>{t.units}</span>
+              <select value={units} onChange={(e) => setState((s) => withUnits(block, s, e.target.value as Units))}>
+                {UNIT_OPTIONS.map((id) => (
+                  <option key={id} value={id}>
+                    {id === "in" ? t.unitsIn : t.unitsCm}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <NumberSelect none={t.none} label={t.finishedSize} value={state.size} options={measures.size} format={len} onChange={(size) => update({ size })} />
           </fieldset>
 
           <fieldset>
@@ -209,8 +223,8 @@ export function BlockBuilder({ block, locale, initialState }: { block: BlockInfo
             <div className={styles.fieldRow}>
               <NumberSelect none={t.none} label={t.across} value={state.cols} options={COUNT_OPTIONS} onChange={(cols) => update({ cols })} />
               <NumberSelect none={t.none} label={t.down} value={state.rows} options={COUNT_OPTIONS} onChange={(rows) => update({ rows })} />
-              <NumberSelect none={t.none} label={t.sashing} value={state.sashing} options={SASHING_OPTIONS} unit={'"'} onChange={(sashing) => update({ sashing })} />
-              <NumberSelect none={t.none} label={t.border} value={state.border} options={BORDER_OPTIONS} unit={'"'} onChange={(border) => update({ border })} />
+              <NumberSelect none={t.none} label={t.sashing} value={state.sashing} options={measures.sashing} format={len} onChange={(sashing) => update({ sashing })} />
+              <NumberSelect none={t.none} label={t.border} value={state.border} options={measures.border} format={len} onChange={(border) => update({ border })} />
             </div>
             <label className={styles.field}>
               <span>{t.direction}</span>
@@ -222,7 +236,7 @@ export function BlockBuilder({ block, locale, initialState }: { block: BlockInfo
                 ))}
               </select>
             </label>
-            <NumberSelect none={t.none} label={t.wof} value={state.wof} options={WOF_OPTIONS} unit={'"'} onChange={(wof) => update({ wof })} />
+            <NumberSelect none={t.none} label={t.wof} value={state.wof} options={measures.wof} format={len} onChange={(wof) => update({ wof })} />
           </fieldset>
         </form>
       </div>
@@ -231,7 +245,7 @@ export function BlockBuilder({ block, locale, initialState }: { block: BlockInfo
 
       {result?.hasRoundedCuts && (
         <p className={styles.notice}>
-          <strong>{t.roundedTitle}</strong> {fill(t.roundedText, { size: state.size })}
+          <strong>{t.roundedTitle}</strong> {fill(t.roundedText, { size: len(state.size) })}
           {result.suggestedSizes.length > 0 && (
             <>
               {" "}
@@ -240,7 +254,7 @@ export function BlockBuilder({ block, locale, initialState }: { block: BlockInfo
                 <span key={size}>
                   {i > 0 && ` ${t.or} `}
                   <button type="button" className={styles.linkButton} onClick={() => update({ size })}>
-                    {size}&quot;
+                    {len(size)}
                   </button>
                 </span>
               ))}
@@ -270,7 +284,7 @@ export function BlockBuilder({ block, locale, initialState }: { block: BlockInfo
         <section>
           <h2>{t.fabricBuy}</h2>
           <p className={styles.quiltSize}>
-            {t.quiltTop} <strong>{result.quilt.widthLabel}&quot; x {result.quilt.heightLabel}&quot;</strong>, {fill(result.quilt.blocks === 1 ? t.blocksOne : t.blocksMany, { n: result.quilt.blocks })}
+            {t.quiltTop} <strong>{result.quilt.widthLabel} x {result.quilt.heightLabel}</strong>, {fill(result.quilt.blocks === 1 ? t.blocksOne : t.blocksMany, { n: result.quilt.blocks })}
           </p>
           <table className={styles.yardage}>
             <tbody>
@@ -280,20 +294,20 @@ export function BlockBuilder({ block, locale, initialState }: { block: BlockInfo
                     <span className={styles.swatch} style={{ background: state.colors[fabric] }} aria-hidden />
                     {label}
                   </th>
-                  <td>{yards} yd</td>
+                  <td>{yards}</td>
                 </tr>
               ))}
               <tr>
                 <th scope="row">{fill(result.backing.panels === 1 ? t.backingOne : t.backingMany, { n: result.backing.panels })}</th>
-                <td>{result.backing.yards} yd</td>
+                <td>{result.backing.yards}</td>
               </tr>
               <tr>
                 <th scope="row">{fill(t.binding, { n: result.binding.strips, w: result.binding.stripWidth })}</th>
-                <td>{result.binding.yards} yd</td>
+                <td>{result.binding.yards}</td>
               </tr>
               <tr>
                 <th scope="row">{t.batting}</th>
-                <td>{result.backing.width}&quot; x {result.backing.height}&quot;</td>
+                <td>{result.backing.width} x {result.backing.height}</td>
               </tr>
             </tbody>
           </table>

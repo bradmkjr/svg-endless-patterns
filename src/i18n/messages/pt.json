@@ -102,7 +102,7 @@
     "direction": "Direção dos blocos",
     "wof": "Largura útil do tecido",
     "roundedTitle": "Alguns cortes foram arredondados para cima.",
-    "roundedText": "Em {size}\", as peças deste bloco ficam entre as marcas da régua: corte como indicado e apare cada unidade, ou use os moldes do PDF.",
+    "roundedText": "Em {size}, as peças deste bloco ficam entre as marcas da régua: corte como indicado e apare cada unidade, ou use os moldes do PDF.",
     "evenSizes": "Tamanhos que dividem exatamente:",
     "or": "ou",
     "cuttingList": "Lista de corte",
@@ -116,12 +116,15 @@
     "blocksMany": "{n} blocos",
     "backingOne": "Forro (1 painel)",
     "backingMany": "Forro ({n} painéis)",
-    "binding": "Viés ({n} tiras de {w}\")",
+    "binding": "Viés ({n} tiras de {w})",
     "batting": "Manta",
     "allowance": "Inclui uma margem de 10%. Confira os números antes de comprar.",
     "howTo": "Como montar",
     "tileAlt": "Repetição contínua de {name}",
-    "browseOptions": "Explorar as opções"
+    "browseOptions": "Explorar as opções",
+    "units": "Medidas em",
+    "unitsIn": "Polegadas",
+    "unitsCm": "Centímetros"
   },
   "settings": {
     "straight": "Todos na mesma direção",

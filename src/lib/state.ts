@@ -1,3 +1,4 @@
+import { defaultUnits, MEASURES, readUnits, type Units, convertLength, convertWof } from "./units";
 import type { BlockInfo, Locale, PatternRequest, Setting } from "./generator";
 import { localeAccent } from "./localeAccent";
 
@@ -43,16 +44,21 @@ export function paletteColors(block: BlockInfo, palette: Palette): Record<string
   return colors;
 }
 
-export function defaultState(block: BlockInfo, locale: Locale = "en"): PatternRequest {
+/** Inches are the API's default, so a request names its units only when they're metric. */
+const unitsField = (units: Units) => (units === "in" ? {} : { units });
+
+export function defaultState(block: BlockInfo, locale: Locale = "en", units: Units = defaultUnits(locale)): PatternRequest {
+  const m = MEASURES[units];
   return {
     ...(locale === "en" ? {} : { locale }),
-    size: 12,
+    ...unitsField(units),
+    size: m.blockSize,
     cols: 4,
     rows: 5,
     sashing: 0,
-    border: 3,
+    border: m.border0,
     setting: "straight",
-    wof: 40,
+    wof: m.wof0,
     seams: false,
     colors: paletteColors(block, palettesFor(locale)[0]),
   };
@@ -68,7 +74,9 @@ function pick<T>(raw: string | null, options: readonly T[], parse: (s: string) =
 
 /** The state a share link describes. Anything invalid falls back to the default. */
 export function parseState(block: BlockInfo, params: { get(name: string): string | null }, locale: Locale = "en"): PatternRequest {
-  const base = defaultState(block, locale);
+  const units = readUnits(params.get("units"), locale);
+  const m = MEASURES[units];
+  const base = defaultState(block, locale, units);
   const colors = { ...base.colors };
   for (const id of Object.keys(colors)) {
     const raw = params.get(`f_${id}`);
@@ -76,12 +84,13 @@ export function parseState(block: BlockInfo, params: { get(name: string): string
   }
   return {
     ...(locale === "en" ? {} : { locale }),
-    size: pick(params.get("size"), SIZE_OPTIONS, Number, base.size),
+    ...unitsField(units),
+    size: pick(params.get("size"), m.size, Number, base.size),
     cols: pick(params.get("cols"), COUNT_OPTIONS, Number, base.cols),
     rows: pick(params.get("rows"), COUNT_OPTIONS, Number, base.rows),
-    sashing: pick(params.get("sash"), SASHING_OPTIONS, Number, base.sashing),
-    border: pick(params.get("border"), BORDER_OPTIONS, Number, base.border),
-    wof: pick(params.get("wof"), WOF_OPTIONS, Number, base.wof),
+    sashing: pick(params.get("sash"), m.sashing, Number, base.sashing),
+    border: pick(params.get("border"), m.border, Number, base.border),
+    wof: pick(params.get("wof"), m.wof, Number, base.wof),
     setting: pick(params.get("set"), SETTINGS, (s) => s as Setting, base.setting),
     seams: params.get("seams") === "1",
     colors,
@@ -90,8 +99,10 @@ export function parseState(block: BlockInfo, params: { get(name: string): string
 
 /** The query string for a state: only what differs from the block's default. */
 export function serializeState(block: BlockInfo, state: PatternRequest): string {
-  const base = defaultState(block, state.locale);
+  const units = state.units ?? "in";
+  const base = defaultState(block, state.locale, units);
   const params = new URLSearchParams();
+  if (units !== defaultUnits(state.locale)) params.set("units", units);
   if (state.size !== base.size) params.set("size", String(state.size));
   if (state.cols !== base.cols) params.set("cols", String(state.cols));
   if (state.rows !== base.rows) params.set("rows", String(state.rows));
@@ -104,4 +115,20 @@ export function serializeState(block: BlockInfo, state: PatternRequest): string 
     if (color !== base.colors[id]) params.set(`f_${id}`, color.slice(1));
   }
   return params.toString();
+}
+
+/** The same block in the other units: each length at the nearest choice there, cut on that ruler's marks. */
+export function withUnits(block: Pick<BlockInfo, "grid">, state: PatternRequest, units: Units): PatternRequest {
+  const from = state.units ?? "in";
+  if (from === units) return state;
+  const m = MEASURES[units];
+  const { units: _, ...rest } = state;
+  return {
+    ...rest,
+    ...unitsField(units),
+    size: convertLength(state.size, from, units, m.size, [block.grid]),
+    sashing: convertLength(state.sashing, from, units, m.sashing),
+    border: convertLength(state.border, from, units, m.border),
+    wof: convertWof(state.wof, from, units),
+  };
 }

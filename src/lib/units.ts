@@ -1,4 +1,4 @@
-import type { Locale } from "./generator";
+import type { Locale } from "./patternTypes";
 
 /**
  * Inches or a pattern written in metric, for the quilt tools. English opens in inches and every

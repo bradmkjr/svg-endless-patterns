@@ -3,7 +3,8 @@ import type { BlockInfo, Locale, PatternRequest, Setting } from "./generator";
 import { localePath } from "./i18n";
 import { localeAccent } from "./localeAccent";
 import type { QuiltArrangement, QuiltBatting, QuiltQuilting, QuiltRequest } from "./quiltTypes";
-import { BORDER_OPTIONS, COUNT_OPTIONS, PALETTES, SASHING_OPTIONS, SETTINGS, SIZE_OPTIONS, WOF_OPTIONS } from "./state";
+import { COUNT_OPTIONS, PALETTES, SETTINGS } from "./state";
+import { convertLength, convertWof, defaultUnits, MEASURES, readUnits, type Units } from "./units";
 
 /**
  * The quilt builder's designs, defaults and share links. A design is a common way to put
@@ -72,15 +73,35 @@ function defaultColors(locale: Locale, scraps?: DesignSettings["scraps"]) {
   return { palette: colors.map((color, i) => (i === 2 ? localeAccent(locale, color) : color)), sashingColor: sashing, borderColor: border, thread: "#cfc6b2" };
 }
 
-export function defaultQuiltState(locale: Locale = "en", design = DEFAULT_DESIGN): QuiltState {
+/** Each block's grid, so a metric size can be chosen where every block cuts on the ruler's marks. */
+export const gridOf = (slug: string) => (slug === PLAIN ? 1 : (catalog.blocks.en.find((block) => block.slug === slug)?.grid ?? 1));
+
+/** Inches are the API's default, so a request names its units only when they're metric. */
+const unitsField = (units: Units) => (units === "in" ? {} : { units });
+
+/** Lengths in other units: each at the nearest choice there, a block size where every block cuts on the marks. */
+function convertLayout<T extends Pick<QuiltRequest, "blocks" | "size" | "sashing" | "border">>(layout: T, from: Units, to: Units): T {
+  if (from === to) return layout;
+  const m = MEASURES[to];
+  return {
+    ...layout,
+    size: convertLength(layout.size, from, to, m.size, layout.blocks.map(gridOf)),
+    sashing: convertLength(layout.sashing, from, to, m.sashing),
+    border: convertLength(layout.border, from, to, m.border),
+  };
+}
+
+/** A design's own settings are in inches; in metric each length converts to its nearest metric choice. */
+export function defaultQuiltState(locale: Locale = "en", design = DEFAULT_DESIGN, units: Units = defaultUnits(locale)): QuiltState {
   const { id, settings } = designOf(design);
-  const { scraps, ...rest } = settings;
+  const { scraps, ...rest } = convertLayout(settings, "in", units);
   return {
     ...(locale === "en" ? {} : { locale }),
+    ...unitsField(units),
     design: id,
     ...rest,
     blocks: [...rest.blocks],
-    wof: 40,
+    wof: MEASURES[units].wof0,
     ...defaultColors(locale, scraps),
     seed: 7,
     showQuilting: true,
@@ -127,20 +148,23 @@ function decodePalette(raw: string | null, fallback: string[]): string[] {
 
 /** The state a link describes. The design comes first, from `d`, and the rest is read against it. */
 export function parseQuiltState(params: { get(name: string): string | null }, locale: Locale = "en"): QuiltState {
-  const base = defaultQuiltState(locale, pick(params.get("d"), DESIGN_IDS, DEFAULT_DESIGN, String));
+  const units = readUnits(params.get("units"), locale);
+  const m = MEASURES[units];
+  const base = defaultQuiltState(locale, pick(params.get("d"), DESIGN_IDS, DEFAULT_DESIGN, String), units);
   const seed = params.get("seed");
   return {
     ...(locale === "en" ? {} : { locale }),
+    ...unitsField(units),
     design: base.design,
     arrangement: pick(params.get("arr"), ARRANGEMENTS, base.arrangement, (raw) => raw as QuiltArrangement),
     blocks: decodeBlocks(params.get("a"), base.blocks),
-    size: pick(params.get("size"), SIZE_OPTIONS, base.size, Number),
+    size: pick(params.get("size"), m.size, base.size, Number),
     cols: pick(params.get("cols"), COUNT_OPTIONS, base.cols, Number),
     rows: pick(params.get("rows"), COUNT_OPTIONS, base.rows, Number),
-    sashing: pick(params.get("sash"), SASHING_OPTIONS, base.sashing, Number),
-    border: pick(params.get("border"), BORDER_OPTIONS, base.border, Number),
+    sashing: pick(params.get("sash"), m.sashing, base.sashing, Number),
+    border: pick(params.get("border"), m.border, base.border, Number),
     setting: pick(params.get("set"), SETTINGS, base.setting, (raw) => raw as Setting),
-    wof: pick(params.get("wof"), WOF_OPTIONS, base.wof, Number),
+    wof: pick(params.get("wof"), m.wof, base.wof, Number),
     palette: decodePalette(params.get("p"), base.palette),
     sashingColor: decodeColor(params.get("sc"), base.sashingColor),
     borderColor: decodeColor(params.get("bc"), base.borderColor),
@@ -156,9 +180,11 @@ export function parseQuiltState(params: { get(name: string): string | null }, lo
 
 /** The query for a state: only what differs from its design. Seeds stay out, as on every tool; this browser remembers them. */
 export function serializeQuiltState(state: QuiltState): string {
-  const base = defaultQuiltState(state.locale, state.design);
+  const units = state.units ?? "in";
+  const base = defaultQuiltState(state.locale, state.design, units);
   const params = new URLSearchParams();
   if (state.design !== DEFAULT_DESIGN) params.set("d", state.design);
+  if (units !== defaultUnits(state.locale)) params.set("units", units);
   if (state.arrangement !== base.arrangement) params.set("arr", state.arrangement);
   if (state.blocks.join(".") !== base.blocks.join(".")) params.set("a", state.blocks.join("."));
   if (state.size !== base.size) params.set("size", String(state.size));
@@ -187,8 +213,9 @@ export function serializeQuiltState(state: QuiltState): string {
  */
 export function quiltFromBlock(block: Pick<BlockInfo, "slug" | "fabrics">, request: PatternRequest): QuiltState {
   const locale = request.locale ?? "en";
+  const units = request.units ?? "in";
   return {
-    ...defaultQuiltState(locale),
+    ...defaultQuiltState(locale, DEFAULT_DESIGN, units),
     arrangement: "repeat",
     blocks: [block.slug],
     size: request.size,
@@ -208,4 +235,12 @@ export function quiltFromBlock(block: Pick<BlockInfo, "slug" | "fabrics">, reque
 export function quiltHrefFromBlock(block: Pick<BlockInfo, "slug" | "fabrics">, request: PatternRequest): string {
   const query = serializeQuiltState(quiltFromBlock(block, request));
   return `${localePath(request.locale ?? "en", "/quilts/")}${query ? `?${query}` : ""}`;
+}
+
+/** The same quilt in the other units. */
+export function quiltWithUnits(state: QuiltState, units: Units): QuiltState {
+  const from = state.units ?? "in";
+  if (from === units) return state;
+  const { units: _, ...rest } = convertLayout(state, from, units);
+  return { ...rest, ...unitsField(units), wof: convertWof(state.wof, from, units) } as QuiltState;
 }

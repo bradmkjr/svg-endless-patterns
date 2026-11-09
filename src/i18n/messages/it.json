@@ -102,7 +102,7 @@
     "direction": "Direzione dei blocchi",
     "wof": "Larghezza utile del tessuto",
     "roundedTitle": "Alcuni tagli sono arrotondati per eccesso.",
-    "roundedText": "A {size}\", i pezzi di questo blocco cadono tra le tacche del righello: taglia come indicato e rifila ogni unità, oppure usa le sagome del PDF.",
+    "roundedText": "A {size}, i pezzi di questo blocco cadono tra le tacche del righello: taglia come indicato e rifila ogni unità, oppure usa le sagome del PDF.",
     "evenSizes": "Misure che si dividono esattamente:",
     "or": "o",
     "cuttingList": "Lista di taglio",
@@ -116,12 +116,15 @@
     "blocksMany": "{n} blocchi",
     "backingOne": "Retro (1 telo)",
     "backingMany": "Retro ({n} teli)",
-    "binding": "Bordura ({n} strisce da {w}\")",
+    "binding": "Bordura ({n} strisce da {w})",
     "batting": "Imbottitura",
     "allowance": "Include un margine del 10%. Controlla i valori prima di acquistare.",
     "howTo": "Come assemblarlo",
     "tileAlt": "Motivo continuo di {name}",
-    "browseOptions": "Sfoglia le opzioni"
+    "browseOptions": "Sfoglia le opzioni",
+    "units": "Misure in",
+    "unitsIn": "Pollici",
+    "unitsCm": "Centimetri"
   },
   "settings": {
     "straight": "Tutti nello stesso verso",

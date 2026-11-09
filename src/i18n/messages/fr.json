@@ -102,7 +102,7 @@
     "direction": "Orientation des blocs",
     "wof": "Largeur utile du tissu",
     "roundedTitle": "Certaines coupes sont arrondies au supérieur.",
-    "roundedText": "À {size}\", les pièces de ce bloc tombent entre les repères de la règle : coupez comme indiqué et recoupez chaque unité, ou utilisez les gabarits du PDF.",
+    "roundedText": "À {size}, les pièces de ce bloc tombent entre les repères de la règle : coupez comme indiqué et recoupez chaque unité, ou utilisez les gabarits du PDF.",
     "evenSizes": "Tailles qui se divisent exactement :",
     "or": "ou",
     "cuttingList": "Liste de coupe",
@@ -116,12 +116,15 @@
     "blocksMany": "{n} blocs",
     "backingOne": "Dos (1 panneau)",
     "backingMany": "Dos ({n} panneaux)",
-    "binding": "Biais ({n} bandes de {w}\")",
+    "binding": "Biais ({n} bandes de {w})",
     "batting": "Molleton",
     "allowance": "Inclut une marge de 10 %. Vérifiez les chiffres avant d'acheter.",
     "howTo": "Comment l'assembler",
     "tileAlt": "Raccord continu de {name}",
-    "browseOptions": "Parcourir les options"
+    "browseOptions": "Parcourir les options",
+    "units": "Mesures en",
+    "unitsIn": "Pouces",
+    "unitsCm": "Centimètres"
   },
   "settings": {
     "straight": "Tous dans le même sens",

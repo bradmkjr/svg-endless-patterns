@@ -7,8 +7,9 @@ import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { useTrackCustomize } from "@/lib/analytics";
 import { fill, messages } from "@/lib/i18n";
 import copy from "@/i18n/messages/quilt.json";
-import { ARRANGEMENTS, BATTING_OPTIONS, followsDesign, MAX_PALETTE, MAX_SAMPLER_BLOCKS, MAX_SEED, MIN_PALETTE, NOISE_OPTIONS, PLAIN, QUILTING_OPTIONS, quiltRequest, serializeQuiltState, type QuiltState } from "@/lib/quiltState";
-import { BORDER_OPTIONS, COUNT_OPTIONS, SASHING_OPTIONS, SETTINGS, SIZE_OPTIONS, WOF_OPTIONS } from "@/lib/state";
+import { ARRANGEMENTS, BATTING_OPTIONS, followsDesign, MAX_PALETTE, MAX_SAMPLER_BLOCKS, MAX_SEED, MIN_PALETTE, NOISE_OPTIONS, PLAIN, QUILTING_OPTIONS, quiltRequest, quiltWithUnits, serializeQuiltState, type QuiltState } from "@/lib/quiltState";
+import { COUNT_OPTIONS, SETTINGS } from "@/lib/state";
+import { formatLength as formatMeasure, MEASURES, UNIT_OPTIONS, type Units } from "@/lib/units";
 import { rememberSeed, syncShareLink } from "@/lib/toolOptions";
 import { useLiveResult } from "@/lib/useLiveResult";
 import { FavoriteButton } from "./FavoriteButton";
@@ -67,7 +68,7 @@ function CutLine({ line, label }: { line: QuiltCutMapLine; label: string }) {
 }
 
 /** Every cut by color, drawn to scale, to print and tick off. */
-function CutMap({ result, t, locale, colorName }: { result: QuiltResult; t: Copy; locale: Locale; colorName: (id: string) => string }) {
+function CutMap({ result, t, locale, units, colorName }: { result: QuiltResult; t: Copy; locale: Locale; units: Units; colorName: (id: string) => string }) {
   const print = () => {
     document.documentElement.dataset.print = "cut-map";
     const clear = () => {
@@ -86,7 +87,7 @@ function CutMap({ result, t, locale, colorName }: { result: QuiltResult; t: Copy
         </button>
       </div>
       <p className={styles.note}>
-        {t.cutMapIntro} {t.cutMapScale}
+        {t.cutMapIntro} {fill(t.cutMapScale, { max: units === "in" ? '12"' : "30 cm" })}
       </p>
       {result.cutMap.map((group) => {
         const name = group.id.startsWith("scraps-") ? fill(t.scrapsGroup, { label: group.label ?? group.id.slice("scraps-".length) }) : colorName(group.id);
@@ -121,6 +122,9 @@ export function QuiltBuilder({ locale, option, labels, blockNames, initialState 
   const [finish, setFinish] = useState<QuiltFinish>("cloth");
 
   const update = (patch: Partial<QuiltState>) => setState((s) => ({ ...s, ...patch }));
+  const units: Units = state.units ?? "in";
+  const measures = MEASURES[units];
+  const len = (value: number) => formatMeasure(value, units, locale);
   const result = useLiveResult(generateQuilt, quiltRequest(state), setStatus, b.updateError);
 
   const query = serializeQuiltState(state);
@@ -305,17 +309,18 @@ export function QuiltBuilder({ locale, option, labels, blockNames, initialState 
 
             <fieldset>
               <legend>{b.layout}</legend>
+              <Select label={b.units} value={units} options={UNIT_OPTIONS} format={(id: Units) => (id === "in" ? b.unitsIn : b.unitsCm)} onChange={(next) => setState((s) => quiltWithUnits(s, next))} />
               <div className={styles.fieldRow}>
-                <Select label={b.finishedSize} value={state.size} options={SIZE_OPTIONS} format={(n) => `${n}"`} onChange={(size) => update({ size })} />
+                <Select label={b.finishedSize} value={state.size} options={measures.size} format={len} onChange={(size) => update({ size })} />
                 <Select label={b.across} value={state.cols} options={COUNT_OPTIONS} format={String} onChange={(cols) => update({ cols })} />
                 <Select label={b.down} value={state.rows} options={COUNT_OPTIONS} format={String} onChange={(rows) => update({ rows })} />
               </div>
               <div className={styles.fieldRow}>
-                <Select label={b.sashing} value={state.sashing} options={SASHING_OPTIONS} format={(n) => (n === 0 ? b.none : `${n}"`)} onChange={(sashing) => update({ sashing })} />
-                <Select label={b.border} value={state.border} options={BORDER_OPTIONS} format={(n) => (n === 0 ? b.none : `${n}"`)} onChange={(border) => update({ border })} />
+                <Select label={b.sashing} value={state.sashing} options={measures.sashing} format={(n) => (n === 0 ? b.none : len(n))} onChange={(sashing) => update({ sashing })} />
+                <Select label={b.border} value={state.border} options={measures.border} format={(n) => (n === 0 ? b.none : len(n))} onChange={(border) => update({ border })} />
               </div>
               <Select label={b.direction} value={state.setting} options={SETTINGS} format={(id: Setting) => messages(locale).settings[id]} onChange={(setting) => update({ setting })} />
-              <Select label={b.wof} value={state.wof} options={WOF_OPTIONS} format={(n) => `${n}"`} onChange={(wof) => update({ wof })} />
+              <Select label={b.wof} value={state.wof} options={measures.wof} format={len} onChange={(wof) => update({ wof })} />
             </fieldset>
 
             <fieldset>
@@ -342,7 +347,7 @@ export function QuiltBuilder({ locale, option, labels, blockNames, initialState 
             <section>
               <h2>{b.fabricBuy}</h2>
               <p className={styles.quiltSize}>
-                {b.quiltTop} <strong>{result.quilt.widthLabel}&quot; x {result.quilt.heightLabel}&quot;</strong>, {fill(result.quilt.blocks === 1 ? b.blocksOne : b.blocksMany, { n: result.quilt.blocks })}
+                {b.quiltTop} <strong>{result.quilt.widthLabel} x {result.quilt.heightLabel}</strong>, {fill(result.quilt.blocks === 1 ? b.blocksOne : b.blocksMany, { n: result.quilt.blocks })}
               </p>
               <ul className={q.counts}>
                 {result.blocks.map(({ slug, count }) => (
@@ -357,21 +362,21 @@ export function QuiltBuilder({ locale, option, labels, blockNames, initialState 
                         <span className={styles.swatch} style={{ background: color }} aria-hidden />
                         {colorName(id)}
                       </th>
-                      <td>{yards} yd</td>
+                      <td>{yards}</td>
                     </tr>
                   ))}
                   <tr>
                     <th scope="row">{fill(result.backing.panels === 1 ? b.backingOne : b.backingMany, { n: result.backing.panels })}</th>
-                    <td>{result.backing.yards} yd</td>
+                    <td>{result.backing.yards}</td>
                   </tr>
                   <tr>
                     <th scope="row">{fill(b.binding, { n: result.binding.strips, w: result.binding.stripWidth })}</th>
-                    <td>{result.binding.yards} yd</td>
+                    <td>{result.binding.yards}</td>
                   </tr>
                   <tr>
                     <th scope="row">{b.batting}</th>
                     <td>
-                      {result.batting.width}&quot; x {result.batting.height}&quot;
+                      {result.batting.width} x {result.batting.height}
                     </td>
                   </tr>
                 </tbody>
@@ -409,7 +414,7 @@ export function QuiltBuilder({ locale, option, labels, blockNames, initialState 
         )}
       </div>
 
-      {result && <CutMap result={result} t={t} locale={locale} colorName={colorName} />}
+      {result && <CutMap result={result} t={t} locale={locale} units={units} colorName={colorName} />}
     </div>
   );
 }

@@ -102,7 +102,7 @@
     "direction": "Ausrichtung der Blöcke",
     "wof": "Nutzbare Stoffbreite",
     "roundedTitle": "Einige Zuschnitte sind aufgerundet.",
-    "roundedText": "Bei {size}\" liegen die Teile dieses Blocks zwischen den Linealmarkierungen. Schneide sie wie angegeben zu und schneide jede Einheit nach, oder nutze die PDF-Schablonen.",
+    "roundedText": "Bei {size} liegen die Teile dieses Blocks zwischen den Linealmarkierungen. Schneide sie wie angegeben zu und schneide jede Einheit nach, oder nutze die PDF-Schablonen.",
     "evenSizes": "Größen, die genau aufgehen:",
     "or": "oder",
     "cuttingList": "Zuschnittliste",
@@ -116,12 +116,15 @@
     "blocksMany": "{n} Blöcke",
     "backingOne": "Rückseite (1 Bahn)",
     "backingMany": "Rückseite ({n} Bahnen)",
-    "binding": "Einfassung ({n} Streifen, {w}\")",
+    "binding": "Einfassung ({n} Streifen, {w})",
     "batting": "Vlies",
     "allowance": "Enthält 10 % Zugabe. Prüfe die Angaben vor dem Kauf.",
     "howTo": "So nähst du ihn",
     "tileAlt": "Nahtloser Rapport von {name}",
-    "browseOptions": "Optionen durchsuchen"
+    "browseOptions": "Optionen durchsuchen",
+    "units": "Maße in",
+    "unitsIn": "Zoll",
+    "unitsCm": "Zentimeter"
   },
   "settings": {
     "straight": "Alle gleich ausgerichtet",

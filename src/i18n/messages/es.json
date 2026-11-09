@@ -102,7 +102,7 @@
     "direction": "Dirección de los bloques",
     "wof": "Ancho útil de la tela",
     "roundedTitle": "Algunos cortes están redondeados al alza.",
-    "roundedText": "A {size}\", las piezas de este bloque caen entre las marcas de la regla: corta como se indica y recorta cada unidad, o usa las plantillas del PDF.",
+    "roundedText": "A {size}, las piezas de este bloque caen entre las marcas de la regla: corta como se indica y recorta cada unidad, o usa las plantillas del PDF.",
     "evenSizes": "Tamaños que se dividen exactamente:",
     "or": "o",
     "cuttingList": "Lista de corte",
@@ -116,12 +116,15 @@
     "blocksMany": "{n} bloques",
     "backingOne": "Trasera (1 panel)",
     "backingMany": "Trasera ({n} paneles)",
-    "binding": "Ribete ({n} tiras de {w}\")",
+    "binding": "Ribete ({n} tiras de {w})",
     "batting": "Guata",
     "allowance": "Incluye un margen del 10 %. Comprueba las cifras antes de comprar.",
     "howTo": "Cómo montarlo",
     "tileAlt": "Repetición continua de {name}",
-    "browseOptions": "Explorar las opciones"
+    "browseOptions": "Explorar las opciones",
+    "units": "Medidas en",
+    "unitsIn": "Pulgadas",
+    "unitsCm": "Centímetros"
   },
   "settings": {
     "straight": "Todos en la misma dirección",

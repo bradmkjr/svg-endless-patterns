@@ -102,7 +102,7 @@
     "direction": "Richting van de blokken",
     "wof": "Bruikbare stofbreedte",
     "roundedTitle": "Sommige maten zijn naar boven afgerond.",
-    "roundedText": "Bij {size}\" vallen de stukken van dit blok tussen de streepjes van de liniaal. Knip dus zoals aangegeven en snijd elk onderdeel bij, of gebruik de pdf-sjablonen.",
+    "roundedText": "Bij {size} vallen de stukken van dit blok tussen de streepjes van de liniaal. Knip dus zoals aangegeven en snijd elk onderdeel bij, of gebruik de pdf-sjablonen.",
     "evenSizes": "Maten die mooi uitkomen:",
     "or": "of",
     "cuttingList": "Snijlijst",
@@ -116,12 +116,15 @@
     "blocksMany": "{n} blokken",
     "backingOne": "Achterkant (1 baan)",
     "backingMany": "Achterkant ({n} banen)",
-    "binding": "Bies ({n} stroken van {w}\")",
+    "binding": "Bies ({n} stroken van {w})",
     "batting": "Tussenvulling",
     "allowance": "Inclusief 10% extra. Controleer de cijfers voordat je koopt.",
     "howTo": "Zo naai je het in elkaar",
     "tileAlt": "Naadloze herhaling van {name}",
-    "browseOptions": "Bekijk de opties"
+    "browseOptions": "Bekijk de opties",
+    "units": "Maten in",
+    "unitsIn": "Inch",
+    "unitsCm": "Centimeter"
   },
   "settings": {
     "straight": "Allemaal dezelfde kant op",

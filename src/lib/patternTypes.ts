@@ -7,14 +7,16 @@ export type Setting = "straight" | "alternate" | "quadrants";
 export type QuiltFinish = "cloth" | "plain";
 
 export type PatternRequest = {
-  /** Finished block size, in inches. */
+  /** Inches, or a pattern written in metric: centimeters, a 0.75 cm seam and A4 paper. Inches when left out. */
+  units?: "in" | "cm";
+  /** Finished block size, in inches or centimeters. */
   size: number;
   cols: number;
   rows: number;
   sashing: number;
   border: number;
   setting: Setting;
-  /** Usable width of fabric after selvages, in inches. */
+  /** Usable width of fabric after selvages, in inches or centimeters. */
   wof: number;
   /** Draw seam lines on the block, quilt and tile. */
   seams: boolean;

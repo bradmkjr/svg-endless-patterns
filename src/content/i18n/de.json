@@ -1,5 +1,33 @@
 {
   "posts": {
+    "plan-a-whole-quilt": {
+      "title": "Einen ganzen Quilt planen: Drucke, Quilten, Zuschnittplan und Gewicht",
+      "summary": "Ein neuer Quiltplaner legt klassische Blockkombinationen als ganzen Quilt an, mischt Reststoff-Drucke dazu, zeichnet Stippling und andere Quiltmuster zum Ein- und Ausblenden, druckt eine bebilderte Zuschneideliste und wiegt den fertigen Quilt. Muster lassen sich jetzt samt Farben als Favoriten speichern.",
+      "blocks": [
+        "Der [Quiltplaner](/quilts/) nimmt die Blöcke aus der [Blockbibliothek](/blocks/) und legt sie als ganzen Quilt an. Beginne mit einer klassischen Kombination und ändere dann alles: Blöcke, Farben, Aufbau, Drucke und Quiltmuster.",
+        "Beispiele zum Start",
+        [
+          "Snowball und Nine Patch, deren dunkle Ecken sich zu Ketten verbinden",
+          "Charm-Quadrate aus der Nähe: Vichy, Punkte, Blumen und einfarbige Baumwolle",
+          "Mäander über einem Ohio Star und einem einfarbigen Quadrat",
+          "Ein Sternen-Sampler mit Sashing",
+          "Churn Dash mit mehr Drucken, im Stippling",
+          "Log Cabin, in jedem Viertel anders gedreht"
+        ],
+        "Blöcke, die zusammenpassen",
+        "Alle Blöcke eines Quilts teilen sich eine Palette: Der erste Stoff eines Blocks bekommt die erste Farbe, der zweite die zweite und so weiter. Deshalb können zwei Blöcke über ihre Nähte hinweg zusammenwachsen, so wie die dunklen Ecken von [Snowball und Nine Patch](/quilts/snowball-and-nine-patch/) Ketten bilden. Wiederhole einen Block, wechsle zwei ab (ein einfarbiges Quadrat ist eine der Möglichkeiten, wie bei [Ohio Star und einfarbige Quadrate](/quilts/ohio-star-and-plain/)) oder mach einen Sampler aus bis zu zwölf, wie den [Sternen-Sampler](/quilts/star-sampler/). Jede Blockseite führt jetzt mit diesem Block in seinen Farben zum Planer.",
+        "Drucke und Reste",
+        "Echte Quilts haben selten nur einen Stoff pro Farbe. Das Druckrauschen tauscht einige Stoffe gegen nahe Töne und Drucke derselben Farbe: Vichy, Karo, Punkte, kleine und große Blumen, Streifen und Leinen. Schalte Reste ein, und jedes Teil bekommt eine beliebige Farbe, wie bei den [Charm-Quadraten](/quilts/charm-squares/). Zwei Restekörbe, ein warmer und einer mit allen Blautönen, sind ein schneller Anfang, und neu mischen verteilt die Reste noch einmal.",
+        "Quilten zum Ein- und Ausblenden",
+        "Wähle Stippling, Mäander, Rautengitter, eine Kontur einen Viertelzoll innerhalb jedes Teils oder Quilten im Nahtschatten, und blende die Linien ein oder aus, um den Quilt mit und ohne sie zu sehen. Stippling und Mäander sind als eine durchgehende Linie gezeichnet, die sich nie kreuzt, so wie sie genäht werden.",
+        "Ein Zuschnittplan zum Drucken",
+        "Unter dem Quilt steht ein Zuschnittplan: jedes Teil für den ganzen Quilt, im selben Maßstab in seiner Farbe gezeichnet, mit der Anzahl. Diagonal zu schneidende Quadrate zeigen den Schnitt. Drucke ihn aus und hake jede Zeile beim Arbeiten ab.",
+        "Wie viel wird er wiegen?",
+        "Der Planer wiegt den fertigen Quilt Lage für Lage: Oberseite mit Nähten, Rückseite, Vlies, Einfassung und Quiltgarn, wahlweise mit Baumwoll- oder Polyestervlies. Er sagt auch, wie viel Garn das Quilten braucht. Die verwendeten Stoff- und Vliesgewichte stehen in den [Danksagungen](/acknowledgements/).",
+        "Favoriten",
+        "Ein Herz im Quiltplaner, bei jedem Block und bei jedem Strick- und Häkelmuster speichert den Entwurf samt Farben in deinen Favoriten. Sie erscheinen oben auf den Seiten [Blöcke](/blocks/), [Quilts](/quilts/), [Stricken](/knitting/), [Häkeln](/crochet/) und [Muster](/patterns/) und öffnen sich so, wie du sie verlassen hast. Sie bleiben nur in diesem Browser."
+      ]
+    },
     "thirty-three-quilt-blocks": {
       "title": "Dreiunddreißig neue Quiltblöcke",
       "summary": "Die Bibliothek der Quiltblöcke verdoppelt sich fast, von 39 auf 72 Blöcke: vier weitere Blöcke der Stufe Fortgeschritten, neue Sterne, Rundungen, Applikationen und Bildblöcke sowie Klassiker aus Streifen, Quadraten und Dreiecken.",
@@ -863,6 +891,17 @@
     }
   },
   "changelog": {
+    "Whole quilts, quilting, a cut map and favorites": {
+      "title": "Ganze Quilts, Quilten, Zuschnittplan und Favoriten",
+      "items": [
+        "Ein neuer Quiltplaner legt einen ganzen Quilt aus sieben klassischen Entwürfen oder beliebigen Blöcken an",
+        "Druckrauschen und Reste mischen Vichy, Karo, Punkte, Blumen, Streifen und Leinen dazu",
+        "Stippling, Mäander, Rautengitter, Kontur und Quilten im Nahtschatten, ein- oder ausgeblendet",
+        "Ein druckbarer Zuschnittplan zeichnet jedes Teil maßstäblich in seiner Farbe, zum Abhaken beim Zuschneiden",
+        "Das Gewicht des fertigen Quilts, Lage für Lage, und das Garn, das sein Quilten braucht",
+        "Herzen speichern Blöcke, Quilts und Muster samt Farben als Favoriten, oben auf ihren Seiten"
+      ]
+    },
     "Ads from Google AdSense": {
       "title": "Anzeigen von Google AdSense",
       "items": [

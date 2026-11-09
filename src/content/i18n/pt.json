@@ -1,5 +1,33 @@
 {
   "posts": {
+    "plan-a-whole-quilt": {
+      "title": "Planeje uma colcha inteira: estampas, quilting, mapa de cortes e peso",
+      "summary": "Um novo planejador de colchas monta combinações clássicas de blocos numa colcha inteira, mistura estampas de retalhos, desenha pontilhado e outros quiltings que você pode mostrar ou esconder, imprime uma lista de cortes ilustrada e pesa a colcha pronta. Agora os padrões podem ser salvos nos favoritos, com as cores.",
+      "blocks": [
+        "O [planejador de colchas](/quilts/) pega os blocos da [biblioteca de blocos](/blocks/) e monta uma colcha inteira. Comece com uma combinação clássica e mude o que quiser: os blocos, as cores, o layout, as estampas e o quilting.",
+        "Exemplos para começar",
+        [
+          "Snowball e Nine Patch, com os cantos escuros formando correntes",
+          "Quadrados charm de perto: vichy, poá, florais e algodão liso",
+          "Meandros sobre uma Ohio Star e um quadrado liso",
+          "Um sampler de estrelas com sashing",
+          "Churn Dash com mais estampas, em pontilhado",
+          "Log Cabin virado de um jeito diferente em cada quarto"
+        ],
+        "Blocos que combinam",
+        "Todos os blocos de uma colcha compartilham uma paleta: o primeiro tecido de um bloco fica com a primeira cor, o segundo com a segunda, e assim por diante. É isso que deixa dois blocos se unirem por cima das costuras, como os cantos escuros de [Snowball e Nine Patch](/quilts/snowball-and-nine-patch/) que formam correntes. Repita um bloco, alterne dois (um quadrado liso é uma das opções, como em [Ohio Star e quadrados lisos](/quilts/ohio-star-and-plain/)) ou faça um sampler de até doze, como o [sampler de estrelas](/quilts/star-sampler/). A página de cada bloco agora leva ao planejador com esse bloco nas suas cores.",
+        "Estampas e retalhos",
+        "Colchas de verdade quase nunca têm um só tecido por cor. O ruído de estampas troca alguns tecidos por tons próximos e estampas da mesma cor: vichy, xadrez, poá, florais pequenos e grandes, listras e linho. Ative os retalhos e cada peça fica com qualquer uma das cores, como nos [quadrados charm](/quilts/charm-squares/). Dois cestos de retalhos, um quente e outro com todos os azuis, são um jeito rápido de começar, e misturar de novo redistribui os retalhos.",
+        "Quilting que você mostra ou esconde",
+        "Escolha pontilhado, meandros, grade diagonal, um contorno a um quarto de polegada dentro de cada peça ou costura na costura, e mostre ou esconda as linhas para ver a colcha com e sem elas. O pontilhado e os meandros são desenhados como uma única linha contínua que nunca se cruza, do jeito que são costurados.",
+        "Um mapa de cortes para imprimir",
+        "Embaixo da colcha há um mapa de cortes: todas as peças da colcha inteira, desenhadas na mesma escala na sua cor, com quantas cortar. Os quadrados cortados na diagonal mostram o corte. Imprima e marque cada linha conforme avança.",
+        "Quanto ela vai pesar?",
+        "O planejador pesa a colcha pronta, camada por camada: o top com as costuras, o forro, a manta, o viés e a linha de quilting, com manta de algodão ou de poliéster à escolha. Ele também diz quanta linha o quilting pede. Os pesos de tecido e manta usados estão nos [agradecimentos](/acknowledgements/).",
+        "Favoritos",
+        "Um coração no planejador de colchas, em cada bloco e em cada ponto de tricô e crochê salva o desenho nos seus favoritos, com as cores. Eles aparecem no topo das páginas de [blocos](/blocks/), [colchas](/quilts/), [tricô](/knitting/), [crochê](/crochet/) e [padrões](/patterns/), e abrem do jeito que você deixou. Ficam salvos só neste navegador."
+      ]
+    },
     "thirty-three-quilt-blocks": {
       "title": "Trinta e três blocos de quilt novos",
       "summary": "A biblioteca de blocos de quilt quase dobra, de 39 blocos para 72: mais quatro blocos Avançados, novas estrelas, curvas, aplicações e blocos figurativos, e clássicos de tiras, quadrados e triângulos.",
@@ -863,6 +891,17 @@
     }
   },
   "changelog": {
+    "Whole quilts, quilting, a cut map and favorites": {
+      "title": "Colchas inteiras, quilting, mapa de cortes e favoritos",
+      "items": [
+        "Um novo planejador monta uma colcha inteira a partir de sete modelos clássicos, ou dos blocos que você escolher",
+        "O ruído de estampas e os retalhos misturam vichy, xadrez, poá, florais, listras e linho",
+        "Pontilhado, meandros, grade diagonal, contorno e costura na costura, à mostra ou escondidos",
+        "Um mapa de cortes para imprimir desenha cada peça em escala na sua cor, para marcar ao cortar",
+        "O peso da colcha pronta, camada por camada, e a linha que o quilting pede",
+        "Corações salvam blocos, colchas e pontos nos favoritos, com as cores, no topo das suas páginas"
+      ]
+    },
     "Ads from Google AdSense": {
       "title": "Anúncios do Google AdSense",
       "items": [

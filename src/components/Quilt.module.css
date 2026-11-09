@@ -141,6 +141,8 @@
 }
 
 .chip {
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
   width: 1.1rem;
   height: 1.1rem;
   border-radius: 3px;
@@ -190,14 +192,9 @@
   text-decoration: line-through;
 }
 
-.qty {
-  display: block;
-  font-size: 1.3rem;
-  font-weight: 700;
-  line-height: 1.1;
-}
-
 .shape {
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
   display: grid;
   place-items: center;
   width: 64px;

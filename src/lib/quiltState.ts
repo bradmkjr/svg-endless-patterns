@@ -74,8 +74,10 @@ export function defaultQuiltState(locale: Locale = "en", design = DEFAULT_DESIGN
 }
 
 /** What the API is sent: the state without the design's name. */
-export function quiltRequest({ design: _design, ...request }: QuiltState): QuiltRequest {
-  return request;
+export function quiltRequest(state: QuiltState): QuiltRequest {
+  const request: Partial<QuiltState> = { ...state };
+  delete request.design;
+  return request as QuiltRequest;
 }
 
 const HEX = /^[0-9a-f]{6}$/i;

@@ -45,8 +45,8 @@ export type QuiltResult = {
   /** `id` is `palette-<n>`, `sashing` or `border`. */
   yardage: { id: string; color: string; yards: string }[];
   yardageEstimated: boolean;
-  /** Cuts by color (`palette-<n>`, `sashing`, `border`), or by block fabric (`scraps-<label>`, color null) when scrappy. */
-  cutMap: { id: string; color: string | null; cuts: QuiltCutMapLine[] }[];
+  /** Cuts by color (`palette-<n>`, `sashing`, `border`), or by block fabric (`scraps-<label>`, color null, `label` in the request's language) when scrappy. */
+  cutMap: { id: string; color: string | null; label?: string; cuts: QuiltCutMapLine[] }[];
   backing: { yards: string; panels: number; width: string; height: string };
   binding: { yards: string; strips: number; stripWidth: string };
   batting: { width: string; height: string };

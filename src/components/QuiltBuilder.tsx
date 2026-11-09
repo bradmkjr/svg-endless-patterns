@@ -58,10 +58,7 @@ function CutLine({ line, label }: { line: QuiltCutMapLine; label: string }) {
       </span>
       <label>
         <input type="checkbox" checked={done} onChange={(e) => setDone(e.target.checked)} aria-label={`${label}: ${line.text}`} />
-        <span className={q.cutText}>
-          <span className={q.qty}>{line.qty}</span>
-          {line.text}
-        </span>
+        <span className={q.cutText}>{line.text}</span>
       </label>
     </li>
   );
@@ -90,7 +87,7 @@ function CutMap({ result, t, locale, colorName }: { result: QuiltResult; t: Copy
         {t.cutMapIntro} {t.cutMapScale}
       </p>
       {result.cutMap.map((group) => {
-        const name = group.id.startsWith("scraps-") ? fill(t.scrapsGroup, { label: group.id.slice("scraps-".length) }) : colorName(group.id);
+        const name = group.id.startsWith("scraps-") ? fill(t.scrapsGroup, { label: group.label ?? group.id.slice("scraps-".length) }) : colorName(group.id);
         return (
           <div key={`${locale}-${group.id}`} className={q.cutGroup}>
             <h3>

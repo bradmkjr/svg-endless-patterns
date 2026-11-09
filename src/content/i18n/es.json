@@ -1,5 +1,33 @@
 {
   "posts": {
+    "plan-a-whole-quilt": {
+      "title": "Planifica una colcha entera: estampados, acolchado, un mapa de cortes y su peso",
+      "summary": "Un nuevo planificador de colchas dispone combinaciones clásicas de bloques en una colcha entera, mezcla estampados de retales, dibuja punteado y otros acolchados que puedes mostrar u ocultar, imprime una lista de cortes con dibujos y pesa la colcha terminada. Ahora los patrones se pueden guardar en favoritos, con sus colores.",
+      "blocks": [
+        "El [planificador de colchas](/quilts/) toma los bloques de la [biblioteca de bloques](/blocks/) y los dispone en una colcha entera. Empieza con una combinación clásica y cambia lo que quieras: los bloques, los colores, el diseño, los estampados y el acolchado.",
+        "Ejemplos para empezar",
+        [
+          "Snowball y Nine Patch, cuyas esquinas oscuras se unen en cadenas",
+          "Cuadrados charm de cerca: vichy, lunares, flores y algodón liso",
+          "Meandros sobre una Ohio Star y un cuadrado liso",
+          "Un muestrario de estrellas con sashing",
+          "Churn Dash con más estampados, con punteado",
+          "Log Cabin girado de forma distinta en cada cuarto"
+        ],
+        "Bloques que combinan",
+        "Todos los bloques de una colcha comparten una paleta: la primera tela de un bloque toma el primer color, la segunda el segundo, y así sucesivamente. Eso permite que dos bloques se unan a través de sus costuras, como las esquinas oscuras de [Snowball y Nine Patch](/quilts/snowball-and-nine-patch/) que forman cadenas. Repite un bloque, alterna dos (un cuadrado liso es una de las opciones, como en [Ohio Star y cuadrados lisos](/quilts/ohio-star-and-plain/)) o haz un muestrario de hasta doce, como el [muestrario de estrellas](/quilts/star-sampler/). La página de cada bloque enlaza ahora con el planificador, con ese bloque en sus colores.",
+        "Estampados y retales",
+        "Las colchas de verdad casi nunca usan una sola tela por color. El ruido de estampados cambia algunas telas por tonos cercanos y estampados del mismo color: vichy, cuadros, lunares, flores pequeñas y grandes, rayas y lino. Activa los retales y cada pieza toma cualquiera de los colores, como en los [cuadrados charm](/quilts/charm-squares/). Dos cestas de retales, una cálida y otra con todos los azules, son un buen punto de partida, y volver a mezclar reparte los retales de nuevo.",
+        "Un acolchado que puedes mostrar u ocultar",
+        "Elige punteado, meandros, cuadrícula diagonal, un contorno a un cuarto de pulgada dentro de cada pieza o pespunte en la costura, y muestra u oculta las líneas para ver la colcha con y sin ellas. El punteado y los meandros se dibujan como una sola línea continua que nunca se cruza, tal como se cosen.",
+        "Un mapa de cortes para imprimir",
+        "Debajo de la colcha hay un mapa de cortes: todas las piezas que necesita la colcha entera, dibujadas a la misma escala en su color, con cuántas cortar. Los cuadrados que se cortan en diagonal muestran el corte. Imprímelo y marca cada línea a medida que avanzas.",
+        "¿Cuánto pesará?",
+        "El planificador pesa la colcha terminada, capa por capa: la parte delantera con sus costuras, la trasera, la guata, el ribete y el hilo de acolchar, con guata de algodón o de poliéster a elegir. También indica cuánto hilo necesita el acolchado. Los pesos de tela y guata que usa aparecen en los [agradecimientos](/acknowledgements/).",
+        "Favoritos",
+        "Un corazón en el planificador de colchas, en cada bloque y en cada punto de tejido y ganchillo guarda el diseño en tus favoritos, con sus colores. Aparecen arriba en las páginas de [bloques](/blocks/), [colchas](/quilts/), [tejido](/knitting/), [ganchillo](/crochet/) y [patrones](/patterns/), y se abren tal como los dejaste. Solo se guardan en este navegador."
+      ]
+    },
     "thirty-three-quilt-blocks": {
       "title": "Treinta y tres bloques de quilt nuevos",
       "summary": "La biblioteca de bloques de quilt casi se duplica, de 39 bloques a 72: cuatro bloques Avanzados más, nuevas estrellas, curvas, aplicaciones y bloques figurativos, y diseños clásicos de tiras, cuadrados y triángulos.",
@@ -863,6 +891,17 @@
     }
   },
   "changelog": {
+    "Whole quilts, quilting, a cut map and favorites": {
+      "title": "Colchas enteras, acolchado, un mapa de cortes y favoritos",
+      "items": [
+        "Un nuevo planificador de colchas dispone una colcha entera a partir de siete diseños clásicos, o de los bloques que elijas",
+        "El ruido de estampados y los retales mezclan vichy, cuadros, lunares, flores, rayas y lino",
+        "Punteado, meandros, cuadrícula diagonal, contorno y acolchado en la costura, visibles u ocultos",
+        "Un mapa de cortes para imprimir dibuja cada pieza a escala en su color, para marcarla al cortar",
+        "El peso de la colcha terminada, capa por capa, y el hilo que necesita el acolchado",
+        "Los corazones guardan bloques, colchas y puntos en favoritos, con sus colores, arriba en sus páginas"
+      ]
+    },
     "Ads from Google AdSense": {
       "title": "Anuncios de Google AdSense",
       "items": [

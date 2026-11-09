@@ -1,5 +1,116 @@
 [
   {
+    "slug": "plan-a-whole-quilt",
+    "title": "Plan a whole quilt: prints, quilting, a cut map and its weight",
+    "date": "2026-11-08",
+    "summary": "A new quilt planner lays classic block pairings out as a whole quilt, mixes in scrappy prints, draws stippling and other quilting you can turn on and off, prints a picture cut list, and weighs the finished quilt. Patterns can now be saved as favorites, colors and all.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The [quilt planner](/quilts/) takes the blocks from the [block library](/blocks/) and lays them out as a whole quilt. Start from a classic pairing, then change anything: the blocks, the colors, the layout, the prints and the quilting."
+      },
+      {
+        "type": "heading",
+        "text": "Samples to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "quilt",
+            "slug": "snowball-and-nine-patch",
+            "query": "",
+            "view": "quilt",
+            "caption": "Snowball and Nine Patch, whose dark corners join into chains"
+          },
+          {
+            "kind": "quilt",
+            "slug": "charm-squares",
+            "query": "",
+            "view": "detail",
+            "caption": "Charm squares up close: gingham, dots, florals and plain cotton"
+          },
+          {
+            "kind": "quilt",
+            "slug": "ohio-star-and-plain",
+            "query": "",
+            "view": "detail",
+            "caption": "Meandering across an Ohio Star and a plain square"
+          },
+          {
+            "kind": "quilt",
+            "slug": "star-sampler",
+            "query": "",
+            "view": "quilt",
+            "caption": "A star sampler with sashing"
+          },
+          {
+            "kind": "quilt",
+            "slug": "churn-dash-sashed",
+            "query": "noise=80&q=stipple",
+            "view": "detail",
+            "caption": "Churn Dash with more prints, stippled"
+          },
+          {
+            "kind": "quilt",
+            "slug": "log-cabin-quarters",
+            "query": "",
+            "view": "quilt",
+            "caption": "Log Cabin turned a different way in each quarter"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Blocks that work together"
+      },
+      {
+        "type": "paragraph",
+        "text": "Every block in a quilt shares one palette: a block's first fabric takes the first color, its second the second, and so on. That's what lets two blocks join across their seams, as the dark corners of [Snowball and Nine Patch](/quilts/snowball-and-nine-patch/) run into chains. Repeat one block, alternate two (a plain square is one of the choices, as in [Ohio Star and plain squares](/quilts/ohio-star-and-plain/)), or make a sampler of up to twelve, like the [star sampler](/quilts/star-sampler/). Any block's page now links to the planner with that block in its colors."
+      },
+      {
+        "type": "heading",
+        "text": "Prints and scraps"
+      },
+      {
+        "type": "paragraph",
+        "text": "Real quilts are rarely one fabric per color. Print noise swaps some fabrics for near shades and prints of the same color: gingham, plaid, dots, small and large florals, stripes and linen. Turn on scrappy and every piece takes any of the colors, as in [charm squares](/quilts/charm-squares/). Two scrap baskets, one warm and one of every blue, are a quick place to begin, and reshuffle deals the scraps out again."
+      },
+      {
+        "type": "heading",
+        "text": "Quilting you can turn on and off"
+      },
+      {
+        "type": "paragraph",
+        "text": "Choose stippling, meandering, crosshatching, an outline a quarter inch inside each piece, or stitching in the ditch, and switch the lines on or off to see the quilt with and without them. Stippling and meandering are drawn as one continuous line that never crosses itself, the way they're sewn."
+      },
+      {
+        "type": "heading",
+        "text": "A cut map to print"
+      },
+      {
+        "type": "paragraph",
+        "text": "Under the quilt is a cut map: every piece the whole quilt needs, drawn to one scale in its own color, with how many to cut. Squares to be cut on the diagonal show the cut. Print it and tick off each line as you go."
+      },
+      {
+        "type": "heading",
+        "text": "What will it weigh?"
+      },
+      {
+        "type": "paragraph",
+        "text": "The planner weighs the finished quilt, layer by layer: the top with its seams, the backing, the batting, the binding and the quilting thread, with a choice of cotton or polyester batting. It also says how much thread the quilting takes. The fabric and batting weights it uses are listed in the [acknowledgements](/acknowledgements/)."
+      },
+      {
+        "type": "heading",
+        "text": "Favorites"
+      },
+      {
+        "type": "paragraph",
+        "text": "A heart on the quilt planner, every block and every knitting and crochet stitch saves the design to your favorites, colors and all. They show at the top of the [blocks](/blocks/), [quilts](/quilts/), [knitting](/knitting/), [crochet](/crochet/) and [patterns](/patterns/) pages, and open just as you left them. They're kept in this browser only."
+      }
+    ]
+  },
+  {
     "slug": "thirty-three-quilt-blocks",
     "title": "Thirty-three new quilt blocks",
     "date": "2026-11-08",

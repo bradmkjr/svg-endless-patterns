@@ -1,5 +1,33 @@
 {
   "posts": {
+    "plan-a-whole-quilt": {
+      "title": "Pianifica una trapunta intera: stampe, trapuntatura, mappa di taglio e peso",
+      "summary": "Un nuovo pianificatore di trapunte dispone abbinamenti classici di blocchi in una trapunta intera, mescola stampe di scampoli, disegna lo stippling e altre trapuntature da mostrare o nascondere, stampa una lista di taglio illustrata e pesa la trapunta finita. Ora i modelli si possono salvare nei preferiti, con i loro colori.",
+      "blocks": [
+        "Il [pianificatore di trapunte](/quilts/) prende i blocchi dalla [libreria di blocchi](/blocks/) e li dispone in una trapunta intera. Parti da un abbinamento classico, poi cambia ciò che vuoi: i blocchi, i colori, la disposizione, le stampe e la trapuntatura.",
+        "Esempi per cominciare",
+        [
+          "Snowball e Nine Patch, con gli angoli scuri che formano catene",
+          "Quadrati charm da vicino: vichy, pois, fiori e cotone in tinta unita",
+          "Meandri su una Ohio Star e un quadrato in tinta unita",
+          "Un sampler di stelle con strisce di separazione",
+          "Churn Dash con più stampe, in stippling",
+          "Log Cabin girato in modo diverso in ogni quarto"
+        ],
+        "Blocchi che stanno bene insieme",
+        "Tutti i blocchi di una trapunta condividono una palette: il primo tessuto di un blocco prende il primo colore, il secondo il secondo, e così via. È questo che permette a due blocchi di unirsi oltre le cuciture, come gli angoli scuri di [Snowball e Nine Patch](/quilts/snowball-and-nine-patch/) che formano catene. Ripeti un blocco, alternane due (un quadrato in tinta unita è una delle scelte, come in [Ohio Star e quadrati in tinta unita](/quilts/ohio-star-and-plain/)) o fai un sampler fino a dodici, come il [sampler di stelle](/quilts/star-sampler/). La pagina di ogni blocco ora porta al pianificatore con quel blocco nei suoi colori.",
+        "Stampe e scampoli",
+        "Le trapunte vere hanno raramente un solo tessuto per colore. Il rumore di stampe sostituisce alcuni tessuti con toni vicini e stampe dello stesso colore: vichy, scozzese, pois, fiori piccoli e grandi, righe e lino. Attiva gli scampoli e ogni pezzo prende uno qualsiasi dei colori, come nei [quadrati charm](/quilts/charm-squares/). Due cesti di scampoli, uno caldo e uno con tutti i blu, sono un modo rapido per cominciare, e rimescolare ridistribuisce gli scampoli.",
+        "Una trapuntatura da mostrare o nascondere",
+        "Scegli stippling, meandri, griglia diagonale, un contorno a un quarto di pollice dentro ogni pezzo o la trapuntatura nel solco della cucitura, e mostra o nascondi le linee per vedere la trapunta con e senza. Lo stippling e i meandri sono disegnati come un'unica linea continua che non si incrocia mai, come vengono cuciti.",
+        "Una mappa di taglio da stampare",
+        "Sotto la trapunta c'è una mappa di taglio: tutti i pezzi della trapunta intera, disegnati alla stessa scala nel loro colore, con quanti tagliarne. I quadrati da tagliare in diagonale mostrano il taglio. Stampala e spunta ogni riga man mano.",
+        "Quanto peserà?",
+        "Il pianificatore pesa la trapunta finita, strato per strato: la parte superiore con le cuciture, il retro, l'imbottitura, la bordura e il filo per trapuntare, con imbottitura di cotone o di poliestere a scelta. Dice anche quanto filo richiede la trapuntatura. I pesi di tessuto e imbottitura usati sono nei [ringraziamenti](/acknowledgements/).",
+        "Preferiti",
+        "Un cuore nel pianificatore di trapunte, in ogni blocco e in ogni punto a maglia e all'uncinetto salva il modello nei tuoi preferiti, con i suoi colori. Compaiono in cima alle pagine [blocchi](/blocks/), [trapunte](/quilts/), [maglia](/knitting/), [uncinetto](/crochet/) e [modelli](/patterns/), e si aprono come li avevi lasciati. Restano solo in questo browser."
+      ]
+    },
     "thirty-three-quilt-blocks": {
       "title": "Trentatré nuovi blocchi per quilt",
       "summary": "La raccolta di blocchi per quilt quasi raddoppia, da 39 a 72 blocchi: altri quattro blocchi Avanzati, nuove stelle, curve, applicazioni e blocchi figurativi, e classici a strisce, quadrati e triangoli.",
@@ -863,6 +891,17 @@
     }
   },
   "changelog": {
+    "Whole quilts, quilting, a cut map and favorites": {
+      "title": "Trapunte intere, trapuntatura, mappa di taglio e preferiti",
+      "items": [
+        "Un nuovo pianificatore dispone una trapunta intera da sette modelli classici, o dai blocchi che scegli",
+        "Il rumore di stampe e gli scampoli mescolano vichy, scozzese, pois, fiori, righe e lino",
+        "Stippling, meandri, griglia diagonale, contorno e trapuntatura nel solco, visibili o nascosti",
+        "Una mappa di taglio da stampare disegna ogni pezzo in scala nel suo colore, da spuntare mentre tagli",
+        "Il peso della trapunta finita, strato per strato, e il filo che richiede la trapuntatura",
+        "I cuori salvano blocchi, trapunte e punti nei preferiti, con i loro colori, in cima alle loro pagine"
+      ]
+    },
     "Ads from Google AdSense": {
       "title": "Annunci di Google AdSense",
       "items": [

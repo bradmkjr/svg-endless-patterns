@@ -1,5 +1,63 @@
 [
   {
+    "slug": "quilts-in-centimeters",
+    "title": "Quilts in centimeters, on A4",
+    "date": "2026-11-08",
+    "summary": "The quilt planner and every block can now be measured in centimeters: a true metric pattern with a 0.75 cm seam, cuts on half-centimeter marks, fabric in meters and PDFs on A4. English pages open in inches and the others in centimeters, and either can switch.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Every quilt in the [quilt planner](/quilts/) and every block in the [block library](/blocks/) now offers inches or centimeters. It's a pattern written in metric, not inches converted: every number is one a metric ruler cuts."
+      },
+      {
+        "type": "heading",
+        "text": "How a metric pattern is worked out"
+      },
+      {
+        "type": "paragraph",
+        "text": "The seam allowance is 0.75 cm, and everything that follows from it is three times its quarter-inch figure, so a metric block goes together just as an imperial one does. Squares and strips are cut 1.5 cm larger than they finish, and triangles start from squares 2.6 or 3.75 cm larger, rounded up to the next half centimeter. Fabric is bought in tenths of a meter, binding strips are 6.5 cm wide, and the PDF patterns print on A4 with a 3 cm square to check the templates against."
+      },
+      {
+        "type": "heading",
+        "text": "Sizes that cut cleanly"
+      },
+      {
+        "type": "paragraph",
+        "text": "Switching a quilt to centimeters picks the nearest size at which its blocks' squares land on the ruler, so a 9\" [Snowball and Nine Patch](/quilts/snowball-and-nine-patch/) becomes 22.5 cm, with 7.5 cm squares, and a 12\" [Ohio Star](/blocks/ohio-star/) becomes 30 cm. English pages open in inches and every other language in centimeters, and a shared link keeps the units it was made in."
+      },
+      {
+        "type": "heading",
+        "text": "Metric quilts to start from"
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "quilt",
+            "slug": "snowball-and-nine-patch",
+            "query": "units=cm",
+            "view": "quilt",
+            "caption": "Snowball and Nine Patch at 22.5 cm"
+          },
+          {
+            "kind": "quilt",
+            "slug": "star-sampler",
+            "query": "units=cm",
+            "view": "quilt",
+            "caption": "A star sampler at 30 cm, with 5 cm sashing"
+          },
+          {
+            "kind": "quilt",
+            "slug": "trip-around-the-world",
+            "query": "units=cm",
+            "view": "quilt",
+            "caption": "Trip Around the World at 35 cm"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "slug": "whole-quilt-pdf",
     "title": "A printable pattern for the whole quilt",
     "date": "2026-11-08",

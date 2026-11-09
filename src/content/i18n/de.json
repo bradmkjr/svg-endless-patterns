@@ -1,5 +1,22 @@
 {
   "posts": {
+    "quilts-in-centimeters": {
+      "title": "Quilts in Zentimetern, auf A4",
+      "summary": "Der Quiltplaner und jeder Block lassen sich jetzt in Zentimetern messen: ein echtes metrisches Muster mit 0,75 cm Nahtzugabe, Zuschnitten auf halbe Zentimeter, Stoff in Metern und PDFs auf A4. Englische Seiten öffnen in Zoll, alle anderen in Zentimetern, und überall lässt sich umschalten.",
+      "blocks": [
+        "Jeder Quilt im [Quiltplaner](/quilts/) und jeder Block in der [Blockbibliothek](/blocks/) bietet jetzt Zoll oder Zentimeter. Es ist ein metrisch geschriebenes Muster, keine umgerechneten Zoll: Jede Zahl lässt sich mit einem metrischen Lineal schneiden.",
+        "Wie ein metrisches Muster berechnet wird",
+        "Die Nahtzugabe beträgt 0,75 cm, und alles, was daraus folgt, ist dreimal so groß wie der Wert für einen Viertelzoll. So wird ein metrischer Block genauso zusammengenäht wie ein imperialer. Quadrate und Streifen werden 1,5 cm größer zugeschnitten als ihr Fertigmaß, und Dreiecke entstehen aus Quadraten, die 2,6 oder 3,75 cm größer sind, aufgerundet auf den nächsten halben Zentimeter. Stoff wird in Zehntelmetern gekauft, Bindingstreifen sind 6,5 cm breit, und die PDF-Muster werden auf A4 gedruckt, mit einem 3-cm-Quadrat zum Prüfen der Schablonen.",
+        "Größen, die sich sauber schneiden lassen",
+        "Wird ein Quilt auf Zentimeter umgestellt, wählt der Planer die nächste Größe, bei der die Quadrate seiner Blöcke auf die Markierungen des Lineals fallen: Aus einem 9\" [Snowball und Nine Patch](/quilts/snowball-and-nine-patch/) werden 22,5 cm mit Quadraten von 7,5 cm, aus einem 12\" [Ohio Star](/blocks/ohio-star/) werden 30 cm. Englische Seiten öffnen in Zoll und alle anderen Sprachen in Zentimetern, und ein geteilter Link behält die Einheiten, in denen er erstellt wurde.",
+        "Metrische Quilts zum Start",
+        [
+          "Snowball und Nine Patch mit 22,5 cm",
+          "Ein Sternen-Sampler mit 30 cm und 5 cm Sashing",
+          "Trip Around the World mit 35 cm"
+        ]
+      ]
+    },
     "whole-quilt-pdf": {
       "title": "Ein druckbares Muster für den ganzen Quilt",
       "summary": "Der Quiltplaner lädt jetzt ein einziges PDF-Muster für den ganzen Quilt herunter, egal aus wie vielen Blöcken er besteht: Bild, Stoffbedarf, jeder Zuschnitt, das Nähen jedes Blocks, das Zusammensetzen des Tops, Quilten, Binding und Schablonen.",
@@ -909,6 +926,14 @@
     }
   },
   "changelog": {
+    "Quilts and blocks in centimeters": {
+      "title": "Quilts und Blöcke in Zentimetern",
+      "items": [
+        "Quilts und Blöcke lassen sich in Zentimetern messen, als echtes metrisches Muster: 0,75 cm Nahtzugabe, Zuschnitte auf halbe Zentimeter und Stoff in Metern",
+        "Metrische PDF-Muster werden auf A4 gedruckt",
+        "Englische Seiten öffnen in Zoll, die anderen Sprachen in Zentimetern"
+      ]
+    },
     "A PDF pattern for the whole quilt": {
       "title": "Ein PDF-Muster für den ganzen Quilt",
       "items": [

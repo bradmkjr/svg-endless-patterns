@@ -1,5 +1,22 @@
 {
   "posts": {
+    "quilts-in-centimeters": {
+      "title": "Quilts in centimeters, op A4",
+      "summary": "De quiltplanner en elk blok kun je nu in centimeters meten: een echt metrisch patroon met een naad van 0,75 cm, snijmaten op halve centimeters, stof in meters en pdf’s op A4. Engelse pagina’s openen in inches en de andere in centimeters, en overal kun je wisselen.",
+      "blocks": [
+        "Elke quilt in de [quiltplanner](/quilts/) en elk blok in de [blokkenbibliotheek](/blocks/) biedt nu inches of centimeters. Het is een patroon dat metrisch is geschreven, geen omgerekende inches: elk getal snijd je met een metrische liniaal.",
+        "Hoe een metrisch patroon wordt berekend",
+        "De naadtoeslag is 0,75 cm, en alles wat daaruit volgt is drie keer de waarde voor een kwart inch, dus een metrisch blok gaat precies zo in elkaar als een imperiaal blok. Vierkanten en stroken worden 1,5 cm groter gesneden dan hun eindmaat, en driehoeken komen uit vierkanten die 2,6 of 3,75 cm groter zijn, naar boven afgerond op de volgende halve centimeter. Stof koop je per tiende meter, biesstroken zijn 6,5 cm breed, en de pdf-patronen worden op A4 geprint met een vierkant van 3 cm om de mallen te controleren.",
+        "Maten die netjes te snijden zijn",
+        "Zet je een quilt op centimeters, dan kiest de planner de dichtstbijzijnde maat waarbij de vierkanten van de blokken op de streepjes van de liniaal vallen: een [Snowball en Nine Patch](/quilts/snowball-and-nine-patch/) van 9\" wordt 22,5 cm, met vierkanten van 7,5 cm, en een [Ohio Star](/blocks/ohio-star/) van 12\" wordt 30 cm. Engelse pagina’s openen in inches en die in andere talen in centimeters, en een gedeelde link houdt de eenheden waarin hij is gemaakt.",
+        "Metrische quilts om mee te beginnen",
+        [
+          "Snowball en Nine Patch op 22,5 cm",
+          "Een sterrensampler op 30 cm, met sashing van 5 cm",
+          "Trip Around the World op 35 cm"
+        ]
+      ]
+    },
     "whole-quilt-pdf": {
       "title": "Een printbaar patroon voor de hele quilt",
       "summary": "De quiltplanner downloadt nu één PDF-patroon voor de hele quilt, uit hoeveel blokken hij ook bestaat: de afbeelding, de stof die je nodig hebt, elke snede, hoe je elk blok naait, hoe de top in elkaar gaat, quilten, bies en mallen.",
@@ -909,6 +926,14 @@
     }
   },
   "changelog": {
+    "Quilts and blocks in centimeters": {
+      "title": "Quilts en blokken in centimeters",
+      "items": [
+        "Quilts en blokken kun je in centimeters meten, als echt metrisch patroon: een naad van 0,75 cm, snijmaten op halve centimeters en stof in meters",
+        "Metrische pdf-patronen worden op A4 geprint",
+        "Engelse pagina’s openen in inches en die in andere talen in centimeters"
+      ]
+    },
     "A PDF pattern for the whole quilt": {
       "title": "Een PDF-patroon voor de hele quilt",
       "items": [

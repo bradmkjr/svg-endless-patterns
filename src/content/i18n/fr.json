@@ -1,5 +1,22 @@
 {
   "posts": {
+    "quilts-in-centimeters": {
+      "title": "Des quilts en centimètres, sur A4",
+      "summary": "Le planificateur de quilt et tous les blocs se mesurent désormais en centimètres : un vrai patron métrique, avec une couture de 0,75 cm, des coupes au demi-centimètre, le tissu en mètres et des PDF sur A4. Les pages en anglais s’ouvrent en pouces et les autres en centimètres, et toutes peuvent changer.",
+      "blocks": [
+        "Chaque quilt du [planificateur de quilt](/quilts/) et chaque bloc de la [bibliothèque de blocs](/blocks/) proposent maintenant les pouces ou les centimètres. C’est un patron écrit en métrique, pas des pouces convertis : chaque nombre se coupe avec une règle métrique.",
+        "Comment un patron métrique est calculé",
+        "La marge de couture est de 0,75 cm, et tout ce qui en découle vaut trois fois sa valeur en quart de pouce : un bloc métrique s’assemble donc exactement comme un bloc impérial. Les carrés et les bandes sont coupés 1,5 cm plus grands que leur taille finie, et les triangles partent de carrés 2,6 ou 3,75 cm plus grands, arrondis au demi-centimètre supérieur. Le tissu s’achète au dixième de mètre, les bandes de biais font 6,5 cm de large, et les patrons PDF s’impriment sur A4 avec un carré de 3 cm pour vérifier les gabarits.",
+        "Des tailles qui se coupent net",
+        "Passer un quilt en centimètres choisit la taille la plus proche où les carrés de ses blocs tombent sur les repères de la règle : un [Snowball et Nine Patch](/quilts/snowball-and-nine-patch/) de 9\" devient 22,5 cm, avec des carrés de 7,5 cm, et une [Ohio Star](/blocks/ohio-star/) de 12\" devient 30 cm. Les pages en anglais s’ouvrent en pouces et celles des autres langues en centimètres, et un lien partagé garde les unités dans lesquelles il a été créé.",
+        "Des quilts métriques pour commencer",
+        [
+          "Snowball et Nine Patch à 22,5 cm",
+          "Un sampler d’étoiles à 30 cm, avec un sashing de 5 cm",
+          "Trip Around the World à 35 cm"
+        ]
+      ]
+    },
     "whole-quilt-pdf": {
       "title": "Un patron imprimable pour tout le quilt",
       "summary": "Le planificateur de quilt télécharge maintenant un seul patron PDF pour tout le quilt, quel que soit le nombre de blocs : l’image, le tissu à acheter, chaque coupe, l’assemblage de chaque bloc, le montage du dessus, le matelassage, le biais et les gabarits.",
@@ -909,6 +926,14 @@
     }
   },
   "changelog": {
+    "Quilts and blocks in centimeters": {
+      "title": "Quilts et blocs en centimètres",
+      "items": [
+        "Les quilts et les blocs se mesurent en centimètres, comme un vrai patron métrique : couture de 0,75 cm, coupes au demi-centimètre et tissu en mètres",
+        "Les patrons PDF métriques s’impriment sur A4",
+        "Les pages en anglais s’ouvrent en pouces et celles des autres langues en centimètres"
+      ]
+    },
     "A PDF pattern for the whole quilt": {
       "title": "Un patron PDF pour tout le quilt",
       "items": [

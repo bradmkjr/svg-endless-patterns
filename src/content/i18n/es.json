@@ -1,5 +1,22 @@
 {
   "posts": {
+    "quilts-in-centimeters": {
+      "title": "Colchas en centímetros, en A4",
+      "summary": "El planificador de colchas y todos los bloques ahora se pueden medir en centímetros: un patrón métrico de verdad, con costura de 0,75 cm, cortes en marcas de medio centímetro, tela en metros y PDF en A4. Las páginas en inglés se abren en pulgadas y las demás en centímetros, y en todas se puede cambiar.",
+      "blocks": [
+        "Cada colcha del [planificador de colchas](/quilts/) y cada bloque de la [biblioteca de bloques](/blocks/) ahora ofrece pulgadas o centímetros. Es un patrón escrito en sistema métrico, no pulgadas convertidas: cada número es uno que corta una regla métrica.",
+        "Cómo se calcula un patrón métrico",
+        "El margen de costura es de 0,75 cm, y todo lo que depende de él es tres veces su valor en cuartos de pulgada, así que un bloque métrico se cose igual que uno imperial. Los cuadrados y las tiras se cortan 1,5 cm más grandes que su medida final, y los triángulos salen de cuadrados 2,6 o 3,75 cm más grandes, redondeados al siguiente medio centímetro. La tela se compra por décimas de metro, las tiras del ribete miden 6,5 cm de ancho y los patrones en PDF se imprimen en A4 con un cuadrado de 3 cm para comprobar las plantillas.",
+        "Tamaños que se cortan limpios",
+        "Al pasar una colcha a centímetros se elige el tamaño más cercano en el que los cuadrados de sus bloques caen en las marcas de la regla: un [Snowball y Nine Patch](/quilts/snowball-and-nine-patch/) de 9\" pasa a 22,5 cm, con cuadrados de 7,5 cm, y una [Ohio Star](/blocks/ohio-star/) de 12\" pasa a 30 cm. Las páginas en inglés se abren en pulgadas y las de los demás idiomas en centímetros, y un enlace compartido conserva las unidades con las que se creó.",
+        "Colchas métricas para empezar",
+        [
+          "Snowball y Nine Patch a 22,5 cm",
+          "Un sampler de estrellas a 30 cm, con sashing de 5 cm",
+          "Trip Around the World a 35 cm"
+        ]
+      ]
+    },
     "whole-quilt-pdf": {
       "title": "Un patrón imprimible para toda la colcha",
       "summary": "El planificador de colchas ahora descarga un único patrón en PDF para toda la colcha, tenga los bloques que tenga: la imagen, la tela que comprar, cada corte, cómo coser cada bloque, cómo armar el top, el acolchado, el ribete y las plantillas.",
@@ -909,6 +926,14 @@
     }
   },
   "changelog": {
+    "Quilts and blocks in centimeters": {
+      "title": "Colchas y bloques en centímetros",
+      "items": [
+        "Las colchas y los bloques se pueden medir en centímetros, como un patrón métrico de verdad: costura de 0,75 cm, cortes en marcas de medio centímetro y tela en metros",
+        "Los patrones métricos en PDF se imprimen en A4",
+        "Las páginas en inglés se abren en pulgadas y las de los demás idiomas en centímetros"
+      ]
+    },
     "A PDF pattern for the whole quilt": {
       "title": "Un patrón en PDF para toda la colcha",
       "items": [

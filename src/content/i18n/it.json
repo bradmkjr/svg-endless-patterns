@@ -1,5 +1,22 @@
 {
   "posts": {
+    "quilts-in-centimeters": {
+      "title": "Quilt in centimetri, su A4",
+      "summary": "Il pianificatore di quilt e tutti i blocchi ora si possono misurare in centimetri: un vero cartamodello metrico, con cucitura di 0,75 cm, tagli sui mezzi centimetri, stoffa in metri e PDF su A4. Le pagine in inglese si aprono in pollici e le altre in centimetri, e tutte possono cambiare.",
+      "blocks": [
+        "Ogni quilt del [pianificatore di quilt](/quilts/) e ogni blocco della [libreria di blocchi](/blocks/) ora offrono pollici o centimetri. È un cartamodello scritto nel sistema metrico, non pollici convertiti: ogni numero si taglia con un righello metrico.",
+        "Come si calcola un cartamodello metrico",
+        "Il margine di cucitura è di 0,75 cm, e tutto ciò che ne deriva è tre volte il valore in quarti di pollice, quindi un blocco metrico si assembla esattamente come uno imperiale. Quadrati e strisce si tagliano 1,5 cm più grandi della misura finita, e i triangoli partono da quadrati più grandi di 2,6 o 3,75 cm, arrotondati al mezzo centimetro successivo. La stoffa si compra a decimi di metro, le strisce dello sbieco sono larghe 6,5 cm e i cartamodelli PDF si stampano su A4 con un quadrato di 3 cm per controllare le sagome.",
+        "Misure che si tagliano pulite",
+        "Passando un quilt ai centimetri si sceglie la misura più vicina in cui i quadrati dei blocchi cadono sui segni del righello: uno [Snowball e Nine Patch](/quilts/snowball-and-nine-patch/) da 9\" diventa 22,5 cm, con quadrati da 7,5 cm, e una [Ohio Star](/blocks/ohio-star/) da 12\" diventa 30 cm. Le pagine in inglese si aprono in pollici e quelle nelle altre lingue in centimetri, e un link condiviso conserva le unità con cui è stato creato.",
+        "Quilt metrici per cominciare",
+        [
+          "Snowball e Nine Patch a 22,5 cm",
+          "Un sampler di stelle a 30 cm, con sashing da 5 cm",
+          "Trip Around the World a 35 cm"
+        ]
+      ]
+    },
     "whole-quilt-pdf": {
       "title": "Un cartamodello stampabile per tutto il quilt",
       "summary": "Il pianificatore di quilt ora scarica un unico cartamodello PDF per tutto il quilt, con qualsiasi numero di blocchi: l’immagine, la stoffa da comprare, ogni taglio, come cucire ogni blocco, come assemblare il top, la trapuntatura, lo sbieco e le sagome.",
@@ -909,6 +926,14 @@
     }
   },
   "changelog": {
+    "Quilts and blocks in centimeters": {
+      "title": "Quilt e blocchi in centimetri",
+      "items": [
+        "Quilt e blocchi si possono misurare in centimetri, come un vero cartamodello metrico: cucitura di 0,75 cm, tagli sui mezzi centimetri e stoffa in metri",
+        "I cartamodelli PDF metrici si stampano su A4",
+        "Le pagine in inglese si aprono in pollici e quelle nelle altre lingue in centimetri"
+      ]
+    },
     "A PDF pattern for the whole quilt": {
       "title": "Un cartamodello PDF per tutto il quilt",
       "items": [

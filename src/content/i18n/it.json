@@ -1,5 +1,28 @@
 {
   "posts": {
+    "origami": {
+      "title": "Origami: modelli tradizionali e tassellature piegate",
+      "summary": "Due nuovi strumenti per piegare la carta. Piega cinque modelli tradizionali passo passo, dal muso di cane alla gru, su carta da piegare che stampi con il motivo e i colori che vuoi, oppure stampa schemi di pieghe per tassellature Miura-ori, Yoshimura, bomba d'acqua e torsione quadrata.",
+      "blocks": [
+        "Sul sito la piegatura della carta si unisce a patchwork, maglia e ricamo. La nuova sezione [origami](/origami/) ha cinque modelli tradizionali, dal più facile: un muso di cane, un bicchiere, un inferno e paradiso, un elmo da samurai e la [gru](/origami/crane/). Ognuno ha diagrammi passo passo con i simboli dei libri di origami (pieghe a valle tratteggiate, pieghe a monte, frecce e segni di capovolgimento) e una riga di istruzioni sotto ogni passo.",
+        "Piega la tua carta",
+        "I diagrammi sono disegnati sulla carta che scegli: in tinta unita, o stampata con asanoha, seigaiha, shippo o kikko, pois, archi di Truchet o linee ondulate, in qualsiasi colore. Scarica un PDF con i diagrammi e la carta a grandezza reale, in quadrati da 5 a 7,5 pollici di lato. Le linee di piegatura possono stamparsi leggere sul fronte, oppure sul retro come seconda pagina da stampare sull'altro lato del foglio, speculari perché cadano dietro i punti giusti.",
+        [
+          "Gru su asanoha indaco",
+          "Elmo da samurai su kikko pino",
+          "Inferno e paradiso su seigaiha oro",
+          "Carta a pois per il muso di cane"
+        ],
+        "Tassellature piegate",
+        "Le [tassellature origami](/origami-tessellations/) piegano un solo foglio in una superficie che si ripete. Scegli Miura-ori, Yoshimura, bomba d'acqua o torsione quadrata, imposta la griglia, l'angolo e i colori delle linee a monte e a valle, e stampa lo schema di pieghe. Ogni schema si piega in piano in ogni punto in cui le pieghe si incontrano: i test del sito controllano i teoremi di Maekawa e di Kawasaki in ogni punto, per ogni schema, angolo e griglia. Le fonti di ogni schema sono nella pagina dei [ringraziamenti](/acknowledgements/).",
+        [
+          "Miura-ori",
+          "Rombi Yoshimura",
+          "Bomba d'acqua",
+          "Torsione quadrata"
+        ]
+      ]
+    },
     "winter-patterns": {
       "title": "Motivi di stagione, a cominciare dall’inverno",
       "summary": "Una nuova sezione Stagionali raccoglie motivi per ogni periodo dell’anno da tutto il sito. La prima raccolta è l’inverno: 31 motivi, da un pupazzo di neve col cilindro e una stella di Selbu a punto croce a un fiocco di Koch, un quilt di palle di neve e un tartan rosso e verde.",
@@ -949,6 +972,15 @@
     }
   },
   "changelog": {
+    "Origami: traditional models and folded tessellations": {
+      "title": "Origami: modelli tradizionali e tassellature piegate",
+      "items": [
+        "Origami: diagrammi passo passo per cinque modelli tradizionali, un muso di cane, un bicchiere, un inferno e paradiso, un elmo da samurai e la gru",
+        "Carta da piegare da stampare in otto decori e qualsiasi colore, con linee di piegatura sul fronte o sul retro, in un PDF con i diagrammi",
+        "Tassellature origami: schemi di pieghe da stampare per Miura-ori, Yoshimura, bomba d'acqua e torsione quadrata, con la tua griglia, il tuo angolo e i tuoi colori",
+        "Nuove fonti nella pagina dei ringraziamenti, per i simboli dei diagrammi e ogni tassellatura"
+      ]
+    },
     "Seasonal patterns, starting with winter": {
       "title": "Motivi di stagione, a cominciare dall’inverno",
       "items": [

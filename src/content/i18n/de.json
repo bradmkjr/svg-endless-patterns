@@ -1,5 +1,28 @@
 {
   "posts": {
+    "origami": {
+      "title": "Origami: traditionelle Modelle und gefaltete Tessellationen",
+      "summary": "Zwei neue Werkzeuge zum Papierfalten. Falte fünf traditionelle Modelle Schritt für Schritt, vom Hundegesicht bis zum Kranich, auf Faltpapier, das du in jedem Muster und jeder Farbe druckst, oder drucke Faltmuster für Miura-ori-, Yoshimura-, Wasserbomben- und Quadratdrehungs-Tessellationen.",
+      "blocks": [
+        "Papierfalten gesellt sich auf der Website zu Quilten, Stricken und Sticken. Der neue Bereich [Origami](/origami/) hat fünf traditionelle Modelle, das leichteste zuerst: ein Hundegesicht, einen Becher, ein Himmel und Hölle, einen Samurai-Helm und den [Kranich](/origami/crane/). Zu jedem gibt es Schritt-für-Schritt-Diagramme mit den Symbolen aus Origami-Büchern (gestrichelte Talfalten, Bergfalten, Pfeile und Umdrehzeichen) und eine Zeile Anleitung unter jedem Schritt.",
+        "Falte dein eigenes Papier",
+        "Die Diagramme werden auf das Papier gezeichnet, das du wählst: einfarbig oder bedruckt mit Asanoha, Seigaiha, Shippo oder Kikko, Tupfen, Truchet-Bögen oder Wellenlinien, in jeder Farbe. Lade ein PDF mit den Diagrammen und dem Papier in Originalgröße herunter, als Quadrat von 5 bis 7,5 Zoll. Die Faltlinien können blass auf der Vorderseite gedruckt werden oder auf der Rückseite als zweite Seite, die du auf die andere Seite des Blatts druckst, gespiegelt, damit sie hinter den richtigen Stellen liegen.",
+        [
+          "Kranich auf Asanoha in Indigo",
+          "Samurai-Helm auf Kikko in Kiefer",
+          "Himmel und Hölle auf Seigaiha in Gold",
+          "Papier mit Tupfen für das Hundegesicht"
+        ],
+        "Gefaltete Tessellationen",
+        "[Origami-Tessellationen](/origami-tessellations/) falten ein einziges Blatt zu einer sich wiederholenden Fläche. Wähle Miura-ori, Yoshimura, Wasserbombe oder Quadratdrehung, stell Raster, Winkel und die Farben der Berg- und Tallinien ein und drucke das Faltmuster. Jedes Muster lässt sich an jedem Punkt, an dem sich Falten treffen, flach falten: Die Tests der Website prüfen die Sätze von Maekawa und Kawasaki an jedem Punkt, für jedes Muster, jeden Winkel und jedes Raster. Die Quellen zu jedem Muster stehen auf der Seite [Danksagung](/acknowledgements/).",
+        [
+          "Miura-ori",
+          "Yoshimura-Rauten",
+          "Wasserbombe",
+          "Quadratdrehung"
+        ]
+      ]
+    },
     "winter-patterns": {
       "title": "Saisonale Muster, zuerst der Winter",
       "summary": "Ein neuer Bereich Saisonal sammelt Muster für die Jahreszeit von der ganzen Seite. Die erste Sammlung ist der Winter: 31 Muster, vom Schneemann mit Zylinder und einem Selbu-Stern in Kreuzstich bis zu einer Koch-Schneeflocke, einem Schneeball-Quilt und einem rot-grünen Tartan.",
@@ -949,6 +972,15 @@
     }
   },
   "changelog": {
+    "Origami: traditional models and folded tessellations": {
+      "title": "Origami: traditionelle Modelle und gefaltete Tessellationen",
+      "items": [
+        "Origami: Schritt-für-Schritt-Diagramme für fünf traditionelle Modelle, ein Hundegesicht, einen Becher, ein Himmel und Hölle, einen Samurai-Helm und den Kranich",
+        "Faltpapier zum Ausdrucken in acht Mustern und jeder Farbe, mit Faltlinien auf der Vorder- oder Rückseite, in einem PDF mit den Diagrammen",
+        "Origami-Tessellationen: Faltmuster zum Ausdrucken für Miura-ori, Yoshimura, Wasserbombe und Quadratdrehung, mit deinem Raster, Winkel und deinen Farben",
+        "Neue Quellen auf der Seite Danksagung, für die Diagrammsymbole und jede Tessellation"
+      ]
+    },
     "Seasonal patterns, starting with winter": {
       "title": "Saisonale Muster, zuerst der Winter",
       "items": [

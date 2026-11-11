@@ -1,5 +1,28 @@
 {
   "posts": {
+    "origami": {
+      "title": "Origami : modèles traditionnels et tessellations pliées",
+      "summary": "Deux nouveaux outils de pliage. Pliez cinq modèles traditionnels étape par étape, de la tête de chien à la grue, sur du papier à plier que vous imprimez dans le motif et les couleurs de votre choix, ou imprimez des plans de pliage pour les tessellations Miura-ori, Yoshimura, bombe à eau et torsion carrée.",
+      "blocks": [
+        "Le pliage de papier rejoint le quilting, le tricot et la broderie sur le site. La nouvelle section [origami](/origami/) compte cinq modèles traditionnels, du plus facile au plus difficile : une tête de chien, un gobelet, une cocotte en papier, un casque de samouraï et la [grue](/origami/crane/). Chacun est accompagné de diagrammes étape par étape avec les symboles des livres d'origami (plis vallée en tirets, plis montagne, flèches et signes de retournement) et d'une ligne d'instructions sous chaque étape.",
+        "Pliez votre propre papier",
+        "Les diagrammes sont dessinés sur le papier de votre choix : uni, ou imprimé d'asanoha, de seigaiha, de shippo ou de kikko, de pois, d'arcs de Truchet ou de lignes ondulées, dans toutes les couleurs. Téléchargez un PDF avec les diagrammes et le papier en taille réelle, en carrés de 5 à 7,5 pouces de côté. Les lignes de pli peuvent s'imprimer discrètement au recto, ou au verso sur une deuxième page que vous imprimez sur l'autre côté de la feuille, en miroir pour tomber derrière les bons endroits.",
+        [
+          "Grue sur asanoha indigo",
+          "Casque de samouraï sur kikko pin",
+          "Cocotte en papier sur seigaiha or",
+          "Papier à pois pour la tête de chien"
+        ],
+        "Tessellations pliées",
+        "Les [tessellations en origami](/origami-tessellations/) plient une seule feuille en une surface qui se répète. Choisissez Miura-ori, Yoshimura, bombe à eau ou torsion carrée, réglez la grille, l'angle et les couleurs des lignes montagne et vallée, et imprimez le plan de pliage. Chaque motif se plie à plat en chaque point où les plis se rencontrent : les tests du site vérifient les théorèmes de Maekawa et de Kawasaki en chaque point, pour chaque motif, angle et grille. Les sources de chaque motif sont sur la page des [remerciements](/acknowledgements/).",
+        [
+          "Miura-ori",
+          "Losanges Yoshimura",
+          "Bombe à eau",
+          "Torsion carrée"
+        ]
+      ]
+    },
     "winter-patterns": {
       "title": "Motifs de saison, à commencer par l’hiver",
       "summary": "Une nouvelle rubrique Saisons rassemble des motifs pour chaque moment de l’année, venus de tout le site. Sa première collection est l’hiver : 31 motifs, d’un bonhomme de neige en haut-de-forme et d’une étoile de Selbu au point de croix à un flocon de Koch, un quilt de boules de neige et un tartan rouge et vert.",
@@ -949,6 +972,15 @@
     }
   },
   "changelog": {
+    "Origami: traditional models and folded tessellations": {
+      "title": "Origami : modèles traditionnels et tessellations pliées",
+      "items": [
+        "Origami : diagrammes étape par étape pour cinq modèles traditionnels, une tête de chien, un gobelet, une cocotte en papier, un casque de samouraï et la grue",
+        "Papier à plier à imprimer en huit motifs et toutes les couleurs, avec lignes de pli au recto ou au verso, dans un PDF avec les diagrammes",
+        "Tessellations en origami : plans de pliage à imprimer pour Miura-ori, Yoshimura, bombe à eau et torsion carrée, avec votre grille, votre angle et vos couleurs",
+        "Nouvelles sources sur la page des remerciements, pour les symboles des diagrammes et chaque tessellation"
+      ]
+    },
     "Seasonal patterns, starting with winter": {
       "title": "Motifs de saison, à commencer par l’hiver",
       "items": [

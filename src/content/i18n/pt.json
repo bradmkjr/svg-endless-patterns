@@ -1,5 +1,28 @@
 {
   "posts": {
+    "origami": {
+      "title": "Origami: modelos tradicionais e tesselações dobradas",
+      "summary": "Duas novas ferramentas de dobradura. Dobre cinco modelos tradicionais passo a passo, da cara de cachorro ao tsuru, em papel para dobrar que você imprime com a estampa e as cores que quiser, ou imprima diagramas de vincos para tesselações Miura-ori, Yoshimura, bomba d'água e torção quadrada.",
+      "blocks": [
+        "A dobradura de papel se junta ao quilting, ao tricô e ao bordado no site. A nova seção de [origami](/origami/) tem cinco modelos tradicionais, do mais fácil ao mais difícil: uma cara de cachorro, um copo, um quem-sabe, um capacete de samurai e o [tsuru](/origami/crane/). Cada um vem com diagramas passo a passo nos símbolos que os livros de origami usam (dobras vale tracejadas, dobras montanha, setas e marcas de virar) e uma linha de instruções embaixo de cada passo.",
+        "Dobre seu próprio papel",
+        "Os diagramas são desenhados no papel que você escolher: liso ou estampado com asanoha, seigaiha, shippo ou kikko, bolinhas, arcos de Truchet ou linhas onduladas, em qualquer cor. Baixe um PDF com os diagramas e o papel em tamanho real, em quadrados de 5 a 7,5 polegadas de lado. As linhas de dobra podem sair suaves na frente, ou no verso como uma segunda página que você imprime do outro lado da folha, espelhada para cair atrás dos pontos certos.",
+        [
+          "Tsuru em asanoha índigo",
+          "Capacete de samurai em kikko pinho",
+          "Quem-sabe em seigaiha ouro",
+          "Papel de bolinhas para a cara de cachorro"
+        ],
+        "Tesselações dobradas",
+        "As [tesselações de origami](/origami-tessellations/) dobram uma só folha em uma superfície que se repete. Escolha Miura-ori, Yoshimura, bomba d'água ou torção quadrada, ajuste a grade, o ângulo e as cores das linhas de montanha e vale e imprima o diagrama de vincos. Cada padrão dobra plano em todo ponto onde os vincos se encontram: os testes do site verificam os teoremas de Maekawa e Kawasaki em cada ponto, para cada padrão, ângulo e grade. As fontes de cada padrão estão na página de [agradecimentos](/acknowledgements/).",
+        [
+          "Miura-ori",
+          "Losangos Yoshimura",
+          "Bomba d'água",
+          "Torção quadrada"
+        ]
+      ]
+    },
     "winter-patterns": {
       "title": "Padrões da estação, começando pelo inverno",
       "summary": "Uma nova seção Estações reúne padrões para cada época do ano de todo o site. A primeira coleção é o inverno: 31 padrões, de um boneco de neve de cartola e uma estrela de Selbu em ponto cruz a um floco de Koch, um quilt de bolas de neve e um tartan vermelho e verde.",
@@ -949,6 +972,15 @@
     }
   },
   "changelog": {
+    "Origami: traditional models and folded tessellations": {
+      "title": "Origami: modelos tradicionais e tesselações dobradas",
+      "items": [
+        "Origami: diagramas passo a passo para cinco modelos tradicionais, uma cara de cachorro, um copo, um quem-sabe, um capacete de samurai e o tsuru",
+        "Papel para dobrar para imprimir em oito estampas e qualquer cor, com linhas de dobra na frente ou no verso, em um PDF com os diagramas",
+        "Tesselações de origami: diagramas de vincos para imprimir para Miura-ori, Yoshimura, bomba d'água e torção quadrada, com sua grade, ângulo e cores",
+        "Novas fontes na página de agradecimentos, para os símbolos dos diagramas e cada tesselação"
+      ]
+    },
     "Seasonal patterns, starting with winter": {
       "title": "Padrões da estação, começando pelo inverno",
       "items": [

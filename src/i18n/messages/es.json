@@ -361,15 +361,15 @@
       },
       "origami": {
         "title": "Origami",
-        "text": "Traditional models folded step by step, from a dog face and a cup to the samurai helmet and the crane, on printable folding paper in your pattern and colors.",
-        "output": "Step-by-step diagrams, printable folding paper with fold lines, and a PDF.",
-        "explore": "Fold a model"
+        "text": "Modelos tradicionales doblados paso a paso, de una cara de perro y un vaso al casco de samurái y la grulla, en papel para doblar imprimible con tu estampado y tus colores.",
+        "output": "Diagramas paso a paso, papel para doblar imprimible con líneas de pliegue y un PDF.",
+        "explore": "Doblar un modelo"
       },
       "origamiTessellation": {
-        "title": "Origami tessellations",
-        "text": "Crease patterns for Miura-ori, Yoshimura, waterbomb and square twist tessellations, with mountain and valley folds in your colors.",
-        "output": "Printable crease pattern as SVG, PNG and PDF.",
-        "explore": "Make a crease pattern"
+        "title": "Teselaciones de origami",
+        "text": "Patrones de pliegues para teselaciones Miura-ori, Yoshimura, bomba de agua y giro cuadrado, con pliegues montaña y valle en tus colores.",
+        "output": "Patrón de pliegues imprimible en SVG, PNG y PDF.",
+        "explore": "Crear un patrón de pliegues"
       }
     },
     "seeAllType": "Ver todo en {name}"

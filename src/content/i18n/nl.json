@@ -1,5 +1,28 @@
 {
   "posts": {
+    "origami": {
+      "title": "Origami: traditionele modellen en gevouwen tessellaties",
+      "summary": "Twee nieuwe vouwtools. Vouw vijf traditionele modellen stap voor stap, van een hondengezicht tot de kraanvogel, op vouwpapier dat je print in elk dessin en elke kleur, of print vouwpatronen voor Miura-ori-, Yoshimura-, waterbom- en vierkante-draaitessellaties.",
+      "blocks": [
+        "Papiervouwen komt op de site naast quilten, breien en borduren. Het nieuwe onderdeel [origami](/origami/) heeft vijf traditionele modellen, de makkelijkste eerst: een hondengezicht, een bekertje, een happertje, een samoeraihelm en de [kraanvogel](/origami/crane/). Bij elk horen stap-voor-stapdiagrammen in de symbolen die origamiboeken gebruiken (gestippelde dalvouwen, bergvouwen, pijlen en omdraaitekens) en een regel uitleg onder elke stap.",
+        "Vouw je eigen papier",
+        "De diagrammen worden getekend op het papier dat je kiest: effen, of bedrukt met asanoha, seigaiha, shippo of kikko, stippen, Truchet-bogen of golvende lijnen, in elke kleur. Download een pdf met de diagrammen en het papier op ware grootte, in vierkanten van 5 tot 7,5 inch. De vouwlijnen kunnen licht op de voorkant worden geprint, of op de achterkant als tweede pagina die je op de andere kant van het vel print, gespiegeld zodat ze achter de juiste plekken vallen.",
+        [
+          "Kraanvogel op indigo asanoha",
+          "Samoeraihelm op dennengroene kikko",
+          "Happertje op gouden seigaiha",
+          "Stippenpapier voor het hondengezicht"
+        ],
+        "Gevouwen tessellaties",
+        "[Origamitessellaties](/origami-tessellations/) vouwen één vel tot een herhalend oppervlak. Kies Miura-ori, Yoshimura, waterbom of vierkante draai, stel het raster, de hoek en de kleuren van de berg- en dallijnen in en print het vouwpatroon. Elk patroon vouwt plat op elk punt waar vouwen samenkomen: de tests van de site controleren de stellingen van Maekawa en Kawasaki op elk punt, voor elk patroon, elke hoek en elk raster. De bronnen van elk patroon staan op de pagina [dankwoord](/acknowledgements/).",
+        [
+          "Miura-ori",
+          "Yoshimura-ruiten",
+          "Waterbom",
+          "Vierkante draai"
+        ]
+      ]
+    },
     "winter-patterns": {
       "title": "Seizoenspatronen, te beginnen met de winter",
       "summary": "Een nieuwe rubriek Seizoenen verzamelt patronen voor de tijd van het jaar van de hele site. De eerste collectie is de winter: 31 patronen, van een sneeuwpop met hoge hoed en een Selbu-ster in kruissteek tot een Koch-sneeuwvlok, een sneeuwbalquilt en een rood-groene tartan.",
@@ -949,6 +972,15 @@
     }
   },
   "changelog": {
+    "Origami: traditional models and folded tessellations": {
+      "title": "Origami: traditionele modellen en gevouwen tessellaties",
+      "items": [
+        "Origami: stap-voor-stapdiagrammen voor vijf traditionele modellen, een hondengezicht, een bekertje, een happertje, een samoeraihelm en de kraanvogel",
+        "Printbaar vouwpapier in acht dessins en elke kleur, met vouwlijnen op de voor- of achterkant, in een pdf met de diagrammen",
+        "Origamitessellaties: printbare vouwpatronen voor Miura-ori, Yoshimura, waterbom en vierkante draai, met jouw raster, hoek en kleuren",
+        "Nieuwe bronnen op de dankwoordpagina, voor de diagramsymbolen en elke tessellatie"
+      ]
+    },
     "Seasonal patterns, starting with winter": {
       "title": "Seizoenspatronen, te beginnen met de winter",
       "items": [

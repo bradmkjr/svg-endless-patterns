@@ -1,5 +1,28 @@
 {
   "posts": {
+    "origami": {
+      "title": "Origami: modelos tradicionales y teselaciones plegadas",
+      "summary": "Dos nuevas herramientas de plegado de papel. Dobla cinco modelos tradicionales paso a paso, de una cara de perro a la grulla, en papel para doblar que imprimes con el estampado y los colores que quieras, o imprime patrones de pliegues para teselaciones Miura-ori, Yoshimura, bomba de agua y giro cuadrado.",
+      "blocks": [
+        "El plegado de papel se suma al acolchado, el punto y el bordado en el sitio. La nueva sección de [origami](/origami/) tiene cinco modelos tradicionales, del más fácil al más difícil: una cara de perro, un vaso, un comecocos, un casco de samurái y la [grulla](/origami/crane/). Cada uno trae diagramas paso a paso con los símbolos que usan los libros de origami (pliegues valle de trazos, pliegues montaña, flechas y marcas de dar la vuelta) y una línea de instrucciones bajo cada paso.",
+        "Dobla tu propio papel",
+        "Los diagramas se dibujan sobre el papel que elijas: liso, o estampado con asanoha, seigaiha, shippo o kikko, lunares, arcos de Truchet o líneas onduladas, en cualquier color. Descarga un PDF con los diagramas y el papel a tamaño real, en cuadrados de 5 a 7,5 pulgadas de lado. Las líneas de pliegue pueden imprimirse suaves en el anverso, o en el reverso como una segunda página que imprimes por la otra cara de la hoja, en espejo para que queden detrás de los puntos correctos.",
+        [
+          "Grulla sobre asanoha índigo",
+          "Casco de samurái sobre kikko pino",
+          "Comecocos sobre seigaiha oro",
+          "Papel de lunares para la cara de perro"
+        ],
+        "Teselaciones plegadas",
+        "Las [teselaciones de origami](/origami-tessellations/) pliegan una sola hoja en una superficie que se repite. Elige Miura-ori, Yoshimura, bomba de agua o giro cuadrado, ajusta la cuadrícula, el ángulo y los colores de las líneas de montaña y valle, e imprime el patrón de pliegues. Cada patrón se pliega en plano en cada punto donde se cruzan los pliegues: las pruebas del sitio comprueban los teoremas de Maekawa y Kawasaki en cada punto, para cada patrón, ángulo y cuadrícula. Las fuentes de cada patrón están en la página de [agradecimientos](/acknowledgements/).",
+        [
+          "Miura-ori",
+          "Rombos Yoshimura",
+          "Bomba de agua",
+          "Giro cuadrado"
+        ]
+      ]
+    },
     "winter-patterns": {
       "title": "Patrones de temporada, empezando por el invierno",
       "summary": "Una nueva sección De temporada reúne patrones para cada época del año de todo el sitio. Su primera colección es el invierno: 31 patrones, desde un muñeco de nieve con sombrero de copa y una estrella de Selbu en punto de cruz hasta un copo de Koch, un quilt de bolas de nieve y un tartán rojo y verde.",
@@ -949,6 +972,15 @@
     }
   },
   "changelog": {
+    "Origami: traditional models and folded tessellations": {
+      "title": "Origami: modelos tradicionales y teselaciones plegadas",
+      "items": [
+        "Origami: diagramas paso a paso de cinco modelos tradicionales: una cara de perro, un vaso, un comecocos, un casco de samurái y la grulla",
+        "Papel para doblar imprimible en ocho estampados y cualquier color, con líneas de pliegue en el anverso o en el reverso, en un PDF con los diagramas",
+        "Teselaciones de origami: patrones de pliegues imprimibles para Miura-ori, Yoshimura, bomba de agua y giro cuadrado, con tu cuadrícula, ángulo y colores",
+        "Nuevas fuentes en la página de agradecimientos, para los símbolos de los diagramas y cada teselación"
+      ]
+    },
     "Seasonal patterns, starting with winter": {
       "title": "Patrones de temporada, empezando por el invierno",
       "items": [

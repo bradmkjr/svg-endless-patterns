@@ -52,7 +52,7 @@
     "lede": "Este sitio se apoya en el trabajo de otras personas. Aquí está a quién agradecer y qué tomamos de cada una.",
     "sourcesH": "Fuentes",
     "traditionsH": "Tradiciones",
-    "traditions": "El acolchado, el punto, el ganchillo, el sashiko, el tartán, los nudos celtas, las vidrieras y el tie-dye pertenecen a generaciones de artesanos, en su mayoría anónimos. Los diseños de este sitio se generan o se dibujan para él y no copian el patrón de nadie en particular.",
+    "traditions": "El acolchado, el punto, el ganchillo, el sashiko, el origami, el tartán, los nudos celtas, las vidrieras y el tie-dye pertenecen a generaciones de artesanos, en su mayoría anónimos. Los diseños de este sitio se generan o se dibujan para él y no copian el patrón de nadie en particular.",
     "usedFor": {
       "oelsnerWeaves": "Los ligamentos del creador de tejidos, del tafetán, las sargas y los rasos al panamá, el reps y el huckaback, y los patrones pata de cuervo, Oxford y reps de urdimbre. Los patrones se dibujaron para este sitio a partir de esos ligamentos.",
       "watsonColour": "Los efectos de color y ligamento, como la pata de gallo, el fil a fil y el log cabin, que los colores predefinidos del creador de tejidos construyen con tafetán y sarga.",
@@ -83,12 +83,12 @@
       "cottonBattingWeight": "El planificador de colchas pesa la guata de algodón a 4 oz por yarda cuadrada, como indica esta ficha para Warm & Natural.",
       "polyesterBattingWeight": "El planificador de colchas pesa la guata de poliéster a 4,5 oz por yarda lineal de 48\" de ancho, según esta tabla de guata por metros.",
       "threadWeight": "El planificador de colchas pesa el hilo de acolchar a partir de lo que significa el número de grosor: 50 wt son 50 km por kilogramo.",
-      "yoshizawaRandlett": "The origami diagrams draw their folds, arrows and turn-over marks in this shared system of symbols.",
-      "miura": "The Miura-ori crease pattern and how its parallelograms fold, from Miura's paper on folding large membranes for space.",
-      "yoshimura": "The Yoshimura crease pattern: the diamonds a cylinder buckles into under axial compression, which his paper describes.",
-      "farnhamWaterbomb": "The waterbomb tessellation's six-crease points, each a waterbomb base or its flipped form, follow the vertices this paper studies.",
-      "langTwists": "The square twist tessellation: twists joined by pleats, with neighbors turning opposite ways.",
-      "hullOrigametry": "Maekawa's and Kawasaki's theorems, which every tessellation crease pattern here is tested against at each point where creases meet."
+      "yoshizawaRandlett": "Los diagramas de origami dibujan sus pliegues, flechas y marcas de dar la vuelta con este sistema de símbolos compartido.",
+      "miura": "El patrón de pliegues Miura-ori y cómo se pliegan sus paralelogramos, del artículo de Miura sobre el plegado de grandes membranas para el espacio.",
+      "yoshimura": "El patrón de pliegues Yoshimura: los rombos en los que se hunde un cilindro bajo compresión axial, que describe su artículo.",
+      "farnhamWaterbomb": "Los puntos de seis pliegues de la teselación de bomba de agua, cada uno una base de bomba de agua o su forma invertida, siguen los vértices que estudia este artículo.",
+      "langTwists": "La teselación de giro cuadrado: giros unidos por pliegues, con vecinos que giran en sentido contrario.",
+      "hullOrigametry": "Los teoremas de Maekawa y Kawasaki, con los que se prueba cada patrón de pliegues de teselación de este sitio en cada punto donde se cruzan los pliegues."
     }
   },
   "fr": {
@@ -98,7 +98,7 @@
     "lede": "Ce site s'appuie sur le travail d'autres personnes. Voici qui remercier, et ce que nous devons à chacune.",
     "sourcesH": "Sources",
     "traditionsH": "Traditions",
-    "traditions": "Le quilting, le tricot, le crochet, le sashiko, le tartan, les entrelacs celtiques, le vitrail et le tie-dye appartiennent à des générations d'artisans, la plupart anonymes. Les motifs d'ici sont générés ou dessinés pour ce site et ne copient le modèle de personne en particulier.",
+    "traditions": "Le quilting, le tricot, le crochet, le sashiko, l'origami, le tartan, les entrelacs celtiques, le vitrail et le tie-dye appartiennent à des générations d'artisans, la plupart anonymes. Les motifs d'ici sont générés ou dessinés pour ce site et ne copient le modèle de personne en particulier.",
     "usedFor": {
       "oelsnerWeaves": "Les armures du créateur d'armures, de la toile, des sergés et des satins au natté, au reps et au huckaback, et les armures patte de corbeau, Oxford et reps chaîne. Les armures sont dessinées pour ce site à partir de ces structures.",
       "watsonColour": "Les effets de couleur et d'armure comme le pied-de-poule, le fil-à-fil et le log cabin, que les couleurs prédéfinies du créateur construisent en toile et en sergé.",
@@ -129,12 +129,12 @@
       "cottonBattingWeight": "Le planificateur de quilt compte le molleton de coton à 4 oz par yard carré, comme l'indique cette fiche pour Warm & Natural.",
       "polyesterBattingWeight": "Le planificateur de quilt compte le molleton polyester à 4,5 oz par yard courant de 48\" de large, d'après ce tableau de molleton au mètre.",
       "threadWeight": "Le planificateur de quilt pèse le fil de quilting d'après le sens du numéro de grosseur : 50 wt, c'est 50 km au kilogramme.",
-      "yoshizawaRandlett": "The origami diagrams draw their folds, arrows and turn-over marks in this shared system of symbols.",
-      "miura": "The Miura-ori crease pattern and how its parallelograms fold, from Miura's paper on folding large membranes for space.",
-      "yoshimura": "The Yoshimura crease pattern: the diamonds a cylinder buckles into under axial compression, which his paper describes.",
-      "farnhamWaterbomb": "The waterbomb tessellation's six-crease points, each a waterbomb base or its flipped form, follow the vertices this paper studies.",
-      "langTwists": "The square twist tessellation: twists joined by pleats, with neighbors turning opposite ways.",
-      "hullOrigametry": "Maekawa's and Kawasaki's theorems, which every tessellation crease pattern here is tested against at each point where creases meet."
+      "yoshizawaRandlett": "Les diagrammes d'origami dessinent leurs plis, leurs flèches et leurs signes de retournement avec ce système de symboles partagé.",
+      "miura": "Le plan de pliage Miura-ori et la façon dont ses parallélogrammes se plient, d'après l'article de Miura sur le pliage de grandes membranes pour l'espace.",
+      "yoshimura": "Le plan de pliage Yoshimura : les losanges que forme un cylindre sous compression axiale, décrits dans son article.",
+      "farnhamWaterbomb": "Les points à six plis de la tessellation bombe à eau, chacun une base de bombe à eau ou sa forme retournée, suivent les sommets étudiés dans cet article.",
+      "langTwists": "La tessellation en torsion carrée : des torsions reliées par des plis, les voisines tournant en sens inverse.",
+      "hullOrigametry": "Les théorèmes de Maekawa et de Kawasaki, avec lesquels chaque plan de pliage de tessellation du site est testé en chaque point où les plis se rencontrent."
     }
   },
   "de": {
@@ -144,7 +144,7 @@
     "lede": "Diese Website baut auf der Arbeit anderer auf. Hier steht, wem wir danken und was wir von wem übernommen haben.",
     "sourcesH": "Quellen",
     "traditionsH": "Traditionen",
-    "traditions": "Quilten, Stricken, Häkeln, Sashiko, Tartan, keltische Knoten, Glasmalerei und Batik gehören Generationen von Handwerkern, die meisten namenlos. Die Muster hier werden für diese Website erzeugt oder gezeichnet und kopieren keine Vorlage einer bestimmten Person.",
+    "traditions": "Quilten, Stricken, Häkeln, Sashiko, Origami, Tartan, keltische Knoten, Glasmalerei und Batik gehören Generationen von Handwerkern, die meisten namenlos. Die Muster hier werden für diese Website erzeugt oder gezeichnet und kopieren keine Vorlage einer bestimmten Person.",
     "usedFor": {
       "oelsnerWeaves": "Die Bindungen im Webpatronen-Generator, von Leinwand, Köper und Atlas bis zu Panama, Rips und Huckaback, sowie die Patronen Krähenfuß, Oxford und Kettrips. Die Patronen wurden für diese Website aus diesen Bindungen gezeichnet.",
       "watsonColour": "Farb-und-Bindungs-Effekte wie Hahnentritt, Fil-à-fil und Log Cabin, die die Farbvorlagen des Generators aus Leinwand und Köper aufbauen.",
@@ -175,12 +175,12 @@
       "cottonBattingWeight": "Der Quiltplaner rechnet Baumwollvlies mit 4 oz pro Quadratyard, wie dieses Angebot es für Warm & Natural angibt.",
       "polyesterBattingWeight": "Der Quiltplaner rechnet Polyestervlies mit 4,5 oz pro laufendem Yard bei 48\" Breite, nach dieser Tabelle für Meterware.",
       "threadWeight": "Der Quiltplaner wiegt das Quiltgarn nach der Bedeutung der Garnstärke: 50 wt sind 50 km pro Kilogramm.",
-      "yoshizawaRandlett": "The origami diagrams draw their folds, arrows and turn-over marks in this shared system of symbols.",
-      "miura": "The Miura-ori crease pattern and how its parallelograms fold, from Miura's paper on folding large membranes for space.",
-      "yoshimura": "The Yoshimura crease pattern: the diamonds a cylinder buckles into under axial compression, which his paper describes.",
-      "farnhamWaterbomb": "The waterbomb tessellation's six-crease points, each a waterbomb base or its flipped form, follow the vertices this paper studies.",
-      "langTwists": "The square twist tessellation: twists joined by pleats, with neighbors turning opposite ways.",
-      "hullOrigametry": "Maekawa's and Kawasaki's theorems, which every tessellation crease pattern here is tested against at each point where creases meet."
+      "yoshizawaRandlett": "Die Origami-Diagramme zeichnen ihre Falten, Pfeile und Umdrehzeichen in diesem gemeinsamen Symbolsystem.",
+      "miura": "Das Miura-ori-Faltmuster und wie sich seine Parallelogramme falten, aus Miuras Aufsatz über das Falten großer Membranen für den Weltraum.",
+      "yoshimura": "Das Yoshimura-Faltmuster: die Rauten, in die ein Zylinder unter axialem Druck einknickt, wie sein Aufsatz sie beschreibt.",
+      "farnhamWaterbomb": "Die Punkte mit sechs Falten in der Wasserbomben-Tessellation, jeder eine Wasserbombenbasis oder ihre umgedrehte Form, folgen den Knoten, die dieser Aufsatz untersucht.",
+      "langTwists": "Die Quadratdrehungs-Tessellation: Drehungen, durch Faltenstreifen verbunden, wobei sich Nachbarn gegenläufig drehen.",
+      "hullOrigametry": "Die Sätze von Maekawa und Kawasaki, gegen die jedes Tessellations-Faltmuster hier an jedem Punkt geprüft wird, an dem sich Falten treffen."
     }
   },
   "pt": {
@@ -190,7 +190,7 @@
     "lede": "Este site se apoia no trabalho de outras pessoas. Aqui está a quem agradecer e o que usamos de cada uma.",
     "sourcesH": "Fontes",
     "traditionsH": "Tradições",
-    "traditions": "O quilting, o tricô, o crochê, o sashiko, o tartan, os nós celtas, os vitrais e o tie-dye pertencem a gerações de artesãos, em sua maioria anônimos. Os desenhos daqui são gerados ou desenhados para este site e não copiam o padrão de ninguém em particular.",
+    "traditions": "O quilting, o tricô, o crochê, o sashiko, o origami, o tartan, os nós celtas, os vitrais e o tie-dye pertencem a gerações de artesãos, em sua maioria anônimos. Os desenhos daqui são gerados ou desenhados para este site e não copiam o padrão de ninguém em particular.",
     "usedFor": {
       "oelsnerWeaves": "Os ligamentos do criador de tecelagem, do tafetá, das sarjas e dos cetins ao panamá, ao reps e ao huckaback, e os padrões pé de corvo, Oxford e reps de urdume. Os padrões foram desenhados para este site a partir desses ligamentos.",
       "watsonColour": "Os efeitos de cor e ligamento, como pied-de-poule, fil-à-fil e log cabin, que as cores prontas do criador montam com tafetá e sarja.",
@@ -221,12 +221,12 @@
       "cottonBattingWeight": "O planejador de colchas pesa a manta de algodão a 4 oz por jarda quadrada, como esta ficha indica para Warm & Natural.",
       "polyesterBattingWeight": "O planejador de colchas pesa a manta de poliéster a 4,5 oz por jarda linear com 48\" de largura, por esta tabela de manta a metro.",
       "threadWeight": "O planejador de colchas pesa a linha de quilting pelo que significa o número da linha: 50 wt são 50 km por quilograma.",
-      "yoshizawaRandlett": "The origami diagrams draw their folds, arrows and turn-over marks in this shared system of symbols.",
-      "miura": "The Miura-ori crease pattern and how its parallelograms fold, from Miura's paper on folding large membranes for space.",
-      "yoshimura": "The Yoshimura crease pattern: the diamonds a cylinder buckles into under axial compression, which his paper describes.",
-      "farnhamWaterbomb": "The waterbomb tessellation's six-crease points, each a waterbomb base or its flipped form, follow the vertices this paper studies.",
-      "langTwists": "The square twist tessellation: twists joined by pleats, with neighbors turning opposite ways.",
-      "hullOrigametry": "Maekawa's and Kawasaki's theorems, which every tessellation crease pattern here is tested against at each point where creases meet."
+      "yoshizawaRandlett": "Os diagramas de origami desenham suas dobras, setas e marcas de virar com este sistema de símbolos compartilhado.",
+      "miura": "O diagrama de vincos Miura-ori e como seus paralelogramos se dobram, do artigo de Miura sobre a dobragem de grandes membranas para o espaço.",
+      "yoshimura": "O diagrama de vincos Yoshimura: os losangos em que um cilindro se deforma sob compressão axial, descritos em seu artigo.",
+      "farnhamWaterbomb": "Os pontos de seis vincos da tesselação bomba d'água, cada um uma base de bomba d'água ou sua forma invertida, seguem os vértices que este artigo estuda.",
+      "langTwists": "A tesselação de torção quadrada: torções unidas por pregas, com vizinhos girando em sentidos opostos.",
+      "hullOrigametry": "Os teoremas de Maekawa e Kawasaki, com os quais cada diagrama de vincos de tesselação daqui é testado em cada ponto onde os vincos se encontram."
     }
   },
   "it": {
@@ -236,7 +236,7 @@
     "lede": "Questo sito poggia sul lavoro di altri. Ecco chi ringraziare e cosa abbiamo preso da ciascuno.",
     "sourcesH": "Fonti",
     "traditionsH": "Tradizioni",
-    "traditions": "Patchwork, maglia, uncinetto, sashiko, tartan, nodi celtici, vetrate e tie-dye appartengono a generazioni di artigiani, per lo più senza nome. I disegni qui presenti sono generati o disegnati per questo sito e non copiano il motivo di nessun singolo autore.",
+    "traditions": "Patchwork, maglia, uncinetto, sashiko, origami, tartan, nodi celtici, vetrate e tie-dye appartengono a generazioni di artigiani, per lo più senza nome. I disegni qui presenti sono generati o disegnati per questo sito e non copiano il motivo di nessun singolo autore.",
     "usedFor": {
       "oelsnerWeaves": "Le armature del generatore di tessitura, dalla tela, dalle saie e dai rasi al panama, al reps e allo huckaback, e le messe in carta zampa di corvo, Oxford e reps di ordito. Le messe in carta sono disegnate per questo sito a partire da quelle armature.",
       "watsonColour": "Gli effetti di colore e armatura come pied de poule, fil-à-fil e log cabin, che i colori predefiniti del generatore costruiscono con tela e saia.",
@@ -267,12 +267,12 @@
       "cottonBattingWeight": "Il pianificatore di trapunte pesa l'imbottitura di cotone a 4 oz per iarda quadrata, come indica questa scheda per Warm & Natural.",
       "polyesterBattingWeight": "Il pianificatore di trapunte pesa l'imbottitura di poliestere a 4,5 oz per iarda lineare larga 48\", da questa tabella dell'imbottitura a metraggio.",
       "threadWeight": "Il pianificatore di trapunte pesa il filo per trapuntare in base al numero del filo: 50 wt sono 50 km per chilogrammo.",
-      "yoshizawaRandlett": "The origami diagrams draw their folds, arrows and turn-over marks in this shared system of symbols.",
-      "miura": "The Miura-ori crease pattern and how its parallelograms fold, from Miura's paper on folding large membranes for space.",
-      "yoshimura": "The Yoshimura crease pattern: the diamonds a cylinder buckles into under axial compression, which his paper describes.",
-      "farnhamWaterbomb": "The waterbomb tessellation's six-crease points, each a waterbomb base or its flipped form, follow the vertices this paper studies.",
-      "langTwists": "The square twist tessellation: twists joined by pleats, with neighbors turning opposite ways.",
-      "hullOrigametry": "Maekawa's and Kawasaki's theorems, which every tessellation crease pattern here is tested against at each point where creases meet."
+      "yoshizawaRandlett": "I diagrammi origami disegnano pieghe, frecce e segni di capovolgimento con questo sistema di simboli condiviso.",
+      "miura": "Lo schema di pieghe Miura-ori e il modo in cui si piegano i suoi parallelogrammi, dall'articolo di Miura sulla piegatura di grandi membrane per lo spazio.",
+      "yoshimura": "Lo schema di pieghe Yoshimura: i rombi in cui si accartoccia un cilindro sotto compressione assiale, descritti nel suo articolo.",
+      "farnhamWaterbomb": "I punti a sei pieghe della tassellatura a bomba d'acqua, ciascuno una base della bomba d'acqua o la sua forma capovolta, seguono i vertici studiati in questo articolo.",
+      "langTwists": "La tassellatura a torsione quadrata: torsioni unite da pieghe, con i vicini che ruotano in senso opposto.",
+      "hullOrigametry": "I teoremi di Maekawa e di Kawasaki, con cui ogni schema di pieghe delle tassellature qui viene verificato in ogni punto in cui le pieghe si incontrano."
     }
   },
   "nl": {
@@ -282,7 +282,7 @@
     "lede": "Deze site staat op de schouders van het werk van anderen. Dit zijn de mensen om te bedanken, en wat we van elk hebben overgenomen.",
     "sourcesH": "Bronnen",
     "traditionsH": "Tradities",
-    "traditions": "Quilten, breien, haken, sashiko, tartan, Keltisch knoopwerk, glas-in-lood en tie-dye behoren toe aan generaties makers, de meesten naamloos. De ontwerpen hier zijn voor deze site gegenereerd of getekend en kopiëren niet het patroon van één maker.",
+    "traditions": "Quilten, breien, haken, sashiko, origami, tartan, Keltisch knoopwerk, glas-in-lood en tie-dye behoren toe aan generaties makers, de meesten naamloos. De ontwerpen hier zijn voor deze site gegenereerd of getekend en kopiëren niet het patroon van één maker.",
     "usedFor": {
       "oelsnerWeaves": "De bindingen in de weefpatroonmaker, van linnenbinding, keper en satijn tot panama, rips en huckaback, en de patronen kraaienpoot, Oxford en kettingrips. De patronen zijn voor deze site getekend vanuit die bindingen.",
       "watsonColour": "Kleur-en-bindingseffecten zoals pied-de-poule, fil-à-fil en log cabin, die de kleurvoorbeelden van de maker opbouwen uit linnenbinding en keper.",
@@ -313,12 +313,12 @@
       "cottonBattingWeight": "De quiltplanner rekent katoenen tussenvulling op 4 oz per vierkante yard, zoals deze productpagina voor Warm & Natural opgeeft.",
       "polyesterBattingWeight": "De quiltplanner rekent polyester tussenvulling op 4,5 oz per strekkende yard bij 48\" breed, uit deze tabel van tussenvulling per meter.",
       "threadWeight": "De quiltplanner weegt het quiltgaren uit wat het garennummer betekent: 50 wt is 50 km per kilogram.",
-      "yoshizawaRandlett": "The origami diagrams draw their folds, arrows and turn-over marks in this shared system of symbols.",
-      "miura": "The Miura-ori crease pattern and how its parallelograms fold, from Miura's paper on folding large membranes for space.",
-      "yoshimura": "The Yoshimura crease pattern: the diamonds a cylinder buckles into under axial compression, which his paper describes.",
-      "farnhamWaterbomb": "The waterbomb tessellation's six-crease points, each a waterbomb base or its flipped form, follow the vertices this paper studies.",
-      "langTwists": "The square twist tessellation: twists joined by pleats, with neighbors turning opposite ways.",
-      "hullOrigametry": "Maekawa's and Kawasaki's theorems, which every tessellation crease pattern here is tested against at each point where creases meet."
+      "yoshizawaRandlett": "De origamidiagrammen tekenen hun vouwen, pijlen en omdraaitekens in dit gedeelde systeem van symbolen.",
+      "miura": "Het Miura-ori-vouwpatroon en hoe de parallellogrammen ervan vouwen, uit Miura's artikel over het vouwen van grote membranen voor de ruimte.",
+      "yoshimura": "Het Yoshimura-vouwpatroon: de ruiten waarin een cilinder knikt onder axiale druk, zoals zijn artikel beschrijft.",
+      "farnhamWaterbomb": "De punten met zes vouwen in de waterbomtessellatie, elk een waterbombasis of de omgekeerde vorm ervan, volgen de hoekpunten die dit artikel onderzoekt.",
+      "langTwists": "De vierkante-draaitessellatie: draaiingen verbonden door plooien, waarbij buren de andere kant op draaien.",
+      "hullOrigametry": "De stellingen van Maekawa en Kawasaki, waaraan elk tessellatievouwpatroon hier wordt getoetst op elk punt waar vouwen samenkomen."
     }
   }
 }

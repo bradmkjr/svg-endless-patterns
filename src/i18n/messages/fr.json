@@ -361,15 +361,15 @@
       },
       "origami": {
         "title": "Origami",
-        "text": "Traditional models folded step by step, from a dog face and a cup to the samurai helmet and the crane, on printable folding paper in your pattern and colors.",
-        "output": "Step-by-step diagrams, printable folding paper with fold lines, and a PDF.",
-        "explore": "Fold a model"
+        "text": "Des modèles traditionnels pliés étape par étape, de la tête de chien et du gobelet au casque de samouraï et à la grue, sur du papier à plier à imprimer dans votre motif et vos couleurs.",
+        "output": "Diagrammes étape par étape, papier à plier à imprimer avec lignes de pli, et un PDF.",
+        "explore": "Plier un modèle"
       },
       "origamiTessellation": {
-        "title": "Origami tessellations",
-        "text": "Crease patterns for Miura-ori, Yoshimura, waterbomb and square twist tessellations, with mountain and valley folds in your colors.",
-        "output": "Printable crease pattern as SVG, PNG and PDF.",
-        "explore": "Make a crease pattern"
+        "title": "Tessellations en origami",
+        "text": "Des plans de pliage pour les tessellations Miura-ori, Yoshimura, bombe à eau et torsion carrée, avec plis montagne et vallée dans vos couleurs.",
+        "output": "Plan de pliage à imprimer en SVG, PNG et PDF.",
+        "explore": "Créer un plan de pliage"
       }
     },
     "seeAllType": "Tout voir dans {name}"

@@ -972,6 +972,14 @@
     }
   },
   "changelog": {
+    "Gliders, a glider gun and random noise in Game of Life": {
+      "title": "Gliders, een glidergeweer en willekeurige ruis in Game of Life",
+      "items": [
+        "Drie nieuwe Life-patronen, elk met een eigen pagina: een glider die over een vel vliegt waarvan de tegels rand aan rand aansluiten, Bill Gospers glidergeweer met een eter die elke glider opslokt, en willekeurige ruis uit een zaadgetal naar keuze, met een knop voor nieuwe ruis",
+        "Animaties tonen hoogstens 15 generaties. Een patroon dat eerder terugkomt, loopt naadloos rond; een langer patroon speelt 15 generaties vanaf de gekozen fase en begint dan opnieuw",
+        "Het geweer en de eter staan op de pagina met dankbetuigingen"
+      ]
+    },
     "Game of Life patterns that run": {
       "title": "Game of Life-patronen die bewegen",
       "items": [

@@ -972,6 +972,14 @@
     }
   },
   "changelog": {
+    "Gliders, a glider gun and random noise in Game of Life": {
+      "title": "Planeadores, un cañón de planeadores y ruido aleatorio en el Juego de la vida",
+      "items": [
+        "Tres patrones nuevos de Life, cada uno con su propia página: un planeador que cruza una hoja cuyos módulos se unen borde con borde, el cañón de planeadores de Bill Gosper con un devorador que se traga cada planeador, y ruido aleatorio a partir de una semilla que eliges, con un botón para ruido nuevo",
+        "Las animaciones muestran como mucho 15 generaciones. Un patrón que vuelve antes se repite sin costuras; uno más largo muestra 15 generaciones desde la fase elegida y vuelve a empezar",
+        "El cañón y el devorador se citan en la página de agradecimientos"
+      ]
+    },
     "Game of Life patterns that run": {
       "title": "Patrones del Juego de la vida en marcha",
       "items": [

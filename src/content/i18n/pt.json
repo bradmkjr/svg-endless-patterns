@@ -972,6 +972,14 @@
     }
   },
   "changelog": {
+    "Gliders, a glider gun and random noise in Game of Life": {
+      "title": "Planadores, um canhão de planadores e ruído aleatório no Jogo da Vida",
+      "items": [
+        "Três padrões novos do Life, cada um com sua própria página: um planador que cruza uma folha cujos módulos se encaixam borda com borda, o canhão de planadores de Bill Gosper com um comedor que engole cada planador, e ruído aleatório a partir de uma semente que você escolhe, com um botão para ruído novo",
+        "As animações mostram no máximo 15 gerações. Um padrão que volta antes disso se repete sem emendas; um mais longo mostra 15 gerações a partir da fase escolhida e recomeça",
+        "O canhão e o comedor são citados na página de agradecimentos"
+      ]
+    },
     "Game of Life patterns that run": {
       "title": "Padrões do Jogo da Vida em movimento",
       "items": [

@@ -1,6 +1,15 @@
 [
   {
     "date": "2026-11-11",
+    "title": "Gliders, a glider gun and random noise in Game of Life",
+    "items": [
+      "Three new Life patterns, each with its own page: a glider flying across a sheet whose tiles join edge to edge, Bill Gosper's glider gun with an eater that swallows every glider, and random noise from a seed you choose, with a button for new noise",
+      "Animations show at most 15 generations. A pattern that comes back within that loops seamlessly; a longer one plays 15 generations from the chosen phase and starts again",
+      "The gun and the eater are credited on the acknowledgements page"
+    ]
+  },
+  {
+    "date": "2026-11-11",
     "title": "Game of Life patterns that run",
     "items": [
       "Life patterns have an Animation view: the sheet runs in a loop exactly one period long, the shortest that comes back to the start, from the phase you chose. Play, pause and three speeds; with reduced motion it holds still",

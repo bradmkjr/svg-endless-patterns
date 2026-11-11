@@ -972,6 +972,14 @@
     }
   },
   "changelog": {
+    "Gliders, a glider gun and random noise in Game of Life": {
+      "title": "Gleiter, eine Gleiterkanone und Zufallsrauschen im Spiel des Lebens",
+      "items": [
+        "Drei neue Life-Muster, jedes mit eigener Seite: ein Gleiter, der über einen Bogen fliegt, dessen Kacheln Rand an Rand anschließen, Bill Gospers Gleiterkanone mit einem Fresser, der jeden Gleiter verschluckt, und Zufallsrauschen aus einem Startwert deiner Wahl, mit einer Schaltfläche für neues Rauschen",
+        "Animationen zeigen höchstens 15 Generationen. Ein Muster, das vorher zurückkehrt, läuft nahtlos in Schleife; ein längeres spielt 15 Generationen ab der gewählten Phase und beginnt dann von vorn",
+        "Kanone und Fresser sind auf der Danksagungsseite genannt"
+      ]
+    },
     "Game of Life patterns that run": {
       "title": "Game-of-Life-Muster, die laufen",
       "items": [

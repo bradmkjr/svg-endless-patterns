@@ -972,6 +972,14 @@
     }
   },
   "changelog": {
+    "Gliders, a glider gun and random noise in Game of Life": {
+      "title": "Planeurs, canon à planeurs et bruit aléatoire dans le jeu de la vie",
+      "items": [
+        "Trois nouveaux motifs Life, chacun avec sa page : un planeur qui traverse une feuille dont les motifs se raccordent bord à bord, le canon à planeurs de Bill Gosper avec un mangeur qui avale chaque planeur, et du bruit aléatoire tiré d'une graine de votre choix, avec un bouton pour un nouveau bruit",
+        "Les animations montrent au plus 15 générations. Un motif qui revient avant boucle sans raccord ; un motif plus long joue 15 générations à partir de la phase choisie, puis recommence",
+        "Le canon et le mangeur sont cités sur la page des remerciements"
+      ]
+    },
     "Game of Life patterns that run": {
       "title": "Des motifs du jeu de la vie qui s’animent",
       "items": [

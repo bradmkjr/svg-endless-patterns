@@ -7,7 +7,7 @@ import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { useTrackCustomize } from "@/lib/analytics";
 import { fill, messages } from "@/lib/i18n";
 import copy from "@/i18n/messages/life.json";
-import { CELL_SIZE_OPTIONS, columnOptions, COUNT_OPTIONS, NEIGHBORHOOD_OPTIONS, PATTERN_OPTIONS, phaseOptions, rowOptions, serializeLifeState, SPACING_OPTIONS } from "@/lib/lifeState";
+import { CELL_SIZE_OPTIONS, columnOptions, COUNT_OPTIONS, lifeGenerations, NEIGHBORHOOD_OPTIONS, PATTERN_OPTIONS, phaseOptions, randomSeed, rowOptions, SEED_MAX, serializeLifeState, SPACING_OPTIONS, withRun, wraps } from "@/lib/lifeState";
 import { syncShareLink } from "@/lib/toolOptions";
 import { useLiveResult } from "@/lib/useLiveResult";
 import { OptionNav, useOptionNavigation } from "./OptionNav";
@@ -78,11 +78,25 @@ export function LifeBuilder({ locale, option, labels, initialState }: { locale: 
   };
 
   const svg = result?.svg[view] ?? "";
-  const period = phaseOptions(state.pattern).length;
-  const hasPhases = period > 1;
-  const nextStep = () => update({ phase: (state.phase + 1) % period });
-  const animating = view === "animation" && hasPhases;
-  const order = (result?.loop ?? phaseOptions(state.pattern)).map((n) => n + 1).join(" → ");
+  const wrapping = wraps(state.pattern);
+  // Noise's run is known only once the API has run it.
+  const generations = state.pattern === "noise" ? (result?.generations ?? 1) : lifeGenerations(state.pattern, state.spacing);
+  const phases = phaseOptions(state.pattern, state.spacing, generations);
+  const hasPhases = generations > 1;
+  /** Past the last generation run, a loop goes back to where it starts, and noise still changing starts over. */
+  const nextStep = () => update({ phase: state.phase + 1 < generations ? state.phase + 1 : (result?.settle ?? 0) });
+  const frames = result?.loop.length ?? 1;
+  const animating = view === "animation" && frames > 1;
+  const order = (result?.loop ?? []).map((n) => n + 1).join(" → ");
+  const changeRun = (patch: Pick<Partial<LifeRequest>, "spacing" | "seed">) => setState((s) => withRun(s, patch));
+
+  const phasesNote = (r: LifeResult) => {
+    const range = { min: Math.min(...r.phaseCells), max: Math.max(...r.phaseCells) };
+    if (r.settle === null) return fill(t.soupRunning, { generations: r.generations, ...range });
+    if (r.settle > 0) return fill(t.soupSettled, { settle: r.settle, period: r.period ?? 0, ...range });
+    if (r.generations === 1) return fill(t.stillStats, { live: r.phaseCells[0] });
+    return r.generations <= 8 ? fill(t.phaseStats, { period: r.period ?? 0, counts: r.phaseCells.join(", ") }) : fill(t.longStats, { period: r.period ?? 0, ...range });
+  };
 
   return (
     <div className={styles.builder}>
@@ -109,7 +123,7 @@ export function LifeBuilder({ locale, option, labels, initialState }: { locale: 
               <p className={styles.note}>{t.notes[state.pattern]}</p>
               {view === "sheet" && <p className={styles.note}>{fill(t.sheetStats, { cols: result.sheet.cols, rows: result.sheet.rows, width: result.sheet.width, height: result.sheet.height, live: result.sheet.live })}</p>}
               {view === "animation" &&
-                (hasPhases ? (
+                (frames > 1 ? (
                   <>
                     <div className={`${styles.actions} ${styles.playback} no-print`}>
                       <button type="button" className={styles.secondary} aria-pressed={paused} onClick={() => setPaused((p) => !p)}>
@@ -129,14 +143,14 @@ export function LifeBuilder({ locale, option, labels, initialState }: { locale: 
                         </select>
                       </label>
                     </div>
-                    <p className={styles.note}>{fill(t.loopStats, { period, order })}</p>
+                    <p className={styles.note}>{result.seamless ? fill(t.loopStats, { period: frames, order }) : fill(t.runStats, { frames, phase: state.phase + 1 })}</p>
                     <p className={styles.note}>{t.motionNote}</p>
                   </>
                 ) : (
                   <p className={styles.note}>{t.stillLoop}</p>
                 ))}
-              {view === "tile" && <p className={styles.note}>{fill(t.tileStats, { cols: result.tile.cols, rows: result.tile.rows, spacing: state.spacing })}</p>}
-              {view === "phases" && <p className={styles.note}>{hasPhases ? fill(t.phaseStats, { period: result.period, counts: result.phaseCells.join(", ") }) : fill(t.stillStats, { live: result.phaseCells[0] })}</p>}
+              {view === "tile" && <p className={styles.note}>{fill(wrapping ? t.wrapStats : t.tileStats, { cols: result.tile.cols, rows: result.tile.rows, spacing: state.spacing })}</p>}
+              {view === "phases" && <p className={styles.note}>{phasesNote(result)}</p>}
               {view === "neighborhood" && (
                 <>
                   <p className={styles.note}>{t.clickNote}</p>
@@ -183,9 +197,20 @@ export function LifeBuilder({ locale, option, labels, initialState }: { locale: 
                 ))}
               </select>
             </label>
+            {state.seed !== undefined && (
+              <div className={styles.fieldRow}>
+                <label className={styles.field}>
+                  <span>{t.seed}</span>
+                  <input type="number" min={0} max={SEED_MAX} value={state.seed} onChange={(e) => changeRun({ seed: Math.min(SEED_MAX, Math.max(0, Math.floor(Number(e.target.value)) || 0)) })} />
+                </label>
+                <button type="button" className={styles.tab} onClick={() => changeRun({ seed: randomSeed() })}>
+                  {t.newNoise}
+                </button>
+              </div>
+            )}
             {hasPhases && (
               <>
-                <NumberSelect label={t.phase} value={state.phase} options={phaseOptions(state.pattern)} format={(n) => String(n + 1)} onChange={(phase) => update({ phase })} />
+                <NumberSelect label={t.phase} value={state.phase} options={phases} format={(n) => String(n + 1)} onChange={(phase) => update({ phase })} />
                 <button type="button" className={styles.secondary} onClick={nextStep}>
                   {t.nextStep}
                 </button>
@@ -201,7 +226,7 @@ export function LifeBuilder({ locale, option, labels, initialState }: { locale: 
             </div>
             <div className={styles.fieldRow}>
               <NumberSelect label={t.cellSize} value={state.cellSize} options={CELL_SIZE_OPTIONS} format={(n) => `${n}"`} onChange={(cellSize) => update({ cellSize })} />
-              <NumberSelect label={t.spacing} value={state.spacing} options={SPACING_OPTIONS} onChange={(spacing) => update({ spacing })} />
+              <NumberSelect label={wrapping ? t.spacingWrap : t.spacing} value={state.spacing} options={SPACING_OPTIONS} onChange={(spacing) => changeRun({ spacing })} />
             </div>
             <label className={styles.check}>
               <input type="checkbox" checked={state.gridLines} onChange={(e) => update({ gridLines: e.target.checked })} />
@@ -228,8 +253,8 @@ export function LifeBuilder({ locale, option, labels, initialState }: { locale: 
               </select>
             </label>
             <div className={styles.fieldRow}>
-              <NumberSelect label={t.cellColumn} value={state.cellX} options={columnOptions(state.pattern)} format={(n) => String(n + 1)} onChange={(cellX) => update({ cellX })} />
-              <NumberSelect label={t.cellRow} value={state.cellY} options={rowOptions(state.pattern)} format={(n) => String(n + 1)} onChange={(cellY) => update({ cellY })} />
+              <NumberSelect label={t.cellColumn} value={state.cellX} options={columnOptions(state.pattern, state.spacing)} format={(n) => String(n + 1)} onChange={(cellX) => update({ cellX })} />
+              <NumberSelect label={t.cellRow} value={state.cellY} options={rowOptions(state.pattern, state.spacing)} format={(n) => String(n + 1)} onChange={(cellY) => update({ cellY })} />
             </div>
           </fieldset>
 

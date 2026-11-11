@@ -972,6 +972,14 @@
     }
   },
   "changelog": {
+    "Gliders, a glider gun and random noise in Game of Life": {
+      "title": "Alianti, un cannone di alianti e rumore casuale nel Gioco della vita",
+      "items": [
+        "Tre nuovi pattern di Life, ognuno con la sua pagina: un aliante che attraversa un foglio le cui piastrelle si uniscono bordo a bordo, il cannone di alianti di Bill Gosper con un mangiatore che inghiotte ogni aliante, e rumore casuale da un seme a tua scelta, con un pulsante per un nuovo rumore",
+        "Le animazioni mostrano al massimo 15 generazioni. Un pattern che torna prima si ripete senza giunture; uno più lungo mostra 15 generazioni dalla fase scelta e ricomincia",
+        "Il cannone e il mangiatore sono citati nella pagina dei ringraziamenti"
+      ]
+    },
     "Game of Life patterns that run": {
       "title": "Pattern del Gioco della vita in movimento",
       "items": [

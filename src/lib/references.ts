@@ -35,6 +35,12 @@ export const REFERENCES: Reference[] = [
   { id: "cottonBattingWeight", author: "Patched Works", title: "Warm & White Batting, 90\" wide", url: "https://patchedworks.com/products/warm-white-batting-90in" },
   { id: "polyesterBattingWeight", author: "Hobbs Bonded Fibers", title: "By The Yard Products", url: "https://www.hobbsbatting.com/?p=133" },
   { id: "threadWeight", author: "Wikipedia", title: "Thread (textiles): Weight", url: "https://en.wikipedia.org/wiki/Thread_(yarn)" },
+  { id: "yoshizawaRandlett", author: "Akira Yoshizawa, Samuel Randlett and Robert Harbin", title: "Yoshizawa–Randlett system of origami diagram symbols", detail: "after Randlett, The Art of Origami, 1961", url: "https://en.wikipedia.org/wiki/Yoshizawa%E2%80%93Randlett_system" },
+  { id: "miura", author: "Koryo Miura", title: "Method of Packaging and Deployment of Large Membranes in Space", detail: "The Institute of Space and Astronautical Science Report 618, 1985", url: "https://jaxa.repo.nii.ac.jp/records/31382" },
+  { id: "yoshimura", author: "Yoshimaru Yoshimura", title: "On the Mechanism of Buckling of a Circular Cylindrical Shell Under Axial Compression", detail: "NACA Technical Memorandum 1390, 1955", url: "https://ntrs.nasa.gov/citations/19930093840" },
+  { id: "farnhamWaterbomb", author: "Johnna Farnham, Thomas C. Hull and Aubrey Rumbolt", title: "Rigid folding equations of degree-6 origami vertices", detail: "Proceedings of the Royal Society A 478, 2022", url: "https://arxiv.org/abs/2108.12483" },
+  { id: "langTwists", author: "Robert J. Lang", title: "Twists, Tilings, and Tessellations: Mathematical Methods for Geometric Origami", detail: "CRC Press, 2018", url: "https://www.routledge.com/Twists-Tilings-and-Tessellations-Mathematical-Methods-for-Geometric-Origami/Lang/p/book/9781568812328" },
+  { id: "hullOrigametry", author: "Thomas C. Hull", title: "Origametry: Mathematical Methods in Paper Folding", detail: "Cambridge University Press, 2020" },
   { id: "bronsonLace", author: "J. and R. Bronson", title: "The Domestic Manufacturer's Assistant, and Family Directory, in the Arts of Weaving and Dyeing", detail: "Utica, 1817", url: "https://www2.cs.arizona.edu/patterns/weaving/wtopic_bronsonl.html" },
 ];
 

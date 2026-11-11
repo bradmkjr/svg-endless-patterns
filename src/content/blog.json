@@ -1,5 +1,99 @@
 [
   {
+    "slug": "origami",
+    "title": "Origami: traditional models and folded tessellations",
+    "date": "2026-11-11",
+    "summary": "Two new paper-folding tools. Fold five traditional models step by step, from a dog face to the crane, on folding paper you print in any pattern and color, or print crease patterns for Miura-ori, Yoshimura, waterbomb and square twist tessellations.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Paper folding joins quilting, knitting and stitching on the site. The new [origami](/origami/) section has five traditional models, easiest first: a dog face, a cup, a fortune teller, a samurai helmet and the [crane](/origami/crane/). Each comes with step-by-step diagrams in the symbols origami books use, dashed valley folds, mountain folds, arrows and turn-over marks, and a line of instructions under every step."
+      },
+      {
+        "type": "heading",
+        "text": "Fold your own paper"
+      },
+      {
+        "type": "paragraph",
+        "text": "The diagrams are drawn on the paper you choose: plain, or printed with asanoha, seigaiha, shippo or kikko, polka dots, Truchet arcs or wavy lines, in any colors. Download a PDF with the diagrams and the paper at true size, from 5 to 7.5 inches square. The fold lines can print faintly on the front, or on the back as a second page you print on the sheet's other side, mirrored to land behind the right spots."
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "origami",
+            "slug": "",
+            "query": "",
+            "view": "finished",
+            "caption": "Crane on indigo asanoha"
+          },
+          {
+            "kind": "origami",
+            "slug": "",
+            "query": "m=samurai-helmet&p=kikko&f=4f7a5e",
+            "view": "finished",
+            "caption": "Samurai helmet on pine kikko"
+          },
+          {
+            "kind": "origami",
+            "slug": "",
+            "query": "m=fortune-teller&p=seigaiha&f=c99a2e&a=fbf3e4",
+            "view": "finished",
+            "caption": "Fortune teller on gold seigaiha"
+          },
+          {
+            "kind": "origami",
+            "slug": "",
+            "query": "m=dog&p=dots&f=b5533c&a=f6e7c8",
+            "view": "sheet",
+            "caption": "Polka-dot paper for the dog face"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Folded tessellations"
+      },
+      {
+        "type": "paragraph",
+        "text": "[Origami tessellations](/origami-tessellations/) fold one sheet into a repeating surface. Choose Miura-ori, Yoshimura, waterbomb or square twist, set the grid, the angle and the colors of the mountain and valley lines, and print the crease pattern. Every pattern folds flat at each point where creases meet: the site's tests check Maekawa's and Kawasaki's theorems at every point, for every pattern, angle and grid. The sources behind each pattern are on the [acknowledgements](/acknowledgements/) page."
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "origamiTessellation",
+            "slug": "",
+            "query": "",
+            "view": "pattern",
+            "caption": "Miura-ori"
+          },
+          {
+            "kind": "origamiTessellation",
+            "slug": "",
+            "query": "t=yoshimura&a=40&c=8",
+            "view": "pattern",
+            "caption": "Yoshimura diamonds"
+          },
+          {
+            "kind": "origamiTessellation",
+            "slug": "",
+            "query": "t=waterbomb",
+            "view": "pattern",
+            "caption": "Waterbomb"
+          },
+          {
+            "kind": "origamiTessellation",
+            "slug": "",
+            "query": "t=square-twist&a=20",
+            "view": "pattern",
+            "caption": "Square twist"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "slug": "winter-patterns",
     "title": "Seasonal patterns, starting with winter",
     "date": "2026-11-11",

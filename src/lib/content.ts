@@ -44,7 +44,10 @@ export type PostSample =
   | { kind: "waves"; slug: ""; query: string; view: "repeat"; caption: string; locale?: Locale }
   | { kind: "nature"; slug: ""; query: string; view: "repeat"; caption: string; locale?: Locale }
   | { kind: "weaving"; slug: ""; query: string; view: "cloth" | "draft"; caption: string; locale?: Locale }
-  | { kind: "tartan"; slug: ""; query: string; view: "swatch"; caption: string; locale?: Locale };
+  | { kind: "tartan"; slug: ""; query: string; view: "swatch"; caption: string; locale?: Locale }
+  /** `finished` is the folded model, `sheet` its printed paper. */
+  | { kind: "origami"; slug: ""; query: string; view: "finished" | "sheet"; caption: string; locale?: Locale }
+  | { kind: "origamiTessellation"; slug: ""; query: string; view: "pattern"; caption: string; locale?: Locale };
 
 export type PostBlock =
   | { type: "paragraph"; text: string }
@@ -138,6 +141,8 @@ export function sampleHref(sample: PostSample, locale: Locale = "en"): string {
   if (sample.kind === "waves") return localePath(sample.locale ?? locale, `/waves/${query}`);
   if (sample.kind === "weaving") return localePath(sample.locale ?? locale, `/weaving/${query}`);
   if (sample.kind === "nature") return localePath(sample.locale ?? locale, `/nature-patterns/${query}`);
+  if (sample.kind === "origami") return localePath(sample.locale ?? locale, `/origami/${query}`);
+  if (sample.kind === "origamiTessellation") return localePath(sample.locale ?? locale, `/origami-tessellations/${query}`);
   if (sample.kind === "tartan") return localePath(sample.locale ?? locale, `/tartans/${query}`);
   const section = sample.kind === "block" ? "blocks" : sample.kind === "knit" ? "knitting" : "crochet";
   return localePath(sample.locale ?? locale, `/${section}/${sample.slug}/${query}`);

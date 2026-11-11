@@ -1,0 +1,303 @@
+{
+  "en": {
+    "metaTitle": "Origami tessellations: printable crease patterns",
+    "metaDesc": "Make printable crease patterns for Miura-ori, Yoshimura, waterbomb and square twist tessellations, with the grid, angle and colors you choose.",
+    "h1": "Origami tessellations",
+    "lede": "Crease patterns for folded tessellations: one sheet, a grid of repeating folds, and a surface that collapses or twists into shape.",
+    "patterns": {
+      "miura-ori": "Miura-ori",
+      "yoshimura": "Yoshimura (diamond)",
+      "waterbomb": "Waterbomb",
+      "square-twist": "Square twist"
+    },
+    "patternNotes": {
+      "miura-ori": "Rows of parallelograms that fold up in both directions at once, and open again with one pull.",
+      "yoshimura": "The diamonds a thin tube buckles into when it's squashed end to end.",
+      "waterbomb": "Rows of six-crease waterbomb bases, alternating with the same base flipped: it curls into a bumpy surface.",
+      "square-twist": "Squares that turn as their four pleats close, neighbors turning opposite ways."
+    },
+    "pattern": "Pattern",
+    "grid": "Grid",
+    "cols": "Across",
+    "rows": "Down",
+    "angle": "Angle",
+    "angleHelp": {
+      "miura-ori": "The parallelograms' sharp angle. Nearer 90° folds flatter; smaller packs tighter.",
+      "yoshimura": "The diagonals' slope from level. 45° makes square diamonds.",
+      "waterbomb": "The diagonals' slope from level. 45° is the classic waterbomb base.",
+      "square-twist": "How far each square turns as it folds. Small turns leave wide pleats."
+    },
+    "sheet": "Sheet",
+    "width": "Width",
+    "colors": "Colors",
+    "paper": "Paper",
+    "mountain": "Mountain",
+    "valley": "Valley",
+    "downloadPdf": "Download crease pattern (PDF)",
+    "previewAlt": "The crease pattern",
+    "previewNote": "Sheet {w} x {h} in, {m} mountain and {v} valley creases.",
+    "legend": "Dashed lines are valley folds, toward you; a dash and two dots is a mountain fold, away from you.",
+    "howTitle": "How to fold",
+    "aboutTitle": "About these patterns",
+    "about": "Every crease pattern here folds flat at each point where creases meet: mountains and valleys differ by two there (Maekawa's theorem), and alternate angles around it add up to 180° (Kawasaki's theorem). The site's tests check both at every point, for every pattern, angle and grid.",
+    "modelsLink": "Fold a traditional model instead"
+  },
+  "es": {
+    "metaTitle": "Origami tessellations: printable crease patterns",
+    "metaDesc": "Make printable crease patterns for Miura-ori, Yoshimura, waterbomb and square twist tessellations, with the grid, angle and colors you choose.",
+    "h1": "Origami tessellations",
+    "lede": "Crease patterns for folded tessellations: one sheet, a grid of repeating folds, and a surface that collapses or twists into shape.",
+    "patterns": {
+      "miura-ori": "Miura-ori",
+      "yoshimura": "Yoshimura (diamond)",
+      "waterbomb": "Waterbomb",
+      "square-twist": "Square twist"
+    },
+    "patternNotes": {
+      "miura-ori": "Rows of parallelograms that fold up in both directions at once, and open again with one pull.",
+      "yoshimura": "The diamonds a thin tube buckles into when it's squashed end to end.",
+      "waterbomb": "Rows of six-crease waterbomb bases, alternating with the same base flipped: it curls into a bumpy surface.",
+      "square-twist": "Squares that turn as their four pleats close, neighbors turning opposite ways."
+    },
+    "pattern": "Pattern",
+    "grid": "Grid",
+    "cols": "Across",
+    "rows": "Down",
+    "angle": "Angle",
+    "angleHelp": {
+      "miura-ori": "The parallelograms' sharp angle. Nearer 90° folds flatter; smaller packs tighter.",
+      "yoshimura": "The diagonals' slope from level. 45° makes square diamonds.",
+      "waterbomb": "The diagonals' slope from level. 45° is the classic waterbomb base.",
+      "square-twist": "How far each square turns as it folds. Small turns leave wide pleats."
+    },
+    "sheet": "Sheet",
+    "width": "Width",
+    "colors": "Colors",
+    "paper": "Paper",
+    "mountain": "Mountain",
+    "valley": "Valley",
+    "downloadPdf": "Download crease pattern (PDF)",
+    "previewAlt": "The crease pattern",
+    "previewNote": "Sheet {w} x {h} in, {m} mountain and {v} valley creases.",
+    "legend": "Dashed lines are valley folds, toward you; a dash and two dots is a mountain fold, away from you.",
+    "howTitle": "How to fold",
+    "aboutTitle": "About these patterns",
+    "about": "Every crease pattern here folds flat at each point where creases meet: mountains and valleys differ by two there (Maekawa's theorem), and alternate angles around it add up to 180° (Kawasaki's theorem). The site's tests check both at every point, for every pattern, angle and grid.",
+    "modelsLink": "Fold a traditional model instead"
+  },
+  "fr": {
+    "metaTitle": "Origami tessellations: printable crease patterns",
+    "metaDesc": "Make printable crease patterns for Miura-ori, Yoshimura, waterbomb and square twist tessellations, with the grid, angle and colors you choose.",
+    "h1": "Origami tessellations",
+    "lede": "Crease patterns for folded tessellations: one sheet, a grid of repeating folds, and a surface that collapses or twists into shape.",
+    "patterns": {
+      "miura-ori": "Miura-ori",
+      "yoshimura": "Yoshimura (diamond)",
+      "waterbomb": "Waterbomb",
+      "square-twist": "Square twist"
+    },
+    "patternNotes": {
+      "miura-ori": "Rows of parallelograms that fold up in both directions at once, and open again with one pull.",
+      "yoshimura": "The diamonds a thin tube buckles into when it's squashed end to end.",
+      "waterbomb": "Rows of six-crease waterbomb bases, alternating with the same base flipped: it curls into a bumpy surface.",
+      "square-twist": "Squares that turn as their four pleats close, neighbors turning opposite ways."
+    },
+    "pattern": "Pattern",
+    "grid": "Grid",
+    "cols": "Across",
+    "rows": "Down",
+    "angle": "Angle",
+    "angleHelp": {
+      "miura-ori": "The parallelograms' sharp angle. Nearer 90° folds flatter; smaller packs tighter.",
+      "yoshimura": "The diagonals' slope from level. 45° makes square diamonds.",
+      "waterbomb": "The diagonals' slope from level. 45° is the classic waterbomb base.",
+      "square-twist": "How far each square turns as it folds. Small turns leave wide pleats."
+    },
+    "sheet": "Sheet",
+    "width": "Width",
+    "colors": "Colors",
+    "paper": "Paper",
+    "mountain": "Mountain",
+    "valley": "Valley",
+    "downloadPdf": "Download crease pattern (PDF)",
+    "previewAlt": "The crease pattern",
+    "previewNote": "Sheet {w} x {h} in, {m} mountain and {v} valley creases.",
+    "legend": "Dashed lines are valley folds, toward you; a dash and two dots is a mountain fold, away from you.",
+    "howTitle": "How to fold",
+    "aboutTitle": "About these patterns",
+    "about": "Every crease pattern here folds flat at each point where creases meet: mountains and valleys differ by two there (Maekawa's theorem), and alternate angles around it add up to 180° (Kawasaki's theorem). The site's tests check both at every point, for every pattern, angle and grid.",
+    "modelsLink": "Fold a traditional model instead"
+  },
+  "de": {
+    "metaTitle": "Origami tessellations: printable crease patterns",
+    "metaDesc": "Make printable crease patterns for Miura-ori, Yoshimura, waterbomb and square twist tessellations, with the grid, angle and colors you choose.",
+    "h1": "Origami tessellations",
+    "lede": "Crease patterns for folded tessellations: one sheet, a grid of repeating folds, and a surface that collapses or twists into shape.",
+    "patterns": {
+      "miura-ori": "Miura-ori",
+      "yoshimura": "Yoshimura (diamond)",
+      "waterbomb": "Waterbomb",
+      "square-twist": "Square twist"
+    },
+    "patternNotes": {
+      "miura-ori": "Rows of parallelograms that fold up in both directions at once, and open again with one pull.",
+      "yoshimura": "The diamonds a thin tube buckles into when it's squashed end to end.",
+      "waterbomb": "Rows of six-crease waterbomb bases, alternating with the same base flipped: it curls into a bumpy surface.",
+      "square-twist": "Squares that turn as their four pleats close, neighbors turning opposite ways."
+    },
+    "pattern": "Pattern",
+    "grid": "Grid",
+    "cols": "Across",
+    "rows": "Down",
+    "angle": "Angle",
+    "angleHelp": {
+      "miura-ori": "The parallelograms' sharp angle. Nearer 90° folds flatter; smaller packs tighter.",
+      "yoshimura": "The diagonals' slope from level. 45° makes square diamonds.",
+      "waterbomb": "The diagonals' slope from level. 45° is the classic waterbomb base.",
+      "square-twist": "How far each square turns as it folds. Small turns leave wide pleats."
+    },
+    "sheet": "Sheet",
+    "width": "Width",
+    "colors": "Colors",
+    "paper": "Paper",
+    "mountain": "Mountain",
+    "valley": "Valley",
+    "downloadPdf": "Download crease pattern (PDF)",
+    "previewAlt": "The crease pattern",
+    "previewNote": "Sheet {w} x {h} in, {m} mountain and {v} valley creases.",
+    "legend": "Dashed lines are valley folds, toward you; a dash and two dots is a mountain fold, away from you.",
+    "howTitle": "How to fold",
+    "aboutTitle": "About these patterns",
+    "about": "Every crease pattern here folds flat at each point where creases meet: mountains and valleys differ by two there (Maekawa's theorem), and alternate angles around it add up to 180° (Kawasaki's theorem). The site's tests check both at every point, for every pattern, angle and grid.",
+    "modelsLink": "Fold a traditional model instead"
+  },
+  "pt": {
+    "metaTitle": "Origami tessellations: printable crease patterns",
+    "metaDesc": "Make printable crease patterns for Miura-ori, Yoshimura, waterbomb and square twist tessellations, with the grid, angle and colors you choose.",
+    "h1": "Origami tessellations",
+    "lede": "Crease patterns for folded tessellations: one sheet, a grid of repeating folds, and a surface that collapses or twists into shape.",
+    "patterns": {
+      "miura-ori": "Miura-ori",
+      "yoshimura": "Yoshimura (diamond)",
+      "waterbomb": "Waterbomb",
+      "square-twist": "Square twist"
+    },
+    "patternNotes": {
+      "miura-ori": "Rows of parallelograms that fold up in both directions at once, and open again with one pull.",
+      "yoshimura": "The diamonds a thin tube buckles into when it's squashed end to end.",
+      "waterbomb": "Rows of six-crease waterbomb bases, alternating with the same base flipped: it curls into a bumpy surface.",
+      "square-twist": "Squares that turn as their four pleats close, neighbors turning opposite ways."
+    },
+    "pattern": "Pattern",
+    "grid": "Grid",
+    "cols": "Across",
+    "rows": "Down",
+    "angle": "Angle",
+    "angleHelp": {
+      "miura-ori": "The parallelograms' sharp angle. Nearer 90° folds flatter; smaller packs tighter.",
+      "yoshimura": "The diagonals' slope from level. 45° makes square diamonds.",
+      "waterbomb": "The diagonals' slope from level. 45° is the classic waterbomb base.",
+      "square-twist": "How far each square turns as it folds. Small turns leave wide pleats."
+    },
+    "sheet": "Sheet",
+    "width": "Width",
+    "colors": "Colors",
+    "paper": "Paper",
+    "mountain": "Mountain",
+    "valley": "Valley",
+    "downloadPdf": "Download crease pattern (PDF)",
+    "previewAlt": "The crease pattern",
+    "previewNote": "Sheet {w} x {h} in, {m} mountain and {v} valley creases.",
+    "legend": "Dashed lines are valley folds, toward you; a dash and two dots is a mountain fold, away from you.",
+    "howTitle": "How to fold",
+    "aboutTitle": "About these patterns",
+    "about": "Every crease pattern here folds flat at each point where creases meet: mountains and valleys differ by two there (Maekawa's theorem), and alternate angles around it add up to 180° (Kawasaki's theorem). The site's tests check both at every point, for every pattern, angle and grid.",
+    "modelsLink": "Fold a traditional model instead"
+  },
+  "it": {
+    "metaTitle": "Origami tessellations: printable crease patterns",
+    "metaDesc": "Make printable crease patterns for Miura-ori, Yoshimura, waterbomb and square twist tessellations, with the grid, angle and colors you choose.",
+    "h1": "Origami tessellations",
+    "lede": "Crease patterns for folded tessellations: one sheet, a grid of repeating folds, and a surface that collapses or twists into shape.",
+    "patterns": {
+      "miura-ori": "Miura-ori",
+      "yoshimura": "Yoshimura (diamond)",
+      "waterbomb": "Waterbomb",
+      "square-twist": "Square twist"
+    },
+    "patternNotes": {
+      "miura-ori": "Rows of parallelograms that fold up in both directions at once, and open again with one pull.",
+      "yoshimura": "The diamonds a thin tube buckles into when it's squashed end to end.",
+      "waterbomb": "Rows of six-crease waterbomb bases, alternating with the same base flipped: it curls into a bumpy surface.",
+      "square-twist": "Squares that turn as their four pleats close, neighbors turning opposite ways."
+    },
+    "pattern": "Pattern",
+    "grid": "Grid",
+    "cols": "Across",
+    "rows": "Down",
+    "angle": "Angle",
+    "angleHelp": {
+      "miura-ori": "The parallelograms' sharp angle. Nearer 90° folds flatter; smaller packs tighter.",
+      "yoshimura": "The diagonals' slope from level. 45° makes square diamonds.",
+      "waterbomb": "The diagonals' slope from level. 45° is the classic waterbomb base.",
+      "square-twist": "How far each square turns as it folds. Small turns leave wide pleats."
+    },
+    "sheet": "Sheet",
+    "width": "Width",
+    "colors": "Colors",
+    "paper": "Paper",
+    "mountain": "Mountain",
+    "valley": "Valley",
+    "downloadPdf": "Download crease pattern (PDF)",
+    "previewAlt": "The crease pattern",
+    "previewNote": "Sheet {w} x {h} in, {m} mountain and {v} valley creases.",
+    "legend": "Dashed lines are valley folds, toward you; a dash and two dots is a mountain fold, away from you.",
+    "howTitle": "How to fold",
+    "aboutTitle": "About these patterns",
+    "about": "Every crease pattern here folds flat at each point where creases meet: mountains and valleys differ by two there (Maekawa's theorem), and alternate angles around it add up to 180° (Kawasaki's theorem). The site's tests check both at every point, for every pattern, angle and grid.",
+    "modelsLink": "Fold a traditional model instead"
+  },
+  "nl": {
+    "metaTitle": "Origami tessellations: printable crease patterns",
+    "metaDesc": "Make printable crease patterns for Miura-ori, Yoshimura, waterbomb and square twist tessellations, with the grid, angle and colors you choose.",
+    "h1": "Origami tessellations",
+    "lede": "Crease patterns for folded tessellations: one sheet, a grid of repeating folds, and a surface that collapses or twists into shape.",
+    "patterns": {
+      "miura-ori": "Miura-ori",
+      "yoshimura": "Yoshimura (diamond)",
+      "waterbomb": "Waterbomb",
+      "square-twist": "Square twist"
+    },
+    "patternNotes": {
+      "miura-ori": "Rows of parallelograms that fold up in both directions at once, and open again with one pull.",
+      "yoshimura": "The diamonds a thin tube buckles into when it's squashed end to end.",
+      "waterbomb": "Rows of six-crease waterbomb bases, alternating with the same base flipped: it curls into a bumpy surface.",
+      "square-twist": "Squares that turn as their four pleats close, neighbors turning opposite ways."
+    },
+    "pattern": "Pattern",
+    "grid": "Grid",
+    "cols": "Across",
+    "rows": "Down",
+    "angle": "Angle",
+    "angleHelp": {
+      "miura-ori": "The parallelograms' sharp angle. Nearer 90° folds flatter; smaller packs tighter.",
+      "yoshimura": "The diagonals' slope from level. 45° makes square diamonds.",
+      "waterbomb": "The diagonals' slope from level. 45° is the classic waterbomb base.",
+      "square-twist": "How far each square turns as it folds. Small turns leave wide pleats."
+    },
+    "sheet": "Sheet",
+    "width": "Width",
+    "colors": "Colors",
+    "paper": "Paper",
+    "mountain": "Mountain",
+    "valley": "Valley",
+    "downloadPdf": "Download crease pattern (PDF)",
+    "previewAlt": "The crease pattern",
+    "previewNote": "Sheet {w} x {h} in, {m} mountain and {v} valley creases.",
+    "legend": "Dashed lines are valley folds, toward you; a dash and two dots is a mountain fold, away from you.",
+    "howTitle": "How to fold",
+    "aboutTitle": "About these patterns",
+    "about": "Every crease pattern here folds flat at each point where creases meet: mountains and valleys differ by two there (Maekawa's theorem), and alternate angles around it add up to 180° (Kawasaki's theorem). The site's tests check both at every point, for every pattern, angle and grid.",
+    "modelsLink": "Fold a traditional model instead"
+  }
+}

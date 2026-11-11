@@ -28,10 +28,14 @@ import { parseWavesState, serializeWavesState } from "./wavesState";
 import { parseNatureState, serializeNatureState } from "./natureState";
 import { parseWeavingState, serializeWeavingState } from "./weavingState";
 import { parseQuiltState, serializeQuiltState } from "./quiltState";
+import { parseOrigamiState, serializeOrigamiState } from "./origamiState";
+import { parseOrigamiTessellationState, serializeOrigamiTessellationState } from "./origamiTessellationState";
 
 const TOOLS = Object.keys(TOOL_OPTIONS) as ToolId[];
 const LOCALES = ["en", "es", "fr", "de", "pt", "it", "nl"] as const;
 const ROUND_TRIP: Record<ToolId, (params: URLSearchParams) => string> = {
+  origami: (p) => serializeOrigamiState(parseOrigamiState(p)),
+  origamiTessellation: (p) => serializeOrigamiTessellationState(parseOrigamiTessellationState(p)),
   quilt: (p) => serializeQuiltState(parseQuiltState(p)),
   truchet: (p) => serializeTruchetState(parseTruchetState(p)),
   kolam: (p) => serializeKolamState(parseKolamState(p)),

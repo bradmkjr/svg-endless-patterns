@@ -1,0 +1,72 @@
+.finished {
+  width: 100%;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+.finished :global(svg),
+.diagram :global(svg),
+.sheet :global(svg) {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.diagrams {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
+  gap: 1.25rem 1.5rem;
+  counter-reset: step;
+}
+
+.diagram {
+  margin: 0;
+  counter-increment: step;
+}
+
+.diagram figure {
+  margin: 0;
+}
+
+.diagram figcaption {
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.diagram figcaption::before {
+  content: counter(step) ". ";
+  font-weight: 600;
+}
+
+.sheets {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
+  gap: 1.5rem;
+  max-width: 34rem;
+  margin-top: 1rem;
+}
+
+.sheet {
+  margin: 0;
+}
+
+.sheet > div {
+  box-shadow: 0 6px 20px rgba(50, 40, 20, 0.18);
+}
+
+.sheet figcaption {
+  margin-top: 0.4rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.section {
+  margin-top: 2.25rem;
+}
+
+.section h2 {
+  margin: 0 0 0.3rem;
+}

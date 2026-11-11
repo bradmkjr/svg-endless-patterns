@@ -37,6 +37,9 @@ import { generateWeaving } from "./generator";
 import { parseWeavingState, weavingRequest } from "./weavingState";
 import { generatePuzzle } from "./generator";
 import { parsePuzzleState } from "./puzzleState";
+import { generateOrigami, generateOrigamiTessellation } from "./generator";
+import { parseOrigamiState } from "./origamiState";
+import { parseOrigamiTessellationState } from "./origamiTessellationState";
 import { withOption } from "./toolOptions";
 import { generateQuilt } from "./generator";
 import { parseQuiltState, quiltRequest } from "./quiltState";
@@ -86,6 +89,12 @@ const DRAW: Partial<Record<PostSample["kind"], Draw>> = {
   kaleidoscope: async (p, locale) => (await generateKaleidoscope(parseKaleidoscopeState(p, locale))) as Svgs,
   crossStitch: async (p, locale) => generateCrossStitch(parseCrossStitchState(p, locale)),
   needlepoint: async (p, locale) => generateNeedlepoint(parseNeedlepointState(p, locale)),
+  // A sample shows one picture: the finished model, or the paper it's folded from.
+  origami: async (p, locale) => {
+    const { svg } = await generateOrigami(parseOrigamiState(p, locale));
+    return { svg: { finished: svg.steps.at(-1)!, sheet: svg.sheet } };
+  },
+  origamiTessellation: async (p, locale) => generateOrigamiTessellation(parseOrigamiTessellationState(p, locale)),
 };
 
 export const isApiSample = (sample: PostSample) => sample.kind in DRAW;

@@ -18,6 +18,8 @@ import quilt from "../i18n/messages/quilt.json";
 import favorites from "../i18n/messages/favorites.json";
 import colorPicker from "../i18n/messages/colorPicker.json";
 import seasonal from "../i18n/messages/seasonal.json";
+import origami from "../i18n/messages/origami.json";
+import origamiTessellation from "../i18n/messages/origamiTessellation.json";
 import { SEASONS } from "./seasons";
 
 const LOCALES = ["en", "es", "fr", "de", "pt", "it", "nl"] as const;
@@ -26,7 +28,7 @@ const leaves = (value: unknown, path = ""): [string, string][] =>
 const holes = (text: string) => [...text.matchAll(/\{\w+\}/g)].map((m) => m[0]).sort();
 
 /** Generated text moved to the API with its tests; the site's own text stays checked here. */
-describe.each(Object.entries({ apiStatus, celticKnot, girih, mandala, sashiko, stainedGlass, tessellation, tieDye, truchet, kolam, waves, nature, weaving, crossStitch, needlepoint, quilt, favorites, colorPicker, seasonal }))("%s site text", (_, copy) => {
+describe.each(Object.entries({ origami, origamiTessellation, apiStatus, celticKnot, girih, mandala, sashiko, stainedGlass, tessellation, tieDye, truchet, kolam, waves, nature, weaving, crossStitch, needlepoint, quilt, favorites, colorPicker, seasonal }))("%s site text", (_, copy) => {
   it.each(LOCALES)("%s matches English", (locale) => {
     const english = Object.fromEntries(leaves(copy.en));
     const here = Object.fromEntries(leaves(copy[locale]));

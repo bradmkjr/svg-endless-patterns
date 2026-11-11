@@ -6,7 +6,7 @@
     "lede": "This site stands on other people's work. Here's who to thank, and what we took from each.",
     "sourcesH": "Sources",
     "traditionsH": "Traditions",
-    "traditions": "Quilting, knitting, crochet, sashiko, tartan, Celtic knotwork, stained glass and tie-dye belong to generations of makers, most of them unnamed. The designs here are generated or drawn for this site, and they don't copy any one maker's pattern.",
+    "traditions": "Quilting, knitting, crochet, sashiko, origami, tartan, Celtic knotwork, stained glass and tie-dye belong to generations of makers, most of them unnamed. The designs here are generated or drawn for this site, and they don't copy any one maker's pattern.",
     "usedFor": {
       "oelsnerWeaves": "The weave structures in the weaving drafter, from plain weave, twills and satins to basket, rib and huckaback weaves, and the crowfoot, Oxford and warp rib drafts. The drafts are drawn for this site from those structures.",
       "watsonColour": "Color-and-weave effects such as houndstooth, hairline and log cabin, which the weaving drafter's color presets build from plain weave and twill.",
@@ -36,7 +36,13 @@
       "quiltingCottonWeight": "The quilt planner weighs quilting cotton at 130 g per square meter, from this guide's range for it.",
       "cottonBattingWeight": "The quilt planner weighs cotton batting at 4 oz per square yard, as this listing gives for Warm & Natural.",
       "polyesterBattingWeight": "The quilt planner weighs polyester batting at 4.5 oz per running yard, 48\" wide, from this table of batting by the yard.",
-      "threadWeight": "The quilt planner weighs quilting thread from what a thread's weight number means: 50 wt is 50 km to the kilogram."
+      "threadWeight": "The quilt planner weighs quilting thread from what a thread's weight number means: 50 wt is 50 km to the kilogram.",
+      "yoshizawaRandlett": "The origami diagrams draw their folds, arrows and turn-over marks in this shared system of symbols.",
+      "miura": "The Miura-ori crease pattern and how its parallelograms fold, from Miura's paper on folding large membranes for space.",
+      "yoshimura": "The Yoshimura crease pattern: the diamonds a cylinder buckles into under axial compression, which his paper describes.",
+      "farnhamWaterbomb": "The waterbomb tessellation's six-crease points, each a waterbomb base or its flipped form, follow the vertices this paper studies.",
+      "langTwists": "The square twist tessellation: twists joined by pleats, with neighbors turning opposite ways.",
+      "hullOrigametry": "Maekawa's and Kawasaki's theorems, which every tessellation crease pattern here is tested against at each point where creases meet."
     }
   },
   "es": {
@@ -76,7 +82,13 @@
       "quiltingCottonWeight": "El planificador de colchas pesa el algodón de patchwork a 130 g por metro cuadrado, según el rango que da esta guía.",
       "cottonBattingWeight": "El planificador de colchas pesa la guata de algodón a 4 oz por yarda cuadrada, como indica esta ficha para Warm & Natural.",
       "polyesterBattingWeight": "El planificador de colchas pesa la guata de poliéster a 4,5 oz por yarda lineal de 48\" de ancho, según esta tabla de guata por metros.",
-      "threadWeight": "El planificador de colchas pesa el hilo de acolchar a partir de lo que significa el número de grosor: 50 wt son 50 km por kilogramo."
+      "threadWeight": "El planificador de colchas pesa el hilo de acolchar a partir de lo que significa el número de grosor: 50 wt son 50 km por kilogramo.",
+      "yoshizawaRandlett": "The origami diagrams draw their folds, arrows and turn-over marks in this shared system of symbols.",
+      "miura": "The Miura-ori crease pattern and how its parallelograms fold, from Miura's paper on folding large membranes for space.",
+      "yoshimura": "The Yoshimura crease pattern: the diamonds a cylinder buckles into under axial compression, which his paper describes.",
+      "farnhamWaterbomb": "The waterbomb tessellation's six-crease points, each a waterbomb base or its flipped form, follow the vertices this paper studies.",
+      "langTwists": "The square twist tessellation: twists joined by pleats, with neighbors turning opposite ways.",
+      "hullOrigametry": "Maekawa's and Kawasaki's theorems, which every tessellation crease pattern here is tested against at each point where creases meet."
     }
   },
   "fr": {
@@ -116,7 +128,13 @@
       "quiltingCottonWeight": "Le planificateur de quilt compte le coton de patchwork à 130 g par mètre carré, d'après la fourchette de ce guide.",
       "cottonBattingWeight": "Le planificateur de quilt compte le molleton de coton à 4 oz par yard carré, comme l'indique cette fiche pour Warm & Natural.",
       "polyesterBattingWeight": "Le planificateur de quilt compte le molleton polyester à 4,5 oz par yard courant de 48\" de large, d'après ce tableau de molleton au mètre.",
-      "threadWeight": "Le planificateur de quilt pèse le fil de quilting d'après le sens du numéro de grosseur : 50 wt, c'est 50 km au kilogramme."
+      "threadWeight": "Le planificateur de quilt pèse le fil de quilting d'après le sens du numéro de grosseur : 50 wt, c'est 50 km au kilogramme.",
+      "yoshizawaRandlett": "The origami diagrams draw their folds, arrows and turn-over marks in this shared system of symbols.",
+      "miura": "The Miura-ori crease pattern and how its parallelograms fold, from Miura's paper on folding large membranes for space.",
+      "yoshimura": "The Yoshimura crease pattern: the diamonds a cylinder buckles into under axial compression, which his paper describes.",
+      "farnhamWaterbomb": "The waterbomb tessellation's six-crease points, each a waterbomb base or its flipped form, follow the vertices this paper studies.",
+      "langTwists": "The square twist tessellation: twists joined by pleats, with neighbors turning opposite ways.",
+      "hullOrigametry": "Maekawa's and Kawasaki's theorems, which every tessellation crease pattern here is tested against at each point where creases meet."
     }
   },
   "de": {
@@ -156,7 +174,13 @@
       "quiltingCottonWeight": "Der Quiltplaner rechnet Patchworkbaumwolle mit 130 g pro Quadratmeter, nach der Spanne in diesem Leitfaden.",
       "cottonBattingWeight": "Der Quiltplaner rechnet Baumwollvlies mit 4 oz pro Quadratyard, wie dieses Angebot es für Warm & Natural angibt.",
       "polyesterBattingWeight": "Der Quiltplaner rechnet Polyestervlies mit 4,5 oz pro laufendem Yard bei 48\" Breite, nach dieser Tabelle für Meterware.",
-      "threadWeight": "Der Quiltplaner wiegt das Quiltgarn nach der Bedeutung der Garnstärke: 50 wt sind 50 km pro Kilogramm."
+      "threadWeight": "Der Quiltplaner wiegt das Quiltgarn nach der Bedeutung der Garnstärke: 50 wt sind 50 km pro Kilogramm.",
+      "yoshizawaRandlett": "The origami diagrams draw their folds, arrows and turn-over marks in this shared system of symbols.",
+      "miura": "The Miura-ori crease pattern and how its parallelograms fold, from Miura's paper on folding large membranes for space.",
+      "yoshimura": "The Yoshimura crease pattern: the diamonds a cylinder buckles into under axial compression, which his paper describes.",
+      "farnhamWaterbomb": "The waterbomb tessellation's six-crease points, each a waterbomb base or its flipped form, follow the vertices this paper studies.",
+      "langTwists": "The square twist tessellation: twists joined by pleats, with neighbors turning opposite ways.",
+      "hullOrigametry": "Maekawa's and Kawasaki's theorems, which every tessellation crease pattern here is tested against at each point where creases meet."
     }
   },
   "pt": {
@@ -196,7 +220,13 @@
       "quiltingCottonWeight": "O planejador de colchas pesa a tricoline de algodão a 130 g por metro quadrado, pela faixa deste guia.",
       "cottonBattingWeight": "O planejador de colchas pesa a manta de algodão a 4 oz por jarda quadrada, como esta ficha indica para Warm & Natural.",
       "polyesterBattingWeight": "O planejador de colchas pesa a manta de poliéster a 4,5 oz por jarda linear com 48\" de largura, por esta tabela de manta a metro.",
-      "threadWeight": "O planejador de colchas pesa a linha de quilting pelo que significa o número da linha: 50 wt são 50 km por quilograma."
+      "threadWeight": "O planejador de colchas pesa a linha de quilting pelo que significa o número da linha: 50 wt são 50 km por quilograma.",
+      "yoshizawaRandlett": "The origami diagrams draw their folds, arrows and turn-over marks in this shared system of symbols.",
+      "miura": "The Miura-ori crease pattern and how its parallelograms fold, from Miura's paper on folding large membranes for space.",
+      "yoshimura": "The Yoshimura crease pattern: the diamonds a cylinder buckles into under axial compression, which his paper describes.",
+      "farnhamWaterbomb": "The waterbomb tessellation's six-crease points, each a waterbomb base or its flipped form, follow the vertices this paper studies.",
+      "langTwists": "The square twist tessellation: twists joined by pleats, with neighbors turning opposite ways.",
+      "hullOrigametry": "Maekawa's and Kawasaki's theorems, which every tessellation crease pattern here is tested against at each point where creases meet."
     }
   },
   "it": {
@@ -236,7 +266,13 @@
       "quiltingCottonWeight": "Il pianificatore di trapunte pesa il cotone da patchwork a 130 g per metro quadrato, secondo l'intervallo di questa guida.",
       "cottonBattingWeight": "Il pianificatore di trapunte pesa l'imbottitura di cotone a 4 oz per iarda quadrata, come indica questa scheda per Warm & Natural.",
       "polyesterBattingWeight": "Il pianificatore di trapunte pesa l'imbottitura di poliestere a 4,5 oz per iarda lineare larga 48\", da questa tabella dell'imbottitura a metraggio.",
-      "threadWeight": "Il pianificatore di trapunte pesa il filo per trapuntare in base al numero del filo: 50 wt sono 50 km per chilogrammo."
+      "threadWeight": "Il pianificatore di trapunte pesa il filo per trapuntare in base al numero del filo: 50 wt sono 50 km per chilogrammo.",
+      "yoshizawaRandlett": "The origami diagrams draw their folds, arrows and turn-over marks in this shared system of symbols.",
+      "miura": "The Miura-ori crease pattern and how its parallelograms fold, from Miura's paper on folding large membranes for space.",
+      "yoshimura": "The Yoshimura crease pattern: the diamonds a cylinder buckles into under axial compression, which his paper describes.",
+      "farnhamWaterbomb": "The waterbomb tessellation's six-crease points, each a waterbomb base or its flipped form, follow the vertices this paper studies.",
+      "langTwists": "The square twist tessellation: twists joined by pleats, with neighbors turning opposite ways.",
+      "hullOrigametry": "Maekawa's and Kawasaki's theorems, which every tessellation crease pattern here is tested against at each point where creases meet."
     }
   },
   "nl": {
@@ -276,7 +312,13 @@
       "quiltingCottonWeight": "De quiltplanner rekent quiltkatoen op 130 g per vierkante meter, uit de marge in deze gids.",
       "cottonBattingWeight": "De quiltplanner rekent katoenen tussenvulling op 4 oz per vierkante yard, zoals deze productpagina voor Warm & Natural opgeeft.",
       "polyesterBattingWeight": "De quiltplanner rekent polyester tussenvulling op 4,5 oz per strekkende yard bij 48\" breed, uit deze tabel van tussenvulling per meter.",
-      "threadWeight": "De quiltplanner weegt het quiltgaren uit wat het garennummer betekent: 50 wt is 50 km per kilogram."
+      "threadWeight": "De quiltplanner weegt het quiltgaren uit wat het garennummer betekent: 50 wt is 50 km per kilogram.",
+      "yoshizawaRandlett": "The origami diagrams draw their folds, arrows and turn-over marks in this shared system of symbols.",
+      "miura": "The Miura-ori crease pattern and how its parallelograms fold, from Miura's paper on folding large membranes for space.",
+      "yoshimura": "The Yoshimura crease pattern: the diamonds a cylinder buckles into under axial compression, which his paper describes.",
+      "farnhamWaterbomb": "The waterbomb tessellation's six-crease points, each a waterbomb base or its flipped form, follow the vertices this paper studies.",
+      "langTwists": "The square twist tessellation: twists joined by pleats, with neighbors turning opposite ways.",
+      "hullOrigametry": "Maekawa's and Kawasaki's theorems, which every tessellation crease pattern here is tested against at each point where creases meet."
     }
   }
 }

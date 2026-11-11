@@ -29,6 +29,8 @@ import type { LifeRequest, LifeResult } from "./lifeTypes";
 import type { KnitColorworkRequest, KnitColorworkResult } from "./knitColorworkTypes";
 import type { PuzzlePaper, PuzzleRequest, PuzzleResult } from "./puzzleTypes";
 import type { QuiltRequest, QuiltResult } from "./quiltTypes";
+import type { OrigamiRequest, OrigamiResult } from "./origamiTypes";
+import type { OrigamiTessellationRequest, OrigamiTessellationResult } from "./origamiTessellationTypes";
 
 export type { BlockInfo, Craft, CutLine, FabricInfo, Locale, PatternRequest, PatternResult, QuiltFinish, Setting, StitchInfo, StitchRequest, StitchResult } from "./patternTypes";
 export type { QuiltArrangement, QuiltBatting, QuiltCutMapLine, QuiltQuilting, QuiltRequest, QuiltResult, QuiltWeightPart } from "./quiltTypes";
@@ -56,6 +58,8 @@ export type { MandalaMotif, MandalaRequest, MandalaResult, MandalaRing, MandalaR
 export type { KaleidoscopeMirrors, KaleidoscopeRequest, KaleidoscopeResult, KaleidoscopeSource } from "./kaleidoscopeTypes";
 export type { CountedFinish, CrossStitchColor, CrossStitchRequest, CrossStitchResult } from "./crossStitchTypes";
 export type { NeedlepointColor, NeedlepointRequest, NeedlepointResult, NeedlepointStitch, NeedlepointYarn } from "./needlepointTypes";
+export type { OrigamiColors, OrigamiGuide, OrigamiModel, OrigamiPrint, OrigamiRequest, OrigamiResult } from "./origamiTypes";
+export type { CreaseColors, OrigamiTessellationRequest, OrigamiTessellationResult, TessellationPattern } from "./origamiTessellationTypes";
 export type { MazeAlgorithm, MazeColors, MazeDifficulty, MazePaperId, MazeRequest, MazeResult, MazeShape, MazeSize } from "./mazeTypes";
 
 /** A knitted square's sizes in inches, which the API also checks. */
@@ -326,4 +330,22 @@ export async function generateNature(request: NatureRequest): Promise<NatureResu
 
 export async function generateNaturePdf(request: NatureRequest): Promise<Uint8Array> {
   return apiPdf("/nature/pdf", request);
+}
+
+/** A traditional model's diagrams, step by step, and its folding paper. */
+export async function generateOrigami(request: OrigamiRequest): Promise<OrigamiResult> {
+  return apiJson("/origami", request);
+}
+
+export async function generateOrigamiPdf(request: OrigamiRequest): Promise<Uint8Array> {
+  return apiPdf("/origami/pdf", request);
+}
+
+/** A folded tessellation's crease pattern. */
+export async function generateOrigamiTessellation(request: OrigamiTessellationRequest): Promise<OrigamiTessellationResult> {
+  return apiJson("/origami-tessellation", request);
+}
+
+export async function generateOrigamiTessellationPdf(request: OrigamiTessellationRequest): Promise<Uint8Array> {
+  return apiPdf("/origami-tessellation/pdf", request);
 }

@@ -43,6 +43,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/stained-glass/",
     "/celtic-knots/",
     "/sashiko/",
+    "/origami/",
+    "/origami-tessellations/",
     "/tessellations/",
     "/cross-stitch/",
     "/needlepoint/",

@@ -33,13 +33,15 @@ import { parseMazeState, serializeMazeState } from "./mazeState";
 import { parseTartanState, serializeTartanState } from "./tartanState";
 import { parseQuiltState, serializeQuiltState } from "./quiltState";
 import { SEASONS, seasonSamples } from "./seasons";
+import { parseOrigamiState, serializeOrigamiState } from "./origamiState";
+import { parseOrigamiTessellationState, serializeOrigamiTessellationState } from "./origamiTessellationState";
 
 const sorted = (query: string) => [...new URLSearchParams(query).entries()].map(([k, v]) => `${k}=${v}`).sort();
 
 async function knownPaths() {
   const posts = await getPosts();
   return new Set([
-    "/", ...PREFIXED_LOCALES.map((l) => `/${l}/`), "/tartans/", "/truchet/", "/kolam/", "/turing-patterns/", "/waves/", "/nature-patterns/", "/weaving/", "/tie-dye/", "/fractals/", "/life-patterns/", "/checkerboards/", "/crochet/colorwork/", "/knitting/colorwork/", "/mazes/", "/paper-puzzles/", "/girih/", "/chinese-lattice/", "/mandalas/", "/kaleidoscopes/", "/stained-glass/", "/celtic-knots/", "/sashiko/", "/tessellations/", "/cross-stitch/", "/needlepoint/", "/blocks/", "/quilts/", "/knitting/", "/crochet/", "/patterns/", "/palettes/", "/about/", "/acknowledgements/", "/blog/", "/changelog/", "/seasonal/", ...SEASONS.map((s) => `/seasonal/${s.id}/`),
+    "/", ...PREFIXED_LOCALES.map((l) => `/${l}/`), "/tartans/", "/truchet/", "/kolam/", "/turing-patterns/", "/waves/", "/nature-patterns/", "/weaving/", "/tie-dye/", "/fractals/", "/life-patterns/", "/checkerboards/", "/crochet/colorwork/", "/knitting/colorwork/", "/mazes/", "/paper-puzzles/", "/girih/", "/chinese-lattice/", "/mandalas/", "/kaleidoscopes/", "/stained-glass/", "/celtic-knots/", "/sashiko/", "/origami/", "/origami-tessellations/", "/tessellations/", "/cross-stitch/", "/needlepoint/", "/blocks/", "/quilts/", "/knitting/", "/crochet/", "/patterns/", "/palettes/", "/about/", "/acknowledgements/", "/blog/", "/changelog/", "/seasonal/", ...SEASONS.map((s) => `/seasonal/${s.id}/`),
     ...(await getBlocks()).map((b) => `/blocks/${b.slug}/`),
     ...(await getStitchPatterns("knit")).map((s) => `/knitting/${s.slug}/`),
     ...(await getStitchPatterns("crochet")).map((s) => `/crochet/${s.slug}/`),
@@ -90,6 +92,10 @@ describe("blog posts", () => {
       expect(sorted(serializeTartanState(parseTartanState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
     } else if (sample.kind === "tessellation") {
       expect(sorted(serializeTessellationState(parseTessellationState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
+    } else if (sample.kind === "origami") {
+      expect(sorted(serializeOrigamiState(parseOrigamiState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
+    } else if (sample.kind === "origamiTessellation") {
+      expect(sorted(serializeOrigamiTessellationState(parseOrigamiTessellationState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
     } else if (sample.kind === "sashiko") {
       expect(sorted(serializeSashikoState(parseSashikoState(new URLSearchParams(sample.query), sample.locale)))).toEqual(sorted(sample.query));
     } else if (sample.kind === "celtic") {

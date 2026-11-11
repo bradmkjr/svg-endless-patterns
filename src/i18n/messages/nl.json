@@ -358,6 +358,18 @@
         "text": "Sudoku, futoshiki, nonogrammen en potloodspellen zoals zeeslag, op papier of in een teken-app op een tablet.",
         "output": "Pdf-pagina's voor Letter, A4 of een tablet, oplossingen, SVG en PNG.",
         "explore": "Maak een puzzelvel"
+      },
+      "origami": {
+        "title": "Origami",
+        "text": "Traditional models folded step by step, from a dog face and a cup to the samurai helmet and the crane, on printable folding paper in your pattern and colors.",
+        "output": "Step-by-step diagrams, printable folding paper with fold lines, and a PDF.",
+        "explore": "Fold a model"
+      },
+      "origamiTessellation": {
+        "title": "Origami tessellations",
+        "text": "Crease patterns for Miura-ori, Yoshimura, waterbomb and square twist tessellations, with mountain and valley folds in your colors.",
+        "output": "Printable crease pattern as SVG, PNG and PDF.",
+        "explore": "Make a crease pattern"
       }
     },
     "seeAllType": "Bekijk alles in {name}"

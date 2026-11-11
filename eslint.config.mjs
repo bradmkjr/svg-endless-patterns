@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Other checkouts of this repository, made by Claude Code, each with its own build output.
+    ".claude/**",
   ]),
 ]);
 

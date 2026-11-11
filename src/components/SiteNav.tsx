@@ -3,7 +3,9 @@ import type { Locale } from "@/lib/generator";
 import { localePath, messages } from "@/lib/i18n";
 import { SITE_NAME } from "@/lib/site";
 import weaving from "@/i18n/messages/weaving.json";
+import { patternTypeLinks } from "@/lib/libraryTools";
 import { LanguageLinks } from "./LanguageLinks";
+import { PatternMenu } from "./PatternMenu";
 import styles from "./SiteNav.module.css";
 
 export function SiteNav({ locale }: { locale: Locale }) {
@@ -34,6 +36,7 @@ export function SiteNav({ locale }: { locale: Locale }) {
           <Link href={href("/blog/")}>{t.blog}</Link>
           <Link href={href("/about/")}>{t.how}</Link>
         </nav>
+        <PatternMenu label={t.allPatterns} links={patternTypeLinks(locale)} />
       </div>
     </header>
   );

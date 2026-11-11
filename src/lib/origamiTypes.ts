@@ -1,6 +1,6 @@
 import type { Locale } from "./generator";
 
-export type OrigamiModel = "dog" | "cup" | "fortune-teller" | "samurai-helmet" | "crane";
+export type OrigamiModel = "dog" | "cup" | "fortune-teller" | "santa-hat" | "christmas-tree" | "samurai-helmet" | "crane";
 export type OrigamiPrint = "plain" | "asanoha" | "seigaiha" | "shippo" | "kikko" | "dots" | "truchet" | "waves";
 /** Where the printed sheet shows its fold lines: nowhere, faintly on the pattern, or on the back. */
 export type OrigamiGuide = "none" | "front" | "back";

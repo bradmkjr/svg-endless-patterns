@@ -17,7 +17,7 @@
         "groups": {
           "figures": {
             "heading": "Snowmen and winter figures",
-            "text": "A snowman in a top hat and a pair of mittens to stitch, a maze that hides a message, and a quilt of snowballs."
+            "text": "A snowman in a top hat and a pair of mittens to stitch, a Santa hat to fold, a maze that hides a message, and a quilt of snowballs."
           },
           "snowflakes": {
             "heading": "Snowflakes and ice",
@@ -29,7 +29,7 @@
           },
           "greenery": {
             "heading": "Wreaths and evergreens",
-            "text": "An evergreen wreath with red berries, a field of little pines to knit, a Celtic knot frame in holly colors and a red and green tartan."
+            "text": "An evergreen wreath with red berries, a field of little pines to knit, a Celtic knot frame in holly colors, a red and green tartan and a Christmas tree to fold."
           },
           "stars": {
             "heading": "Stars",
@@ -71,7 +71,9 @@
           "bareTree": "Bare winter tree, fractal",
           "buffaloCheck": "Buffalo check",
           "summerWinter": "Summer and winter weave",
-          "cable": "Rope cable in cream, knitting"
+          "cable": "Rope cable in cream, knitting",
+          "santaHat": "Santa hat, origami",
+          "origamiTree": "Christmas tree, origami"
         }
       }
     }
@@ -148,7 +150,9 @@
           "bareTree": "Árbol de invierno desnudo, fractal",
           "buffaloCheck": "Cuadros búfalo",
           "summerWinter": "Tejido summer and winter",
-          "cable": "Ochos de cuerda en crudo, punto"
+          "cable": "Ochos de cuerda en crudo, punto",
+          "santaHat": "Santa hat, origami",
+          "origamiTree": "Christmas tree, origami"
         }
       }
     }
@@ -225,7 +229,9 @@
           "bareTree": "Arbre d’hiver nu, fractale",
           "buffaloCheck": "Carreau bûcheron",
           "summerWinter": "Tissage summer and winter",
-          "cable": "Torsade écrue, tricot"
+          "cable": "Torsade écrue, tricot",
+          "santaHat": "Santa hat, origami",
+          "origamiTree": "Christmas tree, origami"
         }
       }
     }
@@ -302,7 +308,9 @@
           "bareTree": "Kahler Winterbaum, Fraktal",
           "buffaloCheck": "Büffelkaro",
           "summerWinter": "Summer-and-Winter-Bindung",
-          "cable": "Seilzopf in Naturweiß, Stricken"
+          "cable": "Seilzopf in Naturweiß, Stricken",
+          "santaHat": "Santa hat, origami",
+          "origamiTree": "Christmas tree, origami"
         }
       }
     }
@@ -379,7 +387,9 @@
           "bareTree": "Árvore nua de inverno, fractal",
           "buffaloCheck": "Xadrez búfalo",
           "summerWinter": "Trama summer and winter",
-          "cable": "Trança de corda em cru, tricô"
+          "cable": "Trança de corda em cru, tricô",
+          "santaHat": "Santa hat, origami",
+          "origamiTree": "Christmas tree, origami"
         }
       }
     }
@@ -456,7 +466,9 @@
           "bareTree": "Albero spoglio d’inverno, frattale",
           "buffaloCheck": "Quadro buffalo",
           "summerWinter": "Tessuto summer and winter",
-          "cable": "Treccia a corda color panna, maglia"
+          "cable": "Treccia a corda color panna, maglia",
+          "santaHat": "Santa hat, origami",
+          "origamiTree": "Christmas tree, origami"
         }
       }
     }
@@ -533,7 +545,9 @@
           "bareTree": "Kale winterboom, fractal",
           "buffaloCheck": "Buffalo-ruit",
           "summerWinter": "Summer and winter-binding",
-          "cable": "Kabel in ecru, breien"
+          "cable": "Kabel in ecru, breien",
+          "santaHat": "Santa hat, origami",
+          "origamiTree": "Christmas tree, origami"
         }
       }
     }

@@ -3,11 +3,13 @@
     "metaTitle": "Origami diagrams and printable folding paper",
     "metaDesc": "Step-by-step diagrams for traditional origami models, from a dog face to the crane, with printable patterned folding paper and its fold lines.",
     "h1": "Origami",
-    "lede": "Fold traditional models step by step, from a dog face to the crane, on paper you print yourself in any pattern and color.",
+    "lede": "Fold traditional models step by step, from a dog face to the crane, plus a Santa hat and a Christmas tree, on paper you print yourself in any pattern and color.",
     "models": {
       "dog": "Dog face",
       "cup": "Cup",
       "fortune-teller": "Fortune teller",
+      "santa-hat": "Santa hat",
+      "christmas-tree": "Christmas tree",
       "samurai-helmet": "Samurai helmet",
       "crane": "Crane"
     },
@@ -15,6 +17,8 @@
       "dog": "Four folds and a face: a first model for young folders.",
       "cup": "A drinking cup that really holds something, folded from a triangle.",
       "fortune-teller": "The playground game: corners folded to the center twice, then worked with your fingers.",
+      "santa-hat": "A flat hat whose white trim and pompom come from the paper's plain side: red and white paper suits it best. Glue it on a card or a gift tag.",
+      "christmas-tree": "A tiered tree with a trunk, from a kite and two pleats, with a star and ornaments in the pattern's color.",
       "samurai-helmet": "A kabuto with horns, folded flat. From a big sheet, it fits on a head.",
       "crane": "The best-known origami model: a preliminary base, two petal folds and three reverse folds."
     },
@@ -66,7 +70,7 @@
     "tipTitle": "Folding tip:",
     "tip": "Fold on a hard, flat surface, line up corners and edges before you press, then run a fingernail along each crease. Printer paper works, but thinner paper folds more neatly, especially for the crane.",
     "aboutTitle": "About these models",
-    "about": "Every model here is traditional, folded by generations of children and grown-ups, its designer unknown. The diagrams are drawn for this site from the folds themselves, in the Yoshizawa-Randlett symbols that origami books share, and the fold lines on the paper come from the same folds.",
+    "about": "Most models here are traditional, folded by generations of children and grown-ups, their designers unknown; the Santa hat and the Christmas tree are simple folds drawn for this site. The diagrams are drawn from the folds themselves, in the Yoshizawa-Randlett symbols that origami books share, and the fold lines on the paper come from the same folds.",
     "tessellationsLink": "Fold a tessellation instead"
   },
   "es": {
@@ -78,6 +82,8 @@
       "dog": "Cara de perro",
       "cup": "Vaso",
       "fortune-teller": "Comecocos",
+      "santa-hat": "Santa hat",
+      "christmas-tree": "Christmas tree",
       "samurai-helmet": "Casco de samurái",
       "crane": "Grulla"
     },
@@ -85,6 +91,8 @@
       "dog": "Cuatro pliegues y una cara: un primer modelo para los más pequeños.",
       "cup": "Un vaso que de verdad contiene algo, doblado a partir de un triángulo.",
       "fortune-teller": "El juego del recreo: las esquinas se doblan al centro dos veces y luego se mueve con los dedos.",
+      "santa-hat": "A flat hat whose white trim and pompom come from the paper's plain side: red and white paper suits it best. Glue it on a card or a gift tag.",
+      "christmas-tree": "A tiered tree with a trunk, from a kite and two pleats, with a star and ornaments in the pattern's color.",
       "samurai-helmet": "Un kabuto con cuernos, doblado en plano. Con una hoja grande, te cabe en la cabeza.",
       "crane": "El modelo de origami más conocido: una base preliminar, dos pliegues pétalo y tres pliegues invertidos."
     },
@@ -148,6 +156,8 @@
       "dog": "Tête de chien",
       "cup": "Gobelet",
       "fortune-teller": "Cocotte en papier",
+      "santa-hat": "Santa hat",
+      "christmas-tree": "Christmas tree",
       "samurai-helmet": "Casque de samouraï",
       "crane": "Grue"
     },
@@ -155,6 +165,8 @@
       "dog": "Quatre plis et un visage : un premier modèle pour les jeunes plieurs.",
       "cup": "Un gobelet qui contient vraiment quelque chose, plié à partir d'un triangle.",
       "fortune-teller": "Le jeu de la cour de récré : les coins pliés deux fois vers le centre, puis manipulés avec les doigts.",
+      "santa-hat": "A flat hat whose white trim and pompom come from the paper's plain side: red and white paper suits it best. Glue it on a card or a gift tag.",
+      "christmas-tree": "A tiered tree with a trunk, from a kite and two pleats, with a star and ornaments in the pattern's color.",
       "samurai-helmet": "Un kabuto à cornes, plié à plat. Dans une grande feuille, il tient sur une tête.",
       "crane": "Le modèle d'origami le plus connu : une base préliminaire, deux pliages en pétale et trois plis inversés."
     },
@@ -218,6 +230,8 @@
       "dog": "Hundegesicht",
       "cup": "Becher",
       "fortune-teller": "Himmel und Hölle",
+      "santa-hat": "Santa hat",
+      "christmas-tree": "Christmas tree",
       "samurai-helmet": "Samurai-Helm",
       "crane": "Kranich"
     },
@@ -225,6 +239,8 @@
       "dog": "Vier Faltungen und ein Gesicht: ein erstes Modell für junge Falterinnen und Falter.",
       "cup": "Ein Trinkbecher, der wirklich etwas hält, aus einem Dreieck gefaltet.",
       "fortune-teller": "Das Spiel vom Schulhof: die Ecken zweimal zur Mitte gefaltet, dann mit den Fingern bewegt.",
+      "santa-hat": "A flat hat whose white trim and pompom come from the paper's plain side: red and white paper suits it best. Glue it on a card or a gift tag.",
+      "christmas-tree": "A tiered tree with a trunk, from a kite and two pleats, with a star and ornaments in the pattern's color.",
       "samurai-helmet": "Ein Kabuto mit Hörnern, flach gefaltet. Aus einem großen Bogen passt er auf einen Kopf.",
       "crane": "Das bekannteste Origami-Modell: eine Vorbereitungsbasis, zwei Blütenblattfaltungen und drei Gegenbrüche."
     },
@@ -288,6 +304,8 @@
       "dog": "Cara de cachorro",
       "cup": "Copo",
       "fortune-teller": "Quem-sabe",
+      "santa-hat": "Santa hat",
+      "christmas-tree": "Christmas tree",
       "samurai-helmet": "Capacete de samurai",
       "crane": "Tsuru"
     },
@@ -295,6 +313,8 @@
       "dog": "Quatro dobras e uma carinha: um primeiro modelo para dobradores pequenos.",
       "cup": "Um copo que segura algo de verdade, dobrado a partir de um triângulo.",
       "fortune-teller": "A brincadeira do recreio: os cantos dobrados duas vezes até o centro, depois movidos com os dedos.",
+      "santa-hat": "A flat hat whose white trim and pompom come from the paper's plain side: red and white paper suits it best. Glue it on a card or a gift tag.",
+      "christmas-tree": "A tiered tree with a trunk, from a kite and two pleats, with a star and ornaments in the pattern's color.",
       "samurai-helmet": "Um kabuto com chifres, dobrado plano. Feito com uma folha grande, cabe na cabeça.",
       "crane": "O modelo de origami mais conhecido: uma base preliminar, duas dobras em pétala e três dobras invertidas."
     },
@@ -358,6 +378,8 @@
       "dog": "Muso di cane",
       "cup": "Bicchiere",
       "fortune-teller": "Inferno e paradiso",
+      "santa-hat": "Santa hat",
+      "christmas-tree": "Christmas tree",
       "samurai-helmet": "Elmo da samurai",
       "crane": "Gru"
     },
@@ -365,6 +387,8 @@
       "dog": "Quattro pieghe e un muso: un primo modello per i piccoli piegatori.",
       "cup": "Un bicchiere che contiene davvero qualcosa, piegato da un triangolo.",
       "fortune-teller": "Il gioco del cortile: gli angoli piegati due volte verso il centro, poi mossi con le dita.",
+      "santa-hat": "A flat hat whose white trim and pompom come from the paper's plain side: red and white paper suits it best. Glue it on a card or a gift tag.",
+      "christmas-tree": "A tiered tree with a trunk, from a kite and two pleats, with a star and ornaments in the pattern's color.",
       "samurai-helmet": "Un kabuto con le corna, piegato in piano. Con un foglio grande, sta su una testa.",
       "crane": "Il modello origami più conosciuto: una base preliminare, due pieghe a petalo e tre pieghe rovesce."
     },
@@ -428,6 +452,8 @@
       "dog": "Hondengezicht",
       "cup": "Bekertje",
       "fortune-teller": "Happertje",
+      "santa-hat": "Santa hat",
+      "christmas-tree": "Christmas tree",
       "samurai-helmet": "Samoeraihelm",
       "crane": "Kraanvogel"
     },
@@ -435,6 +461,8 @@
       "dog": "Vier vouwen en een gezicht: een eerste model voor jonge vouwers.",
       "cup": "Een drinkbekertje dat echt iets vasthoudt, gevouwen uit een driehoek.",
       "fortune-teller": "Het schoolpleinspel: de hoeken twee keer naar het midden gevouwen en dan met je vingers bewogen.",
+      "santa-hat": "A flat hat whose white trim and pompom come from the paper's plain side: red and white paper suits it best. Glue it on a card or a gift tag.",
+      "christmas-tree": "A tiered tree with a trunk, from a kite and two pleats, with a star and ornaments in the pattern's color.",
       "samurai-helmet": "Een kabuto met hoorns, plat gevouwen. Van een groot vel past hij op een hoofd.",
       "crane": "Het bekendste origamimodel: een voorbereidende basis, twee bloembladvouwen en drie omgekeerde vouwen."
     },

@@ -20,6 +20,30 @@ function alphabetical<T extends { name: string }>(items: T[], locale: Locale): T
   return [...items].sort((a, b) => order.compare(a.name, b.name));
 }
 
+/** The pattern types that aren't builders with option pages: each has a page of its own. */
+const FIXED_TYPES = [
+  { id: "quilt", title: "quiltTitle", path: "/blocks/" },
+  { id: "knit", title: "knitTitle", path: "/knitting/" },
+  { id: "crochet", title: "crochetTitle", path: "/crochet/" },
+  { id: "tartan", title: "tartanTitle", path: "/tartans/" },
+] as const;
+
+export type PatternTypeLink = { id: string; title: string; href: string };
+
+/**
+ * Every pattern type's name and page, alphabetical in the language: the site menu's list.
+ * The same types as the library, without their samples, so it costs nothing to build.
+ */
+export function patternTypeLinks(locale: Locale): PatternTypeLink[] {
+  const t = messages(locale).library;
+  const toolText = t.tools as Record<string, { title: string }>;
+  const order = new Intl.Collator(locale === "pt" ? "pt-BR" : locale, { numeric: true, sensitivity: "base" });
+  return [
+    ...FIXED_TYPES.map(({ id, title, path }) => ({ id, title: t[title], href: localePath(locale, path) })),
+    ...(Object.keys(TOOL_OPTIONS) as ToolId[]).map((tool) => ({ id: tool, title: toolText[tool].title, href: localePath(locale, TOOL_OPTIONS[tool].path) })),
+  ].sort((a, b) => order.compare(a.title, b.title));
+}
+
 /** Every pattern type on the site, alphabetical by title, with its patterns alphabetical by name. */
 export async function libraryTypes(locale: Locale): Promise<LibraryType[]> {
   const t = messages(locale).library;

@@ -3,7 +3,7 @@ import type { Locale, OrigamiColors, OrigamiGuide, OrigamiModel, OrigamiPrint, O
 /** The origami builder's options, colors and share links. */
 
 /** Easiest first. */
-export const MODEL_OPTIONS: OrigamiModel[] = ["dog", "cup", "fortune-teller", "samurai-helmet", "crane"];
+export const MODEL_OPTIONS: OrigamiModel[] = ["dog", "cup", "fortune-teller", "santa-hat", "christmas-tree", "samurai-helmet", "crane"];
 export const PRINT_OPTIONS: OrigamiPrint[] = ["plain", "asanoha", "seigaiha", "shippo", "kikko", "dots", "truchet", "waves"];
 /** Inches. Each fits a letter page at true size; 6" is close to the common 15 cm square. */
 export const PAPER_OPTIONS = [5, 6, 7, 7.5];

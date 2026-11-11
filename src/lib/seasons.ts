@@ -298,6 +298,7 @@ export const SEASONS: Season[] = [
           { id: "mittens", kind: "crossStitch", slug: "", query: chartQuery(WINTER_CHARTS.mittens), view: "stitched" },
           { id: "letItSnow", kind: "maze", slug: "", query: "shape=hidden-message&d=easy&m=LET+IT+SNOW&ln=23395d&ac=9cc3dc", view: "solution" },
           { id: "snowball", kind: "block", slug: "snowball", query: "f_ball=f4f6f8&f_corners=6f9fc0", view: "quilt" },
+          { id: "santaHat", kind: "origami", slug: "", query: "m=santa-hat&p=plain&f=b3262e&b=ffffff", view: "finished" },
         ],
       },
       {
@@ -330,6 +331,7 @@ export const SEASONS: Season[] = [
           { id: "pines", kind: "knitColorwork", slug: "", query: "cc=1f5c3d", view: "square" },
           { id: "celtic", kind: "celtic", slug: "", query: "p=frame&k=1f5c3d-b3262e&bg=f7f3e8", view: "art" },
           { id: "tartan", kind: "tartan", slug: "", query: "s=a8123a.24-1f5c3d.12-a8123a.4-e8b92f.2", view: "swatch" },
+          { id: "origamiTree", kind: "origami", slug: "", query: "m=christmas-tree&p=plain&f=1f5c3d&a=e8b92f", view: "finished" },
         ],
       },
       {

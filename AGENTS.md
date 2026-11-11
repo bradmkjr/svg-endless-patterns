@@ -23,7 +23,7 @@ All generation lives in the separate `api-endless-patterns` repository, behind o
 Requests are GETs on a versioned path (`/api/v1.0.4/maze?shape=square&seed=7`, version in `lib/mazeApi.ts`),
 with each setting its own sorted parameter (strings as they are, anything else as JSON), so identical settings
 are one cacheable URL that can be read as it is. The API keeps up to
-three versions running; change a route's output only in a new one. The static site needs
+ten versions running; change a route's output only in a new one. The static site needs
 `NEXT_PUBLIC_API_BASE_URL` at build time.
 
 ## Adding a block or stitch

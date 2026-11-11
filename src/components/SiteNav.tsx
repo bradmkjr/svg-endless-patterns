@@ -33,8 +33,6 @@ export function SiteNav({ locale }: { locale: Locale }) {
           <Link href={href("/seasonal/")}>{t.seasonal}</Link>
           <Link href={href("/patterns/")}>{t.library}</Link>
           <Link href={href("/palettes/")}>{t.palettes}</Link>
-          <Link href={href("/blog/")}>{t.blog}</Link>
-          <Link href={href("/about/")}>{t.how}</Link>
         </nav>
         <PatternMenu label={t.allPatterns} links={patternTypeLinks(locale)} />
       </div>

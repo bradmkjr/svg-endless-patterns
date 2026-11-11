@@ -96,7 +96,7 @@
         "groups": {
           "figures": {
             "heading": "Muñecos de nieve y figuras de invierno",
-            "text": "Un muñeco de nieve con sombrero de copa y un par de manoplas para bordar, un laberinto que esconde un mensaje y un quilt de bolas de nieve."
+            "text": "Un muñeco de nieve con sombrero de copa y un par de manoplas para bordar, un gorro de Papá Noel para doblar, un laberinto que esconde un mensaje y un quilt de bolas de nieve."
           },
           "snowflakes": {
             "heading": "Copos de nieve y hielo",
@@ -108,7 +108,7 @@
           },
           "greenery": {
             "heading": "Coronas y hojas perennes",
-            "text": "Una corona perenne con bayas rojas, un campo de pinitos para tejer, un marco de nudo celta en colores de acebo y un tartán rojo y verde."
+            "text": "Una corona perenne con bayas rojas, un campo de pinitos para tejer, un marco de nudo celta en colores de acebo, un tartán rojo y verde y un árbol de Navidad para doblar."
           },
           "stars": {
             "heading": "Estrellas",
@@ -151,8 +151,8 @@
           "buffaloCheck": "Cuadros búfalo",
           "summerWinter": "Tejido summer and winter",
           "cable": "Ochos de cuerda en crudo, punto",
-          "santaHat": "Santa hat, origami",
-          "origamiTree": "Christmas tree, origami"
+          "santaHat": "Gorro de Papá Noel, origami",
+          "origamiTree": "Árbol de Navidad, origami"
         }
       }
     }
@@ -175,7 +175,7 @@
         "groups": {
           "figures": {
             "heading": "Bonshommes de neige et figures d’hiver",
-            "text": "Un bonhomme de neige en chapeau haut-de-forme et une paire de moufles à broder, un labyrinthe qui cache un message et un quilt de boules de neige."
+            "text": "Un bonhomme de neige en chapeau haut-de-forme et une paire de moufles à broder, un bonnet de père Noël à plier, un labyrinthe qui cache un message et un quilt de boules de neige."
           },
           "snowflakes": {
             "heading": "Flocons et glace",
@@ -187,7 +187,7 @@
           },
           "greenery": {
             "heading": "Couronnes et sapins",
-            "text": "Une couronne de sapin aux baies rouges, un champ de petits sapins à tricoter, un cadre en nœud celtique aux couleurs du houx et un tartan rouge et vert."
+            "text": "Une couronne de sapin aux baies rouges, un champ de petits sapins à tricoter, un cadre en nœud celtique aux couleurs du houx, un tartan rouge et vert et un sapin de Noël à plier."
           },
           "stars": {
             "heading": "Étoiles",
@@ -230,8 +230,8 @@
           "buffaloCheck": "Carreau bûcheron",
           "summerWinter": "Tissage summer and winter",
           "cable": "Torsade écrue, tricot",
-          "santaHat": "Santa hat, origami",
-          "origamiTree": "Christmas tree, origami"
+          "santaHat": "Bonnet de père Noël, origami",
+          "origamiTree": "Sapin de Noël, origami"
         }
       }
     }
@@ -254,7 +254,7 @@
         "groups": {
           "figures": {
             "heading": "Schneemänner und Winterfiguren",
-            "text": "Ein Schneemann mit Zylinder und ein Paar Fäustlinge zum Sticken, ein Labyrinth mit versteckter Botschaft und ein Quilt aus Schneebällen."
+            "text": "Ein Schneemann mit Zylinder und ein Paar Fäustlinge zum Sticken, eine Weihnachtsmannmütze zum Falten, ein Labyrinth mit versteckter Botschaft und ein Quilt aus Schneebällen."
           },
           "snowflakes": {
             "heading": "Schneeflocken und Eis",
@@ -266,7 +266,7 @@
           },
           "greenery": {
             "heading": "Kränze und Tannengrün",
-            "text": "Ein Tannenkranz mit roten Beeren, ein Feld kleiner Tannen zum Stricken, ein keltischer Knotenrahmen in Stechpalmenfarben und ein rot-grüner Tartan."
+            "text": "Ein Tannenkranz mit roten Beeren, ein Feld kleiner Tannen zum Stricken, ein keltischer Knotenrahmen in Stechpalmenfarben, ein rot-grüner Tartan und ein Weihnachtsbaum zum Falten."
           },
           "stars": {
             "heading": "Sterne",
@@ -309,8 +309,8 @@
           "buffaloCheck": "Büffelkaro",
           "summerWinter": "Summer-and-Winter-Bindung",
           "cable": "Seilzopf in Naturweiß, Stricken",
-          "santaHat": "Santa hat, origami",
-          "origamiTree": "Christmas tree, origami"
+          "santaHat": "Weihnachtsmannmütze, Origami",
+          "origamiTree": "Weihnachtsbaum, Origami"
         }
       }
     }
@@ -333,7 +333,7 @@
         "groups": {
           "figures": {
             "heading": "Bonecos de neve e figuras de inverno",
-            "text": "Um boneco de neve de cartola e um par de luvas para bordar, um labirinto que esconde uma mensagem e um quilt de bolas de neve."
+            "text": "Um boneco de neve de cartola e um par de luvas para bordar, um gorro de Papai Noel para dobrar, um labirinto que esconde uma mensagem e um quilt de bolas de neve."
           },
           "snowflakes": {
             "heading": "Flocos de neve e gelo",
@@ -345,7 +345,7 @@
           },
           "greenery": {
             "heading": "Guirlandas e folhagens",
-            "text": "Uma guirlanda de pinheiro com frutinhas vermelhas, um campo de pinheirinhos para tricotar, uma moldura de nó celta nas cores do azevinho e um tartan vermelho e verde."
+            "text": "Uma guirlanda de pinheiro com frutinhas vermelhas, um campo de pinheirinhos para tricotar, uma moldura de nó celta nas cores do azevinho, um tartan vermelho e verde e uma árvore de Natal para dobrar."
           },
           "stars": {
             "heading": "Estrelas",
@@ -388,8 +388,8 @@
           "buffaloCheck": "Xadrez búfalo",
           "summerWinter": "Trama summer and winter",
           "cable": "Trança de corda em cru, tricô",
-          "santaHat": "Santa hat, origami",
-          "origamiTree": "Christmas tree, origami"
+          "santaHat": "Gorro de Papai Noel, origami",
+          "origamiTree": "Árvore de Natal, origami"
         }
       }
     }
@@ -412,7 +412,7 @@
         "groups": {
           "figures": {
             "heading": "Pupazzi di neve e figure invernali",
-            "text": "Un pupazzo di neve col cilindro e un paio di muffole da ricamare, un labirinto che nasconde un messaggio e un quilt di palle di neve."
+            "text": "Un pupazzo di neve col cilindro e un paio di muffole da ricamare, un cappello di Babbo Natale da piegare, un labirinto che nasconde un messaggio e un quilt di palle di neve."
           },
           "snowflakes": {
             "heading": "Fiocchi di neve e ghiaccio",
@@ -424,7 +424,7 @@
           },
           "greenery": {
             "heading": "Ghirlande e sempreverdi",
-            "text": "Una ghirlanda di abete con bacche rosse, un campo di piccoli abeti da lavorare a maglia, una cornice a nodo celtico nei colori dell’agrifoglio e un tartan rosso e verde."
+            "text": "Una ghirlanda di abete con bacche rosse, un campo di piccoli abeti da lavorare a maglia, una cornice a nodo celtico nei colori dell’agrifoglio, un tartan rosso e verde e un albero di Natale da piegare."
           },
           "stars": {
             "heading": "Stelle",
@@ -467,8 +467,8 @@
           "buffaloCheck": "Quadro buffalo",
           "summerWinter": "Tessuto summer and winter",
           "cable": "Treccia a corda color panna, maglia",
-          "santaHat": "Santa hat, origami",
-          "origamiTree": "Christmas tree, origami"
+          "santaHat": "Cappello di Babbo Natale, origami",
+          "origamiTree": "Albero di Natale, origami"
         }
       }
     }
@@ -491,7 +491,7 @@
         "groups": {
           "figures": {
             "heading": "Sneeuwpoppen en winterfiguren",
-            "text": "Een sneeuwpop met hoge hoed en een paar wanten om te borduren, een doolhof met een verborgen boodschap en een quilt van sneeuwballen."
+            "text": "Een sneeuwpop met hoge hoed en een paar wanten om te borduren, een kerstmuts om te vouwen, een doolhof met een verborgen boodschap en een quilt van sneeuwballen."
           },
           "snowflakes": {
             "heading": "Sneeuwvlokken en ijs",
@@ -503,7 +503,7 @@
           },
           "greenery": {
             "heading": "Kransen en wintergroen",
-            "text": "Een dennenkrans met rode bessen, een veld kleine dennen om te breien, een Keltische knoopomlijsting in hulstkleuren en een rood-groene tartan."
+            "text": "Een dennenkrans met rode bessen, een veld kleine dennen om te breien, een Keltische knoopomlijsting in hulstkleuren, een rood-groene tartan en een kerstboom om te vouwen."
           },
           "stars": {
             "heading": "Sterren",
@@ -546,8 +546,8 @@
           "buffaloCheck": "Buffalo-ruit",
           "summerWinter": "Summer and winter-binding",
           "cable": "Kabel in ecru, breien",
-          "santaHat": "Santa hat, origami",
-          "origamiTree": "Christmas tree, origami"
+          "santaHat": "Kerstmuts, origami",
+          "origamiTree": "Kerstboom, origami"
         }
       }
     }

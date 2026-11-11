@@ -77,13 +77,13 @@
     "metaTitle": "Diagramas de origami y papel para doblar imprimible",
     "metaDesc": "Diagramas paso a paso de modelos tradicionales de origami, de una cara de perro a la grulla, con papel estampado para doblar imprimible y sus líneas de pliegue.",
     "h1": "Origami",
-    "lede": "Dobla modelos tradicionales paso a paso, de una cara de perro a la grulla, en papel que imprimes tú mismo con el estampado y los colores que quieras.",
+    "lede": "Dobla modelos tradicionales paso a paso, de una cara de perro a la grulla, además de un gorro de Papá Noel y un árbol de Navidad, en papel que imprimes tú mismo con el estampado y los colores que quieras.",
     "models": {
       "dog": "Cara de perro",
       "cup": "Vaso",
       "fortune-teller": "Comecocos",
-      "santa-hat": "Santa hat",
-      "christmas-tree": "Christmas tree",
+      "santa-hat": "Gorro de Papá Noel",
+      "christmas-tree": "Árbol de Navidad",
       "samurai-helmet": "Casco de samurái",
       "crane": "Grulla"
     },
@@ -91,8 +91,8 @@
       "dog": "Cuatro pliegues y una cara: un primer modelo para los más pequeños.",
       "cup": "Un vaso que de verdad contiene algo, doblado a partir de un triángulo.",
       "fortune-teller": "El juego del recreo: las esquinas se doblan al centro dos veces y luego se mueve con los dedos.",
-      "santa-hat": "A flat hat whose white trim and pompom come from the paper's plain side: red and white paper suits it best. Glue it on a card or a gift tag.",
-      "christmas-tree": "A tiered tree with a trunk, from a kite and two pleats, with a star and ornaments in the pattern's color.",
+      "santa-hat": "Un gorro plano cuyo ribete blanco y pompón salen del lado blanco del papel: queda mejor con papel rojo y blanco. Pégalo en una tarjeta o una etiqueta de regalo.",
+      "christmas-tree": "Un árbol de pisos con tronco, a partir de una cometa y dos pliegues escalonados, con una estrella y adornos en el color del estampado.",
       "samurai-helmet": "Un kabuto con cuernos, doblado en plano. Con una hoja grande, te cabe en la cabeza.",
       "crane": "El modelo de origami más conocido: una base preliminar, dos pliegues pétalo y tres pliegues invertidos."
     },
@@ -144,20 +144,20 @@
     "tipTitle": "Consejo de plegado:",
     "tip": "Dobla sobre una superficie dura y plana, alinea esquinas y bordes antes de presionar y luego pasa la uña por cada pliegue. El papel de impresora sirve, pero el papel más fino se dobla con más limpieza, sobre todo para la grulla.",
     "aboutTitle": "Sobre estos modelos",
-    "about": "Todos los modelos de aquí son tradicionales, doblados por generaciones de niños y adultos, y su creador es desconocido. Los diagramas se dibujan para este sitio a partir de los propios pliegues, con los símbolos Yoshizawa-Randlett que comparten los libros de origami, y las líneas de pliegue del papel salen de esos mismos pliegues.",
+    "about": "La mayoría de los modelos de aquí son tradicionales, doblados por generaciones de niños y adultos, y sus creadores son desconocidos; el gorro de Papá Noel y el árbol de Navidad son modelos sencillos dibujados para este sitio. Los diagramas se dibujan a partir de los propios pliegues, con los símbolos Yoshizawa-Randlett que comparten los libros de origami, y las líneas de pliegue del papel salen de esos mismos pliegues.",
     "tessellationsLink": "O dobla una teselación"
   },
   "fr": {
     "metaTitle": "Diagrammes d'origami et papier à plier à imprimer",
     "metaDesc": "Des diagrammes étape par étape pour des modèles d'origami traditionnels, de la tête de chien à la grue, avec du papier à motifs à imprimer et ses lignes de pli.",
     "h1": "Origami",
-    "lede": "Pliez des modèles traditionnels étape par étape, de la tête de chien à la grue, sur du papier que vous imprimez vous-même, dans le motif et les couleurs de votre choix.",
+    "lede": "Pliez des modèles traditionnels étape par étape, de la tête de chien à la grue, ainsi qu'un bonnet de père Noël et un sapin de Noël, sur du papier que vous imprimez vous-même, dans le motif et les couleurs de votre choix.",
     "models": {
       "dog": "Tête de chien",
       "cup": "Gobelet",
       "fortune-teller": "Cocotte en papier",
-      "santa-hat": "Santa hat",
-      "christmas-tree": "Christmas tree",
+      "santa-hat": "Bonnet de père Noël",
+      "christmas-tree": "Sapin de Noël",
       "samurai-helmet": "Casque de samouraï",
       "crane": "Grue"
     },
@@ -165,8 +165,8 @@
       "dog": "Quatre plis et un visage : un premier modèle pour les jeunes plieurs.",
       "cup": "Un gobelet qui contient vraiment quelque chose, plié à partir d'un triangle.",
       "fortune-teller": "Le jeu de la cour de récré : les coins pliés deux fois vers le centre, puis manipulés avec les doigts.",
-      "santa-hat": "A flat hat whose white trim and pompom come from the paper's plain side: red and white paper suits it best. Glue it on a card or a gift tag.",
-      "christmas-tree": "A tiered tree with a trunk, from a kite and two pleats, with a star and ornaments in the pattern's color.",
+      "santa-hat": "Un bonnet plat dont la bordure blanche et le pompon viennent de la face blanche du papier : un papier rouge et blanc lui va le mieux. Collez-le sur une carte ou une étiquette de cadeau.",
+      "christmas-tree": "Un sapin à étages avec un tronc, à partir d'un cerf-volant et de deux plis en escalier, avec une étoile et des décorations de la couleur du motif.",
       "samurai-helmet": "Un kabuto à cornes, plié à plat. Dans une grande feuille, il tient sur une tête.",
       "crane": "Le modèle d'origami le plus connu : une base préliminaire, deux pliages en pétale et trois plis inversés."
     },
@@ -218,20 +218,20 @@
     "tipTitle": "Astuce de pliage :",
     "tip": "Pliez sur une surface dure et plane, alignez les coins et les bords avant d'appuyer, puis passez l'ongle le long de chaque pli. Le papier d'imprimante convient, mais un papier plus fin se plie plus proprement, surtout pour la grue.",
     "aboutTitle": "À propos de ces modèles",
-    "about": "Tous les modèles ici sont traditionnels, pliés par des générations d'enfants et d'adultes, et leur créateur est inconnu. Les diagrammes sont dessinés pour ce site à partir des plis eux-mêmes, avec les symboles Yoshizawa-Randlett communs aux livres d'origami, et les lignes de pli du papier viennent de ces mêmes plis.",
+    "about": "La plupart des modèles ici sont traditionnels, pliés par des générations d'enfants et d'adultes, et leurs créateurs sont inconnus ; le bonnet de père Noël et le sapin de Noël sont des pliages simples dessinés pour ce site. Les diagrammes sont dessinés à partir des plis eux-mêmes, avec les symboles Yoshizawa-Randlett communs aux livres d'origami, et les lignes de pli du papier viennent de ces mêmes plis.",
     "tessellationsLink": "Ou pliez plutôt une tessellation"
   },
   "de": {
     "metaTitle": "Origami-Anleitungen und Faltpapier zum Ausdrucken",
     "metaDesc": "Schritt-für-Schritt-Diagramme für traditionelle Origami-Modelle, vom Hundegesicht bis zum Kranich, mit gemustertem Faltpapier zum Ausdrucken und seinen Faltlinien.",
     "h1": "Origami",
-    "lede": "Falte traditionelle Modelle Schritt für Schritt, vom Hundegesicht bis zum Kranich, auf Papier, das du selbst in jedem Muster und jeder Farbe druckst.",
+    "lede": "Falte traditionelle Modelle Schritt für Schritt, vom Hundegesicht bis zum Kranich, dazu eine Weihnachtsmannmütze und einen Weihnachtsbaum, auf Papier, das du selbst in jedem Muster und jeder Farbe druckst.",
     "models": {
       "dog": "Hundegesicht",
       "cup": "Becher",
       "fortune-teller": "Himmel und Hölle",
-      "santa-hat": "Santa hat",
-      "christmas-tree": "Christmas tree",
+      "santa-hat": "Weihnachtsmannmütze",
+      "christmas-tree": "Weihnachtsbaum",
       "samurai-helmet": "Samurai-Helm",
       "crane": "Kranich"
     },
@@ -239,8 +239,8 @@
       "dog": "Vier Faltungen und ein Gesicht: ein erstes Modell für junge Falterinnen und Falter.",
       "cup": "Ein Trinkbecher, der wirklich etwas hält, aus einem Dreieck gefaltet.",
       "fortune-teller": "Das Spiel vom Schulhof: die Ecken zweimal zur Mitte gefaltet, dann mit den Fingern bewegt.",
-      "santa-hat": "A flat hat whose white trim and pompom come from the paper's plain side: red and white paper suits it best. Glue it on a card or a gift tag.",
-      "christmas-tree": "A tiered tree with a trunk, from a kite and two pleats, with a star and ornaments in the pattern's color.",
+      "santa-hat": "Eine flache Mütze, deren weißer Rand und Bommel von der weißen Seite des Papiers kommen: Rot-weißes Papier passt am besten. Kleb sie auf eine Karte oder einen Geschenkanhänger.",
+      "christmas-tree": "Ein gestufter Baum mit Stamm, aus einem Drachen und zwei Stufenfalten, mit Stern und Schmuck in der Farbe des Musters.",
       "samurai-helmet": "Ein Kabuto mit Hörnern, flach gefaltet. Aus einem großen Bogen passt er auf einen Kopf.",
       "crane": "Das bekannteste Origami-Modell: eine Vorbereitungsbasis, zwei Blütenblattfaltungen und drei Gegenbrüche."
     },
@@ -292,20 +292,20 @@
     "tipTitle": "Falttipp:",
     "tip": "Falte auf einer harten, ebenen Fläche, richte Ecken und Kanten aus, bevor du drückst, und fahr dann mit dem Fingernagel über jede Falz. Druckerpapier geht, aber dünneres Papier faltet sich sauberer, besonders beim Kranich.",
     "aboutTitle": "Über diese Modelle",
-    "about": "Jedes Modell hier ist traditionell, von Generationen von Kindern und Erwachsenen gefaltet, sein Urheber unbekannt. Die Diagramme werden für diese Website aus den Faltungen selbst gezeichnet, mit den Yoshizawa-Randlett-Symbolen, die Origami-Bücher gemeinsam nutzen, und die Faltlinien auf dem Papier stammen aus denselben Faltungen.",
+    "about": "Die meisten Modelle hier sind traditionell, von Generationen von Kindern und Erwachsenen gefaltet, ihre Urheber unbekannt; die Weihnachtsmannmütze und der Weihnachtsbaum sind einfache Faltmodelle, die für diese Website gezeichnet wurden. Die Diagramme werden aus den Faltungen selbst gezeichnet, mit den Yoshizawa-Randlett-Symbolen, die Origami-Bücher gemeinsam nutzen, und die Faltlinien auf dem Papier stammen aus denselben Faltungen.",
     "tessellationsLink": "Lieber eine Tessellation falten"
   },
   "pt": {
     "metaTitle": "Diagramas de origami e papel para dobrar para imprimir",
     "metaDesc": "Diagramas passo a passo de modelos tradicionais de origami, da cara de cachorro ao tsuru, com papel estampado para dobrar para imprimir e suas linhas de dobra.",
     "h1": "Origami",
-    "lede": "Dobre modelos tradicionais passo a passo, da cara de cachorro ao tsuru, em papel que você mesmo imprime, com a estampa e as cores que quiser.",
+    "lede": "Dobre modelos tradicionais passo a passo, da cara de cachorro ao tsuru, além de um gorro de Papai Noel e uma árvore de Natal, em papel que você mesmo imprime, com a estampa e as cores que quiser.",
     "models": {
       "dog": "Cara de cachorro",
       "cup": "Copo",
       "fortune-teller": "Quem-sabe",
-      "santa-hat": "Santa hat",
-      "christmas-tree": "Christmas tree",
+      "santa-hat": "Gorro de Papai Noel",
+      "christmas-tree": "Árvore de Natal",
       "samurai-helmet": "Capacete de samurai",
       "crane": "Tsuru"
     },
@@ -313,8 +313,8 @@
       "dog": "Quatro dobras e uma carinha: um primeiro modelo para dobradores pequenos.",
       "cup": "Um copo que segura algo de verdade, dobrado a partir de um triângulo.",
       "fortune-teller": "A brincadeira do recreio: os cantos dobrados duas vezes até o centro, depois movidos com os dedos.",
-      "santa-hat": "A flat hat whose white trim and pompom come from the paper's plain side: red and white paper suits it best. Glue it on a card or a gift tag.",
-      "christmas-tree": "A tiered tree with a trunk, from a kite and two pleats, with a star and ornaments in the pattern's color.",
+      "santa-hat": "Um gorro plano cuja barra branca e pompom vêm do lado branco do papel: papel vermelho e branco fica melhor. Cole-o num cartão ou numa etiqueta de presente.",
+      "christmas-tree": "Uma árvore em andares com tronco, feita a partir de uma pipa e duas pregas, com uma estrela e enfeites na cor da estampa.",
       "samurai-helmet": "Um kabuto com chifres, dobrado plano. Feito com uma folha grande, cabe na cabeça.",
       "crane": "O modelo de origami mais conhecido: uma base preliminar, duas dobras em pétala e três dobras invertidas."
     },
@@ -366,20 +366,20 @@
     "tipTitle": "Dica de dobradura:",
     "tip": "Dobre sobre uma superfície dura e plana, alinhe cantos e bordas antes de apertar e depois passe a unha ao longo de cada vinco. Papel de impressora serve, mas papel mais fino dobra com mais capricho, principalmente para o tsuru.",
     "aboutTitle": "Sobre estes modelos",
-    "about": "Todos os modelos aqui são tradicionais, dobrados por gerações de crianças e adultos, e seu criador é desconhecido. Os diagramas são desenhados para este site a partir das próprias dobras, com os símbolos Yoshizawa-Randlett que os livros de origami compartilham, e as linhas de dobra no papel vêm dessas mesmas dobras.",
+    "about": "A maioria dos modelos aqui é tradicional, dobrados por gerações de crianças e adultos, e seus criadores são desconhecidos; o gorro de Papai Noel e a árvore de Natal são dobraduras simples desenhadas para este site. Os diagramas são desenhados a partir das próprias dobras, com os símbolos Yoshizawa-Randlett que os livros de origami compartilham, e as linhas de dobra no papel vêm dessas mesmas dobras.",
     "tessellationsLink": "Ou dobre uma tesselação"
   },
   "it": {
     "metaTitle": "Diagrammi origami e carta da piegare da stampare",
     "metaDesc": "Diagrammi passo passo per modelli origami tradizionali, dal muso di cane alla gru, con carta da piegare decorata da stampare e le sue linee di piegatura.",
     "h1": "Origami",
-    "lede": "Piega modelli tradizionali passo passo, dal muso di cane alla gru, su carta che stampi tu con il motivo e i colori che vuoi.",
+    "lede": "Piega modelli tradizionali passo passo, dal muso di cane alla gru, più un cappello di Babbo Natale e un albero di Natale, su carta che stampi tu con il motivo e i colori che vuoi.",
     "models": {
       "dog": "Muso di cane",
       "cup": "Bicchiere",
       "fortune-teller": "Inferno e paradiso",
-      "santa-hat": "Santa hat",
-      "christmas-tree": "Christmas tree",
+      "santa-hat": "Cappello di Babbo Natale",
+      "christmas-tree": "Albero di Natale",
       "samurai-helmet": "Elmo da samurai",
       "crane": "Gru"
     },
@@ -387,8 +387,8 @@
       "dog": "Quattro pieghe e un muso: un primo modello per i piccoli piegatori.",
       "cup": "Un bicchiere che contiene davvero qualcosa, piegato da un triangolo.",
       "fortune-teller": "Il gioco del cortile: gli angoli piegati due volte verso il centro, poi mossi con le dita.",
-      "santa-hat": "A flat hat whose white trim and pompom come from the paper's plain side: red and white paper suits it best. Glue it on a card or a gift tag.",
-      "christmas-tree": "A tiered tree with a trunk, from a kite and two pleats, with a star and ornaments in the pattern's color.",
+      "santa-hat": "Un cappello piatto la cui bordura bianca e il pompon vengono dal lato bianco della carta: la carta rossa e bianca è la più adatta. Incollalo su un biglietto o un'etichetta regalo.",
+      "christmas-tree": "Un albero a piani con il tronco, da un aquilone e due pieghe a zig-zag, con una stella e decorazioni nel colore del motivo.",
       "samurai-helmet": "Un kabuto con le corna, piegato in piano. Con un foglio grande, sta su una testa.",
       "crane": "Il modello origami più conosciuto: una base preliminare, due pieghe a petalo e tre pieghe rovesce."
     },
@@ -440,20 +440,20 @@
     "tipTitle": "Consiglio per piegare:",
     "tip": "Piega su una superficie dura e piana, allinea angoli e bordi prima di premere, poi passa l'unghia lungo ogni piega. La carta da stampante va bene, ma una carta più sottile si piega in modo più preciso, soprattutto per la gru.",
     "aboutTitle": "Questi modelli",
-    "about": "Ogni modello qui è tradizionale, piegato da generazioni di bambini e adulti, e il suo autore è sconosciuto. I diagrammi sono disegnati per questo sito a partire dalle pieghe stesse, con i simboli Yoshizawa-Randlett comuni ai libri di origami, e le linee di piegatura sulla carta vengono dalle stesse pieghe.",
+    "about": "La maggior parte dei modelli qui è tradizionale, piegata da generazioni di bambini e adulti, e i loro autori sono sconosciuti; il cappello di Babbo Natale e l'albero di Natale sono modelli semplici disegnati per questo sito. I diagrammi sono disegnati a partire dalle pieghe stesse, con i simboli Yoshizawa-Randlett comuni ai libri di origami, e le linee di piegatura sulla carta vengono dalle stesse pieghe.",
     "tessellationsLink": "Oppure piega una tassellatura"
   },
   "nl": {
     "metaTitle": "Origamidiagrammen en printbaar vouwpapier",
     "metaDesc": "Stap-voor-stapdiagrammen voor traditionele origamimodellen, van een hondengezicht tot de kraanvogel, met printbaar vouwpapier met dessin en de vouwlijnen erop.",
     "h1": "Origami",
-    "lede": "Vouw traditionele modellen stap voor stap, van een hondengezicht tot de kraanvogel, op papier dat je zelf print in elk dessin en elke kleur.",
+    "lede": "Vouw traditionele modellen stap voor stap, van een hondengezicht tot de kraanvogel, plus een kerstmuts en een kerstboom, op papier dat je zelf print in elk dessin en elke kleur.",
     "models": {
       "dog": "Hondengezicht",
       "cup": "Bekertje",
       "fortune-teller": "Happertje",
-      "santa-hat": "Santa hat",
-      "christmas-tree": "Christmas tree",
+      "santa-hat": "Kerstmuts",
+      "christmas-tree": "Kerstboom",
       "samurai-helmet": "Samoeraihelm",
       "crane": "Kraanvogel"
     },
@@ -461,8 +461,8 @@
       "dog": "Vier vouwen en een gezicht: een eerste model voor jonge vouwers.",
       "cup": "Een drinkbekertje dat echt iets vasthoudt, gevouwen uit een driehoek.",
       "fortune-teller": "Het schoolpleinspel: de hoeken twee keer naar het midden gevouwen en dan met je vingers bewogen.",
-      "santa-hat": "A flat hat whose white trim and pompom come from the paper's plain side: red and white paper suits it best. Glue it on a card or a gift tag.",
-      "christmas-tree": "A tiered tree with a trunk, from a kite and two pleats, with a star and ornaments in the pattern's color.",
+      "santa-hat": "Een platte muts waarvan het witte randje en de pompon van de witte kant van het papier komen: rood-wit papier past er het best bij. Plak hem op een kaart of een cadeaulabel.",
+      "christmas-tree": "Een boom in lagen met een stam, uit een vlieger en twee plooien, met een ster en versiering in de kleur van het dessin.",
       "samurai-helmet": "Een kabuto met hoorns, plat gevouwen. Van een groot vel past hij op een hoofd.",
       "crane": "Het bekendste origamimodel: een voorbereidende basis, twee bloembladvouwen en drie omgekeerde vouwen."
     },
@@ -514,7 +514,7 @@
     "tipTitle": "Vouwtip:",
     "tip": "Vouw op een harde, vlakke ondergrond, leg hoeken en randen precies op elkaar voordat je aandrukt en strijk dan met je nagel over elke vouw. Printerpapier werkt, maar dunner papier vouwt netter, vooral voor de kraanvogel.",
     "aboutTitle": "Over deze modellen",
-    "about": "Elk model hier is traditioneel, gevouwen door generaties kinderen en volwassenen, en de ontwerper is onbekend. De diagrammen zijn voor deze site getekend vanuit de vouwen zelf, in de Yoshizawa-Randlett-symbolen die origamiboeken gemeen hebben, en de vouwlijnen op het papier komen uit dezelfde vouwen.",
+    "about": "De meeste modellen hier zijn traditioneel, gevouwen door generaties kinderen en volwassenen, en de ontwerpers zijn onbekend; de kerstmuts en de kerstboom zijn eenvoudige vouwsels die voor deze site zijn getekend. De diagrammen zijn getekend vanuit de vouwen zelf, in de Yoshizawa-Randlett-symbolen die origamiboeken gemeen hebben, en de vouwlijnen op het papier komen uit dezelfde vouwen.",
     "tessellationsLink": "Of vouw liever een tessellatie"
   }
 }

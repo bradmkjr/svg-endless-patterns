@@ -972,6 +972,14 @@
     }
   },
   "changelog": {
+    "Peano and plant fractals, and a bulging wave": {
+      "title": "Peano- en plantfractals, en een bollende golf",
+      "items": [
+        "Twee nieuwe fractals: de Peano-kromme, één lijn die zigzaggend door elk vak van een raster gaat, en een L-systeemplant uit The Algorithmic Beauty of Plants, met een takhoek om in te stellen",
+        "Een nieuwe golf, Bolling: de lijnen wijken uiteen rond een raster van lenzen en dringen daartussen samen, voor een op-arteffect in lijnen of banden",
+        "Elk heeft een eigen pagina, en de boeken en artikelen staan op de pagina met dankbetuigingen"
+      ]
+    },
     "Realistic colorwork, and the season first in the library": {
       "title": "Realistischer kleurwerk, en het seizoen eerst in de bibliotheek",
       "items": [

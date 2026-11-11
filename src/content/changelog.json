@@ -1,6 +1,15 @@
 [
   {
     "date": "2026-11-11",
+    "title": "Peano and plant fractals, and a bulging wave",
+    "items": [
+      "Two new fractals: the Peano curve, one line that zigzags through every cell of a grid, and an L-system plant from The Algorithmic Beauty of Plants, with a branch angle to set",
+      "A new wave, Bulge: lines swell apart around a grid of lenses and crowd together between them, for an op-art look in lines or bands",
+      "Each has its own page, and both books and papers are credited on the acknowledgements page"
+    ]
+  },
+  {
+    "date": "2026-11-11",
     "title": "Realistic colorwork, and the season first in the library",
     "items": [
       "Knit and crochet colorwork squares are drawn stitch by stitch, as the knit and crochet stitch swatches are: knit Vs with garter ridges on the borders, tapestry single crochet, corner-to-corner blocks of double crochet and granny clusters, each in its own yarn's light and shade, on the page and in the PDF",

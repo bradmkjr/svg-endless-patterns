@@ -972,6 +972,14 @@
     }
   },
   "changelog": {
+    "Peano and plant fractals, and a bulging wave": {
+      "title": "Fractales de Peano y de planta, y una onda abombada",
+      "items": [
+        "Dos fractales nuevos: la curva de Peano, una sola línea que zigzaguea por cada celda de una cuadrícula, y una planta de sistema L de The Algorithmic Beauty of Plants, con un ángulo de ramas que puedes elegir",
+        "Una onda nueva, Abombado: las líneas se separan alrededor de una cuadrícula de lentes y se juntan entre ellas, para un aire de op art en líneas o bandas",
+        "Cada uno tiene su propia página, y los libros y artículos se citan en la página de agradecimientos"
+      ]
+    },
     "Realistic colorwork, and the season first in the library": {
       "title": "Colores más realistas, y la temporada primero en la biblioteca",
       "items": [

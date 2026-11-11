@@ -972,6 +972,14 @@
     }
   },
   "changelog": {
+    "Peano and plant fractals, and a bulging wave": {
+      "title": "Fractais de Peano e de planta, e uma onda abaulada",
+      "items": [
+        "Dois fractais novos: a curva de Peano, uma única linha que faz zigue-zague por cada célula de uma grade, e uma planta de sistema L de The Algorithmic Beauty of Plants, com um ângulo dos galhos para ajustar",
+        "Uma onda nova, Abaulado: as linhas se afastam em volta de uma grade de lentes e se juntam entre elas, para um efeito op art em linhas ou faixas",
+        "Cada um tem sua própria página, e os livros e artigos são citados na página de agradecimentos"
+      ]
+    },
     "Realistic colorwork, and the season first in the library": {
       "title": "Cores mais realistas, e a estação primeiro na biblioteca",
       "items": [

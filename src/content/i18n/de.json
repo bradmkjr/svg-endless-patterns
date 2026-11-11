@@ -972,6 +972,14 @@
     }
   },
   "changelog": {
+    "Peano and plant fractals, and a bulging wave": {
+      "title": "Peano- und Pflanzenfraktale, und eine gewölbte Welle",
+      "items": [
+        "Zwei neue Fraktale: die Peano-Kurve, eine Linie, die im Zickzack jede Zelle eines Rasters durchläuft, und eine L-System-Pflanze aus The Algorithmic Beauty of Plants, mit einstellbarem Astwinkel",
+        "Eine neue Welle, Wölbung: Die Linien weichen um ein Raster aus Linsen auseinander und drängen sich dazwischen zusammen, für einen Op-Art-Effekt in Linien oder Bändern",
+        "Jede hat ihre eigene Seite, und Bücher und Arbeiten sind auf der Seite der Danksagungen genannt"
+      ]
+    },
     "Realistic colorwork, and the season first in the library": {
       "title": "Realistischere Farbmuster, und die Saison zuerst in der Bibliothek",
       "items": [

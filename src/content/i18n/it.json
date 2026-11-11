@@ -972,6 +972,14 @@
     }
   },
   "changelog": {
+    "Peano and plant fractals, and a bulging wave": {
+      "title": "Frattali di Peano e della pianta, e un'onda rigonfia",
+      "items": [
+        "Due nuovi frattali: la curva di Peano, un'unica linea che passa a zigzag per ogni cella di una griglia, e una pianta L-system da The Algorithmic Beauty of Plants, con un angolo dei rami da scegliere",
+        "Una nuova onda, Rigonfiamento: le linee si allargano intorno a una griglia di lenti e si stringono tra l'una e l'altra, per un effetto op art in linee o fasce",
+        "Ognuno ha la sua pagina, e libri e articoli sono citati nella pagina dei ringraziamenti"
+      ]
+    },
     "Realistic colorwork, and the season first in the library": {
       "title": "Colori più realistici, e la stagione per prima nella biblioteca",
       "items": [

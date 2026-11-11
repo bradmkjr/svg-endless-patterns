@@ -972,6 +972,14 @@
     }
   },
   "changelog": {
+    "Peano and plant fractals, and a bulging wave": {
+      "title": "Fractales de Peano et de plante, et une onde bombée",
+      "items": [
+        "Deux nouvelles fractales : la courbe de Peano, une seule ligne qui zigzague dans chaque case d'une grille, et une plante en L-système tirée de The Algorithmic Beauty of Plants, avec un angle des branches à régler",
+        "Une nouvelle onde, Bombé : les lignes s'écartent autour d'une grille de lentilles et se resserrent entre elles, pour un effet op art en lignes ou en bandes",
+        "Chacune a sa propre page, et les livres et articles sont cités sur la page des remerciements"
+      ]
+    },
     "Realistic colorwork, and the season first in the library": {
       "title": "Des couleurs plus réalistes, et la saison en tête de la bibliothèque",
       "items": [

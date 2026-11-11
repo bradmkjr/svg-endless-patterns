@@ -1,7 +1,7 @@
 import type catalog from "@/i18n/messages/crossStitch.json";
 import { localeAccent } from "./localeAccent";
 import { colorsUsed, decodeColors, decodeGrid, encodeGrid, hex, pick, pickFinish, sameGrid } from "./countedGrid";
-import { DESIGNS } from "./crossStitchDesigns";
+import { DESIGNS, WINTER_MOTIFS } from "./crossStitchDesigns";
 import type { CrossStitchRequest, Locale } from "./generator";
 
 export { colorsUsed, GRID_OPTIONS, MAX_COLORS, MAX_GRID, MIN_GRID, removeColor, resizeGrid, setCell } from "./countedGrid";
@@ -15,7 +15,8 @@ export const MARGIN_OPTIONS = [1, 2, 3, 4, 5, 6];
 const DEFAULT_FABRIC = "#f7f3e8";
 
 export type MotifId = keyof typeof catalog.en.motifs;
-export type Motif = { id: MotifId; grid: string[]; colors: string[] };
+/** `fabric`: the fabric a design was drawn on, if not the usual cream. */
+export type Motif = { id: MotifId; grid: string[]; colors: string[]; fabric?: string };
 
 /** Drawn for this site: none of these copies a published chart. */
 export const MOTIFS: Motif[] = [
@@ -176,6 +177,7 @@ export const MOTIFS: Motif[] = [
     ],
   },
   ...DESIGNS,
+  ...WINTER_MOTIFS,
 ];
 
 const DEFAULT_MOTIF = MOTIFS[0];
@@ -189,6 +191,9 @@ export function motifColors(motif: Motif, locale: Locale = "en"): string[] {
 }
 
 const findMotif = (grid: string[]) => MOTIFS.find((motif) => sameGrid(motif.grid, grid));
+
+/** The fabric a grid is stitched on unless the share link says otherwise: its design's own, or cream. */
+const defaultFabric = (grid: string[]) => findMotif(grid)?.fabric ?? DEFAULT_FABRIC;
 
 /** The colors a grid has unless the share link says otherwise. */
 function defaultColors(grid: string[], locale: Locale): string[] {
@@ -217,7 +222,7 @@ export function parseCrossStitchState(params: { get(name: string): string | null
     ...(locale === "en" ? {} : { locale }),
     grid,
     colors: decodeColors(params.get("c"), colorsUsed(grid)) ?? defaultColors(grid, locale),
-    fabric: fabric && /^[0-9a-f]{6}$/i.test(fabric) ? `#${fabric.toLowerCase()}` : base.fabric,
+    fabric: fabric && /^[0-9a-f]{6}$/i.test(fabric) ? `#${fabric.toLowerCase()}` : defaultFabric(grid),
     count: pick(params.get("count"), COUNT_OPTIONS, DEFAULT_COUNT),
     strands: pick(params.get("strands"), STRAND_OPTIONS, base.strands),
     margin: pick(params.get("margin"), MARGIN_OPTIONS, base.margin),
@@ -236,7 +241,7 @@ export function serializeCrossStitchState(state: CrossStitchRequest): string {
   }
   const encoded = state.colors.map(hex).join("-");
   if (encoded !== defaultColors(state.grid, locale).map(hex).join("-")) params.set("c", encoded);
-  if (state.fabric !== base.fabric) params.set("f", hex(state.fabric));
+  if (state.fabric !== defaultFabric(state.grid)) params.set("f", hex(state.fabric));
   if (state.count !== DEFAULT_COUNT) params.set("count", String(state.count));
   if (state.strands !== base.strands) params.set("strands", String(state.strands));
   if (state.margin !== base.margin) params.set("margin", String(state.margin));

@@ -86,7 +86,8 @@ export const TOOL_OPTIONS: Record<ToolId, Tool> = {
   sashiko: { path: "/sashiko/", param: "m", options: named(SASHIKO_MOTIFS) },
   celticKnot: { path: "/celtic-knots/", param: "p", options: named(PATTERN_OPTIONS) },
   stainedGlass: { path: "/stained-glass/", param: "l", options: named(GLASS_LAYOUTS) },
-  crossStitch: { path: "/cross-stitch/", param: "m", options: named(STITCH_MOTIFS.map((m) => m.id)) },
+  // A design brings its own grid, colors and fabric, so another design's stay behind.
+  crossStitch: { path: "/cross-stitch/", param: "m", options: named(STITCH_MOTIFS.map((m) => m.id)), drops: ["g", "c", "f"] },
   needlepoint: { path: "/needlepoint/", param: "m", options: named(NEEDLEPOINT_DESIGNS.map((m) => m.id)) },
   tieDye: { path: "/tie-dye/", param: "t", options: named(TECHNIQUE_OPTIONS) },
   maze: { path: "/mazes/", param: "shape", options: named(MAZE_SHAPES) },

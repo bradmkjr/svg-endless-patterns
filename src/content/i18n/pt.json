@@ -1,5 +1,28 @@
 {
   "posts": {
+    "winter-patterns": {
+      "title": "Padrões da estação, começando pelo inverno",
+      "summary": "Uma nova seção Estações reúne padrões para cada época do ano de todo o site. A primeira coleção é o inverno: 31 padrões, de um boneco de neve de cartola e uma estrela de Selbu em ponto cruz a um floco de Koch, um quilt de bolas de neve e um tartan vermelho e verde.",
+      "blocks": [
+        "Há uma nova seção [Estações](/seasonal/) no menu, e a primeira coleção é o [inverno](/seasonal/winter/): 31 padrões das ferramentas do site, em neve, luz das estrelas e verde de pinheiro. Eles estão agrupados em bonecos de neve, flocos e gelo, velas e lanternas, guirlandas, estrelas e bosque.",
+        "Cores de inverno em padrões conhecidos",
+        "A maioria é de padrões da biblioteca em cores de inverno: um floco de Koch sobre azul-marinho, um quilt [Snowball](/blocks/snowball/) em azul-gelo, um labirinto cujas paredes escondem “LET IT SNOW”, uma treliça de gelo rachado, xadrez búfalo e um tartan vermelho e verde. Cada amostra abre com suas configurações, então você pode partir dela e torná-la sua.",
+        [
+          "Floco de Koch",
+          "Quilt Snowball",
+          "Um labirinto que esconde “LET IT SNOW”, resolvido",
+          "Tartan vermelho e verde"
+        ],
+        "Desenhados para o inverno",
+        "Oito gráficos de ponto cruz foram desenhados para a coleção: um boneco de neve de cartola, um par de luvas, uma vela com azevinho, uma lanterna na neve, uma barra de pingentes de gelo, uma estrela polar, um cardeal num galho nevado e uma estrela de Selbu de oito pontas. Cada um abre no [criador de ponto cruz](/cross-stitch/), onde você pode mudar a contagem, as cores e o acabamento e depois imprimir o gráfico.",
+        [
+          "Boneco de neve de cartola",
+          "Lanterna na neve",
+          "Cardeal num galho nevado",
+          "Estrela de Selbu"
+        ]
+      ]
+    },
     "quilts-in-centimeters": {
       "title": "Colchas em centímetros, em A4",
       "summary": "O planejador de colchas e todos os blocos agora podem ser medidos em centímetros: um padrão métrico de verdade, com costura de 0,75 cm, cortes em marcas de meio centímetro, tecido em metros e PDFs em A4. As páginas em inglês abrem em polegadas e as demais em centímetros, e todas podem mudar.",
@@ -926,6 +949,15 @@
     }
   },
   "changelog": {
+    "Seasonal patterns, starting with winter": {
+      "title": "Padrões da estação, começando pelo inverno",
+      "items": [
+        "Uma seção Estações no menu, com uma página para cada estação",
+        "Inverno: 31 padrões das ferramentas do site em cores de inverno",
+        "Oito novos gráficos de ponto cruz: um boneco de neve, luvas, uma vela, uma lanterna, pingentes de gelo, uma estrela polar, um cardeal e uma estrela de Selbu",
+        "As amostras de tartan nos posts mostram o padrão inteiro, não uma só faixa"
+      ]
+    },
     "Quilts and blocks in centimeters": {
       "title": "Colchas e blocos em centímetros",
       "items": [

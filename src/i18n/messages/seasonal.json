@@ -1,0 +1,541 @@
+{
+  "en": {
+    "metaTitle": "Seasonal Patterns: Winter and Holiday Patterns to Make",
+    "metaDesc": "Patterns for the time of year from every tool on the site: cross-stitch, quilt blocks, knitting, crochet, mazes and coloring pages in the colors of the season. Each opens ready to change and print.",
+    "h1": "Seasonal patterns",
+    "lede": "Patterns for the time of year, gathered from across the site. Each one opens in its own tool with these settings, ready to resize, recolor and print.",
+    "breadcrumb": "Seasonal",
+    "seeAll": "See all {n} patterns",
+    "seasons": {
+      "winter": {
+        "name": "Winter",
+        "summary": "Snowmen and mittens, snowflakes and icicles, candles and lanterns, evergreens, Nordic stars and a cardinal in the snow.",
+        "metaTitle": "Winter Patterns: Snowflakes, Snowmen and Stars to Make",
+        "metaDesc": "Free winter patterns to stitch, knit, crochet, quilt and color: a snowman, mittens, snowflakes, icicles, candles and lanterns, evergreen wreaths, Selbu stars, a cardinal and buffalo check.",
+        "h1": "Winter patterns",
+        "lede": "Snow, starlight and evergreens in every craft on the site. Several of the cross-stitch charts were drawn for this page; the rest are patterns from the library in winter colors. Open any of them to change its size, colors or count, then print it.",
+        "groups": {
+          "figures": {
+            "heading": "Snowmen and winter figures",
+            "text": "A snowman in a top hat and a pair of mittens to stitch, a maze that hides a message, and a quilt of snowballs."
+          },
+          "snowflakes": {
+            "heading": "Snowflakes and ice",
+            "text": "Six-pointed snowflakes in thread, in a fractal and in a kaleidoscope, a coloring page, the cracked-ice lattice of Chinese windows, sashiko in white on indigo, and a band of icicles for a border."
+          },
+          "light": {
+            "heading": "Candles, lanterns and winter light",
+            "text": "A pillar candle in holly, an iron lantern glowing in the snow, a stained-glass sunburst and a mandala in candlelight colors."
+          },
+          "greenery": {
+            "heading": "Wreaths and evergreens",
+            "text": "An evergreen wreath with red berries, a field of little pines to knit, a Celtic knot frame in holly colors and a red and green tartan."
+          },
+          "stars": {
+            "heading": "Stars",
+            "text": "An eight-point Selbu star, a north star in a midnight sky, a star square in crochet, a LeMoyne Star block and a whole quilt of stars."
+          },
+          "woodland": {
+            "heading": "Woodland and cabin",
+            "text": "A cardinal on a snowy branch, a bare tree against a pale sky, buffalo check, a summer and winter weave and a rope cable in cream."
+          }
+        },
+        "samples": {
+          "snowman": "Snowman in a top hat, cross-stitch",
+          "mittens": "Mittens, cross-stitch",
+          "letItSnow": "A maze hiding “LET IT SNOW”, solved",
+          "snowball": "Snowball quilt",
+          "crossSnowflake": "Snowflake, cross-stitch on navy",
+          "kochSnowflake": "Koch snowflake, fractal",
+          "kaleidoscope": "Icy kaleidoscope",
+          "mandala": "Mandala coloring page",
+          "iceRay": "Cracked-ice lattice",
+          "asanoha": "Asanoha sashiko on indigo",
+          "frost": "Frost granny square, crochet",
+          "frostFerns": "Frosted ferns",
+          "icicles": "Icicle border, cross-stitch",
+          "candle": "Candle and holly, cross-stitch",
+          "lantern": "Lantern in the snow, cross-stitch",
+          "sunburst": "Sunburst, stained glass",
+          "candlelight": "Candlelight mandala",
+          "wreath": "Evergreen wreath, cross-stitch",
+          "pines": "Little pines, knit colorwork",
+          "celtic": "Celtic knot frame in holly colors",
+          "tartan": "Red and green tartan",
+          "selbuStar": "Selbu star, cross-stitch",
+          "northStar": "North star, cross-stitch",
+          "eightPointStar": "Eight-point star, crochet",
+          "lemoyneStar": "LeMoyne Star block",
+          "starSampler": "Star sampler quilt in winter colors",
+          "cardinal": "Cardinal on a snowy branch, cross-stitch",
+          "bareTree": "Bare winter tree, fractal",
+          "buffaloCheck": "Buffalo check",
+          "summerWinter": "Summer and winter weave",
+          "cable": "Rope cable in cream, knitting"
+        }
+      }
+    }
+  },
+  "es": {
+    "metaTitle": "Patrones de temporada: invierno y fiestas para hacer",
+    "metaDesc": "Patrones para cada época del año, de todas las herramientas del sitio: punto de cruz, bloques de quilt, tejido, ganchillo, laberintos y páginas para colorear en los colores de la temporada. Cada uno se abre listo para cambiar e imprimir.",
+    "h1": "Patrones de temporada",
+    "lede": "Patrones para esta época del año, reunidos de todo el sitio. Cada uno se abre en su propia herramienta con estos ajustes, listo para cambiar de tamaño, de colores e imprimir.",
+    "breadcrumb": "De temporada",
+    "seeAll": "Ver los {n} patrones",
+    "seasons": {
+      "winter": {
+        "name": "Invierno",
+        "summary": "Muñecos de nieve y manoplas, copos y carámbanos, velas y faroles, hojas perennes, estrellas nórdicas y un cardenal en la nieve.",
+        "metaTitle": "Patrones de invierno: copos, muñecos de nieve y estrellas",
+        "metaDesc": "Patrones de invierno gratis para bordar, tejer, hacer ganchillo, coser quilts y colorear: un muñeco de nieve, manoplas, copos, carámbanos, velas y faroles, coronas, estrellas de Selbu, un cardenal y cuadros búfalo.",
+        "h1": "Patrones de invierno",
+        "lede": "Nieve, luz de estrellas y hojas perennes en todas las labores del sitio. Varios de los gráficos de punto de cruz se dibujaron para esta página; los demás son patrones de la biblioteca en colores de invierno. Abre cualquiera para cambiar su tamaño, colores o cuenta, y luego imprímelo.",
+        "groups": {
+          "figures": {
+            "heading": "Muñecos de nieve y figuras de invierno",
+            "text": "Un muñeco de nieve con sombrero de copa y un par de manoplas para bordar, un laberinto que esconde un mensaje y un quilt de bolas de nieve."
+          },
+          "snowflakes": {
+            "heading": "Copos de nieve y hielo",
+            "text": "Copos de seis puntas en hilo, en un fractal y en un caleidoscopio, una página para colorear, la celosía de hielo agrietado de las ventanas chinas, sashiko blanco sobre índigo y una cenefa de carámbanos."
+          },
+          "light": {
+            "heading": "Velas, faroles y luz de invierno",
+            "text": "Una vela con acebo, un farol de hierro que brilla en la nieve, un sol de vitral y un mandala en colores de vela."
+          },
+          "greenery": {
+            "heading": "Coronas y hojas perennes",
+            "text": "Una corona perenne con bayas rojas, un campo de pinitos para tejer, un marco de nudo celta en colores de acebo y un tartán rojo y verde."
+          },
+          "stars": {
+            "heading": "Estrellas",
+            "text": "Una estrella de Selbu de ocho puntas, una estrella polar en un cielo de medianoche, un cuadrado de estrella en ganchillo, un bloque LeMoyne Star y todo un quilt de estrellas."
+          },
+          "woodland": {
+            "heading": "Bosque y cabaña",
+            "text": "Un cardenal en una rama nevada, un árbol desnudo contra un cielo pálido, cuadros búfalo, un tejido summer and winter y unos ochos de cuerda en crudo."
+          }
+        },
+        "samples": {
+          "snowman": "Muñeco de nieve con sombrero de copa, punto de cruz",
+          "mittens": "Manoplas, punto de cruz",
+          "letItSnow": "Un laberinto que esconde “LET IT SNOW”, resuelto",
+          "snowball": "Quilt Snowball",
+          "crossSnowflake": "Copo de nieve, punto de cruz sobre azul marino",
+          "kochSnowflake": "Copo de Koch, fractal",
+          "kaleidoscope": "Caleidoscopio helado",
+          "mandala": "Mandala para colorear",
+          "iceRay": "Celosía de hielo agrietado",
+          "asanoha": "Sashiko asanoha sobre índigo",
+          "frost": "Cuadrado granny de escarcha, ganchillo",
+          "frostFerns": "Helechos escarchados",
+          "icicles": "Cenefa de carámbanos, punto de cruz",
+          "candle": "Vela y acebo, punto de cruz",
+          "lantern": "Farol en la nieve, punto de cruz",
+          "sunburst": "Sol, vitral",
+          "candlelight": "Mandala a la luz de las velas",
+          "wreath": "Corona perenne, punto de cruz",
+          "pines": "Pinitos, jacquard de punto",
+          "celtic": "Marco de nudo celta en colores de acebo",
+          "tartan": "Tartán rojo y verde",
+          "selbuStar": "Estrella de Selbu, punto de cruz",
+          "northStar": "Estrella polar, punto de cruz",
+          "eightPointStar": "Estrella de ocho puntas, ganchillo",
+          "lemoyneStar": "Bloque LeMoyne Star",
+          "starSampler": "Quilt de estrellas en colores de invierno",
+          "cardinal": "Cardenal en una rama nevada, punto de cruz",
+          "bareTree": "Árbol de invierno desnudo, fractal",
+          "buffaloCheck": "Cuadros búfalo",
+          "summerWinter": "Tejido summer and winter",
+          "cable": "Ochos de cuerda en crudo, punto"
+        }
+      }
+    }
+  },
+  "fr": {
+    "metaTitle": "Motifs de saison : hiver et fêtes à réaliser",
+    "metaDesc": "Des motifs pour chaque moment de l’année, tirés de tous les outils du site : point de croix, blocs de quilt, tricot, crochet, labyrinthes et coloriages aux couleurs de la saison. Chacun s’ouvre prêt à modifier et à imprimer.",
+    "h1": "Motifs de saison",
+    "lede": "Des motifs pour ce moment de l’année, rassemblés depuis tout le site. Chacun s’ouvre dans son propre outil avec ces réglages, prêt à redimensionner, recolorer et imprimer.",
+    "breadcrumb": "Saisons",
+    "seeAll": "Voir les {n} motifs",
+    "seasons": {
+      "winter": {
+        "name": "Hiver",
+        "summary": "Bonshommes de neige et moufles, flocons et glaçons, bougies et lanternes, sapins, étoiles nordiques et un cardinal dans la neige.",
+        "metaTitle": "Motifs d’hiver : flocons, bonshommes de neige et étoiles",
+        "metaDesc": "Des motifs d’hiver gratuits à broder, tricoter, crocheter, assembler en quilt et colorier : un bonhomme de neige, des moufles, des flocons, des glaçons, bougies et lanternes, couronnes, étoiles de Selbu, un cardinal et du carreau bûcheron.",
+        "h1": "Motifs d’hiver",
+        "lede": "Neige, lumière des étoiles et sapins dans chaque technique du site. Plusieurs grilles de point de croix ont été dessinées pour cette page ; les autres sont des motifs de la bibliothèque aux couleurs de l’hiver. Ouvrez-en un pour changer sa taille, ses couleurs ou son nombre de points, puis imprimez-le.",
+        "groups": {
+          "figures": {
+            "heading": "Bonshommes de neige et figures d’hiver",
+            "text": "Un bonhomme de neige en chapeau haut-de-forme et une paire de moufles à broder, un labyrinthe qui cache un message et un quilt de boules de neige."
+          },
+          "snowflakes": {
+            "heading": "Flocons et glace",
+            "text": "Des flocons à six branches en fil, en fractale et en kaléidoscope, un coloriage, le treillis de glace brisée des fenêtres chinoises, du sashiko blanc sur indigo et une bordure de glaçons."
+          },
+          "light": {
+            "heading": "Bougies, lanternes et lumière d’hiver",
+            "text": "Une bougie dans le houx, une lanterne en fer qui brille dans la neige, un soleil en vitrail et un mandala aux couleurs de bougie."
+          },
+          "greenery": {
+            "heading": "Couronnes et sapins",
+            "text": "Une couronne de sapin aux baies rouges, un champ de petits sapins à tricoter, un cadre en nœud celtique aux couleurs du houx et un tartan rouge et vert."
+          },
+          "stars": {
+            "heading": "Étoiles",
+            "text": "Une étoile de Selbu à huit branches, une étoile polaire dans un ciel de minuit, un carré étoilé au crochet, un bloc LeMoyne Star et tout un quilt d’étoiles."
+          },
+          "woodland": {
+            "heading": "Forêt et chalet",
+            "text": "Un cardinal sur une branche enneigée, un arbre nu sur un ciel pâle, du carreau bûcheron, un tissage summer and winter et une torsade écrue."
+          }
+        },
+        "samples": {
+          "snowman": "Bonhomme de neige en haut-de-forme, point de croix",
+          "mittens": "Moufles, point de croix",
+          "letItSnow": "Un labyrinthe qui cache « LET IT SNOW », résolu",
+          "snowball": "Quilt Snowball",
+          "crossSnowflake": "Flocon, point de croix sur marine",
+          "kochSnowflake": "Flocon de Koch, fractale",
+          "kaleidoscope": "Kaléidoscope glacé",
+          "mandala": "Mandala à colorier",
+          "iceRay": "Treillis de glace brisée",
+          "asanoha": "Sashiko asanoha sur indigo",
+          "frost": "Carré granny givré, crochet",
+          "frostFerns": "Fougères givrées",
+          "icicles": "Bordure de glaçons, point de croix",
+          "candle": "Bougie et houx, point de croix",
+          "lantern": "Lanterne dans la neige, point de croix",
+          "sunburst": "Soleil, vitrail",
+          "candlelight": "Mandala à la bougie",
+          "wreath": "Couronne de sapin, point de croix",
+          "pines": "Petits sapins, jacquard tricoté",
+          "celtic": "Cadre en nœud celtique aux couleurs du houx",
+          "tartan": "Tartan rouge et vert",
+          "selbuStar": "Étoile de Selbu, point de croix",
+          "northStar": "Étoile polaire, point de croix",
+          "eightPointStar": "Étoile à huit branches, crochet",
+          "lemoyneStar": "Bloc LeMoyne Star",
+          "starSampler": "Quilt d’étoiles aux couleurs de l’hiver",
+          "cardinal": "Cardinal sur une branche enneigée, point de croix",
+          "bareTree": "Arbre d’hiver nu, fractale",
+          "buffaloCheck": "Carreau bûcheron",
+          "summerWinter": "Tissage summer and winter",
+          "cable": "Torsade écrue, tricot"
+        }
+      }
+    }
+  },
+  "de": {
+    "metaTitle": "Saisonale Muster: Winter- und Festtagsmuster zum Selbermachen",
+    "metaDesc": "Muster für die Jahreszeit aus allen Werkzeugen der Seite: Kreuzstich, Quiltblöcke, Stricken, Häkeln, Labyrinthe und Ausmalbilder in den Farben der Saison. Jedes öffnet sich bereit zum Ändern und Drucken.",
+    "h1": "Saisonale Muster",
+    "lede": "Muster für diese Jahreszeit, von der ganzen Seite zusammengetragen. Jedes öffnet sich in seinem eigenen Werkzeug mit diesen Einstellungen, bereit zum Vergrößern, Umfärben und Drucken.",
+    "breadcrumb": "Saisonal",
+    "seeAll": "Alle {n} Muster ansehen",
+    "seasons": {
+      "winter": {
+        "name": "Winter",
+        "summary": "Schneemänner und Fäustlinge, Schneeflocken und Eiszapfen, Kerzen und Laternen, Tannengrün, nordische Sterne und ein Kardinal im Schnee.",
+        "metaTitle": "Wintermuster: Schneeflocken, Schneemänner und Sterne",
+        "metaDesc": "Kostenlose Wintermuster zum Sticken, Stricken, Häkeln, Quilten und Ausmalen: ein Schneemann, Fäustlinge, Schneeflocken, Eiszapfen, Kerzen und Laternen, Kränze, Selbu-Sterne, ein Kardinal und Büffelkaro.",
+        "h1": "Wintermuster",
+        "lede": "Schnee, Sternenlicht und Tannengrün in jedem Handwerk der Seite. Mehrere Kreuzstichvorlagen wurden für diese Seite gezeichnet; die übrigen sind Muster aus der Bibliothek in Winterfarben. Öffne eines, um Größe, Farben oder Stoff zu ändern, und drucke es dann aus.",
+        "groups": {
+          "figures": {
+            "heading": "Schneemänner und Winterfiguren",
+            "text": "Ein Schneemann mit Zylinder und ein Paar Fäustlinge zum Sticken, ein Labyrinth mit versteckter Botschaft und ein Quilt aus Schneebällen."
+          },
+          "snowflakes": {
+            "heading": "Schneeflocken und Eis",
+            "text": "Sechszackige Schneeflocken in Garn, als Fraktal und im Kaleidoskop, ein Ausmalbild, das Eisbruchgitter chinesischer Fenster, Sashiko in Weiß auf Indigo und eine Bordüre aus Eiszapfen."
+          },
+          "light": {
+            "heading": "Kerzen, Laternen und Winterlicht",
+            "text": "Eine Stumpenkerze mit Stechpalme, eine eiserne Laterne, die im Schnee leuchtet, eine Sonne in Bleiglas und ein Mandala in Kerzenfarben."
+          },
+          "greenery": {
+            "heading": "Kränze und Tannengrün",
+            "text": "Ein Tannenkranz mit roten Beeren, ein Feld kleiner Tannen zum Stricken, ein keltischer Knotenrahmen in Stechpalmenfarben und ein rot-grüner Tartan."
+          },
+          "stars": {
+            "heading": "Sterne",
+            "text": "Ein achtzackiger Selbu-Stern, ein Polarstern am Mitternachtshimmel, ein Sternquadrat gehäkelt, ein LeMoyne-Star-Block und ein ganzer Quilt aus Sternen."
+          },
+          "woodland": {
+            "heading": "Wald und Hütte",
+            "text": "Ein Kardinal auf einem verschneiten Zweig, ein kahler Baum vor blassem Himmel, Büffelkaro, eine Summer-and-Winter-Bindung und ein Seilzopf in Naturweiß."
+          }
+        },
+        "samples": {
+          "snowman": "Schneemann mit Zylinder, Kreuzstich",
+          "mittens": "Fäustlinge, Kreuzstich",
+          "letItSnow": "Ein Labyrinth, das „LET IT SNOW“ versteckt, gelöst",
+          "snowball": "Snowball-Quilt",
+          "crossSnowflake": "Schneeflocke, Kreuzstich auf Marineblau",
+          "kochSnowflake": "Koch-Schneeflocke, Fraktal",
+          "kaleidoscope": "Eisiges Kaleidoskop",
+          "mandala": "Mandala zum Ausmalen",
+          "iceRay": "Eisbruchgitter",
+          "asanoha": "Asanoha-Sashiko auf Indigo",
+          "frost": "Raureif-Granny-Square, gehäkelt",
+          "frostFerns": "Bereifte Farne",
+          "icicles": "Eiszapfenbordüre, Kreuzstich",
+          "candle": "Kerze und Stechpalme, Kreuzstich",
+          "lantern": "Laterne im Schnee, Kreuzstich",
+          "sunburst": "Sonne, Bleiglas",
+          "candlelight": "Mandala im Kerzenschein",
+          "wreath": "Tannenkranz, Kreuzstich",
+          "pines": "Kleine Tannen, Strick-Jacquard",
+          "celtic": "Keltischer Knotenrahmen in Stechpalmenfarben",
+          "tartan": "Rot-grüner Tartan",
+          "selbuStar": "Selbu-Stern, Kreuzstich",
+          "northStar": "Polarstern, Kreuzstich",
+          "eightPointStar": "Achtzackiger Stern, gehäkelt",
+          "lemoyneStar": "LeMoyne-Star-Block",
+          "starSampler": "Sternen-Sampler-Quilt in Winterfarben",
+          "cardinal": "Kardinal auf verschneitem Zweig, Kreuzstich",
+          "bareTree": "Kahler Winterbaum, Fraktal",
+          "buffaloCheck": "Büffelkaro",
+          "summerWinter": "Summer-and-Winter-Bindung",
+          "cable": "Seilzopf in Naturweiß, Stricken"
+        }
+      }
+    }
+  },
+  "pt": {
+    "metaTitle": "Padrões da estação: inverno e festas para fazer",
+    "metaDesc": "Padrões para cada época do ano, de todas as ferramentas do site: ponto cruz, blocos de quilt, tricô, crochê, labirintos e páginas para colorir nas cores da estação. Cada um abre pronto para mudar e imprimir.",
+    "h1": "Padrões da estação",
+    "lede": "Padrões para esta época do ano, reunidos de todo o site. Cada um abre na sua própria ferramenta com estas configurações, pronto para mudar de tamanho, de cores e imprimir.",
+    "breadcrumb": "Estações",
+    "seeAll": "Ver os {n} padrões",
+    "seasons": {
+      "winter": {
+        "name": "Inverno",
+        "summary": "Bonecos de neve e luvas, flocos e pingentes de gelo, velas e lanternas, folhagens de inverno, estrelas nórdicas e um cardeal na neve.",
+        "metaTitle": "Padrões de inverno: flocos de neve, bonecos de neve e estrelas",
+        "metaDesc": "Padrões de inverno grátis para bordar, tricotar, fazer crochê, quilt e colorir: um boneco de neve, luvas, flocos de neve, pingentes de gelo, velas e lanternas, guirlandas, estrelas de Selbu, um cardeal e xadrez búfalo.",
+        "h1": "Padrões de inverno",
+        "lede": "Neve, luz das estrelas e folhagens em todos os artesanatos do site. Vários gráficos de ponto cruz foram desenhados para esta página; os outros são padrões da biblioteca em cores de inverno. Abra qualquer um para mudar o tamanho, as cores ou a contagem e depois imprima.",
+        "groups": {
+          "figures": {
+            "heading": "Bonecos de neve e figuras de inverno",
+            "text": "Um boneco de neve de cartola e um par de luvas para bordar, um labirinto que esconde uma mensagem e um quilt de bolas de neve."
+          },
+          "snowflakes": {
+            "heading": "Flocos de neve e gelo",
+            "text": "Flocos de seis pontas em linha, em um fractal e em um caleidoscópio, uma página para colorir, a treliça de gelo rachado das janelas chinesas, sashiko branco sobre índigo e uma barra de pingentes de gelo."
+          },
+          "light": {
+            "heading": "Velas, lanternas e luz de inverno",
+            "text": "Uma vela com azevinho, uma lanterna de ferro brilhando na neve, um sol de vitral e uma mandala em cores de vela."
+          },
+          "greenery": {
+            "heading": "Guirlandas e folhagens",
+            "text": "Uma guirlanda de pinheiro com frutinhas vermelhas, um campo de pinheirinhos para tricotar, uma moldura de nó celta nas cores do azevinho e um tartan vermelho e verde."
+          },
+          "stars": {
+            "heading": "Estrelas",
+            "text": "Uma estrela de Selbu de oito pontas, uma estrela polar num céu de meia-noite, um quadrado de estrela em crochê, um bloco LeMoyne Star e um quilt inteiro de estrelas."
+          },
+          "woodland": {
+            "heading": "Bosque e cabana",
+            "text": "Um cardeal num galho nevado, uma árvore nua contra um céu claro, xadrez búfalo, uma trama summer and winter e uma trança de corda em cru."
+          }
+        },
+        "samples": {
+          "snowman": "Boneco de neve de cartola, ponto cruz",
+          "mittens": "Luvas, ponto cruz",
+          "letItSnow": "Um labirinto que esconde “LET IT SNOW”, resolvido",
+          "snowball": "Quilt Snowball",
+          "crossSnowflake": "Floco de neve, ponto cruz sobre azul-marinho",
+          "kochSnowflake": "Floco de Koch, fractal",
+          "kaleidoscope": "Caleidoscópio gelado",
+          "mandala": "Mandala para colorir",
+          "iceRay": "Treliça de gelo rachado",
+          "asanoha": "Sashiko asanoha sobre índigo",
+          "frost": "Quadrado granny de geada, crochê",
+          "frostFerns": "Samambaias geladas",
+          "icicles": "Barra de pingentes de gelo, ponto cruz",
+          "candle": "Vela e azevinho, ponto cruz",
+          "lantern": "Lanterna na neve, ponto cruz",
+          "sunburst": "Sol, vitral",
+          "candlelight": "Mandala à luz de velas",
+          "wreath": "Guirlanda de pinheiro, ponto cruz",
+          "pines": "Pinheirinhos, jacquard de tricô",
+          "celtic": "Moldura de nó celta nas cores do azevinho",
+          "tartan": "Tartan vermelho e verde",
+          "selbuStar": "Estrela de Selbu, ponto cruz",
+          "northStar": "Estrela polar, ponto cruz",
+          "eightPointStar": "Estrela de oito pontas, crochê",
+          "lemoyneStar": "Bloco LeMoyne Star",
+          "starSampler": "Quilt de estrelas em cores de inverno",
+          "cardinal": "Cardeal num galho nevado, ponto cruz",
+          "bareTree": "Árvore nua de inverno, fractal",
+          "buffaloCheck": "Xadrez búfalo",
+          "summerWinter": "Trama summer and winter",
+          "cable": "Trança de corda em cru, tricô"
+        }
+      }
+    }
+  },
+  "it": {
+    "metaTitle": "Motivi di stagione: inverno e feste da realizzare",
+    "metaDesc": "Motivi per ogni periodo dell’anno, da tutti gli strumenti del sito: punto croce, blocchi da quilt, maglia, uncinetto, labirinti e disegni da colorare nei colori della stagione. Ognuno si apre pronto da modificare e stampare.",
+    "h1": "Motivi di stagione",
+    "lede": "Motivi per questo periodo dell’anno, raccolti da tutto il sito. Ognuno si apre nel suo strumento con queste impostazioni, pronto da ridimensionare, ricolorare e stampare.",
+    "breadcrumb": "Stagionali",
+    "seeAll": "Vedi tutti i {n} motivi",
+    "seasons": {
+      "winter": {
+        "name": "Inverno",
+        "summary": "Pupazzi di neve e muffole, fiocchi e ghiaccioli, candele e lanterne, sempreverdi, stelle nordiche e un cardinale nella neve.",
+        "metaTitle": "Motivi invernali: fiocchi di neve, pupazzi e stelle",
+        "metaDesc": "Motivi invernali gratuiti da ricamare, lavorare a maglia, all’uncinetto, in quilt e da colorare: un pupazzo di neve, muffole, fiocchi di neve, ghiaccioli, candele e lanterne, ghirlande, stelle di Selbu, un cardinale e il quadro scozzese buffalo.",
+        "h1": "Motivi invernali",
+        "lede": "Neve, luce di stelle e sempreverdi in ogni tecnica del sito. Diversi schemi a punto croce sono stati disegnati per questa pagina; gli altri sono motivi della libreria in colori invernali. Aprine uno per cambiarne dimensioni, colori o fittezza, poi stampalo.",
+        "groups": {
+          "figures": {
+            "heading": "Pupazzi di neve e figure invernali",
+            "text": "Un pupazzo di neve col cilindro e un paio di muffole da ricamare, un labirinto che nasconde un messaggio e un quilt di palle di neve."
+          },
+          "snowflakes": {
+            "heading": "Fiocchi di neve e ghiaccio",
+            "text": "Fiocchi a sei punte in filo, in un frattale e in un caleidoscopio, un disegno da colorare, il reticolo di ghiaccio incrinato delle finestre cinesi, sashiko bianco su indaco e una bordura di ghiaccioli."
+          },
+          "light": {
+            "heading": "Candele, lanterne e luce d’inverno",
+            "text": "Una candela con l’agrifoglio, una lanterna di ferro che brilla nella neve, un sole in vetrata e un mandala nei colori della candela."
+          },
+          "greenery": {
+            "heading": "Ghirlande e sempreverdi",
+            "text": "Una ghirlanda di abete con bacche rosse, un campo di piccoli abeti da lavorare a maglia, una cornice a nodo celtico nei colori dell’agrifoglio e un tartan rosso e verde."
+          },
+          "stars": {
+            "heading": "Stelle",
+            "text": "Una stella di Selbu a otto punte, una stella polare in un cielo di mezzanotte, un quadrato stellato all’uncinetto, un blocco LeMoyne Star e un intero quilt di stelle."
+          },
+          "woodland": {
+            "heading": "Bosco e baita",
+            "text": "Un cardinale su un ramo innevato, un albero spoglio contro un cielo chiaro, il quadro buffalo, un tessuto summer and winter e una treccia a corda color panna."
+          }
+        },
+        "samples": {
+          "snowman": "Pupazzo di neve col cilindro, punto croce",
+          "mittens": "Muffole, punto croce",
+          "letItSnow": "Un labirinto che nasconde “LET IT SNOW”, risolto",
+          "snowball": "Quilt Snowball",
+          "crossSnowflake": "Fiocco di neve, punto croce su blu notte",
+          "kochSnowflake": "Fiocco di Koch, frattale",
+          "kaleidoscope": "Caleidoscopio ghiacciato",
+          "mandala": "Mandala da colorare",
+          "iceRay": "Reticolo di ghiaccio incrinato",
+          "asanoha": "Sashiko asanoha su indaco",
+          "frost": "Piastrella granny di brina, uncinetto",
+          "frostFerns": "Felci brinate",
+          "icicles": "Bordura di ghiaccioli, punto croce",
+          "candle": "Candela e agrifoglio, punto croce",
+          "lantern": "Lanterna nella neve, punto croce",
+          "sunburst": "Sole, vetrata",
+          "candlelight": "Mandala a lume di candela",
+          "wreath": "Ghirlanda di abete, punto croce",
+          "pines": "Piccoli abeti, jacquard a maglia",
+          "celtic": "Cornice a nodo celtico nei colori dell’agrifoglio",
+          "tartan": "Tartan rosso e verde",
+          "selbuStar": "Stella di Selbu, punto croce",
+          "northStar": "Stella polare, punto croce",
+          "eightPointStar": "Stella a otto punte, uncinetto",
+          "lemoyneStar": "Blocco LeMoyne Star",
+          "starSampler": "Quilt di stelle in colori invernali",
+          "cardinal": "Cardinale su un ramo innevato, punto croce",
+          "bareTree": "Albero spoglio d’inverno, frattale",
+          "buffaloCheck": "Quadro buffalo",
+          "summerWinter": "Tessuto summer and winter",
+          "cable": "Treccia a corda color panna, maglia"
+        }
+      }
+    }
+  },
+  "nl": {
+    "metaTitle": "Seizoenspatronen: winter- en feestpatronen om te maken",
+    "metaDesc": "Patronen voor de tijd van het jaar uit alle gereedschappen van de site: kruissteek, quiltblokken, breien, haken, doolhoven en kleurplaten in de kleuren van het seizoen. Elk opent klaar om aan te passen en te printen.",
+    "h1": "Seizoenspatronen",
+    "lede": "Patronen voor deze tijd van het jaar, verzameld van de hele site. Elk opent in zijn eigen gereedschap met deze instellingen, klaar om te vergroten, te verkleuren en te printen.",
+    "breadcrumb": "Seizoenen",
+    "seeAll": "Bekijk alle {n} patronen",
+    "seasons": {
+      "winter": {
+        "name": "Winter",
+        "summary": "Sneeuwpoppen en wanten, sneeuwvlokken en ijspegels, kaarsen en lantaarns, wintergroen, Noorse sterren en een kardinaal in de sneeuw.",
+        "metaTitle": "Winterpatronen: sneeuwvlokken, sneeuwpoppen en sterren",
+        "metaDesc": "Gratis winterpatronen om te borduren, breien, haken, quilten en kleuren: een sneeuwpop, wanten, sneeuwvlokken, ijspegels, kaarsen en lantaarns, kransen, Selbu-sterren, een kardinaal en buffalo-ruit.",
+        "h1": "Winterpatronen",
+        "lede": "Sneeuw, sterrenlicht en wintergroen in elke techniek op de site. Een aantal kruissteekpatronen is voor deze pagina getekend; de rest zijn patronen uit de bibliotheek in winterkleuren. Open er een om de maat, kleuren of telling te veranderen en print hem daarna.",
+        "groups": {
+          "figures": {
+            "heading": "Sneeuwpoppen en winterfiguren",
+            "text": "Een sneeuwpop met hoge hoed en een paar wanten om te borduren, een doolhof met een verborgen boodschap en een quilt van sneeuwballen."
+          },
+          "snowflakes": {
+            "heading": "Sneeuwvlokken en ijs",
+            "text": "Zespuntige sneeuwvlokken in garen, als fractal en in een caleidoscoop, een kleurplaat, het gebarsten-ijsrooster van Chinese vensters, sashiko in wit op indigo en een rand van ijspegels."
+          },
+          "light": {
+            "heading": "Kaarsen, lantaarns en winterlicht",
+            "text": "Een stompkaars met hulst, een ijzeren lantaarn die gloeit in de sneeuw, een zon in glas-in-lood en een mandala in kaarslichtkleuren."
+          },
+          "greenery": {
+            "heading": "Kransen en wintergroen",
+            "text": "Een dennenkrans met rode bessen, een veld kleine dennen om te breien, een Keltische knoopomlijsting in hulstkleuren en een rood-groene tartan."
+          },
+          "stars": {
+            "heading": "Sterren",
+            "text": "Een achtpuntige Selbu-ster, een poolster aan een middernachtshemel, een sterrenvierkant gehaakt, een LeMoyne Star-blok en een hele quilt vol sterren."
+          },
+          "woodland": {
+            "heading": "Bos en blokhut",
+            "text": "Een kardinaal op een besneeuwde tak, een kale boom tegen een bleke lucht, buffalo-ruit, een summer and winter-binding en een kabel in ecru."
+          }
+        },
+        "samples": {
+          "snowman": "Sneeuwpop met hoge hoed, kruissteek",
+          "mittens": "Wanten, kruissteek",
+          "letItSnow": "Een doolhof dat „LET IT SNOW” verbergt, opgelost",
+          "snowball": "Snowball-quilt",
+          "crossSnowflake": "Sneeuwvlok, kruissteek op marineblauw",
+          "kochSnowflake": "Koch-sneeuwvlok, fractal",
+          "kaleidoscope": "IJzige caleidoscoop",
+          "mandala": "Mandala-kleurplaat",
+          "iceRay": "Gebarsten-ijsrooster",
+          "asanoha": "Asanoha-sashiko op indigo",
+          "frost": "Rijp-grannysquare, gehaakt",
+          "frostFerns": "Berijpte varens",
+          "icicles": "IJspegelrand, kruissteek",
+          "candle": "Kaars en hulst, kruissteek",
+          "lantern": "Lantaarn in de sneeuw, kruissteek",
+          "sunburst": "Zon, glas-in-lood",
+          "candlelight": "Mandala bij kaarslicht",
+          "wreath": "Dennenkrans, kruissteek",
+          "pines": "Kleine dennen, jacquardbreiwerk",
+          "celtic": "Keltische knoopomlijsting in hulstkleuren",
+          "tartan": "Rood-groene tartan",
+          "selbuStar": "Selbu-ster, kruissteek",
+          "northStar": "Poolster, kruissteek",
+          "eightPointStar": "Achtpuntige ster, gehaakt",
+          "lemoyneStar": "LeMoyne Star-blok",
+          "starSampler": "Sterrensampler-quilt in winterkleuren",
+          "cardinal": "Kardinaal op een besneeuwde tak, kruissteek",
+          "bareTree": "Kale winterboom, fractal",
+          "buffaloCheck": "Buffalo-ruit",
+          "summerWinter": "Summer and winter-binding",
+          "cable": "Kabel in ecru, breien"
+        }
+      }
+    }
+  }
+}

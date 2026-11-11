@@ -1,5 +1,99 @@
 [
   {
+    "slug": "winter-patterns",
+    "title": "Seasonal patterns, starting with winter",
+    "date": "2026-11-11",
+    "summary": "A new Seasonal section gathers patterns for the time of year from across the site. Its first collection is winter: 31 patterns, from a top-hat snowman and a Selbu star in cross-stitch to a Koch snowflake, a snowball quilt and a red and green tartan.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "There's a new [Seasonal](/seasonal/) section in the menu, and its first collection is [winter](/seasonal/winter/): 31 patterns from the site's tools, in snow, starlight and evergreen. They're grouped as snowmen, snowflakes and ice, candles and lanterns, wreaths, stars and woodland."
+      },
+      {
+        "type": "heading",
+        "text": "Winter colors on familiar patterns"
+      },
+      {
+        "type": "paragraph",
+        "text": "Most are patterns from the library in winter colors: a Koch snowflake on navy, a [Snowball](/blocks/snowball/) quilt in ice blue, a maze whose walls hide “LET IT SNOW”, an ice-ray lattice, buffalo check and a red and green tartan. Every sample opens with its settings, so you can start from it and make it your own."
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "fractal",
+            "slug": "",
+            "query": "t=koch-snowflake&bg=1b2a49&c1=e6f1f8&c2=9cc3dc",
+            "view": "art",
+            "caption": "Koch snowflake"
+          },
+          {
+            "kind": "block",
+            "slug": "snowball",
+            "query": "f_ball=f4f6f8&f_corners=6f9fc0",
+            "view": "quilt",
+            "caption": "Snowball quilt"
+          },
+          {
+            "kind": "maze",
+            "slug": "",
+            "query": "shape=hidden-message&d=easy&m=LET+IT+SNOW&ln=23395d&ac=9cc3dc",
+            "view": "solution",
+            "caption": "A maze hiding “LET IT SNOW”, solved"
+          },
+          {
+            "kind": "tartan",
+            "slug": "",
+            "query": "s=a8123a.24-1f5c3d.12-a8123a.4-e8b92f.2",
+            "view": "swatch",
+            "caption": "Red and green tartan"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Drawn for winter"
+      },
+      {
+        "type": "paragraph",
+        "text": "Eight cross-stitch charts were drawn for the collection: a snowman in a top hat, a pair of mittens, a candle in holly, a lantern in the snow, a band of icicles, a north star, a cardinal on a snowy branch and an eight-point Selbu star. Each opens in the [cross-stitch builder](/cross-stitch/), where you can change its count, colors and finish, then print the chart."
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "crossStitch",
+            "slug": "",
+            "query": "g=27.-22.a4.-2.a24.-9.9b9.-9.9b9.-9.9b9.-9.9c9.-7.13b7.-4.a5.7a4.a5.-8.11a8.-8.11a8.-8.2ab5ab2a8.-8.11a8.-8.5a6d8.-8.11a8.-8.2ab5ab2a8.-9.2a5b2a9.-10.7a10.-8.2cf2cf2cf2c8.-8.2cf2cf2cf2c8.-.2e4.8a2c3a4.2e.-2.2e2.9a2c4a2.2e2.-4.2e6ab2a2f4a2e4.-5.10a2c5a5.-5.10a2c5a5.-5.7ab2a2f5a5.-.a3.17a5.-6.6ab8a4.a.-6.15a6.-7.13a7.-8.11a8.-10.7a10.-27a&c=ffffff-262626-b3262e-e07a1f-6b4226-1f5c3d&f=2b4a6b",
+            "view": "stitched",
+            "caption": "Snowman in a top hat"
+          },
+          {
+            "kind": "crossStitch",
+            "slug": "",
+            "query": "g=23.-10.3a10.-2.d6.a3.a9.-9.a3.a5.d3.-10.3a10.-8.7a8.-6.11d6.-5.13a5.-4.15a4.-5.13a5.-5.a5ca5ca5.-5.a5ca5ca5.-.d3.a5ca5ca5.-5.a5ca5ca5.-5.a5ca5ca5.-5.a5ca5ca3.d.-5.a5ca5ca5.-5.13a5.-5.a2c3bf3b2ca5.-5.a2c3bf3b2ca5.-5.a2cb5eb2ca5.-2.d2.a2cb5eb2ca5.-5.a2cb5eb2ca2.d2.-5.a2cb5eb2ca5.-5.a2cb5eb2ca5.-5.13a5.-4.15a4.-5.13a5.-23d-23d-2.19d2.-23.-23.&c=262626-f2c14e-fbe7a6-ffffff-f4ead2-e07a1f&f=2b4a6b",
+            "view": "stitched",
+            "caption": "Lantern in the snow"
+          },
+          {
+            "kind": "crossStitch",
+            "slug": "",
+            "query": "g=29.-29.-29.-9.2a12.f5.-8.a.2a17.-9.3a17.-8.5a16.-7.2ac4a12.f2.-5.d3c6a14.-4.2d3c8a12.-7.c10a11.-8.4a6ba10.-8.6a4ba6.f3.-2.f4.9a2b2a9.-8.11a10.-8.10a3b8.-9.9a.3b7.-10.7a3.3b6.-2.8f2.eae.3f2.b2h5.-.18e.7f2.-3.g2.g12.9e.-2.g.g2.g15.g2.g2.-24.2g3.-29.-29.-4.f15.f8.-29.&c=c8102e-8c1c13-1a1a1a-e8a33a-5a4634-ffffff-1f5c3d-b3262e&f=dce6ee",
+            "view": "stitched",
+            "caption": "Cardinal on a snowy branch"
+          },
+          {
+            "kind": "crossStitch",
+            "slug": "",
+            "query": "g=.a.a.a.a.a.a.a.a.a.a.a.a.a.-a25.a-27.-a7.a9.a7.a-8.2a7.2a8.-a7.3a5.3a7.a-8.4a3.4a8.-a7.5a.5a7.a-3.5a.4a.4a.5a3.-a3.5a.3a.3a.5a3.a-5.5a.2a.2a.5a5.-a5.5a.a.a.5a5.a-7.5a3.5a7.-a25.a-7.5a3.5a7.-a5.5a.a.a.5a5.a-5.5a.2a.2a.5a5.-a3.5a.3a.3a.5a3.a-3.5a.4a.4a.5a3.-a7.5a.5a7.a-8.4a3.4a8.-a7.3a5.3a7.a-8.2a7.2a8.-a7.a9.a7.a-27.-a25.a-.a.a.a.a.a.a.a.a.a.a.a.a.a.&c=ffffff&f=a8123a",
+            "view": "stitched",
+            "caption": "Selbu star"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "slug": "quilts-in-centimeters",
     "title": "Quilts in centimeters, on A4",
     "date": "2026-11-08",

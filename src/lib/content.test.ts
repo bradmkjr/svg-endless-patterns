@@ -32,13 +32,14 @@ import { parseWeavingState, serializeWeavingState } from "./weavingState";
 import { parseMazeState, serializeMazeState } from "./mazeState";
 import { parseTartanState, serializeTartanState } from "./tartanState";
 import { parseQuiltState, serializeQuiltState } from "./quiltState";
+import { SEASONS, seasonSamples } from "./seasons";
 
 const sorted = (query: string) => [...new URLSearchParams(query).entries()].map(([k, v]) => `${k}=${v}`).sort();
 
 async function knownPaths() {
   const posts = await getPosts();
   return new Set([
-    "/", ...PREFIXED_LOCALES.map((l) => `/${l}/`), "/tartans/", "/truchet/", "/kolam/", "/turing-patterns/", "/waves/", "/nature-patterns/", "/weaving/", "/tie-dye/", "/fractals/", "/life-patterns/", "/checkerboards/", "/crochet/colorwork/", "/knitting/colorwork/", "/mazes/", "/paper-puzzles/", "/girih/", "/chinese-lattice/", "/mandalas/", "/kaleidoscopes/", "/stained-glass/", "/celtic-knots/", "/sashiko/", "/tessellations/", "/cross-stitch/", "/needlepoint/", "/blocks/", "/quilts/", "/knitting/", "/crochet/", "/patterns/", "/palettes/", "/about/", "/acknowledgements/", "/blog/", "/changelog/",
+    "/", ...PREFIXED_LOCALES.map((l) => `/${l}/`), "/tartans/", "/truchet/", "/kolam/", "/turing-patterns/", "/waves/", "/nature-patterns/", "/weaving/", "/tie-dye/", "/fractals/", "/life-patterns/", "/checkerboards/", "/crochet/colorwork/", "/knitting/colorwork/", "/mazes/", "/paper-puzzles/", "/girih/", "/chinese-lattice/", "/mandalas/", "/kaleidoscopes/", "/stained-glass/", "/celtic-knots/", "/sashiko/", "/tessellations/", "/cross-stitch/", "/needlepoint/", "/blocks/", "/quilts/", "/knitting/", "/crochet/", "/patterns/", "/palettes/", "/about/", "/acknowledgements/", "/blog/", "/changelog/", "/seasonal/", ...SEASONS.map((s) => `/seasonal/${s.id}/`),
     ...(await getBlocks()).map((b) => `/blocks/${b.slug}/`),
     ...(await getStitchPatterns("knit")).map((s) => `/knitting/${s.slug}/`),
     ...(await getStitchPatterns("crochet")).map((s) => `/crochet/${s.slug}/`),
@@ -74,6 +75,9 @@ describe("blog posts", () => {
 
   const samples = (blog as { slug: string; body: { type: string; items?: unknown[] }[] }[]).flatMap((post) =>
     post.body.flatMap((block) => (block.type === "samples" ? (block.items as PostSample[]).map((sample) => [post.slug, sample.slug, sample] as const) : [])),
+  ).concat(
+    // Seasonal pages link the same way, so their samples are held to the same rule.
+    SEASONS.flatMap((season) => seasonSamples(season).map((sample) => [`seasonal/${season.id}`, sample.slug, { ...sample, caption: sample.id } as PostSample] as const)),
   );
 
   it.each(samples)("%s: %s deep link keeps every setting", async (_, slug, sample) => {

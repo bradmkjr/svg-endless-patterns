@@ -1,5 +1,28 @@
 {
   "posts": {
+    "winter-patterns": {
+      "title": "Saisonale Muster, zuerst der Winter",
+      "summary": "Ein neuer Bereich Saisonal sammelt Muster für die Jahreszeit von der ganzen Seite. Die erste Sammlung ist der Winter: 31 Muster, vom Schneemann mit Zylinder und einem Selbu-Stern in Kreuzstich bis zu einer Koch-Schneeflocke, einem Schneeball-Quilt und einem rot-grünen Tartan.",
+      "blocks": [
+        "Im Menü gibt es einen neuen Bereich [Saisonal](/seasonal/), und seine erste Sammlung ist der [Winter](/seasonal/winter/): 31 Muster aus den Werkzeugen der Seite, in Schnee, Sternenlicht und Tannengrün. Sie sind nach Schneemännern, Schneeflocken und Eis, Kerzen und Laternen, Kränzen, Sternen und Wald geordnet.",
+        "Winterfarben auf bekannten Mustern",
+        "Die meisten sind Muster aus der Bibliothek in Winterfarben: eine Koch-Schneeflocke auf Marineblau, ein [Snowball](/blocks/snowball/)-Quilt in Eisblau, ein Labyrinth, dessen Wände „LET IT SNOW“ verstecken, ein Eisbruchgitter, Büffelkaro und ein rot-grüner Tartan. Jedes Beispiel öffnet sich mit seinen Einstellungen, sodass du davon ausgehen und es zu deinem eigenen machen kannst.",
+        [
+          "Koch-Schneeflocke",
+          "Snowball-Quilt",
+          "Ein Labyrinth, das „LET IT SNOW“ versteckt, gelöst",
+          "Rot-grüner Tartan"
+        ],
+        "Für den Winter gezeichnet",
+        "Für die Sammlung wurden acht Kreuzstichvorlagen gezeichnet: ein Schneemann mit Zylinder, ein Paar Fäustlinge, eine Kerze mit Stechpalme, eine Laterne im Schnee, eine Eiszapfenbordüre, ein Polarstern, ein Kardinal auf einem verschneiten Zweig und ein achtzackiger Selbu-Stern. Jede öffnet sich im [Kreuzstich-Editor](/cross-stitch/), wo du Stoff, Farben und Fertigstellung ändern und die Vorlage dann drucken kannst.",
+        [
+          "Schneemann mit Zylinder",
+          "Laterne im Schnee",
+          "Kardinal auf verschneitem Zweig",
+          "Selbu-Stern"
+        ]
+      ]
+    },
     "quilts-in-centimeters": {
       "title": "Quilts in Zentimetern, auf A4",
       "summary": "Der Quiltplaner und jeder Block lassen sich jetzt in Zentimetern messen: ein echtes metrisches Muster mit 0,75 cm Nahtzugabe, Zuschnitten auf halbe Zentimeter, Stoff in Metern und PDFs auf A4. Englische Seiten öffnen in Zoll, alle anderen in Zentimetern, und überall lässt sich umschalten.",
@@ -926,6 +949,15 @@
     }
   },
   "changelog": {
+    "Seasonal patterns, starting with winter": {
+      "title": "Saisonale Muster, zuerst der Winter",
+      "items": [
+        "Ein Bereich Saisonal im Menü, mit einer Seite pro Jahreszeit",
+        "Winter: 31 Muster aus den Werkzeugen der Seite in Winterfarben",
+        "Acht neue Kreuzstichvorlagen: ein Schneemann, Fäustlinge, eine Kerze, eine Laterne, Eiszapfen, ein Polarstern, ein Kardinal und ein Selbu-Stern",
+        "Tartan-Beispiele in Beiträgen zeigen das ganze Muster statt eines einzigen Streifens"
+      ]
+    },
     "Quilts and blocks in centimeters": {
       "title": "Quilts und Blöcke in Zentimetern",
       "items": [

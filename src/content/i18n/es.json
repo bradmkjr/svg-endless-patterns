@@ -1,5 +1,28 @@
 {
   "posts": {
+    "winter-patterns": {
+      "title": "Patrones de temporada, empezando por el invierno",
+      "summary": "Una nueva sección De temporada reúne patrones para cada época del año de todo el sitio. Su primera colección es el invierno: 31 patrones, desde un muñeco de nieve con sombrero de copa y una estrella de Selbu en punto de cruz hasta un copo de Koch, un quilt de bolas de nieve y un tartán rojo y verde.",
+      "blocks": [
+        "Hay una nueva sección [De temporada](/seasonal/) en el menú, y su primera colección es el [invierno](/seasonal/winter/): 31 patrones de las herramientas del sitio, en nieve, luz de estrellas y verde perenne. Se agrupan en muñecos de nieve, copos y hielo, velas y faroles, coronas, estrellas y bosque.",
+        "Colores de invierno en patrones conocidos",
+        "La mayoría son patrones de la biblioteca en colores de invierno: un copo de Koch sobre azul marino, un quilt [Snowball](/blocks/snowball/) en azul hielo, un laberinto cuyas paredes esconden “LET IT SNOW”, una celosía de hielo agrietado, cuadros búfalo y un tartán rojo y verde. Cada muestra se abre con sus ajustes, así que puedes partir de ella y hacerla tuya.",
+        [
+          "Copo de Koch",
+          "Quilt Snowball",
+          "Un laberinto que esconde “LET IT SNOW”, resuelto",
+          "Tartán rojo y verde"
+        ],
+        "Dibujados para el invierno",
+        "Para la colección se dibujaron ocho gráficos de punto de cruz: un muñeco de nieve con sombrero de copa, un par de manoplas, una vela con acebo, un farol en la nieve, una cenefa de carámbanos, una estrella polar, un cardenal en una rama nevada y una estrella de Selbu de ocho puntas. Cada uno se abre en el [creador de punto de cruz](/cross-stitch/), donde puedes cambiar la cuenta, los colores y el acabado, y luego imprimir el gráfico.",
+        [
+          "Muñeco de nieve con sombrero de copa",
+          "Farol en la nieve",
+          "Cardenal en una rama nevada",
+          "Estrella de Selbu"
+        ]
+      ]
+    },
     "quilts-in-centimeters": {
       "title": "Colchas en centímetros, en A4",
       "summary": "El planificador de colchas y todos los bloques ahora se pueden medir en centímetros: un patrón métrico de verdad, con costura de 0,75 cm, cortes en marcas de medio centímetro, tela en metros y PDF en A4. Las páginas en inglés se abren en pulgadas y las demás en centímetros, y en todas se puede cambiar.",
@@ -926,6 +949,15 @@
     }
   },
   "changelog": {
+    "Seasonal patterns, starting with winter": {
+      "title": "Patrones de temporada, empezando por el invierno",
+      "items": [
+        "Una sección De temporada en el menú, con una página para cada estación",
+        "Invierno: 31 patrones de las herramientas del sitio en colores de invierno",
+        "Ocho gráficos nuevos de punto de cruz: un muñeco de nieve, manoplas, una vela, un farol, carámbanos, una estrella polar, un cardenal y una estrella de Selbu",
+        "Las muestras de tartán en las entradas muestran todo el patrón, no una sola franja"
+      ]
+    },
     "Quilts and blocks in centimeters": {
       "title": "Colchas y bloques en centímetros",
       "items": [

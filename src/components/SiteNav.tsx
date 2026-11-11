@@ -28,6 +28,7 @@ export function SiteNav({ locale }: { locale: Locale }) {
           <Link href={href("/crochet/")}>{t.crochet}</Link>
           <Link href={href("/weaving/")}>{weaving[locale].nav}</Link>
           <Link href={href("/paper-puzzles/")}>{t.puzzles}</Link>
+          <Link href={href("/seasonal/")}>{t.seasonal}</Link>
           <Link href={href("/patterns/")}>{t.library}</Link>
           <Link href={href("/palettes/")}>{t.palettes}</Link>
           <Link href={href("/blog/")}>{t.blog}</Link>

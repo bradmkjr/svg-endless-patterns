@@ -1,5 +1,28 @@
 {
   "posts": {
+    "winter-patterns": {
+      "title": "Seizoenspatronen, te beginnen met de winter",
+      "summary": "Een nieuwe rubriek Seizoenen verzamelt patronen voor de tijd van het jaar van de hele site. De eerste collectie is de winter: 31 patronen, van een sneeuwpop met hoge hoed en een Selbu-ster in kruissteek tot een Koch-sneeuwvlok, een sneeuwbalquilt en een rood-groene tartan.",
+      "blocks": [
+        "Er is een nieuwe rubriek [Seizoenen](/seasonal/) in het menu, en de eerste collectie is de [winter](/seasonal/winter/): 31 patronen uit de gereedschappen van de site, in sneeuw, sterrenlicht en dennengroen. Ze zijn ingedeeld in sneeuwpoppen, sneeuwvlokken en ijs, kaarsen en lantaarns, kransen, sterren en bos.",
+        "Winterkleuren op bekende patronen",
+        "De meeste zijn patronen uit de bibliotheek in winterkleuren: een Koch-sneeuwvlok op marineblauw, een [Snowball](/blocks/snowball/)-quilt in ijsblauw, een doolhof waarvan de muren „LET IT SNOW” verbergen, een gebarsten-ijsrooster, buffalo-ruit en een rood-groene tartan. Elk voorbeeld opent met zijn instellingen, zodat je ervan kunt uitgaan en het je eigen kunt maken.",
+        [
+          "Koch-sneeuwvlok",
+          "Snowball-quilt",
+          "Een doolhof dat „LET IT SNOW” verbergt, opgelost",
+          "Rood-groene tartan"
+        ],
+        "Getekend voor de winter",
+        "Voor de collectie zijn acht kruissteekpatronen getekend: een sneeuwpop met hoge hoed, een paar wanten, een kaars met hulst, een lantaarn in de sneeuw, een rand van ijspegels, een poolster, een kardinaal op een besneeuwde tak en een achtpuntige Selbu-ster. Elk opent in de [kruissteekmaker](/cross-stitch/), waar je de stof, kleuren en afwerking kunt veranderen en het patroon daarna kunt printen.",
+        [
+          "Sneeuwpop met hoge hoed",
+          "Lantaarn in de sneeuw",
+          "Kardinaal op een besneeuwde tak",
+          "Selbu-ster"
+        ]
+      ]
+    },
     "quilts-in-centimeters": {
       "title": "Quilts in centimeters, op A4",
       "summary": "De quiltplanner en elk blok kun je nu in centimeters meten: een echt metrisch patroon met een naad van 0,75 cm, snijmaten op halve centimeters, stof in meters en pdf’s op A4. Engelse pagina’s openen in inches en de andere in centimeters, en overal kun je wisselen.",
@@ -926,6 +949,15 @@
     }
   },
   "changelog": {
+    "Seasonal patterns, starting with winter": {
+      "title": "Seizoenspatronen, te beginnen met de winter",
+      "items": [
+        "Een rubriek Seizoenen in het menu, met een pagina per seizoen",
+        "Winter: 31 patronen uit de gereedschappen van de site in winterkleuren",
+        "Acht nieuwe kruissteekpatronen: een sneeuwpop, wanten, een kaars, een lantaarn, ijspegels, een poolster, een kardinaal en een Selbu-ster",
+        "Tartanvoorbeelden in berichten tonen het hele patroon in plaats van één streep"
+      ]
+    },
     "Quilts and blocks in centimeters": {
       "title": "Quilts en blokken in centimeters",
       "items": [

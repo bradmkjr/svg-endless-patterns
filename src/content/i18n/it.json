@@ -1,5 +1,28 @@
 {
   "posts": {
+    "winter-patterns": {
+      "title": "Motivi di stagione, a cominciare dall’inverno",
+      "summary": "Una nuova sezione Stagionali raccoglie motivi per ogni periodo dell’anno da tutto il sito. La prima raccolta è l’inverno: 31 motivi, da un pupazzo di neve col cilindro e una stella di Selbu a punto croce a un fiocco di Koch, un quilt di palle di neve e un tartan rosso e verde.",
+      "blocks": [
+        "Nel menu c’è una nuova sezione [Stagionali](/seasonal/), e la sua prima raccolta è l’[inverno](/seasonal/winter/): 31 motivi dagli strumenti del sito, in neve, luce di stelle e verde abete. Sono raggruppati in pupazzi di neve, fiocchi e ghiaccio, candele e lanterne, ghirlande, stelle e bosco.",
+        "Colori d’inverno su motivi conosciuti",
+        "La maggior parte sono motivi della libreria in colori invernali: un fiocco di Koch su blu notte, un quilt [Snowball](/blocks/snowball/) azzurro ghiaccio, un labirinto i cui muri nascondono “LET IT SNOW”, un reticolo di ghiaccio incrinato, il quadro buffalo e un tartan rosso e verde. Ogni esempio si apre con le sue impostazioni, così puoi partire da lì e farlo tuo.",
+        [
+          "Fiocco di Koch",
+          "Quilt Snowball",
+          "Un labirinto che nasconde “LET IT SNOW”, risolto",
+          "Tartan rosso e verde"
+        ],
+        "Disegnati per l’inverno",
+        "Per la raccolta sono stati disegnati otto schemi a punto croce: un pupazzo di neve col cilindro, un paio di muffole, una candela con l’agrifoglio, una lanterna nella neve, una bordura di ghiaccioli, una stella polare, un cardinale su un ramo innevato e una stella di Selbu a otto punte. Ognuno si apre nel [creatore di punto croce](/cross-stitch/), dove puoi cambiare tela, colori e finitura, poi stampare lo schema.",
+        [
+          "Pupazzo di neve col cilindro",
+          "Lanterna nella neve",
+          "Cardinale su un ramo innevato",
+          "Stella di Selbu"
+        ]
+      ]
+    },
     "quilts-in-centimeters": {
       "title": "Quilt in centimetri, su A4",
       "summary": "Il pianificatore di quilt e tutti i blocchi ora si possono misurare in centimetri: un vero cartamodello metrico, con cucitura di 0,75 cm, tagli sui mezzi centimetri, stoffa in metri e PDF su A4. Le pagine in inglese si aprono in pollici e le altre in centimetri, e tutte possono cambiare.",
@@ -926,6 +949,15 @@
     }
   },
   "changelog": {
+    "Seasonal patterns, starting with winter": {
+      "title": "Motivi di stagione, a cominciare dall’inverno",
+      "items": [
+        "Una sezione Stagionali nel menu, con una pagina per ogni stagione",
+        "Inverno: 31 motivi dagli strumenti del sito in colori invernali",
+        "Otto nuovi schemi a punto croce: un pupazzo di neve, muffole, una candela, una lanterna, ghiaccioli, una stella polare, un cardinale e una stella di Selbu",
+        "Gli esempi di tartan negli articoli mostrano l’intero motivo, non una sola fascia"
+      ]
+    },
     "Quilts and blocks in centimeters": {
       "title": "Quilt e blocchi in centimetri",
       "items": [

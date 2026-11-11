@@ -43,7 +43,8 @@ export function ToolSample({ sample, locale }: { sample: PostSample; locale: Loc
             style={{
               aspectRatio: "1",
               backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(svg)}")`,
-              backgroundSize: `${(Number(/viewBox="0 0 ([\d.]+) /.exec(svg)?.[1] ?? 4) / 4) * 100}% auto`,
+              // Its width in inches: a tartan's viewBox counts threads, so the width attribute comes first.
+              backgroundSize: `${(Number(/width="([\d.]+)in"/.exec(svg)?.[1] ?? /viewBox="0 0 ([\d.]+) /.exec(svg)?.[1] ?? 4) / 4) * 100}% auto`,
             }}
           />
         ) : (

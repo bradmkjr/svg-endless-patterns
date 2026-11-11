@@ -1,5 +1,28 @@
 {
   "posts": {
+    "winter-patterns": {
+      "title": "Motifs de saison, à commencer par l’hiver",
+      "summary": "Une nouvelle rubrique Saisons rassemble des motifs pour chaque moment de l’année, venus de tout le site. Sa première collection est l’hiver : 31 motifs, d’un bonhomme de neige en haut-de-forme et d’une étoile de Selbu au point de croix à un flocon de Koch, un quilt de boules de neige et un tartan rouge et vert.",
+      "blocks": [
+        "Une nouvelle rubrique [Saisons](/seasonal/) apparaît dans le menu, et sa première collection est l’[hiver](/seasonal/winter/) : 31 motifs tirés des outils du site, en neige, lumière d’étoiles et vert sapin. Ils sont regroupés en bonshommes de neige, flocons et glace, bougies et lanternes, couronnes, étoiles et forêt.",
+        "Les couleurs de l’hiver sur des motifs connus",
+        "La plupart sont des motifs de la bibliothèque aux couleurs de l’hiver : un flocon de Koch sur fond marine, un quilt [Snowball](/blocks/snowball/) bleu glace, un labyrinthe dont les murs cachent « LET IT SNOW », un treillis de glace brisée, du carreau bûcheron et un tartan rouge et vert. Chaque exemple s’ouvre avec ses réglages : partez-en et faites-le vôtre.",
+        [
+          "Flocon de Koch",
+          "Quilt Snowball",
+          "Un labyrinthe qui cache « LET IT SNOW », résolu",
+          "Tartan rouge et vert"
+        ],
+        "Dessinés pour l’hiver",
+        "Huit grilles de point de croix ont été dessinées pour la collection : un bonhomme de neige en haut-de-forme, une paire de moufles, une bougie dans le houx, une lanterne dans la neige, une bordure de glaçons, une étoile polaire, un cardinal sur une branche enneigée et une étoile de Selbu à huit branches. Chacune s’ouvre dans le [créateur de point de croix](/cross-stitch/), où vous pouvez changer la toile, les couleurs et la finition, puis imprimer la grille.",
+        [
+          "Bonhomme de neige en haut-de-forme",
+          "Lanterne dans la neige",
+          "Cardinal sur une branche enneigée",
+          "Étoile de Selbu"
+        ]
+      ]
+    },
     "quilts-in-centimeters": {
       "title": "Des quilts en centimètres, sur A4",
       "summary": "Le planificateur de quilt et tous les blocs se mesurent désormais en centimètres : un vrai patron métrique, avec une couture de 0,75 cm, des coupes au demi-centimètre, le tissu en mètres et des PDF sur A4. Les pages en anglais s’ouvrent en pouces et les autres en centimètres, et toutes peuvent changer.",
@@ -926,6 +949,15 @@
     }
   },
   "changelog": {
+    "Seasonal patterns, starting with winter": {
+      "title": "Motifs de saison, à commencer par l’hiver",
+      "items": [
+        "Une rubrique Saisons dans le menu, avec une page par saison",
+        "Hiver : 31 motifs tirés des outils du site, aux couleurs de l’hiver",
+        "Huit nouvelles grilles de point de croix : un bonhomme de neige, des moufles, une bougie, une lanterne, des glaçons, une étoile polaire, un cardinal et une étoile de Selbu",
+        "Les exemples de tartan dans les articles montrent tout le motif, et non une seule bande"
+      ]
+    },
     "Quilts and blocks in centimeters": {
       "title": "Quilts et blocs en centimètres",
       "items": [

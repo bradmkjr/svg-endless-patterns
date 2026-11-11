@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getPosts } from "@/lib/content";
+import { SEASONS } from "@/lib/seasons";
 import { getBlocks, getStitchPatterns } from "@/lib/patternCatalog";
 import { localePath, SITE_LOCALES } from "@/lib/i18n";
 import { absoluteUrl } from "@/lib/site";
@@ -51,6 +52,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/terms/",
     "/blog/",
     "/changelog/",
+    "/seasonal/",
+    ...SEASONS.map((s) => `/seasonal/${s.id}/`),
     ...posts.map((p) => `/blog/${p.slug}/`),
     ...blocks.map((b) => `/blocks/${b.slug}/`),
     ...knitting.map((s) => `/knitting/${s.slug}/`),

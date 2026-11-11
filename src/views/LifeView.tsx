@@ -25,7 +25,7 @@ export async function LifeView({ locale, option }: { locale: Locale; option?: st
       <PrimaryImageProvider group="life" slug={option ?? OPENING_OPTION.life} name={labels[option ?? OPENING_OPTION.life]}>
         <LifeBuilderRoute option={option} labels={labels} locale={locale} />
       </PrimaryImageProvider>
-      <References ids={["gardnerLife"]} locale={locale} />
+      <References ids={["gardnerLife", "gosperGun", "eater1"]} locale={locale} />
     </div>
   );
 }

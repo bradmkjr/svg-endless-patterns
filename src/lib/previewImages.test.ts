@@ -23,7 +23,7 @@ describe("small pictures", () => {
 
   it("are SVGs from the public API without one", () => {
     vi.stubEnv("NEXT_PUBLIC_PRERENDERED_IMAGES", "");
-    expect(thumbSrc("truchet", "arcs")).toContain("/api/v1.0.5/thumbnail/truchet/arcs");
+    expect(thumbSrc("truchet", "arcs")).toContain("/api/v1.0.6/thumbnail/truchet/arcs");
   });
 });
 
@@ -38,8 +38,8 @@ describe("the build's list", () => {
   it("are asked of the internal URL only", () => {
     vi.stubEnv("API_INTERNAL_URL", "http://127.0.0.1:4000/");
     vi.stubEnv("NEXT_PUBLIC_API_BASE_URL", "https://public.example");
-    expect(internalPreviewUrl("truchet", "arcs.svg")).toBe("http://127.0.0.1:4000/api/v1.0.5/thumbnail/truchet/arcs");
-    expect(internalPreviewUrl("knitColorwork", "heart-block.svg")).toBe("http://127.0.0.1:4000/api/v1.0.5/knit-colorwork/thumbnail/heart-block");
+    expect(internalPreviewUrl("truchet", "arcs.svg")).toBe("http://127.0.0.1:4000/api/v1.0.6/thumbnail/truchet/arcs");
+    expect(internalPreviewUrl("knitColorwork", "heart-block.svg")).toBe("http://127.0.0.1:4000/api/v1.0.6/knit-colorwork/thumbnail/heart-block");
   });
 });
 

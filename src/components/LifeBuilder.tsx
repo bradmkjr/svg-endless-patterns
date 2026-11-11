@@ -111,7 +111,7 @@ export function LifeBuilder({ locale, option, labels, initialState }: { locale: 
               {view === "animation" &&
                 (hasPhases ? (
                   <>
-                    <div className={`${styles.actions} no-print`}>
+                    <div className={`${styles.actions} ${styles.playback} no-print`}>
                       <button type="button" className={styles.secondary} aria-pressed={paused} onClick={() => setPaused((p) => !p)}>
                         {paused ? t.play : t.pause}
                       </button>

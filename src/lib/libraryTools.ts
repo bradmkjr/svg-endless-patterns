@@ -24,7 +24,7 @@ function alphabetical<T extends { name: string }>(items: T[], locale: Locale): T
 
 /** The pattern types that aren't builders with option pages: each has a page of its own. */
 const FIXED_TYPES = [
-  { id: "quilt", title: "quiltTitle", path: "/blocks/" },
+  { id: "blocks", title: "quiltTitle", path: "/blocks/" },
   { id: "knit", title: "knitTitle", path: "/knitting/" },
   { id: "crochet", title: "crochetTitle", path: "/crochet/" },
   { id: "tartan", title: "tartanTitle", path: "/tartans/" },
@@ -95,7 +95,7 @@ export async function libraryTypes(locale: Locale, season: Season | undefined = 
     locale,
   );
   const fixed: (Omit<LibraryType, "total" | "samples" | "inSeason"> & { all: LibrarySample[] })[] = [
-    { id: "quilt", title: t.quiltTitle, text: t.quiltText, output: t.quiltOutput, explore: t.exploreQuilt, href: localePath(locale, "/blocks/"), all: blocks },
+    { id: "blocks", title: t.quiltTitle, text: t.quiltText, output: t.quiltOutput, explore: t.exploreQuilt, href: localePath(locale, "/blocks/"), all: blocks },
     { id: "knit", title: t.knitTitle, text: t.knitText, output: t.knitOutput, explore: t.exploreKnit, href: localePath(locale, "/knitting/"), all: knit },
     { id: "crochet", title: t.crochetTitle, text: t.crochetText, output: t.crochetOutput, explore: t.exploreCrochet, href: localePath(locale, "/crochet/"), all: crochet },
     { id: "tartan", title: t.tartanTitle, text: t.tartanText, output: t.tartanOutput, explore: t.exploreTartan, href: localePath(locale, "/tartans/"), all: tartans },

@@ -32,6 +32,13 @@ describe("the library in season", () => {
     expect(plain.find((type) => type.id === "crossStitch")!.samples[0]!.seasonal).toBeUndefined();
   });
 
+  it("gives every type its own id, for the home page to key them by", async () => {
+    const ids = (await libraryTypes("en")).map((type) => type.id);
+    expect(new Set(ids).size).toBe(ids.length);
+    const links = patternTypeLinks("en").map((link) => link.id);
+    expect(new Set(links).size).toBe(links.length);
+  });
+
   it("works in every language", async () => {
     const winter = getSeason("winter")!;
     for (const locale of ["es", "fr", "de", "pt", "it", "nl"] as const) {

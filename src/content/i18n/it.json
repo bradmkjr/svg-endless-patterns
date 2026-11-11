@@ -972,6 +972,14 @@
     }
   },
   "changelog": {
+    "Winter charts in the cross-stitch builder": {
+      "title": "Gli schemi invernali nello strumento per il punto croce",
+      "items": [
+        "Gli otto schemi invernali, il pupazzo di neve, le muffole, la candela, la lanterna, i ghiaccioli, la stella polare, la stella di Selbu e il cardinale, sono ora motivi dello strumento per il punto croce, ciascuno con la sua pagina",
+        "Ognuno si apre sul tessuto per cui è stato disegnato",
+        "Scegliere un altro motivo riparte dai suoi colori e dal suo tessuto"
+      ]
+    },
     "Winter origami and a menu of every pattern type": {
       "title": "Origami invernali e un menu con tutti i tipi di schema",
       "items": [

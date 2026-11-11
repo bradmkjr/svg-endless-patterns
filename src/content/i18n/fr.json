@@ -972,6 +972,14 @@
     }
   },
   "changelog": {
+    "Winter charts in the cross-stitch builder": {
+      "title": "Les grilles d'hiver dans l'outil de point de croix",
+      "items": [
+        "Les huit grilles d'hiver, le bonhomme de neige, les moufles, la bougie, la lanterne, les glaçons, l'étoile polaire, l'étoile de Selbu et le cardinal, sont désormais des motifs de l'outil de point de croix, chacun avec sa page",
+        "Chacune s'ouvre sur le tissu pour lequel elle a été dessinée",
+        "Choisir un autre motif repart de ses propres couleurs et de son tissu"
+      ]
+    },
     "Winter origami and a menu of every pattern type": {
       "title": "Origami d'hiver et un menu de tous les types de motifs",
       "items": [

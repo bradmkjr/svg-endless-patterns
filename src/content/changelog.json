@@ -1,6 +1,14 @@
 [
   {
     "date": "2026-11-11",
+    "title": "Game of Life patterns that run",
+    "items": [
+      "Life patterns have an Animation view: the sheet runs in a loop exactly one period long, the shortest that comes back to the start, from the phase you chose. Play, pause and three speeds; with reduced motion it holds still",
+      "A Next generation button steps any oscillator forward one phase at a time"
+    ]
+  },
+  {
+    "date": "2026-11-11",
     "title": "Peano and plant fractals, and a bulging wave",
     "items": [
       "Two new fractals: the Peano curve, one line that zigzags through every cell of a grid, and an L-system plant from The Algorithmic Beauty of Plants, with a branch angle to set",

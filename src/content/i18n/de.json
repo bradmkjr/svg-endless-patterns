@@ -972,6 +972,13 @@
     }
   },
   "changelog": {
+    "Game of Life patterns that run": {
+      "title": "Game-of-Life-Muster, die laufen",
+      "items": [
+        "Life-Muster haben eine Animationsansicht: Der Bogen läuft in einer Schleife von genau einer Periode, der kürzesten, die zum Anfang zurückkehrt, ab der gewählten Phase. Abspielen, Pause und drei Tempi; bei reduzierter Bewegung bleibt sie stehen",
+        "Eine Schaltfläche Nächste Generation bringt jeden Oszillator Phase für Phase voran"
+      ]
+    },
     "Peano and plant fractals, and a bulging wave": {
       "title": "Peano- und Pflanzenfraktale, und eine gewölbte Welle",
       "items": [

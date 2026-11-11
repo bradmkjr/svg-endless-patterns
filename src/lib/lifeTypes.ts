@@ -20,10 +20,12 @@ export type LifeRequest = {
 };
 
 export type LifeResult = {
-  svg: { sheet: string; tile: string; phases: string; neighborhood: string };
+  svg: { sheet: string; tile: string; phases: string; neighborhood: string; animation: string };
   name: string;
   kind: "still-life" | "oscillator";
   period: number;
+  /** The phases the animation shows, in order, from the chosen one. Its loop is one period long. */
+  loop: number[];
   phaseCells: number[];
   tile: { cols: number; rows: number };
   sheet: { cols: number; rows: number; width: number; height: number; live: number };

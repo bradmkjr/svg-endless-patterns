@@ -1,7 +1,7 @@
 "use client";
 
 import { ColorInput } from "./ColorInput";
-import { useEffect, useState, type MouseEvent } from "react";
+import { useEffect, useState, type CSSProperties, type MouseEvent } from "react";
 import { generateLife, generateLifePdf, type LifeColors, type LifeRequest, type LifeResult, type Locale } from "@/lib/generator";
 import { downloadBytes, downloadPng, downloadSvg } from "@/lib/download";
 import { useTrackCustomize } from "@/lib/analytics";
@@ -31,7 +31,10 @@ function NumberSelect({ label, value, options, format = String, onChange }: { la
 }
 
 type View = keyof LifeResult["svg"];
-const VIEWS: View[] = ["sheet", "tile", "phases", "neighborhood"];
+const VIEWS: View[] = ["sheet", "animation", "tile", "phases", "neighborhood"];
+/** Seconds per generation. The API's drawing reads the step from `--life-step`, so speed needs no new drawing. */
+const SPEEDS = { slow: 1.2, normal: 0.6, fast: 0.25 } as const;
+type Speed = keyof typeof SPEEDS;
 const COLOR_KEYS: (keyof LifeColors)[] = ["background", "primary", "accent"];
 
 export function LifeBuilder({ locale, option, labels, initialState }: { locale: Locale; option?: string; labels: Record<string, string>; initialState: LifeRequest }) {
@@ -43,6 +46,8 @@ export function LifeBuilder({ locale, option, labels, initialState }: { locale: 
   const [view, setView] = useState<View>("sheet");
   const [status, setStatus] = useState("");
   const [busy, setBusy] = useState(false);
+  const [speed, setSpeed] = useState<Speed>("normal");
+  const [paused, setPaused] = useState(false);
 
   const update = (patch: Partial<LifeRequest>) => setState((s) => ({ ...s, ...patch }));
 
@@ -73,7 +78,11 @@ export function LifeBuilder({ locale, option, labels, initialState }: { locale: 
   };
 
   const svg = result?.svg[view] ?? "";
-  const hasPhases = phaseOptions(state.pattern).length > 1;
+  const period = phaseOptions(state.pattern).length;
+  const hasPhases = period > 1;
+  const nextStep = () => update({ phase: (state.phase + 1) % period });
+  const animating = view === "animation" && hasPhases;
+  const order = (result?.loop ?? phaseOptions(state.pattern)).map((n) => n + 1).join(" → ");
 
   return (
     <div className={styles.builder}>
@@ -89,9 +98,43 @@ export function LifeBuilder({ locale, option, labels, initialState }: { locale: 
           </div>
           {result ? (
             <>
-              <div className={`art ${styles.art}`} role="img" aria-label={t.views[view]} onClick={view === "neighborhood" ? pickCell : undefined} dangerouslySetInnerHTML={{ __html: svg }} />
+              <div
+                className={`art ${styles.art}${animating && paused ? ` ${styles.paused}` : ""}`}
+                style={animating ? ({ "--life-step": `${SPEEDS[speed]}s` } as CSSProperties) : undefined}
+                role="img"
+                aria-label={t.views[view]}
+                onClick={view === "neighborhood" ? pickCell : undefined}
+                dangerouslySetInnerHTML={{ __html: svg }}
+              />
               <p className={styles.note}>{t.notes[state.pattern]}</p>
               {view === "sheet" && <p className={styles.note}>{fill(t.sheetStats, { cols: result.sheet.cols, rows: result.sheet.rows, width: result.sheet.width, height: result.sheet.height, live: result.sheet.live })}</p>}
+              {view === "animation" &&
+                (hasPhases ? (
+                  <>
+                    <div className={`${styles.actions} no-print`}>
+                      <button type="button" className={styles.secondary} aria-pressed={paused} onClick={() => setPaused((p) => !p)}>
+                        {paused ? t.play : t.pause}
+                      </button>
+                      <button type="button" className={styles.secondary} onClick={nextStep}>
+                        {t.nextStep}
+                      </button>
+                      <label className={styles.field}>
+                        <span>{t.speed}</span>
+                        <select value={speed} onChange={(e) => setSpeed(e.target.value as Speed)}>
+                          {(Object.keys(SPEEDS) as Speed[]).map((id) => (
+                            <option key={id} value={id}>
+                              {t.speeds[id]}
+                            </option>
+                          ))}
+                        </select>
+                      </label>
+                    </div>
+                    <p className={styles.note}>{fill(t.loopStats, { period, order })}</p>
+                    <p className={styles.note}>{t.motionNote}</p>
+                  </>
+                ) : (
+                  <p className={styles.note}>{t.stillLoop}</p>
+                ))}
               {view === "tile" && <p className={styles.note}>{fill(t.tileStats, { cols: result.tile.cols, rows: result.tile.rows, spacing: state.spacing })}</p>}
               {view === "phases" && <p className={styles.note}>{hasPhases ? fill(t.phaseStats, { period: result.period, counts: result.phaseCells.join(", ") }) : fill(t.stillStats, { live: result.phaseCells[0] })}</p>}
               {view === "neighborhood" && (
@@ -140,7 +183,14 @@ export function LifeBuilder({ locale, option, labels, initialState }: { locale: 
                 ))}
               </select>
             </label>
-            {hasPhases && <NumberSelect label={t.phase} value={state.phase} options={phaseOptions(state.pattern)} format={(n) => String(n + 1)} onChange={(phase) => update({ phase })} />}
+            {hasPhases && (
+              <>
+                <NumberSelect label={t.phase} value={state.phase} options={phaseOptions(state.pattern)} format={(n) => String(n + 1)} onChange={(phase) => update({ phase })} />
+                <button type="button" className={styles.secondary} onClick={nextStep}>
+                  {t.nextStep}
+                </button>
+              </>
+            )}
           </fieldset>
 
           <fieldset>

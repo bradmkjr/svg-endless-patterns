@@ -972,6 +972,13 @@
     }
   },
   "changelog": {
+    "Game of Life patterns that run": {
+      "title": "Padrões do Jogo da Vida em movimento",
+      "items": [
+        "Os padrões do Life têm uma visão de animação: a folha roda em um ciclo de exatamente um período, o mais curto que volta ao início, a partir da fase escolhida. Reproduzir, pausar e três velocidades; com movimento reduzido, fica parada",
+        "Um botão Próxima geração avança qualquer oscilador uma fase por vez"
+      ]
+    },
     "Peano and plant fractals, and a bulging wave": {
       "title": "Fractais de Peano e de planta, e uma onda abaulada",
       "items": [

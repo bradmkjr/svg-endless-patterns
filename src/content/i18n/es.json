@@ -972,6 +972,13 @@
     }
   },
   "changelog": {
+    "Game of Life patterns that run": {
+      "title": "Patrones del Juego de la vida en marcha",
+      "items": [
+        "Los patrones de Life tienen una vista de animación: la hoja se repite en un ciclo de exactamente un período, el más corto que vuelve al inicio, desde la fase que elijas. Reproducir, pausa y tres velocidades; con movimiento reducido se queda quieta",
+        "Un botón de Siguiente generación avanza cualquier oscilador una fase cada vez"
+      ]
+    },
     "Peano and plant fractals, and a bulging wave": {
       "title": "Fractales de Peano y de planta, y una onda abombada",
       "items": [

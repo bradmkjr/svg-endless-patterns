@@ -448,3 +448,8 @@
   border-radius: 3px;
   box-shadow: 0 8px 26px rgba(50, 40, 20, 0.2);
 }
+
+/* Holds an animated drawing on its current frame. The drawing's own style sets the animation inline. */
+.paused :global(.life-frame) {
+  animation-play-state: paused !important;
+}

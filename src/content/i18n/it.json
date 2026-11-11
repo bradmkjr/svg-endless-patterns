@@ -972,6 +972,13 @@
     }
   },
   "changelog": {
+    "Game of Life patterns that run": {
+      "title": "Pattern del Gioco della vita in movimento",
+      "items": [
+        "I pattern di Life hanno una vista Animazione: il foglio gira in un ciclo lungo esattamente un periodo, il più breve che torna all’inizio, dalla fase scelta. Riproduci, pausa e tre velocità; con movimento ridotto resta fermo",
+        "Un pulsante Generazione successiva fa avanzare qualsiasi oscillatore di una fase alla volta"
+      ]
+    },
     "Peano and plant fractals, and a bulging wave": {
       "title": "Frattali di Peano e della pianta, e un'onda rigonfia",
       "items": [

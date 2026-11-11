@@ -972,6 +972,13 @@
     }
   },
   "changelog": {
+    "Game of Life patterns that run": {
+      "title": "Des motifs du jeu de la vie qui s’animent",
+      "items": [
+        "Les motifs de Life ont une vue Animation : la feuille tourne en boucle sur exactement une période, la plus courte qui revient au départ, à partir de la phase choisie. Lecture, pause et trois vitesses ; avec moins d’animations, elle reste immobile",
+        "Un bouton Génération suivante fait avancer n’importe quel oscillateur d’une phase à la fois"
+      ]
+    },
     "Peano and plant fractals, and a bulging wave": {
       "title": "Fractales de Peano et de plante, et une onde bombée",
       "items": [

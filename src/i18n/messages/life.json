@@ -8,7 +8,8 @@
       "sheet": "Sheet",
       "tile": "Repeat tile",
       "phases": "Phases",
-      "neighborhood": "The rule"
+      "neighborhood": "The rule",
+      "animation": "Animation"
     },
     "sheetStats": "{cols} × {rows} cells, {width} × {height} in, {live} live cells.",
     "tileStats": "One tile is {cols} × {rows} cells. Copies sit {spacing} empty cells apart, too far to affect each other, so the whole sheet behaves as Life says it should.",
@@ -19,6 +20,18 @@
     "design": "Design",
     "pattern": "Pattern",
     "phase": "Phase",
+    "nextStep": "Next generation",
+    "play": "Play",
+    "pause": "Pause",
+    "speed": "Speed",
+    "speeds": {
+      "slow": "Slow",
+      "normal": "Normal",
+      "fast": "Fast"
+    },
+    "loopStats": "Runs in a loop of {period} generations, the shortest one that comes back to the start: phases {order}, then round again. The copies never touch, so every one runs exactly as Life says.",
+    "stillLoop": "A still life is its own next generation, so its loop is a single frame and nothing moves. Choose an oscillator to watch one run.",
+    "motionNote": "If your device asks for reduced motion, the animation holds on the chosen phase. Next generation steps through it by hand.",
     "layout": "Layout",
     "columns": "Columns",
     "rows": "Rows",
@@ -68,7 +81,8 @@
       "sheet": "Hoja",
       "tile": "Módulo de repetición",
       "phases": "Fases",
-      "neighborhood": "La regla"
+      "neighborhood": "La regla",
+      "animation": "Animación"
     },
     "sheetStats": "{cols} × {rows} celdas, {width} × {height} in, {live} celdas vivas.",
     "tileStats": "Un módulo tiene {cols} × {rows} celdas. Las copias están a {spacing} celdas vacías, demasiado lejos para influirse, así que toda la hoja se comporta como dice Life.",
@@ -79,6 +93,18 @@
     "design": "Diseño",
     "pattern": "Patrón",
     "phase": "Fase",
+    "nextStep": "Siguiente generación",
+    "play": "Reproducir",
+    "pause": "Pausa",
+    "speed": "Velocidad",
+    "speeds": {
+      "slow": "Lenta",
+      "normal": "Normal",
+      "fast": "Rápida"
+    },
+    "loopStats": "Se repite en un ciclo de {period} generaciones, el más corto que vuelve al inicio: fases {order}, y otra vez. Las copias nunca se tocan, así que cada una evoluciona tal como dice Life.",
+    "stillLoop": "Una vida estática es su propia generación siguiente, así que su ciclo es un solo fotograma y nada se mueve. Elige un oscilador para verlo en marcha.",
+    "motionNote": "Si tu dispositivo pide movimiento reducido, la animación se queda en la fase elegida. Siguiente generación la recorre a mano.",
     "layout": "Disposición",
     "columns": "Columnas",
     "rows": "Filas",
@@ -128,7 +154,8 @@
       "sheet": "Feuille",
       "tile": "Motif de répétition",
       "phases": "Phases",
-      "neighborhood": "La règle"
+      "neighborhood": "La règle",
+      "animation": "Animation"
     },
     "sheetStats": "{cols} × {rows} cellules, {width} × {height} po, {live} cellules vivantes.",
     "tileStats": "Un motif fait {cols} × {rows} cellules. Les copies sont à {spacing} cellules vides, trop loin pour s'influencer : toute la feuille se comporte comme le veut Life.",
@@ -139,6 +166,18 @@
     "design": "Dessin",
     "pattern": "Motif",
     "phase": "Phase",
+    "nextStep": "Génération suivante",
+    "play": "Lecture",
+    "pause": "Pause",
+    "speed": "Vitesse",
+    "speeds": {
+      "slow": "Lente",
+      "normal": "Normale",
+      "fast": "Rapide"
+    },
+    "loopStats": "Tourne en boucle sur {period} générations, la plus courte qui revient au départ : phases {order}, puis on recommence. Les copies ne se touchent jamais, donc chacune évolue exactement comme le veut Life.",
+    "stillLoop": "Une vie stable est sa propre génération suivante : sa boucle tient en une seule image et rien ne bouge. Choisissez un oscillateur pour le voir tourner.",
+    "motionNote": "Si votre appareil demande moins d’animations, l’animation reste sur la phase choisie. Génération suivante la parcourt à la main.",
     "layout": "Disposition",
     "columns": "Colonnes",
     "rows": "Rangées",
@@ -188,7 +227,8 @@
       "sheet": "Bogen",
       "tile": "Rapportkachel",
       "phases": "Phasen",
-      "neighborhood": "Die Regel"
+      "neighborhood": "Die Regel",
+      "animation": "Animation"
     },
     "sheetStats": "{cols} × {rows} Zellen, {width} × {height} Zoll, {live} lebende Zellen.",
     "tileStats": "Eine Kachel hat {cols} × {rows} Zellen. Die Kopien liegen {spacing} leere Zellen auseinander, zu weit, um sich zu beeinflussen, also verhält sich der ganze Bogen, wie Life es verlangt.",
@@ -199,6 +239,18 @@
     "design": "Design",
     "pattern": "Muster",
     "phase": "Phase",
+    "nextStep": "Nächste Generation",
+    "play": "Abspielen",
+    "pause": "Pause",
+    "speed": "Tempo",
+    "speeds": {
+      "slow": "Langsam",
+      "normal": "Normal",
+      "fast": "Schnell"
+    },
+    "loopStats": "Läuft in einer Schleife von {period} Generationen, der kürzesten, die zum Anfang zurückkehrt: Phasen {order}, dann von vorn. Die Kopien berühren sich nie, also läuft jede genau so, wie Life es vorgibt.",
+    "stillLoop": "Ein Stillleben ist seine eigene nächste Generation: Seine Schleife ist ein einziges Bild, und nichts bewegt sich. Wähle einen Oszillator, um einen laufen zu sehen.",
+    "motionNote": "Wenn dein Gerät reduzierte Bewegung wünscht, bleibt die Animation auf der gewählten Phase. Mit Nächste Generation gehst du sie von Hand durch.",
     "layout": "Anordnung",
     "columns": "Spalten",
     "rows": "Reihen",
@@ -248,7 +300,8 @@
       "sheet": "Folha",
       "tile": "Módulo de repetição",
       "phases": "Fases",
-      "neighborhood": "A regra"
+      "neighborhood": "A regra",
+      "animation": "Animação"
     },
     "sheetStats": "{cols} × {rows} células, {width} × {height} pol, {live} células vivas.",
     "tileStats": "Um módulo tem {cols} × {rows} células. As cópias ficam a {spacing} células vazias, longe demais para se afetarem, então a folha inteira se comporta como o Life manda.",
@@ -259,6 +312,18 @@
     "design": "Desenho",
     "pattern": "Padrão",
     "phase": "Fase",
+    "nextStep": "Próxima geração",
+    "play": "Reproduzir",
+    "pause": "Pausar",
+    "speed": "Velocidade",
+    "speeds": {
+      "slow": "Lenta",
+      "normal": "Normal",
+      "fast": "Rápida"
+    },
+    "loopStats": "Roda em um ciclo de {period} gerações, o mais curto que volta ao início: fases {order}, e de novo. As cópias nunca se tocam, então cada uma evolui exatamente como o Life manda.",
+    "stillLoop": "Uma vida estática é a sua própria próxima geração, então o ciclo dela é um único quadro e nada se mexe. Escolha um oscilador para ver um rodando.",
+    "motionNote": "Se o seu dispositivo pede movimento reduzido, a animação fica na fase escolhida. Próxima geração percorre as fases à mão.",
     "layout": "Disposição",
     "columns": "Colunas",
     "rows": "Fileiras",
@@ -308,7 +373,8 @@
       "sheet": "Foglio",
       "tile": "Piastrella",
       "phases": "Fasi",
-      "neighborhood": "La regola"
+      "neighborhood": "La regola",
+      "animation": "Animazione"
     },
     "sheetStats": "{cols} × {rows} celle, {width} × {height} in, {live} celle vive.",
     "tileStats": "Una piastrella è di {cols} × {rows} celle. Le copie distano {spacing} celle vuote, troppo per influenzarsi, quindi tutto il foglio si comporta come vuole Life.",
@@ -319,6 +385,18 @@
     "design": "Disegno",
     "pattern": "Motivo",
     "phase": "Fase",
+    "nextStep": "Generazione successiva",
+    "play": "Riproduci",
+    "pause": "Pausa",
+    "speed": "Velocità",
+    "speeds": {
+      "slow": "Lenta",
+      "normal": "Normale",
+      "fast": "Veloce"
+    },
+    "loopStats": "Gira in un ciclo di {period} generazioni, il più breve che torna all’inizio: fasi {order}, poi di nuovo. Le copie non si toccano mai, quindi ognuna evolve esattamente come vuole Life.",
+    "stillLoop": "Una vita statica è la propria generazione successiva: il suo ciclo è un solo fotogramma e nulla si muove. Scegli un oscillatore per vederne uno in azione.",
+    "motionNote": "Se il tuo dispositivo chiede movimento ridotto, l’animazione resta sulla fase scelta. Generazione successiva la percorre a mano.",
     "layout": "Disposizione",
     "columns": "Colonne",
     "rows": "Righe",
@@ -368,7 +446,8 @@
       "sheet": "Vel",
       "tile": "Herhaaltegel",
       "phases": "Fasen",
-      "neighborhood": "De regel"
+      "neighborhood": "De regel",
+      "animation": "Animatie"
     },
     "sheetStats": "{cols} × {rows} cellen, {width} × {height} in, {live} levende cellen.",
     "tileStats": "Eén tegel is {cols} × {rows} cellen. Kopieën staan {spacing} lege cellen uit elkaar, te ver om elkaar te beïnvloeden, dus het hele vel gedraagt zich zoals Life het voorschrijft.",
@@ -379,6 +458,18 @@
     "design": "Ontwerp",
     "pattern": "Patroon",
     "phase": "Fase",
+    "nextStep": "Volgende generatie",
+    "play": "Afspelen",
+    "pause": "Pauze",
+    "speed": "Snelheid",
+    "speeds": {
+      "slow": "Langzaam",
+      "normal": "Normaal",
+      "fast": "Snel"
+    },
+    "loopStats": "Loopt in een lus van {period} generaties, de kortste die terugkomt bij het begin: fasen {order}, en dan opnieuw. De kopieën raken elkaar nooit, dus elk loopt precies zoals Life het voorschrijft.",
+    "stillLoop": "Een stilleven is zijn eigen volgende generatie: de lus is één beeld en niets beweegt. Kies een oscillator om er een te zien lopen.",
+    "motionNote": "Als je apparaat om minder beweging vraagt, blijft de animatie op de gekozen fase staan. Met Volgende generatie loop je er met de hand doorheen.",
     "layout": "Indeling",
     "columns": "Kolommen",
     "rows": "Rijen",

@@ -972,6 +972,13 @@
     }
   },
   "changelog": {
+    "Game of Life patterns that run": {
+      "title": "Game of Life-patronen die bewegen",
+      "items": [
+        "Life-patronen hebben een animatieweergave: het vel loopt in een lus van precies één periode, de kortste die terugkomt bij het begin, vanaf de gekozen fase. Afspelen, pauze en drie snelheden; bij minder beweging blijft het stil staan",
+        "Een knop Volgende generatie zet elke oscillator fase voor fase verder"
+      ]
+    },
     "Peano and plant fractals, and a bulging wave": {
       "title": "Peano- en plantfractals, en een bollende golf",
       "items": [

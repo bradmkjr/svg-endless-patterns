@@ -35,7 +35,7 @@ export type PostSample =
   | { kind: "crochetColorwork"; slug: ""; query: string; view: "square" | "chart"; caption: string; locale?: Locale }
   | { kind: "checkerboard"; slug: ""; query: string; view: "art" | "repeat"; caption: string; locale?: Locale }
   | { kind: "puzzle"; slug: string; query: string; view: "puzzle" | "solution"; caption: string; locale?: Locale }
-  | { kind: "life"; slug: ""; query: string; view: "sheet" | "tile" | "phases" | "neighborhood"; caption: string; locale?: Locale }
+  | { kind: "life"; slug: ""; query: string; view: "sheet" | "tile" | "phases" | "neighborhood" | "animation"; caption: string; locale?: Locale }
   | { kind: "fractal"; slug: ""; query: string; view: "art" | "outline"; caption: string; locale?: Locale }
   | { kind: "tieDye"; slug: ""; query: string; view: "art" | "guide"; caption: string; locale?: Locale }
   | { kind: "truchet"; slug: ""; query: string; view: "repeat"; caption: string; locale?: Locale }

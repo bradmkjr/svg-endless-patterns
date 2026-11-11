@@ -372,7 +372,9 @@
         "explore": "Faltmuster erstellen"
       }
     },
-    "seeAllType": "Alles in {name} ansehen"
+    "seeAllType": "Alles in {name} ansehen",
+    "seasonNow": "Jetzt in der Saison",
+    "seasonLink": "Die ganze Sammlung ansehen"
   },
   "about": {
     "metaTitle": "So funktionieren die Berechnungen",

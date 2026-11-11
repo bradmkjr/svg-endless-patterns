@@ -2,13 +2,14 @@ import type { Locale } from "./generator";
 import { getBlocks, getStitchPatterns } from "./patternCatalog";
 import { localePath, messages } from "./i18n";
 import { serializeTartanState, defaultTartanState, TARTAN_PRESETS } from "./tartanState";
-import { optionHref, thumbSrc, TOOL_OPTIONS, type ThumbGroup, type ToolId } from "./toolOptions";
+import { optionHref, slugFor, thumbSrc, TOOL_OPTIONS, type ThumbGroup, type ToolId } from "./toolOptions";
+import { seasonSamples, type Season } from "./seasons";
 import { optionLabels } from "./toolPages";
 import { stitchLabel } from "./stitchState";
 import { weavingDraftLinks } from "./weavingDrafts";
 
-/** One pattern shown under its type. */
-export type LibrarySample = { name: string; href: string; src: string };
+/** One pattern shown under its type. `seasonal`: it's in the season that's on now. */
+export type LibrarySample = { name: string; href: string; src: string; seasonal?: boolean };
 export type LibraryType = { id: string; title: string; text: string; output: string; explore: string; href: string; total: number; samples: LibrarySample[] };
 
 /** How many patterns each type shows in the library. */
@@ -44,8 +45,40 @@ export function patternTypeLinks(locale: Locale): PatternTypeLink[] {
   ].sort((a, b) => order.compare(a.title, b.title));
 }
 
-/** Every pattern type on the site, alphabetical by title, with its patterns alphabetical by name. */
-export async function libraryTypes(locale: Locale): Promise<LibraryType[]> {
+/**
+ * The library pages of a season's designs: every sample in the collection that is a design with a
+ * page of its own, such as a cross-stitch chart, a quilt block or an origami model. Samples that
+ * only recolor a tool's opening design name none, and are left out.
+ */
+export function seasonalHrefs(season: Season, locale: Locale): Set<string> {
+  const hrefs = new Set<string>();
+  for (const sample of seasonSamples(season)) {
+    const params = new URLSearchParams(sample.query);
+    if (sample.kind === "block") hrefs.add(localePath(locale, `/blocks/${sample.slug}/`));
+    else if (sample.kind === "knit") hrefs.add(localePath(locale, `/knitting/${sample.slug}/`));
+    else if (sample.kind === "crochet") hrefs.add(localePath(locale, `/crochet/${sample.slug}/`));
+    else {
+      const tool = (sample.kind === "celtic" ? "celticKnot" : sample.kind) as ToolId;
+      if (!(tool in TOOL_OPTIONS)) continue;
+      const value = params.get(TOOL_OPTIONS[tool].param);
+      const slug = sample.slug || (value === null ? undefined : slugFor(tool, value));
+      if (slug) hrefs.add(optionHref(tool, locale, slug));
+    }
+  }
+  return hrefs;
+}
+
+/**
+ * Every pattern type on the site, alphabetical by title, with its patterns alphabetical by name.
+ * While a season is on, its designs come first in each type and are marked, for the library to
+ * show them up front.
+ */
+export async function libraryTypes(locale: Locale, season: Season | undefined = undefined): Promise<LibraryType[]> {
+  const inSeason = season ? seasonalHrefs(season, locale) : new Set<string>();
+  const seasonFirst = (items: LibrarySample[]): LibrarySample[] => {
+    const marked = items.map((item) => (inSeason.has(item.href) ? { ...item, seasonal: true } : item));
+    return [...marked.filter((item) => item.seasonal), ...marked.filter((item) => !item.seasonal)];
+  };
   const t = messages(locale).library;
   const toolText = t.tools as Record<string, { title: string; text: string; output: string; explore: string }>;
   const fromSlugs = (group: ThumbGroup, path: string, items: { slug: string; name: string }[]) => alphabetical(items, locale).map((item) => ({ name: item.name, href: localePath(locale, `${path}${item.slug}/`), src: thumbSrc(group, item.slug) }));
@@ -76,7 +109,7 @@ export async function libraryTypes(locale: Locale): Promise<LibraryType[]> {
     }),
   );
   return alphabetical(
-    [...fixed, ...tools].map(({ all, ...type }) => ({ ...type, name: type.title, total: all.length, samples: all.slice(0, SAMPLES_PER_TYPE) })),
+    [...fixed, ...tools].map(({ all, ...type }) => ({ ...type, name: type.title, total: all.length, samples: seasonFirst(all).slice(0, SAMPLES_PER_TYPE) })),
     locale,
   );
 }

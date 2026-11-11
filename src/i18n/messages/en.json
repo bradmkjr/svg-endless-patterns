@@ -372,7 +372,9 @@
         "explore": "Make a crease pattern"
       }
     },
-    "seeAllType": "See everything in {name}"
+    "seeAllType": "See everything in {name}",
+    "seasonNow": "In season now",
+    "seasonLink": "See the whole collection"
   },
   "about": {
     "metaTitle": "How the Calculations Work",

@@ -9,11 +9,13 @@ export type SeasonId = "winter";
 /** A sample without its caption, which comes from the season's text by `id`. */
 export type SeasonSample = PostSample extends infer S ? (S extends PostSample ? Omit<S, "caption"> & { id: string } : never) : never;
 export type SeasonGroup = { id: string; samples: SeasonSample[] };
-export type Season = { id: SeasonId; groups: SeasonGroup[]; featured: string[] };
+/** `months`: when the season is on, 1 for January; the pattern library puts its designs first then. */
+export type Season = { id: SeasonId; months: number[]; groups: SeasonGroup[]; featured: string[] };
 
 export const SEASONS: Season[] = [
   {
     id: "winter",
+    months: [11, 12, 1, 2],
     featured: ["snowman", "selbuStar", "kochSnowflake", "lantern"],
     groups: [
       {
@@ -88,3 +90,12 @@ export function getSeason(id: string): Season | undefined {
 }
 
 export const seasonSamples = (season: Season) => season.groups.flatMap((group) => group.samples);
+
+/**
+ * The season a date falls in, if any. Pages are static, so this is the season on the day the site
+ * is built; a build each day or so keeps it current.
+ */
+export function activeSeason(date: Date = new Date()): Season | undefined {
+  const month = date.getUTCMonth() + 1;
+  return SEASONS.find((season) => season.months.includes(month));
+}

@@ -372,7 +372,9 @@
         "explore": "Criar um diagrama de vincos"
       }
     },
-    "seeAllType": "Ver tudo em {name}"
+    "seeAllType": "Ver tudo em {name}",
+    "seasonNow": "Da estação",
+    "seasonLink": "Ver a coleção completa"
   },
   "about": {
     "metaTitle": "Como funcionam os cálculos",

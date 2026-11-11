@@ -126,3 +126,37 @@
   color: var(--muted);
   font-size: 0.9rem;
 }
+
+/* The season that's on now, ahead of the types: a tinted panel, so it reads as a feature. */
+.season {
+  margin-top: 2rem;
+  padding: 1.25rem 1.4rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.season h2 {
+  margin: 0 0 0.4rem;
+  font-size: 1.6rem;
+}
+
+.season h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.season > p {
+  max-width: 48rem;
+  margin: 0.25rem 0;
+  color: var(--muted);
+}
+
+.season > .eyebrow {
+  margin: 0 0 0.2rem;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}

@@ -372,7 +372,9 @@
         "explore": "Crea uno schema di pieghe"
       }
     },
-    "seeAllType": "Vedi tutto in {name}"
+    "seeAllType": "Vedi tutto in {name}",
+    "seasonNow": "Di stagione",
+    "seasonLink": "Vedi tutta la collezione"
   },
   "about": {
     "metaTitle": "Come funzionano i calcoli",

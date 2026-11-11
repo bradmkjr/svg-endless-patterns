@@ -372,7 +372,9 @@
         "explore": "Créer un plan de pliage"
       }
     },
-    "seeAllType": "Tout voir dans {name}"
+    "seeAllType": "Tout voir dans {name}",
+    "seasonNow": "De saison",
+    "seasonLink": "Voir toute la collection"
   },
   "about": {
     "metaTitle": "Comment fonctionnent les calculs",

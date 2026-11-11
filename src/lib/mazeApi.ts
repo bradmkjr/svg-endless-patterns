@@ -1,5 +1,5 @@
 /** The version in every API path. The API names the same one in `src/version.ts`. */
-export const API_VERSION = "v1.0.4";
+export const API_VERSION = "v1.0.5";
 
 export function mazeApiUrl(path: string): string {
   const base = (process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:4000").replace(/\/+$/, "");

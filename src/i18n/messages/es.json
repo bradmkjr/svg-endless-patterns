@@ -372,7 +372,9 @@
         "explore": "Crear un patrón de pliegues"
       }
     },
-    "seeAllType": "Ver todo en {name}"
+    "seeAllType": "Ver todo en {name}",
+    "seasonNow": "De temporada",
+    "seasonLink": "Ver toda la colección"
   },
   "about": {
     "metaTitle": "Cómo funcionan los cálculos",

@@ -972,6 +972,13 @@
     }
   },
   "changelog": {
+    "Realistic colorwork, and the season first in the library": {
+      "title": "Colores más realistas, y la temporada primero en la biblioteca",
+      "items": [
+        "Los cuadrados de punto y ganchillo multicolor se dibujan puntada a puntada, como las muestras de puntos de punto y de ganchillo: uves de punto con bordes en punto bobo, punto bajo de tapestry, bloques de punto alto de esquina a esquina y racimos granny, cada uno con las luces y sombras de su hilo, en la página y en el PDF",
+        "Durante una temporada, la biblioteca de patrones se abre con sus diseños y los pone primero en cada tipo de patrón"
+      ]
+    },
     "Winter charts in the cross-stitch builder": {
       "title": "Los gráficos de invierno en el creador de punto de cruz",
       "items": [

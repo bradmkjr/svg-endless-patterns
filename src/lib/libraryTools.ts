@@ -10,7 +10,8 @@ import { weavingDraftLinks } from "./weavingDrafts";
 
 /** One pattern shown under its type. `seasonal`: it's in the season that's on now. */
 export type LibrarySample = { name: string; href: string; src: string; seasonal?: boolean };
-export type LibraryType = { id: string; title: string; text: string; output: string; explore: string; href: string; total: number; samples: LibrarySample[] };
+/** `inSeason`: every one of its designs in the season that's on, whether or not it's among `samples`. */
+export type LibraryType = { id: string; title: string; text: string; output: string; explore: string; href: string; total: number; samples: LibrarySample[]; inSeason: LibrarySample[] };
 
 /** How many patterns each type shows in the library. */
 const SAMPLES_PER_TYPE = 6;
@@ -57,7 +58,8 @@ export function seasonalHrefs(season: Season, locale: Locale): Set<string> {
     if (sample.kind === "block") hrefs.add(localePath(locale, `/blocks/${sample.slug}/`));
     else if (sample.kind === "knit") hrefs.add(localePath(locale, `/knitting/${sample.slug}/`));
     else if (sample.kind === "crochet") hrefs.add(localePath(locale, `/crochet/${sample.slug}/`));
-    else {
+    // A maze or puzzle sample is its own message or grid, which the library's picture of that kind doesn't show.
+    else if (sample.kind !== "maze" && sample.kind !== "puzzle") {
       const tool = (sample.kind === "celtic" ? "celticKnot" : sample.kind) as ToolId;
       if (!(tool in TOOL_OPTIONS)) continue;
       const value = params.get(TOOL_OPTIONS[tool].param);
@@ -92,7 +94,7 @@ export async function libraryTypes(locale: Locale, season: Season | undefined = 
     }),
     locale,
   );
-  const fixed: (Omit<LibraryType, "total" | "samples"> & { all: LibrarySample[] })[] = [
+  const fixed: (Omit<LibraryType, "total" | "samples" | "inSeason"> & { all: LibrarySample[] })[] = [
     { id: "quilt", title: t.quiltTitle, text: t.quiltText, output: t.quiltOutput, explore: t.exploreQuilt, href: localePath(locale, "/blocks/"), all: blocks },
     { id: "knit", title: t.knitTitle, text: t.knitText, output: t.knitOutput, explore: t.exploreKnit, href: localePath(locale, "/knitting/"), all: knit },
     { id: "crochet", title: t.crochetTitle, text: t.crochetText, output: t.crochetOutput, explore: t.exploreCrochet, href: localePath(locale, "/crochet/"), all: crochet },
@@ -109,7 +111,10 @@ export async function libraryTypes(locale: Locale, season: Season | undefined = 
     }),
   );
   return alphabetical(
-    [...fixed, ...tools].map(({ all, ...type }) => ({ ...type, name: type.title, total: all.length, samples: seasonFirst(all).slice(0, SAMPLES_PER_TYPE) })),
+    [...fixed, ...tools].map(({ all, ...type }) => {
+      const ordered = seasonFirst(all);
+      return { ...type, name: type.title, total: all.length, samples: ordered.slice(0, SAMPLES_PER_TYPE), inSeason: ordered.filter((item) => item.seasonal) };
+    }),
     locale,
   );
 }

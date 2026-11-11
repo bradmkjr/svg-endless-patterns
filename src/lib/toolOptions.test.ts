@@ -96,7 +96,7 @@ describe.each(TOOLS)("%s option pages", (tool) => {
 
 describe("thumbnails", () => {
   it("uses the API for maze thumbnails", () => {
-    expect(thumbSrc("maze", "square")).toMatch(/\/api\/v1\.0\.4\/maze\/thumbnail\/square$/);
+    expect(thumbSrc("maze", "square")).toMatch(/\/api\/v1\.0\.5\/maze\/thumbnail\/square$/);
   });
 
 });
@@ -113,8 +113,8 @@ describe("remembered seeds", () => {
 
 describe("API thumbnails", () => {
   it("name the API's version in the path", () => {
-    expect(thumbSrc("maze", "square")).toMatch(/\/api\/v1\.0\.4\/maze\/thumbnail\/square$/);
-    expect(thumbSrc("fractal", "hilbert-curve")).toMatch(/\/api\/v1\.0\.4\/fractal\/thumbnail\/hilbert-curve$/);
+    expect(thumbSrc("maze", "square")).toMatch(/\/api\/v1\.0\.5\/maze\/thumbnail\/square$/);
+    expect(thumbSrc("fractal", "hilbert-curve")).toMatch(/\/api\/v1\.0\.5\/fractal\/thumbnail\/hilbert-curve$/);
   });
 });
 

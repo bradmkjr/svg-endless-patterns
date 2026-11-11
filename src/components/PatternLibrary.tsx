@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Locale } from "@/lib/generator";
 import { fill, localePath, messages } from "@/lib/i18n";
-import { libraryTypes } from "@/lib/libraryTools";
+import { libraryTypes, seasonalHrefs } from "@/lib/libraryTools";
 import { activeSeason } from "@/lib/seasons";
 import seasonal from "@/i18n/messages/seasonal.json";
 import styles from "./PatternLibrary.module.css";
@@ -10,8 +10,12 @@ export async function PatternLibrary({ locale }: { locale: Locale }) {
   const t = messages(locale).library;
   const season = activeSeason();
   const types = await libraryTypes(locale, season);
-  // The season's designs from every type, gathered up front: one band of them, a dozen at most.
-  const inSeason = types.flatMap((type) => type.samples.filter((sample) => sample.seasonal)).slice(0, 12);
+  // The season's designs from every type, gathered up front in the collection's own order: one band of them, a dozen at most.
+  const order = season ? [...seasonalHrefs(season, locale)] : [];
+  const inSeason = types
+    .flatMap((type) => type.inSeason)
+    .sort((a, b) => order.indexOf(a.href) - order.indexOf(b.href))
+    .slice(0, 12);
   const seasonText = season ? seasonal[locale].seasons[season.id] : undefined;
   return (
     <div className="page">

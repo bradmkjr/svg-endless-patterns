@@ -1,6 +1,6 @@
 /** The JSON contract with the API's fractal routes. */
 
-export type FractalType = "koch-snowflake" | "sierpinski-triangle" | "sierpinski-carpet" | "dragon-curve" | "hilbert-curve" | "levy-curve" | "gosper-curve" | "fractal-tree" | "pythagoras-tree";
+export type FractalType = "koch-snowflake" | "sierpinski-triangle" | "sierpinski-carpet" | "dragon-curve" | "hilbert-curve" | "levy-curve" | "gosper-curve" | "peano-curve" | "fractal-tree" | "pythagoras-tree" | "plant";
 export type FractalColors = { background: string; primary: string; accent: string };
 
 export type FractalRequest = {

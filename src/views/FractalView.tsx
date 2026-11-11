@@ -25,7 +25,7 @@ export async function FractalView({ locale, option }: { locale: Locale; option?:
       <PrimaryImageProvider group="fractal" slug={option ?? OPENING_OPTION.fractal} name={labels[option ?? OPENING_OPTION.fractal]}>
         <FractalBuilderRoute option={option} labels={labels} locale={locale} />
       </PrimaryImageProvider>
-      <References ids={["mandelbrot", "koch", "sierpinski", "hilbert", "levy"]} locale={locale} />
+      <References ids={["mandelbrot", "koch", "sierpinski", "hilbert", "levy", "peano", "abop"]} locale={locale} />
     </div>
   );
 }

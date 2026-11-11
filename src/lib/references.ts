@@ -16,6 +16,8 @@ export const REFERENCES: Reference[] = [
   { id: "sierpinski", author: "Wacław Sierpiński", title: "Sur une courbe dont tout point est un point de ramification", detail: "Comptes Rendus de l'Académie des Sciences 160, 1915" },
   { id: "hilbert", author: "David Hilbert", title: "Über die stetige Abbildung einer Linie auf ein Flächenstück", detail: "Mathematische Annalen 38, 1891" },
   { id: "levy", author: "Paul Lévy", title: "Les courbes planes ou gauches et les surfaces composées de parties semblables au tout", detail: "Journal de l'École Polytechnique, 1938" },
+  { id: "peano", author: "Giuseppe Peano", title: "Sur une courbe, qui remplit toute une aire plane", detail: "Mathematische Annalen 36, 1890" },
+  { id: "abop", author: "Przemysław Prusinkiewicz and Aristid Lindenmayer", title: "The Algorithmic Beauty of Plants", detail: "Springer-Verlag, 1990", url: "http://algorithmicbotany.org/papers/#abop" },
   { id: "gardnerLife", author: "Martin Gardner", title: "Mathematical Games: The fantastic combinations of John Conway's new solitaire game \"life\"", detail: "Scientific American 223, October 1970", url: "https://www.scientificamerican.com/article/mathematical-games-1970-10/" },
   { id: "walkerMosaic", author: "Barbara G. Walker", title: "Mosaic Knitting", detail: "Charles Scribner's Sons, 1976" },
   { id: "truchet", author: "Sébastien Truchet", title: "Mémoire sur les combinaisons", detail: "Mémoires de l'Académie Royale des Sciences, 1704" },

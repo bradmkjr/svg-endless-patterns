@@ -128,11 +128,12 @@ export function WavesBuilder({ locale, option, labels, initialState }: { locale:
             </label>
             {state.wave === "tangent" && <p className={styles.note}>{t.tangentNote}</p>}
             {figures && <p className={styles.note}>{t.lissajousNote}</p>}
+            {state.wave === "bulge" && <p className={styles.note}>{t.bulgeNote}</p>}
             <div className={styles.fieldRow}>
               {figures ? (
                 <NumberSelect label={t.ratio} value={state.frequency} options={FREQUENCY_OPTIONS} format={(n) => `${n}:${n + 1}`} onChange={(frequency) => update({ frequency })} />
               ) : (
-                <NumberSelect label={t.frequency} value={state.frequency} options={FREQUENCY_OPTIONS} format={String} onChange={(frequency) => update({ frequency })} />
+                <NumberSelect label={state.wave === "bulge" ? t.lenses : t.frequency} value={state.frequency} options={FREQUENCY_OPTIONS} format={String} onChange={(frequency) => update({ frequency })} />
               )}
               <NumberSelect label={t.amplitude} value={state.amplitude} options={AMPLITUDE_OPTIONS} format={percent} onChange={(amplitude) => update({ amplitude })} />
             </div>

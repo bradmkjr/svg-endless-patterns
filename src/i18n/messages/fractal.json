@@ -28,8 +28,10 @@
       "hilbert-curve": "Hilbert curve",
       "levy-curve": "Lévy C curve",
       "gosper-curve": "Gosper curve",
+      "peano-curve": "Peano curve",
       "fractal-tree": "Fractal tree",
-      "pythagoras-tree": "Pythagoras tree"
+      "pythagoras-tree": "Pythagoras tree",
+      "plant": "L-system plant"
     },
     "notes": {
       "koch-snowflake": "Every straight side grows a smaller point, again and again, so the edge gets longer at each depth while the area stays bounded.",
@@ -39,8 +41,10 @@
       "hilbert-curve": "One unbroken line that visits every cell of a square grid exactly once.",
       "levy-curve": "Each segment is replaced by the two short sides of a right isosceles triangle.",
       "gosper-curve": "One unbroken line on a hexagonal grid that fills a shape with a scalloped edge.",
+      "peano-curve": "The first space-filling curve: one unbroken line that zigzags through every cell of a grid three times as wide at each depth.",
       "fractal-tree": "Each branch splits into two shorter ones at the angle you set.",
-      "pythagoras-tree": "Squares grow from the two short sides of a right triangle sitting on each square."
+      "pythagoras-tree": "Squares grow from the two short sides of a right triangle sitting on each square.",
+      "plant": "A branching rule written as text, from The Algorithmic Beauty of Plants. Each stem grows a new pair of side shoots at the angle you set."
     },
     "loading": "Drawing fractal…"
   },
@@ -73,8 +77,10 @@
       "hilbert-curve": "Curva de Hilbert",
       "levy-curve": "Curva C de Lévy",
       "gosper-curve": "Curva de Gosper",
+      "peano-curve": "Curva de Peano",
       "fractal-tree": "Árbol fractal",
-      "pythagoras-tree": "Árbol de Pitágoras"
+      "pythagoras-tree": "Árbol de Pitágoras",
+      "plant": "Planta de sistema L"
     },
     "notes": {
       "koch-snowflake": "Cada lado recto hace crecer una punta menor, una y otra vez: el borde se alarga en cada nivel y el área sigue acotada.",
@@ -84,8 +90,10 @@
       "hilbert-curve": "Una sola línea continua que pasa exactamente una vez por cada celda de una cuadrícula.",
       "levy-curve": "Cada segmento se sustituye por los dos lados cortos de un triángulo rectángulo isósceles.",
       "gosper-curve": "Una sola línea continua sobre una red hexagonal que rellena una forma de borde festoneado.",
+      "peano-curve": "La primera curva que llena el plano: una sola línea continua que zigzaguea por cada celda de una cuadrícula tres veces más ancha en cada nivel.",
       "fractal-tree": "Cada rama se divide en dos más cortas con el ángulo que elijas.",
-      "pythagoras-tree": "De los dos lados cortos de un triángulo rectángulo apoyado en cada cuadrado crecen nuevos cuadrados."
+      "pythagoras-tree": "De los dos lados cortos de un triángulo rectángulo apoyado en cada cuadrado crecen nuevos cuadrados.",
+      "plant": "Una regla de ramificación escrita como texto, de The Algorithmic Beauty of Plants. Cada tallo echa un nuevo par de brotes laterales con el ángulo que elijas."
     },
     "loading": "Dibujando fractal…"
   },
@@ -118,8 +126,10 @@
       "hilbert-curve": "Courbe de Hilbert",
       "levy-curve": "Courbe C de Lévy",
       "gosper-curve": "Courbe de Gosper",
+      "peano-curve": "Courbe de Peano",
       "fractal-tree": "Arbre fractal",
-      "pythagoras-tree": "Arbre de Pythagore"
+      "pythagoras-tree": "Arbre de Pythagore",
+      "plant": "Plante en L-système"
     },
     "notes": {
       "koch-snowflake": "Chaque côté droit fait pousser une pointe plus petite, encore et encore : le bord s'allonge à chaque niveau et l'aire reste bornée.",
@@ -129,8 +139,10 @@
       "hilbert-curve": "Une seule ligne continue qui passe exactement une fois par chaque case d'une grille.",
       "levy-curve": "Chaque segment est remplacé par les deux petits côtés d'un triangle rectangle isocèle.",
       "gosper-curve": "Une seule ligne continue sur une grille hexagonale qui remplit une forme au bord festonné.",
+      "peano-curve": "La première courbe qui remplit le plan : une seule ligne continue qui zigzague dans chaque case d'une grille trois fois plus large à chaque niveau.",
       "fractal-tree": "Chaque branche se divise en deux plus courtes selon l'angle choisi.",
-      "pythagoras-tree": "Des carrés poussent sur les deux petits côtés d'un triangle rectangle posé sur chaque carré."
+      "pythagoras-tree": "Des carrés poussent sur les deux petits côtés d'un triangle rectangle posé sur chaque carré.",
+      "plant": "Une règle de ramification écrite sous forme de texte, tirée de The Algorithmic Beauty of Plants. Chaque tige produit une nouvelle paire de pousses latérales selon l'angle choisi."
     },
     "loading": "Dessin de la fractale…"
   },
@@ -163,8 +175,10 @@
       "hilbert-curve": "Hilbert-Kurve",
       "levy-curve": "Lévy-C-Kurve",
       "gosper-curve": "Gosper-Kurve",
+      "peano-curve": "Peano-Kurve",
       "fractal-tree": "Fraktaler Baum",
-      "pythagoras-tree": "Pythagoras-Baum"
+      "pythagoras-tree": "Pythagoras-Baum",
+      "plant": "L-System-Pflanze"
     },
     "notes": {
       "koch-snowflake": "Aus jeder geraden Seite wächst immer wieder eine kleinere Spitze: Der Rand wird mit jeder Tiefe länger, die Fläche bleibt begrenzt.",
@@ -174,8 +188,10 @@
       "hilbert-curve": "Eine durchgehende Linie, die jede Zelle eines quadratischen Rasters genau einmal besucht.",
       "levy-curve": "Jedes Segment wird durch die zwei kurzen Seiten eines gleichschenklig-rechtwinkligen Dreiecks ersetzt.",
       "gosper-curve": "Eine durchgehende Linie auf einem Sechseckraster, die eine Form mit gewelltem Rand füllt.",
+      "peano-curve": "Die erste raumfüllende Kurve: eine durchgehende Linie, die im Zickzack jede Zelle eines Rasters durchläuft, das mit jeder Tiefe dreimal so breit wird.",
       "fractal-tree": "Jeder Ast teilt sich im gewählten Winkel in zwei kürzere.",
-      "pythagoras-tree": "Aus den zwei kurzen Seiten eines rechtwinkligen Dreiecks auf jedem Quadrat wachsen neue Quadrate."
+      "pythagoras-tree": "Aus den zwei kurzen Seiten eines rechtwinkligen Dreiecks auf jedem Quadrat wachsen neue Quadrate.",
+      "plant": "Eine als Text geschriebene Verzweigungsregel aus The Algorithmic Beauty of Plants. Jeder Stängel treibt im gewählten Winkel ein neues Paar Seitentriebe."
     },
     "loading": "Fraktal wird gezeichnet …"
   },
@@ -208,8 +224,10 @@
       "hilbert-curve": "Curva de Hilbert",
       "levy-curve": "Curva C de Lévy",
       "gosper-curve": "Curva de Gosper",
+      "peano-curve": "Curva de Peano",
       "fractal-tree": "Árvore fractal",
-      "pythagoras-tree": "Árvore de Pitágoras"
+      "pythagoras-tree": "Árvore de Pitágoras",
+      "plant": "Planta de sistema L"
     },
     "notes": {
       "koch-snowflake": "Cada lado reto faz crescer uma ponta menor, de novo e de novo: a borda fica mais longa a cada nível e a área continua limitada.",
@@ -219,8 +237,10 @@
       "hilbert-curve": "Uma única linha contínua que passa exatamente uma vez por cada célula de uma grade.",
       "levy-curve": "Cada segmento é substituído pelos dois lados curtos de um triângulo retângulo isósceles.",
       "gosper-curve": "Uma única linha contínua em uma grade hexagonal que preenche uma forma de borda ondulada.",
+      "peano-curve": "A primeira curva que preenche o plano: uma única linha contínua que faz zigue-zague por cada célula de uma grade três vezes mais larga a cada nível.",
       "fractal-tree": "Cada galho se divide em dois mais curtos no ângulo escolhido.",
-      "pythagoras-tree": "Quadrados crescem dos dois lados curtos de um triângulo retângulo apoiado em cada quadrado."
+      "pythagoras-tree": "Quadrados crescem dos dois lados curtos de um triângulo retângulo apoiado em cada quadrado.",
+      "plant": "Uma regra de ramificação escrita como texto, de The Algorithmic Beauty of Plants. Cada caule gera um novo par de brotos laterais no ângulo que você escolher."
     },
     "loading": "Desenhando fractal…"
   },
@@ -253,8 +273,10 @@
       "hilbert-curve": "Curva di Hilbert",
       "levy-curve": "Curva C di Lévy",
       "gosper-curve": "Curva di Gosper",
+      "peano-curve": "Curva di Peano",
       "fractal-tree": "Albero frattale",
-      "pythagoras-tree": "Albero di Pitagora"
+      "pythagoras-tree": "Albero di Pitagora",
+      "plant": "Pianta L-system"
     },
     "notes": {
       "koch-snowflake": "Ogni lato dritto fa crescere una punta più piccola, ancora e ancora: il bordo si allunga a ogni livello mentre l'area resta limitata.",
@@ -264,8 +286,10 @@
       "hilbert-curve": "Una linea continua che visita ogni cella di una griglia quadrata esattamente una volta.",
       "levy-curve": "Ogni segmento è sostituito dai due lati corti di un triangolo rettangolo isoscele.",
       "gosper-curve": "Una linea continua su una griglia esagonale che riempie una forma dal bordo smerlato.",
+      "peano-curve": "La prima curva che riempie il piano: un'unica linea continua che passa a zigzag per ogni cella di una griglia tre volte più larga a ogni livello.",
       "fractal-tree": "Ogni ramo si divide in due più corti all'angolo che imposti.",
-      "pythagoras-tree": "Dei quadrati crescono dai due lati corti di un triangolo rettangolo posato su ogni quadrato."
+      "pythagoras-tree": "Dei quadrati crescono dai due lati corti di un triangolo rettangolo posato su ogni quadrato.",
+      "plant": "Una regola di ramificazione scritta come testo, da The Algorithmic Beauty of Plants. Ogni stelo mette un nuovo paio di germogli laterali all'angolo che scegli."
     },
     "loading": "Disegno del frattale…"
   },
@@ -298,8 +322,10 @@
       "hilbert-curve": "Hilbert-kromme",
       "levy-curve": "Lévy C-kromme",
       "gosper-curve": "Gosper-kromme",
+      "peano-curve": "Peano-kromme",
       "fractal-tree": "Fractalboom",
-      "pythagoras-tree": "Pythagorasboom"
+      "pythagoras-tree": "Pythagorasboom",
+      "plant": "L-systeemplant"
     },
     "notes": {
       "koch-snowflake": "Elke rechte zijde krijgt steeds weer een kleinere punt, dus de rand wordt op elke diepte langer terwijl het oppervlak begrensd blijft.",
@@ -309,8 +335,10 @@
       "hilbert-curve": "Eén ononderbroken lijn die elke cel van een vierkant raster precies één keer aandoet.",
       "levy-curve": "Elk segment wordt vervangen door de twee korte zijden van een rechthoekige gelijkbenige driehoek.",
       "gosper-curve": "Eén ononderbroken lijn op een zeshoekig raster die een vorm met een geschulpte rand vult.",
+      "peano-curve": "De eerste ruimtevullende kromme: één ononderbroken lijn die zigzaggend door elk vak gaat van een raster dat bij elke diepte drie keer zo breed wordt.",
       "fractal-tree": "Elke tak splitst in twee kortere op de hoek die je instelt.",
-      "pythagoras-tree": "Vierkanten groeien uit de twee korte zijden van een rechthoekige driehoek op elk vierkant."
+      "pythagoras-tree": "Vierkanten groeien uit de twee korte zijden van een rechthoekige driehoek op elk vierkant.",
+      "plant": "Een vertakkingsregel geschreven als tekst, uit The Algorithmic Beauty of Plants. Elke stengel krijgt een nieuw paar zijscheuten onder de hoek die je kiest."
     },
     "loading": "De fractal wordt getekend…"
   }

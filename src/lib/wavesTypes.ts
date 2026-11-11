@@ -1,6 +1,6 @@
 import type { Locale } from "./generator";
 
-export type WaveFunction = "sine" | "cosine" | "tangent" | "square" | "triangle" | "sawtooth" | "damped" | "interference" | "moire" | "lissajous";
+export type WaveFunction = "sine" | "cosine" | "tangent" | "square" | "triangle" | "sawtooth" | "damped" | "interference" | "moire" | "lissajous" | "bulge";
 export type WaveFill = "lines" | "bands";
 export type WaveMix = "none" | "sine" | "triangle" | "square" | "sawtooth";
 

@@ -3,21 +3,23 @@ import { localeAccent } from "./localeAccent";
 
 /** The fractal builder's options, defaults and share links. */
 
-export const TYPE_OPTIONS: FractalType[] = ["koch-snowflake", "sierpinski-triangle", "sierpinski-carpet", "dragon-curve", "hilbert-curve", "levy-curve", "gosper-curve", "fractal-tree", "pythagoras-tree"];
+export const TYPE_OPTIONS: FractalType[] = ["koch-snowflake", "sierpinski-triangle", "sierpinski-carpet", "dragon-curve", "hilbert-curve", "levy-curve", "gosper-curve", "peano-curve", "fractal-tree", "pythagoras-tree", "plant"];
 export const WEIGHT_OPTIONS = [1, 2, 3, 4, 6, 8, 12];
 export const ANGLE_OPTIONS = [15, 20, 25, 30, 35, 40, 45, 50, 55, 60];
-/** The two trees are the only types with an angle to set. */
-export const ANGLED_TYPES: FractalType[] = ["fractal-tree", "pythagoras-tree"];
+/** The trees and the plant are the only types with an angle to set. */
+export const ANGLED_TYPES: FractalType[] = ["fractal-tree", "pythagoras-tree", "plant"];
 /** The deepest each type offers. The API enforces the same limits. */
-export const FRACTAL_MAX_DEPTH: Record<FractalType, number> = { "koch-snowflake": 6, "sierpinski-triangle": 7, "sierpinski-carpet": 4, "dragon-curve": 14, "hilbert-curve": 7, "levy-curve": 14, "gosper-curve": 5, "fractal-tree": 12, "pythagoras-tree": 11 };
+export const FRACTAL_MAX_DEPTH: Record<FractalType, number> = { "koch-snowflake": 6, "sierpinski-triangle": 7, "sierpinski-carpet": 4, "dragon-curve": 14, "hilbert-curve": 7, "levy-curve": 14, "gosper-curve": 5, "peano-curve": 4, "fractal-tree": 12, "pythagoras-tree": 11, plant: 6 };
 export const depthOptions = (type: FractalType) => Array.from({ length: FRACTAL_MAX_DEPTH[type] }, (_, i) => i + 1);
 
 /** A depth that shows the idea and prints crisply. */
-const DEFAULT_DEPTH: Record<FractalType, number> = { "koch-snowflake": 4, "sierpinski-triangle": 5, "sierpinski-carpet": 3, "dragon-curve": 11, "hilbert-curve": 5, "levy-curve": 11, "gosper-curve": 4, "fractal-tree": 10, "pythagoras-tree": 9 };
+const DEFAULT_DEPTH: Record<FractalType, number> = { "koch-snowflake": 4, "sierpinski-triangle": 5, "sierpinski-carpet": 3, "dragon-curve": 11, "hilbert-curve": 5, "levy-curve": 11, "gosper-curve": 4, "peano-curve": 3, "fractal-tree": 10, "pythagoras-tree": 9, plant: 5 };
 const COLORS: FractalColors = { background: "#f7f3ea", primary: "#1f3a5f", accent: "#c8553d" };
 const DEFAULT_TYPE: FractalType = "dragon-curve";
 const DEFAULT_WEIGHT = 3;
 const DEFAULT_ANGLE = 30;
+/** The plant reads best a little narrower than the trees. The API draws its thumbnail at the same angle. */
+const TYPE_ANGLE: Partial<Record<FractalType, number>> = { plant: 25 };
 
 export function defaultFractalState(locale: Locale = "en", type: FractalType = DEFAULT_TYPE): FractalRequest {
   return {
@@ -25,7 +27,7 @@ export function defaultFractalState(locale: Locale = "en", type: FractalType = D
     type,
     depth: DEFAULT_DEPTH[type],
     weight: DEFAULT_WEIGHT,
-    angle: DEFAULT_ANGLE,
+    angle: TYPE_ANGLE[type] ?? DEFAULT_ANGLE,
     colors: { ...COLORS, accent: localeAccent(locale, COLORS.accent) },
   };
 }

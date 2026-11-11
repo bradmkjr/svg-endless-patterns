@@ -3,7 +3,7 @@ import { localeAccent } from "./localeAccent";
 
 /** The wave builder's options, default colors and share links. */
 
-export const WAVE_OPTIONS: WaveFunction[] = ["sine", "cosine", "tangent", "square", "triangle", "sawtooth", "damped", "interference", "moire", "lissajous"];
+export const WAVE_OPTIONS: WaveFunction[] = ["sine", "cosine", "tangent", "square", "triangle", "sawtooth", "damped", "interference", "moire", "lissajous", "bulge"];
 export const FILL_OPTIONS: WaveFill[] = ["lines", "bands"];
 export const MIX_OPTIONS: WaveMix[] = ["none", "sine", "triangle", "square", "sawtooth"];
 /** Whole waves across a repeat, so its edges always meet. */

@@ -1,6 +1,6 @@
 import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
-import { Fraunces, Geist } from "next/font/google";
+import { Geist, Newsreader } from "next/font/google";
 import "@/app/globals.css";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteNav } from "@/components/SiteNav";
@@ -10,7 +10,8 @@ import { absoluteUrl, SITE_NAME } from "@/lib/site";
 import { thumbSrc } from "@/lib/toolOptions";
 
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
-const fraunces = Fraunces({ variable: "--font-fraunces", subsets: ["latin"] });
+/** Headings and the site's name. Its optical size axis draws large headings with display proportions. */
+const newsreader = Newsreader({ variable: "--font-newsreader", subsets: ["latin"], axes: ["opsz"] });
 
 export function rootMetadata(locale: Locale): Metadata {
   const t = messages(locale).meta;
@@ -34,7 +35,7 @@ const ADSENSE_CLIENT = "ca-pub-8989714718895680";
 export function RootDocument({ locale, children }: { locale: Locale; children: React.ReactNode }) {
   const { htmlLang } = SITE_LOCALES.find((l) => l.code === locale)!;
   return (
-    <html lang={htmlLang} data-locale={locale} className={`${geist.variable} ${fraunces.variable}`}>
+    <html lang={htmlLang} data-locale={locale} className={`${geist.variable} ${newsreader.variable}`}>
       {/* eslint-disable-next-line @next/next/no-head-element -- App Router root layouts render <head> directly */}
       <head>
         {/* A plain tag, not next/script: AdSense rejects the data-nscript attribute it adds. */}

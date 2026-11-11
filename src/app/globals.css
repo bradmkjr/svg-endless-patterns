@@ -15,7 +15,7 @@
   --language-pill-hover: rgba(250, 246, 238, 0.12);
   --wallpaper-opacity: 0.07;
   --wallpaper-filter: grayscale(1);
-  --font-display: var(--font-fraunces), Georgia, serif;
+  --font-display: var(--font-newsreader), Georgia, serif;
 }
 
 @media (prefers-color-scheme: dark) {

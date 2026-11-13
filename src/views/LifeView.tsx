@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/pageMetadata";
+import { OptionNote } from "@/components/OptionNote";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { OPENING_OPTION } from "@/lib/toolOptions";
 import { LifeBuilderRoute } from "@/components/LifeBuilderRoute";
@@ -22,6 +23,7 @@ export async function LifeView({ locale, option }: { locale: Locale; option?: st
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
+      <OptionNote tool="life" option={option} locale={locale} />
       <PrimaryImageProvider group="life" slug={option ?? OPENING_OPTION.life} name={labels[option ?? OPENING_OPTION.life]}>
         <LifeBuilderRoute option={option} labels={labels} locale={locale} />
       </PrimaryImageProvider>

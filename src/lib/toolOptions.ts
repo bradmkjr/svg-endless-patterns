@@ -254,3 +254,28 @@ export function optionLabel(tool: ToolId, slug: string, locale: Locale, tessella
       return puzzle[locale].types[value as keyof (typeof puzzle)["en"]["types"]];
   }
 }
+
+/** Where a tool keeps a sentence about each choice, keyed by the choice's value. */
+const OPTION_NOTES: Partial<Record<ToolId, (locale: Locale) => Record<string, string>>> = {
+  life: (l) => life[l].notes,
+  fractal: (l) => fractal[l].notes,
+  checkerboard: (l) => checkerboard[l].patternNotes,
+  kolam: (l) => kolam[l].formNotes,
+  origami: (l) => origami[l].modelNotes,
+  origamiTessellation: (l) => origamiTessellation[l].patternNotes,
+  quilt: (l) => quiltCopy[l].designNotes,
+  weaving: (l) => weaving[l].structureHelp,
+  kaleidoscope: (l) => kaleidoscope[l].mirrorNotes,
+  tieDye: (l) => tieDye[l].techniqueNotes,
+  sashiko: (l) => sashiko[l].motifNotes,
+  maze: (l) => maze[l].shapeNotes,
+  truchet: (l) => truchet[l].styleNotes,
+  waves: (l) => waves[l].waveNotes,
+  chineseLattice: (l) => chineseLattice[l].frameworkNotes,
+};
+
+/** A sentence or two on what sets a choice apart, for its page's description and body. Not every tool has them. */
+export function optionNote(tool: ToolId, slug: string, locale: Locale): string | undefined {
+  const value = TOOL_OPTIONS[tool].options.find((o) => o.slug === slug)?.value;
+  return value === undefined ? undefined : OPTION_NOTES[tool]?.(locale)[value];
+}

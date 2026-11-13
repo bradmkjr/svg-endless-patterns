@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/pageMetadata";
 import { References } from "@/components/References";
+import { OptionNote } from "@/components/OptionNote";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { OPENING_OPTION } from "@/lib/toolOptions";
 import { WavesBuilderRoute } from "@/components/WavesBuilderRoute";
@@ -22,6 +23,7 @@ export async function WavesView({ locale, option }: { locale: Locale; option?: s
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
+      <OptionNote tool="waves" option={option} locale={locale} />
       <PrimaryImageProvider group="waves" slug={option ?? OPENING_OPTION.waves} name={labels[option ?? OPENING_OPTION.waves]}>
         <WavesBuilderRoute option={option} labels={labels} locale={locale} />
       </PrimaryImageProvider>

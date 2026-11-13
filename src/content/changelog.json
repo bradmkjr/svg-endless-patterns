@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-11-12",
+    "title": "Pattern pages that say what sets each pattern apart",
+    "items": [
+      "Each pattern's own page opens with a sentence or two on what makes it different, and search results show that sentence too. New ones cover tie-dye folds, sashiko motifs, maze shapes, Truchet tiles, wave functions and Chinese lattice frameworks",
+      "Knitting and crochet stitches show the name used in your language beside the English one, such as Kraus rechts (Garter Stitch) or Maille serrée (Single Crochet, ms)",
+      "Tie-dye and sashiko descriptions name more of their folds and motifs"
+    ]
+  },
+  {
     "date": "2026-11-11",
     "title": "Gliders, a glider gun and random noise in Game of Life",
     "items": [

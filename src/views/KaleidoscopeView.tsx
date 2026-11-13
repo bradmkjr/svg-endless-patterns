@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/pageMetadata";
 import { References } from "@/components/References";
+import { OptionNote } from "@/components/OptionNote";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { OPENING_OPTION } from "@/lib/toolOptions";
 import { KaleidoscopeBuilderRoute } from "@/components/KaleidoscopeBuilderRoute";
@@ -22,6 +23,7 @@ export async function KaleidoscopeView({ locale, option }: { locale: Locale; opt
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
+      <OptionNote tool="kaleidoscope" option={option} locale={locale} />
       <PrimaryImageProvider group="kaleidoscope" slug={option ?? OPENING_OPTION.kaleidoscope} name={labels[option ?? OPENING_OPTION.kaleidoscope]}>
         <KaleidoscopeBuilderRoute option={option} labels={labels} locale={locale} />
       </PrimaryImageProvider>

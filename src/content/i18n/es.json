@@ -972,6 +972,14 @@
     }
   },
   "changelog": {
+    "Pattern pages that say what sets each pattern apart": {
+      "title": "Páginas de patrones que dicen qué distingue a cada uno",
+      "items": [
+        "La página de cada patrón empieza con una o dos frases sobre lo que lo hace distinto, y los resultados de búsqueda también muestran esa frase. Hay nuevas para los pliegues de tie-dye, los motivos de sashiko, las formas de laberinto, los azulejos de Truchet, las funciones de onda y las estructuras de celosía china",
+        "Los puntos de tejido y ganchillo muestran el nombre en español junto al inglés, como Punto bobo (Garter Stitch) o Punto bajo (Single Crochet, pb)",
+        "Las descripciones de tie-dye y sashiko nombran más de sus pliegues y motivos"
+      ]
+    },
     "Gliders, a glider gun and random noise in Game of Life": {
       "title": "Planeadores, un cañón de planeadores y ruido aleatorio en el Juego de la vida",
       "items": [

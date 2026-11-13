@@ -65,7 +65,7 @@ export async function StitchView({ locale, craft, slug }: { locale: Locale; craf
       <p className="lede" style={{ marginTop: 0 }}>
         {stitch.summary}
       </p>
-      <PrimaryImageProvider group={craft} slug={stitch.slug} name={stitch.name}>
+      <PrimaryImageProvider group={craft} slug={stitch.slug} name={stitch.localName ?? stitch.name}>
         <StitchBuilderRoute stitch={stitch} locale={locale} />
       </PrimaryImageProvider>
     </div>

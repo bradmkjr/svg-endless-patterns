@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/pageMetadata";
 import { CheckerboardBuilderRoute } from "@/components/CheckerboardBuilderRoute";
+import { OptionNote } from "@/components/OptionNote";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { OPENING_OPTION } from "@/lib/toolOptions";
 import copy from "@/i18n/messages/checkerboard.json";
@@ -21,6 +22,7 @@ export async function CheckerboardView({ locale, option }: { locale: Locale; opt
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
+      <OptionNote tool="checkerboard" option={option} locale={locale} />
       <PrimaryImageProvider group="checkerboard" slug={option ?? OPENING_OPTION.checkerboard} name={labels[option ?? OPENING_OPTION.checkerboard]}>
         <CheckerboardBuilderRoute option={option} labels={labels} locale={locale} />
       </PrimaryImageProvider>

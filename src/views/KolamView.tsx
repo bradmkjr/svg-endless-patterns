@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/pageMetadata";
 import { References } from "@/components/References";
+import { OptionNote } from "@/components/OptionNote";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { OPENING_OPTION } from "@/lib/toolOptions";
 import { KolamBuilderRoute } from "@/components/KolamBuilderRoute";
@@ -23,6 +24,7 @@ export async function KolamView({ locale, option }: { locale: Locale; option?: s
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
+      <OptionNote tool="kolam" option={option} locale={locale} />
       <PrimaryImageProvider group="kolam" slug={shown} name={labels[shown]}>
         <KolamBuilderRoute option={option} labels={labels} locale={locale} />
       </PrimaryImageProvider>

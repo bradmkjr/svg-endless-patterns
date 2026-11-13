@@ -11377,7 +11377,8 @@
     "craft": "knit",
     "level": "Principiante",
     "summary": "Teje todas las vueltas al derecho. Queda plano, igual por ambos lados y con suaves crestas horizontales.",
-    "rowFactor": 1.4
+    "rowFactor": 1.4,
+    "localName": "Punto bobo"
    },
    {
     "slug": "stockinette-stitch",
@@ -11385,7 +11386,8 @@
     "craft": "knit",
     "level": "Principiante",
     "summary": "Una vuelta al derecho y otra al revés. Liso por delante, rugoso por detrás, y sus bordes tienden a enrollarse.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Punto jersey"
    },
    {
     "slug": "seed-stitch",
@@ -11393,7 +11395,8 @@
     "craft": "knit",
     "level": "Principiante",
     "summary": "Derechos y reveses alternan en cada vuelta y se oponen entre sí, dando un tejido firme y granulado que queda plano.",
-    "rowFactor": 1.1
+    "rowFactor": 1.1,
+    "localName": "Punto de arroz"
    },
    {
     "slug": "double-seed-stitch",
@@ -11401,7 +11404,8 @@
     "craft": "knit",
     "level": "Principiante",
     "summary": "Como el punto de arroz, pero cada vuelta se teje dos veces antes de intercambiar derechos y reveses, con una textura mayor.",
-    "rowFactor": 1.1
+    "rowFactor": 1.1,
+    "localName": "Punto de arroz doble"
    },
    {
     "slug": "one-by-one-rib",
@@ -11409,7 +11413,8 @@
     "craft": "knit",
     "level": "Principiante",
     "summary": "Columnas simples de derecho y revés forman un tejido elástico, muy usado en puños y bajos.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Elástico 1x1"
    },
    {
     "slug": "two-by-two-rib",
@@ -11417,7 +11422,8 @@
     "craft": "knit",
     "level": "Principiante",
     "summary": "Pares de columnas de derecho y revés dan un elástico más marcado y con mucha elasticidad.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Elástico 2x2"
    },
    {
     "slug": "broken-rib",
@@ -11433,7 +11439,8 @@
     "craft": "knit",
     "level": "Principiante avanzado",
     "summary": "Bloques de derechos y reveses se intercambian cada cuatro vueltas, y el tejido parece trenzado. Queda plano.",
-    "rowFactor": 1.1
+    "rowFactor": 1.1,
+    "localName": "Punto cesta"
    },
    {
     "slug": "diagonal-rib",
@@ -11457,7 +11464,8 @@
     "craft": "knit",
     "level": "Intermedio",
     "summary": "Ochos de cuatro puntos cruzados cada cuatro vueltas entre columnas de revés, para que cada uno se enrosque como una cuerda.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Ochos"
    },
    {
     "slug": "horseshoe-cable",
@@ -11482,6 +11490,7 @@
     "level": "Principiante",
     "summary": "El punto básico más bajo. Da un tejido firme y denso, ideal para paños y bolsas.",
     "rowFactor": 1,
+    "localName": "Punto bajo",
     "abbreviation": "pb"
    },
    {
@@ -11491,6 +11500,7 @@
     "level": "Principiante",
     "summary": "De altura intermedia entre el punto bajo y el punto alto: rápido de tejer, suave y cálido.",
     "rowFactor": 0.7,
+    "localName": "Medio punto alto",
     "abbreviation": "mpa"
    },
    {
@@ -11500,6 +11510,7 @@
     "level": "Principiante",
     "summary": "Un punto alto que crece rápido y cae bien, adecuado para mantas y bufandas.",
     "rowFactor": 0.55,
+    "localName": "Punto alto",
     "abbreviation": "pa"
    },
    {
@@ -11516,7 +11527,8 @@
     "craft": "crochet",
     "level": "Principiante",
     "summary": "Puntos bajos separados por una cadeneta, colocados en los espacios de la vuelta anterior. También llamado punto lino o granito.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Punto lino"
    },
    {
     "slug": "mesh-stitch",
@@ -11532,7 +11544,8 @@
     "craft": "crochet",
     "level": "Principiante avanzado",
     "summary": "Pares de puntos altos comparten un punto, y cada vuelta se apila en las V anteriores para un tejido abierto y con textura.",
-    "rowFactor": 0.55
+    "rowFactor": 0.55,
+    "localName": "Punto V"
    },
    {
     "slug": "puff-stitch",
@@ -11541,6 +11554,7 @@
     "level": "Intermedio",
     "summary": "Puntos puff suaves y redondos en los espacios de cadeneta de la vuelta anterior, separados por una cadeneta, para un tejido grueso y mullido.",
     "rowFactor": 0.7,
+    "localName": "Punto puff",
     "abbreviation": "pf"
    },
    {
@@ -11560,7 +11574,8 @@
     "craft": "knit",
     "level": "Débutant",
     "summary": "Tricotez tous les rangs à l'endroit. Le tricot reste plat, identique des deux côtés, avec de douces côtes horizontales.",
-    "rowFactor": 1.4
+    "rowFactor": 1.4,
+    "localName": "Point mousse"
    },
    {
     "slug": "stockinette-stitch",
@@ -11568,7 +11583,8 @@
     "craft": "knit",
     "level": "Débutant",
     "summary": "Un rang endroit, un rang envers. Lisse devant, bosselé derrière, avec des bords qui ont tendance à rouler.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Point jersey"
    },
    {
     "slug": "seed-stitch",
@@ -11576,7 +11592,8 @@
     "craft": "knit",
     "level": "Débutant",
     "summary": "Mailles endroit et envers alternent et s'opposent d'un rang à l'autre, pour un tricot ferme, grainé et bien plat.",
-    "rowFactor": 1.1
+    "rowFactor": 1.1,
+    "localName": "Point de riz"
    },
    {
     "slug": "double-seed-stitch",
@@ -11584,7 +11601,8 @@
     "craft": "knit",
     "level": "Débutant",
     "summary": "Comme le point de riz, mais chaque rang est tricoté deux fois avant d'inverser endroit et envers, pour un grain plus gros.",
-    "rowFactor": 1.1
+    "rowFactor": 1.1,
+    "localName": "Double point de riz"
    },
    {
     "slug": "one-by-one-rib",
@@ -11592,7 +11610,8 @@
     "craft": "knit",
     "level": "Débutant",
     "summary": "Des colonnes simples d'endroit et d'envers forment un tricot extensible, souvent utilisé pour les poignets et les bas.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Côtes 1/1"
    },
    {
     "slug": "two-by-two-rib",
@@ -11600,7 +11619,8 @@
     "craft": "knit",
     "level": "Débutant",
     "summary": "Des paires de colonnes d'endroit et d'envers donnent des côtes plus marquées et très extensibles.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Côtes 2/2"
    },
    {
     "slug": "broken-rib",
@@ -11616,7 +11636,8 @@
     "craft": "knit",
     "level": "Débutant confirmé",
     "summary": "Des blocs d'endroit et d'envers s'inversent tous les quatre rangs : le tricot semble tressé. Il reste plat.",
-    "rowFactor": 1.1
+    "rowFactor": 1.1,
+    "localName": "Point de vannerie"
    },
    {
     "slug": "diagonal-rib",
@@ -11640,7 +11661,8 @@
     "craft": "knit",
     "level": "Intermédiaire",
     "summary": "Des torsades de quatre mailles croisées tous les quatre rangs entre des côtes envers, pour que chacune s'enroule comme une corde.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Torsade"
    },
    {
     "slug": "horseshoe-cable",
@@ -11648,7 +11670,8 @@
     "craft": "knit",
     "level": "Avancé",
     "summary": "Deux torsades côte à côte, l'une croisée vers la droite et l'autre vers la gauche, s'écartent en fer à cheval tous les huit rangs.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Torsade en fer à cheval"
    },
    {
     "slug": "feather-and-fan",
@@ -11665,6 +11688,7 @@
     "level": "Débutant",
     "summary": "Le point de base le plus bas, pour un ouvrage ferme et dense, idéal pour les lavettes et les sacs.",
     "rowFactor": 1,
+    "localName": "Maille serrée",
     "abbreviation": "ms"
    },
    {
@@ -11674,6 +11698,7 @@
     "level": "Débutant",
     "summary": "Une hauteur entre la maille serrée et la bride : rapide à faire, doux et chaud.",
     "rowFactor": 0.7,
+    "localName": "Demi-bride",
     "abbreviation": "db"
    },
    {
@@ -11683,6 +11708,7 @@
     "level": "Débutant",
     "summary": "Un point haut qui avance vite et tombe bien, adapté aux couvertures et aux écharpes.",
     "rowFactor": 0.55,
+    "localName": "Bride",
     "abbreviation": "b"
    },
    {
@@ -11699,7 +11725,8 @@
     "craft": "crochet",
     "level": "Débutant",
     "summary": "Des mailles serrées séparées par une maille en l'air, piquées dans les espaces du rang précédent. Aussi appelé point de lin ou de granit.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Point de lin"
    },
    {
     "slug": "mesh-stitch",
@@ -11715,7 +11742,8 @@
     "craft": "crochet",
     "level": "Débutant confirmé",
     "summary": "Des paires de brides partagent une même maille, et chaque rang s'empile dans les V du précédent, pour un ouvrage ajouré et texturé.",
-    "rowFactor": 0.55
+    "rowFactor": 0.55,
+    "localName": "Point en V"
    },
    {
     "slug": "puff-stitch",
@@ -11724,6 +11752,7 @@
     "level": "Intermédiaire",
     "summary": "Des points soufflés doux et ronds dans les espaces de la rangée précédente, séparés par une maille en l'air, pour un ouvrage épais et moelleux.",
     "rowFactor": 0.7,
+    "localName": "Point soufflé",
     "abbreviation": "ps"
    },
    {
@@ -11743,7 +11772,8 @@
     "craft": "knit",
     "level": "Anfänger",
     "summary": "Alle Reihen rechts stricken. Das Gestrick liegt flach, sieht auf beiden Seiten gleich aus und zeigt weiche Querrippen.",
-    "rowFactor": 1.4
+    "rowFactor": 1.4,
+    "localName": "Kraus rechts"
    },
    {
     "slug": "stockinette-stitch",
@@ -11751,7 +11781,8 @@
     "craft": "knit",
     "level": "Anfänger",
     "summary": "Eine Reihe rechts, eine Reihe links. Vorne glatt, hinten noppig, und die Kanten rollen sich gern ein.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Glatt rechts"
    },
    {
     "slug": "seed-stitch",
@@ -11759,7 +11790,8 @@
     "craft": "knit",
     "level": "Anfänger",
     "summary": "Rechte und linke Maschen wechseln sich ab und versetzen sich reihenweise, für ein festes, körniges Gestrick, das flach liegt.",
-    "rowFactor": 1.1
+    "rowFactor": 1.1,
+    "localName": "Perlmuster"
    },
    {
     "slug": "double-seed-stitch",
@@ -11767,7 +11799,8 @@
     "craft": "knit",
     "level": "Anfänger",
     "summary": "Wie Perlmuster, aber jede Musterreihe wird zweimal gearbeitet, bevor rechte und linke Maschen tauschen. Das Bild wird größer.",
-    "rowFactor": 1.1
+    "rowFactor": 1.1,
+    "localName": "Doppeltes Perlmuster"
    },
    {
     "slug": "one-by-one-rib",
@@ -11775,7 +11808,8 @@
     "craft": "knit",
     "level": "Anfänger",
     "summary": "Einzelne rechte und linke Maschenreihen ergeben ein dehnbares Gestrick, oft für Bündchen und Säume.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Rippenmuster 1 rechts, 1 links"
    },
    {
     "slug": "two-by-two-rib",
@@ -11783,7 +11817,8 @@
     "craft": "knit",
     "level": "Anfänger",
     "summary": "Paare aus rechten und linken Maschenreihen ergeben kräftigere Rippen und viel Dehnung.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Rippenmuster 2 rechts, 2 links"
    },
    {
     "slug": "broken-rib",
@@ -11799,7 +11834,8 @@
     "craft": "knit",
     "level": "Fortgeschrittene Anfänger",
     "summary": "Felder aus rechten und linken Maschen tauschen alle vier Reihen, sodass das Gestrick wie geflochten wirkt. Es liegt flach.",
-    "rowFactor": 1.1
+    "rowFactor": 1.1,
+    "localName": "Korbmuster"
    },
    {
     "slug": "diagonal-rib",
@@ -11815,7 +11851,8 @@
     "craft": "knit",
     "level": "Mittelstufe",
     "summary": "Linke Maschen steigen und fallen in schrägen Linien über glatt rechts und umreißen ein Gitter aus Rauten.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Rautenmuster"
    },
    {
     "slug": "rope-cable",
@@ -11823,7 +11860,8 @@
     "craft": "knit",
     "level": "Mittelstufe",
     "summary": "Zöpfe über vier Maschen, alle vier Reihen verkreuzt, zwischen linken Maschen, sodass sich jeder wie ein Seil dreht.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Zopfmuster"
    },
    {
     "slug": "horseshoe-cable",
@@ -11831,7 +11869,8 @@
     "craft": "knit",
     "level": "Fortgeschritten",
     "summary": "Zwei Zöpfe nebeneinander, einer nach rechts und einer nach links verkreuzt, biegen sich alle acht Reihen zu einem Hufeisen auseinander.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Hufeisenzopf"
    },
    {
     "slug": "feather-and-fan",
@@ -11848,6 +11887,7 @@
     "level": "Anfänger",
     "summary": "Die niedrigste Grundmasche ergibt ein festes, dichtes Häkelstück, gut für Spültücher und Taschen.",
     "rowFactor": 1,
+    "localName": "Feste Masche",
     "abbreviation": "fM"
    },
    {
@@ -11857,6 +11897,7 @@
     "level": "Anfänger",
     "summary": "In der Höhe zwischen fester Masche und Stäbchen: schnell gearbeitet, weich und warm.",
     "rowFactor": 0.7,
+    "localName": "Halbes Stäbchen",
     "abbreviation": "hStb"
    },
    {
@@ -11866,6 +11907,7 @@
     "level": "Anfänger",
     "summary": "Eine hohe Masche, die schnell wächst und gut fällt, passend für Decken und Schals.",
     "rowFactor": 0.55,
+    "localName": "Stäbchen",
     "abbreviation": "Stb"
    },
    {
@@ -11882,7 +11924,8 @@
     "craft": "crochet",
     "level": "Anfänger",
     "summary": "Feste Maschen, getrennt durch eine Luftmasche, in die Lücken der Vorreihe gearbeitet. Auch Leinen- oder Granitmuster genannt.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Leinenmuster"
    },
    {
     "slug": "mesh-stitch",
@@ -11890,7 +11933,8 @@
     "craft": "crochet",
     "level": "Anfänger",
     "summary": "Stäbchen, getrennt durch eine Luftmasche, bilden ein offenes, leichtes und luftiges Gitter.",
-    "rowFactor": 0.55
+    "rowFactor": 0.55,
+    "localName": "Netzmuster"
    },
    {
     "slug": "v-stitch",
@@ -11898,7 +11942,8 @@
     "craft": "crochet",
     "level": "Fortgeschrittene Anfänger",
     "summary": "Stäbchenpaare teilen sich eine Einstichstelle, und jede Reihe setzt in die V der Vorreihe an, für ein offenes, strukturiertes Häkelstück.",
-    "rowFactor": 0.55
+    "rowFactor": 0.55,
+    "localName": "V-Stich"
    },
    {
     "slug": "puff-stitch",
@@ -11907,6 +11952,7 @@
     "level": "Mittelstufe",
     "summary": "Weiche, runde Büschelmaschen in den Lm-Bögen der Vorreihe, jeweils durch eine Luftmasche getrennt, für ein dickes, gepolstertes Häkelstück.",
     "rowFactor": 0.7,
+    "localName": "Büschelmasche",
     "abbreviation": "BüM"
    },
    {
@@ -11926,7 +11972,8 @@
     "craft": "knit",
     "level": "Iniciante",
     "summary": "Tricote todas as carreiras em meia. Fica plano, igual dos dois lados e com suaves ondas horizontais.",
-    "rowFactor": 1.4
+    "rowFactor": 1.4,
+    "localName": "Ponto tricô"
    },
    {
     "slug": "stockinette-stitch",
@@ -11934,7 +11981,8 @@
     "craft": "knit",
     "level": "Iniciante",
     "summary": "Uma carreira em meia e outra em tricô. Liso na frente, com relevo atrás, e as bordas tendem a enrolar.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Ponto meia"
    },
    {
     "slug": "seed-stitch",
@@ -11942,7 +11990,8 @@
     "craft": "knit",
     "level": "Iniciante",
     "summary": "Meia e tricô se alternam e se opõem a cada carreira, formando um tecido firme e granulado que fica plano.",
-    "rowFactor": 1.1
+    "rowFactor": 1.1,
+    "localName": "Ponto arroz"
    },
    {
     "slug": "double-seed-stitch",
@@ -11950,7 +11999,8 @@
     "craft": "knit",
     "level": "Iniciante",
     "summary": "Como o ponto arroz, mas cada carreira é feita duas vezes antes de trocar meia e tricô, com uma textura maior.",
-    "rowFactor": 1.1
+    "rowFactor": 1.1,
+    "localName": "Ponto arroz duplo"
    },
    {
     "slug": "one-by-one-rib",
@@ -11958,7 +12008,8 @@
     "craft": "knit",
     "level": "Iniciante",
     "summary": "Colunas simples de meia e tricô formam um tecido elástico, muito usado em punhos e barras.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Canelado 1x1"
    },
    {
     "slug": "two-by-two-rib",
@@ -11966,7 +12017,8 @@
     "craft": "knit",
     "level": "Iniciante",
     "summary": "Pares de colunas de meia e tricô dão canelados mais marcados e bastante elasticidade.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Canelado 2x2"
    },
    {
     "slug": "broken-rib",
@@ -11982,7 +12034,8 @@
     "craft": "knit",
     "level": "Iniciante avançado",
     "summary": "Blocos de meia e tricô trocam a cada quatro carreiras, e o tecido parece trançado. Fica plano.",
-    "rowFactor": 1.1
+    "rowFactor": 1.1,
+    "localName": "Ponto cesta"
    },
    {
     "slug": "diagonal-rib",
@@ -12006,7 +12059,8 @@
     "craft": "knit",
     "level": "Intermediário",
     "summary": "Tranças de quatro pontos cruzadas a cada quatro carreiras entre colunas de tricô, para que cada uma se torça como uma corda.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Trança"
    },
    {
     "slug": "horseshoe-cable",
@@ -12031,6 +12085,7 @@
     "level": "Iniciante",
     "summary": "O ponto básico mais baixo, para um tecido firme e denso, bom para panos e bolsas.",
     "rowFactor": 1,
+    "localName": "Ponto baixo",
     "abbreviation": "pb"
    },
    {
@@ -12040,6 +12095,7 @@
     "level": "Iniciante",
     "summary": "Altura entre o ponto baixo e o ponto alto: rápido de fazer, macio e quente.",
     "rowFactor": 0.7,
+    "localName": "Meio ponto alto",
     "abbreviation": "mpa"
    },
    {
@@ -12049,6 +12105,7 @@
     "level": "Iniciante",
     "summary": "Um ponto alto que cresce rápido e tem bom caimento, próprio para mantas e cachecóis.",
     "rowFactor": 0.55,
+    "localName": "Ponto alto",
     "abbreviation": "pa"
    },
    {
@@ -12065,7 +12122,8 @@
     "craft": "crochet",
     "level": "Iniciante",
     "summary": "Pontos baixos separados por uma corrente, feitos nos espaços da carreira anterior. Também chamado ponto linho ou granito.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Ponto linho"
    },
    {
     "slug": "mesh-stitch",
@@ -12081,7 +12139,8 @@
     "craft": "crochet",
     "level": "Iniciante avançado",
     "summary": "Pares de pontos altos dividem um ponto, e cada carreira se apoia nos V anteriores, para um tecido aberto e com textura.",
-    "rowFactor": 0.55
+    "rowFactor": 0.55,
+    "localName": "Ponto V"
    },
    {
     "slug": "puff-stitch",
@@ -12090,6 +12149,7 @@
     "level": "Intermediário",
     "summary": "Pontos puff macios e redondos nos espaços de corrente da carreira anterior, separados por uma corrente, para um trabalho grosso e fofo.",
     "rowFactor": 0.7,
+    "localName": "Ponto puff",
     "abbreviation": "pf"
    },
    {
@@ -12109,7 +12169,8 @@
     "craft": "knit",
     "level": "Principiante",
     "summary": "Lavora a diritto ogni ferro. Resta piatto, è uguale sui due lati e forma morbide coste orizzontali.",
-    "rowFactor": 1.4
+    "rowFactor": 1.4,
+    "localName": "Punto legaccio"
    },
    {
     "slug": "stockinette-stitch",
@@ -12117,7 +12178,8 @@
     "craft": "knit",
     "level": "Principiante",
     "summary": "Un ferro a diritto, uno a rovescio. Liscio davanti, a nodini dietro, con bordi che tendono ad arricciarsi.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Maglia rasata"
    },
    {
     "slug": "seed-stitch",
@@ -12125,7 +12187,8 @@
     "craft": "knit",
     "level": "Principiante",
     "summary": "Diritti e rovesci si alternano in ogni ferro e si oppongono, per un tessuto compatto e granuloso che resta piatto.",
-    "rowFactor": 1.1
+    "rowFactor": 1.1,
+    "localName": "Punto riso"
    },
    {
     "slug": "double-seed-stitch",
@@ -12133,7 +12196,8 @@
     "craft": "knit",
     "level": "Principiante",
     "summary": "Come il punto riso, ma ogni ferro si lavora due volte prima di scambiare diritti e rovesci, per una trama più grande.",
-    "rowFactor": 1.1
+    "rowFactor": 1.1,
+    "localName": "Punto riso doppio"
    },
    {
     "slug": "one-by-one-rib",
@@ -12141,7 +12205,8 @@
     "craft": "knit",
     "level": "Principiante",
     "summary": "Colonne singole di diritto e rovescio creano un tessuto elastico, spesso usato per polsini e orli.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Coste 1/1"
    },
    {
     "slug": "two-by-two-rib",
@@ -12149,7 +12214,8 @@
     "craft": "knit",
     "level": "Principiante",
     "summary": "Coppie di colonne di diritto e rovescio danno coste più marcate e molta elasticità.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Coste 2/2"
    },
    {
     "slug": "broken-rib",
@@ -12165,7 +12231,8 @@
     "craft": "knit",
     "level": "Principiante esperto",
     "summary": "Blocchi di diritti e rovesci si scambiano ogni quattro ferri, così il tessuto sembra intrecciato. Resta piatto.",
-    "rowFactor": 1.1
+    "rowFactor": 1.1,
+    "localName": "Punto cesto"
    },
    {
     "slug": "diagonal-rib",
@@ -12189,7 +12256,8 @@
     "craft": "knit",
     "level": "Intermedio",
     "summary": "Trecce di quattro maglie incrociate ogni quattro righe tra coste a rovescio, così ognuna si attorciglia come una corda.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Treccia"
    },
    {
     "slug": "horseshoe-cable",
@@ -12197,7 +12265,8 @@
     "craft": "knit",
     "level": "Avanzato",
     "summary": "Due trecce affiancate, una incrociata verso destra e una verso sinistra, si aprono a ferro di cavallo ogni otto righe.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Treccia a ferro di cavallo"
    },
    {
     "slug": "feather-and-fan",
@@ -12214,6 +12283,7 @@
     "level": "Principiante",
     "summary": "Il punto base più basso, per un tessuto compatto e denso, ottimo per strofinacci e borse.",
     "rowFactor": 1,
+    "localName": "Maglia bassa",
     "abbreviation": "mb"
    },
    {
@@ -12223,6 +12293,7 @@
     "level": "Principiante",
     "summary": "Di altezza intermedia tra maglia bassa e alta: veloce da lavorare, morbido e caldo.",
     "rowFactor": 0.7,
+    "localName": "Mezza maglia alta",
     "abbreviation": "mma"
    },
    {
@@ -12232,6 +12303,7 @@
     "level": "Principiante",
     "summary": "Un punto alto che cresce in fretta e cade bene, adatto a coperte e sciarpe.",
     "rowFactor": 0.55,
+    "localName": "Maglia alta",
     "abbreviation": "ma"
    },
    {
@@ -12248,7 +12320,8 @@
     "craft": "crochet",
     "level": "Principiante",
     "summary": "Maglie basse separate da una catenella, inserite negli spazi della riga sotto. Detto anche punto lino o granito.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Punto lino"
    },
    {
     "slug": "mesh-stitch",
@@ -12264,7 +12337,8 @@
     "craft": "crochet",
     "level": "Principiante esperto",
     "summary": "Coppie di maglie alte condividono una maglia, e ogni riga si impila sulle V sotto, per un tessuto aperto e con trama.",
-    "rowFactor": 0.55
+    "rowFactor": 0.55,
+    "localName": "Punto V"
    },
    {
     "slug": "puff-stitch",
@@ -12273,6 +12347,7 @@
     "level": "Intermedio",
     "summary": "Punti puff morbidi e rotondi negli spazi di catenella della riga precedente, separati da una catenella, per un tessuto spesso e soffice.",
     "rowFactor": 0.7,
+    "localName": "Punto puff",
     "abbreviation": "pf"
    },
    {
@@ -12292,7 +12367,8 @@
     "craft": "knit",
     "level": "Beginner",
     "summary": "Brei elke naald recht. Blijft plat, ziet er aan beide kanten hetzelfde uit en vormt zachte horizontale ribbels.",
-    "rowFactor": 1.4
+    "rowFactor": 1.4,
+    "localName": "Ribbelsteek"
    },
    {
     "slug": "stockinette-stitch",
@@ -12300,7 +12376,8 @@
     "craft": "knit",
     "level": "Beginner",
     "summary": "Eén naald recht, de volgende averecht. Glad aan de voorkant, bobbelig aan de achterkant, met randen die omkrullen.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Tricotsteek"
    },
    {
     "slug": "seed-stitch",
@@ -12308,7 +12385,8 @@
     "craft": "knit",
     "level": "Beginner",
     "summary": "Rechte en averechte steken wisselen af op elke naald en liggen tegenover elkaar, voor een stevige, korrelige stof die plat blijft.",
-    "rowFactor": 1.1
+    "rowFactor": 1.1,
+    "localName": "Gerstekorrel"
    },
    {
     "slug": "double-seed-stitch",
@@ -12316,7 +12394,8 @@
     "craft": "knit",
     "level": "Beginner",
     "summary": "Als gerstekorrel, maar elke naald wordt twee keer gebreid voordat recht en averecht wisselen, voor een grotere structuur.",
-    "rowFactor": 1.1
+    "rowFactor": 1.1,
+    "localName": "Dubbele gerstekorrel"
    },
    {
     "slug": "one-by-one-rib",
@@ -12324,7 +12403,8 @@
     "craft": "knit",
     "level": "Beginner",
     "summary": "Enkele kolommen recht en averecht geven een rekbare stof, vaak gebruikt voor manchetten en zomen.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Boordsteek 1x1"
    },
    {
     "slug": "two-by-two-rib",
@@ -12332,7 +12412,8 @@
     "craft": "knit",
     "level": "Beginner",
     "summary": "Paren kolommen recht en averecht geven forsere ribbels en veel rek.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Boordsteek 2x2"
    },
    {
     "slug": "broken-rib",
@@ -12372,7 +12453,8 @@
     "craft": "knit",
     "level": "Gemiddeld",
     "summary": "Kabels van vier steken, om de vier naalden gekruist, tussen averechte steken, zodat elke kabel als een touw draait.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Kabelsteek"
    },
    {
     "slug": "horseshoe-cable",
@@ -12380,7 +12462,8 @@
     "craft": "knit",
     "level": "Gevorderd",
     "summary": "Twee kabels naast elkaar, een naar rechts en een naar links gekruist, buigen om de acht naalden uiteen tot een hoefijzer.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Hoefijzerkabel"
    },
    {
     "slug": "feather-and-fan",
@@ -12397,6 +12480,7 @@
     "level": "Beginner",
     "summary": "De laagste basissteek, voor een stevige, dichte stof die goed is voor vaatdoeken en tassen.",
     "rowFactor": 1,
+    "localName": "Vaste",
     "abbreviation": "v"
    },
    {
@@ -12406,6 +12490,7 @@
     "level": "Beginner",
     "summary": "Qua hoogte tussen vaste en stokje: snel te haken, met een zacht, warm gevoel.",
     "rowFactor": 0.7,
+    "localName": "Half stokje",
     "abbreviation": "hst"
    },
    {
@@ -12415,6 +12500,7 @@
     "level": "Beginner",
     "summary": "Een hoge steek die snel groeit en mooi valt, dus geschikt voor dekens en sjaals.",
     "rowFactor": 0.55,
+    "localName": "Stokje",
     "abbreviation": "st"
    },
    {
@@ -12431,7 +12517,8 @@
     "craft": "crochet",
     "level": "Beginner",
     "summary": "Vaste steken gescheiden door een losse, in de ruimtes van de vorige toer. Ook wel linnen- of granietsteek genoemd.",
-    "rowFactor": 1
+    "rowFactor": 1,
+    "localName": "Linnensteek"
    },
    {
     "slug": "mesh-stitch",
@@ -12447,7 +12534,8 @@
     "craft": "crochet",
     "level": "Gevorderde beginner",
     "summary": "Paren stokjes delen een steek, en elke toer stapelt op de V's eronder, voor een open stof met structuur.",
-    "rowFactor": 0.55
+    "rowFactor": 0.55,
+    "localName": "V-steek"
    },
    {
     "slug": "puff-stitch",
@@ -12456,6 +12544,7 @@
     "level": "Gemiddeld",
     "summary": "Zachte, ronde puffsteken in de ruimtes van de vorige toer, telkens gescheiden door een losse, voor een dik, zacht haakwerk.",
     "rowFactor": 0.7,
+    "localName": "Puffsteek",
     "abbreviation": "ps"
    },
    {

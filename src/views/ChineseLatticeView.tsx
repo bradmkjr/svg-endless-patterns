@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/pageMetadata";
 import { References } from "@/components/References";
+import { OptionNote } from "@/components/OptionNote";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { OPENING_OPTION } from "@/lib/toolOptions";
 import { ChineseLatticeBuilderRoute } from "@/components/ChineseLatticeBuilderRoute";
@@ -22,6 +23,7 @@ export async function ChineseLatticeView({ locale, option }: { locale: Locale; o
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
+      <OptionNote tool="chineseLattice" option={option} locale={locale} />
       <PrimaryImageProvider group="chineseLattice" slug={option ?? OPENING_OPTION.chineseLattice} name={labels[option ?? OPENING_OPTION.chineseLattice]}>
         <ChineseLatticeBuilderRoute option={option} labels={labels} locale={locale} />
       </PrimaryImageProvider>

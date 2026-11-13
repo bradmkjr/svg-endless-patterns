@@ -19,6 +19,19 @@
       "lissajous": "Lissajous figures",
       "bulge": "Bulge"
     },
+    "waveNotes": {
+      "sine": "The smooth, even curve of a sine wave, repeated row on row.",
+      "cosine": "A sine wave shifted a quarter turn, so each row starts at a peak.",
+      "tangent": "Steep branches that run off toward infinity, cut where they reach three times the height.",
+      "square": "A wave that jumps between high and low, with flat tops like a castle wall.",
+      "triangle": "Straight lines rising and falling to sharp peaks: an even zigzag.",
+      "sawtooth": "A steady straight rise and a sudden drop, like the teeth of a saw.",
+      "damped": "Ripples that die away three times in each wave, then start again at full height.",
+      "interference": "Two sine waves of close lengths added together, so they swell and fade as they beat in and out of step.",
+      "moire": "Two sets of wavy lines a little apart in spacing, laid over each other, so fringes appear where they drift in and out of step.",
+      "lissajous": "A grid of looping figures, each tracing one wave across against another down.",
+      "bulge": "Lines swell apart around lenses in a square grid and crowd together between them: an op-art bulge."
+    },
     "frequency": "Waves across",
     "lenses": "Lenses across",
     "ratio": "Figure ratio",
@@ -79,6 +92,19 @@
       "moire": "Muaré",
       "lissajous": "Figuras de Lissajous",
       "bulge": "Abombado"
+    },
+    "waveNotes": {
+      "sine": "La curva suave y regular de una onda senoidal, repetida fila tras fila.",
+      "cosine": "Una onda senoidal desplazada un cuarto de vuelta, así que cada fila empieza en una cresta.",
+      "tangent": "Ramas empinadas que se disparan hacia el infinito, cortadas donde alcanzan tres veces la altura.",
+      "square": "Una onda que salta entre alto y bajo, con cimas planas como la muralla de un castillo.",
+      "triangle": "Líneas rectas que suben y bajan hasta picos agudos: un zigzag regular.",
+      "sawtooth": "Una subida recta y constante y una caída brusca, como los dientes de una sierra.",
+      "damped": "Ondulaciones que se apagan tres veces en cada onda y vuelven a empezar a toda altura.",
+      "interference": "Dos ondas senoidales de longitudes cercanas sumadas, que crecen y se apagan al entrar y salir de fase.",
+      "moire": "Dos series de líneas onduladas con un espaciado algo distinto, superpuestas, que forman franjas donde entran y salen de fase.",
+      "lissajous": "Una cuadrícula de figuras en bucle, cada una traza una onda horizontal contra otra vertical.",
+      "bulge": "Las líneas se separan alrededor de lentes en una cuadrícula y se apiñan entre ellas: un abultamiento de op art."
     },
     "frequency": "Ondas a lo ancho",
     "lenses": "Lentes a lo ancho",
@@ -141,6 +167,19 @@
       "lissajous": "Figures de Lissajous",
       "bulge": "Bombé"
     },
+    "waveNotes": {
+      "sine": "La courbe douce et régulière d'une sinusoïde, répétée rangée après rangée.",
+      "cosine": "Une sinusoïde décalée d'un quart de tour : chaque rangée commence sur une crête.",
+      "tangent": "Des branches raides qui filent vers l'infini, coupées là où elles atteignent trois fois la hauteur.",
+      "square": "Une onde qui saute entre haut et bas, aux sommets plats comme un rempart crénelé.",
+      "triangle": "Des lignes droites qui montent et descendent jusqu'à des pointes vives : un zigzag régulier.",
+      "sawtooth": "Une montée droite et régulière puis une chute brusque, comme les dents d'une scie.",
+      "damped": "Des ondulations qui s'éteignent trois fois dans chaque onde, puis repartent à pleine hauteur.",
+      "interference": "Deux sinusoïdes de longueurs proches additionnées, qui enflent et s'effacent en entrant et sortant de phase.",
+      "moire": "Deux séries de lignes ondulées à l'espacement un peu différent, superposées : des franges apparaissent là où elles entrent et sortent de phase.",
+      "lissajous": "Une grille de figures en boucle, chacune traçant une onde horizontale contre une onde verticale.",
+      "bulge": "Les lignes s'écartent autour de lentilles en grille carrée et se resserrent entre elles : un renflement d'op art."
+    },
     "frequency": "Ondes en largeur",
     "lenses": "Lentilles en largeur",
     "ratio": "Rapport de la figure",
@@ -201,6 +240,19 @@
       "moire": "Moiré",
       "lissajous": "Lissajous-Figuren",
       "bulge": "Wölbung"
+    },
+    "waveNotes": {
+      "sine": "Die glatte, gleichmäßige Kurve einer Sinuswelle, Reihe für Reihe wiederholt.",
+      "cosine": "Eine um eine Vierteldrehung verschobene Sinuswelle, sodass jede Reihe an einem Wellenberg beginnt.",
+      "tangent": "Steile Äste, die gegen unendlich laufen und dort abgeschnitten werden, wo sie die dreifache Höhe erreichen.",
+      "square": "Eine Welle, die zwischen hoch und tief springt, mit flachen Kuppen wie eine Burgmauer.",
+      "triangle": "Gerade Linien, die zu spitzen Zacken steigen und fallen: ein gleichmäßiges Zickzack.",
+      "sawtooth": "Ein gleichmäßiger, gerader Anstieg und ein plötzlicher Abfall, wie die Zähne einer Säge.",
+      "damped": "Kräuselungen, die in jeder Welle dreimal abklingen und dann mit voller Höhe neu beginnen.",
+      "interference": "Zwei Sinuswellen ähnlicher Länge, addiert, die an- und abschwellen, wenn sie in und aus dem Takt geraten.",
+      "moire": "Zwei Scharen gewellter Linien mit leicht verschiedenem Abstand, übereinandergelegt, sodass Streifen erscheinen, wo sie in und aus dem Takt geraten.",
+      "lissajous": "Ein Raster aus Schleifenfiguren, jede zeichnet eine waagerechte gegen eine senkrechte Welle.",
+      "bulge": "Linien weichen um Linsen in einem quadratischen Raster auseinander und drängen sich dazwischen: eine Op-Art-Wölbung."
     },
     "frequency": "Wellen in der Breite",
     "lenses": "Linsen in der Breite",
@@ -263,6 +315,19 @@
       "lissajous": "Figuras de Lissajous",
       "bulge": "Abaulado"
     },
+    "waveNotes": {
+      "sine": "A curva suave e regular de uma onda senoidal, repetida fileira após fileira.",
+      "cosine": "Uma onda senoidal deslocada um quarto de volta, então cada fileira começa numa crista.",
+      "tangent": "Ramos íngremes que disparam rumo ao infinito, cortados onde chegam a três vezes a altura.",
+      "square": "Uma onda que salta entre alto e baixo, com topos planos como a muralha de um castelo.",
+      "triangle": "Linhas retas que sobem e descem até picos agudos: um zigue-zague regular.",
+      "sawtooth": "Uma subida reta e constante e uma queda brusca, como os dentes de uma serra.",
+      "damped": "Ondulações que se apagam três vezes em cada onda e recomeçam na altura total.",
+      "interference": "Duas ondas senoidais de comprimentos próximos somadas, que crescem e somem ao entrar e sair de fase.",
+      "moire": "Dois conjuntos de linhas onduladas com espaçamento um pouco diferente, sobrepostos, formando franjas onde entram e saem de fase.",
+      "lissajous": "Uma grade de figuras em laço, cada uma traçando uma onda horizontal contra outra vertical.",
+      "bulge": "As linhas se afastam em volta de lentes numa grade quadrada e se apertam entre elas: um abaulamento de op art."
+    },
     "frequency": "Ondas na largura",
     "lenses": "Lentes na largura",
     "ratio": "Proporção da figura",
@@ -324,6 +389,19 @@
       "lissajous": "Figure di Lissajous",
       "bulge": "Rigonfiamento"
     },
+    "waveNotes": {
+      "sine": "La curva morbida e regolare di un'onda sinusoidale, ripetuta fila dopo fila.",
+      "cosine": "Un'onda sinusoidale spostata di un quarto di giro, così ogni fila parte da una cresta.",
+      "tangent": "Rami ripidi che corrono verso l'infinito, tagliati dove raggiungono tre volte l'altezza.",
+      "square": "Un'onda che salta tra alto e basso, con cime piatte come le mura di un castello.",
+      "triangle": "Linee rette che salgono e scendono fino a punte aguzze: uno zigzag regolare.",
+      "sawtooth": "Una salita dritta e costante e una caduta improvvisa, come i denti di una sega.",
+      "damped": "Increspature che si smorzano tre volte in ogni onda, poi ripartono a piena altezza.",
+      "interference": "Due onde sinusoidali di lunghezza vicina sommate, che crescono e svaniscono entrando e uscendo di fase.",
+      "moire": "Due serie di linee ondulate con spaziatura poco diversa, sovrapposte, così compaiono frange dove entrano e escono di fase.",
+      "lissajous": "Una griglia di figure ad anello, ognuna traccia un'onda orizzontale contro una verticale.",
+      "bulge": "Le linee si allargano attorno a lenti in una griglia quadrata e si stringono tra di esse: un rigonfiamento op art."
+    },
     "frequency": "Onde in larghezza",
     "lenses": "Lenti in larghezza",
     "ratio": "Rapporto della figura",
@@ -384,6 +462,19 @@
       "moire": "Moiré",
       "lissajous": "Lissajousfiguren",
       "bulge": "Bolling"
+    },
+    "waveNotes": {
+      "sine": "De gladde, regelmatige kromme van een sinusgolf, rij na rij herhaald.",
+      "cosine": "Een sinusgolf die een kwartslag is verschoven, zodat elke rij op een top begint.",
+      "tangent": "Steile takken die naar oneindig schieten, afgesneden waar ze drie keer de hoogte bereiken.",
+      "square": "Een golf die tussen hoog en laag springt, met platte toppen als een kasteelmuur.",
+      "triangle": "Rechte lijnen die naar scherpe punten stijgen en dalen: een regelmatige zigzag.",
+      "sawtooth": "Een gelijkmatige rechte stijging en een plotselinge val, als de tanden van een zaag.",
+      "damped": "Rimpelingen die in elke golf drie keer uitsterven en dan op volle hoogte opnieuw beginnen.",
+      "interference": "Twee sinusgolven van bijna gelijke lengte opgeteld, die aanzwellen en wegebben als ze in en uit de pas lopen.",
+      "moire": "Twee reeksen golflijnen met een iets andere afstand, over elkaar gelegd, zodat er banden verschijnen waar ze in en uit de pas lopen.",
+      "lissajous": "Een raster van lusfiguren, die elk een horizontale golf tegen een verticale tekenen.",
+      "bulge": "Lijnen wijken uiteen rond lenzen in een vierkant raster en dringen ertussen samen: een op-art-bolling."
     },
     "frequency": "Golven in de breedte",
     "lenses": "Lenzen in de breedte",

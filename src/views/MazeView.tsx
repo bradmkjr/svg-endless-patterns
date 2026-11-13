@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/pageMetadata";
 import { MazeBuilderRoute } from "@/components/MazeBuilderRoute";
+import { OptionNote } from "@/components/OptionNote";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { OPENING_OPTION } from "@/lib/toolOptions";
 import type { Locale } from "@/lib/generator";
@@ -22,6 +23,7 @@ export async function MazeView({ locale, option }: { locale: Locale; option?: st
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
+      <OptionNote tool="maze" option={option} locale={locale} />
       <PrimaryImageProvider group="maze" slug={option ?? OPENING_OPTION.maze} name={labels[option ?? OPENING_OPTION.maze]}>
         <MazeBuilderRoute option={option} labels={labels} locale={locale} />
       </PrimaryImageProvider>

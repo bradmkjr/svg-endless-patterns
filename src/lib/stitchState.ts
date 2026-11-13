@@ -95,7 +95,11 @@ export function serializeStitchState(stitch: StitchInfo, state: StitchRequest): 
 
 export const CRAFT_PATHS: Record<Craft, string> = { knit: "/knitting", crochet: "/crochet" };
 
-/** A stitch's name with the abbreviation its written pattern uses, as patterns are read: "Single Crochet (sc)". */
-export function stitchLabel(stitch: { name: string; abbreviation?: string }): string {
+/**
+ * A stitch's name with the abbreviation its written pattern uses, as patterns are read: "Single Crochet (sc)".
+ * Where the language has its own name, that comes first and the English name follows: "Feste Masche (Single Crochet, fM)".
+ */
+export function stitchLabel(stitch: { name: string; localName?: string; abbreviation?: string }): string {
+  if (stitch.localName) return `${stitch.localName} (${[stitch.name, stitch.abbreviation].filter(Boolean).join(", ")})`;
   return stitch.abbreviation ? `${stitch.name} (${stitch.abbreviation})` : stitch.name;
 }

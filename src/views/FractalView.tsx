@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/pageMetadata";
 import { FractalBuilderRoute } from "@/components/FractalBuilderRoute";
+import { OptionNote } from "@/components/OptionNote";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { OPENING_OPTION } from "@/lib/toolOptions";
 import { References } from "@/components/References";
@@ -22,6 +23,7 @@ export async function FractalView({ locale, option }: { locale: Locale; option?:
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
+      <OptionNote tool="fractal" option={option} locale={locale} />
       <PrimaryImageProvider group="fractal" slug={option ?? OPENING_OPTION.fractal} name={labels[option ?? OPENING_OPTION.fractal]}>
         <FractalBuilderRoute option={option} labels={labels} locale={locale} />
       </PrimaryImageProvider>

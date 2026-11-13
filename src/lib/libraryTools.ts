@@ -85,7 +85,7 @@ export async function libraryTypes(locale: Locale, season: Season | undefined = 
   const toolText = t.tools as Record<string, { title: string; text: string; output: string; explore: string }>;
   const fromSlugs = (group: ThumbGroup, path: string, items: { slug: string; name: string }[]) => alphabetical(items, locale).map((item) => ({ name: item.name, href: localePath(locale, `${path}${item.slug}/`), src: thumbSrc(group, item.slug) }));
   const blocks = fromSlugs("blocks", "/blocks/", await getBlocks(locale));
-  const knit = fromSlugs("knit", "/knitting/", await getStitchPatterns("knit", locale));
+  const knit = fromSlugs("knit", "/knitting/", (await getStitchPatterns("knit", locale)).map((stitch) => ({ ...stitch, name: stitchLabel(stitch) })));
   const crochet = fromSlugs("crochet", "/crochet/", (await getStitchPatterns("crochet", locale)).map((stitch) => ({ ...stitch, name: stitchLabel(stitch) })));
   const tartans = alphabetical(
     TARTAN_PRESETS.map((preset) => {

@@ -972,6 +972,14 @@
     }
   },
   "changelog": {
+    "Pattern pages that say what sets each pattern apart": {
+      "title": "Des pages de motifs qui disent ce qui distingue chacun",
+      "items": [
+        "La page de chaque motif commence par une ou deux phrases sur ce qui le rend différent, et les résultats de recherche montrent aussi cette phrase. De nouvelles couvrent les pliages de tie-dye, les motifs de sashiko, les formes de labyrinthe, les tuiles de Truchet, les fonctions d'onde et les structures de treillis chinois",
+        "Les points de tricot et de crochet affichent leur nom français à côté de l'anglais, comme Point mousse (Garter Stitch) ou Maille serrée (Single Crochet, ms)",
+        "Les descriptions du tie-dye et du sashiko nomment davantage de pliages et de motifs"
+      ]
+    },
     "Gliders, a glider gun and random noise in Game of Life": {
       "title": "Planeurs, canon à planeurs et bruit aléatoire dans le jeu de la vie",
       "items": [

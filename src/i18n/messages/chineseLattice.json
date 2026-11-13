@@ -14,6 +14,14 @@
       "interlocking": "Interlocking frames",
       "ice-ray": "Ice-ray (cracked ice)"
     },
+    "frameworkNotes": {
+      "square-fret": "Bars turn in a pinwheel around small squares and meet only in T-junctions.",
+      "octagon-square": "Regular octagons edge to edge, with small squares set on their points in the gaps.",
+      "hexagon": "A honeycomb of regular hexagons, with bars meeting in threes.",
+      "diagonal": "Bars on both diagonals, leaving square openings stood on their points.",
+      "interlocking": "Square frames that overlap their diagonal neighbors at the corners, like links of a chain.",
+      "ice-ray": "Straight cracks at every angle, like ice breaking on a pond, that wrap around so the repeat has no seam."
+    },
     "barWidth": "Bar width",
     "density": "Cells across a repeat",
     "densityIce": "Amount of ice",
@@ -69,6 +77,14 @@
       "diagonal": "Diagonal",
       "interlocking": "Marcos entrelazados",
       "ice-ray": "Hielo agrietado"
+    },
+    "frameworkNotes": {
+      "square-fret": "Las barras giran como un molinete alrededor de cuadrados pequeños y solo se unen en T.",
+      "octagon-square": "Octógonos regulares lado con lado, con cuadrados pequeños apoyados en una punta en los huecos.",
+      "hexagon": "Un panal de hexágonos regulares, con barras que se unen de tres en tres.",
+      "diagonal": "Barras en ambas diagonales, que dejan aberturas cuadradas apoyadas en una punta.",
+      "interlocking": "Marcos cuadrados que se solapan con sus vecinos en diagonal por las esquinas, como eslabones de una cadena.",
+      "ice-ray": "Grietas rectas en todos los ángulos, como hielo que se rompe en un estanque, que dan la vuelta para que la repetición no tenga costura."
     },
     "barWidth": "Ancho de barra",
     "density": "Celdas por repetición",
@@ -126,6 +142,14 @@
       "interlocking": "Cadres entrelacés",
       "ice-ray": "Glace craquelée"
     },
+    "frameworkNotes": {
+      "square-fret": "Les barres tournent en moulinet autour de petits carrés et ne se rejoignent qu'en T.",
+      "octagon-square": "Des octogones réguliers côte à côte, avec de petits carrés posés sur la pointe dans les vides.",
+      "hexagon": "Un nid d'abeilles d'hexagones réguliers, aux barres qui se rejoignent par trois.",
+      "diagonal": "Des barres sur les deux diagonales, qui laissent des ouvertures carrées posées sur la pointe.",
+      "interlocking": "Des cadres carrés qui chevauchent leurs voisins en diagonale par les coins, comme les maillons d'une chaîne.",
+      "ice-ray": "Des fissures droites dans tous les sens, comme la glace qui se brise sur un étang, qui se raccordent pour que le motif n'ait pas de couture."
+    },
     "barWidth": "Largeur des barres",
     "density": "Cellules par raccord",
     "densityIce": "Quantité de glace",
@@ -181,6 +205,14 @@
       "diagonal": "Diagonal",
       "interlocking": "Verschränkte Rahmen",
       "ice-ray": "Eisbruch"
+    },
+    "frameworkNotes": {
+      "square-fret": "Die Stäbe drehen sich windradartig um kleine Quadrate und treffen sich nur in T-Stößen.",
+      "octagon-square": "Regelmäßige Achtecke Kante an Kante, mit kleinen, auf die Spitze gestellten Quadraten in den Lücken.",
+      "hexagon": "Eine Wabe aus regelmäßigen Sechsecken, deren Stäbe sich zu dritt treffen.",
+      "diagonal": "Stäbe auf beiden Diagonalen, die auf die Spitze gestellte quadratische Öffnungen lassen.",
+      "interlocking": "Quadratische Rahmen, die ihre diagonalen Nachbarn an den Ecken überlappen, wie Glieder einer Kette.",
+      "ice-ray": "Gerade Risse in allen Winkeln, wie Eis, das auf einem Teich bricht, und so umlaufend, dass der Rapport keine Naht hat."
     },
     "barWidth": "Stabbreite",
     "density": "Zellen pro Rapport",
@@ -238,6 +270,14 @@
       "interlocking": "Molduras entrelaçadas",
       "ice-ray": "Gelo rachado"
     },
+    "frameworkNotes": {
+      "square-fret": "As barras giram como um cata-vento em volta de quadrados pequenos e só se encontram em T.",
+      "octagon-square": "Octógonos regulares lado a lado, com quadrados pequenos apoiados numa ponta nos vãos.",
+      "hexagon": "Uma colmeia de hexágonos regulares, com barras que se encontram de três em três.",
+      "diagonal": "Barras nas duas diagonais, que deixam aberturas quadradas apoiadas numa ponta.",
+      "interlocking": "Molduras quadradas que se sobrepõem às vizinhas na diagonal pelos cantos, como elos de uma corrente.",
+      "ice-ray": "Rachaduras retas em todos os ângulos, como gelo quebrando num lago, que dão a volta para que a repetição não tenha emenda."
+    },
     "barWidth": "Largura da barra",
     "density": "Células por repetição",
     "densityIce": "Quantidade de gelo",
@@ -294,6 +334,14 @@
       "interlocking": "Cornici intrecciate",
       "ice-ray": "Ghiaccio incrinato"
     },
+    "frameworkNotes": {
+      "square-fret": "Le barre girano a girandola attorno a piccoli quadrati e si incontrano solo a T.",
+      "octagon-square": "Ottagoni regolari lato a lato, con piccoli quadrati poggiati su un vertice nei vuoti.",
+      "hexagon": "Un alveare di esagoni regolari, con barre che si incontrano a tre a tre.",
+      "diagonal": "Barre su entrambe le diagonali, che lasciano aperture quadrate poggiate su un vertice.",
+      "interlocking": "Cornici quadrate che si sovrappongono ai vicini in diagonale negli angoli, come anelli di una catena.",
+      "ice-ray": "Crepe dritte in ogni direzione, come ghiaccio che si rompe su uno stagno, che girano attorno così il modulo non ha giunture."
+    },
     "barWidth": "Larghezza delle barre",
     "density": "Celle per modulo",
     "densityIce": "Quantità di ghiaccio",
@@ -349,6 +397,14 @@
       "diagonal": "Diagonaal",
       "interlocking": "Verstrengelde kaders",
       "ice-ray": "Gebarsten ijs"
+    },
+    "frameworkNotes": {
+      "square-fret": "De latten draaien als een molentje om kleine vierkanten en komen alleen in T-verbindingen samen.",
+      "octagon-square": "Regelmatige achthoeken zij aan zij, met kleine vierkanten op hun punt in de gaten.",
+      "hexagon": "Een honingraat van regelmatige zeshoeken, met latten die per drie samenkomen.",
+      "diagonal": "Latten op beide diagonalen, die vierkante openingen op hun punt laten.",
+      "interlocking": "Vierkante kaders die hun diagonale buren op de hoeken overlappen, als schakels van een ketting.",
+      "ice-ray": "Rechte barsten onder alle hoeken, als ijs dat op een vijver breekt, die rondlopen zodat de herhaling geen naad heeft."
     },
     "barWidth": "Latbreedte",
     "density": "Cellen per rapport",

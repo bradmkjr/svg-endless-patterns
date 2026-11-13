@@ -972,6 +972,14 @@
     }
   },
   "changelog": {
+    "Pattern pages that say what sets each pattern apart": {
+      "title": "Musterseiten, die sagen, was jedes Muster ausmacht",
+      "items": [
+        "Die eigene Seite jedes Musters beginnt mit ein oder zwei Sätzen dazu, was es unterscheidet, und auch Suchergebnisse zeigen diesen Satz. Neu sind sie für Batikfaltungen, Sashiko-Motive, Labyrinthformen, Truchet-Kacheln, Wellenfunktionen und chinesische Gittergerüste",
+        "Strick- und Häkelmuster zeigen den deutschen Namen neben dem englischen, etwa Kraus rechts (Garter Stitch) oder Feste Masche (Single Crochet, fM)",
+        "Die Beschreibungen von Batik und Sashiko nennen mehr ihrer Faltungen und Motive"
+      ]
+    },
     "Gliders, a glider gun and random noise in Game of Life": {
       "title": "Gleiter, eine Gleiterkanone und Zufallsrauschen im Spiel des Lebens",
       "items": [

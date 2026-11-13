@@ -19,6 +19,17 @@
       "double-chamfers": "Double chamfers",
       "steps": "Square steps"
     },
+    "styleNotes": {
+      "arcs": "Each tile holds two quarter circles on opposite corners. Turned one way or the other, they join into winding curves.",
+      "chamfers": "Each tile cuts across two opposite corners with straight lines, which join into angular paths.",
+      "diagonals": "One diagonal line per tile, turned one way or the other, for a maze of zigzags.",
+      "triangles": "Each tile is split on the diagonal with one half filled, the tile Sébastien Truchet first studied.",
+      "double-arcs": "Two quarter circles nest in each corner, so the curves run in pairs.",
+      "woven": "Tiles of arcs mixed with tiles where two strands cross, one passing under the other, like woven cord.",
+      "triple-arcs": "Three nested quarter circles in each corner, for bands of three curves.",
+      "double-chamfers": "Two straight cuts across each corner, for paired angular lines.",
+      "steps": "Lines step around two opposite corners of each tile in square turns, for paths like a fret."
+    },
     "arrangement": "Arrangement",
     "layout": "Layout",
     "arrangements": {
@@ -60,6 +71,17 @@
       "triple-arcs": "Arcos triples",
       "double-chamfers": "Chaflanes dobles",
       "steps": "Escalones cuadrados"
+    },
+    "styleNotes": {
+      "arcs": "Cada azulejo lleva dos cuartos de círculo en esquinas opuestas. Girados en un sentido u otro, se unen en curvas sinuosas.",
+      "chamfers": "Cada azulejo corta dos esquinas opuestas con líneas rectas, que se unen en caminos angulosos.",
+      "diagonals": "Una línea diagonal por azulejo, girada en un sentido u otro, para un laberinto de zigzags.",
+      "triangles": "Cada azulejo se divide en diagonal con una mitad rellena, el azulejo que estudió primero Sébastien Truchet.",
+      "double-arcs": "Dos cuartos de círculo anidados en cada esquina, así que las curvas van en pares.",
+      "woven": "Azulejos de arcos mezclados con azulejos donde dos hebras se cruzan, una por debajo de la otra, como un cordón trenzado.",
+      "triple-arcs": "Tres cuartos de círculo anidados en cada esquina, para franjas de tres curvas.",
+      "double-chamfers": "Dos cortes rectos en cada esquina, para líneas angulosas en pares.",
+      "steps": "Las líneas rodean dos esquinas opuestas de cada azulejo en giros rectos, para caminos como una greca."
     },
     "arrangement": "Disposición",
     "layout": "Diseño",
@@ -103,6 +125,17 @@
       "double-chamfers": "Doubles chanfreins",
       "steps": "Marches carrées"
     },
+    "styleNotes": {
+      "arcs": "Chaque tuile porte deux quarts de cercle sur des coins opposés. Tournés dans un sens ou dans l'autre, ils se rejoignent en courbes sinueuses.",
+      "chamfers": "Chaque tuile coupe deux coins opposés par des lignes droites, qui se rejoignent en chemins anguleux.",
+      "diagonals": "Une ligne diagonale par tuile, tournée dans un sens ou dans l'autre, pour un labyrinthe de zigzags.",
+      "triangles": "Chaque tuile est coupée en diagonale, une moitié remplie : la tuile que Sébastien Truchet a étudiée le premier.",
+      "double-arcs": "Deux quarts de cercle s'emboîtent dans chaque coin, et les courbes vont par paires.",
+      "woven": "Des tuiles d'arcs mêlées à des tuiles où deux brins se croisent, l'un passant sous l'autre, comme une cordelette tressée.",
+      "triple-arcs": "Trois quarts de cercle emboîtés dans chaque coin, pour des bandes de trois courbes.",
+      "double-chamfers": "Deux coupes droites sur chaque coin, pour des lignes anguleuses par paires.",
+      "steps": "Les lignes contournent deux coins opposés de chaque tuile à angle droit, pour des chemins comme une grecque."
+    },
     "arrangement": "Agencement",
     "layout": "Disposition",
     "arrangements": {
@@ -144,6 +177,17 @@
       "triple-arcs": "Dreifachbögen",
       "double-chamfers": "Doppelte Fasen",
       "steps": "Eckige Stufen"
+    },
+    "styleNotes": {
+      "arcs": "Jede Kachel trägt zwei Viertelkreise an gegenüberliegenden Ecken. In die eine oder andere Richtung gedreht, verbinden sie sich zu gewundenen Kurven.",
+      "chamfers": "Jede Kachel schneidet zwei gegenüberliegende Ecken mit geraden Linien ab, die sich zu eckigen Wegen verbinden.",
+      "diagonals": "Eine Diagonale pro Kachel, in die eine oder andere Richtung gedreht, für ein Labyrinth aus Zickzacklinien.",
+      "triangles": "Jede Kachel ist diagonal geteilt und zur Hälfte gefüllt: die Kachel, die Sébastien Truchet als Erster untersuchte.",
+      "double-arcs": "Zwei Viertelkreise liegen in jeder Ecke ineinander, sodass die Kurven paarweise laufen.",
+      "woven": "Kacheln mit Bögen, gemischt mit Kacheln, in denen sich zwei Stränge kreuzen, einer unter dem anderen, wie geflochtene Kordel.",
+      "triple-arcs": "Drei ineinanderliegende Viertelkreise in jeder Ecke, für Bänder aus drei Kurven.",
+      "double-chamfers": "Zwei gerade Schnitte über jede Ecke, für eckige Linien in Paaren.",
+      "steps": "Die Linien umlaufen zwei gegenüberliegende Ecken jeder Kachel in rechten Winkeln, für Wege wie ein Mäander."
     },
     "arrangement": "Anordnung",
     "layout": "Muster",
@@ -187,6 +231,17 @@
       "double-chamfers": "Chanfros duplos",
       "steps": "Degraus quadrados"
     },
+    "styleNotes": {
+      "arcs": "Cada azulejo tem dois quartos de círculo em cantos opostos. Girados para um lado ou para o outro, eles se unem em curvas sinuosas.",
+      "chamfers": "Cada azulejo corta dois cantos opostos com linhas retas, que se unem em caminhos angulosos.",
+      "diagonals": "Uma linha diagonal por azulejo, girada para um lado ou para o outro, para um labirinto de zigue-zagues.",
+      "triangles": "Cada azulejo é dividido na diagonal com uma metade preenchida, o azulejo que Sébastien Truchet estudou primeiro.",
+      "double-arcs": "Dois quartos de círculo encaixados em cada canto, então as curvas correm em pares.",
+      "woven": "Azulejos de arcos misturados com azulejos onde dois fios se cruzam, um passando por baixo do outro, como um cordão trançado.",
+      "triple-arcs": "Três quartos de círculo encaixados em cada canto, para faixas de três curvas.",
+      "double-chamfers": "Dois cortes retos em cada canto, para linhas angulosas em pares.",
+      "steps": "As linhas contornam dois cantos opostos de cada azulejo em ângulos retos, para caminhos como uma grega."
+    },
     "arrangement": "Arranjo",
     "layout": "Disposição",
     "arrangements": {
@@ -229,6 +284,17 @@
       "double-chamfers": "Smussi doppi",
       "steps": "Gradini squadrati"
     },
+    "styleNotes": {
+      "arcs": "Ogni piastrella porta due quarti di cerchio su angoli opposti. Ruotati in un verso o nell'altro, si uniscono in curve sinuose.",
+      "chamfers": "Ogni piastrella taglia due angoli opposti con linee rette, che si uniscono in percorsi spigolosi.",
+      "diagonals": "Una linea diagonale per piastrella, ruotata in un verso o nell'altro, per un labirinto di zigzag.",
+      "triangles": "Ogni piastrella è divisa in diagonale con una metà piena: la piastrella che Sébastien Truchet studiò per primo.",
+      "double-arcs": "Due quarti di cerchio annidati in ogni angolo, così le curve corrono a coppie.",
+      "woven": "Piastrelle di archi mescolate a piastrelle dove due fili si incrociano, uno sotto l'altro, come un cordoncino intrecciato.",
+      "triple-arcs": "Tre quarti di cerchio annidati in ogni angolo, per fasce di tre curve.",
+      "double-chamfers": "Due tagli dritti su ogni angolo, per linee spigolose a coppie.",
+      "steps": "Le linee girano attorno a due angoli opposti di ogni piastrella ad angolo retto, per percorsi come una greca."
+    },
     "arrangement": "Disposizione",
     "layout": "Disposizione",
     "arrangements": {
@@ -270,6 +336,17 @@
       "triple-arcs": "Drievoudige bogen",
       "double-chamfers": "Dubbele afschuiningen",
       "steps": "Vierkante trappen"
+    },
+    "styleNotes": {
+      "arcs": "Elke tegel heeft twee kwartcirkels op tegenoverliggende hoeken. De ene of de andere kant op gedraaid, sluiten ze aan tot kronkelende krommen.",
+      "chamfers": "Elke tegel snijdt twee tegenoverliggende hoeken af met rechte lijnen, die aansluiten tot hoekige paden.",
+      "diagonals": "Eén diagonale lijn per tegel, de ene of de andere kant op gedraaid, voor een doolhof van zigzaglijnen.",
+      "triangles": "Elke tegel is diagonaal gedeeld met één helft gevuld: de tegel die Sébastien Truchet als eerste bestudeerde.",
+      "double-arcs": "Twee kwartcirkels liggen in elke hoek in elkaar, zodat de krommen in paren lopen.",
+      "woven": "Tegels met bogen, gemengd met tegels waar twee strengen kruisen, de ene onder de andere door, als gevlochten koord.",
+      "triple-arcs": "Drie kwartcirkels in elkaar in elke hoek, voor banen van drie krommen.",
+      "double-chamfers": "Twee rechte sneden over elke hoek, voor hoekige lijnen in paren.",
+      "steps": "De lijnen lopen in rechte hoeken om twee tegenoverliggende hoeken van elke tegel, voor paden als een meander."
     },
     "arrangement": "Rangschikking",
     "layout": "Indeling",

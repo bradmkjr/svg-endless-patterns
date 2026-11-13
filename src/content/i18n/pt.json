@@ -972,6 +972,14 @@
     }
   },
   "changelog": {
+    "Pattern pages that say what sets each pattern apart": {
+      "title": "Páginas de padrões que dizem o que distingue cada um",
+      "items": [
+        "A página de cada padrão começa com uma ou duas frases sobre o que o torna diferente, e os resultados de busca também mostram essa frase. Há novas para as dobras de tie-dye, os motivos de sashiko, as formas de labirinto, os azulejos de Truchet, as funções de onda e as estruturas de treliça chinesa",
+        "Os pontos de tricô e crochê mostram o nome em português ao lado do inglês, como Ponto tricô (Garter Stitch) ou Ponto baixo (Single Crochet, pb)",
+        "As descrições de tie-dye e sashiko citam mais das suas dobras e motivos"
+      ]
+    },
     "Gliders, a glider gun and random noise in Game of Life": {
       "title": "Planadores, um canhão de planadores e ruído aleatório no Jogo da Vida",
       "items": [

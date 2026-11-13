@@ -1,7 +1,7 @@
 {
   "en": {
     "metaTitle": "Tie-Dye Pattern Maker: Fold Guide, Dye Amounts and PDF",
-    "metaDesc": "Preview a spiral, bullseye, accordion, sunburst, chevron or double spiral tie-dye in your colors, then get the folds, a dye map, mixing amounts and printable steps.",
+    "metaDesc": "Preview a spiral, bullseye, sunburst, crumple, heart or other tie-dye in your colors, then get the folds, a dye map, mixing amounts and printable steps.",
     "h1": "Tie-dye",
     "lede": "Preview a tie-dye in your colors, then get the folds, a map of where each dye goes, mixing amounts and printable steps.",
     "views": {
@@ -25,6 +25,17 @@
       "diagonal": "Diagonal stripes",
       "crumple": "Crumple",
       "heart": "Heart"
+    },
+    "techniqueNotes": {
+      "spiral": "Twist the shirt from its center into a flat disc and dye the wedges between the bands. It opens into a swirl.",
+      "bullseye": "Pull the center up into a long cone and tie bands down it. Each section opens into a ring around the center.",
+      "accordion": "Pleat the cloth both ways into a square stack and clamp it between boards, which keep their area free of dye.",
+      "sunburst": "Pull up a peak of cloth at each marked spot and tie it. Each peak opens into a burst ringed with white.",
+      "chevron": "Fold the shirt down its center and pleat it along a slanted line. The stripes open into V shapes down the middle.",
+      "double-spiral": "Twist two spots in opposite directions into two flat discs side by side, for two swirls on one shirt.",
+      "diagonal": "Pleat the shirt from one corner on a 45 degree slant and tie it in sections, for stripes that cross it diagonally.",
+      "crumple": "Scrunch the cloth into small uneven folds and squirt each dye onto its part, for a loose, marbled look.",
+      "heart": "Draw half a heart against the center fold, pleat along the line and tie it. The rings open into a heart."
     },
     "bands": {
       "spiral": "Wedges",
@@ -72,7 +83,7 @@
   },
   "es": {
     "metaTitle": "Generador de tie-dye: guía de plegado, cantidades de tinte y PDF",
-    "metaDesc": "Previsualiza un tie-dye en espiral, diana, acordeón, rayos de sol, chevrón o espiral doble con tus colores, y obtén los pliegues, un mapa de tintes, las cantidades de mezcla y los pasos para imprimir.",
+    "metaDesc": "Previsualiza un tie-dye en espiral, diana, rayos de sol, arrugado, corazón y más con tus colores, con los pliegues, un mapa de tintes y las cantidades.",
     "h1": "Tie-dye",
     "lede": "Previsualiza un tie-dye con tus colores y obtén los pliegues, un mapa de dónde va cada tinte, las cantidades y los pasos imprimibles.",
     "views": {
@@ -96,6 +107,17 @@
       "diagonal": "Rayas diagonales",
       "crumple": "Arrugado",
       "heart": "Corazón"
+    },
+    "techniqueNotes": {
+      "spiral": "Gira la camiseta desde el centro hasta formar un disco plano y tiñe las cuñas entre las gomas. Al abrirla, sale un remolino.",
+      "bullseye": "Tira del centro hacia arriba en un cono largo y átalo con gomas a lo largo. Cada sección se abre en un anillo alrededor del centro.",
+      "accordion": "Pliega la tela en acordeón en ambos sentidos hasta formar un cuadrado y sujétalo entre tablas, que dejan su zona sin teñir.",
+      "sunburst": "Levanta un pico de tela en cada punto marcado y átalo. Cada pico se abre en un estallido rodeado de blanco.",
+      "chevron": "Dobla la camiseta por su línea central y plísala a lo largo de una línea inclinada. Las franjas se abren en forma de V por el centro.",
+      "double-spiral": "Gira dos puntos en sentidos opuestos hasta formar dos discos planos uno al lado del otro, para dos remolinos en una camiseta.",
+      "diagonal": "Plisa la camiseta desde una esquina en un ángulo de 45 grados y átala por secciones, para franjas que la cruzan en diagonal.",
+      "crumple": "Arruga la tela en pliegues pequeños e irregulares y aplica cada tinte en su parte, para un aspecto suelto y jaspeado.",
+      "heart": "Dibuja medio corazón junto al doblez central, plisa a lo largo de la línea y átala. Los anillos se abren en un corazón."
     },
     "bands": {
       "spiral": "Cuñas",
@@ -143,7 +165,7 @@
   },
   "fr": {
     "metaTitle": "Créateur de tie-dye : pliages, quantités de teinture et PDF",
-    "metaDesc": "Prévisualisez un tie-dye en spirale, en cible, en accordéon, en rayons de soleil, en chevron ou en double spirale dans vos couleurs, puis obtenez les pliages, une carte des teintures, les quantités et les étapes à imprimer.",
+    "metaDesc": "Prévisualisez un tie-dye en spirale, en cible, en rayons de soleil, froissé, en cœur et plus, avec les pliages, la carte des teintures et les quantités.",
     "h1": "Tie-dye",
     "lede": "Prévisualisez un tie-dye dans vos couleurs, avec les pliages, le plan des teintures, les quantités et des étapes imprimables.",
     "views": {
@@ -167,6 +189,17 @@
       "diagonal": "Rayures diagonales",
       "crumple": "Froissé",
       "heart": "Coeur"
+    },
+    "techniqueNotes": {
+      "spiral": "Tournez le t-shirt depuis son centre en un disque plat et teignez les parts entre les élastiques. Déplié, il forme un tourbillon.",
+      "bullseye": "Tirez le centre vers le haut en un long cône et posez des élastiques le long. Chaque section s'ouvre en un anneau autour du centre.",
+      "accordion": "Pliez le tissu en accordéon dans les deux sens en une pile carrée et serrez-la entre deux planches, qui gardent leur zone sans teinture.",
+      "sunburst": "Pincez un pic de tissu à chaque point marqué et attachez-le. Chaque pic s'ouvre en un éclat cerclé de blanc.",
+      "chevron": "Pliez le t-shirt en deux sur sa ligne centrale et plissez-le le long d'une ligne en biais. Les rayures s'ouvrent en V au milieu.",
+      "double-spiral": "Tournez deux points en sens opposés en deux disques plats côte à côte, pour deux tourbillons sur un même t-shirt.",
+      "diagonal": "Plissez le t-shirt depuis un coin à 45 degrés et attachez-le par sections, pour des rayures qui le traversent en diagonale.",
+      "crumple": "Froissez le tissu en petits plis irréguliers et appliquez chaque teinture sur sa partie, pour un effet libre et marbré.",
+      "heart": "Dessinez un demi-cœur contre le pli central, plissez le long du trait et attachez. Les anneaux s'ouvrent en un cœur."
     },
     "bands": {
       "spiral": "Parts",
@@ -214,7 +247,7 @@
   },
   "de": {
     "metaTitle": "Batikmuster erstellen: Faltanleitung, Farbmengen und PDF",
-    "metaDesc": "Sehen Sie ein Batikmuster als Spirale, Zielscheibe, Ziehharmonika, Sonnenstrahlen, Chevron oder Doppelspirale in Ihren Farben und erhalten Sie Faltung, Farbplan, Mengen und druckbare Schritte.",
+    "metaDesc": "Batikmuster wie Spirale, Sonnenstrahlen, Knitterbatik, Herz oder diagonale Streifen in Ihren Farben, mit Faltanleitung, Farbplan, Mengen und PDF.",
     "h1": "Batik",
     "lede": "Sehen Sie ein Batikmuster in Ihren Farben und erhalten Sie Faltung, Farbplan, Mischmengen und druckbare Schritte.",
     "views": {
@@ -238,6 +271,17 @@
       "diagonal": "Diagonale Streifen",
       "crumple": "Knitterbatik",
       "heart": "Herz"
+    },
+    "techniqueNotes": {
+      "spiral": "Drehen Sie das Shirt von der Mitte aus zu einer flachen Scheibe und färben Sie die Keile zwischen den Gummibändern. Geöffnet ergibt es einen Wirbel.",
+      "bullseye": "Ziehen Sie die Mitte zu einem langen Kegel hoch und binden Sie ihn mit Gummibändern ab. Jeder Abschnitt öffnet sich zu einem Ring um die Mitte.",
+      "accordion": "Falten Sie den Stoff in beide Richtungen zu einem quadratischen Stapel und klemmen Sie ihn zwischen Bretter, die ihre Fläche frei von Farbe halten.",
+      "sunburst": "Ziehen Sie an jeder markierten Stelle eine Stoffspitze hoch und binden Sie sie ab. Jede Spitze öffnet sich zu einem Strahlenkranz mit weißem Rand.",
+      "chevron": "Falten Sie das Shirt längs in der Mitte und legen Sie es entlang einer schrägen Linie in Falten. Die Streifen öffnen sich zu V-Formen in der Mitte.",
+      "double-spiral": "Drehen Sie zwei Stellen gegenläufig zu zwei flachen Scheiben nebeneinander, für zwei Wirbel auf einem Shirt.",
+      "diagonal": "Legen Sie das Shirt von einer Ecke aus im 45-Grad-Winkel in Falten und binden Sie es in Abschnitte ab, für Streifen, die es schräg kreuzen.",
+      "crumple": "Knüllen Sie den Stoff in kleine, unregelmäßige Falten und geben Sie jede Farbe auf ihren Teil, für einen lockeren, marmorierten Look.",
+      "heart": "Zeichnen Sie ein halbes Herz an die Mittelfalte, legen Sie den Stoff entlang der Linie in Falten und binden Sie ab. Die Ringe öffnen sich zu einem Herz."
     },
     "bands": {
       "spiral": "Segmente",
@@ -285,7 +329,7 @@
   },
   "pt": {
     "metaTitle": "Gerador de tie-dye: guia de dobra, quantidades de tinta e PDF",
-    "metaDesc": "Veja um tie-dye em espiral, alvo, sanfona, raios de sol, chevron ou espiral dupla nas suas cores, e receba as dobras, um mapa de corantes, as quantidades de mistura e os passos para imprimir.",
+    "metaDesc": "Veja um tie-dye em espiral, alvo, raios de sol, amassado, coração e mais nas suas cores, com as dobras, um mapa de corantes e as quantidades.",
     "h1": "Tie-dye",
     "lede": "Veja um tie-dye nas suas cores e receba as dobras, um mapa de onde vai cada tinta, as quantidades e os passos para imprimir.",
     "views": {
@@ -309,6 +353,17 @@
       "diagonal": "Listras diagonais",
       "crumple": "Amassado",
       "heart": "Coração"
+    },
+    "techniqueNotes": {
+      "spiral": "Torça a camiseta a partir do centro até formar um disco plano e tinja as fatias entre os elásticos. Aberta, ela vira um redemoinho.",
+      "bullseye": "Puxe o centro para cima num cone longo e amarre elásticos ao longo dele. Cada seção se abre num anel em volta do centro.",
+      "accordion": "Dobre o tecido em sanfona nos dois sentidos até formar uma pilha quadrada e prenda-a entre tábuas, que deixam sua área sem tinta.",
+      "sunburst": "Puxe um pico de tecido em cada ponto marcado e amarre. Cada pico se abre numa explosão contornada de branco.",
+      "chevron": "Dobre a camiseta ao meio pela linha central e pregueie ao longo de uma linha inclinada. As listras se abrem em V pelo meio.",
+      "double-spiral": "Torça dois pontos em sentidos opostos até formar dois discos planos lado a lado, para dois redemoinhos numa camiseta.",
+      "diagonal": "Pregueie a camiseta a partir de um canto a 45 graus e amarre por seções, para listras que a cruzam na diagonal.",
+      "crumple": "Amasse o tecido em dobras pequenas e irregulares e aplique cada tinta na sua parte, para um visual solto e marmorizado.",
+      "heart": "Desenhe meio coração junto à dobra central, pregueie ao longo da linha e amarre. Os anéis se abrem num coração."
     },
     "bands": {
       "spiral": "Fatias",
@@ -381,6 +436,17 @@
       "crumple": "Stropicciato",
       "heart": "Cuore"
     },
+    "techniqueNotes": {
+      "spiral": "Torci la maglietta dal centro fino a un disco piatto e tingi gli spicchi tra gli elastici. Aperta, diventa un vortice.",
+      "bullseye": "Tira il centro verso l'alto in un lungo cono e lega elastici lungo di esso. Ogni sezione si apre in un anello attorno al centro.",
+      "accordion": "Piega la stoffa a fisarmonica nei due sensi in una pila quadrata e stringila tra due assi, che lasciano la loro area senza tinta.",
+      "sunburst": "Solleva un picco di stoffa in ogni punto segnato e legalo. Ogni picco si apre in un'esplosione bordata di bianco.",
+      "chevron": "Piega la maglietta a metà lungo la linea centrale e plissettala lungo una linea obliqua. Le strisce si aprono a V lungo il centro.",
+      "double-spiral": "Torci due punti in sensi opposti fino a due dischi piatti affiancati, per due vortici su una maglietta.",
+      "diagonal": "Plissetta la maglietta da un angolo a 45 gradi e legala a sezioni, per strisce che la attraversano in diagonale.",
+      "crumple": "Accartoccia la stoffa in piccole pieghe irregolari e versa ogni tinta sulla sua parte, per un effetto libero e marmorizzato.",
+      "heart": "Disegna mezzo cuore contro la piega centrale, plissetta lungo la linea e lega. Gli anelli si aprono in un cuore."
+    },
     "bands": {
       "spiral": "Spicchi",
       "bullseye": "Anelli",
@@ -451,6 +517,17 @@
       "diagonal": "Diagonale strepen",
       "crumple": "Kreukel",
       "heart": "Hart"
+    },
+    "techniqueNotes": {
+      "spiral": "Draai het shirt vanuit het midden tot een platte schijf en verf de punten tussen de elastiekjes. Opengevouwen wordt het een draaikolk.",
+      "bullseye": "Trek het midden omhoog tot een lange kegel en bind er elastiekjes omheen. Elk deel opent zich tot een ring rond het midden.",
+      "accordion": "Vouw de stof in beide richtingen als een harmonica tot een vierkant pakje en klem het tussen plankjes, die hun vlak vrij van verf houden.",
+      "sunburst": "Trek op elk gemarkeerd punt een punt stof omhoog en bind het af. Elke punt opent zich tot een straalkrans met een witte rand.",
+      "chevron": "Vouw het shirt dubbel over de middellijn en plooi het langs een schuine lijn. De strepen openen zich tot V-vormen in het midden.",
+      "double-spiral": "Draai twee punten in tegengestelde richting tot twee platte schijven naast elkaar, voor twee draaikolken op één shirt.",
+      "diagonal": "Plooi het shirt vanuit een hoek onder 45 graden en bind het in delen af, voor strepen die het schuin kruisen.",
+      "crumple": "Prop de stof in kleine, onregelmatige plooien en spuit elke verf op zijn deel, voor een losse, gemarmerde look.",
+      "heart": "Teken een half hart tegen de middenvouw, plooi langs de lijn en bind af. De ringen openen zich tot een hart."
     },
     "bands": {
       "spiral": "Wiggen",

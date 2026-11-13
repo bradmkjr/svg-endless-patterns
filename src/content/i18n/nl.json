@@ -972,6 +972,14 @@
     }
   },
   "changelog": {
+    "Pattern pages that say what sets each pattern apart": {
+      "title": "Patroonpagina's die zeggen wat elk patroon bijzonder maakt",
+      "items": [
+        "De eigen pagina van elk patroon begint met een of twee zinnen over wat het anders maakt, en zoekresultaten tonen die zin ook. Nieuw zijn ze voor tie-dyevouwen, sashikomotieven, doolhofvormen, Truchet-tegels, golffuncties en Chinese traliegrondvormen",
+        "Brei- en haaksteken tonen de Nederlandse naam naast de Engelse, zoals Ribbelsteek (Garter Stitch) of Vaste (Single Crochet, v)",
+        "De beschrijvingen van tie-dye en sashiko noemen meer van hun vouwen en motieven"
+      ]
+    },
     "Gliders, a glider gun and random noise in Game of Life": {
       "title": "Gliders, een glidergeweer en willekeurige ruis in Game of Life",
       "items": [

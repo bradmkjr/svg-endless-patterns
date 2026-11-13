@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/pageMetadata";
 import { References } from "@/components/References";
+import { OptionNote } from "@/components/OptionNote";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { WeavingBuilderRoute } from "@/components/WeavingBuilderRoute";
 import { WeavingDrafts } from "@/components/WeavingDrafts";
@@ -25,6 +26,7 @@ export async function WeavingView({ locale, option }: { locale: Locale; option?:
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
+      <OptionNote tool="weaving" option={option} locale={locale} />
       <PrimaryImageProvider group="weaving" slug={option ?? OPENING_OPTION.weaving} name={labels[option ?? OPENING_OPTION.weaving]}>
         <WeavingBuilderRoute option={option} labels={labels} locale={locale} />
       </PrimaryImageProvider>

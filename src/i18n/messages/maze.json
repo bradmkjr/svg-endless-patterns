@@ -15,6 +15,15 @@
       "diamond": "Diamond",
       "hidden-message": "Hidden message"
     },
+    "shapeNotes": {
+      "square": "A grid of square cells with exactly one route from the start to the exit.",
+      "rectangle": "Square cells in a rectangle, with the columns and rows you choose, to fill a page or a poster.",
+      "circle": "Rings of cells around one cell at the center, where the route ends.",
+      "hexagon": "A hexagon of six-sided cells, so each cell can open on up to six sides.",
+      "triangle": "A large triangle of triangular cells, so each cell can open on up to three sides.",
+      "diamond": "A square stood on its point, with corridors that run on the diagonals.",
+      "hidden-message": "Type a message, and the solution line traces its letters, so drawing the route spells it out."
+    },
     "algorithm": "Algorithm",
     "algorithms": {
       "backtracker": "Recursive backtracker",
@@ -102,6 +111,15 @@
       "triangle": "Triángulo",
       "diamond": "Rombo",
       "hidden-message": "Mensaje oculto"
+    },
+    "shapeNotes": {
+      "square": "Una cuadrícula de celdas cuadradas con una sola ruta desde la salida hasta la meta.",
+      "rectangle": "Celdas cuadradas en un rectángulo, con las columnas y filas que elijas, para llenar una página o un póster.",
+      "circle": "Anillos de celdas alrededor de una celda central, donde termina la ruta.",
+      "hexagon": "Un hexágono de celdas de seis lados, así que cada celda puede abrirse hasta por seis lados.",
+      "triangle": "Un gran triángulo de celdas triangulares, así que cada celda puede abrirse hasta por tres lados.",
+      "diamond": "Un cuadrado apoyado en una punta, con pasillos que corren en diagonal.",
+      "hidden-message": "Escribe un mensaje y la línea de la solución recorre sus letras, así que al trazar la ruta se lee el mensaje."
     },
     "algorithm": "Algoritmo",
     "algorithms": {
@@ -191,6 +209,15 @@
       "diamond": "Losange",
       "hidden-message": "Message caché"
     },
+    "shapeNotes": {
+      "square": "Une grille de cases carrées avec un seul chemin du départ à la sortie.",
+      "rectangle": "Des cases carrées dans un rectangle, avec les colonnes et les rangées de votre choix, pour remplir une page ou une affiche.",
+      "circle": "Des anneaux de cases autour d'une case centrale, où le chemin se termine.",
+      "hexagon": "Un hexagone de cases à six côtés : chaque case peut s'ouvrir sur six côtés au plus.",
+      "triangle": "Un grand triangle de cases triangulaires : chaque case peut s'ouvrir sur trois côtés au plus.",
+      "diamond": "Un carré posé sur la pointe, avec des couloirs qui suivent les diagonales.",
+      "hidden-message": "Tapez un message : la ligne de la solution en suit les lettres, et tracer le chemin l'écrit."
+    },
     "algorithm": "Algorithme",
     "algorithms": {
       "backtracker": "Retour sur trace récursif",
@@ -278,6 +305,15 @@
       "triangle": "Dreieck",
       "diamond": "Raute",
       "hidden-message": "Versteckte Botschaft"
+    },
+    "shapeNotes": {
+      "square": "Ein Raster aus quadratischen Zellen mit genau einem Weg vom Start zum Ausgang.",
+      "rectangle": "Quadratische Zellen in einem Rechteck, mit Spalten und Reihen nach Wahl, für eine Seite oder ein Poster.",
+      "circle": "Ringe aus Zellen um eine Zelle in der Mitte, wo der Weg endet.",
+      "hexagon": "Ein Sechseck aus sechseckigen Zellen, sodass sich jede Zelle nach bis zu sechs Seiten öffnen kann.",
+      "triangle": "Ein großes Dreieck aus dreieckigen Zellen, sodass sich jede Zelle nach bis zu drei Seiten öffnen kann.",
+      "diamond": "Ein auf die Spitze gestelltes Quadrat, mit Gängen, die auf den Diagonalen verlaufen.",
+      "hidden-message": "Gib eine Nachricht ein: Die Lösungslinie fährt ihre Buchstaben nach, sodass der eingezeichnete Weg sie ausschreibt."
     },
     "algorithm": "Algorithmus",
     "algorithms": {
@@ -367,6 +403,15 @@
       "diamond": "Losango",
       "hidden-message": "Mensagem oculta"
     },
+    "shapeNotes": {
+      "square": "Uma grade de células quadradas com um único caminho da entrada até a saída.",
+      "rectangle": "Células quadradas num retângulo, com as colunas e fileiras que você escolher, para encher uma página ou um pôster.",
+      "circle": "Anéis de células em volta de uma célula central, onde o caminho termina.",
+      "hexagon": "Um hexágono de células de seis lados, então cada célula pode se abrir em até seis lados.",
+      "triangle": "Um grande triângulo de células triangulares, então cada célula pode se abrir em até três lados.",
+      "diamond": "Um quadrado apoiado numa ponta, com corredores que correm nas diagonais.",
+      "hidden-message": "Digite uma mensagem e a linha da solução percorre suas letras, então traçar o caminho escreve a mensagem."
+    },
     "algorithm": "Algoritmo",
     "algorithms": {
       "backtracker": "Retrocesso recursivo",
@@ -455,6 +500,15 @@
       "diamond": "Rombo",
       "hidden-message": "Messaggio nascosto"
     },
+    "shapeNotes": {
+      "square": "Una griglia di celle quadrate con un solo percorso dalla partenza all'uscita.",
+      "rectangle": "Celle quadrate in un rettangolo, con le colonne e le righe che scegli, per riempire una pagina o un poster.",
+      "circle": "Anelli di celle attorno a una cella centrale, dove il percorso finisce.",
+      "hexagon": "Un esagono di celle a sei lati, così ogni cella può aprirsi fino a sei lati.",
+      "triangle": "Un grande triangolo di celle triangolari, così ogni cella può aprirsi fino a tre lati.",
+      "diamond": "Un quadrato poggiato su un vertice, con corridoi che corrono sulle diagonali.",
+      "hidden-message": "Scrivi un messaggio e la linea della soluzione ne percorre le lettere, così tracciare il percorso lo scrive."
+    },
     "algorithm": "Algoritmo",
     "algorithms": {
       "backtracker": "Backtracking ricorsivo",
@@ -542,6 +596,15 @@
       "triangle": "Driehoek",
       "diamond": "Ruit",
       "hidden-message": "Verborgen boodschap"
+    },
+    "shapeNotes": {
+      "square": "Een raster van vierkante cellen met precies één route van start naar uitgang.",
+      "rectangle": "Vierkante cellen in een rechthoek, met de kolommen en rijen die je kiest, voor een pagina of een poster.",
+      "circle": "Ringen van cellen rond één cel in het midden, waar de route eindigt.",
+      "hexagon": "Een zeshoek van zeszijdige cellen, zodat elke cel aan maximaal zes kanten open kan.",
+      "triangle": "Een grote driehoek van driehoekige cellen, zodat elke cel aan maximaal drie kanten open kan.",
+      "diamond": "Een vierkant op zijn punt, met gangen die over de diagonalen lopen.",
+      "hidden-message": "Typ een bericht en de oplossingslijn volgt de letters, zodat het tekenen van de route het bericht uitschrijft."
     },
     "algorithm": "Algoritme",
     "algorithms": {

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/pageMetadata";
 import { References } from "@/components/References";
+import { OptionNote } from "@/components/OptionNote";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { OPENING_OPTION } from "@/lib/toolOptions";
 import { OrigamiTessellationBuilderRoute } from "@/components/OrigamiTessellationBuilderRoute";
@@ -23,6 +24,7 @@ export async function OrigamiTessellationView({ locale, option }: { locale: Loca
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
+      <OptionNote tool="origamiTessellation" option={option} locale={locale} />
       <PrimaryImageProvider group="origamiTessellation" slug={shown} name={labels[shown]}>
         <OrigamiTessellationBuilderRoute option={option} labels={labels} locale={locale} />
       </PrimaryImageProvider>

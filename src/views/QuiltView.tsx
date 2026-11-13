@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/pageMetadata";
 import { FavoritesShelf } from "@/components/FavoritesShelf";
 import { References } from "@/components/References";
+import { OptionNote } from "@/components/OptionNote";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { QuiltBuilderRoute } from "@/components/QuiltBuilderRoute";
 import type { Locale } from "@/lib/generator";
@@ -28,6 +29,7 @@ export async function QuiltView({ locale, option }: { locale: Locale; option?: s
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
+      <OptionNote tool="quilt" option={option} locale={locale} />
       <PrimaryImageProvider group="quilt" slug={shown} name={labels[shown]}>
         <QuiltBuilderRoute option={option} labels={labels} blockNames={blockNames} locale={locale} />
       </PrimaryImageProvider>

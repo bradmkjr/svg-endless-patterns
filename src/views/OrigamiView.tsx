@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/pageMetadata";
 import { References } from "@/components/References";
+import { OptionNote } from "@/components/OptionNote";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { OPENING_OPTION } from "@/lib/toolOptions";
 import { OrigamiBuilderRoute } from "@/components/OrigamiBuilderRoute";
@@ -23,6 +24,7 @@ export async function OrigamiView({ locale, option }: { locale: Locale; option?:
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
+      <OptionNote tool="origami" option={option} locale={locale} />
       <PrimaryImageProvider group="origami" slug={shown} name={labels[shown]}>
         <OrigamiBuilderRoute option={option} labels={labels} locale={locale} />
       </PrimaryImageProvider>

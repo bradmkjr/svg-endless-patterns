@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/pageMetadata";
 import { References } from "@/components/References";
+import { OptionNote } from "@/components/OptionNote";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { OPENING_OPTION } from "@/lib/toolOptions";
 import { TruchetBuilderRoute } from "@/components/TruchetBuilderRoute";
@@ -22,6 +23,7 @@ export async function TruchetView({ locale, option }: { locale: Locale; option?:
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
+      <OptionNote tool="truchet" option={option} locale={locale} />
       <PrimaryImageProvider group="truchet" slug={option ?? OPENING_OPTION.truchet} name={labels[option ?? OPENING_OPTION.truchet]}>
         <TruchetBuilderRoute option={option} labels={labels} locale={locale} />
       </PrimaryImageProvider>

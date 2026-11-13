@@ -972,6 +972,14 @@
     }
   },
   "changelog": {
+    "Pattern pages that say what sets each pattern apart": {
+      "title": "Pagine dei motivi che dicono cosa distingue ognuno",
+      "items": [
+        "La pagina di ogni motivo si apre con una o due frasi su cosa lo rende diverso, e anche i risultati di ricerca mostrano quella frase. Ce ne sono di nuove per le pieghe del tie-dye, i motivi sashiko, le forme dei labirinti, le piastrelle di Truchet, le funzioni d'onda e le strutture delle grate cinesi",
+        "I punti a maglia e all'uncinetto mostrano il nome italiano accanto a quello inglese, come Punto legaccio (Garter Stitch) o Maglia bassa (Single Crochet, mb)",
+        "Le descrizioni di tie-dye e sashiko citano più pieghe e motivi"
+      ]
+    },
     "Gliders, a glider gun and random noise in Game of Life": {
       "title": "Alianti, un cannone di alianti e rumore casuale nel Gioco della vita",
       "items": [

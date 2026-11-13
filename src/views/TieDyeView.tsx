@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/pageMetadata";
 import { References } from "@/components/References";
+import { OptionNote } from "@/components/OptionNote";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { OPENING_OPTION } from "@/lib/toolOptions";
 import { TieDyeBuilderRoute } from "@/components/TieDyeBuilderRoute";
@@ -22,6 +23,7 @@ export async function TieDyeView({ locale, option }: { locale: Locale; option?: 
       <p className="lede" style={{ marginTop: 0 }}>
         {t.lede}
       </p>
+      <OptionNote tool="tieDye" option={option} locale={locale} />
       <PrimaryImageProvider group="tieDye" slug={option ?? OPENING_OPTION.tieDye} name={labels[option ?? OPENING_OPTION.tieDye]}>
         <TieDyeBuilderRoute option={option} labels={labels} locale={locale} />
       </PrimaryImageProvider>

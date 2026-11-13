@@ -90,7 +90,7 @@ export function StitchBuilder({ stitch, locale, initialState }: { stitch: Stitch
               className={styles.tile}
               style={{ backgroundImage: `url("${swatchUrl}")`, backgroundSize: `${(swatchWidth / 4) * 100}% auto` }}
               role="img"
-              aria-label={fill(t.swatchAlt, { name: stitch.name })}
+              aria-label={fill(t.swatchAlt, { name: stitch.localName ?? stitch.name })}
             />
           ) : (
             <div className={styles.chart} dangerouslySetInnerHTML={{ __html: currentSvg }} />

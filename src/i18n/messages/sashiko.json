@@ -1,7 +1,7 @@
 {
   "en": {
     "metaTitle": "Sashiko Stitch Guide Maker: True-Scale Printable PDF",
-    "metaDesc": "Choose a geometric sashiko motif, grid size and panel size, then print a true-size stitch guide with gaps at the crossings.",
+    "metaDesc": "Choose a sashiko pattern such as asanoha or seigaiha, set the grid and panel size, and print a true-size PDF stitch guide with gaps at the crossings.",
     "h1": "Sashiko stitch guides",
     "lede": "Choose a motif, a grid size and a panel size, then print a true-size guide to transfer to your cloth. Stitches are laid out so that gaps fall at the crossings.",
     "motif": "Motif",
@@ -13,6 +13,15 @@
       "kagome": "Kagome (woven basket)",
       "squares": "Square grid",
       "diamonds": "Diamond grid"
+    },
+    "motifNotes": {
+      "asanoha": "Six-pointed stars of straight lines on a grid of triangles.",
+      "seigaiha": "Rows of overlapping scales, each a set of nested arcs, like waves on the sea.",
+      "shippo": "Circles that overlap their neighbors to make four-petaled shapes. The name means seven treasures.",
+      "kikko": "A honeycomb of hexagons. The name means tortoise shell.",
+      "kagome": "Three sets of straight lines crossing into triangles and hexagons, like a woven bamboo basket.",
+      "squares": "A plain grid of lines crossing at right angles: a good first sashiko project.",
+      "diamonds": "Two sets of slanted lines crossing into diamonds."
     },
     "spacing": "Grid size",
     "spacingHelp": {
@@ -64,6 +73,15 @@
       "squares": "Cuadrícula",
       "diamonds": "Rombos"
     },
+    "motifNotes": {
+      "asanoha": "Estrellas de seis puntas de líneas rectas sobre una cuadrícula de triángulos.",
+      "seigaiha": "Filas de escamas superpuestas, cada una de arcos concéntricos, como olas del mar.",
+      "shippo": "Círculos que se superponen con sus vecinos y forman figuras de cuatro pétalos. El nombre significa siete tesoros.",
+      "kikko": "Un panal de hexágonos. El nombre significa caparazón de tortuga.",
+      "kagome": "Tres series de líneas rectas que se cruzan en triángulos y hexágonos, como una cesta de bambú trenzado.",
+      "squares": "Una cuadrícula sencilla de líneas que se cruzan en ángulo recto: un buen primer proyecto de sashiko.",
+      "diamonds": "Dos series de líneas inclinadas que se cruzan en rombos."
+    },
     "spacing": "Tamaño de cuadrícula",
     "spacingHelp": {
       "asanoha": "Distancia entre los centros de las estrellas.",
@@ -114,6 +132,15 @@
       "squares": "Grille de carrés",
       "diamonds": "Grille de losanges"
     },
+    "motifNotes": {
+      "asanoha": "Des étoiles à six branches en lignes droites sur une grille de triangles.",
+      "seigaiha": "Des rangées d'écailles qui se chevauchent, chacune faite d'arcs concentriques, comme des vagues sur la mer.",
+      "shippo": "Des cercles qui chevauchent leurs voisins et forment des figures à quatre pétales. Le nom signifie sept trésors.",
+      "kikko": "Un nid d'abeilles d'hexagones. Le nom signifie carapace de tortue.",
+      "kagome": "Trois séries de lignes droites qui se croisent en triangles et en hexagones, comme un panier de bambou tressé.",
+      "squares": "Une grille simple de lignes qui se croisent à angle droit : un bon premier projet de sashiko.",
+      "diamonds": "Deux séries de lignes en biais qui se croisent en losanges."
+    },
     "spacing": "Taille de la grille",
     "spacingHelp": {
       "asanoha": "Distance entre les centres des étoiles.",
@@ -151,7 +178,7 @@
   },
   "de": {
     "metaTitle": "Sashiko-Stichvorlagen: PDF in Originalgröße zum Ausdrucken",
-    "metaDesc": "Wähle ein geometrisches Sashiko-Motiv, Rastergröße und Stückgröße und drucke eine Vorlage in Originalgröße mit Lücken an den Kreuzungen.",
+    "metaDesc": "Sashiko-Muster wie Asanoha oder Seigaiha als PDF zum Ausdrucken: eine Vorlage in Originalgröße mit Lücken an den Kreuzungen, in Raster- und Stückgröße nach Wahl.",
     "h1": "Sashiko-Stichvorlagen",
     "lede": "Wähle ein Motiv, eine Rastergröße und eine Stückgröße und drucke eine Vorlage in Originalgröße, die du auf den Stoff überträgst. Die Stiche sind so angeordnet, dass die Lücken auf die Kreuzungen fallen.",
     "motif": "Motiv",
@@ -163,6 +190,15 @@
       "kagome": "Kagome (Flechtkorb)",
       "squares": "Quadratraster",
       "diamonds": "Rautenraster"
+    },
+    "motifNotes": {
+      "asanoha": "Sechszackige Sterne aus geraden Linien auf einem Raster aus Dreiecken.",
+      "seigaiha": "Reihen überlappender Schuppen aus ineinanderliegenden Bögen, wie Wellen auf dem Meer.",
+      "shippo": "Kreise, die ihre Nachbarn überlappen und vierblättrige Formen bilden. Der Name bedeutet sieben Schätze.",
+      "kikko": "Eine Wabe aus Sechsecken. Der Name bedeutet Schildkrötenpanzer.",
+      "kagome": "Drei Scharen gerader Linien, die sich zu Dreiecken und Sechsecken kreuzen, wie ein geflochtener Bambuskorb.",
+      "squares": "Ein schlichtes Raster aus Linien, die sich rechtwinklig kreuzen: ein gutes erstes Sashiko-Projekt.",
+      "diamonds": "Zwei Scharen schräger Linien, die sich zu Rauten kreuzen."
     },
     "spacing": "Rastergröße",
     "spacingHelp": {
@@ -214,6 +250,15 @@
       "squares": "Grade de quadrados",
       "diamonds": "Grade de losangos"
     },
+    "motifNotes": {
+      "asanoha": "Estrelas de seis pontas de linhas retas sobre uma grade de triângulos.",
+      "seigaiha": "Fileiras de escamas sobrepostas, cada uma de arcos concêntricos, como ondas do mar.",
+      "shippo": "Círculos que se sobrepõem aos vizinhos e formam figuras de quatro pétalas. O nome significa sete tesouros.",
+      "kikko": "Uma colmeia de hexágonos. O nome significa casco de tartaruga.",
+      "kagome": "Três conjuntos de linhas retas que se cruzam em triângulos e hexágonos, como um cesto de bambu trançado.",
+      "squares": "Uma grade simples de linhas que se cruzam em ângulo reto: um bom primeiro projeto de sashiko.",
+      "diamonds": "Dois conjuntos de linhas inclinadas que se cruzam em losangos."
+    },
     "spacing": "Tamanho da grade",
     "spacingHelp": {
       "asanoha": "Distância entre os centros das estrelas.",
@@ -264,6 +309,15 @@
       "squares": "Griglia di quadrati",
       "diamonds": "Griglia di rombi"
     },
+    "motifNotes": {
+      "asanoha": "Stelle a sei punte di linee rette su una griglia di triangoli.",
+      "seigaiha": "File di squame sovrapposte, ognuna di archi concentrici, come onde del mare.",
+      "shippo": "Cerchi che si sovrappongono ai vicini e formano figure a quattro petali. Il nome significa sette tesori.",
+      "kikko": "Un alveare di esagoni. Il nome significa guscio di tartaruga.",
+      "kagome": "Tre serie di linee rette che si incrociano in triangoli ed esagoni, come un cesto di bambù intrecciato.",
+      "squares": "Una semplice griglia di linee che si incrociano ad angolo retto: un buon primo progetto di sashiko.",
+      "diamonds": "Due serie di linee oblique che si incrociano in rombi."
+    },
     "spacing": "Misura della griglia",
     "spacingHelp": {
       "asanoha": "Distanza tra i centri delle stelle.",
@@ -313,6 +367,15 @@
       "kagome": "Kagome (gevlochten mand)",
       "squares": "Vierkant raster",
       "diamonds": "Ruitraster"
+    },
+    "motifNotes": {
+      "asanoha": "Zespuntige sterren van rechte lijnen op een raster van driehoeken.",
+      "seigaiha": "Rijen overlappende schubben, elk van in elkaar liggende bogen, als golven op zee.",
+      "shippo": "Cirkels die hun buren overlappen en vierbladige vormen maken. De naam betekent zeven schatten.",
+      "kikko": "Een honingraat van zeshoeken. De naam betekent schildpadschild.",
+      "kagome": "Drie reeksen rechte lijnen die elkaar kruisen in driehoeken en zeshoeken, als een gevlochten bamboemand.",
+      "squares": "Een eenvoudig raster van lijnen die elkaar haaks kruisen: een goed eerste sashikoproject.",
+      "diamonds": "Twee reeksen schuine lijnen die elkaar kruisen in ruiten."
     },
     "spacing": "Rastermaat",
     "spacingHelp": {

@@ -969,6 +969,26 @@
         "Un primer borrador",
         "Estas traducciones son un primer borrador y aún no las han revisado artesanos. Los nombres de bloques y puntos siguen en inglés, las medidas en pulgadas y yardas, y las agujas y ganchillos usan la numeración de EE. UU. El ganchillo usa abreviaturas locales, con el término de EE. UU. entre paréntesis."
       ]
+    },
+    "lettering": {
+      "title": "Letras: nombres, iniciales y frases en puntos y cuadrados",
+      "summary": "Escribe un nombre, una inicial o una frase entera y obtén un gráfico contado con siete tipografías, en vueltas de ganchillo tapestry, diagonales C2C o una colcha de patchwork, con el hilo o la tela de cada color.",
+      "blocks": [
+        "La nueva sección de [letras](/lettering/) convierte las palabras en labores de colores. Escribe un nombre, una inicial o una frase, pulsa Intro para una línea nueva y elige entre siete tipografías: redondeada gruesa, fina, egipcia gruesa, serif elegante, caligráfica, mayúsculas decorativas para monogramas y mayúsculas de píxeles para textos pequeños. Las letras, los números, los acentos, el signo & y la puntuación funcionan en todas, así que «Dr. Jim & Hannah» y «12 de junio de 2027» quedan tal como se escriben.",
+        "Paneles, cuadrados y un cuadrado por letra",
+        "Una frase puede ser un panel ajustado al texto, un panel cuadrado o un cuadrado por letra, para cubos del abecedario y mantas con nombre. Las líneas siguientes pueden ser más pequeñas que la primera, para que una fecha quede bajo un nombre, y tú eliges el fondo alrededor del texto, un borde y los tres colores. Los botones bajo el cuadro de texto prueban algunos habituales: una inicial, un nombre, cubos del abecedario, una mantita de bebé, una boda, un cartel familiar y AMOR con un corazón.",
+        [
+          "Un panel de boda en ganchillo tapestry",
+          "Iniciales decorativas, un cuadrado por letra"
+        ],
+        "Elige cómo lo vas a hacer",
+        "Cuando el texto esté a tu gusto, elige la técnica; el texto, la tipografía y los colores se mantienen. El [ganchillo tapestry](/lettering/tapestry-crochet/) escribe cada vuelta de punto bajo, con los demás colores llevados dentro de los puntos. El [ganchillo C2C](/lettering/c2c-crochet/) enumera cada diagonal bloque a bloque y resuelve los rectángulos alargados que forman los nombres: en la parte central, cada diagonal crece por un borde y mengua por el otro, y la lista indica cuál. Una [colcha de patchwork](/lettering/quilt/) corta cada tira de un mismo color como una sola pieza, así que una colcha con un nombre tiene muchas menos costuras que una de cuadrados sueltos, con corte, costura fila a fila, reverso y ribete.",
+        [
+          "JOY en una colcha de patchwork",
+          "El gráfico de una mantita de bebé"
+        ],
+        "Cada patrón empieza con el recuento de puntos: el tamaño del gráfico, el alto de las mayúsculas y cuántos puntos, bloques o cuadrados lleva cada color, y después el hilo o la tela de cada uno. El PDF reparte un gráfico grande en tantas páginas como haga falta para que se lea bien. Las páginas de [ganchillo](/crochet/) y de [bloques de patchwork](/blocks/) enlazan con la nueva sección, y las tipografías se acreditan en la página de [agradecimientos](/acknowledgements/)."
+      ]
     }
   },
   "changelog": {
@@ -1516,6 +1536,15 @@
       "items": [
         "Añadidos italiano y neerlandés, con instrucciones generadas y PDF",
         "Añadidos enlaces de idioma y un color de acento para cada uno"
+      ]
+    },
+    "Lettering for crochet and quilts": {
+      "title": "Letras para ganchillo y colchas",
+      "items": [
+        "Una nueva sección de letras convierte un nombre, una inicial o una frase en un gráfico, como un panel, un panel cuadrado o un cuadrado por letra, y cada salto de línea empieza una línea nueva",
+        "Siete tipografías, de fina a gruesa, con caligráfica y mayúsculas decorativas para iniciales. Todas tienen letras, números, acentos, & y puntuación",
+        "Vueltas de ganchillo tapestry, diagonales C2C también en rectángulos o una colcha de patchwork cortada en tiras, cada una con su recuento de puntos, hilo o tela por color y un PDF",
+        "Las páginas de ganchillo, ganchillo multicolor y bloques de patchwork enlazan con ella"
       ]
     }
   }

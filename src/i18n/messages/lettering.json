@@ -1,0 +1,975 @@
+{
+  "en": {
+    "metaTitle": "Name and word charts for crochet and quilts",
+    "metaDesc": "Type a name, initial or phrase and get a stitch-counted chart: tapestry crochet rows, C2C diagonals or a pieced quilt, with yarn or fabric for each color.",
+    "h1": "Lettering",
+    "lede": "Type a name, an initial or a whole phrase, choose a typeface and colors, then choose how you'll make it. Every row, diagonal or quilt piece is counted for you.",
+    "indexLink": "Names and words: lettering charts for tapestry and C2C",
+    "quiltLink": "Names and words as a pieced quilt",
+    "colorworkLink": "Want letters instead? Make a name or phrase chart",
+    "loading": "Setting the type…",
+    "views": {
+      "picture": "Finished",
+      "chart": "Chart"
+    },
+    "pictureNote": "About {w}\" x {h}\" finished. The picture shows the work as it will look; the chart has every stitch to count.",
+    "downloadPdf": "Download PDF pattern",
+    "words": "Words",
+    "wordsHint": "Press Enter to start a new line. Every font has letters, numbers, accents and . , & ! ? ' - ♥.",
+    "counter": "{c} of {maxC} characters, {l} of {maxL} lines",
+    "tryLabel": "Try one",
+    "presets": {
+      "initial": {
+        "name": "Initial",
+        "text": "A"
+      },
+      "name": {
+        "name": "Name",
+        "text": "Emma"
+      },
+      "alphabet": {
+        "name": "Alphabet blocks",
+        "text": "ABC"
+      },
+      "baby": {
+        "name": "Baby blanket",
+        "text": "Welcome\nBaby Noah"
+      },
+      "wedding": {
+        "name": "Wedding",
+        "text": "Dr. Jim & Hannah\nJune 12, 2027"
+      },
+      "family": {
+        "name": "Family sign",
+        "text": "THE SMITHS\nEST. 2026"
+      },
+      "love": {
+        "name": "Love",
+        "text": "LOVE\n♥"
+      }
+    },
+    "defaultMessage": "Emma",
+    "technique": "How will you make it?",
+    "techniques": {
+      "tapestry": "Tapestry crochet",
+      "c2c": "C2C crochet",
+      "quilt": "Pieced quilt"
+    },
+    "techniqueNotes": {
+      "tapestry": "Single crochet worked in rows, carrying the colors you aren't using inside the stitches. Firm, reversible-looking fabric with crisp letters, good for pillows, bags and wall hangings.",
+      "c2c": "Corner-to-corner blocks of three double crochet, worked on the diagonal. Each square of the chart is one block, so a blanket grows quickly, with a bobbin for each patch of color.",
+      "quilt": "Each square of the chart is a square of fabric, and a run of one color is cut as one long piece, so a name quilt has far fewer seams than a patchwork of single squares."
+    },
+    "type": "Lettering",
+    "font": "Typeface",
+    "fonts": {
+      "rounded": "Rounded bold",
+      "thin": "Thin",
+      "slab": "Heavy slab",
+      "serif": "Elegant serif",
+      "script": "Script",
+      "decorative": "Decorative capitals",
+      "pixel": "Pixel capitals"
+    },
+    "fineNote": "This typeface has thin strokes, and reads best with capitals at least {n} tall.",
+    "pixelNote": "Pixel capitals come in steps of 7: these are {n} tall.",
+    "heightLabel": "Capital height ({unit})",
+    "height2Label": "Later lines ({unit})",
+    "sameHeight": "Same as the first",
+    "units": {
+      "tapestry": "rows",
+      "c2c": "blocks",
+      "quilt": "squares"
+    },
+    "layout": "Shape",
+    "layouts": {
+      "panel": "Panel that fits the words",
+      "square": "Square panel",
+      "squares": "A square for each letter"
+    },
+    "align": "Line alignment",
+    "aligns": {
+      "center": "Centered",
+      "left": "Left",
+      "right": "Right"
+    },
+    "spacing": "Space between letters",
+    "lineGap": "Space between lines",
+    "auto": "Automatic",
+    "margin": "Background around the words",
+    "border": "Border",
+    "colors": "Colors",
+    "colorRoles": {
+      "ground": "Background (A)",
+      "letters": "Letters (B)",
+      "border": "Border (C)"
+    },
+    "weight": "Yarn weight",
+    "weights": {
+      "sport": "Sport",
+      "dk": "DK",
+      "worsted": "Worsted",
+      "bulky": "Bulky"
+    },
+    "square": "Finished square",
+    "inches": "{n}\"",
+    "amounts": {
+      "tapestry": "Yarn",
+      "c2c": "Yarn",
+      "quilt": "Fabric"
+    },
+    "colorColumn": "Color",
+    "countColumn": {
+      "tapestry": "Stitches",
+      "c2c": "Blocks",
+      "quilt": "Squares"
+    },
+    "amountColumn": {
+      "tapestry": "Yards",
+      "c2c": "Yards",
+      "quilt": "Yardage"
+    },
+    "bobbinsColumn": "Bobbins",
+    "totalRow": "Total",
+    "problems": {
+      "empty": "Type a word, a name or an initial to start.",
+      "tooLong": "That's more than this can set: up to {maxC} characters on up to {maxL} lines.",
+      "unsupported": "{font} doesn't have {chars}. Try another typeface, or leave them out.",
+      "tooBig": "That makes a piece {w} by {h}, and {most} is the most each way. Make the capitals smaller, put fewer words on a line, or use less background around them."
+    }
+  },
+  "es": {
+    "metaTitle": "Gráficos de nombres y palabras para ganchillo y colchas",
+    "metaDesc": "Escribe un nombre, una inicial o una frase y obtén un gráfico con los puntos contados: vueltas de ganchillo tapestry, diagonales C2C o una colcha de patchwork, con el hilo o la tela de cada color.",
+    "h1": "Letras",
+    "lede": "Escribe un nombre, una inicial o una frase entera, elige una tipografía y los colores, y luego cómo lo vas a hacer. Cada vuelta, diagonal o pieza de la colcha queda contada.",
+    "indexLink": "Nombres y palabras: gráficos de letras para tapestry y C2C",
+    "quiltLink": "Nombres y palabras en una colcha de patchwork",
+    "colorworkLink": "¿Prefieres letras? Haz un gráfico con un nombre o una frase",
+    "loading": "Componiendo las letras…",
+    "views": {
+      "picture": "Terminado",
+      "chart": "Gráfico"
+    },
+    "pictureNote": "Unas {w}\" x {h}\" terminado. La imagen muestra cómo quedará la labor; el gráfico tiene cada punto para contar.",
+    "downloadPdf": "Descargar el patrón en PDF",
+    "words": "Texto",
+    "wordsHint": "Pulsa Intro para empezar una línea nueva. Todas las tipografías tienen letras, números, acentos y . , & ! ? ' - ♥.",
+    "counter": "{c} de {maxC} caracteres, {l} de {maxL} líneas",
+    "tryLabel": "Prueba uno",
+    "presets": {
+      "initial": {
+        "name": "Inicial",
+        "text": "A"
+      },
+      "name": {
+        "name": "Nombre",
+        "text": "Emma"
+      },
+      "alphabet": {
+        "name": "Cubos del abecedario",
+        "text": "ABC"
+      },
+      "baby": {
+        "name": "Mantita de bebé",
+        "text": "Bienvenido\nNoah"
+      },
+      "wedding": {
+        "name": "Boda",
+        "text": "Dr. Jim & Hannah\n12 de junio de 2027"
+      },
+      "family": {
+        "name": "Cartel familiar",
+        "text": "LOS GARCÍA\nDESDE 2026"
+      },
+      "love": {
+        "name": "Amor",
+        "text": "AMOR\n♥"
+      }
+    },
+    "defaultMessage": "Emma",
+    "technique": "¿Cómo lo vas a hacer?",
+    "techniques": {
+      "tapestry": "Ganchillo tapestry",
+      "c2c": "Ganchillo C2C",
+      "quilt": "Colcha de patchwork"
+    },
+    "techniqueNotes": {
+      "tapestry": "Punto bajo tejido en vueltas, llevando dentro de los puntos los colores que no usas. Un tejido firme con letras nítidas, bueno para cojines, bolsos y tapices.",
+      "c2c": "Bloques de tres puntos altos tejidos en diagonal, de esquina a esquina. Cada casilla del gráfico es un bloque, así que una manta crece rápido, con un ovillito para cada zona de color.",
+      "quilt": "Cada casilla del gráfico es un cuadrado de tela, y una tira de un mismo color se corta como una sola pieza larga, así que una colcha con un nombre tiene muchas menos costuras que una de cuadrados sueltos."
+    },
+    "type": "Letras",
+    "font": "Tipografía",
+    "fonts": {
+      "rounded": "Redondeada gruesa",
+      "thin": "Fina",
+      "slab": "Egipcia gruesa",
+      "serif": "Serif elegante",
+      "script": "Caligráfica",
+      "decorative": "Mayúsculas decorativas",
+      "pixel": "Mayúsculas de píxeles"
+    },
+    "fineNote": "Esta tipografía tiene trazos finos y se lee mejor con mayúsculas de al menos {n} de alto.",
+    "pixelNote": "Las mayúsculas de píxeles van de 7 en 7: estas miden {n} de alto.",
+    "heightLabel": "Alto de las mayúsculas ({unit})",
+    "height2Label": "Líneas siguientes ({unit})",
+    "sameHeight": "Igual que la primera",
+    "units": {
+      "tapestry": "vueltas",
+      "c2c": "bloques",
+      "quilt": "cuadrados"
+    },
+    "layout": "Forma",
+    "layouts": {
+      "panel": "Panel ajustado al texto",
+      "square": "Panel cuadrado",
+      "squares": "Un cuadrado por letra"
+    },
+    "align": "Alineación de las líneas",
+    "aligns": {
+      "center": "Centradas",
+      "left": "A la izquierda",
+      "right": "A la derecha"
+    },
+    "spacing": "Espacio entre letras",
+    "lineGap": "Espacio entre líneas",
+    "auto": "Automático",
+    "margin": "Fondo alrededor del texto",
+    "border": "Borde",
+    "colors": "Colores",
+    "colorRoles": {
+      "ground": "Fondo (A)",
+      "letters": "Letras (B)",
+      "border": "Borde (C)"
+    },
+    "weight": "Grosor del hilo",
+    "weights": {
+      "sport": "Sport",
+      "dk": "DK",
+      "worsted": "Worsted",
+      "bulky": "Bulky"
+    },
+    "square": "Cuadrado terminado",
+    "inches": "{n}\"",
+    "amounts": {
+      "tapestry": "Hilo",
+      "c2c": "Hilo",
+      "quilt": "Tela"
+    },
+    "colorColumn": "Color",
+    "countColumn": {
+      "tapestry": "Puntos",
+      "c2c": "Bloques",
+      "quilt": "Cuadrados"
+    },
+    "amountColumn": {
+      "tapestry": "Yardas",
+      "c2c": "Yardas",
+      "quilt": "Cantidad"
+    },
+    "bobbinsColumn": "Ovillitos",
+    "totalRow": "Total",
+    "problems": {
+      "empty": "Escribe una palabra, un nombre o una inicial para empezar.",
+      "tooLong": "Es más de lo que se puede componer: hasta {maxC} caracteres en hasta {maxL} líneas.",
+      "unsupported": "{font} no tiene {chars}. Prueba otra tipografía o quítalos.",
+      "tooBig": "Eso da una pieza de {w} por {h}, y el máximo es {most} en cada sentido. Haz las mayúsculas más pequeñas, pon menos palabras por línea o deja menos fondo alrededor."
+    }
+  },
+  "fr": {
+    "metaTitle": "Grilles de prénoms et de mots pour le crochet et le quilt",
+    "metaDesc": "Tapez un prénom, une initiale ou une phrase et obtenez une grille aux mailles comptées : rangs de crochet tapestry, diagonales C2C ou quilt en patchwork, avec le fil ou le tissu de chaque couleur.",
+    "h1": "Lettrage",
+    "lede": "Tapez un prénom, une initiale ou toute une phrase, choisissez une police et des couleurs, puis la façon de le réaliser. Chaque rang, diagonale ou pièce du quilt est compté pour vous.",
+    "indexLink": "Prénoms et mots : grilles de lettres en tapestry et C2C",
+    "quiltLink": "Prénoms et mots en quilt patchwork",
+    "colorworkLink": "Plutôt des lettres ? Faites une grille avec un prénom ou une phrase",
+    "loading": "Composition des lettres…",
+    "views": {
+      "picture": "Fini",
+      "chart": "Grille"
+    },
+    "pictureNote": "Environ {w}\" x {h}\" une fois fini. L'image montre l'ouvrage tel qu'il sera ; la grille donne chaque maille à compter.",
+    "downloadPdf": "Télécharger le modèle en PDF",
+    "words": "Texte",
+    "wordsHint": "Appuyez sur Entrée pour commencer une nouvelle ligne. Toutes les polices ont les lettres, les chiffres, les accents et . , & ! ? ' - ♥.",
+    "counter": "{c} caractères sur {maxC}, {l} lignes sur {maxL}",
+    "tryLabel": "Essayez",
+    "presets": {
+      "initial": {
+        "name": "Initiale",
+        "text": "A"
+      },
+      "name": {
+        "name": "Prénom",
+        "text": "Emma"
+      },
+      "alphabet": {
+        "name": "Cubes alphabet",
+        "text": "ABC"
+      },
+      "baby": {
+        "name": "Couverture de bébé",
+        "text": "Bienvenue\nNoah"
+      },
+      "wedding": {
+        "name": "Mariage",
+        "text": "Dr. Jim & Hannah\n12 juin 2027"
+      },
+      "family": {
+        "name": "Plaque familiale",
+        "text": "LES MARTIN\nDEPUIS 2026"
+      },
+      "love": {
+        "name": "Amour",
+        "text": "AMOUR\n♥"
+      }
+    },
+    "defaultMessage": "Emma",
+    "technique": "Comment allez-vous le réaliser ?",
+    "techniques": {
+      "tapestry": "Crochet tapestry",
+      "c2c": "Crochet C2C",
+      "quilt": "Quilt en patchwork"
+    },
+    "techniqueNotes": {
+      "tapestry": "Des mailles serrées en rangs, en portant à l'intérieur des mailles les couleurs qu'on n'utilise pas. Un tissu ferme aux lettres nettes, idéal pour les coussins, les sacs et les tentures.",
+      "c2c": "Des blocs de trois brides crochetés en diagonale, d'un coin à l'autre. Chaque case de la grille est un bloc : une couverture avance vite, avec une bobine pour chaque zone de couleur.",
+      "quilt": "Chaque case de la grille est un carré de tissu, et une suite d'une même couleur se coupe en une seule pièce longue : un quilt à prénom a bien moins de coutures qu'un patchwork de carrés séparés."
+    },
+    "type": "Lettrage",
+    "font": "Police",
+    "fonts": {
+      "rounded": "Arrondie grasse",
+      "thin": "Fine",
+      "slab": "Égyptienne grasse",
+      "serif": "Empattements élégants",
+      "script": "Manuscrite",
+      "decorative": "Capitales décoratives",
+      "pixel": "Capitales en pixels"
+    },
+    "fineNote": "Cette police a des traits fins et se lit mieux avec des capitales d'au moins {n} de haut.",
+    "pixelNote": "Les capitales en pixels vont de 7 en 7 : celles-ci font {n} de haut.",
+    "heightLabel": "Hauteur des capitales ({unit})",
+    "height2Label": "Lignes suivantes ({unit})",
+    "sameHeight": "Comme la première",
+    "units": {
+      "tapestry": "rangs",
+      "c2c": "blocs",
+      "quilt": "carrés"
+    },
+    "layout": "Forme",
+    "layouts": {
+      "panel": "Panneau ajusté au texte",
+      "square": "Panneau carré",
+      "squares": "Un carré par lettre"
+    },
+    "align": "Alignement des lignes",
+    "aligns": {
+      "center": "Centrées",
+      "left": "À gauche",
+      "right": "À droite"
+    },
+    "spacing": "Espace entre les lettres",
+    "lineGap": "Espace entre les lignes",
+    "auto": "Automatique",
+    "margin": "Fond autour du texte",
+    "border": "Bordure",
+    "colors": "Couleurs",
+    "colorRoles": {
+      "ground": "Fond (A)",
+      "letters": "Lettres (B)",
+      "border": "Bordure (C)"
+    },
+    "weight": "Grosseur du fil",
+    "weights": {
+      "sport": "Sport",
+      "dk": "DK",
+      "worsted": "Worsted",
+      "bulky": "Bulky"
+    },
+    "square": "Carré fini",
+    "inches": "{n}\"",
+    "amounts": {
+      "tapestry": "Fil",
+      "c2c": "Fil",
+      "quilt": "Tissu"
+    },
+    "colorColumn": "Couleur",
+    "countColumn": {
+      "tapestry": "Mailles",
+      "c2c": "Blocs",
+      "quilt": "Carrés"
+    },
+    "amountColumn": {
+      "tapestry": "Yards",
+      "c2c": "Yards",
+      "quilt": "Métrage"
+    },
+    "bobbinsColumn": "Bobines",
+    "totalRow": "Total",
+    "problems": {
+      "empty": "Tapez un mot, un prénom ou une initiale pour commencer.",
+      "tooLong": "C'est plus que ce qui peut être composé : jusqu'à {maxC} caractères sur {maxL} lignes au plus.",
+      "unsupported": "{font} n'a pas {chars}. Essayez une autre police, ou retirez-les.",
+      "tooBig": "Cela donne une pièce de {w} sur {h}, et {most} est le maximum dans chaque sens. Réduisez les capitales, mettez moins de mots par ligne ou laissez moins de fond autour."
+    }
+  },
+  "de": {
+    "metaTitle": "Namens- und Wortdiagramme zum Häkeln und Quilten",
+    "metaDesc": "Gib einen Namen, eine Initiale oder einen Spruch ein und erhalte ein ausgezähltes Diagramm: Tapestry-Reihen, C2C-Diagonalen oder einen Patchworkquilt, mit Garn oder Stoff für jede Farbe.",
+    "h1": "Schriftzüge",
+    "lede": "Gib einen Namen, eine Initiale oder einen ganzen Spruch ein, wähle Schrift und Farben und dann, wie du es arbeiten willst. Jede Reihe, Diagonale und jedes Quiltteil ist für dich ausgezählt.",
+    "indexLink": "Namen und Wörter: Schriftzug-Diagramme für Tapestry und C2C",
+    "quiltLink": "Namen und Wörter als Patchworkquilt",
+    "colorworkLink": "Lieber Buchstaben? Mach ein Diagramm mit einem Namen oder Spruch",
+    "loading": "Die Schrift wird gesetzt…",
+    "views": {
+      "picture": "Fertig",
+      "chart": "Diagramm"
+    },
+    "pictureNote": "Fertig etwa {w}\" x {h}\". Das Bild zeigt die Arbeit, wie sie aussehen wird; im Diagramm steht jede Masche zum Zählen.",
+    "downloadPdf": "Anleitung als PDF herunterladen",
+    "words": "Text",
+    "wordsHint": "Mit der Eingabetaste beginnst du eine neue Zeile. Jede Schrift hat Buchstaben, Ziffern, Akzente und . , & ! ? ' - ♥.",
+    "counter": "{c} von {maxC} Zeichen, {l} von {maxL} Zeilen",
+    "tryLabel": "Probier einen",
+    "presets": {
+      "initial": {
+        "name": "Initiale",
+        "text": "A"
+      },
+      "name": {
+        "name": "Name",
+        "text": "Emma"
+      },
+      "alphabet": {
+        "name": "ABC-Würfel",
+        "text": "ABC"
+      },
+      "baby": {
+        "name": "Babydecke",
+        "text": "Willkommen\nNoah"
+      },
+      "wedding": {
+        "name": "Hochzeit",
+        "text": "Dr. Jim & Hannah\n12. Juni 2027"
+      },
+      "family": {
+        "name": "Familienschild",
+        "text": "FAMILIE MÜLLER\nSEIT 2026"
+      },
+      "love": {
+        "name": "Liebe",
+        "text": "LIEBE\n♥"
+      }
+    },
+    "defaultMessage": "Emma",
+    "technique": "Wie willst du es arbeiten?",
+    "techniques": {
+      "tapestry": "Tapestry-Häkeln",
+      "c2c": "C2C-Häkeln",
+      "quilt": "Patchworkquilt"
+    },
+    "techniqueNotes": {
+      "tapestry": "Feste Maschen in Reihen, die gerade nicht benutzten Farben werden in den Maschen mitgeführt. Ein festes Gestrick mit klaren Buchstaben, gut für Kissen, Taschen und Wandbehänge.",
+      "c2c": "Blöcke aus drei Stäbchen, diagonal von Ecke zu Ecke gehäkelt. Jedes Kästchen im Diagramm ist ein Block, so wächst eine Decke schnell, mit einem Spulchen für jede Farbfläche.",
+      "quilt": "Jedes Kästchen im Diagramm ist ein Stoffquadrat, und eine Folge gleicher Farbe wird als ein langes Teil geschnitten. So hat ein Namensquilt viel weniger Nähte als einer aus einzelnen Quadraten."
+    },
+    "type": "Schriftzug",
+    "font": "Schrift",
+    "fonts": {
+      "rounded": "Rund und fett",
+      "thin": "Dünn",
+      "slab": "Kräftige Serifenbetonte",
+      "serif": "Elegante Serifen",
+      "script": "Schreibschrift",
+      "decorative": "Zierversalien",
+      "pixel": "Pixel-Versalien"
+    },
+    "fineNote": "Diese Schrift hat feine Striche und liest sich am besten mit Großbuchstaben von mindestens {n} Höhe.",
+    "pixelNote": "Pixel-Versalien gibt es in Siebenerschritten: diese sind {n} hoch.",
+    "heightLabel": "Höhe der Großbuchstaben ({unit})",
+    "height2Label": "Weitere Zeilen ({unit})",
+    "sameHeight": "Wie die erste",
+    "units": {
+      "tapestry": "Reihen",
+      "c2c": "Blöcke",
+      "quilt": "Quadrate"
+    },
+    "layout": "Form",
+    "layouts": {
+      "panel": "Tafel passend zum Text",
+      "square": "Quadratische Tafel",
+      "squares": "Ein Quadrat pro Buchstabe"
+    },
+    "align": "Zeilenausrichtung",
+    "aligns": {
+      "center": "Zentriert",
+      "left": "Links",
+      "right": "Rechts"
+    },
+    "spacing": "Abstand zwischen Buchstaben",
+    "lineGap": "Abstand zwischen Zeilen",
+    "auto": "Automatisch",
+    "margin": "Hintergrund um den Text",
+    "border": "Rand",
+    "colors": "Farben",
+    "colorRoles": {
+      "ground": "Hintergrund (A)",
+      "letters": "Buchstaben (B)",
+      "border": "Rand (C)"
+    },
+    "weight": "Garnstärke",
+    "weights": {
+      "sport": "Sport",
+      "dk": "DK",
+      "worsted": "Worsted",
+      "bulky": "Bulky"
+    },
+    "square": "Fertiges Quadrat",
+    "inches": "{n}\"",
+    "amounts": {
+      "tapestry": "Garn",
+      "c2c": "Garn",
+      "quilt": "Stoff"
+    },
+    "colorColumn": "Farbe",
+    "countColumn": {
+      "tapestry": "Maschen",
+      "c2c": "Blöcke",
+      "quilt": "Quadrate"
+    },
+    "amountColumn": {
+      "tapestry": "Yards",
+      "c2c": "Yards",
+      "quilt": "Menge"
+    },
+    "bobbinsColumn": "Spulchen",
+    "totalRow": "Gesamt",
+    "problems": {
+      "empty": "Gib ein Wort, einen Namen oder eine Initiale ein, um zu beginnen.",
+      "tooLong": "Das ist mehr, als gesetzt werden kann: höchstens {maxC} Zeichen auf höchstens {maxL} Zeilen.",
+      "unsupported": "{font} hat kein {chars}. Probier eine andere Schrift oder lass diese Zeichen weg.",
+      "tooBig": "Das ergibt ein Teil von {w} mal {h}, und {most} ist das Höchste in jede Richtung. Mach die Großbuchstaben kleiner, setz weniger Wörter in eine Zeile oder lass weniger Hintergrund drumherum."
+    }
+  },
+  "pt": {
+    "metaTitle": "Gráficos de nomes e palavras para crochê e patchwork",
+    "metaDesc": "Digite um nome, uma inicial ou uma frase e receba um gráfico com os pontos contados: carreiras de crochê tapeçaria, diagonais C2C ou uma colcha de patchwork, com o fio ou o tecido de cada cor.",
+    "h1": "Letras",
+    "lede": "Digite um nome, uma inicial ou uma frase inteira, escolha a fonte e as cores e depois como vai fazer. Cada carreira, diagonal ou peça da colcha já vem contada.",
+    "indexLink": "Nomes e palavras: gráficos de letras para tapeçaria e C2C",
+    "quiltLink": "Nomes e palavras numa colcha de patchwork",
+    "colorworkLink": "Prefere letras? Faça um gráfico com um nome ou uma frase",
+    "loading": "Montando as letras…",
+    "views": {
+      "picture": "Pronto",
+      "chart": "Gráfico"
+    },
+    "pictureNote": "Cerca de {w}\" x {h}\" pronto. A imagem mostra como o trabalho vai ficar; o gráfico tem cada ponto para contar.",
+    "downloadPdf": "Baixar a receita em PDF",
+    "words": "Texto",
+    "wordsHint": "Aperte Enter para começar uma linha nova. Todas as fontes têm letras, números, acentos e . , & ! ? ' - ♥.",
+    "counter": "{c} de {maxC} caracteres, {l} de {maxL} linhas",
+    "tryLabel": "Experimente",
+    "presets": {
+      "initial": {
+        "name": "Inicial",
+        "text": "A"
+      },
+      "name": {
+        "name": "Nome",
+        "text": "Emma"
+      },
+      "alphabet": {
+        "name": "Blocos do alfabeto",
+        "text": "ABC"
+      },
+      "baby": {
+        "name": "Mantinha de bebê",
+        "text": "Bem-vindo\nNoah"
+      },
+      "wedding": {
+        "name": "Casamento",
+        "text": "Dr. Jim & Hannah\n12 de junho de 2027"
+      },
+      "family": {
+        "name": "Placa da família",
+        "text": "FAMÍLIA SILVA\nDESDE 2026"
+      },
+      "love": {
+        "name": "Amor",
+        "text": "AMOR\n♥"
+      }
+    },
+    "defaultMessage": "Emma",
+    "technique": "Como você vai fazer?",
+    "techniques": {
+      "tapestry": "Crochê tapeçaria",
+      "c2c": "Crochê C2C",
+      "quilt": "Colcha de patchwork"
+    },
+    "techniqueNotes": {
+      "tapestry": "Ponto baixo em carreiras, levando por dentro dos pontos as cores que não estão em uso. Um tecido firme com letras nítidas, bom para almofadas, bolsas e painéis de parede.",
+      "c2c": "Blocos de três pontos altos feitos na diagonal, de canto a canto. Cada quadradinho do gráfico é um bloco, então uma manta cresce rápido, com um novelinho para cada área de cor.",
+      "quilt": "Cada quadradinho do gráfico é um quadrado de tecido, e uma sequência da mesma cor é cortada como uma peça longa só. Assim uma colcha com nome tem muito menos costuras do que uma de quadrados soltos."
+    },
+    "type": "Letras",
+    "font": "Fonte",
+    "fonts": {
+      "rounded": "Arredondada grossa",
+      "thin": "Fina",
+      "slab": "Egípcia grossa",
+      "serif": "Serifada elegante",
+      "script": "Cursiva",
+      "decorative": "Maiúsculas decorativas",
+      "pixel": "Maiúsculas de pixels"
+    },
+    "fineNote": "Esta fonte tem traços finos e fica mais legível com maiúsculas de pelo menos {n} de altura.",
+    "pixelNote": "As maiúsculas de pixels vão de 7 em 7: estas têm {n} de altura.",
+    "heightLabel": "Altura das maiúsculas ({unit})",
+    "height2Label": "Linhas seguintes ({unit})",
+    "sameHeight": "Igual à primeira",
+    "units": {
+      "tapestry": "carreiras",
+      "c2c": "blocos",
+      "quilt": "quadrados"
+    },
+    "layout": "Formato",
+    "layouts": {
+      "panel": "Painel do tamanho do texto",
+      "square": "Painel quadrado",
+      "squares": "Um quadrado por letra"
+    },
+    "align": "Alinhamento das linhas",
+    "aligns": {
+      "center": "Centralizadas",
+      "left": "À esquerda",
+      "right": "À direita"
+    },
+    "spacing": "Espaço entre as letras",
+    "lineGap": "Espaço entre as linhas",
+    "auto": "Automático",
+    "margin": "Fundo em volta do texto",
+    "border": "Borda",
+    "colors": "Cores",
+    "colorRoles": {
+      "ground": "Fundo (A)",
+      "letters": "Letras (B)",
+      "border": "Borda (C)"
+    },
+    "weight": "Espessura do fio",
+    "weights": {
+      "sport": "Sport",
+      "dk": "DK",
+      "worsted": "Worsted",
+      "bulky": "Bulky"
+    },
+    "square": "Quadrado pronto",
+    "inches": "{n}\"",
+    "amounts": {
+      "tapestry": "Fio",
+      "c2c": "Fio",
+      "quilt": "Tecido"
+    },
+    "colorColumn": "Cor",
+    "countColumn": {
+      "tapestry": "Pontos",
+      "c2c": "Blocos",
+      "quilt": "Quadrados"
+    },
+    "amountColumn": {
+      "tapestry": "Jardas",
+      "c2c": "Jardas",
+      "quilt": "Metragem"
+    },
+    "bobbinsColumn": "Novelinhos",
+    "totalRow": "Total",
+    "problems": {
+      "empty": "Digite uma palavra, um nome ou uma inicial para começar.",
+      "tooLong": "É mais do que dá para montar: até {maxC} caracteres em até {maxL} linhas.",
+      "unsupported": "{font} não tem {chars}. Experimente outra fonte ou tire esses caracteres.",
+      "tooBig": "Isso dá uma peça de {w} por {h}, e o máximo é {most} em cada direção. Diminua as maiúsculas, coloque menos palavras por linha ou deixe menos fundo em volta."
+    }
+  },
+  "it": {
+    "metaTitle": "Schemi di nomi e parole per uncinetto e quilt",
+    "metaDesc": "Scrivi un nome, un'iniziale o una frase e ottieni uno schema con le maglie contate: righe di uncinetto tapestry, diagonali C2C o un quilt in patchwork, con il filato o il tessuto per ogni colore.",
+    "h1": "Scritte",
+    "lede": "Scrivi un nome, un'iniziale o una frase intera, scegli un carattere e i colori, poi come vuoi realizzarla. Ogni riga, diagonale o pezzo del quilt è già contato.",
+    "indexLink": "Nomi e parole: schemi di scritte per tapestry e C2C",
+    "quiltLink": "Nomi e parole in un quilt patchwork",
+    "colorworkLink": "Preferisci le lettere? Fai uno schema con un nome o una frase",
+    "loading": "Composizione delle lettere…",
+    "views": {
+      "picture": "Finito",
+      "chart": "Schema"
+    },
+    "pictureNote": "Circa {w}\" x {h}\" finito. L'immagine mostra il lavoro come sarà; lo schema ha ogni maglia da contare.",
+    "downloadPdf": "Scarica lo schema in PDF",
+    "words": "Testo",
+    "wordsHint": "Premi Invio per iniziare una riga nuova. Ogni carattere ha lettere, numeri, accenti e . , & ! ? ' - ♥.",
+    "counter": "{c} di {maxC} caratteri, {l} di {maxL} righe",
+    "tryLabel": "Prova",
+    "presets": {
+      "initial": {
+        "name": "Iniziale",
+        "text": "A"
+      },
+      "name": {
+        "name": "Nome",
+        "text": "Emma"
+      },
+      "alphabet": {
+        "name": "Cubi dell'alfabeto",
+        "text": "ABC"
+      },
+      "baby": {
+        "name": "Copertina per neonati",
+        "text": "Benvenuto\nNoah"
+      },
+      "wedding": {
+        "name": "Matrimonio",
+        "text": "Dr. Jim & Hannah\n12 giugno 2027"
+      },
+      "family": {
+        "name": "Targa di famiglia",
+        "text": "FAMIGLIA ROSSI\nDAL 2026"
+      },
+      "love": {
+        "name": "Amore",
+        "text": "AMORE\n♥"
+      }
+    },
+    "defaultMessage": "Emma",
+    "technique": "Come vuoi realizzarla?",
+    "techniques": {
+      "tapestry": "Uncinetto tapestry",
+      "c2c": "Uncinetto C2C",
+      "quilt": "Quilt in patchwork"
+    },
+    "techniqueNotes": {
+      "tapestry": "Maglie basse lavorate in righe, portando dentro le maglie i colori che non usi. Un tessuto compatto con lettere nitide, adatto a cuscini, borse e arazzi.",
+      "c2c": "Blocchi di tre maglie alte lavorati in diagonale, da un angolo all'altro. Ogni quadretto dello schema è un blocco, così una coperta cresce in fretta, con un gomitolino per ogni zona di colore.",
+      "quilt": "Ogni quadretto dello schema è un quadrato di tessuto, e una serie dello stesso colore si taglia come un unico pezzo lungo. Così un quilt con un nome ha molte meno cuciture di uno a quadrati singoli."
+    },
+    "type": "Scritte",
+    "font": "Carattere",
+    "fonts": {
+      "rounded": "Arrotondato grassetto",
+      "thin": "Sottile",
+      "slab": "Egiziano pesante",
+      "serif": "Graziato elegante",
+      "script": "Corsivo",
+      "decorative": "Maiuscole decorative",
+      "pixel": "Maiuscole a pixel"
+    },
+    "fineNote": "Questo carattere ha tratti sottili e si legge meglio con maiuscole alte almeno {n}.",
+    "pixelNote": "Le maiuscole a pixel vanno di 7 in 7: queste sono alte {n}.",
+    "heightLabel": "Altezza delle maiuscole ({unit})",
+    "height2Label": "Righe successive ({unit})",
+    "sameHeight": "Come la prima",
+    "units": {
+      "tapestry": "righe",
+      "c2c": "blocchi",
+      "quilt": "quadrati"
+    },
+    "layout": "Forma",
+    "layouts": {
+      "panel": "Pannello su misura del testo",
+      "square": "Pannello quadrato",
+      "squares": "Un quadrato per lettera"
+    },
+    "align": "Allineamento delle righe",
+    "aligns": {
+      "center": "Centrate",
+      "left": "A sinistra",
+      "right": "A destra"
+    },
+    "spacing": "Spazio tra le lettere",
+    "lineGap": "Spazio tra le righe",
+    "auto": "Automatico",
+    "margin": "Sfondo intorno al testo",
+    "border": "Bordo",
+    "colors": "Colori",
+    "colorRoles": {
+      "ground": "Sfondo (A)",
+      "letters": "Lettere (B)",
+      "border": "Bordo (C)"
+    },
+    "weight": "Spessore del filato",
+    "weights": {
+      "sport": "Sport",
+      "dk": "DK",
+      "worsted": "Worsted",
+      "bulky": "Bulky"
+    },
+    "square": "Quadrato finito",
+    "inches": "{n}\"",
+    "amounts": {
+      "tapestry": "Filato",
+      "c2c": "Filato",
+      "quilt": "Tessuto"
+    },
+    "colorColumn": "Colore",
+    "countColumn": {
+      "tapestry": "Maglie",
+      "c2c": "Blocchi",
+      "quilt": "Quadrati"
+    },
+    "amountColumn": {
+      "tapestry": "Iarde",
+      "c2c": "Iarde",
+      "quilt": "Metraggio"
+    },
+    "bobbinsColumn": "Gomitolini",
+    "totalRow": "Totale",
+    "problems": {
+      "empty": "Scrivi una parola, un nome o un'iniziale per cominciare.",
+      "tooLong": "È più di quanto si possa comporre: al massimo {maxC} caratteri su {maxL} righe.",
+      "unsupported": "{font} non ha {chars}. Prova un altro carattere o toglili.",
+      "tooBig": "Ne viene un pezzo di {w} per {h}, e il massimo è {most} in ogni direzione. Rimpicciolisci le maiuscole, metti meno parole per riga o lascia meno sfondo intorno."
+    }
+  },
+  "nl": {
+    "metaTitle": "Telpatronen met namen en woorden om te haken en te quilten",
+    "metaDesc": "Typ een naam, een initiaal of een zin en krijg een uitgeteld telpatroon: tapestrytoeren, C2C-diagonalen of een patchworkquilt, met garen of stof voor elke kleur.",
+    "h1": "Letters",
+    "lede": "Typ een naam, een initiaal of een hele zin, kies een lettertype en kleuren, en dan hoe je het maakt. Elke toer, diagonaal of quiltstuk is voor je uitgeteld.",
+    "indexLink": "Namen en woorden: letterpatronen voor tapestry en C2C",
+    "quiltLink": "Namen en woorden als patchworkquilt",
+    "colorworkLink": "Liever letters? Maak een telpatroon met een naam of zin",
+    "loading": "De letters worden gezet…",
+    "views": {
+      "picture": "Af",
+      "chart": "Telpatroon"
+    },
+    "pictureNote": "Ongeveer {w}\" x {h}\" als het af is. De afbeelding laat zien hoe het werk eruit komt te zien; in het telpatroon staat elke steek om te tellen.",
+    "downloadPdf": "Patroon als pdf downloaden",
+    "words": "Tekst",
+    "wordsHint": "Druk op Enter voor een nieuwe regel. Elk lettertype heeft letters, cijfers, accenten en . , & ! ? ' - ♥.",
+    "counter": "{c} van {maxC} tekens, {l} van {maxL} regels",
+    "tryLabel": "Probeer er een",
+    "presets": {
+      "initial": {
+        "name": "Initiaal",
+        "text": "A"
+      },
+      "name": {
+        "name": "Naam",
+        "text": "Emma"
+      },
+      "alphabet": {
+        "name": "Alfabetblokken",
+        "text": "ABC"
+      },
+      "baby": {
+        "name": "Babydeken",
+        "text": "Welkom\nNoah"
+      },
+      "wedding": {
+        "name": "Bruiloft",
+        "text": "Dr. Jim & Hannah\n12 juni 2027"
+      },
+      "family": {
+        "name": "Familiebord",
+        "text": "FAMILIE DE VRIES\nSINDS 2026"
+      },
+      "love": {
+        "name": "Liefde",
+        "text": "LIEFDE\n♥"
+      }
+    },
+    "defaultMessage": "Emma",
+    "technique": "Hoe ga je het maken?",
+    "techniques": {
+      "tapestry": "Tapestryhaken",
+      "c2c": "C2C-haken",
+      "quilt": "Patchworkquilt"
+    },
+    "techniqueNotes": {
+      "tapestry": "Vasten in toeren, waarbij je de kleuren die je niet gebruikt in de steken meeneemt. Een stevig weefsel met scherpe letters, goed voor kussens, tassen en wandkleden.",
+      "c2c": "Blokjes van drie stokjes, diagonaal van hoek tot hoek gehaakt. Elk vakje van het telpatroon is één blokje, dus een deken groeit snel, met een klosje voor elk kleurvlak.",
+      "quilt": "Elk vakje van het telpatroon is een stoffen vierkantje, en een reeks van één kleur knip je als één lang stuk. Zo heeft een naamquilt veel minder naden dan een van losse vierkantjes."
+    },
+    "type": "Letters",
+    "font": "Lettertype",
+    "fonts": {
+      "rounded": "Rond en vet",
+      "thin": "Dun",
+      "slab": "Zware slab",
+      "serif": "Sierlijke schreef",
+      "script": "Schrijfletter",
+      "decorative": "Sierhoofdletters",
+      "pixel": "Pixelhoofdletters"
+    },
+    "fineNote": "Dit lettertype heeft dunne lijnen en leest het best met hoofdletters van minstens {n} hoog.",
+    "pixelNote": "Pixelhoofdletters gaan per 7: deze zijn {n} hoog.",
+    "heightLabel": "Hoogte van de hoofdletters ({unit})",
+    "height2Label": "Volgende regels ({unit})",
+    "sameHeight": "Zoals de eerste",
+    "units": {
+      "tapestry": "toeren",
+      "c2c": "blokjes",
+      "quilt": "vierkantjes"
+    },
+    "layout": "Vorm",
+    "layouts": {
+      "panel": "Paneel passend om de tekst",
+      "square": "Vierkant paneel",
+      "squares": "Een vierkant per letter"
+    },
+    "align": "Uitlijning van de regels",
+    "aligns": {
+      "center": "Gecentreerd",
+      "left": "Links",
+      "right": "Rechts"
+    },
+    "spacing": "Ruimte tussen letters",
+    "lineGap": "Ruimte tussen regels",
+    "auto": "Automatisch",
+    "margin": "Achtergrond rond de tekst",
+    "border": "Rand",
+    "colors": "Kleuren",
+    "colorRoles": {
+      "ground": "Achtergrond (A)",
+      "letters": "Letters (B)",
+      "border": "Rand (C)"
+    },
+    "weight": "Garendikte",
+    "weights": {
+      "sport": "Sport",
+      "dk": "DK",
+      "worsted": "Worsted",
+      "bulky": "Bulky"
+    },
+    "square": "Afgewerkt vierkantje",
+    "inches": "{n}\"",
+    "amounts": {
+      "tapestry": "Garen",
+      "c2c": "Garen",
+      "quilt": "Stof"
+    },
+    "colorColumn": "Kleur",
+    "countColumn": {
+      "tapestry": "Steken",
+      "c2c": "Blokjes",
+      "quilt": "Vierkantjes"
+    },
+    "amountColumn": {
+      "tapestry": "Yards",
+      "c2c": "Yards",
+      "quilt": "Hoeveelheid"
+    },
+    "bobbinsColumn": "Klosjes",
+    "totalRow": "Totaal",
+    "problems": {
+      "empty": "Typ een woord, een naam of een initiaal om te beginnen.",
+      "tooLong": "Dat is meer dan er gezet kan worden: hoogstens {maxC} tekens op hoogstens {maxL} regels.",
+      "unsupported": "{font} heeft geen {chars}. Probeer een ander lettertype of laat ze weg.",
+      "tooBig": "Dat wordt een stuk van {w} bij {h}, en {most} is het hoogste in elke richting. Maak de hoofdletters kleiner, zet minder woorden op een regel of laat minder achtergrond eromheen."
+    }
+  }
+}

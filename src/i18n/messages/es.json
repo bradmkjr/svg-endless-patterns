@@ -347,6 +347,12 @@
         "output": "Gráfico con clave de colores, cada vuelta o diagonal por escrito, hilo por color, PDF para imprimir, y SVG y PNG.",
         "explore": "Crear un cuadrado multicolor"
       },
+      "lettering": {
+        "title": "Letras",
+        "text": "Nombres, iniciales y frases en gráficos: un panel o un cuadrado por letra, con siete tipografías, para ganchillo tapestry, C2C o una colcha de patchwork.",
+        "output": "Gráfico con cada vuelta, diagonal o pieza contada, hilo o tela por color, un PDF para imprimir, y SVG y PNG.",
+        "explore": "Haz un gráfico con un nombre"
+      },
       "checkerboard": {
         "title": "Tableros",
         "text": "Elige filas, columnas, colores y forma de las casillas, del tablero estándar a ladrillos 3:1, panales y triángulos.",

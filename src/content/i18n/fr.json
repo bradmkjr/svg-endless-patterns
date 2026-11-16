@@ -969,6 +969,26 @@
         "Une première version",
         "Ces traductions sont une première version et n'ont pas encore été relues par des artisans. Les noms de blocs et de points restent en anglais, les mesures en pouces et en yards, et les aiguilles et crochets utilisent la numérotation américaine. Le crochet utilise des abréviations locales, avec le terme américain entre parenthèses."
       ]
+    },
+    "lettering": {
+      "title": "Lettrage : prénoms, initiales et phrases en mailles et en carrés",
+      "summary": "Tapez un prénom, une initiale ou toute une phrase et obtenez une grille comptée en sept polices, en rangs de crochet tapestry, en diagonales C2C ou en quilt patchwork, avec le fil ou le tissu de chaque couleur.",
+      "blocks": [
+        "La nouvelle section [lettrage](/lettering/) transforme les mots en ouvrages multicolores. Tapez un prénom, une initiale ou une phrase, appuyez sur Entrée pour une nouvelle ligne et choisissez parmi sept polices : arrondie grasse, fine, égyptienne grasse, à empattements élégants, manuscrite, capitales décoratives pour les monogrammes et capitales en pixels pour les petits textes. Les lettres, les chiffres, les accents, l'esperluette et la ponctuation fonctionnent dans toutes, si bien que « Dr. Jim & Hannah » et « 12 juin 2027 » s'écrivent tels quels.",
+        "Panneaux, carrés et un carré par lettre",
+        "Une phrase peut former un panneau ajusté au texte, un panneau carré ou un carré par lettre, pour des cubes alphabet ou des couvertures à prénom. Les lignes suivantes peuvent être plus petites que la première, pour qu'une date se place sous un prénom, et vous choisissez le fond autour du texte, une bordure et les trois couleurs. Les boutons sous la zone de texte en essaient quelques-uns de courants : une initiale, un prénom, des cubes alphabet, une couverture de bébé, un mariage, une plaque familiale et AMOUR avec un cœur.",
+        [
+          "Un panneau de mariage en crochet tapestry",
+          "Initiales décoratives, un carré par lettre"
+        ],
+        "Choisissez comment le réaliser",
+        "Quand le texte vous convient, choisissez la technique ; le texte, la police et les couleurs suivent. Le [crochet tapestry](/lettering/tapestry-crochet/) donne chaque rang de mailles serrées, les autres couleurs étant portées à l'intérieur des mailles. Le [crochet C2C](/lettering/c2c-crochet/) détaille chaque diagonale bloc par bloc et gère les longs rectangles que forment les prénoms : au milieu, chaque diagonale grandit d'un côté et diminue de l'autre, et la liste indique lequel. Un [quilt patchwork](/lettering/quilt/) coupe chaque suite d'une même couleur en une seule bande : un quilt à prénom a bien moins de coutures qu'un patchwork de carrés séparés, avec la coupe, l'assemblage rangée par rangée, le dos et le biais.",
+        [
+          "JOY en quilt patchwork",
+          "La grille d'une couverture de bébé"
+        ],
+        "Chaque modèle commence par le nombre de mailles : la taille de la grille, la hauteur des capitales et le nombre de mailles, de blocs ou de carrés de chaque couleur, puis le fil ou le tissu pour chacune. Le PDF répartit une grande grille sur autant de pages qu'il faut pour qu'elle reste lisible. Les pages [crochet](/crochet/) et [blocs de patchwork](/blocks/) mènent à la nouvelle section, et les polices sont créditées sur la page des [remerciements](/acknowledgements/)."
+      ]
     }
   },
   "changelog": {
@@ -1516,6 +1536,15 @@
       "items": [
         "Ajout de l'italien et du néerlandais, avec instructions générées et PDF",
         "Ajout de liens de langue et d'une couleur d'accent pour chacun"
+      ]
+    },
+    "Lettering for crochet and quilts": {
+      "title": "Lettrage pour le crochet et le quilt",
+      "items": [
+        "Une nouvelle section de lettrage transforme un prénom, une initiale ou une phrase en grille, en panneau, en panneau carré ou en un carré par lettre, chaque retour à la ligne commençant une nouvelle ligne",
+        "Sept polices, de fine à grasse, dont une manuscrite et des capitales décoratives pour les initiales. Toutes ont les lettres, les chiffres, les accents, & et la ponctuation",
+        "Rangs de crochet tapestry, diagonales C2C y compris en rectangle, ou quilt patchwork coupé en bandes, chacun avec le nombre de mailles, le fil ou le tissu par couleur et un PDF",
+        "Les pages crochet, crochet multicolore et blocs de patchwork y mènent"
       ]
     }
   }

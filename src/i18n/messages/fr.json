@@ -347,6 +347,12 @@
         "output": "Grille avec légende des couleurs, chaque rang, diagonale ou tour rédigé, fil par couleur, PDF à imprimer, et SVG et PNG.",
         "explore": "Créer un carré multicolore"
       },
+      "lettering": {
+        "title": "Lettrage",
+        "text": "Prénoms, initiales et phrases en grilles : un panneau ou un carré par lettre, en sept polices, pour le crochet tapestry, le C2C ou un quilt en patchwork.",
+        "output": "Grille avec chaque rang, diagonale ou pièce comptée, fil ou tissu par couleur, un PDF à imprimer, et SVG et PNG.",
+        "explore": "Faire une grille de prénom"
+      },
       "checkerboard": {
         "title": "Damiers",
         "text": "Réglez les rangées, les colonnes, les couleurs et la forme des cases, du damier standard aux briques 3:1, nids d'abeille et triangles.",

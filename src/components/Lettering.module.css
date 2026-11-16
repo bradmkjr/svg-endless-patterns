@@ -1,0 +1,56 @@
+.words {
+  width: 100%;
+  min-height: 5.5rem;
+  padding: 0.5rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: var(--surface);
+  color: var(--foreground);
+  font: inherit;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  resize: vertical;
+}
+
+.number {
+  width: 100%;
+  padding: 0.45rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: var(--surface);
+  color: var(--foreground);
+  font: inherit;
+  font-size: 1rem;
+}
+
+.counter {
+  margin: 0.2rem 0 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.counterOver {
+  composes: counter;
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+.tryLabel {
+  margin: 0.7rem 0 0.3rem;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.problem {
+  margin: 0;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--warn-line);
+  border-radius: 6px;
+  background: var(--warn-bg);
+}
+
+.hint {
+  margin: 0.35rem 0 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}

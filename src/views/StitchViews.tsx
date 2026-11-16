@@ -7,6 +7,7 @@ import { PrimaryImageProvider } from "@/components/ToolLoading";
 import { StitchGrid } from "@/components/StitchGrid";
 import { FavoritesShelf } from "@/components/FavoritesShelf";
 import crochetColorwork from "@/i18n/messages/crochetColorwork.json";
+import lettering from "@/i18n/messages/lettering.json";
 import colorwork from "@/i18n/messages/knitColorwork.json";
 import { type Craft, type Locale } from "@/lib/generator";
 import { getStitchPattern, getStitchPatterns } from "@/lib/patternCatalog";
@@ -34,6 +35,8 @@ export async function StitchesView({ locale, craft }: { locale: Locale; craft: C
       {craft === "crochet" && (
         <p>
           <Link href={localePath(locale, "/crochet/colorwork/")}>{crochetColorwork[locale].indexLink}</Link>
+          <br />
+          <Link href={localePath(locale, "/lettering/")}>{lettering[locale].indexLink}</Link>
         </p>
       )}
       <StitchGrid stitches={stitches} locale={locale} />

@@ -21,9 +21,10 @@ import type { RdRequest, RdResult } from "./reactionDiffusionTypes";
 import type { KolamRequest, KolamResult } from "./kolamTypes";
 import type { WavesRequest, WavesResult } from "./wavesTypes";
 import type { NatureRequest, NatureResult } from "./natureTypes";
-import { mazeApiGet } from "./mazeApi";
+import { encodeSettings, mazeApiGet, mazeApiUrl } from "./mazeApi";
 import type { CheckerboardRequest, CheckerboardResult } from "./checkerboardTypes";
 import type { CrochetColorworkRequest, CrochetColorworkResult } from "./crochetColorworkTypes";
+import type { LetteringProblem, LetteringRequest, LetteringResult } from "./letteringTypes";
 import type { FractalRequest, FractalResult } from "./fractalTypes";
 import type { LifeRequest, LifeResult } from "./lifeTypes";
 import type { KnitColorworkRequest, KnitColorworkResult } from "./knitColorworkTypes";
@@ -38,6 +39,7 @@ export type { KnitColorworkPlan, KnitColorworkRequest, KnitColorworkResult, Knit
 export type { CheckerboardRequest, CheckerboardResult, CheckerLayout, CheckerPattern } from "./checkerboardTypes";
 export type { PuzzleColors, PuzzleDifficulty, PuzzlePaper, PuzzleRequest, PuzzleResult, PuzzleType } from "./puzzleTypes";
 export type { ColorworkTechnique, ColorworkWeight, CrochetColorworkRequest, CrochetColorworkResult } from "./crochetColorworkTypes";
+export type { LetteringAlign, LetteringColor, LetteringFont, LetteringLayout, LetteringProblem, LetteringRequest, LetteringResult, LetteringTechnique } from "./letteringTypes";
 export type { LifeColors, LifeNeighborhood, LifePattern, LifeRequest, LifeResult } from "./lifeTypes";
 export type { FractalColors, FractalRequest, FractalResult, FractalType } from "./fractalTypes";
 export type { TruchetArrangement, TruchetColors, TruchetRequest, TruchetResult, TruchetStyle } from "./truchetTypes";
@@ -218,6 +220,29 @@ export async function generateCrochetColorwork(request: CrochetColorworkRequest)
 export async function generateCrochetColorworkPdf(request: CrochetColorworkRequest): Promise<Uint8Array> {
   const response = await mazeApiGet("/crochet-colorwork/pdf", request, "application/pdf");
   return new Uint8Array(await response.arrayBuffer());
+}
+
+/** A phrase the API can't set, or too large to make: what's wrong, for the visitor to fix. */
+export class LetteringProblemError extends Error {
+  constructor(readonly problem: LetteringProblem) {
+    super(`lettering: ${problem.kind}`);
+  }
+}
+
+async function letteringGet(path: string, request: LetteringRequest, accept: string): Promise<Response> {
+  const response = await fetch(mazeApiUrl(`${path}?${encodeSettings(request)}`), { headers: { accept } });
+  if (response.status === 422) throw new LetteringProblemError(((await response.json()) as { problem: LetteringProblem }).problem);
+  if (!response.ok) throw new Error(`API returned ${response.status}`);
+  return response;
+}
+
+/** A word or phrase as a chart, with its rows, diagonals or quilt piecing. Throws a LetteringProblemError for the visitor to fix. */
+export async function generateLettering(request: LetteringRequest): Promise<LetteringResult> {
+  return (await letteringGet("/lettering", request, "application/json")).json() as Promise<LetteringResult>;
+}
+
+export async function generateLetteringPdf(request: LetteringRequest): Promise<Uint8Array> {
+  return new Uint8Array(await (await letteringGet("/lettering/pdf", request, "application/pdf")).arrayBuffer());
 }
 
 export async function generatePuzzle(request: PuzzleRequest): Promise<PuzzleResult> {

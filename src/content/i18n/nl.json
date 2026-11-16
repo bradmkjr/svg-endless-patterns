@@ -969,6 +969,26 @@
         "Een eerste versie",
         "Deze vertalingen zijn een eerste versie en zijn nog niet door makers nagekeken. Namen van blokken en steken blijven Engels, maten blijven in inches en yards, en naalden en haaknaalden gebruiken de Amerikaanse nummering. Haken gebruikt lokale afkortingen, met de Amerikaanse term tussen haakjes."
       ]
+    },
+    "lettering": {
+      "title": "Letters: namen, initialen en zinnen in steken en vierkantjes",
+      "summary": "Typ een naam, een initiaal of een hele zin en krijg een uitgeteld telpatroon in zeven lettertypes, als tapestrytoeren, C2C-diagonalen of een patchworkquilt, met garen of stof voor elke kleur.",
+      "blocks": [
+        "Het nieuwe onderdeel [letters](/lettering/) maakt van woorden kleurwerk. Typ een naam, een initiaal of een zin, druk op Enter voor een nieuwe regel en kies uit zeven lettertypes: rond en vet, dun, zware slab, sierlijke schreef, schrijfletter, sierhoofdletters voor monogrammen en pixelhoofdletters voor kleine tekst. Letters, cijfers, accenten, het en-teken en leestekens werken in alle, dus ‘Dr. Jim & Hannah’ en ‘12 juni 2027’ komen er precies zo uit als je ze typt.",
+        "Panelen, vierkanten en een vierkant per letter",
+        "Een zin kan één paneel passend om de tekst zijn, een vierkant paneel of een vierkant per letter, voor alfabetblokken en naamdekens. Volgende regels kunnen kleiner zijn dan de eerste, zodat een datum onder een naam staat, en je kiest de achtergrond rond de tekst, een rand en de drie kleuren. Knoppen onder het tekstvak proberen een paar veelvoorkomende: een initiaal, een naam, alfabetblokken, een babydeken, een bruiloft, een familiebord en LIEFDE met een hartje.",
+        [
+          "Een bruiloftspaneel in tapestryhaken",
+          "Sierinitialen, een vierkant per letter"
+        ],
+        "Kies hoe je het maakt",
+        "Als de tekst goed is, kies je de techniek; tekst, lettertype en kleuren blijven staan. [Tapestryhaken](/lettering/tapestry-crochet/) schrijft elke toer vasten uit, met de andere kleuren in de steken meegenomen. [C2C-haken](/lettering/c2c-crochet/) zet elke diagonaal blokje voor blokje op een rij en kan om met de lange rechthoeken die namen vormen: in het middendeel groeit elke diagonaal aan de ene rand en krimpt hij aan de andere, en de lijst zegt aan welke. Een [patchworkquilt](/lettering/quilt/) knipt elke reeks van één kleur als één strook, zodat een naamquilt veel minder naden heeft dan een van losse vierkantjes, met knippen, rij voor rij naaien, achterkant en bies.",
+        [
+          "JOY als patchworkquilt",
+          "Het telpatroon voor een babydeken"
+        ],
+        "Elk patroon begint met het aantal steken: de maat van het telpatroon, de hoogte van de hoofdletters en hoeveel steken, blokjes of vierkantjes elke kleur heeft, en dan garen of stof per kleur. De pdf verdeelt een groot telpatroon over zoveel pagina's als nodig is om leesbaar te blijven. De pagina's [haken](/crochet/) en [quiltblokken](/blocks/) linken naar het nieuwe onderdeel, en de lettertypes worden vermeld op de pagina [dankwoord](/acknowledgements/)."
+      ]
     }
   },
   "changelog": {
@@ -1516,6 +1536,15 @@
       "items": [
         "Italiaans en Nederlands toegevoegd, inclusief gegenereerde instructies en pdf's",
         "Taallinks en een accentkleur per taal toegevoegd"
+      ]
+    },
+    "Lettering for crochet and quilts": {
+      "title": "Letters voor haken en quilten",
+      "items": [
+        "Een nieuw onderdeel maakt van een naam, een initiaal of een zin een telpatroon, als paneel, vierkant paneel of een vierkant per letter, waarbij elke regelovergang een nieuwe regel begint",
+        "Zeven lettertypes, van dun tot zwaar, met een schrijfletter en sierhoofdletters voor initialen. Alle hebben letters, cijfers, accenten, & en leestekens",
+        "Tapestrytoeren, C2C-diagonalen ook voor rechthoeken of een in stroken geknipte patchworkquilt, elk met het aantal steken, garen of stof per kleur en een pdf",
+        "De pagina's haken, kleurenhaken en quiltblokken linken ernaar"
       ]
     }
   }

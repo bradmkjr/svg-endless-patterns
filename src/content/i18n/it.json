@@ -969,6 +969,26 @@
         "Una prima bozza",
         "Queste traduzioni sono una prima bozza e non sono ancora state riviste da chi pratica queste arti. I nomi di blocchi e punti restano in inglese, le misure in pollici e iarde, e ferri e uncinetti usano la numerazione americana. L'uncinetto usa abbreviazioni locali, con il termine americano tra parentesi."
       ]
+    },
+    "lettering": {
+      "title": "Scritte: nomi, iniziali e frasi in maglie e quadrati",
+      "summary": "Scrivi un nome, un'iniziale o una frase intera e ottieni uno schema contato in sette caratteri, in righe di uncinetto tapestry, diagonali C2C o un quilt in patchwork, con il filato o il tessuto per ogni colore.",
+      "blocks": [
+        "La nuova sezione [scritte](/lettering/) trasforma le parole in lavori a colori. Scrivi un nome, un'iniziale o una frase, premi Invio per una riga nuova e scegli fra sette caratteri: arrotondato grassetto, sottile, egiziano pesante, graziato elegante, corsivo, maiuscole decorative per i monogrammi e maiuscole a pixel per i testi piccoli. Lettere, numeri, accenti, la e commerciale e la punteggiatura funzionano in tutti, così «Dr. Jim & Hannah» e «12 giugno 2027» vengono composti proprio come li scrivi.",
+        "Pannelli, quadrati e un quadrato per lettera",
+        "Una frase può diventare un pannello su misura del testo, un pannello quadrato o un quadrato per lettera, per cubi dell'alfabeto e coperte con il nome. Le righe successive possono essere più piccole della prima, così una data sta sotto un nome, e scegli lo sfondo intorno al testo, un bordo e i tre colori. I pulsanti sotto la casella di testo ne provano alcuni comuni: un'iniziale, un nome, i cubi dell'alfabeto, una copertina per neonati, un matrimonio, una targa di famiglia e AMORE con un cuore.",
+        [
+          "Un pannello per un matrimonio a uncinetto tapestry",
+          "Iniziali decorative, un quadrato per lettera"
+        ],
+        "Scegli come realizzarla",
+        "Quando il testo ti piace, scegli la tecnica; testo, carattere e colori restano gli stessi. L'[uncinetto tapestry](/lettering/tapestry-crochet/) scrive ogni riga di maglie basse, con gli altri colori portati dentro le maglie. L'[uncinetto C2C](/lettering/c2c-crochet/) elenca ogni diagonale blocco per blocco e gestisce i rettangoli allungati che formano i nomi: nella parte centrale ogni diagonale cresce su un bordo e cala sull'altro, e l'elenco dice su quale. Un [quilt in patchwork](/lettering/quilt/) taglia ogni serie dello stesso colore come un'unica striscia, così un quilt con un nome ha molte meno cuciture di uno a quadrati singoli, con taglio, cucitura fila per fila, retro e sbieco.",
+        [
+          "JOY in un quilt in patchwork",
+          "Lo schema di una copertina per neonati"
+        ],
+        "Ogni schema comincia con il conteggio delle maglie: le misure dello schema, l'altezza delle maiuscole e quante maglie, blocchi o quadrati ha ogni colore, poi il filato o il tessuto per ciascuno. Il PDF divide uno schema grande su tutte le pagine che servono perché resti leggibile. Le pagine [uncinetto](/crochet/) e [blocchi patchwork](/blocks/) portano alla nuova sezione, e i caratteri sono citati nella pagina dei [ringraziamenti](/acknowledgements/)."
+      ]
     }
   },
   "changelog": {
@@ -1516,6 +1536,15 @@
       "items": [
         "Aggiunti italiano e olandese, comprese istruzioni generate e PDF",
         "Aggiunti link delle lingue e un colore d'accento per ciascuna"
+      ]
+    },
+    "Lettering for crochet and quilts": {
+      "title": "Scritte per uncinetto e quilt",
+      "items": [
+        "Una nuova sezione di scritte trasforma un nome, un'iniziale o una frase in uno schema, come pannello, pannello quadrato o un quadrato per lettera, e ogni a capo inizia una nuova riga",
+        "Sette caratteri, dal sottile al pesante, con corsivo e maiuscole decorative per le iniziali. Tutti hanno lettere, numeri, accenti, & e punteggiatura",
+        "Righe di uncinetto tapestry, diagonali C2C anche per i rettangoli o un quilt in patchwork tagliato a strisce, ognuno con il conteggio delle maglie, filato o tessuto per colore e un PDF",
+        "Le pagine uncinetto, uncinetto a colori e blocchi patchwork vi portano"
       ]
     }
   }

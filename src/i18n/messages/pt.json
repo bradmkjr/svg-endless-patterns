@@ -347,6 +347,12 @@
         "output": "Gráfico com legenda de cores, cada carreira, diagonal ou volta por escrito, fio por cor, PDF para imprimir, e SVG e PNG.",
         "explore": "Criar um quadrado multicolorido"
       },
+      "lettering": {
+        "title": "Letras",
+        "text": "Nomes, iniciais e frases em gráficos: um painel ou um quadrado por letra, em sete fontes, para crochê tapeçaria, C2C ou uma colcha de patchwork.",
+        "output": "Gráfico com cada carreira, diagonal ou peça contada, fio ou tecido por cor, um PDF para imprimir, e SVG e PNG.",
+        "explore": "Faça um gráfico com um nome"
+      },
       "checkerboard": {
         "title": "Xadrez",
         "text": "Defina linhas, colunas, cores e a forma das casas, do padrão a tijolos 3:1, favos de mel e triângulos.",

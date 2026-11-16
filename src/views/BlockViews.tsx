@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/pageMetadata";
 import Link from "next/link";
+import lettering from "@/i18n/messages/lettering.json";
 import { notFound } from "next/navigation";
 import { BlockBuilderRoute } from "@/components/BlockBuilderRoute";
 import { PrimaryImageProvider } from "@/components/ToolLoading";
@@ -27,6 +28,9 @@ export async function BlocksView({ locale }: { locale: Locale }) {
       <p className="lede">{fill(t.lede, { n: blocks.length })}</p>
       <p>
         <Link href={localePath(locale, "/quilts/")}>{messages(locale).library.tools.quilt.explore}</Link>: {quiltCopy[locale].lede}
+      </p>
+      <p>
+        <Link href={localePath(locale, "/lettering/quilt/")}>{lettering[locale].quiltLink}</Link>
       </p>
       {families.map((family) => (
         <section key={family}>

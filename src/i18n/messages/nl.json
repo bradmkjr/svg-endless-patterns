@@ -347,6 +347,12 @@
         "output": "Schema met kleurenlegenda, elke toer, diagonaal of ronde uitgeschreven, garen per kleur, een printbare pdf, SVG en PNG.",
         "explore": "Maak een kleurenvierkant"
       },
+      "lettering": {
+        "title": "Letters",
+        "text": "Namen, initialen en zinnen als telpatroon: één paneel of een vierkant per letter, in zeven lettertypes, voor tapestryhaken, C2C of een patchworkquilt.",
+        "output": "Telpatroon met elke toer, diagonaal of elk quiltstuk uitgeteld, garen of stof per kleur, een pdf om te printen, en SVG en PNG.",
+        "explore": "Maak een naampatroon"
+      },
       "checkerboard": {
         "title": "Dambordpatronen",
         "text": "Stel de rijen, kolommen, kleuren en vakvorm in, van een gewoon bord tot bakstenen van 3:1, honingraten en driehoeken.",

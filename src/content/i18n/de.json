@@ -969,6 +969,26 @@
         "Ein erster Entwurf",
         "Diese Übersetzungen sind ein erster Entwurf und wurden noch nicht von Handarbeitenden geprüft. Block- und Maschennamen bleiben Englisch, Maße bleiben in Zoll und Yards, und Nadeln und Häkelnadeln nutzen die US-Nummerierung. Häkeln nutzt lokale Abkürzungen, mit dem US-Begriff in Klammern."
       ]
+    },
+    "lettering": {
+      "title": "Schriftzüge: Namen, Initialen und Sprüche in Maschen und Quadraten",
+      "summary": "Gib einen Namen, eine Initiale oder einen ganzen Spruch ein und erhalte ein ausgezähltes Diagramm in sieben Schriften, als Tapestry-Reihen, C2C-Diagonalen oder Patchworkquilt, mit Garn oder Stoff für jede Farbe.",
+      "blocks": [
+        "Der neue Bereich [Schriftzüge](/lettering/) macht aus Wörtern Farbarbeiten. Gib einen Namen, eine Initiale oder einen Spruch ein, drücke die Eingabetaste für eine neue Zeile und wähle aus sieben Schriften: rund und fett, dünn, kräftige Serifenbetonte, elegante Serifen, Schreibschrift, Zierversalien für Monogramme und Pixel-Versalien für kleine Texte. Buchstaben, Ziffern, Akzente, das Und-Zeichen und Satzzeichen gibt es in allen, sodass „Dr. Jim & Hannah“ und „12. Juni 2027“ genau so gesetzt werden, wie du sie tippst.",
+        "Tafeln, Quadrate und ein Quadrat pro Buchstabe",
+        "Ein Spruch kann eine Tafel passend zum Text sein, eine quadratische Tafel oder ein Quadrat pro Buchstabe, für ABC-Würfel und Namensdecken. Weitere Zeilen können kleiner sein als die erste, damit ein Datum unter einem Namen steht, und du wählst den Hintergrund um den Text, einen Rand und die drei Farben. Knöpfe unter dem Textfeld probieren ein paar beliebte aus: eine Initiale, einen Namen, ABC-Würfel, eine Babydecke, eine Hochzeit, ein Familienschild und LIEBE mit einem Herz.",
+        [
+          "Eine Hochzeitstafel in Tapestry-Häkeln",
+          "Zier-Initialen, ein Quadrat pro Buchstabe"
+        ],
+        "Wähle, wie du es arbeitest",
+        "Wenn der Text passt, wähle die Technik; Text, Schrift und Farben bleiben erhalten. [Tapestry-Häkeln](/lettering/tapestry-crochet/) schreibt jede Reihe fester Maschen aus, die anderen Farben werden in den Maschen mitgeführt. [C2C-Häkeln](/lettering/c2c-crochet/) listet jede Diagonale Block für Block und kommt mit den langen Rechtecken zurecht, die Namen ergeben: Im Mittelteil wächst jede Diagonale an einer Kante und schrumpft an der anderen, und die Liste sagt, an welcher. Ein [Patchworkquilt](/lettering/quilt/) schneidet jede Folge gleicher Farbe als einen Streifen zu, sodass ein Namensquilt viel weniger Nähte hat als einer aus einzelnen Quadraten, mit Zuschnitt, Nähen Reihe für Reihe, Rückseite und Binding.",
+        [
+          "JOY als Patchworkquilt",
+          "Das Diagramm einer Babydecke"
+        ],
+        "Jede Anleitung beginnt mit der Maschenzahl: der Größe des Diagramms, der Höhe der Großbuchstaben und wie viele Maschen, Blöcke oder Quadrate jede Farbe hat, dann Garn oder Stoff für jede. Das PDF verteilt ein großes Diagramm auf so viele Seiten, wie es braucht, um lesbar zu bleiben. Die Seiten [Häkeln](/crochet/) und [Quiltblöcke](/blocks/) verlinken auf den neuen Bereich, und die Schriften werden auf der Seite [Danksagungen](/acknowledgements/) genannt."
+      ]
     }
   },
   "changelog": {
@@ -1516,6 +1536,15 @@
       "items": [
         "Italienisch und Niederländisch ergänzt, einschließlich erzeugter Anleitungen und PDFs",
         "Sprachlinks und je eine Akzentfarbe ergänzt"
+      ]
+    },
+    "Lettering for crochet and quilts": {
+      "title": "Schriftzüge zum Häkeln und Quilten",
+      "items": [
+        "Ein neuer Bereich macht aus einem Namen, einer Initiale oder einem Spruch ein Diagramm, als Tafel, quadratische Tafel oder ein Quadrat pro Buchstabe, und jeder Zeilenumbruch beginnt eine neue Zeile",
+        "Sieben Schriften, von dünn bis kräftig, mit Schreibschrift und Zierversalien für Initialen. Alle haben Buchstaben, Ziffern, Akzente, & und Satzzeichen",
+        "Tapestry-Reihen, C2C-Diagonalen auch für Rechtecke oder ein in Streifen zugeschnittener Patchworkquilt, jeweils mit Maschenzahl, Garn oder Stoff pro Farbe und einem PDF",
+        "Die Seiten Häkeln, mehrfarbiges Häkeln und Quiltblöcke verlinken darauf"
       ]
     }
   }

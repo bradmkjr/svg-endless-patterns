@@ -46,7 +46,14 @@
       "yoshimura": "The Yoshimura crease pattern: the diamonds a cylinder buckles into under axial compression, which his paper describes.",
       "farnhamWaterbomb": "The waterbomb tessellation's six-crease points, each a waterbomb base or its flipped form, follow the vertices this paper studies.",
       "langTwists": "The square twist tessellation: twists joined by pleats, with neighbors turning opposite ways.",
-      "hullOrigametry": "Maekawa's and Kawasaki's theorems, which every tessellation crease pattern here is tested against at each point where creases meet."
+      "hullOrigametry": "Maekawa's and Kawasaki's theorems, which every tessellation crease pattern here is tested against at each point where creases meet.",
+      "fontNunito": "A typeface for lettering charts (rounded bold), drawn as outlines and turned into stitches on the server.",
+      "fontQuicksand": "A typeface for lettering charts (thin), drawn as outlines and turned into stitches on the server.",
+      "fontAlfaSlab": "A typeface for lettering charts (heavy slab), drawn as outlines and turned into stitches on the server.",
+      "fontPlayfair": "A typeface for lettering charts (elegant serif), drawn as outlines and turned into stitches on the server.",
+      "fontPacifico": "A typeface for lettering charts (script), drawn as outlines and turned into stitches on the server.",
+      "fontCinzel": "A typeface for lettering charts (decorative capitals), drawn as outlines and turned into stitches on the server.",
+      "c2cRectangle": "The rule for corner-to-corner rectangles: through the middle, each diagonal grows at one edge and shrinks at the other, so its block count stays the same."
     }
   },
   "es": {
@@ -96,7 +103,14 @@
       "yoshimura": "El patrón de pliegues Yoshimura: los rombos en los que se hunde un cilindro bajo compresión axial, que describe su artículo.",
       "farnhamWaterbomb": "Los puntos de seis pliegues de la teselación de bomba de agua, cada uno una base de bomba de agua o su forma invertida, siguen los vértices que estudia este artículo.",
       "langTwists": "La teselación de giro cuadrado: giros unidos por pliegues, con vecinos que giran en sentido contrario.",
-      "hullOrigametry": "Los teoremas de Maekawa y Kawasaki, con los que se prueba cada patrón de pliegues de teselación de este sitio en cada punto donde se cruzan los pliegues."
+      "hullOrigametry": "Los teoremas de Maekawa y Kawasaki, con los que se prueba cada patrón de pliegues de teselación de este sitio en cada punto donde se cruzan los pliegues.",
+      "fontNunito": "Una tipografía de los gráficos de letras (redondeada gruesa), guardada como contornos y convertida en puntos en el servidor.",
+      "fontQuicksand": "Una tipografía de los gráficos de letras (fina), guardada como contornos y convertida en puntos en el servidor.",
+      "fontAlfaSlab": "Una tipografía de los gráficos de letras (egipcia gruesa), guardada como contornos y convertida en puntos en el servidor.",
+      "fontPlayfair": "Una tipografía de los gráficos de letras (serif elegante), guardada como contornos y convertida en puntos en el servidor.",
+      "fontPacifico": "Una tipografía de los gráficos de letras (caligráfica), guardada como contornos y convertida en puntos en el servidor.",
+      "fontCinzel": "Una tipografía de los gráficos de letras (mayúsculas decorativas), guardada como contornos y convertida en puntos en el servidor.",
+      "c2cRectangle": "La regla de los rectángulos de esquina a esquina: en la parte central, cada diagonal crece por un borde y mengua por el otro, así que su número de bloques no cambia."
     }
   },
   "fr": {
@@ -146,7 +160,14 @@
       "yoshimura": "Le plan de pliage Yoshimura : les losanges que forme un cylindre sous compression axiale, décrits dans son article.",
       "farnhamWaterbomb": "Les points à six plis de la tessellation bombe à eau, chacun une base de bombe à eau ou sa forme retournée, suivent les sommets étudiés dans cet article.",
       "langTwists": "La tessellation en torsion carrée : des torsions reliées par des plis, les voisines tournant en sens inverse.",
-      "hullOrigametry": "Les théorèmes de Maekawa et de Kawasaki, avec lesquels chaque plan de pliage de tessellation du site est testé en chaque point où les plis se rencontrent."
+      "hullOrigametry": "Les théorèmes de Maekawa et de Kawasaki, avec lesquels chaque plan de pliage de tessellation du site est testé en chaque point où les plis se rencontrent.",
+      "fontNunito": "Une police des grilles de lettrage (arrondie grasse), conservée en contours et transformée en mailles sur le serveur.",
+      "fontQuicksand": "Une police des grilles de lettrage (fine), conservée en contours et transformée en mailles sur le serveur.",
+      "fontAlfaSlab": "Une police des grilles de lettrage (égyptienne grasse), conservée en contours et transformée en mailles sur le serveur.",
+      "fontPlayfair": "Une police des grilles de lettrage (empattements élégants), conservée en contours et transformée en mailles sur le serveur.",
+      "fontPacifico": "Une police des grilles de lettrage (manuscrite), conservée en contours et transformée en mailles sur le serveur.",
+      "fontCinzel": "Une police des grilles de lettrage (capitales décoratives), conservée en contours et transformée en mailles sur le serveur.",
+      "c2cRectangle": "La règle des rectangles coin à coin : au milieu, chaque diagonale grandit d'un côté et diminue de l'autre, si bien que son nombre de blocs ne change pas."
     }
   },
   "de": {
@@ -196,7 +217,14 @@
       "yoshimura": "Das Yoshimura-Faltmuster: die Rauten, in die ein Zylinder unter axialem Druck einknickt, wie sein Aufsatz sie beschreibt.",
       "farnhamWaterbomb": "Die Punkte mit sechs Falten in der Wasserbomben-Tessellation, jeder eine Wasserbombenbasis oder ihre umgedrehte Form, folgen den Knoten, die dieser Aufsatz untersucht.",
       "langTwists": "Die Quadratdrehungs-Tessellation: Drehungen, durch Faltenstreifen verbunden, wobei sich Nachbarn gegenläufig drehen.",
-      "hullOrigametry": "Die Sätze von Maekawa und Kawasaki, gegen die jedes Tessellations-Faltmuster hier an jedem Punkt geprüft wird, an dem sich Falten treffen."
+      "hullOrigametry": "Die Sätze von Maekawa und Kawasaki, gegen die jedes Tessellations-Faltmuster hier an jedem Punkt geprüft wird, an dem sich Falten treffen.",
+      "fontNunito": "Eine Schrift der Schriftzug-Diagramme (Rund und fett), als Umrisse gespeichert und auf dem Server in Maschen umgesetzt.",
+      "fontQuicksand": "Eine Schrift der Schriftzug-Diagramme (Dünn), als Umrisse gespeichert und auf dem Server in Maschen umgesetzt.",
+      "fontAlfaSlab": "Eine Schrift der Schriftzug-Diagramme (Kräftige Serifenbetonte), als Umrisse gespeichert und auf dem Server in Maschen umgesetzt.",
+      "fontPlayfair": "Eine Schrift der Schriftzug-Diagramme (Elegante Serifen), als Umrisse gespeichert und auf dem Server in Maschen umgesetzt.",
+      "fontPacifico": "Eine Schrift der Schriftzug-Diagramme (Schreibschrift), als Umrisse gespeichert und auf dem Server in Maschen umgesetzt.",
+      "fontCinzel": "Eine Schrift der Schriftzug-Diagramme (Zierversalien), als Umrisse gespeichert und auf dem Server in Maschen umgesetzt.",
+      "c2cRectangle": "Die Regel für Corner-to-Corner-Rechtecke: Im Mittelteil wächst jede Diagonale an einer Kante und schrumpft an der anderen, ihre Blockzahl bleibt also gleich."
     }
   },
   "pt": {
@@ -246,7 +274,14 @@
       "yoshimura": "O diagrama de vincos Yoshimura: os losangos em que um cilindro se deforma sob compressão axial, descritos em seu artigo.",
       "farnhamWaterbomb": "Os pontos de seis vincos da tesselação bomba d'água, cada um uma base de bomba d'água ou sua forma invertida, seguem os vértices que este artigo estuda.",
       "langTwists": "A tesselação de torção quadrada: torções unidas por pregas, com vizinhos girando em sentidos opostos.",
-      "hullOrigametry": "Os teoremas de Maekawa e Kawasaki, com os quais cada diagrama de vincos de tesselação daqui é testado em cada ponto onde os vincos se encontram."
+      "hullOrigametry": "Os teoremas de Maekawa e Kawasaki, com os quais cada diagrama de vincos de tesselação daqui é testado em cada ponto onde os vincos se encontram.",
+      "fontNunito": "Uma fonte dos gráficos de letras (arredondada grossa), guardada como contornos e transformada em pontos no servidor.",
+      "fontQuicksand": "Uma fonte dos gráficos de letras (fina), guardada como contornos e transformada em pontos no servidor.",
+      "fontAlfaSlab": "Uma fonte dos gráficos de letras (egípcia grossa), guardada como contornos e transformada em pontos no servidor.",
+      "fontPlayfair": "Uma fonte dos gráficos de letras (serifada elegante), guardada como contornos e transformada em pontos no servidor.",
+      "fontPacifico": "Uma fonte dos gráficos de letras (cursiva), guardada como contornos e transformada em pontos no servidor.",
+      "fontCinzel": "Uma fonte dos gráficos de letras (maiúsculas decorativas), guardada como contornos e transformada em pontos no servidor.",
+      "c2cRectangle": "A regra dos retângulos canto a canto: no meio, cada diagonal cresce numa borda e diminui na outra, então o número de blocos não muda."
     }
   },
   "it": {
@@ -296,7 +331,14 @@
       "yoshimura": "Lo schema di pieghe Yoshimura: i rombi in cui si accartoccia un cilindro sotto compressione assiale, descritti nel suo articolo.",
       "farnhamWaterbomb": "I punti a sei pieghe della tassellatura a bomba d'acqua, ciascuno una base della bomba d'acqua o la sua forma capovolta, seguono i vertici studiati in questo articolo.",
       "langTwists": "La tassellatura a torsione quadrata: torsioni unite da pieghe, con i vicini che ruotano in senso opposto.",
-      "hullOrigametry": "I teoremi di Maekawa e di Kawasaki, con cui ogni schema di pieghe delle tassellature qui viene verificato in ogni punto in cui le pieghe si incontrano."
+      "hullOrigametry": "I teoremi di Maekawa e di Kawasaki, con cui ogni schema di pieghe delle tassellature qui viene verificato in ogni punto in cui le pieghe si incontrano.",
+      "fontNunito": "Un carattere degli schemi di scritte (arrotondato grassetto), conservato come contorni e trasformato in maglie sul server.",
+      "fontQuicksand": "Un carattere degli schemi di scritte (sottile), conservato come contorni e trasformato in maglie sul server.",
+      "fontAlfaSlab": "Un carattere degli schemi di scritte (egiziano pesante), conservato come contorni e trasformato in maglie sul server.",
+      "fontPlayfair": "Un carattere degli schemi di scritte (graziato elegante), conservato come contorni e trasformato in maglie sul server.",
+      "fontPacifico": "Un carattere degli schemi di scritte (corsivo), conservato come contorni e trasformato in maglie sul server.",
+      "fontCinzel": "Un carattere degli schemi di scritte (maiuscole decorative), conservato come contorni e trasformato in maglie sul server.",
+      "c2cRectangle": "La regola dei rettangoli da angolo ad angolo: nella parte centrale ogni diagonale cresce su un bordo e cala sull'altro, quindi il numero di blocchi resta lo stesso."
     }
   },
   "nl": {
@@ -346,7 +388,14 @@
       "yoshimura": "Het Yoshimura-vouwpatroon: de ruiten waarin een cilinder knikt onder axiale druk, zoals zijn artikel beschrijft.",
       "farnhamWaterbomb": "De punten met zes vouwen in de waterbomtessellatie, elk een waterbombasis of de omgekeerde vorm ervan, volgen de hoekpunten die dit artikel onderzoekt.",
       "langTwists": "De vierkante-draaitessellatie: draaiingen verbonden door plooien, waarbij buren de andere kant op draaien.",
-      "hullOrigametry": "De stellingen van Maekawa en Kawasaki, waaraan elk tessellatievouwpatroon hier wordt getoetst op elk punt waar vouwen samenkomen."
+      "hullOrigametry": "De stellingen van Maekawa en Kawasaki, waaraan elk tessellatievouwpatroon hier wordt getoetst op elk punt waar vouwen samenkomen.",
+      "fontNunito": "Een lettertype voor de letterpatronen (rond en vet), bewaard als omtrekken en op de server omgezet in steken.",
+      "fontQuicksand": "Een lettertype voor de letterpatronen (dun), bewaard als omtrekken en op de server omgezet in steken.",
+      "fontAlfaSlab": "Een lettertype voor de letterpatronen (zware slab), bewaard als omtrekken en op de server omgezet in steken.",
+      "fontPlayfair": "Een lettertype voor de letterpatronen (sierlijke schreef), bewaard als omtrekken en op de server omgezet in steken.",
+      "fontPacifico": "Een lettertype voor de letterpatronen (schrijfletter), bewaard als omtrekken en op de server omgezet in steken.",
+      "fontCinzel": "Een lettertype voor de letterpatronen (sierhoofdletters), bewaard als omtrekken en op de server omgezet in steken.",
+      "c2cRectangle": "De regel voor corner-to-corner-rechthoeken: in het middendeel groeit elke diagonaal aan de ene rand en krimpt hij aan de andere, zodat het aantal blokjes gelijk blijft."
     }
   }
 }

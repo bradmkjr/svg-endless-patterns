@@ -969,6 +969,26 @@
         "Um primeiro rascunho",
         "Estas traduções são um primeiro rascunho e ainda não foram revisadas por artesãos. Os nomes de blocos e pontos seguem em inglês, as medidas em polegadas e jardas, e agulhas e ganchos usam a numeração dos EUA. O crochê usa abreviações locais, com o termo dos EUA entre parênteses."
       ]
+    },
+    "lettering": {
+      "title": "Letras: nomes, iniciais e frases em pontos e quadrados",
+      "summary": "Digite um nome, uma inicial ou uma frase inteira e receba um gráfico contado em sete fontes, em carreiras de crochê tapeçaria, diagonais C2C ou uma colcha de patchwork, com o fio ou o tecido de cada cor.",
+      "blocks": [
+        "A nova seção de [letras](/lettering/) transforma palavras em trabalhos coloridos. Digite um nome, uma inicial ou uma frase, aperte Enter para uma linha nova e escolha entre sete fontes: arredondada grossa, fina, egípcia grossa, serifada elegante, cursiva, maiúsculas decorativas para monogramas e maiúsculas de pixels para textos pequenos. Letras, números, acentos, o & e a pontuação funcionam em todas, então “Dr. Jim & Hannah” e “12 de junho de 2027” saem do jeito que você digita.",
+        "Painéis, quadrados e um quadrado por letra",
+        "Uma frase pode virar um painel do tamanho do texto, um painel quadrado ou um quadrado por letra, para blocos do alfabeto e mantas com nome. As linhas seguintes podem ser menores que a primeira, para uma data ficar embaixo de um nome, e você escolhe o fundo em volta do texto, uma borda e as três cores. Os botões embaixo da caixa de texto experimentam alguns comuns: uma inicial, um nome, blocos do alfabeto, uma mantinha de bebê, um casamento, uma placa da família e AMOR com um coração.",
+        [
+          "Um painel de casamento em crochê tapeçaria",
+          "Iniciais decorativas, um quadrado por letra"
+        ],
+        "Escolha como vai fazer",
+        "Quando o texto estiver bom, escolha a técnica; o texto, a fonte e as cores continuam iguais. O [crochê tapeçaria](/lettering/tapestry-crochet/) escreve cada carreira de ponto baixo, com as outras cores levadas por dentro dos pontos. O [crochê C2C](/lettering/c2c-crochet/) lista cada diagonal bloco a bloco e resolve os retângulos compridos que os nomes formam: no meio, cada diagonal cresce numa borda e diminui na outra, e a lista diz qual. Uma [colcha de patchwork](/lettering/quilt/) corta cada sequência da mesma cor como uma tira só, então uma colcha com nome tem muito menos costuras do que uma de quadrados soltos, com corte, costura fileira por fileira, forro e viés.",
+        [
+          "JOY numa colcha de patchwork",
+          "O gráfico de uma mantinha de bebê"
+        ],
+        "Cada receita começa com a contagem de pontos: o tamanho do gráfico, a altura das maiúsculas e quantos pontos, blocos ou quadrados tem cada cor, e depois o fio ou o tecido de cada uma. O PDF divide um gráfico grande em quantas páginas forem precisas para continuar legível. As páginas de [crochê](/crochet/) e de [blocos de patchwork](/blocks/) levam à nova seção, e as fontes recebem crédito na página de [agradecimentos](/acknowledgements/)."
+      ]
     }
   },
   "changelog": {
@@ -1516,6 +1536,15 @@
       "items": [
         "Adicionados italiano e holandês, com instruções geradas e PDFs",
         "Adicionados links de idioma e uma cor de destaque para cada um"
+      ]
+    },
+    "Lettering for crochet and quilts": {
+      "title": "Letras para crochê e patchwork",
+      "items": [
+        "Uma nova seção de letras transforma um nome, uma inicial ou uma frase num gráfico, como painel, painel quadrado ou um quadrado por letra, e cada quebra de linha começa uma linha nova",
+        "Sete fontes, da fina à grossa, com cursiva e maiúsculas decorativas para iniciais. Todas têm letras, números, acentos, & e pontuação",
+        "Carreiras de crochê tapeçaria, diagonais C2C também em retângulos ou uma colcha de patchwork cortada em tiras, cada uma com contagem de pontos, fio ou tecido por cor e um PDF",
+        "As páginas de crochê, crochê multicolorido e blocos de patchwork levam até ela"
       ]
     }
   }

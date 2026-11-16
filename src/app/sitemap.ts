@@ -33,6 +33,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/life-patterns/",
     "/checkerboards/",
     "/crochet/colorwork/",
+    "/lettering/",
     "/knitting/colorwork/",
     "/mazes/",
     "/paper-puzzles/",

@@ -1,5 +1,75 @@
 [
   {
+    "slug": "lettering",
+    "title": "Lettering: names, initials and phrases in stitches and squares",
+    "date": "2026-11-16",
+    "summary": "Type a name, an initial or a whole phrase and get a counted chart in seven typefaces, as tapestry crochet rows, C2C diagonals or a pieced quilt, with yarn or fabric for every color.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The new [lettering](/lettering/) section turns words into colorwork. Type a name, an initial or a phrase, press Enter for a new line, and choose from seven typefaces: rounded bold, thin, heavy slab, elegant serif, script, decorative capitals for monograms, and pixel capitals for small text. Letters, numbers, accents, the ampersand and punctuation work in all of them, so \"Dr. Jim & Hannah\" and \"June 12, 2027\" set just as they're typed."
+      },
+      {
+        "type": "heading",
+        "text": "Panels, squares and a square for each letter"
+      },
+      {
+        "type": "paragraph",
+        "text": "A phrase can be one panel that fits the words, a square panel, or a square for each letter, for alphabet blocks and name blankets. Later lines can be smaller than the first, so a date sits under a name, and you choose the background around the words, a border and the three colors. Buttons under the text box try a few common ones: an initial, a name, alphabet blocks, a baby blanket, a wedding, a family sign and LOVE with a heart."
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "lettering",
+            "slug": "tapestry-crochet",
+            "query": "m=Dr.+Jim+%26+Hannah%0AJune+12%2C+2027&f=serif&h2=9&mg=4",
+            "view": "picture",
+            "caption": "A wedding panel in tapestry crochet"
+          },
+          {
+            "kind": "lettering",
+            "slug": "c2c-crochet",
+            "query": "m=EMMA&f=decorative&h=20&l=squares",
+            "view": "picture",
+            "caption": "Decorative initials, a square for each letter"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Choose how you'll make it"
+      },
+      {
+        "type": "paragraph",
+        "text": "Once the words look right, choose the technique; the words, type and colors carry over. [Tapestry crochet](/lettering/tapestry-crochet/) writes out every row of single crochet, with the other colors carried inside the stitches. [C2C crochet](/lettering/c2c-crochet/) lists every diagonal block by block, and handles the long rectangles names make: through the middle, each diagonal grows at one edge and shrinks at the other, and the list says which. A [pieced quilt](/lettering/quilt/) cuts each run of one color as a single strip, so a name quilt has far fewer seams than a patchwork of single squares, with cutting, row-by-row piecing, backing and binding."
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "lettering",
+            "slug": "quilt",
+            "query": "m=JOY&f=slab&h=10&l=square&mg=2",
+            "view": "picture",
+            "caption": "JOY as a pieced quilt"
+          },
+          {
+            "kind": "lettering",
+            "slug": "tapestry-crochet",
+            "query": "m=Welcome%0ABaby+Noah&h2=10&mg=4&b=2",
+            "view": "chart",
+            "caption": "The chart for a baby blanket"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Every pattern starts with the stitch count: the chart's size, the capitals' height, and how many stitches, blocks or squares of each color, then yarn or fabric for each. The PDF splits a large chart over as many pages as it needs to stay readable. The [crochet](/crochet/) and [quilt block](/blocks/) pages link to the new section, and the typefaces are credited on the [acknowledgements](/acknowledgements/) page."
+      }
+    ]
+  },
+  {
     "slug": "origami",
     "title": "Origami: traditional models and folded tessellations",
     "date": "2026-11-11",

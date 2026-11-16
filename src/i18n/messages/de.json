@@ -347,6 +347,12 @@
         "output": "Zählmuster mit Farbschlüssel, jede Reihe, Diagonale oder Runde ausgeschrieben, Garn je Farbe, druckbares PDF sowie SVG und PNG.",
         "explore": "Mehrfarbiges Quadrat erstellen"
       },
+      "lettering": {
+        "title": "Schriftzüge",
+        "text": "Namen, Initialen und Sprüche als Diagramme: eine Tafel oder ein Quadrat pro Buchstabe, in sieben Schriften, für Tapestry-Häkeln, C2C oder einen Patchworkquilt.",
+        "output": "Diagramm mit jeder Reihe, Diagonale oder jedem Quiltteil ausgezählt, Garn oder Stoff pro Farbe, ein druckbares PDF sowie SVG und PNG.",
+        "explore": "Namensdiagramm erstellen"
+      },
       "checkerboard": {
         "title": "Schachbrettmuster",
         "text": "Legen Sie Reihen, Spalten, Farben und Feldform fest, vom Standardbrett bis zu 3:1-Ziegeln, Waben und Dreiecken.",

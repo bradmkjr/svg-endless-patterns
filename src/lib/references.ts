@@ -46,7 +46,17 @@ export const REFERENCES: Reference[] = [
   { id: "langTwists", author: "Robert J. Lang", title: "Twists, Tilings, and Tessellations: Mathematical Methods for Geometric Origami", detail: "CRC Press, 2018", url: "https://www.routledge.com/Twists-Tilings-and-Tessellations-Mathematical-Methods-for-Geometric-Origami/Lang/p/book/9781568812328" },
   { id: "hullOrigametry", author: "Thomas C. Hull", title: "Origametry: Mathematical Methods in Paper Folding", detail: "Cambridge University Press, 2020" },
   { id: "bronsonLace", author: "J. and R. Bronson", title: "The Domestic Manufacturer's Assistant, and Family Directory, in the Arts of Weaving and Dyeing", detail: "Utica, 1817", url: "https://www2.cs.arizona.edu/patterns/weaving/wtopic_bronsonl.html" },
+  { id: "fontNunito", author: "Vernon Adams, Jacques Le Bailly and Manvel Shmavonyan", title: "Nunito", detail: "SIL Open Font License 1.1", url: "https://fonts.google.com/specimen/Nunito" },
+  { id: "fontQuicksand", author: "Andrew Paglinawan", title: "Quicksand", detail: "SIL Open Font License 1.1", url: "https://fonts.google.com/specimen/Quicksand" },
+  { id: "fontAlfaSlab", author: "JM Solé", title: "Alfa Slab One", detail: "SIL Open Font License 1.1", url: "https://fonts.google.com/specimen/Alfa+Slab+One" },
+  { id: "fontPlayfair", author: "Claus Eggers Sørensen", title: "Playfair Display", detail: "SIL Open Font License 1.1", url: "https://fonts.google.com/specimen/Playfair+Display" },
+  { id: "fontPacifico", author: "Vernon Adams, Jacques Le Bailly, Botjo Nikoltchev and Ani Petrova", title: "Pacifico", detail: "SIL Open Font License 1.1", url: "https://fonts.google.com/specimen/Pacifico" },
+  { id: "fontCinzel", author: "Natanael Gama", title: "Cinzel Decorative", detail: "SIL Open Font License 1.1", url: "https://fonts.google.com/specimen/Cinzel+Decorative" },
+  { id: "c2cRectangle", author: "A Crocheted Simplicity", title: "How to Corner-to-Corner Crochet (C2C Crochet): Beyond the Basics", url: "https://www.acrochetedsimplicity.com/c-2-c-crochet/" },
 ];
+
+/** The lettering tool's typefaces, and how its C2C rectangles grow. */
+export const LETTERING_REFERENCES: ReferenceId[] = ["fontNunito", "fontQuicksand", "fontAlfaSlab", "fontPlayfair", "fontPacifico", "fontCinzel", "c2cRectangle"];
 
 export const referencesFor = (ids: ReferenceId[]) => REFERENCES.filter((reference) => ids.includes(reference.id));
 export const referenceText = (locale: Locale) => text[locale];

@@ -347,6 +347,12 @@
         "output": "Schema con legenda dei colori, ogni riga, diagonale o giro scritti per esteso, filato per colore, un PDF stampabile, SVG e PNG.",
         "explore": "Crea un quadrato a colori"
       },
+      "lettering": {
+        "title": "Scritte",
+        "text": "Nomi, iniziali e frasi in schemi: un pannello o un quadrato per lettera, in sette caratteri, per uncinetto tapestry, C2C o un quilt in patchwork.",
+        "output": "Schema con ogni riga, diagonale o pezzo contato, filato o tessuto per colore, un PDF da stampare, e SVG e PNG.",
+        "explore": "Fai uno schema con un nome"
+      },
       "checkerboard": {
         "title": "Scacchiere",
         "text": "Imposta righe, colonne, colori e forma delle caselle, da una scacchiera normale a mattoni 3:1, nidi d'ape e triangoli.",

@@ -33,6 +33,8 @@ export type PostSample =
   | { kind: "maze"; slug: ""; query: string; view: "maze" | "solution"; caption: string; locale?: Locale }
   | { kind: "knitColorwork"; slug: ""; query: string; view: "square" | "chart"; caption: string; locale?: Locale }
   | { kind: "crochetColorwork"; slug: ""; query: string; view: "square" | "chart"; caption: string; locale?: Locale }
+  /** `slug` is the technique's page, as in the link's path; the words and type are in the query. */
+  | { kind: "lettering"; slug: string; query: string; view: "picture" | "chart"; caption: string; locale?: Locale }
   | { kind: "checkerboard"; slug: ""; query: string; view: "art" | "repeat"; caption: string; locale?: Locale }
   | { kind: "puzzle"; slug: string; query: string; view: "puzzle" | "solution"; caption: string; locale?: Locale }
   | { kind: "life"; slug: ""; query: string; view: "sheet" | "tile" | "phases" | "neighborhood" | "animation"; caption: string; locale?: Locale }
@@ -132,6 +134,7 @@ export function sampleHref(sample: PostSample, locale: Locale = "en"): string {
   if (sample.kind === "checkerboard") return localePath(sample.locale ?? locale, `/checkerboards/${query}`);
   if (sample.kind === "quilt") return localePath(sample.locale ?? locale, `/quilts/${sample.slug}/${query}`);
   if (sample.kind === "puzzle") return localePath(sample.locale ?? locale, `/paper-puzzles/${sample.slug}/${query}`);
+  if (sample.kind === "lettering") return localePath(sample.locale ?? locale, `/lettering/${sample.slug}/${query}`);
   if (sample.kind === "life") return localePath(sample.locale ?? locale, `/life-patterns/${query}`);
   if (sample.kind === "fractal") return localePath(sample.locale ?? locale, `/fractals/${query}`);
   if (sample.kind === "tieDye") return localePath(sample.locale ?? locale, `/tie-dye/${query}`);

@@ -14,8 +14,9 @@ export const FAMILY_OPTIONS: BraidFamily[] = ["knotted", "flat", "falls"];
 /** Each pattern's family, strand counts (the first is the default) and most colors, as the API takes them. */
 export const PATTERNS: Record<BraidPattern, { family: BraidFamily; strands: number[]; colors: number }> = {
   "candy-stripe": { family: "knotted", strands: [6, 4, 5, 7, 8, 9, 10, 12], colors: 12 },
-  chevron: { family: "knotted", strands: [8, 4, 6, 10, 12, 14, 16], colors: 8 },
-  "inverse-chevron": { family: "knotted", strands: [8, 4, 6, 10, 12, 14, 16], colors: 8 },
+  // Twelve strands by default: six colors, mirrored, so a whole rainbow fits.
+  chevron: { family: "knotted", strands: [12, 4, 6, 8, 10, 14, 16], colors: 8 },
+  "inverse-chevron": { family: "knotted", strands: [12, 4, 6, 8, 10, 14, 16], colors: 8 },
   zigzag: { family: "knotted", strands: [6, 4, 5, 7, 8, 10, 12], colors: 12 },
   diamond: { family: "knotted", strands: [12, 10, 14, 16, 18, 20], colors: 2 },
   heart: { family: "knotted", strands: [16, 14, 18, 20], colors: 2 },
@@ -29,15 +30,20 @@ export const PATTERNS: Record<BraidPattern, { family: BraidFamily; strands: numb
 
 export const strandOptions = (pattern: BraidPattern) => [...PATTERNS[pattern].strands].sort((a, b) => a - b);
 
-/** Navy and cream are the primary colors in every language; the second color is the language's own. */
-const NAVY = "#23395d";
-const RUST = "#b5533c";
-const CREAM = "#f4ecdc";
-const GREEN = "#4f7a5e";
+/** A rainbow of floss. Orange is the secondary color each language swaps for its own; the rest stay in every language. */
+const RED = "#e5383b";
+const ORANGE = "#f4842d";
+const YELLOW = "#f6c945";
+const GREEN = "#4caf6a";
+const BLUE = "#2f80c9";
+const PURPLE = "#7b4bb7";
 const DEFAULT_PATTERN: BraidPattern = "chevron";
 
 export function defaultColors(pattern: BraidPattern, locale: Locale = "en"): string[] {
-  return [NAVY, localeAccent(locale, RUST), CREAM, GREEN].slice(0, Math.min(PATTERNS[pattern].colors, 4));
+  const accent = localeAccent(locale, ORANGE);
+  // Two-color patterns take the pair that stands apart best: a ground and a picture, or two cords.
+  if (PATTERNS[pattern].colors <= 2) return [BLUE, accent];
+  return [RED, accent, YELLOW, GREEN, BLUE, PURPLE].slice(0, Math.min(PATTERNS[pattern].colors, 6));
 }
 
 export function defaultBraidState(locale: Locale = "en", pattern: BraidPattern = DEFAULT_PATTERN): BraidState {

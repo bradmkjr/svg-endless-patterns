@@ -30,7 +30,7 @@
           {
             "kind": "braid",
             "slug": "chevron",
-            "query": "n=12&c=23395d-7f9ab8-f4ecdc-b5533c-c99a2e-4f7a5e",
+            "query": "c=23395d-7f9ab8-f4ecdc-b5533c-c99a2e-4f7a5e",
             "view": "chart",
             "caption": "The chart for a twelve-strand chevron"
           },

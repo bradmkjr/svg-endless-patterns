@@ -25,13 +25,14 @@ describe("braid state", () => {
   });
 
   it("asks the API for every setting but the view", () => {
-    expect(braidRequest(defaultBraidState("fr"))).toEqual({ locale: "fr", pattern: "chevron", strands: 8, colors: defaultBraidState("fr").colors, repeats: 2 });
+    expect(braidRequest(defaultBraidState("fr"))).toEqual({ locale: "fr", pattern: "chevron", strands: 12, colors: defaultBraidState("fr").colors, repeats: 2 });
   });
 
   it("changes only the second color by language", () => {
     for (const locale of LOCALES) {
-      const [first, , ...rest] = defaultBraidState(locale).colors;
-      expect([first, ...rest]).toEqual(["#23395d", "#f4ecdc", "#4f7a5e"]);
+      const [first, , ...rest] = defaultBraidState(locale, "candy-stripe").colors;
+      expect([first, ...rest]).toEqual(["#e5383b", "#f6c945", "#4caf6a", "#2f80c9", "#7b4bb7"]);
+      expect(defaultBraidState(locale, "heart").colors[0]).toBe("#2f80c9");
     }
   });
 

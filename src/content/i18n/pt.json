@@ -1,5 +1,27 @@
 {
   "posts": {
+    "braids": {
+      "title": "Tranças e pulseiras da amizade, fio a fio",
+      "summary": "Listras diagonais, chevrons, losangos e corações em linha de bordar, tranças retas de três fios à espinha de peixe, e a cascata sem fim do macramê, cada uma com gráfico, passos e PDF nas suas cores.",
+      "blocks": [
+        "A nova seção de [tranças](/braids/) traz o acampamento de férias para o site: pulseiras da amizade de nós em linha de bordar, tranças retas de linha, cordão ou lã, e a cascata sem fim do macramê. Escolha uma receita e as cores, e cada cor do desenho e cada número dos passos é calculado seguindo cada fio por cada nó ou passo.",
+        "Pulseiras da amizade, nó a nó",
+        "As pulseiras são receitas normais, desenhadas na grade diagonal que quem faz pulseiras usa, com nós para a frente, para trás, frente-trás e trás-frente. As [listras diagonais](/braids/candy-stripe/) são nós para a frente de um lado ao outro; o [chevron](/braids/chevron/) amarra as duas metades em direção ao meio, e o [chevron invertido](/braids/inverse-chevron/) vira tudo ao contrário. O [zigue-zague](/braids/zigzag/) muda de direção no caminho. Os [losangos](/braids/diamond/) e os [corações](/braids/heart/) são receitas 1212: duas cores que nunca trocam de lugar, e o nó escolhe qual aparece. O gráfico mostra cada nó na cor que ele forma, com sua seta, e os passos escrevem cada carreira da repetição.",
+        [
+          "Listras diagonais em cinco cores",
+          "O gráfico de um chevron de doze fios",
+          "Corações em duas cores"
+        ],
+        "Tranças e macramê",
+        "As tranças retas vão da de [três fios](/braids/three-strand/) às de [quatro](/braids/four-strand/), [cinco](/braids/five-strand/) e [seis](/braids/six-strand/) fios e à [espinha de peixe](/braids/fishtail/), com uma cor por fio. O desenho mostra cada fio passando por cima e por baixo, e o gráfico numera cada passo, para você seguir um fio de cima e ver aonde ele vai. A [cascata sem fim](/braids/endless-falls/) são dois cordões: um nó cabeça de cotovia de um, atravessado e cruzado pelo outro, carreira após carreira. Os passos de cada trança dizem que fio se move, por cima e por baixo de quê, e quantos passos até as cores voltarem ao lugar.",
+        [
+          "Cada passo de uma trança de quatro fios",
+          "Uma trança espinha de peixe em duas cores",
+          "A cascata sem fim"
+        ],
+        "Cada receita sai em PDF com o gráfico, a trança, os passos e as cores, e em SVG ou PNG. Os nós, os nomes das receitas e as tranças vêm de quem faz pulseiras e macramê e os registrou por escrito, e são citados na página de [agradecimentos](/acknowledgements/). As páginas de [tecelagem](/weaving/) e de [nós celtas](/celtic-knots/) são parentes próximas."
+      ]
+    },
     "origami": {
       "title": "Origami: modelos tradicionais e tesselações dobradas",
       "summary": "Duas novas ferramentas de dobradura. Dobre cinco modelos tradicionais passo a passo, da cara de cachorro ao tsuru, em papel para dobrar que você imprime com a estampa e as cores que quiser, ou imprima diagramas de vincos para tesselações Miura-ori, Yoshimura, bomba d'água e torção quadrada.",
@@ -992,6 +1014,15 @@
     }
   },
   "changelog": {
+    "Braids and friendship bracelets": {
+      "title": "Tranças e pulseiras da amizade",
+      "items": [
+        "Uma nova seção de tranças cria receitas de pulseiras da amizade e tranças nas suas cores, cada uma com gráfico, passo a passo e PDF",
+        "Pulseiras da amizade: listras diagonais, chevron, chevron invertido, zigue-zague, e losangos e corações em nós 1212",
+        "Tranças: de três, quatro, cinco e seis fios, espinha de peixe, e a cascata sem fim do macramê",
+        "As fontes são citadas na página de agradecimentos"
+      ]
+    },
     "Pattern pages that say what sets each pattern apart": {
       "title": "Páginas de padrões que dizem o que distingue cada um",
       "items": [

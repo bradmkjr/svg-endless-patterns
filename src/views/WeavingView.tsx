@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { pageMetadata } from "@/lib/pageMetadata";
 import { References } from "@/components/References";
 import { OptionNote } from "@/components/OptionNote";
@@ -10,6 +11,8 @@ import type { Locale } from "@/lib/generator";
 import { optionLabels } from "@/lib/toolPages";
 import { weavingDraftLinks } from "@/lib/weavingDrafts";
 import copy from "@/i18n/messages/weaving.json";
+import braid from "@/i18n/messages/braid.json";
+import { localePath } from "@/lib/i18n";
 
 export function weavingMetadata(locale: Locale): Metadata {
   const t = copy[locale];
@@ -35,6 +38,9 @@ export async function WeavingView({ locale, option }: { locale: Locale; option?:
         <p className="lede">{t.draftsLede}</p>
         <WeavingDrafts drafts={drafts} />
       </section>
+      <p className="no-print" style={{ marginTop: "2rem" }}>
+        <Link href={localePath(locale, "/braids/")}>{braid[locale].h1}</Link>
+      </p>
       <References ids={["oelsnerWeaves", "watsonColour", "bronsonLace"]} locale={locale} />
     </div>
   );

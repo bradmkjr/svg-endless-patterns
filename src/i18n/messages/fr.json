@@ -221,6 +221,12 @@
         "output": "Armure complète et tissu sans raccord en SVG et PNG, et une armure en PDF à imprimer.",
         "explore": "Créer une armure"
       },
+      "braid": {
+        "title": "Tresses et bracelets brésiliens",
+        "text": "Rayures diagonales, chevrons, losanges et cœurs en fil à broder, tresses plates de trois brins à l'épi, et la cascade sans fin du macramé.",
+        "output": "Grille de nœuds ou schéma des fils, la tresse finie, les étapes une à une, un PDF à imprimer, et SVG et PNG.",
+        "explore": "Créer un bracelet"
+      },
       "crossStitch": {
         "title": "Point de croix",
         "text": "Choisissez un dessin carré complet ou dessinez le vôtre, puis réglez le compte de la toile et les couleurs.",

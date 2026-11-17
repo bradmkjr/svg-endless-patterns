@@ -1,5 +1,27 @@
 {
   "posts": {
+    "braids": {
+      "title": "Trenzas y pulseras de la amistad, hilo a hilo",
+      "summary": "Rayas diagonales, chevrons, rombos y corazones en hilo de bordar, trenzas planas de tres cabos a espiga, y el nudo cascada sin fin de macramé, cada uno con esquema, pasos y PDF en tus colores.",
+      "blocks": [
+        "La nueva sección de [trenzas](/braids/) trae el campamento de verano al sitio: pulseras de la amistad anudadas en hilo de bordar, trenzas planas para hilo, cordón o lana, y el nudo cascada sin fin del macramé. Elige un patrón y sus colores, y cada color del dibujo y cada número de los pasos se calcula siguiendo cada hilo por cada nudo o paso.",
+        "Pulseras de la amistad, nudo a nudo",
+        "Las pulseras son patrones normales, dibujados en la cuadrícula diagonal que usan quienes las hacen, con nudos hacia adelante, hacia atrás, adelante-atrás y atrás-adelante. Las [rayas diagonales](/braids/candy-stripe/) son nudos hacia adelante de lado a lado; el [chevron](/braids/chevron/) anuda sus dos mitades hacia el centro, y el [chevron invertido](/braids/inverse-chevron/) le da la vuelta. El [zigzag](/braids/zigzag/) cambia de dirección sobre la marcha. Los [rombos](/braids/diamond/) y los [corazones](/braids/heart/) son patrones 1212: dos colores que nunca cambian de lugar, y el nudo elige cuál se ve. El esquema muestra cada nudo del color que deja, con su flecha, y los pasos escriben cada fila de la repetición.",
+        [
+          "Rayas diagonales en cinco colores",
+          "El esquema de un chevron de doce hilos",
+          "Corazones en dos colores"
+        ],
+        "Trenzas y macramé",
+        "Las trenzas planas van de la de [tres cabos](/braids/three-strand/) a las de [cuatro](/braids/four-strand/), [cinco](/braids/five-strand/) y [seis](/braids/six-strand/) cabos y la de [espiga](/braids/fishtail/), con un color por hilo. El dibujo muestra cada hilo pasando por encima y por debajo, y el esquema numera cada paso, para que sigas un hilo desde arriba y veas adónde va. La [cascada sin fin](/braids/endless-falls/) son dos cordones: un nudo de alondra de uno, atravesado y cruzado por el otro, fila tras fila. Los pasos de cada trenza dicen qué hilo se mueve, por encima y por debajo de qué pasa, y cuántos pasos hacen falta para que los colores vuelvan a su sitio.",
+        [
+          "Cada paso de una trenza de cuatro cabos",
+          "Una trenza de espiga en dos colores",
+          "El nudo cascada sin fin"
+        ],
+        "Cada patrón se descarga como PDF con el esquema, la trenza, los pasos y los colores, y como SVG o PNG. Los nudos, los nombres de los patrones y las trenzas vienen de quienes hacen pulseras y macramé y los pusieron por escrito, y se citan en la página de [agradecimientos](/acknowledgements/). Las páginas de [tejido](/weaving/) y de [nudos celtas](/celtic-knots/) son parientes cercanos."
+      ]
+    },
     "origami": {
       "title": "Origami: modelos tradicionales y teselaciones plegadas",
       "summary": "Dos nuevas herramientas de plegado de papel. Dobla cinco modelos tradicionales paso a paso, de una cara de perro a la grulla, en papel para doblar que imprimes con el estampado y los colores que quieras, o imprime patrones de pliegues para teselaciones Miura-ori, Yoshimura, bomba de agua y giro cuadrado.",
@@ -992,6 +1014,15 @@
     }
   },
   "changelog": {
+    "Braids and friendship bracelets": {
+      "title": "Trenzas y pulseras de la amistad",
+      "items": [
+        "Una nueva sección de trenzas crea patrones de pulseras de la amistad y trenzas con tus colores, cada uno con esquema, instrucciones paso a paso y PDF",
+        "Pulseras de la amistad: rayas diagonales, chevron, chevron invertido, zigzag, y rombos y corazones con nudos 1212",
+        "Trenzas: de tres, cuatro, cinco y seis cabos, de espiga, y el nudo cascada sin fin de macramé",
+        "Sus fuentes se citan en la página de agradecimientos"
+      ]
+    },
     "Pattern pages that say what sets each pattern apart": {
       "title": "Páginas de patrones que dicen qué distingue a cada uno",
       "items": [

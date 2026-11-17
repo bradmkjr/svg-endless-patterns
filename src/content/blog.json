@@ -1,5 +1,89 @@
 [
   {
+    "slug": "braids",
+    "title": "Braids and friendship bracelets, strand by strand",
+    "date": "2026-11-16",
+    "summary": "Candy stripes, chevrons, diamonds and hearts in embroidery floss, flat braids from three strands to fishtail, and the macramé endless falls knot, each with a chart, steps and a PDF in your colors.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "The new [braids](/braids/) section brings summer camp to the site: knotted friendship bracelets in embroidery floss, flat braids for floss, cord or yarn, and the endless falls knot from macramé. Choose a pattern and its colors, and every color in the picture and every count in the steps is worked out by following each strand through every knot or move."
+      },
+      {
+        "type": "heading",
+        "text": "Friendship bracelets, knot by knot"
+      },
+      {
+        "type": "paragraph",
+        "text": "The bracelets are normal patterns, drawn on the diagonal grid bracelet makers use, with forward, backward, forward-backward and backward-forward knots. A [candy stripe](/braids/candy-stripe/) is forward knots all the way across; a [chevron](/braids/chevron/) knots its two halves toward the middle, and the [inverse chevron](/braids/inverse-chevron/) turns it around. [Zigzags](/braids/zigzag/) switch direction as they go. [Diamonds](/braids/diamond/) and [hearts](/braids/heart/) are 1212 patterns: two colors that never change places, with the knot choosing which one shows. The chart shows each knot in the color it makes, with its arrow, and the steps write out each row of the repeat."
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "braid",
+            "slug": "candy-stripe",
+            "query": "n=10&c=c99a2e-b5533c-23395d-4f7a5e-7f9ab8",
+            "view": "braid",
+            "caption": "A candy stripe in five colors"
+          },
+          {
+            "kind": "braid",
+            "slug": "chevron",
+            "query": "n=12&c=23395d-7f9ab8-f4ecdc-b5533c-c99a2e-4f7a5e",
+            "view": "chart",
+            "caption": "The chart for a twelve-strand chevron"
+          },
+          {
+            "kind": "braid",
+            "slug": "heart",
+            "query": "c=f4ecdc-b5533c",
+            "view": "braid",
+            "caption": "Hearts in two colors"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Braids and macramé"
+      },
+      {
+        "type": "paragraph",
+        "text": "The flat braids run from the [three-strand](/braids/three-strand/) plait through [four](/braids/four-strand/), [five](/braids/five-strand/) and [six](/braids/six-strand/) strands to the [fishtail](/braids/fishtail/), with one color per strand. The picture draws each strand going over and under, and the chart numbers every move, so you can follow a strand from the top to see where it goes. The [endless falls](/braids/endless-falls/) knot is two cords: a lark's head of one, threaded and crossed by the other, row after row. Each braid's steps say which strand moves, what it passes over and under, and how many moves until the colors come back to where they started."
+      },
+      {
+        "type": "samples",
+        "items": [
+          {
+            "kind": "braid",
+            "slug": "four-strand",
+            "query": "v=chart",
+            "view": "chart",
+            "caption": "Every move of a four-strand braid"
+          },
+          {
+            "kind": "braid",
+            "slug": "fishtail",
+            "query": "c=4f7a5e-f4ecdc",
+            "view": "braid",
+            "caption": "A fishtail braid in two colors"
+          },
+          {
+            "kind": "braid",
+            "slug": "endless-falls",
+            "query": "c=c99a2e-23395d",
+            "view": "braid",
+            "caption": "The endless falls knot"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Every pattern downloads as a PDF with the chart, the braid, the steps and the colors, and as SVG or PNG. The knots, pattern names and braids come from bracelet and macramé makers who wrote them down, and they're credited on the [acknowledgements](/acknowledgements/) page. The [weaving](/weaving/) and [Celtic knot](/celtic-knots/) pages are close relatives."
+      }
+    ]
+  },
+  {
     "slug": "lettering",
     "title": "Lettering: names, initials and phrases in stitches and squares",
     "date": "2026-11-16",

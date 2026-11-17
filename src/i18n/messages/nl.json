@@ -221,6 +221,12 @@
         "output": "Volledig patroon en naadloos weefsel als SVG en PNG, en een patroon als pdf om te printen.",
         "explore": "Maak een weefpatroon"
       },
+      "braid": {
+        "title": "Vlechten en vriendschapsbandjes",
+        "text": "Diagonale strepen, chevrons, ruiten en hartjes van borduurgaren, platte vlechten van drie strengen tot visgraat, en de eindeloze waterval uit macramé.",
+        "output": "Knopenpatroon of draadschema, de vlecht zelf, stap voor stap, een pdf om te printen, en SVG en PNG.",
+        "explore": "Maak een bandje"
+      },
       "crossStitch": {
         "title": "Kruissteek",
         "text": "Kies een compleet vierkant ontwerp of teken je eigen, en stel dan je stofdichtheid en kleuren in.",

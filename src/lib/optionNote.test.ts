@@ -4,7 +4,7 @@ import { optionNote, TOOL_OPTIONS, type ToolId } from "./toolOptions";
 import { withinLength } from "./toolPages";
 
 /** Tools whose choices each say what sets them apart, on their page and in its description. */
-const WITH_NOTES: ToolId[] = ["life", "fractal", "checkerboard", "kolam", "origami", "origamiTessellation", "quilt", "weaving", "kaleidoscope", "tieDye", "sashiko", "maze", "truchet", "waves", "chineseLattice", "lettering"];
+const WITH_NOTES: ToolId[] = ["life", "fractal", "checkerboard", "kolam", "origami", "origamiTessellation", "quilt", "weaving", "kaleidoscope", "tieDye", "sashiko", "maze", "truchet", "waves", "chineseLattice", "lettering", "braid"];
 
 describe("option notes", () => {
   it.each(WITH_NOTES)("cover every choice of %s in every language", (tool) => {

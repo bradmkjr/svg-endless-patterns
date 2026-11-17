@@ -28,6 +28,7 @@ import { parseRdState, serializeRdState } from "./reactionDiffusionState";
 import { parseWavesState, serializeWavesState } from "./wavesState";
 import { parseNatureState, serializeNatureState } from "./natureState";
 import { parseWeavingState, serializeWeavingState } from "./weavingState";
+import { parseBraidState, serializeBraidState } from "./braidState";
 import { parseQuiltState, serializeQuiltState } from "./quiltState";
 import { parseOrigamiState, serializeOrigamiState } from "./origamiState";
 import { parseOrigamiTessellationState, serializeOrigamiTessellationState } from "./origamiTessellationState";
@@ -44,6 +45,7 @@ const ROUND_TRIP: Record<ToolId, (params: URLSearchParams) => string> = {
   waves: (p) => serializeWavesState(parseWavesState(p)),
   nature: (p) => serializeNatureState(parseNatureState(p)),
   weaving: (p) => serializeWeavingState(parseWeavingState(p)),
+  braid: (p) => serializeBraidState(parseBraidState(p)),
   tessellation: (p) => serializeTessellationState(parseTessellationState(p)),
   girih: (p) => serializeGirihState(parseGirihState(p)),
   chineseLattice: (p) => serializeChineseLatticeState(parseChineseLatticeState(p)),
@@ -121,7 +123,7 @@ describe("API thumbnails", () => {
 });
 
 describe("the library's fill", () => {
-  it.each(["truchet", "stainedGlass", "girih", "tieDye", "nature", "reactionDiffusion", "weaving"] as const)("%s offers at least six choices, each with a page and an API thumbnail", (tool) => {
+  it.each(["truchet", "stainedGlass", "girih", "tieDye", "nature", "reactionDiffusion", "weaving", "braid"] as const)("%s offers at least six choices, each with a page and an API thumbnail", (tool) => {
     expect(TOOL_OPTIONS[tool].options.length).toBeGreaterThanOrEqual(6);
     for (const { slug } of TOOL_OPTIONS[tool].options) {
       expect(optionPath(tool, slug)).toContain(`/${slug}/`);

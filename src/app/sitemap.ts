@@ -28,6 +28,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/waves/",
     "/nature-patterns/",
     "/weaving/",
+    "/braids/",
     "/tie-dye/",
     "/fractals/",
     "/life-patterns/",

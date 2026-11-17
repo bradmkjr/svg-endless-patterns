@@ -1,5 +1,27 @@
 {
   "posts": {
+    "braids": {
+      "title": "Vlechten en vriendschapsbandjes, draad voor draad",
+      "summary": "Diagonale strepen, chevrons, ruiten en hartjes van borduurgaren, platte vlechten van drie strengen tot visgraat, en de eindeloze waterval uit macramé, elk met schema, stappen en pdf in jouw kleuren.",
+      "blocks": [
+        "Het nieuwe onderdeel [vlechten](/braids/) brengt het zomerkamp naar de site: geknoopte vriendschapsbandjes van borduurgaren, platte vlechten van garen, koord of wol, en de eindeloze waterval uit macramé. Kies een patroon en de kleuren, en elke kleur in de afbeelding en elk getal in de stappen wordt uitgerekend door elke draad te volgen door elke knoop of stap.",
+        "Vriendschapsbandjes, knoop voor knoop",
+        "De bandjes zijn normale patronen, getekend op het diagonale raster dat knopers gebruiken, met voorwaartse, achterwaartse, voor-achter- en achter-voorknopen. [Diagonale strepen](/braids/candy-stripe/) zijn voorwaartse knopen van rand tot rand; een [chevron](/braids/chevron/) knoopt zijn twee helften naar het midden toe, en de [omgekeerde chevron](/braids/inverse-chevron/) draait dat om. De [zigzag](/braids/zigzag/) verandert onderweg van richting. [Ruiten](/braids/diamond/) en [hartjes](/braids/heart/) zijn 1212-patronen: twee kleuren die nooit van plaats wisselen, en de knoop kiest welke je ziet. Het schema toont elke knoop in de kleur die hij geeft, met zijn pijl, en de stappen schrijven elke rij van de herhaling uit.",
+        [
+          "Diagonale strepen in vijf kleuren",
+          "Het schema van een chevron van twaalf draden",
+          "Hartjes in twee kleuren"
+        ],
+        "Vlechten en macramé",
+        "De platte vlechten lopen van de vlecht van [drie strengen](/braids/three-strand/) via [vier](/braids/four-strand/), [vijf](/braids/five-strand/) en [zes](/braids/six-strand/) strengen tot de [visgraatvlecht](/braids/fishtail/), met één kleur per draad. De afbeelding laat elke draad over en onder gaan, en het schema nummert elke stap, zodat je een draad van boven af kunt volgen. De [eindeloze waterval](/braids/endless-falls/) bestaat uit twee koorden: een ankersteek van het ene, rij na rij doorgeregen en gekruist door het andere. De stappen van elke vlecht zeggen welke draad beweegt, waarover en waaronder hij gaat, en na hoeveel stappen de kleuren weer op hun plaats staan.",
+        [
+          "Elke stap van een vlecht van vier strengen",
+          "Een visgraatvlecht in twee kleuren",
+          "De eindeloze waterval"
+        ],
+        "Elk patroon is te downloaden als pdf met het schema, de vlecht, de stappen en de kleuren, en als SVG of PNG. De knopen, de namen van de patronen en de vlechten komen van makers van bandjes en macramé die ze hebben opgeschreven, en ze worden genoemd op de pagina [dankwoord](/acknowledgements/). De pagina's [weven](/weaving/) en [Keltische knopen](/celtic-knots/) zijn naaste verwanten."
+      ]
+    },
     "origami": {
       "title": "Origami: traditionele modellen en gevouwen tessellaties",
       "summary": "Twee nieuwe vouwtools. Vouw vijf traditionele modellen stap voor stap, van een hondengezicht tot de kraanvogel, op vouwpapier dat je print in elk dessin en elke kleur, of print vouwpatronen voor Miura-ori-, Yoshimura-, waterbom- en vierkante-draaitessellaties.",
@@ -992,6 +1014,15 @@
     }
   },
   "changelog": {
+    "Braids and friendship bracelets": {
+      "title": "Vlechten en vriendschapsbandjes",
+      "items": [
+        "Een nieuw onderdeel vlechten maakt patronen voor vriendschapsbandjes en vlechten in je eigen kleuren, elk met schema, stap-voor-stapinstructies en pdf",
+        "Vriendschapsbandjes: diagonale strepen, chevron, omgekeerde chevron, zigzag, en ruiten en hartjes in 1212-knopen",
+        "Vlechten: van drie, vier, vijf en zes strengen, visgraat, en de eindeloze waterval uit macramé",
+        "De bronnen staan op de pagina dankwoord"
+      ]
+    },
     "Pattern pages that say what sets each pattern apart": {
       "title": "Patroonpagina's die zeggen wat elk patroon bijzonder maakt",
       "items": [

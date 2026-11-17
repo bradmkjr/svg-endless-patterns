@@ -221,6 +221,12 @@
         "output": "Patrón completo y tejido sin costuras en SVG y PNG, y un patrón en PDF para imprimir.",
         "explore": "Crear un patrón de tejido"
       },
+      "braid": {
+        "title": "Trenzas y pulseras de la amistad",
+        "text": "Rayas diagonales, chevrons, rombos y corazones en hilo de bordar, trenzas planas de tres cabos a espiga, y el nudo cascada sin fin de macramé.",
+        "output": "Esquema de nudos o de hilos, la trenza terminada, instrucciones paso a paso, un PDF para imprimir, y SVG y PNG.",
+        "explore": "Crear una pulsera"
+      },
       "crossStitch": {
         "title": "Punto de cruz",
         "text": "Elige un diseño cuadrado completo o dibuja el tuyo y ajusta el conteo de la tela y los colores.",

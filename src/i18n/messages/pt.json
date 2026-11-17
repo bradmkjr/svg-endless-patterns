@@ -221,6 +221,12 @@
         "output": "Padrão completo e tecido sem emendas em SVG e PNG, e um padrão em PDF para imprimir.",
         "explore": "Criar um padrão de tecelagem"
       },
+      "braid": {
+        "title": "Tranças e pulseiras da amizade",
+        "text": "Listras diagonais, chevrons, losangos e corações em linha de bordar, tranças retas de três fios à espinha de peixe, e a cascata sem fim do macramê.",
+        "output": "Gráfico de nós ou dos fios, a trança pronta, passo a passo, um PDF para imprimir, e SVG e PNG.",
+        "explore": "Criar uma pulseira"
+      },
       "crossStitch": {
         "title": "Ponto cruz",
         "text": "Escolha um desenho quadrado completo ou desenhe o seu e ajuste a contagem do tecido e as cores.",

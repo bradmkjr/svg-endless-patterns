@@ -52,11 +52,21 @@ export const REFERENCES: Reference[] = [
   { id: "fontPlayfair", author: "Claus Eggers Sørensen", title: "Playfair Display", detail: "SIL Open Font License 1.1", url: "https://fonts.google.com/specimen/Playfair+Display" },
   { id: "fontPacifico", author: "Vernon Adams, Jacques Le Bailly, Botjo Nikoltchev and Ani Petrova", title: "Pacifico", detail: "SIL Open Font License 1.1", url: "https://fonts.google.com/specimen/Pacifico" },
   { id: "fontCinzel", author: "Natanael Gama", title: "Cinzel Decorative", detail: "SIL Open Font License 1.1", url: "https://fonts.google.com/specimen/Cinzel+Decorative" },
+  { id: "braceletBookNormal", author: "BraceletBook", title: "How to Read Normal Patterns", url: "https://www.braceletbook.com/tutorials/114_how-to-read-normal-patterns/" },
+  { id: "braceletBookInverse", author: "BraceletBook", title: "The Inverse Chevron Tutorial", url: "https://www.braceletbook.com/tutorials/40_the-inverse-chevron-tutorial/" },
+  { id: "braceletBook1212", author: "BraceletBook", title: "Guide to 1212 Pattern Designing", url: "https://www.braceletbook.com/tutorials/191_guide-to-1212-pattern-designing/" },
+  { id: "friendshipBraceletWiki", author: "Wikipedia", title: "Friendship bracelet", url: "https://en.wikipedia.org/wiki/Friendship_bracelet" },
+  { id: "macrameBraids", author: "Michelle McKimmie, My Mum the Dreamer", title: "6 Macramé Braid Patterns", detail: "2023", url: "https://mymumthedreamer.com/macrame-braid-patterns/" },
+  { id: "fiveStrandBraid", author: "Flax & Twine", title: "Five-Stranded Braid Bracelet", url: "https://flaxandtwine.com/blogs/blog/five-stranded-braid-bracelet" },
+  { id: "endlessFalls", author: "Nicole Woo, Bochiknot", title: "How to Tie an Endless Falls Knot in Macramé", url: "https://bochiknot.com/blogs/macrame-basic-knots/endless-falls-knot" },
   { id: "c2cRectangle", author: "A Crocheted Simplicity", title: "How to Corner-to-Corner Crochet (C2C Crochet): Beyond the Basics", url: "https://www.acrochetedsimplicity.com/c-2-c-crochet/" },
 ];
 
 /** The lettering tool's typefaces, and how its C2C rectangles grow. */
 export const LETTERING_REFERENCES: ReferenceId[] = ["fontNunito", "fontQuicksand", "fontAlfaSlab", "fontPlayfair", "fontPacifico", "fontCinzel", "c2cRectangle"];
+
+/** The braid tool's knots, named bracelet patterns, and braids. */
+export const BRAID_REFERENCES: ReferenceId[] = ["braceletBookNormal", "braceletBookInverse", "braceletBook1212", "friendshipBraceletWiki", "macrameBraids", "fiveStrandBraid", "endlessFalls"];
 
 export const referencesFor = (ids: ReferenceId[]) => REFERENCES.filter((reference) => ids.includes(reference.id));
 export const referenceText = (locale: Locale) => text[locale];

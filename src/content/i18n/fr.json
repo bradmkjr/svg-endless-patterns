@@ -1,5 +1,27 @@
 {
   "posts": {
+    "braids": {
+      "title": "Tresses et bracelets brésiliens, fil par fil",
+      "summary": "Rayures diagonales, chevrons, losanges et cœurs en fil à broder, tresses plates de trois brins à l'épi, et la cascade sans fin du macramé, chacun avec grille, étapes et PDF à vos couleurs.",
+      "blocks": [
+        "La nouvelle section [tresses](/braids/) apporte la colonie de vacances sur le site : bracelets brésiliens noués en fil à broder, tresses plates en fil, cordon ou laine, et la cascade sans fin du macramé. Choisissez un modèle et ses couleurs : chaque couleur du dessin et chaque nombre des étapes sont calculés en suivant chaque fil à travers chaque nœud ou mouvement.",
+        "Bracelets brésiliens, nœud par nœud",
+        "Les bracelets sont des modèles normaux, dessinés sur la grille diagonale qu'utilisent leurs créateurs, avec des nœuds avant, arrière, avant-arrière et arrière-avant. Les [rayures diagonales](/braids/candy-stripe/) sont des nœuds avant d'un bord à l'autre ; les [chevrons](/braids/chevron/) nouent leurs deux moitiés vers le milieu, et les [chevrons inversés](/braids/inverse-chevron/) les retournent. Le [zigzag](/braids/zigzag/) change de sens en chemin. Les [losanges](/braids/diamond/) et les [cœurs](/braids/heart/) sont des modèles 1212 : deux couleurs qui ne changent jamais de place, et le nœud choisit celle qui se voit. La grille montre chaque nœud de la couleur qu'il donne, avec sa flèche, et les étapes détaillent chaque rang de la répétition.",
+        [
+          "Des rayures diagonales en cinq couleurs",
+          "La grille de chevrons à douze fils",
+          "Des cœurs en deux couleurs"
+        ],
+        "Tresses et macramé",
+        "Les tresses plates vont de la natte à [trois brins](/braids/three-strand/) aux tresses à [quatre](/braids/four-strand/), [cinq](/braids/five-strand/) et [six](/braids/six-strand/) brins et à la tresse en [épi](/braids/fishtail/), avec une couleur par fil. Le dessin montre chaque fil passant dessus et dessous, et la grille numérote chaque mouvement : suivez un fil depuis le haut pour voir où il va. La [cascade sans fin](/braids/endless-falls/) se fait avec deux cordons : une tête d'alouette de l'un, traversée et croisée par l'autre, rang après rang. Les étapes de chaque tresse disent quel fil bouge, ce qu'il passe dessus et dessous, et combien de mouvements il faut pour que les couleurs reviennent à leur place.",
+        [
+          "Chaque mouvement d'une tresse à quatre brins",
+          "Une tresse en épi en deux couleurs",
+          "La cascade sans fin"
+        ],
+        "Chaque modèle se télécharge en PDF avec la grille, la tresse, les étapes et les couleurs, et en SVG ou PNG. Les nœuds, les noms des modèles et les tresses viennent de créateurs de bracelets et de macramé qui les ont mis par écrit, et ils sont cités sur la page [remerciements](/acknowledgements/). Les pages [tissage](/weaving/) et [nœuds celtiques](/celtic-knots/) en sont de proches cousines."
+      ]
+    },
     "origami": {
       "title": "Origami : modèles traditionnels et tessellations pliées",
       "summary": "Deux nouveaux outils de pliage. Pliez cinq modèles traditionnels étape par étape, de la tête de chien à la grue, sur du papier à plier que vous imprimez dans le motif et les couleurs de votre choix, ou imprimez des plans de pliage pour les tessellations Miura-ori, Yoshimura, bombe à eau et torsion carrée.",
@@ -992,6 +1014,15 @@
     }
   },
   "changelog": {
+    "Braids and friendship bracelets": {
+      "title": "Tresses et bracelets brésiliens",
+      "items": [
+        "Une nouvelle section tresses crée des modèles de bracelets brésiliens et de tresses à vos couleurs, chacun avec une grille, des étapes une à une et un PDF",
+        "Bracelets brésiliens : rayures diagonales, chevrons, chevrons inversés, zigzag, et losanges et cœurs en nœuds 1212",
+        "Tresses : à trois, quatre, cinq et six brins, en épi, et la cascade sans fin du macramé",
+        "Ses sources sont citées sur la page remerciements"
+      ]
+    },
     "Pattern pages that say what sets each pattern apart": {
       "title": "Des pages de motifs qui disent ce qui distingue chacun",
       "items": [

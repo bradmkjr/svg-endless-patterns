@@ -27,6 +27,7 @@ import type { CrochetColorworkRequest, CrochetColorworkResult } from "./crochetC
 import type { LetteringProblem, LetteringRequest, LetteringResult } from "./letteringTypes";
 import type { FractalRequest, FractalResult } from "./fractalTypes";
 import type { LifeRequest, LifeResult } from "./lifeTypes";
+import type { BraidRequest, BraidResult } from "./braidTypes";
 import type { KnitColorworkRequest, KnitColorworkResult } from "./knitColorworkTypes";
 import type { PuzzlePaper, PuzzleRequest, PuzzleResult } from "./puzzleTypes";
 import type { QuiltRequest, QuiltResult } from "./quiltTypes";
@@ -41,6 +42,7 @@ export type { PuzzleColors, PuzzleDifficulty, PuzzlePaper, PuzzleRequest, Puzzle
 export type { ColorworkTechnique, ColorworkWeight, CrochetColorworkRequest, CrochetColorworkResult } from "./crochetColorworkTypes";
 export type { LetteringAlign, LetteringColor, LetteringFont, LetteringLayout, LetteringProblem, LetteringRequest, LetteringResult, LetteringTechnique } from "./letteringTypes";
 export type { LifeColors, LifeNeighborhood, LifePattern, LifeRequest, LifeResult } from "./lifeTypes";
+export type { BraidFamily, BraidKnot, BraidPattern, BraidRequest, BraidResult } from "./braidTypes";
 export type { FractalColors, FractalRequest, FractalResult, FractalType } from "./fractalTypes";
 export type { TruchetArrangement, TruchetColors, TruchetRequest, TruchetResult, TruchetStyle } from "./truchetTypes";
 export type { RdColors, RdDirection, RdPreset, RdRequest, RdResult, RdStyle } from "./reactionDiffusionTypes";
@@ -109,6 +111,14 @@ export async function generateWeaving(request: WeavingRequest): Promise<WeavingR
 
 export async function generateWeavingPdf(request: WeavingRequest): Promise<Uint8Array> {
   return apiPdf("/weaving/pdf", request);
+}
+
+export async function generateBraid(request: BraidRequest): Promise<BraidResult> {
+  return apiJson("/braid", request);
+}
+
+export async function generateBraidPdf(request: BraidRequest): Promise<Uint8Array> {
+  return apiPdf("/braid/pdf", request);
 }
 
 export async function generateCrossStitch(request: CrossStitchRequest): Promise<CrossStitchResult> {

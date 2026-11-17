@@ -53,7 +53,14 @@
       "fontPlayfair": "A typeface for lettering charts (elegant serif), drawn as outlines and turned into stitches on the server.",
       "fontPacifico": "A typeface for lettering charts (script), drawn as outlines and turned into stitches on the server.",
       "fontCinzel": "A typeface for lettering charts (decorative capitals), drawn as outlines and turned into stitches on the server.",
-      "c2cRectangle": "The rule for corner-to-corner rectangles: through the middle, each diagonal grows at one edge and shrinks at the other, so its block count stays the same."
+      "c2cRectangle": "The rule for corner-to-corner rectangles: through the middle, each diagonal grows at one edge and shrinks at the other, so its block count stays the same.",
+      "braceletBookNormal": "How a normal friendship bracelet pattern is read: the diagonal grid of knots, and the forward, backward, forward-backward and backward-forward knots the braid maker's charts and steps use.",
+      "braceletBookInverse": "The inverse chevron in the braid maker, with backward knots on the left and forward knots on the right.",
+      "braceletBook1212": "1212 patterns, whose strands alternate in two colors and never change places, behind the diamonds and hearts in the braid maker. The pictures are drawn for this site.",
+      "friendshipBraceletWiki": "The names of the normal bracelet patterns in the braid maker: candy stripe, chevron, inverse chevron, zigzag, diamonds and hearts.",
+      "macrameBraids": "The three-strand, four-strand, six-strand and fishtail braids in the braid maker, move for move.",
+      "fiveStrandBraid": "The five-strand braid in the braid maker: each outer strand over one and under one into the middle.",
+      "endlessFalls": "The endless falls knot in the braid maker: a lark's head of one cord, threaded and crossed by a second."
     }
   },
   "es": {
@@ -110,7 +117,14 @@
       "fontPlayfair": "Una tipografía de los gráficos de letras (serif elegante), guardada como contornos y convertida en puntos en el servidor.",
       "fontPacifico": "Una tipografía de los gráficos de letras (caligráfica), guardada como contornos y convertida en puntos en el servidor.",
       "fontCinzel": "Una tipografía de los gráficos de letras (mayúsculas decorativas), guardada como contornos y convertida en puntos en el servidor.",
-      "c2cRectangle": "La regla de los rectángulos de esquina a esquina: en la parte central, cada diagonal crece por un borde y mengua por el otro, así que su número de bloques no cambia."
+      "c2cRectangle": "La regla de los rectángulos de esquina a esquina: en la parte central, cada diagonal crece por un borde y mengua por el otro, así que su número de bloques no cambia.",
+      "braceletBookNormal": "Cómo se lee un patrón normal de pulsera de la amistad: la cuadrícula diagonal de nudos y los nudos hacia adelante, hacia atrás, adelante-atrás y atrás-adelante que usan los esquemas y los pasos del creador de trenzas.",
+      "braceletBookInverse": "El chevron invertido del creador de trenzas, con nudos hacia atrás a la izquierda y hacia adelante a la derecha.",
+      "braceletBook1212": "Los patrones 1212, cuyos hilos alternan dos colores y nunca cambian de lugar, base de los rombos y corazones del creador de trenzas. Los dibujos se hicieron para este sitio.",
+      "friendshipBraceletWiki": "Los nombres de los patrones normales del creador de trenzas: rayas diagonales, chevron, chevron invertido, zigzag, rombos y corazones.",
+      "macrameBraids": "Las trenzas de tres, cuatro y seis cabos y la trenza de espiga del creador de trenzas, paso a paso.",
+      "fiveStrandBraid": "La trenza de cinco cabos del creador de trenzas: cada hilo exterior por encima de uno y por debajo de otro hasta el centro.",
+      "endlessFalls": "El nudo cascada sin fin del creador de trenzas: un nudo de alondra de un cordón, atravesado y cruzado por otro."
     }
   },
   "fr": {
@@ -167,7 +181,14 @@
       "fontPlayfair": "Une police des grilles de lettrage (empattements élégants), conservée en contours et transformée en mailles sur le serveur.",
       "fontPacifico": "Une police des grilles de lettrage (manuscrite), conservée en contours et transformée en mailles sur le serveur.",
       "fontCinzel": "Une police des grilles de lettrage (capitales décoratives), conservée en contours et transformée en mailles sur le serveur.",
-      "c2cRectangle": "La règle des rectangles coin à coin : au milieu, chaque diagonale grandit d'un côté et diminue de l'autre, si bien que son nombre de blocs ne change pas."
+      "c2cRectangle": "La règle des rectangles coin à coin : au milieu, chaque diagonale grandit d'un côté et diminue de l'autre, si bien que son nombre de blocs ne change pas.",
+      "braceletBookNormal": "Comment se lit un modèle normal de bracelet brésilien : la grille diagonale de nœuds, et les nœuds avant, arrière, avant-arrière et arrière-avant qu'utilisent les grilles et les étapes du créateur de tresses.",
+      "braceletBookInverse": "Les chevrons inversés du créateur de tresses, avec des nœuds arrière à gauche et des nœuds avant à droite.",
+      "braceletBook1212": "Les modèles 1212, dont les fils alternent deux couleurs sans jamais changer de place, à la base des losanges et des cœurs du créateur de tresses. Les dessins sont faits pour ce site.",
+      "friendshipBraceletWiki": "Les noms des modèles normaux du créateur de tresses : rayures diagonales, chevrons, chevrons inversés, zigzag, losanges et cœurs.",
+      "macrameBraids": "Les tresses à trois, quatre et six brins et la tresse en épi du créateur de tresses, mouvement par mouvement.",
+      "fiveStrandBraid": "La tresse à cinq brins du créateur de tresses : chaque fil extérieur par-dessus un fil et par-dessous le suivant jusqu'au milieu.",
+      "endlessFalls": "La cascade sans fin du créateur de tresses : une tête d'alouette d'un cordon, traversée et croisée par un second."
     }
   },
   "de": {
@@ -224,7 +245,14 @@
       "fontPlayfair": "Eine Schrift der Schriftzug-Diagramme (Elegante Serifen), als Umrisse gespeichert und auf dem Server in Maschen umgesetzt.",
       "fontPacifico": "Eine Schrift der Schriftzug-Diagramme (Schreibschrift), als Umrisse gespeichert und auf dem Server in Maschen umgesetzt.",
       "fontCinzel": "Eine Schrift der Schriftzug-Diagramme (Zierversalien), als Umrisse gespeichert und auf dem Server in Maschen umgesetzt.",
-      "c2cRectangle": "Die Regel für Corner-to-Corner-Rechtecke: Im Mittelteil wächst jede Diagonale an einer Kante und schrumpft an der anderen, ihre Blockzahl bleibt also gleich."
+      "c2cRectangle": "Die Regel für Corner-to-Corner-Rechtecke: Im Mittelteil wächst jede Diagonale an einer Kante und schrumpft an der anderen, ihre Blockzahl bleibt also gleich.",
+      "braceletBookNormal": "Wie ein normales Freundschaftsband-Muster gelesen wird: das diagonale Knotenraster und die Vorwärts-, Rückwärts-, Vorwärts-Rückwärts- und Rückwärts-Vorwärts-Knoten, die Muster und Schritte des Zopf-Generators verwenden.",
+      "braceletBookInverse": "Das umgekehrte Chevron im Zopf-Generator, mit Rückwärtsknoten links und Vorwärtsknoten rechts.",
+      "braceletBook1212": "1212-Muster, deren Fäden zwei Farben abwechseln und nie die Plätze tauschen, als Grundlage der Rauten und Herzen im Zopf-Generator. Die Motive sind für diese Seite gezeichnet.",
+      "friendshipBraceletWiki": "Die Namen der normalen Muster im Zopf-Generator: diagonale Streifen, Chevron, umgekehrtes Chevron, Zickzack, Rauten und Herzen.",
+      "macrameBraids": "Die drei-, vier- und sechssträngigen Zöpfe und der Fischgrätenzopf im Zopf-Generator, Schritt für Schritt.",
+      "fiveStrandBraid": "Der fünfsträngige Zopf im Zopf-Generator: Jeder äußere Faden über einen und unter einen in die Mitte.",
+      "endlessFalls": "Der endlose Wasserfall im Zopf-Generator: ein Ankerknoten aus einer Schnur, von einer zweiten durchfädelt und gekreuzt."
     }
   },
   "pt": {
@@ -281,7 +309,14 @@
       "fontPlayfair": "Uma fonte dos gráficos de letras (serifada elegante), guardada como contornos e transformada em pontos no servidor.",
       "fontPacifico": "Uma fonte dos gráficos de letras (cursiva), guardada como contornos e transformada em pontos no servidor.",
       "fontCinzel": "Uma fonte dos gráficos de letras (maiúsculas decorativas), guardada como contornos e transformada em pontos no servidor.",
-      "c2cRectangle": "A regra dos retângulos canto a canto: no meio, cada diagonal cresce numa borda e diminui na outra, então o número de blocos não muda."
+      "c2cRectangle": "A regra dos retângulos canto a canto: no meio, cada diagonal cresce numa borda e diminui na outra, então o número de blocos não muda.",
+      "braceletBookNormal": "Como se lê uma receita normal de pulseira da amizade: a grade diagonal de nós e os nós para a frente, para trás, frente-trás e trás-frente que os gráficos e passos do criador de tranças usam.",
+      "braceletBookInverse": "O chevron invertido do criador de tranças, com nós para trás à esquerda e para a frente à direita.",
+      "braceletBook1212": "As receitas 1212, cujos fios alternam duas cores e nunca trocam de lugar, base dos losangos e corações do criador de tranças. Os desenhos foram feitos para este site.",
+      "friendshipBraceletWiki": "Os nomes das receitas normais do criador de tranças: listras diagonais, chevron, chevron invertido, zigue-zague, losangos e corações.",
+      "macrameBraids": "As tranças de três, quatro e seis fios e a espinha de peixe do criador de tranças, passo a passo.",
+      "fiveStrandBraid": "A trança de cinco fios do criador de tranças: cada fio de fora por cima de um e por baixo de outro até o meio.",
+      "endlessFalls": "A cascata sem fim do criador de tranças: um nó cabeça de cotovia de um cordão, atravessado e cruzado por outro."
     }
   },
   "it": {
@@ -338,7 +373,14 @@
       "fontPlayfair": "Un carattere degli schemi di scritte (graziato elegante), conservato come contorni e trasformato in maglie sul server.",
       "fontPacifico": "Un carattere degli schemi di scritte (corsivo), conservato come contorni e trasformato in maglie sul server.",
       "fontCinzel": "Un carattere degli schemi di scritte (maiuscole decorative), conservato come contorni e trasformato in maglie sul server.",
-      "c2cRectangle": "La regola dei rettangoli da angolo ad angolo: nella parte centrale ogni diagonale cresce su un bordo e cala sull'altro, quindi il numero di blocchi resta lo stesso."
+      "c2cRectangle": "La regola dei rettangoli da angolo ad angolo: nella parte centrale ogni diagonale cresce su un bordo e cala sull'altro, quindi il numero di blocchi resta lo stesso.",
+      "braceletBookNormal": "Come si legge uno schema normale di braccialetto dell'amicizia: la griglia diagonale di nodi e i nodi in avanti, all'indietro, avanti-indietro e indietro-avanti che usano gli schemi e i passaggi del generatore di trecce.",
+      "braceletBookInverse": "Il chevron rovesciato del generatore di trecce, con nodi all'indietro a sinistra e in avanti a destra.",
+      "braceletBook1212": "Gli schemi 1212, i cui fili alternano due colori e non cambiano mai posto, alla base dei rombi e dei cuori del generatore di trecce. I disegni sono fatti per questo sito.",
+      "friendshipBraceletWiki": "I nomi degli schemi normali del generatore di trecce: righe diagonali, chevron, chevron rovesciato, zigzag, rombi e cuori.",
+      "macrameBraids": "Le trecce a tre, quattro e sei capi e la spina di pesce del generatore di trecce, passaggio per passaggio.",
+      "fiveStrandBraid": "La treccia a cinque capi del generatore di trecce: ogni filo esterno sopra uno e sotto uno fino al centro.",
+      "endlessFalls": "La cascata infinita del generatore di trecce: una testa d'allodola di un cordino, attraversata e incrociata da un secondo."
     }
   },
   "nl": {
@@ -395,7 +437,14 @@
       "fontPlayfair": "Een lettertype voor de letterpatronen (sierlijke schreef), bewaard als omtrekken en op de server omgezet in steken.",
       "fontPacifico": "Een lettertype voor de letterpatronen (schrijfletter), bewaard als omtrekken en op de server omgezet in steken.",
       "fontCinzel": "Een lettertype voor de letterpatronen (sierhoofdletters), bewaard als omtrekken en op de server omgezet in steken.",
-      "c2cRectangle": "De regel voor corner-to-corner-rechthoeken: in het middendeel groeit elke diagonaal aan de ene rand en krimpt hij aan de andere, zodat het aantal blokjes gelijk blijft."
+      "c2cRectangle": "De regel voor corner-to-corner-rechthoeken: in het middendeel groeit elke diagonaal aan de ene rand en krimpt hij aan de andere, zodat het aantal blokjes gelijk blijft.",
+      "braceletBookNormal": "Hoe je een normaal patroon voor een vriendschapsbandje leest: het diagonale raster van knopen en de voorwaartse, achterwaartse, voor-achter- en achter-voorknopen die de schema's en stappen van de vlechtmaker gebruiken.",
+      "braceletBookInverse": "De omgekeerde chevron in de vlechtmaker, met achterwaartse knopen links en voorwaartse rechts.",
+      "braceletBook1212": "1212-patronen, waarvan de draden twee kleuren afwisselen en nooit van plaats wisselen, als basis voor de ruiten en hartjes in de vlechtmaker. De figuren zijn voor deze site getekend.",
+      "friendshipBraceletWiki": "De namen van de normale patronen in de vlechtmaker: diagonale strepen, chevron, omgekeerde chevron, zigzag, ruiten en hartjes.",
+      "macrameBraids": "De vlechten van drie, vier en zes strengen en de visgraatvlecht in de vlechtmaker, stap voor stap.",
+      "fiveStrandBraid": "De vlecht van vijf strengen in de vlechtmaker: elke buitenste draad over één en onder één naar het midden.",
+      "endlessFalls": "De eindeloze waterval in de vlechtmaker: een ankersteek van één koord, doorgeregen en gekruist door een tweede."
     }
   }
 }

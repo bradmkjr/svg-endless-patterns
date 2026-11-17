@@ -1,5 +1,27 @@
 {
   "posts": {
+    "braids": {
+      "title": "Trecce e braccialetti dell'amicizia, filo per filo",
+      "summary": "Righe diagonali, chevron, rombi e cuori in filo da ricamo, trecce piatte da tre capi alla spina di pesce, e la cascata infinita del macramè, ognuno con schema, passaggi e PDF nei tuoi colori.",
+      "blocks": [
+        "La nuova sezione [trecce](/braids/) porta il campo estivo sul sito: braccialetti dell'amicizia annodati in filo da ricamo, trecce piatte in filo, cordino o lana, e la cascata infinita del macramè. Scegli uno schema e i suoi colori: ogni colore del disegno e ogni numero dei passaggi si calcola seguendo ciascun filo attraverso ogni nodo o passaggio.",
+        "Braccialetti dell'amicizia, nodo per nodo",
+        "I braccialetti sono schemi normali, disegnati sulla griglia diagonale che usa chi li fa, con nodi in avanti, all'indietro, avanti-indietro e indietro-avanti. Le [righe diagonali](/braids/candy-stripe/) sono nodi in avanti da un bordo all'altro; il [chevron](/braids/chevron/) annoda le sue due metà verso il centro, e il [chevron rovesciato](/braids/inverse-chevron/) lo capovolge. Lo [zigzag](/braids/zigzag/) cambia direzione strada facendo. I [rombi](/braids/diamond/) e i [cuori](/braids/heart/) sono schemi 1212: due colori che non cambiano mai posto, e il nodo sceglie quale si vede. Lo schema mostra ogni nodo nel colore che dà, con la sua freccia, e i passaggi scrivono ogni giro della ripetizione.",
+        [
+          "Righe diagonali in cinque colori",
+          "Lo schema di un chevron a dodici fili",
+          "Cuori in due colori"
+        ],
+        "Trecce e macramè",
+        "Le trecce piatte vanno da quella a [tre capi](/braids/three-strand/) a quelle a [quattro](/braids/four-strand/), [cinque](/braids/five-strand/) e [sei](/braids/six-strand/) capi fino alla [spina di pesce](/braids/fishtail/), con un colore per filo. Il disegno mostra ogni filo che passa sopra e sotto, e lo schema numera ogni passaggio, così puoi seguire un filo dall'alto e vedere dove va. La [cascata infinita](/braids/endless-falls/) è fatta di due cordini: una testa d'allodola dell'uno, attraversata e incrociata dall'altro, giro dopo giro. I passaggi di ogni treccia dicono quale filo si muove, sopra e sotto cosa passa, e dopo quanti passaggi i colori tornano al loro posto.",
+        [
+          "Ogni passaggio di una treccia a quattro capi",
+          "Una treccia a spina di pesce in due colori",
+          "La cascata infinita"
+        ],
+        "Ogni schema si scarica in PDF con lo schema, la treccia, i passaggi e i colori, e in SVG o PNG. I nodi, i nomi degli schemi e le trecce vengono da chi fa braccialetti e macramè e li ha messi per iscritto, e sono citati nella pagina dei [ringraziamenti](/acknowledgements/). Le pagine della [tessitura](/weaving/) e dei [nodi celtici](/celtic-knots/) sono parenti stretti."
+      ]
+    },
     "origami": {
       "title": "Origami: modelli tradizionali e tassellature piegate",
       "summary": "Due nuovi strumenti per piegare la carta. Piega cinque modelli tradizionali passo passo, dal muso di cane alla gru, su carta da piegare che stampi con il motivo e i colori che vuoi, oppure stampa schemi di pieghe per tassellature Miura-ori, Yoshimura, bomba d'acqua e torsione quadrata.",
@@ -992,6 +1014,15 @@
     }
   },
   "changelog": {
+    "Braids and friendship bracelets": {
+      "title": "Trecce e braccialetti dell'amicizia",
+      "items": [
+        "Una nuova sezione trecce crea schemi di braccialetti dell'amicizia e trecce nei tuoi colori, ognuno con schema, passaggi uno per uno e PDF",
+        "Braccialetti dell'amicizia: righe diagonali, chevron, chevron rovesciato, zigzag, e rombi e cuori con nodi 1212",
+        "Trecce: a tre, quattro, cinque e sei capi, a spina di pesce, e la cascata infinita del macramè",
+        "Le fonti sono citate nella pagina dei ringraziamenti"
+      ]
+    },
     "Pattern pages that say what sets each pattern apart": {
       "title": "Pagine dei motivi che dicono cosa distingue ognuno",
       "items": [

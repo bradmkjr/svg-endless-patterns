@@ -221,6 +221,12 @@
         "output": "Messa in carta completa e tessuto senza giunture in SVG e PNG, e una messa in carta in PDF da stampare.",
         "explore": "Crea una messa in carta"
       },
+      "braid": {
+        "title": "Trecce e braccialetti dell'amicizia",
+        "text": "Righe diagonali, chevron, rombi e cuori in filo da ricamo, trecce piatte da tre capi alla spina di pesce, e la cascata infinita del macramè.",
+        "output": "Schema dei nodi o dei fili, la treccia finita, passaggi uno per uno, un PDF da stampare, e SVG e PNG.",
+        "explore": "Crea un braccialetto"
+      },
       "crossStitch": {
         "title": "Punto croce",
         "text": "Scegli un disegno quadrato completo o disegna il tuo, poi imposta il conteggio del tessuto e i colori.",

@@ -221,6 +221,12 @@
         "output": "Full draft and seamless cloth as SVG and PNG, and a printable PDF draft.",
         "explore": "Make a weaving draft"
       },
+      "braid": {
+        "title": "Braids and friendship bracelets",
+        "text": "Candy stripes, chevrons, diamonds and hearts in embroidery floss, flat braids from three strands to fishtail, and the macramé endless falls knot.",
+        "output": "Knot chart or strand diagram, the finished braid, step-by-step instructions, a printable PDF, and SVG and PNG.",
+        "explore": "Make a bracelet pattern"
+      },
       "crossStitch": {
         "title": "Cross stitch",
         "text": "Choose a complete square design or draw your own, then set your fabric count and colors.",

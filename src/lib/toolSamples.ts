@@ -33,8 +33,9 @@ import { generateWaves } from "./generator";
 import { parseWavesState } from "./wavesState";
 import { generateNature } from "./generator";
 import { parseNatureState } from "./natureState";
-import { generateWeaving } from "./generator";
+import { generateBraid, generateWeaving } from "./generator";
 import { parseWeavingState, weavingRequest } from "./weavingState";
+import { braidRequest, parseBraidState } from "./braidState";
 import { generatePuzzle } from "./generator";
 import { generateLettering } from "./generator";
 import { letteringRequest, parseLetteringState } from "./letteringState";
@@ -81,6 +82,8 @@ const DRAW: Partial<Record<PostSample["kind"], Draw>> = {
   waves: async (p, locale) => generateWaves(parseWavesState(p, locale)),
   nature: async (p, locale) => generateNature(parseNatureState(p, locale)),
   weaving: async (p, locale) => generateWeaving(weavingRequest(parseWeavingState(p, locale))),
+  // The path names the pattern, as on the page the link opens.
+  braid: async (p, locale, slug) => generateBraid(braidRequest(parseBraidState(withOption("braid", slug, p), locale))),
   tartan: async (p, locale) => generateTartan(parseTartanState(p, locale)),
   tieDye: async (p, locale) => generateTieDye(parseTieDyeState(p, locale)),
   sashiko: async (p, locale) => generateSashiko(parseSashikoState(p, locale)),

@@ -1,5 +1,27 @@
 {
   "posts": {
+    "braids": {
+      "title": "Zöpfe und Freundschaftsbänder, Faden für Faden",
+      "summary": "Diagonale Streifen, Chevrons, Rauten und Herzen aus Stickgarn, flache Zöpfe von drei Strängen bis Fischgräte und der endlose Wasserfall aus dem Makramee, jeweils mit Muster, Schritten und PDF in deinen Farben.",
+      "blocks": [
+        "Der neue Bereich [Zöpfe](/braids/) holt das Ferienlager auf die Seite: geknüpfte Freundschaftsbänder aus Stickgarn, flache Zöpfe aus Garn, Kordel oder Wolle und der endlose Wasserfall aus dem Makramee. Wähle ein Muster und seine Farben, und jede Farbe im Bild und jede Zahl in den Schritten wird berechnet, indem jeder Faden durch jeden Knoten und jeden Schritt verfolgt wird.",
+        "Freundschaftsbänder, Knoten für Knoten",
+        "Die Bänder sind normale Muster, auf dem diagonalen Raster gezeichnet, das Knüpferinnen und Knüpfer verwenden, mit Vorwärts-, Rückwärts-, Vorwärts-Rückwärts- und Rückwärts-Vorwärts-Knoten. [Diagonale Streifen](/braids/candy-stripe/) sind Vorwärtsknoten von einer Seite zur anderen; ein [Chevron](/braids/chevron/) knüpft seine zwei Hälften zur Mitte hin, das [umgekehrte Chevron](/braids/inverse-chevron/) dreht es um. Der [Zickzack](/braids/zigzag/) wechselt unterwegs die Richtung. [Rauten](/braids/diamond/) und [Herzen](/braids/heart/) sind 1212-Muster: zwei Farben, die nie die Plätze tauschen, und der Knoten bestimmt, welche zu sehen ist. Das Muster zeigt jeden Knoten in der Farbe, die er ergibt, mit seinem Pfeil, und die Schritte schreiben jede Reihe des Rapports aus.",
+        [
+          "Diagonale Streifen in fünf Farben",
+          "Das Muster eines Chevrons aus zwölf Fäden",
+          "Herzen in zwei Farben"
+        ],
+        "Zöpfe und Makramee",
+        "Die flachen Zöpfe reichen vom [dreisträngigen](/braids/three-strand/) Zopf über [vier](/braids/four-strand/), [fünf](/braids/five-strand/) und [sechs](/braids/six-strand/) Stränge bis zum [Fischgrätenzopf](/braids/fishtail/), mit einer Farbe pro Faden. Das Bild zeigt jeden Faden, wie er über und unter den anderen liegt, und das Muster nummeriert jeden Schritt, sodass du einem Faden von oben folgen kannst. Der [endlose Wasserfall](/braids/endless-falls/) besteht aus zwei Schnüren: einem Ankerknoten der einen, von der anderen durchfädelt und gekreuzt, Reihe für Reihe. Die Schritte jedes Zopfs sagen, welcher Faden sich bewegt, worüber und worunter er geht und nach wie vielen Schritten die Farben wieder am Anfang stehen.",
+        [
+          "Jeder Schritt eines viersträngigen Zopfs",
+          "Ein Fischgrätenzopf in zwei Farben",
+          "Der endlose Wasserfall"
+        ],
+        "Jedes Muster lässt sich als PDF mit Muster, Zopf, Schritten und Farben herunterladen, und als SVG oder PNG. Die Knoten, die Namen der Muster und die Zöpfe stammen von Menschen, die Armbänder und Makramee machen und sie aufgeschrieben haben; sie werden auf der Seite [Danksagungen](/acknowledgements/) genannt. Die Seiten [Weben](/weaving/) und [Keltische Knoten](/celtic-knots/) sind nahe Verwandte."
+      ]
+    },
     "origami": {
       "title": "Origami: traditionelle Modelle und gefaltete Tessellationen",
       "summary": "Zwei neue Werkzeuge zum Papierfalten. Falte fünf traditionelle Modelle Schritt für Schritt, vom Hundegesicht bis zum Kranich, auf Faltpapier, das du in jedem Muster und jeder Farbe druckst, oder drucke Faltmuster für Miura-ori-, Yoshimura-, Wasserbomben- und Quadratdrehungs-Tessellationen.",
@@ -992,6 +1014,15 @@
     }
   },
   "changelog": {
+    "Braids and friendship bracelets": {
+      "title": "Zöpfe und Freundschaftsbänder",
+      "items": [
+        "Ein neuer Bereich erstellt Muster für Freundschaftsbänder und Zöpfe in deinen Farben, jeweils mit Muster, Schritt-für-Schritt-Anleitung und PDF",
+        "Freundschaftsbänder: diagonale Streifen, Chevron, umgekehrtes Chevron, Zickzack sowie Rauten und Herzen in 1212-Knoten",
+        "Zöpfe: drei-, vier-, fünf- und sechssträngig, Fischgräte und der endlose Wasserfall aus dem Makramee",
+        "Die Quellen werden auf der Seite Danksagungen genannt"
+      ]
+    },
     "Pattern pages that say what sets each pattern apart": {
       "title": "Musterseiten, die sagen, was jedes Muster ausmacht",
       "items": [

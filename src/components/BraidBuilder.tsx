@@ -72,7 +72,7 @@ export function BraidBuilder({ locale, option, labels, initialState }: { locale:
       <OptionNav tool="braid" locale={locale} current={option} labels={labels} />
       <div className={styles.workspace}>
         <section className={styles.preview} aria-label={b.preview}>
-          {result ? <div className={styles.art} role="img" aria-label={state.view === "chart" ? t.chartAlt : t.braidAlt} dangerouslySetInnerHTML={{ __html: picture }} /> : <ToolLoading locale={locale} />}
+          {result ? <div className={styles.art} style={{ maxWidth: state.view === "chart" ? 400 : 120, marginInline: "auto" }} role="img" aria-label={state.view === "chart" ? t.chartAlt : t.braidAlt} dangerouslySetInnerHTML={{ __html: picture }} /> : <ToolLoading locale={locale} />}
           {result && result.family !== "falls" ? <p className={styles.note}>{fill(result.family === "knotted" ? t.repeatKnotted : t.repeatFlat, { rows: result.rows, repeat: result.repeatRows })}</p> : null}
           <div className={`${styles.actions} no-print`}>
             <button type="button" disabled={busy} className={styles.primary} onClick={() => run(b.pdfMaking, b.pdfDone, async () => downloadBytes(await generateBraidPdf(braidRequest(state)), `${fileName}.pdf`, "application/pdf"))}>
